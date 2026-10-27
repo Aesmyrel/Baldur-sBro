@@ -15,35 +15,39 @@
   .B .label { font: 500 11px/1 "Jost", sans-serif; letter-spacing: .26em; text-transform: uppercase; color: var(--brass); }
   .B .sky { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
   .B .content { position: relative; z-index: 2; }
-  .B .hero { position: relative; height: 246px; }
+  .B .hero { position: relative; height: 206px; }
   .B .hero > svg { position: absolute; inset: 0; }
-  .B .hero .ttl { position: absolute; left: 24px; top: 66px; }
+  .B .hero .ttl { position: absolute; left: 24px; top: 56px; }
   .B .hero h1 { font: italic 400 58px/0.9 "Bodoni Moda", serif; letter-spacing: -.01em; }
   .B .hero .coord { font: 400 12.5px/1.3 "Jost", sans-serif; color: var(--text2); margin-top: 8px; letter-spacing: .04em; }
   .B .session { position: absolute; right: 20px; bottom: 6px; white-space: nowrap; height: 36px; padding: 0 14px; border-radius: 18px; display: flex; align-items: center; gap: 8px;
     border: 1px solid var(--line2); background: color-mix(in srgb, var(--bg) 60%, transparent); font: 500 13px/1 "Jost", sans-serif; color: var(--text); }
-  .B .orbit { position: relative; margin: 6px 24px 0; height: 66px; }
+  .B .orbit { position: relative; margin: 2px 24px 0; height: 58px; }
   .B .orbit svg { position: absolute; inset: 0; }
   .B .orbit .lbl { position: absolute; bottom: 0; transform: translateX(-50%); white-space: nowrap; font: 500 10.5px/1 "Jost", sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
   .B .orbit .lbl.on { color: var(--brass); }
-  .B .dialrow { display: grid; grid-template-columns: 132px 1fr; gap: 18px; align-items: center; margin: 14px 24px 0; }
-  .B .leg { display: grid; gap: 9px; }
+  .B .dialrow { display: grid; grid-template-columns: 104px 1fr; gap: 20px; align-items: center; margin: 8px 24px 0; }
+  .B .leg { display: grid; gap: 6px; }
   .B .leg div { display: grid; grid-template-columns: 12px 1fr auto; gap: 10px; align-items: center; font: 400 14.5px/1 "Jost", sans-serif; color: var(--text2); }
   .B .leg b { font: 500 15px/1 "Jost", sans-serif; color: var(--text); font-variant-numeric: tabular-nums; }
   .B .leg i { width: 12px; height: 3px; border-radius: 2px; }
-  .B .card { margin: 14px 18px 0; border-radius: 14px; background: linear-gradient(160deg, var(--raised), var(--surface)); border: 1px solid var(--line); padding: 14px 16px; }
-  .B .alert { display: grid; grid-template-columns: 40px 1fr; gap: 12px; border-color: color-mix(in srgb, var(--solar) 45%, var(--line)); }
+  .B .card { margin: 10px 18px 0; border-radius: 14px; background: linear-gradient(160deg, var(--raised), var(--surface)); border: 1px solid var(--line); padding: 11px 14px; }
+  .B .alert { display: grid; grid-template-columns: 36px 1fr; gap: 12px; align-items: center; border-color: color-mix(in srgb, var(--solar) 45%, var(--line)); }
   .B .alert .t { font: 500 12px/1 "Jost", sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--solar); margin-bottom: 6px; }
-  .B .alert p { font-size: 17px; line-height: 1.32; }
+  .B .alert p { font-size: 16.5px; line-height: 1.3; }
   .B .alert a { display: inline-block; margin-top: 6px; font: 500 14px/1 "Jost", sans-serif; color: var(--brass); }
-  .B .sect { display: flex; align-items: center; gap: 10px; margin: 18px 24px 4px; }
+  .B .sect { display: flex; align-items: center; gap: 10px; margin: 13px 24px 2px; }
   .B .sect .ln { flex: 1; height: 1px; background: linear-gradient(90deg, var(--line2), transparent); }
   .B .sect .more { font: 400 13px/1 "Jost", sans-serif; color: var(--text2); }
-  .B .obj { display: grid; grid-template-columns: 30px 1fr auto; gap: 12px; align-items: center; margin: 0 18px; min-height: 54px; padding: 4px 6px; border-bottom: 1px solid var(--line); }
+  .B .obj { display: grid; grid-template-columns: 30px 1fr auto; gap: 12px; align-items: center; margin: 0 18px; min-height: 49px; padding: 3px 6px; border-bottom: 1px solid var(--line); }
   .B .obj:last-child { border-bottom: none; }
   .B .obj .n { font-size: 18px; line-height: 1.2; }
   .B .obj .m { font: 400 12.5px/1.2 "Jost", sans-serif; color: var(--text2); margin-top: 3px; letter-spacing: .02em; }
   .B .obj .tag { font: 500 10.5px/1 "Jost", sans-serif; letter-spacing: .14em; text-transform: uppercase; padding: 6px 9px; border-radius: 12px; border: 1px solid currentColor; }
+  .B .party { display: grid; grid-template-columns: repeat(4, 1fr); margin: 4px 14px 0; text-align: center; }
+  .B .party .nm { font: 400 15.5px/1.1 "Newsreader", serif; margin-top: 3px; }
+  .B .party .cl { font: 400 11.5px/1.1 "Jost", sans-serif; color: var(--text2); margin-top: 2px; letter-spacing: .02em; }
+  .B .fact p { font-size: 16.5px; line-height: 1.35; margin-top: 6px; }
   .B .nav { position: absolute; left: 0; right: 0; bottom: 0; height: 86px; z-index: 30; padding: 12px 10px 22px 2px; display: grid; grid-template-columns: repeat(5, 1fr) 66px; align-items: start;
     background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 92%, transparent), var(--bg)); backdrop-filter: blur(10px); }
   .B .nav .tick { position: absolute; left: 0; right: 0; top: 0; height: 6px; }
@@ -69,7 +73,7 @@
   .B .h2 .ta { font: 400 11px/1 "Jost", sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--text2); }
   .B .init { float: left; width: 70px; height: 70px; margin: 6px 12px 0 0; }
   .B sup { font: 500 11px/1 "Jost", sans-serif; color: var(--brass); margin-left: 1px; }
-  .B .veil { position: relative; margin-top: 8px; height: 112px; border-radius: 14px; overflow: hidden; }
+  .B .veil { position: relative; margin-top: 8px; height: 96px; border-radius: 14px; overflow: hidden; }
   .B .veil svg { position: absolute; inset: 0; }
   .B .veil .msg { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; gap: 7px; }
   .B .veil .msg b { font: 500 11.5px/1 "Jost", sans-serif; letter-spacing: .24em; text-transform: uppercase; color: var(--text); }
@@ -146,7 +150,7 @@
 
 <script>
 const PAL = {
-  dark:  { bg:"#070B18", surface:"#0D1428", raised:"#131D38", line:"#222E52", line2:"#34426B", text:"#E8EDF7", text2:"#A7B3CF", muted:"#7480A2",
+  dark:  { bg:"#070B18", surface:"#0D1428", raised:"#131D38", line:"#222E52", line2:"#34426B", text:"#E8EDF7", text2:"#A7B3CF", muted:"#7E8AAB",
            brass:"#D9B877", brass2:"#A88A4E", silver:"#C8D2E6", aurora:"#66D5C3", nebula:"#A797F5", solar:"#F3A96A", rose:"#F093B4", comet:"#7FC8F4", star:"#FFFFFF" },
   light: { bg:"#ECE9E1", surface:"#F4F2EC", raised:"#FBFAF7", line:"#D3CEC0", line2:"#B9B3A2", text:"#15213E", text2:"#45506A", muted:"#5E6579",
            brass:"#7A5D1F", brass2:"#A88A4E", silver:"#5D6782", aurora:"#116B5F", nebula:"#5643BE", solar:"#964E15", rose:"#A33A63", comet:"#1E6A9B", star:"#15213E" }
@@ -190,25 +194,25 @@ function constellation(pts, links, c, rr = [2.4]) {
 
 function heroSky(p, s) {
   const w = 412, h = 246;
-  const lantern = [[262, 66, 3.2], [300, 54, 2.2], [336, 74, 2.6], [330, 112, 2.2], [296, 126, 3.6], [266, 104, 2], [300, 90, 1.8], [362, 140, 2]];
-  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${defs(p, s)}
+  const lantern = [[262, 96, 3.2], [300, 84, 2.2], [336, 104, 2.6], [330, 142, 2.2], [296, 156, 3.6], [266, 134, 2], [300, 120, 1.8], [362, 170, 2]];
+  return `<svg width="${w}" height="206" viewBox="0 40 ${w} 206">${defs(p, s)}
     <rect width="${w}" height="${h}" fill="${p.bg}"/>
     <ellipse cx="300" cy="96" rx="230" ry="150" fill="url(#soft${s}a)"/>
     <ellipse cx="90" cy="70" rx="190" ry="120" fill="url(#soft${s}b)"/>
-    ${starField({ w, h: 200, n: 150, seed: 4, color: p.star, maxR: 1.1, minO: .2, sparkles: 5, sparkleColor: p.brass })}
+    ${starField({ w, h: 200, n: 150, seed: 4, color: p.star, maxR: 1.1, minO: .2 })}${sparkle(236, 74, 5, p.brass, .9)}${sparkle(388, 196, 4, p.brass, .8)}${sparkle(150, 186, 3.5, p.brass, .8)}
     ${ring(206, 420, 380, -40, 40, p.brass, true)}
     <path d="M206 40 V420" stroke="${p.brass}" stroke-width=".4" opacity=".35" stroke-dasharray="2 4"/>
     <path d="M-20 300 Q206 120 432 300" fill="none" stroke="${p.silver}" stroke-width=".4" opacity=".35" stroke-dasharray="1 3"/>
     ${constellation(lantern, [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 0], [1, 6], [6, 4], [3, 7]], p.star)}
-    <text x="340" y="160" text-anchor="middle" font-family="Newsreader" font-style="italic" font-size="12.5" fill="${p.text2}">la Lanterne</text>
-    <path d="M0 214 L30 206 L52 210 L70 196 L92 204 L120 200 L150 208 L176 204 L190 190 L196 190 L196 182 L201 182 L201 176 L207 176 L207 190 L214 190 L220 204 L262 198 L300 206 L340 198 L376 206 L412 200 V246 H0Z" fill="${p.bg}" stroke="${p.silver}" stroke-width=".8" stroke-linejoin="round" opacity=".95"/>
+    
+    <path d="M0 214 L30 206 L52 210 L70 196 L92 204 L120 200 L150 208 L176 204 L184 194 L184 178 Q186 166 197 165 Q204 165 207 170 L203 175 Q199 172 195 174 Q191 177 191 182 L191 194 L203 194 L203 184 L207 181 L210 185 L210 194 L220 204 L262 198 L300 206 L340 198 L376 206 L412 200 V246 H0Z" fill="${p.bg}" stroke="${p.silver}" stroke-width=".8" stroke-linejoin="round" opacity=".95"/>
     ${[[40, 207], [62, 205], [84, 202], [110, 203], [138, 206]].map(([x, y]) => `<path d="M${x} ${y} l5 -12 l5 12" fill="none" stroke="${p.silver}" stroke-width=".7" opacity=".8"/>`).join("")}
   </svg>`;
 }
 
 function orbitActs(p) {
   const xs = [32, 112, 190, 266, 332], labels = ["Prologue", "Acte I", "Acte II", "Acte III", "Épilogue"];
-  const svg = `<svg width="364" height="66" viewBox="0 0 364 66"><path d="M0 26 H364" stroke="${p.line2}" stroke-width="1"/>
+  const svg = `<svg width="364" height="58" viewBox="0 0 364 66"><path d="M0 26 H364" stroke="${p.line2}" stroke-width="1"/>
     <path d="M32 26 H112" stroke="${p.brass}" stroke-width="1.4"/>
     ${xs.map((x, i) => i === 1
       ? `<circle cx="${x}" cy="26" r="22" fill="url(#glowh${dark(p) ? "d" : "l"})"/><circle cx="${x}" cy="26" r="15" fill="none" stroke="${p.brass}" stroke-width=".8" stroke-dasharray="1.5 2.5"/><circle cx="${x}" cy="26" r="8" fill="url(#brassh${dark(p) ? "d" : "l"})"/><circle cx="${x + 15}" cy="26" r="2.2" fill="${p.brass}"/>`
@@ -220,7 +224,7 @@ function orbitActs(p) {
 function dial(p) {
   const rings = [[60, .44, p.comet], [50, .38, p.aurora], [40, .33, p.solar], [30, .11, p.rose]];
   const arc = (r, f) => { const C = 2 * Math.PI * r; return `stroke-dasharray="${(C * f).toFixed(1)} ${C.toFixed(1)}"`; };
-  return `<svg width="132" height="132" viewBox="0 0 132 132">
+  return `<svg width="104" height="104" viewBox="0 0 132 132">
     ${ring(66, 66, 65, 0, 355, p.line2)}
     ${rings.map(([r, f, c]) => `<circle cx="66" cy="66" r="${r - 4}" fill="none" stroke="${p.line}" stroke-width="5"/><circle cx="66" cy="66" r="${r - 4}" fill="none" stroke="${c}" stroke-width="5" stroke-linecap="round" ${arc(r - 4, f)} transform="rotate(-90 66 66)"/>`).join("")}
     <text x="66" y="72" text-anchor="middle" font-family="Bodoni Moda" font-size="22" fill="${p.text}">42<tspan font-size="12">%</tspan></text>
@@ -272,18 +276,21 @@ function home(el) {
     </div>
     <div class="orbit">${orbitActs(p)}</div>
     <div class="dialrow">${dial(p)}
-      <div class="leg"><div class="label" style="display:block;margin-bottom:2px">Avancement</div>
+      <div class="leg"><div class="label" style="display:block;margin-bottom:0">Avancement</div>
         <div><i style="background:${p.comet}"></i>Quêtes<b>18 / 41</b></div>
         <div><i style="background:${p.aurora}"></i>Lieux<b>20 / 52</b></div>
         <div><i style="background:${p.solar}"></i>Manquables<b>9 / 27</b></div>
         <div><i style="background:${p.rose}"></i>Trophées<b>6</b></div></div>
     </div>
-    <div class="card alert"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="27" cy="13" r="6" fill="${p.solar}"/>${sparkle(27, 13, 11, p.solar, .45)}<path d="M23 17 L5 35 M25 19 L11 36 M21 15 L4 30" stroke="${p.solar}" stroke-width="1.2" stroke-linecap="round" opacity=".7"/></svg>
-      <div><div class="t">Point de non-retour</div><p>Avant de passer à l'Acte II, 6 éléments deviendront manquables.</p><a>Voir la liste →</a></div></div>
+    <div class="card alert"><svg width="36" height="36" viewBox="0 0 40 40"><circle cx="27" cy="13" r="6" fill="${p.solar}"/>${sparkle(27, 13, 11, p.solar, .45)}<path d="M23 17 L5 35 M25 19 L11 36 M21 15 L4 30" stroke="${p.solar}" stroke-width="1.2" stroke-linecap="round" opacity=".7"/></svg>
+      <div><div class="t">Point de non-retour <a style="float:right;margin:0;letter-spacing:0;text-transform:none">Voir →</a></div><p>Avant l'Acte II, 6 éléments deviendront manquables.</p></div></div>
     <div class="sect"><span class="label">Prochains objectifs</span><i class="ln"></i><span class="more">Tout voir</span></div>
     <div class="obj">${star(p)}<div><div class="n">Chercher un remède au parasite</div><div class="m">Quête principale</div></div><span class="tag" style="color:${p.brass}">Acte I</span></div>
     <div class="obj">${star(p)}<div><div class="n">Fouiller les ruines près de la route</div><div class="m">Lieu · 3 objets</div></div><span class="tag" style="color:${p.text2}">Lieu</span></div>
     <div class="obj">${star(p)}<div><div class="n">Récupérer le journal du camp</div><div class="m">Livre du jeu</div></div><span class="tag" style="color:${p.solar}">Manquable</span></div>
+    <div class="sect"><span class="label">Groupe actif</span><i class="ln"></i><span class="more">Modifier</span></div>
+    <div class="party">${[["guerrier", "Lae'zel", "Guerrière"], ["magicien", "Gale", "Magicien"], ["roublard", "Astarion", "Roublard"], ["barbare", "Karlach", "Barbare"]].map(([e, n, c]) => `<div>${sign(p, e, p.rose, 46)}<div class="nm">${n}</div><div class="cl">${c}</div></div>`).join("")}</div>
+    <div class="card fact"><div class="label">Le saviez-vous&#8239;?</div><p>Imaginés par l'écrivain Charles Stross, les githyanki sont apparus en 1979 dans le magazine <i>White Dwarf</i>, puis dans le <i>Fiend Folio</i> en 1981.</p></div>
   </div>${nav(p, "partie")}${gestureBar(p.text2)}`;
 }
 
@@ -323,15 +330,15 @@ function lore(el) {
     </div>
     <div class="lhead">${swordChart(p, s)}
       <h1>Githyanki</h1><div class="vo">VO githyanki — peuple guerrier de la mer Astrale</div>
-      <div class="chips"><span class="chip dnd">Canon D&amp;D · multi-éditions</span><span class="chip">7 min</span></div></div>
+      <div class="chips"><span class="chip dnd">Canon D&amp;D · 5e</span><span class="chip">7 min</span></div></div>
     <div class="body">
       <div class="h2"><span class="nm">✦ Général</span><i class="ln"></i></div>
       <p>${initial(p, "P")}euple guerrier de l'Astral, les githyanki descendent d'un peuple réduit en esclavage par les flagelleurs mentaux. Menés par Gith, leur libératrice, ils se sont soulevés et ont brisé l'empire illithid.<sup>1</sup></p>
-      <div class="h2"><span class="nm">✦ Dans BG3</span><i class="ln"></i><span class="ta">Acte I · canon BG3</span></div>
+      <div class="h2"><span class="nm">✦ Dans BG3</span><i class="ln"></i><span class="ta">Prologue · canon BG3</span></div>
       <p>Lae'zel, guerrière githyanki, compte parmi les toutes premières rencontres de l'aventure&#8239;; d'autres githyanki croiseront votre route.<sup>2</sup></p>
-      <div class="h2"><span class="nm">✦ La reine-liche</span><i class="ln"></i><span class="ta">Acte III · spoiler</span></div>
-      <div class="veil">${nebulaVeil(p, s, 112)}<div class="msg"><b>Spoiler majeur · Acte III</b><span>Glisser pour dissiper la nébuleuse</span></div></div>
-      <div class="refs"><div class="h2"><span class="nm">✦ Références</span><i class="ln"></i></div><ol><li><i>Mordenkainen's Tome of Foes</i> — D&amp;D 5e, 2018, chap. 4</li><li><i>Baldur's Gate 3</i> — Larian Studios, 2023, Acte I</li></ol></div>
+      <div class="h2"><span class="nm" style="color:var(--text2)">✦ Section masquée</span><i class="ln"></i></div>
+      <div class="veil">${nebulaVeil(p, s, 96)}<div class="msg"><b>Au-delà de votre progression</b><span>Glisser pour dissiper la nébuleuse</span></div></div>
+      <div class="refs"><div class="h2"><span class="nm">✦ Références</span><i class="ln"></i></div><ol><li><i>Mordenkainen's Tome of Foes</i> — D&amp;D 5e, 2018, chap. 4</li><li><i>Baldur's Gate 3</i> — Larian Studios, 2023, prologue</li></ol></div>
     </div>
   </div>
   <div class="thread"><svg width="22" height="18" viewBox="0 0 22 18">${constellation([[2, 14, 2], [9, 5, 2], [14, 11, 1.6], [20, 3, 2.2]], [[0, 1], [1, 2], [2, 3]], p.brass)}</svg>Tirer le fil <em>· 6 fiches reliées</em></div>
@@ -387,7 +394,7 @@ function build(el) {
     <div class="row"><i style="background:${p.solar}"></i><div>Guerrier, niveau 1<div class="f">dé de vie maximal 10 + Constitution 3</div></div><div class="r">13</div></div>
     <div class="row"><i style="background:${p.solar};opacity:.6"></i><div>Guerrier, niveau 2<div class="f">gain fixe 6 + Constitution 3</div></div><div class="r">9</div></div>
     <div class="row" style="border-bottom:none"><i style="background:${p.nebula}"></i><div>Magicien, niveaux 1 à 10<div class="f">10 × (gain fixe 4 + Constitution 3)</div></div><div class="r">70</div></div>
-    <div class="src">Règle sourcée : bg3.wiki, «&#8239;Hit Points&#8239;» — révision notée dans le code.</div>
+    <div class="src">Source&#8239;: bg3.wiki, «&#8239;Hit points&#8239;», révision 425339 du 13/09/2026. Valeurs illustratives en phase 0.</div>
   </div>${gestureBar(p.text2)}`;
 }
 

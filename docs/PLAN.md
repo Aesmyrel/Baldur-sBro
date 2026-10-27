@@ -34,7 +34,7 @@
 | DataStore | 1.3.0 | réglages |
 | kotlinx.serialization | 1.12.0 | JSON du pipeline, export des données, codes de build |
 | ZXing core | 3.5.4 | génération des QR codes (aucune permission) |
-| Google Code Scanner (Play services) | 16.1.0 | lecture de QR sans permission caméra ; vérification que le manifeste fusionné n'ajoute pas INTERNET |
+| Google Code Scanner (Play services) | 16.1.0 | lecture de QR sans permission caméra. **Ses dépendances (`transport-backend-cct`, télémétrie ML Kit) déclarent INTERNET et ACCESS_NETWORK_STATE** : retirées du manifeste fusionné (voir DECISIONS D-021) |
 | Glance | 1.2.0 | V2 (widget) |
 | ML Kit GenAI Prompt | 1.0.0-beta5 (**bêta**) | V2 seulement, sous réserve (voir questions ouvertes) |
 | Roborazzi / Robolectric | 1.77.0 / 4.17 | captures sur JVM ; Robolectric exécuté sur le SDK le plus récent qu'il prend en charge |
@@ -86,10 +86,10 @@ Règles de dépendance : `feature:*` → `core:ui`, `core:designsystem`, `core:d
 - **Edge-to-edge** et **retour prédictif** (animations de retour personnalisées : la page se referme comme un livre).
 - **Ciblage d'Android 17** : sur les écrans de plus de 600 dp, l'orientation et le redimensionnement ne peuvent plus être bloqués. Toutes les mises en page sont donc adaptatives et l'état survit à la rotation, au pliage et au redimensionnement.
 - **120 Hz** : listes paresseuses avec clés et types de contenu stables, état immuable (`kotlinx-collections-immutable`), pas d'allocation dans le dessin, ornements mis en cache (`drawWithCache`), shaders sous budget.
-- **Haptique** : `performHapticFeedback` avec les constantes système (respecte automatiquement les réglages de l'appareil) ; compositions `VibrationEffect` (primitives `THUD`, `SPIN`, `LOW_TICK`) pour le lancer de dés, avec l'usage « toucher » pour que le réglage système s'applique. La permission `VIBRATE` (normale, accordée à l'installation) sera la seule permission demandée.
+- **Haptique** : `performHapticFeedback` avec les constantes système (respecte automatiquement les réglages de l'appareil) ; compositions `VibrationEffect` (primitives `THUD`, `SPIN`, `LOW_TICK`) pour le lancer de dés, avec l'usage « toucher » pour que le réglage système s'applique. La permission `VIBRATE` (normale, accordée à l'installation) sera la seule permission conservée.
 - **Mouvement réduit** : si l'échelle d'animation système est à 0, si l'économiseur de batterie est actif ou si l'option de l'appli est cochée, les transitions deviennent des fondus courts et les shaders animés s'arrêtent (rendu statique).
 - **Écran toujours allumé** pendant une session : `keepScreenOn` sur la vue racine, sans permission, désactivé automatiquement en quittant le mode session.
-- **Aucune permission INTERNET** : un test vérifie le manifeste fusionné de la variante release.
+- **Aucune permission INTERNET** : un test bloquant vérifie le manifeste fusionné de la variante release (INTERNET et ACCESS_NETWORK_STATE, apportées par Google Code Scanner, y sont retirées explicitement).
 
 ## 2. Verrou anti-spoiler (spécification)
 
@@ -109,13 +109,14 @@ Un bloc est visible si **les deux** conditions sont vraies, ou s'il a été rév
    - acte du bloc **antérieur** à l'acte courant → visible ;
    - acte du bloc **égal** à l'acte courant → visible si niveau ≤ `AUCUN` (tolérance aucun), ≤ `LEGER` (tolérance légère), toujours (tolérance complète) ;
    - acte du bloc **postérieur** → invisible (tolérance aucun), visible seulement si niveau = `AUCUN` (tolérance légère : on sait qu'un objet ou un lieu existe plus tard, sans rien sur l'intrigue), toujours (tolérance complète).
+   - *Le sens exact de la tolérance « légère » pour les actes futurs est une proposition à valider (question ouverte n° 3).*
 2. **Autres œuvres** : niveau ≤ seuil de la tolérance « autres œuvres » (aucun → `AUCUN` seulement ; léger → jusqu'à `LEGER` ; complet → tout).
 
 Conséquence voulue : en tolérance « aucun », un rebondissement de fin d'Acte 1 étiqueté `MAJEUR` reste voilé tant que tu es en Acte 1, et se lève dès que tu passes en Acte 2.
 
 ### 2.4 Affichage du contenu verrouillé
-- **Section ou paragraphe** : voile de brume avec « Acte 2 — révéler ? ». Révélation au toucher (la brume se dissipe sous le doigt, retour haptique), mémorisée par bloc, annulable (« re-voiler »), et un réglage « tout re-voiler ».
-- **Fiche dont le titre est verrouillé** : absente des listes et de la recherche. Les liens qui y mènent deviennent « une fiche de l'Acte 2 (masquée) ».
+- **Section ou paragraphe** : le **titre de la section est voilé avec son contenu** (un titre peut trahir autant qu'un paragraphe). Le voile affiche seulement « Section masquée — au-delà de votre progression », sans acte ni niveau de spoiler. Un réglage, désactivé par défaut, permet d'afficher l'acte concerné. Révélation au toucher (la brume se dissipe sous le doigt, retour haptique), mémorisée par bloc, annulable (« re-voiler »), et un réglage « tout re-voiler ».
+- **Fiche dont le titre est verrouillé** : absente des listes et de la recherche. Les liens qui y mènent deviennent « une fiche masquée », sans autre indication.
 - **Recherche** : les résultats verrouillés ne sont ni affichés ni comptés. Une ligne fixe, toujours présente quel que soit le résultat, propose « Chercher aussi dans le contenu masqué » : elle ne révèle donc pas l'existence d'un résultat caché.
 - **Anecdote du jour, widget, alertes** : choisies uniquement parmi le contenu visible.
 
@@ -123,8 +124,9 @@ Conséquence voulue : en tolérance « aucun », un rebondissement de fin d'Acte
 1. Tests unitaires exhaustifs de `SpoilerGate` : toutes les combinaisons acte du bloc × niveau BG3 × acte courant × tolérance BG3 × niveau autres œuvres × tolérance autres œuvres (5 × 3 × 5 × 3 × 3 × 3 = 2 025 cas) comparées à une table de vérité écrite à la main.
 2. Tests de la base : chaque bloc a une étiquette ; un titre ne peut pas être moins protégé que ses sections les plus sensibles qu'il résume ; une relation est au moins aussi protégée que ses deux extrémités.
 3. **Test de fuite global** (Robolectric + Compose) : pour chaque profil de référence (Prologue/aucun, Acte 1/aucun, Acte 2/léger…), on rend chaque fiche, liste et résultat de recherche, on collecte tout le texte de l'arbre sémantique et on vérifie qu'aucun texte d'un bloc verrouillé n'y figure.
-4. Recherche : chaque titre verrouillé, tapé tel quel, ne renvoie rien.
-5. Les mêmes tests s'appliqueront au widget en V2.
+4. Recherche : chaque titre verrouillé (fiche **et** section), tapé tel quel, ne renvoie rien.
+5. Voiles : aucun voile n'affiche le titre, l'acte ou le niveau du bloc qu'il cache (sauf réglage explicite).
+6. Les mêmes tests s'appliqueront au widget en V2.
 
 ## 3. Schéma de données
 
@@ -191,12 +193,12 @@ Chaque règle est implémentée à partir d'une page de bg3.wiki dont la révisi
 | Dons et améliorations | Niveaux d'obtention par classe (exceptions de certaines classes), effets structurés |
 | Classe d'armure estimée | Armures légère/intermédiaire/lourde, bouclier, Défense sans armure (barbare, moine), Armure de mage, Résilience draconique, style Défense, objets choisis |
 | DD et attaques | DD de sauvegarde des sorts, bonus d'attaque des sorts et des armes (finesse, maîtrise, enchantement) |
-| Jets de d20 | Avantage/désavantage, **réussites et échecs critiques selon le type de jet** (attaque, test de caractéristique et de dialogue, jet de sauvegarde), dés de bonus (Assistance, Inspiration bardique selon le niveau du barde, Bénédiction…), relances (Chanceux du halfelin, Inspiration), seuil de critique élargi (ex. Champion), effets éventuels de la difficulté (Explorateur, Équilibré, Tacticien, Honneur, Personnalisée) ; dés karmiques signalés comme non modélisables |
+| Jets de d20 | Avantage/désavantage, **réussites et échecs critiques selon le type de jet** (attaque, test de caractéristique et de dialogue, jet de sauvegarde), dés de bonus (Assistance, Inspiration bardique selon le niveau du barde, Bénédiction…), relances (Chanceux du halfelin, Inspiration), seuil de critique élargi (ex. Champion), effets éventuels de chaque mode de difficulté (noms VF à vérifier) ; dés karmiques signalés comme non modélisables |
 | Probabilités | Calcul **exact** par convolution des distributions (pas de simulation), vérifié par énumération exhaustive en test |
 
 Le **détail du calcul** de chaque statistique est un arbre de termes (`8 + 4 (maîtrise) + 5 (Intelligence 20) = 17`) produit par le moteur lui-même : l'affichage au toucher ne peut pas diverger du calcul.
 
-Partage de build : format binaire compact versionné → Base45 → QR (ZXing) ; même charge utile en code texte `CF1-…` copiable. Import : Google Code Scanner (sans permission caméra), collage du code, ou image choisie dans le sélecteur de photos (décodage ZXing).
+Partage de build : format binaire compact versionné → Base45 → QR (ZXing) ; même charge utile en code texte `CF1-…` copiable. Import : Google Code Scanner (sans permission caméra ; sa télémétrie ne peut rien envoyer puisque l'appli n'a pas INTERNET), collage du code, ou image choisie dans le sélecteur de photos (décodage ZXing, solution de repli toujours disponible).
 
 ## 6. Écrans (V1)
 
@@ -224,13 +226,13 @@ Objectifs en nombre de fiches. **Socle** = ce que la V1 doit contenir au minimum
 
 | Thème | Contenu | Socle | Cible |
 |---|---|---|---|
-| Panthéon | Divinités présentes ou évoquées dans BG3 (Shar, Selûne, Bhaal, Bane, Myrkul, Jergal, Mystra, Lathander, Tyr, Ilmater, Silvanus, Lolth, Gith comme figure fondatrice…), puissances apparentées (archidiables, Vlaakith) | 18 | 32 |
-| Cosmologie | Plan matériel et Toril, Astral, Gisombre, Féerie, plans élémentaires, Neuf Enfers et leurs strates (Avernus…), Abysses, Plan de la Fugue, demi-plans, Guerre sanglante | 10 | 16 + schéma |
+| Panthéon | Divinités présentes ou évoquées dans BG3 et puissances apparentées. La liste nominative est établie au lot L1 et étiquetée par acte ; elle n'est volontairement pas détaillée ici, certains noms étant eux-mêmes des indices | 18 | 32 |
+| Cosmologie | Plan matériel et Toril, plan Astral, Gisombre, Féerie, plans élémentaires, plans supérieurs et inférieurs (dont les Neuf Enfers et Avernus), Guerre sanglante | 10 | 16 + schéma |
 | Peuples | Races jouables et sous-races (origines, culture selon D&D, regard de BG3), autres peuples (githzerai, flagelleurs mentaux, myconides, kuo-toa, gobelins…) | 14 | 22 |
 | Bestiaire | Créatures croisées dans BG3 : écologie selon D&D, conseils de combat propres à BG3 | 20 | 45 |
-| Factions | Ménestrels, Poing enflammé, Zhentarim, Guilde, cultes, ordres religieux, githyanki de Vlaakith… | 10 | 18 |
+| Factions | Ménestrels, Poing enflammé, Zhentarim, ordres religieux, githyanki… (liste complète étiquetée par acte au lot L5) | 10 | 18 |
 | Lieux | Côte des Épées, la Porte de Baldur et ses quartiers, Chionthar, Outreterre, Château-Suif, Eauprofonde, Elturel… (+ carte) | 15 | 30 |
-| Personnages | Le volet « Dans l'univers de D&D » des compagnons et des grandes figures (Elminster, Volo, Minsc…), figures historiques | 14 | 30 |
+| Personnages | Le volet « Dans l'univers de D&D » des compagnons et des grandes figures des Royaumes, figures historiques (liste étiquetée par acte au lot L7) | 14 | 30 |
 | Objets légendaires | Artefacts et reliques dont le lore dépasse le jeu | 6 | 15 |
 | Chronologie | Événements datés en CV, des empires disparus (Netheril…) à 1492 CV, versions contradictoires présentées côte à côte | 40 | 80 |
 | Saga Baldur's Gate | Jeux précédents et extensions, aventures et romans liés, échos dans BG3 (réglage « autres œuvres » essentiel ici) | 8 | 14 |
@@ -252,7 +254,7 @@ Production : une fiche pilote par thème d'abord (revue indépendante du format,
 | Sorts | 100 % des sorts apprenables par une classe ou une sous-classe ; sorts d'objets ensuite |
 | Objets | 100 % des Rares, Très rares, Légendaires et des objets d'histoire ; Inhabituels notables ; le reste plus tard |
 | États, actions | 100 % des états courants et des actions de base et de classe |
-| Compagnons | 10 compagnons d'origine (recrutement, approbations, romance, quête) |
+| Compagnons | Les 10 compagnons recrutables, dont les 6 personnages d'origine (recrutement, approbations, romance quand elle existe, quête), chacun étiqueté par acte |
 | Progression | Quêtes principales, de compagnons et secondaires notables ; manquables ; trophées PS5 |
 | Noms VF | Taux de `VF_BG3` mesuré et affiché dans le rapport ; tout le reste badgé |
 
@@ -289,7 +291,8 @@ Chaque phase se termine par une **vérification indépendante** menée par des a
 | Pas d'émulateur (pas de KVM) ni d'appareil | Moyen | Tests JVM + Robolectric + Roborazzi ; `TEST_SUR_TELEPHONE.md` pour le démarrage à froid, le 120 Hz, l'haptique, les shaders, le lecteur de QR ; Baseline Profiles générés seulement si un appareil est branché |
 | Démarrage à froid < 1 s avec une base de plusieurs Mo | Moyen | Base non compressée dans l'APK, copie différée au premier lancement, ouverture paresseuse, Baseline Profile |
 | Coût GPU des shaders AGSL | Moyen | Budget strict (§ DA), un seul shader animé à l'écran, arrêt hors écran, rendu statique en mouvement réduit |
-| Bibliothèque Play services qui ajouterait INTERNET | Faible | Test du manifeste fusionné ; retrait par fusion de manifeste et justification dans DECISIONS.md si besoin |
+| Google Code Scanner apporte INTERNET, ACCESS_NETWORK_STATE et une télémétrie (`transport-backend-cct`) | Certain | Permissions retirées du manifeste fusionné (`tools:node="remove"`), test bloquant ; scanner testé hors ligne sur le téléphone ; repli ZXing via le sélecteur de photos (D-021) |
+| bg3.wiki n'a **pas de table Cargo** pour les classes, sous-classes, races, dons, historiques, quêtes, approbations et trophées | Moyen | Analyse du wikitexte et des modèles (plus fragile) pour les lots D1–D3, D7, D8 : instantanés de référence, tests de non-régression, échantillon vérifié à la main ; effort de ces lots revu à la hausse |
 | Material 3 Expressive non stable | Faible | Design system sur mesure ; migration quand 1.5.0 sera stable |
 | Évolution des politiques Larian/WotC | Faible | Mentions et contraintes centralisées dans `SOURCES.md` et l'écran Crédits |
 | API bg3.wiki modifiée ou limitée | Faible | Cache des réponses, instantanés reproductibles, débit limité |
@@ -298,8 +301,9 @@ Chaque phase se termine par une **vérification indépendante** menée par des a
 
 1. **Direction artistique** : A « Grimoire enluminé », B « Atlas céleste » ou C « Vitrail et sceaux » (ou un mélange précis) ? Voir `docs/DIRECTION_ARTISTIQUE.md` et `docs/design/`.
 2. **Validation du plan**, notamment des objectifs du codex (socle 220 fiches, cible 447).
-3. **Noms VF** : acceptes-tu de démarrer avec des badges « VF à confirmer » sur une partie des termes du jeu, que tu corriges en jouant ? As-tu, ou auras-tu, accès à une version PC du jeu dont on pourrait extraire uniquement les noms français ?
-4. **V2 — Archiviste** (à trancher avant la V2, sans effet sur la V1) : la politique de Larian interdit de « prompter » une IA générative avec sa propriété intellectuelle. Options : (a) archiviste limité au lore D&D/Royaumes (propriété de Wizards) ; (b) archiviste « extractif » qui retrouve et cite les passages de nos fiches sans générer de texte sur BG3 ; (c) renoncer. Ma recommandation : (b), éventuellement combinée à (a).
+3. **Tolérance « légère »** : je propose qu'elle montre, pour les actes futurs, uniquement le contenu sans aucune révélation (existence d'un objet, d'un lieu, d'un sort, utile pour préparer un build), et rien de l'intrigue. Alternative plus stricte : rien des actes futurs, la tolérance « légère » ne jouant que sur les indices de l'acte en cours. Laquelle préfères-tu ?
+4. **Noms VF** : acceptes-tu de démarrer avec des badges « VF à confirmer » sur une partie des termes du jeu, que tu corriges en jouant ? As-tu, ou auras-tu, accès à une version PC du jeu dont on pourrait extraire uniquement les noms français ?
+5. **V2 — Archiviste** (à trancher avant la V2, sans effet sur la V1) : la politique générale de Larian interdit de « prompter » une IA générative avec sa propriété intellectuelle. Pour BG3, ce sont formellement les *BG3 Fan Content Terms* qui s'appliquent, et ils ne reprennent pas cette clause ; mais l'intention de Larian est claire. Options : (a) archiviste limité au lore D&D/Royaumes (propriété de Wizards) ; (b) archiviste « extractif » qui retrouve et cite les passages de nos fiches sans générer de texte sur BG3 ; (c) renoncer. Ma recommandation : (b), éventuellement combinée à (a).
 
 ## 12. Idées supplémentaires (classées par valeur, puis effort)
 
@@ -307,6 +311,6 @@ Chaque phase se termine par une **vérification indépendante** menée par des a
 |---|---|---|---|
 | 1 | **« Je suis ici »** : choisir sa zone actuelle (en un appui depuis Ma partie) affiche tout ce qui la concerne et que tu peux voir : objets manquables, livres à ramasser, quêtes, lore du lieu | Élevée | Moyen |
 | 2 | **Déverrouillage fin « Déjà vu »** : marquer qu'on a rencontré un personnage, un lieu ou un livre lève son voile avant la fin de l'acte, ce qui réduit encore les spoilers à l'intérieur d'un acte | Élevée | Moyen |
-| 3 | **Chemins de lecture** : parcours de lore guidés (« Les dieux morts et revenus », « Netheril en dix fiches »), avec le fil d'Ariane des fiches lues | Élevée | Moyen |
+| 3 | **Chemins de lecture** : parcours de lore guidés (« Netheril en dix fiches », « La Côte des Épées en cinq lieux »), filtrés par ta progression, avec le fil d'Ariane des fiches lues | Élevée | Moyen |
 | 4 | **Bilan de session** : en quittant le mode session, résumé de ce qui a été coché, noté et lu pendant la partie | Moyenne | Faible |
 | 5 | **Lecture à voix haute hors ligne** des fiches de lore, avec la synthèse vocale du système (voix françaises du Pixel, sans réseau) | Moyenne | Faible |

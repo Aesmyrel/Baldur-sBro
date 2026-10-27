@@ -6,7 +6,7 @@
 
 ## 0. Ce qui vaut pour les trois directions
 
-- **La lisibilité d'abord** : texte courant ≥ 4,5:1 sur son fond, grands titres ≥ 3:1, mesurés pour chaque jeton de couleur (tableaux ci-dessous). Texte de lecture à 18 sp par défaut, interligne ~1,5, colonne de lecture plafonnée à ~38 em sur grand écran, taille réglable, police système jusqu'à 200 % sans troncature.
+- **La lisibilité d'abord** : tout jeton susceptible de porter du texte ≥ 4,5:1 sur **chacun** des fonds de son thème (fond, surface, surface surélevée, barre de navigation), y compris le texte posé sur un verre ou une pastille ; grands titres ≥ 3:1. Mesure complète et automatique : `python3 tools/design/contrast_check.py` → `docs/design/contrastes.md` (0 échec à ce jour). Les tableaux ci-dessous en reprennent l'essentiel. Texte de lecture à 18 sp par défaut, interligne ~1,5, colonne de lecture plafonnée à ~38 em sur grand écran, taille réglable, police système jusqu'à 200 % sans troncature.
 - **Material 3 comme socle technique** (accessibilité, gestes, composants, retour prédictif), **identité entièrement sur mesure** : nos propres jetons de couleur, de forme, de typographie et de mouvement ; aucun composant laissé avec son style par défaut.
 - **Ni imitation du jeu, ni élément du jeu** : aucune image, icône, police, couleur signature, cadre ou disposition de l'interface de BG3 ; aucun portrait de personnage (les compagnons sont des emblèmes et des sceaux symboliques) ; aucun logo Larian, Wizards ou D&D.
 - **Ergonomie en partie** : actions principales dans la zone du pouce (barre de navigation et recherche en bas à droite, cases à cocher dans la moitié basse), cibles ≥ 48 dp, une info en deux ou trois appuis.
@@ -44,6 +44,8 @@ La direction **A** garde la piste en la resserrant (aplats d'encre, grain à pei
 | Vert-de-gris — Builds | `#5CB89D` | `#256A57` | 7,6 / 5,1 |
 | Pourpre — Compagnons | `#CE72A6` | `#8E2E66` | 5,7 / 6,1 |
 | Orpiment — Progression ; or pâle — Partie ; sépia — Outils | | | |
+
+Valeurs mesurées contre la surface (sombre) ou le fond (clair) ; le minimum sur toutes les surfaces est dans `contrastes.md`.
 
 Feuille d'or : dégradé métallique `#F6E3A6 → #D8B260 → #9C7A2E → #E9CF86`, réservé aux surfaces ≥ 24 dp (lettrines, médaillons, bouton de recherche).
 

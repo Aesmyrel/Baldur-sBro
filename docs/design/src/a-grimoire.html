@@ -92,7 +92,7 @@
   .A .h2 span { font: 700 12px/1 "Alegreya Sans SC", sans-serif; letter-spacing: .18em; color: var(--gold); white-space: nowrap; }
   .A .h2 .rule { flex: 1; height: 1px; background: var(--line); }
   .A .h2 .ta { font: 700 10.5px/1 "Alegreya Sans SC", sans-serif; letter-spacing: .12em; color: var(--text2); }
-  .A .veil { position: relative; margin-top: 8px; border-radius: 4px; overflow: hidden; height: 112px; }
+  .A .veil { position: relative; margin-top: 8px; border-radius: 4px; overflow: hidden; height: 84px; }
   .A .veil .ghost { padding: 10px 2px; font-size: 18.5px; line-height: 1.5; color: var(--text); filter: blur(7px); opacity: .55; }
   .A .veil svg { position: absolute; inset: 0; }
   .A .veil .msg { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; gap: 6px; }
@@ -177,11 +177,11 @@
 
 <script>
 const PAL = {
-  dark:  { bg:"#120F0C", surface:"#1A1511", raised:"#231C16", line:"#3B3026", text:"#EEE4CD", text2:"#BCAD8F", muted:"#8C7E66",
+  dark:  { bg:"#120F0C", surface:"#1A1511", raised:"#231C16", line:"#3B3026", text:"#EEE4CD", text2:"#BCAD8F", muted:"#978A72",
            gold:"#D8B260", gold2:"#A9843A", lapis:"#7E9BE6", verm:"#E66A47", verd:"#5CB89D", orp:"#E3B544", tyr:"#CE72A6",
            navbg:"#15110D", candle:"rgba(226,170,92,.10)", grain:".55" },
   light: { bg:"#EFE5CC", surface:"#F6EEDA", raised:"#FBF6EA", line:"#D9C9A4", text:"#2B2016", text2:"#5B4A35", muted:"#6F5E47",
-           gold:"#7A5814", gold2:"#A9843A", lapis:"#2F51A8", verm:"#B03A1C", verd:"#256A57", orp:"#8F6A10", tyr:"#8E2E66",
+           gold:"#7A5814", gold2:"#A9843A", lapis:"#2F51A8", verm:"#B03A1C", verd:"#256A57", orp:"#7D5C0C", tyr:"#8E2E66",
            navbg:"#F4EBD3", candle:"rgba(255,236,190,.35)", grain:".8" }
 };
 
@@ -246,10 +246,9 @@ function engraving(p, s, w = 412, h = 236) {
     <path d="M96 112 l6 10 l-4 4 M244 118 l7 9 l-5 3 M318 116 l6 8" stroke="${p.gold}" stroke-width=".6" fill="none"/>
     <path d="M200 184 Q258 146 330 152 Q382 157 412 170 V252 H200Z" fill="${p.bg}"/>
     <path d="M200 184 Q258 146 330 152 Q382 157 412 170 V252 H200Z" fill="url(#d${s})" stroke="${p.gold}" stroke-width=".8"/>
-    <path d="M288 154 L290 104 L286 104 L286 95 L292 95 L292 99 L297 99 L297 92 L303 92 L303 100 L306 97 L307 108 L310 111 L311 154Z" fill="${p.bg}"/>
-    <path d="M288 154 L290 104 L286 104 L286 95 L292 95 L292 99 L297 99 L297 92 L303 92 L303 100 L306 97 L307 108 L310 111 L311 154Z" fill="url(#x${s})" stroke="${p.gold}" stroke-width=".9" stroke-linejoin="round"/>
-    <rect x="296" y="114" width="3" height="9" rx="1.5" fill="${p.bg}" stroke="${p.gold}" stroke-width=".7"/>
-    <rect x="296" y="132" width="3" height="7" rx="1.5" fill="${p.bg}" stroke="${p.gold}" stroke-width=".7"/>
+    <path d="M280 154 V116 Q280 99 298 97 Q306 97 311 101 L306 107 Q300 105 296 107 Q289 110 289 118 V154Z M305 154 V126 L309 121 L314 124 L313 132 V154Z" fill="${p.bg}"/>
+    <path d="M280 154 V116 Q280 99 298 97 Q306 97 311 101 L306 107 Q300 105 296 107 Q289 110 289 118 V154Z M305 154 V126 L309 121 L314 124 L313 132 V154Z" fill="url(#x${s})" stroke="${p.gold}" stroke-width=".9" stroke-linejoin="round"/>
+    <path d="M276 154 h42 M284 128 h5 M284 140 h5 M305 140 h8" stroke="${p.gold}" stroke-width=".7"/>
     <path d="M150 252 C170 232 200 226 214 214 C230 202 256 206 268 200 L282 200 C268 210 246 214 232 224 C214 238 200 240 196 252Z" fill="${p.bg}" stroke="${p.gold}" stroke-width=".7"/>
     ${water}
     ${trees}
@@ -323,7 +322,7 @@ function home(el) {
     <div class="party">
       ${[["guerrier", "Lae'zel", "Guerrière"], ["magicien", "Gale", "Magicien"], ["roublard", "Astarion", "Roublard"], ["barbare", "Karlach", "Barbare"]].map(([e, n, c]) => `<div>${medallion(p, s, e, 50)}<div class="nm">${n}</div><div class="cl">${c}</div></div>`).join("")}
     </div>
-    <div class="fact"><div class="label">Le saviez-vous&#8239;?</div><p>Les githyanki ont été imaginés par l'écrivain Charles Stross&#8239;; ils sont entrés dans le <i>Fiend Folio</i> en 1981.</p></div>
+    <div class="fact"><div class="label">Le saviez-vous&#8239;?</div><p>Imaginés par l'écrivain Charles Stross, les githyanki sont apparus en 1979 dans le magazine <i>White Dwarf</i>, puis dans le <i>Fiend Folio</i> en 1981.</p></div>
   </div>
   ${nav(p, "partie")}${grain(s)}${gestureBar(p.text2)}`;
 }
@@ -377,17 +376,17 @@ function lore(el) {
       <div><h1>Githyanki</h1><div class="vo">VO <i>githyanki</i> — peuple guerrier de la mer Astrale</div></div>
       ${sword(p, s)}
     </div>
-    <div class="badges"><span class="badge dnd">Canon D&amp;D · multi-éditions</span><span class="badge">7 min de lecture</span></div>
+    <div class="badges"><span class="badge dnd">Canon D&amp;D · 2e et 5e</span><span class="badge">7 min de lecture</span></div>
     <div class="body">
       <div class="h2"><span>Général</span><i class="rule"></i></div>
       <p>${lettrine(p, s, "P")}euple guerrier de l'Astral, les githyanki descendent d'un peuple réduit en esclavage par les flagelleurs mentaux. Menés par Gith, leur libératrice, ils se sont soulevés et ont brisé l'empire illithid.<sup>1</sup></p>
-      <p>Après la révolte, un schisme opposa les fidèles de Gith, partisans d'une guerre sans fin, à ceux de Zerthimon, qui devinrent les githzerai.<sup>1</sup></p>
-      <div class="h2"><span>Dans BG3</span><i class="rule"></i><span class="ta">Acte I · canon BG3</span></div>
-      <p>Lae'zel, guerrière githyanki, compte parmi les toutes premières rencontres de l'aventure&#8239;; d'autres githyanki croiseront votre route.<sup>2</sup></p>
-      <div class="h2"><span>La reine-liche</span><i class="rule"></i><span class="ta">Acte III · spoiler</span></div>
-      <div class="veil"><div class="ghost">Texte voilé : son contenu n'est pas chargé tant que la section reste masquée par votre réglage.</div>${mist(p, s, 112)}
-        <div class="msg"><b>Spoiler majeur · Acte III</b><span>Effleurer pour dissiper la brume</span></div></div>
-      <div class="refs"><div class="h2"><span>Références</span><i class="rule"></i></div><ol><li><i>Mordenkainen's Tome of Foes</i> — D&amp;D 5e, 2018, chap. 4</li><li><i>Baldur's Gate 3</i> — Larian Studios, 2023, Acte I</li></ol></div>
+      <p>Après la révolte, un schisme opposa les fidèles de Gith, partisans d'une guerre sans fin, à ceux de Zerthimon, qui devinrent les githzerai.<sup>1, 2</sup></p>
+      <div class="h2"><span>Dans BG3</span><i class="rule"></i><span class="ta">Prologue · canon BG3</span></div>
+      <p>Lae'zel, guerrière githyanki, compte parmi les toutes premières rencontres de l'aventure&#8239;; d'autres githyanki croiseront votre route.<sup>3</sup></p>
+      <div class="h2"><span style="color:var(--text2)">Section masquée</span><i class="rule"></i></div>
+      <div class="veil">${mist(p, s, 84)}
+        <div class="msg"><b>Au-delà de votre progression</b><span>Effleurer pour dissiper la brume</span></div></div>
+      <div class="refs"><div class="h2"><span>Références</span><i class="rule"></i></div><ol><li><i>Mordenkainen's Tome of Foes</i> — D&amp;D 5e, 2018, chap. 4</li><li><i>A Guide to the Astral Plane</i> — 2e, 1996 · via Wikipédia</li><li><i>Baldur's Gate 3</i> — Larian Studios, 2023, prologue</li></ol></div>
     </div>
   </div>
   <div class="thread"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M3 12 C7 4 11 20 15 12 S21 8 21 8" fill="none" stroke="${p.gold}" stroke-width="1.6" stroke-linecap="round"/><circle cx="3" cy="12" r="2" fill="${p.gold}"/></svg>Tirer le fil <em>· Gith, githzerai, Astral…</em></div>
@@ -429,7 +428,7 @@ function build(el) {
     <div class="row"><div>Guerrier, niveau 2<div class="f">gain fixe 6 + Constitution 3</div></div><div class="r">9</div></div>
     <div class="row"><div>Magicien, niveaux 1 à 10<div class="f">10 × (gain fixe 4 + Constitution 3)</div></div><div class="r">70</div></div>
     <div class="row tot"><div>Total</div><div class="r" style="color:${p.gold}">92</div></div>
-    <div class="src">Règle de calcul sourcée : bg3.wiki, «&#8239;Hit Points&#8239;» (révision notée dans le code).</div>
+    <div class="src">Source&#8239;: bg3.wiki, «&#8239;Hit points&#8239;», révision 425339 du 13/09/2026. Valeurs illustratives en phase 0.</div>
   </div>
   ${grain(s)}${gestureBar(p.text2)}`;
 }

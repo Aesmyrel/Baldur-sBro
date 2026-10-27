@@ -32,14 +32,24 @@ Format : numéro, date, décision, raison. Les décisions marquées « à confir
 
 **D-014 — Ton de l'interface.** Vouvoiement, phrases courtes, verbes à l'infinitif pour les actions (« Révéler », « Tirer le fil »).
 
-**D-015 — Une seule permission prévue : `VIBRATE`.** Nécessaire aux compositions haptiques du lanceur de dés ; c'est une permission normale accordée à l'installation, sans rapport avec le réseau.
+**D-015 — Une seule permission conservée : `VIBRATE`.** Nécessaire aux compositions haptiques du lanceur de dés ; c'est une permission normale accordée à l'installation, sans rapport avec le réseau. Les permissions apportées par des bibliothèques sont retirées (voir D-021).
 
 **D-016 — Maquettes en HTML/SVG rendues par Chromium.** Elles prouvent que chaque style se construit en vectoriel et en code. Écrans rendus à l'échelle ×2 (824 × 1836 px) pour limiter le poids du dépôt (~16 Mo pour `docs/design/`).
 
-**D-017 — Contenus des maquettes.** Les textes de lore des maquettes (githyanki) sont exacts et référencés, mais les intitulés d'objectifs et de difficulté sont des exemples : leur VF exacte sera validée avec les données.
+**D-017 — Contenus des maquettes.** Les textes de lore des maquettes (githyanki) sont exacts et référencés (vérifiés par la revue indépendante ; l'une des références est marquée « via Wikipédia » car le livre n'a pas été consulté directement). Les intitulés d'objectifs et de difficulté sont des exemples dont la VF sera validée avec les données. Les valeurs du build (points de vie, achat de points, emplacements, niveaux des dons) sont **illustratives** : elles ont été recoupées à la main avec bg3.wiki, « Hit points », révision 425339 du 13/09/2026, mais ne viennent pas encore du moteur de règles, qui les recalculera avec ses tests.
 
 **D-018 — Version du jeu visée.** Patch 8 et tous les correctifs jusqu'à la mise à jour du 29/09/2026 (build 4.1.1.7631656, la plus récente d'après les notes de version de bg3.wiki ; le dernier correctif numéroté sur le site officiel est le #36 du 26/03/2026). Revérifié avant chaque import.
 
-**D-019 — V2 « Archiviste » mise en garde.** La politique de Larian interdit de « prompter » une IA générative avec sa propriété intellectuelle : la conception de l'archiviste sera tranchée avec toi avant la V2 (options dans `PLAN.md` §11). Aucun effet sur la V1.
+**D-019 — V2 « Archiviste » mise en garde.** La politique générale de Larian interdit de « prompter » une IA générative avec sa propriété intellectuelle. Formellement, le contenu BG3 relève des *BG3 Fan Content Terms*, qui n'ont pas cette clause, mais l'intention de Larian est claire : la conception de l'archiviste sera tranchée avec toi avant la V2 (options dans `PLAN.md` §11). Aucun effet sur la V1.
 
-**D-020 — Contrastes du thème clair.** Les accents clairs des trois maquettes ont été assombris pour atteindre au moins 4,5:1 (mesures dans `DIRECTION_ARTISTIQUE.md`).
+**D-020 — Contrastes mesurés automatiquement.** `tools/design/contrast_check.py` mesure chaque jeton de texte contre tous les fonds de son thème, plus le texte posé sur verre ou pastille ; résultat dans `docs/design/contrastes.md` (0 échec). Plusieurs jetons ont été corrigés après la revue indépendante (accents clairs, `muted` sur surface surélevée, verre saphir sous texte blanc).
+
+**D-021 — Google Code Scanner sans INTERNET.** Le brief demande Google Code Scanner, mais sa dépendance `transport-backend-cct` (télémétrie ML Kit) déclare INTERNET et ACCESS_NETWORK_STATE. Choix : garder le scanner (il fonctionne via Google Play services, qui télécharge et exécute le module dans son propre processus) et **retirer ces deux permissions du manifeste fusionné** (`tools:node="remove"`), contrôlé par un test bloquant. Sans INTERNET, la télémétrie embarquée ne peut rien envoyer. À vérifier sur le téléphone : le scanner fonctionne hors permission réseau (ajouté à la future liste `TEST_SUR_TELEPHONE.md`). Repli toujours disponible : import d'une image par le sélecteur de photos (décodage ZXing) et collage du code texte.
+
+**D-022 — Voiles de spoiler muets.** Un voile n'affiche ni le titre, ni l'acte, ni le niveau de ce qu'il cache (« Section masquée — au-delà de votre progression ») : un titre de section, ou même l'acte d'un passage caché sur un sujet donné, suffit à laisser deviner un rebondissement. Afficher l'acte reste possible par un réglage désactivé par défaut. Les liens vers une fiche masquée deviennent « une fiche masquée ».
+
+**D-023 — Documents eux aussi sans spoiler.** Les documents du projet, les maquettes et les messages de commit que tu lis ne citent pas de noms ou d'événements qui trahissent l'intrigue au-delà du début de l'Acte I ; les listes nominatives sensibles (panthéon, personnages) vivent dans les données, étiquetées par acte. Corrections faites dans `PLAN.md` après la revue (listes du codex, idée « chemins de lecture », en-têtes d'acte : la tour a été remplacée par une ruine générique).
+
+**D-024 — Licences Fandom confirmées.** L'API `siteinfo` du Forgotten Realms Wiki, de « Le Monde des Royaumes Oubliés » et de l'« Encyclopédie Baldur's Gate » renvoie « CC-BY-SA » (27/10/2026). Ces wikis restent des références, sans reprise de texte.
+
+**D-025 — SRD 5.2.1 FR en vocabulaire seulement.** Le SRD impose sa propre mention et interdit toute autre attribution à Wizards, ce qui entre en conflit avec la mention de la politique de contenu de fans. On ne reproduit donc aucun texte du SRD : on n'en tire que des correspondances de termes, ce qui ne demande pas d'attribution.

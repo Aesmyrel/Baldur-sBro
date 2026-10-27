@@ -13,8 +13,8 @@ Appli Android native, personnelle et non commerciale, compagnon de Baldur's Gate
 Phase 0 terminée : **en attente du choix de direction artistique et de la validation du plan par l'utilisateur. Ne pas écrire de code d'appli avant.**
 
 ## Règles non négociables
-1. **Zéro spoiler par défaut.** Tout bloc affichable porte un `SpoilerTag` (acte, niveau BG3 `AUCUN`/`LEGER`/`MAJEUR`, niveau « autres œuvres »). Le filtrage passe **toujours** par `SpoilerGate` (fonction pure, `core:model`) dans les dépôts : un écran ne reçoit jamais de contenu verrouillé. Le verrou s'applique partout : fiches, listes, recherche, liens, anecdote, alertes, widget. Une info qui laisse deviner un rebondissement est au moins `LEGER`. Tout nouveau type de contenu ajoute ses cas aux tests de fuite.
-2. **Hors ligne.** Aucune permission INTERNET, aucun tracker, aucune analytics, aucune pub. Jamais de requête réseau à l'exécution. Une dépendance qui ajouterait INTERNET au manifeste fusionné doit être retirée ou justifiée dans `docs/DECISIONS.md`. Seule permission prévue : `VIBRATE`.
+1. **Zéro spoiler par défaut.** Tout bloc affichable porte un `SpoilerTag` (acte, niveau BG3 `AUCUN`/`LEGER`/`MAJEUR`, niveau « autres œuvres »). Le filtrage passe **toujours** par `SpoilerGate` (fonction pure, `core:model`) dans les dépôts : un écran ne reçoit jamais de contenu verrouillé. Le verrou s'applique partout : fiches, listes, recherche, liens, anecdote, alertes, widget. Une info qui laisse deviner un rebondissement est au moins `LEGER`. Tout nouveau type de contenu ajoute ses cas aux tests de fuite. Un voile ne montre ni le titre, ni l'acte, ni le niveau de ce qu'il cache. **Les documents, maquettes et messages de commit sont eux aussi sans spoiler** (pas de nom ni d'événement qui trahisse l'intrigue au-delà du début de l'Acte I).
+2. **Hors ligne.** Aucune permission INTERNET, aucun tracker, aucune analytics, aucune pub. Jamais de requête réseau à l'exécution. Une dépendance qui ajouterait INTERNET au manifeste fusionné doit être retirée ou justifiée dans `docs/DECISIONS.md`. Seule permission conservée : `VIBRATE`. Google Code Scanner apporte INTERNET et ACCESS_NETWORK_STATE (télémétrie `transport-backend-cct`) : elles sont retirées du manifeste fusionné (`tools:node="remove"`) et un test bloquant le vérifie (D-021).
 3. **Règles de BG3, pas de D&D papier.** Chaque règle de `core:rules` cite sa source (page bg3.wiki + identifiant de révision) en commentaire et dans `DECISIONS.md`, et a ses tests. **Aucune valeur de règle écrite de mémoire.**
 4. **Exactitude avant quantité. N'invente jamais rien.** Champ inconnu → vide + signalé. Chaque paragraphe de lore a ≥ 1 référence, une nature (`CANON_BG3`, `CANON_DND`, `INTERPRETATION`) et une édition quand le lore a varié. Versions contradictoires → groupe de variantes présenté sans trancher. Théories de fans exclues (ou clairement signalées comme telles).
 5. **Droits.**
@@ -47,6 +47,7 @@ Environnement : SDK Android installé localement dans `.android-sdk/` (non versi
 Maquettes (phase 0) :
 - `python3 tools/design/fetch_fonts.py` — polices OFL dans `tools/design/.fonts/`
 - `node tools/design/render_mockups.js` — planches et écrans dans `docs/design/`
+- `python3 tools/design/contrast_check.py` — contrastes de tous les jetons → `docs/design/contrastes.md`
 
 Prévues dès la phase 1 (à mettre à jour quand elles existent) :
 - `./gradlew check` — lint, tests unitaires, vérification des captures
