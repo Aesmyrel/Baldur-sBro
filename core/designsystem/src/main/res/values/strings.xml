@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ds_veil_title">Section masquée</string>
+    <string name="ds_veil_message">Au-delà de votre progression</string>
+    <string name="ds_veil_message_act">Au-delà de votre progression · %1$s</string>
+    <string name="ds_veil_hint">Effleurer pour dissiper la brume</string>
+    <string name="ds_veil_a11y">Contenu masqué, au-delà de votre progression. Toucher deux fois pour le révéler.</string>
+    <string name="ds_search">Rechercher</string>
+    <string name="ds_back">Retour</string>
+    <string name="ds_checked">Fait</string>
+    <string name="ds_unchecked">À faire</string>
+    <string name="ds_thread">Tirer le fil</string>
+</resources>
