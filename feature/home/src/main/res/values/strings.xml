@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_label">Ma partie · %1$s</string>
+    <string name="home_session">Session</string>
+    <string name="home_session_on">Session · écran allumé</string>
+    <string name="home_shortcuts">Carnet de route</string>
+    <string name="home_progress">Progression</string>
+    <string name="home_progress_meta">Quêtes, lieux, manquables et trophées</string>
+    <string name="home_companions">Compagnons</string>
+    <string name="home_companions_meta">Recrutement, approbations, romances</string>
+    <string name="home_notes">Notes</string>
+    <string name="home_notes_meta">Vos notes, rattachées à un acte ou une fiche</string>
+    <string name="home_settings">Réglages</string>
+    <string name="home_settings_meta">Progression, spoilers, apparence, données</string>
+</resources>

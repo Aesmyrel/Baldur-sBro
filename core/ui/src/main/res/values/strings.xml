@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="act_prologue">Prologue</string>
+    <string name="act_1">Acte I</string>
+    <string name="act_2">Acte II</string>
+    <string name="act_3">Acte III</string>
+    <string name="act_epilogue">Épilogue</string>
+    <string name="act_prologue_short">Pr</string>
+    <string name="act_1_short">I</string>
+    <string name="act_2_short">II</string>
+    <string name="act_3_short">III</string>
+    <string name="act_epilogue_short">Ép</string>
+    <!-- Libellés des modes de difficulté : VF à confirmer en jeu (D-030). -->
+    <string name="difficulty_explorer">Explorateur</string>
+    <string name="difficulty_balanced">Équilibré</string>
+    <string name="difficulty_tactician">Tacticien</string>
+    <string name="difficulty_honour">Honneur</string>
+    <string name="difficulty_custom">Personnalisé</string>
+    <string name="tolerance_none">Aucun</string>
+    <string name="tolerance_light">Léger</string>
+    <string name="tolerance_full">Complet</string>
+    <string name="in_progress_title">En cours de rédaction</string>
+    <string name="in_progress_body">Cette partie du carnet arrive avec les prochaines étapes du projet.</string>
+</resources>

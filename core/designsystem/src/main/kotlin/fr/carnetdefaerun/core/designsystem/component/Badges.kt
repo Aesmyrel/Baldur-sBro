@@ -12,7 +12,7 @@ import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 
 /** Étiquette compacte bordée (acte, catégorie, « Manquable »). */
 @Composable
-fun Tag(text: String, color: Color = CarnetTheme.colors.text2, modifier: Modifier = Modifier) {
+fun Tag(text: String, modifier: Modifier = Modifier, color: Color = CarnetTheme.colors.text2) {
     Text(
         text,
         style = CarnetTheme.type.labelSmall,
@@ -35,5 +35,5 @@ fun CanonBadge(text: String, kind: CanonKind, modifier: Modifier = Modifier) {
         CanonKind.INTERPRETATION -> c.tyrian
         CanonKind.NEUTRE -> c.text2
     }
-    Tag(text, color, modifier)
+    Tag(text, modifier, color)
 }

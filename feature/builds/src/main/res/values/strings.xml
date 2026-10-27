@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="builds_crumb">Builds</string>
+    <string name="builds_title">Vos builds</string>
+</resources>

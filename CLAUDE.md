@@ -42,19 +42,20 @@ Phase 0 validée : **direction artistique A « Grimoire enluminé »** (charte :
 - Les commentaires suivent la densité du code environnant ; une règle BG3 porte toujours sa source.
 
 ## Commandes
-Environnement : SDK Android installé localement dans `.android-sdk/` (non versionné). Dans un nouveau conteneur : `bash tools/setup_android_sdk.sh`, puis `export ANDROID_HOME=$PWD/.android-sdk`. Java 21. Pas de KVM ici : **pas d'émulateur** ; la vérification passe par les tests JVM, Robolectric et Roborazzi.
+Environnement : SDK Android installé localement dans `.android-sdk/` (non versionné). Dans un nouveau conteneur : `bash tools/setup_android_sdk.sh`. Avant toute commande Gradle : `export ANDROID_HOME=$PWD/.android-sdk LC_ALL=C.UTF-8 LANG=C.UTF-8` (les noms de tests sont accentués : sans locale UTF-8, le compilateur échoue). Java 21. Le miroir Google de Maven Central est déclaré en premier dépôt (erreurs 429 sur Maven Central). Pas de KVM ici : **pas d'émulateur** ; la vérification passe par les tests JVM, Robolectric et Roborazzi.
 
 Maquettes (phase 0) :
 - `python3 tools/design/fetch_fonts.py` — polices OFL dans `tools/design/.fonts/`
 - `node tools/design/render_mockups.js` — planches et écrans dans `docs/design/`
 - `python3 tools/design/contrast_check.py` — contrastes de tous les jetons → `docs/design/contrastes.md`
 
-Prévues dès la phase 1 (à mettre à jour quand elles existent) :
-- `./gradlew check` — lint, tests unitaires, vérification des captures
+Appli :
+- `./gradlew check` — lint (aucun avertissement toléré), tests unitaires, vérification des captures, contrôle bloquant des permissions du manifeste fusionné (`verifyReleasePermissions`)
+- `python3 tools/lint_typographie.py [--fix]` — typographie française des chaînes (espaces fines insécables)
 - `./gradlew testDebugUnitTest` — tests JVM (règles, verrou anti-spoiler, recherche)
-- `./gradlew recordRoborazziDebug` / `verifyRoborazziDebug` — captures (sombre, parchemin, police 200 %, pliable)
+- `./gradlew recordRoborazziDebug` / `verifyRoborazziDebug` — captures (sombre, OLED, parchemin, police 200 %, pliable) dans `*/src/test/screenshots/` ; Robolectric tourne en SDK 36 (`robolectric.properties`)
 - `./gradlew :tools:pipeline:run --args="all"` — pipeline de données (fetch → normalize → validate → build-db)
-- `./gradlew :app:assembleRelease` — APK signé (clé locale hors dépôt, voir `docs/INSTALLER.md`)
+- `./gradlew :app:assembleRelease` — APK release R8 (arm64) ; signé si `keystore.properties` existe à la racine (clé locale hors dépôt, voir `docs/INSTALLER.md`), sinon non signé
 
 ## Méthode
 - Un commit Git par étape cohérente, message clair en français ; **jamais de réécriture d'historique** ; travail sur la branche désignée de la session.

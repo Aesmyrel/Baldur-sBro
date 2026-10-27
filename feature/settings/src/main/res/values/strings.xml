@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_crumb">Carnet · Réglages</string>
+    <string name="settings_title">Réglages</string>
+    <string name="settings_progress">Progression</string>
+    <string name="settings_act">Acte en cours</string>
+    <string name="settings_difficulty">Difficulté</string>
+    <string name="settings_spoilers">Spoilers</string>
+    <string name="settings_tolerance">Tolérance aux spoilers de BG3</string>
+    <string name="settings_tolerance_help_none">Rien au-delà de votre progression ; les indices de l\'acte en cours restent voilés.</string>
+    <string name="settings_tolerance_help_light">Indices de l\'acte en cours visibles ; des actes à venir, seulement ce qui ne révèle rien (un objet, un lieu, un sort).</string>
+    <string name="settings_tolerance_help_full">Tout est visible.</string>
+    <string name="settings_other_works">Spoilers des autres œuvres</string>
+    <string name="settings_other_works_help">Jeux précédents, romans, aventures.</string>
+    <string name="settings_show_act">Indiquer l\'acte des contenus masqués</string>
+    <string name="settings_show_act_help">Par défaut, un voile ne dit rien de ce qu\'il cache.</string>
+    <string name="settings_appearance">Apparence</string>
+    <string name="settings_theme_dark">Sombre</string>
+    <string name="settings_theme_oled">Noir OLED</string>
+    <string name="settings_theme_parchment">Parchemin</string>
+    <string name="settings_reading_size">Taille du texte de lecture</string>
+    <string name="settings_reading_sample">Les githyanki chevauchent la mer Astrale.</string>
+    <string name="settings_reduce_motion">Réduire les animations</string>
+    <string name="settings_reduce_motion_help">Automatique aussi quand le téléphone supprime les animations ou économise la batterie.</string>
+    <string name="settings_session">Session de jeu</string>
+    <string name="settings_keep_screen_on">Écran toujours allumé</string>
+    <string name="settings_keep_screen_on_help">Tant que le mode session est actif.</string>
+    <string name="settings_about">À propos</string>
+    <string name="settings_credits">Crédits et licences</string>
+    <string name="settings_credits_meta">Sources, licences, polices, mentions</string>
+
+    <string name="credits_crumb">Réglages · Crédits</string>
+    <string name="credits_title">Crédits et licences</string>
+    <string name="credits_notice_title">Contenu de fan non officiel</string>
+    <string name="credits_notice">Carnet de Faerûn est un contenu de fan non officiel, pour un usage personnel et non commercial. Il n\'est ni commandé, ni sponsorisé, ni approuvé par Larian Studios ni par Wizards of the Coast.</string>
+    <string name="credits_wotc_title">Mention de Wizards of the Coast</string>
+    <string name="credits_wotc_vo">Carnet de Faerûn is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</string>
+    <string name="credits_wotc_vf">Carnet de Faerûn est un contenu de fan non officiel autorisé par la Politique des contenus de fans. Il n\'est ni approuvé ni soutenu par Wizards. Une partie des éléments utilisés est la propriété de Wizards of the Coast. ©Wizards of the Coast LLC.</string>
+    <string name="credits_marks">Baldur\'s Gate, Dungeons &amp; Dragons, Forgotten Realms et Faerûn sont des marques de Wizards of the Coast. Baldur\'s Gate 3 est développé et édité par Larian Studios. Aucun logo, aucune image, aucune police, aucune musique ni aucun texte du jeu n\'est utilisé : les illustrations sont originales et dessinées en code.</string>
+    <string name="credits_data_title">Données</string>
+    <string name="credits_data">Les données de jeu proviennent de bg3.wiki (contributeurs de bg3.wiki), sous licence CC BY-NC-SA 4.0 ; chaque fiche indique sa page source. Les données dérivées sont redistribuées sous la même licence. Les textes du codex sont rédigés pour ce carnet, avec leurs références.</string>
+    <string name="credits_fonts_title">Polices</string>
+    <string name="credits_fonts_intro">Polices sous licence SIL Open Font License 1.1 :</string>
+    <string name="credits_code_title">Code</string>
+    <string name="credits_code">Kotlin, Jetpack Compose, Material 3, AndroidX, Hilt (Dagger), Room, DataStore, kotlinx.serialization, ZXing : licence Apache 2.0.</string>
+</resources>

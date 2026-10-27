@@ -36,11 +36,11 @@ import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 
 /** Caractéristique : abréviation, valeur, modificateur en or. */
 @Composable
-fun AbilityTile(key: String, value: Int, modifier: String, highlighted: Boolean, a11y: String, modifierBox: Modifier = Modifier) {
+fun AbilityTile(key: String, value: Int, modifierText: String, highlighted: Boolean, a11y: String, modifier: Modifier = Modifier) {
     val c = CarnetTheme.colors
     val shape = RoundedCornerShape(CarnetTheme.dimens.radius)
     Column(
-        modifierBox
+        modifier
             .clip(shape)
             .background(if (highlighted) Brush.verticalGradient(listOf(c.gold.copy(alpha = 0.14f), c.surface)) else Brush.verticalGradient(listOf(c.surface, c.surface)))
             .border(1.dp, if (highlighted) c.goldDeep else c.line, shape)
@@ -50,7 +50,7 @@ fun AbilityTile(key: String, value: Int, modifier: String, highlighted: Boolean,
     ) {
         Text(key, style = CarnetTheme.type.labelSmall, color = c.text2)
         Text(value.toString(), style = CarnetTheme.type.numeric, color = c.text, modifier = Modifier.padding(top = 4.dp))
-        Text(modifier, style = CarnetTheme.type.dataSmall, color = c.gold)
+        Text(modifierText, style = CarnetTheme.type.dataSmall, color = c.gold)
     }
 }
 

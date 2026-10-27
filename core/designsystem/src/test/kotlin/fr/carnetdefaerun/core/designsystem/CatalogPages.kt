@@ -157,7 +157,7 @@ fun CatalogBuild() {
             SectionHeader("Caractéristiques", actionLabel = "Achat 27 / 27", onAction = {})
             Row(Modifier.padding(horizontal = 18.dp), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 listOf(Triple("For", 8, "−1"), Triple("Dex", 15, "+2"), Triple("Con", 16, "+3"), Triple("Int", 20, "+5"), Triple("Sag", 10, "+0"), Triple("Cha", 8, "−1")).forEach { (k, v, m) ->
-                    AbilityTile(k, v, m, highlighted = k == "Int", a11y = "$k $v, modificateur $m", modifierBox = Modifier.weight(1f))
+                    AbilityTile(k, v, m, highlighted = k == "Int", a11y = "$k $v, modificateur $m", modifier = Modifier.weight(1f))
                 }
             }
             SectionHeader("Statistiques dérivées", Modifier.padding(top = 8.dp))
@@ -199,7 +199,7 @@ fun CatalogControls() {
             GoldButton("Exporter", {}); QuietButton("Importer", {})
         }
         Row(Modifier.padding(horizontal = 24.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            Tag("Acte I", c.gold); Tag("Manquable", c.vermilion); CanonBadge("Canon BG3", CanonKind.BG3); CanonBadge("Interprétation", CanonKind.INTERPRETATION)
+            Tag("Acte I", color = c.gold); Tag("Manquable", color = c.vermilion); CanonBadge("Canon BG3", CanonKind.BG3); CanonBadge("Interprétation", CanonKind.INTERPRETATION)
         }
         FactCard("Le saviez-vous ?", "Imaginés par l'écrivain Charles Stross, les githyanki sont apparus en 1979 dans le magazine White Dwarf, puis dans le Fiend Folio en 1981.", Modifier.padding(horizontal = 18.dp))
     }

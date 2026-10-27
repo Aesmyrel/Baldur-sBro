@@ -108,7 +108,7 @@ fun ObjectiveRow(
                 )
                 Text(meta, style = CarnetTheme.type.dataSmall, color = CarnetTheme.colors.text2, modifier = Modifier.padding(top = 2.dp))
             }
-            if (tag != null) Tag(tag, tagColor)
+            if (tag != null) Tag(tag, color = tagColor)
         }
         if (showDivider) HorizontalDivider(color = CarnetTheme.colors.line, thickness = 1.dp)
     }

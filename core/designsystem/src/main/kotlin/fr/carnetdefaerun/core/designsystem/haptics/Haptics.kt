@@ -1,5 +1,6 @@
 package fr.carnetdefaerun.core.designsystem.haptics
 
+import android.os.Build
 import android.view.HapticFeedbackConstants
 import android.view.View
 import androidx.compose.runtime.Composable
@@ -18,7 +19,9 @@ class CarnetHaptics(private val view: View) {
     fun reject() = view.performHapticFeedback(HapticFeedbackConstants.REJECT)
 
     /** Cran d'un sélecteur, changement d'acte. */
-    fun tick() = view.performHapticFeedback(HapticFeedbackConstants.SEGMENT_TICK)
+    fun tick() = view.performHapticFeedback(
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) HapticFeedbackConstants.SEGMENT_TICK else HapticFeedbackConstants.CLOCK_TICK,
+    )
 
     /** Début d'un geste (brume qu'on commence à dissiper). */
     fun gestureStart() = view.performHapticFeedback(HapticFeedbackConstants.GESTURE_START)

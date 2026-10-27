@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Écran de démarrage : encre et médaillon, puis le thème de l'appli (tout le reste est en Compose). -->
+    <style name="Theme.Carnet.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/carnet_ink</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.Carnet</item>
+    </style>
+    <style name="Theme.Carnet" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/carnet_ink</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

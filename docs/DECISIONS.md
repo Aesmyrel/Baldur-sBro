@@ -63,3 +63,21 @@ Format : numéro, date, décision, raison. Les décisions marquées « à confir
 **D-028 — Tolérance « légère »** (l'utilisateur m'a laissé trancher) : pour les actes futurs, seul le contenu étiqueté `AUCUN` est visible (existence d'un objet, d'un lieu, d'un sort), jamais l'intrigue ; pour l'acte courant, les indices `LEGER` sont visibles. Réglage par défaut de l'appli : tolérance « aucun ».
 
 **D-029 — Noms VF** : démarrage avec les statuts et badges prévus (`SOURCES.md` §4) ; correction en un appui dans l'appli. Aucune extraction depuis les fichiers du jeu.
+
+## Phase 1 (27/10/2026)
+
+**D-030 — Libellés des difficultés à confirmer.** « Explorateur », « Équilibré », « Tacticien », « Honneur », « Personnalisé » sont affichés en attendant une vérification dans la VF du jeu (correction prévue dans l'appli).
+
+**D-031 — Tests sur JVM : Robolectric en SDK 36.** Robolectric 4.17 ne gère pas encore le SDK 37 ; les tests d'interface et les captures tournent en SDK 36 (`robolectric.properties`), l'appli reste compilée et ciblée en 37. Robolectric télécharge ses images Android via le miroir de Maven Central, et la JVM de test reçoit `--add-exports java.base/jdk.internal.access` (exigence de Robolectric sous Java 21).
+
+**D-032 — Locale UTF-8 pour Gradle.** Les noms de tests sont écrits en français, accents compris ; le conteneur doit tourner avec `LC_ALL=C.UTF-8` (consigné dans CLAUDE.md).
+
+**D-033 — Navigation : une pile par onglet, persistée.** `NavigationState` (Kotlin pur, testé) garde une pile par onglet ; toucher l'onglet courant ramène à sa racine ; à la racine d'un onglet, « retour » ramène à « Ma partie », puis quitte. L'état est enregistré dans DataStore à chaque changement et relu avant la fin de l'écran de démarrage.
+
+**D-034 — Préférences en un document JSON dans DataStore.** Un seul objet `UserPreferences` sérialisé : ajout de champs sans migration (valeurs par défaut), champs inconnus ignorés.
+
+**D-035 — Mode session = écran allumé.** Le bouton « Session » de Ma partie et le réglage correspondant pilotent `keepScreenOn` sur la vue racine (aucune permission).
+
+**D-036 — Lint sans avertissement.** Les avertissements sont corrigés plutôt qu'ignorés ; seule exception : `ChromeOsAbiSupport` (APK volontairement arm64).
+
+**D-037 — Icône adaptative provisoire.** Médaillon d'or, plume et étoile sur fond d'encre, avec version monochrome ; elle sera retravaillée au lot « illustrations ».

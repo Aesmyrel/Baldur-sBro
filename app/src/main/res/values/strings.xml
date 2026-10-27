@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Carnet de Faerûn</string>
+    <string name="nav_partie">Partie</string>
+    <string name="nav_grimoire">Grimoire</string>
+    <string name="nav_codex">Codex</string>
+    <string name="nav_builds">Builds</string>
+    <string name="nav_outils">Outils</string>
+    <string name="nav_rechercher">Rechercher</string>
 </resources>
