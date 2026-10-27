@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Direction C — Vitrail et sceaux</title>
+<link rel="stylesheet" href="common.css">
+<script src="common.js"></script>
+<style>
+  body { color: #F3EEE6; background: #030203; }
+  .board { background: radial-gradient(1100px 700px at 50% 0%, #241a2e 0%, #030203 70%); }
+  .board-name { font-family: "Grenze Gotisch", serif; font-weight: 700; color: #F2C66E; font-size: 64px; }
+  .board-pitch { font-family: "Spectral", serif; font-size: 18px; }
+
+  .C { background: var(--bg); color: var(--text); font-family: "Spectral", serif; }
+  .C .label { font: 700 11px/1 "Manrope", sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--amber); }
+  .C .content { position: relative; z-index: 2; }
+  .C .win { position: relative; height: 214px; }
+  .C .win > svg { position: absolute; inset: 0; }
+  .C .titlerow { display: grid; grid-template-columns: 1fr 92px; gap: 12px; align-items: center; padding: 8px 24px 0 24px; }
+  .C .titlerow h1 { font: 700 54px/0.95 "Grenze Gotisch", serif; letter-spacing: .005em; }
+  .C .num { font-family: "Grenze", serif; font-weight: 800; }
+  .C .titlerow .sub { display: flex; gap: 10px; align-items: center; margin-top: 8px; }
+  .C .session { display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 12px; border-radius: 16px; border: 1.5px solid var(--lead2); background: var(--surface);
+    font: 600 12.5px/1 "Manrope", sans-serif; color: var(--text); white-space: nowrap; }
+  .C .lancets { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin: 14px 24px 0; }
+  .C .lancet { display: grid; justify-items: center; gap: 6px; font: 700 10.5px/1 "Manrope", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .C .lancet.on { color: var(--amber); }
+  .C .alert { margin: 14px 18px 0; display: grid; grid-template-columns: 14px 1fr; border-radius: 10px; overflow: hidden; border: 1.5px solid var(--lead2); background: var(--surface); }
+  .C .alert .glass { background: linear-gradient(180deg, #FFD27A, var(--amber) 40%, #B86E10); box-shadow: inset -1.5px 0 0 var(--lead); }
+  .C .alert .in { padding: 12px 14px; }
+  .C .alert .t { font: 800 12px/1 "Manrope", sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--amber); margin-bottom: 6px; }
+  .C .alert p { font-size: 16.5px; line-height: 1.32; }
+  .C .alert a { display: inline-block; margin-top: 6px; font: 700 13.5px/1 "Manrope", sans-serif; color: var(--text); text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 3px; }
+  .C .sect { display: flex; align-items: center; gap: 10px; margin: 18px 24px 4px; }
+  .C .sect .ln { flex: 1; height: 2px; background: var(--lead2); border-radius: 1px; }
+  .C .sect .more { font: 600 12.5px/1 "Manrope", sans-serif; color: var(--text2); }
+  .C .obj { display: grid; grid-template-columns: 30px 1fr auto; gap: 12px; align-items: center; margin: 0 18px; min-height: 54px; padding: 4px 6px; border-bottom: 1.5px solid var(--line); }
+  .C .obj:last-child { border-bottom: none; }
+  .C .obj .n { font-size: 17px; line-height: 1.2; }
+  .C .obj .m { font: 500 12.5px/1.2 "Manrope", sans-serif; color: var(--text2); margin-top: 3px; }
+  .C .obj .tag { font: 800 10px/1 "Manrope", sans-serif; letter-spacing: .12em; text-transform: uppercase; padding: 6px 8px; border-radius: 6px; color: #120E14; }
+  .C .seals { display: grid; grid-template-columns: repeat(4, 1fr); margin: 6px 14px 0; text-align: center; }
+  .C .seals .nm { font: 600 15px/1.1 "Spectral", serif; margin-top: 4px; }
+  .C .seals .cl { font: 500 11.5px/1.1 "Manrope", sans-serif; color: var(--text2); margin-top: 2px; }
+  .C .nav { position: absolute; left: 0; right: 0; bottom: 0; height: 86px; z-index: 30; padding: 10px 10px 22px 2px; display: grid; grid-template-columns: repeat(5, 1fr) 66px; align-items: start;
+    background: var(--navbg); border-top: 2px solid var(--lead2); }
+  .C .nav .it { display: grid; justify-items: center; gap: 4px; font: 600 11.5px/1 "Manrope", sans-serif; color: var(--muted); }
+  .C .nav .it.on { color: var(--text); }
+  .C .gem { justify-self: end; width: 56px; height: 56px; margin-top: -4px; }
+
+  .C .topbar { display: flex; align-items: center; height: 56px; margin-top: 34px; padding: 0 8px; }
+  .C .ib { width: 48px; height: 48px; display: grid; place-items: center; }
+  .C .crumb { flex: 1; font: 700 11px/1 "Manrope", sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--text2); }
+  .C .lhead { display: grid; grid-template-columns: 1fr 96px; gap: 10px; padding: 4px 24px 0; align-items: end; }
+  .C .lhead h1 { font: 700 50px/1 "Grenze Gotisch", serif; }
+  .C .lhead .vo { font: italic 400 16.5px/1.3 "Spectral", serif; color: var(--text2); margin-top: 6px; }
+  .C .chips { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .C .chip { font: 700 10px/1 "Manrope", sans-serif; letter-spacing: .08em; text-transform: uppercase; padding: 7px 8px; border-radius: 6px; border: 1.5px solid var(--lead2); color: var(--text2); }
+  .C .chip.dnd { border-color: var(--sapphire); color: var(--sapphire); }
+  .C .body { padding: 0 24px; font-size: 18px; line-height: 1.5; }
+  .C .body p { margin-top: 8px; }
+  .C .h2 { display: flex; align-items: center; gap: 9px; margin: 18px 0 0; clear: both; }
+  .C .h2 .nm { font: 800 11.5px/1 "Manrope", sans-serif; letter-spacing: .18em; text-transform: uppercase; white-space: nowrap; }
+  .C .h2 .ln { flex: 1; height: 2px; background: var(--lead2); border-radius: 1px; }
+  .C .h2 .ta { font: 600 10.5px/1 "Manrope", sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--text2); }
+  .C .init { float: left; width: 70px; height: 70px; margin: 6px 12px 0 0; }
+  .C sup { font: 800 10.5px/1 "Manrope", sans-serif; color: var(--amber); margin-left: 1px; }
+  .C .veil { position: relative; margin-top: 8px; height: 112px; border-radius: 10px; overflow: hidden; }
+  .C .veil svg { position: absolute; inset: 0; }
+  .C .veil .msg { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; gap: 7px; }
+  .C .veil .msg b { font: 800 11.5px/1 "Manrope", sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--frostText); }
+  .C .veil .msg span { font: italic 500 17px/1 "Spectral", serif; color: var(--frostText); }
+  .C .refs ol { margin: 6px 0 0 20px; font: 400 14.5px/1.45 "Spectral", serif; color: var(--text2); }
+  .C .refs li::marker { font: 800 12px "Manrope", sans-serif; color: var(--amber); }
+  .C .thread { position: absolute; left: 50%; transform: translateX(-50%); bottom: 24px; z-index: 30; display: flex; align-items: center; gap: 10px; height: 50px; padding: 0 20px 0 12px; border-radius: 25px; white-space: nowrap;
+    background: var(--raised); border: 2px solid var(--lead2); box-shadow: 0 10px 30px rgba(0,0,0,.5); font: 700 14px/1 "Manrope", sans-serif; color: var(--text); }
+  .C .thread em { font-style: normal; color: var(--amber); }
+
+  .C .bname { padding: 0 24px; font: 700 36px/1.05 "Grenze Gotisch", serif; }
+  .C .bsub { padding: 6px 24px 0; font: 500 13.5px/1.35 "Manrope", sans-serif; color: var(--text2); }
+  .C .strip { margin: 14px 16px 0; height: 66px; }
+  .C .shields { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin: 6px 16px 0; }
+  .C .shield { position: relative; height: 78px; }
+  .C .shield svg { position: absolute; inset: 0; }
+  .C .shield .tx { position: absolute; inset: 0; display: grid; justify-items: center; align-content: start; padding-top: 9px; }
+  .C .shield .k { font: 800 9.5px/1 "Manrope", sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--onGlass2); }
+  .C .shield .v { font: 800 23px/1.05 "Manrope", sans-serif; color: var(--onGlass); margin-top: 3px; font-variant-numeric: tabular-nums; }
+  .C .shield .m { font: 700 11.5px/1 "Manrope", sans-serif; color: var(--onGlass2); margin-top: 1px; }
+  .C .panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 12px 18px 0; border: 2px solid var(--lead2); border-radius: 10px; overflow: hidden; background: var(--surface); }
+  .C .pn { padding: 9px 12px; border-right: 2px solid var(--lead2); border-bottom: 2px solid var(--lead2); }
+  .C .pn:nth-child(3n) { border-right: none; }
+  .C .pn:nth-child(n+4) { border-bottom: none; }
+  .C .pn .k { font: 700 10px/1.2 "Manrope", sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--text2); }
+  .C .pn .v { font: 800 29px/1 "Manrope", sans-serif; margin-top: 5px; font-variant-numeric: tabular-nums; }
+  .C .pn.sel { background: color-mix(in srgb, var(--emerald) 16%, var(--surface)); box-shadow: inset 0 0 0 2px var(--emerald); }
+  .C .sheet { position: absolute; left: 0; right: 0; bottom: 0; z-index: 35; padding: 8px 22px 26px; border-radius: 18px 18px 0 0; background: var(--raised); border-top: 2px solid var(--lead2); box-shadow: 0 -20px 50px rgba(0,0,0,.55); }
+  .C .sheet .grab { width: 36px; height: 4px; border-radius: 2px; background: var(--lead2); margin: 0 auto 12px; }
+  .C .sheet h3 { display: flex; justify-content: space-between; align-items: baseline; font: 700 26px/1 "Grenze Gotisch", serif; }
+  .C .sheet h3 b { font: 800 32px/1 "Manrope", sans-serif; color: var(--emerald); }
+  .C .glassbar { display: flex; height: 22px; margin: 12px 0 4px; border: 2px solid var(--lead); border-radius: 6px; overflow: hidden; background: var(--lead); gap: 2px; }
+  .C .glassbar i { display: block; }
+  .C .row { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 7px 0; border-bottom: 1.5px solid var(--line); font: 400 16.5px/1.25 "Spectral", serif; }
+  .C .row .f { font: 500 13px/1.3 "Manrope", sans-serif; color: var(--text2); }
+  .C .row .r { font: 800 19px/1 "Manrope", sans-serif; font-variant-numeric: tabular-nums; }
+  .C .src { margin-top: 10px; font: 500 12.5px/1.4 "Manrope", sans-serif; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="board">
+  <div class="board-head">
+    <div>
+      <div class="board-title">Direction C</div>
+      <div class="board-name">Vitrail et sceaux</div>
+      <div class="board-pitch">Le carnet comme une verrière de cathédrale contemporaine : plombs d'un noir absolu (idéal sur OLED), verres de joaillerie qui laissent passer la lumière, réseaux gothiques et sceaux de cire. Graphique, lumineux, coloré ; chaque progression s'allume comme une rosace.</div>
+    </div>
+    <div class="board-meta">
+      <div class="swatches">
+        <div class="swatch" style="background:#050406"><span>Plomb</span></div>
+        <div class="swatch" style="background:#F3EEE6"><span>Lumière</span></div>
+        <div class="swatch" style="background:linear-gradient(160deg,#FFD27A,#F2AB3C 45%,#B86E10)"><span>Ambre<br>Partie</span></div>
+        <div class="swatch" style="background:linear-gradient(160deg,#FF8A98,#E24A5E 45%,#A1203A)"><span>Rubis<br>Grimoire</span></div>
+        <div class="swatch" style="background:linear-gradient(160deg,#9BB8FF,#4F80F2 45%,#2546A8)"><span>Saphir<br>Codex</span></div>
+        <div class="swatch" style="background:linear-gradient(160deg,#7FE3B4,#36B57D 45%,#167049)"><span>Émeraude<br>Builds</span></div>
+        <div class="swatch" style="background:linear-gradient(160deg,#D3B2FF,#A66EF2 45%,#6430B5)"><span>Améthyste<br>Outils</span></div>
+      </div>
+      <div class="type-spec">
+        <div><small>Titres</small><span style="font:700 34px/1 'Grenze Gotisch',serif">Grenze Gotisch</span></div>
+        <div><small>Lecture</small><span style="font:400 20px/1 'Spectral',serif">Spectral, conçue pour l'écran</span></div>
+        <div><small>Données</small><span style="font:700 17px/1 'Manrope',sans-serif">Manrope · DD 17 · +9</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="phones">
+    <div class="phone-wrap"><div class="screen C" data-name="ma-partie" data-slot="home" data-theme="dark"></div><div class="phone-cap">Ma partie</div></div>
+    <div class="phone-wrap"><div class="screen C" data-name="fiche-lore" data-slot="lore" data-theme="dark"></div><div class="phone-cap">Fiche de lore</div></div>
+    <div class="phone-wrap"><div class="screen C" data-name="builds" data-slot="build" data-theme="dark"></div><div class="phone-cap">Planificateur de builds</div></div>
+    <div class="phone-wrap"><div class="screen C" data-name="fiche-lore-parchemin" data-slot="lore" data-theme="light"></div><div class="phone-cap">Fiche de lore · thème clair « pierre et lumière »</div></div>
+  </div>
+  <div class="board-foot">Maquettes de phase 0 — verres, plombs, givre et sceaux générés en code (SVG). Contenus de démonstration : les noms VF du jeu restent à valider. Polices SIL OFL.</div>
+</div>
+
+<script>
+const GLASS = {
+  ruby: ["#FF8A98", "#E24A5E", "#A1203A"], sapphire: ["#9BB8FF", "#4F80F2", "#2546A8"], emerald: ["#7FE3B4", "#36B57D", "#167049"],
+  amber: ["#FFD27A", "#F2AB3C", "#B86E10"], amethyst: ["#D3B2FF", "#A66EF2", "#6430B5"], turquoise: ["#8DF0EA", "#2FC6C1", "#127C79"],
+  rose: ["#FFB3CE", "#F27DA8", "#B03E6A"], night: ["#3E4C8C", "#1E2A5E", "#0F1638"], moon: ["#FFF6D8", "#FFE29A", "#E0B35A"],
+  forest: ["#3FA36F", "#1D6A45", "#0E3D27"], earth: ["#B48552", "#7A5130", "#43291A"]
+};
+const PAL = {
+  dark:  { bg:"#050406", surface:"#0F0D12", raised:"#18151D", line:"#221E28", lead:"#000000", lead2:"#2E2836", leadHi:"#4A4253", text:"#F3EEE6", text2:"#BAB1A7", muted:"#867D88",
+           ruby:"#F0607A", sapphire:"#7FA2FF", emerald:"#4CCB91", amber:"#F2B04C", amethyst:"#B88AF7", turquoise:"#40D0CB", rose:"#F58DB4",
+           navbg:"#070609", onGlass:"#FFFFFF", onGlass2:"rgba(255,255,255,.82)", frostText:"#1C1922", light: 1 },
+  light: { bg:"#ECE6DB", surface:"#F5F1EA", raised:"#FFFFFF", line:"#D8CFC1", lead:"#2B2630", lead2:"#3A3440", leadHi:"#6A6170", text:"#1E1A22", text2:"#4E4652", muted:"#645B66",
+           ruby:"#B3243A", sapphire:"#2A57C4", emerald:"#17704A", amber:"#8A5508", amethyst:"#6E3BBC", turquoise:"#117D79", rose:"#A83463",
+           navbg:"#E6DFD2", onGlass:"#FFFFFF", onGlass2:"rgba(255,255,255,.88)", frostText:"#1C1922", light: 0 }
+};
+const vars = p => Object.entries(p).map(([k, v]) => `--${k}:${v}`).join(";");
+const dark = p => p === PAL.dark;
+
+function defs(p, s) {
+  const g = Object.entries(GLASS).map(([k, [a, b, c]]) => `<radialGradient id="g${s}${k}" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="${a}"/><stop offset=".5" stop-color="${b}"/><stop offset="1" stop-color="${c}"/></radialGradient>`).join("");
+  return `<defs>${g}
+    <filter id="tex${s}" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .22 0" result="w"/><feComposite in="w" in2="SourceGraphic" operator="in"/><feBlend in2="SourceGraphic" mode="soft-light"/></filter>
+    <filter id="frost${s}" x="0" y="0" width="100%" height="100%"><feTurbulence type="turbulence" baseFrequency=".06 .09" numOctaves="3" seed="8"/><feColorMatrix values="0 0 0 0 .93  0 0 0 0 .95  0 0 0 0 1  0 0 0 -1.4 1.25"/></filter>
+    <filter id="glow${s}" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+    <radialGradient id="wax${s}" cx=".4" cy=".35" r=".75"><stop offset="0" stop-color="#E8606A"/><stop offset=".6" stop-color="#B02838"/><stop offset="1" stop-color="#6E1220"/></radialGradient>
+  </defs>`;
+}
+// Un verre : polygone rempli d'un dégradé, plomb noir, filet de lumière intérieur.
+function pane(d, s, glass, lead, w = 3) {
+  return `<path d="${d}" fill="url(#g${s}${glass})" filter="url(#tex${s})"/><path d="${d}" fill="none" stroke="${lead}" stroke-width="${w}" stroke-linejoin="round"/>`;
+}
+
+function windowAct1(p, s) {
+  const L = "#000", W = 412, H = 214;
+  const arch = `M14 ${H} V96 Q14 44 206 34 Q398 44 398 96 V${H}Z`;
+  const mx = 300, my = 86, mr = 24;
+  // Ciel : rayons partant de la lune.
+  const rays = [];
+  const pts = [[14, 96], [14, 150], [70, 40], [140, 34], [206, 34], [270, 36], [340, 42], [398, 96], [398, 150]];
+  let sky = "";
+  const ring = [];
+  for (let i = 0; i < 24; i++) { const a = i / 24 * Math.PI * 2; ring.push([mx + Math.cos(a) * (mr + 4), my + Math.sin(a) * (mr + 4)]); }
+  const far = (a, r) => [mx + Math.cos(a) * r, my + Math.sin(a) * r];
+  const rr = rng(3);
+  const P2 = ([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`;
+  for (let i = 0; i < 24; i++) {
+    const a0 = i / 24 * Math.PI * 2, a1 = (i + 1) / 24 * Math.PI * 2;
+    const m1 = 52 + rr() * 26, m2 = 130 + rr() * 60;
+    const q = [ring[i], ring[(i + 1) % 24], far(a1, m1), far(a0, m1), far(a1, m2), far(a0, m2), far(a1, 460), far(a0, 460)];
+    const band = (A, B, C, D) => `M${P2(A)} L${P2(B)} L${P2(C)} L${P2(D)}Z`;
+    const g = ["sapphire", "night", "night", "sapphire", "night", "amethyst"];
+    sky += pane(band(q[0], q[1], q[2], q[3]), s, i % 2 ? "sapphire" : "night", L, 2.2)
+      + pane(band(q[3], q[2], q[4], q[5]), s, g[(i * 5) % 6], L, 2.2)
+      + pane(band(q[5], q[4], q[6], q[7]), s, g[(i * 7 + 2) % 6], L, 2.2);
+  }
+  const hills = pane("M0 150 L60 128 L110 140 L170 118 L230 136 L290 122 L350 136 L412 126 V214 H0Z", s, "emerald", L, 3)
+    + pane("M0 168 Q80 150 150 172 Q170 190 176 214 H0Z", s, "forest", L, 3)
+    + pane("M220 166 Q300 140 412 158 V214 H220Z", s, "forest", L, 3);
+  const tower = pane("M286 158 L288 108 L284 108 L284 98 L291 98 L291 103 L297 103 L297 96 L304 96 L304 104 L308 100 L309 158Z", s, "amethyst", L, 2.6)
+    + `<path d="M295 118 v10 M295 136 v8" stroke="${L}" stroke-width="3" stroke-linecap="round"/>`;
+  const river = pane("M150 214 C170 196 200 192 218 182 C236 172 262 174 276 168 L292 168 C276 180 250 184 236 194 C220 206 206 208 200 214Z", s, "turquoise", L, 2.6);
+  let trees = "";
+  for (let i = 0; i < 7; i++) { const x = 18 + i * 19, b = 176 + (i % 2) * 6, h = 34 + (i % 3) * 8; trees += pane(`M${x - 9} ${b} L${x} ${b - h} L${x + 9} ${b}Z`, s, "forest", L, 2.4); }
+  const moon = pane(`M${mx} ${my - mr} A${mr} ${mr} 0 1 1 ${mx - .1} ${my - mr}Z`, s, "moon", L, 3);
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${defs(p, s)}
+    <rect width="${W}" height="${H}" fill="${p.bg}"/>
+    <clipPath id="arch${s}"><path d="${arch}"/></clipPath>
+    <g clip-path="url(#arch${s})">${sky}${moon}${hills}${trees}${river}${tower}<circle cx="${mx}" cy="${my}" r="46" fill="${GLASS.moon[0]}" opacity=".22" filter="url(#glow${s})"/></g>
+    <path d="${arch}" fill="none" stroke="${p.lead2}" stroke-width="7"/><path d="${arch}" fill="none" stroke="${L}" stroke-width="4"/>
+    <path d="${arch}" fill="none" stroke="${p.leadHi}" stroke-width=".8" transform="translate(0 -2.5)" opacity=".6"/>
+  </svg>`;
+}
+
+function rose(p, s, lit = 5) {
+  const cx = 46, cy = 46, R = 44, n = 12;
+  let out = `<circle cx="${cx}" cy="${cy}" r="${R}" fill="${p.lead}"/>`;
+  const cols = ["amber", "ruby", "sapphire", "emerald", "amethyst", "turquoise"];
+  for (let i = 0; i < n; i++) {
+    const a0 = (i / n) * Math.PI * 2 - Math.PI / 2, a1 = ((i + 1) / n) * Math.PI * 2 - Math.PI / 2, am = (a0 + a1) / 2;
+    const r0 = 15, r1 = R - 3;
+    const P = (a, r) => `${(cx + Math.cos(a) * r).toFixed(1)} ${(cy + Math.sin(a) * r).toFixed(1)}`;
+    const d = `M${P(a0 + .05, r0)} L${P(a0 + .03, r1 - 8)} Q${P(am, r1 + 4)} ${P(a1 - .03, r1 - 8)} L${P(a1 - .05, r0)}Z`;
+    out += i < lit ? pane(d, s, cols[i % cols.length], "#000", 2) : `<path d="${d}" fill="${p.raised}" stroke="#000" stroke-width="2"/>`;
+  }
+  out += pane(`M${cx} ${cy - 13} A13 13 0 1 1 ${cx - .1} ${cy - 13}Z`, s, "amber", "#000", 2.4);
+  return `<svg width="92" height="92" viewBox="0 0 92 92">${out}<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${p.lead2}" stroke-width="2"/>
+    <text x="${cx}" y="${cy + 4.5}" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="12" fill="#2A1A04">42</text></svg>`;
+}
+
+function lancet(p, s, state, glass) {
+  const d = "M4 60 V26 Q4 6 23 2 Q42 6 42 26 V60Z";
+  const inner = state === "off" ? `<path d="${d}" fill="${p.raised}"/>`
+    : `<g opacity="${state === "past" ? .55 : 1}">${pane("M4 60 V26 Q4 6 23 2 L23 60Z", s, glass, "#000", 2)}${pane("M23 2 Q42 6 42 26 V60 L23 60Z", s, glass === "amber" ? "ruby" : glass, "#000", 2)}${pane("M4 40 H42 V60 H4Z", s, "sapphire", "#000", 2)}</g>`;
+  return `<svg width="46" height="62" viewBox="0 0 46 62">${state === "now" ? `<path d="${d}" fill="${GLASS.amber[1]}" opacity=".5" filter="url(#glow${s})"/>` : ""}${inner}
+    <path d="${d}" fill="none" stroke="${state === "now" ? p.amber : p.lead2}" stroke-width="${state === "now" ? 2.4 : 2}"/></svg>`;
+}
+
+const EMB = {
+  guerrier: `<path d="M16 4 L18 6 V20 L16 22 L14 20 V6Z M9 20 H23 M16 22 V27 M13.5 28 h5"/>`,
+  magicien: `<path d="M5 22 Q11 19 16 22 Q21 19 27 22 V26 Q21 23 16 26 Q11 23 5 26Z M16 6 L18 11 L23 12 L18 14 L16 19 L14 14 L9 12 L14 11Z"/>`,
+  roublard: `<path d="M8 25 L20 9 L24 6 L23 10 L11 26Z M7 21 L13 27"/>`,
+  barbare: `<path d="M16 5 V29 M16 8 Q8 6 6 12 Q8 18 16 15 M16 8 Q24 6 26 12 Q24 18 16 15"/>`
+};
+function seal(p, s, emb, col, size = 52) {
+  const r = rng(emb.length * 7);
+  let edge = ""; for (let i = 0; i <= 24; i++) { const a = i / 24 * Math.PI * 2, rr = 23 + r() * 2.6; edge += `${i ? "L" : "M"}${(26 + Math.cos(a) * rr).toFixed(1)} ${(26 + Math.sin(a) * rr).toFixed(1)}`; }
+  const [a, b, c] = GLASS[col];
+  return `<svg width="${size}" height="${size}" viewBox="0 0 52 52"><defs><radialGradient id="w${s}${emb}" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="${a}"/><stop offset=".55" stop-color="${b}"/><stop offset="1" stop-color="${c}"/></radialGradient></defs>
+    <path d="${edge}Z" fill="url(#w${s}${emb})"/><circle cx="26" cy="26" r="17" fill="none" stroke="${c}" stroke-width="1.6" opacity=".9"/><circle cx="26" cy="26" r="17" fill="none" stroke="#fff" stroke-width=".6" opacity=".35" transform="translate(-.6 -.6)"/>
+    <g transform="translate(10 10)" fill="none" stroke="${c}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">${EMB[emb]}</g>
+    <g transform="translate(9.4 9.4)" fill="none" stroke="#fff" stroke-width=".7" opacity=".45" stroke-linejoin="round">${EMB[emb]}</g></svg>`;
+}
+function quatrefoil(p) {
+  return `<svg width="28" height="28" viewBox="0 0 28 28"><path d="M14 3 a5.5 5.5 0 0 1 5.5 5.5 a5.5 5.5 0 0 1 0 11 a5.5 5.5 0 0 1 -11 0 a5.5 5.5 0 0 1 0 -11 A5.5 5.5 0 0 1 14 3Z" fill="none" stroke="${p.leadHi}" stroke-width="1.8"/></svg>`;
+}
+function navIcon(k, c, fill) {
+  const I = {
+    partie: `<path d="M5 21 V10 Q5 4 12 3 Q19 4 19 10 V21Z" fill="${fill || "none"}" stroke="${c}" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 3 V21 M5 13 H19" stroke="${c}" stroke-width="1.3"/>`,
+    grimoire: `<rect x="5" y="3.5" width="14" height="17" rx="1.5" fill="none" stroke="${c}" stroke-width="1.6"/><path d="M8 3.5 V20.5" stroke="${c}" stroke-width="1.3"/>`,
+    codex: `<path d="M3.5 6 Q8 4 12 6 Q16 4 20.5 6 V19.5 Q16 17.5 12 19.5 Q8 17.5 3.5 19.5Z M12 6 V19.5" fill="none" stroke="${c}" stroke-width="1.6" stroke-linejoin="round"/>`,
+    builds: `<path d="M12 3 L20 6 V12 Q20 18 12 21 Q4 18 4 12 V6Z" fill="none" stroke="${c}" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 3 V21 M4 10 H20" stroke="${c}" stroke-width="1.2"/>`,
+    outils: `<path d="M12 2.5 L20.5 7.5 V16.5 L12 21.5 L3.5 16.5 V7.5Z" fill="none" stroke="${c}" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 7 L16 14 H8Z" fill="none" stroke="${c}" stroke-width="1.2"/>`
+  };
+  return `<svg width="26" height="26" viewBox="0 0 24 24">${I[k]}</svg>`;
+}
+function nav(p, s, on) {
+  const items = [["partie", "Partie", "amber"], ["grimoire", "Grimoire", "ruby"], ["codex", "Codex", "sapphire"], ["builds", "Builds", "emerald"], ["outils", "Outils", "amethyst"]];
+  return `<div class="nav">${items.map(([k, l, g]) => `<div class="it ${k === on ? "on" : ""}">${k === on
+      ? `<svg width="40" height="30" viewBox="0 0 40 30"><path d="M6 29 V14 Q6 3 20 1 Q34 3 34 14 V29Z" fill="url(#g${s}${g})" stroke="#000" stroke-width="2"/><g transform="translate(8 3)">${navIcon(k, "#1A1012")}</g></svg>`
+      : `<svg width="40" height="30" viewBox="0 0 40 30"><g transform="translate(8 3)">${navIcon(k, p.muted)}</g></svg>`}<span>${l}</span></div>`).join("")}
+    <svg class="gem" viewBox="0 0 56 56">${pane("M28 3 L50 15 V41 L28 53 L6 41 V15Z", s, "amber", "#000", 2.4)}<path d="M28 3 L28 53 M6 15 L50 41 M50 15 L6 41" stroke="#000" stroke-width="1.4" opacity=".5"/>
+      <circle cx="26" cy="26" r="8.5" fill="none" stroke="#1A1012" stroke-width="2.6"/><path d="M32 32 L38.5 38.5" stroke="#1A1012" stroke-width="3" stroke-linecap="round"/></svg></div>`;
+}
+
+function home(el) {
+  const p = PAL[el.dataset.theme], s = "h" + (dark(p) ? "d" : "l");
+  el.style.cssText = vars(p);
+  return `${statusBar(p.text)}<div class="content">
+    <div class="win" style="margin-top:22px">${windowAct1(p, s)}</div>
+    <div class="titlerow"><div><div class="label">Ma partie · Équilibré</div><h1 style="margin-top:6px">Acte <span class="num">I</span></h1>
+      <div class="sub"><span class="session"><svg width="12" height="16" viewBox="0 0 12 16" style="flex:none"><path d="M6 1 q3.5 3.5 0 6.5 q-3.5 -3 0 -6.5Z" fill="${p.amber}"/><rect x="3" y="8.5" width="6" height="6.5" rx="1" fill="none" stroke="${p.amber}" stroke-width="1.4"/></svg>Session</span></div></div>
+      ${rose(p, s)}</div>
+    <div class="lancets">
+      ${[["past", "Prol.", "emerald"], ["now", "Acte I", "amber"], ["off", "Acte II"], ["off", "Acte III"], ["off", "Épil."]].map(([st, l, g]) => `<div class="lancet ${st === "now" ? "on" : ""}">${lancet(p, s, st, g)}<span>${l}</span></div>`).join("")}
+    </div>
+    <div class="alert"><div class="glass"></div><div class="in"><div class="t">Point de non-retour</div><p>Avant de passer à l'Acte II, 6 éléments deviendront manquables.</p><a>Voir la liste</a></div></div>
+    <div class="sect"><span class="label">Prochains objectifs</span><i class="ln"></i><span class="more">Tout voir</span></div>
+    <div class="obj">${quatrefoil(p)}<div><div class="n">Chercher un remède au parasite</div><div class="m">Quête principale</div></div><span class="tag" style="background:${p.amber}">Acte I</span></div>
+    <div class="obj">${quatrefoil(p)}<div><div class="n">Fouiller les ruines près de la route</div><div class="m">Lieu · 3 objets</div></div><span class="tag" style="background:${p.text2}">Lieu</span></div>
+    <div class="obj">${quatrefoil(p)}<div><div class="n">Récupérer le journal du camp</div><div class="m">Livre du jeu</div></div><span class="tag" style="background:${p.ruby}">Manquable</span></div>
+  </div>${nav(p, s, "partie")}${gestureBar(p.text2)}`;
+}
+
+function lancetSword(p, s) {
+  const d = "M6 170 V46 Q6 8 52 2 Q98 8 98 46 V170Z";
+  let bg = "";
+  const cols = ["night", "sapphire", "amethyst"];
+  for (let r = 0; r < 6; r++) for (let c = 0; c < 3; c++) {
+    const x = 6 + c * 30.7, y = 2 + r * 28;
+    bg += pane(`M${x} ${y} h30.7 v28 h-30.7Z`, s, cols[(r + c) % 3], "#000", 2);
+  }
+  const blade = pane("M52 22 L59 34 V122 L52 132 L45 122 V34Z", s, "moon", "#000", 2.4);
+  const guard = pane("M28 132 Q52 122 76 132 Q52 142 28 132Z", s, "amber", "#000", 2.4);
+  const grip = pane("M48 140 h8 v18 h-8Z", s, "ruby", "#000", 2.2) + pane("M52 158 a5 5 0 1 1 -.1 0Z", s, "amber", "#000", 2);
+  return `<svg width="96" height="159" viewBox="0 0 104 172"><clipPath id="lan${s}"><path d="${d}"/></clipPath>
+    <g clip-path="url(#lan${s})">${bg}<g transform="rotate(-14 52 90)">${blade}${guard}${grip}</g></g>
+    <path d="${d}" fill="none" stroke="${p.lead2}" stroke-width="6"/><path d="${d}" fill="none" stroke="#000" stroke-width="3.4"/></svg>`;
+}
+function initial(p, s, L) {
+  return `<svg class="init" viewBox="0 0 70 70">${pane("M2 2 H35 V35 H2Z", s, "sapphire", "#000", 2.4)}${pane("M35 2 H68 V35 H35Z", s, "amethyst", "#000", 2.4)}${pane("M2 35 H35 V68 H2Z", s, "amethyst", "#000", 2.4)}${pane("M35 35 H68 V68 H35Z", s, "sapphire", "#000", 2.4)}
+    <rect x="1.5" y="1.5" width="67" height="67" rx="3" fill="none" stroke="#000" stroke-width="3"/>
+    <text x="35" y="54" text-anchor="middle" font-family="Grenze" font-weight="800" font-size="50" fill="#fff" stroke="#000" stroke-width="2.4" paint-order="stroke">${L}</text></svg>`;
+}
+function frost(p, s, h) {
+  const r = rng(17); let cracks = "";
+  for (let i = 0; i < 18; i++) { const x = r() * 364, y = r() * h, a = r() * Math.PI, l = 14 + r() * 30; cracks += `<path d="M${x.toFixed(1)} ${y.toFixed(1)} l${(Math.cos(a) * l).toFixed(1)} ${(Math.sin(a) * l).toFixed(1)} M${x.toFixed(1)} ${y.toFixed(1)} l${(Math.cos(a + 1.1) * l * .6).toFixed(1)} ${(Math.sin(a + 1.1) * l * .6).toFixed(1)}" stroke="#fff" stroke-width=".7" opacity=".7"/>`; }
+  return `<svg width="364" height="${h}" viewBox="0 0 364 ${h}">
+    <rect width="364" height="${h}" fill="${dark(p) ? "#C9D3E6" : "#DCE3EE"}"/>
+    <rect width="364" height="${h}" filter="url(#frost${s})" opacity=".9"/>${cracks}
+    <rect x="1.5" y="1.5" width="361" height="${h - 3}" rx="9" fill="none" stroke="#000" stroke-width="3"/></svg>`;
+}
+
+function lore(el) {
+  const p = PAL[el.dataset.theme], s = "l" + (dark(p) ? "d" : "l");
+  el.style.cssText = vars(p);
+  return `${statusBar(p.text)}<svg width="0" height="0" style="position:absolute">${defs(p, s)}</svg><div class="content">
+    <div class="topbar">
+      <div class="ib"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M15 5 L8 12 L15 19" fill="none" stroke="${p.text}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="crumb">Codex · Peuples</div>
+      <div class="ib" style="font:700 16px 'Manrope',sans-serif;color:${p.text}">Aa</div>
+      <div class="ib"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M6 3 H18 V21 L12 16 L6 21Z" fill="${p.sapphire}" stroke="${p.lead}" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+    </div>
+    <div class="lhead"><div><h1>Githyanki</h1><div class="vo">VO githyanki — peuple guerrier de la mer Astrale</div>
+      <div class="chips"><span class="chip dnd">Canon D&amp;D · multi-éd.</span><span class="chip">7 min</span></div></div>${lancetSword(p, s)}</div>
+    <div class="body">
+      <div class="h2"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1 L11 6 L6 11 L1 6Z" fill="url(#g${s}sapphire)" stroke="#000" stroke-width="1.2"/></svg><span class="nm" style="color:${p.sapphire}">Général</span><i class="ln"></i></div>
+      <p>${initial(p, s, "P")}euple guerrier de l'Astral, les githyanki descendent d'un peuple réduit en esclavage par les flagelleurs mentaux. Menés par Gith, leur libératrice, ils se sont soulevés et ont brisé l'empire illithid.<sup>1</sup></p>
+      <div class="h2"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1 L11 6 L6 11 L1 6Z" fill="url(#g${s}ruby)" stroke="#000" stroke-width="1.2"/></svg><span class="nm" style="color:${p.ruby}">Dans BG3</span><i class="ln"></i><span class="ta">Acte I · canon BG3</span></div>
+      <p>Lae'zel, guerrière githyanki, compte parmi les toutes premières rencontres de l'aventure&#8239;; d'autres githyanki croiseront votre route.<sup>2</sup></p>
+      <div class="h2"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1 L11 6 L6 11 L1 6Z" fill="${p.raised}" stroke="${p.leadHi}" stroke-width="1.2"/></svg><span class="nm" style="color:${p.text2}">La reine-liche</span><i class="ln"></i><span class="ta">Acte III · spoiler</span></div>
+      <div class="veil">${frost(p, s, 112)}<div class="msg"><b>Spoiler majeur · Acte III</b><span>Effleurer pour dégivrer le verre</span></div></div>
+      <div class="refs"><ol><li><i>Mordenkainen's Tome of Foes</i> — D&amp;D 5e, 2018, chap. 4</li><li><i>Baldur's Gate 3</i> — Larian Studios, 2023, Acte I</li></ol></div>
+    </div>
+  </div>
+  <div class="thread"><svg width="22" height="22" viewBox="0 0 22 22">${pane("M11 2 L20 11 L11 20 L2 11Z", s, "amber", "#000", 2)}</svg>Tirer le fil <em>· 6 fiches reliées</em></div>
+  ${gestureBar(p.text2)}`;
+}
+
+function strip(p, s) {
+  let out = "";
+  for (let i = 0; i < 12; i++) {
+    const x = 2 + i * 31.3, f = i < 2;
+    out += pane(`M${x} 4 h31.3 v40 h-31.3Z`, s, f ? "ruby" : "sapphire", "#000", 2.4);
+    if (i === 3) out += `<g transform="translate(${x + 15.6} 24)">${sparkle(0, 0, 9, "#fff")}</g>`;
+    if (i === 5 || i === 9) out += `<circle cx="${x + 15.6}" cy="24" r="7.5" fill="url(#g${s}amber)" stroke="#000" stroke-width="2"/>`;
+    out += `<text x="${x + 15.6}" y="62" text-anchor="middle" font-family="Manrope" font-weight="700" font-size="11" fill="${p.text2}">${i + 1}</text>`;
+  }
+  return `<svg width="380" height="66" viewBox="0 0 380 66">${out}<rect x="2" y="4" width="375.6" height="40" fill="none" stroke="#000" stroke-width="3" rx="2"/></svg>`;
+}
+function shield(p, s, glass) {
+  const d = "M4 4 H54 V38 Q54 64 29 76 Q4 64 4 38Z";
+  return `<svg viewBox="0 0 58 78" width="100%" height="78" preserveAspectRatio="xMidYMin meet">${pane(d, s, glass, "#000", 2.6)}<path d="M4 4 H54" stroke="#000" stroke-width="2.6"/></svg>`;
+}
+
+function build(el) {
+  const p = PAL[el.dataset.theme], s = "b" + (dark(p) ? "d" : "l");
+  el.style.cssText = vars(p);
+  const ab = [["For", 8, "−1", "night"], ["Dex", 15, "+2", "night"], ["Con", 16, "+3", "night"], ["Int", 20, "+5", "sapphire"], ["Sag", 10, "+0", "night"], ["Cha", 8, "−1", "night"]]
+    .map(([k, v, m, g]) => `<div class="shield">${shield(p, s, g)}<div class="tx"><span class="k">${k}</span><span class="v">${v}</span><span class="m">${m}</span></div></div>`).join("");
+  const pn = [["Points de vie", "92", 1], ["Classe d'armure", "19"], ["Maîtrise", "+4"], ["DD des sorts", "17"], ["Attaque sorts", "+9"], ["Initiative", "+2"]]
+    .map(([k, v, sel]) => `<div class="pn ${sel ? "sel" : ""}"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+  return `${statusBar(p.text)}<svg width="0" height="0" style="position:absolute">${defs(p, s)}</svg><div class="content">
+    <div class="topbar">
+      <div class="ib"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M15 5 L8 12 L15 19" fill="none" stroke="${p.text}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="crumb">Builds · 3 sur 5</div>
+      <div class="ib"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z" fill="none" stroke="${p.text}" stroke-width="1.8"/><path d="M14 14h2v2h-2zM18 18h2v2h-2z" fill="${p.text}"/></svg></div>
+      <div class="ib"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.7" fill="${p.text}"/><circle cx="12" cy="12" r="1.7" fill="${p.text}"/><circle cx="19" cy="12" r="1.7" fill="${p.text}"/></svg></div>
+    </div>
+    <div class="bname">L'Évocateur en harnois</div>
+    <div class="bsub">Haut-elfe · niveau 12 · Guerrier 2 / Magicien 10 (Évocation)</div>
+    <div class="strip">${strip(p, s)}</div>
+    <div class="sect" style="margin-top:8px"><span class="label" style="color:${p.emerald}">Caractéristiques</span><i class="ln"></i><span class="more">Achat 27 / 27</span></div>
+    <div class="shields">${ab}</div>
+    <div class="panels">${pn}</div>
+  </div>
+  <div class="sheet"><div class="grab"></div>
+    <h3>Détail du calcul <span style="display:flex;gap:8px;align-items:baseline"><span class="label" style="color:${p.text2}">PV</span><b>92</b></span></h3>
+    <div class="glassbar"><i style="flex:13;background:url(#x);background:linear-gradient(160deg,${GLASS.ruby.join(",")})"></i><i style="flex:9;background:linear-gradient(160deg,${GLASS.rose.join(",")})"></i><i style="flex:70;background:linear-gradient(160deg,${GLASS.sapphire.join(",")})"></i></div>
+    <div class="row"><div>Guerrier, niveau 1<div class="f">dé de vie maximal 10 + Constitution 3</div></div><div class="r">13</div></div>
+    <div class="row"><div>Guerrier, niveau 2<div class="f">gain fixe 6 + Constitution 3</div></div><div class="r">9</div></div>
+    <div class="row" style="border-bottom:none"><div>Magicien, niveaux 1 à 10<div class="f">10 × (gain fixe 4 + Constitution 3)</div></div><div class="r">70</div></div>
+    <div class="src">Règle sourcée : bg3.wiki, «&#8239;Hit Points&#8239;» — révision notée dans le code.</div>
+  </div>${gestureBar(p.text2)}`;
+}
+
+mount({ home, lore, build });
+</script>
+</body>
+</html>

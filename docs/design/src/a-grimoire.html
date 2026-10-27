@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Direction A — Grimoire enluminé</title>
+<link rel="stylesheet" href="common.css">
+<script src="common.js"></script>
+<style>
+  body { color: #EEE4CD; background: #0d0b09; }
+  .board { background: radial-gradient(1200px 600px at 20% 0%, #2a2016 0%, #0d0b09 70%); }
+  .board-name { font-family: "Almendra SC", serif; color: #E3C27A; letter-spacing: .02em; }
+  .board-pitch { font-family: "EB Garamond", serif; font-size: 19px; }
+
+  .A { background: var(--bg); color: var(--text); font-family: "EB Garamond", serif; }
+  .A .label { font: 700 11px/1 "Alegreya Sans SC", sans-serif; letter-spacing: .2em; color: var(--gold); }
+  .A .data { font-family: "Alegreya Sans", sans-serif; }
+  .A .grain { position: absolute; inset: 0; pointer-events: none; z-index: 40; mix-blend-mode: soft-light; opacity: var(--grain); }
+  .A .glow { position: absolute; inset: 0; pointer-events: none; z-index: 1;
+    background: radial-gradient(520px 420px at 12% 34%, var(--candle) 0%, transparent 70%); }
+  .A .content { position: relative; z-index: 2; }
+
+  /* En-tête illustré */
+  .A .hero { position: relative; height: 236px; }
+  .A .hero > svg { position: absolute; inset: 0; }
+  .A .hero-title { position: absolute; left: 24px; bottom: 6px; }
+  .A .hero-title h1 { font: 400 50px/0.95 "Almendra", serif; color: var(--text); letter-spacing: -.005em; text-shadow: 0 2px 14px var(--bg); }
+  .A .session { position: absolute; right: 22px; bottom: 14px; display: flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px 0 12px;
+    border-radius: 17px; background: color-mix(in srgb, var(--bg) 70%, transparent); border: 1px solid var(--gold2);
+    font: 500 13px/1 "Alegreya Sans", sans-serif; color: var(--text); }
+
+  /* Sélecteur d'acte */
+  .A .acts { position: relative; display: flex; justify-content: space-between; margin: 10px 24px 0; height: 54px; align-items: center; }
+  .A .acts::before { content: ""; position: absolute; left: 22px; right: 22px; top: 50%; height: 1px; background: linear-gradient(90deg, var(--gold2), var(--line)); }
+  .A .act { position: relative; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--bg); border: 1px solid var(--line); font: 400 15px/1 "Almendra SC", serif; color: var(--text2); }
+  .A .act.done { border-color: var(--gold2); color: var(--gold); }
+  .A .act.now { width: 52px; height: 52px; border: none; color: #2A1D0C; font-size: 18px;
+    background: radial-gradient(circle at 35% 30%, #FBEBB6, #D8B260 45%, #9C7A2E 80%, #E2C679);
+    box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--gold2), 0 0 22px rgba(216,178,96,.35); }
+
+  /* Cartes */
+  .A .card { margin: 12px 18px 0; padding: 12px 16px 12px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; position: relative; }
+  .A .card.alert { border-color: color-mix(in srgb, var(--verm) 55%, var(--line)); display: grid; grid-template-columns: 38px 1fr; gap: 12px; align-items: start; }
+  .A .card.alert .t { font: 700 16px/1.2 "Alegreya Sans", sans-serif; color: var(--verm); margin-bottom: 4px; }
+  .A .card.alert p { font-size: 16.5px; line-height: 1.28; color: var(--text); }
+  .A .card.alert a { display: inline-block; margin-top: 6px; font: 700 14px/1 "Alegreya Sans", sans-serif; color: var(--gold); text-decoration: none; }
+
+  .A .sect { display: flex; align-items: center; gap: 10px; margin: 16px 24px 4px; }
+  .A .sect .rule { flex: 1; height: 7px; }
+  .A .sect .more { font: 500 13px/1 "Alegreya Sans", sans-serif; color: var(--text2); }
+
+  .A .obj { display: grid; grid-template-columns: 34px 1fr auto; gap: 12px; align-items: center; margin: 0 18px; min-height: 52px; padding: 4px 6px; border-bottom: 1px solid var(--line); }
+  .A .obj:last-child { border-bottom: none; }
+  .A .obj .n { font-size: 18.5px; line-height: 1.2; }
+  .A .obj .m { font: 500 12.5px/1.2 "Alegreya Sans", sans-serif; color: var(--text2); margin-top: 3px; }
+  .A .obj .tag { font: 700 10.5px/1 "Alegreya Sans SC", sans-serif; letter-spacing: .12em; padding: 5px 7px; border: 1px solid currentColor; border-radius: 3px; }
+
+  .A .party { display: grid; grid-template-columns: repeat(4, 1fr); margin: 6px 14px 0; text-align: center; }
+  .A .party .nm { font: 400 16px/1.1 "EB Garamond", serif; margin-top: 4px; }
+  .A .party .cl { font: 500 12px/1.1 "Alegreya Sans", sans-serif; color: var(--text2); margin-top: 2px; }
+
+  .A .fact { margin: 12px 18px 0; padding: 12px 16px 14px; border-radius: 4px; background: linear-gradient(180deg, var(--raised), var(--surface)); border: 1px solid var(--line); }
+  .A .fact p { font-size: 17px; line-height: 1.34; margin-top: 6px; }
+  .A .fact p::first-letter { color: var(--verm); }
+
+  /* Navigation */
+  .A .nav { position: absolute; left: 0; right: 0; bottom: 0; height: 86px; z-index: 30; background: var(--navbg); padding: 10px 10px 22px 2px; display: grid; grid-template-columns: repeat(5, 1fr) 66px; align-items: start; }
+  .A .nav::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold2) 20%, var(--gold2) 80%, transparent); }
+  .A .nav .it { display: grid; justify-items: center; gap: 4px; font: 500 12px/1 "Alegreya Sans", sans-serif; color: var(--muted); }
+  .A .nav .it.on { color: var(--gold); }
+  .A .fab { justify-self: end; margin-top: -2px; width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center;
+    background: radial-gradient(circle at 35% 30%, #FBEBB6, #D8B260 45%, #9C7A2E 85%); box-shadow: 0 0 0 3px var(--bg), 0 8px 24px rgba(0,0,0,.5); }
+
+  /* Fiche de lore */
+  .A .topbar { position: relative; z-index: 5; display: flex; align-items: center; height: 56px; margin-top: 34px; padding: 0 8px; gap: 2px; }
+  .A .ib { width: 48px; height: 48px; display: grid; place-items: center; }
+  .A .crumb { flex: 1; font: 700 11px/1 "Alegreya Sans SC", sans-serif; letter-spacing: .2em; color: var(--text2); }
+  .A .readbar { height: 2px; margin: 0 24px; background: var(--line); }
+  .A .readbar i { display: block; height: 100%; width: 18%; background: var(--gold); }
+  .A .lore-head { display: grid; grid-template-columns: 1fr 100px; gap: 6px; padding: 8px 24px 0; align-items: center; }
+  .A .lore-head h1 { font: 400 48px/1 "Almendra", serif; }
+  .A .lore-head .vo { font: italic 400 16.5px/1.25 "EB Garamond", serif; color: var(--text2); margin-top: 6px; }
+  .A .badges { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 24px 0; }
+  .A .badge { font: 700 11px/1 "Alegreya Sans SC", sans-serif; letter-spacing: .1em; padding: 6px 9px; border-radius: 3px; border: 1px solid var(--line); color: var(--text2); }
+  .A .badge.dnd { border-color: color-mix(in srgb, var(--lapis) 60%, transparent); color: var(--lapis); }
+  .A .badge.bg3 { border-color: color-mix(in srgb, var(--verm) 60%, transparent); color: var(--verm); }
+  .A .body { padding: 0 24px; font-size: 18px; line-height: 1.47; }
+  .A .body p { margin-top: 8px; hyphens: manual; text-align: left; }
+  .A .lett { float: left; width: 76px; height: 76px; margin: 6px 12px 0 0; }
+  .A sup { font: 700 11px/1 "Alegreya Sans", sans-serif; color: var(--gold); margin-left: 1px; }
+  .A .h2 { display: flex; align-items: center; gap: 10px; margin: 16px 0 0; clear: both; }
+  .A .h2 span { font: 700 12px/1 "Alegreya Sans SC", sans-serif; letter-spacing: .18em; color: var(--gold); white-space: nowrap; }
+  .A .h2 .rule { flex: 1; height: 1px; background: var(--line); }
+  .A .h2 .ta { font: 700 10.5px/1 "Alegreya Sans SC", sans-serif; letter-spacing: .12em; color: var(--text2); }
+  .A .veil { position: relative; margin-top: 8px; border-radius: 4px; overflow: hidden; height: 112px; }
+  .A .veil .ghost { padding: 10px 2px; font-size: 18.5px; line-height: 1.5; color: var(--text); filter: blur(7px); opacity: .55; }
+  .A .veil svg { position: absolute; inset: 0; }
+  .A .veil .msg { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; gap: 6px; }
+  .A .veil .msg b { font: 700 12px/1 "Alegreya Sans SC", sans-serif; letter-spacing: .18em; color: var(--gold); }
+  .A .veil .msg span { font: italic 400 17px/1.2 "EB Garamond", serif; color: var(--text); }
+  .A .refs ol { margin: 6px 0 0 20px; font: 400 15px/1.4 "EB Garamond", serif; color: var(--text2); }
+  .A .refs li::marker { font: 700 12px "Alegreya Sans", sans-serif; color: var(--gold); }
+  .A .thread { position: absolute; left: 50%; transform: translateX(-50%); bottom: 24px; z-index: 30; display: flex; align-items: center; gap: 10px; height: 50px; padding: 0 20px 0 14px; border-radius: 25px;
+    background: var(--navbg); border: 1px solid var(--gold2); box-shadow: 0 10px 30px rgba(0,0,0,.45); font: 700 14.5px/1 "Alegreya Sans", sans-serif; color: var(--text); white-space: nowrap; }
+  .A .thread em { font-style: normal; color: var(--gold); }
+
+  /* Planificateur */
+  .A .bsub { padding: 2px 24px 0; font: 500 14.5px/1.35 "Alegreya Sans", sans-serif; color: var(--text2); }
+  .A .bname { padding: 2px 24px 0; font: 400 33px/1.05 "Almendra", serif; }
+  .A .track { display: grid; grid-template-columns: repeat(12, 1fr); gap: 2px; margin: 14px 16px 0; }
+  .A .lv { display: grid; justify-items: center; gap: 4px; }
+  .A .lv .pip { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); background: var(--surface); }
+  .A .lv .pip.f { border-color: color-mix(in srgb, var(--verm) 70%, transparent); }
+  .A .lv .pip.w { border-color: color-mix(in srgb, var(--lapis) 70%, transparent); }
+  .A .lv .k { font: 500 11px/1 "Alegreya Sans", sans-serif; color: var(--text2); }
+  .A .lv .mk { height: 14px; font: 700 9.5px/14px "Alegreya Sans SC", sans-serif; letter-spacing: .06em; color: var(--gold); }
+  .A .legend { display: flex; gap: 16px; margin: 2px 24px 0; font: 500 12.5px/1 "Alegreya Sans", sans-serif; color: var(--text2); }
+  .A .legend span { display: flex; gap: 5px; align-items: center; }
+  .A .abil { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin: 4px 18px 0; }
+  .A .ab { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; text-align: center; padding: 8px 0 8px; }
+  .A .ab .k { font: 700 10.5px/1 "Alegreya Sans SC", sans-serif; letter-spacing: .12em; color: var(--text2); }
+  .A .ab .v { font: 500 26px/1.05 "Alegreya Sans", sans-serif; margin-top: 5px; font-variant-numeric: tabular-nums; }
+  .A .ab .m { font: 500 12.5px/1 "Alegreya Sans", sans-serif; color: var(--gold); margin-top: 2px; }
+  .A .ab.hi { border-color: var(--gold2); background: linear-gradient(180deg, color-mix(in srgb, var(--gold) 14%, var(--surface)), var(--surface)); }
+  .A .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin: 4px 18px 0; }
+  .A .st { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 8px 12px 8px; }
+  .A .st .k { font: 500 12.5px/1.15 "Alegreya Sans", sans-serif; color: var(--text2); }
+  .A .st .v { font: 500 28px/1.05 "Alegreya Sans", sans-serif; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .A .st.sel { border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold2); }
+  .A .slots { display: flex; gap: 12px; margin: 12px 24px 0; font: 500 13px/1 "Alegreya Sans", sans-serif; color: var(--text2); flex-wrap: wrap; }
+  .A .slots b { font: 400 13px/1 "Almendra SC", serif; color: var(--text); margin-right: 5px; }
+  .A .slots i { display: inline-block; width: 8px; height: 8px; transform: rotate(45deg); background: var(--lapis); margin-right: 3px; }
+  .A .sheet { position: absolute; left: 0; right: 0; bottom: 0; z-index: 35; background: var(--raised); border-top: 1px solid var(--gold2); border-radius: 18px 18px 0 0; padding: 8px 22px 26px; box-shadow: 0 -20px 50px rgba(0,0,0,.5); }
+  .A .sheet .grab { width: 36px; height: 4px; border-radius: 2px; background: var(--line); margin: 0 auto 12px; }
+  .A .sheet h3 { font: 400 24px/1.1 "Almendra", serif; display: flex; justify-content: space-between; align-items: baseline; }
+  .A .sheet h3 b { font: 500 34px/1 "Alegreya Sans", sans-serif; color: var(--gold); }
+  .A .row { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 7px 0; border-bottom: 1px dashed var(--line); font: 400 17px/1.3 "EB Garamond", serif; }
+  .A .row .f { font: 500 14px/1.3 "Alegreya Sans", sans-serif; color: var(--text2); }
+  .A .row .r { font: 500 18px/1.3 "Alegreya Sans", sans-serif; font-variant-numeric: tabular-nums; }
+  .A .row.tot { border-bottom: none; font-weight: 600; }
+  .A .src { margin-top: 8px; font: italic 400 14px/1.3 "EB Garamond", serif; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="board">
+  <div class="board-head">
+    <div>
+      <div class="board-title">Direction A</div>
+      <div class="board-name">Grimoire enluminé</div>
+      <div class="board-pitch">Un manuscrit enluminé vu à travers un écran moderne : encre profonde, vélin à peine grenu, feuille d'or posée en filets fins, pigments médiévaux pour les accents de section. Illustrations en gravure au trait, lettrines enluminées, rubriques en vermillon.</div>
+    </div>
+    <div class="board-meta">
+      <div class="swatches">
+        <div class="swatch" style="background:#120F0C"><span>Encre</span></div>
+        <div class="swatch" style="background:#EEE4CD"><span>Vélin</span></div>
+        <div class="swatch" style="background:linear-gradient(135deg,#F6E3A6,#D8B260 45%,#9C7A2E 75%,#E9CF86)"><span>Feuille d'or</span></div>
+        <div class="swatch" style="background:#6E8FE0"><span>Lapis<br>Codex</span></div>
+        <div class="swatch" style="background:#E0623F"><span>Vermillon<br>Grimoire</span></div>
+        <div class="swatch" style="background:#55B096"><span>Vert-de-gris<br>Builds</span></div>
+        <div class="swatch" style="background:#C26499"><span>Pourpre<br>Compagnons</span></div>
+      </div>
+      <div class="type-spec">
+        <div><small>Titres</small><span style="font:400 30px/1 'Almendra',serif">Almendra</span></div>
+        <div><small>Lecture</small><span style="font:400 21px/1 'EB Garamond',serif">EB Garamond, pour lire longtemps</span></div>
+        <div><small>Données</small><span style="font:500 17px/1 'Alegreya Sans',sans-serif">Alegreya Sans · DD 17 · +9</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="phones">
+    <div class="phone-wrap"><div class="screen A" data-name="ma-partie" data-slot="home" data-theme="dark"></div><div class="phone-cap">Ma partie</div></div>
+    <div class="phone-wrap"><div class="screen A" data-name="fiche-lore" data-slot="lore" data-theme="dark"></div><div class="phone-cap">Fiche de lore</div></div>
+    <div class="phone-wrap"><div class="screen A" data-name="builds" data-slot="build" data-theme="dark"></div><div class="phone-cap">Planificateur de builds</div></div>
+    <div class="phone-wrap"><div class="screen A" data-name="fiche-lore-parchemin" data-slot="lore" data-theme="light"></div><div class="phone-cap">Fiche de lore · thème parchemin</div></div>
+  </div>
+  <div class="board-foot">Maquettes de phase 0 — illustrations, ornements et textures entièrement générés en code (SVG). Contenus de démonstration : les noms VF du jeu restent à valider. Polices SIL OFL.</div>
+</div>
+
+<script>
+const PAL = {
+  dark:  { bg:"#120F0C", surface:"#1A1511", raised:"#231C16", line:"#3B3026", text:"#EEE4CD", text2:"#BCAD8F", muted:"#8C7E66",
+           gold:"#D8B260", gold2:"#A9843A", lapis:"#7E9BE6", verm:"#E66A47", verd:"#5CB89D", orp:"#E3B544", tyr:"#CE72A6",
+           navbg:"#15110D", candle:"rgba(226,170,92,.10)", grain:".55" },
+  light: { bg:"#EFE5CC", surface:"#F6EEDA", raised:"#FBF6EA", line:"#D9C9A4", text:"#2B2016", text2:"#5B4A35", muted:"#6F5E47",
+           gold:"#7A5814", gold2:"#A9843A", lapis:"#2F51A8", verm:"#B03A1C", verd:"#256A57", orp:"#8F6A10", tyr:"#8E2E66",
+           navbg:"#F4EBD3", candle:"rgba(255,236,190,.35)", grain:".8" }
+};
+
+function vars(p) { return Object.entries(p).map(([k, v]) => `--${k}:${v}`).join(";"); }
+
+function defs(p, s) {
+  return `<defs>
+    <pattern id="h${s}" width="3.4" height="3.4" patternUnits="userSpaceOnUse"><line x1="0" y1="1.7" x2="3.4" y2="1.7" stroke="${p.gold}" stroke-width=".42" opacity=".5"/></pattern>
+    <pattern id="d${s}" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(38)"><line x1="0" y1="0" x2="0" y2="3" stroke="${p.gold}" stroke-width=".55" opacity=".85"/></pattern>
+    <pattern id="dd${s}" width="2.1" height="2.1" patternUnits="userSpaceOnUse" patternTransform="rotate(38)"><line x1="0" y1="0" x2="0" y2="2.1" stroke="${p.gold}" stroke-width=".6"/></pattern>
+    <pattern id="x${s}" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><path d="M0 0V2.6M0 0H2.6" stroke="${p.gold}" stroke-width=".55" opacity=".9"/></pattern>
+    <linearGradient id="gold${s}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6E3A6"/><stop offset=".45" stop-color="#D8B260"/><stop offset=".72" stop-color="#9C7A2E"/><stop offset="1" stop-color="#E9CF86"/></linearGradient>
+    <linearGradient id="fade${s}" x1="0" y1="0" x2="0" y2="1"><stop offset=".5" stop-color="${p.bg}" stop-opacity="0"/><stop offset=".8" stop-color="${p.bg}" stop-opacity=".82"/><stop offset="1" stop-color="${p.bg}" stop-opacity="1"/></linearGradient>
+    <radialGradient id="halo${s}"><stop offset="0" stop-color="${p.bg}" stop-opacity="1"/><stop offset=".55" stop-color="${p.bg}" stop-opacity=".85"/><stop offset="1" stop-color="${p.bg}" stop-opacity="0"/></radialGradient>
+    <mask id="cres${s}"><circle cx="324" cy="78" r="19" fill="#fff"/><circle cx="332" cy="72" r="16.5" fill="#000"/></mask>
+    <filter id="grain${s}"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .95  0 0 0 0 .85  0 0 0 0 .65  0 0 0 .35 0"/></filter>
+    <filter id="mist${s}" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".012 .03" numOctaves="4" seed="7"/><feColorMatrix values="0 0 0 0 ${p === PAL.dark ? ".30 0 0 0 0 .24 0 0 0 0 .16" : ".62 0 0 0 0 .52 0 0 0 0 .36"} 0 0 0 1.9 -.45"/><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>`;
+}
+
+function grain(s) { return `<svg class="grain" width="412" height="917"><rect width="412" height="917" filter="url(#grain${s})"/></svg>`; }
+
+// Fleuron : double filet avec losange central.
+function rule(p, w = 120) {
+  return `<svg class="rule" viewBox="0 0 ${w} 7" preserveAspectRatio="none"><line x1="0" y1="2.5" x2="${w}" y2="2.5" stroke="${p.gold2}" stroke-width=".8"/><line x1="0" y1="5" x2="${w}" y2="5" stroke="${p.line}" stroke-width=".8"/></svg>`;
+}
+function fleuron(p, s) {
+  return `<svg width="22" height="12" viewBox="0 0 22 12"><path d="M11 1 L15 6 L11 11 L7 6Z" fill="url(#gold${s})"/><path d="M1 6h5M16 6h5" stroke="${p.gold2}" stroke-width=".9"/></svg>`;
+}
+
+// Gravure au trait procédurale : collines, forêt, rivière, tour en ruine, lune.
+function engraving(p, s, w = 412, h = 236) {
+  const r = rng(11);
+  let trees = "";
+  for (let i = 0; i < 17; i++) {
+    const x = -6 + i * 13.5 + r() * 6, base = 196 + Math.sin(i * .7) * 6 + r() * 6, th = 28 + r() * 22, tw = 13 + r() * 7;
+    const tiers = [0, .33, .62].map(t => {
+      const y0 = base - th * t, y1 = base - th * (t + .48), ww = tw * (1 - t * .55);
+      return `M${(x - ww / 2).toFixed(1)} ${y0.toFixed(1)} L${x.toFixed(1)} ${y1.toFixed(1)} L${(x + ww / 2).toFixed(1)} ${y0.toFixed(1)}Z`;
+    }).join(" ");
+    trees += `<path d="${tiers}" fill="${p.bg}"/><path d="${tiers}" fill="url(#${i % 3 ? "dd" : "d"}${s})" stroke="${p.gold}" stroke-width=".7" stroke-linejoin="round"/>`;
+    trees += `<line x1="${x.toFixed(1)}" y1="${base.toFixed(1)}" x2="${x.toFixed(1)}" y2="${(base + 6).toFixed(1)}" stroke="${p.gold}" stroke-width=".8"/>`;
+  }
+  let water = "";
+  for (let i = 0; i < 26; i++) {
+    const t = i / 25, cx = 150 + t * 120 + Math.sin(t * 6) * 10, cy = 248 - t * 44, len = 22 - t * 14;
+    water += `<line x1="${(cx - len / 2).toFixed(1)}" y1="${cy.toFixed(1)}" x2="${(cx + len / 2).toFixed(1)}" y2="${cy.toFixed(1)}" stroke="${p.gold}" stroke-width=".5" opacity="${(.35 + r() * .4).toFixed(2)}"/>`;
+  }
+  const stars = [[60, 64, 3.2], [112, 92, 2.2], [182, 58, 2.6], [226, 96, 1.8], [380, 104, 2.4], [262, 50, 2], [36, 112, 1.6]].map(([x, y, rr]) => sparkle(x, y, rr, p.gold, .9)).join("");
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+    ${defs(p, s)}
+    <rect width="${w}" height="${h}" fill="${p.bg}"/>
+    <rect y="30" width="${w}" height="${h - 30}" fill="url(#h${s})"/>
+    <circle cx="324" cy="78" r="64" fill="url(#halo${s})"/>
+    ${[28, 36, 46, 58].map(rr => `<circle cx="324" cy="78" r="${rr}" fill="none" stroke="${p.gold}" stroke-width=".45" opacity="${(.55 - rr / 140).toFixed(2)}" stroke-dasharray="${rr > 40 ? "1.5 3" : "none"}"/>`).join("")}
+    <circle cx="324" cy="78" r="19" fill="url(#gold${s})" mask="url(#cres${s})"/>
+    ${stars}
+    <path d="M70 70 q10 -12 24 -6 q8 -12 22 -4 q14 -4 16 8 q12 2 8 10 h-74 q-6 -6 4 -8Z" fill="${p.bg}" stroke="${p.gold}" stroke-width=".6" opacity=".9"/>
+    <path d="M84 78 h46 M92 74 h30" stroke="${p.gold}" stroke-width=".45" opacity=".6"/>
+    <path d="M0 152 L34 132 L58 142 L96 112 L132 136 L170 122 L206 138 L244 118 L282 134 L318 116 L356 132 L392 120 L412 128 V252 H0Z" fill="${p.bg}"/>
+    <path d="M0 152 L34 132 L58 142 L96 112 L132 136 L170 122 L206 138 L244 118 L282 134 L318 116 L356 132 L392 120 L412 128 V252 H0Z" fill="url(#h${s})" stroke="${p.gold}" stroke-width=".7" stroke-linejoin="round"/>
+    <path d="M96 112 l6 10 l-4 4 M244 118 l7 9 l-5 3 M318 116 l6 8" stroke="${p.gold}" stroke-width=".6" fill="none"/>
+    <path d="M200 184 Q258 146 330 152 Q382 157 412 170 V252 H200Z" fill="${p.bg}"/>
+    <path d="M200 184 Q258 146 330 152 Q382 157 412 170 V252 H200Z" fill="url(#d${s})" stroke="${p.gold}" stroke-width=".8"/>
+    <path d="M288 154 L290 104 L286 104 L286 95 L292 95 L292 99 L297 99 L297 92 L303 92 L303 100 L306 97 L307 108 L310 111 L311 154Z" fill="${p.bg}"/>
+    <path d="M288 154 L290 104 L286 104 L286 95 L292 95 L292 99 L297 99 L297 92 L303 92 L303 100 L306 97 L307 108 L310 111 L311 154Z" fill="url(#x${s})" stroke="${p.gold}" stroke-width=".9" stroke-linejoin="round"/>
+    <rect x="296" y="114" width="3" height="9" rx="1.5" fill="${p.bg}" stroke="${p.gold}" stroke-width=".7"/>
+    <rect x="296" y="132" width="3" height="7" rx="1.5" fill="${p.bg}" stroke="${p.gold}" stroke-width=".7"/>
+    <path d="M150 252 C170 232 200 226 214 214 C230 202 256 206 268 200 L282 200 C268 210 246 214 232 224 C214 238 200 240 196 252Z" fill="${p.bg}" stroke="${p.gold}" stroke-width=".7"/>
+    ${water}
+    ${trees}
+    <path d="M0 214 Q54 196 112 214 Q150 226 172 252 H0Z" fill="${p.bg}"/>
+    <path d="M0 214 Q54 196 112 214 Q150 226 172 252 H0Z" fill="url(#x${s})" stroke="${p.gold}" stroke-width=".8"/>
+    <rect width="${w}" height="${h}" fill="url(#fade${s})"/>
+    <rect x="12.5" y="38.5" width="${w - 25}" height="${h - 44}" fill="none" stroke="${p.gold2}" stroke-width=".8" opacity=".75"/>
+    <rect x="16.5" y="42.5" width="${w - 33}" height="${h - 52}" fill="none" stroke="${p.gold2}" stroke-width=".5" opacity=".45"/>
+    ${[[12.5, 38.5, 1, 1], [w - 12.5, 38.5, -1, 1]].map(([x, y, sx, sy]) => `<path transform="translate(${x} ${y}) scale(${sx} ${sy})" d="M0 0 q12 2 14 14 M0 0 q2 12 14 14 M4 4 l4 4" fill="none" stroke="url(#gold${s})" stroke-width="1"/>`).join("")}
+  </svg>`;
+}
+
+// Emblèmes de classe (gravure au trait).
+const EMB = {
+  guerrier: (c) => `<path d="M16 3 L18 5 L18 21 L16 23 L14 21 L14 5Z" fill="none" stroke="${c}" stroke-width="1.2"/><path d="M9 20 H23 M16 23 V28 M13.5 29.5 h5" stroke="${c}" stroke-width="1.4" stroke-linecap="round"/><path d="M16 7 V19" stroke="${c}" stroke-width=".6"/>`,
+  magicien: (c) => `<path d="M5 23 Q11 20 16 23 Q21 20 27 23 V27 Q21 24 16 27 Q11 24 5 27Z" fill="none" stroke="${c}" stroke-width="1.2" stroke-linejoin="round"/><path d="M16 23V27" stroke="${c}" stroke-width="1"/>${sparkle(16, 11, 7, c)}<circle cx="16" cy="11" r="2" fill="${PAL.dark.bg}"/>`,
+  roublard: (c) => `<path d="M8 25 L20 9 L24 6 L23 10 L11 26Z" fill="none" stroke="${c}" stroke-width="1.2" stroke-linejoin="round"/><path d="M7 21 L13 27 M6 28 l3 -3" stroke="${c}" stroke-width="1.4" stroke-linecap="round"/><path d="M12 22 L21 10" stroke="${c}" stroke-width=".6"/>`,
+  barbare: (c) => `<path d="M16 5 V29" stroke="${c}" stroke-width="1.6" stroke-linecap="round"/><path d="M16 8 Q8 6 6 12 Q8 18 16 15Z M16 8 Q24 6 26 12 Q24 18 16 15Z" fill="none" stroke="${c}" stroke-width="1.2" stroke-linejoin="round"/>`
+};
+function medallion(p, s, emb, size = 58, ring = p.gold2) {
+  return `<svg width="${size}" height="${size}" viewBox="0 0 58 58">
+    <circle cx="29" cy="29" r="27.5" fill="${p.surface}" stroke="url(#gold${s})" stroke-width="1.2"/>
+    <circle cx="29" cy="29" r="23.5" fill="none" stroke="${ring}" stroke-width=".6" stroke-dasharray="1 2.2"/>
+    <g transform="translate(13 13)">${EMB[emb](p.gold)}</g></svg>`;
+}
+
+function navIcon(kind, c) {
+  const I = {
+    partie: `<path d="M5 21 L12 5 L19 21" fill="none" stroke="${c}" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.5 21 q3.5 -6 7 0 M12 13 q-2 -3 0 -5 q2 2 0 5" fill="none" stroke="${c}" stroke-width="1.3"/>`,
+    grimoire: `<rect x="5" y="4" width="14" height="17" rx="1.5" fill="none" stroke="${c}" stroke-width="1.5"/><path d="M8 4 V21 M19 10 h2 v5 h-2" stroke="${c}" stroke-width="1.3" fill="none"/>`,
+    codex: `<path d="M4 6 Q8 4 12 6 Q16 4 20 6 V20 Q16 18 12 20 Q8 18 4 20Z M12 6 V20" fill="none" stroke="${c}" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 10 h3 M6.5 13 h3 M14.5 10 h3" stroke="${c}" stroke-width="1"/>`,
+    builds: `<path d="M12 3 L20 6 V12 Q20 18 12 21 Q4 18 4 12 V6Z" fill="none" stroke="${c}" stroke-width="1.5" stroke-linejoin="round"/><path d="M7.5 11 L12 14.5 L16.5 11" fill="none" stroke="${c}" stroke-width="1.3"/>`,
+    outils: `<path d="M12 3 L20 8 V16 L12 21 L4 16 V8Z" fill="none" stroke="${c}" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 3 L12 9 M4 8 L12 9 L20 8 M12 9 L7.5 16 H16.5 L12 9 M7.5 16 L12 21 M16.5 16 L12 21 M4 16 L7.5 16 M20 16 L16.5 16" fill="none" stroke="${c}" stroke-width=".9"/>`
+  };
+  return `<svg width="26" height="26" viewBox="0 0 24 24">${I[kind]}</svg>`;
+}
+function nav(p, on) {
+  const items = [["partie", "Partie"], ["grimoire", "Grimoire"], ["codex", "Codex"], ["builds", "Builds"], ["outils", "Outils"]];
+  return `<div class="nav">${items.map(([k, l]) => `<div class="it ${k === on ? "on" : ""}">${navIcon(k, k === on ? p.gold : p.muted)}<span>${l}</span>${k === on ? `<svg width="18" height="5" viewBox="0 0 18 5"><path d="M0 2.5h6 M12 2.5h6" stroke="${p.gold2}" stroke-width=".8"/><path d="M9 0 L11.5 2.5 L9 5 L6.5 2.5Z" fill="${p.gold}"/></svg>` : ""}</div>`).join("")}${searchFab(p)}</div>`;
+}
+function searchFab(p) {
+  return `<div class="fab"><svg width="26" height="26" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="#2A1D0C" stroke-width="2"/><path d="M15 15 L20.5 20.5" stroke="#2A1D0C" stroke-width="2.4" stroke-linecap="round"/></svg></div>`;
+}
+function seal(p) {
+  return `<svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13" fill="none" stroke="${p.gold2}" stroke-width="1.2"/><circle cx="15" cy="15" r="9.5" fill="none" stroke="${p.line}" stroke-width="1" stroke-dasharray="1.2 2"/></svg>`;
+}
+
+function home(el) {
+  const p = PAL[el.dataset.theme], s = "h" + el.dataset.theme;
+  el.style.cssText = vars(p);
+  return `${statusBar(p.text)}<div class="glow"></div>
+  <div class="content">
+    <div class="hero">${engraving(p, s)}
+      <div class="session"><svg width="14" height="20" viewBox="0 0 14 20" style="flex:none;margin-right:2px"><path d="M7 1 q4 4 0 7.5 q-4 -3.5 0 -7.5Z" fill="${p.gold}"/><rect x="4" y="10" width="6" height="9" rx="1" fill="none" stroke="${p.gold}" stroke-width="1.2"/></svg><span>Session</span></div>
+      <div class="hero-title"><div class="label" style="text-shadow:0 0 6px var(--bg),0 0 12px var(--bg),0 0 2px var(--bg)">Ma partie · Équilibré</div><h1>Acte I</h1></div>
+    </div>
+    <div class="acts">
+      <div class="act done">Pr</div><div class="act now">I</div><div class="act">II</div><div class="act">III</div><div class="act">Ép</div>
+    </div>
+    <div class="card alert">
+      <svg width="38" height="44" viewBox="0 0 38 44"><path d="M8 3 H30 M8 41 H30" stroke="${p.verm}" stroke-width="1.6" stroke-linecap="round"/><path d="M10 4 Q10 16 19 22 Q28 16 28 4 M10 40 Q10 28 19 22 Q28 28 28 40" fill="none" stroke="${p.verm}" stroke-width="1.3"/><path d="M14 36 Q19 30 24 36 Z" fill="${p.verm}"/><path d="M15 11 Q19 15 23 11" fill="none" stroke="${p.verm}" stroke-width="1"/></svg>
+      <div><div class="t">Point de non-retour</div><p>Avant de passer à l'Acte II, <b>6 éléments</b> deviendront manquables.</p><a>Voir la liste ›</a></div>
+    </div>
+    <div class="sect">${fleuron(p, s)}<span class="label">Prochains objectifs</span>${rule(p)}<span class="more">Tout voir</span></div>
+    <div>
+      <div class="obj">${seal(p)}<div><div class="n">Chercher un remède au parasite</div><div class="m">Quête principale</div></div><span class="tag" style="color:${p.gold}">Acte I</span></div>
+      <div class="obj">${seal(p)}<div><div class="n">Fouiller les ruines près de la route</div><div class="m">Lieu · 3 objets</div></div><span class="tag" style="color:${p.text2}">Lieu</span></div>
+      <div class="obj">${seal(p)}<div><div class="n">Récupérer le journal du camp</div><div class="m">Livre du jeu</div></div><span class="tag" style="color:${p.verm}">Manquable</span></div>
+    </div>
+    <div class="sect">${fleuron(p, s)}<span class="label">Groupe actif</span>${rule(p)}<span class="more">Modifier</span></div>
+    <div class="party">
+      ${[["guerrier", "Lae'zel", "Guerrière"], ["magicien", "Gale", "Magicien"], ["roublard", "Astarion", "Roublard"], ["barbare", "Karlach", "Barbare"]].map(([e, n, c]) => `<div>${medallion(p, s, e, 50)}<div class="nm">${n}</div><div class="cl">${c}</div></div>`).join("")}
+    </div>
+    <div class="fact"><div class="label">Le saviez-vous&#8239;?</div><p>Les githyanki ont été imaginés par l'écrivain Charles Stross&#8239;; ils sont entrés dans le <i>Fiend Folio</i> en 1981.</p></div>
+  </div>
+  ${nav(p, "partie")}${grain(s)}${gestureBar(p.text2)}`;
+}
+
+// Lettrine enluminée : initiale d'or sur fond lapis, rinceaux.
+function lettrine(p, s, L) {
+  return `<svg class="lett" viewBox="0 0 76 76">
+    <rect x=".5" y=".5" width="75" height="75" rx="2" fill="${p === PAL.dark ? "#1C2A52" : "#2F51A8"}"/>
+    <rect x="3.5" y="3.5" width="69" height="69" fill="none" stroke="url(#gold${s})" stroke-width="1.4"/>
+    <path d="M8 66 C14 50 6 40 16 30 C22 24 30 30 24 36 C20 40 14 34 20 30 M68 10 C62 26 70 36 60 46 C54 52 46 46 52 40 C56 36 62 42 56 46" fill="none" stroke="${p === PAL.dark ? "#7E9BE6" : "#9DB3F0"}" stroke-width="1.1" opacity=".9"/>
+    ${[[10, 12], [64, 64], [12, 58], [62, 18]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="1.6" fill="url(#gold${s})"/>`).join("")}
+    <text x="38" y="58" text-anchor="middle" font-family="Almendra" font-size="58" fill="url(#gold${s})" stroke="#5a4214" stroke-width=".6">${L}</text>
+  </svg>`;
+}
+function sword(p, s) {
+  return `<svg width="108" height="118" viewBox="0 0 108 118">
+    <circle cx="54" cy="56" r="44" fill="none" stroke="${p.gold2}" stroke-width=".7" stroke-dasharray="1.4 2.6"/>
+    <circle cx="54" cy="56" r="36" fill="none" stroke="${p.line}" stroke-width=".7"/>
+    ${sparkle(54, 56, 30, "url(#gold" + s + ")", .25)}
+    <g transform="rotate(-38 54 56)">
+      <path d="M54 6 L58 14 L58 82 L54 88 L50 82 L50 14Z" fill="${p.bg}" stroke="${p.gold}" stroke-width="1"/>
+      <path d="M54 12 V84" stroke="${p.gold}" stroke-width=".5"/>
+      <path d="M50 20 L58 26 M50 34 L58 40 M50 48 L58 54 M50 62 L58 68" stroke="${p.gold}" stroke-width=".45" opacity=".7"/>
+      <path d="M38 88 Q54 82 70 88 Q54 94 38 88Z" fill="url(#gold${s})"/>
+      <path d="M54 92 V108" stroke="${p.gold}" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="54" cy="112" r="3.2" fill="url(#gold${s})"/>
+    </g>
+    ${sparkle(86, 22, 5, p.gold, .9)}${sparkle(20, 92, 3.5, p.gold, .8)}
+  </svg>`;
+}
+function mist(p, s, h) {
+  const r = rng(5); let specks = "";
+  for (let i = 0; i < 40; i++) specks += `<circle cx="${(r() * 364).toFixed(1)}" cy="${(r() * h).toFixed(1)}" r="${(.4 + r() * 1.1).toFixed(2)}" fill="${p.gold}" opacity="${(.25 + r() * .6).toFixed(2)}"/>`;
+  return `<svg width="364" height="${h}" viewBox="0 0 364 ${h}"><rect width="364" height="${h}" fill="${p.surface}" opacity=".7"/><rect x="-40" y="-20" width="444" height="${h + 40}" filter="url(#mist${s})"/>${specks}
+    <rect x=".5" y=".5" width="363" height="${h - 1}" rx="4" fill="none" stroke="${p.gold2}" stroke-width=".8" stroke-dasharray="2 3"/></svg>`;
+}
+
+function lore(el) {
+  const p = PAL[el.dataset.theme], s = "l" + el.dataset.theme;
+  el.style.cssText = vars(p);
+  return `${statusBar(p.text)}<svg width="0" height="0" style="position:absolute">${defs(p, s)}</svg><div class="glow"></div>
+  <div class="content">
+    <div class="topbar">
+      <div class="ib"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M15 5 L8 12 L15 19" fill="none" stroke="${p.text}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="crumb">Codex · Peuples</div>
+      <div class="ib" style="font:500 17px 'EB Garamond',serif;color:${p.text}">Aa</div>
+      <div class="ib"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M6 3 H18 V21 L12 16 L6 21Z" fill="${p.gold}" stroke="${p.gold}" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+    </div>
+    <div class="readbar"><i></i></div>
+    <div class="lore-head">
+      <div><h1>Githyanki</h1><div class="vo">VO <i>githyanki</i> — peuple guerrier de la mer Astrale</div></div>
+      ${sword(p, s)}
+    </div>
+    <div class="badges"><span class="badge dnd">Canon D&amp;D · multi-éditions</span><span class="badge">7 min de lecture</span></div>
+    <div class="body">
+      <div class="h2"><span>Général</span><i class="rule"></i></div>
+      <p>${lettrine(p, s, "P")}euple guerrier de l'Astral, les githyanki descendent d'un peuple réduit en esclavage par les flagelleurs mentaux. Menés par Gith, leur libératrice, ils se sont soulevés et ont brisé l'empire illithid.<sup>1</sup></p>
+      <p>Après la révolte, un schisme opposa les fidèles de Gith, partisans d'une guerre sans fin, à ceux de Zerthimon, qui devinrent les githzerai.<sup>1</sup></p>
+      <div class="h2"><span>Dans BG3</span><i class="rule"></i><span class="ta">Acte I · canon BG3</span></div>
+      <p>Lae'zel, guerrière githyanki, compte parmi les toutes premières rencontres de l'aventure&#8239;; d'autres githyanki croiseront votre route.<sup>2</sup></p>
+      <div class="h2"><span>La reine-liche</span><i class="rule"></i><span class="ta">Acte III · spoiler</span></div>
+      <div class="veil"><div class="ghost">Texte voilé : son contenu n'est pas chargé tant que la section reste masquée par votre réglage.</div>${mist(p, s, 112)}
+        <div class="msg"><b>Spoiler majeur · Acte III</b><span>Effleurer pour dissiper la brume</span></div></div>
+      <div class="refs"><div class="h2"><span>Références</span><i class="rule"></i></div><ol><li><i>Mordenkainen's Tome of Foes</i> — D&amp;D 5e, 2018, chap. 4</li><li><i>Baldur's Gate 3</i> — Larian Studios, 2023, Acte I</li></ol></div>
+    </div>
+  </div>
+  <div class="thread"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M3 12 C7 4 11 20 15 12 S21 8 21 8" fill="none" stroke="${p.gold}" stroke-width="1.6" stroke-linecap="round"/><circle cx="3" cy="12" r="2" fill="${p.gold}"/></svg>Tirer le fil <em>· Gith, githzerai, Astral…</em></div>
+  ${grain(s)}${gestureBar(p.text2)}`;
+}
+
+function build(el) {
+  const p = PAL[el.dataset.theme], s = "b" + el.dataset.theme;
+  el.style.cssText = vars(p);
+  const lv = Array.from({ length: 12 }, (_, i) => {
+    const f = i < 2, mk = { 3: sparkle(5, 7, 5, p.gold), 5: `<path d="M5 2 L8 7 L5 12 L2 7Z" fill="${p.gold}"/>`, 9: `<path d="M5 2 L8 7 L5 12 L2 7Z" fill="${p.gold}"/>` }[i] || "";
+    const icon = f ? EMB.guerrier(p.verm) : EMB.magicien(p.lapis);
+    return `<div class="lv"><div class="pip ${f ? "f" : "w"}"><svg width="18" height="18" viewBox="0 0 32 32">${icon}</svg></div><div class="k">${i + 1}</div><div class="mk"><svg width="10" height="14" viewBox="0 0 10 14">${mk}</svg></div></div>`;
+  }).join("");
+  const ab = [["For", 8, "−1"], ["Dex", 15, "+2"], ["Con", 16, "+3"], ["Int", 20, "+5", 1], ["Sag", 10, "+0"], ["Cha", 8, "−1"]]
+    .map(([k, v, m, hi]) => `<div class="ab ${hi ? "hi" : ""}"><div class="k">${k}</div><div class="v">${v}</div><div class="m">${m}</div></div>`).join("");
+  const st = [["Points de vie", "92", 1], ["Classe d'armure", "19"], ["Maîtrise", "+4"], ["DD des sorts", "17"], ["Attaque des sorts", "+9"], ["Initiative", "+2"]]
+    .map(([k, v, sel]) => `<div class="st ${sel ? "sel" : ""}"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+  return `${statusBar(p.text)}<svg width="0" height="0" style="position:absolute">${defs(p, s)}</svg><div class="glow"></div>
+  <div class="content">
+    <div class="topbar">
+      <div class="ib"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M15 5 L8 12 L15 19" fill="none" stroke="${p.text}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="crumb">Builds · 3 sur 5</div>
+      <div class="ib"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z" fill="none" stroke="${p.text}" stroke-width="1.5"/><path d="M14 14h2v2h-2zM18 18h2v2h-2zM18 14h2M14 18v2" stroke="${p.text}" stroke-width="1.5"/></svg></div>
+      <div class="ib"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6" fill="${p.text}"/><circle cx="12" cy="12" r="1.6" fill="${p.text}"/><circle cx="19" cy="12" r="1.6" fill="${p.text}"/></svg></div>
+    </div>
+    <div class="bname">L'Évocateur en harnois</div>
+    <div class="bsub">Haut-elfe · niveau 12 · Guerrier 2 / Magicien 10 (École d'évocation)</div>
+    <div class="track">${lv}</div><div class="legend"><span>${`<svg width="10" height="14" viewBox="0 0 10 14">${sparkle(5, 7, 5, p.gold)}</svg>`} sous-classe (Magicien 2)</span><span><svg width="10" height="14" viewBox="0 0 10 14"><path d="M5 2 L8 7 L5 12 L2 7Z" fill="${p.gold}"/></svg> don ou amélioration</span></div>
+    <div class="sect">${fleuron(p, s)}<span class="label">Caractéristiques</span>${rule(p)}<span class="more">Achat 27 / 27</span></div>
+    <div class="abil">${ab}</div>
+    <div class="sect">${fleuron(p, s)}<span class="label">Statistiques dérivées</span>${rule(p)}</div>
+    <div class="stats">${st}</div>
+    <div class="slots"><span><b>I</b><i></i><i></i><i></i><i></i></span><span><b>II</b><i></i><i></i><i></i></span><span><b>III</b><i></i><i></i><i></i></span><span><b>IV</b><i></i><i></i><i></i></span><span><b>V</b><i></i><i></i></span></div>
+  </div>
+  <div class="sheet"><div class="grab"></div>
+    <h3>Détail du calcul <span style="display:flex;gap:8px;align-items:baseline"><span class="label" style="color:${p.text2}">PV</span><b>92</b></span></h3>
+    <div class="row"><div>Guerrier, niveau 1<div class="f">dé de vie maximal 10 + Constitution 3</div></div><div class="r">13</div></div>
+    <div class="row"><div>Guerrier, niveau 2<div class="f">gain fixe 6 + Constitution 3</div></div><div class="r">9</div></div>
+    <div class="row"><div>Magicien, niveaux 1 à 10<div class="f">10 × (gain fixe 4 + Constitution 3)</div></div><div class="r">70</div></div>
+    <div class="row tot"><div>Total</div><div class="r" style="color:${p.gold}">92</div></div>
+    <div class="src">Règle de calcul sourcée : bg3.wiki, «&#8239;Hit Points&#8239;» (révision notée dans le code).</div>
+  </div>
+  ${grain(s)}${gestureBar(p.text2)}`;
+}
+
+mount({ home, lore, build });
+</script>
+</body>
+</html>

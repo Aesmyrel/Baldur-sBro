@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Direction B — Atlas céleste</title>
+<link rel="stylesheet" href="common.css">
+<script src="common.js"></script>
+<style>
+  body { color: #E8EDF7; background: #05070f; }
+  .board { background: radial-gradient(1200px 700px at 80% 0%, #17204a 0%, #05070f 70%); }
+  .board-name { font-family: "Bodoni Moda", serif; font-style: italic; color: #E8D4A2; }
+  .board-pitch { font-family: "Newsreader", serif; font-size: 19px; }
+
+  .B { background: var(--bg); color: var(--text); font-family: "Newsreader", serif; }
+  .B .label { font: 500 11px/1 "Jost", sans-serif; letter-spacing: .26em; text-transform: uppercase; color: var(--brass); }
+  .B .sky { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+  .B .content { position: relative; z-index: 2; }
+  .B .hero { position: relative; height: 246px; }
+  .B .hero > svg { position: absolute; inset: 0; }
+  .B .hero .ttl { position: absolute; left: 24px; top: 66px; }
+  .B .hero h1 { font: italic 400 58px/0.9 "Bodoni Moda", serif; letter-spacing: -.01em; }
+  .B .hero .coord { font: 400 12.5px/1.3 "Jost", sans-serif; color: var(--text2); margin-top: 8px; letter-spacing: .04em; }
+  .B .session { position: absolute; right: 20px; bottom: 6px; white-space: nowrap; height: 36px; padding: 0 14px; border-radius: 18px; display: flex; align-items: center; gap: 8px;
+    border: 1px solid var(--line2); background: color-mix(in srgb, var(--bg) 60%, transparent); font: 500 13px/1 "Jost", sans-serif; color: var(--text); }
+  .B .orbit { position: relative; margin: 6px 24px 0; height: 66px; }
+  .B .orbit svg { position: absolute; inset: 0; }
+  .B .orbit .lbl { position: absolute; bottom: 0; transform: translateX(-50%); white-space: nowrap; font: 500 10.5px/1 "Jost", sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .B .orbit .lbl.on { color: var(--brass); }
+  .B .dialrow { display: grid; grid-template-columns: 132px 1fr; gap: 18px; align-items: center; margin: 14px 24px 0; }
+  .B .leg { display: grid; gap: 9px; }
+  .B .leg div { display: grid; grid-template-columns: 12px 1fr auto; gap: 10px; align-items: center; font: 400 14.5px/1 "Jost", sans-serif; color: var(--text2); }
+  .B .leg b { font: 500 15px/1 "Jost", sans-serif; color: var(--text); font-variant-numeric: tabular-nums; }
+  .B .leg i { width: 12px; height: 3px; border-radius: 2px; }
+  .B .card { margin: 14px 18px 0; border-radius: 14px; background: linear-gradient(160deg, var(--raised), var(--surface)); border: 1px solid var(--line); padding: 14px 16px; }
+  .B .alert { display: grid; grid-template-columns: 40px 1fr; gap: 12px; border-color: color-mix(in srgb, var(--solar) 45%, var(--line)); }
+  .B .alert .t { font: 500 12px/1 "Jost", sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--solar); margin-bottom: 6px; }
+  .B .alert p { font-size: 17px; line-height: 1.32; }
+  .B .alert a { display: inline-block; margin-top: 6px; font: 500 14px/1 "Jost", sans-serif; color: var(--brass); }
+  .B .sect { display: flex; align-items: center; gap: 10px; margin: 18px 24px 4px; }
+  .B .sect .ln { flex: 1; height: 1px; background: linear-gradient(90deg, var(--line2), transparent); }
+  .B .sect .more { font: 400 13px/1 "Jost", sans-serif; color: var(--text2); }
+  .B .obj { display: grid; grid-template-columns: 30px 1fr auto; gap: 12px; align-items: center; margin: 0 18px; min-height: 54px; padding: 4px 6px; border-bottom: 1px solid var(--line); }
+  .B .obj:last-child { border-bottom: none; }
+  .B .obj .n { font-size: 18px; line-height: 1.2; }
+  .B .obj .m { font: 400 12.5px/1.2 "Jost", sans-serif; color: var(--text2); margin-top: 3px; letter-spacing: .02em; }
+  .B .obj .tag { font: 500 10.5px/1 "Jost", sans-serif; letter-spacing: .14em; text-transform: uppercase; padding: 6px 9px; border-radius: 12px; border: 1px solid currentColor; }
+  .B .nav { position: absolute; left: 0; right: 0; bottom: 0; height: 86px; z-index: 30; padding: 12px 10px 22px 2px; display: grid; grid-template-columns: repeat(5, 1fr) 66px; align-items: start;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 92%, transparent), var(--bg)); backdrop-filter: blur(10px); }
+  .B .nav .tick { position: absolute; left: 0; right: 0; top: 0; height: 6px; }
+  .B .nav .it { display: grid; justify-items: center; gap: 5px; font: 400 12px/1 "Jost", sans-serif; letter-spacing: .02em; color: var(--muted); }
+  .B .nav .it.on { color: var(--brass); }
+  .B .lens { justify-self: end; width: 56px; height: 56px; margin-top: -4px; border-radius: 50%; display: grid; place-items: center;
+    background: radial-gradient(circle at 50% 40%, var(--raised), var(--bg)); border: 1.5px solid var(--brass); box-shadow: 0 0 0 4px color-mix(in srgb, var(--brass) 14%, transparent), 0 0 24px color-mix(in srgb, var(--brass) 25%, transparent); }
+
+  .B .topbar { display: flex; align-items: center; height: 56px; margin-top: 34px; padding: 0 8px; }
+  .B .ib { width: 48px; height: 48px; display: grid; place-items: center; }
+  .B .crumb { flex: 1; font: 500 11px/1 "Jost", sans-serif; letter-spacing: .24em; text-transform: uppercase; color: var(--text2); }
+  .B .lhead { text-align: center; padding: 0 24px; }
+  .B .lhead h1 { font: 400 50px/1 "Bodoni Moda", serif; margin-top: 2px; letter-spacing: -.01em; }
+  .B .lhead .vo { font: italic 400 17px/1.3 "Newsreader", serif; color: var(--text2); margin-top: 6px; }
+  .B .chips { display: flex; gap: 8px; justify-content: center; margin-top: 12px; }
+  .B .chip { font: 500 11px/1 "Jost", sans-serif; letter-spacing: .14em; text-transform: uppercase; padding: 7px 11px; border-radius: 14px; border: 1px solid var(--line2); color: var(--text2); }
+  .B .chip.dnd { border-color: color-mix(in srgb, var(--nebula) 60%, transparent); color: var(--nebula); }
+  .B .body { padding: 0 24px; font-size: 18px; line-height: 1.5; }
+  .B .body p { margin-top: 8px; }
+  .B .h2 { display: flex; align-items: center; gap: 10px; margin: 18px 0 0; clear: both; }
+  .B .h2 .nm { font: 500 11.5px/1 "Jost", sans-serif; letter-spacing: .24em; text-transform: uppercase; color: var(--brass); white-space: nowrap; }
+  .B .h2 .ln { flex: 1; height: 1px; background: var(--line); }
+  .B .h2 .ta { font: 400 11px/1 "Jost", sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--text2); }
+  .B .init { float: left; width: 70px; height: 70px; margin: 6px 12px 0 0; }
+  .B sup { font: 500 11px/1 "Jost", sans-serif; color: var(--brass); margin-left: 1px; }
+  .B .veil { position: relative; margin-top: 8px; height: 112px; border-radius: 14px; overflow: hidden; }
+  .B .veil svg { position: absolute; inset: 0; }
+  .B .veil .msg { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; gap: 7px; }
+  .B .veil .msg b { font: 500 11.5px/1 "Jost", sans-serif; letter-spacing: .24em; text-transform: uppercase; color: var(--text); }
+  .B .veil .msg span { font: italic 400 17px/1 "Newsreader", serif; color: var(--text); }
+  .B .refs ol { margin: 6px 0 0 20px; font: 400 14.5px/1.45 "Newsreader", serif; color: var(--text2); }
+  .B .refs li::marker { font: 500 12px "Jost", sans-serif; color: var(--brass); }
+  .B .thread { position: absolute; left: 50%; transform: translateX(-50%); bottom: 24px; z-index: 30; display: flex; align-items: center; gap: 10px; height: 50px; padding: 0 20px 0 14px; border-radius: 25px; white-space: nowrap;
+    background: color-mix(in srgb, var(--raised) 94%, transparent); border: 1px solid var(--line2); box-shadow: 0 10px 30px rgba(0,0,0,.45); font: 500 14.5px/1 "Jost", sans-serif; color: var(--text); }
+  .B .thread em { font-style: normal; color: var(--brass); }
+
+  .B .bname { padding: 0 24px; font: italic 400 34px/1.05 "Bodoni Moda", serif; }
+  .B .bsub { padding: 6px 24px 0; font: 400 14px/1.35 "Jost", sans-serif; color: var(--text2); letter-spacing: .01em; }
+  .B .lvl { position: relative; margin: 10px 16px 0; height: 60px; }
+  .B .radar { display: grid; grid-template-columns: 160px 1fr; gap: 12px; align-items: center; margin: 0 18px 0; }
+  .B .atab { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; }
+  .B .atab div { display: grid; grid-template-columns: 34px 1fr auto; align-items: baseline; padding: 5px 0; border-bottom: 1px solid var(--line); }
+  .B .atab .k { font: 500 11px/1 "Jost", sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--text2); }
+  .B .atab .v { font: 400 22px/1 "Bodoni Moda", serif; font-variant-numeric: lining-nums; }
+  .B .atab .m { font: 400 13px/1 "Jost", sans-serif; color: var(--brass); }
+  .B .atab .pts { display: block; border-bottom: none; grid-column: 1 / -1; font: 400 12.5px/1 "Jost", sans-serif; color: var(--text2); padding-top: 4px; letter-spacing: .02em; }
+  .B .reads { display: grid; grid-template-columns: repeat(3, 1fr); margin: 10px 18px 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .B .rd { padding: 9px 12px 9px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .B .rd:nth-child(3n) { border-right: none; }
+  .B .rd:nth-child(n+4) { border-bottom: none; }
+  .B .rd .k { font: 500 10px/1.2 "Jost", sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--text2); }
+  .B .rd .v { font: 400 30px/1 "Bodoni Moda", serif; margin-top: 4px; }
+  .B .rd.sel { background: color-mix(in srgb, var(--brass) 12%, transparent); box-shadow: inset 0 0 0 1px var(--brass); }
+  .B .sheet { position: absolute; left: 0; right: 0; bottom: 0; z-index: 35; padding: 8px 22px 26px; border-radius: 22px 22px 0 0; background: var(--raised); border-top: 1px solid var(--line2); box-shadow: 0 -20px 50px rgba(0,0,0,.5); }
+  .B .sheet .grab { width: 36px; height: 4px; border-radius: 2px; background: var(--line2); margin: 0 auto 12px; }
+  .B .eq { font: italic 400 30px/1.1 "Bodoni Moda", serif; display: flex; gap: 10px; align-items: baseline; }
+  .B .eq b { font-style: normal; color: var(--brass); font-weight: 400; }
+  .B .eq small { font: 400 15px/1 "Bodoni Moda", serif; color: var(--text2); font-style: normal; }
+  .B .bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin: 10px 0 4px; gap: 2px; }
+  .B .row { display: grid; grid-template-columns: 12px 1fr auto; gap: 10px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--line); font: 400 16.5px/1.25 "Newsreader", serif; }
+  .B .row .f { font: 400 13px/1.3 "Jost", sans-serif; color: var(--text2); }
+  .B .row .r { font: 400 20px/1 "Bodoni Moda", serif; }
+  .B .row i { width: 10px; height: 10px; border-radius: 50%; }
+  .B .src { margin-top: 10px; font: 400 12.5px/1.4 "Jost", sans-serif; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="board">
+  <div class="board-head">
+    <div>
+      <div class="board-title">Direction B</div>
+      <div class="board-name">Atlas céleste</div>
+      <div class="board-pitch">Le carnet comme un instrument d'astronome : nuit profonde, filets de laiton et d'argent, cartes du ciel, anneaux gradués d'astrolabe. Chaque emblème est une constellation, chaque progression une orbite. Précis, aérien, d'une élégance d'atlas du XVIII<sup>e</sup> siècle.</div>
+    </div>
+    <div class="board-meta">
+      <div class="swatches">
+        <div class="swatch" style="background:#070B18"><span>Nuit</span></div>
+        <div class="swatch" style="background:#E8EDF7"><span>Lueur d'étoile</span></div>
+        <div class="swatch" style="background:linear-gradient(135deg,#F1DDA6,#D9B877 50%,#A88A4E)"><span>Laiton<br>Partie</span></div>
+        <div class="swatch" style="background:#66D5C3"><span>Aurore<br>Grimoire</span></div>
+        <div class="swatch" style="background:#A797F5"><span>Nébuleuse<br>Codex</span></div>
+        <div class="swatch" style="background:#F3A96A"><span>Soleil<br>Builds</span></div>
+        <div class="swatch" style="background:#F093B4"><span>Rose<br>Compagnons</span></div>
+      </div>
+      <div class="type-spec">
+        <div><small>Titres</small><span style="font:italic 400 32px/1 'Bodoni Moda',serif">Bodoni Moda</span></div>
+        <div><small>Lecture</small><span style="font:400 20px/1 'Newsreader',serif">Newsreader, à hauteur d'œil</span></div>
+        <div><small>Données</small><span style="font:400 17px/1 'Jost',sans-serif;letter-spacing:.04em">JOST · DD 17 · +9</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="phones">
+    <div class="phone-wrap"><div class="screen B" data-name="ma-partie" data-slot="home" data-theme="dark"></div><div class="phone-cap">Ma partie</div></div>
+    <div class="phone-wrap"><div class="screen B" data-name="fiche-lore" data-slot="lore" data-theme="dark"></div><div class="phone-cap">Fiche de lore</div></div>
+    <div class="phone-wrap"><div class="screen B" data-name="builds" data-slot="build" data-theme="dark"></div><div class="phone-cap">Planificateur de builds</div></div>
+    <div class="phone-wrap"><div class="screen B" data-name="fiche-lore-parchemin" data-slot="lore" data-theme="light"></div><div class="phone-cap">Fiche de lore · thème clair « carte imprimée »</div></div>
+  </div>
+  <div class="board-foot">Maquettes de phase 0 — constellations, anneaux gradués, nébuleuses et champs d'étoiles générés en code (SVG). Contenus de démonstration : les noms VF du jeu restent à valider. Polices SIL OFL.</div>
+</div>
+
+<script>
+const PAL = {
+  dark:  { bg:"#070B18", surface:"#0D1428", raised:"#131D38", line:"#222E52", line2:"#34426B", text:"#E8EDF7", text2:"#A7B3CF", muted:"#7480A2",
+           brass:"#D9B877", brass2:"#A88A4E", silver:"#C8D2E6", aurora:"#66D5C3", nebula:"#A797F5", solar:"#F3A96A", rose:"#F093B4", comet:"#7FC8F4", star:"#FFFFFF" },
+  light: { bg:"#ECE9E1", surface:"#F4F2EC", raised:"#FBFAF7", line:"#D3CEC0", line2:"#B9B3A2", text:"#15213E", text2:"#45506A", muted:"#5E6579",
+           brass:"#7A5D1F", brass2:"#A88A4E", silver:"#5D6782", aurora:"#116B5F", nebula:"#5643BE", solar:"#964E15", rose:"#A33A63", comet:"#1E6A9B", star:"#15213E" }
+};
+const vars = p => Object.entries(p).map(([k, v]) => `--${k}:${v}`).join(";");
+const dark = p => p === PAL.dark;
+
+function defs(p, s) {
+  return `<defs>
+    <radialGradient id="neb${s}a" cx=".3" cy=".4" r=".7"><stop offset="0" stop-color="${p.nebula}" stop-opacity="${dark(p) ? .55 : .35}"/><stop offset="1" stop-color="${p.nebula}" stop-opacity="0"/></radialGradient>
+    <radialGradient id="neb${s}b" cx=".75" cy=".6" r=".6"><stop offset="0" stop-color="${p.aurora}" stop-opacity="${dark(p) ? .4 : .28}"/><stop offset="1" stop-color="${p.aurora}" stop-opacity="0"/></radialGradient>
+    <radialGradient id="neb${s}c" cx=".55" cy=".3" r=".5"><stop offset="0" stop-color="${p.rose}" stop-opacity="${dark(p) ? .35 : .22}"/><stop offset="1" stop-color="${p.rose}" stop-opacity="0"/></radialGradient>
+    <filter id="cloud${s}" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".018 .035" numOctaves="4" seed="3"/><feColorMatrix values="0 0 0 0 ${dark(p) ? ".62 0 0 0 0 .58 0 0 0 0 .92" : ".40 0 0 0 0 .36 0 0 0 0 .70"} 0 0 0 1.5 -.4"/><feGaussianBlur stdDeviation="1.6"/></filter>
+    <linearGradient id="brass${s}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1DDA6"/><stop offset=".5" stop-color="${p.brass}"/><stop offset="1" stop-color="${p.brass2}"/></linearGradient>
+    <radialGradient id="soft${s}a"><stop offset="0" stop-color="${p.nebula}" stop-opacity="${dark(p) ? .42 : .25}"/><stop offset=".6" stop-color="${p.nebula}" stop-opacity="${dark(p) ? .12 : .07}"/><stop offset="1" stop-color="${p.nebula}" stop-opacity="0"/></radialGradient>
+    <radialGradient id="soft${s}b"><stop offset="0" stop-color="${p.aurora}" stop-opacity="${dark(p) ? .28 : .18}"/><stop offset=".6" stop-color="${p.aurora}" stop-opacity="${dark(p) ? .08 : .05}"/><stop offset="1" stop-color="${p.aurora}" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow${s}"><stop offset="0" stop-color="${p.brass}" stop-opacity=".55"/><stop offset="1" stop-color="${p.brass}" stop-opacity="0"/></radialGradient>
+  </defs>`;
+}
+
+// Anneau gradué (astrolabe) : graduations tous les 5°, plus longues tous les 15°.
+function ring(cx, cy, r, from, to, c, labels = false) {
+  let out = `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${c}" stroke-width=".8" opacity=".8"/><circle cx="${cx}" cy="${cy}" r="${r - 9}" fill="none" stroke="${c}" stroke-width=".5" opacity=".5"/>`;
+  const roman = ["XII", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI"];
+  for (let a = from; a <= to; a += 5) {
+    const rad = (a - 90) * Math.PI / 180, long = a % 15 === 0, l = long ? 9 : 4;
+    const x1 = cx + Math.cos(rad) * r, y1 = cy + Math.sin(rad) * r, x2 = cx + Math.cos(rad) * (r - l), y2 = cy + Math.sin(rad) * (r - l);
+    out += `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${c}" stroke-width="${long ? .9 : .5}" opacity=".8"/>`;
+    if (labels && a % 30 === 0) {
+      const tx = cx + Math.cos(rad) * (r + 10), ty = cy + Math.sin(rad) * (r + 10);
+      out += `<text x="${tx.toFixed(1)}" y="${(ty + 3).toFixed(1)}" text-anchor="middle" font-family="Jost" font-size="8.5" letter-spacing="1" fill="${c}" opacity=".85">${roman[((a / 30) % 12 + 12) % 12]}</text>`;
+    }
+  }
+  return out;
+}
+function constellation(pts, links, c, rr = [2.4]) {
+  let out = links.map(([a, b]) => `<line x1="${pts[a][0]}" y1="${pts[a][1]}" x2="${pts[b][0]}" y2="${pts[b][1]}" stroke="${c}" stroke-width=".8" opacity=".55"/>`).join("");
+  out += pts.map(([x, y, r], i) => `<circle cx="${x}" cy="${y}" r="${r || rr[0]}" fill="${c}"/>${(r || 0) > 2.6 ? sparkle(x, y, (r || 0) * 2.6, c, .5) : ""}`).join("");
+  return out;
+}
+
+function heroSky(p, s) {
+  const w = 412, h = 246;
+  const lantern = [[262, 66, 3.2], [300, 54, 2.2], [336, 74, 2.6], [330, 112, 2.2], [296, 126, 3.6], [266, 104, 2], [300, 90, 1.8], [362, 140, 2]];
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${defs(p, s)}
+    <rect width="${w}" height="${h}" fill="${p.bg}"/>
+    <ellipse cx="300" cy="96" rx="230" ry="150" fill="url(#soft${s}a)"/>
+    <ellipse cx="90" cy="70" rx="190" ry="120" fill="url(#soft${s}b)"/>
+    ${starField({ w, h: 200, n: 150, seed: 4, color: p.star, maxR: 1.1, minO: .2, sparkles: 5, sparkleColor: p.brass })}
+    ${ring(206, 420, 380, -40, 40, p.brass, true)}
+    <path d="M206 40 V420" stroke="${p.brass}" stroke-width=".4" opacity=".35" stroke-dasharray="2 4"/>
+    <path d="M-20 300 Q206 120 432 300" fill="none" stroke="${p.silver}" stroke-width=".4" opacity=".35" stroke-dasharray="1 3"/>
+    ${constellation(lantern, [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 0], [1, 6], [6, 4], [3, 7]], p.star)}
+    <text x="340" y="160" text-anchor="middle" font-family="Newsreader" font-style="italic" font-size="12.5" fill="${p.text2}">la Lanterne</text>
+    <path d="M0 214 L30 206 L52 210 L70 196 L92 204 L120 200 L150 208 L176 204 L190 190 L196 190 L196 182 L201 182 L201 176 L207 176 L207 190 L214 190 L220 204 L262 198 L300 206 L340 198 L376 206 L412 200 V246 H0Z" fill="${p.bg}" stroke="${p.silver}" stroke-width=".8" stroke-linejoin="round" opacity=".95"/>
+    ${[[40, 207], [62, 205], [84, 202], [110, 203], [138, 206]].map(([x, y]) => `<path d="M${x} ${y} l5 -12 l5 12" fill="none" stroke="${p.silver}" stroke-width=".7" opacity=".8"/>`).join("")}
+  </svg>`;
+}
+
+function orbitActs(p) {
+  const xs = [32, 112, 190, 266, 332], labels = ["Prologue", "Acte I", "Acte II", "Acte III", "Épilogue"];
+  const svg = `<svg width="364" height="66" viewBox="0 0 364 66"><path d="M0 26 H364" stroke="${p.line2}" stroke-width="1"/>
+    <path d="M32 26 H112" stroke="${p.brass}" stroke-width="1.4"/>
+    ${xs.map((x, i) => i === 1
+      ? `<circle cx="${x}" cy="26" r="22" fill="url(#glowh${dark(p) ? "d" : "l"})"/><circle cx="${x}" cy="26" r="15" fill="none" stroke="${p.brass}" stroke-width=".8" stroke-dasharray="1.5 2.5"/><circle cx="${x}" cy="26" r="8" fill="url(#brassh${dark(p) ? "d" : "l"})"/><circle cx="${x + 15}" cy="26" r="2.2" fill="${p.brass}"/>`
+      : `<circle cx="${x}" cy="26" r="${i === 0 ? 5 : 4.5}" fill="${i === 0 ? p.brass : p.bg}" stroke="${i === 0 ? p.brass : p.line2}" stroke-width="1.2"/>`).join("")}
+  </svg>`;
+  return svg + xs.map((x, i) => `<div class="lbl ${i === 1 ? "on" : ""}" style="left:${x}px">${labels[i]}</div>`).join("");
+}
+
+function dial(p) {
+  const rings = [[60, .44, p.comet], [50, .38, p.aurora], [40, .33, p.solar], [30, .11, p.rose]];
+  const arc = (r, f) => { const C = 2 * Math.PI * r; return `stroke-dasharray="${(C * f).toFixed(1)} ${C.toFixed(1)}"`; };
+  return `<svg width="132" height="132" viewBox="0 0 132 132">
+    ${ring(66, 66, 65, 0, 355, p.line2)}
+    ${rings.map(([r, f, c]) => `<circle cx="66" cy="66" r="${r - 4}" fill="none" stroke="${p.line}" stroke-width="5"/><circle cx="66" cy="66" r="${r - 4}" fill="none" stroke="${c}" stroke-width="5" stroke-linecap="round" ${arc(r - 4, f)} transform="rotate(-90 66 66)"/>`).join("")}
+    <text x="66" y="72" text-anchor="middle" font-family="Bodoni Moda" font-size="22" fill="${p.text}">42<tspan font-size="12">%</tspan></text>
+  </svg>`;
+}
+
+const CONS = {
+  guerrier: [[[20, 4, 2.6], [20, 16], [20, 26], [12, 22], [28, 22], [20, 34, 2.4]], [[0, 1], [1, 2], [3, 4], [2, 5]]],
+  magicien: [[[20, 6, 3], [12, 16], [28, 16], [20, 26], [8, 32], [32, 32]], [[0, 1], [0, 2], [1, 3], [2, 3], [3, 4], [3, 5]]],
+  roublard: [[[30, 6, 2.6], [24, 14], [16, 24], [10, 32, 2.2], [12, 20], [22, 28]], [[0, 1], [1, 2], [2, 3], [4, 5]]],
+  barbare: [[[20, 4], [20, 18, 2.6], [20, 34], [10, 10], [10, 22], [30, 10], [30, 22]], [[0, 1], [1, 2], [3, 1], [4, 1], [5, 1], [6, 1]]]
+};
+function sign(p, e, c, size = 52) {
+  const [pts, links] = CONS[e];
+  return `<svg width="${size}" height="${size}" viewBox="0 0 52 52"><circle cx="26" cy="26" r="25" fill="${p.surface}" stroke="${p.line2}" stroke-width="1"/><g transform="translate(6 7)">${constellation(pts.map(([x, y, r]) => [x, y, r ? r * .8 : 1.4]), links, c)}</g></svg>`;
+}
+
+function navIcon(k, c) {
+  const I = {
+    partie: `<circle cx="12" cy="12" r="8.5" fill="none" stroke="${c}" stroke-width="1.3"/><circle cx="12" cy="12" r="2.4" fill="${c}"/><path d="M12 1.5 V5 M12 19 V22.5 M1.5 12 H5 M19 12 H22.5" stroke="${c}" stroke-width="1.2"/>`,
+    grimoire: `<rect x="5" y="3.5" width="14" height="17" rx="1.5" fill="none" stroke="${c}" stroke-width="1.3"/>${sparkle(12, 12, 4.5, c)}`,
+    codex: `<path d="M3.5 6 Q8 4 12 6 Q16 4 20.5 6 V19.5 Q16 17.5 12 19.5 Q8 17.5 3.5 19.5Z M12 6 V19.5" fill="none" stroke="${c}" stroke-width="1.3" stroke-linejoin="round"/>`,
+    builds: `<path d="M12 3 L20.5 18.5 H3.5Z" fill="none" stroke="${c}" stroke-width="1.3" stroke-linejoin="round"/><circle cx="12" cy="13" r="2.2" fill="none" stroke="${c}" stroke-width="1.2"/>`,
+    outils: `<path d="M12 2.5 L20.5 7.5 V16.5 L12 21.5 L3.5 16.5 V7.5Z" fill="none" stroke="${c}" stroke-width="1.3" stroke-linejoin="round"/><path d="M12 7 L16 14 H8Z" fill="none" stroke="${c}" stroke-width="1"/>`
+  };
+  return `<svg width="24" height="24" viewBox="0 0 24 24">${I[k]}</svg>`;
+}
+function nav(p, on) {
+  const items = [["partie", "Partie"], ["grimoire", "Grimoire"], ["codex", "Codex"], ["builds", "Builds"], ["outils", "Outils"]];
+  let ticks = ""; for (let x = 0; x <= 412; x += 8) ticks += `<line x1="${x}" y1="0" x2="${x}" y2="${x % 40 === 0 ? 5 : 2.5}" stroke="${p.line2}" stroke-width=".8"/>`;
+  return `<div class="nav"><svg class="tick" width="412" height="6"><line x1="0" y1=".5" x2="412" y2=".5" stroke="${p.line2}"/>${ticks}</svg>
+    ${items.map(([k, l]) => `<div class="it ${k === on ? "on" : ""}">${k === on ? `<svg width="10" height="10" viewBox="0 0 10 10" style="margin-top:-8px;margin-bottom:-4px">${sparkle(5, 5, 4.5, p.brass)}</svg>` : `<svg width="10" height="6"></svg>`}${navIcon(k, k === on ? p.brass : p.muted)}<span>${l}</span></div>`).join("")}
+    <div class="lens"><svg width="26" height="26" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.3" fill="none" stroke="${p.brass}" stroke-width="1.6"/><path d="M15.2 15.2 L20.5 20.5" stroke="${p.brass}" stroke-width="2" stroke-linecap="round"/>${sparkle(10.5, 10.5, 2.6, p.brass)}</svg></div></div>`;
+}
+function star(p, filled) {
+  return `<svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="12" fill="none" stroke="${p.line2}" stroke-width="1"/>${filled ? sparkle(13, 13, 8, p.brass) : `<path d="M13 5 Q14.2 11.8 21 13 Q14.2 14.2 13 21 Q11.8 14.2 5 13 Q11.8 11.8 13 5Z" fill="none" stroke="${p.brass}" stroke-width="1"/>`}</svg>`;
+}
+function sky(p) {
+  return `<svg class="sky" width="412" height="917">${starField({ w: 412, h: 917, n: 90, seed: 21, color: p.star, maxR: .9, minO: .08 })}</svg>`;
+}
+
+function home(el) {
+  const p = PAL[el.dataset.theme], s = "h" + (dark(p) ? "d" : "l");
+  el.style.cssText = vars(p);
+  return `${statusBar(p.text)}${sky(p)}<div class="content">
+    <div class="hero">${heroSky(p, s)}
+      <div class="ttl"><div class="label">Ma partie · Équilibré</div><h1 style="margin-top:8px">Acte I</h1></div>
+      <div class="session"><svg width="16" height="16" viewBox="0 0 16 16" style="flex:none;margin-right:4px"><circle cx="8" cy="8" r="6.5" fill="none" stroke="${p.brass}" stroke-width="1.2"/><path d="M8 4 V8 L10.5 10" stroke="${p.brass}" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>Session</div>
+    </div>
+    <div class="orbit">${orbitActs(p)}</div>
+    <div class="dialrow">${dial(p)}
+      <div class="leg"><div class="label" style="display:block;margin-bottom:2px">Avancement</div>
+        <div><i style="background:${p.comet}"></i>Quêtes<b>18 / 41</b></div>
+        <div><i style="background:${p.aurora}"></i>Lieux<b>20 / 52</b></div>
+        <div><i style="background:${p.solar}"></i>Manquables<b>9 / 27</b></div>
+        <div><i style="background:${p.rose}"></i>Trophées<b>6</b></div></div>
+    </div>
+    <div class="card alert"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="27" cy="13" r="6" fill="${p.solar}"/>${sparkle(27, 13, 11, p.solar, .45)}<path d="M23 17 L5 35 M25 19 L11 36 M21 15 L4 30" stroke="${p.solar}" stroke-width="1.2" stroke-linecap="round" opacity=".7"/></svg>
+      <div><div class="t">Point de non-retour</div><p>Avant de passer à l'Acte II, 6 éléments deviendront manquables.</p><a>Voir la liste →</a></div></div>
+    <div class="sect"><span class="label">Prochains objectifs</span><i class="ln"></i><span class="more">Tout voir</span></div>
+    <div class="obj">${star(p)}<div><div class="n">Chercher un remède au parasite</div><div class="m">Quête principale</div></div><span class="tag" style="color:${p.brass}">Acte I</span></div>
+    <div class="obj">${star(p)}<div><div class="n">Fouiller les ruines près de la route</div><div class="m">Lieu · 3 objets</div></div><span class="tag" style="color:${p.text2}">Lieu</span></div>
+    <div class="obj">${star(p)}<div><div class="n">Récupérer le journal du camp</div><div class="m">Livre du jeu</div></div><span class="tag" style="color:${p.solar}">Manquable</span></div>
+  </div>${nav(p, "partie")}${gestureBar(p.text2)}`;
+}
+
+function initial(p, L) {
+  return `<svg class="init" viewBox="0 0 70 70">${ring(35, 35, 33, 0, 355, p.brass)}<circle cx="35" cy="35" r="22" fill="${p.surface}"/>
+    <text x="35" y="49" text-anchor="middle" font-family="Bodoni Moda" font-size="42" fill="${p.text}">${L}</text>${sparkle(56, 12, 4, p.brass)}</svg>`;
+}
+function swordChart(p, s) {
+  const pts = [[80, 18, 3.4], [80, 40], [80, 64], [80, 88], [62, 96], [98, 96], [80, 104], [80, 122, 2.8]];
+  return `<svg width="160" height="150" viewBox="0 0 160 150">${defs(p, s)}
+    <circle cx="80" cy="72" r="70" fill="url(#neb${s}a)"/>
+    ${ring(80, 72, 66, 0, 355, p.brass, false)}
+    <circle cx="80" cy="72" r="44" fill="none" stroke="${p.line2}" stroke-width=".6" stroke-dasharray="1 3"/>
+    <path d="M10 72 H150 M80 2 V142" stroke="${p.line2}" stroke-width=".4" opacity=".6"/>
+    ${starField({ w: 160, h: 150, n: 30, seed: 9, color: p.star, maxR: .8, minO: .2 })}
+    <g transform="rotate(-24 80 72)">${constellation(pts, [[0, 1], [1, 2], [2, 3], [3, 4], [3, 5], [3, 6], [6, 7]], p.star)}</g>
+  </svg>`;
+}
+function nebulaVeil(p, s, h) {
+  return `<svg width="364" height="${h}" viewBox="0 0 364 ${h}">
+    <rect width="364" height="${h}" fill="${p.surface}"/>
+    <rect width="364" height="${h}" fill="url(#neb${s}a)"/><rect width="364" height="${h}" fill="url(#neb${s}b)"/><rect width="364" height="${h}" fill="url(#neb${s}c)"/>
+    <rect x="-20" y="-20" width="404" height="${h + 40}" filter="url(#cloud${s})" opacity=".85"/>
+    ${starField({ w: 364, h, n: 70, seed: 12, color: p.star, maxR: 1.1, minO: .3, sparkles: 4, sparkleColor: p.star })}
+    <rect x=".5" y=".5" width="363" height="${h - 1}" rx="14" fill="none" stroke="${p.line2}"/></svg>`;
+}
+
+function lore(el) {
+  const p = PAL[el.dataset.theme], s = "l" + (dark(p) ? "d" : "l");
+  el.style.cssText = vars(p);
+  return `${statusBar(p.text)}${sky(p)}<div class="content">
+    <div class="topbar">
+      <div class="ib"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M15 5 L8 12 L15 19" fill="none" stroke="${p.text}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="crumb">Codex · Peuples</div>
+      <div class="ib" style="font:400 17px 'Bodoni Moda',serif;color:${p.text}">Aa</div>
+      <div class="ib"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M6 3 H18 V21 L12 16 L6 21Z" fill="none" stroke="${p.brass}" stroke-width="1.4" stroke-linejoin="round"/>${sparkle(12, 10, 3.2, p.brass)}</svg></div>
+    </div>
+    <div class="lhead">${swordChart(p, s)}
+      <h1>Githyanki</h1><div class="vo">VO githyanki — peuple guerrier de la mer Astrale</div>
+      <div class="chips"><span class="chip dnd">Canon D&amp;D · multi-éditions</span><span class="chip">7 min</span></div></div>
+    <div class="body">
+      <div class="h2"><span class="nm">✦ Général</span><i class="ln"></i></div>
+      <p>${initial(p, "P")}euple guerrier de l'Astral, les githyanki descendent d'un peuple réduit en esclavage par les flagelleurs mentaux. Menés par Gith, leur libératrice, ils se sont soulevés et ont brisé l'empire illithid.<sup>1</sup></p>
+      <div class="h2"><span class="nm">✦ Dans BG3</span><i class="ln"></i><span class="ta">Acte I · canon BG3</span></div>
+      <p>Lae'zel, guerrière githyanki, compte parmi les toutes premières rencontres de l'aventure&#8239;; d'autres githyanki croiseront votre route.<sup>2</sup></p>
+      <div class="h2"><span class="nm">✦ La reine-liche</span><i class="ln"></i><span class="ta">Acte III · spoiler</span></div>
+      <div class="veil">${nebulaVeil(p, s, 112)}<div class="msg"><b>Spoiler majeur · Acte III</b><span>Glisser pour dissiper la nébuleuse</span></div></div>
+      <div class="refs"><div class="h2"><span class="nm">✦ Références</span><i class="ln"></i></div><ol><li><i>Mordenkainen's Tome of Foes</i> — D&amp;D 5e, 2018, chap. 4</li><li><i>Baldur's Gate 3</i> — Larian Studios, 2023, Acte I</li></ol></div>
+    </div>
+  </div>
+  <div class="thread"><svg width="22" height="18" viewBox="0 0 22 18">${constellation([[2, 14, 2], [9, 5, 2], [14, 11, 1.6], [20, 3, 2.2]], [[0, 1], [1, 2], [2, 3]], p.brass)}</svg>Tirer le fil <em>· 6 fiches reliées</em></div>
+  ${gestureBar(p.text2)}`;
+}
+
+function levelOrbit(p) {
+  const xs = Array.from({ length: 12 }, (_, i) => 16 + i * 30.5);
+  return `<svg width="380" height="62" viewBox="0 0 380 62">
+    <path d="M16 24 H352" stroke="${p.line2}" stroke-width="1"/>
+    ${xs.map((x, i) => {
+      const f = i < 2, c = f ? p.solar : p.nebula;
+      const mark = i === 3 ? sparkle(x, 6, 4.5, p.brass) : (i === 5 || i === 9) ? `<circle cx="${x}" cy="24" r="12" fill="none" stroke="${p.brass}" stroke-width=".9" stroke-dasharray="1.5 2"/>` : "";
+      return `${mark}<circle cx="${x}" cy="24" r="7" fill="${p.bg}" stroke="${c}" stroke-width="1.4"/><circle cx="${x}" cy="24" r="3" fill="${c}"/><text x="${x}" y="54" text-anchor="middle" font-family="Jost" font-size="11" fill="${p.text2}">${i + 1}</text>`;
+    }).join("")}
+  </svg>`;
+}
+function radar(p) {
+  const vals = [8, 15, 16, 20, 10, 8], keys = ["FOR", "DEX", "CON", "INT", "SAG", "CHA"], cx = 80, cy = 80, R = 56;
+  const pt = (i, v) => { const a = (-90 + i * 60) * Math.PI / 180, r = R * (v - 6) / 14; return [cx + Math.cos(a) * r, cy + Math.sin(a) * r]; };
+  const grid = [10, 14, 18, 20].map(v => `<polygon points="${keys.map((_, i) => pt(i, v).map(n => n.toFixed(1)).join(",")).join(" ")}" fill="none" stroke="${p.line}" stroke-width="${v === 20 ? 1 : .6}"/>`).join("");
+  const axes = keys.map((_, i) => { const [x, y] = pt(i, 20); return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="${p.line}" stroke-width=".6"/>`; }).join("");
+  const poly = vals.map((v, i) => pt(i, v).map(n => n.toFixed(1)).join(",")).join(" ");
+  const lbl = keys.map((k, i) => { const a = (-90 + i * 60) * Math.PI / 180; return `<text x="${(cx + Math.cos(a) * (R + 15)).toFixed(1)}" y="${(cy + Math.sin(a) * (R + 15) + 4).toFixed(1)}" text-anchor="middle" font-family="Jost" font-size="10" letter-spacing="1.4" fill="${i === 3 ? p.brass : p.text2}">${k}</text>`; }).join("");
+  return `<svg width="160" height="160" viewBox="0 0 160 160">${grid}${axes}<polygon points="${poly}" fill="${p.nebula}" fill-opacity=".18" stroke="${p.nebula}" stroke-width="1.4"/>
+    ${vals.map((v, i) => { const [x, y] = pt(i, v); return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${i === 3 ? 3.4 : 2.4}" fill="${i === 3 ? p.brass : p.star}"/>`; }).join("")}${lbl}</svg>`;
+}
+
+function build(el) {
+  const p = PAL[el.dataset.theme], s = "b" + (dark(p) ? "d" : "l");
+  el.style.cssText = vars(p);
+  const ab = [["For", 8, "−1"], ["Dex", 15, "+2"], ["Con", 16, "+3"], ["Int", 20, "+5"], ["Sag", 10, "+0"], ["Cha", 8, "−1"]]
+    .map(([k, v, m]) => `<div><span class="k">${k}</span><span class="v">${v}</span><span class="m">${m}</span></div>`).join("");
+  const rd = [["Points de vie", "92", 1], ["Classe d'armure", "19"], ["Maîtrise", "+4"], ["DD des sorts", "17"], ["Attaque sorts", "+9"], ["Initiative", "+2"]]
+    .map(([k, v, sel]) => `<div class="rd ${sel ? "sel" : ""}"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+  return `${statusBar(p.text)}${sky(p)}<svg width="0" height="0" style="position:absolute">${defs(p, s)}</svg><div class="content">
+    <div class="topbar">
+      <div class="ib"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M15 5 L8 12 L15 19" fill="none" stroke="${p.text}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="crumb">Builds · 3 sur 5</div>
+      <div class="ib"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z" fill="none" stroke="${p.text}" stroke-width="1.4"/><path d="M14 14h2v2h-2zM18 18h2v2h-2z" fill="${p.text}"/></svg></div>
+      <div class="ib"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.5" fill="${p.text}"/><circle cx="12" cy="12" r="1.5" fill="${p.text}"/><circle cx="19" cy="12" r="1.5" fill="${p.text}"/></svg></div>
+    </div>
+    <div class="bname">L'Évocateur en harnois</div>
+    <div class="bsub">Haut-elfe · niveau 12 · Guerrier 2 / Magicien 10 (Évocation)</div>
+    <div class="lvl">${levelOrbit(p)}</div>
+    <div class="radar">${radar(p)}<div class="atab">${ab}<div class="pts">Achat de points&#8239;: 27 / 27 · bonus +2 Int, +1 Con</div></div></div>
+    <div class="reads">${rd}</div>
+  </div>
+  <div class="sheet"><div class="grab"></div>
+    <div class="label" style="color:${p.text2}">Détail du calcul · points de vie</div>
+    <div class="eq" style="margin-top:8px">13 <small>+</small> 9 <small>+</small> 70 <small>=</small> <b>92</b></div>
+    <div class="bar"><i style="flex:13;background:${p.solar}"></i><i style="flex:9;background:${p.solar};opacity:.6"></i><i style="flex:70;background:${p.nebula}"></i></div>
+    <div class="row"><i style="background:${p.solar}"></i><div>Guerrier, niveau 1<div class="f">dé de vie maximal 10 + Constitution 3</div></div><div class="r">13</div></div>
+    <div class="row"><i style="background:${p.solar};opacity:.6"></i><div>Guerrier, niveau 2<div class="f">gain fixe 6 + Constitution 3</div></div><div class="r">9</div></div>
+    <div class="row" style="border-bottom:none"><i style="background:${p.nebula}"></i><div>Magicien, niveaux 1 à 10<div class="f">10 × (gain fixe 4 + Constitution 3)</div></div><div class="r">70</div></div>
+    <div class="src">Règle sourcée : bg3.wiki, «&#8239;Hit Points&#8239;» — révision notée dans le code.</div>
+  </div>${gestureBar(p.text2)}`;
+}
+
+mount({ home, lore, build });
+</script>
+</body>
+</html>

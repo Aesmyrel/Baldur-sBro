@@ -1,0 +1,22 @@
+# Environnement local
+.android-sdk/
+local.properties
+.gradle/
+.kotlin/
+build/
+captures/
+.idea/
+*.iml
+.DS_Store
+
+# Secrets : jamais dans le dépôt
+*.jks
+*.keystore
+keystore.properties
+signing/
+
+# Caches des outils
+tools/cache/
+tools/design/.fonts/
+node_modules/
+__pycache__/

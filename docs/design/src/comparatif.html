@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Comparatif des trois directions</title>
+<link rel="stylesheet" href="common.css">
+<style>
+  body { background: #121116; color: #EDE9E2; }
+  .cmp { padding: 48px 56px 56px; width: max-content; font-family: "Jost", sans-serif; }
+  h1 { font: 400 15px/1 "Jost", sans-serif; letter-spacing: .24em; text-transform: uppercase; opacity: .7; margin-bottom: 28px; }
+  .grid { display: grid; grid-template-columns: 220px repeat(3, 330px); gap: 22px 28px; align-items: start; }
+  .col { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; opacity: .65; text-align: center; }
+  .dir { align-self: center; }
+  .dir b { display: block; font-size: 30px; line-height: 1.05; margin-bottom: 8px; }
+  .dir span { font-size: 14px; line-height: 1.45; opacity: .75; display: block; }
+  img { width: 330px; border-radius: 26px; display: block; box-shadow: 0 18px 50px rgba(0,0,0,.5); }
+</style>
+</head>
+<body>
+<div class="cmp">
+  <h1>Carnet de Faerûn · phase 0 · trois directions artistiques</h1>
+  <div class="grid">
+    <div></div><div class="col">Ma partie</div><div class="col">Fiche de lore</div><div class="col">Planificateur de builds</div>
+    <div class="dir"><b style="font-family:'Almendra';color:#E3C27A">A · Grimoire enluminé</b><span>Encre, vélin, feuille d'or, gravure au trait, lettrines.</span></div>
+    <img src="../a-grimoire/ma-partie.png"><img src="../a-grimoire/fiche-lore.png"><img src="../a-grimoire/builds.png">
+    <div class="dir"><b style="font-family:'Bodoni Moda';font-style:italic;color:#E8D4A2">B · Atlas céleste</b><span>Nuit, laiton, cartes du ciel, astrolabe, constellations.</span></div>
+    <img src="../b-atlas/ma-partie.png"><img src="../b-atlas/fiche-lore.png"><img src="../b-atlas/builds.png">
+    <div class="dir"><b style="font-family:'Grenze Gotisch';color:#F2C66E">C · Vitrail et sceaux</b><span>Plomb noir, verres de joaillerie, rosaces, sceaux de cire.</span></div>
+    <img src="../c-vitrail/ma-partie.png"><img src="../c-vitrail/fiche-lore.png"><img src="../c-vitrail/builds.png">
+  </div>
+</div>
+</body>
+</html>
