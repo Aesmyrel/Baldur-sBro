@@ -10,7 +10,7 @@ Appli Android native, personnelle et non commerciale, compagnon de Baldur's Gate
 - `docs/PROGRESS.md` (état) et `docs/DECISIONS.md` (choix et raisons) — **à tenir à jour à chaque étape**.
 
 ## État
-Phase 0 terminée : **en attente du choix de direction artistique et de la validation du plan par l'utilisateur. Ne pas écrire de code d'appli avant.**
+Phase 0 validée : **direction artistique A « Grimoire enluminé »** (charte : `docs/DIRECTION_ARTISTIQUE.md` §2), plan validé. Développement de la V1 en cours, phase par phase (voir `docs/PROGRESS.md`).
 
 ## Règles non négociables
 1. **Zéro spoiler par défaut.** Tout bloc affichable porte un `SpoilerTag` (acte, niveau BG3 `AUCUN`/`LEGER`/`MAJEUR`, niveau « autres œuvres »). Le filtrage passe **toujours** par `SpoilerGate` (fonction pure, `core:model`) dans les dépôts : un écran ne reçoit jamais de contenu verrouillé. Le verrou s'applique partout : fiches, listes, recherche, liens, anecdote, alertes, widget. Une info qui laisse deviner un rebondissement est au moins `LEGER`. Tout nouveau type de contenu ajoute ses cas aux tests de fuite. Un voile ne montre ni le titre, ni l'acte, ni le niveau de ce qu'il cache. **Les documents, maquettes et messages de commit sont eux aussi sans spoiler** (pas de nom ni d'événement qui trahisse l'intrigue au-delà du début de l'Acte I).

@@ -109,7 +109,7 @@ Un bloc est visible si **les deux** conditions sont vraies, ou s'il a été rév
    - acte du bloc **antérieur** à l'acte courant → visible ;
    - acte du bloc **égal** à l'acte courant → visible si niveau ≤ `AUCUN` (tolérance aucun), ≤ `LEGER` (tolérance légère), toujours (tolérance complète) ;
    - acte du bloc **postérieur** → invisible (tolérance aucun), visible seulement si niveau = `AUCUN` (tolérance légère : on sait qu'un objet ou un lieu existe plus tard, sans rien sur l'intrigue), toujours (tolérance complète).
-   - *Le sens exact de la tolérance « légère » pour les actes futurs est une proposition à valider (question ouverte n° 3).*
+   - *Sens de la tolérance « légère » retenu : D-028.*
 2. **Autres œuvres** : niveau ≤ seuil de la tolérance « autres œuvres » (aucun → `AUCUN` seulement ; léger → jusqu'à `LEGER` ; complet → tout).
 
 Conséquence voulue : en tolérance « aucun », un rebondissement de fin d'Acte 1 étiqueté `MAJEUR` reste voilé tant que tu es en Acte 1, et se lève dès que tu passes en Acte 2.

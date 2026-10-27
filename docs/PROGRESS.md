@@ -14,7 +14,8 @@ _Dernière mise à jour : 27/10/2026, fin de la phase 0._
   - **Vérification indépendante de la phase 0** (agent relecteur) : versions, politiques de contenu de fans, licences, dates et lore des maquettes vérifiés. Corrigé ensuite : voiles de spoiler qui laissaient deviner un rebondissement, noms trop révélateurs dans le plan, permissions apportées par Google Code Scanner (D-021), contrastes (mesure automatique, 0 échec), absence de tables Cargo pour plusieurs catégories (risque ajouté), Lae'zel au Prologue, références multiples, accueils B et C complétés (groupe actif, anecdote), licences Fandom confirmées.
 
 ## En cours
-- **En attente de ta décision** : choix de la direction artistique et validation du plan (questions ouvertes dans `PLAN.md` §11).
+- Phase 0 validée : direction A « Grimoire enluminé », plan validé (D-026 à D-029).
+- **Phase 1 — socle et design system** : en cours.
 
 ## Reste à faire
 - Phase 1 : socle et design system de la direction choisie.

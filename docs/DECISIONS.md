@@ -53,3 +53,13 @@ Format : numéro, date, décision, raison. Les décisions marquées « à confir
 **D-024 — Licences Fandom confirmées.** L'API `siteinfo` du Forgotten Realms Wiki, de « Le Monde des Royaumes Oubliés » et de l'« Encyclopédie Baldur's Gate » renvoie « CC-BY-SA » (27/10/2026). Ces wikis restent des références, sans reprise de texte.
 
 **D-025 — SRD 5.2.1 FR en vocabulaire seulement.** Le SRD impose sa propre mention et interdit toute autre attribution à Wizards, ce qui entre en conflit avec la mention de la politique de contenu de fans. On ne reproduit donc aucun texte du SRD : on n'en tire que des correspondances de termes, ce qui ne demande pas d'attribution.
+
+## Validation de la phase 0 (27/10/2026)
+
+**D-026 — Direction artistique : A « Grimoire enluminé ».** Choisie par l'utilisateur. `docs/DIRECTION_ARTISTIQUE.md` §2 devient la charte. Les schémas de la cosmologie et du panthéon reprennent le principe des diagrammes astronomiques des manuscrits médiévaux, **dessinés dans la gravure au trait de A** (pas la palette ni les polices de B).
+
+**D-027 — Plan validé**, objectifs du codex compris (socle 220 fiches, cible 447).
+
+**D-028 — Tolérance « légère »** (l'utilisateur m'a laissé trancher) : pour les actes futurs, seul le contenu étiqueté `AUCUN` est visible (existence d'un objet, d'un lieu, d'un sort), jamais l'intrigue ; pour l'acte courant, les indices `LEGER` sont visibles. Réglage par défaut de l'appli : tolérance « aucun ».
+
+**D-029 — Noms VF** : démarrage avec les statuts et badges prévus (`SOURCES.md` §4) ; correction en un appui dans l'appli. Aucune extraction depuis les fichiers du jeu.
