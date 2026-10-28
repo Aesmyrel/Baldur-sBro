@@ -4,12 +4,9 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBars
@@ -18,6 +15,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.draw.drawWithCache
 import androidx.compose.ui.graphics.graphicsLayer
@@ -38,6 +36,7 @@ import androidx.compose.ui.graphics.drawscope.scale
 import androidx.compose.ui.graphics.drawscope.translate
 import androidx.compose.ui.graphics.layer.CompositingStrategy
 import androidx.compose.ui.graphics.layer.drawLayer
+import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -93,15 +92,19 @@ fun DrawScope.drawVignette(vignette: Vignette, c: CarnetColors, topInset: Float 
     val dy = (size.height - H * k) / 2f
     // Haut du cadre, ramené aux coordonnées de la scène : les rayons et la comète restent dessous.
     val ceiling = (frameTop(topInset) - dy) / k + 8f
+    val side = 12.5f * 1.dp.toPx()
     clipRect(0f, 0f, size.width, size.height) {
-        translate(dx, dy) {
-            scale(k, k, pivot = Offset.Zero) {
-                when (vignette) {
-                    Vignette.PROLOGUE -> prologue(c, ceiling)
-                    Vignette.ACTE_I -> acteI(c)
-                    Vignette.ACTE_II -> acteII(c)
-                    Vignette.ACTE_III -> acteIII(c, ceiling)
-                    Vignette.EPILOGUE -> epilogue(c, ceiling)
+        // La gravure reste dans son cadre : rien ne déborde sur les marges ni sous la barre d'état.
+        clipRect(side, frameTop(topInset), size.width - side, size.height) {
+            translate(dx, dy) {
+                scale(k, k, pivot = Offset.Zero) {
+                    when (vignette) {
+                        Vignette.PROLOGUE -> prologue(c, ceiling)
+                        Vignette.ACTE_I -> acteI(c)
+                        Vignette.ACTE_II -> acteII(c)
+                        Vignette.ACTE_III -> acteIII(c, ceiling)
+                        Vignette.EPILOGUE -> epilogue(c, ceiling)
+                    }
                 }
             }
         }
@@ -422,7 +425,7 @@ private fun DrawScope.epilogue(c: CarnetColors, ceiling: Float) {
  * En-tête d'écran : vignette gravée, libellé et grand titre posés en bas à gauche sur un voile d'encre
  * qui garantit la lisibilité au-dessus des hachures. Le titre tient sur une ligne (taille ajustée) ;
  * l'en-tête grandit si le texte l'exige. [trailing] se place en bas à droite, ou au-dessus du titre
- * quand la police système est très grande.
+ * quand la police système est très grande ou qu'il prendrait près de la moitié de la largeur.
  */
 @Composable
 fun VignetteHeader(
@@ -438,7 +441,7 @@ fun VignetteHeader(
     val topInset = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
     val large = density.fontScale > 1.3f
     BoxWithConstraints(modifier.fillMaxWidth()) {
-        Box(Modifier.fillMaxWidth().heightIn(min = vignetteHeight(maxWidth))) {
+        Box(Modifier.fillMaxWidth().heightIn(min = vignetteHeight(maxWidth)).clipToBounds()) {
             ActVignette(vignette, Modifier.matchParentSize(), topInset)
             // Voile d'encre derrière le titre ; il s'efface lui aussi vers le bas, pour ne laisser aucune couture.
             Box(
@@ -454,25 +457,63 @@ fun VignetteHeader(
                         drawRect(Brush.verticalGradient(0.62f to Color.Black, 1f to Color.Transparent), blendMode = BlendMode.DstIn)
                     },
             )
-            Column(
-                Modifier.align(Alignment.BottomStart).fillMaxWidth()
-                    .padding(start = 24.dp, end = 20.dp, top = topInset + 56.dp, bottom = 8.dp),
-            ) {
-                if (large) {
-                    trailing()
-                    Spacer(Modifier.height(8.dp))
-                }
-                Row(verticalAlignment = Alignment.Bottom) {
-                    Column(Modifier.weight(1f)) {
+            // La pastille se range à droite du titre, ou au-dessus quand elle prendrait trop de place
+            // (grande police, écran étroit, libellé long) : le titre garde toujours la largeur qu'il lui faut.
+            Layout(
+                content = {
+                    Column(Modifier.drawBehind { legibilityHalo(c.bg) }) {
                         Text(label, style = CarnetTheme.type.label.copy(shadow = shadow), color = c.gold)
                         Text(
                             title, style = CarnetTheme.type.display.copy(shadow = shadow), color = c.text, maxLines = 1,
                             autoSize = TextAutoSize.StepBased(minFontSize = 26.sp, maxFontSize = CarnetTheme.type.display.fontSize, stepSize = 2.sp),
                         )
                     }
-                    if (!large) trailing()
+                    trailing()
+                },
+                modifier = Modifier.align(Alignment.BottomStart).fillMaxWidth()
+                    .padding(start = 24.dp, end = 20.dp, top = topInset + 56.dp, bottom = 8.dp),
+            ) { measurables, constraints ->
+                val width = constraints.maxWidth
+                val gap = 12.dp.roundToPx()
+                val loose = constraints.copy(minWidth = 0, minHeight = 0)
+                val pill = measurables[1].measure(loose)
+                val stacked = large || pill.width > width * 0.45f
+                val text = measurables[0].measure(loose.copy(maxWidth = if (stacked || pill.width == 0) width else width - pill.width - gap))
+                if (stacked) {
+                    val top = if (pill.height > 0) pill.height + 8.dp.roundToPx() else 0
+                    // Ordre de placement = ordre de dessin : le texte et son halo avant la pastille.
+                    layout(width, top + text.height) {
+                        text.placeRelative(0, top)
+                        pill.placeRelative(0, 0)
+                    }
+                } else {
+                    val height = maxOf(text.height, pill.height)
+                    layout(width, height) {
+                        text.placeRelative(0, height - text.height)
+                        pill.placeRelative(width - pill.width, height - pill.height)
+                    }
                 }
             }
         }
+    }
+}
+
+/**
+ * Halo de page derrière le libellé et le titre : une ellipse de la couleur du fond, pleine jusqu'aux coins
+ * du texte et fondue sur 32 dp au-delà. Où que tombent les lignes (grande police, écran étroit), aucun astre
+ * ni hachure ne passe sous les lettres sans être voilé, et le reste de la gravure garde son éclat.
+ */
+private fun DrawScope.legibilityHalo(ground: Color) {
+    val center = Offset(size.width / 2f, size.height / 2f)
+    val feather = 32.dp.toPx()
+    // Ellipse passant par les coins du texte (facteur √2), avec une petite marge.
+    val rx = size.width / 2f * 1.42f + 6.dp.toPx() + feather
+    val ry = size.height / 2f * 1.42f + 6.dp.toPx() + feather
+    val solid = 1f - feather / ry
+    scale(rx / ry, 1f, pivot = center) {
+        drawCircle(
+            Brush.radialGradient(0f to ground.copy(alpha = 0.82f), solid to ground.copy(alpha = 0.82f), 1f to ground.copy(alpha = 0f), center = center, radius = ry),
+            radius = ry, center = center,
+        )
     }
 }

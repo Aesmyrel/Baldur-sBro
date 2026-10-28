@@ -63,9 +63,6 @@ data class SpoilerTag(
 
         /** Étiquette la plus stricte : valeur d'attente du pipeline, remplacée avant toute écriture. */
         val LOCKED = SpoilerTag(Act.EPILOGUE, SpoilerLevel.MAJOR, SpoilerLevel.MAJOR)
-
-        fun of(act: Act, level: SpoilerLevel = SpoilerLevel.NONE, otherWorks: SpoilerLevel = SpoilerLevel.NONE) =
-            SpoilerTag(act, level, otherWorks)
     }
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="home_label">Ma partie · %1$s</string>
+    <string name="home_label">Ma partie · %1$s</string>
     <string name="home_session">Session</string>
     <string name="home_session_on">Session · écran allumé</string>
     <string name="home_shortcuts">Carnet de route</string>

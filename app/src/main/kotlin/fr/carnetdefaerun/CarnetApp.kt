@@ -22,7 +22,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.key
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
@@ -32,9 +31,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.navigation3.rememberViewModelStoreNavEntryDecorator
-import androidx.navigation3.runtime.rememberDecoratedNavEntries
-import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.navigation3.ui.NavDisplay
 import fr.carnetdefaerun.core.designsystem.component.CarnetNavigationBar
 import fr.carnetdefaerun.core.designsystem.component.CarnetNavigationRail
@@ -49,6 +45,7 @@ import fr.carnetdefaerun.core.model.navigation.Destination
 import fr.carnetdefaerun.core.model.navigation.TopLevel
 import fr.carnetdefaerun.core.model.settings.AppTheme
 import fr.carnetdefaerun.navigation.AppNavigator
+import fr.carnetdefaerun.navigation.rememberTabEntries
 import fr.carnetdefaerun.navigation.appEntries
 
 @Composable
@@ -89,14 +86,8 @@ fun CarnetApp(navigator: AppNavigator = hiltViewModel(), appState: AppStateViewM
             if (wide) CarnetNavigationRail(destinations, state.current.ordinal, { navigator.select(TopLevel.entries[it]) }, onSearch, searchLabel)
             Column(Modifier.weight(1f)) {
                 Box(Modifier.weight(1f)) {
-                    // Une liste d'entrées décorées par onglet : changer d'onglet ne retire rien de sa pile,
-                    // donc ni l'état sauvegardable ni les ViewModels de l'onglet quitté ne sont détruits.
-                    val decorators = listOf(rememberSaveableStateHolderNavEntryDecorator<Destination>(), rememberViewModelStoreNavEntryDecorator())
-                    val entriesByTab = TopLevel.entries.associateWith { tab ->
-                        key(tab) { rememberDecoratedNavEntries(state.stack(tab), decorators, appEntries(navigator, tab)) }
-                    }
                     NavDisplay(
-                        entries = entriesByTab.getValue(state.current),
+                        entries = rememberTabEntries(TopLevel.entries, state.current, state::stack) { tab -> appEntries(navigator, tab) },
                         onBack = { navigator.back() },
                         transitionSpec = { pageTransition(motion, forward = true) },
                         popTransitionSpec = { pageTransition(motion, forward = false) },

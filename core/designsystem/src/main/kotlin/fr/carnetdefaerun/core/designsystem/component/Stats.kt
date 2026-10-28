@@ -42,7 +42,7 @@ fun AbilityTile(key: String, value: Int, modifierText: String, highlighted: Bool
     Column(
         modifier
             .clip(shape)
-            .background(if (highlighted) Brush.verticalGradient(listOf(c.gold.copy(alpha = 0.14f), c.surface)) else Brush.verticalGradient(listOf(c.surface, c.surface)))
+            .background(if (highlighted) Brush.verticalGradient(listOf(c.selectedTint, c.surface)) else Brush.verticalGradient(listOf(c.surface, c.surface)))
             .border(1.dp, if (highlighted) c.goldDeep else c.line, shape)
             .padding(vertical = 8.dp)
             .clearAndSetSemantics { contentDescription = a11y },

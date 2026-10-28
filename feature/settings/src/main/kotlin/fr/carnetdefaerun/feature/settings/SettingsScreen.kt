@@ -1,6 +1,7 @@
 package fr.carnetdefaerun.feature.settings
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
@@ -10,8 +11,10 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -87,14 +90,15 @@ fun SettingsScreen(
             { i -> onUpdate { it.copy(theme = AppTheme.entries[i]) } },
             Modifier.padding(horizontal = 18.dp, vertical = 6.dp),
         )
-        Label(R.string.settings_reading_size)
         val scales = UserPreferences.READING_SCALES
+        val scaleLabel = stringResource(R.string.settings_reading_size_value, (prefs.readingScale * 100).roundToInt())
+        Label(R.string.settings_reading_size, scaleLabel)
         CarnetSlider(
             value = scales.indexOf(prefs.readingScale).coerceAtLeast(0).toFloat(),
             onValueChange = { v -> onUpdate { it.copy(readingScale = scales[v.toInt().coerceIn(scales.indices)]) } },
             range = 0f..(scales.size - 1).toFloat(),
             steps = scales.size - 2,
-            valueLabel = stringResource(R.string.settings_reading_size_value, (prefs.readingScale * 100).roundToInt()),
+            valueLabel = scaleLabel,
         )
         Text(stringResource(R.string.settings_reading_sample), style = CarnetTheme.type.reading, color = c.text, modifier = Modifier.padding(horizontal = 24.dp))
         CarnetSwitchRow(stringResource(R.string.settings_reduce_motion), stringResource(R.string.settings_reduce_motion_help), prefs.reduceMotion, { v -> onUpdate { it.copy(reduceMotion = v) } })
@@ -118,10 +122,14 @@ private fun ToleranceChoice(value: Tolerance, onChange: (Tolerance) -> Unit) {
     SegmentedChoice(Tolerance.entries.map { stringResource(it.labelRes) }, value.ordinal, { onChange(Tolerance.entries[it]) }, Modifier.padding(horizontal = 18.dp))
 }
 
+/** Titre d'un réglage, avec sa valeur courante à droite (déjà lue par TalkBack sur la commande elle-même). */
 @Composable
-private fun Label(res: Int) {
+private fun Label(res: Int, value: String? = null) {
     // Même hiérarchie que les titres d'interrupteur : un réglage, un titre en Garamond.
-    Text(stringResource(res), style = CarnetTheme.type.bodySmall, color = CarnetTheme.colors.text, modifier = Modifier.padding(start = 24.dp, end = 24.dp, top = 12.dp, bottom = 6.dp))
+    Row(Modifier.padding(start = 24.dp, end = 24.dp, top = 12.dp, bottom = 6.dp), verticalAlignment = Alignment.CenterVertically) {
+        Text(stringResource(res), style = CarnetTheme.type.bodySmall, color = CarnetTheme.colors.text, modifier = Modifier.weight(1f))
+        if (value != null) Text(value, style = CarnetTheme.type.dataStrong, color = CarnetTheme.accent, softWrap = false, modifier = Modifier.clearAndSetSemantics {})
+    }
 }
 
 @Composable

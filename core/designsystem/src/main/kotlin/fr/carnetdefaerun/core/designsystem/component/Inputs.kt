@@ -105,7 +105,7 @@ private fun Segments(options: List<String>, selected: Int, onSelect: (Int) -> Un
             val on = i == selected
             Column(
                 Modifier.weight(1f).fillMaxHeight().defaultMinSize(minHeight = 48.dp)
-                    .background(if (on) c.gold.copy(alpha = 0.18f) else c.surface)
+                    .background(if (on) c.selectedTint else c.surface)
                     .selectable(on, role = Role.RadioButton) { if (!on) { haptics.tick(); onSelect(i) } }
                     .padding(horizontal = 6.dp, vertical = 8.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,

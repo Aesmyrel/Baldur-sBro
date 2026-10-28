@@ -33,7 +33,7 @@ import fr.carnetdefaerun.core.ui.vignette
 @Composable
 fun HomeRoute(onNavigate: (Destination) -> Unit, viewModel: HomeViewModel = hiltViewModel()) {
     val state by viewModel.state.collectAsStateWithLifecycle()
-    HomeScreen(state, viewModel::selectAct, viewModel::toggleSession, onNavigate)
+    HomeScreen(state ?: return, viewModel::selectAct, viewModel::toggleSession, onNavigate)
 }
 
 @Composable

@@ -22,9 +22,10 @@ data class HomeUiState(
 @HiltViewModel
 class HomeViewModel @Inject constructor(private val preferences: UserPreferencesRepository) : ViewModel() {
 
-    val state: StateFlow<HomeUiState> = preferences.preferences
+    /** `null` tant que les préférences ne sont pas relues : l'en-tête ne montre jamais un acte provisoire. */
+    val state: StateFlow<HomeUiState?> = preferences.preferences
         .map { HomeUiState(it.currentAct, it.difficulty, it.sessionActive) }
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), HomeUiState())
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
     /** Changer d'acte en un appui : tout le contenu se déverrouille ou se voile aussitôt. */
     fun selectAct(act: Act) = viewModelScope.launch { preferences.update { it.copy(currentAct = act) } }

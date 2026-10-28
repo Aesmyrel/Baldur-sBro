@@ -10,6 +10,7 @@ import fr.carnetdefaerun.core.model.content.Link
 import fr.carnetdefaerun.core.model.content.PlaceFacts
 import fr.carnetdefaerun.core.model.content.Relation
 import fr.carnetdefaerun.core.model.spoiler.Act
+import fr.carnetdefaerun.core.model.spoiler.SpoilerLevel
 import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
 import fr.carnetdefaerun.pipeline.i18n.NameResolver
 import fr.carnetdefaerun.pipeline.wiki.Template
@@ -30,7 +31,7 @@ class PlaceNormalizer(private val corpus: Corpus, private val names: NameResolve
         val id = Corpus.id("place", page.title)
         val act = Parsing.act(t["act"])
         val region = t["region"]?.let(Wikitext::plain)?.takeIf { it in acts }?.let { Corpus.id("place", it) }
-        val tag = SpoilerTag.of(act ?: Act.ACT_3)
+        val tag = SpoilerTag(act ?: Act.ACT_3, SpoilerLevel.NONE, otherWorks = SpoilerLevel.NONE)
         Entry(
             id = id,
             type = EntryType.PLACE,

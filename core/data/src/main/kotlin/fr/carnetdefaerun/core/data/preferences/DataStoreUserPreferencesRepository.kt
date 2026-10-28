@@ -10,8 +10,10 @@ import java.io.IOException
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.retryWhen
 import kotlinx.serialization.json.Json
 
 /**
@@ -23,9 +25,16 @@ class DataStoreUserPreferencesRepository @Inject constructor(
     private val store: DataStore<Preferences>,
 ) : UserPreferencesRepository {
 
+    /** Une lecture qui échoue donne les valeurs par défaut, puis le flux se réabonne : les écritures suivantes restent visibles. */
     override val preferences: Flow<UserPreferences> = store.data
-        .catch { if (it is IOException) emit(emptyPreferences()) else throw it }
+        .retryWhen { cause, attempt ->
+            if (cause !is IOException) return@retryWhen false
+            if (attempt == 0L) emit(emptyPreferences())
+            delay(minOf(30_000L, 500L shl attempt.coerceAtMost(6L).toInt()))
+            true
+        }
         .map { decode(it[KEY]) }
+        .distinctUntilChanged()
 
     override suspend fun update(transform: (UserPreferences) -> UserPreferences) {
         store.edit { prefs -> prefs[KEY] = JSON.encodeToString(UserPreferences.serializer(), transform(decode(prefs[KEY]))) }

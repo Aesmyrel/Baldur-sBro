@@ -98,7 +98,7 @@ fun SpoilerVeil(onReveal: () -> Unit, modifier: Modifier = Modifier, actLabel: S
             slot.acquire(token)
             try {
                 var last = withFrameNanos { it }
-                while (time < AMBIENT_SECONDS || revealing) {
+                while (time < AMBIENT_SECONDS || (revealing && clear.value < 1f)) {
                     val now = withFrameNanos { it }
                     time += (now - last) / 1_000_000_000f
                     last = now

@@ -14,6 +14,7 @@ import com.github.takahirom.roborazzi.captureRoboImage
 import fr.carnetdefaerun.core.designsystem.draw.grimoireBackground
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 import fr.carnetdefaerun.core.designsystem.theme.ThemeMode
+import fr.carnetdefaerun.core.model.settings.AppTheme
 import fr.carnetdefaerun.core.model.settings.UserPreferences
 import fr.carnetdefaerun.core.model.spoiler.Act
 import fr.carnetdefaerun.core.model.spoiler.Tolerance
@@ -30,13 +31,13 @@ import org.robolectric.annotation.GraphicsMode
 class SettingsScreenshotTest {
     @get:Rule val compose = createAndroidComposeRule<ComponentActivity>()
 
-    private fun shot(name: String, mode: ThemeMode = ThemeMode.SOMBRE, fontScale: Float = 1f) {
+    private fun shot(name: String, mode: ThemeMode = ThemeMode.SOMBRE, fontScale: Float = 1f, theme: AppTheme = AppTheme.DARK) {
         compose.setContent {
             val base = LocalDensity.current
             CompositionLocalProvider(LocalDensity provides Density(base.density, fontScale)) {
                 CarnetTheme(mode = mode, reducedMotion = true) {
                     Box(Modifier.fillMaxSize().grimoireBackground(CarnetTheme.colors)) {
-                        SettingsScreen(UserPreferences(currentAct = Act.ACT_1, tolerance = Tolerance.LIGHT), {}, {}, {})
+                        SettingsScreen(UserPreferences(currentAct = Act.ACT_1, tolerance = Tolerance.LIGHT, theme = theme), {}, {}, {})
                     }
                 }
             }
@@ -45,7 +46,7 @@ class SettingsScreenshotTest {
     }
 
     @Test fun reglages_sombre() = shot("reglages_sombre")
-    @Test fun reglages_parchemin() = shot("reglages_parchemin", ThemeMode.PARCHEMIN)
+    @Test fun reglages_parchemin() = shot("reglages_parchemin", ThemeMode.PARCHEMIN, theme = AppTheme.PARCHMENT)
 
     @Config(qualifiers = "w412dp-h2400dp-xxhdpi")
     @Test fun reglages_police200() = shot("reglages_police200", fontScale = 2f)

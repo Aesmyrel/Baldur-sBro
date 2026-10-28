@@ -120,7 +120,7 @@ fun CarnetNavigationRail(
     ) {
         SearchMedallion(onSearch, searchLabel)
         Spacer(Modifier.height(12.dp))
-        destinations.forEachIndexed { i, d -> NavItem(d, i == selected, { onSelect(i) }, Modifier.fillMaxWidth().height(72.dp)) }
+        destinations.forEachIndexed { i, d -> NavItem(d, i == selected, { onSelect(i) }, Modifier.fillMaxWidth().heightIn(min = 72.dp)) }
     }
 }
 
@@ -136,7 +136,7 @@ private fun NavItem(d: NavDestination, active: Boolean, onClick: () -> Unit, mod
         Canvas(Modifier.size(26.dp)) { drawNavGlyph(d.glyph, color) }
         // Libellé sur une ligne, taille plafonnée : la barre ne se déforme pas à 200 %.
         Text(
-            d.label, style = CarnetTheme.type.dataSmall.copy(fontSize = CarnetTheme.type.dataSmall.fontSize.cappedScale(1.4f)),
+            d.label, style = CarnetTheme.type.dataSmall.copy(fontSize = CarnetTheme.type.dataSmall.fontSize.cappedScale(1.25f)),
             color = color, maxLines = 1, softWrap = false, overflow = TextOverflow.Ellipsis,
         )
         Canvas(Modifier.size(18.dp, 5.dp)) {

@@ -20,7 +20,7 @@ class HomeViewModelTest {
         backgroundScope.launch { vm.state.collect {} }
         vm.selectAct(Act.ACT_2)
         assertThat(repo.current.currentAct).isEqualTo(Act.ACT_2)
-        assertThat(vm.state.first { it.act == Act.ACT_2 }.act).isEqualTo(Act.ACT_2)
+        assertThat(vm.state.first { it?.act == Act.ACT_2 }?.act).isEqualTo(Act.ACT_2)
     }
 
     @Test

@@ -33,6 +33,8 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun handle(intent: Intent?) {
-        DeepLinks.parse(intent?.data)?.let(navigator::openDeepLink)
+        // Relancée depuis les tâches récentes, l'activité reçoit l'intention d'origine : elle ne doit pas rejouer le lien.
+        if (intent == null || intent.flags and Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY != 0) return
+        DeepLinks.parse(intent.data)?.let(navigator::openDeepLink)
     }
 }

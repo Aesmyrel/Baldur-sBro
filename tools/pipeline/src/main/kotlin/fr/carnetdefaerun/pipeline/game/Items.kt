@@ -95,7 +95,7 @@ class ItemNormalizer(
         // Acte de l'objet : la plus précoce de ses sources ; inconnue → Acte III par prudence (signalé).
         val act = sources.mapNotNull { it.act }.minOrNull() ?: Act.ACT_3.also { unknown += "act" }
         val nameLevel = if (rarity == Rarity.STORY) SpoilerLevel.LIGHT else SpoilerLevel.NONE
-        val titleTag = SpoilerTag.of(act, nameLevel)
+        val titleTag = SpoilerTag(act, nameLevel, otherWorks = SpoilerLevel.NONE)
 
         return Entry(
             id = id,
@@ -221,7 +221,7 @@ class ItemNormalizer(
                 place = location?.takeIf { it in places }?.let { Corpus.id("place", it) },
                 method = method,
                 vendor = vendor,
-                tag = SpoilerTag.of(placeAct ?: Act.ACT_3, level),
+                tag = SpoilerTag(placeAct ?: Act.ACT_3, level, otherWorks = SpoilerLevel.NONE),
             )
         }
     }

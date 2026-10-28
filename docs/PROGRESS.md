@@ -19,10 +19,11 @@ _Dernière mise à jour : 28/10/2026, phase 1 corrigée après vérification ind
   - Design system A : jetons sombre / OLED / parchemin, polices OFL, gravure procédurale, 5 en-têtes d'acte, 12 emblèmes de classe, composants signature, shaders avec repli, haptique, mouvement réduit.
   - Coquille : navigation par onglet persistée, liens profonds, barre ou rail selon la largeur, écran de démarrage, thèmes, mode session (écran allumé), réglages complets, crédits et mentions légales, icône adaptative et monochrome.
   - Qualité : `./gradlew check` vert (lint sans avertissement, tests, captures, contrôle des permissions), release R8 de 2,8 Mo sans permission réseau.
-  - Vérification indépendante (technique ; art et accessibilité) : 9 points bloquants et 25 importants relevés, tous corrigés (D-038 à D-052) : voile sur toucher confirmé et lisible, étiquettes fermées par défaut, poignée opaque, navigation par onglet sans perte d'état, DataStore résistant, `check` qui compare vraiment les captures, EmojiCompat retiré, polices complétées et renommées, 200 % et largeurs, contrastes réels, OLED en noir pur. 25 captures, dont 200 %, 360 dp et pliable.
+  - Vérification indépendante (technique ; art et accessibilité) : 9 points bloquants et 25 importants relevés, corrigés (D-038 à D-052) ou planifiés (D-053) : voile sur toucher confirmé et lisible, étiquettes fermées par défaut, poignée opaque, navigation par onglet sans perte d'état, DataStore résistant, `check` qui compare vraiment les captures, EmojiCompat retiré, polices complétées et renommées, 200 % et largeurs, contrastes réels, OLED en noir pur. 25 captures, dont 200 %, 360 dp et pliable.
+  - Contre-vérification : 5 points bloquants et 19 mineurs, corrigés (D-063) sauf la capture du shader en mouvement, renvoyée au téléphone (`docs/TEST_SUR_TELEPHONE.md`).
 
 ## En cours
-- Contre-vérification indépendante des corrections de la phase 1.
+- Dernière relecture indépendante des corrections de la phase 1 (D-063).
 - **Phase 2 — pipelines de données du jeu et du lore**
   - Fait : modèle de contenu ; pipeline bg3.wiki (récupération, normalisation, assemblage, validation bloquante, rapport) ; 1 776 entrées sans texte du jeu (234 sorts, 638 objets, 245 états, 494 capacités, 165 lieux) ; base embarquée générée à la compilation ; dépôt de contenu filtré par le verrou, avec tests de non-fuite sur toute la base.
   - À faire : noms français (1 558 propositions) et effets rédigés en français (lots d'écriture) ; classes, sous-classes, races, historiques, dons ; compagnons, quêtes, trophées ; pipeline du lore (format, références, fiches pilotes) ; vérification indépendante d'un échantillon.
@@ -33,7 +34,7 @@ _Dernière mise à jour : 28/10/2026, phase 1 corrigée après vérification ind
 - V2 après validation de la V1.
 
 ## Problèmes connus
-- **Pas d'émulateur** possible dans ce conteneur (pas de KVM) : la vérification sur appareil sera listée dans `docs/TEST_SUR_TELEPHONE.md`.
+- **Pas d'émulateur** possible dans ce conteneur (pas de KVM) : la vérification sur appareil est listée dans `docs/TEST_SUR_TELEPHONE.md`.
 - **Noms VF de BG3** : pas de source ouverte complète ; badges et correction dans l'appli prévus.
 - Les pages HTML des wikis Fandom renvoient une erreur 402 à l'outil de lecture web ; leur API répond (licences confirmées par ce biais).
 - bg3.wiki n'expose pas de table Cargo pour les classes, sous-classes, races, dons, historiques, quêtes, approbations et trophées : ces catégories demanderont l'analyse du wikitexte (plus d'effort, voir les risques du plan).

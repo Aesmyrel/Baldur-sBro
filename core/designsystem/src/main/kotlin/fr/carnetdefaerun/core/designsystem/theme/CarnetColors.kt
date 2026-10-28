@@ -21,7 +21,7 @@ data class CarnetColors(
     val muted: Color,
     /** Or pour le texte, les chiffres clés et les filets. */
     val gold: Color,
-    /** Or profond, réservé au décor (jamais au texte). */
+    /** Or profond, réservé au décor et aux contours (jamais au texte) : au moins 3:1 sur la page. */
     val goldDeep: Color,
     val lapis: Color,
     val vermilion: Color,
@@ -58,6 +58,10 @@ data class CarnetColors(
      */
     val goldLeafDecor: Brush
         get() = if (isDark) goldLeaf else Brush.linearGradient(0f to goldDeep, 0.6f to gold, 1f to goldDeep)
+
+    /** Lavis d'or d'une option choisie (segments, tuile mise en avant) : l'or du libellé y garde 4,5:1. */
+    val selectedTint: Color
+        get() = gold.copy(alpha = if (isDark) 0.18f else 0.08f)
 
     /** Médaillon de feuille d'or (sélecteur d'acte, recherche) : clair au centre, profond au bord. */
     val goldLeafRadial: Brush
@@ -135,7 +139,7 @@ object CarnetPalettes {
         text2 = Color(0xFF5B4A35),
         muted = Color(0xFF6F5E47),
         gold = Color(0xFF7A5814),
-        goldDeep = Color(0xFFA9843A),
+        goldDeep = Color(0xFF96732C),
         lapis = Color(0xFF2F51A8),
         vermilion = Color(0xFFB03A1C),
         verdigris = Color(0xFF256A57),

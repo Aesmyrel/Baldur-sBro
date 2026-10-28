@@ -114,9 +114,18 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 
 **D-051 — Contrastes réels.** Le grain du vélin est posé en incrustation (sa teinte moyenne ne change pas le fond, donc ni les contrastes mesurés), plus léger ; OLED en noir pur (ni halo ni grain) ; texte sur feuille d'or : variante sans bande sombre et encre `#1A1206` (≥ 4,5:1 partout) ; en parchemin, les ornements gravés utilisent un or sombre (l'or clair y disparaissait) ; pastille Session opaque ; coche du sceau lisible sur la cire (≥ 3:1).
 
-**D-052 — Écran de démarrage selon le thème.** L'appli déclare au système le mode clair (parchemin) ou sombre choisi (`setApplicationNightMode`) : l'écran de démarrage est en vélin ou en encre (`values-notnight`), sans éclair sombre en parchemin.
+**D-052 — Écran de démarrage selon le thème.** L'appli déclare au système le mode clair (parchemin) ou sombre choisi (`setApplicationNightMode`) : l'écran de démarrage est en vélin ou en encre (`values-notnight`), sans éclair sombre en parchemin. Conséquence assumée : changer de thème (parchemin ↔ sombre) change la configuration `uiMode` et recrée l'activité, comme le fait le système ; l'état est restauré (pile persistée, état sauvegardable). À vérifier sur le téléphone (`docs/TEST_SUR_TELEPHONE.md`).
 
 **D-053 — Reste à faire, planifié.** Gravure plus riche des emblèmes et du reste des illustrations (lot « I ») ; composants Références, appels de note, feuille « Détail du calcul », ligne de source (phases 3–4, avec les écrans qui les emploient) ; accueil complet (objectifs, alertes, anecdote : phase 5, quand les données existent) ; reflet d'or et transitions « encre » (phase 7).
+
+**D-063 — Contre-vérification de la phase 1 : corrections.**
+- Polices : les notices d'origine (copyright, licence et son adresse) ne sont plus touchées par le renommage ; espace fine insécable dédiée de 55 % de l'espace-mot (l'espace fine des graisses grasses était plus large qu'une espace-mot) ; points de suspension ajoutés là où ils manquaient. Un test le vérifie.
+- En-tête de section : l'action ne se coupe jamais ; elle passe sous le filet quand le libellé perdrait plus de la moitié de la largeur.
+- Contrastes : lavis d'or d'une option choisie à 8 % en parchemin (18 % en sombre) ; or profond du parchemin à `#96732C` (3,5:1 pour les contours). Tous les jetons sont désormais mesurés par un test (texte ≥ 4,5:1 sur les quatre fonds de chaque thème, contours ≥ 3:1).
+- En-tête d'acte : halo de page serré autour du libellé et du titre (aucun astre ni hachure sous les lettres, à toutes les tailles) ; la pastille passe au-dessus du titre dès qu'elle prendrait près de la moitié de la largeur ; la gravure est rognée sur son cadre.
+- Divers : fin de l'animation du voile même si la révélation reste sans effet ; plus de fabrique d'étiquette à valeurs ouvertes ; lecture des préférences relancée après une erreur ; accueil sans état provisoire ; hauteurs minimales pour la barre du haut et le rail ; libellés de la barre plafonnés à 125 % ; tuiles de statistiques de même hauteur ; valeur du curseur affichée ; relance depuis les tâches récentes sans rejouer le lien profond ; test de conservation de l'état par onglet.
+
+**D-064 — Versions revues à la main, pas par lint.** Les contrôles de lint qui interrogent les dépôts en ligne (`AndroidGradlePluginVersion`, `GradleDependency`, `NewerVersionAvailable`) sont désactivés : ils rendaient `check` dépendant de la date du jour (AGP 9.5.0, publié le 28/10/2026, faisait échouer une compilation inchangée). Les versions sont revues en fin de phase, et une version n'est retenue que stable et publiée depuis au moins deux semaines. AGP reste en 9.4.1 pour l'instant.
 
 ## Phase 2 — données de jeu (28/10/2026)
 

@@ -3,9 +3,11 @@ package fr.carnetdefaerun.core.designsystem
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -16,12 +18,12 @@ import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.material3.Text
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -37,6 +39,7 @@ import fr.carnetdefaerun.core.designsystem.component.CalcRow
 import fr.carnetdefaerun.core.designsystem.component.CanonBadge
 import fr.carnetdefaerun.core.designsystem.component.CanonKind
 import fr.carnetdefaerun.core.designsystem.component.CarnetNavigationBar
+import fr.carnetdefaerun.core.designsystem.component.CarnetSlider
 import fr.carnetdefaerun.core.designsystem.component.CarnetSwitchRow
 import fr.carnetdefaerun.core.designsystem.component.CarnetTopBar
 import fr.carnetdefaerun.core.designsystem.component.DropCapParagraph
@@ -52,18 +55,17 @@ import fr.carnetdefaerun.core.designsystem.component.NavGlyph
 import fr.carnetdefaerun.core.designsystem.component.ObjectiveRow
 import fr.carnetdefaerun.core.designsystem.component.PartyMember
 import fr.carnetdefaerun.core.designsystem.component.QuietButton
+import fr.carnetdefaerun.core.designsystem.component.ReadingColumn
 import fr.carnetdefaerun.core.designsystem.component.ReadingProgress
 import fr.carnetdefaerun.core.designsystem.component.SearchField
 import fr.carnetdefaerun.core.designsystem.component.SectionHeader
 import fr.carnetdefaerun.core.designsystem.component.SegmentedChoice
-import fr.carnetdefaerun.core.designsystem.component.SpellSlots
-import fr.carnetdefaerun.core.designsystem.component.CarnetSlider
-import fr.carnetdefaerun.core.designsystem.component.ReadingColumn
 import fr.carnetdefaerun.core.designsystem.component.SessionToggle
+import fr.carnetdefaerun.core.designsystem.component.SpellSlots
 import fr.carnetdefaerun.core.designsystem.component.SpoilerVeil
-import fr.carnetdefaerun.core.designsystem.component.TagRow
 import fr.carnetdefaerun.core.designsystem.component.StatTile
 import fr.carnetdefaerun.core.designsystem.component.Tag
+import fr.carnetdefaerun.core.designsystem.component.TagRow
 import fr.carnetdefaerun.core.designsystem.draw.grimoireBackground
 import fr.carnetdefaerun.core.designsystem.illustration.ActVignette
 import fr.carnetdefaerun.core.designsystem.illustration.ClassEmblem
@@ -171,11 +173,11 @@ fun CatalogBuild() {
             }
             SectionHeader("Statistiques dérivées", Modifier.padding(top = 8.dp))
             Column(Modifier.padding(horizontal = 18.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
-                Row(horizontalArrangement = Arrangement.spacedBy(7.dp)) {
-                    StatTile("Points de vie", "92", true, {}, Modifier.weight(1f)); StatTile("Classe d’armure", "19", false, {}, Modifier.weight(1f)); StatTile("Maîtrise", "+4", false, {}, Modifier.weight(1f))
+                Row(Modifier.height(IntrinsicSize.Min), horizontalArrangement = Arrangement.spacedBy(7.dp)) {
+                    StatTile("Points de vie", "92", true, {}, Modifier.weight(1f).fillMaxHeight()); StatTile("Classe d’armure", "19", false, {}, Modifier.weight(1f).fillMaxHeight()); StatTile("Maîtrise", "+4", false, {}, Modifier.weight(1f).fillMaxHeight())
                 }
-                Row(horizontalArrangement = Arrangement.spacedBy(7.dp)) {
-                    StatTile("DD des sorts", "17", false, {}, Modifier.weight(1f)); StatTile("Attaque des sorts", "+9", false, {}, Modifier.weight(1f)); StatTile("Initiative", "+2", false, {}, Modifier.weight(1f))
+                Row(Modifier.height(IntrinsicSize.Min), horizontalArrangement = Arrangement.spacedBy(7.dp)) {
+                    StatTile("DD des sorts", "17", false, {}, Modifier.weight(1f).fillMaxHeight()); StatTile("Attaque des sorts", "+9", false, {}, Modifier.weight(1f).fillMaxHeight()); StatTile("Initiative", "+2", false, {}, Modifier.weight(1f).fillMaxHeight())
                 }
             }
             SpellSlots(listOf("I" to 4, "II" to 3, "III" to 3, "IV" to 3, "V" to 2), "Emplacements", Modifier.padding(horizontal = 24.dp, vertical = 12.dp))

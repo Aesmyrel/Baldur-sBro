@@ -12,6 +12,7 @@ import fr.carnetdefaerun.core.model.settings.UserPreferences
 import fr.carnetdefaerun.core.model.spoiler.Act
 import java.io.File
 import kotlin.io.path.createTempDirectory
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
@@ -19,6 +20,7 @@ import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
 /** Les magasins ne plantent jamais au démarrage : fichier corrompu ou contenu illisible → valeurs par défaut. */
+@OptIn(ExperimentalCoroutinesApi::class)
 class StoresTest {
     private val dir = createTempDirectory("stores").toFile()
 

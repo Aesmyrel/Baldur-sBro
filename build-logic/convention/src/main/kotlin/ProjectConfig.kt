@@ -26,5 +26,9 @@ internal fun Project.configureAndroidCommon(extension: CommonExtension) {
         // Aucun avertissement toléré (D-036) ; les exceptions sont listées dans `lint.disable`, avec leur raison.
         lint.warningsAsErrors = true
         lint.checkDependencies = false
+        // Contrôles qui interrogent les dépôts en ligne : le résultat changerait avec la date du jour.
+        // Les versions sont revues à la main en fin de phase, en ne retenant que des versions stables publiées
+        // depuis au moins deux semaines (D-064).
+        lint.disable += setOf("AndroidGradlePluginVersion", "GradleDependency", "NewerVersionAvailable")
     }
 }

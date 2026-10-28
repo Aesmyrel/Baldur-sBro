@@ -4,9 +4,9 @@
 Polices : Almendra, Almendra SC, EB Garamond, Alegreya Sans, Alegreya Sans SC (toutes SIL OFL 1.1).
 Sous-ensemble : latin, latin-1, latin étendu A, ponctuation générale, symboles utiles ; les fonctionnalités
 OpenType (crénage, ligatures, chiffres, petites capitales) sont gardées.
-Typographie française : l'espace fine insécable (U+202F) et l'espace insécable (U+00A0) sont ajoutées
-quand la police d'origine ne les a pas (U+202F reprend le glyphe de l'espace fine U+2009 s'il existe,
-sinon un glyphe vide de 0,16 cadratin), pour que le texte ne passe jamais par une police de repli.
+Typographie française : espace fine insécable (U+202F, glyphe vide de 55 % de l'espace-mot), espace
+insécable (U+00A0) et points de suspension (U+2026) ajoutés quand il le faut, pour que le texte ne passe
+jamais par une police de repli.
 Licence : Almendra déclare un nom de police réservé (OFL §3). Nos versions sous-ensemblées sont donc
 renommées « Carnet Titres » / « Carnet Titres SC » ; EB Garamond et Alegreya Sans n'en déclarent pas.
 Les licences OFL sont copiées dans les assets pour l'écran « Crédits et licences ».
@@ -68,28 +68,46 @@ def ttf_urls(family: str) -> dict:
     return out
 
 
+def add_glyph(font: TTFont, name: str, glyph, advance: int) -> None:
+    order = font.getGlyphOrder()
+    if name in order:
+        return
+    font.setGlyphOrder(order + [name])
+    font["glyf"].glyphs[name] = glyph
+    font["glyf"].glyphOrder = font.getGlyphOrder()
+    font["hmtx"].metrics[name] = (advance, 0)
+
+
 def ensure_spaces(font: TTFont) -> None:
-    """Ajoute U+00A0 et U+202F au cmap si la police ne les a pas."""
+    """Typographie française : U+00A0, U+202F et U+2026 si la police d'origine ne les a pas.
+
+    L'espace fine insécable est un glyphe vide dédié de 55 % de l'espace-mot (environ 1/8 de cadratin) :
+    l'espace fine (U+2009) des graisses grasses est souvent plus large qu'une espace-mot.
+    Les points de suspension manquants sont composés de trois points.
+    """
+    from fontTools.ttLib.tables._g_l_y_f import Glyph, GlyphComponent
     cmap = font.getBestCmap()
     tables = [t for t in font["cmap"].tables if t.isUnicode()]
     def map_to(code: int, glyph: str) -> None:
         for t in tables:
             t.cmap[code] = glyph
-    if 0x00A0 not in cmap and 0x0020 in cmap:
+    space_advance = font["hmtx"].metrics[cmap[0x0020]][0]
+    if 0x00A0 not in cmap:
         map_to(0x00A0, cmap[0x0020])
-    if 0x202F not in cmap:
-        if 0x2009 in cmap:
-            map_to(0x202F, cmap[0x2009])
-        else:
-            from fontTools.ttLib.tables._g_l_y_f import Glyph
-            name = "uni202F"
-            order = font.getGlyphOrder()
-            if name not in order:
-                font.setGlyphOrder(order + [name])
-                font["glyf"].glyphs[name] = Glyph()
-                font["glyf"].glyphOrder = font.getGlyphOrder()
-                font["hmtx"].metrics[name] = (round(font["head"].unitsPerEm * 0.16), 0)
-            map_to(0x202F, name)
+    add_glyph(font, "uni202F.fr", Glyph(), round(space_advance * 0.55))
+    map_to(0x202F, "uni202F.fr")
+    if 0x2026 not in cmap and 0x002E in cmap:
+        period = cmap[0x002E]
+        advance = font["hmtx"].metrics[period][0]
+        glyph = Glyph()
+        glyph.numberOfContours = -1
+        glyph.components = []
+        for i in range(3):
+            c = GlyphComponent()
+            c.glyphName, c.x, c.y, c.flags = period, i * advance, 0, 0x0204 if i == 0 else 0x0004
+            glyph.components.append(c)
+        add_glyph(font, "ellipsis.fr", glyph, advance * 3)
+        map_to(0x2026, "ellipsis.fr")
 
 
 def rename(font: TTFont, family: str) -> None:
@@ -97,7 +115,10 @@ def rename(font: TTFont, family: str) -> None:
     new = RENAMED.get(family)
     if new is None:
         return
+    # Les notices (copyright, licence et son adresse : nameID 0, 13, 14) restent celles de l'autrice.
     for record in font["name"].names:
+        if record.nameID in (0, 13, 14):
+            continue
         text = record.toUnicode()
         compact_old, compact_new = family.replace(" ", ""), new.replace(" ", "")
         if record.nameID == 6:  # nom PostScript : jamais d'espace
