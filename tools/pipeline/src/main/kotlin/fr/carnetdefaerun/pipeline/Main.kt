@@ -8,13 +8,14 @@ import kotlin.system.exitProcess
 /**
  * Pipeline de données du Carnet de Faerûn (hors de l'appli, jamais à l'exécution) :
  * `fetch` (bg3.wiki → cache local), `lexicon` (lexiques VO → VF), `normalize` (→ fichiers JSON de data/game),
- * `validate`, `all`. À lancer depuis la racine du dépôt : `./gradlew :tools:pipeline:run --args="all"`.
+ * `validate`, `build-db` (→ content.db), `all`. À lancer depuis la racine du dépôt : `./gradlew :tools:pipeline:run --args="all"`.
  */
 fun main(args: Array<String>) {
     val root = Path.of("").toAbsolutePath()
     val paths = Paths(root)
-    val commands = args.toList().ifEmpty { listOf("normalize", "validate") }
-    val steps = commands.flatMap { if (it == "all") listOf("fetch", "lexicon", "normalize", "validate") else listOf(it) }
+    val out = args.indexOf("--out").takeIf { it >= 0 }?.let { Path.of(args[it + 1]) } ?: paths.cache.resolve("content.db")
+    val commands = args.toList().filterIndexed { i, a -> a != "--out" && (i == 0 || args[i - 1] != "--out") }.ifEmpty { listOf("normalize", "validate") }
+    val steps = commands.flatMap { if (it == "all") listOf("fetch", "lexicon", "normalize", "validate", "build-db") else listOf(it) }
     var ok = true
     for (step in steps) {
         println("— $step")
@@ -23,8 +24,9 @@ fun main(args: Array<String>) {
             "lexicon" -> Lexicons(paths).fetch()
             "normalize" -> GamePipeline(paths).normalize()
             "validate" -> GamePipeline(paths).validate()
+            "build-db" -> GamePipeline(paths).buildDb(out)
             else -> {
-                System.err.println("Commande inconnue : $step (fetch, lexicon, normalize, validate, all)")
+                System.err.println("Commande inconnue : $step (fetch, lexicon, normalize, validate, build-db [--out fichier], all)")
                 false
             }
         } && ok

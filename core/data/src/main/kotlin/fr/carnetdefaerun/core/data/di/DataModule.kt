@@ -13,6 +13,9 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import fr.carnetdefaerun.core.database.content.ContentStore
+import fr.carnetdefaerun.core.database.content.SqliteContentStore
+import fr.carnetdefaerun.core.data.content.ContentRepository
 import fr.carnetdefaerun.core.data.navigation.DataStoreNavigationStateStore
 import fr.carnetdefaerun.core.data.navigation.NavigationStateStore
 import fr.carnetdefaerun.core.data.preferences.DataStoreUserPreferencesRepository
@@ -38,6 +41,13 @@ object DataStoreModule {
     @Provides @Singleton
     fun preferencesStore(@ApplicationContext context: Context): DataStore<Preferences> =
         resilientStore { context.preferencesDataStoreFile("preferences") }
+
+    /** Base de contenu embarquée : lue seulement à travers [ContentRepository]. */
+    @Provides @Singleton
+    fun contentStore(@ApplicationContext context: Context): ContentStore = SqliteContentStore(context)
+
+    @Provides @Singleton
+    internal fun contentRepository(store: ContentStore): ContentRepository = ContentRepository(store)
 
     @Provides @Singleton @Named("navigation")
     fun navigationStore(@ApplicationContext context: Context): DataStore<Preferences> =

@@ -23,7 +23,9 @@ _Dernière mise à jour : 28/10/2026, phase 1 corrigée après vérification ind
 
 ## En cours
 - Contre-vérification indépendante des corrections de la phase 1.
-- **Phase 2 — pipelines de données du jeu et du lore** : modèle de contenu, client bg3.wiki, analyseur de wikitexte et normaliseurs des sorts, objets, armes, états, capacités et lieux écrits ; validation, base embarquée et pipeline du lore à venir.
+- **Phase 2 — pipelines de données du jeu et du lore**
+  - Fait : modèle de contenu ; pipeline bg3.wiki (récupération, normalisation, assemblage, validation bloquante, rapport) ; 1 776 entrées sans texte du jeu (234 sorts, 638 objets, 245 états, 494 capacités, 165 lieux) ; base embarquée générée à la compilation ; dépôt de contenu filtré par le verrou, avec tests de non-fuite sur toute la base.
+  - À faire : noms français (1 558 propositions) et effets rédigés en français (lots d'écriture) ; classes, sous-classes, races, historiques, dons ; compagnons, quêtes, trophées ; pipeline du lore (format, références, fiches pilotes) ; vérification indépendante d'un échantillon.
 
 ## Reste à faire
 - Phases 2a/2b : pipelines de données du jeu et du lore (en parallèle).

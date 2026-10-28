@@ -5,6 +5,7 @@ import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.NameStatus
 import fr.carnetdefaerun.pipeline.Paths
+import fr.carnetdefaerun.pipeline.db.ContentDbBuilder
 import fr.carnetdefaerun.pipeline.i18n.NameResolver
 import fr.carnetdefaerun.pipeline.validate.Validator
 import fr.carnetdefaerun.pipeline.wiki.PageStore
@@ -21,6 +22,12 @@ import kotlin.io.path.writeText
 /** Ligne d'une liste de travail (non versionnée) : ce qu'il reste à rédiger ou à traduire. */
 @Serializable
 data class WorkItem(val id: String, val nameEn: String, val page: String, val revision: Long, val todo: String, val detail: String? = null)
+
+/**
+ * Version du jeu couverte par les données (docs/SOURCES.md, relevé du 27/10/2026 : dernière mise à jour
+ * publiée le 29/09/2026, après le Patch 8 et le correctif n° 36).
+ */
+const val GAME_VERSION = "Patch 8 + correctifs, mise à jour du 29/09/2026 (4.1.1.7631656)"
 
 /** Données de jeu issues de bg3.wiki : récupération, normalisation, validation. */
 class GamePipeline(private val paths: Paths) {
@@ -77,6 +84,19 @@ class GamePipeline(private val paths: Paths) {
         problems.forEach { println("  ✗ $it") }
         println("  ${entries.size} entrées, ${problems.size} problème(s)")
         return problems.isEmpty()
+    }
+
+    /** Base embarquée : uniquement à partir de données valides. */
+    fun buildDb(out: java.nio.file.Path): Boolean {
+        val entries = load()
+        val problems = Validator().validate(entries)
+        if (problems.isNotEmpty()) {
+            System.err.println("  ${problems.size} problème(s) de validation : base non construite")
+            return false
+        }
+        ContentDbBuilder(GAME_VERSION).build(entries, out)
+        println("  ${entries.size} entrées → $out")
+        return true
     }
 
     /** Relecture stricte des fichiers versionnés : un champ inconnu ou une étiquette absente est une erreur. */
