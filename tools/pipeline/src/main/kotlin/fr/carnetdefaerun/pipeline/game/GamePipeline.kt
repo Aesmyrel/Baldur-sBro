@@ -5,7 +5,10 @@ import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.NameStatus
 import fr.carnetdefaerun.pipeline.Paths
+import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
 import fr.carnetdefaerun.pipeline.db.ContentDbBuilder
+import fr.carnetdefaerun.pipeline.lore.LoreFiles
+import fr.carnetdefaerun.pipeline.lore.LoreValidator
 import fr.carnetdefaerun.pipeline.i18n.NameResolver
 import fr.carnetdefaerun.pipeline.validate.Validator
 import fr.carnetdefaerun.pipeline.wiki.PageStore
@@ -87,27 +90,56 @@ class GamePipeline(private val paths: Paths) {
     /** Un nom jugé révélateur par sa fiche de traduction rend le nom et la fiche plus stricts. */
     private fun raiseTitle(entry: Entry, names: NameResolver): Entry {
         val extra = names.titleTag(entry.id.value) ?: return entry
-        if (entry.titleTag == fr.carnetdefaerun.core.model.spoiler.SpoilerTag.LOCKED) return entry
+        if (entry.titleTag == SpoilerTag.LOCKED) return entry
         return entry.copy(titleTag = entry.titleTag.strictest(extra), tag = entry.tag.strictest(extra))
     }
 
     fun validate(): Boolean {
-        val entries = load()
-        val problems = Validator().validate(entries)
+        val (entries, loreProblems) = all()
+        val problems = loreProblems + Validator().validate(entries)
         problems.forEach { println("  ✗ $it") }
-        println("  ${entries.size} entrées, ${problems.size} problème(s)")
+        println("  ${entries.size} entrées (dont ${entries.count { it.type == EntryType.LORE }} fiches de lore), ${problems.size} problème(s)")
         return problems.isEmpty()
+    }
+
+    /** Données de jeu et fiches du codex, avec les problèmes propres au codex. */
+    private fun all(): Pair<List<Entry>, List<String>> {
+        val game = load()
+        val files = LoreFiles(paths.content)
+        val validator = LoreValidator(files.references())
+        val problems = validator.validateReferences().toMutableList()
+        val raw = files.files().map { (path, file) -> path to files.entry(file) }
+        raw.forEach { (path, e) -> problems += validator.validate(e, path) }
+        val index = (game + raw.map { it.second }).groupBy { it.id }
+        index.filterValues { it.size > 1 }.keys.forEach { problems += "$it : identifiant en double (codex et données de jeu)" }
+        // Étiquette d'une relation : la plus stricte de ses extrémités et de celle donnée dans la fiche.
+        val lore = raw.map { (path, e) ->
+            e.copy(
+                links = e.links.mapNotNull { link ->
+                    val target = index[link.target]?.first()
+                    if (target == null) {
+                        problems += "$path : relation vers ${link.target} absente de la base"
+                        null
+                    } else {
+                        val ends = e.tag.strictest(target.tag)
+                        link.copy(tag = if (link.tag == SpoilerTag.LOCKED) ends else ends.strictest(link.tag))
+                    }
+                },
+            )
+        }
+        return (game + lore) to problems
     }
 
     /** Base embarquée : uniquement à partir de données valides. */
     fun buildDb(out: java.nio.file.Path): Boolean {
-        val entries = load()
-        val problems = Validator().validate(entries)
+        val (entries, loreProblems) = all()
+        val problems = loreProblems + Validator().validate(entries)
         if (problems.isNotEmpty()) {
+            problems.take(20).forEach { System.err.println("  ✗ $it") }
             System.err.println("  ${problems.size} problème(s) de validation : base non construite")
             return false
         }
-        ContentDbBuilder(GAME_VERSION).build(entries, out)
+        ContentDbBuilder(GAME_VERSION).build(entries, LoreFiles(paths.content).references().values.sortedBy { it.id }, out)
         println("  ${entries.size} entrées → $out")
         return true
     }

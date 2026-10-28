@@ -6,9 +6,12 @@ import fr.carnetdefaerun.core.model.content.ContentSchema
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.FeatureFacts
 import fr.carnetdefaerun.core.model.content.ItemFacts
+import fr.carnetdefaerun.core.model.content.LoreFacts
 import fr.carnetdefaerun.core.model.content.PlaceFacts
+import fr.carnetdefaerun.core.model.content.Reference
 import fr.carnetdefaerun.core.model.content.SpellFacts
 import fr.carnetdefaerun.core.model.search.Folding
+import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
 import java.nio.file.Files
 import java.nio.file.Path
 import java.sql.Connection
@@ -21,7 +24,7 @@ import java.time.LocalDate
  */
 class ContentDbBuilder(private val gameVersion: String) {
 
-    fun build(entries: List<Entry>, out: Path) {
+    fun build(entries: List<Entry>, references: List<Reference>, out: Path) {
         Files.createDirectories(out.toAbsolutePath().parent)
         Files.deleteIfExists(out)
         Class.forName("org.sqlite.JDBC")
@@ -31,6 +34,7 @@ class ContentDbBuilder(private val gameVersion: String) {
             insertEntries(c, entries)
             insertLinks(c, entries)
             insertSearch(c, entries)
+            insertReferences(c, references)
             insertMeta(c, entries)
             c.commit()
             c.autoCommit = true
@@ -96,15 +100,33 @@ class ContentDbBuilder(private val gameVersion: String) {
             ps.executeBatch()
         }
         c.prepareStatement("INSERT INTO ${ContentSchema.SearchText.TABLE} (entry_id, block_id, act, level, other_works, text) VALUES (?,?,?,?,?,?)").use { ps ->
-            for (entry in entries) for (block in entry.blocks) {
+            for (entry in entries) for ((blockId, tag, text) in searchableTexts(entry)) {
                 ps.setString(1, entry.id.value)
-                ps.setString(2, block.id)
-                ps.setInt(3, block.tag.act.ordinal)
-                ps.setInt(4, block.tag.level.ordinal)
-                ps.setInt(5, block.tag.otherWorks.ordinal)
-                ps.setString(6, block.text)
+                ps.setString(2, blockId)
+                ps.setInt(3, tag.act.ordinal)
+                ps.setInt(4, tag.level.ordinal)
+                ps.setInt(5, tag.otherWorks.ordinal)
+                ps.setString(6, text)
                 ps.addBatch()
             }
+            ps.executeBatch()
+        }
+    }
+
+    /** Textes indexés en plein texte, chacun avec l'étiquette du bloc qui le porte. */
+    private fun searchableTexts(entry: Entry): List<Triple<String, SpoilerTag, String>> {
+        val blocks = entry.blocks.map { Triple(it.id, it.tag, it.text) }
+        val lore = (entry.facts as? LoreFacts)?.let { f ->
+            listOf(Triple("resume", entry.tag, f.summary)) +
+                f.sections.map { s -> Triple(s.id, s.tag, (listOf(s.title) + s.paragraphs.map { it.text }).joinToString("\n")) }
+        }.orEmpty()
+        return blocks + lore
+    }
+
+    private fun insertReferences(c: Connection, references: List<Reference>) {
+        val r = ContentSchema.Reference
+        c.prepareStatement("INSERT INTO ${r.TABLE} VALUES (?,?)").use { ps ->
+            references.forEach { ps.setString(1, it.id); ps.setString(2, ContentFormat.strict.encodeToString(Reference.serializer(), it)); ps.addBatch() }
             ps.executeBatch()
         }
     }
@@ -130,5 +152,6 @@ class ContentDbBuilder(private val gameVersion: String) {
         is FeatureFacts -> f.kind.name
         is PlaceFacts -> f.act?.name
         is ConditionFacts -> null
+        is LoreFacts -> f.theme.name
     }
 }

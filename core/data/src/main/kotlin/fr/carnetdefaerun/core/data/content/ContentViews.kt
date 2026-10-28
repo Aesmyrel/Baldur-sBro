@@ -5,6 +5,8 @@ import fr.carnetdefaerun.core.model.content.Block
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.Facts
+import fr.carnetdefaerun.core.model.content.LoreSection
+import fr.carnetdefaerun.core.model.content.Reference
 import fr.carnetdefaerun.core.model.content.ItemSource
 import fr.carnetdefaerun.core.model.content.Name
 import fr.carnetdefaerun.core.model.content.Relation
@@ -43,6 +45,10 @@ data class EntryView(
     /** Vrai si des effets renvoient à des entrées masquées (retirés des faits). */
     val someEffectsHidden: Boolean,
     val blocks: List<Gated<Block>>,
+    /** Sections d'une fiche de lore, chacune filtrée (une section masquée ne donne ni titre ni type). */
+    val sections: List<Gated<LoreSection>> = emptyList(),
+    /** Références citées par les sections visibles. */
+    val references: List<Reference> = emptyList(),
     val links: List<LinkedEntry>,
     val unknown: List<String>,
 )

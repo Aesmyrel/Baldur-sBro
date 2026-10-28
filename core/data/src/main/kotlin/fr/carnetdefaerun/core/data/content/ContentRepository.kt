@@ -9,6 +9,8 @@ import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.FeatureFacts
 import fr.carnetdefaerun.core.model.content.Grants
 import fr.carnetdefaerun.core.model.content.ItemFacts
+import fr.carnetdefaerun.core.model.content.LoreFacts
+import fr.carnetdefaerun.core.model.content.LoreSection
 import fr.carnetdefaerun.core.model.content.PlaceFacts
 import fr.carnetdefaerun.core.model.content.SpellFacts
 import fr.carnetdefaerun.core.model.content.WearerCondition
@@ -69,18 +71,27 @@ class ContentRepository internal constructor(private val store: ContentStore) {
             is PlaceFacts -> f.copy(region = f.region?.takeIf(::linkVisible))
             is SpellFacts -> f
             is ConditionFacts -> f
+            // Les sections du codex sont filtrées une à une ci-dessous, jamais transmises en bloc.
+            is LoreFacts -> f.copy(sections = emptyList())
         }
         val sources = (facts as? ItemFacts)?.sources.orEmpty()
 
         val blocks = entry.blocks.map { block ->
             block.gated(RevealIds.block(id, block.id), block.tag, profile, RevealIds.block(id, block.id) in revealed, showActOfHidden)
         }
+        val sections = (entry.facts as? LoreFacts)?.sections.orEmpty().map { section ->
+            val key = RevealIds.block(id, section.id)
+            section.gated(key, section.tag, profile, key in revealed, showActOfHidden)
+        }
+        // Références : seulement celles que citent les sections visibles.
+        val cited = sections.filterIsInstance<Gated.Visible<LoreSection>>().flatMap { s -> s.value.paragraphs.flatMap { p -> p.refs.map { it.ref } } }.toSet()
+        val references = if (cited.isEmpty()) emptyList() else store.references().filterKeys { it in cited }.values.sortedBy { it.id }
         return Gated.Visible(
             EntryView(
                 id = entry.id, type = entry.type, name = entry.name, aliases = entry.aliases,
                 licence = entry.licence, attribution = entry.attribution,
                 facts = facts, sources = sources, hiddenSources = hiddenSources, someEffectsHidden = someEffectsHidden,
-                blocks = blocks, links = links, unknown = entry.unknown,
+                blocks = blocks, sections = sections, references = references, links = links, unknown = entry.unknown,
             ),
         )
     }

@@ -9,7 +9,7 @@ package fr.carnetdefaerun.core.model.content
  * les écrans ne lisent jamais ces tables directement, le dépôt filtre par `SpoilerGate`.
  */
 object ContentSchema {
-    const val VERSION = 1
+    const val VERSION = 2
     const val FILE_NAME = "content.db"
 
     object Entry {
@@ -49,6 +49,12 @@ object ContentSchema {
 
     object SearchText {
         const val TABLE = "search_text"
+    }
+
+    object Reference {
+        const val TABLE = "reference"
+        const val ID = "id"
+        const val PAYLOAD = "payload"
     }
 
     object Meta {
@@ -101,6 +107,10 @@ object ContentSchema {
             notindexed=entry_id, notindexed=block_id, notindexed=act, notindexed=level, notindexed=other_works,
             tokenize=unicode61 "remove_diacritics=2"
         )""",
+        """CREATE TABLE ${Reference.TABLE} (
+            ${Reference.ID} TEXT PRIMARY KEY NOT NULL,
+            ${Reference.PAYLOAD} TEXT NOT NULL
+        ) WITHOUT ROWID""",
         """CREATE TABLE ${Meta.TABLE} (
             ${Meta.KEY} TEXT PRIMARY KEY NOT NULL,
             ${Meta.VALUE} TEXT NOT NULL

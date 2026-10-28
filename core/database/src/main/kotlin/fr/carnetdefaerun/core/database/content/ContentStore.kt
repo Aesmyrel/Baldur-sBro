@@ -4,6 +4,7 @@ import fr.carnetdefaerun.core.model.content.ContentFormat
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.EntryType
+import fr.carnetdefaerun.core.model.content.Reference
 import fr.carnetdefaerun.core.model.content.Relation
 import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
 
@@ -36,5 +37,6 @@ interface ContentStore {
     fun linksFrom(id: ContentId): List<LinkRow>
     fun linksTo(id: ContentId): List<LinkRow>
     fun names(): List<NameRow>
+    fun references(): Map<String, Reference>
     fun meta(): Map<String, String>
 }

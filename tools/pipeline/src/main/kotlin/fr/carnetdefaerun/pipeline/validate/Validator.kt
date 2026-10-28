@@ -2,6 +2,7 @@ package fr.carnetdefaerun.pipeline.validate
 
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.ItemFacts
+import fr.carnetdefaerun.core.model.content.LoreFacts
 import fr.carnetdefaerun.core.model.content.NameStatus
 import fr.carnetdefaerun.core.model.content.SpellFacts
 import fr.carnetdefaerun.core.model.spoiler.Act
@@ -72,6 +73,7 @@ class Validator {
                     }
                     if (s.act == null && s.tag.act != Act.ACT_3) problems += "$where : source d'acte inconnu insuffisamment protégée"
                 }
+                is LoreFacts -> Unit // contrôlé par LoreValidator
                 else -> Unit
             }
             if (e.unknown.isNotEmpty()) warnings += "$where : champs inconnus ${e.unknown}"

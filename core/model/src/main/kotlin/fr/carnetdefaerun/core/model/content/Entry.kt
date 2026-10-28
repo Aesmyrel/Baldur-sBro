@@ -88,6 +88,17 @@ enum class Relation {
     @SerialName("located_in") LOCATED_IN,
     @SerialName("variant_of") VARIANT_OF,
     @SerialName("see_also") SEE_ALSO,
+
+    // Relations du lore (base de la future « Toile du lore »).
+    @SerialName("worships") WORSHIPS,
+    @SerialName("ally_of") ALLY_OF,
+    @SerialName("rival_of") RIVAL_OF,
+    @SerialName("member_of") MEMBER_OF,
+    @SerialName("leads") LEADS,
+    @SerialName("parent_of") PARENT_OF,
+    @SerialName("created_by") CREATED_BY,
+    @SerialName("appears_in") APPEARS_IN,
+    @SerialName("mentioned_in") MENTIONED_IN,
 }
 
 /**

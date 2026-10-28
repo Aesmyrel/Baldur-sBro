@@ -3,9 +3,11 @@ package fr.carnetdefaerun.core.database.content
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
+import fr.carnetdefaerun.core.model.content.ContentFormat
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.ContentSchema
 import fr.carnetdefaerun.core.model.content.EntryType
+import fr.carnetdefaerun.core.model.content.Reference
 import fr.carnetdefaerun.core.model.content.Relation
 import fr.carnetdefaerun.core.model.spoiler.Act
 import fr.carnetdefaerun.core.model.spoiler.SpoilerLevel
@@ -53,6 +55,15 @@ class SqliteContentStore(private val context: Context) : ContentStore {
         db.query(N.TABLE, arrayOf(N.ENTRY_ID, N.FORM, N.KIND), null, null, null, null, null).use { c ->
             buildList { while (c.moveToNext()) add(NameRow(ContentId(c.getString(0)), c.getString(1), c.getString(2))) }
         }
+
+    private val referenceCache: Map<String, Reference> by lazy {
+        val r = ContentSchema.Reference
+        db.query(r.TABLE, arrayOf(r.ID, r.PAYLOAD), null, null, null, null, null).use { c ->
+            buildMap { while (c.moveToNext()) put(c.getString(0), ContentFormat.lenient.decodeFromString(Reference.serializer(), c.getString(1))) }
+        }
+    }
+
+    override fun references(): Map<String, Reference> = referenceCache
 
     override fun meta(): Map<String, String> =
         db.query(ContentSchema.Meta.TABLE, arrayOf(ContentSchema.Meta.KEY, ContentSchema.Meta.VALUE), null, null, null, null, null).use { c ->

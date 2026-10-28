@@ -86,6 +86,7 @@ class ContentLeakTest {
         override fun linksFrom(id: ContentId) = links.filter { it.source == id }
         override fun linksTo(id: ContentId) = links.filter { it.target == id }
         override fun names() = emptyList<NameRow>()
+        override fun references() = emptyMap<String, fr.carnetdefaerun.core.model.content.Reference>()
         override fun meta() = emptyMap<String, String>()
     }
 }

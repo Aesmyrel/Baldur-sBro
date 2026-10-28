@@ -44,4 +44,6 @@ class Paths(val root: Path) {
     val gameData: Path = root.resolve("data/game")
     val curatedNames: Path = root.resolve("data/i18n/noms.fr.yaml")
     val writtenEffects: Path = root.resolve("data/effets")
+    /** Codex : registre des références et fiches de lore rédigées. */
+    val content: Path = root.resolve("content")
 }
