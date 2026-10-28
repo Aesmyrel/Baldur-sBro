@@ -3,7 +3,7 @@
     "id": "condition.acid",
     "type": "condition",
     "name": {
-      "fr": "Acid",
+      "fr": "Acide",
       "en": "Acid",
       "status": "UNOFFICIAL"
     },
@@ -41,7 +41,7 @@
     "id": "condition.adroit-caster",
     "type": "condition",
     "name": {
-      "fr": "Adroit Caster",
+      "fr": "Incantateur adroit",
       "en": "Adroit Caster",
       "status": "UNOFFICIAL"
     },
@@ -75,9 +75,10 @@
     "id": "condition.aid",
     "type": "condition",
     "name": {
-      "fr": "Aid",
+      "fr": "Aide",
       "en": "Aid",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -112,7 +113,7 @@
     "id": "condition.ancient-grudges",
     "type": "condition",
     "name": {
-      "fr": "Ancient Grudges",
+      "fr": "Rancunes ancestrales",
       "en": "Ancient Grudges",
       "status": "UNOFFICIAL"
     },
@@ -146,7 +147,7 @@
     "id": "condition.arcane-acuity",
     "type": "condition",
     "name": {
-      "fr": "Arcane Acuity",
+      "fr": "Acuité arcanique",
       "en": "Arcane Acuity",
       "status": "UNOFFICIAL"
     },
@@ -181,7 +182,7 @@
     "id": "condition.arcane-battery",
     "type": "condition",
     "name": {
-      "fr": "Arcane Battery",
+      "fr": "Batterie arcanique",
       "en": "Arcane Battery",
       "status": "UNOFFICIAL"
     },
@@ -215,7 +216,7 @@
     "id": "condition.arcane-charge",
     "type": "condition",
     "name": {
-      "fr": "Arcane Charge",
+      "fr": "Charge arcanique",
       "en": "Arcane Charge",
       "status": "UNOFFICIAL"
     },
@@ -249,9 +250,10 @@
     "id": "condition.arcane-lock",
     "type": "condition",
     "name": {
-      "fr": "Arcane Lock",
+      "fr": "Verrou magique",
       "en": "Arcane Lock",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -283,7 +285,7 @@
     "id": "condition.arcane-synergy",
     "type": "condition",
     "name": {
-      "fr": "Arcane Synergy",
+      "fr": "Synergie arcanique",
       "en": "Arcane Synergy",
       "status": "UNOFFICIAL"
     },
@@ -317,9 +319,10 @@
     "id": "condition.armour-of-agathys",
     "type": "condition",
     "name": {
-      "fr": "Armour of Agathys",
+      "fr": "Armure d’Agathys",
       "en": "Armour of Agathys",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -354,9 +357,10 @@
     "id": "condition.arms-of-hadar",
     "type": "condition",
     "name": {
-      "fr": "Arms of Hadar",
+      "fr": "Tentacules de Hadar",
       "en": "Arms of Hadar",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -388,7 +392,7 @@
     "id": "condition.aura-of-murder-bhaalist-armour",
     "type": "condition",
     "name": {
-      "fr": "Aura of Murder (Bhaalist Armour)",
+      "fr": "Aura de meurtre (armure bhaaliste)",
       "en": "Aura of Murder (Bhaalist Armour)",
       "status": "UNOFFICIAL"
     },
@@ -422,9 +426,10 @@
     "id": "condition.bane",
     "type": "condition",
     "name": {
-      "fr": "Bane",
+      "fr": "Fléau",
       "en": "Bane",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -456,7 +461,7 @@
     "id": "condition.baneful-strike",
     "type": "condition",
     "name": {
-      "fr": "Baneful Strike",
+      "fr": "Frappe funeste",
       "en": "Baneful Strike",
       "status": "UNOFFICIAL"
     },
@@ -491,7 +496,7 @@
     "id": "condition.banished",
     "type": "condition",
     "name": {
-      "fr": "Banished",
+      "fr": "Banni",
       "en": "Banished",
       "status": "UNOFFICIAL"
     },
@@ -529,9 +534,10 @@
     "id": "condition.barkskin",
     "type": "condition",
     "name": {
-      "fr": "Barkskin",
+      "fr": "Peau d’écorce",
       "en": "Barkskin",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -566,9 +572,10 @@
     "id": "condition.beacon-of-hope",
     "type": "condition",
     "name": {
-      "fr": "Beacon of Hope",
+      "fr": "Lueur d’espoir",
       "en": "Beacon of Hope",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -603,9 +610,10 @@
     "id": "condition.blade-ward",
     "type": "condition",
     "name": {
-      "fr": "Blade Ward",
+      "fr": "Protection contre les armes",
       "en": "Blade Ward",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -637,7 +645,7 @@
     "id": "condition.blazing-retaliation",
     "type": "condition",
     "name": {
-      "fr": "Blazing Retaliation",
+      "fr": "Riposte ardente",
       "en": "Blazing Retaliation",
       "status": "UNOFFICIAL"
     },
@@ -671,7 +679,7 @@
     "id": "condition.bleeding",
     "type": "condition",
     "name": {
-      "fr": "Bleeding",
+      "fr": "Saignement",
       "en": "Bleeding",
       "status": "UNOFFICIAL"
     },
@@ -709,9 +717,10 @@
     "id": "condition.bless",
     "type": "condition",
     "name": {
-      "fr": "Bless",
+      "fr": "Bénédiction",
       "en": "Bless",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -747,9 +756,10 @@
     "id": "condition.blinded",
     "type": "condition",
     "name": {
-      "fr": "Blinded",
+      "fr": "Aveuglé",
       "en": "Blinded",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -786,7 +796,7 @@
     "id": "condition.blinded-blinding-smite",
     "type": "condition",
     "name": {
-      "fr": "Blinded (Blinding Smite)",
+      "fr": "Aveuglé (châtiment aveuglant)",
       "en": "Blinded (Blinding Smite)",
       "status": "UNOFFICIAL"
     },
@@ -824,7 +834,7 @@
     "id": "condition.blindness",
     "type": "condition",
     "name": {
-      "fr": "Blindness",
+      "fr": "Cécité",
       "en": "Blindness",
       "status": "UNOFFICIAL"
     },
@@ -863,9 +873,10 @@
     "id": "condition.blink",
     "type": "condition",
     "name": {
-      "fr": "Blink",
+      "fr": "Clignotement",
       "en": "Blink",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -900,7 +911,7 @@
     "id": "condition.blinked-to-the-ethereal-plane",
     "type": "condition",
     "name": {
-      "fr": "Blinked to the Ethereal Plane",
+      "fr": "Passé dans le Plan Éthéré",
       "en": "Blinked to the Ethereal Plane",
       "status": "UNOFFICIAL"
     },
@@ -939,7 +950,7 @@
     "id": "condition.blurred",
     "type": "condition",
     "name": {
-      "fr": "Blurred",
+      "fr": "Flou",
       "en": "Blurred",
       "status": "UNOFFICIAL"
     },
@@ -976,7 +987,7 @@
     "id": "condition.bone-chilled",
     "type": "condition",
     "name": {
-      "fr": "Bone Chilled",
+      "fr": "Glacé jusqu’aux os",
       "en": "Bone Chilled",
       "status": "UNOFFICIAL"
     },
@@ -1011,9 +1022,10 @@
     "id": "condition.booming-blade",
     "type": "condition",
     "name": {
-      "fr": "Booming Blade",
+      "fr": "Lame retentissante",
       "en": "Booming Blade",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -1045,7 +1057,7 @@
     "id": "condition.bound-weapon",
     "type": "condition",
     "name": {
-      "fr": "Bound Weapon",
+      "fr": "Arme liée",
       "en": "Bound Weapon",
       "status": "UNOFFICIAL"
     },
@@ -1079,7 +1091,7 @@
     "id": "condition.braced",
     "type": "condition",
     "name": {
-      "fr": "Braced",
+      "fr": "Arc-bouté",
       "en": "Braced",
       "status": "UNOFFICIAL"
     },
@@ -1113,9 +1125,10 @@
     "id": "condition.branding-smite",
     "type": "condition",
     "name": {
-      "fr": "Branding Smite",
+      "fr": "Châtiment révélateur",
       "en": "Branding Smite",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -1150,7 +1163,7 @@
     "id": "condition.browbeaten",
     "type": "condition",
     "name": {
-      "fr": "Browbeaten",
+      "fr": "Rudoyé",
       "en": "Browbeaten",
       "status": "UNOFFICIAL"
     },
@@ -1184,7 +1197,7 @@
     "id": "condition.burning",
     "type": "condition",
     "name": {
-      "fr": "Burning",
+      "fr": "En flammes",
       "en": "Burning",
       "status": "UNOFFICIAL"
     },
@@ -1223,7 +1236,7 @@
     "id": "condition.burning-orthonic",
     "type": "condition",
     "name": {
-      "fr": "Burning (Orthonic)",
+      "fr": "En flammes (orthonique)",
       "en": "Burning (Orthonic)",
       "status": "UNOFFICIAL"
     },
@@ -1262,7 +1275,7 @@
     "id": "condition.burst-of-accuracy",
     "type": "condition",
     "name": {
-      "fr": "Burst of Accuracy",
+      "fr": "Sursaut de précision",
       "en": "Burst of Accuracy",
       "status": "UNOFFICIAL"
     },
@@ -1297,9 +1310,10 @@
     "id": "condition.call-lightning",
     "type": "condition",
     "name": {
-      "fr": "Call Lightning",
+      "fr": "Appel de la foudre",
       "en": "Call Lightning",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -1331,7 +1345,7 @@
     "id": "condition.calmed",
     "type": "condition",
     "name": {
-      "fr": "Calmed",
+      "fr": "Apaisé",
       "en": "Calmed",
       "status": "UNOFFICIAL"
     },
@@ -1365,9 +1379,10 @@
     "id": "condition.charmed",
     "type": "condition",
     "name": {
-      "fr": "Charmed",
+      "fr": "Charmé",
       "en": "Charmed",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -1404,7 +1419,7 @@
     "id": "condition.chest-trauma",
     "type": "condition",
     "name": {
-      "fr": "Chest Trauma",
+      "fr": "Traumatisme thoracique",
       "en": "Chest Trauma",
       "status": "UNOFFICIAL"
     },
@@ -1441,7 +1456,7 @@
     "id": "condition.click-heels",
     "type": "condition",
     "name": {
-      "fr": "Click Heels",
+      "fr": "Claquement de talons",
       "en": "Click Heels",
       "status": "UNOFFICIAL"
     },
@@ -1476,7 +1491,7 @@
     "id": "condition.clinging-shadows",
     "type": "condition",
     "name": {
-      "fr": "Clinging Shadows",
+      "fr": "Ombres tenaces",
       "en": "Clinging Shadows",
       "status": "UNOFFICIAL"
     },
@@ -1510,9 +1525,10 @@
     "id": "condition.colour-spray",
     "type": "condition",
     "name": {
-      "fr": "Colour Spray",
+      "fr": "Couleurs dansantes",
       "en": "Colour Spray",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -1548,9 +1564,10 @@
     "id": "condition.compelled-duel",
     "type": "condition",
     "name": {
-      "fr": "Compelled Duel",
+      "fr": "Duel forcé",
       "en": "Compelled Duel",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -1585,7 +1602,7 @@
     "id": "condition.compelled-to-duel",
     "type": "condition",
     "name": {
-      "fr": "Compelled to Duel",
+      "fr": "Contraint au duel",
       "en": "Compelled to Duel",
       "status": "UNOFFICIAL"
     },
@@ -1622,7 +1639,7 @@
     "id": "condition.confused",
     "type": "condition",
     "name": {
-      "fr": "Confused",
+      "fr": "Confus",
       "en": "Confused",
       "status": "UNOFFICIAL"
     },
@@ -1659,7 +1676,7 @@
     "id": "condition.contagion-poisoned",
     "type": "condition",
     "name": {
-      "fr": "Contagion Poisoned",
+      "fr": "Empoisonné (contagion)",
       "en": "Contagion Poisoned",
       "status": "UNOFFICIAL"
     },
@@ -1697,7 +1714,7 @@
     "id": "condition.covert-critical",
     "type": "condition",
     "name": {
-      "fr": "Covert Critical",
+      "fr": "Critique furtif",
       "en": "Covert Critical",
       "status": "UNOFFICIAL"
     },
@@ -1731,9 +1748,10 @@
     "id": "condition.crown-of-madness",
     "type": "condition",
     "name": {
-      "fr": "Crown of Madness",
+      "fr": "Couronne du dément",
       "en": "Crown of Madness",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -1770,7 +1788,7 @@
     "id": "condition.crusaders-mantle-aura",
     "type": "condition",
     "name": {
-      "fr": "Crusader’s Mantle Aura",
+      "fr": "Aura du croisé",
       "en": "Crusader's Mantle Aura",
       "status": "UNOFFICIAL"
     },
@@ -1804,7 +1822,7 @@
     "id": "condition.daredevil-proximity",
     "type": "condition",
     "name": {
-      "fr": "Daredevil Proximity",
+      "fr": "Proximité téméraire",
       "en": "Daredevil Proximity",
       "status": "UNOFFICIAL"
     },
@@ -1839,7 +1857,7 @@
     "id": "condition.darkveil-precision",
     "type": "condition",
     "name": {
-      "fr": "Darkveil Precision",
+      "fr": "Précision du voile sombre",
       "en": "Darkveil Precision",
       "status": "UNOFFICIAL"
     },
@@ -1873,9 +1891,10 @@
     "id": "condition.daylight",
     "type": "condition",
     "name": {
-      "fr": "Daylight",
+      "fr": "Lumière du jour",
       "en": "Daylight",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -1910,7 +1929,7 @@
     "id": "condition.dazed",
     "type": "condition",
     "name": {
-      "fr": "Dazed",
+      "fr": "Hébété",
       "en": "Dazed",
       "status": "UNOFFICIAL"
     },
@@ -1948,7 +1967,7 @@
     "id": "condition.dazzling-ray",
     "type": "condition",
     "name": {
-      "fr": "Dazzling Ray",
+      "fr": "Rayon éblouissant",
       "en": "Dazzling Ray",
       "status": "UNOFFICIAL"
     },
@@ -1982,9 +2001,10 @@
     "id": "condition.death-ward",
     "type": "condition",
     "name": {
-      "fr": "Death Ward",
+      "fr": "Protection contre la mort",
       "en": "Death Ward",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -2016,7 +2036,7 @@
     "id": "condition.defensive-stance",
     "type": "condition",
     "name": {
-      "fr": "Defensive Stance",
+      "fr": "Posture défensive",
       "en": "Defensive Stance",
       "status": "UNOFFICIAL"
     },
@@ -2050,7 +2070,7 @@
     "id": "condition.demonspirit-aura",
     "type": "condition",
     "name": {
-      "fr": "Demonspirit Aura",
+      "fr": "Aura d’esprit démoniaque",
       "en": "Demonspirit Aura",
       "status": "UNOFFICIAL"
     },
@@ -2084,9 +2104,10 @@
     "id": "condition.detect-thoughts",
     "type": "condition",
     "name": {
-      "fr": "Detect Thoughts",
+      "fr": "Détection des pensées",
       "en": "Detect Thoughts",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -2122,7 +2143,7 @@
     "id": "condition.dirty-advantage",
     "type": "condition",
     "name": {
-      "fr": "Dirty Advantage",
+      "fr": "Avantage déloyal",
       "en": "Dirty Advantage",
       "status": "UNOFFICIAL"
     },
@@ -2156,9 +2177,10 @@
     "id": "condition.disengage",
     "type": "condition",
     "name": {
-      "fr": "Disengage",
+      "fr": "Désengagement",
       "en": "Disengage",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte1",
@@ -2190,9 +2212,10 @@
     "id": "condition.disguise-self",
     "type": "condition",
     "name": {
-      "fr": "Disguise Self",
+      "fr": "Déguisement",
       "en": "Disguise Self",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -2229,9 +2252,10 @@
     "id": "condition.dispel-evil-and-good",
     "type": "condition",
     "name": {
-      "fr": "Dispel Evil and Good",
+      "fr": "Dissipation du mal et du bien",
       "en": "Dispel Evil and Good",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -2263,7 +2287,7 @@
     "id": "condition.displaced",
     "type": "condition",
     "name": {
-      "fr": "Displaced",
+      "fr": "Déplacé",
       "en": "Displaced",
       "status": "UNOFFICIAL"
     },
@@ -2297,9 +2321,10 @@
     "id": "condition.divine-favour",
     "type": "condition",
     "name": {
-      "fr": "Divine Favour",
+      "fr": "Faveur divine",
       "en": "Divine Favour",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -2334,7 +2359,7 @@
     "id": "condition.dominated",
     "type": "condition",
     "name": {
-      "fr": "Dominated",
+      "fr": "Dominé",
       "en": "Dominated",
       "status": "UNOFFICIAL"
     },
@@ -2372,7 +2397,7 @@
     "id": "condition.dominated-dominate-beast",
     "type": "condition",
     "name": {
-      "fr": "Dominated",
+      "fr": "Dominé",
       "en": "Dominated",
       "status": "UNOFFICIAL"
     },
@@ -2410,7 +2435,7 @@
     "id": "condition.elemental-weapon-acid",
     "type": "condition",
     "name": {
-      "fr": "Elemental Weapon: Acid",
+      "fr": "Arme élémentaire : acide",
       "en": "Elemental Weapon: Acid",
       "status": "UNOFFICIAL"
     },
@@ -2447,7 +2472,7 @@
     "id": "condition.elemental-weapon-cold",
     "type": "condition",
     "name": {
-      "fr": "Elemental Weapon: Cold",
+      "fr": "Arme élémentaire : froid",
       "en": "Elemental Weapon: Cold",
       "status": "UNOFFICIAL"
     },
@@ -2484,7 +2509,7 @@
     "id": "condition.elemental-weapon-fire",
     "type": "condition",
     "name": {
-      "fr": "Elemental Weapon: Fire",
+      "fr": "Arme élémentaire : feu",
       "en": "Elemental Weapon: Fire",
       "status": "UNOFFICIAL"
     },
@@ -2521,7 +2546,7 @@
     "id": "condition.elemental-weapon-lightning",
     "type": "condition",
     "name": {
-      "fr": "Elemental Weapon: Lightning",
+      "fr": "Arme élémentaire : foudre",
       "en": "Elemental Weapon: Lightning",
       "status": "UNOFFICIAL"
     },
@@ -2558,7 +2583,7 @@
     "id": "condition.elemental-weapon-thunder",
     "type": "condition",
     "name": {
-      "fr": "Elemental Weapon: Thunder",
+      "fr": "Arme élémentaire : tonnerre",
       "en": "Elemental Weapon: Thunder",
       "status": "UNOFFICIAL"
     },
@@ -2595,7 +2620,7 @@
     "id": "condition.encrusted-with-frost",
     "type": "condition",
     "name": {
-      "fr": "Encrusted with Frost",
+      "fr": "Couvert de givre",
       "en": "Encrusted with Frost",
       "status": "UNOFFICIAL"
     },
@@ -2629,7 +2654,7 @@
     "id": "condition.enhanced-armour-class",
     "type": "condition",
     "name": {
-      "fr": "Enhanced Armour Class",
+      "fr": "Classe d’armure améliorée",
       "en": "Enhanced Armour Class",
       "status": "UNOFFICIAL"
     },
@@ -2663,7 +2688,7 @@
     "id": "condition.enlarged-duergar",
     "type": "condition",
     "name": {
-      "fr": "Enlarged (Duergar)",
+      "fr": "Agrandi (duergar)",
       "en": "Enlarged (Duergar)",
       "status": "UNOFFICIAL"
     },
@@ -2701,7 +2726,7 @@
     "id": "condition.ensnared-ensnaring-strike",
     "type": "condition",
     "name": {
-      "fr": "Ensnared (Ensnaring Strike)",
+      "fr": "Piégé (frappe piégeuse)",
       "en": "Ensnared (Ensnaring Strike)",
       "status": "UNOFFICIAL"
     },
@@ -2740,7 +2765,7 @@
     "id": "condition.enthralled",
     "type": "condition",
     "name": {
-      "fr": "Enthralled",
+      "fr": "Captivé",
       "en": "Enthralled",
       "status": "UNOFFICIAL"
     },
@@ -2774,7 +2799,7 @@
     "id": "condition.ever-radiant",
     "type": "condition",
     "name": {
-      "fr": "Ever Radiant",
+      "fr": "Éternellement radieux",
       "en": "Ever Radiant",
       "status": "UNOFFICIAL"
     },
@@ -2808,7 +2833,7 @@
     "id": "condition.executioner",
     "type": "condition",
     "name": {
-      "fr": "Executioner",
+      "fr": "Bourreau",
       "en": "Executioner",
       "status": "UNOFFICIAL"
     },
@@ -2842,9 +2867,10 @@
     "id": "condition.expeditious-retreat",
     "type": "condition",
     "name": {
-      "fr": "Expeditious Retreat",
+      "fr": "Repli expéditif",
       "en": "Expeditious Retreat",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -2879,7 +2905,7 @@
     "id": "condition.extra-bonus-action",
     "type": "condition",
     "name": {
-      "fr": "Extra Bonus Action",
+      "fr": "Action bonus supplémentaire",
       "en": "Extra Bonus Action",
       "status": "UNOFFICIAL"
     },
@@ -2913,7 +2939,7 @@
     "id": "condition.eyes-of-the-dark",
     "type": "condition",
     "name": {
-      "fr": "Eyes of the Dark",
+      "fr": "Yeux des ténèbres",
       "en": "Eyes of the Dark",
       "status": "UNOFFICIAL"
     },
@@ -2947,9 +2973,10 @@
     "id": "condition.faerie-fire",
     "type": "condition",
     "name": {
-      "fr": "Faerie Fire",
+      "fr": "Lueurs féeriques",
       "en": "Faerie Fire",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -2984,9 +3011,10 @@
     "id": "condition.false-life",
     "type": "condition",
     "name": {
-      "fr": "False Life",
+      "fr": "Simulacre de vie",
       "en": "False Life",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -3021,7 +3049,7 @@
     "id": "condition.favoured-weapon",
     "type": "condition",
     "name": {
-      "fr": "Favoured Weapon",
+      "fr": "Arme de prédilection",
       "en": "Favoured Weapon",
       "status": "UNOFFICIAL"
     },
@@ -3055,7 +3083,7 @@
     "id": "condition.fearful",
     "type": "condition",
     "name": {
-      "fr": "Fearful",
+      "fr": "Apeuré",
       "en": "Fearful",
       "status": "UNOFFICIAL"
     },
@@ -3094,9 +3122,10 @@
     "id": "condition.feather-fall",
     "type": "condition",
     "name": {
-      "fr": "Feather Fall",
+      "fr": "Feuille morte",
       "en": "Feather Fall",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -3131,7 +3160,7 @@
     "id": "condition.feeble",
     "type": "condition",
     "name": {
-      "fr": "Feeble",
+      "fr": "Affaibli",
       "en": "Feeble",
       "status": "UNOFFICIAL"
     },
@@ -3165,7 +3194,7 @@
     "id": "condition.feigning-death",
     "type": "condition",
     "name": {
-      "fr": "Feigning Death",
+      "fr": "Mort simulée",
       "en": "Feigning Death",
       "status": "UNOFFICIAL"
     },
@@ -3204,7 +3233,7 @@
     "id": "condition.festering-spores",
     "type": "condition",
     "name": {
-      "fr": "Festering Spores",
+      "fr": "Spores putrides",
       "en": "Festering Spores",
       "status": "UNOFFICIAL"
     },
@@ -3238,7 +3267,7 @@
     "id": "condition.feywild-sparks",
     "type": "condition",
     "name": {
-      "fr": "Feywild Sparks",
+      "fr": "Étincelles de Féerie",
       "en": "Feywild Sparks",
       "status": "UNOFFICIAL"
     },
@@ -3272,7 +3301,7 @@
     "id": "condition.flesh-to-stone-restrained-stage-1",
     "type": "condition",
     "name": {
-      "fr": "Flesh to Stone: Restrained Stage 1",
+      "fr": "Pétrification : entravé (stade 1)",
       "en": "Flesh to Stone: Restrained Stage 1",
       "status": "UNOFFICIAL"
     },
@@ -3309,7 +3338,7 @@
     "id": "condition.flight",
     "type": "condition",
     "name": {
-      "fr": "Flight",
+      "fr": "Vol",
       "en": "Flight",
       "status": "UNOFFICIAL"
     },
@@ -3346,7 +3375,7 @@
     "id": "condition.flying-strike",
     "type": "condition",
     "name": {
-      "fr": "Flying Strike",
+      "fr": "Frappe aérienne",
       "en": "Flying Strike",
       "status": "UNOFFICIAL"
     },
@@ -3380,7 +3409,7 @@
     "id": "condition.force-conduit",
     "type": "condition",
     "name": {
-      "fr": "Force Conduit",
+      "fr": "Conduit de force",
       "en": "Force Conduit",
       "status": "UNOFFICIAL"
     },
@@ -3414,7 +3443,7 @@
     "id": "condition.form-of-artifice",
     "type": "condition",
     "name": {
-      "fr": "Form of Artifice",
+      "fr": "Forme d’artifice",
       "en": "Form of Artifice",
       "status": "UNOFFICIAL"
     },
@@ -3448,7 +3477,7 @@
     "id": "condition.formless-slaughter",
     "type": "condition",
     "name": {
-      "fr": "Formless Slaughter",
+      "fr": "Massacre informe",
       "en": "Formless Slaughter",
       "status": "UNOFFICIAL"
     },
@@ -3482,9 +3511,10 @@
     "id": "condition.freedom-of-movement",
     "type": "condition",
     "name": {
-      "fr": "Freedom of Movement",
+      "fr": "Liberté de mouvement",
       "en": "Freedom of Movement",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -3519,9 +3549,10 @@
     "id": "condition.friends",
     "type": "condition",
     "name": {
-      "fr": "Friends",
+      "fr": "Amis",
       "en": "Friends",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -3558,9 +3589,10 @@
     "id": "condition.frightened",
     "type": "condition",
     "name": {
-      "fr": "Frightened",
+      "fr": "Effrayé",
       "en": "Frightened",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -3597,7 +3629,7 @@
     "id": "condition.galvanic-currents",
     "type": "condition",
     "name": {
-      "fr": "Galvanic Currents",
+      "fr": "Courants galvaniques",
       "en": "Galvanic Currents",
       "status": "UNOFFICIAL"
     },
@@ -3632,7 +3664,7 @@
     "id": "condition.gaping-wounds",
     "type": "condition",
     "name": {
-      "fr": "Gaping Wounds",
+      "fr": "Plaies béantes",
       "en": "Gaping Wounds",
       "status": "UNOFFICIAL"
     },
@@ -3670,7 +3702,7 @@
     "id": "condition.garrotted",
     "type": "condition",
     "name": {
-      "fr": "Garrotted",
+      "fr": "Garrotté",
       "en": "Garrotted",
       "status": "UNOFFICIAL"
     },
@@ -3709,9 +3741,10 @@
     "id": "condition.gaseous-form",
     "type": "condition",
     "name": {
-      "fr": "Gaseous Form",
+      "fr": "Forme gazeuse",
       "en": "Gaseous Form",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -3748,7 +3781,7 @@
     "id": "condition.giant-form",
     "type": "condition",
     "name": {
-      "fr": "Giant Form",
+      "fr": "Forme de géant",
       "en": "Giant Form",
       "status": "UNOFFICIAL"
     },
@@ -3783,7 +3816,7 @@
     "id": "condition.grasp-essence",
     "type": "condition",
     "name": {
-      "fr": "Grasp Essence",
+      "fr": "Saisie d’essence",
       "en": "Grasp Essence",
       "status": "UNOFFICIAL"
     },
@@ -3817,9 +3850,10 @@
     "id": "condition.greater-invisibility",
     "type": "condition",
     "name": {
-      "fr": "Greater Invisibility",
+      "fr": "Invisibilité supérieure",
       "en": "Greater Invisibility",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -3855,7 +3889,7 @@
     "id": "condition.green-bed-regeneration",
     "type": "condition",
     "name": {
-      "fr": "Green Bed Regeneration",
+      "fr": "Régénération du lit de verdure",
       "en": "Green Bed Regeneration",
       "status": "UNOFFICIAL"
     },
@@ -3893,9 +3927,10 @@
     "id": "condition.guidance",
     "type": "condition",
     "name": {
-      "fr": "Guidance",
+      "fr": "Assistance",
       "en": "Guidance",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -3930,9 +3965,10 @@
     "id": "condition.guiding-bolt",
     "type": "condition",
     "name": {
-      "fr": "Guiding Bolt",
+      "fr": "Éclair traçant",
       "en": "Guiding Bolt",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -3967,7 +4003,7 @@
     "id": "condition.hamstrung",
     "type": "condition",
     "name": {
-      "fr": "Hamstrung",
+      "fr": "Jarret tranché",
       "en": "Hamstrung",
       "status": "UNOFFICIAL"
     },
@@ -4005,9 +4041,10 @@
     "id": "condition.harm",
     "type": "condition",
     "name": {
-      "fr": "Harm",
+      "fr": "Contamination",
       "en": "Harm",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -4043,7 +4080,7 @@
     "id": "condition.harmonised",
     "type": "condition",
     "name": {
-      "fr": "Harmonised",
+      "fr": "Harmonisé",
       "en": "Harmonised",
       "status": "UNOFFICIAL"
     },
@@ -4077,7 +4114,7 @@
     "id": "condition.hastened",
     "type": "condition",
     "name": {
-      "fr": "Hastened",
+      "fr": "Accéléré",
       "en": "Hastened",
       "status": "UNOFFICIAL"
     },
@@ -4115,7 +4152,7 @@
     "id": "condition.healing-incense-aura",
     "type": "condition",
     "name": {
-      "fr": "Healing Incense Aura",
+      "fr": "Aura d’encens guérisseur",
       "en": "Healing Incense Aura",
       "status": "UNOFFICIAL"
     },
@@ -4149,7 +4186,7 @@
     "id": "condition.heat",
     "type": "condition",
     "name": {
-      "fr": "Heat",
+      "fr": "Chaleur",
       "en": "Heat",
       "status": "UNOFFICIAL"
     },
@@ -4184,9 +4221,10 @@
     "id": "condition.heat-metal",
     "type": "condition",
     "name": {
-      "fr": "Heat Metal",
+      "fr": "Métal brûlant",
       "en": "Heat Metal",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -4218,7 +4256,7 @@
     "id": "condition.heat-metal-disadvantage",
     "type": "condition",
     "name": {
-      "fr": "Heat Metal: Disadvantage",
+      "fr": "Métal brûlant : désavantage",
       "en": "Heat Metal: Disadvantage",
       "status": "UNOFFICIAL"
     },
@@ -4252,9 +4290,10 @@
     "id": "condition.heroism",
     "type": "condition",
     "name": {
-      "fr": "Heroism",
+      "fr": "Héroïsme",
       "en": "Heroism",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -4289,7 +4328,7 @@
     "id": "condition.hideous-laughter",
     "type": "condition",
     "name": {
-      "fr": "Hideous Laughter",
+      "fr": "Fou rire",
       "en": "Hideous Laughter",
       "status": "UNOFFICIAL"
     },
@@ -4328,7 +4367,7 @@
     "id": "condition.hiding",
     "type": "condition",
     "name": {
-      "fr": "Hiding",
+      "fr": "Caché",
       "en": "Hiding",
       "status": "UNOFFICIAL"
     },
@@ -4363,7 +4402,7 @@
     "id": "condition.high-spirits",
     "type": "condition",
     "name": {
-      "fr": "High Spirits",
+      "fr": "Plein d’entrain",
       "en": "High Spirits",
       "status": "UNOFFICIAL"
     },
@@ -4397,9 +4436,10 @@
     "id": "condition.hold-monster",
     "type": "condition",
     "name": {
-      "fr": "Hold Monster",
+      "fr": "Immobilisation de monstre",
       "en": "Hold Monster",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -4436,9 +4476,10 @@
     "id": "condition.hold-person",
     "type": "condition",
     "name": {
-      "fr": "Hold Person",
+      "fr": "Immobilisation de personne",
       "en": "Hold Person",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -4475,7 +4516,7 @@
     "id": "condition.hunt-completed",
     "type": "condition",
     "name": {
-      "fr": "Hunt Completed",
+      "fr": "Chasse achevée",
       "en": "Hunt Completed",
       "status": "UNOFFICIAL"
     },
@@ -4509,7 +4550,7 @@
     "id": "condition.hunters-mark-quarry",
     "type": "condition",
     "name": {
-      "fr": "Hunter’s Mark Quarry",
+      "fr": "Proie de la marque du chasseur",
       "en": "Hunter's Mark Quarry",
       "status": "UNOFFICIAL"
     },
@@ -4543,7 +4584,7 @@
     "id": "condition.hypnotised",
     "type": "condition",
     "name": {
-      "fr": "Hypnotised",
+      "fr": "Hypnotisé",
       "en": "Hypnotised",
       "status": "UNOFFICIAL"
     },
@@ -4584,7 +4625,8 @@
     "name": {
       "fr": "Invisible",
       "en": "Invisible",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -4620,7 +4662,7 @@
     "id": "condition.invisible-weapon",
     "type": "condition",
     "name": {
-      "fr": "Invisible Weapon",
+      "fr": "Arme invisible",
       "en": "Invisible Weapon",
       "status": "UNOFFICIAL"
     },
@@ -4657,9 +4699,10 @@
     "id": "condition.jump",
     "type": "condition",
     "name": {
-      "fr": "Jump",
+      "fr": "Saut",
       "en": "Jump",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -4691,7 +4734,7 @@
     "id": "condition.lethal-concealment",
     "type": "condition",
     "name": {
-      "fr": "Lethal Concealment",
+      "fr": "Dissimulation mortelle",
       "en": "Lethal Concealment",
       "status": "UNOFFICIAL"
     },
@@ -4725,7 +4768,7 @@
     "id": "condition.lethargic",
     "type": "condition",
     "name": {
-      "fr": "Lethargic",
+      "fr": "Léthargique",
       "en": "Lethargic",
       "status": "UNOFFICIAL"
     },
@@ -4764,7 +4807,7 @@
     "id": "condition.lieges-of-the-underdark-blessing",
     "type": "condition",
     "name": {
-      "fr": "Lieges of the Underdark Blessing",
+      "fr": "Bénédiction des suzerains de l’Outreterre",
       "en": "Lieges of the Underdark Blessing",
       "status": "UNOFFICIAL"
     },
@@ -4799,7 +4842,7 @@
     "id": "condition.life-essence",
     "type": "condition",
     "name": {
-      "fr": "Life Essence",
+      "fr": "Essence vitale",
       "en": "Life Essence",
       "status": "UNOFFICIAL"
     },
@@ -4833,9 +4876,10 @@
     "id": "condition.light",
     "type": "condition",
     "name": {
-      "fr": "Light",
+      "fr": "Lumière",
       "en": "Light",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -4871,7 +4915,7 @@
     "id": "condition.lightning-aura",
     "type": "condition",
     "name": {
-      "fr": "Lightning Aura",
+      "fr": "Aura de foudre",
       "en": "Lightning Aura",
       "status": "UNOFFICIAL"
     },
@@ -4905,7 +4949,7 @@
     "id": "condition.lightning-blast",
     "type": "condition",
     "name": {
-      "fr": "Lightning Blast",
+      "fr": "Décharge de foudre",
       "en": "Lightning Blast",
       "status": "UNOFFICIAL"
     },
@@ -4939,7 +4983,7 @@
     "id": "condition.lightning-charges",
     "type": "condition",
     "name": {
-      "fr": "Lightning Charges",
+      "fr": "Charges de foudre",
       "en": "Lightning Charges",
       "status": "UNOFFICIAL"
     },
@@ -4973,9 +5017,10 @@
     "id": "condition.longstrider",
     "type": "condition",
     "name": {
-      "fr": "Longstrider",
+      "fr": "Grande foulée",
       "en": "Longstrider",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -5010,7 +5055,7 @@
     "id": "condition.lunar-protection",
     "type": "condition",
     "name": {
-      "fr": "Lunar Protection",
+      "fr": "Protection lunaire",
       "en": "Lunar Protection",
       "status": "UNOFFICIAL"
     },
@@ -5044,7 +5089,7 @@
     "id": "condition.lunar-vitality",
     "type": "condition",
     "name": {
-      "fr": "Lunar Vitality",
+      "fr": "Vitalité lunaire",
       "en": "Lunar Vitality",
       "status": "UNOFFICIAL"
     },
@@ -5078,9 +5123,10 @@
     "id": "condition.mage-armour",
     "type": "condition",
     "name": {
-      "fr": "Mage Armour",
+      "fr": "Armure de mage",
       "en": "Mage Armour",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -5115,9 +5161,10 @@
     "id": "condition.magic-weapon",
     "type": "condition",
     "name": {
-      "fr": "Magic Weapon",
+      "fr": "Arme magique",
       "en": "Magic Weapon",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -5152,7 +5199,7 @@
     "id": "condition.maimed",
     "type": "condition",
     "name": {
-      "fr": "Maimed",
+      "fr": "Estropié",
       "en": "Maimed",
       "status": "UNOFFICIAL"
     },
@@ -5190,7 +5237,7 @@
     "id": "condition.mark-of-the-shifter",
     "type": "condition",
     "name": {
-      "fr": "Mark of the Shifter",
+      "fr": "Marque du métamorphe",
       "en": "Mark of the Shifter",
       "status": "UNOFFICIAL"
     },
@@ -5224,7 +5271,7 @@
     "id": "condition.martial-exertion",
     "type": "condition",
     "name": {
-      "fr": "Martial Exertion",
+      "fr": "Effort martial",
       "en": "Martial Exertion",
       "status": "UNOFFICIAL"
     },
@@ -5258,9 +5305,10 @@
     "id": "condition.melfs-acid-arrow",
     "type": "condition",
     "name": {
-      "fr": "Melf’s Acid Arrow",
+      "fr": "Flèche acide de Melf",
       "en": "Melf's Acid Arrow",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -5292,7 +5340,7 @@
     "id": "condition.mental-fatigue",
     "type": "condition",
     "name": {
-      "fr": "Mental Fatigue",
+      "fr": "Fatigue mentale",
       "en": "Mental Fatigue",
       "status": "UNOFFICIAL"
     },
@@ -5326,9 +5374,10 @@
     "id": "condition.mirror-image",
     "type": "condition",
     "name": {
-      "fr": "Mirror Image",
+      "fr": "Image miroir",
       "en": "Mirror Image",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -5363,7 +5412,7 @@
     "id": "condition.momentum",
     "type": "condition",
     "name": {
-      "fr": "Momentum",
+      "fr": "Élan",
       "en": "Momentum",
       "status": "UNOFFICIAL"
     },
@@ -5397,7 +5446,7 @@
     "id": "condition.mystras-blessing-staff-of-arcane-blessing",
     "type": "condition",
     "name": {
-      "fr": "Mystra’s Blessing",
+      "fr": "Bénédiction de Mystra",
       "en": "Mystra's Blessing",
       "status": "UNOFFICIAL"
     },
@@ -5434,7 +5483,7 @@
     "id": "condition.noxious-fumes",
     "type": "condition",
     "name": {
-      "fr": "Noxious Fumes",
+      "fr": "Émanations nocives",
       "en": "Noxious Fumes",
       "status": "UNOFFICIAL"
     },
@@ -5468,7 +5517,7 @@
     "id": "condition.off-balance",
     "type": "condition",
     "name": {
-      "fr": "Off Balance",
+      "fr": "Déséquilibré",
       "en": "Off Balance",
       "status": "UNOFFICIAL"
     },
@@ -5505,7 +5554,7 @@
     "id": "condition.off-balance-gargantuan-cleave",
     "type": "condition",
     "name": {
-      "fr": "Off Balance (Gargantuan Cleave)",
+      "fr": "Déséquilibré (enchaînement gigantesque)",
       "en": "Off Balance (Gargantuan Cleave)",
       "status": "UNOFFICIAL"
     },
@@ -5540,7 +5589,7 @@
     "id": "condition.onus-of-battle",
     "type": "condition",
     "name": {
-      "fr": "Onus of Battle",
+      "fr": "Fardeau de la bataille",
       "en": "Onus of Battle",
       "status": "UNOFFICIAL"
     },
@@ -5577,9 +5626,10 @@
     "id": "condition.otilukes-resilient-sphere",
     "type": "condition",
     "name": {
-      "fr": "Otiluke’s Resilient Sphere",
+      "fr": "Sphère résiliente d’Otiluke",
       "en": "Otiluke's Resilient Sphere",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -5614,9 +5664,10 @@
     "id": "condition.ottos-irresistible-dance",
     "type": "condition",
     "name": {
-      "fr": "Otto’s Irresistible Dance",
+      "fr": "Danse irrésistible d’Otto",
       "en": "Otto's Irresistible Dance",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -5651,9 +5702,10 @@
     "id": "condition.paralysed",
     "type": "condition",
     "name": {
-      "fr": "Paralysed",
+      "fr": "Paralysé",
       "en": "Paralysed",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte2",
@@ -5690,7 +5742,7 @@
     "id": "condition.pass-without-trace-aura",
     "type": "condition",
     "name": {
-      "fr": "Pass Without Trace Aura",
+      "fr": "Aura de passage sans trace",
       "en": "Pass Without Trace Aura",
       "status": "UNOFFICIAL"
     },
@@ -5727,9 +5779,10 @@
     "id": "condition.petrified",
     "type": "condition",
     "name": {
-      "fr": "Petrified",
+      "fr": "Pétrifié",
       "en": "Petrified",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -5767,9 +5820,10 @@
     "id": "condition.phantasmal-force",
     "type": "condition",
     "name": {
-      "fr": "Phantasmal Force",
+      "fr": "Force fantasmagorique",
       "en": "Phantasmal Force",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -5801,9 +5855,10 @@
     "id": "condition.phantasmal-killer",
     "type": "condition",
     "name": {
-      "fr": "Phantasmal Killer",
+      "fr": "Assassin imaginaire",
       "en": "Phantasmal Killer",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -5839,9 +5894,10 @@
     "id": "condition.poisoned",
     "type": "condition",
     "name": {
-      "fr": "Poisoned",
+      "fr": "Empoisonné",
       "en": "Poisoned",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -5878,7 +5934,7 @@
     "id": "condition.polymorphed",
     "type": "condition",
     "name": {
-      "fr": "Polymorphed",
+      "fr": "Métamorphosé",
       "en": "Polymorphed",
       "status": "UNOFFICIAL"
     },
@@ -5915,7 +5971,7 @@
     "id": "condition.polymorphed-dire-raven",
     "type": "condition",
     "name": {
-      "fr": "Polymorphed: Dire Raven",
+      "fr": "Métamorphosé : corbeau sanguinaire",
       "en": "Polymorphed: Dire Raven",
       "status": "UNOFFICIAL"
     },
@@ -5955,7 +6011,7 @@
     "id": "condition.prepared",
     "type": "condition",
     "name": {
-      "fr": "Prepared",
+      "fr": "Préparé",
       "en": "Prepared",
       "status": "UNOFFICIAL"
     },
@@ -5989,9 +6045,10 @@
     "id": "condition.produce-flame",
     "type": "condition",
     "name": {
-      "fr": "Produce Flame",
+      "fr": "Flammes",
       "en": "Produce Flame",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6026,9 +6083,10 @@
     "id": "condition.prone",
     "type": "condition",
     "name": {
-      "fr": "Prone",
+      "fr": "À terre",
       "en": "Prone",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -6066,9 +6124,10 @@
     "id": "condition.protection-from-evil-and-good",
     "type": "condition",
     "name": {
-      "fr": "Protection from Evil and Good",
+      "fr": "Protection contre le mal et le bien",
       "en": "Protection from Evil and Good",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6103,9 +6162,10 @@
     "id": "condition.protection-from-poison",
     "type": "condition",
     "name": {
-      "fr": "Protection from Poison",
+      "fr": "Protection contre le poison",
       "en": "Protection from Poison",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6140,7 +6200,7 @@
     "id": "condition.quickening-incantation",
     "type": "condition",
     "name": {
-      "fr": "Quickening Incantation",
+      "fr": "Incantation accélérée",
       "en": "Quickening Incantation",
       "status": "UNOFFICIAL"
     },
@@ -6175,7 +6235,7 @@
     "id": "condition.quickspell-flinger",
     "type": "condition",
     "name": {
-      "fr": "Quickspell Flinger",
+      "fr": "Lanceur de sorts éclair",
       "en": "Quickspell Flinger",
       "status": "UNOFFICIAL"
     },
@@ -6209,7 +6269,7 @@
     "id": "condition.radiating-orb",
     "type": "condition",
     "name": {
-      "fr": "Radiating Orb",
+      "fr": "Orbe rayonnant",
       "en": "Radiating Orb",
       "status": "UNOFFICIAL"
     },
@@ -6243,9 +6303,10 @@
     "id": "condition.ray-of-frost",
     "type": "condition",
     "name": {
-      "fr": "Ray of Frost",
+      "fr": "Rayon de givre",
       "en": "Ray of Frost",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6277,7 +6338,7 @@
     "id": "condition.reactive-restoration",
     "type": "condition",
     "name": {
-      "fr": "Reactive Restoration",
+      "fr": "Restauration réactive",
       "en": "Reactive Restoration",
       "status": "UNOFFICIAL"
     },
@@ -6311,7 +6372,7 @@
     "id": "condition.reapply-hex",
     "type": "condition",
     "name": {
-      "fr": "Reapply Hex",
+      "fr": "Renouveler le maléfice",
       "en": "Reapply Hex",
       "status": "UNOFFICIAL"
     },
@@ -6345,7 +6406,7 @@
     "id": "condition.recast-speak-with-dead",
     "type": "condition",
     "name": {
-      "fr": "Recast Speak with Dead",
+      "fr": "Relancer la communication avec les morts",
       "en": "Recast Speak with Dead",
       "status": "UNOFFICIAL"
     },
@@ -6382,7 +6443,7 @@
     "id": "condition.reeling",
     "type": "condition",
     "name": {
-      "fr": "Reeling",
+      "fr": "Chancelant",
       "en": "Reeling",
       "status": "UNOFFICIAL"
     },
@@ -6416,7 +6477,7 @@
     "id": "condition.reflective-shell",
     "type": "condition",
     "name": {
-      "fr": "Reflective Shell",
+      "fr": "Coquille réfléchissante",
       "en": "Reflective Shell",
       "status": "UNOFFICIAL"
     },
@@ -6450,7 +6511,7 @@
     "id": "condition.rended-flesh",
     "type": "condition",
     "name": {
-      "fr": "Rended Flesh",
+      "fr": "Chair déchirée",
       "en": "Rended Flesh",
       "status": "UNOFFICIAL"
     },
@@ -6484,9 +6545,10 @@
     "id": "condition.resistance",
     "type": "condition",
     "name": {
-      "fr": "Resistance",
+      "fr": "Résistance",
       "en": "Resistance",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6521,7 +6583,7 @@
     "id": "condition.resistant-to-acid-damage-creations-echo",
     "type": "condition",
     "name": {
-      "fr": "Resistant to Acid Damage (Creation’s Echo)",
+      "fr": "Résistant aux dégâts d’acide (écho de la création)",
       "en": "Resistant to Acid Damage (Creation's Echo)",
       "status": "UNOFFICIAL"
     },
@@ -6556,7 +6618,7 @@
     "id": "condition.revealed",
     "type": "condition",
     "name": {
-      "fr": "Revealed",
+      "fr": "Révélé",
       "en": "Revealed",
       "status": "UNOFFICIAL"
     },
@@ -6590,7 +6652,7 @@
     "id": "condition.reverberation",
     "type": "condition",
     "name": {
-      "fr": "Reverberation",
+      "fr": "Réverbération",
       "en": "Reverberation",
       "status": "UNOFFICIAL"
     },
@@ -6625,7 +6687,7 @@
     "id": "condition.ruptured",
     "type": "condition",
     "name": {
-      "fr": "Ruptured",
+      "fr": "Perforé",
       "en": "Ruptured",
       "status": "UNOFFICIAL"
     },
@@ -6659,7 +6721,7 @@
     "id": "condition.sacred-munitions",
     "type": "condition",
     "name": {
-      "fr": "Sacred Munitions",
+      "fr": "Munitions sacrées",
       "en": "Sacred Munitions",
       "status": "UNOFFICIAL"
     },
@@ -6693,9 +6755,10 @@
     "id": "condition.sanctuary",
     "type": "condition",
     "name": {
-      "fr": "Sanctuary",
+      "fr": "Sanctuaire",
       "en": "Sanctuary",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6730,9 +6793,10 @@
     "id": "condition.searing-smite",
     "type": "condition",
     "name": {
-      "fr": "Searing Smite",
+      "fr": "Châtiment calcinant",
       "en": "Searing Smite",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6767,9 +6831,10 @@
     "id": "condition.see-invisibility",
     "type": "condition",
     "name": {
-      "fr": "See Invisibility",
+      "fr": "Voir l’invisible",
       "en": "See Invisibility",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6804,9 +6869,10 @@
     "id": "condition.seeming",
     "type": "condition",
     "name": {
-      "fr": "Seeming",
+      "fr": "Apparence trompeuse",
       "en": "Seeming",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6843,7 +6909,7 @@
     "id": "condition.seized-by-planar-binding",
     "type": "condition",
     "name": {
-      "fr": "Seized by Planar Binding",
+      "fr": "Lié par contrat",
       "en": "Seized by Planar Binding",
       "status": "UNOFFICIAL"
     },
@@ -6881,7 +6947,7 @@
     "id": "condition.shadespell",
     "type": "condition",
     "name": {
-      "fr": "Shadespell",
+      "fr": "Sort ombreux",
       "en": "Shadespell",
       "status": "UNOFFICIAL"
     },
@@ -6915,7 +6981,7 @@
     "id": "condition.shadow-possession",
     "type": "condition",
     "name": {
-      "fr": "Shadow Possession",
+      "fr": "Possession par les ombres",
       "en": "Shadow Possession",
       "status": "UNOFFICIAL"
     },
@@ -6956,7 +7022,7 @@
     "id": "condition.shars-blessing-barrier-of-darkness",
     "type": "condition",
     "name": {
-      "fr": "Shar’s Blessing: Barrier of Darkness",
+      "fr": "Bénédiction de Shar : barrière de ténèbres",
       "en": "Shar's Blessing: Barrier of Darkness",
       "status": "UNOFFICIAL"
     },
@@ -6990,7 +7056,7 @@
     "id": "condition.shattered",
     "type": "condition",
     "name": {
-      "fr": "Shattered",
+      "fr": "Brisé",
       "en": "Shattered",
       "status": "UNOFFICIAL"
     },
@@ -7024,9 +7090,10 @@
     "id": "condition.shield",
     "type": "condition",
     "name": {
-      "fr": "Shield",
+      "fr": "Bouclier",
       "en": "Shield",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -7061,9 +7128,10 @@
     "id": "condition.shield-of-faith",
     "type": "condition",
     "name": {
-      "fr": "Shield of Faith",
+      "fr": "Bouclier de la foi",
       "en": "Shield of Faith",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -7095,9 +7163,10 @@
     "id": "condition.shillelagh",
     "type": "condition",
     "name": {
-      "fr": "Shillelagh",
+      "fr": "Gourdin magique",
       "en": "Shillelagh",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -7132,7 +7201,7 @@
     "id": "condition.shocked",
     "type": "condition",
     "name": {
-      "fr": "Shocked",
+      "fr": "Électrocuté",
       "en": "Shocked",
       "status": "UNOFFICIAL"
     },
@@ -7167,9 +7236,10 @@
     "id": "condition.shocking-grasp",
     "type": "condition",
     "name": {
-      "fr": "Shocking Grasp",
+      "fr": "Poigne électrique",
       "en": "Shocking Grasp",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -7201,7 +7271,7 @@
     "id": "condition.silenced",
     "type": "condition",
     "name": {
-      "fr": "Silenced",
+      "fr": "Réduit au silence",
       "en": "Silenced",
       "status": "UNOFFICIAL"
     },
@@ -7239,7 +7309,7 @@
     "id": "condition.skilled-skullduggery",
     "type": "condition",
     "name": {
-      "fr": "Skilled Skullduggery",
+      "fr": "Fourberie experte",
       "en": "Skilled Skullduggery",
       "status": "UNOFFICIAL"
     },
@@ -7273,7 +7343,7 @@
     "id": "condition.sleeping",
     "type": "condition",
     "name": {
-      "fr": "Sleeping",
+      "fr": "Endormi",
       "en": "Sleeping",
       "status": "UNOFFICIAL"
     },
@@ -7312,7 +7382,7 @@
     "id": "condition.slowed",
     "type": "condition",
     "name": {
-      "fr": "Slowed",
+      "fr": "Ralenti",
       "en": "Slowed",
       "status": "UNOFFICIAL"
     },
@@ -7347,9 +7417,10 @@
     "id": "condition.speak-with-animals",
     "type": "condition",
     "name": {
-      "fr": "Speak with Animals",
+      "fr": "Communication avec les animaux",
       "en": "Speak with Animals",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -7382,9 +7453,10 @@
     "id": "condition.staggering-smite",
     "type": "condition",
     "name": {
-      "fr": "Staggering Smite",
+      "fr": "Châtiment débilitant",
       "en": "Staggering Smite",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -7416,7 +7488,7 @@
     "id": "condition.stealthier",
     "type": "condition",
     "name": {
-      "fr": "Stealthier",
+      "fr": "Plus furtif",
       "en": "Stealthier",
       "status": "UNOFFICIAL"
     },
@@ -7450,9 +7522,10 @@
     "id": "condition.stoneskin",
     "type": "condition",
     "name": {
-      "fr": "Stoneskin",
+      "fr": "Peau de pierre",
       "en": "Stoneskin",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -7487,9 +7560,10 @@
     "id": "condition.stunned",
     "type": "condition",
     "name": {
-      "fr": "Stunned",
+      "fr": "Étourdi",
       "en": "Stunned",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte1",
@@ -7526,9 +7600,10 @@
     "id": "condition.sunbeam",
     "type": "condition",
     "name": {
-      "fr": "Sunbeam",
+      "fr": "Rayon de soleil",
       "en": "Sunbeam",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -7563,7 +7638,7 @@
     "id": "condition.supreme-defences",
     "type": "condition",
     "name": {
-      "fr": "Supreme Defences",
+      "fr": "Défenses suprêmes",
       "en": "Supreme Defences",
       "status": "UNOFFICIAL"
     },
@@ -7597,7 +7672,7 @@
     "id": "condition.swift-as-wind",
     "type": "condition",
     "name": {
-      "fr": "Swift as Wind",
+      "fr": "Rapide comme le vent",
       "en": "Swift as Wind",
       "status": "UNOFFICIAL"
     },
@@ -7631,9 +7706,10 @@
     "id": "condition.telekinesis",
     "type": "condition",
     "name": {
-      "fr": "Telekinesis",
+      "fr": "Télékinésie",
       "en": "Telekinesis",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -7666,7 +7742,7 @@
     "id": "condition.temporary-hit-points-10",
     "type": "condition",
     "name": {
-      "fr": "Temporary Hit Points (10)",
+      "fr": "Points de vie temporaires (10)",
       "en": "Temporary Hit Points (10)",
       "status": "UNOFFICIAL"
     },
@@ -7700,7 +7776,7 @@
     "id": "condition.temporary-hit-points-15",
     "type": "condition",
     "name": {
-      "fr": "Temporary Hit Points (15)",
+      "fr": "Points de vie temporaires (15)",
       "en": "Temporary Hit Points (15)",
       "status": "UNOFFICIAL"
     },
@@ -7734,7 +7810,7 @@
     "id": "condition.temporary-hit-points-3",
     "type": "condition",
     "name": {
-      "fr": "Temporary Hit Points (3)",
+      "fr": "Points de vie temporaires (3)",
       "en": "Temporary Hit Points (3)",
       "status": "UNOFFICIAL"
     },
@@ -7768,7 +7844,7 @@
     "id": "condition.temporary-hit-points-8",
     "type": "condition",
     "name": {
-      "fr": "Temporary Hit Points (8)",
+      "fr": "Points de vie temporaires (8)",
       "en": "Temporary Hit Points (8)",
       "status": "UNOFFICIAL"
     },
@@ -7802,7 +7878,7 @@
     "id": "condition.temporary-hit-points-bolstering-smite",
     "type": "condition",
     "name": {
-      "fr": "Temporary Hit Points (Bolstering Smite)",
+      "fr": "Points de vie temporaires (châtiment fortifiant)",
       "en": "Temporary Hit Points (Bolstering Smite)",
       "status": "UNOFFICIAL"
     },
@@ -7836,7 +7912,7 @@
     "id": "condition.temporary-hit-points-ever-vigilant",
     "type": "condition",
     "name": {
-      "fr": "Temporary Hit Points (Ever Vigilant)",
+      "fr": "Points de vie temporaires (toujours vigilant)",
       "en": "Temporary Hit Points (Ever Vigilant)",
       "status": "UNOFFICIAL"
     },
@@ -7870,7 +7946,7 @@
     "id": "condition.temporary-hit-points-remedial-rhymes",
     "type": "condition",
     "name": {
-      "fr": "Temporary Hit Points (Remedial Rhymes)",
+      "fr": "Points de vie temporaires (rimes réparatrices)",
       "en": "Temporary Hit Points (Remedial Rhymes)",
       "status": "UNOFFICIAL"
     },
@@ -7904,7 +7980,7 @@
     "id": "condition.temporary-hit-points-stirring-execution",
     "type": "condition",
     "name": {
-      "fr": "Temporary Hit Points (Stirring Execution)",
+      "fr": "Points de vie temporaires (exécution exaltante)",
       "en": "Temporary Hit Points (Stirring Execution)",
       "status": "UNOFFICIAL"
     },
@@ -7938,7 +8014,7 @@
     "id": "condition.temporary-hit-points-well-liked-and-well-fortified",
     "type": "condition",
     "name": {
-      "fr": "Temporary Hit Points (Well-Liked and Well-Fortified)",
+      "fr": "Points de vie temporaires (apprécié et bien protégé)",
       "en": "Temporary Hit Points (Well-Liked and Well-Fortified)",
       "status": "UNOFFICIAL"
     },
@@ -7972,9 +8048,10 @@
     "id": "condition.thaumaturgy",
     "type": "condition",
     "name": {
-      "fr": "Thaumaturgy",
+      "fr": "Thaumaturgie",
       "en": "Thaumaturgy",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -8009,7 +8086,7 @@
     "id": "condition.the-pain-maidens-blessing",
     "type": "condition",
     "name": {
-      "fr": "The Pain Maiden’s Blessing",
+      "fr": "Bénédiction de la Demoiselle de douleur",
       "en": "The Pain Maiden's Blessing",
       "status": "UNOFFICIAL"
     },
@@ -8047,7 +8124,7 @@
     "id": "condition.thoroughly-stuffed",
     "type": "condition",
     "name": {
-      "fr": "Thoroughly Stuffed",
+      "fr": "Bien repu",
       "en": "Thoroughly Stuffed",
       "status": "UNOFFICIAL"
     },
@@ -8084,7 +8161,7 @@
     "id": "condition.those-laid-bare",
     "type": "condition",
     "name": {
-      "fr": "Those Laid Bare",
+      "fr": "Mis à nu",
       "en": "Those Laid Bare",
       "status": "UNOFFICIAL"
     },
@@ -8119,7 +8196,7 @@
     "id": "condition.treading-twilight",
     "type": "condition",
     "name": {
-      "fr": "Treading Twilight",
+      "fr": "Foulée crépusculaire",
       "en": "Treading Twilight",
       "status": "UNOFFICIAL"
     },
@@ -8153,9 +8230,10 @@
     "id": "condition.true-strike",
     "type": "condition",
     "name": {
-      "fr": "True Strike",
+      "fr": "Coup au but",
       "en": "True Strike",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -8187,7 +8265,7 @@
     "id": "condition.turned",
     "type": "condition",
     "name": {
-      "fr": "Turned",
+      "fr": "Renvoyé",
       "en": "Turned",
       "status": "UNOFFICIAL"
     },
@@ -8225,7 +8303,7 @@
     "id": "condition.tyrant-tongue",
     "type": "condition",
     "name": {
-      "fr": "Tyrant Tongue",
+      "fr": "Langue de tyran",
       "en": "Tyrant Tongue",
       "status": "UNOFFICIAL"
     },
@@ -8259,7 +8337,7 @@
     "id": "condition.undead-ward-aura",
     "type": "condition",
     "name": {
-      "fr": "Undead Ward Aura",
+      "fr": "Aura de protection des morts-vivants",
       "en": "Undead Ward Aura",
       "status": "UNOFFICIAL"
     },
@@ -8293,9 +8371,10 @@
     "id": "condition.vampiric-touch",
     "type": "condition",
     "name": {
-      "fr": "Vampiric Touch",
+      "fr": "Toucher du vampire",
       "en": "Vampiric Touch",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -8327,9 +8406,10 @@
     "id": "condition.vicious-mockery",
     "type": "condition",
     "name": {
-      "fr": "Vicious Mockery",
+      "fr": "Moquerie cruelle",
       "en": "Vicious Mockery",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -8361,7 +8441,7 @@
     "id": "condition.virulent-venom",
     "type": "condition",
     "name": {
-      "fr": "Virulent Venom",
+      "fr": "Venin virulent",
       "en": "Virulent Venom",
       "status": "UNOFFICIAL"
     },
@@ -8395,7 +8475,7 @@
     "id": "condition.voice-of-the-circle",
     "type": "condition",
     "name": {
-      "fr": "Voice of the Circle",
+      "fr": "Voix du cercle",
       "en": "Voice of the Circle",
       "status": "UNOFFICIAL"
     },
@@ -8429,7 +8509,7 @@
     "id": "condition.warden-of-vitality-aura",
     "type": "condition",
     "name": {
-      "fr": "Warden of Vitality (Aura)",
+      "fr": "Gardien de vitalité (aura)",
       "en": "Warden of Vitality (Aura)",
       "status": "UNOFFICIAL"
     },
@@ -8466,9 +8546,10 @@
     "id": "condition.warding-bond-caster",
     "type": "condition",
     "name": {
-      "fr": "Warding Bond",
+      "fr": "Lien de protection",
       "en": "Warding Bond",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -8500,9 +8581,10 @@
     "id": "condition.warding-bond-target",
     "type": "condition",
     "name": {
-      "fr": "Warding Bond",
+      "fr": "Lien de protection",
       "en": "Warding Bond",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -8534,7 +8616,7 @@
     "id": "condition.weak-grip",
     "type": "condition",
     "name": {
-      "fr": "Weak Grip",
+      "fr": "Poigne affaiblie",
       "en": "Weak Grip",
       "status": "UNOFFICIAL"
     },
@@ -8571,7 +8653,7 @@
     "id": "condition.weapon-dropped",
     "type": "condition",
     "name": {
-      "fr": "Weapon Dropped!",
+      "fr": "Arme lâchée !",
       "en": "Weapon Dropped!",
       "status": "UNOFFICIAL"
     },
@@ -8606,7 +8688,7 @@
     "id": "condition.wet",
     "type": "condition",
     "name": {
-      "fr": "Wet",
+      "fr": "Mouillé",
       "en": "Wet",
       "status": "UNOFFICIAL"
     },
@@ -8643,9 +8725,10 @@
     "id": "condition.witch-bolt",
     "type": "condition",
     "name": {
-      "fr": "Witch Bolt",
+      "fr": "Trait ensorcelé",
       "en": "Witch Bolt",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -8677,7 +8760,7 @@
     "id": "condition.wound-closure",
     "type": "condition",
     "name": {
-      "fr": "Wound Closure",
+      "fr": "Cicatrisation",
       "en": "Wound Closure",
       "status": "UNOFFICIAL"
     },
@@ -8711,7 +8794,7 @@
     "id": "condition.wrath",
     "type": "condition",
     "name": {
-      "fr": "Wrath",
+      "fr": "Courroux",
       "en": "Wrath",
       "status": "UNOFFICIAL"
     },
@@ -8745,7 +8828,7 @@
     "id": "condition.yeenoghus-blessing",
     "type": "condition",
     "name": {
-      "fr": "Yeenoghu’s Blessing",
+      "fr": "Bénédiction de Yeenoghu",
       "en": "Yeenoghu's Blessing",
       "status": "UNOFFICIAL"
     },

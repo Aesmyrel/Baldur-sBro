@@ -1,0 +1,820 @@
+# Noms français rédigés — lot noms-condition (guide : docs/LOTS_ECRITURE.md).
+# VF_DND : terme exact du lexique AideDD (aidedd) ou du SRD 5.2.1 français (srd-5.2.1-fr) ; sinon NON_OFFICIELLE.
+condition.acid:
+  fr: "Acide"
+  statut: NON_OFFICIELLE
+condition.adroit-caster:
+  fr: "Incantateur adroit"
+  statut: NON_OFFICIELLE
+condition.aid:
+  fr: "Aide"
+  statut: VF_DND
+  source: aidedd
+condition.ancient-grudges:
+  fr: "Rancunes ancestrales"
+  statut: NON_OFFICIELLE
+condition.arcane-acuity:
+  fr: "Acuité arcanique"
+  statut: NON_OFFICIELLE
+condition.arcane-battery:
+  fr: "Batterie arcanique"
+  statut: NON_OFFICIELLE
+condition.arcane-charge:
+  fr: "Charge arcanique"
+  statut: NON_OFFICIELLE
+condition.arcane-lock:
+  fr: "Verrou magique"
+  statut: VF_DND
+  source: aidedd
+condition.arcane-synergy:
+  fr: "Synergie arcanique"
+  statut: NON_OFFICIELLE
+condition.armour-of-agathys:
+  fr: "Armure d’Agathys"
+  statut: VF_DND
+  source: aidedd
+condition.arms-of-hadar:
+  fr: "Tentacules de Hadar"
+  statut: VF_DND
+  source: aidedd
+condition.aura-of-murder-bhaalist-armour:
+  fr: "Aura de meurtre (armure bhaaliste)"
+  statut: NON_OFFICIELLE
+condition.bane:
+  fr: "Fléau"
+  statut: VF_DND
+  source: aidedd
+condition.baneful-strike:
+  fr: "Frappe funeste"
+  statut: NON_OFFICIELLE
+condition.banished:
+  fr: "Banni"
+  statut: NON_OFFICIELLE
+condition.barkskin:
+  fr: "Peau d’écorce"
+  statut: VF_DND
+  source: aidedd
+condition.beacon-of-hope:
+  fr: "Lueur d’espoir"
+  statut: VF_DND
+  source: aidedd
+condition.blade-ward:
+  fr: "Protection contre les armes"
+  statut: VF_DND
+  source: aidedd
+condition.blazing-retaliation:
+  fr: "Riposte ardente"
+  statut: NON_OFFICIELLE
+condition.bleeding:
+  fr: "Saignement"
+  statut: NON_OFFICIELLE
+condition.bless:
+  fr: "Bénédiction"
+  statut: VF_DND
+  source: aidedd
+condition.blinded:
+  fr: "Aveuglé"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.blinded-blinding-smite:
+  fr: "Aveuglé (châtiment aveuglant)"
+  statut: NON_OFFICIELLE
+condition.blindness:
+  fr: "Cécité"
+  statut: NON_OFFICIELLE
+condition.blink:
+  fr: "Clignotement"
+  statut: VF_DND
+  source: aidedd
+condition.blinked-to-the-ethereal-plane:
+  fr: "Passé dans le Plan Éthéré"
+  statut: NON_OFFICIELLE
+condition.blurred:
+  fr: "Flou"
+  statut: NON_OFFICIELLE
+condition.bone-chilled:
+  fr: "Glacé jusqu’aux os"
+  statut: NON_OFFICIELLE
+condition.booming-blade:
+  fr: "Lame retentissante"
+  statut: VF_DND
+  source: aidedd
+condition.bound-weapon:
+  fr: "Arme liée"
+  statut: NON_OFFICIELLE
+condition.braced:
+  fr: "Arc-bouté"
+  statut: NON_OFFICIELLE
+condition.branding-smite:
+  fr: "Châtiment révélateur"
+  statut: VF_DND
+  source: aidedd
+condition.browbeaten:
+  fr: "Rudoyé"
+  statut: NON_OFFICIELLE
+condition.burning:
+  fr: "En flammes"
+  statut: NON_OFFICIELLE
+condition.burning-orthonic:
+  fr: "En flammes (orthonique)"
+  statut: NON_OFFICIELLE
+condition.burst-of-accuracy:
+  fr: "Sursaut de précision"
+  statut: NON_OFFICIELLE
+condition.call-lightning:
+  fr: "Appel de la foudre"
+  statut: VF_DND
+  source: aidedd
+condition.calmed:
+  fr: "Apaisé"
+  statut: NON_OFFICIELLE
+condition.charmed:
+  fr: "Charmé"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.chest-trauma:
+  fr: "Traumatisme thoracique"
+  statut: NON_OFFICIELLE
+condition.click-heels:
+  fr: "Claquement de talons"
+  statut: NON_OFFICIELLE
+condition.clinging-shadows:
+  fr: "Ombres tenaces"
+  statut: NON_OFFICIELLE
+condition.colour-spray:
+  fr: "Couleurs dansantes"
+  statut: VF_DND
+  source: aidedd
+condition.compelled-duel:
+  fr: "Duel forcé"
+  statut: VF_DND
+  source: aidedd
+condition.compelled-to-duel:
+  fr: "Contraint au duel"
+  statut: NON_OFFICIELLE
+condition.confused:
+  fr: "Confus"
+  statut: NON_OFFICIELLE
+condition.contagion-poisoned:
+  fr: "Empoisonné (contagion)"
+  statut: NON_OFFICIELLE
+condition.covert-critical:
+  fr: "Critique furtif"
+  statut: NON_OFFICIELLE
+condition.crown-of-madness:
+  fr: "Couronne du dément"
+  statut: VF_DND
+  source: aidedd
+condition.crusaders-mantle-aura:
+  fr: "Aura du croisé"
+  statut: NON_OFFICIELLE
+condition.daredevil-proximity:
+  fr: "Proximité téméraire"
+  statut: NON_OFFICIELLE
+condition.darkveil-precision:
+  fr: "Précision du voile sombre"
+  statut: NON_OFFICIELLE
+condition.daylight:
+  fr: "Lumière du jour"
+  statut: VF_DND
+  source: aidedd
+condition.dazed:
+  fr: "Hébété"
+  statut: NON_OFFICIELLE
+condition.dazzling-ray:
+  fr: "Rayon éblouissant"
+  statut: NON_OFFICIELLE
+condition.death-ward:
+  fr: "Protection contre la mort"
+  statut: VF_DND
+  source: aidedd
+condition.defensive-stance:
+  fr: "Posture défensive"
+  statut: NON_OFFICIELLE
+condition.demonspirit-aura:
+  fr: "Aura d’esprit démoniaque"
+  statut: NON_OFFICIELLE
+condition.detect-thoughts:
+  fr: "Détection des pensées"
+  statut: VF_DND
+  source: aidedd
+condition.dirty-advantage:
+  fr: "Avantage déloyal"
+  statut: NON_OFFICIELLE
+condition.disengage:
+  fr: "Désengagement"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.disguise-self:
+  fr: "Déguisement"
+  statut: VF_DND
+  source: aidedd
+condition.dispel-evil-and-good:
+  fr: "Dissipation du mal et du bien"
+  statut: VF_DND
+  source: aidedd
+condition.displaced:
+  fr: "Déplacé"
+  statut: NON_OFFICIELLE
+condition.divine-favour:
+  fr: "Faveur divine"
+  statut: VF_DND
+  source: aidedd
+condition.dominated:
+  fr: "Dominé"
+  statut: NON_OFFICIELLE
+condition.dominated-dominate-beast:
+  fr: "Dominé"
+  statut: NON_OFFICIELLE
+condition.elemental-weapon-acid:
+  fr: "Arme élémentaire : acide"
+  statut: NON_OFFICIELLE
+condition.elemental-weapon-cold:
+  fr: "Arme élémentaire : froid"
+  statut: NON_OFFICIELLE
+condition.elemental-weapon-fire:
+  fr: "Arme élémentaire : feu"
+  statut: NON_OFFICIELLE
+condition.elemental-weapon-lightning:
+  fr: "Arme élémentaire : foudre"
+  statut: NON_OFFICIELLE
+condition.elemental-weapon-thunder:
+  fr: "Arme élémentaire : tonnerre"
+  statut: NON_OFFICIELLE
+condition.encrusted-with-frost:
+  fr: "Couvert de givre"
+  statut: NON_OFFICIELLE
+condition.enhanced-armour-class:
+  fr: "Classe d’armure améliorée"
+  statut: NON_OFFICIELLE
+condition.enlarged-duergar:
+  fr: "Agrandi (duergar)"
+  statut: NON_OFFICIELLE
+condition.ensnared-ensnaring-strike:
+  fr: "Piégé (frappe piégeuse)"
+  statut: NON_OFFICIELLE
+condition.enthralled:
+  fr: "Captivé"
+  statut: NON_OFFICIELLE
+condition.ever-radiant:
+  fr: "Éternellement radieux"
+  statut: NON_OFFICIELLE
+condition.executioner:
+  fr: "Bourreau"
+  statut: NON_OFFICIELLE
+condition.expeditious-retreat:
+  fr: "Repli expéditif"
+  statut: VF_DND
+  source: aidedd
+condition.extra-bonus-action:
+  fr: "Action bonus supplémentaire"
+  statut: NON_OFFICIELLE
+condition.eyes-of-the-dark:
+  fr: "Yeux des ténèbres"
+  statut: NON_OFFICIELLE
+condition.faerie-fire:
+  fr: "Lueurs féeriques"
+  statut: VF_DND
+  source: aidedd
+condition.false-life:
+  fr: "Simulacre de vie"
+  statut: VF_DND
+  source: aidedd
+condition.favoured-weapon:
+  fr: "Arme de prédilection"
+  statut: NON_OFFICIELLE
+condition.fearful:
+  fr: "Apeuré"
+  statut: NON_OFFICIELLE
+condition.feather-fall:
+  fr: "Feuille morte"
+  statut: VF_DND
+  source: aidedd
+condition.feeble:
+  fr: "Affaibli"
+  statut: NON_OFFICIELLE
+condition.feigning-death:
+  fr: "Mort simulée"
+  statut: NON_OFFICIELLE
+condition.festering-spores:
+  fr: "Spores putrides"
+  statut: NON_OFFICIELLE
+condition.feywild-sparks:
+  fr: "Étincelles de Féerie"
+  statut: NON_OFFICIELLE
+condition.flesh-to-stone-restrained-stage-1:
+  fr: "Pétrification : entravé (stade 1)"
+  statut: NON_OFFICIELLE
+condition.flight:
+  fr: "Vol"
+  statut: NON_OFFICIELLE
+condition.flying-strike:
+  fr: "Frappe aérienne"
+  statut: NON_OFFICIELLE
+condition.force-conduit:
+  fr: "Conduit de force"
+  statut: NON_OFFICIELLE
+condition.form-of-artifice:
+  fr: "Forme d’artifice"
+  statut: NON_OFFICIELLE
+condition.formless-slaughter:
+  fr: "Massacre informe"
+  statut: NON_OFFICIELLE
+condition.freedom-of-movement:
+  fr: "Liberté de mouvement"
+  statut: VF_DND
+  source: aidedd
+condition.friends:
+  fr: "Amis"
+  statut: VF_DND
+  source: aidedd
+condition.frightened:
+  fr: "Effrayé"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.galvanic-currents:
+  fr: "Courants galvaniques"
+  statut: NON_OFFICIELLE
+condition.gaping-wounds:
+  fr: "Plaies béantes"
+  statut: NON_OFFICIELLE
+condition.garrotted:
+  fr: "Garrotté"
+  statut: NON_OFFICIELLE
+condition.gaseous-form:
+  fr: "Forme gazeuse"
+  statut: VF_DND
+  source: aidedd
+condition.giant-form:
+  fr: "Forme de géant"
+  statut: NON_OFFICIELLE
+condition.grasp-essence:
+  fr: "Saisie d’essence"
+  statut: NON_OFFICIELLE
+condition.greater-invisibility:
+  fr: "Invisibilité supérieure"
+  statut: VF_DND
+  source: aidedd
+condition.green-bed-regeneration:
+  fr: "Régénération du lit de verdure"
+  statut: NON_OFFICIELLE
+condition.guidance:
+  fr: "Assistance"
+  statut: VF_DND
+  source: aidedd
+condition.guiding-bolt:
+  fr: "Éclair traçant"
+  statut: VF_DND
+  source: aidedd
+condition.hamstrung:
+  fr: "Jarret tranché"
+  statut: NON_OFFICIELLE
+condition.harm:
+  fr: "Contamination"
+  statut: VF_DND
+  source: aidedd
+condition.harmonised:
+  fr: "Harmonisé"
+  statut: NON_OFFICIELLE
+condition.hastened:
+  fr: "Accéléré"
+  statut: NON_OFFICIELLE
+condition.healing-incense-aura:
+  fr: "Aura d’encens guérisseur"
+  statut: NON_OFFICIELLE
+condition.heat:
+  fr: "Chaleur"
+  statut: NON_OFFICIELLE
+condition.heat-metal:
+  fr: "Métal brûlant"
+  statut: VF_DND
+  source: aidedd
+condition.heat-metal-disadvantage:
+  fr: "Métal brûlant : désavantage"
+  statut: NON_OFFICIELLE
+condition.heroism:
+  fr: "Héroïsme"
+  statut: VF_DND
+  source: aidedd
+condition.hideous-laughter:
+  fr: "Fou rire"
+  statut: NON_OFFICIELLE
+condition.hiding:
+  fr: "Caché"
+  statut: NON_OFFICIELLE
+condition.high-spirits:
+  fr: "Plein d’entrain"
+  statut: NON_OFFICIELLE
+condition.hold-monster:
+  fr: "Immobilisation de monstre"
+  statut: VF_DND
+  source: aidedd
+condition.hold-person:
+  fr: "Immobilisation de personne"
+  statut: VF_DND
+  source: aidedd
+condition.hunt-completed:
+  fr: "Chasse achevée"
+  statut: NON_OFFICIELLE
+condition.hunters-mark-quarry:
+  fr: "Proie de la marque du chasseur"
+  statut: NON_OFFICIELLE
+condition.hypnotised:
+  fr: "Hypnotisé"
+  statut: NON_OFFICIELLE
+condition.invisible:
+  fr: "Invisible"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.invisible-weapon:
+  fr: "Arme invisible"
+  statut: NON_OFFICIELLE
+condition.jump:
+  fr: "Saut"
+  statut: VF_DND
+  source: aidedd
+condition.lethal-concealment:
+  fr: "Dissimulation mortelle"
+  statut: NON_OFFICIELLE
+condition.lethargic:
+  fr: "Léthargique"
+  statut: NON_OFFICIELLE
+condition.lieges-of-the-underdark-blessing:
+  fr: "Bénédiction des suzerains de l’Outreterre"
+  statut: NON_OFFICIELLE
+condition.life-essence:
+  fr: "Essence vitale"
+  statut: NON_OFFICIELLE
+condition.light:
+  fr: "Lumière"
+  statut: VF_DND
+  source: aidedd
+condition.lightning-aura:
+  fr: "Aura de foudre"
+  statut: NON_OFFICIELLE
+condition.lightning-blast:
+  fr: "Décharge de foudre"
+  statut: NON_OFFICIELLE
+condition.lightning-charges:
+  fr: "Charges de foudre"
+  statut: NON_OFFICIELLE
+condition.longstrider:
+  fr: "Grande foulée"
+  statut: VF_DND
+  source: aidedd
+condition.lunar-protection:
+  fr: "Protection lunaire"
+  statut: NON_OFFICIELLE
+condition.lunar-vitality:
+  fr: "Vitalité lunaire"
+  statut: NON_OFFICIELLE
+condition.mage-armour:
+  fr: "Armure de mage"
+  statut: VF_DND
+  source: aidedd
+condition.magic-weapon:
+  fr: "Arme magique"
+  statut: VF_DND
+  source: aidedd
+condition.maimed:
+  fr: "Estropié"
+  statut: NON_OFFICIELLE
+condition.mark-of-the-shifter:
+  fr: "Marque du métamorphe"
+  statut: NON_OFFICIELLE
+condition.martial-exertion:
+  fr: "Effort martial"
+  statut: NON_OFFICIELLE
+condition.melfs-acid-arrow:
+  fr: "Flèche acide de Melf"
+  statut: VF_DND
+  source: aidedd
+condition.mental-fatigue:
+  fr: "Fatigue mentale"
+  statut: NON_OFFICIELLE
+condition.mirror-image:
+  fr: "Image miroir"
+  statut: VF_DND
+  source: aidedd
+condition.momentum:
+  fr: "Élan"
+  statut: NON_OFFICIELLE
+condition.mystras-blessing-staff-of-arcane-blessing:
+  fr: "Bénédiction de Mystra"
+  statut: NON_OFFICIELLE
+condition.noxious-fumes:
+  fr: "Émanations nocives"
+  statut: NON_OFFICIELLE
+condition.off-balance:
+  fr: "Déséquilibré"
+  statut: NON_OFFICIELLE
+condition.off-balance-gargantuan-cleave:
+  fr: "Déséquilibré (enchaînement gigantesque)"
+  statut: NON_OFFICIELLE
+condition.onus-of-battle:
+  fr: "Fardeau de la bataille"
+  statut: NON_OFFICIELLE
+condition.otilukes-resilient-sphere:
+  fr: "Sphère résiliente d’Otiluke"
+  statut: VF_DND
+  source: aidedd
+condition.ottos-irresistible-dance:
+  fr: "Danse irrésistible d’Otto"
+  statut: VF_DND
+  source: aidedd
+condition.paralysed:
+  fr: "Paralysé"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.pass-without-trace-aura:
+  fr: "Aura de passage sans trace"
+  statut: NON_OFFICIELLE
+condition.petrified:
+  fr: "Pétrifié"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.phantasmal-force:
+  fr: "Force fantasmagorique"
+  statut: VF_DND
+  source: aidedd
+condition.phantasmal-killer:
+  fr: "Assassin imaginaire"
+  statut: VF_DND
+  source: aidedd
+condition.poisoned:
+  fr: "Empoisonné"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.polymorphed:
+  fr: "Métamorphosé"
+  statut: NON_OFFICIELLE
+condition.polymorphed-dire-raven:
+  fr: "Métamorphosé : corbeau sanguinaire"
+  statut: NON_OFFICIELLE
+condition.prepared:
+  fr: "Préparé"
+  statut: NON_OFFICIELLE
+condition.produce-flame:
+  fr: "Flammes"
+  statut: VF_DND
+  source: aidedd
+condition.prone:
+  fr: "À terre"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.protection-from-evil-and-good:
+  fr: "Protection contre le mal et le bien"
+  statut: VF_DND
+  source: aidedd
+condition.protection-from-poison:
+  fr: "Protection contre le poison"
+  statut: VF_DND
+  source: aidedd
+condition.quickening-incantation:
+  fr: "Incantation accélérée"
+  statut: NON_OFFICIELLE
+condition.quickspell-flinger:
+  fr: "Lanceur de sorts éclair"
+  statut: NON_OFFICIELLE
+condition.radiating-orb:
+  fr: "Orbe rayonnant"
+  statut: NON_OFFICIELLE
+condition.ray-of-frost:
+  fr: "Rayon de givre"
+  statut: VF_DND
+  source: aidedd
+condition.reactive-restoration:
+  fr: "Restauration réactive"
+  statut: NON_OFFICIELLE
+condition.reapply-hex:
+  fr: "Renouveler le maléfice"
+  statut: NON_OFFICIELLE
+condition.recast-speak-with-dead:
+  fr: "Relancer la communication avec les morts"
+  statut: NON_OFFICIELLE
+condition.reeling:
+  fr: "Chancelant"
+  statut: NON_OFFICIELLE
+condition.reflective-shell:
+  fr: "Coquille réfléchissante"
+  statut: NON_OFFICIELLE
+condition.rended-flesh:
+  fr: "Chair déchirée"
+  statut: NON_OFFICIELLE
+condition.resistance:
+  fr: "Résistance"
+  statut: VF_DND
+  source: aidedd
+condition.resistant-to-acid-damage-creations-echo:
+  fr: "Résistant aux dégâts d’acide (écho de la création)"
+  statut: NON_OFFICIELLE
+condition.revealed:
+  fr: "Révélé"
+  statut: NON_OFFICIELLE
+condition.reverberation:
+  fr: "Réverbération"
+  statut: NON_OFFICIELLE
+condition.ruptured:
+  fr: "Perforé"
+  statut: NON_OFFICIELLE
+condition.sacred-munitions:
+  fr: "Munitions sacrées"
+  statut: NON_OFFICIELLE
+condition.sanctuary:
+  fr: "Sanctuaire"
+  statut: VF_DND
+  source: aidedd
+condition.searing-smite:
+  fr: "Châtiment calcinant"
+  statut: VF_DND
+  source: aidedd
+condition.see-invisibility:
+  fr: "Voir l’invisible"
+  statut: VF_DND
+  source: aidedd
+condition.seeming:
+  fr: "Apparence trompeuse"
+  statut: VF_DND
+  source: aidedd
+condition.seized-by-planar-binding:
+  fr: "Lié par contrat"
+  statut: NON_OFFICIELLE
+condition.shadespell:
+  fr: "Sort ombreux"
+  statut: NON_OFFICIELLE
+condition.shadow-possession:
+  fr: "Possession par les ombres"
+  statut: NON_OFFICIELLE
+condition.shars-blessing-barrier-of-darkness:
+  fr: "Bénédiction de Shar : barrière de ténèbres"
+  statut: NON_OFFICIELLE
+condition.shattered:
+  fr: "Brisé"
+  statut: NON_OFFICIELLE
+condition.shield:
+  fr: "Bouclier"
+  statut: VF_DND
+  source: aidedd
+condition.shield-of-faith:
+  fr: "Bouclier de la foi"
+  statut: VF_DND
+  source: aidedd
+condition.shillelagh:
+  fr: "Gourdin magique"
+  statut: VF_DND
+  source: aidedd
+condition.shocked:
+  fr: "Électrocuté"
+  statut: NON_OFFICIELLE
+condition.shocking-grasp:
+  fr: "Poigne électrique"
+  statut: VF_DND
+  source: aidedd
+condition.silenced:
+  fr: "Réduit au silence"
+  statut: NON_OFFICIELLE
+condition.skilled-skullduggery:
+  fr: "Fourberie experte"
+  statut: NON_OFFICIELLE
+condition.sleeping:
+  fr: "Endormi"
+  statut: NON_OFFICIELLE
+condition.slowed:
+  fr: "Ralenti"
+  statut: NON_OFFICIELLE
+condition.speak-with-animals:
+  fr: "Communication avec les animaux"
+  statut: VF_DND
+  source: aidedd
+condition.staggering-smite:
+  fr: "Châtiment débilitant"
+  statut: VF_DND
+  source: aidedd
+condition.stealthier:
+  fr: "Plus furtif"
+  statut: NON_OFFICIELLE
+condition.stoneskin:
+  fr: "Peau de pierre"
+  statut: VF_DND
+  source: aidedd
+condition.stunned:
+  fr: "Étourdi"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.sunbeam:
+  fr: "Rayon de soleil"
+  statut: VF_DND
+  source: aidedd
+condition.supreme-defences:
+  fr: "Défenses suprêmes"
+  statut: NON_OFFICIELLE
+condition.swift-as-wind:
+  fr: "Rapide comme le vent"
+  statut: NON_OFFICIELLE
+condition.telekinesis:
+  fr: "Télékinésie"
+  statut: VF_DND
+  source: aidedd
+condition.temporary-hit-points-10:
+  fr: "Points de vie temporaires (10)"
+  statut: NON_OFFICIELLE
+condition.temporary-hit-points-15:
+  fr: "Points de vie temporaires (15)"
+  statut: NON_OFFICIELLE
+condition.temporary-hit-points-3:
+  fr: "Points de vie temporaires (3)"
+  statut: NON_OFFICIELLE
+condition.temporary-hit-points-8:
+  fr: "Points de vie temporaires (8)"
+  statut: NON_OFFICIELLE
+condition.temporary-hit-points-bolstering-smite:
+  fr: "Points de vie temporaires (châtiment fortifiant)"
+  statut: NON_OFFICIELLE
+condition.temporary-hit-points-ever-vigilant:
+  fr: "Points de vie temporaires (toujours vigilant)"
+  statut: NON_OFFICIELLE
+condition.temporary-hit-points-remedial-rhymes:
+  fr: "Points de vie temporaires (rimes réparatrices)"
+  statut: NON_OFFICIELLE
+condition.temporary-hit-points-stirring-execution:
+  fr: "Points de vie temporaires (exécution exaltante)"
+  statut: NON_OFFICIELLE
+condition.temporary-hit-points-well-liked-and-well-fortified:
+  fr: "Points de vie temporaires (apprécié et bien protégé)"
+  statut: NON_OFFICIELLE
+condition.thaumaturgy:
+  fr: "Thaumaturgie"
+  statut: VF_DND
+  source: aidedd
+condition.the-pain-maidens-blessing:
+  fr: "Bénédiction de la Demoiselle de douleur"
+  statut: NON_OFFICIELLE
+condition.thoroughly-stuffed:
+  fr: "Bien repu"
+  statut: NON_OFFICIELLE
+condition.those-laid-bare:
+  fr: "Mis à nu"
+  statut: NON_OFFICIELLE
+condition.treading-twilight:
+  fr: "Foulée crépusculaire"
+  statut: NON_OFFICIELLE
+condition.true-strike:
+  fr: "Coup au but"
+  statut: VF_DND
+  source: aidedd
+condition.turned:
+  fr: "Renvoyé"
+  statut: NON_OFFICIELLE
+condition.tyrant-tongue:
+  fr: "Langue de tyran"
+  statut: NON_OFFICIELLE
+condition.undead-ward-aura:
+  fr: "Aura de protection des morts-vivants"
+  statut: NON_OFFICIELLE
+condition.vampiric-touch:
+  fr: "Toucher du vampire"
+  statut: VF_DND
+  source: aidedd
+condition.vicious-mockery:
+  fr: "Moquerie cruelle"
+  statut: VF_DND
+  source: aidedd
+condition.virulent-venom:
+  fr: "Venin virulent"
+  statut: NON_OFFICIELLE
+condition.voice-of-the-circle:
+  fr: "Voix du cercle"
+  statut: NON_OFFICIELLE
+condition.warden-of-vitality-aura:
+  fr: "Gardien de vitalité (aura)"
+  statut: NON_OFFICIELLE
+condition.warding-bond-caster:
+  fr: "Lien de protection"
+  statut: VF_DND
+  source: aidedd
+condition.warding-bond-target:
+  fr: "Lien de protection"
+  statut: VF_DND
+  source: aidedd
+condition.weak-grip:
+  fr: "Poigne affaiblie"
+  statut: NON_OFFICIELLE
+condition.weapon-dropped:
+  fr: "Arme lâchée !"
+  statut: NON_OFFICIELLE
+condition.wet:
+  fr: "Mouillé"
+  statut: NON_OFFICIELLE
+condition.witch-bolt:
+  fr: "Trait ensorcelé"
+  statut: VF_DND
+  source: aidedd
+condition.wound-closure:
+  fr: "Cicatrisation"
+  statut: NON_OFFICIELLE
+condition.wrath:
+  fr: "Courroux"
+  statut: NON_OFFICIELLE
+condition.yeenoghus-blessing:
+  fr: "Bénédiction de Yeenoghu"
+  statut: NON_OFFICIELLE

@@ -23,7 +23,7 @@
 
 ```yaml
 item.amulet-of-misty-step:
-  fr: Amulette de pas brumeux
+  fr: Amulette de foulée brumeuse
   statut: NON_OFFICIELLE
 spell.mage-armour:
   fr: Armure de mage
@@ -38,7 +38,7 @@ condition.blinded:
 - `statut` :
   - `VF_DND` : seulement si le terme exact figure dans le lexique officiel (`source: aidedd`) ou dans le SRD 5.2.1 français (`source: srd-5.2.1-fr`), avec le même sens ; on vérifie dans le fichier.
   - `NON_OFFICIELLE` : tout le reste. **Jamais `VF_BG3`** : seule la VF du jeu, vue en jeu, peut le justifier.
-- **Cohérence avec la VF de D&D** : un nom composé reprend le terme officiel de chaque élément (« Amulet of Misty Step » → « Amulette de pas brumeux », puisque « Misty Step » = « Pas brumeux »). Ordre et accords du français (« Gants de force », pas « Force gants »).
+- **Cohérence avec la VF de D&D** : un nom composé reprend le terme officiel de chaque élément (« Amulet of Misty Step » → « Amulette de foulée brumeuse », puisque le lexique donne « Misty Step » = « Foulée brumeuse »). Ordre et accords du français (« Gants de force », pas « Force gants »).
 - **Noms propres** : un nom propre de personnage ou une création de BG3 sans équivalent officiel reste tel quel (« Phalar Aluve »). Un lieu des Royaumes Oubliés qui a un nom officiel en français ne prend ce statut que s'il est vérifiable dans le lexique ; sinon `NON_OFFICIELLE`.
 - **Typographie** : majuscule au premier mot seulement (« Anneau de protection »), sauf nom propre ; apostrophe typographique ’ ; aucun guillemet.
 - **Spoilers** : si le nom lui-même laisse deviner un rebondissement (personnage dont l'identité est une surprise, issue d'une quête), ajouter une étiquette plus stricte que celle de la ligne :

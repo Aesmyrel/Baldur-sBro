@@ -1,0 +1,501 @@
+# Noms français rédigés — lot noms-place (guide : docs/LOTS_ECRITURE.md).
+# VF_DND : terme exact du lexique AideDD (aidedd) ou du SRD 5.2.1 français (srd-5.2.1-fr) ; sinon NON_OFFICIELLE.
+place.abandoned-cistern:
+  fr: "Citerne abandonnée"
+  statut: NON_OFFICIELLE
+place.abandoned-refuge:
+  fr: "Refuge abandonné"
+  statut: NON_OFFICIELLE
+place.abandoned-windmill:
+  fr: "Moulin abandonné"
+  statut: NON_OFFICIELLE
+place.adamantine-forge-location:
+  fr: "Forge d’adamantium"
+  statut: NON_OFFICIELLE
+place.ancient-lair:
+  fr: "Antre antique"
+  statut: NON_OFFICIELLE
+place.ancient-mausoleum:
+  fr: "Mausolée antique"
+  statut: NON_OFFICIELLE
+place.ancient-temple:
+  fr: "Temple antique"
+  statut: NON_OFFICIELLE
+place.apothecarys-cellar:
+  fr: "Cave de l’apothicaire"
+  statut: NON_OFFICIELLE
+place.arcane-tower:
+  fr: "Tour arcanique"
+  statut: NON_OFFICIELLE
+place.arfurs-mansion:
+  fr: "Manoir d’Arfur"
+  statut: NON_OFFICIELLE
+place.armbrusts-home:
+  fr: "Maison d’Armbrust"
+  statut: NON_OFFICIELLE
+place.astral-plane:
+  fr: "Plan Astral"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
+place.baldurs-mouth:
+  fr: "Bouche de Baldur"
+  statut: NON_OFFICIELLE
+place.barrens-coop:
+  fr: "Poulailler de Barren"
+  statut: NON_OFFICIELLE
+place.basilisk-gate-barracks:
+  fr: "Caserne de la porte du Basilic"
+  statut: NON_OFFICIELLE
+place.beehive-general-goods:
+  fr: "Magasin général de la Ruche"
+  statut: NON_OFFICIELLE
+place.bhaal-temple:
+  fr: "Temple de Bhaal"
+  statut: NON_OFFICIELLE
+place.blighted-village:
+  fr: "Village dévasté"
+  statut: NON_OFFICIELLE
+place.bloodied-shrine:
+  fr: "Chapelle ensanglantée"
+  statut: NON_OFFICIELLE
+place.bloomridge-park:
+  fr: "Parc de Bloomridge"
+  statut: NON_OFFICIELLE
+place.bonecloaks-apothecary:
+  fr: "Apothicairerie de Bonecloak"
+  statut: NON_OFFICIELLE
+place.bruc-and-pishes-emporium:
+  fr: "Bazar de Bruc et Pishe"
+  statut: NON_OFFICIELLE
+place.campsite:
+  fr: "Campement"
+  statut: NON_OFFICIELLE
+place.candulhallows-tombstones:
+  fr: "Pierres tombales de Candulhallow"
+  statut: NON_OFFICIELLE
+place.carms-garms:
+  fr: "Fringues de Carm"
+  statut: NON_OFFICIELLE
+place.cazadors-dungeon:
+  fr: "Cachots de Cazador"
+  statut: NON_OFFICIELLE
+place.central-watch-tower:
+  fr: "Tour centrale du guet"
+  statut: NON_OFFICIELLE
+place.chromatic-scale:
+  fr: "Gamme chromatique"
+  statut: NON_OFFICIELLE
+place.circus-of-the-last-days:
+  fr: "Cirque des derniers jours"
+  statut: NON_OFFICIELLE
+place.cloister-of-sombre-embrace:
+  fr: "Cloître de la sombre étreinte"
+  statut: NON_OFFICIELLE
+place.creche-yllek:
+  fr: "Crèche Y’llek"
+  statut: NON_OFFICIELLE
+place.crimson-draughts:
+  fr: "Breuvages cramoisis"
+  statut: NON_OFFICIELLE
+place.danthelons-dancing-axe:
+  fr: "Hache dansante de Danthelon"
+  statut: NON_OFFICIELLE
+place.decrepit-village:
+  fr: "Village décrépit"
+  statut: NON_OFFICIELLE
+place.defiled-temple:
+  fr: "Temple profané"
+  statut: NON_OFFICIELLE
+place.devils-den:
+  fr: "Antre du diable"
+  statut: NON_OFFICIELLE
+place.devils-fee:
+  fr: "Prix du diable"
+  statut: NON_OFFICIELLE
+place.dread-hollow:
+  fr: "Creux de l’effroi"
+  statut: NON_OFFICIELLE
+place.durinbold-mausoleum:
+  fr: "Mausolée Durinbold"
+  statut: NON_OFFICIELLE
+place.ebonlake-grotto:
+  fr: "Grotte du lac d’Ébène"
+  statut: NON_OFFICIELLE
+place.elerrathins-home:
+  fr: "Maison d’Elerrathin"
+  statut: NON_OFFICIELLE
+place.elfsong-tavern:
+  fr: "Taverne du Chant de l’elfe"
+  statut: NON_OFFICIELLE
+place.elminsters-library:
+  fr: "Bibliothèque d’Elminster"
+  statut: NON_OFFICIELLE
+place.emerald-grove:
+  fr: "Bosquet d’émeraude"
+  statut: NON_OFFICIELLE
+place.facemakers-boutique:
+  fr: "Boutique du Façonneur de visages"
+  statut: NON_OFFICIELLE
+place.felogyrs-fireworks:
+  fr: "Feux d’artifice de Felogyr"
+  statut: NON_OFFICIELLE
+place.flymm-cargo:
+  fr: "Cargaisons Flymm"
+  statut: NON_OFFICIELLE
+place.flymms-cobblers:
+  fr: "Cordonnerie de Flymm"
+  statut: NON_OFFICIELLE
+place.forest:
+  fr: "Forêt"
+  statut: NON_OFFICIELLE
+place.forge-of-the-nine:
+  fr: "Forge des Neuf"
+  statut: NON_OFFICIELLE
+place.fraygos-flophouse:
+  fr: "Asile de nuit de Fraygo"
+  statut: NON_OFFICIELLE
+place.gauntlet-of-shar:
+  fr: "Épreuves de Shar"
+  statut: NON_OFFICIELLE
+place.goblin-camp:
+  fr: "Camp gobelin"
+  statut: NON_OFFICIELLE
+place.golbraiths-cellar:
+  fr: "Cave de Golbraith"
+  statut: NON_OFFICIELLE
+place.gorion-mausoleum:
+  fr: "Mausolée Gorion"
+  statut: NON_OFFICIELLE
+place.grand-mausoleum:
+  fr: "Grand mausolée"
+  statut: NON_OFFICIELLE
+place.graveyard-lower-city:
+  fr: "Cimetière"
+  statut: NON_OFFICIELLE
+place.grey-harbour-docks:
+  fr: "Quais du port Gris"
+  statut: NON_OFFICIELLE
+place.grymforge:
+  fr: "Grymforge"
+  statut: NON_OFFICIELLE
+place.guildhall:
+  fr: "Maison de la Guilde"
+  statut: NON_OFFICIELLE
+place.gur-camp:
+  fr: "Camp gur"
+  statut: NON_OFFICIELLE
+place.hhune-mausoleum:
+  fr: "Mausolée Hhune"
+  statut: NON_OFFICIELLE
+place.high-hall:
+  fr: "Haut-Hall"
+  statut: NON_OFFICIELLE
+place.highberrys-home:
+  fr: "Maison de Highberry"
+  statut: NON_OFFICIELLE
+place.house-in-deep-shadows:
+  fr: "Maison dans les ombres profondes"
+  statut: NON_OFFICIELLE
+place.house-of-grief:
+  fr: "Maison du deuil"
+  statut: NON_OFFICIELLE
+place.house-of-healing:
+  fr: "Maison de guérison"
+  statut: NON_OFFICIELLE
+place.house-of-hope:
+  fr: "Maison de l’espoir"
+  statut: NON_OFFICIELLE
+place.inner-sanctum:
+  fr: "Sanctuaire intérieur"
+  statut: NON_OFFICIELLE
+place.iron-throne:
+  fr: "Trône de fer"
+  statut: NON_OFFICIELLE
+place.jungle:
+  fr: "Jungle"
+  statut: NON_OFFICIELLE
+place.knights-of-the-shield-hideout:
+  fr: "Repaire des Chevaliers du Bouclier"
+  statut: NON_OFFICIELLE
+place.lady-jannaths-estate:
+  fr: "Domaine de dame Jannath"
+  statut: NON_OFFICIELLE
+place.last-light-inn:
+  fr: "Auberge de la Dernière Lueur"
+  statut: NON_OFFICIELLE
+place.lavernicas-home:
+  fr: "Maison de Lavernica"
+  statut: NON_OFFICIELLE
+place.loras-house:
+  fr: "Maison de Lora"
+  statut: NON_OFFICIELLE
+place.lower-city:
+  fr: "Ville basse"
+  statut: NON_OFFICIELLE
+place.lower-city-sewers:
+  fr: "Égouts de la Ville basse"
+  statut: NON_OFFICIELLE
+place.lustrous-lass:
+  fr: "Demoiselle étincelante"
+  statut: NON_OFFICIELLE
+place.masons-guild:
+  fr: "Guilde des maçons"
+  statut: NON_OFFICIELLE
+place.mind-flayer-colony:
+  fr: "Colonie de flagelleurs mentaux"
+  statut: NON_OFFICIELLE
+place.moonrise-towers:
+  fr: "Tours du lever de lune"
+  statut: NON_OFFICIELLE
+place.moonrise-towers-prison:
+  fr: "Prison des tours du lever de lune"
+  statut: NON_OFFICIELLE
+place.moonrise-towers-rooftop:
+  fr: "Toit des tours du lever de lune"
+  statut: NON_OFFICIELLE
+place.morphic-pool:
+  fr: "Bassin morphique"
+  statut: NON_OFFICIELLE
+place.mountain-pass:
+  fr: "Col de montagne"
+  statut: NON_OFFICIELLE
+place.murder-tribunal:
+  fr: "Tribunal du meurtre"
+  statut: NON_OFFICIELLE
+place.nautiloid:
+  fr: "Nautiloïde"
+  statut: NON_OFFICIELLE
+place.necrotic-laboratory:
+  fr: "Laboratoire nécrotique"
+  statut: NON_OFFICIELLE
+place.nortales-hostel:
+  fr: "Pension de Nortale"
+  statut: NON_OFFICIELLE
+place.nymphs-grotto:
+  fr: "Grotte de la nymphe"
+  statut: NON_OFFICIELLE
+place.old-garlows-place:
+  fr: "Maison du vieux Garlow"
+  statut: NON_OFFICIELLE
+place.old-jols:
+  fr: "Chez le vieux Jol"
+  statut: NON_OFFICIELLE
+place.open-hand-temple:
+  fr: "Temple de la Main ouverte"
+  statut: NON_OFFICIELLE
+place.open-hand-temple-underground-area:
+  fr: "Souterrains du temple de la Main ouverte"
+  statut: NON_OFFICIELLE
+place.oubliette:
+  fr: "Oubliette"
+  statut: NON_OFFICIELLE
+place.overgrown-ruins:
+  fr: "Ruines envahies par la végétation"
+  statut: NON_OFFICIELLE
+place.overgrown-tunnel:
+  fr: "Tunnel envahi par la végétation"
+  statut: NON_OFFICIELLE
+place.owlbear-nest:
+  fr: "Nid de hibours"
+  statut: NON_OFFICIELLE
+place.peartree-house:
+  fr: "Maison Peartree"
+  statut: NON_OFFICIELLE
+place.philgraves-mansion:
+  fr: "Manoir de Philgrave"
+  statut: NON_OFFICIELLE
+place.rainforests-home:
+  fr: "Maison de Rainforest"
+  statut: NON_OFFICIELLE
+place.ramaziths-tower:
+  fr: "Tour de Ramazith"
+  statut: NON_OFFICIELLE
+place.ravaged-beach:
+  fr: "Plage ravagée"
+  statut: NON_OFFICIELLE
+place.reithwin-tollhouse:
+  fr: "Péage de Reithwin"
+  statut: NON_OFFICIELLE
+place.reithwin-town:
+  fr: "Ville de Reithwin"
+  statut: NON_OFFICIELLE
+place.requisitioned-barn:
+  fr: "Grange réquisitionnée"
+  statut: NON_OFFICIELLE
+place.rivington:
+  fr: "Rivington"
+  statut: NON_OFFICIELLE
+place.rivington-general:
+  fr: "Magasin général de Rivington"
+  statut: NON_OFFICIELLE
+place.rosymorn-monastery:
+  fr: "Monastère de Rosymorn"
+  statut: NON_OFFICIELLE
+place.rosymorn-monastery-trail:
+  fr: "Sentier du monastère de Rosymorn"
+  statut: NON_OFFICIELLE
+place.ruined-battlefield:
+  fr: "Champ de bataille en ruine"
+  statut: NON_OFFICIELLE
+place.sacred-pool:
+  fr: "Bassin sacré"
+  statut: NON_OFFICIELLE
+place.secluded-cove:
+  fr: "Crique isolée"
+  statut: NON_OFFICIELLE
+place.secret-chamber:
+  fr: "Salle secrète"
+  statut: NON_OFFICIELLE
+place.selunite-outpost:
+  fr: "Avant-poste selûnite"
+  statut: NON_OFFICIELLE
+place.shadow-cursed-lands:
+  fr: "Terres maudites par l’ombre"
+  statut: NON_OFFICIELLE
+place.shadowfell:
+  fr: "Gisombre"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+place.sharess-caress:
+  fr: "Caresse de Sharess"
+  statut: NON_OFFICIELLE
+place.sharran-sanctuary:
+  fr: "Sanctuaire sharrien"
+  statut: NON_OFFICIELLE
+place.shattered-sanctum:
+  fr: "Sanctuaire brisé"
+  statut: NON_OFFICIELLE
+place.sorcerous-sundries:
+  fr: "Bazar des sortilèges"
+  statut: NON_OFFICIELLE
+place.sorcerous-vault:
+  fr: "Chambre forte des sortilèges"
+  statut: NON_OFFICIELLE
+place.south-span-checkpoint:
+  fr: "Poste de contrôle de la travée sud"
+  statut: NON_OFFICIELLE
+place.steel-watch-foundry:
+  fr: "Fonderie du Guet d’acier"
+  statut: NON_OFFICIELLE
+place.storehouse:
+  fr: "Entrepôt"
+  statut: NON_OFFICIELLE
+place.stormshore-armoury:
+  fr: "Armurerie de Stormshore"
+  statut: NON_OFFICIELLE
+place.stormshore-tabernacle:
+  fr: "Tabernacle de Stormshore"
+  statut: NON_OFFICIELLE
+place.submersible:
+  fr: "Submersible"
+  statut: NON_OFFICIELLE
+place.sunlit-wetlands:
+  fr: "Marécages ensoleillés"
+  statut: NON_OFFICIELLE
+place.sword-coast-couriers:
+  fr: "Messageries de la Côte des Épées"
+  statut: NON_OFFICIELLE
+place.szarr-palace:
+  fr: "Palais Szarr"
+  statut: NON_OFFICIELLE
+place.tadpoling-centre:
+  fr: "Centre d’implantation des têtards"
+  statut: NON_OFFICIELLE
+place.the-bibliophile:
+  fr: "Bibliophile"
+  statut: NON_OFFICIELLE
+place.the-blushing-mermaid:
+  fr: "Sirène rougissante"
+  statut: NON_OFFICIELLE
+place.the-counting-house:
+  fr: "Comptoir"
+  statut: NON_OFFICIELLE
+place.the-dragons-sanctum:
+  fr: "Sanctuaire du dragon"
+  statut: NON_OFFICIELLE
+place.the-festering-cove:
+  fr: "Crique putride"
+  statut: NON_OFFICIELLE
+place.the-glitter-gala:
+  fr: "Gala scintillant"
+  statut: NON_OFFICIELLE
+place.the-hollow:
+  fr: "Creux"
+  statut: NON_OFFICIELLE
+place.the-lodge:
+  fr: "Loge"
+  statut: NON_OFFICIELLE
+place.the-risen-road:
+  fr: "Route surélevée"
+  statut: NON_OFFICIELLE
+place.the-singing-lute:
+  fr: "Luth chantant"
+  statut: NON_OFFICIELLE
+place.the-velveteen-elixir:
+  fr: "Élixir de velours"
+  statut: NON_OFFICIELLE
+place.the-waning-moon:
+  fr: "Lune décroissante"
+  statut: NON_OFFICIELLE
+place.the-wyrmway:
+  fr: "Voie du Wyrm"
+  statut: NON_OFFICIELLE
+place.tiefling-hideout:
+  fr: "Cachette des tieffelins"
+  statut: NON_OFFICIELLE
+place.undercity:
+  fr: "Ville souterraine"
+  statut: NON_OFFICIELLE
+place.undercity-ruins:
+  fr: "Ruines de la Ville souterraine"
+  statut: NON_OFFICIELLE
+place.underdark:
+  fr: "Outreterre"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+place.underdark-pleasures:
+  fr: "Plaisirs de l’Outreterre"
+  statut: NON_OFFICIELLE
+place.underground-passage:
+  fr: "Passage souterrain"
+  statut: NON_OFFICIELLE
+place.upper-city:
+  fr: "Ville haute"
+  statut: NON_OFFICIELLE
+place.upper-city-gate-checkpoint:
+  fr: "Poste de contrôle de la porte de la Ville haute"
+  statut: NON_OFFICIELLE
+place.vonayns-home:
+  fr: "Maison de Vonayn"
+  statut: NON_OFFICIELLE
+place.water-queens-house:
+  fr: "Maison de la Reine des eaux"
+  statut: NON_OFFICIELLE
+place.waukeens-rest:
+  fr: "Repos de Waukeen"
+  statut: NON_OFFICIELLE
+place.western-beach:
+  fr: "Plage de l’ouest"
+  statut: NON_OFFICIELLE
+place.whispering-depths:
+  fr: "Profondeurs murmurantes"
+  statut: NON_OFFICIELLE
+place.wilderness:
+  fr: "Terres sauvages"
+  statut: NON_OFFICIELLE
+place.worg-pens:
+  fr: "Enclos des worgs"
+  statut: NON_OFFICIELLE
+place.wyrms-crossing:
+  fr: "Passage du Wyrm"
+  statut: NON_OFFICIELLE
+place.wyrms-rock-fortress:
+  fr: "Forteresse du rocher du Wyrm"
+  statut: NON_OFFICIELLE
+place.wyrms-rock-prison:
+  fr: "Prison du rocher du Wyrm"
+  statut: NON_OFFICIELLE
+place.zhentarim-basement:
+  fr: "Sous-sol du Zhentarim"
+  statut: NON_OFFICIELLE

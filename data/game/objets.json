@@ -3,7 +3,7 @@
     "id": "item.abdels-trusted-shield",
     "type": "item",
     "name": {
-      "fr": "Abdel’s Trusted Shield",
+      "fr": "Bouclier de confiance d’Abdel",
       "en": "Abdel's Trusted Shield",
       "status": "UNOFFICIAL"
     },
@@ -85,7 +85,7 @@
     "id": "item.aberration-hunters-amulet",
     "type": "item",
     "name": {
-      "fr": "Aberration Hunters’ Amulet",
+      "fr": "Amulette des chasseurs d’aberrations",
       "en": "Aberration Hunters' Amulet",
       "status": "UNOFFICIAL"
     },
@@ -172,7 +172,7 @@
     "id": "item.absolute-confidence-amulet",
     "type": "item",
     "name": {
-      "fr": "Absolute Confidence Amulet",
+      "fr": "Amulette de confiance absolue",
       "en": "Absolute Confidence Amulet",
       "status": "UNOFFICIAL"
     },
@@ -243,7 +243,7 @@
     "id": "item.absolutes-protector",
     "type": "item",
     "name": {
-      "fr": "Absolute’s Protector",
+      "fr": "Protecteur de l’Absolu",
       "en": "Absolute's Protector",
       "status": "UNOFFICIAL"
     },
@@ -338,7 +338,7 @@
     "id": "item.absolutes-talisman",
     "type": "item",
     "name": {
-      "fr": "Absolute’s Talisman",
+      "fr": "Talisman de l’Absolu",
       "en": "Absolute's Talisman",
       "status": "UNOFFICIAL"
     },
@@ -417,7 +417,7 @@
     "id": "item.absolutes-warboard",
     "type": "item",
     "name": {
-      "fr": "Absolute’s Warboard",
+      "fr": "Pavois de l’Absolu",
       "en": "Absolute's Warboard",
       "status": "UNOFFICIAL"
     },
@@ -509,7 +509,7 @@
     "id": "item.abyss-beckoners",
     "type": "item",
     "name": {
-      "fr": "Abyss Beckoners",
+      "fr": "Héleurs des Abysses",
       "en": "Abyss Beckoners",
       "status": "UNOFFICIAL"
     },
@@ -583,7 +583,7 @@
     "id": "item.acrobat-shoes",
     "type": "item",
     "name": {
-      "fr": "Acrobat Shoes",
+      "fr": "Chaussures d’acrobate",
       "en": "Acrobat Shoes",
       "status": "UNOFFICIAL"
     },
@@ -654,7 +654,7 @@
     "id": "item.adamantine-longsword",
     "type": "item",
     "name": {
-      "fr": "Adamantine Longsword",
+      "fr": "Épée longue d’adamantium",
       "en": "Adamantine Longsword",
       "status": "UNOFFICIAL"
     },
@@ -783,7 +783,7 @@
     "id": "item.adamantine-mace",
     "type": "item",
     "name": {
-      "fr": "Adamantine Mace",
+      "fr": "Masse d’armes d’adamantium",
       "en": "Adamantine Mace",
       "status": "UNOFFICIAL"
     },
@@ -888,7 +888,7 @@
     "id": "item.adamantine-scale-mail",
     "type": "item",
     "name": {
-      "fr": "Adamantine Scale Mail",
+      "fr": "Armure d’écailles d’adamantium",
       "en": "Adamantine Scale Mail",
       "status": "UNOFFICIAL"
     },
@@ -973,7 +973,7 @@
     "id": "item.adamantine-shield",
     "type": "item",
     "name": {
-      "fr": "Adamantine Shield",
+      "fr": "Bouclier d’adamantium",
       "en": "Adamantine Shield",
       "status": "UNOFFICIAL"
     },
@@ -1057,7 +1057,7 @@
     "id": "item.adamantine-splint-armour",
     "type": "item",
     "name": {
-      "fr": "Adamantine Splint Armour",
+      "fr": "Clibanion d’adamantium",
       "en": "Adamantine Splint Armour",
       "status": "UNOFFICIAL"
     },
@@ -1142,7 +1142,7 @@
     "id": "item.after-death-do-us-part",
     "type": "item",
     "name": {
-      "fr": "After Death Do Us Part",
+      "fr": "Après que la mort nous a séparés",
       "en": "After Death Do Us Part",
       "status": "UNOFFICIAL"
     },
@@ -1216,7 +1216,7 @@
     "id": "item.ambusher",
     "type": "item",
     "name": {
-      "fr": "Ambusher",
+      "fr": "Embusqué",
       "en": "Ambusher",
       "status": "UNOFFICIAL"
     },
@@ -1343,7 +1343,7 @@
     "id": "item.amulet-of-bhaal",
     "type": "item",
     "name": {
-      "fr": "Amulet of Bhaal",
+      "fr": "Amulette de Bhaal",
       "en": "Amulet of Bhaal",
       "status": "UNOFFICIAL"
     },
@@ -1417,7 +1417,7 @@
     "id": "item.amulet-of-branding",
     "type": "item",
     "name": {
-      "fr": "Amulet of Branding",
+      "fr": "Amulette de marquage",
       "en": "Amulet of Branding",
       "status": "UNOFFICIAL"
     },
@@ -1483,7 +1483,7 @@
     "id": "item.amulet-of-elemental-torment",
     "type": "item",
     "name": {
-      "fr": "Amulet of Elemental Torment",
+      "fr": "Amulette de tourment élémentaire",
       "en": "Amulet of Elemental Torment",
       "status": "UNOFFICIAL"
     },
@@ -1557,7 +1557,7 @@
     "id": "item.amulet-of-greater-health",
     "type": "item",
     "name": {
-      "fr": "Amulet of Greater Health",
+      "fr": "Amulette de bonne santé supérieure",
       "en": "Amulet of Greater Health",
       "status": "UNOFFICIAL"
     },
@@ -1625,7 +1625,7 @@
     "id": "item.amulet-of-misty-step",
     "type": "item",
     "name": {
-      "fr": "Amulet of Misty Step",
+      "fr": "Amulette de foulée brumeuse",
       "en": "Amulet of Misty Step",
       "status": "UNOFFICIAL"
     },
@@ -1720,7 +1720,7 @@
     "id": "item.amulet-of-restoration",
     "type": "item",
     "name": {
-      "fr": "Amulet of Restoration",
+      "fr": "Amulette de restauration",
       "en": "Amulet of Restoration",
       "status": "UNOFFICIAL"
     },
@@ -1829,7 +1829,7 @@
     "id": "item.amulet-of-selunes-chosen",
     "type": "item",
     "name": {
-      "fr": "Amulet of Selûne’s Chosen",
+      "fr": "Amulette de l’élu de Séluné",
       "en": "Amulet of Selûne's Chosen",
       "status": "UNOFFICIAL"
     },
@@ -1894,7 +1894,7 @@
     "id": "item.amulet-of-silvanus",
     "type": "item",
     "name": {
-      "fr": "Amulet of Silvanus",
+      "fr": "Amulette de Silvanus",
       "en": "Amulet of Silvanus",
       "status": "UNOFFICIAL"
     },
@@ -1969,7 +1969,7 @@
     "id": "item.amulet-of-the-devout",
     "type": "item",
     "name": {
-      "fr": "Amulet of the Devout",
+      "fr": "Amulette du dévot",
       "en": "Amulet of the Devout",
       "status": "UNOFFICIAL"
     },
@@ -2056,7 +2056,7 @@
     "id": "item.amulet-of-the-drunkard",
     "type": "item",
     "name": {
-      "fr": "Amulet of the Drunkard",
+      "fr": "Amulette de l’ivrogne",
       "en": "Amulet of the Drunkard",
       "status": "UNOFFICIAL"
     },
@@ -2131,7 +2131,7 @@
     "id": "item.amulet-of-the-harpers",
     "type": "item",
     "name": {
-      "fr": "Amulet of the Harpers",
+      "fr": "Amulette des Ménestrels",
       "en": "Amulet of the Harpers",
       "status": "UNOFFICIAL"
     },
@@ -2210,7 +2210,7 @@
     "id": "item.amulet-of-the-unworthy",
     "type": "item",
     "name": {
-      "fr": "Amulet of the Unworthy",
+      "fr": "Amulette de l’indigne",
       "en": "Amulet of the Unworthy",
       "status": "UNOFFICIAL"
     },
@@ -2278,7 +2278,7 @@
     "id": "item.amulet-of-windrider",
     "type": "item",
     "name": {
-      "fr": "Amulet of Windrider",
+      "fr": "Amulette du chevaucheur des vents",
       "en": "Amulet of Windrider",
       "status": "UNOFFICIAL"
     },
@@ -2358,7 +2358,7 @@
     "id": "item.argument-solver",
     "type": "item",
     "name": {
-      "fr": "Argument Solver",
+      "fr": "Argument massue",
       "en": "Argument Solver",
       "status": "UNOFFICIAL"
     },
@@ -2465,7 +2465,7 @@
     "id": "item.armour-of-agility",
     "type": "item",
     "name": {
-      "fr": "Armour of Agility",
+      "fr": "Armure d’agilité",
       "en": "Armour of Agility",
       "status": "UNOFFICIAL"
     },
@@ -2548,7 +2548,7 @@
     "id": "item.armour-of-devotion",
     "type": "item",
     "name": {
-      "fr": "Armour of Devotion",
+      "fr": "Armure de dévotion",
       "en": "Armour of Devotion",
       "status": "UNOFFICIAL"
     },
@@ -2628,7 +2628,7 @@
     "id": "item.armour-of-landfall",
     "type": "item",
     "name": {
-      "fr": "Armour of Landfall",
+      "fr": "Armure d’accostage",
       "en": "Armour of Landfall",
       "status": "UNOFFICIAL"
     },
@@ -2738,7 +2738,7 @@
     "id": "item.armour-of-moonbasking",
     "type": "item",
     "name": {
-      "fr": "Armour of Moonbasking",
+      "fr": "Armure du bain de lune",
       "en": "Armour of Moonbasking",
       "status": "UNOFFICIAL"
     },
@@ -2830,7 +2830,7 @@
     "id": "item.armour-of-persistence",
     "type": "item",
     "name": {
-      "fr": "Armour of Persistence",
+      "fr": "Armure de persistance",
       "en": "Armour of Persistence",
       "status": "UNOFFICIAL"
     },
@@ -2923,7 +2923,7 @@
     "id": "item.armour-of-the-sporekeeper",
     "type": "item",
     "name": {
-      "fr": "Armour of the Sporekeeper",
+      "fr": "Armure du gardien des spores",
       "en": "Armour of the Sporekeeper",
       "status": "UNOFFICIAL"
     },
@@ -3015,7 +3015,7 @@
     "id": "item.armour-of-uninhibited-kushigo",
     "type": "item",
     "name": {
-      "fr": "Armour of Uninhibited Kushigo",
+      "fr": "Armure du Kushigo débridé",
       "en": "Armour of Uninhibited Kushigo",
       "status": "UNOFFICIAL"
     },
@@ -3092,7 +3092,7 @@
     "id": "item.artificial-leech-1",
     "type": "item",
     "name": {
-      "fr": "Artificial Leech",
+      "fr": "Sangsue artificielle",
       "en": "Artificial Leech",
       "status": "UNOFFICIAL"
     },
@@ -3192,7 +3192,7 @@
     "id": "item.assassin-of-bhaal-cowl",
     "type": "item",
     "name": {
-      "fr": "Assassin of Bhaal Cowl",
+      "fr": "Capuche d’assassin de Bhaal",
       "en": "Assassin of Bhaal Cowl",
       "status": "UNOFFICIAL"
     },
@@ -3281,7 +3281,7 @@
     "id": "item.assassins-shortsword",
     "type": "item",
     "name": {
-      "fr": "Assassin’s Shortsword",
+      "fr": "Épée courte de l’assassin",
       "en": "Assassin's Shortsword",
       "status": "UNOFFICIAL"
     },
@@ -3385,7 +3385,7 @@
     "id": "item.assassins-touch",
     "type": "item",
     "name": {
-      "fr": "Assassin’s Touch",
+      "fr": "Toucher de l’assassin",
       "en": "Assassin's Touch",
       "status": "UNOFFICIAL"
     },
@@ -3490,18 +3490,18 @@
     "id": "item.baldurans-giantslayer",
     "type": "item",
     "name": {
-      "fr": "Balduran’s Giantslayer",
+      "fr": "Tueuse de géants de Balduran",
       "en": "Balduran's Giantslayer",
       "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "titleTag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "licence": "cc-by-nc-sa-4.0",
@@ -3572,7 +3572,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -3581,7 +3581,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -3590,7 +3590,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -3599,7 +3599,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -3608,7 +3608,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -3617,7 +3617,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -3626,7 +3626,7 @@
         "relation": "located_in",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -3636,7 +3636,7 @@
     "id": "item.band-of-the-mystic-scoundrel",
     "type": "item",
     "name": {
-      "fr": "Band of the Mystic Scoundrel",
+      "fr": "Bague du gredin mystique",
       "en": "Band of the Mystic Scoundrel",
       "status": "UNOFFICIAL"
     },
@@ -3710,7 +3710,7 @@
     "id": "item.barkskin-armour",
     "type": "item",
     "name": {
-      "fr": "Barkskin Armour",
+      "fr": "Armure de peau d’écorce",
       "en": "Barkskin Armour",
       "status": "UNOFFICIAL"
     },
@@ -3793,7 +3793,7 @@
     "id": "item.battered-lute",
     "type": "item",
     "name": {
-      "fr": "Battered Lute",
+      "fr": "Luth cabossé",
       "en": "Battered Lute",
       "status": "UNOFFICIAL"
     },
@@ -3845,7 +3845,7 @@
     "id": "item.battleaxe-1",
     "type": "item",
     "name": {
-      "fr": "Battleaxe +1",
+      "fr": "Hache d’armes +1",
       "en": "Battleaxe +1",
       "status": "UNOFFICIAL"
     },
@@ -3949,7 +3949,7 @@
     "id": "item.beastmasters-chain",
     "type": "item",
     "name": {
-      "fr": "Beastmaster’s Chain",
+      "fr": "Chaîne du maître des bêtes",
       "en": "Beastmaster's Chain",
       "status": "UNOFFICIAL"
     },
@@ -4142,7 +4142,7 @@
     "id": "item.bhaalist-armour",
     "type": "item",
     "name": {
-      "fr": "Bhaalist Armour",
+      "fr": "Armure bhaaliste",
       "en": "Bhaalist Armour",
       "status": "UNOFFICIAL"
     },
@@ -4234,7 +4234,7 @@
     "id": "item.bhaalist-gloves",
     "type": "item",
     "name": {
-      "fr": "Bhaalist Gloves",
+      "fr": "Gants bhaalistes",
       "en": "Bhaalist Gloves",
       "status": "UNOFFICIAL"
     },
@@ -4312,7 +4312,7 @@
     "id": "item.bided-time",
     "type": "item",
     "name": {
-      "fr": "Bided Time",
+      "fr": "Heure attendue",
       "en": "Bided Time",
       "status": "UNOFFICIAL"
     },
@@ -4382,7 +4382,7 @@
     "id": "item.bigboys-chew-toy",
     "type": "item",
     "name": {
-      "fr": "Bigboy’s Chew Toy",
+      "fr": "Jouet à mâchouiller de Bigboy",
       "en": "Bigboy's Chew Toy",
       "status": "UNOFFICIAL"
     },
@@ -4497,7 +4497,7 @@
     "id": "item.birthright",
     "type": "item",
     "name": {
-      "fr": "Birthright",
+      "fr": "Droit de naissance",
       "en": "Birthright",
       "status": "UNOFFICIAL"
     },
@@ -4565,7 +4565,7 @@
     "id": "item.blackguards-gauntlets",
     "type": "item",
     "name": {
-      "fr": "Blackguard’s Gauntlets",
+      "fr": "Gantelets du chevalier noir",
       "en": "Blackguard's Gauntlets",
       "status": "UNOFFICIAL"
     },
@@ -4651,7 +4651,7 @@
     "id": "item.blackguards-greaves",
     "type": "item",
     "name": {
-      "fr": "Blackguard’s Greaves",
+      "fr": "Jambières du chevalier noir",
       "en": "Blackguard's Greaves",
       "status": "UNOFFICIAL"
     },
@@ -4742,7 +4742,7 @@
     "id": "item.blackguards-plate",
     "type": "item",
     "name": {
-      "fr": "Blackguard’s Plate",
+      "fr": "Harnois du chevalier noir",
       "en": "Blackguard's Plate",
       "status": "UNOFFICIAL"
     },
@@ -4825,7 +4825,7 @@
     "id": "item.blackguards-sword",
     "type": "item",
     "name": {
-      "fr": "Blackguard’s Sword",
+      "fr": "Épée du chevalier noir",
       "en": "Blackguard's Sword",
       "status": "UNOFFICIAL"
     },
@@ -4951,7 +4951,7 @@
     "id": "item.blade-of-oppressed-souls",
     "type": "item",
     "name": {
-      "fr": "Blade of Oppressed Souls",
+      "fr": "Lame des âmes opprimées",
       "en": "Blade of Oppressed Souls",
       "status": "UNOFFICIAL"
     },
@@ -5094,7 +5094,7 @@
     "id": "item.blazer-of-benevolence",
     "type": "item",
     "name": {
-      "fr": "Blazer of Benevolence",
+      "fr": "Veste de bienveillance",
       "en": "Blazer of Benevolence",
       "status": "UNOFFICIAL"
     },
@@ -5165,7 +5165,7 @@
     "id": "item.blightbringer",
     "type": "item",
     "name": {
-      "fr": "Blightbringer",
+      "fr": "Porte-flétrissure",
       "en": "Blightbringer",
       "status": "UNOFFICIAL"
     },
@@ -5282,7 +5282,7 @@
     "id": "item.blooded-greataxe",
     "type": "item",
     "name": {
-      "fr": "Blooded Greataxe",
+      "fr": "Hache à deux mains ensanglantée",
       "en": "Blooded Greataxe",
       "status": "UNOFFICIAL"
     },
@@ -5406,7 +5406,7 @@
     "id": "item.bloodguzzler-garb",
     "type": "item",
     "name": {
-      "fr": "Bloodguzzler Garb",
+      "fr": "Tenue du buveur de sang",
       "en": "Bloodguzzler Garb",
       "status": "UNOFFICIAL"
     },
@@ -5483,7 +5483,7 @@
     "id": "item.bloodthirst",
     "type": "item",
     "name": {
-      "fr": "Bloodthirst",
+      "fr": "Soif de sang",
       "en": "Bloodthirst",
       "status": "UNOFFICIAL"
     },
@@ -5617,7 +5617,7 @@
     "id": "item.bloody-amulet",
     "type": "item",
     "name": {
-      "fr": "Bloody Amulet",
+      "fr": "Amulette sanglante",
       "en": "Bloody Amulet",
       "status": "UNOFFICIAL"
     },
@@ -5665,7 +5665,7 @@
     "id": "item.bonesaw-1",
     "type": "item",
     "name": {
-      "fr": "Bonesaw",
+      "fr": "Scie à os",
       "en": "Bonesaw",
       "status": "UNOFFICIAL"
     },
@@ -5773,7 +5773,7 @@
     "id": "item.bonespike-boots",
     "type": "item",
     "name": {
-      "fr": "Bonespike Boots",
+      "fr": "Bottes à pointes d’os",
       "en": "Bonespike Boots",
       "status": "UNOFFICIAL"
     },
@@ -5873,7 +5873,7 @@
     "id": "item.bonespike-garb",
     "type": "item",
     "name": {
-      "fr": "Bonespike Garb",
+      "fr": "Tenue à pointes d’os",
       "en": "Bonespike Garb",
       "status": "UNOFFICIAL"
     },
@@ -5964,7 +5964,7 @@
     "id": "item.bonespike-gloves",
     "type": "item",
     "name": {
-      "fr": "Bonespike Gloves",
+      "fr": "Gants à pointes d’os",
       "en": "Bonespike Gloves",
       "status": "UNOFFICIAL"
     },
@@ -6038,7 +6038,7 @@
     "id": "item.bonespike-helmet",
     "type": "item",
     "name": {
-      "fr": "Bonespike Helmet",
+      "fr": "Casque à pointes d’os",
       "en": "Bonespike Helmet",
       "status": "UNOFFICIAL"
     },
@@ -6131,7 +6131,7 @@
     "id": "item.boots-of-aid-and-comfort",
     "type": "item",
     "name": {
-      "fr": "Boots of Aid and Comfort",
+      "fr": "Bottes d’aide et de réconfort",
       "en": "Boots of Aid and Comfort",
       "status": "UNOFFICIAL"
     },
@@ -6206,7 +6206,7 @@
     "id": "item.boots-of-apparent-death",
     "type": "item",
     "name": {
-      "fr": "Boots of Apparent Death",
+      "fr": "Bottes de mort apparente",
       "en": "Boots of Apparent Death",
       "status": "UNOFFICIAL"
     },
@@ -6274,7 +6274,7 @@
     "id": "item.boots-of-arcane-bolstering",
     "type": "item",
     "name": {
-      "fr": "Boots of Arcane Bolstering",
+      "fr": "Bottes de renfort arcanique",
       "en": "Boots of Arcane Bolstering",
       "status": "UNOFFICIAL"
     },
@@ -6369,7 +6369,7 @@
     "id": "item.boots-of-brilliance",
     "type": "item",
     "name": {
-      "fr": "Boots of Brilliance",
+      "fr": "Bottes de brio",
       "en": "Boots of Brilliance",
       "status": "UNOFFICIAL"
     },
@@ -6443,7 +6443,7 @@
     "id": "item.boots-of-elemental-momentum",
     "type": "item",
     "name": {
-      "fr": "Boots of Elemental Momentum",
+      "fr": "Bottes d’élan élémentaire",
       "en": "Boots of Elemental Momentum",
       "status": "UNOFFICIAL"
     },
@@ -6526,7 +6526,7 @@
     "id": "item.boots-of-genial-striding",
     "type": "item",
     "name": {
-      "fr": "Boots of Genial Striding",
+      "fr": "Bottes de foulée joviale",
       "en": "Boots of Genial Striding",
       "status": "UNOFFICIAL"
     },
@@ -6601,7 +6601,7 @@
     "id": "item.boots-of-persistence",
     "type": "item",
     "name": {
-      "fr": "Boots of Persistence",
+      "fr": "Bottes de persistance",
       "en": "Boots of Persistence",
       "status": "UNOFFICIAL"
     },
@@ -6693,7 +6693,7 @@
     "id": "item.boots-of-psionic-movement",
     "type": "item",
     "name": {
-      "fr": "Boots of Psionic Movement",
+      "fr": "Bottes de mouvement psionique",
       "en": "Boots of Psionic Movement",
       "status": "UNOFFICIAL"
     },
@@ -6855,7 +6855,7 @@
     "id": "item.boots-of-stormy-clamour",
     "type": "item",
     "name": {
-      "fr": "Boots of Stormy Clamour",
+      "fr": "Bottes de clameur orageuse",
       "en": "Boots of Stormy Clamour",
       "status": "UNOFFICIAL"
     },
@@ -6930,7 +6930,7 @@
     "id": "item.boots-of-striding",
     "type": "item",
     "name": {
-      "fr": "Boots of Striding",
+      "fr": "Bottes de foulée",
       "en": "Boots of Striding",
       "status": "UNOFFICIAL"
     },
@@ -7012,7 +7012,7 @@
     "id": "item.boots-of-uninhibited-kushigo",
     "type": "item",
     "name": {
-      "fr": "Boots of Uninhibited Kushigo",
+      "fr": "Bottes du Kushigo débridé",
       "en": "Boots of Uninhibited Kushigo",
       "status": "UNOFFICIAL"
     },
@@ -7075,7 +7075,7 @@
         "relation": "located_in",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -7088,7 +7088,7 @@
     "id": "item.boots-of-very-fast-blinking",
     "type": "item",
     "name": {
-      "fr": "Boots of Very Fast Blinking",
+      "fr": "Bottes de clignotement très rapide",
       "en": "Boots of Very Fast Blinking",
       "status": "UNOFFICIAL"
     },
@@ -7153,7 +7153,7 @@
     "id": "item.bow-of-awareness",
     "type": "item",
     "name": {
-      "fr": "Bow of Awareness",
+      "fr": "Arc de vigilance",
       "en": "Bow of Awareness",
       "status": "UNOFFICIAL"
     },
@@ -7256,7 +7256,7 @@
     "id": "item.bow-of-the-banshee",
     "type": "item",
     "name": {
-      "fr": "Bow of the Banshee",
+      "fr": "Arc de la banshee",
       "en": "Bow of the Banshee",
       "status": "UNOFFICIAL"
     },
@@ -7359,9 +7359,10 @@
     "id": "item.bracers-of-defence",
     "type": "item",
     "name": {
-      "fr": "Bracers of Defence",
+      "fr": "Bracelets de défense",
       "en": "Bracers of Defence",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "acte1",
@@ -7433,7 +7434,7 @@
     "id": "item.bracing-band",
     "type": "item",
     "name": {
-      "fr": "Bracing Band",
+      "fr": "Bague d’aplomb",
       "en": "Bracing Band",
       "status": "UNOFFICIAL"
     },
@@ -7507,7 +7508,7 @@
     "id": "item.braindrain-gloves",
     "type": "item",
     "name": {
-      "fr": "Braindrain Gloves",
+      "fr": "Gants de drainage cérébral",
       "en": "Braindrain Gloves",
       "status": "UNOFFICIAL"
     },
@@ -7581,7 +7582,7 @@
     "id": "item.brass-locket",
     "type": "item",
     "name": {
-      "fr": "Brass Locket",
+      "fr": "Médaillon de laiton",
       "en": "Brass Locket",
       "status": "UNOFFICIAL"
     },
@@ -7630,7 +7631,7 @@
     "id": "item.breaching-pikestaff",
     "type": "item",
     "name": {
-      "fr": "Breaching Pikestaff",
+      "fr": "Pique de brèche",
       "en": "Breaching Pikestaff",
       "status": "UNOFFICIAL"
     },
@@ -7740,7 +7741,7 @@
     "id": "item.breastplate-1",
     "type": "item",
     "name": {
-      "fr": "Breastplate +1",
+      "fr": "Cuirasse +1",
       "en": "Breastplate +1",
       "status": "UNOFFICIAL"
     },
@@ -7828,7 +7829,7 @@
     "id": "item.breastplate-2",
     "type": "item",
     "name": {
-      "fr": "Breastplate +2",
+      "fr": "Cuirasse +2",
       "en": "Breastplate +2",
       "status": "UNOFFICIAL"
     },
@@ -7913,7 +7914,7 @@
     "id": "item.broodmothers-revenge",
     "type": "item",
     "name": {
-      "fr": "Broodmother’s Revenge",
+      "fr": "Vengeance de la mère de couvée",
       "en": "Broodmother's Revenge",
       "status": "UNOFFICIAL"
     },
@@ -8006,7 +8007,7 @@
     "id": "item.browbeaten-circlet",
     "type": "item",
     "name": {
-      "fr": "Browbeaten Circlet",
+      "fr": "Diadème de l’intimidé",
       "en": "Browbeaten Circlet",
       "status": "UNOFFICIAL"
     },
@@ -8080,7 +8081,7 @@
     "id": "item.burnished-ring",
     "type": "item",
     "name": {
-      "fr": "Burnished Ring",
+      "fr": "Anneau bruni",
       "en": "Burnished Ring",
       "status": "UNOFFICIAL"
     },
@@ -8146,7 +8147,7 @@
     "id": "item.cacophony",
     "type": "item",
     "name": {
-      "fr": "Cacophony",
+      "fr": "Cacophonie",
       "en": "Cacophony",
       "status": "UNOFFICIAL"
     },
@@ -8257,7 +8258,7 @@
     "id": "item.caitiff-staff",
     "type": "item",
     "name": {
-      "fr": "Caitiff Staff",
+      "fr": "Bâton du couard",
       "en": "Caitiff Staff",
       "status": "UNOFFICIAL"
     },
@@ -8374,7 +8375,7 @@
     "id": "item.callous-glow-ring",
     "type": "item",
     "name": {
-      "fr": "Callous Glow Ring",
+      "fr": "Anneau de lueur impitoyable",
       "en": "Callous Glow Ring",
       "status": "UNOFFICIAL"
     },
@@ -8448,7 +8449,7 @@
     "id": "item.cap-of-curing",
     "type": "item",
     "name": {
-      "fr": "Cap of Curing",
+      "fr": "Capuchon curatif",
       "en": "Cap of Curing",
       "status": "UNOFFICIAL"
     },
@@ -8522,7 +8523,7 @@
     "id": "item.cap-of-wrath",
     "type": "item",
     "name": {
-      "fr": "Cap of Wrath",
+      "fr": "Capuchon du courroux",
       "en": "Cap of Wrath",
       "status": "UNOFFICIAL"
     },
@@ -8596,7 +8597,7 @@
     "id": "item.caustic-band",
     "type": "item",
     "name": {
-      "fr": "Caustic Band",
+      "fr": "Bague caustique",
       "en": "Caustic Band",
       "status": "UNOFFICIAL"
     },
@@ -8671,7 +8672,7 @@
     "id": "item.cerebral-citadel-armour",
     "type": "item",
     "name": {
-      "fr": "Cerebral Citadel Armour",
+      "fr": "Armure de la citadelle cérébrale",
       "en": "Cerebral Citadel Armour",
       "status": "UNOFFICIAL"
     },
@@ -8763,7 +8764,7 @@
     "id": "item.cerebral-citadel-gloves",
     "type": "item",
     "name": {
-      "fr": "Cerebral Citadel Gloves",
+      "fr": "Gants de la citadelle cérébrale",
       "en": "Cerebral Citadel Gloves",
       "status": "UNOFFICIAL"
     },
@@ -8842,7 +8843,7 @@
     "id": "item.ceremonial-battleaxe",
     "type": "item",
     "name": {
-      "fr": "Ceremonial Battleaxe",
+      "fr": "Hache d’armes de cérémonie",
       "en": "Ceremonial Battleaxe",
       "status": "UNOFFICIAL"
     },
@@ -8953,7 +8954,7 @@
     "id": "item.ceremonial-longsword",
     "type": "item",
     "name": {
-      "fr": "Ceremonial Longsword",
+      "fr": "Épée longue de cérémonie",
       "en": "Ceremonial Longsword",
       "status": "UNOFFICIAL"
     },
@@ -9064,7 +9065,7 @@
     "id": "item.ceremonial-mace",
     "type": "item",
     "name": {
-      "fr": "Ceremonial Mace",
+      "fr": "Masse d’armes de cérémonie",
       "en": "Ceremonial Mace",
       "status": "UNOFFICIAL"
     },
@@ -9151,7 +9152,7 @@
     "id": "item.ceremonial-warhammer",
     "type": "item",
     "name": {
-      "fr": "Ceremonial Warhammer",
+      "fr": "Marteau de guerre de cérémonie",
       "en": "Ceremonial Warhammer",
       "status": "UNOFFICIAL"
     },
@@ -9262,7 +9263,7 @@
     "id": "item.chain-mail-1",
     "type": "item",
     "name": {
-      "fr": "Chain Mail +1",
+      "fr": "Cotte de mailles +1",
       "en": "Chain Mail +1",
       "status": "UNOFFICIAL"
     },
@@ -9335,7 +9336,7 @@
     "id": "item.chain-mail-2",
     "type": "item",
     "name": {
-      "fr": "Chain Mail +2",
+      "fr": "Cotte de mailles +2",
       "en": "Chain Mail +2",
       "status": "UNOFFICIAL"
     },
@@ -9408,7 +9409,7 @@
     "id": "item.chain-shirt-1",
     "type": "item",
     "name": {
-      "fr": "Chain Shirt +1",
+      "fr": "Chemise de mailles +1",
       "en": "Chain Shirt +1",
       "status": "UNOFFICIAL"
     },
@@ -9480,7 +9481,7 @@
     "id": "item.chain-shirt-2",
     "type": "item",
     "name": {
-      "fr": "Chain Shirt +2",
+      "fr": "Chemise de mailles +2",
       "en": "Chain Shirt +2",
       "status": "UNOFFICIAL"
     },
@@ -9565,7 +9566,7 @@
     "id": "item.champions-chain",
     "type": "item",
     "name": {
-      "fr": "Champion’s Chain",
+      "fr": "Chaîne du champion",
       "en": "Champion's Chain",
       "status": "UNOFFICIAL"
     },
@@ -9639,7 +9640,7 @@
     "id": "item.chancers-carcanet",
     "type": "item",
     "name": {
-      "fr": "Chancer’s Carcanet",
+      "fr": "Collier du risque-tout",
       "en": "Chancer's Carcanet",
       "status": "UNOFFICIAL"
     },
@@ -9713,7 +9714,7 @@
     "id": "item.charge-bound-warhammer",
     "type": "item",
     "name": {
-      "fr": "Charge-Bound Warhammer",
+      "fr": "Marteau de guerre lié à la charge",
       "en": "Charge-Bound Warhammer",
       "status": "UNOFFICIAL"
     },
@@ -9853,7 +9854,7 @@
     "id": "item.cinder-shoes",
     "type": "item",
     "name": {
-      "fr": "Cinder Shoes",
+      "fr": "Chaussures de braise",
       "en": "Cinder Shoes",
       "status": "UNOFFICIAL"
     },
@@ -9928,7 +9929,7 @@
     "id": "item.cindermoth-cloak",
     "type": "item",
     "name": {
-      "fr": "Cindermoth Cloak",
+      "fr": "Cape de phalène de braise",
       "en": "Cindermoth Cloak",
       "status": "UNOFFICIAL"
     },
@@ -10002,7 +10003,7 @@
     "id": "item.cindersnap-gloves",
     "type": "item",
     "name": {
-      "fr": "Cindersnap Gloves",
+      "fr": "Gants claque-braise",
       "en": "Cindersnap Gloves",
       "status": "UNOFFICIAL"
     },
@@ -10068,7 +10069,7 @@
     "id": "item.circle-of-bones",
     "type": "item",
     "name": {
-      "fr": "Circle of Bones",
+      "fr": "Cercle d’os",
       "en": "Circle of Bones",
       "status": "UNOFFICIAL"
     },
@@ -10271,7 +10272,7 @@
     "id": "item.circlet-of-hunting",
     "type": "item",
     "name": {
-      "fr": "Circlet of Hunting",
+      "fr": "Diadème de chasse",
       "en": "Circlet of Hunting",
       "status": "UNOFFICIAL"
     },
@@ -10366,7 +10367,7 @@
     "id": "item.circlet-of-mental-anguish",
     "type": "item",
     "name": {
-      "fr": "Circlet of Mental Anguish",
+      "fr": "Diadème d’angoisse mentale",
       "en": "Circlet of Mental Anguish",
       "status": "UNOFFICIAL"
     },
@@ -10440,7 +10441,7 @@
     "id": "item.circlet-of-psionic-revenge",
     "type": "item",
     "name": {
-      "fr": "Circlet of Psionic Revenge",
+      "fr": "Diadème de vengeance psionique",
       "en": "Circlet of Psionic Revenge",
       "status": "UNOFFICIAL"
     },
@@ -10514,7 +10515,7 @@
     "id": "item.cloak-of-cunning-brume",
     "type": "item",
     "name": {
-      "fr": "Cloak of Cunning Brume",
+      "fr": "Cape de brume rusée",
       "en": "Cloak of Cunning Brume",
       "status": "UNOFFICIAL"
     },
@@ -10665,7 +10666,7 @@
     "id": "item.cloak-of-elemental-absorption",
     "type": "item",
     "name": {
-      "fr": "Cloak of Elemental Absorption",
+      "fr": "Cape d’absorption élémentaire",
       "en": "Cloak of Elemental Absorption",
       "status": "UNOFFICIAL"
     },
@@ -10810,7 +10811,7 @@
     "id": "item.cloak-of-the-weave",
     "type": "item",
     "name": {
-      "fr": "Cloak of the Weave",
+      "fr": "Cape de la Toile",
       "en": "Cloak of the Weave",
       "status": "UNOFFICIAL"
     },
@@ -10898,7 +10899,7 @@
     "id": "item.cloth-armour",
     "type": "item",
     "name": {
-      "fr": "Cloth Armour",
+      "fr": "Armure d’étoffe",
       "en": "Cloth Armour",
       "status": "UNOFFICIAL"
     },
@@ -10968,7 +10969,7 @@
     "id": "item.cloth-of-authority",
     "type": "item",
     "name": {
-      "fr": "Cloth of Authority",
+      "fr": "Étoffe d’autorité",
       "en": "Cloth of Authority",
       "status": "UNOFFICIAL"
     },
@@ -11062,7 +11063,7 @@
     "id": "item.clown-hammer",
     "type": "item",
     "name": {
-      "fr": "Clown Hammer",
+      "fr": "Marteau de clown",
       "en": "Clown Hammer",
       "status": "UNOFFICIAL"
     },
@@ -11188,7 +11189,7 @@
     "id": "item.club-1",
     "type": "item",
     "name": {
-      "fr": "Club +1",
+      "fr": "Gourdin +1",
       "en": "Club +1",
       "status": "UNOFFICIAL"
     },
@@ -11275,7 +11276,7 @@
     "id": "item.club-of-hill-giant-strength",
     "type": "item",
     "name": {
-      "fr": "Club of Hill Giant Strength",
+      "fr": "Gourdin de force de géant des collines",
       "en": "Club of Hill Giant Strength",
       "status": "UNOFFICIAL"
     },
@@ -11376,7 +11377,7 @@
     "id": "item.cold-snap",
     "type": "item",
     "name": {
-      "fr": "Cold Snap",
+      "fr": "Coup de froid",
       "en": "Cold Snap",
       "status": "UNOFFICIAL"
     },
@@ -11457,7 +11458,7 @@
     "id": "item.coldbrim-hat",
     "type": "item",
     "name": {
-      "fr": "Coldbrim Hat",
+      "fr": "Chapeau à bord glacé",
       "en": "Coldbrim Hat",
       "status": "UNOFFICIAL"
     },
@@ -11550,7 +11551,7 @@
     "id": "item.comeback-handaxe",
     "type": "item",
     "name": {
-      "fr": "Comeback Handaxe",
+      "fr": "Hachette revenante",
       "en": "Comeback Handaxe",
       "status": "UNOFFICIAL"
     },
@@ -11638,7 +11639,7 @@
     "id": "item.corpsegrinder",
     "type": "item",
     "name": {
-      "fr": "Corpsegrinder",
+      "fr": "Broie-cadavres",
       "en": "Corpsegrinder",
       "status": "UNOFFICIAL"
     },
@@ -11749,7 +11750,7 @@
     "id": "item.corrosive-flail",
     "type": "item",
     "name": {
-      "fr": "Corrosive Flail",
+      "fr": "Fléau d’armes corrosif",
       "en": "Corrosive Flail",
       "status": "UNOFFICIAL"
     },
@@ -11857,7 +11858,7 @@
     "id": "item.coruscation-ring",
     "type": "item",
     "name": {
-      "fr": "Coruscation Ring",
+      "fr": "Anneau de coruscation",
       "en": "Coruscation Ring",
       "status": "UNOFFICIAL"
     },
@@ -11924,7 +11925,7 @@
     "id": "item.corvid-token",
     "type": "item",
     "name": {
-      "fr": "Corvid Token",
+      "fr": "Gage des corvidés",
       "en": "Corvid Token",
       "status": "UNOFFICIAL"
     },
@@ -12021,7 +12022,7 @@
     "id": "item.covert-cowl",
     "type": "item",
     "name": {
-      "fr": "Covert Cowl",
+      "fr": "Capuche furtive",
       "en": "Covert Cowl",
       "status": "UNOFFICIAL"
     },
@@ -12096,7 +12097,7 @@
     "id": "item.craterflesh-gloves",
     "type": "item",
     "name": {
-      "fr": "Craterflesh Gloves",
+      "fr": "Gants de chair cratérisée",
       "en": "Craterflesh Gloves",
       "status": "UNOFFICIAL"
     },
@@ -12176,7 +12177,7 @@
     "id": "item.creations-echo",
     "type": "item",
     "name": {
-      "fr": "Creation’s Echo",
+      "fr": "Écho de la création",
       "en": "Creation's Echo",
       "status": "UNOFFICIAL"
     },
@@ -12282,7 +12283,7 @@
     "id": "item.crimson-mischief",
     "type": "item",
     "name": {
-      "fr": "Crimson Mischief",
+      "fr": "Malice cramoisie",
       "en": "Crimson Mischief",
       "status": "UNOFFICIAL"
     },
@@ -12398,7 +12399,7 @@
     "id": "item.cruel-sting",
     "type": "item",
     "name": {
-      "fr": "Cruel Sting",
+      "fr": "Dard cruel",
       "en": "Cruel Sting",
       "status": "UNOFFICIAL"
     },
@@ -12525,7 +12526,7 @@
     "id": "item.crushers-ring",
     "type": "item",
     "name": {
-      "fr": "Crusher’s Ring",
+      "fr": "Anneau de Crusher",
       "en": "Crusher's Ring",
       "status": "UNOFFICIAL"
     },
@@ -12587,7 +12588,7 @@
     "id": "item.crypt-lord-ring",
     "type": "item",
     "name": {
-      "fr": "Crypt Lord Ring",
+      "fr": "Anneau du seigneur des cryptes",
       "en": "Crypt Lord Ring",
       "status": "UNOFFICIAL"
     },
@@ -12662,7 +12663,7 @@
     "id": "item.dagger-1",
     "type": "item",
     "name": {
-      "fr": "Dagger +1",
+      "fr": "Dague +1",
       "en": "Dagger +1",
       "status": "UNOFFICIAL"
     },
@@ -12745,7 +12746,7 @@
     "id": "item.dagger-2",
     "type": "item",
     "name": {
-      "fr": "Dagger +2",
+      "fr": "Dague +2",
       "en": "Dagger +2",
       "status": "UNOFFICIAL"
     },
@@ -12863,7 +12864,7 @@
     "id": "item.daredevil-gloves",
     "type": "item",
     "name": {
-      "fr": "Daredevil Gloves",
+      "fr": "Gants de casse-cou",
       "en": "Daredevil Gloves",
       "status": "UNOFFICIAL"
     },
@@ -12951,7 +12952,7 @@
     "id": "item.dark-displacement-gloves",
     "type": "item",
     "name": {
-      "fr": "Dark Displacement Gloves",
+      "fr": "Gants de déplacement obscur",
       "en": "Dark Displacement Gloves",
       "status": "UNOFFICIAL"
     },
@@ -13031,7 +13032,7 @@
     "id": "item.dark-justiciar-boots",
     "type": "item",
     "name": {
-      "fr": "Dark Justiciar Boots",
+      "fr": "Bottes de justicier sombre",
       "en": "Dark Justiciar Boots",
       "status": "UNOFFICIAL"
     },
@@ -13113,7 +13114,7 @@
     "id": "item.dark-justiciar-gauntlets-rare",
     "type": "item",
     "name": {
-      "fr": "Dark Justiciar Gauntlets",
+      "fr": "Gantelets de justicier sombre",
       "en": "Dark Justiciar Gauntlets",
       "status": "UNOFFICIAL"
     },
@@ -13196,7 +13197,7 @@
     "id": "item.dark-justiciar-gauntlets-uncommon",
     "type": "item",
     "name": {
-      "fr": "Dark Justiciar Gauntlets",
+      "fr": "Gantelets de justicier sombre",
       "en": "Dark Justiciar Gauntlets",
       "status": "UNOFFICIAL"
     },
@@ -13275,7 +13276,7 @@
     "id": "item.dark-justiciar-half-plate-rare",
     "type": "item",
     "name": {
-      "fr": "Dark Justiciar Half-Plate",
+      "fr": "Demi-plate de justicier sombre",
       "en": "Dark Justiciar Half-Plate",
       "status": "UNOFFICIAL"
     },
@@ -13361,7 +13362,7 @@
     "id": "item.dark-justiciar-half-plate-very-rare",
     "type": "item",
     "name": {
-      "fr": "Dark Justiciar Half-Plate",
+      "fr": "Demi-plate de justicier sombre",
       "en": "Dark Justiciar Half-Plate",
       "status": "UNOFFICIAL"
     },
@@ -13460,7 +13461,7 @@
     "id": "item.dark-justiciar-helm",
     "type": "item",
     "name": {
-      "fr": "Dark Justiciar Helm",
+      "fr": "Heaume de justicier sombre",
       "en": "Dark Justiciar Helm",
       "status": "UNOFFICIAL"
     },
@@ -13571,7 +13572,7 @@
     "id": "item.dark-justiciar-helmet",
     "type": "item",
     "name": {
-      "fr": "Dark Justiciar Helmet",
+      "fr": "Casque de justicier sombre",
       "en": "Dark Justiciar Helmet",
       "status": "UNOFFICIAL"
     },
@@ -13666,7 +13667,7 @@
     "id": "item.dark-justiciar-mail",
     "type": "item",
     "name": {
-      "fr": "Dark Justiciar Mail",
+      "fr": "Mailles de justicier sombre",
       "en": "Dark Justiciar Mail",
       "status": "UNOFFICIAL"
     },
@@ -13754,7 +13755,7 @@
     "id": "item.dark-justiciar-mask",
     "type": "item",
     "name": {
-      "fr": "Dark Justiciar Mask",
+      "fr": "Masque de justicier sombre",
       "en": "Dark Justiciar Mask",
       "status": "UNOFFICIAL"
     },
@@ -13838,7 +13839,7 @@
     "id": "item.darkfire-shortbow",
     "type": "item",
     "name": {
-      "fr": "Darkfire Shortbow",
+      "fr": "Arc court de feu sombre",
       "en": "Darkfire Shortbow",
       "status": "UNOFFICIAL"
     },
@@ -13950,7 +13951,7 @@
     "id": "item.debtors-attire",
     "type": "item",
     "name": {
-      "fr": "Debtor’s Attire",
+      "fr": "Tenue du débiteur",
       "en": "Debtor's Attire",
       "status": "UNOFFICIAL"
     },
@@ -14012,7 +14013,7 @@
     "id": "item.deep-delver",
     "type": "item",
     "name": {
-      "fr": "Deep Delver",
+      "fr": "Fouisseur des profondeurs",
       "en": "Deep Delver",
       "status": "UNOFFICIAL"
     },
@@ -14133,7 +14134,7 @@
     "id": "item.defender-flail",
     "type": "item",
     "name": {
-      "fr": "Defender Flail",
+      "fr": "Fléau d’armes gardien",
       "en": "Defender Flail",
       "status": "UNOFFICIAL"
     },
@@ -14250,7 +14251,7 @@
     "id": "item.defender-greataxe",
     "type": "item",
     "name": {
-      "fr": "Defender Greataxe",
+      "fr": "Hache à deux mains gardienne",
       "en": "Defender Greataxe",
       "status": "UNOFFICIAL"
     },
@@ -14374,7 +14375,7 @@
     "id": "item.derivation-cloak",
     "type": "item",
     "name": {
-      "fr": "Derivation Cloak",
+      "fr": "Cape de dérivation",
       "en": "Derivation Cloak",
       "status": "UNOFFICIAL"
     },
@@ -14448,7 +14449,7 @@
     "id": "item.despair-of-athkatla",
     "type": "item",
     "name": {
-      "fr": "Despair of Athkatla",
+      "fr": "Désespoir d’Athkatla",
       "en": "Despair of Athkatla",
       "status": "UNOFFICIAL"
     },
@@ -14554,7 +14555,7 @@
     "id": "item.devotees-mace",
     "type": "item",
     "name": {
-      "fr": "Devotee’s Mace",
+      "fr": "Masse d’armes du fidèle",
       "en": "Devotee's Mace",
       "status": "UNOFFICIAL"
     },
@@ -14659,7 +14660,7 @@
     "id": "item.diadem-of-arcane-synergy",
     "type": "item",
     "name": {
-      "fr": "Diadem of Arcane Synergy",
+      "fr": "Diadème de synergie arcanique",
       "en": "Diadem of Arcane Synergy",
       "status": "UNOFFICIAL"
     },
@@ -14733,7 +14734,7 @@
     "id": "item.disintegrating-night-walkers",
     "type": "item",
     "name": {
-      "fr": "Disintegrating Night Walkers",
+      "fr": "Arpenteuses nocturnes désintégrantes",
       "en": "Disintegrating Night Walkers",
       "status": "UNOFFICIAL"
     },
@@ -14821,7 +14822,7 @@
     "id": "item.djinni-ring",
     "type": "item",
     "name": {
-      "fr": "Djinni Ring",
+      "fr": "Anneau de djinn",
       "en": "Djinni Ring",
       "status": "UNOFFICIAL"
     },
@@ -15040,7 +15041,7 @@
     "id": "item.doom-hammer",
     "type": "item",
     "name": {
-      "fr": "Doom Hammer",
+      "fr": "Marteau de perdition",
       "en": "Doom Hammer",
       "status": "UNOFFICIAL"
     },
@@ -15153,7 +15154,7 @@
     "id": "item.dostrealts-piccolo",
     "type": "item",
     "name": {
-      "fr": "Dostrealt’s Piccolo",
+      "fr": "Piccolo de Dostrealt",
       "en": "Dostrealt's Piccolo",
       "status": "UNOFFICIAL"
     },
@@ -15214,7 +15215,7 @@
     "id": "item.dragons-grasp",
     "type": "item",
     "name": {
-      "fr": "Dragon’s Grasp",
+      "fr": "Poigne du dragon",
       "en": "Dragon's Grasp",
       "status": "UNOFFICIAL"
     },
@@ -15318,7 +15319,7 @@
     "id": "item.dread-iron-dagger",
     "type": "item",
     "name": {
-      "fr": "Dread Iron Dagger",
+      "fr": "Dague de fer d’effroi",
       "en": "Dread Iron Dagger",
       "status": "UNOFFICIAL"
     },
@@ -15423,7 +15424,7 @@
     "id": "item.drow-studded-leather-armour",
     "type": "item",
     "name": {
-      "fr": "Drow Studded Leather Armour",
+      "fr": "Armure de cuir clouté drow",
       "en": "Drow Studded Leather Armour",
       "status": "UNOFFICIAL"
     },
@@ -15493,7 +15494,7 @@
     "id": "item.drunken-cloth",
     "type": "item",
     "name": {
-      "fr": "Drunken Cloth",
+      "fr": "Étoffe d’ivresse",
       "en": "Drunken Cloth",
       "status": "UNOFFICIAL"
     },
@@ -15571,7 +15572,7 @@
     "id": "item.duellists-prerogative",
     "type": "item",
     "name": {
-      "fr": "Duellist’s Prerogative",
+      "fr": "Prérogative du duelliste",
       "en": "Duellist's Prerogative",
       "status": "UNOFFICIAL"
     },
@@ -15733,7 +15734,7 @@
     "id": "item.duke-ravengards-longsword",
     "type": "item",
     "name": {
-      "fr": "Duke Ravengard’s Longsword",
+      "fr": "Épée longue du duc Ravengard",
       "en": "Duke Ravengard's Longsword",
       "status": "UNOFFICIAL"
     },
@@ -15882,7 +15883,7 @@
     "id": "item.dwarven-splintmail",
     "type": "item",
     "name": {
-      "fr": "Dwarven Splintmail",
+      "fr": "Clibanion nain",
       "en": "Dwarven Splintmail",
       "status": "UNOFFICIAL"
     },
@@ -16122,7 +16123,7 @@
     "id": "item.elegant-studded-leather",
     "type": "item",
     "name": {
-      "fr": "Elegant Studded Leather",
+      "fr": "Cuir clouté élégant",
       "en": "Elegant Studded Leather",
       "status": "UNOFFICIAL"
     },
@@ -16310,7 +16311,7 @@
     "id": "item.emblazoned-plate-of-the-marshal",
     "type": "item",
     "name": {
-      "fr": "Emblazoned Plate of the Marshal",
+      "fr": "Harnois blasonné du maréchal",
       "en": "Emblazoned Plate of the Marshal",
       "status": "UNOFFICIAL"
     },
@@ -16425,7 +16426,7 @@
     "id": "item.enraging-heart-garb",
     "type": "item",
     "name": {
-      "fr": "Enraging Heart Garb",
+      "fr": "Tenue du cœur enragé",
       "en": "Enraging Heart Garb",
       "status": "UNOFFICIAL"
     },
@@ -16509,7 +16510,7 @@
     "id": "item.envoys-amulet",
     "type": "item",
     "name": {
-      "fr": "Envoy’s Amulet",
+      "fr": "Amulette de l’émissaire",
       "en": "Envoy's Amulet",
       "status": "UNOFFICIAL"
     },
@@ -16583,7 +16584,7 @@
     "id": "item.evasive-shoes",
     "type": "item",
     "name": {
-      "fr": "Evasive Shoes",
+      "fr": "Chaussures d’esquive",
       "en": "Evasive Shoes",
       "status": "UNOFFICIAL"
     },
@@ -16654,7 +16655,7 @@
     "id": "item.everburn-blade",
     "type": "item",
     "name": {
-      "fr": "Everburn Blade",
+      "fr": "Lame ardente éternelle",
       "en": "Everburn Blade",
       "status": "UNOFFICIAL"
     },
@@ -16763,7 +16764,7 @@
     "id": "item.eversight-ring",
     "type": "item",
     "name": {
-      "fr": "Eversight Ring",
+      "fr": "Anneau de vision perpétuelle",
       "en": "Eversight Ring",
       "status": "UNOFFICIAL"
     },
@@ -16830,7 +16831,7 @@
     "id": "item.explorers-ring",
     "type": "item",
     "name": {
-      "fr": "Explorer’s Ring",
+      "fr": "Anneau de l’explorateur",
       "en": "Explorer's Ring",
       "status": "UNOFFICIAL"
     },
@@ -16901,7 +16902,7 @@
     "id": "item.exterminators-axe",
     "type": "item",
     "name": {
-      "fr": "Exterminator’s Axe",
+      "fr": "Hache de l’exterminateur",
       "en": "Exterminator's Axe",
       "status": "UNOFFICIAL"
     },
@@ -17023,7 +17024,7 @@
     "id": "item.fabricated-arbalest",
     "type": "item",
     "name": {
-      "fr": "Fabricated Arbalest",
+      "fr": "Arbalète manufacturée",
       "en": "Fabricated Arbalest",
       "status": "UNOFFICIAL"
     },
@@ -17137,7 +17138,7 @@
     "id": "item.falataeric-cli-lyre",
     "type": "item",
     "name": {
-      "fr": "Falataeric Cli Lyre",
+      "fr": "Lyre cli falataérique",
       "en": "Falataeric Cli Lyre",
       "status": "UNOFFICIAL"
     },
@@ -17198,7 +17199,7 @@
     "id": "item.family-ring",
     "type": "item",
     "name": {
-      "fr": "Family Ring",
+      "fr": "Anneau de famille",
       "en": "Family Ring",
       "status": "UNOFFICIAL"
     },
@@ -17260,7 +17261,7 @@
     "id": "item.fetish-of-callarduran-smoothhands",
     "type": "item",
     "name": {
-      "fr": "Fetish of Callarduran Smoothhands",
+      "fr": "Fétiche de Callarduran Smoothhands",
       "en": "Fetish of Callarduran Smoothhands",
       "status": "UNOFFICIAL"
     },
@@ -17335,7 +17336,7 @@
     "id": "item.fey-semblance-amulet",
     "type": "item",
     "name": {
-      "fr": "Fey Semblance Amulet",
+      "fr": "Amulette d’apparence féerique",
       "en": "Fey Semblance Amulet",
       "status": "UNOFFICIAL"
     },
@@ -17409,7 +17410,7 @@
     "id": "item.fireheart",
     "type": "item",
     "name": {
-      "fr": "Fireheart",
+      "fr": "Cœur de feu",
       "en": "Fireheart",
       "status": "UNOFFICIAL"
     },
@@ -17483,7 +17484,7 @@
     "id": "item.firestoker",
     "type": "item",
     "name": {
-      "fr": "Firestoker",
+      "fr": "Attise-feu",
       "en": "Firestoker",
       "status": "UNOFFICIAL"
     },
@@ -17596,7 +17597,7 @@
     "id": "item.firzus-ring-of-trading",
     "type": "item",
     "name": {
-      "fr": "Firzu’s Ring of Trading",
+      "fr": "Anneau de négoce de Firzu",
       "en": "Firzu's Ring of Trading",
       "status": "UNOFFICIAL"
     },
@@ -17653,7 +17654,7 @@
     "id": "item.fistbreaker-helm",
     "type": "item",
     "name": {
-      "fr": "Fistbreaker Helm",
+      "fr": "Heaume brise-poings",
       "en": "Fistbreaker Helm",
       "status": "UNOFFICIAL"
     },
@@ -17741,7 +17742,7 @@
     "id": "item.flail-1",
     "type": "item",
     "name": {
-      "fr": "Flail +1",
+      "fr": "Fléau d’armes +1",
       "en": "Flail +1",
       "status": "UNOFFICIAL"
     },
@@ -17831,7 +17832,7 @@
     "id": "item.flail-2",
     "type": "item",
     "name": {
-      "fr": "Flail +2",
+      "fr": "Fléau d’armes +2",
       "en": "Flail +2",
       "status": "UNOFFICIAL"
     },
@@ -17920,7 +17921,7 @@
     "id": "item.flail-of-ages",
     "type": "item",
     "name": {
-      "fr": "Flail of Ages",
+      "fr": "Fléau d’armes des âges",
       "en": "Flail of Ages",
       "status": "UNOFFICIAL"
     },
@@ -18035,7 +18036,7 @@
     "id": "item.flame-enamelled-armour",
     "type": "item",
     "name": {
-      "fr": "Flame Enamelled Armour",
+      "fr": "Armure émaillée de flammes",
       "en": "Flame Enamelled Armour",
       "status": "UNOFFICIAL"
     },
@@ -18132,7 +18133,7 @@
     "id": "item.flawed-helldusk-armour",
     "type": "item",
     "name": {
-      "fr": "Flawed Helldusk Armour",
+      "fr": "Armure imparfaite du crépuscule infernal",
       "en": "Flawed Helldusk Armour",
       "status": "UNOFFICIAL"
     },
@@ -18223,7 +18224,7 @@
     "id": "item.flawed-helldusk-gloves",
     "type": "item",
     "name": {
-      "fr": "Flawed Helldusk Gloves",
+      "fr": "Gants imparfaits du crépuscule infernal",
       "en": "Flawed Helldusk Gloves",
       "status": "UNOFFICIAL"
     },
@@ -18301,7 +18302,7 @@
     "id": "item.flawed-helldusk-helmet",
     "type": "item",
     "name": {
-      "fr": "Flawed Helldusk Helmet",
+      "fr": "Casque imparfait du crépuscule infernal",
       "en": "Flawed Helldusk Helmet",
       "status": "UNOFFICIAL"
     },
@@ -18382,7 +18383,7 @@
     "id": "item.fleetfingers",
     "type": "item",
     "name": {
-      "fr": "Fleetfingers",
+      "fr": "Doigts prestes",
       "en": "Fleetfingers",
       "status": "UNOFFICIAL"
     },
@@ -18456,7 +18457,7 @@
     "id": "item.fleshmelter-cloak",
     "type": "item",
     "name": {
-      "fr": "Fleshmelter Cloak",
+      "fr": "Cape fond-chair",
       "en": "Fleshmelter Cloak",
       "status": "UNOFFICIAL"
     },
@@ -18523,7 +18524,7 @@
     "id": "item.fleshrender",
     "type": "item",
     "name": {
-      "fr": "Fleshrender",
+      "fr": "Déchire-chair",
       "en": "Fleshrender",
       "status": "UNOFFICIAL"
     },
@@ -18632,7 +18633,7 @@
     "id": "item.foebreaker",
     "type": "item",
     "name": {
-      "fr": "Foebreaker",
+      "fr": "Brise-ennemis",
       "en": "Foebreaker",
       "status": "UNOFFICIAL"
     },
@@ -18745,7 +18746,7 @@
     "id": "item.frost-prince",
     "type": "item",
     "name": {
-      "fr": "Frost Prince",
+      "fr": "Prince du givre",
       "en": "Frost Prince",
       "status": "UNOFFICIAL"
     },
@@ -18820,7 +18821,7 @@
     "id": "item.gandrels-aspiration",
     "type": "item",
     "name": {
-      "fr": "Gandrel’s Aspiration",
+      "fr": "Aspiration de Gandrel",
       "en": "Gandrel's Aspiration",
       "status": "UNOFFICIAL"
     },
@@ -18943,7 +18944,7 @@
     "id": "item.garb-of-the-land-and-sky",
     "type": "item",
     "name": {
-      "fr": "Garb of the Land and Sky",
+      "fr": "Tenue de la terre et du ciel",
       "en": "Garb of the Land and Sky",
       "status": "UNOFFICIAL"
     },
@@ -19035,7 +19036,7 @@
     "id": "item.gauntlet-of-the-tyrant",
     "type": "item",
     "name": {
-      "fr": "Gauntlet of the Tyrant",
+      "fr": "Gantelet du tyran",
       "en": "Gauntlet of the Tyrant",
       "status": "UNOFFICIAL"
     },
@@ -19136,7 +19137,7 @@
     "id": "item.gauntlets-of-hill-giant-strength",
     "type": "item",
     "name": {
-      "fr": "Gauntlets of Hill Giant Strength",
+      "fr": "Gantelets de force de géant des collines",
       "en": "Gauntlets of Hill Giant Strength",
       "status": "UNOFFICIAL"
     },
@@ -19205,7 +19206,7 @@
     "id": "item.gauntlets-of-surging-accuracy",
     "type": "item",
     "name": {
-      "fr": "Gauntlets of Surging Accuracy",
+      "fr": "Gantelets de précision fougueuse",
       "en": "Gauntlets of Surging Accuracy",
       "status": "UNOFFICIAL"
     },
@@ -19288,7 +19289,7 @@
     "id": "item.gauntlets-of-the-warmaster",
     "type": "item",
     "name": {
-      "fr": "Gauntlets of the Warmaster",
+      "fr": "Gantelets du maître de guerre",
       "en": "Gauntlets of the Warmaster",
       "status": "UNOFFICIAL"
     },
@@ -19369,7 +19370,7 @@
     "id": "item.gemini-gloves",
     "type": "item",
     "name": {
-      "fr": "Gemini Gloves",
+      "fr": "Gants gémeaux",
       "en": "Gemini Gloves",
       "status": "UNOFFICIAL"
     },
@@ -19444,7 +19445,7 @@
     "id": "item.giantbreaker",
     "type": "item",
     "name": {
-      "fr": "Giantbreaker",
+      "fr": "Brise-géants",
       "en": "Giantbreaker",
       "status": "UNOFFICIAL"
     },
@@ -19558,7 +19559,7 @@
     "id": "item.gibus-of-the-worshipful-servant",
     "type": "item",
     "name": {
-      "fr": "Gibus of the Worshipful Servant",
+      "fr": "Gibus du serviteur fervent",
       "en": "Gibus of the Worshipful Servant",
       "status": "UNOFFICIAL"
     },
@@ -19685,7 +19686,7 @@
     "id": "item.githyanki-greatsword",
     "type": "item",
     "name": {
-      "fr": "Githyanki Greatsword",
+      "fr": "Épée à deux mains githyanki",
       "en": "Githyanki Greatsword",
       "status": "UNOFFICIAL"
     },
@@ -19785,7 +19786,7 @@
     "id": "item.githyanki-greatsword-psionic",
     "type": "item",
     "name": {
-      "fr": "Githyanki Greatsword",
+      "fr": "Épée à deux mains githyanki",
       "en": "Githyanki Greatsword",
       "status": "UNOFFICIAL"
     },
@@ -19908,7 +19909,7 @@
     "id": "item.githyanki-longsword-1",
     "type": "item",
     "name": {
-      "fr": "Githyanki Longsword (+1)",
+      "fr": "Épée longue githyanki (+1)",
       "en": "Githyanki Longsword (+1)",
       "status": "UNOFFICIAL"
     },
@@ -20009,7 +20010,7 @@
     "id": "item.githyanki-shortsword-1",
     "type": "item",
     "name": {
-      "fr": "Githyanki Shortsword",
+      "fr": "Épée courte githyanki",
       "en": "Githyanki Shortsword",
       "status": "UNOFFICIAL"
     },
@@ -20107,7 +20108,7 @@
     "id": "item.glaive-1",
     "type": "item",
     "name": {
-      "fr": "Glaive +1",
+      "fr": "Coutille +1",
       "en": "Glaive +1",
       "status": "UNOFFICIAL"
     },
@@ -20209,7 +20210,7 @@
     "id": "item.glaive-2",
     "type": "item",
     "name": {
-      "fr": "Glaive +2",
+      "fr": "Coutille +2",
       "en": "Glaive +2",
       "status": "UNOFFICIAL"
     },
@@ -20310,7 +20311,7 @@
     "id": "item.gleamdance-dagger",
     "type": "item",
     "name": {
-      "fr": "Gleamdance Dagger",
+      "fr": "Dague de la danse scintillante",
       "en": "Gleamdance Dagger",
       "status": "UNOFFICIAL"
     },
@@ -20415,7 +20416,7 @@
     "id": "item.glimmergads-selgaunt-fiddle",
     "type": "item",
     "name": {
-      "fr": "Glimmergad’s Selgaunt Fiddle",
+      "fr": "Violon de Selgaunt de Glimmergad",
       "en": "Glimmergad's Selgaunt Fiddle",
       "status": "UNOFFICIAL"
     },
@@ -20476,7 +20477,7 @@
     "id": "item.gloomstrand-shield",
     "type": "item",
     "name": {
-      "fr": "Gloomstrand Shield",
+      "fr": "Bouclier aux fils de pénombre",
       "en": "Gloomstrand Shield",
       "status": "UNOFFICIAL"
     },
@@ -20545,7 +20546,7 @@
     "id": "item.gloves-of-archery",
     "type": "item",
     "name": {
-      "fr": "Gloves of Archery",
+      "fr": "Gants d’archer",
       "en": "Gloves of Archery",
       "status": "UNOFFICIAL"
     },
@@ -20620,7 +20621,7 @@
     "id": "item.gloves-of-baneful-striking",
     "type": "item",
     "name": {
-      "fr": "Gloves of Baneful Striking",
+      "fr": "Gants de frappe funeste",
       "en": "Gloves of Baneful Striking",
       "status": "UNOFFICIAL"
     },
@@ -20695,7 +20696,7 @@
     "id": "item.gloves-of-battlemages-power",
     "type": "item",
     "name": {
-      "fr": "Gloves of Battlemage’s Power",
+      "fr": "Gants de pouvoir du mage de bataille",
       "en": "Gloves of Battlemage's Power",
       "status": "UNOFFICIAL"
     },
@@ -20774,7 +20775,7 @@
     "id": "item.gloves-of-belligerent-skies",
     "type": "item",
     "name": {
-      "fr": "Gloves of Belligerent Skies",
+      "fr": "Gants des cieux belliqueux",
       "en": "Gloves of Belligerent Skies",
       "status": "UNOFFICIAL"
     },
@@ -20848,7 +20849,7 @@
     "id": "item.gloves-of-cinder-and-sizzle",
     "type": "item",
     "name": {
-      "fr": "Gloves of Cinder and Sizzle",
+      "fr": "Gants de braise et de grésillement",
       "en": "Gloves of Cinder and Sizzle",
       "status": "UNOFFICIAL"
     },
@@ -20937,7 +20938,7 @@
     "id": "item.gloves-of-crushing",
     "type": "item",
     "name": {
-      "fr": "Gloves of Crushing",
+      "fr": "Gants d’écrasement",
       "en": "Gloves of Crushing",
       "status": "UNOFFICIAL"
     },
@@ -21012,7 +21013,7 @@
     "id": "item.gloves-of-dexterity",
     "type": "item",
     "name": {
-      "fr": "Gloves of Dexterity",
+      "fr": "Gants de dextérité",
       "en": "Gloves of Dexterity",
       "status": "UNOFFICIAL"
     },
@@ -21075,7 +21076,7 @@
     "id": "item.gloves-of-hail-of-thorns",
     "type": "item",
     "name": {
-      "fr": "Gloves of Hail of Thorns",
+      "fr": "Gants de grêle d’épines",
       "en": "Gloves of Hail of Thorns",
       "status": "UNOFFICIAL"
     },
@@ -21171,7 +21172,7 @@
     "id": "item.gloves-of-heroism",
     "type": "item",
     "name": {
-      "fr": "Gloves of Heroism",
+      "fr": "Gants d’héroïsme",
       "en": "Gloves of Heroism",
       "status": "UNOFFICIAL"
     },
@@ -21326,7 +21327,7 @@
     "id": "item.gloves-of-power",
     "type": "item",
     "name": {
-      "fr": "Gloves of Power",
+      "fr": "Gants de puissance",
       "en": "Gloves of Power",
       "status": "UNOFFICIAL"
     },
@@ -21405,7 +21406,7 @@
     "id": "item.gloves-of-soul-catching",
     "type": "item",
     "name": {
-      "fr": "Gloves of Soul Catching",
+      "fr": "Gants de capture d’âme",
       "en": "Gloves of Soul Catching",
       "status": "UNOFFICIAL"
     },
@@ -21498,7 +21499,7 @@
     "id": "item.gloves-of-the-automaton",
     "type": "item",
     "name": {
-      "fr": "Gloves of the Automaton",
+      "fr": "Gants de l’automate",
       "en": "Gloves of the Automaton",
       "status": "UNOFFICIAL"
     },
@@ -21577,7 +21578,7 @@
     "id": "item.gloves-of-the-balanced-hands",
     "type": "item",
     "name": {
-      "fr": "Gloves of the Balanced Hands",
+      "fr": "Gants des mains équilibrées",
       "en": "Gloves of the Balanced Hands",
       "status": "UNOFFICIAL"
     },
@@ -21652,7 +21653,7 @@
     "id": "item.gloves-of-the-duellist",
     "type": "item",
     "name": {
-      "fr": "Gloves of The Duellist",
+      "fr": "Gants du duelliste",
       "en": "Gloves of The Duellist",
       "status": "UNOFFICIAL"
     },
@@ -21727,7 +21728,7 @@
     "id": "item.gloves-of-the-growling-underdog",
     "type": "item",
     "name": {
-      "fr": "Gloves of the Growling Underdog",
+      "fr": "Gants du laissé-pour-compte grondant",
       "en": "Gloves of the Growling Underdog",
       "status": "UNOFFICIAL"
     },
@@ -21873,7 +21874,7 @@
     "id": "item.gloves-of-uninhibited-kushigo",
     "type": "item",
     "name": {
-      "fr": "Gloves of Uninhibited Kushigo",
+      "fr": "Gants du Kushigo débridé",
       "en": "Gloves of Uninhibited Kushigo",
       "status": "UNOFFICIAL"
     },
@@ -21947,7 +21948,7 @@
     "id": "item.glowing-shield",
     "type": "item",
     "name": {
-      "fr": "Glowing Shield",
+      "fr": "Bouclier luisant",
       "en": "Glowing Shield",
       "status": "UNOFFICIAL"
     },
@@ -22025,7 +22026,7 @@
     "id": "item.gold-wyrmling-staff",
     "type": "item",
     "name": {
-      "fr": "Gold Wyrmling Staff",
+      "fr": "Bâton de dragonnet d’or",
       "en": "Gold Wyrmling Staff",
       "status": "UNOFFICIAL"
     },
@@ -22292,7 +22293,7 @@
     "id": "item.greataxe-1",
     "type": "item",
     "name": {
-      "fr": "Greataxe +1",
+      "fr": "Hache à deux mains +1",
       "en": "Greataxe +1",
       "status": "UNOFFICIAL"
     },
@@ -22393,7 +22394,7 @@
     "id": "item.greataxe-2",
     "type": "item",
     "name": {
-      "fr": "Greataxe +2",
+      "fr": "Hache à deux mains +2",
       "en": "Greataxe +2",
       "status": "UNOFFICIAL"
     },
@@ -22493,7 +22494,7 @@
     "id": "item.greatclub-1",
     "type": "item",
     "name": {
-      "fr": "Greatclub +1",
+      "fr": "Massue +1",
       "en": "Greatclub +1",
       "status": "UNOFFICIAL"
     },
@@ -22573,7 +22574,7 @@
     "id": "item.greatsword-1",
     "type": "item",
     "name": {
-      "fr": "Greatsword +1",
+      "fr": "Épée à deux mains +1",
       "en": "Greatsword +1",
       "status": "UNOFFICIAL"
     },
@@ -22674,7 +22675,7 @@
     "id": "item.grymskull-helm",
     "type": "item",
     "name": {
-      "fr": "Grymskull Helm",
+      "fr": "Heaume de Grymskull",
       "en": "Grymskull Helm",
       "status": "UNOFFICIAL"
     },
@@ -22750,7 +22751,7 @@
     "id": "item.guiding-light",
     "type": "item",
     "name": {
-      "fr": "Guiding Light",
+      "fr": "Lumière guide",
       "en": "Guiding Light",
       "status": "UNOFFICIAL"
     },
@@ -22824,7 +22825,7 @@
     "id": "item.guild-ring",
     "type": "item",
     "name": {
-      "fr": "Guild Ring",
+      "fr": "Anneau de la guilde",
       "en": "Guild Ring",
       "status": "UNOFFICIAL"
     },
@@ -22873,7 +22874,7 @@
     "id": "item.halberd-1",
     "type": "item",
     "name": {
-      "fr": "Halberd +1",
+      "fr": "Hallebarde +1",
       "en": "Halberd +1",
       "status": "UNOFFICIAL"
     },
@@ -22975,7 +22976,7 @@
     "id": "item.halberd-of-vigilance",
     "type": "item",
     "name": {
-      "fr": "Halberd of Vigilance",
+      "fr": "Hallebarde de vigilance",
       "en": "Halberd of Vigilance",
       "status": "UNOFFICIAL"
     },
@@ -23116,7 +23117,7 @@
     "id": "item.half-plate-armour-1",
     "type": "item",
     "name": {
-      "fr": "Half Plate Armour +1",
+      "fr": "Demi-plate +1",
       "en": "Half Plate Armour +1",
       "status": "UNOFFICIAL"
     },
@@ -23178,7 +23179,7 @@
     "id": "item.half-plate-armour-2",
     "type": "item",
     "name": {
-      "fr": "Half Plate Armour +2",
+      "fr": "Demi-plate +2",
       "en": "Half Plate Armour +2",
       "status": "UNOFFICIAL"
     },
@@ -23363,7 +23364,7 @@
     "id": "item.hammer-of-the-just",
     "type": "item",
     "name": {
-      "fr": "Hammer of the Just",
+      "fr": "Marteau des justes",
       "en": "Hammer of the Just",
       "status": "UNOFFICIAL"
     },
@@ -23506,7 +23507,7 @@
     "id": "item.hammergrim-mist-amulet",
     "type": "item",
     "name": {
-      "fr": "Hammergrim Mist Amulet",
+      "fr": "Amulette de brume de Hammergrim",
       "en": "Hammergrim Mist Amulet",
       "status": "UNOFFICIAL"
     },
@@ -23581,7 +23582,7 @@
     "id": "item.hand-crossbow-2",
     "type": "item",
     "name": {
-      "fr": "Hand Crossbow +2",
+      "fr": "Arbalète de poing +2",
       "en": "Hand Crossbow +2",
       "status": "UNOFFICIAL"
     },
@@ -23671,7 +23672,7 @@
     "id": "item.handaxe-1",
     "type": "item",
     "name": {
-      "fr": "Handaxe +1",
+      "fr": "Hachette +1",
       "en": "Handaxe +1",
       "status": "UNOFFICIAL"
     },
@@ -23768,7 +23769,7 @@
     "id": "item.handmaidens-mace",
     "type": "item",
     "name": {
-      "fr": "Handmaiden’s Mace",
+      "fr": "Masse d’armes de la servante",
       "en": "Handmaiden's Mace",
       "status": "UNOFFICIAL"
     },
@@ -23856,7 +23857,7 @@
     "id": "item.harmonic-dueller",
     "type": "item",
     "name": {
-      "fr": "Harmonic Dueller",
+      "fr": "Duelliste harmonique",
       "en": "Harmonic Dueller",
       "status": "UNOFFICIAL"
     },
@@ -23974,7 +23975,7 @@
     "id": "item.harmonium-halberd",
     "type": "item",
     "name": {
-      "fr": "Harmonium Halberd",
+      "fr": "Hallebarde de l’Harmonium",
       "en": "Harmonium Halberd",
       "status": "UNOFFICIAL"
     },
@@ -24215,7 +24216,7 @@
     "id": "item.harper-sacredstriker",
     "type": "item",
     "name": {
-      "fr": "Harper Sacredstriker",
+      "fr": "Frappeur sacré des Ménestrels",
       "en": "Harper Sacredstriker",
       "status": "UNOFFICIAL"
     },
@@ -24323,7 +24324,7 @@
     "id": "item.haste-helm",
     "type": "item",
     "name": {
-      "fr": "Haste Helm",
+      "fr": "Heaume de hâte",
       "en": "Haste Helm",
       "status": "UNOFFICIAL"
     },
@@ -24397,7 +24398,7 @@
     "id": "item.hat-of-fire-acuity",
     "type": "item",
     "name": {
-      "fr": "Hat of Fire Acuity",
+      "fr": "Chapeau d’acuité du feu",
       "en": "Hat of Fire Acuity",
       "status": "UNOFFICIAL"
     },
@@ -24490,7 +24491,7 @@
     "id": "item.hat-of-storm-scions-power",
     "type": "item",
     "name": {
-      "fr": "Hat of Storm Scion’s Power",
+      "fr": "Chapeau de pouvoir de l’héritier des tempêtes",
       "en": "Hat of Storm Scion's Power",
       "status": "UNOFFICIAL"
     },
@@ -24585,7 +24586,7 @@
     "id": "item.hat-of-the-sharp-caster",
     "type": "item",
     "name": {
-      "fr": "Hat of the Sharp Caster",
+      "fr": "Chapeau de l’incantateur affûté",
       "en": "Hat of the Sharp Caster",
       "status": "UNOFFICIAL"
     },
@@ -24660,7 +24661,7 @@
     "id": "item.hat-of-uninhibited-kushigo",
     "type": "item",
     "name": {
-      "fr": "Hat of Uninhibited Kushigo",
+      "fr": "Chapeau du Kushigo débridé",
       "en": "Hat of Uninhibited Kushigo",
       "status": "UNOFFICIAL"
     },
@@ -24735,7 +24736,7 @@
     "id": "item.heavy-crossbow-1",
     "type": "item",
     "name": {
-      "fr": "Heavy Crossbow +1",
+      "fr": "Arbalète lourde +1",
       "en": "Heavy Crossbow +1",
       "status": "UNOFFICIAL"
     },
@@ -24854,7 +24855,7 @@
     "id": "item.hedge-wanderer-armour",
     "type": "item",
     "name": {
-      "fr": "Hedge Wanderer Armour",
+      "fr": "Armure du vagabond des haies",
       "en": "Hedge Wanderer Armour",
       "status": "UNOFFICIAL"
     },
@@ -24938,7 +24939,7 @@
     "id": "item.hellbeard-halberd",
     "type": "item",
     "name": {
-      "fr": "Hellbeard Halberd",
+      "fr": "Hallebarde barbe-d’enfer",
       "en": "Hellbeard Halberd",
       "status": "UNOFFICIAL"
     },
@@ -25051,7 +25052,7 @@
     "id": "item.helldusk-armour",
     "type": "item",
     "name": {
-      "fr": "Helldusk Armour",
+      "fr": "Armure du crépuscule infernal",
       "en": "Helldusk Armour",
       "status": "UNOFFICIAL"
     },
@@ -25158,7 +25159,7 @@
     "id": "item.helldusk-boots",
     "type": "item",
     "name": {
-      "fr": "Helldusk Boots",
+      "fr": "Bottes du crépuscule infernal",
       "en": "Helldusk Boots",
       "status": "UNOFFICIAL"
     },
@@ -25258,7 +25259,7 @@
     "id": "item.helldusk-gloves",
     "type": "item",
     "name": {
-      "fr": "Helldusk Gloves",
+      "fr": "Gants du crépuscule infernal",
       "en": "Helldusk Gloves",
       "status": "UNOFFICIAL"
     },
@@ -25354,7 +25355,7 @@
     "id": "item.helldusk-helmet",
     "type": "item",
     "name": {
-      "fr": "Helldusk Helmet",
+      "fr": "Casque du crépuscule infernal",
       "en": "Helldusk Helmet",
       "status": "UNOFFICIAL"
     },
@@ -25457,7 +25458,7 @@
     "id": "item.hellfire-engine-crossbow",
     "type": "item",
     "name": {
-      "fr": "Hellfire Engine Crossbow",
+      "fr": "Arbalète mécanique du feu infernal",
       "en": "Hellfire Engine Crossbow",
       "status": "UNOFFICIAL"
     },
@@ -25577,7 +25578,7 @@
     "id": "item.hellfire-hand-crossbow",
     "type": "item",
     "name": {
-      "fr": "Hellfire Hand Crossbow",
+      "fr": "Arbalète de poing du feu infernal",
       "en": "Hellfire Hand Crossbow",
       "status": "UNOFFICIAL"
     },
@@ -25705,7 +25706,7 @@
     "id": "item.hellrider-longbow",
     "type": "item",
     "name": {
-      "fr": "Hellrider Longbow",
+      "fr": "Arc long de chevaucheur de l’enfer",
       "en": "Hellrider Longbow",
       "status": "UNOFFICIAL"
     },
@@ -25832,7 +25833,7 @@
     "id": "item.hellriders-pride",
     "type": "item",
     "name": {
-      "fr": "Hellrider’s Pride",
+      "fr": "Fierté du chevaucheur de l’enfer",
       "en": "Hellrider's Pride",
       "status": "UNOFFICIAL"
     },
@@ -25904,18 +25905,18 @@
     "id": "item.helm-of-balduran",
     "type": "item",
     "name": {
-      "fr": "Helm of Balduran",
+      "fr": "Heaume de Balduran",
       "en": "Helm of Balduran",
       "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "titleTag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "licence": "cc-by-nc-sa-4.0",
@@ -25973,7 +25974,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -25982,7 +25983,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -25991,7 +25992,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -26000,7 +26001,7 @@
         "relation": "located_in",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -26010,7 +26011,7 @@
     "id": "item.helmet-of-arcane-acuity",
     "type": "item",
     "name": {
-      "fr": "Helmet of Arcane Acuity",
+      "fr": "Casque d’acuité arcanique",
       "en": "Helmet of Arcane Acuity",
       "status": "UNOFFICIAL"
     },
@@ -26091,7 +26092,7 @@
     "id": "item.helmet-of-autonomy",
     "type": "item",
     "name": {
-      "fr": "Helmet of Autonomy",
+      "fr": "Casque d’autonomie",
       "en": "Helmet of Autonomy",
       "status": "UNOFFICIAL"
     },
@@ -26156,7 +26157,7 @@
     "id": "item.helmet-of-grit",
     "type": "item",
     "name": {
-      "fr": "Helmet of Grit",
+      "fr": "Casque de ténacité",
       "en": "Helmet of Grit",
       "status": "UNOFFICIAL"
     },
@@ -26238,7 +26239,7 @@
     "id": "item.helmet-of-smiting",
     "type": "item",
     "name": {
-      "fr": "Helmet of Smiting",
+      "fr": "Casque de châtiment",
       "en": "Helmet of Smiting",
       "status": "UNOFFICIAL"
     },
@@ -26320,7 +26321,7 @@
     "id": "item.herbalists-gloves",
     "type": "item",
     "name": {
-      "fr": "Herbalist’s Gloves",
+      "fr": "Gants de l’herboriste",
       "en": "Herbalist's Gloves",
       "status": "UNOFFICIAL"
     },
@@ -26395,7 +26396,7 @@
     "id": "item.hide-armour-1",
     "type": "item",
     "name": {
-      "fr": "Hide Armour +1",
+      "fr": "Armure de peaux +1",
       "en": "Hide Armour +1",
       "status": "UNOFFICIAL"
     },
@@ -26467,7 +26468,7 @@
     "id": "item.hide-armour-2",
     "type": "item",
     "name": {
-      "fr": "Hide Armour +2",
+      "fr": "Armure de peaux +2",
       "en": "Hide Armour +2",
       "status": "UNOFFICIAL"
     },
@@ -26552,7 +26553,7 @@
     "id": "item.hoarfrost-boots",
     "type": "item",
     "name": {
-      "fr": "Hoarfrost Boots",
+      "fr": "Bottes de frimas",
       "en": "Hoarfrost Boots",
       "status": "UNOFFICIAL"
     },
@@ -26626,7 +26627,7 @@
     "id": "item.hollows-staff",
     "type": "item",
     "name": {
-      "fr": "Hollow’s Staff",
+      "fr": "Bâton de Hollow",
       "en": "Hollow's Staff",
       "status": "UNOFFICIAL"
     },
@@ -26746,7 +26747,7 @@
     "id": "item.holy-lance-helm",
     "type": "item",
     "name": {
-      "fr": "Holy Lance Helm",
+      "fr": "Heaume de la sainte lance",
       "en": "Holy Lance Helm",
       "status": "UNOFFICIAL"
     },
@@ -26828,7 +26829,7 @@
     "id": "item.hood-of-the-weave",
     "type": "item",
     "name": {
-      "fr": "Hood of the Weave",
+      "fr": "Capuche de la Toile",
       "en": "Hood of the Weave",
       "status": "UNOFFICIAL"
     },
@@ -27021,7 +27022,7 @@
     "id": "item.horns-of-the-berserker",
     "type": "item",
     "name": {
-      "fr": "Horns of the Berserker",
+      "fr": "Cornes du berserker",
       "en": "Horns of the Berserker",
       "status": "UNOFFICIAL"
     },
@@ -27109,7 +27110,7 @@
     "id": "item.hracknir-bracers",
     "type": "item",
     "name": {
-      "fr": "Hr’a’cknir Bracers",
+      "fr": "Bracelets de Hr’a’cknir",
       "en": "Hr'a'cknir Bracers",
       "status": "UNOFFICIAL"
     },
@@ -27202,7 +27203,7 @@
     "id": "item.hunters-dagger",
     "type": "item",
     "name": {
-      "fr": "Hunter’s Dagger",
+      "fr": "Dague du chasseur",
       "en": "Hunter's Dagger",
       "status": "UNOFFICIAL"
     },
@@ -27328,7 +27329,7 @@
     "id": "item.hunting-shortbow",
     "type": "item",
     "name": {
-      "fr": "Hunting Shortbow",
+      "fr": "Arc court de chasse",
       "en": "Hunting Shortbow",
       "status": "UNOFFICIAL"
     },
@@ -27446,7 +27447,7 @@
     "id": "item.icebite-robe",
     "type": "item",
     "name": {
-      "fr": "Icebite Robe",
+      "fr": "Robe de morsure glacée",
       "en": "Icebite Robe",
       "status": "UNOFFICIAL"
     },
@@ -27518,7 +27519,7 @@
     "id": "item.ichorous-gloves",
     "type": "item",
     "name": {
-      "fr": "Ichorous Gloves",
+      "fr": "Gants ichoreux",
       "en": "Ichorous Gloves",
       "status": "UNOFFICIAL"
     },
@@ -27592,7 +27593,7 @@
     "id": "item.incandescent-staff",
     "type": "item",
     "name": {
-      "fr": "Incandescent Staff",
+      "fr": "Bâton incandescent",
       "en": "Incandescent Staff",
       "status": "UNOFFICIAL"
     },
@@ -27716,7 +27717,7 @@
     "id": "item.infernal-mace",
     "type": "item",
     "name": {
-      "fr": "Infernal Mace",
+      "fr": "Masse d’armes infernale",
       "en": "Infernal Mace",
       "status": "UNOFFICIAL"
     },
@@ -27818,7 +27819,7 @@
     "id": "item.infernal-mace-uncommon",
     "type": "item",
     "name": {
-      "fr": "Infernal Mace",
+      "fr": "Masse d’armes infernale",
       "en": "Infernal Mace",
       "status": "UNOFFICIAL"
     },
@@ -27939,7 +27940,7 @@
     "id": "item.infernal-mask",
     "type": "item",
     "name": {
-      "fr": "Infernal Mask",
+      "fr": "Masque infernal",
       "en": "Infernal Mask",
       "status": "UNOFFICIAL"
     },
@@ -27988,7 +27989,7 @@
     "id": "item.infernal-rapier",
     "type": "item",
     "name": {
-      "fr": "Infernal Rapier",
+      "fr": "Rapière infernale",
       "en": "Infernal Rapier",
       "status": "UNOFFICIAL"
     },
@@ -28133,7 +28134,7 @@
     "id": "item.infernal-robe",
     "type": "item",
     "name": {
-      "fr": "Infernal Robe",
+      "fr": "Robe infernale",
       "en": "Infernal Robe",
       "status": "UNOFFICIAL"
     },
@@ -28198,7 +28199,7 @@
     "id": "item.infernal-spear",
     "type": "item",
     "name": {
-      "fr": "Infernal Spear",
+      "fr": "Lance infernale",
       "en": "Infernal Spear",
       "status": "UNOFFICIAL"
     },
@@ -28317,7 +28318,7 @@
     "id": "item.intransigent-warhammer",
     "type": "item",
     "name": {
-      "fr": "Intransigent Warhammer",
+      "fr": "Marteau de guerre intransigeant",
       "en": "Intransigent Warhammer",
       "status": "UNOFFICIAL"
     },
@@ -28442,7 +28443,7 @@
     "id": "item.iron-banded-shield-1",
     "type": "item",
     "name": {
-      "fr": "Iron-Banded Shield +1",
+      "fr": "Bouclier cerclé de fer +1",
       "en": "Iron-Banded Shield +1",
       "status": "UNOFFICIAL"
     },
@@ -28527,7 +28528,7 @@
     "id": "item.ironvine-shield",
     "type": "item",
     "name": {
-      "fr": "Ironvine Shield",
+      "fr": "Bouclier de liane de fer",
       "en": "Ironvine Shield",
       "status": "UNOFFICIAL"
     },
@@ -28605,7 +28606,7 @@
     "id": "item.ironwood-club",
     "type": "item",
     "name": {
-      "fr": "Ironwood Club",
+      "fr": "Gourdin de bois de fer",
       "en": "Ironwood Club",
       "status": "UNOFFICIAL"
     },
@@ -28706,7 +28707,7 @@
     "id": "item.jannaths-hat",
     "type": "item",
     "name": {
-      "fr": "Jannath’s Hat",
+      "fr": "Chapeau de Jannath",
       "en": "Jannath's Hat",
       "status": "UNOFFICIAL"
     },
@@ -28768,7 +28769,7 @@
     "id": "item.javelin-1",
     "type": "item",
     "name": {
-      "fr": "Javelin +1",
+      "fr": "Javeline +1",
       "en": "Javelin +1",
       "status": "UNOFFICIAL"
     },
@@ -28865,7 +28866,7 @@
     "id": "item.jhannyls-gloves",
     "type": "item",
     "name": {
-      "fr": "Jhannyl’s Gloves",
+      "fr": "Gants de Jhannyl",
       "en": "Jhannyl's Gloves",
       "status": "UNOFFICIAL"
     },
@@ -28992,7 +28993,7 @@
     "id": "item.jorgorals-greatsword",
     "type": "item",
     "name": {
-      "fr": "Jorgoral’s Greatsword",
+      "fr": "Épée à deux mains de Jorgoral",
       "en": "Jorgoral's Greatsword",
       "status": "UNOFFICIAL"
     },
@@ -29110,7 +29111,7 @@
     "id": "item.justiciars-greatshield",
     "type": "item",
     "name": {
-      "fr": "Justiciar’s Greatshield",
+      "fr": "Grand bouclier du justicier",
       "en": "Justiciar's Greatshield",
       "status": "UNOFFICIAL"
     },
@@ -29203,7 +29204,7 @@
     "id": "item.justiciars-scimitar",
     "type": "item",
     "name": {
-      "fr": "Justiciar’s Scimitar",
+      "fr": "Cimeterre du justicier",
       "en": "Justiciar's Scimitar",
       "status": "UNOFFICIAL"
     },
@@ -29451,7 +29452,7 @@
     "id": "item.keepsake-ring",
     "type": "item",
     "name": {
-      "fr": "Keepsake Ring",
+      "fr": "Anneau souvenir",
       "en": "Keepsake Ring",
       "status": "UNOFFICIAL"
     },
@@ -29526,7 +29527,7 @@
     "id": "item.ketherics-shield",
     "type": "item",
     "name": {
-      "fr": "Ketheric’s Shield",
+      "fr": "Bouclier de Ketheric",
       "en": "Ketheric's Shield",
       "status": "UNOFFICIAL"
     },
@@ -29620,7 +29621,7 @@
     "id": "item.ketherics-warhammer",
     "type": "item",
     "name": {
-      "fr": "Ketheric’s Warhammer",
+      "fr": "Marteau de guerre de Ketheric",
       "en": "Ketheric's Warhammer",
       "status": "UNOFFICIAL"
     },
@@ -29734,7 +29735,7 @@
     "id": "item.key-of-the-ancients",
     "type": "item",
     "name": {
-      "fr": "Key of the Ancients",
+      "fr": "Clé des anciens",
       "en": "Key of the Ancients",
       "status": "UNOFFICIAL"
     },
@@ -29803,7 +29804,7 @@
     "id": "item.khalids-gift",
     "type": "item",
     "name": {
-      "fr": "Khalid’s Gift",
+      "fr": "Présent de Khalid",
       "en": "Khalid's Gift",
       "status": "UNOFFICIAL"
     },
@@ -29888,7 +29889,7 @@
     "id": "item.kiam-godas-kilat-drum",
     "type": "item",
     "name": {
-      "fr": "Kiam Goda’s Kilat Drum",
+      "fr": "Tambour kilat de Kiam Goda",
       "en": "Kiam Goda's Kilat Drum",
       "status": "UNOFFICIAL"
     },
@@ -29949,7 +29950,7 @@
     "id": "item.kill-collar",
     "type": "item",
     "name": {
-      "fr": "Kill Collar",
+      "fr": "Collier mortel",
       "en": "Kill Collar",
       "status": "UNOFFICIAL"
     },
@@ -29998,7 +29999,7 @@
     "id": "item.killers-sweetheart",
     "type": "item",
     "name": {
-      "fr": "Killer’s Sweetheart",
+      "fr": "Bien-aimée du tueur",
       "en": "Killer's Sweetheart",
       "status": "UNOFFICIAL"
     },
@@ -30072,7 +30073,7 @@
     "id": "item.knock-knuckle-gloves",
     "type": "item",
     "name": {
-      "fr": "Knock Knuckle Gloves",
+      "fr": "Gants toque-phalanges",
       "en": "Knock Knuckle Gloves",
       "status": "UNOFFICIAL"
     },
@@ -30152,7 +30153,7 @@
     "id": "item.komiras-locket",
     "type": "item",
     "name": {
-      "fr": "Komira’s Locket",
+      "fr": "Médaillon de Komira",
       "en": "Komira's Locket",
       "status": "UNOFFICIAL"
     },
@@ -30226,7 +30227,7 @@
     "id": "item.kurwins-cauteriser",
     "type": "item",
     "name": {
-      "fr": "Kurwin’s Cauteriser",
+      "fr": "Cautériseur de Kurwin",
       "en": "Kurwin's Cauteriser",
       "status": "UNOFFICIAL"
     },
@@ -30342,7 +30343,7 @@
     "id": "item.larethians-wrath",
     "type": "item",
     "name": {
-      "fr": "Larethian’s Wrath",
+      "fr": "Courroux de Larethian",
       "en": "Larethian's Wrath",
       "status": "UNOFFICIAL"
     },
@@ -30465,7 +30466,7 @@
     "id": "item.least-expected",
     "type": "item",
     "name": {
-      "fr": "Least Expected",
+      "fr": "Le moins attendu",
       "en": "Least Expected",
       "status": "UNOFFICIAL"
     },
@@ -30578,9 +30579,10 @@
     "id": "item.leather-armour-1",
     "type": "item",
     "name": {
-      "fr": "Leather Armour +1",
+      "fr": "Armure de cuir +1",
       "en": "Leather Armour +1",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte3",
@@ -30649,7 +30651,7 @@
     "id": "item.leather-armour-2",
     "type": "item",
     "name": {
-      "fr": "Leather Armour +2",
+      "fr": "Armure de cuir +2",
       "en": "Leather Armour +2",
       "status": "UNOFFICIAL"
     },
@@ -30734,7 +30736,7 @@
     "id": "item.legacy-of-the-masters",
     "type": "item",
     "name": {
-      "fr": "Legacy of the Masters",
+      "fr": "Héritage des maîtres",
       "en": "Legacy of the Masters",
       "status": "UNOFFICIAL"
     },
@@ -30817,7 +30819,7 @@
     "id": "item.light-crossbow-1",
     "type": "item",
     "name": {
-      "fr": "Light Crossbow +1",
+      "fr": "Arbalète légère +1",
       "en": "Light Crossbow +1",
       "status": "UNOFFICIAL"
     },
@@ -30925,7 +30927,7 @@
     "id": "item.light-of-creation",
     "type": "item",
     "name": {
-      "fr": "Light of Creation",
+      "fr": "Lumière de la création",
       "en": "Light of Creation",
       "status": "UNOFFICIAL"
     },
@@ -31052,7 +31054,7 @@
     "id": "item.lightning-jabber",
     "type": "item",
     "name": {
-      "fr": "Lightning Jabber",
+      "fr": "Aiguillon de foudre",
       "en": "Lightning Jabber",
       "status": "UNOFFICIAL"
     },
@@ -31175,7 +31177,7 @@
     "id": "item.lihalas-lute",
     "type": "item",
     "name": {
-      "fr": "Lihala’s Lute",
+      "fr": "Luth de Lihala",
       "en": "Lihala's Lute",
       "status": "UNOFFICIAL"
     },
@@ -31245,7 +31247,7 @@
     "id": "item.linebreaker-boots",
     "type": "item",
     "name": {
-      "fr": "Linebreaker Boots",
+      "fr": "Bottes brise-ligne",
       "en": "Linebreaker Boots",
       "status": "UNOFFICIAL"
     },
@@ -31319,7 +31321,7 @@
     "id": "item.longbow-1",
     "type": "item",
     "name": {
-      "fr": "Longbow +1",
+      "fr": "Arc long +1",
       "en": "Longbow +1",
       "status": "UNOFFICIAL"
     },
@@ -31410,7 +31412,7 @@
     "id": "item.longbow-2",
     "type": "item",
     "name": {
-      "fr": "Longbow +2",
+      "fr": "Arc long +2",
       "en": "Longbow +2",
       "status": "UNOFFICIAL"
     },
@@ -31500,9 +31502,10 @@
     "id": "item.longsword-1",
     "type": "item",
     "name": {
-      "fr": "Longsword +1",
+      "fr": "Épée longue +1",
       "en": "Longsword +1",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte3",
@@ -31604,7 +31607,7 @@
     "id": "item.luminous-armour",
     "type": "item",
     "name": {
-      "fr": "Luminous Armour",
+      "fr": "Armure lumineuse",
       "en": "Luminous Armour",
       "status": "UNOFFICIAL"
     },
@@ -31683,7 +31686,7 @@
     "id": "item.luminous-gloves",
     "type": "item",
     "name": {
-      "fr": "Luminous Gloves",
+      "fr": "Gants lumineux",
       "en": "Luminous Gloves",
       "status": "UNOFFICIAL"
     },
@@ -31762,7 +31765,7 @@
     "id": "item.mace-1",
     "type": "item",
     "name": {
-      "fr": "Mace +1",
+      "fr": "Masse d’armes +1",
       "en": "Mace +1",
       "status": "UNOFFICIAL"
     },
@@ -31842,7 +31845,7 @@
     "id": "item.mages-friend",
     "type": "item",
     "name": {
-      "fr": "Mage’s Friend",
+      "fr": "Ami du mage",
       "en": "Mage's Friend",
       "status": "UNOFFICIAL"
     },
@@ -31913,7 +31916,7 @@
     "id": "item.magical-pike",
     "type": "item",
     "name": {
-      "fr": "Magical Pike",
+      "fr": "Pique magique",
       "en": "Magical Pike",
       "status": "UNOFFICIAL"
     },
@@ -32014,7 +32017,7 @@
     "id": "item.mantle-of-the-holy-warrior",
     "type": "item",
     "name": {
-      "fr": "Mantle of the Holy Warrior",
+      "fr": "Manteau du saint guerrier",
       "en": "Mantle of the Holy Warrior",
       "status": "UNOFFICIAL"
     },
@@ -32312,7 +32315,7 @@
     "id": "item.marksmanship-hat",
     "type": "item",
     "name": {
-      "fr": "Marksmanship Hat",
+      "fr": "Chapeau de tireur d’élite",
       "en": "Marksmanship Hat",
       "status": "UNOFFICIAL"
     },
@@ -32387,7 +32390,7 @@
     "id": "item.martial-exertion-gloves",
     "type": "item",
     "name": {
-      "fr": "Martial Exertion Gloves",
+      "fr": "Gants d’effort martial",
       "en": "Martial Exertion Gloves",
       "status": "UNOFFICIAL"
     },
@@ -32455,7 +32458,7 @@
     "id": "item.mask-of-soul-perception",
     "type": "item",
     "name": {
-      "fr": "Mask of Soul Perception",
+      "fr": "Masque de perception des âmes",
       "en": "Mask of Soul Perception",
       "status": "UNOFFICIAL"
     },
@@ -32543,7 +32546,7 @@
     "id": "item.mask-of-the-shapeshifter",
     "type": "item",
     "name": {
-      "fr": "Mask of the Shapeshifter",
+      "fr": "Masque du métamorphe",
       "en": "Mask of the Shapeshifter",
       "status": "UNOFFICIAL"
     },
@@ -32609,7 +32612,7 @@
     "id": "item.maul-1",
     "type": "item",
     "name": {
-      "fr": "Maul +1",
+      "fr": "Maillet d’armes +1",
       "en": "Maul +1",
       "status": "UNOFFICIAL"
     },
@@ -32700,7 +32703,7 @@
     "id": "item.mayrinas-locket",
     "type": "item",
     "name": {
-      "fr": "Mayrina’s Locket",
+      "fr": "Médaillon de Mayrina",
       "en": "Mayrina's Locket",
       "status": "UNOFFICIAL"
     },
@@ -32750,7 +32753,7 @@
     "id": "item.melfs-first-staff",
     "type": "item",
     "name": {
-      "fr": "Melf’s First Staff",
+      "fr": "Premier bâton de Melf",
       "en": "Melf's First Staff",
       "status": "UNOFFICIAL"
     },
@@ -32871,7 +32874,7 @@
     "id": "item.merregon-halberd",
     "type": "item",
     "name": {
-      "fr": "Merregon Halberd",
+      "fr": "Hallebarde de merregon",
       "en": "Merregon Halberd",
       "status": "UNOFFICIAL"
     },
@@ -33017,7 +33020,7 @@
     "id": "item.monster-slayer-glaive",
     "type": "item",
     "name": {
-      "fr": "Monster Slayer Glaive",
+      "fr": "Coutille de tueur de monstres",
       "en": "Monster Slayer Glaive",
       "status": "UNOFFICIAL"
     },
@@ -33155,7 +33158,7 @@
     "id": "item.moon-devotion-robe",
     "type": "item",
     "name": {
-      "fr": "Moon Devotion Robe",
+      "fr": "Robe de dévotion lunaire",
       "en": "Moon Devotion Robe",
       "status": "UNOFFICIAL"
     },
@@ -33315,7 +33318,7 @@
     "id": "item.moondrop-pendant",
     "type": "item",
     "name": {
-      "fr": "Moondrop Pendant",
+      "fr": "Pendentif goutte-de-lune",
       "en": "Moondrop Pendant",
       "status": "UNOFFICIAL"
     },
@@ -33389,7 +33392,7 @@
     "id": "item.moonlantern",
     "type": "item",
     "name": {
-      "fr": "Moonlantern",
+      "fr": "Lanterne lunaire",
       "en": "Moonlantern",
       "status": "UNOFFICIAL"
     },
@@ -33505,7 +33508,7 @@
     "id": "item.moonlight-glaive",
     "type": "item",
     "name": {
-      "fr": "Moonlight Glaive",
+      "fr": "Coutille de clair de lune",
       "en": "Moonlight Glaive",
       "status": "UNOFFICIAL"
     },
@@ -33642,7 +33645,7 @@
     "id": "item.morningstar-1",
     "type": "item",
     "name": {
-      "fr": "Morningstar +1",
+      "fr": "Morgenstern +1",
       "en": "Morningstar +1",
       "status": "UNOFFICIAL"
     },
@@ -33732,7 +33735,7 @@
     "id": "item.murderous-cut",
     "type": "item",
     "name": {
-      "fr": "Murderous Cut",
+      "fr": "Entaille meurtrière",
       "en": "Murderous Cut",
       "status": "UNOFFICIAL"
     },
@@ -33849,7 +33852,7 @@
     "id": "item.mutilated-carapace",
     "type": "item",
     "name": {
-      "fr": "Mutilated Carapace",
+      "fr": "Carapace mutilée",
       "en": "Mutilated Carapace",
       "status": "UNOFFICIAL"
     },
@@ -33943,7 +33946,7 @@
     "id": "item.myrkulite-scourge",
     "type": "item",
     "name": {
-      "fr": "Myrkulite Scourge",
+      "fr": "Fléau myrkulite",
       "en": "Myrkulite Scourge",
       "status": "UNOFFICIAL"
     },
@@ -34120,7 +34123,7 @@
     "id": "item.mystras-grace",
     "type": "item",
     "name": {
-      "fr": "Mystra’s Grace",
+      "fr": "Grâce de Mystra",
       "en": "Mystra's Grace",
       "status": "UNOFFICIAL"
     },
@@ -34194,7 +34197,7 @@
     "id": "item.natures-snare",
     "type": "item",
     "name": {
-      "fr": "Nature’s Snare",
+      "fr": "Collet de la nature",
       "en": "Nature's Snare",
       "status": "UNOFFICIAL"
     },
@@ -34299,7 +34302,7 @@
     "id": "item.necklace-of-elemental-augmentation",
     "type": "item",
     "name": {
-      "fr": "Necklace of Elemental Augmentation",
+      "fr": "Collier d’augmentation élémentaire",
       "en": "Necklace of Elemental Augmentation",
       "status": "UNOFFICIAL"
     },
@@ -34392,7 +34395,7 @@
     "id": "item.neer-misser",
     "type": "item",
     "name": {
-      "fr": "Ne’er Misser",
+      "fr": "Rate-jamais",
       "en": "Ne'er Misser",
       "status": "UNOFFICIAL"
     },
@@ -34508,7 +34511,7 @@
     "id": "item.nimblefinger-gloves",
     "type": "item",
     "name": {
-      "fr": "Nimblefinger Gloves",
+      "fr": "Gants aux doigts agiles",
       "en": "Nimblefinger Gloves",
       "status": "UNOFFICIAL"
     },
@@ -34581,7 +34584,7 @@
     "id": "item.nymph-cloak",
     "type": "item",
     "name": {
-      "fr": "Nymph Cloak",
+      "fr": "Cape de nymphe",
       "en": "Nymph Cloak",
       "status": "UNOFFICIAL"
     },
@@ -34842,7 +34845,7 @@
     "id": "item.obsidian-laced-robe",
     "type": "item",
     "name": {
-      "fr": "Obsidian Laced Robe",
+      "fr": "Robe lacée d’obsidienne",
       "en": "Obsidian Laced Robe",
       "status": "UNOFFICIAL"
     },
@@ -34921,7 +34924,7 @@
     "id": "item.orphic-hammer",
     "type": "item",
     "name": {
-      "fr": "Orphic Hammer",
+      "fr": "Marteau orphique",
       "en": "Orphic Hammer",
       "status": "UNOFFICIAL"
     },
@@ -35058,18 +35061,18 @@
     "id": "item.orphic-ring",
     "type": "item",
     "name": {
-      "fr": "Orphic Ring",
+      "fr": "Anneau orphique",
       "en": "Orphic Ring",
       "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "titleTag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "licence": "cc-by-nc-sa-4.0",
@@ -35113,7 +35116,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -35122,7 +35125,7 @@
         "relation": "located_in",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -35135,7 +35138,7 @@
     "id": "item.padded-armour-1",
     "type": "item",
     "name": {
-      "fr": "Padded Armour +1",
+      "fr": "Armure matelassée +1",
       "en": "Padded Armour +1",
       "status": "UNOFFICIAL"
     },
@@ -35206,7 +35209,7 @@
     "id": "item.padded-armour-2",
     "type": "item",
     "name": {
-      "fr": "Padded Armour +2",
+      "fr": "Armure matelassée +2",
       "en": "Padded Armour +2",
       "status": "UNOFFICIAL"
     },
@@ -35278,7 +35281,7 @@
     "id": "item.pale-oak",
     "type": "item",
     "name": {
-      "fr": "Pale Oak",
+      "fr": "Chêne pâle",
       "en": "Pale Oak",
       "status": "UNOFFICIAL"
     },
@@ -35387,7 +35390,7 @@
     "id": "item.pearl-of-power-amulet",
     "type": "item",
     "name": {
-      "fr": "Pearl of Power Amulet",
+      "fr": "Amulette à perle de pouvoir",
       "en": "Pearl of Power Amulet",
       "status": "UNOFFICIAL"
     },
@@ -35462,7 +35465,7 @@
     "id": "item.pelorsun-blade",
     "type": "item",
     "name": {
-      "fr": "Pelorsun Blade",
+      "fr": "Lame Pelorsun",
       "en": "Pelorsun Blade",
       "status": "UNOFFICIAL"
     },
@@ -35587,7 +35590,7 @@
     "id": "item.penumbral-armour",
     "type": "item",
     "name": {
-      "fr": "Penumbral Armour",
+      "fr": "Armure de pénombre",
       "en": "Penumbral Armour",
       "status": "UNOFFICIAL"
     },
@@ -35885,7 +35888,7 @@
     "id": "item.pike-1",
     "type": "item",
     "name": {
-      "fr": "Pike +1",
+      "fr": "Pique +1",
       "en": "Pike +1",
       "status": "UNOFFICIAL"
     },
@@ -35987,7 +35990,7 @@
     "id": "item.plate-armour-1",
     "type": "item",
     "name": {
-      "fr": "Plate Armour +1",
+      "fr": "Harnois +1",
       "en": "Plate Armour +1",
       "status": "UNOFFICIAL"
     },
@@ -36076,7 +36079,7 @@
     "id": "item.plate-armour-2",
     "type": "item",
     "name": {
-      "fr": "Plate Armour +2",
+      "fr": "Harnois +2",
       "en": "Plate Armour +2",
       "status": "UNOFFICIAL"
     },
@@ -36149,7 +36152,7 @@
     "id": "item.poisoners-gloves",
     "type": "item",
     "name": {
-      "fr": "Poisoner’s Gloves",
+      "fr": "Gants de l’empoisonneur",
       "en": "Poisoner's Gloves",
       "status": "UNOFFICIAL"
     },
@@ -36223,7 +36226,7 @@
     "id": "item.poisoners-ring",
     "type": "item",
     "name": {
-      "fr": "Poisoner’s Ring",
+      "fr": "Anneau de l’empoisonneur",
       "en": "Poisoner's Ring",
       "status": "UNOFFICIAL"
     },
@@ -36298,7 +36301,7 @@
     "id": "item.poisoners-robe",
     "type": "item",
     "name": {
-      "fr": "Poisoner’s Robe",
+      "fr": "Robe de l’empoisonneur",
       "en": "Poisoner's Robe",
       "status": "UNOFFICIAL"
     },
@@ -36372,7 +36375,7 @@
     "id": "item.potent-robe",
     "type": "item",
     "name": {
-      "fr": "Potent Robe",
+      "fr": "Robe puissante",
       "en": "Potent Robe",
       "status": "UNOFFICIAL"
     },
@@ -36466,7 +36469,7 @@
     "id": "item.protective-plate",
     "type": "item",
     "name": {
-      "fr": "Protective Plate",
+      "fr": "Harnois protecteur",
       "en": "Protective Plate",
       "status": "UNOFFICIAL"
     },
@@ -36527,7 +36530,7 @@
     "id": "item.psionic-ward-armour",
     "type": "item",
     "name": {
-      "fr": "Psionic Ward Armour",
+      "fr": "Armure de protection psionique",
       "en": "Psionic Ward Armour",
       "status": "UNOFFICIAL"
     },
@@ -36606,7 +36609,7 @@
     "id": "item.psychic-spark",
     "type": "item",
     "name": {
-      "fr": "Psychic Spark",
+      "fr": "Étincelle psychique",
       "en": "Psychic Spark",
       "status": "UNOFFICIAL"
     },
@@ -36695,7 +36698,7 @@
     "id": "item.pyroquickness-hat",
     "type": "item",
     "name": {
-      "fr": "Pyroquickness Hat",
+      "fr": "Chapeau de pyrovivacité",
       "en": "Pyroquickness Hat",
       "status": "UNOFFICIAL"
     },
@@ -36769,7 +36772,7 @@
     "id": "item.quarterstaff-1",
     "type": "item",
     "name": {
-      "fr": "Quarterstaff +1",
+      "fr": "Bâton de combat +1",
       "en": "Quarterstaff +1",
       "status": "UNOFFICIAL"
     },
@@ -36853,7 +36856,7 @@
     "id": "item.quarterstaff-2",
     "type": "item",
     "name": {
-      "fr": "Quarterstaff +2",
+      "fr": "Bâton de combat +2",
       "en": "Quarterstaff +2",
       "status": "UNOFFICIAL"
     },
@@ -36936,7 +36939,7 @@
     "id": "item.quickspell-gloves",
     "type": "item",
     "name": {
-      "fr": "Quickspell Gloves",
+      "fr": "Gants d’incantation rapide",
       "en": "Quickspell Gloves",
       "status": "UNOFFICIAL"
     },
@@ -37011,7 +37014,7 @@
     "id": "item.rain-dancer",
     "type": "item",
     "name": {
-      "fr": "Rain Dancer",
+      "fr": "Danseur de pluie",
       "en": "Rain Dancer",
       "status": "UNOFFICIAL"
     },
@@ -37118,7 +37121,7 @@
     "id": "item.rapier-1",
     "type": "item",
     "name": {
-      "fr": "Rapier +1",
+      "fr": "Rapière +1",
       "en": "Rapier +1",
       "status": "UNOFFICIAL"
     },
@@ -37219,7 +37222,7 @@
     "id": "item.rapier-2",
     "type": "item",
     "name": {
-      "fr": "Rapier +2",
+      "fr": "Rapière +2",
       "en": "Rapier +2",
       "status": "UNOFFICIAL"
     },
@@ -37327,7 +37330,7 @@
     "id": "item.rat-bat",
     "type": "item",
     "name": {
-      "fr": "Rat Bat",
+      "fr": "Batte à rats",
       "en": "Rat Bat",
       "status": "UNOFFICIAL"
     },
@@ -37431,7 +37434,7 @@
     "id": "item.raven-gloves",
     "type": "item",
     "name": {
-      "fr": "Raven Gloves",
+      "fr": "Gants du corbeau",
       "en": "Raven Gloves",
       "status": "UNOFFICIAL"
     },
@@ -37496,7 +37499,7 @@
     "id": "item.ravengards-scourger",
     "type": "item",
     "name": {
-      "fr": "Ravengard’s Scourger",
+      "fr": "Flagellateur de Ravengard",
       "en": "Ravengard's Scourger",
       "status": "UNOFFICIAL"
     },
@@ -37606,7 +37609,7 @@
     "id": "item.reapers-embrace",
     "type": "item",
     "name": {
-      "fr": "Reaper’s Embrace",
+      "fr": "Étreinte de la faucheuse",
       "en": "Reaper's Embrace",
       "status": "UNOFFICIAL"
     },
@@ -37702,7 +37705,7 @@
     "id": "item.reasons-grasp",
     "type": "item",
     "name": {
-      "fr": "Reason’s Grasp",
+      "fr": "Emprise de la raison",
       "en": "Reason's Grasp",
       "status": "UNOFFICIAL"
     },
@@ -37776,7 +37779,7 @@
     "id": "item.render-of-mind-and-body",
     "type": "item",
     "name": {
-      "fr": "Render of Mind and Body",
+      "fr": "Déchireur d’esprit et de corps",
       "en": "Render of Mind and Body",
       "status": "UNOFFICIAL"
     },
@@ -37890,7 +37893,7 @@
     "id": "item.returning-pike",
     "type": "item",
     "name": {
-      "fr": "Returning Pike",
+      "fr": "Pique revenante",
       "en": "Returning Pike",
       "status": "UNOFFICIAL"
     },
@@ -38016,7 +38019,7 @@
     "id": "item.reverse-rain-cloak",
     "type": "item",
     "name": {
-      "fr": "Reverse Rain Cloak",
+      "fr": "Cape de pluie inversée",
       "en": "Reverse Rain Cloak",
       "status": "UNOFFICIAL"
     },
@@ -38089,7 +38092,7 @@
     "id": "item.ring-mail-armour-1",
     "type": "item",
     "name": {
-      "fr": "Ring Mail Armour +1",
+      "fr": "Broigne +1",
       "en": "Ring Mail Armour +1",
       "status": "UNOFFICIAL"
     },
@@ -38162,7 +38165,7 @@
     "id": "item.ring-mail-armour-2",
     "type": "item",
     "name": {
-      "fr": "Ring Mail Armour +2",
+      "fr": "Broigne +2",
       "en": "Ring Mail Armour +2",
       "status": "UNOFFICIAL"
     },
@@ -38248,7 +38251,7 @@
     "id": "item.ring-of-absolute-force",
     "type": "item",
     "name": {
-      "fr": "Ring of Absolute Force",
+      "fr": "Anneau de force absolue",
       "en": "Ring of Absolute Force",
       "status": "UNOFFICIAL"
     },
@@ -38336,7 +38339,7 @@
     "id": "item.ring-of-arcane-synergy",
     "type": "item",
     "name": {
-      "fr": "Ring of Arcane Synergy",
+      "fr": "Anneau de synergie arcanique",
       "en": "Ring of Arcane Synergy",
       "status": "UNOFFICIAL"
     },
@@ -38410,7 +38413,7 @@
     "id": "item.ring-of-blink",
     "type": "item",
     "name": {
-      "fr": "Ring of Blink",
+      "fr": "Anneau de clignotement",
       "en": "Ring of Blink",
       "status": "UNOFFICIAL"
     },
@@ -38485,7 +38488,7 @@
     "id": "item.ring-of-colour-spray",
     "type": "item",
     "name": {
-      "fr": "Ring of Colour Spray",
+      "fr": "Anneau de couleurs dansantes",
       "en": "Ring of Colour Spray",
       "status": "UNOFFICIAL"
     },
@@ -38560,7 +38563,7 @@
     "id": "item.ring-of-elemental-infusion",
     "type": "item",
     "name": {
-      "fr": "Ring of Elemental Infusion",
+      "fr": "Anneau d’infusion élémentaire",
       "en": "Ring of Elemental Infusion",
       "status": "UNOFFICIAL"
     },
@@ -38702,7 +38705,7 @@
     "id": "item.ring-of-exalted-marrow",
     "type": "item",
     "name": {
-      "fr": "Ring of Exalted Marrow",
+      "fr": "Anneau de la moelle exaltée",
       "en": "Ring of Exalted Marrow",
       "status": "UNOFFICIAL"
     },
@@ -38773,7 +38776,7 @@
     "id": "item.ring-of-feywild-sparks",
     "type": "item",
     "name": {
-      "fr": "Ring of Feywild Sparks",
+      "fr": "Anneau des étincelles de la Féerie",
       "en": "Ring of Feywild Sparks",
       "status": "UNOFFICIAL"
     },
@@ -38850,7 +38853,7 @@
     "id": "item.ring-of-flinging",
     "type": "item",
     "name": {
-      "fr": "Ring of Flinging",
+      "fr": "Anneau de lancer",
       "en": "Ring of Flinging",
       "status": "UNOFFICIAL"
     },
@@ -39021,7 +39024,7 @@
     "id": "item.ring-of-geniality",
     "type": "item",
     "name": {
-      "fr": "Ring of Geniality",
+      "fr": "Anneau d’amabilité",
       "en": "Ring of Geniality",
       "status": "UNOFFICIAL"
     },
@@ -39170,7 +39173,7 @@
     "id": "item.ring-of-mental-inhibition",
     "type": "item",
     "name": {
-      "fr": "Ring of Mental Inhibition",
+      "fr": "Anneau d’inhibition mentale",
       "en": "Ring of Mental Inhibition",
       "status": "UNOFFICIAL"
     },
@@ -39522,7 +39525,7 @@
     "id": "item.ring-of-salving",
     "type": "item",
     "name": {
-      "fr": "Ring of Salving",
+      "fr": "Anneau de baume",
       "en": "Ring of Salving",
       "status": "UNOFFICIAL"
     },
@@ -39597,7 +39600,7 @@
     "id": "item.ring-of-self-immolation",
     "type": "item",
     "name": {
-      "fr": "Ring of Self Immolation",
+      "fr": "Anneau d’auto-immolation",
       "en": "Ring of Self Immolation",
       "status": "UNOFFICIAL"
     },
@@ -39671,7 +39674,7 @@
     "id": "item.ring-of-shadows",
     "type": "item",
     "name": {
-      "fr": "Ring of Shadows",
+      "fr": "Anneau des ombres",
       "en": "Ring of Shadows",
       "status": "UNOFFICIAL"
     },
@@ -39746,7 +39749,7 @@
     "id": "item.ring-of-spiteful-thunder",
     "type": "item",
     "name": {
-      "fr": "Ring of Spiteful Thunder",
+      "fr": "Anneau du tonnerre rancunier",
       "en": "Ring of Spiteful Thunder",
       "status": "UNOFFICIAL"
     },
@@ -39821,7 +39824,7 @@
     "id": "item.ring-of-truthfulness",
     "type": "item",
     "name": {
-      "fr": "Ring of Truthfulness",
+      "fr": "Anneau de véracité",
       "en": "Ring of Truthfulness",
       "status": "UNOFFICIAL"
     },
@@ -39895,7 +39898,7 @@
     "id": "item.ring-of-twilight",
     "type": "item",
     "name": {
-      "fr": "Ring of Twilight",
+      "fr": "Anneau du crépuscule",
       "en": "Ring of Twilight",
       "status": "UNOFFICIAL"
     },
@@ -39969,7 +39972,7 @@
     "id": "item.rippling-force-mail",
     "type": "item",
     "name": {
-      "fr": "Rippling Force Mail",
+      "fr": "Mailles de force ondoyante",
       "en": "Rippling Force Mail",
       "status": "UNOFFICIAL"
     },
@@ -40048,7 +40051,7 @@
     "id": "item.risky-ring",
     "type": "item",
     "name": {
-      "fr": "Risky Ring",
+      "fr": "Anneau risqué",
       "en": "Risky Ring",
       "status": "UNOFFICIAL"
     },
@@ -40143,7 +40146,7 @@
     "id": "item.ritual-axe",
     "type": "item",
     "name": {
-      "fr": "Ritual Axe",
+      "fr": "Hache rituelle",
       "en": "Ritual Axe",
       "status": "UNOFFICIAL"
     },
@@ -40246,7 +40249,7 @@
     "id": "item.ritual-dagger",
     "type": "item",
     "name": {
-      "fr": "Ritual Dagger",
+      "fr": "Dague rituelle",
       "en": "Ritual Dagger",
       "status": "UNOFFICIAL"
     },
@@ -40363,7 +40366,7 @@
     "id": "item.ritual-dagger-of-shar",
     "type": "item",
     "name": {
-      "fr": "Ritual Dagger of Shar",
+      "fr": "Dague rituelle de Shar",
       "en": "Ritual Dagger of Shar",
       "status": "UNOFFICIAL"
     },
@@ -40456,7 +40459,7 @@
     "id": "item.robe-of-exquisite-focus",
     "type": "item",
     "name": {
-      "fr": "Robe of Exquisite Focus",
+      "fr": "Robe de concentration exquise",
       "en": "Robe of Exquisite Focus",
       "status": "UNOFFICIAL"
     },
@@ -40554,7 +40557,7 @@
     "id": "item.robe-of-summer",
     "type": "item",
     "name": {
-      "fr": "Robe of Summer",
+      "fr": "Robe d’été",
       "en": "Robe of Summer",
       "status": "UNOFFICIAL"
     },
@@ -40613,7 +40616,7 @@
     "id": "item.robe-of-supreme-defences",
     "type": "item",
     "name": {
-      "fr": "Robe of Supreme Defences",
+      "fr": "Robe des défenses suprêmes",
       "en": "Robe of Supreme Defences",
       "status": "UNOFFICIAL"
     },
@@ -40691,7 +40694,7 @@
     "id": "item.robe-of-the-weave",
     "type": "item",
     "name": {
-      "fr": "Robe of the Weave",
+      "fr": "Robe de la Toile",
       "en": "Robe of the Weave",
       "status": "UNOFFICIAL"
     },
@@ -40785,7 +40788,7 @@
     "id": "item.rupturing-blade",
     "type": "item",
     "name": {
-      "fr": "Rupturing Blade",
+      "fr": "Lame de rupture",
       "en": "Rupturing Blade",
       "status": "UNOFFICIAL"
     },
@@ -40904,7 +40907,7 @@
     "id": "item.safeguard-shield",
     "type": "item",
     "name": {
-      "fr": "Safeguard Shield",
+      "fr": "Bouclier de sauvegarde",
       "en": "Safeguard Shield",
       "status": "UNOFFICIAL"
     },
@@ -40971,7 +40974,7 @@
     "id": "item.salty-scimitar-rrr",
     "type": "item",
     "name": {
-      "fr": "Salty Scimitar(rrr)",
+      "fr": "Cimeterre salé(rrr)",
       "en": "Salty Scimitar(rrr)",
       "status": "UNOFFICIAL"
     },
@@ -41086,19 +41089,19 @@
     "id": "item.sarevoks-horned-helmet",
     "type": "item",
     "name": {
-      "fr": "Sarevok’s Horned Helmet",
+      "fr": "Casque cornu de Sarevok",
       "en": "Sarevok's Horned Helmet",
       "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "acte3",
-      "level": "aucun",
-      "otherWorks": "aucun"
+      "level": "leger",
+      "otherWorks": "leger"
     },
     "titleTag": {
       "act": "acte3",
-      "level": "aucun",
-      "otherWorks": "aucun"
+      "level": "leger",
+      "otherWorks": "leger"
     },
     "licence": "cc-by-nc-sa-4.0",
     "attribution": [
@@ -41148,8 +41151,8 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
-          "otherWorks": "aucun"
+          "level": "leger",
+          "otherWorks": "leger"
         }
       },
       {
@@ -41157,8 +41160,8 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
-          "otherWorks": "aucun"
+          "level": "leger",
+          "otherWorks": "leger"
         }
       },
       {
@@ -41166,8 +41169,8 @@
         "relation": "located_in",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
-          "otherWorks": "aucun"
+          "level": "leger",
+          "otherWorks": "leger"
         }
       }
     ]
@@ -41176,7 +41179,7 @@
     "id": "item.scabby-pugilist-circlet",
     "type": "item",
     "name": {
-      "fr": "Scabby Pugilist Circlet",
+      "fr": "Diadème du pugiliste galeux",
       "en": "Scabby Pugilist Circlet",
       "status": "UNOFFICIAL"
     },
@@ -41251,7 +41254,7 @@
     "id": "item.scale-mail-1",
     "type": "item",
     "name": {
-      "fr": "Scale Mail +1",
+      "fr": "Armure d’écailles +1",
       "en": "Scale Mail +1",
       "status": "UNOFFICIAL"
     },
@@ -41324,7 +41327,7 @@
     "id": "item.scale-mail-2",
     "type": "item",
     "name": {
-      "fr": "Scale Mail +2",
+      "fr": "Armure d’écailles +2",
       "en": "Scale Mail +2",
       "status": "UNOFFICIAL"
     },
@@ -41410,7 +41413,7 @@
     "id": "item.scarlet-leather-armour",
     "type": "item",
     "name": {
-      "fr": "Scarlet Leather Armour",
+      "fr": "Armure de cuir écarlate",
       "en": "Scarlet Leather Armour",
       "status": "UNOFFICIAL"
     },
@@ -41507,7 +41510,7 @@
     "id": "item.scimitar-1",
     "type": "item",
     "name": {
-      "fr": "Scimitar +1",
+      "fr": "Cimeterre +1",
       "en": "Scimitar +1",
       "status": "UNOFFICIAL"
     },
@@ -41599,7 +41602,7 @@
     "id": "item.scimitar-2",
     "type": "item",
     "name": {
-      "fr": "Scimitar +2",
+      "fr": "Cimeterre +2",
       "en": "Scimitar +2",
       "status": "UNOFFICIAL"
     },
@@ -41690,7 +41693,7 @@
     "id": "item.seemingly-gleaming-ring",
     "type": "item",
     "name": {
-      "fr": "Seemingly Gleaming Ring",
+      "fr": "Anneau faussement étincelant",
       "en": "Seemingly Gleaming Ring",
       "status": "UNOFFICIAL"
     },
@@ -41761,18 +41764,18 @@
     "id": "item.selunes-spear-of-night",
     "type": "item",
     "name": {
-      "fr": "Selûne’s Spear of Night",
+      "fr": "Lance de la nuit de Séluné",
       "en": "Selûne's Spear of Night",
       "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "titleTag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "licence": "cc-by-nc-sa-4.0",
@@ -41851,7 +41854,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -41860,7 +41863,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -41869,7 +41872,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -41878,7 +41881,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -41887,7 +41890,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -41900,7 +41903,7 @@
     "id": "item.sentient-amulet-rare",
     "type": "item",
     "name": {
-      "fr": "Sentient Amulet",
+      "fr": "Amulette consciente",
       "en": "Sentient Amulet",
       "status": "UNOFFICIAL"
     },
@@ -42017,7 +42020,7 @@
     "id": "item.sentient-amulet-very-rare",
     "type": "item",
     "name": {
-      "fr": "Sentient Amulet",
+      "fr": "Amulette consciente",
       "en": "Sentient Amulet",
       "status": "UNOFFICIAL"
     },
@@ -42189,7 +42192,7 @@
     "id": "item.seraphic-pugilist-gloves",
     "type": "item",
     "name": {
-      "fr": "Seraphic Pugilist Gloves",
+      "fr": "Gants du pugiliste séraphique",
       "en": "Seraphic Pugilist Gloves",
       "status": "UNOFFICIAL"
     },
@@ -42277,7 +42280,7 @@
     "id": "item.servitor-of-the-black-hand-gloves",
     "type": "item",
     "name": {
-      "fr": "Servitor of the Black Hand Gloves",
+      "fr": "Gants du serviteur de la Main noire",
       "en": "Servitor of the Black Hand Gloves",
       "status": "UNOFFICIAL"
     },
@@ -42502,7 +42505,7 @@
     "id": "item.shade-slayer-cloak",
     "type": "item",
     "name": {
-      "fr": "Shade-Slayer Cloak",
+      "fr": "Cape de tueur d’ombres",
       "en": "Shade-Slayer Cloak",
       "status": "UNOFFICIAL"
     },
@@ -42577,7 +42580,7 @@
     "id": "item.shadeclinger-armour",
     "type": "item",
     "name": {
-      "fr": "Shadeclinger Armour",
+      "fr": "Armure accroche-ombre",
       "en": "Shadeclinger Armour",
       "status": "UNOFFICIAL"
     },
@@ -42661,7 +42664,7 @@
     "id": "item.shadow-blade-ring",
     "type": "item",
     "name": {
-      "fr": "Shadow Blade Ring",
+      "fr": "Anneau de lame d’ombres",
       "en": "Shadow Blade Ring",
       "status": "UNOFFICIAL"
     },
@@ -42729,7 +42732,7 @@
     "id": "item.shadow-blade-weapon",
     "type": "item",
     "name": {
-      "fr": "Shadow Blade",
+      "fr": "Lame d’ombres",
       "en": "Shadow Blade",
       "status": "UNOFFICIAL"
     },
@@ -42833,7 +42836,7 @@
     "id": "item.shadow-cloaked-ring",
     "type": "item",
     "name": {
-      "fr": "Shadow-Cloaked Ring",
+      "fr": "Anneau drapé d’ombre",
       "en": "Shadow-Cloaked Ring",
       "status": "UNOFFICIAL"
     },
@@ -42907,7 +42910,7 @@
     "id": "item.shadow-of-menzoberranzan",
     "type": "item",
     "name": {
-      "fr": "Shadow of Menzoberranzan",
+      "fr": "Ombre de Menzoberranzan",
       "en": "Shadow of Menzoberranzan",
       "status": "UNOFFICIAL"
     },
@@ -42984,7 +42987,7 @@
     "id": "item.shapeshifter-hat",
     "type": "item",
     "name": {
-      "fr": "Shapeshifter Hat",
+      "fr": "Chapeau de métamorphe",
       "en": "Shapeshifter Hat",
       "status": "UNOFFICIAL"
     },
@@ -43064,7 +43067,7 @@
     "id": "item.shapeshifters-boon-ring",
     "type": "item",
     "name": {
-      "fr": "Shapeshifter’s Boon Ring",
+      "fr": "Anneau du don du métamorphe",
       "en": "Shapeshifter's Boon Ring",
       "status": "UNOFFICIAL"
     },
@@ -43176,7 +43179,7 @@
     "id": "item.sharpened-snare-cuirass",
     "type": "item",
     "name": {
-      "fr": "Sharpened Snare Cuirass",
+      "fr": "Cuirasse au collet acéré",
       "en": "Sharpened Snare Cuirass",
       "status": "UNOFFICIAL"
     },
@@ -43268,7 +43271,7 @@
     "id": "item.sharran-crossbow",
     "type": "item",
     "name": {
-      "fr": "Sharran Crossbow",
+      "fr": "Arbalète sharrienne",
       "en": "Sharran Crossbow",
       "status": "UNOFFICIAL"
     },
@@ -43355,18 +43358,18 @@
     "id": "item.shars-spear-of-evening",
     "type": "item",
     "name": {
-      "fr": "Shar’s Spear of Evening",
+      "fr": "Lance du soir de Shar",
       "en": "Shar's Spear of Evening",
       "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "acte2",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "titleTag": {
       "act": "acte2",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "licence": "cc-by-nc-sa-4.0",
@@ -43444,7 +43447,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -43453,7 +43456,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -43462,7 +43465,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -43471,7 +43474,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -43480,7 +43483,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -43489,7 +43492,7 @@
         "relation": "located_in",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -43499,7 +43502,7 @@
     "id": "item.shars-temptation",
     "type": "item",
     "name": {
-      "fr": "Shar’s Temptation",
+      "fr": "Tentation de Shar",
       "en": "Shar's Temptation",
       "status": "UNOFFICIAL"
     },
@@ -43574,7 +43577,7 @@
     "id": "item.shattered-flail",
     "type": "item",
     "name": {
-      "fr": "Shattered Flail",
+      "fr": "Fléau d’armes brisé",
       "en": "Shattered Flail",
       "status": "UNOFFICIAL"
     },
@@ -43676,7 +43679,7 @@
     "id": "item.shelter-of-athkatla",
     "type": "item",
     "name": {
-      "fr": "Shelter of Athkatla",
+      "fr": "Abri d’Athkatla",
       "en": "Shelter of Athkatla",
       "status": "UNOFFICIAL"
     },
@@ -43767,9 +43770,10 @@
     "id": "item.shield-1",
     "type": "item",
     "name": {
-      "fr": "Shield +1",
+      "fr": "Bouclier +1",
       "en": "Shield +1",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "acte2",
@@ -43902,7 +43906,7 @@
     "id": "item.shield-of-devotion",
     "type": "item",
     "name": {
-      "fr": "Shield of Devotion",
+      "fr": "Bouclier de dévotion",
       "en": "Shield of Devotion",
       "status": "UNOFFICIAL"
     },
@@ -43998,7 +44002,7 @@
     "id": "item.shield-of-scorching-reprisal",
     "type": "item",
     "name": {
-      "fr": "Shield of Scorching Reprisal",
+      "fr": "Bouclier de représailles ardentes",
       "en": "Shield of Scorching Reprisal",
       "status": "UNOFFICIAL"
     },
@@ -44093,7 +44097,7 @@
     "id": "item.shield-of-shielding",
     "type": "item",
     "name": {
-      "fr": "Shield of Shielding",
+      "fr": "Bouclier de défense",
       "en": "Shield of Shielding",
       "status": "UNOFFICIAL"
     },
@@ -44184,7 +44188,7 @@
     "id": "item.shield-of-the-undevout",
     "type": "item",
     "name": {
-      "fr": "Shield of the Undevout",
+      "fr": "Bouclier de l’impie",
       "en": "Shield of the Undevout",
       "status": "UNOFFICIAL"
     },
@@ -44288,7 +44292,7 @@
     "id": "item.shifting-corpus-ring",
     "type": "item",
     "name": {
-      "fr": "Shifting Corpus Ring",
+      "fr": "Anneau du corps changeant",
       "en": "Shifting Corpus Ring",
       "status": "UNOFFICIAL"
     },
@@ -44377,7 +44381,7 @@
     "id": "item.shining-staver-of-skulls",
     "type": "item",
     "name": {
-      "fr": "Shining Staver-of-Skulls",
+      "fr": "Enfonce-crânes étincelant",
       "en": "Shining Staver-of-Skulls",
       "status": "UNOFFICIAL"
     },
@@ -44468,7 +44472,7 @@
     "id": "item.shortbow-1",
     "type": "item",
     "name": {
-      "fr": "Shortbow +1",
+      "fr": "Arc court +1",
       "en": "Shortbow +1",
       "status": "UNOFFICIAL"
     },
@@ -44548,7 +44552,7 @@
     "id": "item.shortsword-2",
     "type": "item",
     "name": {
-      "fr": "Shortsword +2",
+      "fr": "Épée courte +2",
       "en": "Shortsword +2",
       "status": "UNOFFICIAL"
     },
@@ -44640,7 +44644,7 @@
     "id": "item.shortsword-of-first-blood",
     "type": "item",
     "name": {
-      "fr": "Shortsword of First Blood",
+      "fr": "Épée courte du premier sang",
       "en": "Shortsword of First Blood",
       "status": "UNOFFICIAL"
     },
@@ -44757,7 +44761,7 @@
     "id": "item.sickle-of-boooal",
     "type": "item",
     "name": {
-      "fr": "Sickle of BOOOAL",
+      "fr": "Serpe de BOOOAL",
       "en": "Sickle of BOOOAL",
       "status": "UNOFFICIAL"
     },
@@ -44844,7 +44848,7 @@
     "id": "item.silver-pendant",
     "type": "item",
     "name": {
-      "fr": "Silver Pendant",
+      "fr": "Pendentif d’argent",
       "en": "Silver Pendant",
       "status": "UNOFFICIAL"
     },
@@ -44918,7 +44922,7 @@
     "id": "item.silver-sword-of-the-astral-plane",
     "type": "item",
     "name": {
-      "fr": "Silver Sword of the Astral Plane",
+      "fr": "Épée d’argent du plan Astral",
       "en": "Silver Sword of the Astral Plane",
       "status": "UNOFFICIAL"
     },
@@ -45064,7 +45068,7 @@
     "id": "item.slicing-shortsword",
     "type": "item",
     "name": {
-      "fr": "Slicing Shortsword",
+      "fr": "Épée courte tranchante",
       "en": "Slicing Shortsword",
       "status": "UNOFFICIAL"
     },
@@ -45179,7 +45183,7 @@
     "id": "item.slinging-shoes",
     "type": "item",
     "name": {
-      "fr": "Slinging Shoes",
+      "fr": "Chaussures de lancer",
       "en": "Slinging Shoes",
       "status": "UNOFFICIAL"
     },
@@ -45259,7 +45263,7 @@
     "id": "item.slippery-chain-shirt",
     "type": "item",
     "name": {
-      "fr": "Slippery Chain Shirt",
+      "fr": "Chemise de mailles glissante",
       "en": "Slippery Chain Shirt",
       "status": "UNOFFICIAL"
     },
@@ -45337,7 +45341,7 @@
     "id": "item.smugglers-ring",
     "type": "item",
     "name": {
-      "fr": "Smuggler’s Ring",
+      "fr": "Anneau du contrebandier",
       "en": "Smuggler's Ring",
       "status": "UNOFFICIAL"
     },
@@ -45411,7 +45415,7 @@
     "id": "item.snow-dusted-monastery-gloves",
     "type": "item",
     "name": {
-      "fr": "Snow-Dusted Monastery Gloves",
+      "fr": "Gants du monastère enneigé",
       "en": "Snow-Dusted Monastery Gloves",
       "status": "UNOFFICIAL"
     },
@@ -45500,7 +45504,7 @@
     "id": "item.snowburst-ring",
     "type": "item",
     "name": {
-      "fr": "Snowburst Ring",
+      "fr": "Anneau de rafale de neige",
       "en": "Snowburst Ring",
       "status": "UNOFFICIAL"
     },
@@ -45574,7 +45578,7 @@
     "id": "item.sorrow",
     "type": "item",
     "name": {
-      "fr": "Sorrow",
+      "fr": "Chagrin",
       "en": "Sorrow",
       "status": "UNOFFICIAL"
     },
@@ -45683,7 +45687,7 @@
     "id": "item.soulbreaker-greatsword",
     "type": "item",
     "name": {
-      "fr": "Soulbreaker Greatsword",
+      "fr": "Épée à deux mains brise-âme",
       "en": "Soulbreaker Greatsword",
       "status": "UNOFFICIAL"
     },
@@ -45829,7 +45833,7 @@
     "id": "item.spaceshunt-boots",
     "type": "item",
     "name": {
-      "fr": "Spaceshunt Boots",
+      "fr": "Bottes de bond spatial",
       "en": "Spaceshunt Boots",
       "status": "UNOFFICIAL"
     },
@@ -45904,7 +45908,7 @@
     "id": "item.spear-1",
     "type": "item",
     "name": {
-      "fr": "Spear +1",
+      "fr": "Lance +1",
       "en": "Spear +1",
       "status": "UNOFFICIAL"
     },
@@ -45989,7 +45993,7 @@
     "id": "item.spear-2",
     "type": "item",
     "name": {
-      "fr": "Spear +2",
+      "fr": "Lance +2",
       "en": "Spear +2",
       "status": "UNOFFICIAL"
     },
@@ -46073,7 +46077,7 @@
     "id": "item.spear-of-night",
     "type": "item",
     "name": {
-      "fr": "Spear of Night",
+      "fr": "Lance de la nuit",
       "en": "Spear of Night",
       "status": "UNOFFICIAL"
     },
@@ -46179,7 +46183,7 @@
     "id": "item.speedy-reply",
     "type": "item",
     "name": {
-      "fr": "Speedy Reply",
+      "fr": "Prompte réplique",
       "en": "Speedy Reply",
       "status": "UNOFFICIAL"
     },
@@ -46292,7 +46296,7 @@
     "id": "item.spell-savant-amulet",
     "type": "item",
     "name": {
-      "fr": "Spell Savant Amulet",
+      "fr": "Amulette de l’érudit des sorts",
       "en": "Spell Savant Amulet",
       "status": "UNOFFICIAL"
     },
@@ -46358,7 +46362,7 @@
     "id": "item.spellcrux-amulet",
     "type": "item",
     "name": {
-      "fr": "Spellcrux Amulet",
+      "fr": "Amulette du cœur des sorts",
       "en": "Spellcrux Amulet",
       "status": "UNOFFICIAL"
     },
@@ -46420,7 +46424,7 @@
     "id": "item.spellmight-gloves",
     "type": "item",
     "name": {
-      "fr": "Spellmight Gloves",
+      "fr": "Gants de puissance magique",
       "en": "Spellmight Gloves",
       "status": "UNOFFICIAL"
     },
@@ -46494,7 +46498,7 @@
     "id": "item.spellseeking-gloves",
     "type": "item",
     "name": {
-      "fr": "Spellseeking Gloves",
+      "fr": "Gants à sorts chercheurs",
       "en": "Spellseeking Gloves",
       "status": "UNOFFICIAL"
     },
@@ -46569,7 +46573,7 @@
     "id": "item.spellthief",
     "type": "item",
     "name": {
-      "fr": "Spellthief",
+      "fr": "Voleur de sorts",
       "en": "Spellthief",
       "status": "UNOFFICIAL"
     },
@@ -46681,7 +46685,7 @@
     "id": "item.spiders-lyre",
     "type": "item",
     "name": {
-      "fr": "Spider’s Lyre",
+      "fr": "Lyre de l’araignée",
       "en": "Spider's Lyre",
       "status": "UNOFFICIAL"
     },
@@ -46755,7 +46759,7 @@
     "id": "item.spidersilk-armour",
     "type": "item",
     "name": {
-      "fr": "Spidersilk Armour",
+      "fr": "Armure en soie d’araignée",
       "en": "Spidersilk Armour",
       "status": "UNOFFICIAL"
     },
@@ -46837,7 +46841,7 @@
     "id": "item.spiderstep-boots",
     "type": "item",
     "name": {
-      "fr": "Spiderstep Boots",
+      "fr": "Bottes de pas d’araignée",
       "en": "Spiderstep Boots",
       "status": "UNOFFICIAL"
     },
@@ -46911,7 +46915,7 @@
     "id": "item.spineshudder-amulet",
     "type": "item",
     "name": {
-      "fr": "Spineshudder Amulet",
+      "fr": "Amulette frisson-d’échine",
       "en": "Spineshudder Amulet",
       "status": "UNOFFICIAL"
     },
@@ -46985,7 +46989,7 @@
     "id": "item.splint-armour-1",
     "type": "item",
     "name": {
-      "fr": "Splint Armour +1",
+      "fr": "Clibanion +1",
       "en": "Splint Armour +1",
       "status": "UNOFFICIAL"
     },
@@ -47058,7 +47062,7 @@
     "id": "item.splint-armour-2",
     "type": "item",
     "name": {
-      "fr": "Splint Armour +2",
+      "fr": "Clibanion +2",
       "en": "Splint Armour +2",
       "status": "UNOFFICIAL"
     },
@@ -47144,7 +47148,7 @@
     "id": "item.springstep-boots",
     "type": "item",
     "name": {
-      "fr": "Springstep Boots",
+      "fr": "Bottes de pas élastique",
       "en": "Springstep Boots",
       "status": "UNOFFICIAL"
     },
@@ -47218,7 +47222,7 @@
     "id": "item.spurred-band",
     "type": "item",
     "name": {
-      "fr": "Spurred Band",
+      "fr": "Bague éperonnée",
       "en": "Spurred Band",
       "status": "UNOFFICIAL"
     },
@@ -47292,7 +47296,7 @@
     "id": "item.staff-of-a-mumbling-wizard",
     "type": "item",
     "name": {
-      "fr": "Staff of a Mumbling Wizard",
+      "fr": "Bâton d’un magicien marmonnant",
       "en": "Staff of a Mumbling Wizard",
       "status": "UNOFFICIAL"
     },
@@ -47384,7 +47388,7 @@
     "id": "item.staff-of-arcane-blessing",
     "type": "item",
     "name": {
-      "fr": "Staff of Arcane Blessing",
+      "fr": "Bâton de bénédiction arcanique",
       "en": "Staff of Arcane Blessing",
       "status": "UNOFFICIAL"
     },
@@ -47502,7 +47506,7 @@
     "id": "item.staff-of-cherished-necromancy",
     "type": "item",
     "name": {
-      "fr": "Staff of Cherished Necromancy",
+      "fr": "Bâton de nécromancie chérie",
       "en": "Staff of Cherished Necromancy",
       "status": "UNOFFICIAL"
     },
@@ -47624,7 +47628,7 @@
     "id": "item.staff-of-crones",
     "type": "item",
     "name": {
-      "fr": "Staff of Crones",
+      "fr": "Bâton des vieilles sorcières",
       "en": "Staff of Crones",
       "status": "UNOFFICIAL"
     },
@@ -47730,7 +47734,7 @@
     "id": "item.staff-of-interruption",
     "type": "item",
     "name": {
-      "fr": "Staff of Interruption",
+      "fr": "Bâton d’interruption",
       "en": "Staff of Interruption",
       "status": "UNOFFICIAL"
     },
@@ -47829,18 +47833,18 @@
     "id": "item.staff-of-the-emperor",
     "type": "item",
     "name": {
-      "fr": "Staff of the Emperor",
+      "fr": "Bâton de l’Empereur",
       "en": "Staff of the Emperor",
       "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "titleTag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "licence": "cc-by-nc-sa-4.0",
@@ -47910,7 +47914,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -47919,7 +47923,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -47928,7 +47932,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -47937,7 +47941,7 @@
         "relation": "located_in",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -47950,7 +47954,7 @@
     "id": "item.staff-of-the-ram",
     "type": "item",
     "name": {
-      "fr": "Staff of the Ram",
+      "fr": "Bâton du bélier",
       "en": "Staff of the Ram",
       "status": "UNOFFICIAL"
     },
@@ -48053,7 +48057,7 @@
     "id": "item.stalker-gloves",
     "type": "item",
     "name": {
-      "fr": "Stalker Gloves",
+      "fr": "Gants du traqueur",
       "en": "Stalker Gloves",
       "status": "UNOFFICIAL"
     },
@@ -48141,7 +48145,7 @@
     "id": "item.steelforged-sword",
     "type": "item",
     "name": {
-      "fr": "Steelforged Sword",
+      "fr": "Épée d’acier forgé",
       "en": "Steelforged Sword",
       "status": "UNOFFICIAL"
     },
@@ -48259,7 +48263,7 @@
     "id": "item.steelwatcher-helmet",
     "type": "item",
     "name": {
-      "fr": "Steel Watcher Helmet",
+      "fr": "Casque de veilleur d’acier",
       "en": "Steel Watcher Helmet",
       "status": "UNOFFICIAL"
     },
@@ -48339,7 +48343,7 @@
     "id": "item.stillmaker",
     "type": "item",
     "name": {
-      "fr": "Stillmaker",
+      "fr": "Immobilisateur",
       "en": "Stillmaker",
       "status": "UNOFFICIAL"
     },
@@ -48465,7 +48469,7 @@
     "id": "item.stolyarofs-table-lute",
     "type": "item",
     "name": {
-      "fr": "Stolyarof’s Table Lute",
+      "fr": "Luth de table de Stolyarof",
       "en": "Stolyarof's Table Lute",
       "status": "UNOFFICIAL"
     },
@@ -48526,7 +48530,7 @@
     "id": "item.strange-conduit-ring",
     "type": "item",
     "name": {
-      "fr": "Strange Conduit Ring",
+      "fr": "Anneau de conduit étrange",
       "en": "Strange Conduit Ring",
       "status": "UNOFFICIAL"
     },
@@ -48600,7 +48604,7 @@
     "id": "item.strange-tendril-amulet",
     "type": "item",
     "name": {
-      "fr": "Strange Tendril Amulet",
+      "fr": "Amulette de vrille étrange",
       "en": "Strange Tendril Amulet",
       "status": "UNOFFICIAL"
     },
@@ -48668,7 +48672,7 @@
     "id": "item.studded-leather-armour-1",
     "type": "item",
     "name": {
-      "fr": "Studded Leather Armour +1",
+      "fr": "Armure de cuir clouté +1",
       "en": "Studded Leather Armour +1",
       "status": "UNOFFICIAL"
     },
@@ -48740,7 +48744,7 @@
     "id": "item.studded-leather-armour-2",
     "type": "item",
     "name": {
-      "fr": "Studded Leather Armour +2",
+      "fr": "Armure de cuir clouté +2",
       "en": "Studded Leather Armour +2",
       "status": "UNOFFICIAL"
     },
@@ -48825,7 +48829,7 @@
     "id": "item.studded-shield-1",
     "type": "item",
     "name": {
-      "fr": "Studded Shield +1",
+      "fr": "Bouclier clouté +1",
       "en": "Studded Shield +1",
       "status": "UNOFFICIAL"
     },
@@ -48892,7 +48896,7 @@
     "id": "item.sunwalkers-gift",
     "type": "item",
     "name": {
-      "fr": "Sunwalker’s Gift",
+      "fr": "Présent de l’arpenteur du soleil",
       "en": "Sunwalker's Gift",
       "status": "UNOFFICIAL"
     },
@@ -48967,7 +48971,7 @@
     "id": "item.surgeons-subjugation-amulet",
     "type": "item",
     "name": {
-      "fr": "Surgeon’s Subjugation Amulet",
+      "fr": "Amulette de subjugation du chirurgien",
       "en": "Surgeon's Subjugation Amulet",
       "status": "UNOFFICIAL"
     },
@@ -49041,7 +49045,7 @@
     "id": "item.sussur-dagger",
     "type": "item",
     "name": {
-      "fr": "Sussur Dagger",
+      "fr": "Dague de sussur",
       "en": "Sussur Dagger",
       "status": "UNOFFICIAL"
     },
@@ -49134,7 +49138,7 @@
     "id": "item.sussur-greatsword",
     "type": "item",
     "name": {
-      "fr": "Sussur Greatsword",
+      "fr": "Épée à deux mains de sussur",
       "en": "Sussur Greatsword",
       "status": "UNOFFICIAL"
     },
@@ -49245,7 +49249,7 @@
     "id": "item.sussur-sickle",
     "type": "item",
     "name": {
-      "fr": "Sussur Sickle",
+      "fr": "Serpe de sussur",
       "en": "Sussur Sickle",
       "status": "UNOFFICIAL"
     },
@@ -49336,7 +49340,7 @@
     "id": "item.svartlebees-woundseeker",
     "type": "item",
     "name": {
-      "fr": "Svartlebee’s Woundseeker",
+      "fr": "Cherche-plaie de Svartlebee",
       "en": "Svartlebee's Woundseeker",
       "status": "UNOFFICIAL"
     },
@@ -49477,7 +49481,7 @@
     "id": "item.swires-sledboard",
     "type": "item",
     "name": {
-      "fr": "Swires’ Sledboard",
+      "fr": "Planche-luge de Swires",
       "en": "Swires' Sledboard",
       "status": "UNOFFICIAL"
     },
@@ -49569,7 +49573,7 @@
     "id": "item.swiresy-shoes",
     "type": "item",
     "name": {
-      "fr": "Swiresy Shoes",
+      "fr": "Chaussures à la Swires",
       "en": "Swiresy Shoes",
       "status": "UNOFFICIAL"
     },
@@ -49649,7 +49653,7 @@
     "id": "item.sword-of-chaos",
     "type": "item",
     "name": {
-      "fr": "Sword of Chaos",
+      "fr": "Épée du chaos",
       "en": "Sword of Chaos",
       "status": "UNOFFICIAL"
     },
@@ -49785,7 +49789,7 @@
     "id": "item.sword-of-clutching-umbra",
     "type": "item",
     "name": {
-      "fr": "Sword of Clutching Umbra",
+      "fr": "Épée de l’ombre étreignante",
       "en": "Sword of Clutching Umbra",
       "status": "UNOFFICIAL"
     },
@@ -49894,7 +49898,7 @@
     "id": "item.sword-of-justice",
     "type": "item",
     "name": {
-      "fr": "Sword of Justice",
+      "fr": "Épée de justice",
       "en": "Sword of Justice",
       "status": "UNOFFICIAL"
     },
@@ -50118,7 +50122,7 @@
     "id": "item.sword-of-screams",
     "type": "item",
     "name": {
-      "fr": "Sword of Screams",
+      "fr": "Épée des hurlements",
       "en": "Sword of Screams",
       "status": "UNOFFICIAL"
     },
@@ -50228,18 +50232,18 @@
     "id": "item.sword-of-the-emperor",
     "type": "item",
     "name": {
-      "fr": "Sword of the Emperor",
+      "fr": "Épée de l’Empereur",
       "en": "Sword of the Emperor",
       "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "titleTag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "licence": "cc-by-nc-sa-4.0",
@@ -50309,7 +50313,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -50318,7 +50322,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -50327,7 +50331,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -50336,7 +50340,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -50345,7 +50349,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -50354,7 +50358,7 @@
         "relation": "located_in",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -50364,7 +50368,7 @@
     "id": "item.swordmaster-gloves",
     "type": "item",
     "name": {
-      "fr": "Swordmaster Gloves",
+      "fr": "Gants de maître d’armes",
       "en": "Swordmaster Gloves",
       "status": "UNOFFICIAL"
     },
@@ -50439,7 +50443,7 @@
     "id": "item.sylvan-scimitar",
     "type": "item",
     "name": {
-      "fr": "Sylvan Scimitar",
+      "fr": "Cimeterre sylvestre",
       "en": "Sylvan Scimitar",
       "status": "UNOFFICIAL"
     },
@@ -50563,7 +50567,7 @@
     "id": "item.syringe-1",
     "type": "item",
     "name": {
-      "fr": "Syringe",
+      "fr": "Seringue",
       "en": "Syringe",
       "status": "UNOFFICIAL"
     },
@@ -50662,7 +50666,7 @@
     "id": "item.szarr-family-ring",
     "type": "item",
     "name": {
-      "fr": "Szarr Family Ring",
+      "fr": "Anneau de la famille Szarr",
       "en": "Szarr Family Ring",
       "status": "UNOFFICIAL"
     },
@@ -50711,7 +50715,7 @@
     "id": "item.tarnished-charm",
     "type": "item",
     "name": {
-      "fr": "Tarnished Charm",
+      "fr": "Breloque ternie",
       "en": "Tarnished Charm",
       "status": "UNOFFICIAL"
     },
@@ -50815,7 +50819,7 @@
     "id": "item.the-amulet-of-lost-voices",
     "type": "item",
     "name": {
-      "fr": "The Amulet of Lost Voices",
+      "fr": "L’amulette des voix perdues",
       "en": "The Amulet of Lost Voices",
       "status": "UNOFFICIAL"
     },
@@ -50883,7 +50887,7 @@
     "id": "item.the-baneful",
     "type": "item",
     "name": {
-      "fr": "The Baneful",
+      "fr": "Le funeste",
       "en": "The Baneful",
       "status": "UNOFFICIAL"
     },
@@ -51011,7 +51015,7 @@
     "id": "item.the-blast-pendant",
     "type": "item",
     "name": {
-      "fr": "The Blast Pendant",
+      "fr": "Le pendentif explosif",
       "en": "The Blast Pendant",
       "status": "UNOFFICIAL"
     },
@@ -51085,7 +51089,7 @@
     "id": "item.the-dancing-breeze",
     "type": "item",
     "name": {
-      "fr": "The Dancing Breeze",
+      "fr": "La brise dansante",
       "en": "The Dancing Breeze",
       "status": "UNOFFICIAL"
     },
@@ -51206,7 +51210,7 @@
     "id": "item.the-dead-shot",
     "type": "item",
     "name": {
-      "fr": "The Dead Shot",
+      "fr": "Le tir mortel",
       "en": "The Dead Shot",
       "status": "UNOFFICIAL"
     },
@@ -51334,7 +51338,7 @@
     "id": "item.the-deathstalker-mantle",
     "type": "item",
     "name": {
-      "fr": "The Deathstalker Mantle",
+      "fr": "Le manteau du traqueur de mort",
       "en": "The Deathstalker Mantle",
       "status": "UNOFFICIAL"
     },
@@ -51400,7 +51404,7 @@
     "id": "item.the-ever-seeing-eye",
     "type": "item",
     "name": {
-      "fr": "The Ever-Seeing Eye",
+      "fr": "L’œil qui voit tout",
       "en": "The Ever-Seeing Eye",
       "status": "UNOFFICIAL"
     },
@@ -51475,7 +51479,7 @@
     "id": "item.the-graceful-cloth",
     "type": "item",
     "name": {
-      "fr": "The Graceful Cloth",
+      "fr": "L’étoffe gracieuse",
       "en": "The Graceful Cloth",
       "status": "UNOFFICIAL"
     },
@@ -51566,7 +51570,7 @@
     "id": "item.the-joltshooter",
     "type": "item",
     "name": {
-      "fr": "The Joltshooter",
+      "fr": "Le tire-décharges",
       "en": "The Joltshooter",
       "status": "UNOFFICIAL"
     },
@@ -51678,7 +51682,7 @@
     "id": "item.the-jolty-vest",
     "type": "item",
     "name": {
-      "fr": "The Jolty Vest",
+      "fr": "Le gilet à décharges",
       "en": "The Jolty Vest",
       "status": "UNOFFICIAL"
     },
@@ -51770,7 +51774,7 @@
     "id": "item.the-lifebringer",
     "type": "item",
     "name": {
-      "fr": "The Lifebringer",
+      "fr": "Le porte-vie",
       "en": "The Lifebringer",
       "status": "UNOFFICIAL"
     },
@@ -51845,7 +51849,7 @@
     "id": "item.the-long-arm-of-the-gur",
     "type": "item",
     "name": {
-      "fr": "The Long Arm of the Gur",
+      "fr": "Le long bras des Gur",
       "en": "The Long Arm of the Gur",
       "status": "UNOFFICIAL"
     },
@@ -51955,7 +51959,7 @@
     "id": "item.the-mighty-cloth",
     "type": "item",
     "name": {
-      "fr": "The Mighty Cloth",
+      "fr": "L’étoffe puissante",
       "en": "The Mighty Cloth",
       "status": "UNOFFICIAL"
     },
@@ -52059,7 +52063,7 @@
     "id": "item.the-oak-fathers-embrace",
     "type": "item",
     "name": {
-      "fr": "The Oak Father’s Embrace",
+      "fr": "L’étreinte du Père Chêne",
       "en": "The Oak Father's Embrace",
       "status": "UNOFFICIAL"
     },
@@ -52137,7 +52141,7 @@
     "id": "item.the-pointy-hat",
     "type": "item",
     "name": {
-      "fr": "The Pointy Hat",
+      "fr": "Le chapeau pointu",
       "en": "The Pointy Hat",
       "status": "UNOFFICIAL"
     },
@@ -52211,7 +52215,7 @@
     "id": "item.the-protecty-sparkswall",
     "type": "item",
     "name": {
-      "fr": "The Protecty Sparkswall",
+      "fr": "Le pare-étincelles protecteur",
       "en": "The Protecty Sparkswall",
       "status": "UNOFFICIAL"
     },
@@ -52301,7 +52305,7 @@
     "id": "item.the-real-sparky-sparkswall",
     "type": "item",
     "name": {
-      "fr": "The Real Sparky Sparkswall",
+      "fr": "Le vrai pare-étincelles étincelant",
       "en": "The Real Sparky Sparkswall",
       "status": "UNOFFICIAL"
     },
@@ -52379,7 +52383,7 @@
     "id": "item.the-reviving-hands",
     "type": "item",
     "name": {
-      "fr": "The Reviving Hands",
+      "fr": "Les mains revivifiantes",
       "en": "The Reviving Hands",
       "status": "UNOFFICIAL"
     },
@@ -52476,7 +52480,7 @@
     "id": "item.the-shadespell-circlet",
     "type": "item",
     "name": {
-      "fr": "The Shadespell Circlet",
+      "fr": "Le diadème des sorts d’ombre",
       "en": "The Shadespell Circlet",
       "status": "UNOFFICIAL"
     },
@@ -52551,7 +52555,7 @@
     "id": "item.the-skinburster",
     "type": "item",
     "name": {
-      "fr": "The Skinburster",
+      "fr": "L’éclate-peau",
       "en": "The Skinburster",
       "status": "UNOFFICIAL"
     },
@@ -52674,7 +52678,7 @@
     "id": "item.the-sparkle-hands",
     "type": "item",
     "name": {
-      "fr": "The Sparkle Hands",
+      "fr": "Les mains scintillantes",
       "en": "The Sparkle Hands",
       "status": "UNOFFICIAL"
     },
@@ -52754,7 +52758,7 @@
     "id": "item.the-sparkswall",
     "type": "item",
     "name": {
-      "fr": "The Sparkswall",
+      "fr": "Le pare-étincelles",
       "en": "The Sparkswall",
       "status": "UNOFFICIAL"
     },
@@ -52832,7 +52836,7 @@
     "id": "item.the-sparky-points",
     "type": "item",
     "name": {
-      "fr": "The Sparky Points",
+      "fr": "Les pointes étincelantes",
       "en": "The Sparky Points",
       "status": "UNOFFICIAL"
     },
@@ -52958,7 +52962,7 @@
     "id": "item.the-spectator-eyes",
     "type": "item",
     "name": {
-      "fr": "The Spectator Eyes",
+      "fr": "Les yeux de spectateur",
       "en": "The Spectator Eyes",
       "status": "UNOFFICIAL"
     },
@@ -53029,7 +53033,7 @@
     "id": "item.the-speedy-lightfeet",
     "type": "item",
     "name": {
-      "fr": "The Speedy Lightfeet",
+      "fr": "Les pieds-légers rapides",
       "en": "The Speedy Lightfeet",
       "status": "UNOFFICIAL"
     },
@@ -53111,7 +53115,7 @@
     "id": "item.the-spellsparkler",
     "type": "item",
     "name": {
-      "fr": "The Spellsparkler",
+      "fr": "L’étinceleur de sorts",
       "en": "The Spellsparkler",
       "status": "UNOFFICIAL"
     },
@@ -53216,7 +53220,7 @@
     "id": "item.the-undead-bane",
     "type": "item",
     "name": {
-      "fr": "The Undead Bane",
+      "fr": "Le fléau des morts-vivants",
       "en": "The Undead Bane",
       "status": "UNOFFICIAL"
     },
@@ -53368,7 +53372,7 @@
     "id": "item.the-watchers-guide",
     "type": "item",
     "name": {
-      "fr": "The Watcher’s Guide",
+      "fr": "Le guide du veilleur",
       "en": "The Watcher's Guide",
       "status": "UNOFFICIAL"
     },
@@ -53467,7 +53471,7 @@
     "id": "item.the-watersparkers",
     "type": "item",
     "name": {
-      "fr": "The Watersparkers",
+      "fr": "Les étinceleuses d’eau",
       "en": "The Watersparkers",
       "status": "UNOFFICIAL"
     },
@@ -53554,7 +53558,7 @@
     "id": "item.the-whispering-promise",
     "type": "item",
     "name": {
-      "fr": "The Whispering Promise",
+      "fr": "La promesse murmurée",
       "en": "The Whispering Promise",
       "status": "UNOFFICIAL"
     },
@@ -53679,7 +53683,7 @@
     "id": "item.thermoarcanic-gloves",
     "type": "item",
     "name": {
-      "fr": "Thermoarcanic Gloves",
+      "fr": "Gants thermoarcaniques",
       "en": "Thermoarcanic Gloves",
       "status": "UNOFFICIAL"
     },
@@ -53753,7 +53757,7 @@
     "id": "item.thermodynamo-axe",
     "type": "item",
     "name": {
-      "fr": "Thermodynamo Axe",
+      "fr": "Hache thermodynamique",
       "en": "Thermodynamo Axe",
       "status": "UNOFFICIAL"
     },
@@ -53896,7 +53900,7 @@
     "id": "item.thorn-blade",
     "type": "item",
     "name": {
-      "fr": "Thorn Blade",
+      "fr": "Lame d’épines",
       "en": "Thorn Blade",
       "status": "UNOFFICIAL"
     },
@@ -54015,7 +54019,7 @@
     "id": "item.thunderpalm-strikers",
     "type": "item",
     "name": {
-      "fr": "Thunderpalm Strikers",
+      "fr": "Frappeurs paume-tonnerre",
       "en": "Thunderpalm Strikers",
       "status": "UNOFFICIAL"
     },
@@ -54097,7 +54101,7 @@
     "id": "item.thunderskin-cloak",
     "type": "item",
     "name": {
-      "fr": "Thunderskin Cloak",
+      "fr": "Cape peau-de-tonnerre",
       "en": "Thunderskin Cloak",
       "status": "UNOFFICIAL"
     },
@@ -54192,7 +54196,7 @@
     "id": "item.till-death-do-us-part",
     "type": "item",
     "name": {
-      "fr": "Till Death Do Us Part",
+      "fr": "Jusqu’à ce que la mort nous sépare",
       "en": "Till Death Do Us Part",
       "status": "UNOFFICIAL"
     },
@@ -54267,7 +54271,7 @@
     "id": "item.titanstring-bow",
     "type": "item",
     "name": {
-      "fr": "Titanstring Bow",
+      "fr": "Arc à corde de titan",
       "en": "Titanstring Bow",
       "status": "UNOFFICIAL"
     },
@@ -54411,7 +54415,7 @@
     "id": "item.trepan-1",
     "type": "item",
     "name": {
-      "fr": "Trepan",
+      "fr": "Trépan",
       "en": "Trepan",
       "status": "UNOFFICIAL"
     },
@@ -54519,7 +54523,7 @@
     "id": "item.tressym-collar",
     "type": "item",
     "name": {
-      "fr": "Tressym Collar",
+      "fr": "Collier de tressym",
       "en": "Tressym Collar",
       "status": "UNOFFICIAL"
     },
@@ -54736,7 +54740,7 @@
     "id": "item.trident-of-the-waves",
     "type": "item",
     "name": {
-      "fr": "Trident of the Waves",
+      "fr": "Trident des vagues",
       "en": "Trident of the Waves",
       "status": "UNOFFICIAL"
     },
@@ -54863,7 +54867,7 @@
     "id": "item.true-loves-caress",
     "type": "item",
     "name": {
-      "fr": "True Love’s Caress",
+      "fr": "Caresse du véritable amour",
       "en": "True Love's Caress",
       "status": "UNOFFICIAL"
     },
@@ -54930,7 +54934,7 @@
     "id": "item.true-loves-embrace",
     "type": "item",
     "name": {
-      "fr": "True Love’s Embrace",
+      "fr": "Étreinte du véritable amour",
       "en": "True Love's Embrace",
       "status": "UNOFFICIAL"
     },
@@ -55004,7 +55008,7 @@
     "id": "item.twist-of-fortune",
     "type": "item",
     "name": {
-      "fr": "Twist of Fortune",
+      "fr": "Revers de fortune",
       "en": "Twist of Fortune",
       "status": "UNOFFICIAL"
     },
@@ -55126,7 +55130,7 @@
     "id": "item.tyrannical-jackboots",
     "type": "item",
     "name": {
-      "fr": "Tyrannical Jackboots",
+      "fr": "Bottes cavalières tyranniques",
       "en": "Tyrannical Jackboots",
       "status": "UNOFFICIAL"
     },
@@ -55200,7 +55204,7 @@
     "id": "item.uncovered-mysteries",
     "type": "item",
     "name": {
-      "fr": "Uncovered Mysteries",
+      "fr": "Mystères dévoilés",
       "en": "Uncovered Mysteries",
       "status": "UNOFFICIAL"
     },
@@ -55275,7 +55279,7 @@
     "id": "item.unflinching-protector-amulet",
     "type": "item",
     "name": {
-      "fr": "Unflinching Protector Amulet",
+      "fr": "Amulette du protecteur inébranlable",
       "en": "Unflinching Protector Amulet",
       "status": "UNOFFICIAL"
     },
@@ -55342,7 +55346,7 @@
     "id": "item.unlucky-thiefs-gloves",
     "type": "item",
     "name": {
-      "fr": "Unlucky Thief’s Gloves",
+      "fr": "Gants du voleur malchanceux",
       "en": "Unlucky Thief's Gloves",
       "status": "UNOFFICIAL"
     },
@@ -55410,7 +55414,7 @@
     "id": "item.unseen-menace",
     "type": "item",
     "name": {
-      "fr": "Unseen Menace",
+      "fr": "Menace invisible",
       "en": "Unseen Menace",
       "status": "UNOFFICIAL"
     },
@@ -55534,7 +55538,7 @@
     "id": "item.unwanted-masterwork-gauntlets",
     "type": "item",
     "name": {
-      "fr": "Unwanted Masterwork Gauntlets",
+      "fr": "Gantelets de maître rejetés",
       "en": "Unwanted Masterwork Gauntlets",
       "status": "UNOFFICIAL"
     },
@@ -55606,7 +55610,7 @@
     "id": "item.unwanted-masterwork-greaves",
     "type": "item",
     "name": {
-      "fr": "Unwanted Masterwork Greaves",
+      "fr": "Jambières de maître rejetées",
       "en": "Unwanted Masterwork Greaves",
       "status": "UNOFFICIAL"
     },
@@ -55671,7 +55675,7 @@
     "id": "item.unwanted-masterwork-scalemail",
     "type": "item",
     "name": {
-      "fr": "Unwanted Masterwork Scalemail",
+      "fr": "Armure d’écailles de maître rejetée",
       "en": "Unwanted Masterwork Scalemail",
       "status": "UNOFFICIAL"
     },
@@ -55754,7 +55758,7 @@
     "id": "item.varsh-kokuus-boots",
     "type": "item",
     "name": {
-      "fr": "Varsh Ko’kuu’s Boots",
+      "fr": "Bottes de Varsh Ko’kuu",
       "en": "Varsh Ko'kuu's Boots",
       "status": "UNOFFICIAL"
     },
@@ -55827,7 +55831,7 @@
     "id": "item.veil-of-the-morning",
     "type": "item",
     "name": {
-      "fr": "Veil of the Morning",
+      "fr": "Voile du matin",
       "en": "Veil of the Morning",
       "status": "UNOFFICIAL"
     },
@@ -55919,7 +55923,7 @@
     "id": "item.very-heavy-greataxe",
     "type": "item",
     "name": {
-      "fr": "Very Heavy Greataxe",
+      "fr": "Hache à deux mains très lourde",
       "en": "Very Heavy Greataxe",
       "status": "UNOFFICIAL"
     },
@@ -56046,7 +56050,7 @@
     "id": "item.vest-of-soul-rejuvenation",
     "type": "item",
     "name": {
-      "fr": "Vest of Soul Rejuvenation",
+      "fr": "Gilet de revitalisation de l’âme",
       "en": "Vest of Soul Rejuvenation",
       "status": "UNOFFICIAL"
     },
@@ -56133,7 +56137,7 @@
     "id": "item.vicious-battleaxe",
     "type": "item",
     "name": {
-      "fr": "Vicious Battleaxe",
+      "fr": "Hache d’armes vicieuse",
       "en": "Vicious Battleaxe",
       "status": "UNOFFICIAL"
     },
@@ -56257,7 +56261,7 @@
     "id": "item.vicious-shortbow",
     "type": "item",
     "name": {
-      "fr": "Vicious Shortbow",
+      "fr": "Arc court vicieux",
       "en": "Vicious Shortbow",
       "status": "UNOFFICIAL"
     },
@@ -56360,18 +56364,18 @@
     "id": "item.viconias-priestess-robe",
     "type": "item",
     "name": {
-      "fr": "Viconia’s Priestess Robe",
+      "fr": "Robe de prêtresse de Viconia",
       "en": "Viconia's Priestess Robe",
       "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "titleTag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "licence": "cc-by-nc-sa-4.0",
@@ -56426,7 +56430,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -56435,7 +56439,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -56444,7 +56448,7 @@
         "relation": "located_in",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -56454,18 +56458,18 @@
     "id": "item.viconias-walking-fortress",
     "type": "item",
     "name": {
-      "fr": "Viconia’s Walking Fortress",
+      "fr": "Forteresse ambulante de Viconia",
       "en": "Viconia's Walking Fortress",
       "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "titleTag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "licence": "cc-by-nc-sa-4.0",
@@ -56526,7 +56530,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -56535,7 +56539,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -56544,7 +56548,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -56553,7 +56557,7 @@
         "relation": "grants",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -56562,7 +56566,7 @@
         "relation": "located_in",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -56572,7 +56576,7 @@
     "id": "item.vision-of-the-absolute",
     "type": "item",
     "name": {
-      "fr": "Vision of the Absolute",
+      "fr": "Vision de l’Absolu",
       "en": "Vision of the Absolute",
       "status": "UNOFFICIAL"
     },
@@ -56677,7 +56681,7 @@
     "id": "item.vital-conduit-boots",
     "type": "item",
     "name": {
-      "fr": "Vital Conduit Boots",
+      "fr": "Bottes de conduit vital",
       "en": "Vital Conduit Boots",
       "status": "UNOFFICIAL"
     },
@@ -56760,7 +56764,7 @@
     "id": "item.vivacious-cloak",
     "type": "item",
     "name": {
-      "fr": "Vivacious Cloak",
+      "fr": "Cape vivace",
       "en": "Vivacious Cloak",
       "status": "UNOFFICIAL"
     },
@@ -56834,7 +56838,7 @@
     "id": "item.voss-silver-sword",
     "type": "item",
     "name": {
-      "fr": "Voss’ Silver Sword",
+      "fr": "Épée d’argent de Voss",
       "en": "Voss' Silver Sword",
       "status": "UNOFFICIAL"
     },
@@ -57024,7 +57028,7 @@
     "id": "item.wapiras-crown",
     "type": "item",
     "name": {
-      "fr": "Wapira’s Crown",
+      "fr": "Couronne de Wapira",
       "en": "Wapira's Crown",
       "status": "UNOFFICIAL"
     },
@@ -57091,7 +57095,7 @@
     "id": "item.war-pick-1",
     "type": "item",
     "name": {
-      "fr": "War Pick +1",
+      "fr": "Pic de guerre +1",
       "en": "War Pick +1",
       "status": "UNOFFICIAL"
     },
@@ -57191,7 +57195,7 @@
     "id": "item.warhammer-1",
     "type": "item",
     "name": {
-      "fr": "Warhammer +1",
+      "fr": "Marteau de guerre +1",
       "en": "Warhammer +1",
       "status": "UNOFFICIAL"
     },
@@ -57295,7 +57299,7 @@
     "id": "item.warhammer-2",
     "type": "item",
     "name": {
-      "fr": "Warhammer +2",
+      "fr": "Marteau de guerre +2",
       "en": "Warhammer +2",
       "status": "UNOFFICIAL"
     },
@@ -57398,7 +57402,7 @@
     "id": "item.warped-headband-of-intellect",
     "type": "item",
     "name": {
-      "fr": "Warped Headband of Intellect",
+      "fr": "Bandeau d’intelligence déformé",
       "en": "Warped Headband of Intellect",
       "status": "UNOFFICIAL"
     },
@@ -57460,7 +57464,7 @@
     "id": "item.watchers-shield",
     "type": "item",
     "name": {
-      "fr": "Watcher’s Shield",
+      "fr": "Bouclier du veilleur",
       "en": "Watcher's Shield",
       "status": "UNOFFICIAL"
     },
@@ -57529,7 +57533,7 @@
     "id": "item.wavemothers-cloak",
     "type": "item",
     "name": {
-      "fr": "Wavemother’s Cloak",
+      "fr": "Cape de la Mère des vagues",
       "en": "Wavemother's Cloak",
       "status": "UNOFFICIAL"
     },
@@ -57603,7 +57607,7 @@
     "id": "item.wavemothers-robe",
     "type": "item",
     "name": {
-      "fr": "Wavemother’s Robe",
+      "fr": "Robe de la Mère des vagues",
       "en": "Wavemother's Robe",
       "status": "UNOFFICIAL"
     },
@@ -57711,7 +57715,7 @@
     "id": "item.wavemothers-sickle",
     "type": "item",
     "name": {
-      "fr": "Wavemother’s Sickle",
+      "fr": "Serpe de la Mère des vagues",
       "en": "Wavemother's Sickle",
       "status": "UNOFFICIAL"
     },
@@ -57816,7 +57820,7 @@
     "id": "item.winkling-gloves",
     "type": "item",
     "name": {
-      "fr": "Winkling Gloves",
+      "fr": "Gants dénicheurs",
       "en": "Winkling Gloves",
       "status": "UNOFFICIAL"
     },
@@ -57885,7 +57889,7 @@
     "id": "item.winters-clutches",
     "type": "item",
     "name": {
-      "fr": "Winter’s Clutches",
+      "fr": "Serres de l’hiver",
       "en": "Winter's Clutches",
       "status": "UNOFFICIAL"
     },
@@ -57998,7 +58002,7 @@
     "id": "item.witchbreaker",
     "type": "item",
     "name": {
-      "fr": "Witchbreaker",
+      "fr": "Brise-sorcières",
       "en": "Witchbreaker",
       "status": "UNOFFICIAL"
     },
@@ -58135,7 +58139,7 @@
     "id": "item.woe",
     "type": "item",
     "name": {
-      "fr": "Woe",
+      "fr": "Malheur",
       "en": "Woe",
       "status": "UNOFFICIAL"
     },
@@ -58268,7 +58272,7 @@
     "id": "item.wondrous-gloves",
     "type": "item",
     "name": {
-      "fr": "Wondrous Gloves",
+      "fr": "Gants merveilleux",
       "en": "Wondrous Gloves",
       "status": "UNOFFICIAL"
     },
@@ -58342,7 +58346,7 @@
     "id": "item.wood-woad-shield",
     "type": "item",
     "name": {
-      "fr": "Wood Woad Shield",
+      "fr": "Bouclier de guède sylvestre",
       "en": "Wood Woad Shield",
       "status": "UNOFFICIAL"
     },
@@ -58403,7 +58407,7 @@
     "id": "item.worgfang",
     "type": "item",
     "name": {
-      "fr": "Worgfang",
+      "fr": "Croc de worg",
       "en": "Worgfang",
       "status": "UNOFFICIAL"
     },
@@ -58507,7 +58511,7 @@
     "id": "item.wulbrens-hammer",
     "type": "item",
     "name": {
-      "fr": "Wulbren’s Hammer",
+      "fr": "Marteau de Wulbren",
       "en": "Wulbren's Hammer",
       "status": "UNOFFICIAL"
     },
@@ -58701,7 +58705,7 @@
     "id": "item.yuan-ti-scale-mail",
     "type": "item",
     "name": {
-      "fr": "Yuan-Ti Scale Mail",
+      "fr": "Armure d’écailles yuan-ti",
       "en": "Yuan-Ti Scale Mail",
       "status": "UNOFFICIAL"
     },

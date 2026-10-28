@@ -3,7 +3,7 @@
     "id": "place.abandoned-cistern",
     "type": "place",
     "name": {
-      "fr": "Abandoned Cistern",
+      "fr": "Citerne abandonnée",
       "en": "Abandoned Cistern",
       "status": "UNOFFICIAL"
     },
@@ -47,7 +47,7 @@
     "id": "place.abandoned-refuge",
     "type": "place",
     "name": {
-      "fr": "Abandoned Refuge",
+      "fr": "Refuge abandonné",
       "en": "Abandoned Refuge",
       "status": "UNOFFICIAL"
     },
@@ -91,7 +91,7 @@
     "id": "place.abandoned-windmill",
     "type": "place",
     "name": {
-      "fr": "Abandoned Windmill",
+      "fr": "Moulin abandonné",
       "en": "Abandoned Windmill",
       "status": "UNOFFICIAL"
     },
@@ -135,7 +135,7 @@
     "id": "place.adamantine-forge-location",
     "type": "place",
     "name": {
-      "fr": "Adamantine Forge",
+      "fr": "Forge d’adamantium",
       "en": "Adamantine Forge",
       "status": "UNOFFICIAL"
     },
@@ -179,7 +179,7 @@
     "id": "place.ancient-lair",
     "type": "place",
     "name": {
-      "fr": "Ancient Lair",
+      "fr": "Antre antique",
       "en": "Ancient Lair",
       "status": "UNOFFICIAL"
     },
@@ -223,7 +223,7 @@
     "id": "place.ancient-mausoleum",
     "type": "place",
     "name": {
-      "fr": "Ancient Mausoleum",
+      "fr": "Mausolée antique",
       "en": "Ancient Mausoleum",
       "status": "UNOFFICIAL"
     },
@@ -267,7 +267,7 @@
     "id": "place.ancient-temple",
     "type": "place",
     "name": {
-      "fr": "Ancient Temple",
+      "fr": "Temple antique",
       "en": "Ancient Temple",
       "status": "UNOFFICIAL"
     },
@@ -311,7 +311,7 @@
     "id": "place.apothecarys-cellar",
     "type": "place",
     "name": {
-      "fr": "Apothecary’s Cellar",
+      "fr": "Cave de l’apothicaire",
       "en": "Apothecary's Cellar",
       "status": "UNOFFICIAL"
     },
@@ -355,7 +355,7 @@
     "id": "place.arcane-tower",
     "type": "place",
     "name": {
-      "fr": "Arcane Tower",
+      "fr": "Tour arcanique",
       "en": "Arcane Tower",
       "status": "UNOFFICIAL"
     },
@@ -399,7 +399,7 @@
     "id": "place.arfurs-mansion",
     "type": "place",
     "name": {
-      "fr": "Arfur’s Mansion",
+      "fr": "Manoir d’Arfur",
       "en": "Arfur's Mansion",
       "status": "UNOFFICIAL"
     },
@@ -443,7 +443,7 @@
     "id": "place.armbrusts-home",
     "type": "place",
     "name": {
-      "fr": "Armbrust’s Home",
+      "fr": "Maison d’Armbrust",
       "en": "Armbrust's Home",
       "status": "UNOFFICIAL"
     },
@@ -487,18 +487,19 @@
     "id": "place.astral-plane",
     "type": "place",
     "name": {
-      "fr": "Astral Plane",
+      "fr": "Plan Astral",
       "en": "Astral Plane",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "titleTag": {
       "act": "acte3",
-      "level": "aucun",
+      "level": "leger",
       "otherWorks": "aucun"
     },
     "licence": "cc-by-nc-sa-4.0",
@@ -521,7 +522,7 @@
     "id": "place.baldurs-mouth",
     "type": "place",
     "name": {
-      "fr": "Baldur’s Mouth",
+      "fr": "Bouche de Baldur",
       "en": "Baldur's Mouth",
       "status": "UNOFFICIAL"
     },
@@ -565,7 +566,7 @@
     "id": "place.barrens-coop",
     "type": "place",
     "name": {
-      "fr": "Barren’s Coop",
+      "fr": "Poulailler de Barren",
       "en": "Barren's Coop",
       "status": "UNOFFICIAL"
     },
@@ -609,7 +610,7 @@
     "id": "place.basilisk-gate-barracks",
     "type": "place",
     "name": {
-      "fr": "Basilisk Gate Barracks",
+      "fr": "Caserne de la porte du Basilic",
       "en": "Basilisk Gate Barracks",
       "status": "UNOFFICIAL"
     },
@@ -653,7 +654,7 @@
     "id": "place.beehive-general-goods",
     "type": "place",
     "name": {
-      "fr": "Beehive General Goods",
+      "fr": "Magasin général de la Ruche",
       "en": "Beehive General Goods",
       "status": "UNOFFICIAL"
     },
@@ -697,7 +698,7 @@
     "id": "place.bhaal-temple",
     "type": "place",
     "name": {
-      "fr": "Bhaal Temple",
+      "fr": "Temple de Bhaal",
       "en": "Bhaal Temple",
       "status": "UNOFFICIAL"
     },
@@ -741,7 +742,7 @@
     "id": "place.blighted-village",
     "type": "place",
     "name": {
-      "fr": "Blighted Village",
+      "fr": "Village dévasté",
       "en": "Blighted Village",
       "status": "UNOFFICIAL"
     },
@@ -785,7 +786,7 @@
     "id": "place.bloodied-shrine",
     "type": "place",
     "name": {
-      "fr": "Bloodied Shrine",
+      "fr": "Chapelle ensanglantée",
       "en": "Bloodied Shrine",
       "status": "UNOFFICIAL"
     },
@@ -829,7 +830,7 @@
     "id": "place.bloomridge-park",
     "type": "place",
     "name": {
-      "fr": "Bloomridge Park",
+      "fr": "Parc de Bloomridge",
       "en": "Bloomridge Park",
       "status": "UNOFFICIAL"
     },
@@ -873,7 +874,7 @@
     "id": "place.bonecloaks-apothecary",
     "type": "place",
     "name": {
-      "fr": "Bonecloak’s Apothecary",
+      "fr": "Apothicairerie de Bonecloak",
       "en": "Bonecloak's Apothecary",
       "status": "UNOFFICIAL"
     },
@@ -917,7 +918,7 @@
     "id": "place.bruc-and-pishes-emporium",
     "type": "place",
     "name": {
-      "fr": "Bruc and Pishe’s Emporium",
+      "fr": "Bazar de Bruc et Pishe",
       "en": "Bruc and Pishe's Emporium",
       "status": "UNOFFICIAL"
     },
@@ -961,7 +962,7 @@
     "id": "place.campsite",
     "type": "place",
     "name": {
-      "fr": "Campsite",
+      "fr": "Campement",
       "en": "Campsite",
       "status": "UNOFFICIAL"
     },
@@ -995,7 +996,7 @@
     "id": "place.candulhallows-tombstones",
     "type": "place",
     "name": {
-      "fr": "Candulhallow’s Tombstones",
+      "fr": "Pierres tombales de Candulhallow",
       "en": "Candulhallow's Tombstones",
       "status": "UNOFFICIAL"
     },
@@ -1039,7 +1040,7 @@
     "id": "place.carms-garms",
     "type": "place",
     "name": {
-      "fr": "Carm’s Garms",
+      "fr": "Fringues de Carm",
       "en": "Carm's Garms",
       "status": "UNOFFICIAL"
     },
@@ -1083,7 +1084,7 @@
     "id": "place.cazadors-dungeon",
     "type": "place",
     "name": {
-      "fr": "Cazador’s Dungeon",
+      "fr": "Cachots de Cazador",
       "en": "Cazador's Dungeon",
       "status": "UNOFFICIAL"
     },
@@ -1127,7 +1128,7 @@
     "id": "place.central-watch-tower",
     "type": "place",
     "name": {
-      "fr": "Central Watch Tower",
+      "fr": "Tour centrale du guet",
       "en": "Central Watch Tower",
       "status": "UNOFFICIAL"
     },
@@ -1171,7 +1172,7 @@
     "id": "place.chromatic-scale",
     "type": "place",
     "name": {
-      "fr": "Chromatic Scale",
+      "fr": "Gamme chromatique",
       "en": "Chromatic Scale",
       "status": "UNOFFICIAL"
     },
@@ -1215,7 +1216,7 @@
     "id": "place.circus-of-the-last-days",
     "type": "place",
     "name": {
-      "fr": "Circus of the Last Days",
+      "fr": "Cirque des derniers jours",
       "en": "Circus of the Last Days",
       "status": "UNOFFICIAL"
     },
@@ -1259,7 +1260,7 @@
     "id": "place.cloister-of-sombre-embrace",
     "type": "place",
     "name": {
-      "fr": "Cloister of Sombre Embrace",
+      "fr": "Cloître de la sombre étreinte",
       "en": "Cloister of Sombre Embrace",
       "status": "UNOFFICIAL"
     },
@@ -1347,7 +1348,7 @@
     "id": "place.crimson-draughts",
     "type": "place",
     "name": {
-      "fr": "Crimson Draughts",
+      "fr": "Breuvages cramoisis",
       "en": "Crimson Draughts",
       "status": "UNOFFICIAL"
     },
@@ -1391,7 +1392,7 @@
     "id": "place.danthelons-dancing-axe",
     "type": "place",
     "name": {
-      "fr": "Danthelon’s Dancing Axe",
+      "fr": "Hache dansante de Danthelon",
       "en": "Danthelon's Dancing Axe",
       "status": "UNOFFICIAL"
     },
@@ -1435,7 +1436,7 @@
     "id": "place.decrepit-village",
     "type": "place",
     "name": {
-      "fr": "Decrepit Village",
+      "fr": "Village décrépit",
       "en": "Decrepit Village",
       "status": "UNOFFICIAL"
     },
@@ -1479,7 +1480,7 @@
     "id": "place.defiled-temple",
     "type": "place",
     "name": {
-      "fr": "Defiled Temple",
+      "fr": "Temple profané",
       "en": "Defiled Temple",
       "status": "UNOFFICIAL"
     },
@@ -1523,7 +1524,7 @@
     "id": "place.devils-den",
     "type": "place",
     "name": {
-      "fr": "Devil’s Den",
+      "fr": "Antre du diable",
       "en": "Devil's Den",
       "status": "UNOFFICIAL"
     },
@@ -1567,7 +1568,7 @@
     "id": "place.devils-fee",
     "type": "place",
     "name": {
-      "fr": "Devil’s Fee",
+      "fr": "Prix du diable",
       "en": "Devil's Fee",
       "status": "UNOFFICIAL"
     },
@@ -1611,7 +1612,7 @@
     "id": "place.dread-hollow",
     "type": "place",
     "name": {
-      "fr": "Dread Hollow",
+      "fr": "Creux de l’effroi",
       "en": "Dread Hollow",
       "status": "UNOFFICIAL"
     },
@@ -1655,7 +1656,7 @@
     "id": "place.durinbold-mausoleum",
     "type": "place",
     "name": {
-      "fr": "Durinbold Mausoleum",
+      "fr": "Mausolée Durinbold",
       "en": "Durinbold Mausoleum",
       "status": "UNOFFICIAL"
     },
@@ -1699,7 +1700,7 @@
     "id": "place.ebonlake-grotto",
     "type": "place",
     "name": {
-      "fr": "Ebonlake Grotto",
+      "fr": "Grotte du lac d’Ébène",
       "en": "Ebonlake Grotto",
       "status": "UNOFFICIAL"
     },
@@ -1743,7 +1744,7 @@
     "id": "place.elerrathins-home",
     "type": "place",
     "name": {
-      "fr": "Elerrathin’s Home",
+      "fr": "Maison d’Elerrathin",
       "en": "Elerrathin's Home",
       "status": "UNOFFICIAL"
     },
@@ -1787,7 +1788,7 @@
     "id": "place.elfsong-tavern",
     "type": "place",
     "name": {
-      "fr": "Elfsong Tavern",
+      "fr": "Taverne du Chant de l’elfe",
       "en": "Elfsong Tavern",
       "status": "UNOFFICIAL"
     },
@@ -1831,7 +1832,7 @@
     "id": "place.elminsters-library",
     "type": "place",
     "name": {
-      "fr": "Elminster’s Library",
+      "fr": "Bibliothèque d’Elminster",
       "en": "Elminster's Library",
       "status": "UNOFFICIAL"
     },
@@ -1875,7 +1876,7 @@
     "id": "place.emerald-grove",
     "type": "place",
     "name": {
-      "fr": "Emerald Grove",
+      "fr": "Bosquet d’émeraude",
       "en": "Emerald Grove",
       "status": "UNOFFICIAL"
     },
@@ -1919,7 +1920,7 @@
     "id": "place.facemakers-boutique",
     "type": "place",
     "name": {
-      "fr": "Facemaker’s Boutique",
+      "fr": "Boutique du Façonneur de visages",
       "en": "Facemaker's Boutique",
       "status": "UNOFFICIAL"
     },
@@ -1963,7 +1964,7 @@
     "id": "place.felogyrs-fireworks",
     "type": "place",
     "name": {
-      "fr": "Felogyr’s Fireworks",
+      "fr": "Feux d’artifice de Felogyr",
       "en": "Felogyr's Fireworks",
       "status": "UNOFFICIAL"
     },
@@ -2007,7 +2008,7 @@
     "id": "place.flymm-cargo",
     "type": "place",
     "name": {
-      "fr": "Flymm Cargo",
+      "fr": "Cargaisons Flymm",
       "en": "Flymm Cargo",
       "status": "UNOFFICIAL"
     },
@@ -2051,7 +2052,7 @@
     "id": "place.flymms-cobblers",
     "type": "place",
     "name": {
-      "fr": "Flymm’s Cobblers",
+      "fr": "Cordonnerie de Flymm",
       "en": "Flymm's Cobblers",
       "status": "UNOFFICIAL"
     },
@@ -2095,7 +2096,7 @@
     "id": "place.forest",
     "type": "place",
     "name": {
-      "fr": "Forest",
+      "fr": "Forêt",
       "en": "Forest",
       "status": "UNOFFICIAL"
     },
@@ -2139,7 +2140,7 @@
     "id": "place.forge-of-the-nine",
     "type": "place",
     "name": {
-      "fr": "Forge of the Nine",
+      "fr": "Forge des Neuf",
       "en": "Forge of the Nine",
       "status": "UNOFFICIAL"
     },
@@ -2183,7 +2184,7 @@
     "id": "place.fraygos-flophouse",
     "type": "place",
     "name": {
-      "fr": "Fraygo’s Flophouse",
+      "fr": "Asile de nuit de Fraygo",
       "en": "Fraygo's Flophouse",
       "status": "UNOFFICIAL"
     },
@@ -2227,7 +2228,7 @@
     "id": "place.gauntlet-of-shar",
     "type": "place",
     "name": {
-      "fr": "Gauntlet of Shar",
+      "fr": "Épreuves de Shar",
       "en": "Gauntlet of Shar",
       "status": "UNOFFICIAL"
     },
@@ -2271,7 +2272,7 @@
     "id": "place.goblin-camp",
     "type": "place",
     "name": {
-      "fr": "Goblin Camp",
+      "fr": "Camp gobelin",
       "en": "Goblin Camp",
       "status": "UNOFFICIAL"
     },
@@ -2315,7 +2316,7 @@
     "id": "place.golbraiths-cellar",
     "type": "place",
     "name": {
-      "fr": "Golbraith’s Cellar",
+      "fr": "Cave de Golbraith",
       "en": "Golbraith's Cellar",
       "status": "UNOFFICIAL"
     },
@@ -2359,7 +2360,7 @@
     "id": "place.gorion-mausoleum",
     "type": "place",
     "name": {
-      "fr": "Gorion Mausoleum",
+      "fr": "Mausolée Gorion",
       "en": "Gorion Mausoleum",
       "status": "UNOFFICIAL"
     },
@@ -2403,7 +2404,7 @@
     "id": "place.grand-mausoleum",
     "type": "place",
     "name": {
-      "fr": "Grand Mausoleum",
+      "fr": "Grand mausolée",
       "en": "Grand Mausoleum",
       "status": "UNOFFICIAL"
     },
@@ -2447,7 +2448,7 @@
     "id": "place.graveyard-lower-city",
     "type": "place",
     "name": {
-      "fr": "Graveyard",
+      "fr": "Cimetière",
       "en": "Graveyard",
       "status": "UNOFFICIAL"
     },
@@ -2491,7 +2492,7 @@
     "id": "place.grey-harbour-docks",
     "type": "place",
     "name": {
-      "fr": "Grey Harbour Docks",
+      "fr": "Quais du port Gris",
       "en": "Grey Harbour Docks",
       "status": "UNOFFICIAL"
     },
@@ -2567,7 +2568,7 @@
     "id": "place.guildhall",
     "type": "place",
     "name": {
-      "fr": "Guildhall",
+      "fr": "Maison de la Guilde",
       "en": "Guildhall",
       "status": "UNOFFICIAL"
     },
@@ -2611,7 +2612,7 @@
     "id": "place.gur-camp",
     "type": "place",
     "name": {
-      "fr": "Gur Camp",
+      "fr": "Camp gur",
       "en": "Gur Camp",
       "status": "UNOFFICIAL"
     },
@@ -2655,7 +2656,7 @@
     "id": "place.hhune-mausoleum",
     "type": "place",
     "name": {
-      "fr": "Hhune Mausoleum",
+      "fr": "Mausolée Hhune",
       "en": "Hhune Mausoleum",
       "status": "UNOFFICIAL"
     },
@@ -2699,7 +2700,7 @@
     "id": "place.high-hall",
     "type": "place",
     "name": {
-      "fr": "High Hall",
+      "fr": "Haut-Hall",
       "en": "High Hall",
       "status": "UNOFFICIAL"
     },
@@ -2743,7 +2744,7 @@
     "id": "place.highberrys-home",
     "type": "place",
     "name": {
-      "fr": "Highberry’s Home",
+      "fr": "Maison de Highberry",
       "en": "Highberry's Home",
       "status": "UNOFFICIAL"
     },
@@ -2787,7 +2788,7 @@
     "id": "place.house-in-deep-shadows",
     "type": "place",
     "name": {
-      "fr": "House in Deep Shadows",
+      "fr": "Maison dans les ombres profondes",
       "en": "House in Deep Shadows",
       "status": "UNOFFICIAL"
     },
@@ -2831,7 +2832,7 @@
     "id": "place.house-of-grief",
     "type": "place",
     "name": {
-      "fr": "House of Grief",
+      "fr": "Maison du deuil",
       "en": "House of Grief",
       "status": "UNOFFICIAL"
     },
@@ -2875,7 +2876,7 @@
     "id": "place.house-of-healing",
     "type": "place",
     "name": {
-      "fr": "House of Healing",
+      "fr": "Maison de guérison",
       "en": "House of Healing",
       "status": "UNOFFICIAL"
     },
@@ -2919,7 +2920,7 @@
     "id": "place.house-of-hope",
     "type": "place",
     "name": {
-      "fr": "House of Hope",
+      "fr": "Maison de l’espoir",
       "en": "House of Hope",
       "status": "UNOFFICIAL"
     },
@@ -2951,7 +2952,7 @@
     "id": "place.inner-sanctum",
     "type": "place",
     "name": {
-      "fr": "Inner Sanctum",
+      "fr": "Sanctuaire intérieur",
       "en": "Inner Sanctum",
       "status": "UNOFFICIAL"
     },
@@ -2995,7 +2996,7 @@
     "id": "place.iron-throne",
     "type": "place",
     "name": {
-      "fr": "Iron Throne",
+      "fr": "Trône de fer",
       "en": "Iron Throne",
       "status": "UNOFFICIAL"
     },
@@ -3071,7 +3072,7 @@
     "id": "place.knights-of-the-shield-hideout",
     "type": "place",
     "name": {
-      "fr": "Knights of the Shield Hideout",
+      "fr": "Repaire des Chevaliers du Bouclier",
       "en": "Knights of the Shield Hideout",
       "status": "UNOFFICIAL"
     },
@@ -3115,7 +3116,7 @@
     "id": "place.lady-jannaths-estate",
     "type": "place",
     "name": {
-      "fr": "Lady Jannath’s Estate",
+      "fr": "Domaine de dame Jannath",
       "en": "Lady Jannath's Estate",
       "status": "UNOFFICIAL"
     },
@@ -3159,7 +3160,7 @@
     "id": "place.last-light-inn",
     "type": "place",
     "name": {
-      "fr": "Last Light Inn",
+      "fr": "Auberge de la Dernière Lueur",
       "en": "Last Light Inn",
       "status": "UNOFFICIAL"
     },
@@ -3203,7 +3204,7 @@
     "id": "place.lavernicas-home",
     "type": "place",
     "name": {
-      "fr": "Lavernica’s Home",
+      "fr": "Maison de Lavernica",
       "en": "Lavernica's Home",
       "status": "UNOFFICIAL"
     },
@@ -3247,7 +3248,7 @@
     "id": "place.loras-house",
     "type": "place",
     "name": {
-      "fr": "Lora’s House",
+      "fr": "Maison de Lora",
       "en": "Lora's House",
       "status": "UNOFFICIAL"
     },
@@ -3291,7 +3292,7 @@
     "id": "place.lower-city",
     "type": "place",
     "name": {
-      "fr": "Lower City",
+      "fr": "Ville basse",
       "en": "Lower City",
       "status": "UNOFFICIAL"
     },
@@ -3323,7 +3324,7 @@
     "id": "place.lower-city-sewers",
     "type": "place",
     "name": {
-      "fr": "Lower City Sewers",
+      "fr": "Égouts de la Ville basse",
       "en": "Lower City Sewers",
       "status": "UNOFFICIAL"
     },
@@ -3367,7 +3368,7 @@
     "id": "place.lustrous-lass",
     "type": "place",
     "name": {
-      "fr": "Lustrous Lass",
+      "fr": "Demoiselle étincelante",
       "en": "Lustrous Lass",
       "status": "UNOFFICIAL"
     },
@@ -3411,7 +3412,7 @@
     "id": "place.masons-guild",
     "type": "place",
     "name": {
-      "fr": "Mason’s Guild",
+      "fr": "Guilde des maçons",
       "en": "Mason's Guild",
       "status": "UNOFFICIAL"
     },
@@ -3455,7 +3456,7 @@
     "id": "place.mind-flayer-colony",
     "type": "place",
     "name": {
-      "fr": "Mind Flayer Colony",
+      "fr": "Colonie de flagelleurs mentaux",
       "en": "Mind Flayer Colony",
       "status": "UNOFFICIAL"
     },
@@ -3499,7 +3500,7 @@
     "id": "place.moonrise-towers",
     "type": "place",
     "name": {
-      "fr": "Moonrise Towers",
+      "fr": "Tours du lever de lune",
       "en": "Moonrise Towers",
       "status": "UNOFFICIAL"
     },
@@ -3543,7 +3544,7 @@
     "id": "place.moonrise-towers-prison",
     "type": "place",
     "name": {
-      "fr": "Moonrise Towers Prison",
+      "fr": "Prison des tours du lever de lune",
       "en": "Moonrise Towers Prison",
       "status": "UNOFFICIAL"
     },
@@ -3587,7 +3588,7 @@
     "id": "place.moonrise-towers-rooftop",
     "type": "place",
     "name": {
-      "fr": "Moonrise Towers Rooftop",
+      "fr": "Toit des tours du lever de lune",
       "en": "Moonrise Towers Rooftop",
       "status": "UNOFFICIAL"
     },
@@ -3631,7 +3632,7 @@
     "id": "place.morphic-pool",
     "type": "place",
     "name": {
-      "fr": "Morphic Pool",
+      "fr": "Bassin morphique",
       "en": "Morphic Pool",
       "status": "UNOFFICIAL"
     },
@@ -3675,7 +3676,7 @@
     "id": "place.mountain-pass",
     "type": "place",
     "name": {
-      "fr": "Mountain Pass",
+      "fr": "Col de montagne",
       "en": "Mountain Pass",
       "status": "UNOFFICIAL"
     },
@@ -3719,7 +3720,7 @@
     "id": "place.murder-tribunal",
     "type": "place",
     "name": {
-      "fr": "Murder Tribunal",
+      "fr": "Tribunal du meurtre",
       "en": "Murder Tribunal",
       "status": "UNOFFICIAL"
     },
@@ -3763,7 +3764,7 @@
     "id": "place.nautiloid",
     "type": "place",
     "name": {
-      "fr": "Nautiloid",
+      "fr": "Nautiloïde",
       "en": "Nautiloid",
       "status": "UNOFFICIAL"
     },
@@ -3795,7 +3796,7 @@
     "id": "place.necrotic-laboratory",
     "type": "place",
     "name": {
-      "fr": "Necrotic Laboratory",
+      "fr": "Laboratoire nécrotique",
       "en": "Necrotic Laboratory",
       "status": "UNOFFICIAL"
     },
@@ -3839,7 +3840,7 @@
     "id": "place.nortales-hostel",
     "type": "place",
     "name": {
-      "fr": "Nortale’s Hostel",
+      "fr": "Pension de Nortale",
       "en": "Nortale's Hostel",
       "status": "UNOFFICIAL"
     },
@@ -3883,7 +3884,7 @@
     "id": "place.nymphs-grotto",
     "type": "place",
     "name": {
-      "fr": "Nymph’s Grotto",
+      "fr": "Grotte de la nymphe",
       "en": "Nymph's Grotto",
       "status": "UNOFFICIAL"
     },
@@ -3927,7 +3928,7 @@
     "id": "place.old-garlows-place",
     "type": "place",
     "name": {
-      "fr": "Old Garlow’s Place",
+      "fr": "Maison du vieux Garlow",
       "en": "Old Garlow's Place",
       "status": "UNOFFICIAL"
     },
@@ -3971,7 +3972,7 @@
     "id": "place.old-jols",
     "type": "place",
     "name": {
-      "fr": "Old Jol’s",
+      "fr": "Chez le vieux Jol",
       "en": "Old Jol's",
       "status": "UNOFFICIAL"
     },
@@ -4015,7 +4016,7 @@
     "id": "place.open-hand-temple",
     "type": "place",
     "name": {
-      "fr": "Open Hand Temple",
+      "fr": "Temple de la Main ouverte",
       "en": "Open Hand Temple",
       "status": "UNOFFICIAL"
     },
@@ -4059,7 +4060,7 @@
     "id": "place.open-hand-temple-underground-area",
     "type": "place",
     "name": {
-      "fr": "Open Hand Temple Underground Area",
+      "fr": "Souterrains du temple de la Main ouverte",
       "en": "Open Hand Temple Underground Area",
       "status": "UNOFFICIAL"
     },
@@ -4147,7 +4148,7 @@
     "id": "place.overgrown-ruins",
     "type": "place",
     "name": {
-      "fr": "Overgrown Ruins",
+      "fr": "Ruines envahies par la végétation",
       "en": "Overgrown Ruins",
       "status": "UNOFFICIAL"
     },
@@ -4191,7 +4192,7 @@
     "id": "place.overgrown-tunnel",
     "type": "place",
     "name": {
-      "fr": "Overgrown Tunnel",
+      "fr": "Tunnel envahi par la végétation",
       "en": "Overgrown Tunnel",
       "status": "UNOFFICIAL"
     },
@@ -4235,7 +4236,7 @@
     "id": "place.owlbear-nest",
     "type": "place",
     "name": {
-      "fr": "Owlbear Nest",
+      "fr": "Nid de hibours",
       "en": "Owlbear Nest",
       "status": "UNOFFICIAL"
     },
@@ -4279,7 +4280,7 @@
     "id": "place.peartree-house",
     "type": "place",
     "name": {
-      "fr": "Peartree House",
+      "fr": "Maison Peartree",
       "en": "Peartree House",
       "status": "UNOFFICIAL"
     },
@@ -4323,7 +4324,7 @@
     "id": "place.philgraves-mansion",
     "type": "place",
     "name": {
-      "fr": "Philgrave’s Mansion",
+      "fr": "Manoir de Philgrave",
       "en": "Philgrave's Mansion",
       "status": "UNOFFICIAL"
     },
@@ -4367,7 +4368,7 @@
     "id": "place.rainforests-home",
     "type": "place",
     "name": {
-      "fr": "Rainforest’s Home",
+      "fr": "Maison de Rainforest",
       "en": "Rainforest's Home",
       "status": "UNOFFICIAL"
     },
@@ -4411,7 +4412,7 @@
     "id": "place.ramaziths-tower",
     "type": "place",
     "name": {
-      "fr": "Ramazith’s Tower",
+      "fr": "Tour de Ramazith",
       "en": "Ramazith's Tower",
       "status": "UNOFFICIAL"
     },
@@ -4455,7 +4456,7 @@
     "id": "place.ravaged-beach",
     "type": "place",
     "name": {
-      "fr": "Ravaged Beach",
+      "fr": "Plage ravagée",
       "en": "Ravaged Beach",
       "status": "UNOFFICIAL"
     },
@@ -4499,7 +4500,7 @@
     "id": "place.reithwin-tollhouse",
     "type": "place",
     "name": {
-      "fr": "Reithwin Tollhouse",
+      "fr": "Péage de Reithwin",
       "en": "Reithwin Tollhouse",
       "status": "UNOFFICIAL"
     },
@@ -4543,7 +4544,7 @@
     "id": "place.reithwin-town",
     "type": "place",
     "name": {
-      "fr": "Reithwin Town",
+      "fr": "Ville de Reithwin",
       "en": "Reithwin Town",
       "status": "UNOFFICIAL"
     },
@@ -4587,7 +4588,7 @@
     "id": "place.requisitioned-barn",
     "type": "place",
     "name": {
-      "fr": "Requisitioned Barn",
+      "fr": "Grange réquisitionnée",
       "en": "Requisitioned Barn",
       "status": "UNOFFICIAL"
     },
@@ -4665,7 +4666,7 @@
     "id": "place.rivington-general",
     "type": "place",
     "name": {
-      "fr": "Rivington General",
+      "fr": "Magasin général de Rivington",
       "en": "Rivington General",
       "status": "UNOFFICIAL"
     },
@@ -4709,7 +4710,7 @@
     "id": "place.rosymorn-monastery",
     "type": "place",
     "name": {
-      "fr": "Rosymorn Monastery",
+      "fr": "Monastère de Rosymorn",
       "en": "Rosymorn Monastery",
       "status": "UNOFFICIAL"
     },
@@ -4753,7 +4754,7 @@
     "id": "place.rosymorn-monastery-trail",
     "type": "place",
     "name": {
-      "fr": "Rosymorn Monastery Trail",
+      "fr": "Sentier du monastère de Rosymorn",
       "en": "Rosymorn Monastery Trail",
       "status": "UNOFFICIAL"
     },
@@ -4785,7 +4786,7 @@
     "id": "place.ruined-battlefield",
     "type": "place",
     "name": {
-      "fr": "Ruined Battlefield",
+      "fr": "Champ de bataille en ruine",
       "en": "Ruined Battlefield",
       "status": "UNOFFICIAL"
     },
@@ -4829,7 +4830,7 @@
     "id": "place.sacred-pool",
     "type": "place",
     "name": {
-      "fr": "Sacred Pool",
+      "fr": "Bassin sacré",
       "en": "Sacred Pool",
       "status": "UNOFFICIAL"
     },
@@ -4873,7 +4874,7 @@
     "id": "place.secluded-cove",
     "type": "place",
     "name": {
-      "fr": "Secluded Cove",
+      "fr": "Crique isolée",
       "en": "Secluded Cove",
       "status": "UNOFFICIAL"
     },
@@ -4917,7 +4918,7 @@
     "id": "place.secret-chamber",
     "type": "place",
     "name": {
-      "fr": "Secret Chamber",
+      "fr": "Salle secrète",
       "en": "Secret Chamber",
       "status": "UNOFFICIAL"
     },
@@ -4961,7 +4962,7 @@
     "id": "place.selunite-outpost",
     "type": "place",
     "name": {
-      "fr": "Selûnite Outpost",
+      "fr": "Avant-poste selûnite",
       "en": "Selûnite Outpost",
       "status": "UNOFFICIAL"
     },
@@ -5005,7 +5006,7 @@
     "id": "place.shadow-cursed-lands",
     "type": "place",
     "name": {
-      "fr": "Shadow-Cursed Lands",
+      "fr": "Terres maudites par l’ombre",
       "en": "Shadow-Cursed Lands",
       "status": "UNOFFICIAL"
     },
@@ -5037,9 +5038,10 @@
     "id": "place.shadowfell",
     "type": "place",
     "name": {
-      "fr": "Shadowfell",
+      "fr": "Gisombre",
       "en": "Shadowfell",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte2",
@@ -5069,7 +5071,7 @@
     "id": "place.sharess-caress",
     "type": "place",
     "name": {
-      "fr": "Sharess’ Caress",
+      "fr": "Caresse de Sharess",
       "en": "Sharess' Caress",
       "status": "UNOFFICIAL"
     },
@@ -5113,7 +5115,7 @@
     "id": "place.sharran-sanctuary",
     "type": "place",
     "name": {
-      "fr": "Sharran Sanctuary",
+      "fr": "Sanctuaire sharrien",
       "en": "Sharran Sanctuary",
       "status": "UNOFFICIAL"
     },
@@ -5157,7 +5159,7 @@
     "id": "place.shattered-sanctum",
     "type": "place",
     "name": {
-      "fr": "Shattered Sanctum",
+      "fr": "Sanctuaire brisé",
       "en": "Shattered Sanctum",
       "status": "UNOFFICIAL"
     },
@@ -5201,7 +5203,7 @@
     "id": "place.sorcerous-sundries",
     "type": "place",
     "name": {
-      "fr": "Sorcerous Sundries",
+      "fr": "Bazar des sortilèges",
       "en": "Sorcerous Sundries",
       "status": "UNOFFICIAL"
     },
@@ -5245,7 +5247,7 @@
     "id": "place.sorcerous-vault",
     "type": "place",
     "name": {
-      "fr": "Sorcerous Vault",
+      "fr": "Chambre forte des sortilèges",
       "en": "Sorcerous Vault",
       "status": "UNOFFICIAL"
     },
@@ -5289,7 +5291,7 @@
     "id": "place.south-span-checkpoint",
     "type": "place",
     "name": {
-      "fr": "South Span Checkpoint",
+      "fr": "Poste de contrôle de la travée sud",
       "en": "South Span Checkpoint",
       "status": "UNOFFICIAL"
     },
@@ -5333,7 +5335,7 @@
     "id": "place.steel-watch-foundry",
     "type": "place",
     "name": {
-      "fr": "Steel Watch Foundry",
+      "fr": "Fonderie du Guet d’acier",
       "en": "Steel Watch Foundry",
       "status": "UNOFFICIAL"
     },
@@ -5377,7 +5379,7 @@
     "id": "place.storehouse",
     "type": "place",
     "name": {
-      "fr": "Storehouse",
+      "fr": "Entrepôt",
       "en": "Storehouse",
       "status": "UNOFFICIAL"
     },
@@ -5421,7 +5423,7 @@
     "id": "place.stormshore-armoury",
     "type": "place",
     "name": {
-      "fr": "Stormshore Armoury",
+      "fr": "Armurerie de Stormshore",
       "en": "Stormshore Armoury",
       "status": "UNOFFICIAL"
     },
@@ -5465,7 +5467,7 @@
     "id": "place.stormshore-tabernacle",
     "type": "place",
     "name": {
-      "fr": "Stormshore Tabernacle",
+      "fr": "Tabernacle de Stormshore",
       "en": "Stormshore Tabernacle",
       "status": "UNOFFICIAL"
     },
@@ -5553,7 +5555,7 @@
     "id": "place.sunlit-wetlands",
     "type": "place",
     "name": {
-      "fr": "Sunlit Wetlands",
+      "fr": "Marécages ensoleillés",
       "en": "Sunlit Wetlands",
       "status": "UNOFFICIAL"
     },
@@ -5597,7 +5599,7 @@
     "id": "place.sword-coast-couriers",
     "type": "place",
     "name": {
-      "fr": "Sword Coast Couriers",
+      "fr": "Messageries de la Côte des Épées",
       "en": "Sword Coast Couriers",
       "status": "UNOFFICIAL"
     },
@@ -5641,7 +5643,7 @@
     "id": "place.szarr-palace",
     "type": "place",
     "name": {
-      "fr": "Szarr Palace",
+      "fr": "Palais Szarr",
       "en": "Szarr Palace",
       "status": "UNOFFICIAL"
     },
@@ -5685,7 +5687,7 @@
     "id": "place.tadpoling-centre",
     "type": "place",
     "name": {
-      "fr": "Tadpoling Centre",
+      "fr": "Centre d’implantation des têtards",
       "en": "Tadpoling Centre",
       "status": "UNOFFICIAL"
     },
@@ -5773,7 +5775,7 @@
     "id": "place.the-blushing-mermaid",
     "type": "place",
     "name": {
-      "fr": "Blushing Mermaid",
+      "fr": "Sirène rougissante",
       "en": "Blushing Mermaid",
       "status": "UNOFFICIAL"
     },
@@ -5817,7 +5819,7 @@
     "id": "place.the-counting-house",
     "type": "place",
     "name": {
-      "fr": "Counting House",
+      "fr": "Comptoir",
       "en": "Counting House",
       "status": "UNOFFICIAL"
     },
@@ -5861,7 +5863,7 @@
     "id": "place.the-dragons-sanctum",
     "type": "place",
     "name": {
-      "fr": "Dragon’s Sanctum",
+      "fr": "Sanctuaire du dragon",
       "en": "Dragon's Sanctum",
       "status": "UNOFFICIAL"
     },
@@ -5905,7 +5907,7 @@
     "id": "place.the-festering-cove",
     "type": "place",
     "name": {
-      "fr": "Festering Cove",
+      "fr": "Crique putride",
       "en": "Festering Cove",
       "status": "UNOFFICIAL"
     },
@@ -5949,7 +5951,7 @@
     "id": "place.the-glitter-gala",
     "type": "place",
     "name": {
-      "fr": "Glitter Gala",
+      "fr": "Gala scintillant",
       "en": "Glitter Gala",
       "status": "UNOFFICIAL"
     },
@@ -5993,7 +5995,7 @@
     "id": "place.the-hollow",
     "type": "place",
     "name": {
-      "fr": "Hollow",
+      "fr": "Creux",
       "en": "Hollow",
       "status": "UNOFFICIAL"
     },
@@ -6037,7 +6039,7 @@
     "id": "place.the-lodge",
     "type": "place",
     "name": {
-      "fr": "Lodge",
+      "fr": "Loge",
       "en": "Lodge",
       "status": "UNOFFICIAL"
     },
@@ -6081,7 +6083,7 @@
     "id": "place.the-risen-road",
     "type": "place",
     "name": {
-      "fr": "Risen Road",
+      "fr": "Route surélevée",
       "en": "Risen Road",
       "status": "UNOFFICIAL"
     },
@@ -6125,7 +6127,7 @@
     "id": "place.the-singing-lute",
     "type": "place",
     "name": {
-      "fr": "Singing Lute",
+      "fr": "Luth chantant",
       "en": "Singing Lute",
       "status": "UNOFFICIAL"
     },
@@ -6169,7 +6171,7 @@
     "id": "place.the-velveteen-elixir",
     "type": "place",
     "name": {
-      "fr": "Velveteen Elixir",
+      "fr": "Élixir de velours",
       "en": "Velveteen Elixir",
       "status": "UNOFFICIAL"
     },
@@ -6213,7 +6215,7 @@
     "id": "place.the-waning-moon",
     "type": "place",
     "name": {
-      "fr": "Waning Moon",
+      "fr": "Lune décroissante",
       "en": "Waning Moon",
       "status": "UNOFFICIAL"
     },
@@ -6257,7 +6259,7 @@
     "id": "place.the-wyrmway",
     "type": "place",
     "name": {
-      "fr": "Wyrmway",
+      "fr": "Voie du Wyrm",
       "en": "Wyrmway",
       "status": "UNOFFICIAL"
     },
@@ -6301,7 +6303,7 @@
     "id": "place.tiefling-hideout",
     "type": "place",
     "name": {
-      "fr": "Tiefling Hideout",
+      "fr": "Cachette des tieffelins",
       "en": "Tiefling Hideout",
       "status": "UNOFFICIAL"
     },
@@ -6345,7 +6347,7 @@
     "id": "place.undercity",
     "type": "place",
     "name": {
-      "fr": "Undercity",
+      "fr": "Ville souterraine",
       "en": "Undercity",
       "status": "UNOFFICIAL"
     },
@@ -6377,7 +6379,7 @@
     "id": "place.undercity-ruins",
     "type": "place",
     "name": {
-      "fr": "Undercity Ruins",
+      "fr": "Ruines de la Ville souterraine",
       "en": "Undercity Ruins",
       "status": "UNOFFICIAL"
     },
@@ -6421,9 +6423,10 @@
     "id": "place.underdark",
     "type": "place",
     "name": {
-      "fr": "Underdark",
+      "fr": "Outreterre",
       "en": "Underdark",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte1",
@@ -6453,7 +6456,7 @@
     "id": "place.underdark-pleasures",
     "type": "place",
     "name": {
-      "fr": "Underdark Pleasures",
+      "fr": "Plaisirs de l’Outreterre",
       "en": "Underdark Pleasures",
       "status": "UNOFFICIAL"
     },
@@ -6497,7 +6500,7 @@
     "id": "place.underground-passage",
     "type": "place",
     "name": {
-      "fr": "Underground Passage",
+      "fr": "Passage souterrain",
       "en": "Underground Passage",
       "status": "UNOFFICIAL"
     },
@@ -6541,7 +6544,7 @@
     "id": "place.upper-city",
     "type": "place",
     "name": {
-      "fr": "Upper City",
+      "fr": "Ville haute",
       "en": "Upper City",
       "status": "UNOFFICIAL"
     },
@@ -6573,7 +6576,7 @@
     "id": "place.upper-city-gate-checkpoint",
     "type": "place",
     "name": {
-      "fr": "Upper City Gate Checkpoint",
+      "fr": "Poste de contrôle de la porte de la Ville haute",
       "en": "Upper City Gate Checkpoint",
       "status": "UNOFFICIAL"
     },
@@ -6617,7 +6620,7 @@
     "id": "place.vonayns-home",
     "type": "place",
     "name": {
-      "fr": "Vonayn’s Home",
+      "fr": "Maison de Vonayn",
       "en": "Vonayn's Home",
       "status": "UNOFFICIAL"
     },
@@ -6661,7 +6664,7 @@
     "id": "place.water-queens-house",
     "type": "place",
     "name": {
-      "fr": "Water Queen’s House",
+      "fr": "Maison de la Reine des eaux",
       "en": "Water Queen's House",
       "status": "UNOFFICIAL"
     },
@@ -6705,7 +6708,7 @@
     "id": "place.waukeens-rest",
     "type": "place",
     "name": {
-      "fr": "Waukeen’s Rest",
+      "fr": "Repos de Waukeen",
       "en": "Waukeen's Rest",
       "status": "UNOFFICIAL"
     },
@@ -6749,7 +6752,7 @@
     "id": "place.western-beach",
     "type": "place",
     "name": {
-      "fr": "Western Beach",
+      "fr": "Plage de l’ouest",
       "en": "Western Beach",
       "status": "UNOFFICIAL"
     },
@@ -6793,7 +6796,7 @@
     "id": "place.whispering-depths",
     "type": "place",
     "name": {
-      "fr": "Whispering Depths",
+      "fr": "Profondeurs murmurantes",
       "en": "Whispering Depths",
       "status": "UNOFFICIAL"
     },
@@ -6837,7 +6840,7 @@
     "id": "place.wilderness",
     "type": "place",
     "name": {
-      "fr": "Wilderness",
+      "fr": "Terres sauvages",
       "en": "Wilderness",
       "status": "UNOFFICIAL"
     },
@@ -6869,7 +6872,7 @@
     "id": "place.worg-pens",
     "type": "place",
     "name": {
-      "fr": "Worg Pens",
+      "fr": "Enclos des worgs",
       "en": "Worg Pens",
       "status": "UNOFFICIAL"
     },
@@ -6913,7 +6916,7 @@
     "id": "place.wyrms-crossing",
     "type": "place",
     "name": {
-      "fr": "Wyrm’s Crossing",
+      "fr": "Passage du Wyrm",
       "en": "Wyrm's Crossing",
       "status": "UNOFFICIAL"
     },
@@ -6945,7 +6948,7 @@
     "id": "place.wyrms-rock-fortress",
     "type": "place",
     "name": {
-      "fr": "Wyrm’s Rock Fortress",
+      "fr": "Forteresse du rocher du Wyrm",
       "en": "Wyrm's Rock Fortress",
       "status": "UNOFFICIAL"
     },
@@ -6977,7 +6980,7 @@
     "id": "place.wyrms-rock-prison",
     "type": "place",
     "name": {
-      "fr": "Wyrm’s Rock Prison",
+      "fr": "Prison du rocher du Wyrm",
       "en": "Wyrm's Rock Prison",
       "status": "UNOFFICIAL"
     },
@@ -7021,7 +7024,7 @@
     "id": "place.zhentarim-basement",
     "type": "place",
     "name": {
-      "fr": "Zhentarim Basement",
+      "fr": "Sous-sol du Zhentarim",
       "en": "Zhentarim Basement",
       "status": "UNOFFICIAL"
     },

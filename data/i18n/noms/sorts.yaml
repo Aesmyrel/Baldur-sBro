@@ -1,0 +1,110 @@
+# Noms français des sorts sans nom officiel trouvé automatiquement (lot noms-spell). Voir docs/LOTS_ECRITURE.md §3.
+spell.blindness:
+  fr: Cécité
+  statut: VF_DND
+  source: aidedd
+spell.bone-chill:
+  fr: Frisson des os
+  statut: NON_OFFICIELLE
+spell.branding-smite-melee:
+  fr: Châtiment révélateur (corps à corps)
+  statut: VF_DND
+  source: aidedd
+spell.branding-smite-ranged:
+  fr: Châtiment révélateur (à distance)
+  statut: VF_DND
+  source: aidedd
+spell.bursting-sinew:
+  fr: Éclatement des chairs
+  statut: NON_OFFICIELLE
+spell.conjure-minor-elemental:
+  fr: Invocation d’élémentaires mineurs
+  statut: VF_DND
+  source: aidedd
+spell.conjure-woodland-being:
+  fr: Invocation d’êtres sylvestres
+  statut: VF_DND
+  source: aidedd
+spell.dirty-trick-vicious-mockery:
+  fr: "Coup bas : moquerie cruelle"
+  statut: NON_OFFICIELLE
+spell.drow-magic-faerie-fire:
+  fr: "Magie drow : lueurs féeriques"
+  statut: NON_OFFICIELLE
+spell.elemental-weapon-acid:
+  fr: "Arme élémentaire : acide"
+  statut: VF_DND
+  source: aidedd
+spell.elemental-weapon-cold:
+  fr: "Arme élémentaire : froid"
+  statut: VF_DND
+  source: aidedd
+spell.elemental-weapon-fire:
+  fr: "Arme élémentaire : feu"
+  statut: VF_DND
+  source: aidedd
+spell.elemental-weapon-lightning:
+  fr: "Arme élémentaire : foudre"
+  statut: VF_DND
+  source: aidedd
+spell.elemental-weapon-thunder:
+  fr: "Arme élémentaire : tonnerre"
+  statut: VF_DND
+  source: aidedd
+spell.enhance-leap:
+  fr: Amélioration de saut
+  statut: NON_OFFICIELLE
+spell.enlarge-duergar:
+  fr: Agrandissement
+  statut: VF_DND
+  source: aidedd
+spell.eyes-of-the-dark-darkness:
+  fr: "Yeux de l’obscurité : ténèbres"
+  statut: NON_OFFICIELLE
+spell.find-familiar-imp:
+  fr: "Appel de familier : diablotin"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+spell.find-familiar-quasit:
+  fr: "Appel de familier : quasit"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+spell.githyanki-psionics-jump:
+  fr: "Psionique githyanki : saut"
+  statut: NON_OFFICIELLE
+spell.githyanki-psionics-mage-hand:
+  fr: "Psionique githyanki : main de mage"
+  statut: NON_OFFICIELLE
+spell.grant-flight:
+  fr: Octroi du vol
+  statut: NON_OFFICIELLE
+spell.improved-minor-illusion:
+  fr: Illusion mineure améliorée
+  statut: NON_OFFICIELLE
+spell.infernal-legacy-hellish-rebuke:
+  fr: "Héritage infernal : représailles infernales"
+  statut: NON_OFFICIELLE
+spell.invisibility-duergar:
+  fr: Invisibilité duergar
+  statut: NON_OFFICIELLE
+spell.legacy-of-avernus-branding-smite:
+  fr: "Héritage d’Avernus : châtiment révélateur"
+  statut: NON_OFFICIELLE
+spell.legacy-of-avernus-searing-smite:
+  fr: "Héritage d’Avernus : châtiment calcinant"
+  statut: NON_OFFICIELLE
+spell.legacy-of-cania-burning-hands:
+  fr: "Héritage de Cania : mains brûlantes"
+  statut: NON_OFFICIELLE
+spell.legacy-of-cania-flame-blade:
+  fr: "Héritage de Cania : lame de feu"
+  statut: NON_OFFICIELLE
+spell.luminous-arrow:
+  fr: Flèche lumineuse
+  statut: NON_OFFICIELLE
+spell.star-map-guiding-bolt:
+  fr: "Carte stellaire : éclair traçant"
+  statut: NON_OFFICIELLE
+spell.warden-of-vitality:
+  fr: Gardien de vitalité
+  statut: NON_OFFICIELLE

@@ -1636,9 +1636,10 @@
     "id": "spell.blindness",
     "type": "spell",
     "name": {
-      "fr": "Blindness",
+      "fr": "Cécité",
       "en": "Blindness",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -1940,7 +1941,7 @@
     "id": "spell.bone-chill",
     "type": "spell",
     "name": {
-      "fr": "Bone Chill",
+      "fr": "Frisson des os",
       "en": "Bone Chill",
       "status": "UNOFFICIAL"
     },
@@ -2228,9 +2229,10 @@
     "id": "spell.branding-smite-melee",
     "type": "spell",
     "name": {
-      "fr": "Branding Smite (Melee)",
+      "fr": "Châtiment révélateur (corps à corps)",
       "en": "Branding Smite (Melee)",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -2299,9 +2301,10 @@
     "id": "spell.branding-smite-ranged",
     "type": "spell",
     "name": {
-      "fr": "Branding Smite (Ranged)",
+      "fr": "Châtiment révélateur (à distance)",
       "en": "Branding Smite (Ranged)",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -2469,7 +2472,7 @@
     "id": "spell.bursting-sinew",
     "type": "spell",
     "name": {
-      "fr": "Bursting Sinew",
+      "fr": "Éclatement des chairs",
       "en": "Bursting Sinew",
       "status": "UNOFFICIAL"
     },
@@ -3749,7 +3752,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -3902,9 +3905,10 @@
     "id": "spell.conjure-minor-elemental",
     "type": "spell",
     "name": {
-      "fr": "Conjure Minor Elemental",
+      "fr": "Invocation d’élémentaires mineurs",
       "en": "Conjure Minor Elemental",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -3966,9 +3970,10 @@
     "id": "spell.conjure-woodland-being",
     "type": "spell",
     "name": {
-      "fr": "Conjure Woodland Being",
+      "fr": "Invocation d’êtres sylvestres",
       "en": "Conjure Woodland Being",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -5334,7 +5339,7 @@
     "id": "spell.dirty-trick-vicious-mockery",
     "type": "spell",
     "name": {
-      "fr": "Dirty Trick: Vicious Mockery",
+      "fr": "Coup bas : moquerie cruelle",
       "en": "Dirty Trick: Vicious Mockery",
       "status": "UNOFFICIAL"
     },
@@ -6015,7 +6020,7 @@
     "id": "spell.drow-magic-faerie-fire",
     "type": "spell",
     "name": {
-      "fr": "Drow Magic: Faerie Fire",
+      "fr": "Magie drow : lueurs féeriques",
       "en": "Drow Magic: Faerie Fire",
       "status": "UNOFFICIAL"
     },
@@ -6216,9 +6221,10 @@
     "id": "spell.elemental-weapon-acid",
     "type": "spell",
     "name": {
-      "fr": "Elemental Weapon: Acid",
+      "fr": "Arme élémentaire : acide",
       "en": "Elemental Weapon: Acid",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6286,9 +6292,10 @@
     "id": "spell.elemental-weapon-cold",
     "type": "spell",
     "name": {
-      "fr": "Elemental Weapon: Cold",
+      "fr": "Arme élémentaire : froid",
       "en": "Elemental Weapon: Cold",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6356,9 +6363,10 @@
     "id": "spell.elemental-weapon-fire",
     "type": "spell",
     "name": {
-      "fr": "Elemental Weapon: Fire",
+      "fr": "Arme élémentaire : feu",
       "en": "Elemental Weapon: Fire",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6426,9 +6434,10 @@
     "id": "spell.elemental-weapon-lightning",
     "type": "spell",
     "name": {
-      "fr": "Elemental Weapon: Lightning",
+      "fr": "Arme élémentaire : foudre",
       "en": "Elemental Weapon: Lightning",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6496,9 +6505,10 @@
     "id": "spell.elemental-weapon-thunder",
     "type": "spell",
     "name": {
-      "fr": "Elemental Weapon: Thunder",
+      "fr": "Arme élémentaire : tonnerre",
       "en": "Elemental Weapon: Thunder",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -6633,7 +6643,7 @@
     "id": "spell.enhance-leap",
     "type": "spell",
     "name": {
-      "fr": "Enhance Leap",
+      "fr": "Amélioration de saut",
       "en": "Enhance Leap",
       "status": "UNOFFICIAL"
     },
@@ -6728,9 +6738,10 @@
     "id": "spell.enlarge-duergar",
     "type": "spell",
     "name": {
-      "fr": "Enlarge",
+      "fr": "Agrandissement",
       "en": "Enlarge",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "prologue",
@@ -7330,7 +7341,7 @@
     "id": "spell.eyes-of-the-dark-darkness",
     "type": "spell",
     "name": {
-      "fr": "Eyes of the Dark: Darkness",
+      "fr": "Yeux de l’obscurité : ténèbres",
       "en": "Eyes of the Dark: Darkness",
       "status": "UNOFFICIAL"
     },
@@ -7964,9 +7975,10 @@
     "id": "spell.find-familiar-imp",
     "type": "spell",
     "name": {
-      "fr": "Find Familiar: Imp",
+      "fr": "Appel de familier : diablotin",
       "en": "Find Familiar: Imp",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -8021,9 +8033,10 @@
     "id": "spell.find-familiar-quasit",
     "type": "spell",
     "name": {
-      "fr": "Find Familiar: Quasit",
+      "fr": "Appel de familier : quasit",
       "en": "Find Familiar: Quasit",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -9075,7 +9088,7 @@
     "id": "spell.githyanki-psionics-jump",
     "type": "spell",
     "name": {
-      "fr": "Githyanki Psionics: Jump",
+      "fr": "Psionique githyanki : saut",
       "en": "Githyanki Psionics: Jump",
       "status": "UNOFFICIAL"
     },
@@ -9139,7 +9152,7 @@
     "id": "spell.githyanki-psionics-mage-hand",
     "type": "spell",
     "name": {
-      "fr": "Githyanki Psionics: Mage Hand",
+      "fr": "Psionique githyanki : main de mage",
       "en": "Githyanki Psionics: Mage Hand",
       "status": "UNOFFICIAL"
     },
@@ -9383,7 +9396,7 @@
     "id": "spell.grant-flight",
     "type": "spell",
     "name": {
-      "fr": "Grant Flight",
+      "fr": "Octroi du vol",
       "en": "Grant Flight",
       "status": "UNOFFICIAL"
     },
@@ -11697,7 +11710,7 @@
     "id": "spell.improved-minor-illusion",
     "type": "spell",
     "name": {
-      "fr": "Improved Minor Illusion",
+      "fr": "Illusion mineure améliorée",
       "en": "Improved Minor Illusion",
       "status": "UNOFFICIAL"
     },
@@ -11746,7 +11759,7 @@
     "id": "spell.infernal-legacy-hellish-rebuke",
     "type": "spell",
     "name": {
-      "fr": "Infernal Legacy: Hellish Rebuke",
+      "fr": "Héritage infernal : représailles infernales",
       "en": "Infernal Legacy: Hellish Rebuke",
       "status": "UNOFFICIAL"
     },
@@ -12086,7 +12099,7 @@
     "id": "spell.invisibility-duergar",
     "type": "spell",
     "name": {
-      "fr": "Duergar Invisibility",
+      "fr": "Invisibilité duergar",
       "en": "Duergar Invisibility",
       "status": "UNOFFICIAL"
     },
@@ -12232,7 +12245,7 @@
     "id": "spell.legacy-of-avernus-branding-smite",
     "type": "spell",
     "name": {
-      "fr": "Legacy of Avernus: Branding Smite",
+      "fr": "Héritage d’Avernus : châtiment révélateur",
       "en": "Legacy of Avernus: Branding Smite",
       "status": "UNOFFICIAL"
     },
@@ -12303,7 +12316,7 @@
     "id": "spell.legacy-of-avernus-searing-smite",
     "type": "spell",
     "name": {
-      "fr": "Legacy of Avernus: Searing Smite",
+      "fr": "Héritage d’Avernus : châtiment calcinant",
       "en": "Legacy of Avernus: Searing Smite",
       "status": "UNOFFICIAL"
     },
@@ -12378,7 +12391,7 @@
     "id": "spell.legacy-of-cania-burning-hands",
     "type": "spell",
     "name": {
-      "fr": "Legacy of Cania: Burning Hands",
+      "fr": "Héritage de Cania : mains brûlantes",
       "en": "Legacy of Cania: Burning Hands",
       "status": "UNOFFICIAL"
     },
@@ -12444,7 +12457,7 @@
     "id": "spell.legacy-of-cania-flame-blade",
     "type": "spell",
     "name": {
-      "fr": "Legacy of Cania: Flame Blade",
+      "fr": "Héritage de Cania : lame de feu",
       "en": "Legacy of Cania: Flame Blade",
       "status": "UNOFFICIAL"
     },
@@ -12994,7 +13007,7 @@
     "id": "spell.luminous-arrow",
     "type": "spell",
     "name": {
-      "fr": "Luminous Arrow",
+      "fr": "Flèche lumineuse",
       "en": "Luminous Arrow",
       "status": "UNOFFICIAL"
     },
@@ -14120,7 +14133,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -18080,7 +18093,7 @@
     "id": "spell.star-map-guiding-bolt",
     "type": "spell",
     "name": {
-      "fr": "Star Map: Guiding Bolt",
+      "fr": "Carte stellaire : éclair traçant",
       "en": "Star Map: Guiding Bolt",
       "status": "UNOFFICIAL"
     },
@@ -19650,7 +19663,7 @@
     "id": "spell.warden-of-vitality",
     "type": "spell",
     "name": {
-      "fr": "Warden of Vitality",
+      "fr": "Gardien de vitalité",
       "en": "Warden of Vitality",
       "status": "UNOFFICIAL"
     },
@@ -19783,7 +19796,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },

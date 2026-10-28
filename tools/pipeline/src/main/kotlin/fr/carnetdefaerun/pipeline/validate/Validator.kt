@@ -15,6 +15,9 @@ private val LICENCES = mapOf(
     "carnet" to "texte rédigé pour le carnet",
 )
 
+/** Sources admises pour un nom français, en vocabulaire seulement (docs/SOURCES.md §2.4 et §2.5). */
+private val NAME_SOURCES = setOf("aidedd", "srd-5.2.1-fr")
+
 /**
  * Contrôles bloquants des données de jeu (PLAN §3.4) : identifiants, noms, étiquettes de spoiler
  * cohérentes, licences et attributions, liens. Chaque problème est décrit en une ligne.
@@ -34,6 +37,8 @@ class Validator {
             if (e.name.fr.isBlank() || e.name.en.isBlank()) problems += "$where : nom manquant"
             if (e.name.status == NameStatus.UNOFFICIAL && e.name.fr == e.name.en.replace('\'', '’')) warnings += "$where : nom français à proposer"
             if (e.name.status == NameStatus.CORRECTED) problems += "$where : statut « corrigé » réservé aux corrections locales du joueur"
+            if (e.name.status == NameStatus.VF_DND && e.name.source == null) problems += "$where : nom officiel sans source"
+            e.name.source?.let { if (it !in NAME_SOURCES) problems += "$where : source de nom inconnue « $it »" }
 
             // Étiquettes : jamais l'attente du pipeline, et la fiche protège au moins autant que son nom.
             if (e.tag == SpoilerTag.LOCKED || e.titleTag == SpoilerTag.LOCKED) problems += "$where : étiquette non calculée"

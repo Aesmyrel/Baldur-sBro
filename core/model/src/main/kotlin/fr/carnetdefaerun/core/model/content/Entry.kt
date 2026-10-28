@@ -30,7 +30,7 @@ data class Name(
     val fr: String,
     val en: String,
     val status: NameStatus,
-    /** Identifiant de la source du nom français (registre `data/sources.yaml`), absent pour une proposition du projet. */
+    /** Identifiant de la source du nom français (`aidedd`, `srd-5.2.1-fr` : docs/SOURCES.md), absent pour une proposition du projet. */
     val source: String? = null,
 )
 

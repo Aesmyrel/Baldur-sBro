@@ -3,7 +3,7 @@
     "id": "feature.aberration-hunter",
     "type": "feature",
     "name": {
-      "fr": "Aberration Hunter",
+      "fr": "Chasseur d’aberrations",
       "en": "Aberration Hunter",
       "status": "UNOFFICIAL"
     },
@@ -50,7 +50,7 @@
     "id": "feature.absolute-night",
     "type": "feature",
     "name": {
-      "fr": "Absolute Night",
+      "fr": "Nuit absolue",
       "en": "Absolute Night",
       "status": "UNOFFICIAL"
     },
@@ -109,7 +109,7 @@
     "id": "feature.absolutes-aegis",
     "type": "feature",
     "name": {
-      "fr": "Absolute’s Aegis",
+      "fr": "Égide de l’Absolue",
       "en": "Absolute's Aegis",
       "status": "UNOFFICIAL"
     },
@@ -156,7 +156,7 @@
     "id": "feature.absolutes-bane",
     "type": "feature",
     "name": {
-      "fr": "Absolute’s Bane",
+      "fr": "Fléau de l’Absolue",
       "en": "Absolute's Bane",
       "status": "UNOFFICIAL"
     },
@@ -215,7 +215,7 @@
     "id": "feature.absolutes-mercy",
     "type": "feature",
     "name": {
-      "fr": "Absolute’s Mercy",
+      "fr": "Miséricorde de l’Absolue",
       "en": "Absolute's Mercy",
       "status": "UNOFFICIAL"
     },
@@ -262,7 +262,7 @@
     "id": "feature.absolutes-tempest",
     "type": "feature",
     "name": {
-      "fr": "Absolute’s Tempest",
+      "fr": "Tempête de l’Absolue",
       "en": "Absolute's Tempest",
       "status": "UNOFFICIAL"
     },
@@ -309,7 +309,7 @@
     "id": "feature.absolutes-ward",
     "type": "feature",
     "name": {
-      "fr": "Absolute’s Ward",
+      "fr": "Protection de l’Absolue",
       "en": "Absolute's Ward",
       "status": "UNOFFICIAL"
     },
@@ -356,9 +356,10 @@
     "id": "feature.absorb-elements",
     "type": "feature",
     "name": {
-      "fr": "Absorb Elements",
+      "fr": "Absorption des éléments",
       "en": "Absorb Elements",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "acte2",
@@ -412,7 +413,7 @@
     "id": "feature.adamantine-backlash",
     "type": "feature",
     "name": {
-      "fr": "Adamantine Backlash",
+      "fr": "Contrecoup d’adamantium",
       "en": "Adamantine Backlash",
       "status": "UNOFFICIAL"
     },
@@ -471,7 +472,7 @@
     "id": "feature.adamantine-shield-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Adamantine Shield",
+      "fr": "Bouclier d’adamantium",
       "en": "Adamantine Shield",
       "status": "UNOFFICIAL"
     },
@@ -530,7 +531,7 @@
     "id": "feature.additional-spell-slot",
     "type": "feature",
     "name": {
-      "fr": "Additional Spell Slot",
+      "fr": "Emplacement de sort supplémentaire",
       "en": "Additional Spell Slot",
       "status": "UNOFFICIAL"
     },
@@ -585,7 +586,7 @@
     "id": "feature.adrenaline-rush",
     "type": "feature",
     "name": {
-      "fr": "Adrenaline Rush",
+      "fr": "Poussée d’adrénaline",
       "en": "Adrenaline Rush",
       "status": "UNOFFICIAL"
     },
@@ -644,7 +645,7 @@
     "id": "feature.adroit-caster",
     "type": "feature",
     "name": {
-      "fr": "Adroit Caster",
+      "fr": "Incantateur adroit",
       "en": "Adroit Caster",
       "status": "UNOFFICIAL"
     },
@@ -704,7 +705,7 @@
     "id": "feature.adroit-reflexes",
     "type": "feature",
     "name": {
-      "fr": "Adroit Reflexes",
+      "fr": "Réflexes adroits",
       "en": "Adroit Reflexes",
       "status": "UNOFFICIAL"
     },
@@ -751,7 +752,7 @@
     "id": "feature.aegis-palms",
     "type": "feature",
     "name": {
-      "fr": "Aegis Palms",
+      "fr": "Paumes d’égide",
       "en": "Aegis Palms",
       "status": "UNOFFICIAL"
     },
@@ -810,7 +811,7 @@
     "id": "feature.after-death-do-us-part-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "After Death Do Us Part",
+      "fr": "Par-delà la mort",
       "en": "After Death Do Us Part",
       "status": "UNOFFICIAL"
     },
@@ -870,7 +871,7 @@
     "id": "feature.ambusher-1",
     "type": "feature",
     "name": {
-      "fr": "Ambusher",
+      "fr": "Embusqué",
       "en": "Ambusher",
       "status": "UNOFFICIAL"
     },
@@ -944,7 +945,7 @@
     "id": "feature.ambusher-2",
     "type": "feature",
     "name": {
-      "fr": "Ambusher",
+      "fr": "Embusqué",
       "en": "Ambusher",
       "status": "UNOFFICIAL"
     },
@@ -1000,7 +1001,7 @@
     "id": "feature.ambushers-streak",
     "type": "feature",
     "name": {
-      "fr": "Ambusher’s Streak",
+      "fr": "Fougue de l’embusqué",
       "en": "Ambusher's Streak",
       "status": "UNOFFICIAL"
     },
@@ -1047,7 +1048,7 @@
     "id": "feature.ancient-grudges",
     "type": "feature",
     "name": {
-      "fr": "Ancient Grudges",
+      "fr": "Rancunes ancestrales",
       "en": "Ancient Grudges",
       "status": "UNOFFICIAL"
     },
@@ -1112,7 +1113,7 @@
     "id": "feature.angelclocker-knuckles",
     "type": "feature",
     "name": {
-      "fr": "Angelclocker Knuckles",
+      "fr": "Poings cogne-ange",
       "en": "Angelclocker Knuckles",
       "status": "UNOFFICIAL"
     },
@@ -1159,7 +1160,7 @@
     "id": "feature.arcane-ashes",
     "type": "feature",
     "name": {
-      "fr": "Arcane Ashes",
+      "fr": "Cendres arcaniques",
       "en": "Arcane Ashes",
       "status": "UNOFFICIAL"
     },
@@ -1218,7 +1219,7 @@
     "id": "feature.arcane-battery",
     "type": "feature",
     "name": {
-      "fr": "Arcane Battery",
+      "fr": "Réserve arcanique",
       "en": "Arcane Battery",
       "status": "UNOFFICIAL"
     },
@@ -1277,7 +1278,7 @@
     "id": "feature.arcane-echomalefaction",
     "type": "feature",
     "name": {
-      "fr": "Arcane Echomalefaction",
+      "fr": "Écho-maléfice arcanique",
       "en": "Arcane Echomalefaction",
       "status": "UNOFFICIAL"
     },
@@ -1336,7 +1337,7 @@
     "id": "feature.arcane-enchantment-1",
     "type": "feature",
     "name": {
-      "fr": "Arcane Enchantment",
+      "fr": "Enchantement arcanique",
       "en": "Arcane Enchantment",
       "status": "UNOFFICIAL"
     },
@@ -1433,7 +1434,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -1455,7 +1456,7 @@
     "id": "feature.arcane-enchantment-2",
     "type": "feature",
     "name": {
-      "fr": "Arcane Enchantment",
+      "fr": "Enchantement arcanique",
       "en": "Arcane Enchantment",
       "status": "UNOFFICIAL"
     },
@@ -1502,7 +1503,7 @@
     "id": "feature.arcane-radiance",
     "type": "feature",
     "name": {
-      "fr": "Arcane Radiance",
+      "fr": "Rayonnement arcanique",
       "en": "Arcane Radiance",
       "status": "UNOFFICIAL"
     },
@@ -1561,7 +1562,7 @@
     "id": "feature.arcane-vampirism",
     "type": "feature",
     "name": {
-      "fr": "Arcane Vampirism",
+      "fr": "Vampirisme arcanique",
       "en": "Arcane Vampirism",
       "status": "UNOFFICIAL"
     },
@@ -1608,7 +1609,7 @@
     "id": "feature.arcane-vehemence",
     "type": "feature",
     "name": {
-      "fr": "Arcane Vehemence",
+      "fr": "Véhémence arcanique",
       "en": "Arcane Vehemence",
       "status": "UNOFFICIAL"
     },
@@ -1656,7 +1657,7 @@
     "id": "feature.arcane-vivaciousness",
     "type": "feature",
     "name": {
-      "fr": "Arcane Vivaciousness",
+      "fr": "Vivacité arcanique",
       "en": "Arcane Vivaciousness",
       "status": "UNOFFICIAL"
     },
@@ -1715,7 +1716,7 @@
     "id": "feature.arming-enhancement",
     "type": "feature",
     "name": {
-      "fr": "Arming Enhancement",
+      "fr": "Amélioration d’armement",
       "en": "Arming Enhancement",
       "status": "UNOFFICIAL"
     },
@@ -1762,7 +1763,7 @@
     "id": "feature.artificial-sight",
     "type": "feature",
     "name": {
-      "fr": "Artificial Sight",
+      "fr": "Vue artificielle",
       "en": "Artificial Sight",
       "status": "UNOFFICIAL"
     },
@@ -1809,7 +1810,7 @@
     "id": "feature.aura-of-murder-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Aura of Murder",
+      "fr": "Aura de meurtre",
       "en": "Aura of Murder",
       "status": "UNOFFICIAL"
     },
@@ -1868,7 +1869,7 @@
     "id": "feature.authority",
     "type": "feature",
     "name": {
-      "fr": "Authority",
+      "fr": "Autorité",
       "en": "Authority",
       "status": "UNOFFICIAL"
     },
@@ -1915,7 +1916,7 @@
     "id": "feature.backbreaker",
     "type": "feature",
     "name": {
-      "fr": "Backbreaker",
+      "fr": "Brise-reins",
       "en": "Backbreaker",
       "status": "UNOFFICIAL"
     },
@@ -2142,7 +2143,7 @@
     "id": "feature.balance",
     "type": "feature",
     "name": {
-      "fr": "Balance",
+      "fr": "Équilibre",
       "en": "Balance",
       "status": "UNOFFICIAL"
     },
@@ -2234,7 +2235,7 @@
     "id": "feature.baldurans-favour",
     "type": "feature",
     "name": {
-      "fr": "Balduran’s Favour",
+      "fr": "Faveur de Balduran",
       "en": "Balduran's Favour",
       "status": "UNOFFICIAL"
     },
@@ -2268,7 +2269,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -2281,7 +2282,7 @@
     "id": "feature.baldurans-vitality",
     "type": "feature",
     "name": {
-      "fr": "Balduran’s Vitality",
+      "fr": "Vitalité de Balduran",
       "en": "Balduran's Vitality",
       "status": "UNOFFICIAL"
     },
@@ -2315,7 +2316,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -2328,7 +2329,7 @@
     "id": "feature.baneful-bond",
     "type": "feature",
     "name": {
-      "fr": "Baneful Bond",
+      "fr": "Lien funeste",
       "en": "Baneful Bond",
       "status": "UNOFFICIAL"
     },
@@ -2387,7 +2388,7 @@
     "id": "feature.baneful-strike",
     "type": "feature",
     "name": {
-      "fr": "Baneful Strike",
+      "fr": "Frappe funeste",
       "en": "Baneful Strike",
       "status": "UNOFFICIAL"
     },
@@ -2446,7 +2447,7 @@
     "id": "feature.battle-acuity",
     "type": "feature",
     "name": {
-      "fr": "Battle Acuity",
+      "fr": "Acuité de combat",
       "en": "Battle Acuity",
       "status": "UNOFFICIAL"
     },
@@ -2505,7 +2506,7 @@
     "id": "feature.battlemages-power",
     "type": "feature",
     "name": {
-      "fr": "Battlemage’s Power",
+      "fr": "Pouvoir du mage de guerre",
       "en": "Battlemage's Power",
       "status": "UNOFFICIAL"
     },
@@ -2564,7 +2565,7 @@
     "id": "feature.become-the-bulwark",
     "type": "feature",
     "name": {
-      "fr": "Become the Bulwark",
+      "fr": "Devenir rempart",
       "en": "Become the Bulwark",
       "status": "UNOFFICIAL"
     },
@@ -2611,7 +2612,7 @@
     "id": "feature.blazing-retaliation",
     "type": "feature",
     "name": {
-      "fr": "Blazing Retaliation",
+      "fr": "Riposte flamboyante",
       "en": "Blazing Retaliation",
       "status": "UNOFFICIAL"
     },
@@ -2676,7 +2677,7 @@
     "id": "feature.blessed-mercy",
     "type": "feature",
     "name": {
-      "fr": "Blessed Mercy",
+      "fr": "Miséricorde bénie",
       "en": "Blessed Mercy",
       "status": "UNOFFICIAL"
     },
@@ -2735,7 +2736,7 @@
     "id": "feature.blightbringer-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Blightbringer",
+      "fr": "Porte-flétrissure",
       "en": "Blightbringer",
       "status": "UNOFFICIAL"
     },
@@ -2782,7 +2783,7 @@
     "id": "feature.blind-immunity",
     "type": "feature",
     "name": {
-      "fr": "Blind Immunity",
+      "fr": "Immunité à la cécité",
       "en": "Blind Immunity",
       "status": "UNOFFICIAL"
     },
@@ -2825,7 +2826,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -2838,7 +2839,7 @@
     "id": "feature.blinding-shot",
     "type": "feature",
     "name": {
-      "fr": "Blinding Shot",
+      "fr": "Tir aveuglant",
       "en": "Blinding Shot",
       "status": "UNOFFICIAL"
     },
@@ -2903,7 +2904,7 @@
     "id": "feature.blood-curdling-emission",
     "type": "feature",
     "name": {
-      "fr": "Blood-Curdling Emission",
+      "fr": "Émission à glacer le sang",
       "en": "Blood-Curdling Emission",
       "status": "UNOFFICIAL"
     },
@@ -2950,7 +2951,7 @@
     "id": "feature.blood-money",
     "type": "feature",
     "name": {
-      "fr": "Blood Money",
+      "fr": "Prix du sang",
       "en": "Blood Money",
       "status": "UNOFFICIAL"
     },
@@ -3003,7 +3004,7 @@
     "id": "feature.blood-sacrifice",
     "type": "feature",
     "name": {
-      "fr": "Blood Sacrifice",
+      "fr": "Sacrifice de sang",
       "en": "Blood Sacrifice",
       "status": "UNOFFICIAL"
     },
@@ -3067,7 +3068,7 @@
     "id": "feature.blood-thirst",
     "type": "feature",
     "name": {
-      "fr": "Blood Thirst",
+      "fr": "Soif de sang",
       "en": "Blood Thirst",
       "status": "UNOFFICIAL"
     },
@@ -3114,7 +3115,7 @@
     "id": "feature.bloodletting",
     "type": "feature",
     "name": {
-      "fr": "Bloodletting",
+      "fr": "Saignée",
       "en": "Bloodletting",
       "status": "UNOFFICIAL"
     },
@@ -3179,7 +3180,7 @@
     "id": "feature.body-aid",
     "type": "feature",
     "name": {
-      "fr": "Body Aid",
+      "fr": "Aide corporelle",
       "en": "Body Aid",
       "status": "UNOFFICIAL"
     },
@@ -3253,7 +3254,7 @@
     "id": "feature.bolstering-smite",
     "type": "feature",
     "name": {
-      "fr": "Bolstering Smite",
+      "fr": "Châtiment fortifiant",
       "en": "Bolstering Smite",
       "status": "UNOFFICIAL"
     },
@@ -3312,7 +3313,7 @@
     "id": "feature.bolt-of-celestial-light",
     "type": "feature",
     "name": {
-      "fr": "Bolt of Celestial Light",
+      "fr": "Trait de lumière céleste",
       "en": "Bolt of Celestial Light",
       "status": "UNOFFICIAL"
     },
@@ -3387,7 +3388,7 @@
     "id": "feature.booming-blows",
     "type": "feature",
     "name": {
-      "fr": "Booming Blows",
+      "fr": "Coups retentissants",
       "en": "Booming Blows",
       "status": "UNOFFICIAL"
     },
@@ -3434,7 +3435,7 @@
     "id": "feature.boon-of-the-raven-queen",
     "type": "feature",
     "name": {
-      "fr": "Boon of the Raven Queen",
+      "fr": "Faveur de la Reine-Corbeau",
       "en": "Boon of the Raven Queen",
       "status": "UNOFFICIAL"
     },
@@ -3493,7 +3494,7 @@
     "id": "feature.booze-remedy",
     "type": "feature",
     "name": {
-      "fr": "Booze Remedy",
+      "fr": "Remède alcoolisé",
       "en": "Booze Remedy",
       "status": "UNOFFICIAL"
     },
@@ -3540,7 +3541,7 @@
     "id": "feature.brace-melee",
     "type": "feature",
     "name": {
-      "fr": "Brace (Melee)",
+      "fr": "Ancrage (corps à corps)",
       "en": "Brace (Melee)",
       "status": "UNOFFICIAL"
     },
@@ -3696,7 +3697,7 @@
     "id": "feature.brace-ranged",
     "type": "feature",
     "name": {
-      "fr": "Brace (Ranged)",
+      "fr": "Ancrage (à distance)",
       "en": "Brace (Ranged)",
       "status": "UNOFFICIAL"
     },
@@ -3888,7 +3889,7 @@
     "id": "feature.break-the-unbroken",
     "type": "feature",
     "name": {
-      "fr": "Break the Unbroken",
+      "fr": "Entamer l’intact",
       "en": "Break the Unbroken",
       "status": "UNOFFICIAL"
     },
@@ -3935,7 +3936,7 @@
     "id": "feature.breezeswift-speed",
     "type": "feature",
     "name": {
-      "fr": "Breezeswift Speed",
+      "fr": "Vitesse vive-brise",
       "en": "Breezeswift Speed",
       "status": "UNOFFICIAL"
     },
@@ -3994,7 +3995,7 @@
     "id": "feature.browbeaten",
     "type": "feature",
     "name": {
-      "fr": "Browbeaten",
+      "fr": "Sous la menace",
       "en": "Browbeaten",
       "status": "UNOFFICIAL"
     },
@@ -4053,7 +4054,7 @@
     "id": "feature.brutal-leap",
     "type": "feature",
     "name": {
-      "fr": "Brutal Leap",
+      "fr": "Bond brutal",
       "en": "Brutal Leap",
       "status": "UNOFFICIAL"
     },
@@ -4122,7 +4123,7 @@
     "id": "feature.bull-rush",
     "type": "feature",
     "name": {
-      "fr": "Bull Rush",
+      "fr": "Bousculade",
       "en": "Bull Rush",
       "status": "UNOFFICIAL"
     },
@@ -4178,7 +4179,7 @@
     "id": "feature.bulls-strength-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Bull’s Strength",
+      "fr": "Force du taureau",
       "en": "Bull's Strength",
       "status": "UNOFFICIAL"
     },
@@ -4225,7 +4226,7 @@
     "id": "feature.burned-alive",
     "type": "feature",
     "name": {
-      "fr": "Burned Alive",
+      "fr": "Brûlé vif",
       "en": "Burned Alive",
       "status": "UNOFFICIAL"
     },
@@ -4281,7 +4282,7 @@
     "id": "feature.caitiffs-restoration",
     "type": "feature",
     "name": {
-      "fr": "Caitiff’s Restoration",
+      "fr": "Restauration du félon",
       "en": "Caitiff's Restoration",
       "status": "UNOFFICIAL"
     },
@@ -4334,7 +4335,7 @@
     "id": "feature.callous-glow",
     "type": "feature",
     "name": {
-      "fr": "Callous Glow",
+      "fr": "Lueur impitoyable",
       "en": "Callous Glow",
       "status": "UNOFFICIAL"
     },
@@ -4381,7 +4382,7 @@
     "id": "feature.caretakers-care",
     "type": "feature",
     "name": {
-      "fr": "Caretaker’s Care",
+      "fr": "Sollicitude du gardien",
       "en": "Caretaker's Care",
       "status": "UNOFFICIAL"
     },
@@ -4428,7 +4429,7 @@
     "id": "feature.cats-grace-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Cat’s Grace",
+      "fr": "Grâce féline",
       "en": "Cat's Grace",
       "status": "UNOFFICIAL"
     },
@@ -4475,7 +4476,7 @@
     "id": "feature.caustic-reprisal",
     "type": "feature",
     "name": {
-      "fr": "Caustic Reprisal",
+      "fr": "Représailles caustiques",
       "en": "Caustic Reprisal",
       "status": "UNOFFICIAL"
     },
@@ -4522,7 +4523,7 @@
     "id": "feature.cauteriser",
     "type": "feature",
     "name": {
-      "fr": "Cauteriser",
+      "fr": "Cautérisateur",
       "en": "Cauteriser",
       "status": "UNOFFICIAL"
     },
@@ -4581,7 +4582,7 @@
     "id": "feature.cautious-healer",
     "type": "feature",
     "name": {
-      "fr": "Cautious Healer",
+      "fr": "Guérisseur prudent",
       "en": "Cautious Healer",
       "status": "UNOFFICIAL"
     },
@@ -4640,7 +4641,7 @@
     "id": "feature.challenge-to-duel",
     "type": "feature",
     "name": {
-      "fr": "Challenge to Duel",
+      "fr": "Défi en duel",
       "en": "Challenge to Duel",
       "status": "UNOFFICIAL"
     },
@@ -4751,7 +4752,7 @@
     "id": "feature.chilling-strike",
     "type": "feature",
     "name": {
-      "fr": "Chilling Strike",
+      "fr": "Frappe glaçante",
       "en": "Chilling Strike",
       "status": "UNOFFICIAL"
     },
@@ -4798,7 +4799,7 @@
     "id": "feature.cinders",
     "type": "feature",
     "name": {
-      "fr": "Cinders",
+      "fr": "Braises",
       "en": "Cinders",
       "status": "UNOFFICIAL"
     },
@@ -4857,7 +4858,7 @@
     "id": "feature.circuitry-interface",
     "type": "feature",
     "name": {
-      "fr": "Circuitry Interface",
+      "fr": "Interface de circuits",
       "en": "Circuitry Interface",
       "status": "UNOFFICIAL"
     },
@@ -4922,7 +4923,7 @@
     "id": "feature.cleansing-touch",
     "type": "feature",
     "name": {
-      "fr": "Cleansing Touch",
+      "fr": "Toucher purifiant",
       "en": "Cleansing Touch",
       "status": "UNOFFICIAL"
     },
@@ -4969,9 +4970,10 @@
     "id": "feature.cleave",
     "type": "feature",
     "name": {
-      "fr": "Cleave",
+      "fr": "Enchaînement",
       "en": "Cleave",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -5009,7 +5011,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -5301,7 +5303,7 @@
     "id": "feature.click-heels",
     "type": "feature",
     "name": {
-      "fr": "Click Heels",
+      "fr": "Claquer des talons",
       "en": "Click Heels",
       "status": "UNOFFICIAL"
     },
@@ -5365,7 +5367,7 @@
     "id": "feature.coldbrim-chill",
     "type": "feature",
     "name": {
-      "fr": "Coldbrim Chill",
+      "fr": "Frisson du bord glacé",
       "en": "Coldbrim Chill",
       "status": "UNOFFICIAL"
     },
@@ -5425,7 +5427,7 @@
     "id": "feature.colossal-onslaught",
     "type": "feature",
     "name": {
-      "fr": "Colossal Onslaught",
+      "fr": "Assaut colossal",
       "en": "Colossal Onslaught",
       "status": "UNOFFICIAL"
     },
@@ -5478,7 +5480,7 @@
     "id": "feature.combat-regeneration",
     "type": "feature",
     "name": {
-      "fr": "Combat Regeneration",
+      "fr": "Régénération de combat",
       "en": "Combat Regeneration",
       "status": "UNOFFICIAL"
     },
@@ -5525,7 +5527,7 @@
     "id": "feature.commanders-strike",
     "type": "feature",
     "name": {
-      "fr": "Commander’s Strike",
+      "fr": "Frappe du commandant",
       "en": "Commander's Strike",
       "status": "UNOFFICIAL"
     },
@@ -5604,7 +5606,7 @@
     "id": "feature.concussive-smash",
     "type": "feature",
     "name": {
-      "fr": "Concussive Smash",
+      "fr": "Coup commotionnant",
       "en": "Concussive Smash",
       "status": "UNOFFICIAL"
     },
@@ -6038,7 +6040,7 @@
     "id": "feature.conductive-strikes",
     "type": "feature",
     "name": {
-      "fr": "Conductive Strikes",
+      "fr": "Frappes conductrices",
       "en": "Conductive Strikes",
       "status": "UNOFFICIAL"
     },
@@ -6097,7 +6099,7 @@
     "id": "feature.corellons-guiding-hand",
     "type": "feature",
     "name": {
-      "fr": "Corellon’s Guiding Hand",
+      "fr": "Main guidante de Corellon",
       "en": "Corellon's Guiding Hand",
       "status": "UNOFFICIAL"
     },
@@ -6144,7 +6146,7 @@
     "id": "feature.corrosive-strike",
     "type": "feature",
     "name": {
-      "fr": "Corrosive Strike",
+      "fr": "Frappe corrosive",
       "en": "Corrosive Strike",
       "status": "UNOFFICIAL"
     },
@@ -6197,7 +6199,7 @@
     "id": "feature.countershock",
     "type": "feature",
     "name": {
-      "fr": "Countershock",
+      "fr": "Contre-choc",
       "en": "Countershock",
       "status": "UNOFFICIAL"
     },
@@ -6256,7 +6258,7 @@
     "id": "feature.covert-critical",
     "type": "feature",
     "name": {
-      "fr": "Covert Critical",
+      "fr": "Critique dissimulé",
       "en": "Covert Critical",
       "status": "UNOFFICIAL"
     },
@@ -6324,7 +6326,7 @@
     "id": "feature.crackling-resonance",
     "type": "feature",
     "name": {
-      "fr": "Crackling Resonance",
+      "fr": "Résonance crépitante",
       "en": "Crackling Resonance",
       "status": "UNOFFICIAL"
     },
@@ -6383,7 +6385,7 @@
     "id": "feature.craterous-wounds",
     "type": "feature",
     "name": {
-      "fr": "Craterous Wounds",
+      "fr": "Plaies en cratère",
       "en": "Craterous Wounds",
       "status": "UNOFFICIAL"
     },
@@ -6430,7 +6432,7 @@
     "id": "feature.crowning-glory",
     "type": "feature",
     "name": {
-      "fr": "Crowning Glory",
+      "fr": "Couronnement",
       "en": "Crowning Glory",
       "status": "UNOFFICIAL"
     },
@@ -6477,7 +6479,7 @@
     "id": "feature.crowning-strike",
     "type": "feature",
     "name": {
-      "fr": "Crowning Strike",
+      "fr": "Frappe de la couronne",
       "en": "Crowning Strike",
       "status": "UNOFFICIAL"
     },
@@ -6542,7 +6544,7 @@
     "id": "feature.crushing-blows",
     "type": "feature",
     "name": {
-      "fr": "Crushing Blows",
+      "fr": "Coups écrasants",
       "en": "Crushing Blows",
       "status": "UNOFFICIAL"
     },
@@ -6589,7 +6591,7 @@
     "id": "feature.cunning-brume",
     "type": "feature",
     "name": {
-      "fr": "Cunning Brume",
+      "fr": "Brume rusée",
       "en": "Cunning Brume",
       "status": "UNOFFICIAL"
     },
@@ -6636,7 +6638,7 @@
     "id": "feature.damp-aegis",
     "type": "feature",
     "name": {
-      "fr": "Damp Aegis",
+      "fr": "Égide humide",
       "en": "Damp Aegis",
       "status": "UNOFFICIAL"
     },
@@ -6683,7 +6685,7 @@
     "id": "feature.daredevil-proximity",
     "type": "feature",
     "name": {
-      "fr": "Daredevil Proximity",
+      "fr": "Proximité téméraire",
       "en": "Daredevil Proximity",
       "status": "UNOFFICIAL"
     },
@@ -6742,7 +6744,7 @@
     "id": "feature.darkness-cloak",
     "type": "feature",
     "name": {
-      "fr": "Darkness Cloak",
+      "fr": "Cape de ténèbres",
       "en": "Darkness Cloak",
       "status": "UNOFFICIAL"
     },
@@ -6807,7 +6809,7 @@
     "id": "feature.darkveil-precision",
     "type": "feature",
     "name": {
-      "fr": "Darkveil Precision",
+      "fr": "Précision du voile obscur",
       "en": "Darkveil Precision",
       "status": "UNOFFICIAL"
     },
@@ -6866,9 +6868,10 @@
     "id": "feature.darkvision",
     "type": "feature",
     "name": {
-      "fr": "Darkvision",
+      "fr": "Vision dans le noir",
       "en": "Darkvision",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "acte3",
@@ -6900,7 +6903,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -6913,7 +6916,7 @@
     "id": "feature.dauntless",
     "type": "feature",
     "name": {
-      "fr": "Dauntless",
+      "fr": "Intrépide",
       "en": "Dauntless",
       "status": "UNOFFICIAL"
     },
@@ -6956,8 +6959,8 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
-          "otherWorks": "aucun"
+          "level": "leger",
+          "otherWorks": "leger"
         }
       }
     ],
@@ -6969,7 +6972,7 @@
     "id": "feature.dazing-echo",
     "type": "feature",
     "name": {
-      "fr": "Dazing Echo",
+      "fr": "Écho hébétant",
       "en": "Dazing Echo",
       "status": "UNOFFICIAL"
     },
@@ -7028,7 +7031,7 @@
     "id": "feature.dazing-smite",
     "type": "feature",
     "name": {
-      "fr": "Dazing Smite",
+      "fr": "Châtiment hébétant",
       "en": "Dazing Smite",
       "status": "UNOFFICIAL"
     },
@@ -7087,7 +7090,7 @@
     "id": "feature.dazzling-ray",
     "type": "feature",
     "name": {
-      "fr": "Dazzling Ray",
+      "fr": "Rayon éblouissant",
       "en": "Dazzling Ray",
       "status": "UNOFFICIAL"
     },
@@ -7162,7 +7165,7 @@
     "id": "feature.deadly-derivation",
     "type": "feature",
     "name": {
-      "fr": "Deadly Derivation",
+      "fr": "Dérivation mortelle",
       "en": "Deadly Derivation",
       "status": "UNOFFICIAL"
     },
@@ -7209,7 +7212,7 @@
     "id": "feature.deathbringers-sight",
     "type": "feature",
     "name": {
-      "fr": "Deathbringer’s Sight",
+      "fr": "Vue du Porte-Mort",
       "en": "Deathbringer's Sight",
       "status": "UNOFFICIAL"
     },
@@ -7243,8 +7246,8 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
-          "otherWorks": "aucun"
+          "level": "leger",
+          "otherWorks": "leger"
         }
       }
     ],
@@ -7256,7 +7259,7 @@
     "id": "feature.deathly-slumber",
     "type": "feature",
     "name": {
-      "fr": "Deathly Slumber",
+      "fr": "Sommeil mortel",
       "en": "Deathly Slumber",
       "status": "UNOFFICIAL"
     },
@@ -7303,7 +7306,7 @@
     "id": "feature.deaths-promise",
     "type": "feature",
     "name": {
-      "fr": "Death’s Promise",
+      "fr": "Promesse de la mort",
       "en": "Death's Promise",
       "status": "UNOFFICIAL"
     },
@@ -7362,7 +7365,7 @@
     "id": "feature.deepen-the-wound",
     "type": "feature",
     "name": {
-      "fr": "Deepen the Wound",
+      "fr": "Creuser la plaie",
       "en": "Deepen the Wound",
       "status": "UNOFFICIAL"
     },
@@ -7409,7 +7412,7 @@
     "id": "feature.deepflesh-slice",
     "type": "feature",
     "name": {
-      "fr": "Deepflesh Slice",
+      "fr": "Entaille profonde",
       "en": "Deepflesh Slice",
       "status": "UNOFFICIAL"
     },
@@ -7468,7 +7471,7 @@
     "id": "feature.defensive-attack",
     "type": "feature",
     "name": {
-      "fr": "Defensive Attack",
+      "fr": "Attaque défensive",
       "en": "Defensive Attack",
       "status": "UNOFFICIAL"
     },
@@ -7527,7 +7530,7 @@
     "id": "feature.defiers-rejuvenation",
     "type": "feature",
     "name": {
-      "fr": "Defier’s Rejuvenation",
+      "fr": "Revigoration du rebelle",
       "en": "Defier's Rejuvenation",
       "status": "UNOFFICIAL"
     },
@@ -7574,7 +7577,7 @@
     "id": "feature.defy-villainy",
     "type": "feature",
     "name": {
-      "fr": "Defy Villainy",
+      "fr": "Défier la vilenie",
       "en": "Defy Villainy",
       "status": "UNOFFICIAL"
     },
@@ -7633,7 +7636,7 @@
     "id": "feature.demonspirit-aura",
     "type": "feature",
     "name": {
-      "fr": "Demonspirit Aura",
+      "fr": "Aura d’esprit démoniaque",
       "en": "Demonspirit Aura",
       "status": "UNOFFICIAL"
     },
@@ -7692,7 +7695,7 @@
     "id": "feature.dextrous-evasion",
     "type": "feature",
     "name": {
-      "fr": "Dextrous Evasion",
+      "fr": "Esquive adroite",
       "en": "Dextrous Evasion",
       "status": "UNOFFICIAL"
     },
@@ -7739,7 +7742,7 @@
     "id": "feature.diamondsbane",
     "type": "feature",
     "name": {
-      "fr": "Diamondsbane",
+      "fr": "Fléau des diamants",
       "en": "Diamondsbane",
       "status": "UNOFFICIAL"
     },
@@ -7795,7 +7798,7 @@
     "id": "feature.dig-deep",
     "type": "feature",
     "name": {
-      "fr": "Dig Deep",
+      "fr": "Creuser profond",
       "en": "Dig Deep",
       "status": "UNOFFICIAL"
     },
@@ -7854,7 +7857,7 @@
     "id": "feature.disarming-strike",
     "type": "feature",
     "name": {
-      "fr": "Disarming Strike",
+      "fr": "Frappe désarmante",
       "en": "Disarming Strike",
       "status": "UNOFFICIAL"
     },
@@ -7937,7 +7940,7 @@
     "id": "feature.displacement",
     "type": "feature",
     "name": {
-      "fr": "Displacement",
+      "fr": "Déplacement",
       "en": "Displacement",
       "status": "UNOFFICIAL"
     },
@@ -8061,7 +8064,7 @@
     "id": "feature.doom-lobber",
     "type": "feature",
     "name": {
-      "fr": "Doom Lobber",
+      "fr": "Lance-fatalité",
       "en": "Doom Lobber",
       "status": "UNOFFICIAL"
     },
@@ -8108,7 +8111,7 @@
     "id": "feature.dragonfire-fists",
     "type": "feature",
     "name": {
-      "fr": "Dragonfire Fists",
+      "fr": "Poings de feu draconique",
       "en": "Dragonfire Fists",
       "status": "UNOFFICIAL"
     },
@@ -8155,7 +8158,7 @@
     "id": "feature.dread-iron-ambush",
     "type": "feature",
     "name": {
-      "fr": "Dread Iron Ambush",
+      "fr": "Embuscade de fer terrible",
       "en": "Dread Iron Ambush",
       "status": "UNOFFICIAL"
     },
@@ -8214,7 +8217,7 @@
     "id": "feature.dreadful-hewer",
     "type": "feature",
     "name": {
-      "fr": "Dreadful Hewer",
+      "fr": "Pourfendeur effroyable",
       "en": "Dreadful Hewer",
       "status": "UNOFFICIAL"
     },
@@ -8261,7 +8264,7 @@
     "id": "feature.duellers-enthusiasm",
     "type": "feature",
     "name": {
-      "fr": "Dueller’s Enthusiasm",
+      "fr": "Ardeur du duelliste",
       "en": "Dueller's Enthusiasm",
       "status": "UNOFFICIAL"
     },
@@ -8314,7 +8317,7 @@
     "id": "feature.duelling-gloves",
     "type": "feature",
     "name": {
-      "fr": "Duelling Gloves",
+      "fr": "Gants de duel",
       "en": "Duelling Gloves",
       "status": "UNOFFICIAL"
     },
@@ -8361,9 +8364,10 @@
     "id": "feature.dwarven-thrower-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Dwarven Thrower",
+      "fr": "Marteau de lancer nain",
       "en": "Dwarven Thrower",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "acte3",
@@ -8408,7 +8412,7 @@
     "id": "feature.edge-of-darkness",
     "type": "feature",
     "name": {
-      "fr": "Edge of Darkness",
+      "fr": "Fil des ténèbres",
       "en": "Edge of Darkness",
       "status": "UNOFFICIAL"
     },
@@ -8448,7 +8452,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -8461,7 +8465,7 @@
     "id": "feature.edge-of-terror",
     "type": "feature",
     "name": {
-      "fr": "Edge of Terror",
+      "fr": "Fil de la terreur",
       "en": "Edge of Terror",
       "status": "UNOFFICIAL"
     },
@@ -8520,7 +8524,7 @@
     "id": "feature.effective-transmitter",
     "type": "feature",
     "name": {
-      "fr": "Effective Transmitter",
+      "fr": "Transmetteur efficace",
       "en": "Effective Transmitter",
       "status": "UNOFFICIAL"
     },
@@ -8567,7 +8571,7 @@
     "id": "feature.electric-blood",
     "type": "feature",
     "name": {
-      "fr": "Electric Blood",
+      "fr": "Sang électrique",
       "en": "Electric Blood",
       "status": "UNOFFICIAL"
     },
@@ -8635,7 +8639,7 @@
     "id": "feature.electric-veins",
     "type": "feature",
     "name": {
-      "fr": "Electric Veins",
+      "fr": "Veines électriques",
       "en": "Electric Veins",
       "status": "UNOFFICIAL"
     },
@@ -8694,7 +8698,7 @@
     "id": "feature.electrify-water",
     "type": "feature",
     "name": {
-      "fr": "Electrify Water",
+      "fr": "Électrifier l’eau",
       "en": "Electrify Water",
       "status": "UNOFFICIAL"
     },
@@ -8741,7 +8745,7 @@
     "id": "feature.elegant-duellist",
     "type": "feature",
     "name": {
-      "fr": "Elegant Duellist",
+      "fr": "Duelliste élégant",
       "en": "Elegant Duellist",
       "status": "UNOFFICIAL"
     },
@@ -8800,7 +8804,7 @@
     "id": "feature.elemental-augmentation",
     "type": "feature",
     "name": {
-      "fr": "Elemental Augmentation",
+      "fr": "Augmentation élémentaire",
       "en": "Elemental Augmentation",
       "status": "UNOFFICIAL"
     },
@@ -8847,7 +8851,7 @@
     "id": "feature.elemental-infusion",
     "type": "feature",
     "name": {
-      "fr": "Elemental Infusion",
+      "fr": "Infusion élémentaire",
       "en": "Elemental Infusion",
       "status": "UNOFFICIAL"
     },
@@ -8894,7 +8898,7 @@
     "id": "feature.elemental-momentum",
     "type": "feature",
     "name": {
-      "fr": "Elemental Momentum",
+      "fr": "Élan élémentaire",
       "en": "Elemental Momentum",
       "status": "UNOFFICIAL"
     },
@@ -8953,7 +8957,7 @@
     "id": "feature.elemental-resonance",
     "type": "feature",
     "name": {
-      "fr": "Elemental Resonance",
+      "fr": "Résonance élémentaire",
       "en": "Elemental Resonance",
       "status": "UNOFFICIAL"
     },
@@ -9012,7 +9016,7 @@
     "id": "feature.elements-of-an-epoch",
     "type": "feature",
     "name": {
-      "fr": "Elements of an Epoch",
+      "fr": "Éléments d’une époque",
       "en": "Elements of an Epoch",
       "status": "UNOFFICIAL"
     },
@@ -9071,7 +9075,7 @@
     "id": "feature.elven-agility",
     "type": "feature",
     "name": {
-      "fr": "Elven Agility",
+      "fr": "Agilité elfique",
       "en": "Elven Agility",
       "status": "UNOFFICIAL"
     },
@@ -9118,9 +9122,10 @@
     "id": "feature.elven-chain-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Elven Chain",
+      "fr": "Mailles elfiques",
       "en": "Elven Chain",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "acte3",
@@ -9165,7 +9170,7 @@
     "id": "feature.endurance-by-fire",
     "type": "feature",
     "name": {
-      "fr": "Endurance by Fire",
+      "fr": "Endurance par le feu",
       "en": "Endurance by Fire",
       "status": "UNOFFICIAL"
     },
@@ -9221,7 +9226,7 @@
     "id": "feature.enervating-suffusion",
     "type": "feature",
     "name": {
-      "fr": "Enervating Suffusion",
+      "fr": "Imprégnation débilitante",
       "en": "Enervating Suffusion",
       "status": "UNOFFICIAL"
     },
@@ -9277,7 +9282,7 @@
     "id": "feature.envenom",
     "type": "feature",
     "name": {
-      "fr": "Envenom",
+      "fr": "Envenimer",
       "en": "Envenom",
       "status": "UNOFFICIAL"
     },
@@ -9336,7 +9341,7 @@
     "id": "feature.eternal-devotion",
     "type": "feature",
     "name": {
-      "fr": "Eternal Devotion",
+      "fr": "Dévotion éternelle",
       "en": "Eternal Devotion",
       "status": "UNOFFICIAL"
     },
@@ -9389,7 +9394,7 @@
     "id": "feature.evasive-instinct",
     "type": "feature",
     "name": {
-      "fr": "Evasive Instinct",
+      "fr": "Instinct d’esquive",
       "en": "Evasive Instinct",
       "status": "UNOFFICIAL"
     },
@@ -9436,7 +9441,7 @@
     "id": "feature.ever-vigilant",
     "type": "feature",
     "name": {
-      "fr": "Ever Vigilant",
+      "fr": "Toujours vigilant",
       "en": "Ever Vigilant",
       "status": "UNOFFICIAL"
     },
@@ -9495,7 +9500,7 @@
     "id": "feature.exceptional-plate",
     "type": "feature",
     "name": {
-      "fr": "Exceptional Plate",
+      "fr": "Harnois exceptionnel",
       "en": "Exceptional Plate",
       "status": "UNOFFICIAL"
     },
@@ -9542,7 +9547,7 @@
     "id": "feature.executioner",
     "type": "feature",
     "name": {
-      "fr": "Executioner",
+      "fr": "Bourreau",
       "en": "Executioner",
       "status": "UNOFFICIAL"
     },
@@ -9602,7 +9607,7 @@
     "id": "feature.exoskeletal-endurance",
     "type": "feature",
     "name": {
-      "fr": "Exoskeletal Endurance",
+      "fr": "Endurance exosquelettique",
       "en": "Exoskeletal Endurance",
       "status": "UNOFFICIAL"
     },
@@ -9649,7 +9654,7 @@
     "id": "feature.exoskeletal-reinforcement",
     "type": "feature",
     "name": {
-      "fr": "Exoskeletal Reinforcement",
+      "fr": "Renfort exosquelettique",
       "en": "Exoskeletal Reinforcement",
       "status": "UNOFFICIAL"
     },
@@ -9696,7 +9701,7 @@
     "id": "feature.exotic-material",
     "type": "feature",
     "name": {
-      "fr": "Exotic Material",
+      "fr": "Matériau exotique",
       "en": "Exotic Material",
       "status": "UNOFFICIAL"
     },
@@ -9770,7 +9775,7 @@
     "id": "feature.experienced-and-deadly",
     "type": "feature",
     "name": {
-      "fr": "Experienced And Deadly",
+      "fr": "Expérimenté et mortel",
       "en": "Experienced And Deadly",
       "status": "UNOFFICIAL"
     },
@@ -9817,7 +9822,7 @@
     "id": "feature.exquisite-focus",
     "type": "feature",
     "name": {
-      "fr": "Exquisite Focus",
+      "fr": "Concentration exquise",
       "en": "Exquisite Focus",
       "status": "UNOFFICIAL"
     },
@@ -9876,7 +9881,7 @@
     "id": "feature.faceless-masquerade",
     "type": "feature",
     "name": {
-      "fr": "Faceless Masquerade",
+      "fr": "Mascarade sans visage",
       "en": "Faceless Masquerade",
       "status": "UNOFFICIAL"
     },
@@ -9923,7 +9928,7 @@
     "id": "feature.faithwardens-stride",
     "type": "feature",
     "name": {
-      "fr": "Faithwarden’s Stride",
+      "fr": "Foulée du gardien de la foi",
       "en": "Faithwarden's Stride",
       "status": "UNOFFICIAL"
     },
@@ -9970,7 +9975,7 @@
     "id": "feature.favoured-weapon",
     "type": "feature",
     "name": {
-      "fr": "Favoured Weapon",
+      "fr": "Arme de prédilection",
       "en": "Favoured Weapon",
       "status": "UNOFFICIAL"
     },
@@ -10038,7 +10043,7 @@
     "id": "feature.feller-of-monsters",
     "type": "feature",
     "name": {
-      "fr": "Feller of Monsters",
+      "fr": "Abatteur de monstres",
       "en": "Feller of Monsters",
       "status": "UNOFFICIAL"
     },
@@ -10094,7 +10099,7 @@
     "id": "feature.fervent-flames",
     "type": "feature",
     "name": {
-      "fr": "Fervent Flames",
+      "fr": "Flammes ferventes",
       "en": "Fervent Flames",
       "status": "UNOFFICIAL"
     },
@@ -10154,7 +10159,7 @@
     "id": "feature.fey-life",
     "type": "feature",
     "name": {
-      "fr": "Fey Life",
+      "fr": "Vie féerique",
       "en": "Fey Life",
       "status": "UNOFFICIAL"
     },
@@ -10201,7 +10206,7 @@
     "id": "feature.feywild-sparks",
     "type": "feature",
     "name": {
-      "fr": "Feywild Sparks",
+      "fr": "Étincelles de la Féerie",
       "en": "Feywild Sparks",
       "status": "UNOFFICIAL"
     },
@@ -10260,7 +10265,7 @@
     "id": "feature.fiendish-fire",
     "type": "feature",
     "name": {
-      "fr": "Fiendish Fire",
+      "fr": "Feu fiélon",
       "en": "Fiendish Fire",
       "status": "UNOFFICIAL"
     },
@@ -10320,7 +10325,7 @@
     "id": "feature.fiery-return",
     "type": "feature",
     "name": {
-      "fr": "Fiery Return",
+      "fr": "Retour ardent",
       "en": "Fiery Return",
       "status": "UNOFFICIAL"
     },
@@ -10379,7 +10384,7 @@
     "id": "feature.fire-acuity",
     "type": "feature",
     "name": {
-      "fr": "Fire Acuity",
+      "fr": "Acuité ignée",
       "en": "Fire Acuity",
       "status": "UNOFFICIAL"
     },
@@ -10438,7 +10443,7 @@
     "id": "feature.first-blood",
     "type": "feature",
     "name": {
-      "fr": "First Blood",
+      "fr": "Premier sang",
       "en": "First Blood",
       "status": "UNOFFICIAL"
     },
@@ -10497,7 +10502,7 @@
     "id": "feature.flaming-revenge",
     "type": "feature",
     "name": {
-      "fr": "Flaming Revenge",
+      "fr": "Vengeance enflammée",
       "en": "Flaming Revenge",
       "status": "UNOFFICIAL"
     },
@@ -10544,7 +10549,7 @@
     "id": "feature.flaming-shroud",
     "type": "feature",
     "name": {
-      "fr": "Flaming Shroud",
+      "fr": "Linceul enflammé",
       "en": "Flaming Shroud",
       "status": "UNOFFICIAL"
     },
@@ -10603,7 +10608,7 @@
     "id": "feature.flourish",
     "type": "feature",
     "name": {
-      "fr": "Flourish",
+      "fr": "Moulinet",
       "en": "Flourish",
       "status": "UNOFFICIAL"
     },
@@ -11001,7 +11006,7 @@
     "id": "feature.fly-trap",
     "type": "feature",
     "name": {
-      "fr": "Fly Trap",
+      "fr": "Attrape-mouche",
       "en": "Fly Trap",
       "status": "UNOFFICIAL"
     },
@@ -11060,7 +11065,7 @@
     "id": "feature.flying-strike",
     "type": "feature",
     "name": {
-      "fr": "Flying Strike",
+      "fr": "Frappe volante",
       "en": "Flying Strike",
       "status": "UNOFFICIAL"
     },
@@ -11119,7 +11124,7 @@
     "id": "feature.focused-stride",
     "type": "feature",
     "name": {
-      "fr": "Focused Stride",
+      "fr": "Foulée concentrée",
       "en": "Focused Stride",
       "status": "UNOFFICIAL"
     },
@@ -11178,7 +11183,7 @@
     "id": "feature.fond-caress",
     "type": "feature",
     "name": {
-      "fr": "Fond Caress",
+      "fr": "Tendre caresse",
       "en": "Fond Caress",
       "status": "UNOFFICIAL"
     },
@@ -11225,7 +11230,7 @@
     "id": "feature.force-absorption",
     "type": "feature",
     "name": {
-      "fr": "Force Absorption",
+      "fr": "Absorption de force",
       "en": "Force Absorption",
       "status": "UNOFFICIAL"
     },
@@ -11284,7 +11289,7 @@
     "id": "feature.forest-aegis",
     "type": "feature",
     "name": {
-      "fr": "Forest Aegis",
+      "fr": "Égide sylvestre",
       "en": "Forest Aegis",
       "status": "UNOFFICIAL"
     },
@@ -11331,7 +11336,7 @@
     "id": "feature.formless-slaughter",
     "type": "feature",
     "name": {
-      "fr": "Formless Slaughter",
+      "fr": "Carnage informe",
       "en": "Formless Slaughter",
       "status": "UNOFFICIAL"
     },
@@ -11390,7 +11395,7 @@
     "id": "feature.frantic-urgency",
     "type": "feature",
     "name": {
-      "fr": "Frantic Urgency",
+      "fr": "Urgence frénétique",
       "en": "Frantic Urgency",
       "status": "UNOFFICIAL"
     },
@@ -11449,7 +11454,7 @@
     "id": "feature.frightened-immunity",
     "type": "feature",
     "name": {
-      "fr": "Frightened Immunity",
+      "fr": "Immunité à la peur",
       "en": "Frightened Immunity",
       "status": "UNOFFICIAL"
     },
@@ -11496,7 +11501,7 @@
     "id": "feature.fury-in-the-marrow",
     "type": "feature",
     "name": {
-      "fr": "Fury In The Marrow",
+      "fr": "Fureur dans la moelle",
       "en": "Fury In The Marrow",
       "status": "UNOFFICIAL"
     },
@@ -11543,7 +11548,7 @@
     "id": "feature.galvanic-currents",
     "type": "feature",
     "name": {
-      "fr": "Galvanic Currents",
+      "fr": "Courants galvaniques",
       "en": "Galvanic Currents",
       "status": "UNOFFICIAL"
     },
@@ -11602,7 +11607,7 @@
     "id": "feature.gargantuan-cleave",
     "type": "feature",
     "name": {
-      "fr": "Gargantuan Cleave",
+      "fr": "Enchaînement gigantesque",
       "en": "Gargantuan Cleave",
       "status": "UNOFFICIAL"
     },
@@ -11667,7 +11672,7 @@
     "id": "feature.garrotte",
     "type": "feature",
     "name": {
-      "fr": "Garrotte",
+      "fr": "Garrot",
       "en": "Garrotte",
       "status": "UNOFFICIAL"
     },
@@ -11732,7 +11737,7 @@
     "id": "feature.genial-strider",
     "type": "feature",
     "name": {
-      "fr": "Genial Strider",
+      "fr": "Marcheur affable",
       "en": "Genial Strider",
       "status": "UNOFFICIAL"
     },
@@ -11779,7 +11784,7 @@
     "id": "feature.giant-form",
     "type": "feature",
     "name": {
-      "fr": "Giant Form",
+      "fr": "Forme de géant",
       "en": "Giant Form",
       "status": "UNOFFICIAL"
     },
@@ -11822,7 +11827,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -11844,9 +11849,10 @@
     "id": "feature.giantslayer",
     "type": "feature",
     "name": {
-      "fr": "Giantslayer",
+      "fr": "Tueuse de géants",
       "en": "Giantslayer",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "acte3",
@@ -11878,7 +11884,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -11891,7 +11897,7 @@
     "id": "feature.githborn-psionic-resistance",
     "type": "feature",
     "name": {
-      "fr": "Githborn Psionic Resistance",
+      "fr": "Résistance psionique gith",
       "en": "Githborn Psionic Resistance",
       "status": "UNOFFICIAL"
     },
@@ -11938,7 +11944,7 @@
     "id": "feature.githborn-psionic-weapon",
     "type": "feature",
     "name": {
-      "fr": "Githborn Psionic Weapon",
+      "fr": "Arme psionique gith",
       "en": "Githborn Psionic Weapon",
       "status": "UNOFFICIAL"
     },
@@ -11994,7 +12000,7 @@
     "id": "feature.githborn-psionic-weapon-1d6",
     "type": "feature",
     "name": {
-      "fr": "Githborn Psionic Weapon",
+      "fr": "Arme psionique gith",
       "en": "Githborn Psionic Weapon",
       "status": "UNOFFICIAL"
     },
@@ -12041,7 +12047,7 @@
     "id": "feature.gleamdance-dagger-glowing",
     "type": "feature",
     "name": {
-      "fr": "Gleamdance Dagger: Glowing",
+      "fr": "Dague de l’éclat dansant : illumination",
       "en": "Gleamdance Dagger: Glowing",
       "status": "UNOFFICIAL"
     },
@@ -12100,7 +12106,7 @@
     "id": "feature.glorious-pointy-hat",
     "type": "feature",
     "name": {
-      "fr": "Glorious Pointy Hat",
+      "fr": "Glorieux chapeau pointu",
       "en": "Glorious Pointy Hat",
       "status": "UNOFFICIAL"
     },
@@ -12147,7 +12153,7 @@
     "id": "feature.goblins-undoing",
     "type": "feature",
     "name": {
-      "fr": "Goblin’s Undoing",
+      "fr": "Ruine des gobelins",
       "en": "Goblin's Undoing",
       "status": "UNOFFICIAL"
     },
@@ -12194,7 +12200,7 @@
     "id": "feature.godswill",
     "type": "feature",
     "name": {
-      "fr": "Godswill",
+      "fr": "Volonté divine",
       "en": "Godswill",
       "status": "UNOFFICIAL"
     },
@@ -12241,7 +12247,7 @@
     "id": "feature.gontr-mael-glowing",
     "type": "feature",
     "name": {
-      "fr": "Gontr Mael: Glowing",
+      "fr": "Gontr Mael : illumination",
       "en": "Gontr Mael: Glowing",
       "status": "UNOFFICIAL"
     },
@@ -12300,7 +12306,7 @@
     "id": "feature.grand-slam",
     "type": "feature",
     "name": {
-      "fr": "Grand Slam",
+      "fr": "Grand fracas",
       "en": "Grand Slam",
       "status": "UNOFFICIAL"
     },
@@ -12353,7 +12359,7 @@
     "id": "feature.greater-kushigo-counter",
     "type": "feature",
     "name": {
-      "fr": "Greater Kushigo Counter",
+      "fr": "Contre de Kushigo supérieur",
       "en": "Greater Kushigo Counter",
       "status": "UNOFFICIAL"
     },
@@ -12400,7 +12406,7 @@
     "id": "feature.green-bed-regeneration",
     "type": "feature",
     "name": {
-      "fr": "Green Bed Regeneration",
+      "fr": "Régénération du lit de verdure",
       "en": "Green Bed Regeneration",
       "status": "UNOFFICIAL"
     },
@@ -12459,7 +12465,7 @@
     "id": "feature.gregarious-caster",
     "type": "feature",
     "name": {
-      "fr": "Gregarious Caster",
+      "fr": "Incantateur grégaire",
       "en": "Gregarious Caster",
       "status": "UNOFFICIAL"
     },
@@ -12506,7 +12512,7 @@
     "id": "feature.grievous-retribution",
     "type": "feature",
     "name": {
-      "fr": "Grievous Retribution",
+      "fr": "Rétribution cruelle",
       "en": "Grievous Retribution",
       "status": "UNOFFICIAL"
     },
@@ -12575,7 +12581,7 @@
     "id": "feature.grim-irony",
     "type": "feature",
     "name": {
-      "fr": "Grim Irony",
+      "fr": "Sinistre ironie",
       "en": "Grim Irony",
       "status": "UNOFFICIAL"
     },
@@ -12634,7 +12640,7 @@
     "id": "feature.grit",
     "type": "feature",
     "name": {
-      "fr": "Grit",
+      "fr": "Cran",
       "en": "Grit",
       "status": "UNOFFICIAL"
     },
@@ -12693,7 +12699,7 @@
     "id": "feature.hamstring-shot",
     "type": "feature",
     "name": {
-      "fr": "Hamstring Shot",
+      "fr": "Tir au jarret",
       "en": "Hamstring Shot",
       "status": "UNOFFICIAL"
     },
@@ -12893,7 +12899,7 @@
     "id": "feature.haroldish-doom",
     "type": "feature",
     "name": {
-      "fr": "Haroldish Doom",
+      "fr": "Fatalité haroldienne",
       "en": "Haroldish Doom",
       "status": "UNOFFICIAL"
     },
@@ -12952,7 +12958,7 @@
     "id": "feature.healing-incense-aura",
     "type": "feature",
     "name": {
-      "fr": "Healing Incense Aura",
+      "fr": "Aura d’encens guérisseur",
       "en": "Healing Incense Aura",
       "status": "UNOFFICIAL"
     },
@@ -13017,7 +13023,7 @@
     "id": "feature.heartstopper",
     "type": "feature",
     "name": {
-      "fr": "Heartstopper",
+      "fr": "Arrête-cœur",
       "en": "Heartstopper",
       "status": "UNOFFICIAL"
     },
@@ -13100,7 +13106,7 @@
     "id": "feature.heavy-hitter",
     "type": "feature",
     "name": {
-      "fr": "Heavy Hitter",
+      "fr": "Cogneur",
       "en": "Heavy Hitter",
       "status": "UNOFFICIAL"
     },
@@ -13159,7 +13165,7 @@
     "id": "feature.heightened-awareness",
     "type": "feature",
     "name": {
-      "fr": "Heightened Awareness",
+      "fr": "Vigilance accrue",
       "en": "Heightened Awareness",
       "status": "UNOFFICIAL"
     },
@@ -13215,7 +13221,7 @@
     "id": "feature.heightened-manoeuvre",
     "type": "feature",
     "name": {
-      "fr": "Heightened Manoeuvre",
+      "fr": "Manœuvre intensifiée",
       "en": "Heightened Manoeuvre",
       "status": "UNOFFICIAL"
     },
@@ -13262,7 +13268,7 @@
     "id": "feature.heightened-necromancy",
     "type": "feature",
     "name": {
-      "fr": "Heightened Necromancy",
+      "fr": "Nécromancie intensifiée",
       "en": "Heightened Necromancy",
       "status": "UNOFFICIAL"
     },
@@ -13318,7 +13324,7 @@
     "id": "feature.hellcrawler",
     "type": "feature",
     "name": {
-      "fr": "Hellcrawler",
+      "fr": "Rampeur infernal",
       "en": "Hellcrawler",
       "status": "UNOFFICIAL"
     },
@@ -13371,7 +13377,7 @@
     "id": "feature.helldusk-armour-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Helldusk Armour",
+      "fr": "Armure du crépuscule infernal",
       "en": "Helldusk Armour",
       "status": "UNOFFICIAL"
     },
@@ -13418,7 +13424,7 @@
     "id": "feature.hellstalker",
     "type": "feature",
     "name": {
-      "fr": "Hellstalker",
+      "fr": "Traqueur infernal",
       "en": "Hellstalker",
       "status": "UNOFFICIAL"
     },
@@ -13477,7 +13483,7 @@
     "id": "feature.helms-protection",
     "type": "feature",
     "name": {
-      "fr": "Helm’s Protection",
+      "fr": "Protection de Heaume",
       "en": "Helm's Protection",
       "status": "UNOFFICIAL"
     },
@@ -13536,7 +13542,7 @@
     "id": "feature.high-spellcasting-1",
     "type": "feature",
     "name": {
-      "fr": "High Spellcasting",
+      "fr": "Haute incantation",
       "en": "High Spellcasting",
       "status": "UNOFFICIAL"
     },
@@ -13628,7 +13634,7 @@
     "id": "feature.high-spellcasting-2",
     "type": "feature",
     "name": {
-      "fr": "High Spellcasting",
+      "fr": "Haute incantation",
       "en": "High Spellcasting",
       "status": "UNOFFICIAL"
     },
@@ -13675,7 +13681,7 @@
     "id": "feature.hoarfrost-balance",
     "type": "feature",
     "name": {
-      "fr": "Hoarfrost Balance",
+      "fr": "Équilibre du givre",
       "en": "Hoarfrost Balance",
       "status": "UNOFFICIAL"
     },
@@ -13722,7 +13728,7 @@
     "id": "feature.homing-weapon",
     "type": "feature",
     "name": {
-      "fr": "Homing Weapon",
+      "fr": "Arme à retour",
       "en": "Homing Weapon",
       "status": "UNOFFICIAL"
     },
@@ -13778,7 +13784,7 @@
     "id": "feature.hunters-eye",
     "type": "feature",
     "name": {
-      "fr": "Hunter’s Eye",
+      "fr": "Œil du chasseur",
       "en": "Hunter's Eye",
       "status": "UNOFFICIAL"
     },
@@ -13825,7 +13831,7 @@
     "id": "feature.hush-you",
     "type": "feature",
     "name": {
-      "fr": "Hush You!",
+      "fr": "Taisez-vous !",
       "en": "Hush You!",
       "status": "UNOFFICIAL"
     },
@@ -13890,7 +13896,7 @@
     "id": "feature.ichorous-corrosion",
     "type": "feature",
     "name": {
-      "fr": "Ichorous Corrosion",
+      "fr": "Corrosion ichoreuse",
       "en": "Ichorous Corrosion",
       "status": "UNOFFICIAL"
     },
@@ -13949,7 +13955,7 @@
     "id": "feature.illithid-euphoria",
     "type": "feature",
     "name": {
-      "fr": "Illithid Euphoria",
+      "fr": "Euphorie illithide",
       "en": "Illithid Euphoria",
       "status": "UNOFFICIAL"
     },
@@ -14008,7 +14014,7 @@
     "id": "feature.illithid-protection",
     "type": "feature",
     "name": {
-      "fr": "Illithid Protection",
+      "fr": "Protection illithide",
       "en": "Illithid Protection",
       "status": "UNOFFICIAL"
     },
@@ -14055,7 +14061,7 @@
     "id": "feature.illuminating-shot",
     "type": "feature",
     "name": {
-      "fr": "Illuminating Shot",
+      "fr": "Tir illuminant",
       "en": "Illuminating Shot",
       "status": "UNOFFICIAL"
     },
@@ -14119,7 +14125,7 @@
     "id": "feature.illusion-quickening",
     "type": "feature",
     "name": {
-      "fr": "Illusion Quickening",
+      "fr": "Illusion accélérée",
       "en": "Illusion Quickening",
       "status": "UNOFFICIAL"
     },
@@ -14178,7 +14184,7 @@
     "id": "feature.immolating-gaze",
     "type": "feature",
     "name": {
-      "fr": "Immolating Gaze",
+      "fr": "Regard incendiaire",
       "en": "Immolating Gaze",
       "status": "UNOFFICIAL"
     },
@@ -14243,7 +14249,7 @@
     "id": "feature.imperial-retaliation",
     "type": "feature",
     "name": {
-      "fr": "Imperial Retaliation",
+      "fr": "Riposte impériale",
       "en": "Imperial Retaliation",
       "status": "UNOFFICIAL"
     },
@@ -14280,7 +14286,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -14302,9 +14308,10 @@
     "id": "feature.improved-critical",
     "type": "feature",
     "name": {
-      "fr": "Improved Critical",
+      "fr": "Critique amélioré",
       "en": "Improved Critical",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte3",
@@ -14358,7 +14365,7 @@
     "id": "feature.impulse-blast",
     "type": "feature",
     "name": {
-      "fr": "Impulse Blast",
+      "fr": "Déflagration d’impulsion",
       "en": "Impulse Blast",
       "status": "UNOFFICIAL"
     },
@@ -14417,7 +14424,7 @@
     "id": "feature.incise-ligaments",
     "type": "feature",
     "name": {
-      "fr": "Incise Ligaments",
+      "fr": "Inciser les ligaments",
       "en": "Incise Ligaments",
       "status": "UNOFFICIAL"
     },
@@ -14482,7 +14489,7 @@
     "id": "feature.infernal-acuity",
     "type": "feature",
     "name": {
-      "fr": "Infernal Acuity",
+      "fr": "Acuité infernale",
       "en": "Infernal Acuity",
       "status": "UNOFFICIAL"
     },
@@ -14529,7 +14536,7 @@
     "id": "feature.infernal-evasion",
     "type": "feature",
     "name": {
-      "fr": "Infernal Evasion",
+      "fr": "Esquive infernale",
       "en": "Infernal Evasion",
       "status": "UNOFFICIAL"
     },
@@ -14576,7 +14583,7 @@
     "id": "feature.infernal-retribution",
     "type": "feature",
     "name": {
-      "fr": "Infernal Retribution",
+      "fr": "Rétribution infernale",
       "en": "Infernal Retribution",
       "status": "UNOFFICIAL"
     },
@@ -14635,7 +14642,7 @@
     "id": "feature.infernal-sight",
     "type": "feature",
     "name": {
-      "fr": "Infernal Sight",
+      "fr": "Vue infernale",
       "en": "Infernal Sight",
       "status": "UNOFFICIAL"
     },
@@ -14682,7 +14689,7 @@
     "id": "feature.infernal-touch",
     "type": "feature",
     "name": {
-      "fr": "Infernal Touch",
+      "fr": "Toucher infernal",
       "en": "Infernal Touch",
       "status": "UNOFFICIAL"
     },
@@ -14741,7 +14748,7 @@
     "id": "feature.infernal-weapon",
     "type": "feature",
     "name": {
-      "fr": "Infernal Weapon",
+      "fr": "Arme infernale",
       "en": "Infernal Weapon",
       "status": "UNOFFICIAL"
     },
@@ -14818,7 +14825,7 @@
     "id": "feature.inject-nostrum",
     "type": "feature",
     "name": {
-      "fr": "Inject Nostrum",
+      "fr": "Injecter l’élixir",
       "en": "Inject Nostrum",
       "status": "UNOFFICIAL"
     },
@@ -14883,7 +14890,7 @@
     "id": "feature.innate-fortitude",
     "type": "feature",
     "name": {
-      "fr": "Innate Fortitude",
+      "fr": "Robustesse innée",
       "en": "Innate Fortitude",
       "status": "UNOFFICIAL"
     },
@@ -14930,7 +14937,7 @@
     "id": "feature.intense-adamantine-backlash",
     "type": "feature",
     "name": {
-      "fr": "Intense Adamantine Backlash",
+      "fr": "Contrecoup d’adamantium intense",
       "en": "Intense Adamantine Backlash",
       "status": "UNOFFICIAL"
     },
@@ -14989,7 +14996,7 @@
     "id": "feature.interplanar-slayer",
     "type": "feature",
     "name": {
-      "fr": "Interplanar Slayer",
+      "fr": "Tueur interplanaire",
       "en": "Interplanar Slayer",
       "status": "UNOFFICIAL"
     },
@@ -15036,7 +15043,7 @@
     "id": "feature.intimate-embrace",
     "type": "feature",
     "name": {
-      "fr": "Intimate Embrace",
+      "fr": "Étreinte intime",
       "en": "Intimate Embrace",
       "status": "UNOFFICIAL"
     },
@@ -15083,7 +15090,7 @@
     "id": "feature.invisible-weapon",
     "type": "feature",
     "name": {
-      "fr": "Invisible Weapon",
+      "fr": "Arme invisible",
       "en": "Invisible Weapon",
       "status": "UNOFFICIAL"
     },
@@ -15142,7 +15149,7 @@
     "id": "feature.ironvine",
     "type": "feature",
     "name": {
-      "fr": "Ironvine",
+      "fr": "Liane de fer",
       "en": "Ironvine",
       "status": "UNOFFICIAL"
     },
@@ -15189,7 +15196,7 @@
     "id": "feature.keen-attack",
     "type": "feature",
     "name": {
-      "fr": "Keen Attack",
+      "fr": "Attaque acérée",
       "en": "Keen Attack",
       "status": "UNOFFICIAL"
     },
@@ -15236,7 +15243,7 @@
     "id": "feature.ki-restoration-greater",
     "type": "feature",
     "name": {
-      "fr": "Ki Restoration",
+      "fr": "Restauration du ki",
       "en": "Ki Restoration",
       "status": "UNOFFICIAL"
     },
@@ -15289,7 +15296,7 @@
     "id": "feature.ki-restoration-lesser",
     "type": "feature",
     "name": {
-      "fr": "Ki Restoration",
+      "fr": "Restauration du ki",
       "en": "Ki Restoration",
       "status": "UNOFFICIAL"
     },
@@ -15342,7 +15349,7 @@
     "id": "feature.kushigo-counter",
     "type": "feature",
     "name": {
-      "fr": "Kushigo Counter",
+      "fr": "Contre de Kushigo",
       "en": "Kushigo Counter",
       "status": "UNOFFICIAL"
     },
@@ -15394,7 +15401,7 @@
     "id": "feature.kushigos-might",
     "type": "feature",
     "name": {
-      "fr": "Kushigo’s Might",
+      "fr": "Puissance de Kushigo",
       "en": "Kushigo's Might",
       "status": "UNOFFICIAL"
     },
@@ -15441,7 +15448,7 @@
     "id": "feature.lacerate",
     "type": "feature",
     "name": {
-      "fr": "Lacerate",
+      "fr": "Lacération",
       "en": "Lacerate",
       "status": "UNOFFICIAL"
     },
@@ -15493,7 +15500,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -16015,7 +16022,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -16136,7 +16143,7 @@
     "id": "feature.last-stand",
     "type": "feature",
     "name": {
-      "fr": "Last Stand",
+      "fr": "Baroud d’honneur",
       "en": "Last Stand",
       "status": "UNOFFICIAL"
     },
@@ -16195,7 +16202,7 @@
     "id": "feature.lay-bare-their-weakness",
     "type": "feature",
     "name": {
-      "fr": "Lay Bare Their Weakness",
+      "fr": "Mettre leur faiblesse à nu",
       "en": "Lay Bare Their Weakness",
       "status": "UNOFFICIAL"
     },
@@ -16254,7 +16261,7 @@
     "id": "feature.legendary-mobility",
     "type": "feature",
     "name": {
-      "fr": "Legendary Mobility",
+      "fr": "Mobilité légendaire",
       "en": "Legendary Mobility",
       "status": "UNOFFICIAL"
     },
@@ -16313,7 +16320,7 @@
     "id": "feature.legendary-persistence",
     "type": "feature",
     "name": {
-      "fr": "Legendary Persistence",
+      "fr": "Persévérance légendaire",
       "en": "Legendary Persistence",
       "status": "UNOFFICIAL"
     },
@@ -16360,7 +16367,7 @@
     "id": "feature.lesser-infernal-retribution",
     "type": "feature",
     "name": {
-      "fr": "Lesser Infernal Retribution",
+      "fr": "Rétribution infernale mineure",
       "en": "Lesser Infernal Retribution",
       "status": "UNOFFICIAL"
     },
@@ -16407,7 +16414,7 @@
     "id": "feature.lesser-infernal-touch",
     "type": "feature",
     "name": {
-      "fr": "Lesser Infernal Touch",
+      "fr": "Toucher infernal mineur",
       "en": "Lesser Infernal Touch",
       "status": "UNOFFICIAL"
     },
@@ -16466,7 +16473,7 @@
     "id": "feature.let-the-undead-blanch-with-fear",
     "type": "feature",
     "name": {
-      "fr": "Let The Undead Blanch With Fear",
+      "fr": "Que les morts-vivants blêmissent de peur",
       "en": "Let The Undead Blanch With Fear",
       "status": "UNOFFICIAL"
     },
@@ -16513,7 +16520,7 @@
     "id": "feature.lethal-weapon-bludgeoning",
     "type": "feature",
     "name": {
-      "fr": "Lethal Weapon",
+      "fr": "Arme létale",
       "en": "Lethal Weapon",
       "status": "UNOFFICIAL"
     },
@@ -16569,7 +16576,7 @@
     "id": "feature.lethal-weapon-slashing",
     "type": "feature",
     "name": {
-      "fr": "Lethal Weapon",
+      "fr": "Arme létale",
       "en": "Lethal Weapon",
       "status": "UNOFFICIAL"
     },
@@ -16616,7 +16623,7 @@
     "id": "feature.lickspittles-alertness",
     "type": "feature",
     "name": {
-      "fr": "Lickspittle’s Alertness",
+      "fr": "Vigilance du larbin",
       "en": "Lickspittle's Alertness",
       "status": "UNOFFICIAL"
     },
@@ -16675,7 +16682,7 @@
     "id": "feature.life-essence-harvest",
     "type": "feature",
     "name": {
-      "fr": "Life Essence Harvest",
+      "fr": "Moisson d’essence vitale",
       "en": "Life Essence Harvest",
       "status": "UNOFFICIAL"
     },
@@ -16734,7 +16741,7 @@
     "id": "feature.life-stealing-critical",
     "type": "feature",
     "name": {
-      "fr": "Life Stealing Critical",
+      "fr": "Critique voleur de vie",
       "en": "Life Stealing Critical",
       "status": "UNOFFICIAL"
     },
@@ -16793,7 +16800,7 @@
     "id": "feature.lifecharger",
     "type": "feature",
     "name": {
-      "fr": "Lifecharger",
+      "fr": "Charge-vie",
       "en": "Lifecharger",
       "status": "UNOFFICIAL"
     },
@@ -16852,7 +16859,7 @@
     "id": "feature.lightning-aura",
     "type": "feature",
     "name": {
-      "fr": "Lightning Aura",
+      "fr": "Aura de foudre",
       "en": "Lightning Aura",
       "status": "UNOFFICIAL"
     },
@@ -16917,7 +16924,7 @@
     "id": "feature.lightning-blast",
     "type": "feature",
     "name": {
-      "fr": "Lightning Blast",
+      "fr": "Déflagration de foudre",
       "en": "Lightning Blast",
       "status": "UNOFFICIAL"
     },
@@ -16982,7 +16989,7 @@
     "id": "feature.loving-protection",
     "type": "feature",
     "name": {
-      "fr": "Loving Protection",
+      "fr": "Protection aimante",
       "en": "Loving Protection",
       "status": "UNOFFICIAL"
     },
@@ -17042,7 +17049,7 @@
     "id": "feature.lunar-bestial-fortitude",
     "type": "feature",
     "name": {
-      "fr": "Lunar Bestial Fortitude",
+      "fr": "Robustesse bestiale lunaire",
       "en": "Lunar Bestial Fortitude",
       "status": "UNOFFICIAL"
     },
@@ -17101,7 +17108,7 @@
     "id": "feature.lunar-bestial-vitality",
     "type": "feature",
     "name": {
-      "fr": "Lunar Bestial Vitality",
+      "fr": "Vitalité bestiale lunaire",
       "en": "Lunar Bestial Vitality",
       "status": "UNOFFICIAL"
     },
@@ -17160,7 +17167,7 @@
     "id": "feature.magical-durability-1",
     "type": "feature",
     "name": {
-      "fr": "Magical Durability",
+      "fr": "Résilience magique",
       "en": "Magical Durability",
       "status": "UNOFFICIAL"
     },
@@ -17207,7 +17214,7 @@
     "id": "feature.magical-durability-2",
     "type": "feature",
     "name": {
-      "fr": "Magical Durability",
+      "fr": "Résilience magique",
       "en": "Magical Durability",
       "status": "UNOFFICIAL"
     },
@@ -17259,7 +17266,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -17272,7 +17279,7 @@
     "id": "feature.magical-plate-1",
     "type": "feature",
     "name": {
-      "fr": "Magical Plate",
+      "fr": "Harnois magique",
       "en": "Magical Plate",
       "status": "UNOFFICIAL"
     },
@@ -17328,7 +17335,7 @@
     "id": "feature.magical-plate-2",
     "type": "feature",
     "name": {
-      "fr": "Magical Plate",
+      "fr": "Harnois magique",
       "en": "Magical Plate",
       "status": "UNOFFICIAL"
     },
@@ -17402,7 +17409,7 @@
     "id": "feature.maiming-strike",
     "type": "feature",
     "name": {
-      "fr": "Maiming Strike",
+      "fr": "Frappe mutilante",
       "en": "Maiming Strike",
       "status": "UNOFFICIAL"
     },
@@ -17490,7 +17497,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -17499,7 +17506,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -17557,7 +17564,7 @@
     "id": "feature.malefic-excretion",
     "type": "feature",
     "name": {
-      "fr": "Malefic Excretion",
+      "fr": "Excrétion maléfique",
       "en": "Malefic Excretion",
       "status": "UNOFFICIAL"
     },
@@ -17604,7 +17611,7 @@
     "id": "feature.malefic-funghi",
     "type": "feature",
     "name": {
-      "fr": "Malefic Funghi",
+      "fr": "Champignons maléfiques",
       "en": "Malefic Funghi",
       "status": "UNOFFICIAL"
     },
@@ -17651,7 +17658,7 @@
     "id": "feature.marksmanship",
     "type": "feature",
     "name": {
-      "fr": "Marksmanship",
+      "fr": "Adresse au tir",
       "en": "Marksmanship",
       "status": "UNOFFICIAL"
     },
@@ -17698,7 +17705,7 @@
     "id": "feature.martial-bravery",
     "type": "feature",
     "name": {
-      "fr": "Martial Bravery",
+      "fr": "Bravoure martiale",
       "en": "Martial Bravery",
       "status": "UNOFFICIAL"
     },
@@ -17745,7 +17752,7 @@
     "id": "feature.martial-exertion",
     "type": "feature",
     "name": {
-      "fr": "Martial Exertion",
+      "fr": "Effort martial",
       "en": "Martial Exertion",
       "status": "UNOFFICIAL"
     },
@@ -17805,7 +17812,7 @@
     "id": "feature.melee-caster",
     "type": "feature",
     "name": {
-      "fr": "Melee Caster",
+      "fr": "Incantateur de corps à corps",
       "en": "Melee Caster",
       "status": "UNOFFICIAL"
     },
@@ -17861,7 +17868,7 @@
     "id": "feature.mellow-harmony",
     "type": "feature",
     "name": {
-      "fr": "Mellow Harmony",
+      "fr": "Douce harmonie",
       "en": "Mellow Harmony",
       "status": "UNOFFICIAL"
     },
@@ -17926,7 +17933,7 @@
     "id": "feature.menacing-attack-bonespike-helmet",
     "type": "feature",
     "name": {
-      "fr": "Menacing Attack (Melee)",
+      "fr": "Attaque menaçante (corps à corps)",
       "en": "Menacing Attack (Melee)",
       "status": "UNOFFICIAL"
     },
@@ -17991,7 +17998,7 @@
     "id": "feature.mental-inhibition",
     "type": "feature",
     "name": {
-      "fr": "Mental Inhibition",
+      "fr": "Inhibition mentale",
       "en": "Mental Inhibition",
       "status": "UNOFFICIAL"
     },
@@ -18050,7 +18057,7 @@
     "id": "feature.mental-interference",
     "type": "feature",
     "name": {
-      "fr": "Mental Interference",
+      "fr": "Interférence mentale",
       "en": "Mental Interference",
       "status": "UNOFFICIAL"
     },
@@ -18109,7 +18116,7 @@
     "id": "feature.missile-snaring",
     "type": "feature",
     "name": {
-      "fr": "Missile Snaring",
+      "fr": "Piégeage de projectiles",
       "en": "Missile Snaring",
       "status": "UNOFFICIAL"
     },
@@ -18161,7 +18168,7 @@
     "id": "feature.mobile-shot",
     "type": "feature",
     "name": {
-      "fr": "Mobile Shot",
+      "fr": "Tir mobile",
       "en": "Mobile Shot",
       "status": "UNOFFICIAL"
     },
@@ -18241,7 +18248,7 @@
     "id": "feature.monsterslayer",
     "type": "feature",
     "name": {
-      "fr": "Monsterslayer",
+      "fr": "Tueur de monstres",
       "en": "Monsterslayer",
       "status": "UNOFFICIAL"
     },
@@ -18288,7 +18295,7 @@
     "id": "feature.moonlight-butterflies",
     "type": "feature",
     "name": {
-      "fr": "Moonlight Butterflies",
+      "fr": "Papillons de lune",
       "en": "Moonlight Butterflies",
       "status": "UNOFFICIAL"
     },
@@ -18341,7 +18348,7 @@
     "id": "feature.moonlight-glaive-glowing",
     "type": "feature",
     "name": {
-      "fr": "Moonlight Glaive: Glowing",
+      "fr": "Coutille du clair de lune : illumination",
       "en": "Moonlight Glaive: Glowing",
       "status": "UNOFFICIAL"
     },
@@ -18400,7 +18407,7 @@
     "id": "feature.mountainous-poise",
     "type": "feature",
     "name": {
-      "fr": "Mountainous Poise",
+      "fr": "Aplomb de la montagne",
       "en": "Mountainous Poise",
       "status": "UNOFFICIAL"
     },
@@ -18459,7 +18466,7 @@
     "id": "feature.multitasking",
     "type": "feature",
     "name": {
-      "fr": "Multitasking",
+      "fr": "Multitâche",
       "en": "Multitasking",
       "status": "UNOFFICIAL"
     },
@@ -18506,7 +18513,7 @@
     "id": "feature.murderous-sight",
     "type": "feature",
     "name": {
-      "fr": "Murderous Sight",
+      "fr": "Vue meurtrière",
       "en": "Murderous Sight",
       "status": "UNOFFICIAL"
     },
@@ -18553,7 +18560,7 @@
     "id": "feature.mystras-blessing",
     "type": "feature",
     "name": {
-      "fr": "Mystra’s Blessing",
+      "fr": "Bénédiction de Mystra",
       "en": "Mystra's Blessing",
       "status": "UNOFFICIAL"
     },
@@ -18612,7 +18619,7 @@
     "id": "feature.natures-embrace",
     "type": "feature",
     "name": {
-      "fr": "Nature’s Embrace",
+      "fr": "Étreinte de la nature",
       "en": "Nature's Embrace",
       "status": "UNOFFICIAL"
     },
@@ -18659,7 +18666,7 @@
     "id": "feature.natures-vengeance",
     "type": "feature",
     "name": {
-      "fr": "Nature’s Vengeance",
+      "fr": "Vengeance de la nature",
       "en": "Nature's Vengeance",
       "status": "UNOFFICIAL"
     },
@@ -18718,7 +18725,7 @@
     "id": "feature.night-walker",
     "type": "feature",
     "name": {
-      "fr": "Night Walker",
+      "fr": "Marcheur nocturne",
       "en": "Night Walker",
       "status": "UNOFFICIAL"
     },
@@ -18765,7 +18772,7 @@
     "id": "feature.nightsingers-reply",
     "type": "feature",
     "name": {
-      "fr": "Nightsinger’s Reply",
+      "fr": "Réplique de la Chanteuse nocturne",
       "en": "Nightsinger's Reply",
       "status": "UNOFFICIAL"
     },
@@ -18812,7 +18819,7 @@
     "id": "feature.nimble-as-a-cat",
     "type": "feature",
     "name": {
-      "fr": "Nimble As a Cat",
+      "fr": "Agile comme un chat",
       "en": "Nimble As a Cat",
       "status": "UNOFFICIAL"
     },
@@ -18859,7 +18866,7 @@
     "id": "feature.nimble-attack",
     "type": "feature",
     "name": {
-      "fr": "Nimble Attack",
+      "fr": "Attaque agile",
       "en": "Nimble Attack",
       "status": "UNOFFICIAL"
     },
@@ -18918,7 +18925,7 @@
     "id": "feature.nimblefinger",
     "type": "feature",
     "name": {
-      "fr": "Nimblefinger",
+      "fr": "Doigts agiles",
       "en": "Nimblefinger",
       "status": "UNOFFICIAL"
     },
@@ -18965,7 +18972,7 @@
     "id": "feature.nyrulna-glowing",
     "type": "feature",
     "name": {
-      "fr": "Nyrulna: Glowing",
+      "fr": "Nyrulna : illumination",
       "en": "Nyrulna: Glowing",
       "status": "UNOFFICIAL"
     },
@@ -19024,7 +19031,7 @@
     "id": "feature.odd-gift",
     "type": "feature",
     "name": {
-      "fr": "Odd Gift",
+      "fr": "Cadeau singulier",
       "en": "Odd Gift",
       "status": "UNOFFICIAL"
     },
@@ -19070,7 +19077,7 @@
     "id": "feature.order-of-nature",
     "type": "feature",
     "name": {
-      "fr": "Order of Nature",
+      "fr": "Ordre de la nature",
       "en": "Order of Nature",
       "status": "UNOFFICIAL"
     },
@@ -19117,7 +19124,7 @@
     "id": "feature.overcharge",
     "type": "feature",
     "name": {
-      "fr": "Overcharge",
+      "fr": "Surcharge",
       "en": "Overcharge",
       "status": "UNOFFICIAL"
     },
@@ -19176,7 +19183,7 @@
     "id": "feature.paralysing-critical",
     "type": "feature",
     "name": {
-      "fr": "Paralysing Critical",
+      "fr": "Critique paralysant",
       "en": "Paralysing Critical",
       "status": "UNOFFICIAL"
     },
@@ -19236,7 +19243,7 @@
     "id": "feature.part-the-flesh",
     "type": "feature",
     "name": {
-      "fr": "Part the Flesh",
+      "fr": "Fendre la chair",
       "en": "Part the Flesh",
       "status": "UNOFFICIAL"
     },
@@ -19301,7 +19308,7 @@
     "id": "feature.pearlescent-restoration",
     "type": "feature",
     "name": {
-      "fr": "Pearlescent Restoration",
+      "fr": "Restauration nacrée",
       "en": "Pearlescent Restoration",
       "status": "UNOFFICIAL"
     },
@@ -19354,7 +19361,7 @@
     "id": "feature.perfectly-balanced-strike",
     "type": "feature",
     "name": {
-      "fr": "Perfectly Balanced Strike",
+      "fr": "Frappe parfaitement équilibrée",
       "en": "Perfectly Balanced Strike",
       "status": "UNOFFICIAL"
     },
@@ -19407,7 +19414,7 @@
     "id": "feature.personal-space",
     "type": "feature",
     "name": {
-      "fr": "Personal Space",
+      "fr": "Espace personnel",
       "en": "Personal Space",
       "status": "UNOFFICIAL"
     },
@@ -19466,7 +19473,7 @@
     "id": "feature.phalar-aluve-melody",
     "type": "feature",
     "name": {
-      "fr": "Phalar Aluve: Melody",
+      "fr": "Phalar Aluve : mélodie",
       "en": "Phalar Aluve: Melody",
       "status": "UNOFFICIAL"
     },
@@ -19519,7 +19526,7 @@
     "id": "feature.piercing-shot",
     "type": "feature",
     "name": {
-      "fr": "Piercing Shot",
+      "fr": "Tir perforant",
       "en": "Piercing Shot",
       "status": "UNOFFICIAL"
     },
@@ -19692,7 +19699,7 @@
     "id": "feature.piercing-strike",
     "type": "feature",
     "name": {
-      "fr": "Piercing Strike",
+      "fr": "Frappe perforante",
       "en": "Piercing Strike",
       "status": "UNOFFICIAL"
     },
@@ -20216,7 +20223,7 @@
     "id": "feature.poison-mist",
     "type": "feature",
     "name": {
-      "fr": "Poison Mist",
+      "fr": "Brume empoisonnée",
       "en": "Poison Mist",
       "status": "UNOFFICIAL"
     },
@@ -20269,7 +20276,7 @@
     "id": "feature.poison-trails",
     "type": "feature",
     "name": {
-      "fr": "Poison Trails",
+      "fr": "Traînées de poison",
       "en": "Poison Trails",
       "status": "UNOFFICIAL"
     },
@@ -20316,7 +20323,7 @@
     "id": "feature.poisonous-synergy",
     "type": "feature",
     "name": {
-      "fr": "Poisonous Synergy",
+      "fr": "Synergie venimeuse",
       "en": "Poisonous Synergy",
       "status": "UNOFFICIAL"
     },
@@ -20363,7 +20370,7 @@
     "id": "feature.polymorph-dire-raven",
     "type": "feature",
     "name": {
-      "fr": "Polymorph: Dire Raven",
+      "fr": "Métamorphose : corbeau sanguinaire",
       "en": "Polymorph: Dire Raven",
       "status": "UNOFFICIAL"
     },
@@ -20428,7 +20435,7 @@
     "id": "feature.pommel-strike",
     "type": "feature",
     "name": {
-      "fr": "Pommel Strike",
+      "fr": "Coup de pommeau",
       "en": "Pommel Strike",
       "status": "UNOFFICIAL"
     },
@@ -20480,7 +20487,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -20678,7 +20685,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -20709,7 +20716,7 @@
     "id": "feature.potent-healing",
     "type": "feature",
     "name": {
-      "fr": "Potent Healing",
+      "fr": "Guérison puissante",
       "en": "Potent Healing",
       "status": "UNOFFICIAL"
     },
@@ -20756,7 +20763,7 @@
     "id": "feature.prepare",
     "type": "feature",
     "name": {
-      "fr": "Prepare",
+      "fr": "Préparation",
       "en": "Prepare",
       "status": "UNOFFICIAL"
     },
@@ -20885,7 +20892,7 @@
     "id": "feature.prey-decelerator",
     "type": "feature",
     "name": {
-      "fr": "Prey Decelerator",
+      "fr": "Ralentisseur de proies",
       "en": "Prey Decelerator",
       "status": "UNOFFICIAL"
     },
@@ -20944,7 +20951,7 @@
     "id": "feature.prey-upon-the-weak",
     "type": "feature",
     "name": {
-      "fr": "Prey Upon the Weak",
+      "fr": "S’en prendre aux faibles",
       "en": "Prey Upon the Weak",
       "status": "UNOFFICIAL"
     },
@@ -21000,7 +21007,7 @@
     "id": "feature.prime-aegis-of-fire",
     "type": "feature",
     "name": {
-      "fr": "Prime Aegis of Fire",
+      "fr": "Égide primordiale du feu",
       "en": "Prime Aegis of Fire",
       "status": "UNOFFICIAL"
     },
@@ -21047,7 +21054,7 @@
     "id": "feature.profane-scourge",
     "type": "feature",
     "name": {
-      "fr": "Profane Scourge",
+      "fr": "Fléau profane",
       "en": "Profane Scourge",
       "status": "UNOFFICIAL"
     },
@@ -21112,7 +21119,7 @@
     "id": "feature.promised-victory",
     "type": "feature",
     "name": {
-      "fr": "Promised Victory",
+      "fr": "Victoire promise",
       "en": "Promised Victory",
       "status": "UNOFFICIAL"
     },
@@ -21171,7 +21178,7 @@
     "id": "feature.psionic-revenge",
     "type": "feature",
     "name": {
-      "fr": "Psionic Revenge",
+      "fr": "Vengeance psionique",
       "en": "Psionic Revenge",
       "status": "UNOFFICIAL"
     },
@@ -21218,7 +21225,7 @@
     "id": "feature.psionic-ward-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Psionic Ward",
+      "fr": "Protection psionique",
       "en": "Psionic Ward",
       "status": "UNOFFICIAL"
     },
@@ -21265,7 +21272,7 @@
     "id": "feature.psychic-leech",
     "type": "feature",
     "name": {
-      "fr": "Psychic Leech",
+      "fr": "Sangsue psychique",
       "en": "Psychic Leech",
       "status": "UNOFFICIAL"
     },
@@ -21312,7 +21319,7 @@
     "id": "feature.psychic-missiles",
     "type": "feature",
     "name": {
-      "fr": "Psychic Missiles",
+      "fr": "Projectiles psychiques",
       "en": "Psychic Missiles",
       "status": "UNOFFICIAL"
     },
@@ -21359,7 +21366,7 @@
     "id": "feature.psychic-steel-virtuoso",
     "type": "feature",
     "name": {
-      "fr": "Psychic Steel Virtuoso",
+      "fr": "Virtuose de l’acier psychique",
       "en": "Psychic Steel Virtuoso",
       "status": "UNOFFICIAL"
     },
@@ -21406,7 +21413,7 @@
     "id": "feature.pushing-attack-titanstring-bow",
     "type": "feature",
     "name": {
-      "fr": "Pushing Attack (Ranged)",
+      "fr": "Attaque repoussante (à distance)",
       "en": "Pushing Attack (Ranged)",
       "status": "UNOFFICIAL"
     },
@@ -21459,7 +21466,7 @@
     "id": "feature.quickened-mage-hand",
     "type": "feature",
     "name": {
-      "fr": "Quickened Mage Hand",
+      "fr": "Main de mage accélérée",
       "en": "Quickened Mage Hand",
       "status": "UNOFFICIAL"
     },
@@ -21506,7 +21513,7 @@
     "id": "feature.quickspell-flinger",
     "type": "feature",
     "name": {
-      "fr": "Quickspell Flinger",
+      "fr": "Lanceur de sorts éclair",
       "en": "Quickspell Flinger",
       "status": "UNOFFICIAL"
     },
@@ -21566,7 +21573,7 @@
     "id": "feature.radiating-orb-gloves",
     "type": "feature",
     "name": {
-      "fr": "Radiating Orb Gloves",
+      "fr": "Gants d’orbe rayonnant",
       "en": "Radiating Orb Gloves",
       "status": "UNOFFICIAL"
     },
@@ -21625,7 +21632,7 @@
     "id": "feature.radiating-shockwave",
     "type": "feature",
     "name": {
-      "fr": "Radiating Shockwave",
+      "fr": "Onde de choc rayonnante",
       "en": "Radiating Shockwave",
       "status": "UNOFFICIAL"
     },
@@ -21672,7 +21679,7 @@
     "id": "feature.rapid-caster",
     "type": "feature",
     "name": {
-      "fr": "Rapid Caster",
+      "fr": "Incantateur rapide",
       "en": "Rapid Caster",
       "status": "UNOFFICIAL"
     },
@@ -21731,7 +21738,7 @@
     "id": "feature.rat-catcher",
     "type": "feature",
     "name": {
-      "fr": "Rat Catcher",
+      "fr": "Chasseur de rats",
       "en": "Rat Catcher",
       "status": "UNOFFICIAL"
     },
@@ -21778,7 +21785,7 @@
     "id": "feature.razor-gale",
     "type": "feature",
     "name": {
-      "fr": "Razor Gale",
+      "fr": "Bourrasque tranchante",
       "en": "Razor Gale",
       "status": "UNOFFICIAL"
     },
@@ -21831,7 +21838,7 @@
     "id": "feature.reapers-rigidity",
     "type": "feature",
     "name": {
-      "fr": "Reaper’s Rigidity",
+      "fr": "Rigidité du faucheur",
       "en": "Reaper's Rigidity",
       "status": "UNOFFICIAL"
     },
@@ -21878,7 +21885,7 @@
     "id": "feature.rebuke-of-the-mighty",
     "type": "feature",
     "name": {
-      "fr": "Rebuke of the Mighty",
+      "fr": "Réprimande du puissant",
       "en": "Rebuke of the Mighty",
       "status": "UNOFFICIAL"
     },
@@ -21912,7 +21919,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -21925,7 +21932,7 @@
     "id": "feature.refined-vaulting",
     "type": "feature",
     "name": {
-      "fr": "Refined Vaulting",
+      "fr": "Bond raffiné",
       "en": "Refined Vaulting",
       "status": "UNOFFICIAL"
     },
@@ -21990,7 +21997,7 @@
     "id": "feature.reflective-shell",
     "type": "feature",
     "name": {
-      "fr": "Reflective Shell",
+      "fr": "Coquille réfléchissante",
       "en": "Reflective Shell",
       "status": "UNOFFICIAL"
     },
@@ -22033,7 +22040,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -22055,7 +22062,7 @@
     "id": "feature.relentless-revenge",
     "type": "feature",
     "name": {
-      "fr": "Relentless Revenge",
+      "fr": "Vengeance implacable",
       "en": "Relentless Revenge",
       "status": "UNOFFICIAL"
     },
@@ -22102,7 +22109,7 @@
     "id": "feature.remedial-rhymes",
     "type": "feature",
     "name": {
-      "fr": "Remedial Rhymes",
+      "fr": "Rimes réparatrices",
       "en": "Remedial Rhymes",
       "status": "UNOFFICIAL"
     },
@@ -22161,7 +22168,7 @@
     "id": "feature.reposition-malefactor",
     "type": "feature",
     "name": {
-      "fr": "Reposition Malefactor",
+      "fr": "Ramener le malfaiteur",
       "en": "Reposition Malefactor",
       "status": "UNOFFICIAL"
     },
@@ -22213,7 +22220,7 @@
     "id": "feature.restore-bardic-inspiration",
     "type": "feature",
     "name": {
-      "fr": "Restore Bardic Inspiration",
+      "fr": "Restauration de l’inspiration bardique",
       "en": "Restore Bardic Inspiration",
       "status": "UNOFFICIAL"
     },
@@ -22266,7 +22273,7 @@
     "id": "feature.revenant-scourge",
     "type": "feature",
     "name": {
-      "fr": "Revenant Scourge",
+      "fr": "Fléau des revenants",
       "en": "Revenant Scourge",
       "status": "UNOFFICIAL"
     },
@@ -22313,7 +22320,7 @@
     "id": "feature.revitalising-strike",
     "type": "feature",
     "name": {
-      "fr": "Revitalising Strike",
+      "fr": "Frappe revigorante",
       "en": "Revitalising Strike",
       "status": "UNOFFICIAL"
     },
@@ -22366,7 +22373,7 @@
     "id": "feature.ring-of-veracity",
     "type": "feature",
     "name": {
-      "fr": "Ring of Veracity",
+      "fr": "Anneau de véracité",
       "en": "Ring of Veracity",
       "status": "UNOFFICIAL"
     },
@@ -22413,7 +22420,7 @@
     "id": "feature.risky-attack",
     "type": "feature",
     "name": {
-      "fr": "Risky Attack",
+      "fr": "Attaque risquée",
       "en": "Risky Attack",
       "status": "UNOFFICIAL"
     },
@@ -22460,7 +22467,7 @@
     "id": "feature.ruintamer-heart",
     "type": "feature",
     "name": {
-      "fr": "Ruintamer Heart",
+      "fr": "Cœur du dompteur de ruine",
       "en": "Ruintamer Heart",
       "status": "UNOFFICIAL"
     },
@@ -22507,7 +22514,7 @@
     "id": "feature.running-jump",
     "type": "feature",
     "name": {
-      "fr": "Running Jump",
+      "fr": "Saut avec élan",
       "en": "Running Jump",
       "status": "UNOFFICIAL"
     },
@@ -22554,7 +22561,7 @@
     "id": "feature.rupturing",
     "type": "feature",
     "name": {
-      "fr": "Rupturing",
+      "fr": "Rupture",
       "en": "Rupturing",
       "status": "UNOFFICIAL"
     },
@@ -22613,7 +22620,7 @@
     "id": "feature.rush-attack",
     "type": "feature",
     "name": {
-      "fr": "Rush Attack",
+      "fr": "Attaque en charge",
       "en": "Rush Attack",
       "status": "UNOFFICIAL"
     },
@@ -22899,7 +22906,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -22908,7 +22915,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -22962,7 +22969,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -23065,7 +23072,7 @@
     "id": "feature.sacred-munitions",
     "type": "feature",
     "name": {
-      "fr": "Sacred Munitions",
+      "fr": "Munitions sacrées",
       "en": "Sacred Munitions",
       "status": "UNOFFICIAL"
     },
@@ -23140,7 +23147,7 @@
     "id": "feature.saviours-allure",
     "type": "feature",
     "name": {
-      "fr": "Saviour’s Allure",
+      "fr": "Prestance du sauveur",
       "en": "Saviour's Allure",
       "status": "UNOFFICIAL"
     },
@@ -23187,7 +23194,7 @@
     "id": "feature.scintillating",
     "type": "feature",
     "name": {
-      "fr": "Scintillating",
+      "fr": "Scintillant",
       "en": "Scintillating",
       "status": "UNOFFICIAL"
     },
@@ -23234,7 +23241,7 @@
     "id": "feature.scourge-of-pests",
     "type": "feature",
     "name": {
-      "fr": "Scourge of Pests",
+      "fr": "Fléau des nuisibles",
       "en": "Scourge of Pests",
       "status": "UNOFFICIAL"
     },
@@ -23281,7 +23288,7 @@
     "id": "feature.searing-blood",
     "type": "feature",
     "name": {
-      "fr": "Searing Blood",
+      "fr": "Sang brûlant",
       "en": "Searing Blood",
       "status": "UNOFFICIAL"
     },
@@ -23356,7 +23363,7 @@
     "id": "feature.seeking-blood",
     "type": "feature",
     "name": {
-      "fr": "Seeking Blood",
+      "fr": "Traque du sang",
       "en": "Seeking Blood",
       "status": "UNOFFICIAL"
     },
@@ -23403,9 +23410,10 @@
     "id": "feature.seeking-spell",
     "type": "feature",
     "name": {
-      "fr": "Seeking Spell",
+      "fr": "Sort chercheur",
       "en": "Seeking Spell",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte3",
@@ -23450,7 +23458,7 @@
     "id": "feature.seldom-caught-unawares-1",
     "type": "feature",
     "name": {
-      "fr": "Seldom Caught Unawares",
+      "fr": "Rarement pris au dépourvu",
       "en": "Seldom Caught Unawares",
       "status": "UNOFFICIAL"
     },
@@ -23515,7 +23523,7 @@
     "id": "feature.seldom-caught-unawares-2",
     "type": "feature",
     "name": {
-      "fr": "Seldom Caught Unawares",
+      "fr": "Rarement pris au dépourvu",
       "en": "Seldom Caught Unawares",
       "status": "UNOFFICIAL"
     },
@@ -23571,7 +23579,7 @@
     "id": "feature.self-immolation",
     "type": "feature",
     "name": {
-      "fr": "Self Immolation",
+      "fr": "Auto-immolation",
       "en": "Self Immolation",
       "status": "UNOFFICIAL"
     },
@@ -23636,7 +23644,7 @@
     "id": "feature.selunes-blessing-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Selûne’s Blessing",
+      "fr": "Bénédiction de Séluné",
       "en": "Selûne's Blessing",
       "status": "UNOFFICIAL"
     },
@@ -23670,7 +23678,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -23683,7 +23691,7 @@
     "id": "feature.selunes-protection",
     "type": "feature",
     "name": {
-      "fr": "Selûne’s Protection",
+      "fr": "Protection de Séluné",
       "en": "Selûne's Protection",
       "status": "UNOFFICIAL"
     },
@@ -23730,7 +23738,7 @@
     "id": "feature.semblance-of-fey",
     "type": "feature",
     "name": {
-      "fr": "Semblance of Fey",
+      "fr": "Semblant de fée",
       "en": "Semblance of Fey",
       "status": "UNOFFICIAL"
     },
@@ -23777,7 +23785,7 @@
     "id": "feature.sentinel-weapon",
     "type": "feature",
     "name": {
-      "fr": "Sentinel Weapon",
+      "fr": "Arme sentinelle",
       "en": "Sentinel Weapon",
       "status": "UNOFFICIAL"
     },
@@ -23833,7 +23841,7 @@
     "id": "feature.shadeclinger",
     "type": "feature",
     "name": {
-      "fr": "Shadeclinger",
+      "fr": "Accroche-ombre",
       "en": "Shadeclinger",
       "status": "UNOFFICIAL"
     },
@@ -23892,7 +23900,7 @@
     "id": "feature.shadespell",
     "type": "feature",
     "name": {
-      "fr": "Shadespell",
+      "fr": "Sort d’ombre",
       "en": "Shadespell",
       "status": "UNOFFICIAL"
     },
@@ -23951,9 +23959,10 @@
     "id": "feature.shadow-blade-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Shadow Blade",
+      "fr": "Lame d’ombres",
       "en": "Shadow Blade",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "aidedd"
     },
     "tag": {
       "act": "acte2",
@@ -24007,7 +24016,7 @@
     "id": "feature.shadow-blinding",
     "type": "feature",
     "name": {
-      "fr": "Shadow-Blinding",
+      "fr": "Aveuglement d’ombre",
       "en": "Shadow-Blinding",
       "status": "UNOFFICIAL"
     },
@@ -24066,7 +24075,7 @@
     "id": "feature.shadow-teleportation",
     "type": "feature",
     "name": {
-      "fr": "Shadow Teleportation",
+      "fr": "Téléportation d’ombre",
       "en": "Shadow Teleportation",
       "status": "UNOFFICIAL"
     },
@@ -24119,7 +24128,7 @@
     "id": "feature.shadowsoaked-blow",
     "type": "feature",
     "name": {
-      "fr": "Shadowsoaked Blow",
+      "fr": "Coup imbibé d’ombre",
       "en": "Shadowsoaked Blow",
       "status": "UNOFFICIAL"
     },
@@ -24181,7 +24190,7 @@
     "id": "feature.shadowthief",
     "type": "feature",
     "name": {
-      "fr": "Shadowthief",
+      "fr": "Voleur d’ombre",
       "en": "Shadowthief",
       "status": "UNOFFICIAL"
     },
@@ -24228,7 +24237,7 @@
     "id": "feature.shapeshifter-slayer",
     "type": "feature",
     "name": {
-      "fr": "Shapeshifter Slayer",
+      "fr": "Tueur de métamorphes",
       "en": "Shapeshifter Slayer",
       "status": "UNOFFICIAL"
     },
@@ -24262,7 +24271,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -24275,7 +24284,7 @@
     "id": "feature.shapeshifters-boon",
     "type": "feature",
     "name": {
-      "fr": "Shapeshifter’s Boon",
+      "fr": "Faveur du métamorphe",
       "en": "Shapeshifter's Boon",
       "status": "UNOFFICIAL"
     },
@@ -24334,7 +24343,7 @@
     "id": "feature.sharp-caster",
     "type": "feature",
     "name": {
-      "fr": "Sharp Caster",
+      "fr": "Incantateur affûté",
       "en": "Sharp Caster",
       "status": "UNOFFICIAL"
     },
@@ -24381,7 +24390,7 @@
     "id": "feature.sharpened-snare",
     "type": "feature",
     "name": {
-      "fr": "Sharpened Snare",
+      "fr": "Collet affûté",
       "en": "Sharpened Snare",
       "status": "UNOFFICIAL"
     },
@@ -24428,7 +24437,7 @@
     "id": "feature.sharran-veil",
     "type": "feature",
     "name": {
-      "fr": "Sharran Veil",
+      "fr": "Voile sharrien",
       "en": "Sharran Veil",
       "status": "UNOFFICIAL"
     },
@@ -24462,7 +24471,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -24475,7 +24484,7 @@
     "id": "feature.shars-blessing",
     "type": "feature",
     "name": {
-      "fr": "Shar’s Blessing",
+      "fr": "Bénédiction de Shar",
       "en": "Shar's Blessing",
       "status": "UNOFFICIAL"
     },
@@ -24512,7 +24521,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -24534,7 +24543,7 @@
     "id": "feature.shars-blessing-spear-of-night",
     "type": "feature",
     "name": {
-      "fr": "Shar’s Blessing",
+      "fr": "Bénédiction de Shar",
       "en": "Shar's Blessing",
       "status": "UNOFFICIAL"
     },
@@ -24581,7 +24590,7 @@
     "id": "feature.shars-protection",
     "type": "feature",
     "name": {
-      "fr": "Shar’s Protection",
+      "fr": "Protection de Shar",
       "en": "Shar's Protection",
       "status": "UNOFFICIAL"
     },
@@ -24628,7 +24637,7 @@
     "id": "feature.shars-umbrae",
     "type": "feature",
     "name": {
-      "fr": "Shar’s Umbrae",
+      "fr": "Ombres de Shar",
       "en": "Shar's Umbrae",
       "status": "UNOFFICIAL"
     },
@@ -24680,7 +24689,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -24693,7 +24702,7 @@
     "id": "feature.shelter",
     "type": "feature",
     "name": {
-      "fr": "Shelter",
+      "fr": "Abri",
       "en": "Shelter",
       "status": "UNOFFICIAL"
     },
@@ -24740,7 +24749,7 @@
     "id": "feature.shield-bash",
     "type": "feature",
     "name": {
-      "fr": "Shield Bash",
+      "fr": "Coup de bouclier",
       "en": "Shield Bash",
       "status": "UNOFFICIAL"
     },
@@ -24868,7 +24877,7 @@
     "id": "feature.shield-blow",
     "type": "feature",
     "name": {
-      "fr": "Shield Blow",
+      "fr": "Choc de bouclier",
       "en": "Shield Blow",
       "status": "UNOFFICIAL"
     },
@@ -24932,7 +24941,7 @@
     "id": "feature.shield-conduit",
     "type": "feature",
     "name": {
-      "fr": "Shield Conduit",
+      "fr": "Conduit du bouclier",
       "en": "Shield Conduit",
       "status": "UNOFFICIAL"
     },
@@ -24991,7 +25000,7 @@
     "id": "feature.shocking-sting",
     "type": "feature",
     "name": {
-      "fr": "Shocking Sting",
+      "fr": "Piqûre électrique",
       "en": "Shocking Sting",
       "status": "UNOFFICIAL"
     },
@@ -25050,7 +25059,7 @@
     "id": "feature.shockwave",
     "type": "feature",
     "name": {
-      "fr": "Shockwave",
+      "fr": "Onde de choc",
       "en": "Shockwave",
       "status": "UNOFFICIAL"
     },
@@ -25097,7 +25106,7 @@
     "id": "feature.shoe-slinger",
     "type": "feature",
     "name": {
-      "fr": "Shoe Slinger",
+      "fr": "Lance-chaussure",
       "en": "Shoe Slinger",
       "status": "UNOFFICIAL"
     },
@@ -25144,7 +25153,7 @@
     "id": "feature.shrouded-in-shadow",
     "type": "feature",
     "name": {
-      "fr": "Shrouded in Shadow",
+      "fr": "Voile d’ombre",
       "en": "Shrouded in Shadow",
       "status": "UNOFFICIAL"
     },
@@ -25209,7 +25218,7 @@
     "id": "feature.skinburster-force",
     "type": "feature",
     "name": {
-      "fr": "Skinburster Force",
+      "fr": "Force crève-peau",
       "en": "Skinburster Force",
       "status": "UNOFFICIAL"
     },
@@ -25268,7 +25277,7 @@
     "id": "feature.skullduggery-attack",
     "type": "feature",
     "name": {
-      "fr": "Skullduggery Attack",
+      "fr": "Attaque fourbe",
       "en": "Skullduggery Attack",
       "status": "UNOFFICIAL"
     },
@@ -25315,7 +25324,7 @@
     "id": "feature.slabjaw-determination",
     "type": "feature",
     "name": {
-      "fr": "Slabjaw Determination",
+      "fr": "Détermination de la mâchoire de pierre",
       "en": "Slabjaw Determination",
       "status": "UNOFFICIAL"
     },
@@ -25374,7 +25383,7 @@
     "id": "feature.slay-the-wicked-bludgeoning",
     "type": "feature",
     "name": {
-      "fr": "Slay the Wicked",
+      "fr": "Pourfendre les malfaisants",
       "en": "Slay the Wicked",
       "status": "UNOFFICIAL"
     },
@@ -25421,7 +25430,7 @@
     "id": "feature.slay-the-wicked-slashing",
     "type": "feature",
     "name": {
-      "fr": "Slay the Wicked",
+      "fr": "Pourfendre les malfaisants",
       "en": "Slay the Wicked",
       "status": "UNOFFICIAL"
     },
@@ -25468,7 +25477,7 @@
     "id": "feature.smite-the-graceless",
     "type": "feature",
     "name": {
-      "fr": "Smite the Graceless",
+      "fr": "Châtier les maladroits",
       "en": "Smite the Graceless",
       "status": "UNOFFICIAL"
     },
@@ -25515,7 +25524,7 @@
     "id": "feature.smooth-start",
     "type": "feature",
     "name": {
-      "fr": "Smooth Start",
+      "fr": "Départ en douceur",
       "en": "Smooth Start",
       "status": "UNOFFICIAL"
     },
@@ -25574,7 +25583,7 @@
     "id": "feature.snowburst",
     "type": "feature",
     "name": {
-      "fr": "Snowburst",
+      "fr": "Gerbe de neige",
       "en": "Snowburst",
       "status": "UNOFFICIAL"
     },
@@ -25621,7 +25630,7 @@
     "id": "feature.snowy-liver",
     "type": "feature",
     "name": {
-      "fr": "Snowy Liver",
+      "fr": "Foie de neige",
       "en": "Snowy Liver",
       "status": "UNOFFICIAL"
     },
@@ -25668,7 +25677,7 @@
     "id": "feature.soothing-songs",
     "type": "feature",
     "name": {
-      "fr": "Soothing Songs",
+      "fr": "Chants apaisants",
       "en": "Soothing Songs",
       "status": "UNOFFICIAL"
     },
@@ -25715,7 +25724,7 @@
     "id": "feature.soul-catching",
     "type": "feature",
     "name": {
-      "fr": "Soul Catching",
+      "fr": "Capture d’âme",
       "en": "Soul Catching",
       "status": "UNOFFICIAL"
     },
@@ -25775,7 +25784,7 @@
     "id": "feature.soul-fist",
     "type": "feature",
     "name": {
-      "fr": "Soul Fist",
+      "fr": "Poing d’âme",
       "en": "Soul Fist",
       "status": "UNOFFICIAL"
     },
@@ -25822,7 +25831,7 @@
     "id": "feature.soul-perception",
     "type": "feature",
     "name": {
-      "fr": "Soul Perception",
+      "fr": "Perception de l’âme",
       "en": "Soul Perception",
       "status": "UNOFFICIAL"
     },
@@ -25869,7 +25878,7 @@
     "id": "feature.soulbreaker",
     "type": "feature",
     "name": {
-      "fr": "Soulbreaker",
+      "fr": "Brise-âme",
       "en": "Soulbreaker",
       "status": "UNOFFICIAL"
     },
@@ -25943,7 +25952,7 @@
     "id": "feature.spark-blocker",
     "type": "feature",
     "name": {
-      "fr": "Spark Blocker",
+      "fr": "Pare-étincelles",
       "en": "Spark Blocker",
       "status": "UNOFFICIAL"
     },
@@ -25990,7 +25999,7 @@
     "id": "feature.sparkswall-armour",
     "type": "feature",
     "name": {
-      "fr": "Sparkswall Armour",
+      "fr": "Armure rempart d’étincelles",
       "en": "Sparkswall Armour",
       "status": "UNOFFICIAL"
     },
@@ -26037,7 +26046,7 @@
     "id": "feature.speedy-sparks",
     "type": "feature",
     "name": {
-      "fr": "Speedy Sparks",
+      "fr": "Étincelles véloces",
       "en": "Speedy Sparks",
       "status": "UNOFFICIAL"
     },
@@ -26097,7 +26106,7 @@
     "id": "feature.spell-amplification",
     "type": "feature",
     "name": {
-      "fr": "Spell Amplification",
+      "fr": "Amplification des sorts",
       "en": "Spell Amplification",
       "status": "UNOFFICIAL"
     },
@@ -26144,7 +26153,7 @@
     "id": "feature.spell-resistance",
     "type": "feature",
     "name": {
-      "fr": "Spell Resistance",
+      "fr": "Résistance aux sorts",
       "en": "Spell Resistance",
       "status": "UNOFFICIAL"
     },
@@ -26200,7 +26209,7 @@
     "id": "feature.spellguard",
     "type": "feature",
     "name": {
-      "fr": "Spellguard",
+      "fr": "Gardesort",
       "en": "Spellguard",
       "status": "UNOFFICIAL"
     },
@@ -26234,7 +26243,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -26247,7 +26256,7 @@
     "id": "feature.spellmight",
     "type": "feature",
     "name": {
-      "fr": "Spellmight",
+      "fr": "Puissance de sort",
       "en": "Spellmight",
       "status": "UNOFFICIAL"
     },
@@ -26294,7 +26303,7 @@
     "id": "feature.spider-step",
     "type": "feature",
     "name": {
-      "fr": "Spider Step",
+      "fr": "Pas d’araignée",
       "en": "Spider Step",
       "status": "UNOFFICIAL"
     },
@@ -26341,7 +26350,7 @@
     "id": "feature.spiteful-thunder",
     "type": "feature",
     "name": {
-      "fr": "Spiteful Thunder",
+      "fr": "Tonnerre rancunier",
       "en": "Spiteful Thunder",
       "status": "UNOFFICIAL"
     },
@@ -26400,7 +26409,7 @@
     "id": "feature.splinters-of-a-giants-might",
     "type": "feature",
     "name": {
-      "fr": "Splinters of a Giant’s Might",
+      "fr": "Éclats de la force d’un géant",
       "en": "Splinters of a Giant's Might",
       "status": "UNOFFICIAL"
     },
@@ -26447,7 +26456,7 @@
     "id": "feature.spore-sacks",
     "type": "feature",
     "name": {
-      "fr": "Spore Sacks",
+      "fr": "Sacs de spores",
       "en": "Spore Sacks",
       "status": "UNOFFICIAL"
     },
@@ -26506,7 +26515,7 @@
     "id": "feature.staff-of-the-ram-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Staff of the Ram",
+      "fr": "Bâton du bélier",
       "en": "Staff of the Ram",
       "status": "UNOFFICIAL"
     },
@@ -26566,7 +26575,7 @@
     "id": "feature.steadfast",
     "type": "feature",
     "name": {
-      "fr": "Steadfast",
+      "fr": "Inébranlable",
       "en": "Steadfast",
       "status": "UNOFFICIAL"
     },
@@ -26613,7 +26622,7 @@
     "id": "feature.stealthier",
     "type": "feature",
     "name": {
-      "fr": "Stealthier",
+      "fr": "Furtivité accrue",
       "en": "Stealthier",
       "status": "UNOFFICIAL"
     },
@@ -26672,7 +26681,7 @@
     "id": "feature.stealthy",
     "type": "feature",
     "name": {
-      "fr": "Stealthy",
+      "fr": "Furtif",
       "en": "Stealthy",
       "status": "UNOFFICIAL"
     },
@@ -26746,7 +26755,7 @@
     "id": "feature.stealthy-critical",
     "type": "feature",
     "name": {
-      "fr": "Stealthy Critical",
+      "fr": "Critique furtif",
       "en": "Stealthy Critical",
       "status": "UNOFFICIAL"
     },
@@ -26805,7 +26814,7 @@
     "id": "feature.steel-physiology",
     "type": "feature",
     "name": {
-      "fr": "Steel Physiology",
+      "fr": "Physiologie d’acier",
       "en": "Steel Physiology",
       "status": "UNOFFICIAL"
     },
@@ -26852,7 +26861,7 @@
     "id": "feature.sting-the-helpless",
     "type": "feature",
     "name": {
-      "fr": "Sting The Helpless",
+      "fr": "Piquer les impuissants",
       "en": "Sting The Helpless",
       "status": "UNOFFICIAL"
     },
@@ -26899,7 +26908,7 @@
     "id": "feature.stirring-execution",
     "type": "feature",
     "name": {
-      "fr": "Stirring Execution",
+      "fr": "Exécution exaltante",
       "en": "Stirring Execution",
       "status": "UNOFFICIAL"
     },
@@ -26958,7 +26967,7 @@
     "id": "feature.strange-conduit",
     "type": "feature",
     "name": {
-      "fr": "Strange Conduit",
+      "fr": "Étrange conduit",
       "en": "Strange Conduit",
       "status": "UNOFFICIAL"
     },
@@ -27005,7 +27014,7 @@
     "id": "feature.strider-movement",
     "type": "feature",
     "name": {
-      "fr": "Strider Movement",
+      "fr": "Mouvement d’arpenteur",
       "en": "Strider Movement",
       "status": "UNOFFICIAL"
     },
@@ -27064,7 +27073,7 @@
     "id": "feature.stun-immunity",
     "type": "feature",
     "name": {
-      "fr": "Stun Immunity",
+      "fr": "Immunité à l’étourdissement",
       "en": "Stun Immunity",
       "status": "UNOFFICIAL"
     },
@@ -27098,7 +27107,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       }
@@ -27111,7 +27120,7 @@
     "id": "feature.subtle-swap",
     "type": "feature",
     "name": {
-      "fr": "Subtle Swap",
+      "fr": "Échange subtil",
       "en": "Subtle Swap",
       "status": "UNOFFICIAL"
     },
@@ -27158,7 +27167,7 @@
     "id": "feature.sunwalkers-gift-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Sunwalker’s Gift",
+      "fr": "Don de l’arpenteur solaire",
       "en": "Sunwalker's Gift",
       "status": "UNOFFICIAL"
     },
@@ -27205,7 +27214,7 @@
     "id": "feature.superior-material-1",
     "type": "feature",
     "name": {
-      "fr": "Superior Material",
+      "fr": "Matériau supérieur",
       "en": "Superior Material",
       "status": "UNOFFICIAL"
     },
@@ -27306,7 +27315,7 @@
     "id": "feature.superior-material-2",
     "type": "feature",
     "name": {
-      "fr": "Superior Material",
+      "fr": "Matériau supérieur",
       "en": "Superior Material",
       "status": "UNOFFICIAL"
     },
@@ -27353,7 +27362,7 @@
     "id": "feature.superior-padding-1",
     "type": "feature",
     "name": {
-      "fr": "Superior Padding",
+      "fr": "Rembourrage supérieur",
       "en": "Superior Padding",
       "status": "UNOFFICIAL"
     },
@@ -27418,7 +27427,7 @@
     "id": "feature.superior-padding-2",
     "type": "feature",
     "name": {
-      "fr": "Superior Padding",
+      "fr": "Rembourrage supérieur",
       "en": "Superior Padding",
       "status": "UNOFFICIAL"
     },
@@ -27465,7 +27474,7 @@
     "id": "feature.superior-plate-1",
     "type": "feature",
     "name": {
-      "fr": "Superior Plate",
+      "fr": "Harnois supérieur",
       "en": "Superior Plate",
       "status": "UNOFFICIAL"
     },
@@ -27575,7 +27584,7 @@
     "id": "feature.superior-plate-2",
     "type": "feature",
     "name": {
-      "fr": "Superior Plate",
+      "fr": "Harnois supérieur",
       "en": "Superior Plate",
       "status": "UNOFFICIAL"
     },
@@ -27622,7 +27631,7 @@
     "id": "feature.surge-accuracy",
     "type": "feature",
     "name": {
-      "fr": "Surge Accuracy",
+      "fr": "Précision de la fougue",
       "en": "Surge Accuracy",
       "status": "UNOFFICIAL"
     },
@@ -27681,7 +27690,7 @@
     "id": "feature.swathed-in-shadow",
     "type": "feature",
     "name": {
-      "fr": "Swathed in Shadow",
+      "fr": "Drapé d’ombre",
       "en": "Swathed in Shadow",
       "status": "UNOFFICIAL"
     },
@@ -27728,7 +27737,7 @@
     "id": "feature.swift-strides",
     "type": "feature",
     "name": {
-      "fr": "Swift Strides",
+      "fr": "Foulées rapides",
       "en": "Swift Strides",
       "status": "UNOFFICIAL"
     },
@@ -27788,7 +27797,7 @@
     "id": "feature.sword-mastery",
     "type": "feature",
     "name": {
-      "fr": "Sword Mastery",
+      "fr": "Maîtrise de l’épée",
       "en": "Sword Mastery",
       "status": "UNOFFICIAL"
     },
@@ -27835,7 +27844,7 @@
     "id": "feature.synergetic-cantrips",
     "type": "feature",
     "name": {
-      "fr": "Synergetic Cantrips",
+      "fr": "Sorts mineurs synergiques",
       "en": "Synergetic Cantrips",
       "status": "UNOFFICIAL"
     },
@@ -27894,7 +27903,7 @@
     "id": "feature.synergetic-moments",
     "type": "feature",
     "name": {
-      "fr": "Synergetic Moments",
+      "fr": "Moments synergiques",
       "en": "Synergetic Moments",
       "status": "UNOFFICIAL"
     },
@@ -27953,7 +27962,7 @@
     "id": "feature.talk-to-the-sentient-amulet",
     "type": "feature",
     "name": {
-      "fr": "Talk to the Sentient Amulet",
+      "fr": "Parler à l’amulette consciente",
       "en": "Talk to the Sentient Amulet",
       "status": "UNOFFICIAL"
     },
@@ -28000,7 +28009,7 @@
     "id": "feature.temperature-adjustment",
     "type": "feature",
     "name": {
-      "fr": "Temperature Adjustment",
+      "fr": "Régulation thermique",
       "en": "Temperature Adjustment",
       "status": "UNOFFICIAL"
     },
@@ -28047,7 +28056,7 @@
     "id": "feature.the-comeback",
     "type": "feature",
     "name": {
-      "fr": "The Comeback",
+      "fr": "Le retour",
       "en": "The Comeback",
       "status": "UNOFFICIAL"
     },
@@ -28106,7 +28115,7 @@
     "id": "feature.the-pain-maidens-blessing",
     "type": "feature",
     "name": {
-      "fr": "The Pain Maiden’s Blessing",
+      "fr": "Bénédiction de la Vierge de la douleur",
       "en": "The Pain Maiden's Blessing",
       "status": "UNOFFICIAL"
     },
@@ -28165,7 +28174,7 @@
     "id": "feature.the-scourge-mistress-bane",
     "type": "feature",
     "name": {
-      "fr": "The Scourge Mistress’ Bane",
+      "fr": "Fléau de la Maîtresse du fouet",
       "en": "The Scourge Mistress' Bane",
       "status": "UNOFFICIAL"
     },
@@ -28224,7 +28233,7 @@
     "id": "feature.the-shadow-itself",
     "type": "feature",
     "name": {
-      "fr": "The Shadow Itself",
+      "fr": "L’ombre même",
       "en": "The Shadow Itself",
       "status": "UNOFFICIAL"
     },
@@ -28284,7 +28293,7 @@
     "id": "feature.the-water-caller",
     "type": "feature",
     "name": {
-      "fr": "The Water Caller",
+      "fr": "L’invocateur des eaux",
       "en": "The Water Caller",
       "status": "UNOFFICIAL"
     },
@@ -28402,7 +28411,7 @@
     "id": "feature.throwing-boost",
     "type": "feature",
     "name": {
-      "fr": "Throwing Boost",
+      "fr": "Lancer renforcé",
       "en": "Throwing Boost",
       "status": "UNOFFICIAL"
     },
@@ -28449,7 +28458,7 @@
     "id": "feature.throwing-lightning-damage",
     "type": "feature",
     "name": {
-      "fr": "Throwing: Lightning Damage",
+      "fr": "Lancer : dégâts de foudre",
       "en": "Throwing: Lightning Damage",
       "status": "UNOFFICIAL"
     },
@@ -28496,7 +28505,7 @@
     "id": "feature.thunderous-acuity",
     "type": "feature",
     "name": {
-      "fr": "Thunderous Acuity",
+      "fr": "Acuité tonitruante",
       "en": "Thunderous Acuity",
       "status": "UNOFFICIAL"
     },
@@ -28555,7 +28564,7 @@
     "id": "feature.thunderous-conversion",
     "type": "feature",
     "name": {
-      "fr": "Thunderous Conversion",
+      "fr": "Conversion tonitruante",
       "en": "Thunderous Conversion",
       "status": "UNOFFICIAL"
     },
@@ -28614,7 +28623,7 @@
     "id": "feature.time-thoroughly-bided",
     "type": "feature",
     "name": {
-      "fr": "Time Thoroughly Bided",
+      "fr": "Patience bien employée",
       "en": "Time Thoroughly Bided",
       "status": "UNOFFICIAL"
     },
@@ -28673,7 +28682,7 @@
     "id": "feature.titan-weapon",
     "type": "feature",
     "name": {
-      "fr": "Titan Weapon",
+      "fr": "Arme de titan",
       "en": "Titan Weapon",
       "status": "UNOFFICIAL"
     },
@@ -28720,9 +28729,10 @@
     "id": "feature.topple",
     "type": "feature",
     "name": {
-      "fr": "Topple",
+      "fr": "Renversement",
       "en": "Topple",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte1",
@@ -28952,7 +28962,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -29001,7 +29011,7 @@
     "id": "feature.topple-the-big-folk",
     "type": "feature",
     "name": {
-      "fr": "Topple the Big Folk",
+      "fr": "Renverser les colosses",
       "en": "Topple the Big Folk",
       "status": "UNOFFICIAL"
     },
@@ -29044,7 +29054,7 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
-          "level": "aucun",
+          "level": "leger",
           "otherWorks": "aucun"
         }
       },
@@ -29066,7 +29076,7 @@
     "id": "feature.treader-by-twilight",
     "type": "feature",
     "name": {
-      "fr": "Treader by Twilight",
+      "fr": "Marcheur du crépuscule",
       "en": "Treader by Twilight",
       "status": "UNOFFICIAL"
     },
@@ -29125,7 +29135,7 @@
     "id": "feature.trephination",
     "type": "feature",
     "name": {
-      "fr": "Trephination",
+      "fr": "Trépanation",
       "en": "Trephination",
       "status": "UNOFFICIAL"
     },
@@ -29190,7 +29200,7 @@
     "id": "feature.troubadours-wonder",
     "type": "feature",
     "name": {
-      "fr": "Troubadour’s Wonder",
+      "fr": "Merveille du troubadour",
       "en": "Troubadour's Wonder",
       "status": "UNOFFICIAL"
     },
@@ -29237,9 +29247,10 @@
     "id": "feature.turn-undead",
     "type": "feature",
     "name": {
-      "fr": "Turn Undead",
+      "fr": "Renvoi des morts-vivants",
       "en": "Turn Undead",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte3",
@@ -29304,7 +29315,7 @@
     "id": "feature.twist-of-fortune-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Twist of Fortune",
+      "fr": "Coup du sort",
       "en": "Twist of Fortune",
       "status": "UNOFFICIAL"
     },
@@ -29351,9 +29362,10 @@
     "id": "feature.two-weapon-fighting",
     "type": "feature",
     "name": {
-      "fr": "Two-Weapon Fighting",
+      "fr": "Combat à deux armes",
       "en": "Two-Weapon Fighting",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "acte2",
@@ -29398,7 +29410,7 @@
     "id": "feature.tyrant-tongue",
     "type": "feature",
     "name": {
-      "fr": "Tyrant Tongue",
+      "fr": "Langue de tyran",
       "en": "Tyrant Tongue",
       "status": "UNOFFICIAL"
     },
@@ -29463,7 +29475,7 @@
     "id": "feature.umbral-attack",
     "type": "feature",
     "name": {
-      "fr": "Umbral Attack",
+      "fr": "Attaque ombrale",
       "en": "Umbral Attack",
       "status": "UNOFFICIAL"
     },
@@ -29519,7 +29531,7 @@
     "id": "feature.undead-bane",
     "type": "feature",
     "name": {
-      "fr": "Undead Bane",
+      "fr": "Fléau des morts-vivants",
       "en": "Undead Bane",
       "status": "UNOFFICIAL"
     },
@@ -29566,7 +29578,7 @@
     "id": "feature.undead-ward",
     "type": "feature",
     "name": {
-      "fr": "Undead Ward",
+      "fr": "Protection des morts-vivants",
       "en": "Undead Ward",
       "status": "UNOFFICIAL"
     },
@@ -29625,7 +29637,7 @@
     "id": "feature.underdogs-bravery",
     "type": "feature",
     "name": {
-      "fr": "Underdog’s Bravery",
+      "fr": "Bravoure de l’opprimé",
       "en": "Underdog's Bravery",
       "status": "UNOFFICIAL"
     },
@@ -29672,7 +29684,7 @@
     "id": "feature.unflinching-protection",
     "type": "feature",
     "name": {
-      "fr": "Unflinching Protection",
+      "fr": "Protection indéfectible",
       "en": "Unflinching Protection",
       "status": "UNOFFICIAL"
     },
@@ -29719,7 +29731,7 @@
     "id": "feature.unshackling-strike",
     "type": "feature",
     "name": {
-      "fr": "Unshackling Strike",
+      "fr": "Frappe libératrice",
       "en": "Unshackling Strike",
       "status": "UNOFFICIAL"
     },
@@ -29771,7 +29783,7 @@
     "id": "feature.unwavering",
     "type": "feature",
     "name": {
-      "fr": "Unwavering",
+      "fr": "Imperturbable",
       "en": "Unwavering",
       "status": "UNOFFICIAL"
     },
@@ -29818,7 +29830,7 @@
     "id": "feature.unwavering-bull",
     "type": "feature",
     "name": {
-      "fr": "Unwavering Bull",
+      "fr": "Taureau imperturbable",
       "en": "Unwavering Bull",
       "status": "UNOFFICIAL"
     },
@@ -29865,7 +29877,7 @@
     "id": "feature.veil-of-the-wind",
     "type": "feature",
     "name": {
-      "fr": "Veil of the Wind",
+      "fr": "Voile du vent",
       "en": "Veil of the Wind",
       "status": "UNOFFICIAL"
     },
@@ -29912,7 +29924,7 @@
     "id": "feature.venomous-revenge",
     "type": "feature",
     "name": {
-      "fr": "Venomous Revenge",
+      "fr": "Vengeance venimeuse",
       "en": "Venomous Revenge",
       "status": "UNOFFICIAL"
     },
@@ -29959,7 +29971,7 @@
     "id": "feature.virulent-venom",
     "type": "feature",
     "name": {
-      "fr": "Virulent Venom",
+      "fr": "Venin virulent",
       "en": "Virulent Venom",
       "status": "UNOFFICIAL"
     },
@@ -30024,7 +30036,7 @@
     "id": "feature.vital-conduit",
     "type": "feature",
     "name": {
-      "fr": "Vital Conduit",
+      "fr": "Conduit vital",
       "en": "Vital Conduit",
       "status": "UNOFFICIAL"
     },
@@ -30083,7 +30095,7 @@
     "id": "feature.voice-of-the-circle",
     "type": "feature",
     "name": {
-      "fr": "Voice of the Circle",
+      "fr": "Voix du cercle",
       "en": "Voice of the Circle",
       "status": "UNOFFICIAL"
     },
@@ -30148,7 +30160,7 @@
     "id": "feature.warding-hands",
     "type": "feature",
     "name": {
-      "fr": "Warding Hands",
+      "fr": "Mains protectrices",
       "en": "Warding Hands",
       "status": "UNOFFICIAL"
     },
@@ -30207,7 +30219,7 @@
     "id": "feature.watersparks",
     "type": "feature",
     "name": {
-      "fr": "Watersparks",
+      "fr": "Étincelles d’eau",
       "en": "Watersparks",
       "status": "UNOFFICIAL"
     },
@@ -30266,7 +30278,7 @@
     "id": "feature.watery-guidance",
     "type": "feature",
     "name": {
-      "fr": "Watery Guidance",
+      "fr": "Guide des eaux",
       "en": "Watery Guidance",
       "status": "UNOFFICIAL"
     },
@@ -30313,7 +30325,7 @@
     "id": "feature.watery-rejuvenation",
     "type": "feature",
     "name": {
-      "fr": "Watery Rejuvenation",
+      "fr": "Régénération aquatique",
       "en": "Watery Rejuvenation",
       "status": "UNOFFICIAL"
     },
@@ -30360,7 +30372,7 @@
     "id": "feature.weakening-strike",
     "type": "feature",
     "name": {
-      "fr": "Weakening Strike",
+      "fr": "Frappe affaiblissante",
       "en": "Weakening Strike",
       "status": "UNOFFICIAL"
     },
@@ -30659,7 +30671,7 @@
     "id": "feature.weave-eater",
     "type": "feature",
     "name": {
-      "fr": "Weave Eater",
+      "fr": "Dévoreur de Trame",
       "en": "Weave Eater",
       "status": "UNOFFICIAL"
     },
@@ -30706,7 +30718,7 @@
     "id": "feature.well-liked-and-well-fortified",
     "type": "feature",
     "name": {
-      "fr": "Well-Liked and Well-Fortified",
+      "fr": "Apprécié et bien protégé",
       "en": "Well-Liked and Well-Fortified",
       "status": "UNOFFICIAL"
     },
@@ -30765,7 +30777,7 @@
     "id": "feature.whirlwind-attack-weapon-action",
     "type": "feature",
     "name": {
-      "fr": "Whirlwind Attack",
+      "fr": "Attaque tourbillonnante",
       "en": "Whirlwind Attack",
       "status": "UNOFFICIAL"
     },
@@ -30827,7 +30839,7 @@
     "id": "feature.winters-clutches-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Winter’s Clutches",
+      "fr": "Étreinte de l’hiver",
       "en": "Winter's Clutches",
       "status": "UNOFFICIAL"
     },
@@ -30886,7 +30898,7 @@
     "id": "feature.witchbreaker-passive-feature",
     "type": "feature",
     "name": {
-      "fr": "Witchbreaker",
+      "fr": "Brise-sorcière",
       "en": "Witchbreaker",
       "status": "UNOFFICIAL"
     },
@@ -30933,7 +30945,7 @@
     "id": "feature.withering-cut",
     "type": "feature",
     "name": {
-      "fr": "Withering Cut",
+      "fr": "Entaille flétrissante",
       "en": "Withering Cut",
       "status": "UNOFFICIAL"
     },
@@ -30980,7 +30992,7 @@
     "id": "feature.wound-closure",
     "type": "feature",
     "name": {
-      "fr": "Wound Closure",
+      "fr": "Cicatrisation",
       "en": "Wound Closure",
       "status": "UNOFFICIAL"
     },
@@ -31039,7 +31051,7 @@
     "id": "feature.writhing-dance",
     "type": "feature",
     "name": {
-      "fr": "Writhing Dance",
+      "fr": "Danse convulsive",
       "en": "Writhing Dance",
       "status": "UNOFFICIAL"
     },
@@ -31086,7 +31098,7 @@
     "id": "feature.xyanydes-fire",
     "type": "feature",
     "name": {
-      "fr": "Xyanyde’s Fire",
+      "fr": "Feu de Xyanyde",
       "en": "Xyanyde's Fire",
       "status": "UNOFFICIAL"
     },
@@ -31146,7 +31158,7 @@
     "id": "feature.yeenoghus-gift",
     "type": "feature",
     "name": {
-      "fr": "Yeenoghu’s Gift",
+      "fr": "Don de Yeenoghu",
       "en": "Yeenoghu's Gift",
       "status": "UNOFFICIAL"
     },
@@ -31205,7 +31217,7 @@
     "id": "feature.zephyr-break",
     "type": "feature",
     "name": {
-      "fr": "Zephyr Break",
+      "fr": "Brisure du zéphyr",
       "en": "Zephyr Break",
       "status": "UNOFFICIAL"
     },
@@ -31270,7 +31282,7 @@
     "id": "feature.zephyr-connection",
     "type": "feature",
     "name": {
-      "fr": "Zephyr Connection",
+      "fr": "Lien du zéphyr",
       "en": "Zephyr Connection",
       "status": "UNOFFICIAL"
     },
@@ -31317,7 +31329,7 @@
     "id": "feature.zephyr-flash",
     "type": "feature",
     "name": {
-      "fr": "Zephyr Flash",
+      "fr": "Fulgurance du zéphyr",
       "en": "Zephyr Flash",
       "status": "UNOFFICIAL"
     },

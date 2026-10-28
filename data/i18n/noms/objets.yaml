@@ -1,0 +1,1877 @@
+# Noms français des objets (lot noms-item) — voir docs/LOTS_ECRITURE.md.
+# Statuts : VF_DND (terme exact du lexique d’AideDD ou du SRD 5.2.1 français), sinon NON_OFFICIELLE.
+
+item.abdels-trusted-shield:
+  fr: Bouclier de confiance d’Abdel
+  statut: NON_OFFICIELLE
+item.aberration-hunters-amulet:
+  fr: Amulette des chasseurs d’aberrations
+  statut: NON_OFFICIELLE
+item.absolute-confidence-amulet:
+  fr: Amulette de confiance absolue
+  statut: NON_OFFICIELLE
+item.absolutes-protector:
+  fr: Protecteur de l’Absolu
+  statut: NON_OFFICIELLE
+item.absolutes-talisman:
+  fr: Talisman de l’Absolu
+  statut: NON_OFFICIELLE
+item.absolutes-warboard:
+  fr: Pavois de l’Absolu
+  statut: NON_OFFICIELLE
+item.abyss-beckoners:
+  fr: Héleurs des Abysses
+  statut: NON_OFFICIELLE
+item.acrobat-shoes:
+  fr: Chaussures d’acrobate
+  statut: NON_OFFICIELLE
+item.adamantine-longsword:
+  fr: Épée longue d’adamantium
+  statut: NON_OFFICIELLE
+item.adamantine-mace:
+  fr: Masse d’armes d’adamantium
+  statut: NON_OFFICIELLE
+item.adamantine-scale-mail:
+  fr: Armure d’écailles d’adamantium
+  statut: NON_OFFICIELLE
+item.adamantine-shield:
+  fr: Bouclier d’adamantium
+  statut: NON_OFFICIELLE
+item.adamantine-splint-armour:
+  fr: Clibanion d’adamantium
+  statut: NON_OFFICIELLE
+item.after-death-do-us-part:
+  fr: Après que la mort nous a séparés
+  statut: NON_OFFICIELLE
+item.ambusher:
+  fr: Embusqué
+  statut: NON_OFFICIELLE
+item.amulet-of-bhaal:
+  fr: Amulette de Bhaal
+  statut: NON_OFFICIELLE
+item.amulet-of-branding:
+  fr: Amulette de marquage
+  statut: NON_OFFICIELLE
+item.amulet-of-elemental-torment:
+  fr: Amulette de tourment élémentaire
+  statut: NON_OFFICIELLE
+item.amulet-of-greater-health:
+  fr: Amulette de bonne santé supérieure
+  statut: NON_OFFICIELLE
+item.amulet-of-misty-step:
+  fr: Amulette de foulée brumeuse
+  statut: NON_OFFICIELLE
+item.amulet-of-restoration:
+  fr: Amulette de restauration
+  statut: NON_OFFICIELLE
+item.amulet-of-selunes-chosen:
+  fr: Amulette de l’élu de Séluné
+  statut: NON_OFFICIELLE
+item.amulet-of-silvanus:
+  fr: Amulette de Silvanus
+  statut: NON_OFFICIELLE
+item.amulet-of-the-devout:
+  fr: Amulette du dévot
+  statut: NON_OFFICIELLE
+item.amulet-of-the-drunkard:
+  fr: Amulette de l’ivrogne
+  statut: NON_OFFICIELLE
+item.amulet-of-the-harpers:
+  fr: Amulette des Ménestrels
+  statut: NON_OFFICIELLE
+item.amulet-of-the-unworthy:
+  fr: Amulette de l’indigne
+  statut: NON_OFFICIELLE
+item.amulet-of-windrider:
+  fr: Amulette du chevaucheur des vents
+  statut: NON_OFFICIELLE
+item.argument-solver:
+  fr: Argument massue
+  statut: NON_OFFICIELLE
+item.armour-of-agility:
+  fr: Armure d’agilité
+  statut: NON_OFFICIELLE
+item.armour-of-devotion:
+  fr: Armure de dévotion
+  statut: NON_OFFICIELLE
+item.armour-of-landfall:
+  fr: Armure d’accostage
+  statut: NON_OFFICIELLE
+item.armour-of-moonbasking:
+  fr: Armure du bain de lune
+  statut: NON_OFFICIELLE
+item.armour-of-persistence:
+  fr: Armure de persistance
+  statut: NON_OFFICIELLE
+item.armour-of-the-sporekeeper:
+  fr: Armure du gardien des spores
+  statut: NON_OFFICIELLE
+item.armour-of-uninhibited-kushigo:
+  fr: Armure du Kushigo débridé
+  statut: NON_OFFICIELLE
+item.artificial-leech-1:
+  fr: Sangsue artificielle
+  statut: NON_OFFICIELLE
+item.assassin-of-bhaal-cowl:
+  fr: Capuche d’assassin de Bhaal
+  statut: NON_OFFICIELLE
+item.assassins-shortsword:
+  fr: Épée courte de l’assassin
+  statut: NON_OFFICIELLE
+item.assassins-touch:
+  fr: Toucher de l’assassin
+  statut: NON_OFFICIELLE
+item.baldurans-giantslayer:
+  fr: Tueuse de géants de Balduran
+  statut: NON_OFFICIELLE
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
+item.band-of-the-mystic-scoundrel:
+  fr: Bague du gredin mystique
+  statut: NON_OFFICIELLE
+item.barkskin-armour:
+  fr: Armure de peau d’écorce
+  statut: NON_OFFICIELLE
+item.battered-lute:
+  fr: Luth cabossé
+  statut: NON_OFFICIELLE
+item.battleaxe-1:
+  fr: Hache d’armes +1
+  statut: NON_OFFICIELLE
+item.beastmasters-chain:
+  fr: Chaîne du maître des bêtes
+  statut: NON_OFFICIELLE
+item.belm:
+  fr: Belm
+  statut: NON_OFFICIELLE
+item.bhaalist-armour:
+  fr: Armure bhaaliste
+  statut: NON_OFFICIELLE
+item.bhaalist-gloves:
+  fr: Gants bhaalistes
+  statut: NON_OFFICIELLE
+item.bided-time:
+  fr: Heure attendue
+  statut: NON_OFFICIELLE
+item.bigboys-chew-toy:
+  fr: Jouet à mâchouiller de Bigboy
+  statut: NON_OFFICIELLE
+item.birthright:
+  fr: Droit de naissance
+  statut: NON_OFFICIELLE
+item.blackguards-gauntlets:
+  fr: Gantelets du chevalier noir
+  statut: NON_OFFICIELLE
+item.blackguards-greaves:
+  fr: Jambières du chevalier noir
+  statut: NON_OFFICIELLE
+item.blackguards-plate:
+  fr: Harnois du chevalier noir
+  statut: NON_OFFICIELLE
+item.blackguards-sword:
+  fr: Épée du chevalier noir
+  statut: NON_OFFICIELLE
+item.blade-of-oppressed-souls:
+  fr: Lame des âmes opprimées
+  statut: NON_OFFICIELLE
+item.blazer-of-benevolence:
+  fr: Veste de bienveillance
+  statut: NON_OFFICIELLE
+item.blightbringer:
+  fr: Porte-flétrissure
+  statut: NON_OFFICIELLE
+item.blooded-greataxe:
+  fr: Hache à deux mains ensanglantée
+  statut: NON_OFFICIELLE
+item.bloodguzzler-garb:
+  fr: Tenue du buveur de sang
+  statut: NON_OFFICIELLE
+item.bloodthirst:
+  fr: Soif de sang
+  statut: NON_OFFICIELLE
+item.bloody-amulet:
+  fr: Amulette sanglante
+  statut: NON_OFFICIELLE
+item.bonesaw-1:
+  fr: Scie à os
+  statut: NON_OFFICIELLE
+item.bonespike-boots:
+  fr: Bottes à pointes d’os
+  statut: NON_OFFICIELLE
+item.bonespike-garb:
+  fr: Tenue à pointes d’os
+  statut: NON_OFFICIELLE
+item.bonespike-gloves:
+  fr: Gants à pointes d’os
+  statut: NON_OFFICIELLE
+item.bonespike-helmet:
+  fr: Casque à pointes d’os
+  statut: NON_OFFICIELLE
+item.boots-of-aid-and-comfort:
+  fr: Bottes d’aide et de réconfort
+  statut: NON_OFFICIELLE
+item.boots-of-apparent-death:
+  fr: Bottes de mort apparente
+  statut: NON_OFFICIELLE
+item.boots-of-arcane-bolstering:
+  fr: Bottes de renfort arcanique
+  statut: NON_OFFICIELLE
+item.boots-of-brilliance:
+  fr: Bottes de brio
+  statut: NON_OFFICIELLE
+item.boots-of-elemental-momentum:
+  fr: Bottes d’élan élémentaire
+  statut: NON_OFFICIELLE
+item.boots-of-genial-striding:
+  fr: Bottes de foulée joviale
+  statut: NON_OFFICIELLE
+item.boots-of-persistence:
+  fr: Bottes de persistance
+  statut: NON_OFFICIELLE
+item.boots-of-psionic-movement:
+  fr: Bottes de mouvement psionique
+  statut: NON_OFFICIELLE
+item.boots-of-stormy-clamour:
+  fr: Bottes de clameur orageuse
+  statut: NON_OFFICIELLE
+item.boots-of-striding:
+  fr: Bottes de foulée
+  statut: NON_OFFICIELLE
+item.boots-of-uninhibited-kushigo:
+  fr: Bottes du Kushigo débridé
+  statut: NON_OFFICIELLE
+item.boots-of-very-fast-blinking:
+  fr: Bottes de clignotement très rapide
+  statut: NON_OFFICIELLE
+item.bow-of-awareness:
+  fr: Arc de vigilance
+  statut: NON_OFFICIELLE
+item.bow-of-the-banshee:
+  fr: Arc de la banshee
+  statut: NON_OFFICIELLE
+item.bracers-of-defence:
+  fr: Bracelets de défense
+  statut: VF_DND
+  source: aidedd
+item.bracing-band:
+  fr: Bague d’aplomb
+  statut: NON_OFFICIELLE
+item.braindrain-gloves:
+  fr: Gants de drainage cérébral
+  statut: NON_OFFICIELLE
+item.brass-locket:
+  fr: Médaillon de laiton
+  statut: NON_OFFICIELLE
+item.breaching-pikestaff:
+  fr: Pique de brèche
+  statut: NON_OFFICIELLE
+item.breastplate-1:
+  fr: Cuirasse +1
+  statut: NON_OFFICIELLE
+item.breastplate-2:
+  fr: Cuirasse +2
+  statut: NON_OFFICIELLE
+item.broodmothers-revenge:
+  fr: Vengeance de la mère de couvée
+  statut: NON_OFFICIELLE
+item.browbeaten-circlet:
+  fr: Diadème de l’intimidé
+  statut: NON_OFFICIELLE
+item.burnished-ring:
+  fr: Anneau bruni
+  statut: NON_OFFICIELLE
+item.cacophony:
+  fr: Cacophonie
+  statut: NON_OFFICIELLE
+item.caitiff-staff:
+  fr: Bâton du couard
+  statut: NON_OFFICIELLE
+item.callous-glow-ring:
+  fr: Anneau de lueur impitoyable
+  statut: NON_OFFICIELLE
+item.cap-of-curing:
+  fr: Capuchon curatif
+  statut: NON_OFFICIELLE
+item.cap-of-wrath:
+  fr: Capuchon du courroux
+  statut: NON_OFFICIELLE
+item.caustic-band:
+  fr: Bague caustique
+  statut: NON_OFFICIELLE
+item.cerebral-citadel-armour:
+  fr: Armure de la citadelle cérébrale
+  statut: NON_OFFICIELLE
+item.cerebral-citadel-gloves:
+  fr: Gants de la citadelle cérébrale
+  statut: NON_OFFICIELLE
+item.ceremonial-battleaxe:
+  fr: Hache d’armes de cérémonie
+  statut: NON_OFFICIELLE
+item.ceremonial-longsword:
+  fr: Épée longue de cérémonie
+  statut: NON_OFFICIELLE
+item.ceremonial-mace:
+  fr: Masse d’armes de cérémonie
+  statut: NON_OFFICIELLE
+item.ceremonial-warhammer:
+  fr: Marteau de guerre de cérémonie
+  statut: NON_OFFICIELLE
+item.chain-mail-1:
+  fr: Cotte de mailles +1
+  statut: NON_OFFICIELLE
+item.chain-mail-2:
+  fr: Cotte de mailles +2
+  statut: NON_OFFICIELLE
+item.chain-shirt-1:
+  fr: Chemise de mailles +1
+  statut: NON_OFFICIELLE
+item.chain-shirt-2:
+  fr: Chemise de mailles +2
+  statut: NON_OFFICIELLE
+item.champions-chain:
+  fr: Chaîne du champion
+  statut: NON_OFFICIELLE
+item.chancers-carcanet:
+  fr: Collier du risque-tout
+  statut: NON_OFFICIELLE
+item.charge-bound-warhammer:
+  fr: Marteau de guerre lié à la charge
+  statut: NON_OFFICIELLE
+item.cinder-shoes:
+  fr: Chaussures de braise
+  statut: NON_OFFICIELLE
+item.cindermoth-cloak:
+  fr: Cape de phalène de braise
+  statut: NON_OFFICIELLE
+item.cindersnap-gloves:
+  fr: Gants claque-braise
+  statut: NON_OFFICIELLE
+item.circle-of-bones:
+  fr: Cercle d’os
+  statut: NON_OFFICIELLE
+item.circlet-of-hunting:
+  fr: Diadème de chasse
+  statut: NON_OFFICIELLE
+item.circlet-of-mental-anguish:
+  fr: Diadème d’angoisse mentale
+  statut: NON_OFFICIELLE
+item.circlet-of-psionic-revenge:
+  fr: Diadème de vengeance psionique
+  statut: NON_OFFICIELLE
+item.cloak-of-cunning-brume:
+  fr: Cape de brume rusée
+  statut: NON_OFFICIELLE
+item.cloak-of-elemental-absorption:
+  fr: Cape d’absorption élémentaire
+  statut: NON_OFFICIELLE
+item.cloak-of-the-weave:
+  fr: Cape de la Toile
+  statut: NON_OFFICIELLE
+item.cloth-armour:
+  fr: Armure d’étoffe
+  statut: NON_OFFICIELLE
+item.cloth-of-authority:
+  fr: Étoffe d’autorité
+  statut: NON_OFFICIELLE
+item.clown-hammer:
+  fr: Marteau de clown
+  statut: NON_OFFICIELLE
+item.club-1:
+  fr: Gourdin +1
+  statut: NON_OFFICIELLE
+item.club-of-hill-giant-strength:
+  fr: Gourdin de force de géant des collines
+  statut: NON_OFFICIELLE
+item.cold-snap:
+  fr: Coup de froid
+  statut: NON_OFFICIELLE
+item.coldbrim-hat:
+  fr: Chapeau à bord glacé
+  statut: NON_OFFICIELLE
+item.comeback-handaxe:
+  fr: Hachette revenante
+  statut: NON_OFFICIELLE
+item.corpsegrinder:
+  fr: Broie-cadavres
+  statut: NON_OFFICIELLE
+item.corrosive-flail:
+  fr: Fléau d’armes corrosif
+  statut: NON_OFFICIELLE
+item.coruscation-ring:
+  fr: Anneau de coruscation
+  statut: NON_OFFICIELLE
+item.corvid-token:
+  fr: Gage des corvidés
+  statut: NON_OFFICIELLE
+item.covert-cowl:
+  fr: Capuche furtive
+  statut: NON_OFFICIELLE
+item.craterflesh-gloves:
+  fr: Gants de chair cratérisée
+  statut: NON_OFFICIELLE
+item.creations-echo:
+  fr: Écho de la création
+  statut: NON_OFFICIELLE
+item.crimson-mischief:
+  fr: Malice cramoisie
+  statut: NON_OFFICIELLE
+item.cruel-sting:
+  fr: Dard cruel
+  statut: NON_OFFICIELLE
+item.crushers-ring:
+  fr: Anneau de Crusher
+  statut: NON_OFFICIELLE
+item.crypt-lord-ring:
+  fr: Anneau du seigneur des cryptes
+  statut: NON_OFFICIELLE
+item.dagger-1:
+  fr: Dague +1
+  statut: NON_OFFICIELLE
+item.dagger-2:
+  fr: Dague +2
+  statut: NON_OFFICIELLE
+item.daredevil-gloves:
+  fr: Gants de casse-cou
+  statut: NON_OFFICIELLE
+item.dark-displacement-gloves:
+  fr: Gants de déplacement obscur
+  statut: NON_OFFICIELLE
+item.dark-justiciar-boots:
+  fr: Bottes de justicier sombre
+  statut: NON_OFFICIELLE
+item.dark-justiciar-gauntlets-rare:
+  fr: Gantelets de justicier sombre
+  statut: NON_OFFICIELLE
+item.dark-justiciar-gauntlets-uncommon:
+  fr: Gantelets de justicier sombre
+  statut: NON_OFFICIELLE
+item.dark-justiciar-half-plate-rare:
+  fr: Demi-plate de justicier sombre
+  statut: NON_OFFICIELLE
+item.dark-justiciar-half-plate-very-rare:
+  fr: Demi-plate de justicier sombre
+  statut: NON_OFFICIELLE
+item.dark-justiciar-helm:
+  fr: Heaume de justicier sombre
+  statut: NON_OFFICIELLE
+item.dark-justiciar-helmet:
+  fr: Casque de justicier sombre
+  statut: NON_OFFICIELLE
+item.dark-justiciar-mail:
+  fr: Mailles de justicier sombre
+  statut: NON_OFFICIELLE
+item.dark-justiciar-mask:
+  fr: Masque de justicier sombre
+  statut: NON_OFFICIELLE
+item.darkfire-shortbow:
+  fr: Arc court de feu sombre
+  statut: NON_OFFICIELLE
+item.debtors-attire:
+  fr: Tenue du débiteur
+  statut: NON_OFFICIELLE
+item.deep-delver:
+  fr: Fouisseur des profondeurs
+  statut: NON_OFFICIELLE
+item.defender-flail:
+  fr: Fléau d’armes gardien
+  statut: NON_OFFICIELLE
+item.defender-greataxe:
+  fr: Hache à deux mains gardienne
+  statut: NON_OFFICIELLE
+item.derivation-cloak:
+  fr: Cape de dérivation
+  statut: NON_OFFICIELLE
+item.despair-of-athkatla:
+  fr: Désespoir d’Athkatla
+  statut: NON_OFFICIELLE
+item.devotees-mace:
+  fr: Masse d’armes du fidèle
+  statut: NON_OFFICIELLE
+item.diadem-of-arcane-synergy:
+  fr: Diadème de synergie arcanique
+  statut: NON_OFFICIELLE
+item.disintegrating-night-walkers:
+  fr: Arpenteuses nocturnes désintégrantes
+  statut: NON_OFFICIELLE
+item.djinni-ring:
+  fr: Anneau de djinn
+  statut: NON_OFFICIELLE
+item.dolor-amarus:
+  fr: Dolor Amarus
+  statut: NON_OFFICIELLE
+item.doom-hammer:
+  fr: Marteau de perdition
+  statut: NON_OFFICIELLE
+item.dostrealts-piccolo:
+  fr: Piccolo de Dostrealt
+  statut: NON_OFFICIELLE
+item.dragons-grasp:
+  fr: Poigne du dragon
+  statut: NON_OFFICIELLE
+item.dread-iron-dagger:
+  fr: Dague de fer d’effroi
+  statut: NON_OFFICIELLE
+item.drow-studded-leather-armour:
+  fr: Armure de cuir clouté drow
+  statut: NON_OFFICIELLE
+item.drunken-cloth:
+  fr: Étoffe d’ivresse
+  statut: NON_OFFICIELLE
+item.duellists-prerogative:
+  fr: Prérogative du duelliste
+  statut: NON_OFFICIELLE
+item.duke-ravengards-longsword:
+  fr: Épée longue du duc Ravengard
+  statut: NON_OFFICIELLE
+item.dwarven-splintmail:
+  fr: Clibanion nain
+  statut: NON_OFFICIELLE
+item.elegant-studded-leather:
+  fr: Cuir clouté élégant
+  statut: NON_OFFICIELLE
+item.emblazoned-plate-of-the-marshal:
+  fr: Harnois blasonné du maréchal
+  statut: NON_OFFICIELLE
+item.enraging-heart-garb:
+  fr: Tenue du cœur enragé
+  statut: NON_OFFICIELLE
+item.envoys-amulet:
+  fr: Amulette de l’émissaire
+  statut: NON_OFFICIELLE
+item.evasive-shoes:
+  fr: Chaussures d’esquive
+  statut: NON_OFFICIELLE
+item.everburn-blade:
+  fr: Lame ardente éternelle
+  statut: NON_OFFICIELLE
+item.eversight-ring:
+  fr: Anneau de vision perpétuelle
+  statut: NON_OFFICIELLE
+item.explorers-ring:
+  fr: Anneau de l’explorateur
+  statut: NON_OFFICIELLE
+item.exterminators-axe:
+  fr: Hache de l’exterminateur
+  statut: NON_OFFICIELLE
+item.fabricated-arbalest:
+  fr: Arbalète manufacturée
+  statut: NON_OFFICIELLE
+item.falataeric-cli-lyre:
+  fr: Lyre cli falataérique
+  statut: NON_OFFICIELLE
+item.family-ring:
+  fr: Anneau de famille
+  statut: NON_OFFICIELLE
+item.fetish-of-callarduran-smoothhands:
+  fr: Fétiche de Callarduran Smoothhands
+  statut: NON_OFFICIELLE
+item.fey-semblance-amulet:
+  fr: Amulette d’apparence féerique
+  statut: NON_OFFICIELLE
+item.fireheart:
+  fr: Cœur de feu
+  statut: NON_OFFICIELLE
+item.firestoker:
+  fr: Attise-feu
+  statut: NON_OFFICIELLE
+item.firzus-ring-of-trading:
+  fr: Anneau de négoce de Firzu
+  statut: NON_OFFICIELLE
+item.fistbreaker-helm:
+  fr: Heaume brise-poings
+  statut: NON_OFFICIELLE
+item.flail-1:
+  fr: Fléau d’armes +1
+  statut: NON_OFFICIELLE
+item.flail-2:
+  fr: Fléau d’armes +2
+  statut: NON_OFFICIELLE
+item.flail-of-ages:
+  fr: Fléau d’armes des âges
+  statut: NON_OFFICIELLE
+item.flame-enamelled-armour:
+  fr: Armure émaillée de flammes
+  statut: NON_OFFICIELLE
+item.flawed-helldusk-armour:
+  fr: Armure imparfaite du crépuscule infernal
+  statut: NON_OFFICIELLE
+item.flawed-helldusk-gloves:
+  fr: Gants imparfaits du crépuscule infernal
+  statut: NON_OFFICIELLE
+item.flawed-helldusk-helmet:
+  fr: Casque imparfait du crépuscule infernal
+  statut: NON_OFFICIELLE
+item.fleetfingers:
+  fr: Doigts prestes
+  statut: NON_OFFICIELLE
+item.fleshmelter-cloak:
+  fr: Cape fond-chair
+  statut: NON_OFFICIELLE
+item.fleshrender:
+  fr: Déchire-chair
+  statut: NON_OFFICIELLE
+item.foebreaker:
+  fr: Brise-ennemis
+  statut: NON_OFFICIELLE
+item.frost-prince:
+  fr: Prince du givre
+  statut: NON_OFFICIELLE
+item.gandrels-aspiration:
+  fr: Aspiration de Gandrel
+  statut: NON_OFFICIELLE
+item.garb-of-the-land-and-sky:
+  fr: Tenue de la terre et du ciel
+  statut: NON_OFFICIELLE
+item.gauntlet-of-the-tyrant:
+  fr: Gantelet du tyran
+  statut: NON_OFFICIELLE
+item.gauntlets-of-hill-giant-strength:
+  fr: Gantelets de force de géant des collines
+  statut: NON_OFFICIELLE
+item.gauntlets-of-surging-accuracy:
+  fr: Gantelets de précision fougueuse
+  statut: NON_OFFICIELLE
+item.gauntlets-of-the-warmaster:
+  fr: Gantelets du maître de guerre
+  statut: NON_OFFICIELLE
+item.gemini-gloves:
+  fr: Gants gémeaux
+  statut: NON_OFFICIELLE
+item.giantbreaker:
+  fr: Brise-géants
+  statut: NON_OFFICIELLE
+item.gibus-of-the-worshipful-servant:
+  fr: Gibus du serviteur fervent
+  statut: NON_OFFICIELLE
+item.githyanki-greatsword:
+  fr: Épée à deux mains githyanki
+  statut: NON_OFFICIELLE
+item.githyanki-greatsword-psionic:
+  fr: Épée à deux mains githyanki
+  statut: NON_OFFICIELLE
+item.githyanki-longsword-1:
+  fr: Épée longue githyanki (+1)
+  statut: NON_OFFICIELLE
+item.githyanki-shortsword-1:
+  fr: Épée courte githyanki
+  statut: NON_OFFICIELLE
+item.glaive-1:
+  fr: Coutille +1
+  statut: NON_OFFICIELLE
+item.glaive-2:
+  fr: Coutille +2
+  statut: NON_OFFICIELLE
+item.gleamdance-dagger:
+  fr: Dague de la danse scintillante
+  statut: NON_OFFICIELLE
+item.glimmergads-selgaunt-fiddle:
+  fr: Violon de Selgaunt de Glimmergad
+  statut: NON_OFFICIELLE
+item.gloomstrand-shield:
+  fr: Bouclier aux fils de pénombre
+  statut: NON_OFFICIELLE
+item.gloves-of-archery:
+  fr: Gants d’archer
+  statut: NON_OFFICIELLE
+item.gloves-of-baneful-striking:
+  fr: Gants de frappe funeste
+  statut: NON_OFFICIELLE
+item.gloves-of-battlemages-power:
+  fr: Gants de pouvoir du mage de bataille
+  statut: NON_OFFICIELLE
+item.gloves-of-belligerent-skies:
+  fr: Gants des cieux belliqueux
+  statut: NON_OFFICIELLE
+item.gloves-of-cinder-and-sizzle:
+  fr: Gants de braise et de grésillement
+  statut: NON_OFFICIELLE
+item.gloves-of-crushing:
+  fr: Gants d’écrasement
+  statut: NON_OFFICIELLE
+item.gloves-of-dexterity:
+  fr: Gants de dextérité
+  statut: NON_OFFICIELLE
+item.gloves-of-hail-of-thorns:
+  fr: Gants de grêle d’épines
+  statut: NON_OFFICIELLE
+item.gloves-of-heroism:
+  fr: Gants d’héroïsme
+  statut: NON_OFFICIELLE
+item.gloves-of-power:
+  fr: Gants de puissance
+  statut: NON_OFFICIELLE
+item.gloves-of-soul-catching:
+  fr: Gants de capture d’âme
+  statut: NON_OFFICIELLE
+item.gloves-of-the-automaton:
+  fr: Gants de l’automate
+  statut: NON_OFFICIELLE
+item.gloves-of-the-balanced-hands:
+  fr: Gants des mains équilibrées
+  statut: NON_OFFICIELLE
+item.gloves-of-the-duellist:
+  fr: Gants du duelliste
+  statut: NON_OFFICIELLE
+item.gloves-of-the-growling-underdog:
+  fr: Gants du laissé-pour-compte grondant
+  statut: NON_OFFICIELLE
+item.gloves-of-uninhibited-kushigo:
+  fr: Gants du Kushigo débridé
+  statut: NON_OFFICIELLE
+item.glowing-shield:
+  fr: Bouclier luisant
+  statut: NON_OFFICIELLE
+item.gold-wyrmling-staff:
+  fr: Bâton de dragonnet d’or
+  statut: NON_OFFICIELLE
+item.gontr-mael:
+  fr: Gontr Mael
+  statut: NON_OFFICIELLE
+item.greataxe-1:
+  fr: Hache à deux mains +1
+  statut: NON_OFFICIELLE
+item.greataxe-2:
+  fr: Hache à deux mains +2
+  statut: NON_OFFICIELLE
+item.greatclub-1:
+  fr: Massue +1
+  statut: NON_OFFICIELLE
+item.greatsword-1:
+  fr: Épée à deux mains +1
+  statut: NON_OFFICIELLE
+item.grymskull-helm:
+  fr: Heaume de Grymskull
+  statut: NON_OFFICIELLE
+item.guiding-light:
+  fr: Lumière guide
+  statut: NON_OFFICIELLE
+item.guild-ring:
+  fr: Anneau de la guilde
+  statut: NON_OFFICIELLE
+item.halberd-1:
+  fr: Hallebarde +1
+  statut: NON_OFFICIELLE
+item.halberd-of-vigilance:
+  fr: Hallebarde de vigilance
+  statut: NON_OFFICIELLE
+item.half-plate-armour-1:
+  fr: Demi-plate +1
+  statut: NON_OFFICIELLE
+item.half-plate-armour-2:
+  fr: Demi-plate +2
+  statut: NON_OFFICIELLE
+item.hamarhraft:
+  fr: Hamarhraft
+  statut: NON_OFFICIELLE
+item.hammer-of-the-just:
+  fr: Marteau des justes
+  statut: NON_OFFICIELLE
+item.hammergrim-mist-amulet:
+  fr: Amulette de brume de Hammergrim
+  statut: NON_OFFICIELLE
+item.hand-crossbow-2:
+  fr: Arbalète de poing +2
+  statut: NON_OFFICIELLE
+item.handaxe-1:
+  fr: Hachette +1
+  statut: NON_OFFICIELLE
+item.handmaidens-mace:
+  fr: Masse d’armes de la servante
+  statut: NON_OFFICIELLE
+item.harmonic-dueller:
+  fr: Duelliste harmonique
+  statut: NON_OFFICIELLE
+item.harmonium-halberd:
+  fr: Hallebarde de l’Harmonium
+  statut: NON_OFFICIELLE
+item.harold:
+  fr: Harold
+  statut: NON_OFFICIELLE
+item.harper-sacredstriker:
+  fr: Frappeur sacré des Ménestrels
+  statut: NON_OFFICIELLE
+item.haste-helm:
+  fr: Heaume de hâte
+  statut: NON_OFFICIELLE
+item.hat-of-fire-acuity:
+  fr: Chapeau d’acuité du feu
+  statut: NON_OFFICIELLE
+item.hat-of-storm-scions-power:
+  fr: Chapeau de pouvoir de l’héritier des tempêtes
+  statut: NON_OFFICIELLE
+item.hat-of-the-sharp-caster:
+  fr: Chapeau de l’incantateur affûté
+  statut: NON_OFFICIELLE
+item.hat-of-uninhibited-kushigo:
+  fr: Chapeau du Kushigo débridé
+  statut: NON_OFFICIELLE
+item.heavy-crossbow-1:
+  fr: Arbalète lourde +1
+  statut: NON_OFFICIELLE
+item.hedge-wanderer-armour:
+  fr: Armure du vagabond des haies
+  statut: NON_OFFICIELLE
+item.hellbeard-halberd:
+  fr: Hallebarde barbe-d’enfer
+  statut: NON_OFFICIELLE
+item.helldusk-armour:
+  fr: Armure du crépuscule infernal
+  statut: NON_OFFICIELLE
+item.helldusk-boots:
+  fr: Bottes du crépuscule infernal
+  statut: NON_OFFICIELLE
+item.helldusk-gloves:
+  fr: Gants du crépuscule infernal
+  statut: NON_OFFICIELLE
+item.helldusk-helmet:
+  fr: Casque du crépuscule infernal
+  statut: NON_OFFICIELLE
+item.hellfire-engine-crossbow:
+  fr: Arbalète mécanique du feu infernal
+  statut: NON_OFFICIELLE
+item.hellfire-hand-crossbow:
+  fr: Arbalète de poing du feu infernal
+  statut: NON_OFFICIELLE
+item.hellrider-longbow:
+  fr: Arc long de chevaucheur de l’enfer
+  statut: NON_OFFICIELLE
+item.hellriders-pride:
+  fr: Fierté du chevaucheur de l’enfer
+  statut: NON_OFFICIELLE
+item.helm-of-balduran:
+  fr: Heaume de Balduran
+  statut: NON_OFFICIELLE
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
+item.helmet-of-arcane-acuity:
+  fr: Casque d’acuité arcanique
+  statut: NON_OFFICIELLE
+item.helmet-of-autonomy:
+  fr: Casque d’autonomie
+  statut: NON_OFFICIELLE
+item.helmet-of-grit:
+  fr: Casque de ténacité
+  statut: NON_OFFICIELLE
+item.helmet-of-smiting:
+  fr: Casque de châtiment
+  statut: NON_OFFICIELLE
+item.herbalists-gloves:
+  fr: Gants de l’herboriste
+  statut: NON_OFFICIELLE
+item.hide-armour-1:
+  fr: Armure de peaux +1
+  statut: NON_OFFICIELLE
+item.hide-armour-2:
+  fr: Armure de peaux +2
+  statut: NON_OFFICIELLE
+item.hoarfrost-boots:
+  fr: Bottes de frimas
+  statut: NON_OFFICIELLE
+item.hollows-staff:
+  fr: Bâton de Hollow
+  statut: NON_OFFICIELLE
+item.holy-lance-helm:
+  fr: Heaume de la sainte lance
+  statut: NON_OFFICIELLE
+item.hood-of-the-weave:
+  fr: Capuche de la Toile
+  statut: NON_OFFICIELLE
+item.hoppy:
+  fr: Hoppy
+  statut: NON_OFFICIELLE
+item.horns-of-the-berserker:
+  fr: Cornes du berserker
+  statut: NON_OFFICIELLE
+item.hracknir-bracers:
+  fr: Bracelets de Hr’a’cknir
+  statut: NON_OFFICIELLE
+item.hunters-dagger:
+  fr: Dague du chasseur
+  statut: NON_OFFICIELLE
+item.hunting-shortbow:
+  fr: Arc court de chasse
+  statut: NON_OFFICIELLE
+item.icebite-robe:
+  fr: Robe de morsure glacée
+  statut: NON_OFFICIELLE
+item.ichorous-gloves:
+  fr: Gants ichoreux
+  statut: NON_OFFICIELLE
+item.incandescent-staff:
+  fr: Bâton incandescent
+  statut: NON_OFFICIELLE
+item.infernal-mace:
+  fr: Masse d’armes infernale
+  statut: NON_OFFICIELLE
+item.infernal-mace-uncommon:
+  fr: Masse d’armes infernale
+  statut: NON_OFFICIELLE
+item.infernal-mask:
+  fr: Masque infernal
+  statut: NON_OFFICIELLE
+item.infernal-rapier:
+  fr: Rapière infernale
+  statut: NON_OFFICIELLE
+item.infernal-robe:
+  fr: Robe infernale
+  statut: NON_OFFICIELLE
+item.infernal-spear:
+  fr: Lance infernale
+  statut: NON_OFFICIELLE
+item.intransigent-warhammer:
+  fr: Marteau de guerre intransigeant
+  statut: NON_OFFICIELLE
+item.iron-banded-shield-1:
+  fr: Bouclier cerclé de fer +1
+  statut: NON_OFFICIELLE
+item.ironvine-shield:
+  fr: Bouclier de liane de fer
+  statut: NON_OFFICIELLE
+item.ironwood-club:
+  fr: Gourdin de bois de fer
+  statut: NON_OFFICIELLE
+item.jannaths-hat:
+  fr: Chapeau de Jannath
+  statut: NON_OFFICIELLE
+item.javelin-1:
+  fr: Javeline +1
+  statut: NON_OFFICIELLE
+item.jhannyls-gloves:
+  fr: Gants de Jhannyl
+  statut: NON_OFFICIELLE
+item.jorgorals-greatsword:
+  fr: Épée à deux mains de Jorgoral
+  statut: NON_OFFICIELLE
+item.justiciars-greatshield:
+  fr: Grand bouclier du justicier
+  statut: NON_OFFICIELLE
+item.justiciars-scimitar:
+  fr: Cimeterre du justicier
+  statut: NON_OFFICIELLE
+item.katana:
+  fr: Katana
+  statut: NON_OFFICIELLE
+item.keepsake-ring:
+  fr: Anneau souvenir
+  statut: NON_OFFICIELLE
+item.ketherics-shield:
+  fr: Bouclier de Ketheric
+  statut: NON_OFFICIELLE
+item.ketherics-warhammer:
+  fr: Marteau de guerre de Ketheric
+  statut: NON_OFFICIELLE
+item.key-of-the-ancients:
+  fr: Clé des anciens
+  statut: NON_OFFICIELLE
+item.khalids-gift:
+  fr: Présent de Khalid
+  statut: NON_OFFICIELLE
+item.kiam-godas-kilat-drum:
+  fr: Tambour kilat de Kiam Goda
+  statut: NON_OFFICIELLE
+item.kill-collar:
+  fr: Collier mortel
+  statut: NON_OFFICIELLE
+item.killers-sweetheart:
+  fr: Bien-aimée du tueur
+  statut: NON_OFFICIELLE
+item.knock-knuckle-gloves:
+  fr: Gants toque-phalanges
+  statut: NON_OFFICIELLE
+item.komiras-locket:
+  fr: Médaillon de Komira
+  statut: NON_OFFICIELLE
+item.kurwins-cauteriser:
+  fr: Cautériseur de Kurwin
+  statut: NON_OFFICIELLE
+item.larethians-wrath:
+  fr: Courroux de Larethian
+  statut: NON_OFFICIELLE
+item.least-expected:
+  fr: Le moins attendu
+  statut: NON_OFFICIELLE
+item.leather-armour-1:
+  fr: Armure de cuir +1
+  statut: VF_DND
+  source: srd-5.2.1-fr
+item.leather-armour-2:
+  fr: Armure de cuir +2
+  statut: NON_OFFICIELLE
+item.legacy-of-the-masters:
+  fr: Héritage des maîtres
+  statut: NON_OFFICIELLE
+item.light-crossbow-1:
+  fr: Arbalète légère +1
+  statut: NON_OFFICIELLE
+item.light-of-creation:
+  fr: Lumière de la création
+  statut: NON_OFFICIELLE
+item.lightning-jabber:
+  fr: Aiguillon de foudre
+  statut: NON_OFFICIELLE
+item.lihalas-lute:
+  fr: Luth de Lihala
+  statut: NON_OFFICIELLE
+item.linebreaker-boots:
+  fr: Bottes brise-ligne
+  statut: NON_OFFICIELLE
+item.longbow-1:
+  fr: Arc long +1
+  statut: NON_OFFICIELLE
+item.longbow-2:
+  fr: Arc long +2
+  statut: NON_OFFICIELLE
+item.longsword-1:
+  fr: Épée longue +1
+  statut: VF_DND
+  source: srd-5.2.1-fr
+item.luminous-armour:
+  fr: Armure lumineuse
+  statut: NON_OFFICIELLE
+item.luminous-gloves:
+  fr: Gants lumineux
+  statut: NON_OFFICIELLE
+item.mace-1:
+  fr: Masse d’armes +1
+  statut: NON_OFFICIELLE
+item.mages-friend:
+  fr: Ami du mage
+  statut: NON_OFFICIELLE
+item.magical-pike:
+  fr: Pique magique
+  statut: NON_OFFICIELLE
+item.mantle-of-the-holy-warrior:
+  fr: Manteau du saint guerrier
+  statut: NON_OFFICIELLE
+item.markoheshkir:
+  fr: Markoheshkir
+  statut: NON_OFFICIELLE
+item.marksmanship-hat:
+  fr: Chapeau de tireur d’élite
+  statut: NON_OFFICIELLE
+item.martial-exertion-gloves:
+  fr: Gants d’effort martial
+  statut: NON_OFFICIELLE
+item.mask-of-soul-perception:
+  fr: Masque de perception des âmes
+  statut: NON_OFFICIELLE
+item.mask-of-the-shapeshifter:
+  fr: Masque du métamorphe
+  statut: NON_OFFICIELLE
+item.maul-1:
+  fr: Maillet d’armes +1
+  statut: NON_OFFICIELLE
+item.mayrinas-locket:
+  fr: Médaillon de Mayrina
+  statut: NON_OFFICIELLE
+item.melfs-first-staff:
+  fr: Premier bâton de Melf
+  statut: NON_OFFICIELLE
+item.merregon-halberd:
+  fr: Hallebarde de merregon
+  statut: NON_OFFICIELLE
+item.monster-slayer-glaive:
+  fr: Coutille de tueur de monstres
+  statut: NON_OFFICIELLE
+item.moon-devotion-robe:
+  fr: Robe de dévotion lunaire
+  statut: NON_OFFICIELLE
+item.moondrop-pendant:
+  fr: Pendentif goutte-de-lune
+  statut: NON_OFFICIELLE
+item.moonlantern:
+  fr: Lanterne lunaire
+  statut: NON_OFFICIELLE
+item.moonlight-glaive:
+  fr: Coutille de clair de lune
+  statut: NON_OFFICIELLE
+item.morningstar-1:
+  fr: Morgenstern +1
+  statut: NON_OFFICIELLE
+item.murderous-cut:
+  fr: Entaille meurtrière
+  statut: NON_OFFICIELLE
+item.mutilated-carapace:
+  fr: Carapace mutilée
+  statut: NON_OFFICIELLE
+item.myrkulite-scourge:
+  fr: Fléau myrkulite
+  statut: NON_OFFICIELLE
+item.mystras-grace:
+  fr: Grâce de Mystra
+  statut: NON_OFFICIELLE
+item.natures-snare:
+  fr: Collet de la nature
+  statut: NON_OFFICIELLE
+item.necklace-of-elemental-augmentation:
+  fr: Collier d’augmentation élémentaire
+  statut: NON_OFFICIELLE
+item.neer-misser:
+  fr: Rate-jamais
+  statut: NON_OFFICIELLE
+item.nimblefinger-gloves:
+  fr: Gants aux doigts agiles
+  statut: NON_OFFICIELLE
+item.nymph-cloak:
+  fr: Cape de nymphe
+  statut: NON_OFFICIELLE
+item.nyrulna:
+  fr: Nyrulna
+  statut: NON_OFFICIELLE
+item.obsidian-laced-robe:
+  fr: Robe lacée d’obsidienne
+  statut: NON_OFFICIELLE
+item.orphic-hammer:
+  fr: Marteau orphique
+  statut: NON_OFFICIELLE
+item.orphic-ring:
+  fr: Anneau orphique
+  statut: NON_OFFICIELLE
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
+item.padded-armour-1:
+  fr: Armure matelassée +1
+  statut: NON_OFFICIELLE
+item.padded-armour-2:
+  fr: Armure matelassée +2
+  statut: NON_OFFICIELLE
+item.pale-oak:
+  fr: Chêne pâle
+  statut: NON_OFFICIELLE
+item.pearl-of-power-amulet:
+  fr: Amulette à perle de pouvoir
+  statut: NON_OFFICIELLE
+item.pelorsun-blade:
+  fr: Lame Pelorsun
+  statut: NON_OFFICIELLE
+item.penumbral-armour:
+  fr: Armure de pénombre
+  statut: NON_OFFICIELLE
+item.phalar-aluve:
+  fr: Phalar Aluve
+  statut: NON_OFFICIELLE
+item.pike-1:
+  fr: Pique +1
+  statut: NON_OFFICIELLE
+item.plate-armour-1:
+  fr: Harnois +1
+  statut: NON_OFFICIELLE
+item.plate-armour-2:
+  fr: Harnois +2
+  statut: NON_OFFICIELLE
+item.poisoners-gloves:
+  fr: Gants de l’empoisonneur
+  statut: NON_OFFICIELLE
+item.poisoners-ring:
+  fr: Anneau de l’empoisonneur
+  statut: NON_OFFICIELLE
+item.poisoners-robe:
+  fr: Robe de l’empoisonneur
+  statut: NON_OFFICIELLE
+item.potent-robe:
+  fr: Robe puissante
+  statut: NON_OFFICIELLE
+item.protective-plate:
+  fr: Harnois protecteur
+  statut: NON_OFFICIELLE
+item.psionic-ward-armour:
+  fr: Armure de protection psionique
+  statut: NON_OFFICIELLE
+item.psychic-spark:
+  fr: Étincelle psychique
+  statut: NON_OFFICIELLE
+item.pyroquickness-hat:
+  fr: Chapeau de pyrovivacité
+  statut: NON_OFFICIELLE
+item.quarterstaff-1:
+  fr: Bâton de combat +1
+  statut: NON_OFFICIELLE
+item.quarterstaff-2:
+  fr: Bâton de combat +2
+  statut: NON_OFFICIELLE
+item.quickspell-gloves:
+  fr: Gants d’incantation rapide
+  statut: NON_OFFICIELLE
+item.rain-dancer:
+  fr: Danseur de pluie
+  statut: NON_OFFICIELLE
+item.rapier-1:
+  fr: Rapière +1
+  statut: NON_OFFICIELLE
+item.rapier-2:
+  fr: Rapière +2
+  statut: NON_OFFICIELLE
+item.rat-bat:
+  fr: Batte à rats
+  statut: NON_OFFICIELLE
+item.raven-gloves:
+  fr: Gants du corbeau
+  statut: NON_OFFICIELLE
+item.ravengards-scourger:
+  fr: Flagellateur de Ravengard
+  statut: NON_OFFICIELLE
+item.reapers-embrace:
+  fr: Étreinte de la faucheuse
+  statut: NON_OFFICIELLE
+item.reasons-grasp:
+  fr: Emprise de la raison
+  statut: NON_OFFICIELLE
+item.render-of-mind-and-body:
+  fr: Déchireur d’esprit et de corps
+  statut: NON_OFFICIELLE
+item.returning-pike:
+  fr: Pique revenante
+  statut: NON_OFFICIELLE
+item.reverse-rain-cloak:
+  fr: Cape de pluie inversée
+  statut: NON_OFFICIELLE
+item.ring-mail-armour-1:
+  fr: Broigne +1
+  statut: NON_OFFICIELLE
+item.ring-mail-armour-2:
+  fr: Broigne +2
+  statut: NON_OFFICIELLE
+item.ring-of-absolute-force:
+  fr: Anneau de force absolue
+  statut: NON_OFFICIELLE
+item.ring-of-arcane-synergy:
+  fr: Anneau de synergie arcanique
+  statut: NON_OFFICIELLE
+item.ring-of-blink:
+  fr: Anneau de clignotement
+  statut: NON_OFFICIELLE
+item.ring-of-colour-spray:
+  fr: Anneau de couleurs dansantes
+  statut: NON_OFFICIELLE
+item.ring-of-elemental-infusion:
+  fr: Anneau d’infusion élémentaire
+  statut: NON_OFFICIELLE
+item.ring-of-exalted-marrow:
+  fr: Anneau de la moelle exaltée
+  statut: NON_OFFICIELLE
+item.ring-of-feywild-sparks:
+  fr: Anneau des étincelles de la Féerie
+  statut: NON_OFFICIELLE
+item.ring-of-flinging:
+  fr: Anneau de lancer
+  statut: NON_OFFICIELLE
+item.ring-of-geniality:
+  fr: Anneau d’amabilité
+  statut: NON_OFFICIELLE
+item.ring-of-mental-inhibition:
+  fr: Anneau d’inhibition mentale
+  statut: NON_OFFICIELLE
+item.ring-of-salving:
+  fr: Anneau de baume
+  statut: NON_OFFICIELLE
+item.ring-of-self-immolation:
+  fr: Anneau d’auto-immolation
+  statut: NON_OFFICIELLE
+item.ring-of-shadows:
+  fr: Anneau des ombres
+  statut: NON_OFFICIELLE
+item.ring-of-spiteful-thunder:
+  fr: Anneau du tonnerre rancunier
+  statut: NON_OFFICIELLE
+item.ring-of-truthfulness:
+  fr: Anneau de véracité
+  statut: NON_OFFICIELLE
+item.ring-of-twilight:
+  fr: Anneau du crépuscule
+  statut: NON_OFFICIELLE
+item.rippling-force-mail:
+  fr: Mailles de force ondoyante
+  statut: NON_OFFICIELLE
+item.risky-ring:
+  fr: Anneau risqué
+  statut: NON_OFFICIELLE
+item.ritual-axe:
+  fr: Hache rituelle
+  statut: NON_OFFICIELLE
+item.ritual-dagger:
+  fr: Dague rituelle
+  statut: NON_OFFICIELLE
+item.ritual-dagger-of-shar:
+  fr: Dague rituelle de Shar
+  statut: NON_OFFICIELLE
+item.robe-of-exquisite-focus:
+  fr: Robe de concentration exquise
+  statut: NON_OFFICIELLE
+item.robe-of-summer:
+  fr: Robe d’été
+  statut: NON_OFFICIELLE
+item.robe-of-supreme-defences:
+  fr: Robe des défenses suprêmes
+  statut: NON_OFFICIELLE
+item.robe-of-the-weave:
+  fr: Robe de la Toile
+  statut: NON_OFFICIELLE
+item.rupturing-blade:
+  fr: Lame de rupture
+  statut: NON_OFFICIELLE
+item.safeguard-shield:
+  fr: Bouclier de sauvegarde
+  statut: NON_OFFICIELLE
+item.salty-scimitar-rrr:
+  fr: Cimeterre salé(rrr)
+  statut: NON_OFFICIELLE
+item.sarevoks-horned-helmet:
+  fr: Casque cornu de Sarevok
+  statut: NON_OFFICIELLE
+  etiquette: { act: acte3, level: leger, otherWorks: leger }
+item.scabby-pugilist-circlet:
+  fr: Diadème du pugiliste galeux
+  statut: NON_OFFICIELLE
+item.scale-mail-1:
+  fr: Armure d’écailles +1
+  statut: NON_OFFICIELLE
+item.scale-mail-2:
+  fr: Armure d’écailles +2
+  statut: NON_OFFICIELLE
+item.scarlet-leather-armour:
+  fr: Armure de cuir écarlate
+  statut: NON_OFFICIELLE
+item.scimitar-1:
+  fr: Cimeterre +1
+  statut: NON_OFFICIELLE
+item.scimitar-2:
+  fr: Cimeterre +2
+  statut: NON_OFFICIELLE
+item.seemingly-gleaming-ring:
+  fr: Anneau faussement étincelant
+  statut: NON_OFFICIELLE
+item.selunes-spear-of-night:
+  fr: Lance de la nuit de Séluné
+  statut: NON_OFFICIELLE
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
+item.sentient-amulet-rare:
+  fr: Amulette consciente
+  statut: NON_OFFICIELLE
+item.sentient-amulet-very-rare:
+  fr: Amulette consciente
+  statut: NON_OFFICIELLE
+item.seraphic-pugilist-gloves:
+  fr: Gants du pugiliste séraphique
+  statut: NON_OFFICIELLE
+item.servitor-of-the-black-hand-gloves:
+  fr: Gants du serviteur de la Main noire
+  statut: NON_OFFICIELLE
+item.sethan:
+  fr: Sethan
+  statut: NON_OFFICIELLE
+item.shade-slayer-cloak:
+  fr: Cape de tueur d’ombres
+  statut: NON_OFFICIELLE
+item.shadeclinger-armour:
+  fr: Armure accroche-ombre
+  statut: NON_OFFICIELLE
+item.shadow-blade-ring:
+  fr: Anneau de lame d’ombres
+  statut: NON_OFFICIELLE
+item.shadow-blade-weapon:
+  fr: Lame d’ombres
+  statut: NON_OFFICIELLE
+item.shadow-cloaked-ring:
+  fr: Anneau drapé d’ombre
+  statut: NON_OFFICIELLE
+item.shadow-of-menzoberranzan:
+  fr: Ombre de Menzoberranzan
+  statut: NON_OFFICIELLE
+item.shapeshifter-hat:
+  fr: Chapeau de métamorphe
+  statut: NON_OFFICIELLE
+item.shapeshifters-boon-ring:
+  fr: Anneau du don du métamorphe
+  statut: NON_OFFICIELLE
+item.sharpened-snare-cuirass:
+  fr: Cuirasse au collet acéré
+  statut: NON_OFFICIELLE
+item.sharran-crossbow:
+  fr: Arbalète sharrienne
+  statut: NON_OFFICIELLE
+item.shars-spear-of-evening:
+  fr: Lance du soir de Shar
+  statut: NON_OFFICIELLE
+  etiquette: { act: acte2, level: leger, otherWorks: aucun }
+item.shars-temptation:
+  fr: Tentation de Shar
+  statut: NON_OFFICIELLE
+item.shattered-flail:
+  fr: Fléau d’armes brisé
+  statut: NON_OFFICIELLE
+item.shelter-of-athkatla:
+  fr: Abri d’Athkatla
+  statut: NON_OFFICIELLE
+item.shield-1:
+  fr: Bouclier +1
+  statut: VF_DND
+  source: aidedd
+item.shield-of-devotion:
+  fr: Bouclier de dévotion
+  statut: NON_OFFICIELLE
+item.shield-of-scorching-reprisal:
+  fr: Bouclier de représailles ardentes
+  statut: NON_OFFICIELLE
+item.shield-of-shielding:
+  fr: Bouclier de défense
+  statut: NON_OFFICIELLE
+item.shield-of-the-undevout:
+  fr: Bouclier de l’impie
+  statut: NON_OFFICIELLE
+item.shifting-corpus-ring:
+  fr: Anneau du corps changeant
+  statut: NON_OFFICIELLE
+item.shining-staver-of-skulls:
+  fr: Enfonce-crânes étincelant
+  statut: NON_OFFICIELLE
+item.shortbow-1:
+  fr: Arc court +1
+  statut: NON_OFFICIELLE
+item.shortsword-2:
+  fr: Épée courte +2
+  statut: NON_OFFICIELLE
+item.shortsword-of-first-blood:
+  fr: Épée courte du premier sang
+  statut: NON_OFFICIELLE
+item.sickle-of-boooal:
+  fr: Serpe de BOOOAL
+  statut: NON_OFFICIELLE
+item.silver-pendant:
+  fr: Pendentif d’argent
+  statut: NON_OFFICIELLE
+item.silver-sword-of-the-astral-plane:
+  fr: Épée d’argent du plan Astral
+  statut: NON_OFFICIELLE
+item.slicing-shortsword:
+  fr: Épée courte tranchante
+  statut: NON_OFFICIELLE
+item.slinging-shoes:
+  fr: Chaussures de lancer
+  statut: NON_OFFICIELLE
+item.slippery-chain-shirt:
+  fr: Chemise de mailles glissante
+  statut: NON_OFFICIELLE
+item.smugglers-ring:
+  fr: Anneau du contrebandier
+  statut: NON_OFFICIELLE
+item.snow-dusted-monastery-gloves:
+  fr: Gants du monastère enneigé
+  statut: NON_OFFICIELLE
+item.snowburst-ring:
+  fr: Anneau de rafale de neige
+  statut: NON_OFFICIELLE
+item.sorrow:
+  fr: Chagrin
+  statut: NON_OFFICIELLE
+item.soulbreaker-greatsword:
+  fr: Épée à deux mains brise-âme
+  statut: NON_OFFICIELLE
+item.spaceshunt-boots:
+  fr: Bottes de bond spatial
+  statut: NON_OFFICIELLE
+item.spear-1:
+  fr: Lance +1
+  statut: NON_OFFICIELLE
+item.spear-2:
+  fr: Lance +2
+  statut: NON_OFFICIELLE
+item.spear-of-night:
+  fr: Lance de la nuit
+  statut: NON_OFFICIELLE
+item.speedy-reply:
+  fr: Prompte réplique
+  statut: NON_OFFICIELLE
+item.spell-savant-amulet:
+  fr: Amulette de l’érudit des sorts
+  statut: NON_OFFICIELLE
+item.spellcrux-amulet:
+  fr: Amulette du cœur des sorts
+  statut: NON_OFFICIELLE
+item.spellmight-gloves:
+  fr: Gants de puissance magique
+  statut: NON_OFFICIELLE
+item.spellseeking-gloves:
+  fr: Gants à sorts chercheurs
+  statut: NON_OFFICIELLE
+item.spellthief:
+  fr: Voleur de sorts
+  statut: NON_OFFICIELLE
+item.spiders-lyre:
+  fr: Lyre de l’araignée
+  statut: NON_OFFICIELLE
+item.spidersilk-armour:
+  fr: Armure en soie d’araignée
+  statut: NON_OFFICIELLE
+item.spiderstep-boots:
+  fr: Bottes de pas d’araignée
+  statut: NON_OFFICIELLE
+item.spineshudder-amulet:
+  fr: Amulette frisson-d’échine
+  statut: NON_OFFICIELLE
+item.splint-armour-1:
+  fr: Clibanion +1
+  statut: NON_OFFICIELLE
+item.splint-armour-2:
+  fr: Clibanion +2
+  statut: NON_OFFICIELLE
+item.springstep-boots:
+  fr: Bottes de pas élastique
+  statut: NON_OFFICIELLE
+item.spurred-band:
+  fr: Bague éperonnée
+  statut: NON_OFFICIELLE
+item.staff-of-a-mumbling-wizard:
+  fr: Bâton d’un magicien marmonnant
+  statut: NON_OFFICIELLE
+item.staff-of-arcane-blessing:
+  fr: Bâton de bénédiction arcanique
+  statut: NON_OFFICIELLE
+item.staff-of-cherished-necromancy:
+  fr: Bâton de nécromancie chérie
+  statut: NON_OFFICIELLE
+item.staff-of-crones:
+  fr: Bâton des vieilles sorcières
+  statut: NON_OFFICIELLE
+item.staff-of-interruption:
+  fr: Bâton d’interruption
+  statut: NON_OFFICIELLE
+item.staff-of-the-emperor:
+  fr: Bâton de l’Empereur
+  statut: NON_OFFICIELLE
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
+item.staff-of-the-ram:
+  fr: Bâton du bélier
+  statut: NON_OFFICIELLE
+item.stalker-gloves:
+  fr: Gants du traqueur
+  statut: NON_OFFICIELLE
+item.steelforged-sword:
+  fr: Épée d’acier forgé
+  statut: NON_OFFICIELLE
+item.steelwatcher-helmet:
+  fr: Casque de veilleur d’acier
+  statut: NON_OFFICIELLE
+item.stillmaker:
+  fr: Immobilisateur
+  statut: NON_OFFICIELLE
+item.stolyarofs-table-lute:
+  fr: Luth de table de Stolyarof
+  statut: NON_OFFICIELLE
+item.strange-conduit-ring:
+  fr: Anneau de conduit étrange
+  statut: NON_OFFICIELLE
+item.strange-tendril-amulet:
+  fr: Amulette de vrille étrange
+  statut: NON_OFFICIELLE
+item.studded-leather-armour-1:
+  fr: Armure de cuir clouté +1
+  statut: NON_OFFICIELLE
+item.studded-leather-armour-2:
+  fr: Armure de cuir clouté +2
+  statut: NON_OFFICIELLE
+item.studded-shield-1:
+  fr: Bouclier clouté +1
+  statut: NON_OFFICIELLE
+item.sunwalkers-gift:
+  fr: Présent de l’arpenteur du soleil
+  statut: NON_OFFICIELLE
+item.surgeons-subjugation-amulet:
+  fr: Amulette de subjugation du chirurgien
+  statut: NON_OFFICIELLE
+item.sussur-dagger:
+  fr: Dague de sussur
+  statut: NON_OFFICIELLE
+item.sussur-greatsword:
+  fr: Épée à deux mains de sussur
+  statut: NON_OFFICIELLE
+item.sussur-sickle:
+  fr: Serpe de sussur
+  statut: NON_OFFICIELLE
+item.svartlebees-woundseeker:
+  fr: Cherche-plaie de Svartlebee
+  statut: NON_OFFICIELLE
+item.swires-sledboard:
+  fr: Planche-luge de Swires
+  statut: NON_OFFICIELLE
+item.swiresy-shoes:
+  fr: Chaussures à la Swires
+  statut: NON_OFFICIELLE
+item.sword-of-chaos:
+  fr: Épée du chaos
+  statut: NON_OFFICIELLE
+item.sword-of-clutching-umbra:
+  fr: Épée de l’ombre étreignante
+  statut: NON_OFFICIELLE
+item.sword-of-justice:
+  fr: Épée de justice
+  statut: NON_OFFICIELLE
+item.sword-of-screams:
+  fr: Épée des hurlements
+  statut: NON_OFFICIELLE
+item.sword-of-the-emperor:
+  fr: Épée de l’Empereur
+  statut: NON_OFFICIELLE
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
+item.swordmaster-gloves:
+  fr: Gants de maître d’armes
+  statut: NON_OFFICIELLE
+item.sylvan-scimitar:
+  fr: Cimeterre sylvestre
+  statut: NON_OFFICIELLE
+item.syringe-1:
+  fr: Seringue
+  statut: NON_OFFICIELLE
+item.szarr-family-ring:
+  fr: Anneau de la famille Szarr
+  statut: NON_OFFICIELLE
+item.tarnished-charm:
+  fr: Breloque ternie
+  statut: NON_OFFICIELLE
+item.the-amulet-of-lost-voices:
+  fr: L’amulette des voix perdues
+  statut: NON_OFFICIELLE
+item.the-baneful:
+  fr: Le funeste
+  statut: NON_OFFICIELLE
+item.the-blast-pendant:
+  fr: Le pendentif explosif
+  statut: NON_OFFICIELLE
+item.the-dancing-breeze:
+  fr: La brise dansante
+  statut: NON_OFFICIELLE
+item.the-dead-shot:
+  fr: Le tir mortel
+  statut: NON_OFFICIELLE
+item.the-deathstalker-mantle:
+  fr: Le manteau du traqueur de mort
+  statut: NON_OFFICIELLE
+item.the-ever-seeing-eye:
+  fr: L’œil qui voit tout
+  statut: NON_OFFICIELLE
+item.the-graceful-cloth:
+  fr: L’étoffe gracieuse
+  statut: NON_OFFICIELLE
+item.the-joltshooter:
+  fr: Le tire-décharges
+  statut: NON_OFFICIELLE
+item.the-jolty-vest:
+  fr: Le gilet à décharges
+  statut: NON_OFFICIELLE
+item.the-lifebringer:
+  fr: Le porte-vie
+  statut: NON_OFFICIELLE
+item.the-long-arm-of-the-gur:
+  fr: Le long bras des Gur
+  statut: NON_OFFICIELLE
+item.the-mighty-cloth:
+  fr: L’étoffe puissante
+  statut: NON_OFFICIELLE
+item.the-oak-fathers-embrace:
+  fr: L’étreinte du Père Chêne
+  statut: NON_OFFICIELLE
+item.the-pointy-hat:
+  fr: Le chapeau pointu
+  statut: NON_OFFICIELLE
+item.the-protecty-sparkswall:
+  fr: Le pare-étincelles protecteur
+  statut: NON_OFFICIELLE
+item.the-real-sparky-sparkswall:
+  fr: Le vrai pare-étincelles étincelant
+  statut: NON_OFFICIELLE
+item.the-reviving-hands:
+  fr: Les mains revivifiantes
+  statut: NON_OFFICIELLE
+item.the-shadespell-circlet:
+  fr: Le diadème des sorts d’ombre
+  statut: NON_OFFICIELLE
+item.the-skinburster:
+  fr: L’éclate-peau
+  statut: NON_OFFICIELLE
+item.the-sparkle-hands:
+  fr: Les mains scintillantes
+  statut: NON_OFFICIELLE
+item.the-sparkswall:
+  fr: Le pare-étincelles
+  statut: NON_OFFICIELLE
+item.the-sparky-points:
+  fr: Les pointes étincelantes
+  statut: NON_OFFICIELLE
+item.the-spectator-eyes:
+  fr: Les yeux de spectateur
+  statut: NON_OFFICIELLE
+item.the-speedy-lightfeet:
+  fr: Les pieds-légers rapides
+  statut: NON_OFFICIELLE
+item.the-spellsparkler:
+  fr: L’étinceleur de sorts
+  statut: NON_OFFICIELLE
+item.the-undead-bane:
+  fr: Le fléau des morts-vivants
+  statut: NON_OFFICIELLE
+item.the-watchers-guide:
+  fr: Le guide du veilleur
+  statut: NON_OFFICIELLE
+item.the-watersparkers:
+  fr: Les étinceleuses d’eau
+  statut: NON_OFFICIELLE
+item.the-whispering-promise:
+  fr: La promesse murmurée
+  statut: NON_OFFICIELLE
+item.thermoarcanic-gloves:
+  fr: Gants thermoarcaniques
+  statut: NON_OFFICIELLE
+item.thermodynamo-axe:
+  fr: Hache thermodynamique
+  statut: NON_OFFICIELLE
+item.thorn-blade:
+  fr: Lame d’épines
+  statut: NON_OFFICIELLE
+item.thunderpalm-strikers:
+  fr: Frappeurs paume-tonnerre
+  statut: NON_OFFICIELLE
+item.thunderskin-cloak:
+  fr: Cape peau-de-tonnerre
+  statut: NON_OFFICIELLE
+item.till-death-do-us-part:
+  fr: Jusqu’à ce que la mort nous sépare
+  statut: NON_OFFICIELLE
+item.titanstring-bow:
+  fr: Arc à corde de titan
+  statut: NON_OFFICIELLE
+item.trepan-1:
+  fr: Trépan
+  statut: NON_OFFICIELLE
+item.tressym-collar:
+  fr: Collier de tressym
+  statut: NON_OFFICIELLE
+item.trident-2:
+  fr: Trident +2
+  statut: NON_OFFICIELLE
+item.trident-of-the-waves:
+  fr: Trident des vagues
+  statut: NON_OFFICIELLE
+item.true-loves-caress:
+  fr: Caresse du véritable amour
+  statut: NON_OFFICIELLE
+item.true-loves-embrace:
+  fr: Étreinte du véritable amour
+  statut: NON_OFFICIELLE
+item.twist-of-fortune:
+  fr: Revers de fortune
+  statut: NON_OFFICIELLE
+item.tyrannical-jackboots:
+  fr: Bottes cavalières tyranniques
+  statut: NON_OFFICIELLE
+item.uncovered-mysteries:
+  fr: Mystères dévoilés
+  statut: NON_OFFICIELLE
+item.unflinching-protector-amulet:
+  fr: Amulette du protecteur inébranlable
+  statut: NON_OFFICIELLE
+item.unlucky-thiefs-gloves:
+  fr: Gants du voleur malchanceux
+  statut: NON_OFFICIELLE
+item.unseen-menace:
+  fr: Menace invisible
+  statut: NON_OFFICIELLE
+item.unwanted-masterwork-gauntlets:
+  fr: Gantelets de maître rejetés
+  statut: NON_OFFICIELLE
+item.unwanted-masterwork-greaves:
+  fr: Jambières de maître rejetées
+  statut: NON_OFFICIELLE
+item.unwanted-masterwork-scalemail:
+  fr: Armure d’écailles de maître rejetée
+  statut: NON_OFFICIELLE
+item.varsh-kokuus-boots:
+  fr: Bottes de Varsh Ko’kuu
+  statut: NON_OFFICIELLE
+item.veil-of-the-morning:
+  fr: Voile du matin
+  statut: NON_OFFICIELLE
+item.very-heavy-greataxe:
+  fr: Hache à deux mains très lourde
+  statut: NON_OFFICIELLE
+item.vest-of-soul-rejuvenation:
+  fr: Gilet de revitalisation de l’âme
+  statut: NON_OFFICIELLE
+item.vicious-battleaxe:
+  fr: Hache d’armes vicieuse
+  statut: NON_OFFICIELLE
+item.vicious-shortbow:
+  fr: Arc court vicieux
+  statut: NON_OFFICIELLE
+item.viconias-priestess-robe:
+  fr: Robe de prêtresse de Viconia
+  statut: NON_OFFICIELLE
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
+item.viconias-walking-fortress:
+  fr: Forteresse ambulante de Viconia
+  statut: NON_OFFICIELLE
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
+item.vision-of-the-absolute:
+  fr: Vision de l’Absolu
+  statut: NON_OFFICIELLE
+item.vital-conduit-boots:
+  fr: Bottes de conduit vital
+  statut: NON_OFFICIELLE
+item.vivacious-cloak:
+  fr: Cape vivace
+  statut: NON_OFFICIELLE
+item.voss-silver-sword:
+  fr: Épée d’argent de Voss
+  statut: NON_OFFICIELLE
+item.wapiras-crown:
+  fr: Couronne de Wapira
+  statut: NON_OFFICIELLE
+item.war-pick-1:
+  fr: Pic de guerre +1
+  statut: NON_OFFICIELLE
+item.warhammer-1:
+  fr: Marteau de guerre +1
+  statut: NON_OFFICIELLE
+item.warhammer-2:
+  fr: Marteau de guerre +2
+  statut: NON_OFFICIELLE
+item.warped-headband-of-intellect:
+  fr: Bandeau d’intelligence déformé
+  statut: NON_OFFICIELLE
+item.watchers-shield:
+  fr: Bouclier du veilleur
+  statut: NON_OFFICIELLE
+item.wavemothers-cloak:
+  fr: Cape de la Mère des vagues
+  statut: NON_OFFICIELLE
+item.wavemothers-robe:
+  fr: Robe de la Mère des vagues
+  statut: NON_OFFICIELLE
+item.wavemothers-sickle:
+  fr: Serpe de la Mère des vagues
+  statut: NON_OFFICIELLE
+item.winkling-gloves:
+  fr: Gants dénicheurs
+  statut: NON_OFFICIELLE
+item.winters-clutches:
+  fr: Serres de l’hiver
+  statut: NON_OFFICIELLE
+item.witchbreaker:
+  fr: Brise-sorcières
+  statut: NON_OFFICIELLE
+item.woe:
+  fr: Malheur
+  statut: NON_OFFICIELLE
+item.wondrous-gloves:
+  fr: Gants merveilleux
+  statut: NON_OFFICIELLE
+item.wood-woad-shield:
+  fr: Bouclier de guède sylvestre
+  statut: NON_OFFICIELLE
+item.worgfang:
+  fr: Croc de worg
+  statut: NON_OFFICIELLE
+item.wulbrens-hammer:
+  fr: Marteau de Wulbren
+  statut: NON_OFFICIELLE
+item.xyanyde:
+  fr: Xyanyde
+  statut: NON_OFFICIELLE
+item.yuan-ti-scale-mail:
+  fr: Armure d’écailles yuan-ti
+  statut: NON_OFFICIELLE
