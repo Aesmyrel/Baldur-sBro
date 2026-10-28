@@ -43,4 +43,5 @@ class Paths(val root: Path) {
     val worklists: Path = cache.resolve("worklists")
     val gameData: Path = root.resolve("data/game")
     val curatedNames: Path = root.resolve("data/i18n/noms.fr.yaml")
+    val writtenEffects: Path = root.resolve("data/effets")
 }

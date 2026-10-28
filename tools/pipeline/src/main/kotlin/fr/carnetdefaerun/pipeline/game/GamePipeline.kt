@@ -49,8 +49,13 @@ class GamePipeline(private val paths: Paths) {
         val names = NameResolver(NameResolver.loadCurated(paths.curatedNames), Lexicons(paths).load())
         val places = PlaceNormalizer(corpus, names)
         val items = ItemNormalizer(corpus, names, places.acts)
-        val assembler = Assembler(FeatureNormalizer(corpus, names), ConditionNormalizer(corpus, names))
-        val entries = assembler.assemble(SpellNormalizer(corpus, names).normalize() + items.normalize() + places.normalize())
+        val assembler = Assembler(FeatureNormalizer(corpus, names), ConditionNormalizer(corpus, names)) { raiseTitle(it, names) }
+        val assembled = assembler.assemble(SpellNormalizer(corpus, names).normalize() + items.normalize() + places.normalize())
+        val effects = Effects(paths.writtenEffects)
+        val (entries, unknownEffectIds, staleEffects) = effects.apply(assembled, effects.load())
+        unknownEffectIds.forEach { System.err.println("  ✗ effets rédigés pour une entrée inconnue : $it") }
+        staleEffects.forEach { println("  ! effets rédigés sur une révision antérieure de la page : $it") }
+        if (unknownEffectIds.isNotEmpty()) return false
 
         Files.createDirectories(paths.gameData)
         // Un fichier par type, trié par identifiant : des différences lisibles d'une génération à l'autre.
@@ -60,7 +65,8 @@ class GamePipeline(private val paths: Paths) {
         }
 
         val work = buildList {
-            items.pending.forEach { add(WorkItem(it.id.value, it.id.value, it.wikiTitle, it.revision, "effet", it.line)) }
+            val done = entries.filter { it.blocks.any { b -> b.id.startsWith("effet-") } }.map { it.id }.toSet()
+            items.pending.filter { it.id !in done }.forEach { add(WorkItem(it.id.value, it.id.value, it.wikiTitle, it.revision, "effet", it.line)) }
             entries.filter { "effect_text" in it.unknown }.forEach {
                 val a = it.attribution.first()
                 add(WorkItem(it.id.value, it.name.en, a.title, a.revision, "effet"))
@@ -76,6 +82,13 @@ class GamePipeline(private val paths: Paths) {
         paths.gameData.resolve("RAPPORT.md").writeText(report(entries, assembler.dangling.size, work))
         println("  ${entries.size} entrées écrites dans ${paths.root.relativize(paths.gameData)}, ${work.size} éléments à rédiger ou traduire")
         return true
+    }
+
+    /** Un nom jugé révélateur par sa fiche de traduction rend le nom et la fiche plus stricts. */
+    private fun raiseTitle(entry: Entry, names: NameResolver): Entry {
+        val extra = names.titleTag(entry.id.value) ?: return entry
+        if (entry.titleTag == fr.carnetdefaerun.core.model.spoiler.SpoilerTag.LOCKED) return entry
+        return entry.copy(titleTag = entry.titleTag.strictest(extra), tag = entry.tag.strictest(extra))
     }
 
     fun validate(): Boolean {

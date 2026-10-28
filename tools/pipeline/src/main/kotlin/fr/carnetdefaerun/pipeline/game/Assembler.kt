@@ -19,6 +19,8 @@ data class Dangling(val from: ContentId, val to: ContentId, val relation: Relati
 class Assembler(
     private val features: FeatureNormalizer,
     private val conditions: ConditionNormalizer,
+    /** Ajustement final d'une entrée avant le calcul des liens (étiquette de nom imposée, par exemple). */
+    private val adjust: (Entry) -> Entry = { it },
 ) {
     val dangling = mutableListOf<Dangling>()
 
@@ -57,6 +59,8 @@ class Assembler(
                 }
             }
         }
+
+        byId.replaceAll { _, e -> adjust(e) }
 
         // 3. Liens réciproques (« accordé par », « appliqué par » ne sont pas stockés à part : lus côté appli).
         val reverse = mutableMapOf<ContentId, MutableList<Link>>()
