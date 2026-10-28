@@ -59,7 +59,11 @@ tasks.withType<Test>().configureEach {
     jvmArgs("--add-exports", "java.base/jdk.internal.access=ALL-UNNAMED", "--add-opens", "java.base/java.io=ALL-UNNAMED")
 }
 
-tasks.named("check") { dependsOn("verifyReleasePermissions", "verifyDebugPermissions") }
+tasks.named("check") {
+    dependsOn("verifyReleasePermissions", "verifyDebugPermissions")
+    // Tests des plugins de convention (dont la lecture des permissions du manifeste).
+    dependsOn(gradle.includedBuild("build-logic").task(":convention:test"))
+}
 
 dependencies {
     implementation(project(":core:model"))
@@ -76,7 +80,6 @@ dependencies {
     implementation(libs.androidx.navigation3.runtime)
     implementation(libs.androidx.navigation3.ui)
     implementation(libs.androidx.hilt.lifecycle.viewmodel.compose)
-    implementation(libs.compose.material3.adaptive)
     implementation(libs.androidx.profileinstaller)
     implementation(libs.kotlinx.serialization.json)
     testImplementation(libs.junit)

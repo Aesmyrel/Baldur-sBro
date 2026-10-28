@@ -8,6 +8,8 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.scale
+import fr.carnetdefaerun.core.designsystem.draw.Hatch
+import fr.carnetdefaerun.core.designsystem.draw.hatch
 import fr.carnetdefaerun.core.designsystem.draw.polygon
 import fr.carnetdefaerun.core.designsystem.draw.sparklePath
 
@@ -26,12 +28,14 @@ fun DrawScope.drawClassEmblem(emblem: ClassEmblem, color: Color, strokeWidth: Fl
     scale(k, k, pivot = Offset.Zero) {
         when (emblem) {
             ClassEmblem.BARBARE -> {
-                drawLine(color, Offset(16f, 5f), Offset(16f, 29f), strokeWidth * 1.3f, StrokeCap.Round)
-                val blades = Path().apply {
-                    moveTo(16f, 8f); quadraticTo(8f, 6f, 6f, 12f); quadraticTo(8f, 18f, 16f, 15f)
-                    moveTo(16f, 8f); quadraticTo(24f, 6f, 26f, 12f); quadraticTo(24f, 18f, 16f, 15f)
+                // Hache à un seul fer, manche en diagonale, et trois griffures : la rage, pas un symbole abstrait.
+                drawLine(color, Offset(8f, 28f), Offset(24f, 6f), strokeWidth * 1.3f, StrokeCap.Round)
+                val blade = Path().apply {
+                    moveTo(19.5f, 7.5f); quadraticTo(28f, 6f, 29f, 14f); quadraticTo(25f, 13f, 23.5f, 17f); close()
                 }
-                drawPath(blades, color, style = stroke)
+                hatch(blade, color, Hatch(1.6f, 50f, 0.35f), unit = 1f)
+                drawPath(blade, color, style = stroke)
+                listOf(0f, 3f, 6f).forEach { o -> drawLine(color, Offset(4f + o, 10f - o * 0.2f), Offset(8f + o, 18f - o * 0.2f), strokeWidth * 0.7f, StrokeCap.Round) }
             }
             ClassEmblem.BARDE -> {
                 val lyre = Path().apply {
@@ -87,8 +91,14 @@ fun DrawScope.drawClassEmblem(emblem: ClassEmblem, color: Color, strokeWidth: Fl
                 drawPath(sparklePath(16f, 11f, 7f), color)
             }
             ClassEmblem.MOINE -> {
-                drawArc(color, 20f, 300f, false, topLeft = Offset(5f, 5f), size = androidx.compose.ui.geometry.Size(22f, 22f), style = Stroke(strokeWidth * 1.4f, cap = StrokeCap.Round))
-                drawCircle(color, 2.2f, Offset(16f, 16f))
+                // Lotus sur l'onde du ki : trois pétales, une ligne d'horizon, trois points de souffle.
+                val center = Path().apply { moveTo(16f, 22f); quadraticTo(11f, 15f, 16f, 7f); quadraticTo(21f, 15f, 16f, 22f) }
+                hatch(center, color, Hatch(1.5f, 0f, 0.35f), unit = 1f)
+                drawPath(center, color, style = stroke)
+                drawPath(Path().apply { moveTo(16f, 22f); quadraticTo(7f, 20f, 5f, 12f); quadraticTo(12f, 13f, 16f, 22f) }, color, style = stroke)
+                drawPath(Path().apply { moveTo(16f, 22f); quadraticTo(25f, 20f, 27f, 12f); quadraticTo(20f, 13f, 16f, 22f) }, color, style = stroke)
+                drawPath(Path().apply { moveTo(4f, 25f); quadraticTo(10f, 23f, 16f, 25f); quadraticTo(22f, 27f, 28f, 25f) }, color, style = fine)
+                listOf(10f, 16f, 22f).forEach { x -> drawCircle(color, 0.9f, Offset(x, 29f)) }
             }
             ClassEmblem.OCCULTISTE -> {
                 val eye = Path().apply { moveTo(4f, 16f); quadraticTo(16f, 5f, 28f, 16f); quadraticTo(16f, 27f, 4f, 16f) }

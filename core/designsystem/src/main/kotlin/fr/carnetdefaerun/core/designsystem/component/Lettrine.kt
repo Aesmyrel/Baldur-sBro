@@ -51,7 +51,7 @@ fun Lettrine(letter: Char, size: Dp, modifier: Modifier = Modifier) {
         }
         Text(
             letter.toString(),
-            style = TextStyle(fontFamily = CarnetFonts.Almendra, fontSize = with(LocalDensity.current) { (size * 0.74f).toSp() }, brush = c.goldLeaf, textAlign = TextAlign.Center),
+            style = TextStyle(fontFamily = CarnetFonts.Titres, fontSize = with(LocalDensity.current) { (size * 0.74f).toSp() }, brush = c.goldLeaf, textAlign = TextAlign.Center),
             modifier = Modifier.padding(top = size * 0.04f),
         )
     }

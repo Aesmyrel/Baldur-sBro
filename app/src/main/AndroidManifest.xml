@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Seule permission : retours haptiques du lanceur de dés (permission normale). Aucun accès réseau (D-021). -->
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -8,7 +9,6 @@
         android:name=".CarnetApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -32,5 +32,17 @@
                 <data android:scheme="carnetdefaerun" />
             </intent-filter>
         </activity>
+
+        <!-- EmojiCompat interrogerait le fournisseur de polices téléchargeables des services Google
+             au démarrage : retiré, les émojis viennent de la police du système (hors ligne, D-021). -->
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                tools:node="remove" />
+        </provider>
     </application>
 </manifest>

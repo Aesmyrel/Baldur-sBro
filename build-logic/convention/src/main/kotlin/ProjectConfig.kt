@@ -23,7 +23,8 @@ internal fun Project.configureAndroidCommon(extension: CommonExtension) {
         compileOptions.sourceCompatibility = ProjectConfig.JAVA
         compileOptions.targetCompatibility = ProjectConfig.JAVA
         lint.abortOnError = true
-        lint.warningsAsErrors = false
+        // Aucun avertissement toléré (D-036) ; les exceptions sont listées dans `lint.disable`, avec leur raison.
+        lint.warningsAsErrors = true
         lint.checkDependencies = false
     }
 }

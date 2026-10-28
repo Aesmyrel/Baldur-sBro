@@ -17,7 +17,12 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.statusBars
+import androidx.compose.foundation.layout.WindowInsetsSides
+import androidx.compose.foundation.layout.displayCutout
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.only
+import androidx.compose.foundation.layout.systemBars
+import androidx.compose.foundation.layout.union
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.selection.selectable
@@ -43,8 +48,10 @@ import androidx.compose.ui.graphics.drawscope.scale
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
+import fr.carnetdefaerun.core.designsystem.theme.cappedScale
 
 /** Destinations principales de l'appli (barre du bas sur téléphone, rail sur grand écran). */
 enum class NavGlyph { PARTIE, GRIMOIRE, CODEX, BUILDS, OUTILS }
@@ -77,7 +84,7 @@ fun CarnetNavigationBar(
             }
             .windowInsetsPadding(WindowInsets.navigationBars),
     ) {
-        Row(Modifier.fillMaxWidth().height(68.dp).padding(start = 2.dp, end = 10.dp), verticalAlignment = Alignment.CenterVertically) {
+        Row(Modifier.fillMaxWidth().heightIn(min = 68.dp).padding(start = 2.dp, end = 10.dp), verticalAlignment = Alignment.CenterVertically) {
             Row(Modifier.weight(1f).selectableGroup()) {
                 destinations.forEachIndexed { i, d -> NavItem(d, i == selected, { onSelect(i) }, Modifier.weight(1f)) }
             }
@@ -105,7 +112,7 @@ fun CarnetNavigationRail(
             .drawBehind {
                 drawLine(c.goldDeep, Offset(size.width, 0f), Offset(size.width, size.height), 1.dp.toPx())
             }
-            .windowInsetsPadding(WindowInsets.statusBars)
+            .windowInsetsPadding(WindowInsets.systemBars.union(WindowInsets.displayCutout).only(WindowInsetsSides.Vertical + WindowInsetsSides.Start))
             .padding(vertical = 16.dp)
             .selectableGroup(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -113,7 +120,7 @@ fun CarnetNavigationRail(
     ) {
         SearchMedallion(onSearch, searchLabel)
         Spacer(Modifier.height(12.dp))
-        destinations.forEachIndexed { i, d -> NavItem(d, i == selected, { onSelect(i) }, Modifier.height(72.dp)) }
+        destinations.forEachIndexed { i, d -> NavItem(d, i == selected, { onSelect(i) }, Modifier.fillMaxWidth().height(72.dp)) }
     }
 }
 
@@ -127,7 +134,11 @@ private fun NavItem(d: NavDestination, active: Boolean, onClick: () -> Unit, mod
         verticalArrangement = Arrangement.spacedBy(3.dp),
     ) {
         Canvas(Modifier.size(26.dp)) { drawNavGlyph(d.glyph, color) }
-        Text(d.label, style = CarnetTheme.type.dataSmall, color = color)
+        // Libellé sur une ligne, taille plafonnée : la barre ne se déforme pas à 200 %.
+        Text(
+            d.label, style = CarnetTheme.type.dataSmall.copy(fontSize = CarnetTheme.type.dataSmall.fontSize.cappedScale(1.4f)),
+            color = color, maxLines = 1, softWrap = false, overflow = TextOverflow.Ellipsis,
+        )
         Canvas(Modifier.size(18.dp, 5.dp)) {
             if (active) {
                 drawLine(c.goldDeep, Offset(0f, size.height / 2), Offset(size.width * 0.33f, size.height / 2), 0.8.dp.toPx())
@@ -149,9 +160,9 @@ fun SearchMedallion(onClick: () -> Unit, label: String, modifier: Modifier = Mod
     Box(
         modifier
             .size(56.dp)
-            .shadow(10.dp, CircleShape, ambientColor = c.scrim, spotColor = c.scrim)
+            .shadow(if (c.isDark) 10.dp else 4.dp, CircleShape, ambientColor = c.scrim, spotColor = c.scrim)
             .clip(CircleShape)
-            .background(Brush.radialGradient(listOf(Color(0xFFFBEBB6), Color(0xFFD8B260), Color(0xFF9C7A2E))))
+            .background(c.goldLeafRadial)
             .clickable(role = Role.Button, onClick = onClick)
             .semantics { contentDescription = label },
         contentAlignment = Alignment.Center,

@@ -9,6 +9,8 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import fr.carnetdefaerun.core.designsystem.shader.AmbientAnimationSlot
+import fr.carnetdefaerun.core.designsystem.shader.LocalAmbientAnimation
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.remember
@@ -69,6 +71,7 @@ fun CarnetTheme(
         LocalCarnetColors provides colors,
         LocalCarnetTypography provides type,
         LocalCarnetMotion provides motion,
+        LocalAmbientAnimation provides remember { AmbientAnimationSlot() },
     ) {
         MaterialTheme(
             colorScheme = colors.toMaterial(),

@@ -6,6 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.ImageShader
@@ -28,7 +29,7 @@ fun Fleuron(modifier: Modifier = Modifier) {
         val diamond = Path().apply {
             moveTo(11f * k, 1f * k); lineTo(15f * k, 6f * k); lineTo(11f * k, 11f * k); lineTo(7f * k, 6f * k); close()
         }
-        drawPath(diamond, c.goldLeaf)
+        drawPath(diamond, c.goldLeafDecor)
         drawLine(c.goldDeep, Offset(1f * k, 6f * k), Offset(6f * k, 6f * k), 0.9f * k)
         drawLine(c.goldDeep, Offset(16f * k, 6f * k), Offset(21f * k, 6f * k), 0.9f * k)
     }
@@ -55,8 +56,9 @@ fun Modifier.engravedFrame(c: CarnetColors, inset: Float = 12f): Modifier = draw
 }
 
 /**
- * Grain de vélin : texture de bruit générée une seule fois, posée en mosaïque à très faible opacité.
- * Aucun coût d'animation ; désactivable (thème OLED : grain plus léger).
+ * Grain de vélin : texture de bruit générée une seule fois, posée en mosaïque à très faible opacité,
+ * en mode « incrustation » : un gris moyen ne change pas la teinte moyenne du fond, donc ni ses
+ * contrastes (mesurés sur fond uni). Aucun coût d'animation ; absent en OLED.
  */
 object VellumGrain {
     private const val SIZE = 128
@@ -77,12 +79,14 @@ object VellumGrain {
 /** Fond du grimoire : encre ou vélin, halo de bougie très doux, grain. */
 fun Modifier.grimoireBackground(c: CarnetColors): Modifier = drawBehind {
     drawRect(c.bg)
-    drawRect(
-        Brush.radialGradient(
-            0f to c.candle, 1f to c.candle.copy(alpha = 0f),
-            center = Offset(size.width * 0.12f, size.height * 0.34f), radius = size.maxDimension * 0.75f,
-        ),
-    )
-    drawRect(VellumGrain.brush(), alpha = c.grainAlpha)
+    if (c.candle.alpha > 0f) {
+        drawRect(
+            Brush.radialGradient(
+                0f to c.candle, 1f to c.candle.copy(alpha = 0f),
+                center = Offset(size.width * 0.12f, size.height * 0.34f), radius = size.maxDimension * 0.75f,
+            ),
+        )
+    }
+    if (c.grainAlpha > 0f) drawRect(VellumGrain.brush(), alpha = c.grainAlpha, blendMode = BlendMode.Overlay)
 }
 

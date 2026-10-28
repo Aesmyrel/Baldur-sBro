@@ -10,23 +10,29 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.produceState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import fr.carnetdefaerun.core.designsystem.component.CarnetTopBar
+import fr.carnetdefaerun.core.designsystem.component.ReadingColumn
 import fr.carnetdefaerun.core.designsystem.component.SectionHeader
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 /** Crédits et licences : mentions obligatoires, sources, licences des données, des polices et du code. */
 @Composable
 fun CreditsScreen(onBack: () -> Unit) {
     val c = CarnetTheme.colors
     val context = LocalContext.current
-    val fonts = remember { readFontCopyrights(context) }
+    // Lecture des licences hors du fil principal.
+    val fonts by produceState(emptyList<String>()) { value = withContext(Dispatchers.IO) { readFontCopyrights(context) } }
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
         CarnetTopBar(stringResource(R.string.credits_crumb), onBack = onBack)
+        ReadingColumn {
         Text(stringResource(R.string.credits_title), style = CarnetTheme.type.headline, color = c.text, modifier = Modifier.padding(horizontal = 24.dp))
         Block(R.string.credits_notice_title, stringResource(R.string.credits_notice))
         Block(R.string.credits_wotc_title, stringResource(R.string.credits_wotc_vo))
@@ -36,8 +42,10 @@ fun CreditsScreen(onBack: () -> Unit) {
         SectionHeader(stringResource(R.string.credits_fonts_title))
         Paragraph(stringResource(R.string.credits_fonts_intro))
         fonts.forEach { Text(it, style = CarnetTheme.type.dataSmall, color = c.text2, modifier = Modifier.padding(horizontal = 24.dp, vertical = 3.dp)) }
+        Paragraph(stringResource(R.string.credits_fonts_modified))
         Block(R.string.credits_code_title, stringResource(R.string.credits_code))
         Spacer(Modifier.height(32.dp))
+        }
     }
 }
 
@@ -57,5 +65,5 @@ private fun readFontCopyrights(context: Context): List<String> {
     val dir = "licences/polices"
     return context.assets.list(dir).orEmpty().sorted().mapNotNull { file ->
         context.assets.open("$dir/$file").bufferedReader().useLines { lines -> lines.firstOrNull { it.startsWith("Copyright") } }
-    }
+    }.distinct()
 }

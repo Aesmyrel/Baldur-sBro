@@ -7,6 +7,7 @@ import fr.carnetdefaerun.core.data.navigation.NavigationStateStore
 import fr.carnetdefaerun.core.model.navigation.Destination
 import fr.carnetdefaerun.core.model.navigation.NavigationState
 import fr.carnetdefaerun.core.model.navigation.TopLevel
+import fr.carnetdefaerun.core.model.navigation.normalized
 import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -29,9 +30,11 @@ class AppNavigator @Inject constructor(private val store: NavigationStateStore) 
 
     init {
         viewModelScope.launch {
-            val restored = store.load()
-            _state.value = pendingDeepLink?.let { restored.push(it) } ?: restored
+            val restored = store.load().normalized()
+            val link = pendingDeepLink
             pendingDeepLink = null
+            // Un lien reçu avant la relecture est appliqué et enregistré tout de suite.
+            if (link != null) set(restored.push(link)) else _state.value = restored
         }
     }
 

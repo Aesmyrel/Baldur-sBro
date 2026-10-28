@@ -7,7 +7,7 @@ Application Android compagnon de *Baldur's Gate 3*, pour un usage personnel : en
 > Baldur's Gate, Dungeons & Dragons, Forgotten Realms et Faerûn sont des marques de Wizards of the Coast. Baldur's Gate 3 est développé et édité par Larian Studios.
 
 ## État du projet
-**Phase 0 terminée** : plan, sources et trois directions artistiques maquettées. En attente du choix de la direction et de la validation du plan avant le développement.
+**Phase 1** (socle technique, design system de la direction A « Grimoire enluminé », coquille de l’appli) : vérifiée de façon indépendante, corrigée, contre-vérification en cours. **Phase 2 en cours** : pipelines des données du jeu et du lore. Le détail est dans [docs/PROGRESS.md](docs/PROGRESS.md).
 
 | Document | Contenu |
 |---|---|
@@ -17,6 +17,14 @@ Application Android compagnon de *Baldur's Gate 3*, pour un usage personnel : en
 | [docs/DIRECTION_ARTISTIQUE.md](docs/DIRECTION_ARTISTIQUE.md) | Les trois directions artistiques |
 | [docs/design/comparatif.png](docs/design/comparatif.png) | Les trois directions côte à côte |
 | [docs/PROGRESS.md](docs/PROGRESS.md) · [docs/DECISIONS.md](docs/DECISIONS.md) | Avancement et décisions |
+
+## Construire et vérifier
+```bash
+bash tools/setup_android_sdk.sh                                   # SDK Android local (une fois)
+export ANDROID_HOME=$PWD/.android-sdk LC_ALL=C.UTF-8 LANG=C.UTF-8
+./gradlew check                 # lint, tests, captures, contrôle des permissions
+./gradlew :app:assembleRelease  # APK release (R8, arm64)
+```
 
 ## Régénérer les maquettes
 ```bash

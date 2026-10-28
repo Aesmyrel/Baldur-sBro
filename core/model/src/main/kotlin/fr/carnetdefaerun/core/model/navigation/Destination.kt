@@ -1,5 +1,6 @@
 package fr.carnetdefaerun.core.model.navigation
 
+import fr.carnetdefaerun.core.model.content.ContentId
 import kotlinx.serialization.Serializable
 
 /**
@@ -85,4 +86,42 @@ data class NavigationState(
             else -> null
         }
     }
+}
+
+/** Profondeur maximale d'une pile relue : au-delà, on garde les écrans les plus récents. */
+const val MAX_STACK_DEPTH = 30
+
+/** Longueur maximale d'une recherche persistée ou reçue par lien. */
+const val MAX_QUERY_LENGTH = 200
+
+/** Ancre de section : son numéro d'ordre (`s3`), jamais un titre, qui pourrait être un spoiler. */
+val SECTION_ANCHOR = Regex("^s\\d{1,3}$")
+
+private val SLUG = Regex("^[a-z0-9]+(-[a-z0-9]+)*$")
+
+/** Une destination relue (DataStore, lien profond) n'est acceptée que si ses paramètres sont bien formés. */
+fun Destination.isWellFormed(): Boolean = when (this) {
+    is Destination.GameEntry -> ContentId.PATTERN.matches(id)
+    is Destination.CompanionDetail -> ContentId.PATTERN.matches(id)
+    is Destination.LoreEntry -> ContentId.PATTERN.matches(id) && (anchor == null || SECTION_ANCHOR.matches(anchor))
+    is Destination.CodexTheme -> theme.length <= 40 && SLUG.matches(theme)
+    is Destination.EncyclopediaCategory -> category.length <= 40 && SLUG.matches(category)
+    is Destination.Progress -> act == null || (act.length <= 12 && SLUG.matches(act))
+    is Destination.Search -> query.length <= MAX_QUERY_LENGTH
+    is Destination.BuildEditor -> buildId > 0
+    is Destination.NoteEditor -> (noteId == null || noteId > 0) && (targetId == null || ContentId.PATTERN.matches(targetId))
+    else -> true
+}
+
+/**
+ * État relu, remis d'aplomb : chaque pile commence par la racine de son onglet, ne contient ni
+ * destination mal formée ni racine d'un autre onglet, et reste de profondeur bornée.
+ */
+fun NavigationState.normalized(): NavigationState {
+    val roots = TopLevel.entries.map { it.root }.toSet()
+    val clean = TopLevel.entries.associateWith { tab ->
+        val inner = stacks[tab].orEmpty().filter { it !in roots && it.isWellFormed() }.takeLast(MAX_STACK_DEPTH - 1)
+        listOf(tab.root) + inner
+    }
+    return NavigationState(current, clean)
 }

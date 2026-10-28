@@ -4,7 +4,7 @@ import androidx.activity.ComponentActivity
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import androidx.compose.ui.test.junit4.v2.createAndroidComposeRule
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.unit.Density
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -48,7 +48,15 @@ class DesignSystemScreenshotTest {
     @Test fun builds_sombre() = shot("builds_sombre") { CatalogBuild() }
     @Test fun builds_parchemin() = shot("builds_parchemin", ThemeMode.PARCHEMIN) { CatalogBuild() }
     @Test fun controles_sombre() = shot("controles_sombre") { CatalogControls() }
+    @Config(qualifiers = "w412dp-h1800dp-xxhdpi")
+    @Test fun builds_police200() = shot("builds_police200", fontScale = 2f) { CatalogBuild() }
+    @Test fun accueil_police200() = shot("accueil_police200", fontScale = 2f) { CatalogHome() }
+
+    @Config(qualifiers = "w412dp-h2000dp-xxhdpi")
     @Test fun controles_police200() = shot("controles_police200", fontScale = 2f) { CatalogControls() }
+
+    @Config(qualifiers = "w360dp-h780dp-xxhdpi")
+    @Test fun accueil_w360() = shot("accueil_w360") { CatalogHome() }
 
     @Config(qualifiers = "w412dp-h1200dp-xxhdpi")
     @Test fun vignettes_sombre() = shot("vignettes_sombre") { CatalogVignettes() }

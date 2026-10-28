@@ -5,6 +5,7 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import fr.carnetdefaerun.core.model.navigation.NavigationState
+import java.io.IOException
 import javax.inject.Inject
 import javax.inject.Named
 import javax.inject.Singleton
@@ -22,12 +23,21 @@ class DataStoreNavigationStateStore @Inject constructor(
     @Named("navigation") private val store: DataStore<Preferences>,
 ) : NavigationStateStore {
 
-    override suspend fun load(): NavigationState =
-        store.data.first()[KEY]?.let { runCatching { JSON.decodeFromString(NavigationState.serializer(), it) }.getOrNull() }
-            ?: NavigationState()
+    override suspend fun load(): NavigationState {
+        val raw = try {
+            store.data.first()[KEY]
+        } catch (e: IOException) {
+            null // fichier illisible : on repart de l'écran d'accueil
+        }
+        return raw?.let { runCatching { JSON.decodeFromString(NavigationState.serializer(), it) }.getOrNull() } ?: NavigationState()
+    }
 
     override suspend fun save(state: NavigationState) {
-        store.edit { it[KEY] = JSON.encodeToString(NavigationState.serializer(), state) }
+        try {
+            store.edit { it[KEY] = JSON.encodeToString(NavigationState.serializer(), state) }
+        } catch (e: IOException) {
+            // Stockage plein ou indisponible : la navigation continue, seule la reprise est perdue.
+        }
     }
 
     private companion object {

@@ -60,13 +60,13 @@ class SpoilerGateTest {
     fun `profil par défaut, seul le contenu du prologue sans spoiler est visible`() {
         val profile = SpoilerProfile()
         assertThat(SpoilerGate.isVisible(SpoilerTag.SAFE, profile)).isTrue()
-        assertThat(SpoilerGate.isVisible(SpoilerTag(Act.PROLOGUE, LIGHT), profile)).isFalse()
-        assertThat(SpoilerGate.isVisible(SpoilerTag(Act.ACT_1), profile)).isFalse()
+        assertThat(SpoilerGate.isVisible(SpoilerTag(Act.PROLOGUE, LIGHT, NONE), profile)).isFalse()
+        assertThat(SpoilerGate.isVisible(SpoilerTag(Act.ACT_1, NONE, NONE), profile)).isFalse()
     }
 
     @Test
     fun `un rebondissement de l'acte courant se lève au passage à l'acte suivant`() {
-        val twist = SpoilerTag(Act.ACT_1, MAJOR)
+        val twist = SpoilerTag(Act.ACT_1, MAJOR, NONE)
         assertThat(SpoilerGate.isVisible(twist, SpoilerProfile(Act.ACT_1))).isFalse()
         assertThat(SpoilerGate.isVisible(twist, SpoilerProfile(Act.ACT_2))).isTrue()
     }
@@ -79,11 +79,11 @@ class SpoilerGateTest {
 
     @Test
     fun `un bloc masqué ne transporte ni contenu ni acte, sauf réglage explicite`() {
-        val tag = SpoilerTag(Act.ACT_3, MAJOR)
+        val tag = SpoilerTag(Act.ACT_3, MAJOR, NONE)
         val hidden = "secret".gated("b1", tag, SpoilerProfile())
-        assertThat(hidden).isEqualTo(Gated.Hidden("b1", act = null))
+        assertThat(hidden).isEqualTo(Gated.Hidden(RevealKey.of("b1"), act = null))
         val withAct = "secret".gated("b1", tag, SpoilerProfile(), showActOfHidden = true)
-        assertThat(withAct).isEqualTo(Gated.Hidden("b1", act = Act.ACT_3))
+        assertThat(withAct).isEqualTo(Gated.Hidden(RevealKey.of("b1"), act = Act.ACT_3))
         assertThat("visible".gated("b2", SpoilerTag.SAFE, SpoilerProfile())).isEqualTo(Gated.Visible("visible"))
     }
 
@@ -96,5 +96,42 @@ class SpoilerGateTest {
         assertThat(s.protectsAtLeast(a)).isTrue()
         assertThat(s.protectsAtLeast(b)).isTrue()
         assertThat(a.protectsAtLeast(b)).isFalse()
+    }
+
+    @Test
+    fun `l'ordre des actes est chronologique`() {
+        assertThat(Act.entries).containsExactly(Act.PROLOGUE, Act.ACT_1, Act.ACT_2, Act.ACT_3, Act.EPILOGUE).inOrder()
+    }
+
+    @Test
+    fun `sans révélation, le verrou est exactement la règle de visibilité`() {
+        for (act in Act.entries) for (level in SpoilerLevel.entries) for (tolerance in Tolerance.entries) {
+            val tag = SpoilerTag(act, level, NONE)
+            val profile = SpoilerProfile(Act.ACT_1, tolerance)
+            assertThat(SpoilerGate.isVisible(tag, profile, revealed = false)).isEqualTo(SpoilerGate.isVisible(tag, profile))
+            assertThat(SpoilerGate.isVisible(tag, profile, revealed = true)).isTrue()
+        }
+    }
+
+    @Test
+    fun `une étiquette absente ou mal nommée est une erreur, jamais un contenu visible`() {
+        val json = kotlinx.serialization.json.Json
+        assertThrows { json.decodeFromString(SpoilerTag.serializer(), "{}") }
+        assertThrows { json.decodeFromString(SpoilerTag.serializer(), """{"acte":"acte3","niveau":"majeur","otherWorks":"aucun"}""") }
+        assertThat(json.decodeFromString(SpoilerTag.serializer(), """{"act":"acte3","level":"majeur","otherWorks":"aucun"}"""))
+            .isEqualTo(SpoilerTag(Act.ACT_3, MAJOR, NONE))
+    }
+
+    @Test
+    fun `la poignée d'un bloc masqué ne laisse pas lire son identifiant`() {
+        val key = RevealKey.of("lore.deity.selune#section-2")
+        assertThat(key.token).doesNotContain("selune")
+        assertThat(key.token).matches("[0-9a-f]{24}")
+        assertThat(RevealKey.of("lore.deity.selune#section-2")).isEqualTo(key)
+    }
+
+    private fun assertThrows(block: () -> Unit) {
+        val failure = runCatching(block).exceptionOrNull()
+        assertWithMessage("une exception était attendue").that(failure).isNotNull()
     }
 }

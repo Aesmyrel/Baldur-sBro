@@ -14,6 +14,7 @@ dependencies {
     compileOnly(libs.compose.gradlePlugin)
     compileOnly(libs.ksp.gradlePlugin)
     compileOnly(libs.roborazzi.gradlePlugin)
+    testImplementation(libs.junit)
 }
 
 gradlePlugin {

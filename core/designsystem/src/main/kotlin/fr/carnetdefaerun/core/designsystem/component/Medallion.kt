@@ -15,7 +15,9 @@ import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import fr.carnetdefaerun.core.designsystem.R
 import fr.carnetdefaerun.core.designsystem.illustration.ClassEmblem
 import fr.carnetdefaerun.core.designsystem.illustration.drawClassEmblem
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
@@ -39,8 +41,9 @@ fun Medallion(emblem: ClassEmblem, modifier: Modifier = Modifier, size: Dp = 52.
 /** Membre du groupe : médaillon, nom, classe. Décrit en une phrase pour TalkBack. */
 @Composable
 fun PartyMember(name: String, className: String, emblem: ClassEmblem, modifier: Modifier = Modifier) {
+    val description = stringResource(R.string.ds_party_member, name, className)
     Column(
-        modifier.clearAndSetSemantics { contentDescription = "$name, $className" },
+        modifier.clearAndSetSemantics { contentDescription = description },
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Medallion(emblem, size = 50.dp)

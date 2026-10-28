@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Thème parchemin : l'appli se déclare en mode clair, l'écran de démarrage est en vélin. -->
+    <color name="carnet_page">#FFEFE5CC</color>
+</resources>

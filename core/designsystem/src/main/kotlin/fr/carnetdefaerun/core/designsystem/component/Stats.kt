@@ -125,7 +125,7 @@ fun SpellSlots(slots: List<Pair<String, Int>>, a11y: String, modifier: Modifier 
     Row(modifier.clearAndSetSemantics { contentDescription = a11y }, horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
         slots.forEach { (level, count) ->
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(3.dp)) {
-                Text(level, style = CarnetTheme.type.dataStrong.copy(fontFamily = fr.carnetdefaerun.core.designsystem.theme.CarnetFonts.AlmendraSC), color = c.text)
+                Text(level, style = CarnetTheme.type.dataStrong.copy(fontFamily = fr.carnetdefaerun.core.designsystem.theme.CarnetFonts.TitresSC), color = c.text)
                 repeat(count) {
                     Canvas(Modifier.size(9.dp)) {
                         drawPath(Path().apply { moveTo(size.width / 2, 0f); lineTo(size.width, size.height / 2); lineTo(size.width / 2, size.height); lineTo(0f, size.height / 2); close() }, c.lapis)

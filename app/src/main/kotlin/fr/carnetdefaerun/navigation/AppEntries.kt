@@ -2,6 +2,7 @@ package fr.carnetdefaerun.navigation
 
 import androidx.navigation3.runtime.NavEntry
 import fr.carnetdefaerun.core.model.navigation.Destination
+import fr.carnetdefaerun.core.model.navigation.TopLevel
 import fr.carnetdefaerun.feature.builds.BuildsRoute
 import fr.carnetdefaerun.feature.codex.CodexRoute
 import fr.carnetdefaerun.feature.companions.CompanionsRoute
@@ -14,10 +15,13 @@ import fr.carnetdefaerun.feature.settings.CreditsScreen
 import fr.carnetdefaerun.feature.settings.SettingsRoute
 import fr.carnetdefaerun.feature.tools.ToolsRoute
 
-/** Associe chaque destination à son écran. Les modules d'écrans ne se connaissent pas entre eux. */
-fun appEntries(navigator: AppNavigator): (Destination) -> NavEntry<Destination> = { destination ->
+/**
+ * Associe chaque destination à son écran. Les modules d'écrans ne se connaissent pas entre eux.
+ * La clé d'état est préfixée par l'onglet : un même écran ouvert dans deux onglets garde deux états.
+ */
+fun appEntries(navigator: AppNavigator, tab: TopLevel): (Destination) -> NavEntry<Destination> = { destination ->
     val back = { navigator.back(); Unit }
-    NavEntry(destination) {
+    NavEntry(destination, contentKey = "${tab.name}/$destination") {
         when (destination) {
             Destination.Home -> HomeRoute(onNavigate = navigator::navigate)
             Destination.Encyclopedia -> EncyclopediaRoute()

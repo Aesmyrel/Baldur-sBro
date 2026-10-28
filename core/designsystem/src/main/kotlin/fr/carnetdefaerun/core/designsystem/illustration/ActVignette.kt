@@ -1,26 +1,47 @@
 package fr.carnetdefaerun.core.designsystem.illustration
 
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBars
+import androidx.compose.foundation.text.TextAutoSize
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.draw.drawWithCache
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
+import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.PathEffect
 import androidx.compose.ui.graphics.PathOperation
+import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.clipRect
 import androidx.compose.ui.graphics.drawscope.scale
+import androidx.compose.ui.graphics.drawscope.translate
+import androidx.compose.ui.graphics.layer.CompositingStrategy
 import androidx.compose.ui.graphics.layer.drawLayer
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import fr.carnetdefaerun.core.designsystem.draw.Hatch
 import fr.carnetdefaerun.core.designsystem.draw.Hatches
 import fr.carnetdefaerun.core.designsystem.draw.crossHatch
@@ -31,6 +52,8 @@ import fr.carnetdefaerun.core.designsystem.draw.sparklePath
 import fr.carnetdefaerun.core.designsystem.theme.CarnetColors
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 import java.util.Random
+import kotlin.math.max
+import kotlin.math.min
 
 /**
  * En-têtes gravés, un par moment de la partie. Ce sont des paysages génériques :
@@ -41,36 +64,50 @@ enum class Vignette { PROLOGUE, ACTE_I, ACTE_II, ACTE_III, EPILOGUE }
 private const val W = 412f
 private const val H = 236f
 
-/** Vignette gravée, enregistrée une seule fois par taille dans une couche graphique (aucun coût par image). */
+/** Hauteur de l'en-tête pour une largeur donnée : la proportion de la gravure, bornée. */
+fun vignetteHeight(width: Dp): Dp = (width * (H / W)).coerceIn(200.dp, 300.dp)
+
+/**
+ * Vignette gravée, enregistrée une seule fois par taille dans une couche graphique (aucun coût par image).
+ * Elle remplit toute sa surface sans se déformer et se fond dans la page par le bas (aucune couture).
+ * [topInset] laisse la barre d'état libre au-dessus du cadre.
+ */
 @Composable
-fun ActVignette(vignette: Vignette, modifier: Modifier = Modifier) {
+fun ActVignette(vignette: Vignette, modifier: Modifier = Modifier, topInset: Dp = 0.dp) {
     val colors = CarnetTheme.colors
     Canvas(
         modifier
             .fillMaxWidth()
-            .height(236.dp)
             .drawWithCache {
-                val layer = obtainGraphicsLayer()
-                layer.record { drawVignette(vignette, colors) }
+                val layer = obtainGraphicsLayer().apply { compositingStrategy = CompositingStrategy.Offscreen }
+                layer.record { drawVignette(vignette, colors, topInset.toPx()) }
                 onDrawWithContent { drawLayer(layer) }
             },
     ) {}
 }
 
-fun DrawScope.drawVignette(vignette: Vignette, c: CarnetColors) {
-    val k = size.width / W
+fun DrawScope.drawVignette(vignette: Vignette, c: CarnetColors, topInset: Float = 0f) {
+    // Mise à l'échelle « couvrante » : la scène garde ses proportions et l'excédent est rogné.
+    val k = max(size.width / W, size.height / H)
+    val dx = (size.width - W * k) / 2f
+    val dy = (size.height - H * k) / 2f
+    // Haut du cadre, ramené aux coordonnées de la scène : les rayons et la comète restent dessous.
+    val ceiling = (frameTop(topInset) - dy) / k + 8f
     clipRect(0f, 0f, size.width, size.height) {
-    scale(k, k, pivot = Offset.Zero) {
-        drawRect(c.bg, size = androidx.compose.ui.geometry.Size(W, H))
-        when (vignette) {
-            Vignette.PROLOGUE -> prologue(c)
-            Vignette.ACTE_I -> acteI(c)
-            Vignette.ACTE_II -> acteII(c)
-            Vignette.ACTE_III -> acteIII(c)
-            Vignette.EPILOGUE -> epilogue(c)
+        translate(dx, dy) {
+            scale(k, k, pivot = Offset.Zero) {
+                when (vignette) {
+                    Vignette.PROLOGUE -> prologue(c, ceiling)
+                    Vignette.ACTE_I -> acteI(c)
+                    Vignette.ACTE_II -> acteII(c)
+                    Vignette.ACTE_III -> acteIII(c, ceiling)
+                    Vignette.EPILOGUE -> epilogue(c, ceiling)
+                }
+            }
         }
-        fadeAndFrame(c)
-    }
+        // La gravure s'efface vers la page : en dessous, le fond (halo, grain) est celui de l'écran.
+        drawRect(Brush.verticalGradient(0.5f to Color.Black, 1f to Color.Transparent), blendMode = BlendMode.DstIn)
+        frame(c, topInset)
     }
 }
 
@@ -99,7 +136,7 @@ private fun DrawScope.rings(c: CarnetColors, x: Float, y: Float, radii: List<Flo
 private fun DrawScope.crescent(c: CarnetColors, x: Float, y: Float, r: Float) {
     val moon = Path().apply { addOval(Rect(Offset(x, y), r)) }
     val cut = Path().apply { addOval(Rect(Offset(x + r * 0.42f, y - r * 0.3f), r * 0.87f)) }
-    drawPath(Path.combine(PathOperation.Difference, moon, cut), c.goldLeaf)
+    drawPath(Path.combine(PathOperation.Difference, moon, cut), c.goldLeafDecor)
 }
 
 private fun DrawScope.stars(c: CarnetColors, vararg s: Float) {
@@ -147,36 +184,52 @@ private fun DrawScope.conifers(c: CarnetColors, seed: Long, count: Int, x0: Floa
     }
 }
 
-private fun DrawScope.fadeAndFrame(c: CarnetColors) {
-    drawRect(
-        Brush.verticalGradient(0.5f to c.bg.copy(alpha = 0f), 0.8f to c.bg.copy(alpha = 0.82f), 1f to c.bg, startY = 0f, endY = H),
-        size = androidx.compose.ui.geometry.Size(W, H),
-    )
-    val outer = Rect(12.5f, 38.5f, W - 12.5f, H - 5.5f)
-    drawRect(c.goldDeep, topLeft = outer.topLeft, size = outer.size, alpha = 0.75f, style = Stroke(0.8f))
-    val inner = Rect(16.5f, 42.5f, W - 16.5f, H - 9.5f)
-    drawRect(c.goldDeep, topLeft = inner.topLeft, size = inner.size, alpha = 0.45f, style = Stroke(0.5f))
+/** Cadre gravé, en coordonnées d'écran (dp) : il épouse la taille réelle de l'en-tête. */
+private fun DrawScope.frameTop(topInset: Float): Float = max(38.5f * 1.dp.toPx(), topInset + 8f * 1.dp.toPx())
+
+private fun DrawScope.frame(c: CarnetColors, topInset: Float) {
+    val u = 1.dp.toPx()
+    val top = frameTop(topInset)
+    val outer = Rect(12.5f * u, top, size.width - 12.5f * u, size.height - 5.5f * u)
+    drawRect(c.goldDeep, topLeft = outer.topLeft, size = outer.size, alpha = 0.75f, style = Stroke(0.8f * u))
+    val inner = Rect(outer.left + 4f * u, outer.top + 4f * u, outer.right - 4f * u, outer.bottom - 4f * u)
+    drawRect(c.goldDeep, topLeft = inner.topLeft, size = inner.size, alpha = 0.45f, style = Stroke(0.5f * u))
     listOf(outer.topLeft to 1f, Offset(outer.right, outer.top) to -1f).forEach { (o, sx) ->
         val p = Path().apply {
-            moveTo(o.x, o.y); quadraticTo(o.x + 12f * sx, o.y + 2f, o.x + 14f * sx, o.y + 14f)
-            moveTo(o.x, o.y); quadraticTo(o.x + 2f * sx, o.y + 12f, o.x + 14f * sx, o.y + 14f)
-            moveTo(o.x + 4f * sx, o.y + 4f); lineTo(o.x + 8f * sx, o.y + 8f)
+            moveTo(o.x, o.y); quadraticTo(o.x + 12f * u * sx, o.y + 2f * u, o.x + 14f * u * sx, o.y + 14f * u)
+            moveTo(o.x, o.y); quadraticTo(o.x + 2f * u * sx, o.y + 12f * u, o.x + 14f * u * sx, o.y + 14f * u)
+            moveTo(o.x + 4f * u * sx, o.y + 4f * u); lineTo(o.x + 8f * u * sx, o.y + 8f * u)
         }
-        drawPath(p, c.goldLeaf, style = Stroke(1f))
+        drawPath(p, c.goldLeafDecor, style = Stroke(1f * u))
+    }
+}
+
+/** Rayons d'un astre, raccourcis pour rester sous le haut du cadre (y ≥ [ceiling]). */
+private fun DrawScope.rays(c: CarnetColors, x: Float, y: Float, count: Int, from: Int, step: Int, length: (Int) -> Float, width: Float, alpha: Float, ceiling: Float) {
+    for (i in 0 until count) {
+        val a = Math.toRadians((from + i * step).toDouble())
+        val dirY = kotlin.math.sin(a).toFloat()
+        val reach = if (dirY < 0f) min(length(i), (y - ceiling) / -dirY) else length(i)
+        drawLine(c.gold, Offset(x, y), Offset(x + reach * kotlin.math.cos(a).toFloat(), y + reach * dirY), width, alpha = alpha)
     }
 }
 
 // ---------- Prologue : nuit sur la mer, falaises, comète ----------
 
-private fun DrawScope.prologue(c: CarnetColors) {
+private fun DrawScope.prologue(c: CarnetColors, ceiling: Float) {
     sky(c)
     halo(c, 300f, 74f, 52f)
-    // Comète : tête dorée, queue en traits fins.
-    for (i in 0 until 9) {
-        val o = i * 1.6f
-        drawLine(c.gold, Offset(300f + o, 74f - o * 0.4f), Offset(372f + o * 2f, 46f - o), 0.5f, alpha = 0.75f - i * 0.07f)
+    // Comète : tête dorée, queue en éventail de traits fins qui s'effacent, tenue sous le cadre.
+    for (i in 0 until 7) {
+        val a = Math.toRadians((-24.0 + i * 3.0))
+        val dirY = kotlin.math.sin(a).toFloat()
+        val len = min(58f - i * 2.5f, (74f - ceiling) / -dirY)
+        drawLine(
+            c.gold, Offset(300f, 74f), Offset(300f + len * kotlin.math.cos(a).toFloat(), 74f + len * dirY),
+            0.45f, alpha = 0.7f - i * 0.06f, cap = StrokeCap.Round,
+        )
     }
-    drawCircle(c.goldLeaf, radius = 5.5f, center = Offset(300f, 74f))
+    drawCircle(c.goldLeafDecor, radius = 5.5f, center = Offset(300f, 74f))
     rings(c, 300f, 74f, listOf(12f, 20f))
     stars(c, 60f, 64f, 3.2f, 112f, 96f, 2.2f, 182f, 58f, 2.6f, 226f, 92f, 1.8f, 380f, 104f, 2.4f, 250f, 50f, 2f, 36f, 112f, 1.6f)
     cloud(c, 84f, 92f, 1.1f)
@@ -253,8 +306,10 @@ private fun DrawScope.acteII(c: CarnetColors) {
     val back = polygon(0f, 170f, 40f, 132f, 70f, 146f, 118f, 96f, 150f, 120f, 176f, 108f, 206f, 140f, 236f, 104f, 268f, 126f, 302f, 90f, 340f, 128f, 372f, 112f, W, 146f, W, H, 0f, H)
     engrave(back, c.bg, c.gold, Hatches.Light, outline = 0.8f)
     // Neige des sommets : zones laissées blanches.
+    // Neige des cimes : la zone la plus claire de la gravure (or léger sur l'encre, vélin nu sur le parchemin).
     listOf(polygon(118f, 96f, 108f, 108f, 122f, 106f, 130f, 112f, 136f, 106f), polygon(302f, 90f, 292f, 102f, 304f, 100f, 312f, 106f, 318f, 99f), polygon(236f, 104f, 228f, 114f, 238f, 112f, 246f, 116f)).forEach {
-        drawPath(it, c.bg); drawPath(it, c.gold, style = Stroke(0.6f))
+        if (c.isDark) drawPath(it, c.gold, alpha = 0.4f) else drawPath(it, c.raised)
+        drawPath(it, c.gold, style = Stroke(0.6f))
     }
     // Bandes de brume.
     listOf(150f to 0.9f, 168f to 0.75f).forEach { (y, a) ->
@@ -283,15 +338,12 @@ private fun DrawScope.acteII(c: CarnetColors) {
 
 // ---------- Acte III : cité fortifiée sur l'estuaire, soleil couchant, navires ----------
 
-private fun DrawScope.acteIII(c: CarnetColors) {
+private fun DrawScope.acteIII(c: CarnetColors, ceiling: Float) {
     sky(c)
     halo(c, 206f, 150f, 80f)
-    for (i in 0 until 14) {
-        val a = Math.toRadians((190 + i * 12).toDouble())
-        drawLine(c.gold, Offset(206f, 150f), Offset(206f + 110f * kotlin.math.cos(a).toFloat(), 150f + 110f * kotlin.math.sin(a).toFloat()), 0.45f, alpha = 0.45f)
-    }
+    rays(c, 206f, 150f, count = 14, from = 190, step = 12, length = { 110f }, width = 0.45f, alpha = 0.45f, ceiling = ceiling)
     val sun = Path().apply { addOval(Rect(Offset(206f, 150f), 20f)) }
-    drawPath(Path.combine(PathOperation.Intersect, sun, polygon(0f, 0f, W, 0f, W, 150f, 0f, 150f)), c.goldLeaf)
+    drawPath(Path.combine(PathOperation.Intersect, sun, polygon(0f, 0f, W, 0f, W, 150f, 0f, 150f)), c.goldLeafDecor)
     stars(c, 48f, 62f, 2.4f, 104f, 86f, 1.6f, 330f, 58f, 2.6f, 372f, 90f, 1.8f)
     cloud(c, 60f, 96f, 0.9f)
     cloud(c, 300f, 84f, 1f)
@@ -336,16 +388,12 @@ private fun DrawScope.acteIII(c: CarnetColors) {
 
 // ---------- Épilogue : aube sur la mer calme, oiseaux ----------
 
-private fun DrawScope.epilogue(c: CarnetColors) {
+private fun DrawScope.epilogue(c: CarnetColors, ceiling: Float) {
     sky(c)
     halo(c, 206f, 156f, 110f)
-    for (i in 0 until 19) {
-        val a = Math.toRadians((180 + i * 10).toDouble())
-        val len = if (i % 2 == 0) 150f else 110f
-        drawLine(c.gold, Offset(206f, 156f), Offset(206f + len * kotlin.math.cos(a).toFloat(), 156f + len * kotlin.math.sin(a).toFloat()), 0.5f, alpha = 0.5f)
-    }
+    rays(c, 206f, 156f, count = 19, from = 180, step = 10, length = { if (it % 2 == 0) 150f else 110f }, width = 0.5f, alpha = 0.5f, ceiling = ceiling)
     val sun = Path().apply { addOval(Rect(Offset(206f, 156f), 26f)) }
-    drawPath(Path.combine(PathOperation.Intersect, sun, polygon(0f, 0f, W, 0f, W, 156f, 0f, 156f)), c.goldLeaf)
+    drawPath(Path.combine(PathOperation.Intersect, sun, polygon(0f, 0f, W, 0f, W, 156f, 0f, 156f)), c.goldLeafDecor)
     rings(c, 206f, 156f, listOf(34f, 44f))
     cloud(c, 70f, 92f, 1.1f)
     cloud(c, 290f, 76f, 0.9f)
@@ -371,8 +419,10 @@ private fun DrawScope.epilogue(c: CarnetColors) {
 }
 
 /**
- * En-tête d'écran : vignette gravée, libellé et grand titre posés en bas à gauche, avec une ombre
- * d'encre qui garantit la lisibilité au-dessus des hachures. [trailing] se place en bas à droite.
+ * En-tête d'écran : vignette gravée, libellé et grand titre posés en bas à gauche sur un voile d'encre
+ * qui garantit la lisibilité au-dessus des hachures. Le titre tient sur une ligne (taille ajustée) ;
+ * l'en-tête grandit si le texte l'exige. [trailing] se place en bas à droite, ou au-dessus du titre
+ * quand la police système est très grande.
  */
 @Composable
 fun VignetteHeader(
@@ -383,18 +433,46 @@ fun VignetteHeader(
     trailing: @Composable () -> Unit = {},
 ) {
     val c = CarnetTheme.colors
-    val shadow = androidx.compose.ui.graphics.Shadow(c.bg, Offset.Zero, blurRadius = 14f)
-    androidx.compose.foundation.layout.Box(modifier.fillMaxWidth()) {
-        ActVignette(vignette)
-        androidx.compose.foundation.layout.Row(
-            Modifier.align(androidx.compose.ui.Alignment.BottomStart).fillMaxWidth().padding(start = 24.dp, end = 20.dp, bottom = 8.dp),
-            verticalAlignment = androidx.compose.ui.Alignment.Bottom,
-        ) {
-            androidx.compose.foundation.layout.Column(Modifier.weight(1f)) {
-                androidx.compose.material3.Text(label, style = CarnetTheme.type.label.copy(shadow = shadow), color = c.gold)
-                androidx.compose.material3.Text(title, style = CarnetTheme.type.display.copy(shadow = shadow), color = c.text)
+    val density = LocalDensity.current
+    val shadow = Shadow(c.bg, Offset.Zero, blurRadius = with(density) { 6.dp.toPx() })
+    val topInset = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
+    val large = density.fontScale > 1.3f
+    BoxWithConstraints(modifier.fillMaxWidth()) {
+        Box(Modifier.fillMaxWidth().heightIn(min = vignetteHeight(maxWidth))) {
+            ActVignette(vignette, Modifier.matchParentSize(), topInset)
+            // Voile d'encre derrière le titre ; il s'efface lui aussi vers le bas, pour ne laisser aucune couture.
+            Box(
+                Modifier.matchParentSize()
+                    .graphicsLayer { compositingStrategy = androidx.compose.ui.graphics.CompositingStrategy.Offscreen }
+                    .drawBehind {
+                        drawRect(
+                            Brush.radialGradient(
+                                0f to c.bg.copy(alpha = 0.86f), 0.55f to c.bg.copy(alpha = 0.6f), 1f to c.bg.copy(alpha = 0f),
+                                center = Offset(0f, size.height * 0.82f), radius = size.width * 0.78f,
+                            ),
+                        )
+                        drawRect(Brush.verticalGradient(0.62f to Color.Black, 1f to Color.Transparent), blendMode = BlendMode.DstIn)
+                    },
+            )
+            Column(
+                Modifier.align(Alignment.BottomStart).fillMaxWidth()
+                    .padding(start = 24.dp, end = 20.dp, top = topInset + 56.dp, bottom = 8.dp),
+            ) {
+                if (large) {
+                    trailing()
+                    Spacer(Modifier.height(8.dp))
+                }
+                Row(verticalAlignment = Alignment.Bottom) {
+                    Column(Modifier.weight(1f)) {
+                        Text(label, style = CarnetTheme.type.label.copy(shadow = shadow), color = c.gold)
+                        Text(
+                            title, style = CarnetTheme.type.display.copy(shadow = shadow), color = c.text, maxLines = 1,
+                            autoSize = TextAutoSize.StepBased(minFontSize = 26.sp, maxFontSize = CarnetTheme.type.display.fontSize, stepSize = 2.sp),
+                        )
+                    }
+                    if (!large) trailing()
+                }
             }
-            trailing()
         }
     }
 }

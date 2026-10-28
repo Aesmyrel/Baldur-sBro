@@ -21,11 +21,26 @@ abstract class VerifyPermissionsTask : DefaultTask() {
 
     @TaskAction
     fun verify() {
-        val doc = DocumentBuilderFactory.newInstance().apply { isNamespaceAware = true }.newDocumentBuilder().parse(mergedManifest.get().asFile)
-        val nodes = doc.getElementsByTagName("uses-permission")
-        val found = (0 until nodes.length).map { nodes.item(it).attributes.getNamedItemNS("http://schemas.android.com/apk/res/android", "name").nodeValue }
-        val forbidden = found.filterNot { it in allowed.get() }
+        val found = ManifestPermissions.declared(mergedManifest.get().asFile.readText())
+        val forbidden = ManifestPermissions.forbidden(found, allowed.get())
         report.get().asFile.writeText(found.joinToString("\n"))
         if (forbidden.isNotEmpty()) throw GradleException("Permissions non autorisées dans le manifeste fusionné : ${forbidden.joinToString()}")
     }
+}
+
+/** Lecture des permissions d'un manifeste, sous toutes leurs balises (y compris `uses-permission-sdk-23`). */
+object ManifestPermissions {
+    private const val ANDROID_NS = "http://schemas.android.com/apk/res/android"
+    private val TAGS = listOf("uses-permission", "uses-permission-sdk-23", "uses-permission-sdk-m")
+
+    fun declared(manifestXml: String): List<String> {
+        val doc = DocumentBuilderFactory.newInstance().apply { isNamespaceAware = true }
+            .newDocumentBuilder().parse(manifestXml.byteInputStream())
+        return TAGS.flatMap { tag ->
+            val nodes = doc.getElementsByTagName(tag)
+            (0 until nodes.length).map { nodes.item(it).attributes.getNamedItemNS(ANDROID_NS, "name").nodeValue }
+        }.distinct()
+    }
+
+    fun forbidden(declared: List<String>, allowed: List<String>) = declared.filterNot { it in allowed }
 }

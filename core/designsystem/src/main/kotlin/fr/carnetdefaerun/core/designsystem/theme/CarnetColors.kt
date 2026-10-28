@@ -39,14 +39,29 @@ data class CarnetColors(
     val scrim: Color,
     val grainAlpha: Float,
 ) {
-    /** Feuille d'or métallique : surfaces ≥ 24 dp uniquement (lettrines, médaillons, bouton de recherche). */
+    /** Feuille d'or métallique, décor seulement : surfaces ≥ 24 dp (lettrines, ornements). */
     val goldLeaf: Brush
         get() = Brush.linearGradient(
-            0f to Color(0xFFF6E3A6),
-            0.45f to Color(0xFFD8B260),
-            0.72f to Color(0xFF9C7A2E),
-            1f to Color(0xFFE9CF86),
+            0f to GoldLeaf.highlight,
+            0.45f to GoldLeaf.mid,
+            0.72f to GoldLeaf.deep,
+            1f to GoldLeaf.warm,
         )
+
+    /** Feuille d'or d'une surface qui porte du texte : sans la bande sombre, [onGold] y reste au-dessus de 4,5:1. */
+    val goldLeafText: Brush
+        get() = Brush.linearGradient(0f to GoldLeaf.highlight, 0.55f to GoldLeaf.mid, 1f to GoldLeaf.warm)
+
+    /**
+     * Feuille d'or posée sur la page (gravures, fleurons, cadres) : métal clair sur l'encre,
+     * or sombre sur le vélin, où l'or clair disparaîtrait.
+     */
+    val goldLeafDecor: Brush
+        get() = if (isDark) goldLeaf else Brush.linearGradient(0f to goldDeep, 0.6f to gold, 1f to goldDeep)
+
+    /** Médaillon de feuille d'or (sélecteur d'acte, recherche) : clair au centre, profond au bord. */
+    val goldLeafRadial: Brush
+        get() = Brush.radialGradient(listOf(GoldLeaf.highlight, GoldLeaf.mid, GoldLeaf.deep))
 
     fun accent(section: CarnetSection): Color = when (section) {
         CarnetSection.PARTIE -> gold
@@ -57,6 +72,14 @@ data class CarnetColors(
         CarnetSection.PROGRESSION -> orpiment
         CarnetSection.OUTILS -> sepia
     }
+}
+
+/** Teintes de la feuille d'or, communes aux trois thèmes (le métal ne change pas avec l'éclairage). */
+object GoldLeaf {
+    val highlight = Color(0xFFF6E3A6)
+    val mid = Color(0xFFD8B260)
+    val deep = Color(0xFF9C7A2E)
+    val warm = Color(0xFFE9CF86)
 }
 
 /** Sections de l'appli ; chacune a sa couleur d'accent (pigment médiéval). */
@@ -81,7 +104,7 @@ object CarnetPalettes {
         tyrian = Color(0xFFCE72A6),
         orpiment = Color(0xFFE3B544),
         sepia = Color(0xFFC9A27A),
-        onGold = Color(0xFF2A1D0C),
+        onGold = Color(0xFF1A1206),
         lettrineGround = Color(0xFF1C2A52),
         lettrineVine = Color(0xFF7E9BE6),
         candle = Color(0x1AE2AA5C),
@@ -96,8 +119,9 @@ object CarnetPalettes {
         raised = Color(0xFF18130F),
         navBg = Color(0xFF050403),
         line = Color(0xFF2E251D),
-        candle = Color(0x10E2AA5C),
-        grainAlpha = 0.03f,
+        // Noir pur : ni halo ni grain sur la page (un pixel éteint reste éteint).
+        candle = Color(0x00000000),
+        grainAlpha = 0f,
     )
 
     val Parchment = CarnetColors(
@@ -118,11 +142,11 @@ object CarnetPalettes {
         tyrian = Color(0xFF8E2E66),
         orpiment = Color(0xFF7D5C0C),
         sepia = Color(0xFF7A5230),
-        onGold = Color(0xFF2A1D0C),
+        onGold = Color(0xFF1A1206),
         lettrineGround = Color(0xFF2F51A8),
         lettrineVine = Color(0xFF9DB3F0),
         candle = Color(0x59FFECBE),
         scrim = Color(0x66000000),
-        grainAlpha = 0.08f,
+        grainAlpha = 0.06f,
     )
 }

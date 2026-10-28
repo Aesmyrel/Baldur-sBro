@@ -1,6 +1,6 @@
 # Avancement
 
-_Dernière mise à jour : 27/10/2026, fin de la phase 0._
+_Dernière mise à jour : 28/10/2026, phase 1 corrigée après vérification indépendante ; phase 2 en cours._
 
 ## Fait
 - **Phase 0 — plan et direction artistique**
@@ -13,16 +13,17 @@ _Dernière mise à jour : 27/10/2026, fin de la phase 0._
   - Environnement : SDK Android installé (plateforme 37, build-tools 37.0.0) ; script `tools/setup_android_sdk.sh`.
   - **Vérification indépendante de la phase 0** (agent relecteur) : versions, politiques de contenu de fans, licences, dates et lore des maquettes vérifiés. Corrigé ensuite : voiles de spoiler qui laissaient deviner un rebondissement, noms trop révélateurs dans le plan, permissions apportées par Google Code Scanner (D-021), contrastes (mesure automatique, 0 échec), absence de tables Cargo pour plusieurs catégories (risque ajouté), Lae'zel au Prologue, références multiples, accueils B et C complétés (groupe actif, anecdote), licences Fandom confirmées.
 
-- **Phase 1 — socle et design system** (en cours de vérification indépendante)
+- **Phase 1 — socle et design system**
   - Projet Gradle multi-modules (AGP 9.4.1, Kotlin 2.4.21, Hilt, Compose, Navigation 3), plugins de convention.
   - Verrou anti-spoiler `SpoilerGate` : table de vérité, 2 025 combinaisons testées.
   - Design system A : jetons sombre / OLED / parchemin, polices OFL, gravure procédurale, 5 en-têtes d'acte, 12 emblèmes de classe, composants signature, shaders avec repli, haptique, mouvement réduit.
   - Coquille : navigation par onglet persistée, liens profonds, barre ou rail selon la largeur, écran de démarrage, thèmes, mode session (écran allumé), réglages complets, crédits et mentions légales, icône adaptative et monochrome.
   - Qualité : `./gradlew check` vert (lint sans avertissement, tests, captures, contrôle des permissions), release R8 de 2,8 Mo sans permission réseau.
+  - Vérification indépendante (technique ; art et accessibilité) : 9 points bloquants et 25 importants relevés, tous corrigés (D-038 à D-052) : voile sur toucher confirmé et lisible, étiquettes fermées par défaut, poignée opaque, navigation par onglet sans perte d'état, DataStore résistant, `check` qui compare vraiment les captures, EmojiCompat retiré, polices complétées et renommées, 200 % et largeurs, contrastes réels, OLED en noir pur. 25 captures, dont 200 %, 360 dp et pliable.
 
 ## En cours
-- Vérification indépendante de la phase 1.
-- **Phase 2 — pipelines de données du jeu et du lore** : démarrage.
+- Contre-vérification indépendante des corrections de la phase 1.
+- **Phase 2 — pipelines de données du jeu et du lore** : modèle de contenu, client bg3.wiki, analyseur de wikitexte et normaliseurs des sorts, objets, armes, états, capacités et lieux écrits ; validation, base embarquée et pipeline du lore à venir.
 
 ## Reste à faire
 - Phases 2a/2b : pipelines de données du jeu et du lore (en parallèle).

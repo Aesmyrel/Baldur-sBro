@@ -26,7 +26,9 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import fr.carnetdefaerun.core.designsystem.R
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 
 /** Carte de base : surface, filet d'ombre, coins à peine adoucis (un feuillet, pas une « card » Material). */
@@ -62,7 +64,7 @@ fun AlertCard(title: String, body: String, actionLabel: String, onAction: () -> 
                 Text(title, style = CarnetTheme.type.dataStrong.copy(fontSize = CarnetTheme.type.dataStrong.fontSize * 1.07f), color = c.vermilion)
                 Spacer(Modifier.height(3.dp))
                 Text(body, style = CarnetTheme.type.reading.copy(fontSize = CarnetTheme.type.bodySmall.fontSize * 1.03f, lineHeight = CarnetTheme.type.bodySmall.lineHeight), color = c.text)
-                Text(actionLabel + " ›", style = CarnetTheme.type.dataStrong, color = c.gold, modifier = Modifier.padding(top = 6.dp))
+                Text(stringResource(R.string.ds_action_more, actionLabel), style = CarnetTheme.type.dataStrong, color = c.gold, modifier = Modifier.padding(top = 6.dp))
             }
         }
     }

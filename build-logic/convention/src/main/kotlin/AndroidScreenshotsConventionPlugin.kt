@@ -1,5 +1,6 @@
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.api.tasks.PathSensitivity
 import org.gradle.api.tasks.testing.Test
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.withType
@@ -12,8 +13,12 @@ class AndroidScreenshotsConventionPlugin : Plugin<Project> {
             // Robolectric télécharge ses images Android à la volée : on passe par le miroir de Maven Central.
             systemProperty("robolectric.dependency.repo.url", "https://maven-central.storage-download.googleapis.com/maven2/")
             maxHeapSize = "3g"
+            // Les captures de référence sont des entrées : en changer une relance la comparaison.
+            inputs.files(fileTree("src/test/screenshots")).withPropertyName("referenceScreenshots").withPathSensitivity(PathSensitivity.RELATIVE)
             jvmArgs("--add-exports", "java.base/jdk.internal.access=ALL-UNNAMED", "--add-opens", "java.base/java.io=ALL-UNNAMED")
         }
+        // `check` compare les captures aux références : un écart fait échouer le build (D-036).
+        tasks.named("check").configure { dependsOn("verifyRoborazziDebug") }
         dependencies {
             add("testImplementation", catalog.findLibrary("robolectric").get())
             add("testImplementation", catalog.findLibrary("roborazzi").get())

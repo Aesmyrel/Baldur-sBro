@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="carnet_ink">#FF120F0C</color>
+    <!-- Fond de l'écran de démarrage et de la fenêtre : encre (thèmes sombre et OLED). -->
+    <color name="carnet_page">#FF120F0C</color>
 </resources>

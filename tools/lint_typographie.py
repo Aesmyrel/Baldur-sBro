@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Contrôle (et corrige avec --fix) la typographie française des chaînes d'interface.
 
-Règles : espace fine insécable (U+202F) avant « ; : ! ? » et à l'intérieur des guillemets « ».
-Portée : tous les fichiers res/values*/strings.xml du projet.
+Règles : espace fine insécable (U+202F) avant « ; : ! ? » et à l'intérieur des guillemets « » ;
+apostrophe typographique (’) entre deux lettres. Les corrections sont idempotentes.
+Portée : chaînes, tableaux et pluriels de tous les fichiers res/values*/strings.xml du projet.
 Usage : python3 tools/lint_typographie.py [--fix]   (code de sortie 1 s'il reste des fautes)
 """
 import pathlib
@@ -11,12 +12,13 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 NNBSP = "\u202f"
-STRING = re.compile(r"(<string[^>]*>)(.*?)(</string>)", re.S)
+STRING = re.compile(r"(<(?:string|item)\b[^>]*>)(.*?)(</(?:string|item)>)", re.S)
 RULES = [
     (re.compile(r"[ \u00a0]([;:!?])"), NNBSP + r"\1"),   # espace ordinaire avant ponctuation haute
-    (re.compile(r"(?<=[\w»)])([;!?])"), NNBSP + r"\1"),  # ponctuation collée au mot
-    (re.compile(r"«[ \u00a0]?"), "«" + NNBSP),
-    (re.compile(r"[ \u00a0]?»"), NNBSP + "»"),
+    (re.compile(r"(?<=[\w»)])([;:!?])"), NNBSP + r"\1"),  # ponctuation collée au mot
+    (re.compile(r"«[ \u00a0\u202f]?"), "«" + NNBSP),
+    (re.compile(r"[ \u00a0\u202f]?»"), NNBSP + "»"),
+    (re.compile(r"(?<=[^\W\d_])\\?'(?=[^\W\d_])"), "’"),  # l\'acte, l'acte → l’acte
 ]
 
 
@@ -30,6 +32,7 @@ def fix_text(text: str) -> str:
     for e in entities:
         out = out.replace("\x00", e, 1)
     out = re.sub(NNBSP + r":(//|\d)", r":\1", out)
+    out = re.sub(r"(%\d\$[a-z])" + NNBSP + ":", r"\1:", out)  # « %1$s: » d'un format technique
     return out
 
 

@@ -81,3 +81,39 @@ Format : numéro, date, décision, raison. Les décisions marquées « à confir
 **D-036 — Lint sans avertissement.** Les avertissements sont corrigés plutôt qu'ignorés ; seule exception : `ChromeOsAbiSupport` (APK volontairement arm64).
 
 **D-037 — Icône adaptative provisoire.** Médaillon d'or, plume et étoile sur fond d'encre, avec version monochrome ; elle sera retravaillée au lot « illustrations ».
+
+## Phase 1 — après la vérification indépendante (28/10/2026)
+
+Deux vérifications indépendantes (technique ; direction artistique et accessibilité) ont relevé 9 points bloquants et 25 importants. Corrections et décisions :
+
+**D-038 — Voile : révélation sur toucher confirmé.** Le voile ne se lève qu'après un toucher relâché sans glissement (jamais au premier contact, ce qui révélait la section quand on commençait à faire défiler la page). Animation de 380 ms (charte : 150–400 ms). Le message est posé sur un cartouche opaque : sa lisibilité ne dépend plus de la brume. Pour TalkBack, un seul nœud (« Section masquée, au-delà de votre progression ») et une action « Révéler ». Tests : défilement → rien ; toucher → une révélation ; description générique ; acte affiché seulement sur demande.
+
+**D-039 — Un seul shader animé à la fois.** Un jeton global (`AmbientAnimationSlot`, fourni par le thème) est pris par le premier voile visible à l'écran et rendu dès qu'il sort de l'écran ou a fini d'onduler (8 s). Passer en mouvement réduit ou en économiseur de batterie coupe le shader d'un voile déjà affiché.
+
+**D-040 — Étiquettes fermées par défaut.** `SpoilerTag` n'a plus de valeurs par défaut : une étiquette absente ou mal nommée est une erreur de lecture, jamais un « visible par tous ». Les entrées et les blocs doivent porter leurs étiquettes ; les liens attendent leur calcul sous l'étiquette la plus stricte (`LOCKED`). Tests de décodage à l'appui.
+
+**D-041 — Poignée opaque pour un bloc masqué.** Un écran reçoit `Gated.Hidden(RevealKey)` : un condensé SHA-256 de l'identifiant du bloc, jamais l'identifiant lui-même (dérivé d'un nom anglais, il pouvait trahir un titre). Les ancres de section des liens profonds sont des numéros d'ordre (`#s3`), jamais des titres.
+
+**D-042 — Épilogue et tolérance « aucun ».** Un bloc `EPILOGUE` / `MAJEUR` ne devient jamais visible par la seule progression, puisqu'aucun acte ne suit l'Épilogue. C'est voulu : le joueur le révèle individuellement ou relève sa tolérance.
+
+**D-043 — Navigation : entrées décorées par onglet.** Chaque onglet a sa propre liste d'entrées décorées (état sauvegardable, ViewModels) : changer d'onglet ne détruit plus rien. La clé d'état est préfixée par l'onglet. L'état relu est normalisé (racine en tête, destinations mal formées écartées, profondeur ≤ 30) et les liens profonds sont bornés (ancre `s{n}`, recherche ≤ 200 caractères, identifiant de build > 0). Un lien reçu avant la relecture est enregistré aussitôt. La position de lecture d'une fiche sera persistée par le dépôt de lecture (phase 3).
+
+**D-044 — DataStore résistant à la corruption.** Fichier corrompu remplacé par un fichier vide (`ReplaceFileCorruptionHandler`), erreurs d'entrée/sortie absorbées : l'appli repart des valeurs par défaut au lieu de planter à chaque démarrage. Tests sur fichiers corrompus.
+
+**D-045 — `check` compare vraiment les captures.** `check` dépend de `verifyRoborazziDebug`, et les captures de référence sont des entrées des tests (une référence modifiée relance la comparaison ; vérifié avec une capture falsifiée). Lint : `warningsAsErrors = true`. Le contrôle des permissions lit aussi `uses-permission-sdk-23` et `uses-permission-sdk-m` et a un test négatif (INTERNET refusé sous chacune des balises). Wrapper Gradle avec somme de contrôle.
+
+**D-046 — EmojiCompat retiré.** Son initialiseur interroge le fournisseur de polices téléchargeables des services Google au démarrage : accès réseau par un tiers. Il est retiré du manifeste fusionné (`tools:node="remove"`) ; les émojis viennent de la police du système.
+
+**D-047 — Sauvegarde.** Sauvegarde dans le nuage seulement si elle est chiffrée (`disableIfNoEncryptionCapabilities`) ; `user.db` et son journal WAL inclus, le fichier `-shm` exclu ; règles `fullBackupContent` supprimées (sans effet en minSdk 33).
+
+**D-048 — Polices : typographie française et licence.** Les polices d'origine n'avaient pas l'espace fine insécable (U+202F) : le texte passait par une police de repli. Le script d'import l'ajoute (glyphe de l'espace fine U+2009, ou glyphe vide de 0,16 cadratin), ainsi que l'espace insécable quand elle manque. Almendra déclare un nom réservé (OFL §3) : nos versions sous-ensemblées sont renommées « Carnet Titres » et « Carnet Titres SC », et l'écran Crédits l'explique. Test : chaque police dessine U+202F, U+00A0, ’, « », œ, É, et aucune ne porte le nom réservé.
+
+**D-049 — Apostrophe typographique.** Toutes les chaînes et les noms de contenu emploient ’ ; le contrôle typographique la corrige, couvre aussi les tableaux et pluriels, et ses corrections sont idempotentes.
+
+**D-050 — 200 % et largeurs.** Plus aucune hauteur fixe sur un élément qui porte du texte ; le choix segmenté passe en liste verticale quand un libellé ne tient pas sur une ligne (jamais de mot coupé) et marque le choix par un filet, pas seulement par la couleur ; étiquettes et badges passent à la ligne ; libellés de navigation et chiffres d'acte plafonnés à 1,3–1,4 fois (doublés d'un libellé accessible) ; colonne de lecture plafonnée à 32 cadratins de la taille de lecture. L'en-tête gravé se met à l'échelle « couvrante » à toute largeur, s'efface vers la page (aucune couture), laisse la barre d'état libre, et son titre tient sur une ligne (taille ajustée) ; à très grande police, la pastille Session passe au-dessus du titre.
+
+**D-051 — Contrastes réels.** Le grain du vélin est posé en incrustation (sa teinte moyenne ne change pas le fond, donc ni les contrastes mesurés), plus léger ; OLED en noir pur (ni halo ni grain) ; texte sur feuille d'or : variante sans bande sombre et encre `#1A1206` (≥ 4,5:1 partout) ; en parchemin, les ornements gravés utilisent un or sombre (l'or clair y disparaissait) ; pastille Session opaque ; coche du sceau lisible sur la cire (≥ 3:1).
+
+**D-052 — Écran de démarrage selon le thème.** L'appli déclare au système le mode clair (parchemin) ou sombre choisi (`setApplicationNightMode`) : l'écran de démarrage est en vélin ou en encre (`values-notnight`), sans éclair sombre en parchemin.
+
+**D-053 — Reste à faire, planifié.** Gravure plus riche des emblèmes et du reste des illustrations (lot « I ») ; composants Références, appels de note, feuille « Détail du calcul », ligne de source (phases 3–4, avec les écrans qui les emploient) ; accueil complet (objectifs, alertes, anecdote : phase 5, quand les données existent) ; reflet d'or et transitions « encre » (phase 7).

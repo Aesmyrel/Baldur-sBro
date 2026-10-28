@@ -40,9 +40,11 @@ enum class Tolerance {
  */
 @Serializable
 data class SpoilerTag(
-    val act: Act = Act.PROLOGUE,
-    val level: SpoilerLevel = SpoilerLevel.NONE,
-    val otherWorks: SpoilerLevel = SpoilerLevel.NONE,
+    // Aucune valeur par défaut : une étiquette absente ou mal nommée doit être une erreur de lecture,
+    // jamais un « visible par tous » silencieux.
+    val act: Act,
+    val level: SpoilerLevel,
+    val otherWorks: SpoilerLevel,
 ) {
     /** Étiquette la plus protectrice des deux : sert à vérifier qu'un titre protège ce qu'il résume. */
     fun strictest(other: SpoilerTag) = SpoilerTag(
@@ -56,7 +58,14 @@ data class SpoilerTag(
         act >= other.act && level >= other.level && otherWorks >= other.otherWorks
 
     companion object {
-        val SAFE = SpoilerTag()
+        /** Information connue dès le début de la partie et sans aucune révélation. */
+        val SAFE = SpoilerTag(Act.PROLOGUE, SpoilerLevel.NONE, SpoilerLevel.NONE)
+
+        /** Étiquette la plus stricte : valeur d'attente du pipeline, remplacée avant toute écriture. */
+        val LOCKED = SpoilerTag(Act.EPILOGUE, SpoilerLevel.MAJOR, SpoilerLevel.MAJOR)
+
+        fun of(act: Act, level: SpoilerLevel = SpoilerLevel.NONE, otherWorks: SpoilerLevel = SpoilerLevel.NONE) =
+            SpoilerTag(act, level, otherWorks)
     }
 }
 

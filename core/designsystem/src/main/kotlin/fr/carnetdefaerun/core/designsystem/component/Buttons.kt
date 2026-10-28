@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.defaultMinSize
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
@@ -21,7 +21,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 
-/** Bouton principal : feuille d'or, texte encre. */
+/** Bouton principal : feuille d'or (variante sans bande sombre), texte encre. */
 @Composable
 fun GoldButton(text: String, onClick: () -> Unit, modifier: Modifier = Modifier, enabled: Boolean = true) {
     val c = CarnetTheme.colors
@@ -29,7 +29,7 @@ fun GoldButton(text: String, onClick: () -> Unit, modifier: Modifier = Modifier,
         modifier
             .defaultMinSize(minHeight = 48.dp)
             .clip(RoundedCornerShape(24.dp))
-            .background(c.goldLeaf)
+            .background(c.goldLeafText)
             .clickable(enabled = enabled, role = Role.Button, onClick = onClick)
             .padding(horizontal = 22.dp, vertical = 12.dp),
         contentAlignment = Alignment.Center,
@@ -78,8 +78,8 @@ fun FloatingPill(onClick: () -> Unit, modifier: Modifier = Modifier, content: @C
             .background(c.navBg)
             .border(1.dp, c.goldDeep, RoundedCornerShape(26.dp))
             .clickable(role = Role.Button, onClick = onClick)
-            .height(52.dp)
-            .padding(start = 14.dp, end = 20.dp),
+            .heightIn(min = 52.dp)
+            .padding(start = 14.dp, end = 20.dp, top = 6.dp, bottom = 6.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(10.dp),
         content = content,

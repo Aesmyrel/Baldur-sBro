@@ -13,8 +13,9 @@ import kotlinx.coroutines.launch
 
 @HiltViewModel
 class SettingsViewModel @Inject constructor(private val repository: UserPreferencesRepository) : ViewModel() {
-    val preferences: StateFlow<UserPreferences> =
-        repository.preferences.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), UserPreferences())
+    /** null tant que les réglages ne sont pas relus. */
+    val preferences: StateFlow<UserPreferences?> =
+        repository.preferences.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
     fun update(transform: (UserPreferences) -> UserPreferences) = viewModelScope.launch { repository.update(transform) }
 }
