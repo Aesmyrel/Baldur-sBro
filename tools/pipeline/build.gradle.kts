@@ -14,3 +14,8 @@ dependencies {
     implementation(libs.kaml)
     implementation(libs.sqlite.jdbc)
 }
+
+// Le pipeline lit et écrit les données du dépôt : il tourne depuis la racine.
+tasks.named<JavaExec>("run") {
+    workingDir = rootDir
+}

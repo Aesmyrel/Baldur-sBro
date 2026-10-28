@@ -54,7 +54,7 @@ Appli :
 - `python3 tools/lint_typographie.py [--fix]` — typographie française des chaînes (espaces fines insécables)
 - `./gradlew testDebugUnitTest` — tests JVM (règles, verrou anti-spoiler, recherche)
 - `./gradlew recordRoborazziDebug` / `verifyRoborazziDebug` — captures (sombre, OLED, parchemin, police 200 %, pliable) dans `*/src/test/screenshots/` ; Robolectric tourne en SDK 36 (`robolectric.properties`)
-- `./gradlew :tools:pipeline:run --args="all"` — pipeline de données (fetch → normalize → validate → build-db)
+- `./gradlew :tools:pipeline:run --args="all"` — pipeline de données : `fetch` (bg3.wiki → `tools/cache/`, non versionné), `lexicon` (lexiques VO → VF), `normalize` (→ `data/game/*.json` + `RAPPORT.md`), `validate` (bloquant) ; `build-db` à venir
 - `./gradlew :app:assembleRelease` — APK release R8 (arm64) ; signé si `keystore.properties` existe à la racine (clé locale hors dépôt, voir `docs/INSTALLER.md`), sinon non signé
 
 ## Méthode

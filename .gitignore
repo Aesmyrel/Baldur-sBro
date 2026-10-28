@@ -20,3 +20,6 @@ tools/cache/
 tools/design/.fonts/
 node_modules/
 __pycache__/
+
+# Copies de travail des agents
+.claude/worktrees/

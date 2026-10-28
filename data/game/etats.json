@@ -1,0 +1,8778 @@
+[
+  {
+    "id": "condition.acid",
+    "type": "condition",
+    "name": {
+      "fr": "Acid",
+      "en": "Acid",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Acid (condition)",
+        "revision": 434367,
+        "url": "https://bg3.wiki/wiki/Acid_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Surface"
+      ],
+      "gameUid": "ACID"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.adroit-caster",
+    "type": "condition",
+    "name": {
+      "fr": "Adroit Caster",
+      "en": "Adroit Caster",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Adroit Caster (condition)",
+        "revision": 434385,
+        "url": "https://bg3.wiki/wiki/Adroit_Caster_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.aid",
+    "type": "condition",
+    "name": {
+      "fr": "Aid",
+      "en": "Aid",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Aid (condition)",
+        "revision": 434393,
+        "url": "https://bg3.wiki/wiki/Aid_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.ancient-grudges",
+    "type": "condition",
+    "name": {
+      "fr": "Ancient Grudges",
+      "en": "Ancient Grudges",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ancient Grudges (condition)",
+        "revision": 434413,
+        "url": "https://bg3.wiki/wiki/Ancient_Grudges_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.arcane-acuity",
+    "type": "condition",
+    "name": {
+      "fr": "Arcane Acuity",
+      "en": "Arcane Acuity",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Arcane Acuity (condition)",
+        "revision": 434423,
+        "url": "https://bg3.wiki/wiki/Arcane_Acuity_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_GISH_ARCANE_ACUITY"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.arcane-battery",
+    "type": "condition",
+    "name": {
+      "fr": "Arcane Battery",
+      "en": "Arcane Battery",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Arcane Battery (condition)",
+        "revision": 434427,
+        "url": "https://bg3.wiki/wiki/Arcane_Battery_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.arcane-charge",
+    "type": "condition",
+    "name": {
+      "fr": "Arcane Charge",
+      "en": "Arcane Charge",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Arcane Charge (condition)",
+        "revision": 434429,
+        "url": "https://bg3.wiki/wiki/Arcane_Charge_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.arcane-lock",
+    "type": "condition",
+    "name": {
+      "fr": "Arcane Lock",
+      "en": "Arcane Lock",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Arcane Lock (condition)",
+        "revision": 434437,
+        "url": "https://bg3.wiki/wiki/Arcane_Lock_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.arcane-synergy",
+    "type": "condition",
+    "name": {
+      "fr": "Arcane Synergy",
+      "en": "Arcane Synergy",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Arcane Synergy (condition)",
+        "revision": 434439,
+        "url": "https://bg3.wiki/wiki/Arcane_Synergy_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.armour-of-agathys",
+    "type": "condition",
+    "name": {
+      "fr": "Armour of Agathys",
+      "en": "Armour of Agathys",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Armour of Agathys (condition)",
+        "revision": 439395,
+        "url": "https://bg3.wiki/wiki/Armour_of_Agathys_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.arms-of-hadar",
+    "type": "condition",
+    "name": {
+      "fr": "Arms of Hadar",
+      "en": "Arms of Hadar",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Arms of Hadar (condition)",
+        "revision": 434451,
+        "url": "https://bg3.wiki/wiki/Arms_of_Hadar_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.aura-of-murder-bhaalist-armour",
+    "type": "condition",
+    "name": {
+      "fr": "Aura of Murder (Bhaalist Armour)",
+      "en": "Aura of Murder (Bhaalist Armour)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Aura of Murder (Bhaalist Armour) (condition)",
+        "revision": 434523,
+        "url": "https://bg3.wiki/wiki/Aura_of_Murder_(Bhaalist_Armour)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.bane",
+    "type": "condition",
+    "name": {
+      "fr": "Bane",
+      "en": "Bane",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bane (condition)",
+        "revision": 434569,
+        "url": "https://bg3.wiki/wiki/Bane_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.baneful-strike",
+    "type": "condition",
+    "name": {
+      "fr": "Baneful Strike",
+      "en": "Baneful Strike",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Baneful Strike (condition)",
+        "revision": 439124,
+        "url": "https://bg3.wiki/wiki/Baneful_Strike_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_SPELLBLADE_SAVING_THROWS_PENALTY"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.banished",
+    "type": "condition",
+    "name": {
+      "fr": "Banished",
+      "en": "Banished",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Banished (condition)",
+        "revision": 434573,
+        "url": "https://bg3.wiki/wiki/Banished_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Incapacitated",
+        "SG_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.barkskin",
+    "type": "condition",
+    "name": {
+      "fr": "Barkskin",
+      "en": "Barkskin",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Barkskin (condition)",
+        "revision": 434577,
+        "url": "https://bg3.wiki/wiki/Barkskin_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.beacon-of-hope",
+    "type": "condition",
+    "name": {
+      "fr": "Beacon of Hope",
+      "en": "Beacon of Hope",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Beacon of Hope (condition)",
+        "revision": 434581,
+        "url": "https://bg3.wiki/wiki/Beacon_of_Hope_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.blade-ward",
+    "type": "condition",
+    "name": {
+      "fr": "Blade Ward",
+      "en": "Blade Ward",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Blade Ward (condition)",
+        "revision": 434633,
+        "url": "https://bg3.wiki/wiki/Blade_Ward_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.blazing-retaliation",
+    "type": "condition",
+    "name": {
+      "fr": "Blazing Retaliation",
+      "en": "Blazing Retaliation",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Blazing Retaliation (condition)",
+        "revision": 434645,
+        "url": "https://bg3.wiki/wiki/Blazing_Retaliation_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.bleeding",
+    "type": "condition",
+    "name": {
+      "fr": "Bleeding",
+      "en": "Bleeding",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bleeding (condition)",
+        "revision": 434647,
+        "url": "https://bg3.wiki/wiki/Bleeding_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Condition"
+      ],
+      "gameUid": "BLEEDING"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.bless",
+    "type": "condition",
+    "name": {
+      "fr": "Bless",
+      "en": "Bless",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bless (condition)",
+        "revision": 434649,
+        "url": "https://bg3.wiki/wiki/Bless_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ],
+      "gameUid": "BLESS"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.blinded",
+    "type": "condition",
+    "name": {
+      "fr": "Blinded",
+      "en": "Blinded",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Blinded (condition)",
+        "revision": 437979,
+        "url": "https://bg3.wiki/wiki/Blinded_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Blinded",
+        "SG_Condition"
+      ],
+      "gameUid": "BLINDED"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.blinded-blinding-smite",
+    "type": "condition",
+    "name": {
+      "fr": "Blinded (Blinding Smite)",
+      "en": "Blinded (Blinding Smite)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Blinded (Blinding Smite) (condition)",
+        "revision": 438830,
+        "url": "https://bg3.wiki/wiki/Blinded_(Blinding_Smite)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Blinded",
+        "SG_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.blindness",
+    "type": "condition",
+    "name": {
+      "fr": "Blindness",
+      "en": "Blindness",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Blindness (condition)",
+        "revision": 438829,
+        "url": "https://bg3.wiki/wiki/Blindness_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Blinded",
+        "SG_Condition"
+      ],
+      "gameUid": "BLINDNESS"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.blink",
+    "type": "condition",
+    "name": {
+      "fr": "Blink",
+      "en": "Blink",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Blink (condition)",
+        "revision": 434663,
+        "url": "https://bg3.wiki/wiki/Blink_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.blinked-to-the-ethereal-plane",
+    "type": "condition",
+    "name": {
+      "fr": "Blinked to the Ethereal Plane",
+      "en": "Blinked to the Ethereal Plane",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Blinked to the Ethereal Plane (condition)",
+        "revision": 434665,
+        "url": "https://bg3.wiki/wiki/Blinked_to_the_Ethereal_Plane_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Polymorph",
+        "SG_DropForNonMutingDialog",
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.blurred",
+    "type": "condition",
+    "name": {
+      "fr": "Blurred",
+      "en": "Blurred",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Blurred (condition)",
+        "revision": 434697,
+        "url": "https://bg3.wiki/wiki/Blurred_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.bone-chilled",
+    "type": "condition",
+    "name": {
+      "fr": "Bone Chilled",
+      "en": "Bone Chilled",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bone Chilled (condition)",
+        "revision": 434703,
+        "url": "https://bg3.wiki/wiki/Bone_Chilled_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "CHILL_TOUCH"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.booming-blade",
+    "type": "condition",
+    "name": {
+      "fr": "Booming Blade",
+      "en": "Booming Blade",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Booming Blade (condition)",
+        "revision": 434705,
+        "url": "https://bg3.wiki/wiki/Booming_Blade_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.bound-weapon",
+    "type": "condition",
+    "name": {
+      "fr": "Bound Weapon",
+      "en": "Bound Weapon",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bound Weapon (condition)",
+        "revision": 434713,
+        "url": "https://bg3.wiki/wiki/Bound_Weapon_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.braced",
+    "type": "condition",
+    "name": {
+      "fr": "Braced",
+      "en": "Braced",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Braced (condition)",
+        "revision": 434715,
+        "url": "https://bg3.wiki/wiki/Braced_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.branding-smite",
+    "type": "condition",
+    "name": {
+      "fr": "Branding Smite",
+      "en": "Branding Smite",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Branding Smite (condition)",
+        "revision": 434721,
+        "url": "https://bg3.wiki/wiki/Branding_Smite_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Light"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.browbeaten",
+    "type": "condition",
+    "name": {
+      "fr": "Browbeaten",
+      "en": "Browbeaten",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Browbeaten (condition)",
+        "revision": 434733,
+        "url": "https://bg3.wiki/wiki/Browbeaten_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.burning",
+    "type": "condition",
+    "name": {
+      "fr": "Burning",
+      "en": "Burning",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Burning (condition)",
+        "revision": 438428,
+        "url": "https://bg3.wiki/wiki/Burning_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Surface",
+        "SG_Light"
+      ],
+      "gameUid": "BURNING"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.burning-orthonic",
+    "type": "condition",
+    "name": {
+      "fr": "Burning (Orthonic)",
+      "en": "Burning (Orthonic)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Burning (Orthonic) (condition)",
+        "revision": 438409,
+        "url": "https://bg3.wiki/wiki/Burning_(Orthonic)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Surface",
+        "SG_Light"
+      ],
+      "gameUid": "MAG_INFERNAL_BURNING"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.burst-of-accuracy",
+    "type": "condition",
+    "name": {
+      "fr": "Burst of Accuracy",
+      "en": "Burst of Accuracy",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Burst of Accuracy (condition)",
+        "revision": 434759,
+        "url": "https://bg3.wiki/wiki/Burst_of_Accuracy_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_FIGHTER_ACTION_SURGE_ACCURACY"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.call-lightning",
+    "type": "condition",
+    "name": {
+      "fr": "Call Lightning",
+      "en": "Call Lightning",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Call Lightning (condition)",
+        "revision": 434763,
+        "url": "https://bg3.wiki/wiki/Call_Lightning_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.calmed",
+    "type": "condition",
+    "name": {
+      "fr": "Calmed",
+      "en": "Calmed",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Calmed (condition)",
+        "revision": 434769,
+        "url": "https://bg3.wiki/wiki/Calmed_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.charmed",
+    "type": "condition",
+    "name": {
+      "fr": "Charmed",
+      "en": "Charmed",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Charmed (condition)",
+        "revision": 434803,
+        "url": "https://bg3.wiki/wiki/Charmed_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Charmed",
+        "SG_Condition",
+        "SG_Charmed_Subtle"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.chest-trauma",
+    "type": "condition",
+    "name": {
+      "fr": "Chest Trauma",
+      "en": "Chest Trauma",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Chest Trauma (condition)",
+        "revision": 434807,
+        "url": "https://bg3.wiki/wiki/Chest_Trauma_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.click-heels",
+    "type": "condition",
+    "name": {
+      "fr": "Click Heels",
+      "en": "Click Heels",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Click Heels (condition)",
+        "revision": 434821,
+        "url": "https://bg3.wiki/wiki/Click_Heels_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "CLICK_HEELS"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.clinging-shadows",
+    "type": "condition",
+    "name": {
+      "fr": "Clinging Shadows",
+      "en": "Clinging Shadows",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Clinging Shadows (condition)",
+        "revision": 434823,
+        "url": "https://bg3.wiki/wiki/Clinging_Shadows_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.colour-spray",
+    "type": "condition",
+    "name": {
+      "fr": "Colour Spray",
+      "en": "Colour Spray",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Colour Spray (condition)",
+        "revision": 434891,
+        "url": "https://bg3.wiki/wiki/Colour_Spray_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Blinded",
+        "SG_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.compelled-duel",
+    "type": "condition",
+    "name": {
+      "fr": "Compelled Duel",
+      "en": "Compelled Duel",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Compelled Duel (condition)",
+        "revision": 434903,
+        "url": "https://bg3.wiki/wiki/Compelled_Duel_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Taunted"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.compelled-to-duel",
+    "type": "condition",
+    "name": {
+      "fr": "Compelled to Duel",
+      "en": "Compelled to Duel",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Compelled to Duel (condition)",
+        "revision": 434905,
+        "url": "https://bg3.wiki/wiki/Compelled_to_Duel_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Taunted"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.confused",
+    "type": "condition",
+    "name": {
+      "fr": "Confused",
+      "en": "Confused",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Confused (condition)",
+        "revision": 434911,
+        "url": "https://bg3.wiki/wiki/Confused_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Confused"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.contagion-poisoned",
+    "type": "condition",
+    "name": {
+      "fr": "Contagion Poisoned",
+      "en": "Contagion Poisoned",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Contagion Poisoned (condition)",
+        "revision": 434921,
+        "url": "https://bg3.wiki/wiki/Contagion_Poisoned_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Poisoned",
+        "SG_Disease"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.covert-critical",
+    "type": "condition",
+    "name": {
+      "fr": "Covert Critical",
+      "en": "Covert Critical",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Covert Critical (condition)",
+        "revision": 434945,
+        "url": "https://bg3.wiki/wiki/Covert_Critical_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.crown-of-madness",
+    "type": "condition",
+    "name": {
+      "fr": "Crown of Madness",
+      "en": "Crown of Madness",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Crown of Madness (condition)",
+        "revision": 434957,
+        "url": "https://bg3.wiki/wiki/Crown_of_Madness_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Charmed",
+        "SG_Condition",
+        "SG_Mad"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.crusaders-mantle-aura",
+    "type": "condition",
+    "name": {
+      "fr": "Crusader’s Mantle Aura",
+      "en": "Crusader's Mantle Aura",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Crusader's Mantle Aura (condition)",
+        "revision": 434961,
+        "url": "https://bg3.wiki/wiki/Crusader%27s_Mantle_Aura_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.daredevil-proximity",
+    "type": "condition",
+    "name": {
+      "fr": "Daredevil Proximity",
+      "en": "Daredevil Proximity",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Daredevil Proximity (condition)",
+        "revision": 435015,
+        "url": "https://bg3.wiki/wiki/Daredevil_Proximity_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_CQC_RANGED_SPELL"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.darkveil-precision",
+    "type": "condition",
+    "name": {
+      "fr": "Darkveil Precision",
+      "en": "Darkveil Precision",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Darkveil Precision (condition)",
+        "revision": 435031,
+        "url": "https://bg3.wiki/wiki/Darkveil_Precision_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.daylight",
+    "type": "condition",
+    "name": {
+      "fr": "Daylight",
+      "en": "Daylight",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Daylight (condition)",
+        "revision": 435039,
+        "url": "https://bg3.wiki/wiki/Daylight_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Light"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.dazed",
+    "type": "condition",
+    "name": {
+      "fr": "Dazed",
+      "en": "Dazed",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Dazed (condition)",
+        "revision": 435041,
+        "url": "https://bg3.wiki/wiki/Dazed_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Helpable_Condition"
+      ],
+      "gameUid": "DAZED"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.dazzling-ray",
+    "type": "condition",
+    "name": {
+      "fr": "Dazzling Ray",
+      "en": "Dazzling Ray",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Dazzling Ray (condition)",
+        "revision": 435045,
+        "url": "https://bg3.wiki/wiki/Dazzling_Ray_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.death-ward",
+    "type": "condition",
+    "name": {
+      "fr": "Death Ward",
+      "en": "Death Ward",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Death Ward (condition)",
+        "revision": 435051,
+        "url": "https://bg3.wiki/wiki/Death_Ward_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.defensive-stance",
+    "type": "condition",
+    "name": {
+      "fr": "Defensive Stance",
+      "en": "Defensive Stance",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Defensive Stance (condition)",
+        "revision": 435061,
+        "url": "https://bg3.wiki/wiki/Defensive_Stance_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.demonspirit-aura",
+    "type": "condition",
+    "name": {
+      "fr": "Demonspirit Aura",
+      "en": "Demonspirit Aura",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Demonspirit Aura (condition)",
+        "revision": 437874,
+        "url": "https://bg3.wiki/wiki/Demonspirit_Aura_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.detect-thoughts",
+    "type": "condition",
+    "name": {
+      "fr": "Detect Thoughts",
+      "en": "Detect Thoughts",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Detect Thoughts (condition)",
+        "revision": 435079,
+        "url": "https://bg3.wiki/wiki/Detect_Thoughts_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_DetectThoughts",
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.dirty-advantage",
+    "type": "condition",
+    "name": {
+      "fr": "Dirty Advantage",
+      "en": "Dirty Advantage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Dirty Advantage (condition)",
+        "revision": 435115,
+        "url": "https://bg3.wiki/wiki/Dirty_Advantage_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.disengage",
+    "type": "condition",
+    "name": {
+      "fr": "Disengage",
+      "en": "Disengage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Disengage (condition)",
+        "revision": 435119,
+        "url": "https://bg3.wiki/wiki/Disengage_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.disguise-self",
+    "type": "condition",
+    "name": {
+      "fr": "Disguise Self",
+      "en": "Disguise Self",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Disguise Self (condition)",
+        "revision": 435121,
+        "url": "https://bg3.wiki/wiki/Disguise_Self_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Polymorph",
+        "SG_Disguise",
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.dispel-evil-and-good",
+    "type": "condition",
+    "name": {
+      "fr": "Dispel Evil and Good",
+      "en": "Dispel Evil and Good",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Dispel Evil and Good (condition)",
+        "revision": 435127,
+        "url": "https://bg3.wiki/wiki/Dispel_Evil_and_Good_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.displaced",
+    "type": "condition",
+    "name": {
+      "fr": "Displaced",
+      "en": "Displaced",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Displaced (condition)",
+        "revision": 435131,
+        "url": "https://bg3.wiki/wiki/Displaced_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.divine-favour",
+    "type": "condition",
+    "name": {
+      "fr": "Divine Favour",
+      "en": "Divine Favour",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Divine Favour (condition)",
+        "revision": 435141,
+        "url": "https://bg3.wiki/wiki/Divine_Favour_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.dominated",
+    "type": "condition",
+    "name": {
+      "fr": "Dominated",
+      "en": "Dominated",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Dominated (condition)",
+        "revision": 435161,
+        "url": "https://bg3.wiki/wiki/Dominated_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Charmed",
+        "SG_Dominated"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.dominated-dominate-beast",
+    "type": "condition",
+    "name": {
+      "fr": "Dominated",
+      "en": "Dominated",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Dominated (Dominate Beast) (condition)",
+        "revision": 435163,
+        "url": "https://bg3.wiki/wiki/Dominated_(Dominate_Beast)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Charmed",
+        "SG_Dominated"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.elemental-weapon-acid",
+    "type": "condition",
+    "name": {
+      "fr": "Elemental Weapon: Acid",
+      "en": "Elemental Weapon: Acid",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Elemental Weapon: Acid (condition)",
+        "revision": 435244,
+        "url": "https://bg3.wiki/wiki/Elemental_Weapon:_Acid_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.elemental-weapon-cold",
+    "type": "condition",
+    "name": {
+      "fr": "Elemental Weapon: Cold",
+      "en": "Elemental Weapon: Cold",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Elemental Weapon: Cold (condition)",
+        "revision": 435246,
+        "url": "https://bg3.wiki/wiki/Elemental_Weapon:_Cold_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.elemental-weapon-fire",
+    "type": "condition",
+    "name": {
+      "fr": "Elemental Weapon: Fire",
+      "en": "Elemental Weapon: Fire",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Elemental Weapon: Fire (condition)",
+        "revision": 435248,
+        "url": "https://bg3.wiki/wiki/Elemental_Weapon:_Fire_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.elemental-weapon-lightning",
+    "type": "condition",
+    "name": {
+      "fr": "Elemental Weapon: Lightning",
+      "en": "Elemental Weapon: Lightning",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Elemental Weapon: Lightning (condition)",
+        "revision": 435250,
+        "url": "https://bg3.wiki/wiki/Elemental_Weapon:_Lightning_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.elemental-weapon-thunder",
+    "type": "condition",
+    "name": {
+      "fr": "Elemental Weapon: Thunder",
+      "en": "Elemental Weapon: Thunder",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Elemental Weapon: Thunder (condition)",
+        "revision": 435252,
+        "url": "https://bg3.wiki/wiki/Elemental_Weapon:_Thunder_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.encrusted-with-frost",
+    "type": "condition",
+    "name": {
+      "fr": "Encrusted with Frost",
+      "en": "Encrusted with Frost",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Encrusted with Frost (condition)",
+        "revision": 435286,
+        "url": "https://bg3.wiki/wiki/Encrusted_with_Frost_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.enhanced-armour-class",
+    "type": "condition",
+    "name": {
+      "fr": "Enhanced Armour Class",
+      "en": "Enhanced Armour Class",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Enhanced Armour Class (condition)",
+        "revision": 435308,
+        "url": "https://bg3.wiki/wiki/Enhanced_Armour_Class_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.enlarged-duergar",
+    "type": "condition",
+    "name": {
+      "fr": "Enlarged (Duergar)",
+      "en": "Enlarged (Duergar)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Enlarged (Duergar) (condition)",
+        "revision": 435312,
+        "url": "https://bg3.wiki/wiki/Enlarged_(Duergar)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ],
+      "gameUid": "ENLARGE_DUERGAR"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.ensnared-ensnaring-strike",
+    "type": "condition",
+    "name": {
+      "fr": "Ensnared (Ensnaring Strike)",
+      "en": "Ensnared (Ensnaring Strike)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ensnared (Ensnaring Strike) (condition)",
+        "revision": 438446,
+        "url": "https://bg3.wiki/wiki/Ensnared_(Ensnaring_Strike)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Restrained",
+        "SG_Condition"
+      ],
+      "gameUid": "ENSNARING_STRIKE"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.enthralled",
+    "type": "condition",
+    "name": {
+      "fr": "Enthralled",
+      "en": "Enthralled",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Enthralled (condition)",
+        "revision": 435324,
+        "url": "https://bg3.wiki/wiki/Enthralled_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.ever-radiant",
+    "type": "condition",
+    "name": {
+      "fr": "Ever Radiant",
+      "en": "Ever Radiant",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ever Radiant (condition)",
+        "revision": 435342,
+        "url": "https://bg3.wiki/wiki/Ever_Radiant_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.executioner",
+    "type": "condition",
+    "name": {
+      "fr": "Executioner",
+      "en": "Executioner",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Executioner (condition)",
+        "revision": 435344,
+        "url": "https://bg3.wiki/wiki/Executioner_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.expeditious-retreat",
+    "type": "condition",
+    "name": {
+      "fr": "Expeditious Retreat",
+      "en": "Expeditious Retreat",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Expeditious Retreat (condition)",
+        "revision": 435348,
+        "url": "https://bg3.wiki/wiki/Expeditious_Retreat_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.extra-bonus-action",
+    "type": "condition",
+    "name": {
+      "fr": "Extra Bonus Action",
+      "en": "Extra Bonus Action",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Extra Bonus Action (condition)",
+        "revision": 435360,
+        "url": "https://bg3.wiki/wiki/Extra_Bonus_Action_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.eyes-of-the-dark",
+    "type": "condition",
+    "name": {
+      "fr": "Eyes of the Dark",
+      "en": "Eyes of the Dark",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Eyes of the Dark (condition)",
+        "revision": 435366,
+        "url": "https://bg3.wiki/wiki/Eyes_of_the_Dark_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.faerie-fire",
+    "type": "condition",
+    "name": {
+      "fr": "Faerie Fire",
+      "en": "Faerie Fire",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Faerie Fire (condition)",
+        "revision": 435368,
+        "url": "https://bg3.wiki/wiki/Faerie_Fire_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Light"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.false-life",
+    "type": "condition",
+    "name": {
+      "fr": "False Life",
+      "en": "False Life",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "False Life (condition)",
+        "revision": 435372,
+        "url": "https://bg3.wiki/wiki/False_Life_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.favoured-weapon",
+    "type": "condition",
+    "name": {
+      "fr": "Favoured Weapon",
+      "en": "Favoured Weapon",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Favoured Weapon (condition)",
+        "revision": 435378,
+        "url": "https://bg3.wiki/wiki/Favoured_Weapon_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.fearful",
+    "type": "condition",
+    "name": {
+      "fr": "Fearful",
+      "en": "Fearful",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Fearful (condition)",
+        "revision": 438304,
+        "url": "https://bg3.wiki/wiki/Fearful_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Frightened",
+        "SG_Condition",
+        "SG_Fleeing"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.feather-fall",
+    "type": "condition",
+    "name": {
+      "fr": "Feather Fall",
+      "en": "Feather Fall",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feather Fall (condition)",
+        "revision": 435386,
+        "url": "https://bg3.wiki/wiki/Feather_Fall_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.feeble",
+    "type": "condition",
+    "name": {
+      "fr": "Feeble",
+      "en": "Feeble",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feeble (condition)",
+        "revision": 435388,
+        "url": "https://bg3.wiki/wiki/Feeble_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.feigning-death",
+    "type": "condition",
+    "name": {
+      "fr": "Feigning Death",
+      "en": "Feigning Death",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feigning Death (condition)",
+        "revision": 435390,
+        "url": "https://bg3.wiki/wiki/Feigning_Death_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Incapacitated",
+        "SG_Condition",
+        "SG_Helpable_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.festering-spores",
+    "type": "condition",
+    "name": {
+      "fr": "Festering Spores",
+      "en": "Festering Spores",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Festering Spores (condition)",
+        "revision": 435394,
+        "url": "https://bg3.wiki/wiki/Festering_Spores_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.feywild-sparks",
+    "type": "condition",
+    "name": {
+      "fr": "Feywild Sparks",
+      "en": "Feywild Sparks",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feywild Sparks (condition)",
+        "revision": 435404,
+        "url": "https://bg3.wiki/wiki/Feywild_Sparks_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.flesh-to-stone-restrained-stage-1",
+    "type": "condition",
+    "name": {
+      "fr": "Flesh to Stone: Restrained Stage 1",
+      "en": "Flesh to Stone: Restrained Stage 1",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Flesh to Stone: Restrained Stage 1 (condition)",
+        "revision": 435466,
+        "url": "https://bg3.wiki/wiki/Flesh_to_Stone:_Restrained_Stage_1_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Restrained"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.flight",
+    "type": "condition",
+    "name": {
+      "fr": "Flight",
+      "en": "Flight",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Flight (condition)",
+        "revision": 435472,
+        "url": "https://bg3.wiki/wiki/Flight_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.flying-strike",
+    "type": "condition",
+    "name": {
+      "fr": "Flying Strike",
+      "en": "Flying Strike",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Flying Strike (condition)",
+        "revision": 435474,
+        "url": "https://bg3.wiki/wiki/Flying_Strike_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.force-conduit",
+    "type": "condition",
+    "name": {
+      "fr": "Force Conduit",
+      "en": "Force Conduit",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Force Conduit (condition)",
+        "revision": 435480,
+        "url": "https://bg3.wiki/wiki/Force_Conduit_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.form-of-artifice",
+    "type": "condition",
+    "name": {
+      "fr": "Form of Artifice",
+      "en": "Form of Artifice",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Form of Artifice (condition)",
+        "revision": 435488,
+        "url": "https://bg3.wiki/wiki/Form_of_Artifice_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.formless-slaughter",
+    "type": "condition",
+    "name": {
+      "fr": "Formless Slaughter",
+      "en": "Formless Slaughter",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Formless Slaughter (condition)",
+        "revision": 435492,
+        "url": "https://bg3.wiki/wiki/Formless_Slaughter_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.freedom-of-movement",
+    "type": "condition",
+    "name": {
+      "fr": "Freedom of Movement",
+      "en": "Freedom of Movement",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Freedom of Movement (condition)",
+        "revision": 435502,
+        "url": "https://bg3.wiki/wiki/Freedom_of_Movement_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.friends",
+    "type": "condition",
+    "name": {
+      "fr": "Friends",
+      "en": "Friends",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Friends (condition)",
+        "revision": 435512,
+        "url": "https://bg3.wiki/wiki/Friends_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Charmed",
+        "SG_Condition",
+        "SG_Charmed_Subtle"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.frightened",
+    "type": "condition",
+    "name": {
+      "fr": "Frightened",
+      "en": "Frightened",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Frightened (condition)",
+        "revision": 437882,
+        "url": "https://bg3.wiki/wiki/Frightened_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Frightened",
+        "SG_Condition"
+      ],
+      "gameUid": "FRIGHTENED"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.galvanic-currents",
+    "type": "condition",
+    "name": {
+      "fr": "Galvanic Currents",
+      "en": "Galvanic Currents",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Galvanic Currents (condition)",
+        "revision": 435534,
+        "url": "https://bg3.wiki/wiki/Galvanic_Currents_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_CHARGED_LIGHTNING_LIGHTNING_WEAPON"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.gaping-wounds",
+    "type": "condition",
+    "name": {
+      "fr": "Gaping Wounds",
+      "en": "Gaping Wounds",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Gaping Wounds (condition)",
+        "revision": 435536,
+        "url": "https://bg3.wiki/wiki/Gaping_Wounds_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Condition"
+      ],
+      "gameUid": "GAPING_WOUND"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.garrotted",
+    "type": "condition",
+    "name": {
+      "fr": "Garrotted",
+      "en": "Garrotted",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Garrotted (condition)",
+        "revision": 438250,
+        "url": "https://bg3.wiki/wiki/Garrotted_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Condition",
+        "SG_DropForNonMutingDialog",
+        "SG_Restrained"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.gaseous-form",
+    "type": "condition",
+    "name": {
+      "fr": "Gaseous Form",
+      "en": "Gaseous Form",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Gaseous Form (condition)",
+        "revision": 435544,
+        "url": "https://bg3.wiki/wiki/Gaseous_Form_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Polymorph",
+        "SG_DropForNonMutingDialog",
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.giant-form",
+    "type": "condition",
+    "name": {
+      "fr": "Giant Form",
+      "en": "Giant Form",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Giant Form (condition)",
+        "revision": 435554,
+        "url": "https://bg3.wiki/wiki/Giant_Form_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_GIANT_SLAYER_LEGENDARY_ENLRAGE"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.grasp-essence",
+    "type": "condition",
+    "name": {
+      "fr": "Grasp Essence",
+      "en": "Grasp Essence",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Grasp Essence (condition)",
+        "revision": 435588,
+        "url": "https://bg3.wiki/wiki/Grasp_Essence_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.greater-invisibility",
+    "type": "condition",
+    "name": {
+      "fr": "Greater Invisibility",
+      "en": "Greater Invisibility",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Greater Invisibility (condition)",
+        "revision": 435600,
+        "url": "https://bg3.wiki/wiki/Greater_Invisibility_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Invisible",
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.green-bed-regeneration",
+    "type": "condition",
+    "name": {
+      "fr": "Green Bed Regeneration",
+      "en": "Green Bed Regeneration",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Green Bed Regeneration (condition)",
+        "revision": 435604,
+        "url": "https://bg3.wiki/wiki/Green_Bed_Regeneration_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Surface"
+      ],
+      "gameUid": "MAG_DRUID_FOREST_REGENERATION"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.guidance",
+    "type": "condition",
+    "name": {
+      "fr": "Guidance",
+      "en": "Guidance",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Guidance (condition)",
+        "revision": 435618,
+        "url": "https://bg3.wiki/wiki/Guidance_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.guiding-bolt",
+    "type": "condition",
+    "name": {
+      "fr": "Guiding Bolt",
+      "en": "Guiding Bolt",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Guiding Bolt (condition)",
+        "revision": 435622,
+        "url": "https://bg3.wiki/wiki/Guiding_Bolt_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Light"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.hamstrung",
+    "type": "condition",
+    "name": {
+      "fr": "Hamstrung",
+      "en": "Hamstrung",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hamstrung (condition)",
+        "revision": 435638,
+        "url": "https://bg3.wiki/wiki/Hamstrung_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Restrained",
+        "SG_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.harm",
+    "type": "condition",
+    "name": {
+      "fr": "Harm",
+      "en": "Harm",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Harm (condition)",
+        "revision": 435650,
+        "url": "https://bg3.wiki/wiki/Harm_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Disease"
+      ],
+      "gameUid": "HARM"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.harmonised",
+    "type": "condition",
+    "name": {
+      "fr": "Harmonised",
+      "en": "Harmonised",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Harmonised (condition)",
+        "revision": 435652,
+        "url": "https://bg3.wiki/wiki/Harmonised_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.hastened",
+    "type": "condition",
+    "name": {
+      "fr": "Hastened",
+      "en": "Hastened",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hastened (condition)",
+        "revision": 435658,
+        "url": "https://bg3.wiki/wiki/Hastened_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ],
+      "gameUid": "HASTE"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.healing-incense-aura",
+    "type": "condition",
+    "name": {
+      "fr": "Healing Incense Aura",
+      "en": "Healing Incense Aura",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Healing Incense Aura (condition)",
+        "revision": 435668,
+        "url": "https://bg3.wiki/wiki/Healing_Incense_Aura_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.heat",
+    "type": "condition",
+    "name": {
+      "fr": "Heat",
+      "en": "Heat",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Heat (condition)",
+        "revision": 435686,
+        "url": "https://bg3.wiki/wiki/Heat_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_FIRE_HEAT"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.heat-metal",
+    "type": "condition",
+    "name": {
+      "fr": "Heat Metal",
+      "en": "Heat Metal",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Heat Metal (condition)",
+        "revision": 435694,
+        "url": "https://bg3.wiki/wiki/Heat_Metal_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.heat-metal-disadvantage",
+    "type": "condition",
+    "name": {
+      "fr": "Heat Metal: Disadvantage",
+      "en": "Heat Metal: Disadvantage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Heat Metal: Disadvantage (condition)",
+        "revision": 435690,
+        "url": "https://bg3.wiki/wiki/Heat_Metal:_Disadvantage_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.heroism",
+    "type": "condition",
+    "name": {
+      "fr": "Heroism",
+      "en": "Heroism",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Heroism (condition)",
+        "revision": 435716,
+        "url": "https://bg3.wiki/wiki/Heroism_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.hideous-laughter",
+    "type": "condition",
+    "name": {
+      "fr": "Hideous Laughter",
+      "en": "Hideous Laughter",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hideous Laughter (condition)",
+        "revision": 435750,
+        "url": "https://bg3.wiki/wiki/Hideous_Laughter_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Prone",
+        "SG_Condition",
+        "SG_Unconscious"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.hiding",
+    "type": "condition",
+    "name": {
+      "fr": "Hiding",
+      "en": "Hiding",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hiding (condition)",
+        "revision": 435752,
+        "url": "https://bg3.wiki/wiki/Hiding_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "SNEAKING"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.high-spirits",
+    "type": "condition",
+    "name": {
+      "fr": "High Spirits",
+      "en": "High Spirits",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "High Spirits (condition)",
+        "revision": 435754,
+        "url": "https://bg3.wiki/wiki/High_Spirits_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.hold-monster",
+    "type": "condition",
+    "name": {
+      "fr": "Hold Monster",
+      "en": "Hold Monster",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hold Monster (condition)",
+        "revision": 435762,
+        "url": "https://bg3.wiki/wiki/Hold_Monster_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Incapacitated",
+        "SG_Condition",
+        "SG_Paralyzed"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.hold-person",
+    "type": "condition",
+    "name": {
+      "fr": "Hold Person",
+      "en": "Hold Person",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hold Person (condition)",
+        "revision": 435764,
+        "url": "https://bg3.wiki/wiki/Hold_Person_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Incapacitated",
+        "SG_Condition",
+        "SG_Paralyzed"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.hunt-completed",
+    "type": "condition",
+    "name": {
+      "fr": "Hunt Completed",
+      "en": "Hunt Completed",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hunt Completed (condition)",
+        "revision": 435806,
+        "url": "https://bg3.wiki/wiki/Hunt_Completed_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.hunters-mark-quarry",
+    "type": "condition",
+    "name": {
+      "fr": "Hunter’s Mark Quarry",
+      "en": "Hunter's Mark Quarry",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hunter's Mark Quarry (condition)",
+        "revision": 435810,
+        "url": "https://bg3.wiki/wiki/Hunter%27s_Mark_Quarry_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.hypnotised",
+    "type": "condition",
+    "name": {
+      "fr": "Hypnotised",
+      "en": "Hypnotised",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hypnotised (condition)",
+        "revision": 435814,
+        "url": "https://bg3.wiki/wiki/Hypnotised_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Incapacitated",
+        "SG_Condition",
+        "SG_Charmed"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.invisible",
+    "type": "condition",
+    "name": {
+      "fr": "Invisible",
+      "en": "Invisible",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Invisible (condition)",
+        "revision": 435902,
+        "url": "https://bg3.wiki/wiki/Invisible_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Invisible",
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.invisible-weapon",
+    "type": "condition",
+    "name": {
+      "fr": "Invisible Weapon",
+      "en": "Invisible Weapon",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Invisible Weapon (condition)",
+        "revision": 435906,
+        "url": "https://bg3.wiki/wiki/Invisible_Weapon_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Invisible"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.jump",
+    "type": "condition",
+    "name": {
+      "fr": "Jump",
+      "en": "Jump",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Jump (condition)",
+        "revision": 435924,
+        "url": "https://bg3.wiki/wiki/Jump_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.lethal-concealment",
+    "type": "condition",
+    "name": {
+      "fr": "Lethal Concealment",
+      "en": "Lethal Concealment",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lethal Concealment (condition)",
+        "revision": 436038,
+        "url": "https://bg3.wiki/wiki/Lethal_Concealment_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.lethargic",
+    "type": "condition",
+    "name": {
+      "fr": "Lethargic",
+      "en": "Lethargic",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lethargic (condition)",
+        "revision": 436040,
+        "url": "https://bg3.wiki/wiki/Lethargic_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Stunned",
+        "SG_Condition"
+      ],
+      "gameUid": "HASTE_LETHARGY"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.lieges-of-the-underdark-blessing",
+    "type": "condition",
+    "name": {
+      "fr": "Lieges of the Underdark Blessing",
+      "en": "Lieges of the Underdark Blessing",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lieges of the Underdark Blessing (condition)",
+        "revision": 436046,
+        "url": "https://bg3.wiki/wiki/Lieges_of_the_Underdark_Blessing_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_ILLITHID_BLESS"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.life-essence",
+    "type": "condition",
+    "name": {
+      "fr": "Life Essence",
+      "en": "Life Essence",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Life Essence (condition)",
+        "revision": 436050,
+        "url": "https://bg3.wiki/wiki/Life_Essence_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.light",
+    "type": "condition",
+    "name": {
+      "fr": "Light",
+      "en": "Light",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Light (condition)",
+        "revision": 436056,
+        "url": "https://bg3.wiki/wiki/Light_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Light",
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.lightning-aura",
+    "type": "condition",
+    "name": {
+      "fr": "Lightning Aura",
+      "en": "Lightning Aura",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lightning Aura (condition)",
+        "revision": 436060,
+        "url": "https://bg3.wiki/wiki/Lightning_Aura_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.lightning-blast",
+    "type": "condition",
+    "name": {
+      "fr": "Lightning Blast",
+      "en": "Lightning Blast",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lightning Blast (condition)",
+        "revision": 436062,
+        "url": "https://bg3.wiki/wiki/Lightning_Blast_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.lightning-charges",
+    "type": "condition",
+    "name": {
+      "fr": "Lightning Charges",
+      "en": "Lightning Charges",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lightning Charges (condition)",
+        "revision": 436064,
+        "url": "https://bg3.wiki/wiki/Lightning_Charges_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.longstrider",
+    "type": "condition",
+    "name": {
+      "fr": "Longstrider",
+      "en": "Longstrider",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Longstrider (condition)",
+        "revision": 436078,
+        "url": "https://bg3.wiki/wiki/Longstrider_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.lunar-protection",
+    "type": "condition",
+    "name": {
+      "fr": "Lunar Protection",
+      "en": "Lunar Protection",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lunar Protection (condition)",
+        "revision": 436094,
+        "url": "https://bg3.wiki/wiki/Lunar_Protection_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.lunar-vitality",
+    "type": "condition",
+    "name": {
+      "fr": "Lunar Vitality",
+      "en": "Lunar Vitality",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lunar Vitality (condition)",
+        "revision": 436098,
+        "url": "https://bg3.wiki/wiki/Lunar_Vitality_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.mage-armour",
+    "type": "condition",
+    "name": {
+      "fr": "Mage Armour",
+      "en": "Mage Armour",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Mage Armour (condition)",
+        "revision": 436112,
+        "url": "https://bg3.wiki/wiki/Mage_Armour_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.magic-weapon",
+    "type": "condition",
+    "name": {
+      "fr": "Magic Weapon",
+      "en": "Magic Weapon",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Magic Weapon (condition)",
+        "revision": 436126,
+        "url": "https://bg3.wiki/wiki/Magic_Weapon_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.maimed",
+    "type": "condition",
+    "name": {
+      "fr": "Maimed",
+      "en": "Maimed",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Maimed (condition)",
+        "revision": 436134,
+        "url": "https://bg3.wiki/wiki/Maimed_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Condition"
+      ],
+      "gameUid": "CRIPPLED"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.mark-of-the-shifter",
+    "type": "condition",
+    "name": {
+      "fr": "Mark of the Shifter",
+      "en": "Mark of the Shifter",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Mark of the Shifter (condition)",
+        "revision": 436152,
+        "url": "https://bg3.wiki/wiki/Mark_of_the_Shifter_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.martial-exertion",
+    "type": "condition",
+    "name": {
+      "fr": "Martial Exertion",
+      "en": "Martial Exertion",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Martial Exertion (condition)",
+        "revision": 436162,
+        "url": "https://bg3.wiki/wiki/Martial_Exertion_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.melfs-acid-arrow",
+    "type": "condition",
+    "name": {
+      "fr": "Melf’s Acid Arrow",
+      "en": "Melf's Acid Arrow",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Melf's Acid Arrow (condition)",
+        "revision": 436174,
+        "url": "https://bg3.wiki/wiki/Melf%27s_Acid_Arrow_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.mental-fatigue",
+    "type": "condition",
+    "name": {
+      "fr": "Mental Fatigue",
+      "en": "Mental Fatigue",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Mental Fatigue (condition)",
+        "revision": 436182,
+        "url": "https://bg3.wiki/wiki/Mental_Fatigue_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.mirror-image",
+    "type": "condition",
+    "name": {
+      "fr": "Mirror Image",
+      "en": "Mirror Image",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Mirror Image (condition)",
+        "revision": 436210,
+        "url": "https://bg3.wiki/wiki/Mirror_Image_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.momentum",
+    "type": "condition",
+    "name": {
+      "fr": "Momentum",
+      "en": "Momentum",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Momentum (condition)",
+        "revision": 438985,
+        "url": "https://bg3.wiki/wiki/Momentum_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.mystras-blessing-staff-of-arcane-blessing",
+    "type": "condition",
+    "name": {
+      "fr": "Mystra’s Blessing",
+      "en": "Mystra's Blessing",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Mystra's Blessing (Staff of Arcane Blessing) (condition)",
+        "revision": 438111,
+        "url": "https://bg3.wiki/wiki/Mystra%27s_Blessing_(Staff_of_Arcane_Blessing)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.noxious-fumes",
+    "type": "condition",
+    "name": {
+      "fr": "Noxious Fumes",
+      "en": "Noxious Fumes",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Noxious Fumes (condition)",
+        "revision": 436316,
+        "url": "https://bg3.wiki/wiki/Noxious_Fumes_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.off-balance",
+    "type": "condition",
+    "name": {
+      "fr": "Off Balance",
+      "en": "Off Balance",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Off Balance (condition)",
+        "revision": 438127,
+        "url": "https://bg3.wiki/wiki/Off_Balance_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Helpable_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.off-balance-gargantuan-cleave",
+    "type": "condition",
+    "name": {
+      "fr": "Off Balance (Gargantuan Cleave)",
+      "en": "Off Balance (Gargantuan Cleave)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Off Balance (Gargantuan Cleave) (condition)",
+        "revision": 438117,
+        "url": "https://bg3.wiki/wiki/Off_Balance_(Gargantuan_Cleave)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "GOB_LOSTBALANCE"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.onus-of-battle",
+    "type": "condition",
+    "name": {
+      "fr": "Onus of Battle",
+      "en": "Onus of Battle",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Onus of Battle (condition)",
+        "revision": 436354,
+        "url": "https://bg3.wiki/wiki/Onus_of_Battle_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.otilukes-resilient-sphere",
+    "type": "condition",
+    "name": {
+      "fr": "Otiluke’s Resilient Sphere",
+      "en": "Otiluke's Resilient Sphere",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Otiluke's Resilient Sphere (condition)",
+        "revision": 436374,
+        "url": "https://bg3.wiki/wiki/Otiluke%27s_Resilient_Sphere_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.ottos-irresistible-dance",
+    "type": "condition",
+    "name": {
+      "fr": "Otto’s Irresistible Dance",
+      "en": "Otto's Irresistible Dance",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Otto's Irresistible Dance (condition)",
+        "revision": 436376,
+        "url": "https://bg3.wiki/wiki/Otto%27s_Irresistible_Dance_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Charmed"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.paralysed",
+    "type": "condition",
+    "name": {
+      "fr": "Paralysed",
+      "en": "Paralysed",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Paralysed (condition)",
+        "revision": 436408,
+        "url": "https://bg3.wiki/wiki/Paralysed_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Incapacitated",
+        "SG_Condition",
+        "SG_Paralyzed"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.pass-without-trace-aura",
+    "type": "condition",
+    "name": {
+      "fr": "Pass Without Trace Aura",
+      "en": "Pass Without Trace Aura",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Pass Without Trace Aura (condition)",
+        "revision": 436420,
+        "url": "https://bg3.wiki/wiki/Pass_Without_Trace_Aura_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.petrified",
+    "type": "condition",
+    "name": {
+      "fr": "Petrified",
+      "en": "Petrified",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Petrified (condition)",
+        "revision": 436440,
+        "url": "https://bg3.wiki/wiki/Petrified_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Incapacitated",
+        "SG_Condition",
+        "SG_Petrified"
+      ],
+      "gameUid": "PETRIFIED"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.phantasmal-force",
+    "type": "condition",
+    "name": {
+      "fr": "Phantasmal Force",
+      "en": "Phantasmal Force",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Phantasmal Force (condition)",
+        "revision": 436442,
+        "url": "https://bg3.wiki/wiki/Phantasmal_Force_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.phantasmal-killer",
+    "type": "condition",
+    "name": {
+      "fr": "Phantasmal Killer",
+      "en": "Phantasmal Killer",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Phantasmal Killer (condition)",
+        "revision": 436444,
+        "url": "https://bg3.wiki/wiki/Phantasmal_Killer_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Frightened",
+        "SG_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.poisoned",
+    "type": "condition",
+    "name": {
+      "fr": "Poisoned",
+      "en": "Poisoned",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Poisoned",
+        "revision": 439705,
+        "url": "https://bg3.wiki/wiki/Poisoned"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Surface",
+        "SG_Poisoned",
+        "SG_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.polymorphed",
+    "type": "condition",
+    "name": {
+      "fr": "Polymorphed",
+      "en": "Polymorphed",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Polymorphed (condition)",
+        "revision": 436484,
+        "url": "https://bg3.wiki/wiki/Polymorphed_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Polymorph"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.polymorphed-dire-raven",
+    "type": "condition",
+    "name": {
+      "fr": "Polymorphed: Dire Raven",
+      "en": "Polymorphed: Dire Raven",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Polymorphed: Dire Raven (condition)",
+        "revision": 436482,
+        "url": "https://bg3.wiki/wiki/Polymorphed:_Dire_Raven_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Polymorph",
+        "SG_Polymorph_BeastShape",
+        "SG_DropForNonMutingDialog",
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.prepared",
+    "type": "condition",
+    "name": {
+      "fr": "Prepared",
+      "en": "Prepared",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Prepared (condition)",
+        "revision": 436508,
+        "url": "https://bg3.wiki/wiki/Prepared_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.produce-flame",
+    "type": "condition",
+    "name": {
+      "fr": "Produce Flame",
+      "en": "Produce Flame",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Produce Flame (condition)",
+        "revision": 436514,
+        "url": "https://bg3.wiki/wiki/Produce_Flame_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Light"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.prone",
+    "type": "condition",
+    "name": {
+      "fr": "Prone",
+      "en": "Prone",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Prone (condition)",
+        "revision": 436524,
+        "url": "https://bg3.wiki/wiki/Prone_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Prone",
+        "SG_Condition",
+        "SG_Unconscious"
+      ],
+      "gameUid": "PRONE"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.protection-from-evil-and-good",
+    "type": "condition",
+    "name": {
+      "fr": "Protection from Evil and Good",
+      "en": "Protection from Evil and Good",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Protection from Evil and Good (condition)",
+        "revision": 436584,
+        "url": "https://bg3.wiki/wiki/Protection_from_Evil_and_Good_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.protection-from-poison",
+    "type": "condition",
+    "name": {
+      "fr": "Protection from Poison",
+      "en": "Protection from Poison",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Protection from Poison (condition)",
+        "revision": 436588,
+        "url": "https://bg3.wiki/wiki/Protection_from_Poison_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.quickening-incantation",
+    "type": "condition",
+    "name": {
+      "fr": "Quickening Incantation",
+      "en": "Quickening Incantation",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Quickening Incantation (condition)",
+        "revision": 436622,
+        "url": "https://bg3.wiki/wiki/Quickening_Incantation_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_ARCANE_TRICKSTER_ILLUSION_QUICKENING"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.quickspell-flinger",
+    "type": "condition",
+    "name": {
+      "fr": "Quickspell Flinger",
+      "en": "Quickspell Flinger",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Quickspell Flinger (condition)",
+        "revision": 436626,
+        "url": "https://bg3.wiki/wiki/Quickspell_Flinger_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.radiating-orb",
+    "type": "condition",
+    "name": {
+      "fr": "Radiating Orb",
+      "en": "Radiating Orb",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Radiating Orb",
+        "revision": 439797,
+        "url": "https://bg3.wiki/wiki/Radiating_Orb"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.ray-of-frost",
+    "type": "condition",
+    "name": {
+      "fr": "Ray of Frost",
+      "en": "Ray of Frost",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ray of Frost (condition)",
+        "revision": 436666,
+        "url": "https://bg3.wiki/wiki/Ray_of_Frost_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.reactive-restoration",
+    "type": "condition",
+    "name": {
+      "fr": "Reactive Restoration",
+      "en": "Reactive Restoration",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Reactive Restoration (condition)",
+        "revision": 436668,
+        "url": "https://bg3.wiki/wiki/Reactive_Restoration_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.reapply-hex",
+    "type": "condition",
+    "name": {
+      "fr": "Reapply Hex",
+      "en": "Reapply Hex",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Reapply Hex (condition)",
+        "revision": 436678,
+        "url": "https://bg3.wiki/wiki/Reapply_Hex_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.recast-speak-with-dead",
+    "type": "condition",
+    "name": {
+      "fr": "Recast Speak with Dead",
+      "en": "Recast Speak with Dead",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Recast Speak with Dead (condition)",
+        "revision": 436680,
+        "url": "https://bg3.wiki/wiki/Recast_Speak_with_Dead_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.reeling",
+    "type": "condition",
+    "name": {
+      "fr": "Reeling",
+      "en": "Reeling",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Reeling (condition)",
+        "revision": 436700,
+        "url": "https://bg3.wiki/wiki/Reeling_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.reflective-shell",
+    "type": "condition",
+    "name": {
+      "fr": "Reflective Shell",
+      "en": "Reflective Shell",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Reflective Shell (condition)",
+        "revision": 436704,
+        "url": "https://bg3.wiki/wiki/Reflective_Shell_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.rended-flesh",
+    "type": "condition",
+    "name": {
+      "fr": "Rended Flesh",
+      "en": "Rended Flesh",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Rended Flesh (condition)",
+        "revision": 436720,
+        "url": "https://bg3.wiki/wiki/Rended_Flesh_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.resistance",
+    "type": "condition",
+    "name": {
+      "fr": "Resistance",
+      "en": "Resistance",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Resistance (condition)",
+        "revision": 436724,
+        "url": "https://bg3.wiki/wiki/Resistance_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.resistant-to-acid-damage-creations-echo",
+    "type": "condition",
+    "name": {
+      "fr": "Resistant to Acid Damage (Creation’s Echo)",
+      "en": "Resistant to Acid Damage (Creation's Echo)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Resistant to Acid Damage (Creation's Echo) (condition)",
+        "revision": 438471,
+        "url": "https://bg3.wiki/wiki/Resistant_to_Acid_Damage_(Creation%27s_Echo)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "RESISTANCE_ACID"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.revealed",
+    "type": "condition",
+    "name": {
+      "fr": "Revealed",
+      "en": "Revealed",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Revealed (condition)",
+        "revision": 436758,
+        "url": "https://bg3.wiki/wiki/Revealed_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.reverberation",
+    "type": "condition",
+    "name": {
+      "fr": "Reverberation",
+      "en": "Reverberation",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Reverberation (condition)",
+        "revision": 436760,
+        "url": "https://bg3.wiki/wiki/Reverberation_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_THUNDER_REVERBERATION"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.ruptured",
+    "type": "condition",
+    "name": {
+      "fr": "Ruptured",
+      "en": "Ruptured",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ruptured (condition)",
+        "revision": 436788,
+        "url": "https://bg3.wiki/wiki/Ruptured_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.sacred-munitions",
+    "type": "condition",
+    "name": {
+      "fr": "Sacred Munitions",
+      "en": "Sacred Munitions",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sacred Munitions (condition)",
+        "revision": 436796,
+        "url": "https://bg3.wiki/wiki/Sacred_Munitions_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.sanctuary",
+    "type": "condition",
+    "name": {
+      "fr": "Sanctuary",
+      "en": "Sanctuary",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sanctuary (condition)",
+        "revision": 436804,
+        "url": "https://bg3.wiki/wiki/Sanctuary_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.searing-smite",
+    "type": "condition",
+    "name": {
+      "fr": "Searing Smite",
+      "en": "Searing Smite",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Searing Smite (condition)",
+        "revision": 436836,
+        "url": "https://bg3.wiki/wiki/Searing_Smite_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Light"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.see-invisibility",
+    "type": "condition",
+    "name": {
+      "fr": "See Invisibility",
+      "en": "See Invisibility",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "See Invisibility (condition)",
+        "revision": 438103,
+        "url": "https://bg3.wiki/wiki/See_Invisibility_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.seeming",
+    "type": "condition",
+    "name": {
+      "fr": "Seeming",
+      "en": "Seeming",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Seeming (condition)",
+        "revision": 436840,
+        "url": "https://bg3.wiki/wiki/Seeming_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Polymorph",
+        "SG_Disguise",
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.seized-by-planar-binding",
+    "type": "condition",
+    "name": {
+      "fr": "Seized by Planar Binding",
+      "en": "Seized by Planar Binding",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Seized by Planar Binding (condition)",
+        "revision": 436844,
+        "url": "https://bg3.wiki/wiki/Seized_by_Planar_Binding_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Charmed",
+        "SG_Dominated"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.shadespell",
+    "type": "condition",
+    "name": {
+      "fr": "Shadespell",
+      "en": "Shadespell",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shadespell (condition)",
+        "revision": 436870,
+        "url": "https://bg3.wiki/wiki/Shadespell_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.shadow-possession",
+    "type": "condition",
+    "name": {
+      "fr": "Shadow Possession",
+      "en": "Shadow Possession",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shadow Possession (condition)",
+        "revision": 436884,
+        "url": "https://bg3.wiki/wiki/Shadow_Possession_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Condition",
+        "SG_Mad",
+        "SG_Cursed",
+        "SG_Possessed"
+      ],
+      "gameUid": "MAG_DEATH_DO_SHADOW_POSSESION"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.shars-blessing-barrier-of-darkness",
+    "type": "condition",
+    "name": {
+      "fr": "Shar’s Blessing: Barrier of Darkness",
+      "en": "Shar's Blessing: Barrier of Darkness",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shar's Blessing: Barrier of Darkness (condition)",
+        "revision": 436894,
+        "url": "https://bg3.wiki/wiki/Shar%27s_Blessing:_Barrier_of_Darkness_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.shattered",
+    "type": "condition",
+    "name": {
+      "fr": "Shattered",
+      "en": "Shattered",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shattered (condition)",
+        "revision": 436902,
+        "url": "https://bg3.wiki/wiki/Shattered_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.shield",
+    "type": "condition",
+    "name": {
+      "fr": "Shield",
+      "en": "Shield",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shield (condition)",
+        "revision": 436910,
+        "url": "https://bg3.wiki/wiki/Shield_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.shield-of-faith",
+    "type": "condition",
+    "name": {
+      "fr": "Shield of Faith",
+      "en": "Shield of Faith",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shield of Faith (condition)",
+        "revision": 436914,
+        "url": "https://bg3.wiki/wiki/Shield_of_Faith_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.shillelagh",
+    "type": "condition",
+    "name": {
+      "fr": "Shillelagh",
+      "en": "Shillelagh",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shillelagh (condition)",
+        "revision": 436920,
+        "url": "https://bg3.wiki/wiki/Shillelagh_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.shocked",
+    "type": "condition",
+    "name": {
+      "fr": "Shocked",
+      "en": "Shocked",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shocked (condition)",
+        "revision": 436924,
+        "url": "https://bg3.wiki/wiki/Shocked_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "SHOCKED"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.shocking-grasp",
+    "type": "condition",
+    "name": {
+      "fr": "Shocking Grasp",
+      "en": "Shocking Grasp",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shocking Grasp (condition)",
+        "revision": 436928,
+        "url": "https://bg3.wiki/wiki/Shocking_Grasp_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.silenced",
+    "type": "condition",
+    "name": {
+      "fr": "Silenced",
+      "en": "Silenced",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Silenced (condition)",
+        "revision": 436942,
+        "url": "https://bg3.wiki/wiki/Silenced_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Condition",
+        "SG_DropForNonMutingDialog"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.skilled-skullduggery",
+    "type": "condition",
+    "name": {
+      "fr": "Skilled Skullduggery",
+      "en": "Skilled Skullduggery",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Skilled Skullduggery (condition)",
+        "revision": 436966,
+        "url": "https://bg3.wiki/wiki/Skilled_Skullduggery_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.sleeping",
+    "type": "condition",
+    "name": {
+      "fr": "Sleeping",
+      "en": "Sleeping",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sleeping (condition)",
+        "revision": 436974,
+        "url": "https://bg3.wiki/wiki/Sleeping_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Unconscious",
+        "SG_Condition",
+        "SG_Sleeping"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.slowed",
+    "type": "condition",
+    "name": {
+      "fr": "Slowed",
+      "en": "Slowed",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Slowed (condition)",
+        "revision": 436980,
+        "url": "https://bg3.wiki/wiki/Slowed_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "SLOW"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.speak-with-animals",
+    "type": "condition",
+    "name": {
+      "fr": "Speak with Animals",
+      "en": "Speak with Animals",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Speak with Animals (condition)",
+        "revision": 437010,
+        "url": "https://bg3.wiki/wiki/Speak_with_Animals_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "PETPAL"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.staggering-smite",
+    "type": "condition",
+    "name": {
+      "fr": "Staggering Smite",
+      "en": "Staggering Smite",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Staggering Smite (condition)",
+        "revision": 437052,
+        "url": "https://bg3.wiki/wiki/Staggering_Smite_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.stealthier",
+    "type": "condition",
+    "name": {
+      "fr": "Stealthier",
+      "en": "Stealthier",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Stealthier (condition)",
+        "revision": 437068,
+        "url": "https://bg3.wiki/wiki/Stealthier_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.stoneskin",
+    "type": "condition",
+    "name": {
+      "fr": "Stoneskin",
+      "en": "Stoneskin",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Stoneskin (condition)",
+        "revision": 437092,
+        "url": "https://bg3.wiki/wiki/Stoneskin_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.stunned",
+    "type": "condition",
+    "name": {
+      "fr": "Stunned",
+      "en": "Stunned",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Stunned (condition)",
+        "revision": 437120,
+        "url": "https://bg3.wiki/wiki/Stunned_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Stunned",
+        "SG_Condition"
+      ],
+      "gameUid": "STUNNED"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.sunbeam",
+    "type": "condition",
+    "name": {
+      "fr": "Sunbeam",
+      "en": "Sunbeam",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sunbeam (condition)",
+        "revision": 437128,
+        "url": "https://bg3.wiki/wiki/Sunbeam_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.supreme-defences",
+    "type": "condition",
+    "name": {
+      "fr": "Supreme Defences",
+      "en": "Supreme Defences",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Supreme Defences (condition)",
+        "revision": 437136,
+        "url": "https://bg3.wiki/wiki/Supreme_Defences_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.swift-as-wind",
+    "type": "condition",
+    "name": {
+      "fr": "Swift as Wind",
+      "en": "Swift as Wind",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Swift as Wind (condition)",
+        "revision": 437154,
+        "url": "https://bg3.wiki/wiki/Swift_as_Wind_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.telekinesis",
+    "type": "condition",
+    "name": {
+      "fr": "Telekinesis",
+      "en": "Telekinesis",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Telekinesis (condition)",
+        "revision": 437160,
+        "url": "https://bg3.wiki/wiki/Telekinesis_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "TELEKINESIS_TECHNICAL"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.temporary-hit-points-10",
+    "type": "condition",
+    "name": {
+      "fr": "Temporary Hit Points (10)",
+      "en": "Temporary Hit Points (10)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Temporary Hit Points (10) (condition)",
+        "revision": 437168,
+        "url": "https://bg3.wiki/wiki/Temporary_Hit_Points_(10)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.temporary-hit-points-15",
+    "type": "condition",
+    "name": {
+      "fr": "Temporary Hit Points (15)",
+      "en": "Temporary Hit Points (15)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Temporary Hit Points (15) (condition)",
+        "revision": 437170,
+        "url": "https://bg3.wiki/wiki/Temporary_Hit_Points_(15)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.temporary-hit-points-3",
+    "type": "condition",
+    "name": {
+      "fr": "Temporary Hit Points (3)",
+      "en": "Temporary Hit Points (3)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Temporary Hit Points (3) (condition)",
+        "revision": 437174,
+        "url": "https://bg3.wiki/wiki/Temporary_Hit_Points_(3)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.temporary-hit-points-8",
+    "type": "condition",
+    "name": {
+      "fr": "Temporary Hit Points (8)",
+      "en": "Temporary Hit Points (8)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Temporary Hit Points (8) (condition)",
+        "revision": 437178,
+        "url": "https://bg3.wiki/wiki/Temporary_Hit_Points_(8)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.temporary-hit-points-bolstering-smite",
+    "type": "condition",
+    "name": {
+      "fr": "Temporary Hit Points (Bolstering Smite)",
+      "en": "Temporary Hit Points (Bolstering Smite)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Temporary Hit Points (Bolstering Smite) (condition)",
+        "revision": 437180,
+        "url": "https://bg3.wiki/wiki/Temporary_Hit_Points_(Bolstering_Smite)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.temporary-hit-points-ever-vigilant",
+    "type": "condition",
+    "name": {
+      "fr": "Temporary Hit Points (Ever Vigilant)",
+      "en": "Temporary Hit Points (Ever Vigilant)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Temporary Hit Points (Ever Vigilant) (condition)",
+        "revision": 437190,
+        "url": "https://bg3.wiki/wiki/Temporary_Hit_Points_(Ever_Vigilant)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.temporary-hit-points-remedial-rhymes",
+    "type": "condition",
+    "name": {
+      "fr": "Temporary Hit Points (Remedial Rhymes)",
+      "en": "Temporary Hit Points (Remedial Rhymes)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Temporary Hit Points (Remedial Rhymes) (condition)",
+        "revision": 437194,
+        "url": "https://bg3.wiki/wiki/Temporary_Hit_Points_(Remedial_Rhymes)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.temporary-hit-points-stirring-execution",
+    "type": "condition",
+    "name": {
+      "fr": "Temporary Hit Points (Stirring Execution)",
+      "en": "Temporary Hit Points (Stirring Execution)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Temporary Hit Points (Stirring Execution) (condition)",
+        "revision": 437196,
+        "url": "https://bg3.wiki/wiki/Temporary_Hit_Points_(Stirring_Execution)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.temporary-hit-points-well-liked-and-well-fortified",
+    "type": "condition",
+    "name": {
+      "fr": "Temporary Hit Points (Well-Liked and Well-Fortified)",
+      "en": "Temporary Hit Points (Well-Liked and Well-Fortified)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Temporary Hit Points (Well-Liked and Well-Fortified) (condition)",
+        "revision": 437198,
+        "url": "https://bg3.wiki/wiki/Temporary_Hit_Points_(Well-Liked_and_Well-Fortified)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.thaumaturgy",
+    "type": "condition",
+    "name": {
+      "fr": "Thaumaturgy",
+      "en": "Thaumaturgy",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Thaumaturgy (condition)",
+        "revision": 437206,
+        "url": "https://bg3.wiki/wiki/Thaumaturgy_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.the-pain-maidens-blessing",
+    "type": "condition",
+    "name": {
+      "fr": "The Pain Maiden’s Blessing",
+      "en": "The Pain Maiden's Blessing",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Pain Maiden's Blessing (condition)",
+        "revision": 437210,
+        "url": "https://bg3.wiki/wiki/The_Pain_Maiden%27s_Blessing_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ],
+      "gameUid": "GOB_PAIN_PRIEST_DAGGER_BLESS"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.thoroughly-stuffed",
+    "type": "condition",
+    "name": {
+      "fr": "Thoroughly Stuffed",
+      "en": "Thoroughly Stuffed",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Thoroughly Stuffed (condition)",
+        "revision": 437220,
+        "url": "https://bg3.wiki/wiki/Thoroughly_Stuffed_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.those-laid-bare",
+    "type": "condition",
+    "name": {
+      "fr": "Those Laid Bare",
+      "en": "Those Laid Bare",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Those Laid Bare (condition)",
+        "revision": 437222,
+        "url": "https://bg3.wiki/wiki/Those_Laid_Bare_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MAG_MONK_UNARMED_EXPLOIT"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.treading-twilight",
+    "type": "condition",
+    "name": {
+      "fr": "Treading Twilight",
+      "en": "Treading Twilight",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Treading Twilight (condition)",
+        "revision": 437276,
+        "url": "https://bg3.wiki/wiki/Treading_Twilight_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.true-strike",
+    "type": "condition",
+    "name": {
+      "fr": "True Strike",
+      "en": "True Strike",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "True Strike (condition)",
+        "revision": 437280,
+        "url": "https://bg3.wiki/wiki/True_Strike_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.turned",
+    "type": "condition",
+    "name": {
+      "fr": "Turned",
+      "en": "Turned",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Turned (condition)",
+        "revision": 437284,
+        "url": "https://bg3.wiki/wiki/Turned_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Condition",
+        "SG_Fleeing"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.tyrant-tongue",
+    "type": "condition",
+    "name": {
+      "fr": "Tyrant Tongue",
+      "en": "Tyrant Tongue",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Tyrant Tongue (condition)",
+        "revision": 437292,
+        "url": "https://bg3.wiki/wiki/Tyrant_Tongue_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.undead-ward-aura",
+    "type": "condition",
+    "name": {
+      "fr": "Undead Ward Aura",
+      "en": "Undead Ward Aura",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Undead Ward Aura (condition)",
+        "revision": 437314,
+        "url": "https://bg3.wiki/wiki/Undead_Ward_Aura_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.vampiric-touch",
+    "type": "condition",
+    "name": {
+      "fr": "Vampiric Touch",
+      "en": "Vampiric Touch",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Vampiric Touch (condition)",
+        "revision": 437346,
+        "url": "https://bg3.wiki/wiki/Vampiric_Touch_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.vicious-mockery",
+    "type": "condition",
+    "name": {
+      "fr": "Vicious Mockery",
+      "en": "Vicious Mockery",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Vicious Mockery (condition)",
+        "revision": 437356,
+        "url": "https://bg3.wiki/wiki/Vicious_Mockery_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.virulent-venom",
+    "type": "condition",
+    "name": {
+      "fr": "Virulent Venom",
+      "en": "Virulent Venom",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Virulent Venom (condition)",
+        "revision": 437360,
+        "url": "https://bg3.wiki/wiki/Virulent_Venom_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.voice-of-the-circle",
+    "type": "condition",
+    "name": {
+      "fr": "Voice of the Circle",
+      "en": "Voice of the Circle",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Voice of the Circle (condition)",
+        "revision": 437368,
+        "url": "https://bg3.wiki/wiki/Voice_of_the_Circle_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.warden-of-vitality-aura",
+    "type": "condition",
+    "name": {
+      "fr": "Warden of Vitality (Aura)",
+      "en": "Warden of Vitality (Aura)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Warden of Vitality (Aura) (condition)",
+        "revision": 437390,
+        "url": "https://bg3.wiki/wiki/Warden_of_Vitality_(Aura)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.warding-bond-caster",
+    "type": "condition",
+    "name": {
+      "fr": "Warding Bond",
+      "en": "Warding Bond",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Warding Bond (Caster) (condition)",
+        "revision": 437394,
+        "url": "https://bg3.wiki/wiki/Warding_Bond_(Caster)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.warding-bond-target",
+    "type": "condition",
+    "name": {
+      "fr": "Warding Bond",
+      "en": "Warding Bond",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Warding Bond (Target) (condition)",
+        "revision": 437398,
+        "url": "https://bg3.wiki/wiki/Warding_Bond_(Target)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.weak-grip",
+    "type": "condition",
+    "name": {
+      "fr": "Weak Grip",
+      "en": "Weak Grip",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Weak Grip (condition)",
+        "revision": 437410,
+        "url": "https://bg3.wiki/wiki/Weak_Grip_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Helpable_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.weapon-dropped",
+    "type": "condition",
+    "name": {
+      "fr": "Weapon Dropped!",
+      "en": "Weapon Dropped!",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Weapon Dropped! (condition)",
+        "revision": 439067,
+        "url": "https://bg3.wiki/wiki/Weapon_Dropped%21_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "DISARM"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.wet",
+    "type": "condition",
+    "name": {
+      "fr": "Wet",
+      "en": "Wet",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Wet (condition)",
+        "revision": 437422,
+        "url": "https://bg3.wiki/wiki/Wet_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Surface"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.witch-bolt",
+    "type": "condition",
+    "name": {
+      "fr": "Witch Bolt",
+      "en": "Witch Bolt",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Witch Bolt (condition)",
+        "revision": 437508,
+        "url": "https://bg3.wiki/wiki/Witch_Bolt_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.wound-closure",
+    "type": "condition",
+    "name": {
+      "fr": "Wound Closure",
+      "en": "Wound Closure",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Wound Closure (condition)",
+        "revision": 437522,
+        "url": "https://bg3.wiki/wiki/Wound_Closure_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.wrath",
+    "type": "condition",
+    "name": {
+      "fr": "Wrath",
+      "en": "Wrath",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Wrath (condition)",
+        "revision": 437524,
+        "url": "https://bg3.wiki/wiki/Wrath_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.yeenoghus-blessing",
+    "type": "condition",
+    "name": {
+      "fr": "Yeenoghu’s Blessing",
+      "en": "Yeenoghu's Blessing",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Yeenoghu's Blessing (condition)",
+        "revision": 437536,
+        "url": "https://bg3.wiki/wiki/Yeenoghu%27s_Blessing_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  }
+]

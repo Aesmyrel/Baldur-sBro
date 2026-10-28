@@ -1,0 +1,7064 @@
+[
+  {
+    "id": "place.abandoned-cistern",
+    "type": "place",
+    "name": {
+      "fr": "Abandoned Cistern",
+      "en": "Abandoned Cistern",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Abandoned Cistern",
+        "revision": 437940,
+        "url": "https://bg3.wiki/wiki/Abandoned_Cistern"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.undercity"
+    },
+    "links": [
+      {
+        "target": "place.undercity",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.abandoned-refuge",
+    "type": "place",
+    "name": {
+      "fr": "Abandoned Refuge",
+      "en": "Abandoned Refuge",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Abandoned Refuge",
+        "revision": 415729,
+        "url": "https://bg3.wiki/wiki/Abandoned_Refuge"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.grymforge"
+    },
+    "links": [
+      {
+        "target": "place.grymforge",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.abandoned-windmill",
+    "type": "place",
+    "name": {
+      "fr": "Abandoned Windmill",
+      "en": "Abandoned Windmill",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Abandoned Windmill",
+        "revision": 439892,
+        "url": "https://bg3.wiki/wiki/Abandoned_Windmill"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.adamantine-forge-location",
+    "type": "place",
+    "name": {
+      "fr": "Adamantine Forge",
+      "en": "Adamantine Forge",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Adamantine Forge (location)",
+        "revision": 438493,
+        "url": "https://bg3.wiki/wiki/Adamantine_Forge_(location)"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.grymforge"
+    },
+    "links": [
+      {
+        "target": "place.grymforge",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.ancient-lair",
+    "type": "place",
+    "name": {
+      "fr": "Ancient Lair",
+      "en": "Ancient Lair",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ancient Lair",
+        "revision": 439334,
+        "url": "https://bg3.wiki/wiki/Ancient_Lair"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.undercity"
+    },
+    "links": [
+      {
+        "target": "place.undercity",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.ancient-mausoleum",
+    "type": "place",
+    "name": {
+      "fr": "Ancient Mausoleum",
+      "en": "Ancient Mausoleum",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ancient Mausoleum",
+        "revision": 415952,
+        "url": "https://bg3.wiki/wiki/Ancient_Mausoleum"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.ancient-temple",
+    "type": "place",
+    "name": {
+      "fr": "Ancient Temple",
+      "en": "Ancient Temple",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ancient Temple",
+        "revision": 415957,
+        "url": "https://bg3.wiki/wiki/Ancient_Temple"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.grymforge"
+    },
+    "links": [
+      {
+        "target": "place.grymforge",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.apothecarys-cellar",
+    "type": "place",
+    "name": {
+      "fr": "Apothecary’s Cellar",
+      "en": "Apothecary's Cellar",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Apothecary's Cellar",
+        "revision": 408733,
+        "url": "https://bg3.wiki/wiki/Apothecary%27s_Cellar"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.blighted-village"
+    },
+    "links": [
+      {
+        "target": "place.blighted-village",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.arcane-tower",
+    "type": "place",
+    "name": {
+      "fr": "Arcane Tower",
+      "en": "Arcane Tower",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Arcane Tower",
+        "revision": 439951,
+        "url": "https://bg3.wiki/wiki/Arcane_Tower"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.underdark"
+    },
+    "links": [
+      {
+        "target": "place.underdark",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.arfurs-mansion",
+    "type": "place",
+    "name": {
+      "fr": "Arfur’s Mansion",
+      "en": "Arfur's Mansion",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Arfur's Mansion",
+        "revision": 438677,
+        "url": "https://bg3.wiki/wiki/Arfur%27s_Mansion"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.armbrusts-home",
+    "type": "place",
+    "name": {
+      "fr": "Armbrust’s Home",
+      "en": "Armbrust's Home",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Armbrust's Home",
+        "revision": 440078,
+        "url": "https://bg3.wiki/wiki/Armbrust%27s_Home"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.astral-plane",
+    "type": "place",
+    "name": {
+      "fr": "Astral Plane",
+      "en": "Astral Plane",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Astral Plane",
+        "revision": 414482,
+        "url": "https://bg3.wiki/wiki/Astral_Plane"
+      }
+    ],
+    "facts": {
+      "@type": "place"
+    },
+    "unknown": [
+      "act"
+    ]
+  },
+  {
+    "id": "place.baldurs-mouth",
+    "type": "place",
+    "name": {
+      "fr": "Baldur’s Mouth",
+      "en": "Baldur's Mouth",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Baldur's Mouth",
+        "revision": 438728,
+        "url": "https://bg3.wiki/wiki/Baldur%27s_Mouth"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.barrens-coop",
+    "type": "place",
+    "name": {
+      "fr": "Barren’s Coop",
+      "en": "Barren's Coop",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Barren's Coop",
+        "revision": 416324,
+        "url": "https://bg3.wiki/wiki/Barren%27s_Coop"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.basilisk-gate-barracks",
+    "type": "place",
+    "name": {
+      "fr": "Basilisk Gate Barracks",
+      "en": "Basilisk Gate Barracks",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Basilisk Gate Barracks",
+        "revision": 431639,
+        "url": "https://bg3.wiki/wiki/Basilisk_Gate_Barracks"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.beehive-general-goods",
+    "type": "place",
+    "name": {
+      "fr": "Beehive General Goods",
+      "en": "Beehive General Goods",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Beehive General Goods",
+        "revision": 416375,
+        "url": "https://bg3.wiki/wiki/Beehive_General_Goods"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.bhaal-temple",
+    "type": "place",
+    "name": {
+      "fr": "Bhaal Temple",
+      "en": "Bhaal Temple",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bhaal Temple",
+        "revision": 431624,
+        "url": "https://bg3.wiki/wiki/Bhaal_Temple"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.undercity"
+    },
+    "links": [
+      {
+        "target": "place.undercity",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.blighted-village",
+    "type": "place",
+    "name": {
+      "fr": "Blighted Village",
+      "en": "Blighted Village",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Blighted Village",
+        "revision": 433668,
+        "url": "https://bg3.wiki/wiki/Blighted_Village"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.bloodied-shrine",
+    "type": "place",
+    "name": {
+      "fr": "Bloodied Shrine",
+      "en": "Bloodied Shrine",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bloodied Shrine",
+        "revision": 430720,
+        "url": "https://bg3.wiki/wiki/Bloodied_Shrine"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.shattered-sanctum"
+    },
+    "links": [
+      {
+        "target": "place.shattered-sanctum",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.bloomridge-park",
+    "type": "place",
+    "name": {
+      "fr": "Bloomridge Park",
+      "en": "Bloomridge Park",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bloomridge Park",
+        "revision": 434048,
+        "url": "https://bg3.wiki/wiki/Bloomridge_Park"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.bonecloaks-apothecary",
+    "type": "place",
+    "name": {
+      "fr": "Bonecloak’s Apothecary",
+      "en": "Bonecloak's Apothecary",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bonecloak's Apothecary",
+        "revision": 434047,
+        "url": "https://bg3.wiki/wiki/Bonecloak%27s_Apothecary"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.bruc-and-pishes-emporium",
+    "type": "place",
+    "name": {
+      "fr": "Bruc and Pishe’s Emporium",
+      "en": "Bruc and Pishe's Emporium",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bruc and Pishe's Emporium",
+        "revision": 416807,
+        "url": "https://bg3.wiki/wiki/Bruc_and_Pishe%27s_Emporium"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.campsite",
+    "type": "place",
+    "name": {
+      "fr": "Campsite",
+      "en": "Campsite",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Campsite",
+        "revision": 433524,
+        "url": "https://bg3.wiki/wiki/Campsite"
+      }
+    ],
+    "facts": {
+      "@type": "place"
+    },
+    "unknown": [
+      "act"
+    ]
+  },
+  {
+    "id": "place.candulhallows-tombstones",
+    "type": "place",
+    "name": {
+      "fr": "Candulhallow’s Tombstones",
+      "en": "Candulhallow's Tombstones",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Candulhallow's Tombstones",
+        "revision": 431646,
+        "url": "https://bg3.wiki/wiki/Candulhallow%27s_Tombstones"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.carms-garms",
+    "type": "place",
+    "name": {
+      "fr": "Carm’s Garms",
+      "en": "Carm's Garms",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Carm's Garms",
+        "revision": 409030,
+        "url": "https://bg3.wiki/wiki/Carm%27s_Garms"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-crossing"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-crossing",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.cazadors-dungeon",
+    "type": "place",
+    "name": {
+      "fr": "Cazador’s Dungeon",
+      "en": "Cazador's Dungeon",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Cazador's Dungeon",
+        "revision": 439860,
+        "url": "https://bg3.wiki/wiki/Cazador%27s_Dungeon"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.szarr-palace"
+    },
+    "links": [
+      {
+        "target": "place.szarr-palace",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.central-watch-tower",
+    "type": "place",
+    "name": {
+      "fr": "Central Watch Tower",
+      "en": "Central Watch Tower",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Central Watch Tower",
+        "revision": 416950,
+        "url": "https://bg3.wiki/wiki/Central_Watch_Tower"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.chromatic-scale",
+    "type": "place",
+    "name": {
+      "fr": "Chromatic Scale",
+      "en": "Chromatic Scale",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Chromatic Scale",
+        "revision": 417050,
+        "url": "https://bg3.wiki/wiki/Chromatic_Scale"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.circus-of-the-last-days",
+    "type": "place",
+    "name": {
+      "fr": "Circus of the Last Days",
+      "en": "Circus of the Last Days",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Circus of the Last Days",
+        "revision": 438836,
+        "url": "https://bg3.wiki/wiki/Circus_of_the_Last_Days"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.cloister-of-sombre-embrace",
+    "type": "place",
+    "name": {
+      "fr": "Cloister of Sombre Embrace",
+      "en": "Cloister of Sombre Embrace",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Cloister of Sombre Embrace",
+        "revision": 434050,
+        "url": "https://bg3.wiki/wiki/Cloister_of_Sombre_Embrace"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.house-of-grief"
+    },
+    "links": [
+      {
+        "target": "place.house-of-grief",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.creche-yllek",
+    "type": "place",
+    "name": {
+      "fr": "Crèche Y’llek",
+      "en": "Crèche Y'llek",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Crèche Y'llek",
+        "revision": 438850,
+        "url": "https://bg3.wiki/wiki/Cr%C3%A8che_Y%27llek"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.rosymorn-monastery-trail"
+    },
+    "links": [
+      {
+        "target": "place.rosymorn-monastery-trail",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.crimson-draughts",
+    "type": "place",
+    "name": {
+      "fr": "Crimson Draughts",
+      "en": "Crimson Draughts",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Crimson Draughts",
+        "revision": 426043,
+        "url": "https://bg3.wiki/wiki/Crimson_Draughts"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.danthelons-dancing-axe",
+    "type": "place",
+    "name": {
+      "fr": "Danthelon’s Dancing Axe",
+      "en": "Danthelon's Dancing Axe",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Danthelon's Dancing Axe",
+        "revision": 397977,
+        "url": "https://bg3.wiki/wiki/Danthelon%27s_Dancing_Axe"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-crossing"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-crossing",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.decrepit-village",
+    "type": "place",
+    "name": {
+      "fr": "Decrepit Village",
+      "en": "Decrepit Village",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Decrepit Village",
+        "revision": 393428,
+        "url": "https://bg3.wiki/wiki/Decrepit_Village"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.underdark"
+    },
+    "links": [
+      {
+        "target": "place.underdark",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.defiled-temple",
+    "type": "place",
+    "name": {
+      "fr": "Defiled Temple",
+      "en": "Defiled Temple",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Defiled Temple",
+        "revision": 408728,
+        "url": "https://bg3.wiki/wiki/Defiled_Temple"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.shattered-sanctum"
+    },
+    "links": [
+      {
+        "target": "place.shattered-sanctum",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.devils-den",
+    "type": "place",
+    "name": {
+      "fr": "Devil’s Den",
+      "en": "Devil's Den",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Devil's Den",
+        "revision": 417669,
+        "url": "https://bg3.wiki/wiki/Devil%27s_Den"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-crossing"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-crossing",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.devils-fee",
+    "type": "place",
+    "name": {
+      "fr": "Devil’s Fee",
+      "en": "Devil's Fee",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Devil's Fee",
+        "revision": 439103,
+        "url": "https://bg3.wiki/wiki/Devil%27s_Fee"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.dread-hollow",
+    "type": "place",
+    "name": {
+      "fr": "Dread Hollow",
+      "en": "Dread Hollow",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Dread Hollow",
+        "revision": 417935,
+        "url": "https://bg3.wiki/wiki/Dread_Hollow"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.underdark"
+    },
+    "links": [
+      {
+        "target": "place.underdark",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.durinbold-mausoleum",
+    "type": "place",
+    "name": {
+      "fr": "Durinbold Mausoleum",
+      "en": "Durinbold Mausoleum",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Durinbold Mausoleum",
+        "revision": 418027,
+        "url": "https://bg3.wiki/wiki/Durinbold_Mausoleum"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.ebonlake-grotto",
+    "type": "place",
+    "name": {
+      "fr": "Ebonlake Grotto",
+      "en": "Ebonlake Grotto",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ebonlake Grotto",
+        "revision": 438644,
+        "url": "https://bg3.wiki/wiki/Ebonlake_Grotto"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.underdark"
+    },
+    "links": [
+      {
+        "target": "place.underdark",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.elerrathins-home",
+    "type": "place",
+    "name": {
+      "fr": "Elerrathin’s Home",
+      "en": "Elerrathin's Home",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Elerrathin's Home",
+        "revision": 434045,
+        "url": "https://bg3.wiki/wiki/Elerrathin%27s_Home"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.elfsong-tavern",
+    "type": "place",
+    "name": {
+      "fr": "Elfsong Tavern",
+      "en": "Elfsong Tavern",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Elfsong Tavern",
+        "revision": 439010,
+        "url": "https://bg3.wiki/wiki/Elfsong_Tavern"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.elminsters-library",
+    "type": "place",
+    "name": {
+      "fr": "Elminster’s Library",
+      "en": "Elminster's Library",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Elminster's Library",
+        "revision": 377781,
+        "url": "https://bg3.wiki/wiki/Elminster%27s_Library"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-crossing"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-crossing",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.emerald-grove",
+    "type": "place",
+    "name": {
+      "fr": "Emerald Grove",
+      "en": "Emerald Grove",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Emerald Grove",
+        "revision": 439376,
+        "url": "https://bg3.wiki/wiki/Emerald_Grove"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.facemakers-boutique",
+    "type": "place",
+    "name": {
+      "fr": "Facemaker’s Boutique",
+      "en": "Facemaker's Boutique",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Facemaker's Boutique",
+        "revision": 418355,
+        "url": "https://bg3.wiki/wiki/Facemaker%27s_Boutique"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.felogyrs-fireworks",
+    "type": "place",
+    "name": {
+      "fr": "Felogyr’s Fireworks",
+      "en": "Felogyr's Fireworks",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Felogyr's Fireworks",
+        "revision": 434085,
+        "url": "https://bg3.wiki/wiki/Felogyr%27s_Fireworks"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.flymm-cargo",
+    "type": "place",
+    "name": {
+      "fr": "Flymm Cargo",
+      "en": "Flymm Cargo",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Flymm Cargo",
+        "revision": 418646,
+        "url": "https://bg3.wiki/wiki/Flymm_Cargo"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.flymms-cobblers",
+    "type": "place",
+    "name": {
+      "fr": "Flymm’s Cobblers",
+      "en": "Flymm's Cobblers",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Flymm's Cobblers",
+        "revision": 418645,
+        "url": "https://bg3.wiki/wiki/Flymm%27s_Cobblers"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.forest",
+    "type": "place",
+    "name": {
+      "fr": "Forest",
+      "en": "Forest",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Forest",
+        "revision": 418673,
+        "url": "https://bg3.wiki/wiki/Forest"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.forge-of-the-nine",
+    "type": "place",
+    "name": {
+      "fr": "Forge of the Nine",
+      "en": "Forge of the Nine",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Forge of the Nine",
+        "revision": 418677,
+        "url": "https://bg3.wiki/wiki/Forge_of_the_Nine"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.fraygos-flophouse",
+    "type": "place",
+    "name": {
+      "fr": "Fraygo’s Flophouse",
+      "en": "Fraygo's Flophouse",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Fraygo's Flophouse",
+        "revision": 409031,
+        "url": "https://bg3.wiki/wiki/Fraygo%27s_Flophouse"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-crossing"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-crossing",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.gauntlet-of-shar",
+    "type": "place",
+    "name": {
+      "fr": "Gauntlet of Shar",
+      "en": "Gauntlet of Shar",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Gauntlet of Shar",
+        "revision": 438626,
+        "url": "https://bg3.wiki/wiki/Gauntlet_of_Shar"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.shadow-cursed-lands"
+    },
+    "links": [
+      {
+        "target": "place.shadow-cursed-lands",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.goblin-camp",
+    "type": "place",
+    "name": {
+      "fr": "Goblin Camp",
+      "en": "Goblin Camp",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Goblin Camp",
+        "revision": 433423,
+        "url": "https://bg3.wiki/wiki/Goblin_Camp"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.golbraiths-cellar",
+    "type": "place",
+    "name": {
+      "fr": "Golbraith’s Cellar",
+      "en": "Golbraith's Cellar",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Golbraith's Cellar",
+        "revision": 431342,
+        "url": "https://bg3.wiki/wiki/Golbraith%27s_Cellar"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.gorion-mausoleum",
+    "type": "place",
+    "name": {
+      "fr": "Gorion Mausoleum",
+      "en": "Gorion Mausoleum",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Gorion Mausoleum",
+        "revision": 419060,
+        "url": "https://bg3.wiki/wiki/Gorion_Mausoleum"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.grand-mausoleum",
+    "type": "place",
+    "name": {
+      "fr": "Grand Mausoleum",
+      "en": "Grand Mausoleum",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Grand Mausoleum",
+        "revision": 406574,
+        "url": "https://bg3.wiki/wiki/Grand_Mausoleum"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.reithwin-town"
+    },
+    "links": [
+      {
+        "target": "place.reithwin-town",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.graveyard-lower-city",
+    "type": "place",
+    "name": {
+      "fr": "Graveyard",
+      "en": "Graveyard",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Graveyard (Lower City)",
+        "revision": 434229,
+        "url": "https://bg3.wiki/wiki/Graveyard_(Lower_City)"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.grey-harbour-docks",
+    "type": "place",
+    "name": {
+      "fr": "Grey Harbour Docks",
+      "en": "Grey Harbour Docks",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Grey Harbour Docks",
+        "revision": 438695,
+        "url": "https://bg3.wiki/wiki/Grey_Harbour_Docks"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.grymforge",
+    "type": "place",
+    "name": {
+      "fr": "Grymforge",
+      "en": "Grymforge",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Grymforge",
+        "revision": 438792,
+        "url": "https://bg3.wiki/wiki/Grymforge"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1"
+    }
+  },
+  {
+    "id": "place.guildhall",
+    "type": "place",
+    "name": {
+      "fr": "Guildhall",
+      "en": "Guildhall",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Guildhall",
+        "revision": 434242,
+        "url": "https://bg3.wiki/wiki/Guildhall"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.undercity"
+    },
+    "links": [
+      {
+        "target": "place.undercity",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.gur-camp",
+    "type": "place",
+    "name": {
+      "fr": "Gur Camp",
+      "en": "Gur Camp",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Gur Camp",
+        "revision": 411576,
+        "url": "https://bg3.wiki/wiki/Gur_Camp"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.hhune-mausoleum",
+    "type": "place",
+    "name": {
+      "fr": "Hhune Mausoleum",
+      "en": "Hhune Mausoleum",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hhune Mausoleum",
+        "revision": 429074,
+        "url": "https://bg3.wiki/wiki/Hhune_Mausoleum"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.high-hall",
+    "type": "place",
+    "name": {
+      "fr": "High Hall",
+      "en": "High Hall",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "High Hall",
+        "revision": 431021,
+        "url": "https://bg3.wiki/wiki/High_Hall"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.upper-city"
+    },
+    "links": [
+      {
+        "target": "place.upper-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.highberrys-home",
+    "type": "place",
+    "name": {
+      "fr": "Highberry’s Home",
+      "en": "Highberry's Home",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Highberry's Home",
+        "revision": 419527,
+        "url": "https://bg3.wiki/wiki/Highberry%27s_Home"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.house-in-deep-shadows",
+    "type": "place",
+    "name": {
+      "fr": "House in Deep Shadows",
+      "en": "House in Deep Shadows",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "House in Deep Shadows",
+        "revision": 419604,
+        "url": "https://bg3.wiki/wiki/House_in_Deep_Shadows"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.ruined-battlefield"
+    },
+    "links": [
+      {
+        "target": "place.ruined-battlefield",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.house-of-grief",
+    "type": "place",
+    "name": {
+      "fr": "House of Grief",
+      "en": "House of Grief",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "House of Grief",
+        "revision": 434049,
+        "url": "https://bg3.wiki/wiki/House_of_Grief"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.house-of-healing",
+    "type": "place",
+    "name": {
+      "fr": "House of Healing",
+      "en": "House of Healing",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "House of Healing",
+        "revision": 419607,
+        "url": "https://bg3.wiki/wiki/House_of_Healing"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.reithwin-town"
+    },
+    "links": [
+      {
+        "target": "place.reithwin-town",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.house-of-hope",
+    "type": "place",
+    "name": {
+      "fr": "House of Hope",
+      "en": "House of Hope",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "House of Hope",
+        "revision": 439682,
+        "url": "https://bg3.wiki/wiki/House_of_Hope"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3"
+    }
+  },
+  {
+    "id": "place.inner-sanctum",
+    "type": "place",
+    "name": {
+      "fr": "Inner Sanctum",
+      "en": "Inner Sanctum",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Inner Sanctum",
+        "revision": 419777,
+        "url": "https://bg3.wiki/wiki/Inner_Sanctum"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.emerald-grove"
+    },
+    "links": [
+      {
+        "target": "place.emerald-grove",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.iron-throne",
+    "type": "place",
+    "name": {
+      "fr": "Iron Throne",
+      "en": "Iron Throne",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Iron Throne",
+        "revision": 438646,
+        "url": "https://bg3.wiki/wiki/Iron_Throne"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.jungle",
+    "type": "place",
+    "name": {
+      "fr": "Jungle",
+      "en": "Jungle",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Jungle",
+        "revision": 419990,
+        "url": "https://bg3.wiki/wiki/Jungle"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3"
+    }
+  },
+  {
+    "id": "place.knights-of-the-shield-hideout",
+    "type": "place",
+    "name": {
+      "fr": "Knights of the Shield Hideout",
+      "en": "Knights of the Shield Hideout",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Knights of the Shield Hideout",
+        "revision": 425234,
+        "url": "https://bg3.wiki/wiki/Knights_of_the_Shield_Hideout"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.lady-jannaths-estate",
+    "type": "place",
+    "name": {
+      "fr": "Lady Jannath’s Estate",
+      "en": "Lady Jannath's Estate",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lady Jannath's Estate",
+        "revision": 434044,
+        "url": "https://bg3.wiki/wiki/Lady_Jannath%27s_Estate"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.last-light-inn",
+    "type": "place",
+    "name": {
+      "fr": "Last Light Inn",
+      "en": "Last Light Inn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Last Light Inn",
+        "revision": 434007,
+        "url": "https://bg3.wiki/wiki/Last_Light_Inn"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.shadow-cursed-lands"
+    },
+    "links": [
+      {
+        "target": "place.shadow-cursed-lands",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.lavernicas-home",
+    "type": "place",
+    "name": {
+      "fr": "Lavernica’s Home",
+      "en": "Lavernica's Home",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lavernica's Home",
+        "revision": 428838,
+        "url": "https://bg3.wiki/wiki/Lavernica%27s_Home"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.loras-house",
+    "type": "place",
+    "name": {
+      "fr": "Lora’s House",
+      "en": "Lora's House",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lora's House",
+        "revision": 425326,
+        "url": "https://bg3.wiki/wiki/Lora%27s_House"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.lower-city",
+    "type": "place",
+    "name": {
+      "fr": "Lower City",
+      "en": "Lower City",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lower City",
+        "revision": 420639,
+        "url": "https://bg3.wiki/wiki/Lower_City"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3"
+    }
+  },
+  {
+    "id": "place.lower-city-sewers",
+    "type": "place",
+    "name": {
+      "fr": "Lower City Sewers",
+      "en": "Lower City Sewers",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lower City Sewers",
+        "revision": 420641,
+        "url": "https://bg3.wiki/wiki/Lower_City_Sewers"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.undercity"
+    },
+    "links": [
+      {
+        "target": "place.undercity",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.lustrous-lass",
+    "type": "place",
+    "name": {
+      "fr": "Lustrous Lass",
+      "en": "Lustrous Lass",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lustrous Lass",
+        "revision": 409271,
+        "url": "https://bg3.wiki/wiki/Lustrous_Lass"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.masons-guild",
+    "type": "place",
+    "name": {
+      "fr": "Mason’s Guild",
+      "en": "Mason's Guild",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Mason's Guild",
+        "revision": 438823,
+        "url": "https://bg3.wiki/wiki/Mason%27s_Guild"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.reithwin-town"
+    },
+    "links": [
+      {
+        "target": "place.reithwin-town",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.mind-flayer-colony",
+    "type": "place",
+    "name": {
+      "fr": "Mind Flayer Colony",
+      "en": "Mind Flayer Colony",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Mind Flayer Colony",
+        "revision": 420981,
+        "url": "https://bg3.wiki/wiki/Mind_Flayer_Colony"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.shadow-cursed-lands"
+    },
+    "links": [
+      {
+        "target": "place.shadow-cursed-lands",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.moonrise-towers",
+    "type": "place",
+    "name": {
+      "fr": "Moonrise Towers",
+      "en": "Moonrise Towers",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Moonrise Towers",
+        "revision": 440052,
+        "url": "https://bg3.wiki/wiki/Moonrise_Towers"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.shadow-cursed-lands"
+    },
+    "links": [
+      {
+        "target": "place.shadow-cursed-lands",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.moonrise-towers-prison",
+    "type": "place",
+    "name": {
+      "fr": "Moonrise Towers Prison",
+      "en": "Moonrise Towers Prison",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Moonrise Towers Prison",
+        "revision": 421081,
+        "url": "https://bg3.wiki/wiki/Moonrise_Towers_Prison"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.moonrise-towers"
+    },
+    "links": [
+      {
+        "target": "place.moonrise-towers",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.moonrise-towers-rooftop",
+    "type": "place",
+    "name": {
+      "fr": "Moonrise Towers Rooftop",
+      "en": "Moonrise Towers Rooftop",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Moonrise Towers Rooftop",
+        "revision": 421083,
+        "url": "https://bg3.wiki/wiki/Moonrise_Towers_Rooftop"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.moonrise-towers"
+    },
+    "links": [
+      {
+        "target": "place.moonrise-towers",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.morphic-pool",
+    "type": "place",
+    "name": {
+      "fr": "Morphic Pool",
+      "en": "Morphic Pool",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Morphic Pool",
+        "revision": 438800,
+        "url": "https://bg3.wiki/wiki/Morphic_Pool"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.undercity"
+    },
+    "links": [
+      {
+        "target": "place.undercity",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.mountain-pass",
+    "type": "place",
+    "name": {
+      "fr": "Mountain Pass",
+      "en": "Mountain Pass",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Mountain Pass",
+        "revision": 421123,
+        "url": "https://bg3.wiki/wiki/Mountain_Pass"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.murder-tribunal",
+    "type": "place",
+    "name": {
+      "fr": "Murder Tribunal",
+      "en": "Murder Tribunal",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Murder Tribunal",
+        "revision": 428536,
+        "url": "https://bg3.wiki/wiki/Murder_Tribunal"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.undercity"
+    },
+    "links": [
+      {
+        "target": "place.undercity",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.nautiloid",
+    "type": "place",
+    "name": {
+      "fr": "Nautiloid",
+      "en": "Nautiloid",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Nautiloid",
+        "revision": 439907,
+        "url": "https://bg3.wiki/wiki/Nautiloid"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "prologue"
+    }
+  },
+  {
+    "id": "place.necrotic-laboratory",
+    "type": "place",
+    "name": {
+      "fr": "Necrotic Laboratory",
+      "en": "Necrotic Laboratory",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Necrotic Laboratory",
+        "revision": 438039,
+        "url": "https://bg3.wiki/wiki/Necrotic_Laboratory"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.shadow-cursed-lands"
+    },
+    "links": [
+      {
+        "target": "place.shadow-cursed-lands",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.nortales-hostel",
+    "type": "place",
+    "name": {
+      "fr": "Nortale’s Hostel",
+      "en": "Nortale's Hostel",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Nortale's Hostel",
+        "revision": 421359,
+        "url": "https://bg3.wiki/wiki/Nortale%27s_Hostel"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.nymphs-grotto",
+    "type": "place",
+    "name": {
+      "fr": "Nymph’s Grotto",
+      "en": "Nymph's Grotto",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Nymph's Grotto",
+        "revision": 434269,
+        "url": "https://bg3.wiki/wiki/Nymph%27s_Grotto"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-crossing"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-crossing",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.old-garlows-place",
+    "type": "place",
+    "name": {
+      "fr": "Old Garlow’s Place",
+      "en": "Old Garlow's Place",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Old Garlow's Place",
+        "revision": 439091,
+        "url": "https://bg3.wiki/wiki/Old_Garlow%27s_Place"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.old-jols",
+    "type": "place",
+    "name": {
+      "fr": "Old Jol’s",
+      "en": "Old Jol's",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Old Jol's",
+        "revision": 421479,
+        "url": "https://bg3.wiki/wiki/Old_Jol%27s"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.open-hand-temple",
+    "type": "place",
+    "name": {
+      "fr": "Open Hand Temple",
+      "en": "Open Hand Temple",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Open Hand Temple",
+        "revision": 440044,
+        "url": "https://bg3.wiki/wiki/Open_Hand_Temple"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.open-hand-temple-underground-area",
+    "type": "place",
+    "name": {
+      "fr": "Open Hand Temple Underground Area",
+      "en": "Open Hand Temple Underground Area",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Open Hand Temple Underground Area",
+        "revision": 411611,
+        "url": "https://bg3.wiki/wiki/Open_Hand_Temple_Underground_Area"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.oubliette",
+    "type": "place",
+    "name": {
+      "fr": "Oubliette",
+      "en": "Oubliette",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Oubliette",
+        "revision": 421606,
+        "url": "https://bg3.wiki/wiki/Oubliette"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.shadow-cursed-lands"
+    },
+    "links": [
+      {
+        "target": "place.shadow-cursed-lands",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.overgrown-ruins",
+    "type": "place",
+    "name": {
+      "fr": "Overgrown Ruins",
+      "en": "Overgrown Ruins",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Overgrown Ruins",
+        "revision": 434111,
+        "url": "https://bg3.wiki/wiki/Overgrown_Ruins"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.overgrown-tunnel",
+    "type": "place",
+    "name": {
+      "fr": "Overgrown Tunnel",
+      "en": "Overgrown Tunnel",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Overgrown Tunnel",
+        "revision": 433650,
+        "url": "https://bg3.wiki/wiki/Overgrown_Tunnel"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.sunlit-wetlands"
+    },
+    "links": [
+      {
+        "target": "place.sunlit-wetlands",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.owlbear-nest",
+    "type": "place",
+    "name": {
+      "fr": "Owlbear Nest",
+      "en": "Owlbear Nest",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Owlbear Nest",
+        "revision": 431001,
+        "url": "https://bg3.wiki/wiki/Owlbear_Nest"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.forest"
+    },
+    "links": [
+      {
+        "target": "place.forest",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.peartree-house",
+    "type": "place",
+    "name": {
+      "fr": "Peartree House",
+      "en": "Peartree House",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Peartree House",
+        "revision": 421733,
+        "url": "https://bg3.wiki/wiki/Peartree_House"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.philgraves-mansion",
+    "type": "place",
+    "name": {
+      "fr": "Philgrave’s Mansion",
+      "en": "Philgrave's Mansion",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Philgrave's Mansion",
+        "revision": 421787,
+        "url": "https://bg3.wiki/wiki/Philgrave%27s_Mansion"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.rainforests-home",
+    "type": "place",
+    "name": {
+      "fr": "Rainforest’s Home",
+      "en": "Rainforest's Home",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Rainforest's Home",
+        "revision": 427106,
+        "url": "https://bg3.wiki/wiki/Rainforest%27s_Home"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.ramaziths-tower",
+    "type": "place",
+    "name": {
+      "fr": "Ramazith’s Tower",
+      "en": "Ramazith's Tower",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ramazith's Tower",
+        "revision": 440048,
+        "url": "https://bg3.wiki/wiki/Ramazith%27s_Tower"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.upper-city"
+    },
+    "links": [
+      {
+        "target": "place.upper-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.ravaged-beach",
+    "type": "place",
+    "name": {
+      "fr": "Ravaged Beach",
+      "en": "Ravaged Beach",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ravaged Beach",
+        "revision": 439909,
+        "url": "https://bg3.wiki/wiki/Ravaged_Beach"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.reithwin-tollhouse",
+    "type": "place",
+    "name": {
+      "fr": "Reithwin Tollhouse",
+      "en": "Reithwin Tollhouse",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Reithwin Tollhouse",
+        "revision": 438645,
+        "url": "https://bg3.wiki/wiki/Reithwin_Tollhouse"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.reithwin-town"
+    },
+    "links": [
+      {
+        "target": "place.reithwin-town",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.reithwin-town",
+    "type": "place",
+    "name": {
+      "fr": "Reithwin Town",
+      "en": "Reithwin Town",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Reithwin Town",
+        "revision": 422271,
+        "url": "https://bg3.wiki/wiki/Reithwin_Town"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.shadow-cursed-lands"
+    },
+    "links": [
+      {
+        "target": "place.shadow-cursed-lands",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.requisitioned-barn",
+    "type": "place",
+    "name": {
+      "fr": "Requisitioned Barn",
+      "en": "Requisitioned Barn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Requisitioned Barn",
+        "revision": 434237,
+        "url": "https://bg3.wiki/wiki/Requisitioned_Barn"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "act"
+    ]
+  },
+  {
+    "id": "place.rivington",
+    "type": "place",
+    "name": {
+      "fr": "Rivington",
+      "en": "Rivington",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Rivington",
+        "revision": 439896,
+        "url": "https://bg3.wiki/wiki/Rivington"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3"
+    }
+  },
+  {
+    "id": "place.rivington-general",
+    "type": "place",
+    "name": {
+      "fr": "Rivington General",
+      "en": "Rivington General",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Rivington General",
+        "revision": 439004,
+        "url": "https://bg3.wiki/wiki/Rivington_General"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.rosymorn-monastery",
+    "type": "place",
+    "name": {
+      "fr": "Rosymorn Monastery",
+      "en": "Rosymorn Monastery",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Rosymorn Monastery",
+        "revision": 408982,
+        "url": "https://bg3.wiki/wiki/Rosymorn_Monastery"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.rosymorn-monastery-trail"
+    },
+    "links": [
+      {
+        "target": "place.rosymorn-monastery-trail",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.rosymorn-monastery-trail",
+    "type": "place",
+    "name": {
+      "fr": "Rosymorn Monastery Trail",
+      "en": "Rosymorn Monastery Trail",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Rosymorn Monastery Trail",
+        "revision": 438271,
+        "url": "https://bg3.wiki/wiki/Rosymorn_Monastery_Trail"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1"
+    }
+  },
+  {
+    "id": "place.ruined-battlefield",
+    "type": "place",
+    "name": {
+      "fr": "Ruined Battlefield",
+      "en": "Ruined Battlefield",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ruined Battlefield",
+        "revision": 438840,
+        "url": "https://bg3.wiki/wiki/Ruined_Battlefield"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.shadow-cursed-lands"
+    },
+    "links": [
+      {
+        "target": "place.shadow-cursed-lands",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.sacred-pool",
+    "type": "place",
+    "name": {
+      "fr": "Sacred Pool",
+      "en": "Sacred Pool",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sacred Pool",
+        "revision": 438821,
+        "url": "https://bg3.wiki/wiki/Sacred_Pool"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.emerald-grove"
+    },
+    "links": [
+      {
+        "target": "place.emerald-grove",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.secluded-cove",
+    "type": "place",
+    "name": {
+      "fr": "Secluded Cove",
+      "en": "Secluded Cove",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Secluded Cove",
+        "revision": 422947,
+        "url": "https://bg3.wiki/wiki/Secluded_Cove"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.secret-chamber",
+    "type": "place",
+    "name": {
+      "fr": "Secret Chamber",
+      "en": "Secret Chamber",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Secret Chamber",
+        "revision": 408987,
+        "url": "https://bg3.wiki/wiki/Secret_Chamber"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.creche-yllek"
+    },
+    "links": [
+      {
+        "target": "place.creche-yllek",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.selunite-outpost",
+    "type": "place",
+    "name": {
+      "fr": "Selûnite Outpost",
+      "en": "Selûnite Outpost",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Selûnite Outpost",
+        "revision": 431112,
+        "url": "https://bg3.wiki/wiki/Sel%C3%BBnite_Outpost"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.underdark"
+    },
+    "links": [
+      {
+        "target": "place.underdark",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.shadow-cursed-lands",
+    "type": "place",
+    "name": {
+      "fr": "Shadow-Cursed Lands",
+      "en": "Shadow-Cursed Lands",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shadow-Cursed Lands",
+        "revision": 423029,
+        "url": "https://bg3.wiki/wiki/Shadow-Cursed_Lands"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2"
+    }
+  },
+  {
+    "id": "place.shadowfell",
+    "type": "place",
+    "name": {
+      "fr": "Shadowfell",
+      "en": "Shadowfell",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shadowfell",
+        "revision": 440047,
+        "url": "https://bg3.wiki/wiki/Shadowfell"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2"
+    }
+  },
+  {
+    "id": "place.sharess-caress",
+    "type": "place",
+    "name": {
+      "fr": "Sharess’ Caress",
+      "en": "Sharess' Caress",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sharess' Caress",
+        "revision": 409028,
+        "url": "https://bg3.wiki/wiki/Sharess%27_Caress"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-crossing"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-crossing",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.sharran-sanctuary",
+    "type": "place",
+    "name": {
+      "fr": "Sharran Sanctuary",
+      "en": "Sharran Sanctuary",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sharran Sanctuary",
+        "revision": 408323,
+        "url": "https://bg3.wiki/wiki/Sharran_Sanctuary"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.reithwin-town"
+    },
+    "links": [
+      {
+        "target": "place.reithwin-town",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.shattered-sanctum",
+    "type": "place",
+    "name": {
+      "fr": "Shattered Sanctum",
+      "en": "Shattered Sanctum",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Shattered Sanctum",
+        "revision": 431013,
+        "url": "https://bg3.wiki/wiki/Shattered_Sanctum"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.sorcerous-sundries",
+    "type": "place",
+    "name": {
+      "fr": "Sorcerous Sundries",
+      "en": "Sorcerous Sundries",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sorcerous Sundries",
+        "revision": 434206,
+        "url": "https://bg3.wiki/wiki/Sorcerous_Sundries"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.sorcerous-vault",
+    "type": "place",
+    "name": {
+      "fr": "Sorcerous Vault",
+      "en": "Sorcerous Vault",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sorcerous Vault",
+        "revision": 425330,
+        "url": "https://bg3.wiki/wiki/Sorcerous_Vault"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.sorcerous-sundries"
+    },
+    "links": [
+      {
+        "target": "place.sorcerous-sundries",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.south-span-checkpoint",
+    "type": "place",
+    "name": {
+      "fr": "South Span Checkpoint",
+      "en": "South Span Checkpoint",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "South Span Checkpoint",
+        "revision": 434252,
+        "url": "https://bg3.wiki/wiki/South_Span_Checkpoint"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.steel-watch-foundry",
+    "type": "place",
+    "name": {
+      "fr": "Steel Watch Foundry",
+      "en": "Steel Watch Foundry",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Steel Watch Foundry",
+        "revision": 439706,
+        "url": "https://bg3.wiki/wiki/Steel_Watch_Foundry"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.storehouse",
+    "type": "place",
+    "name": {
+      "fr": "Storehouse",
+      "en": "Storehouse",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Storehouse",
+        "revision": 377814,
+        "url": "https://bg3.wiki/wiki/Storehouse"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.underdark"
+    },
+    "links": [
+      {
+        "target": "place.underdark",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.stormshore-armoury",
+    "type": "place",
+    "name": {
+      "fr": "Stormshore Armoury",
+      "en": "Stormshore Armoury",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Stormshore Armoury",
+        "revision": 438713,
+        "url": "https://bg3.wiki/wiki/Stormshore_Armoury"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.stormshore-tabernacle",
+    "type": "place",
+    "name": {
+      "fr": "Stormshore Tabernacle",
+      "en": "Stormshore Tabernacle",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Stormshore Tabernacle",
+        "revision": 431024,
+        "url": "https://bg3.wiki/wiki/Stormshore_Tabernacle"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.submersible",
+    "type": "place",
+    "name": {
+      "fr": "Submersible",
+      "en": "Submersible",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Submersible",
+        "revision": 429206,
+        "url": "https://bg3.wiki/wiki/Submersible"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.sunlit-wetlands",
+    "type": "place",
+    "name": {
+      "fr": "Sunlit Wetlands",
+      "en": "Sunlit Wetlands",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sunlit Wetlands",
+        "revision": 408735,
+        "url": "https://bg3.wiki/wiki/Sunlit_Wetlands"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.sword-coast-couriers",
+    "type": "place",
+    "name": {
+      "fr": "Sword Coast Couriers",
+      "en": "Sword Coast Couriers",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sword Coast Couriers",
+        "revision": 439002,
+        "url": "https://bg3.wiki/wiki/Sword_Coast_Couriers"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.szarr-palace",
+    "type": "place",
+    "name": {
+      "fr": "Szarr Palace",
+      "en": "Szarr Palace",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Szarr Palace",
+        "revision": 423819,
+        "url": "https://bg3.wiki/wiki/Szarr_Palace"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.upper-city"
+    },
+    "links": [
+      {
+        "target": "place.upper-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.tadpoling-centre",
+    "type": "place",
+    "name": {
+      "fr": "Tadpoling Centre",
+      "en": "Tadpoling Centre",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Tadpoling Centre",
+        "revision": 423831,
+        "url": "https://bg3.wiki/wiki/Tadpoling_Centre"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.shadow-cursed-lands"
+    },
+    "links": [
+      {
+        "target": "place.shadow-cursed-lands",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-bibliophile",
+    "type": "place",
+    "name": {
+      "fr": "Bibliophile",
+      "en": "Bibliophile",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Bibliophile",
+        "revision": 423957,
+        "url": "https://bg3.wiki/wiki/The_Bibliophile"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-blushing-mermaid",
+    "type": "place",
+    "name": {
+      "fr": "Blushing Mermaid",
+      "en": "Blushing Mermaid",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Blushing Mermaid",
+        "revision": 423969,
+        "url": "https://bg3.wiki/wiki/The_Blushing_Mermaid"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-counting-house",
+    "type": "place",
+    "name": {
+      "fr": "Counting House",
+      "en": "Counting House",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Counting House",
+        "revision": 440067,
+        "url": "https://bg3.wiki/wiki/The_Counting_House"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-dragons-sanctum",
+    "type": "place",
+    "name": {
+      "fr": "Dragon’s Sanctum",
+      "en": "Dragon's Sanctum",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Dragon's Sanctum",
+        "revision": 412940,
+        "url": "https://bg3.wiki/wiki/The_Dragon%27s_Sanctum"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-rock-fortress"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-rock-fortress",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-festering-cove",
+    "type": "place",
+    "name": {
+      "fr": "Festering Cove",
+      "en": "Festering Cove",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Festering Cove",
+        "revision": 439954,
+        "url": "https://bg3.wiki/wiki/The_Festering_Cove"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.underdark"
+    },
+    "links": [
+      {
+        "target": "place.underdark",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-glitter-gala",
+    "type": "place",
+    "name": {
+      "fr": "Glitter Gala",
+      "en": "Glitter Gala",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Glitter Gala",
+        "revision": 424019,
+        "url": "https://bg3.wiki/wiki/The_Glitter_Gala"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-hollow",
+    "type": "place",
+    "name": {
+      "fr": "Hollow",
+      "en": "Hollow",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Hollow",
+        "revision": 439692,
+        "url": "https://bg3.wiki/wiki/The_Hollow"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.emerald-grove"
+    },
+    "links": [
+      {
+        "target": "place.emerald-grove",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-lodge",
+    "type": "place",
+    "name": {
+      "fr": "Lodge",
+      "en": "Lodge",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Lodge",
+        "revision": 439009,
+        "url": "https://bg3.wiki/wiki/The_Lodge"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-risen-road",
+    "type": "place",
+    "name": {
+      "fr": "Risen Road",
+      "en": "Risen Road",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Risen Road",
+        "revision": 425790,
+        "url": "https://bg3.wiki/wiki/The_Risen_Road"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-singing-lute",
+    "type": "place",
+    "name": {
+      "fr": "Singing Lute",
+      "en": "Singing Lute",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Singing Lute",
+        "revision": 424104,
+        "url": "https://bg3.wiki/wiki/The_Singing_Lute"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-velveteen-elixir",
+    "type": "place",
+    "name": {
+      "fr": "Velveteen Elixir",
+      "en": "Velveteen Elixir",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Velveteen Elixir",
+        "revision": 431855,
+        "url": "https://bg3.wiki/wiki/The_Velveteen_Elixir"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-crossing"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-crossing",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-waning-moon",
+    "type": "place",
+    "name": {
+      "fr": "Waning Moon",
+      "en": "Waning Moon",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte2",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Waning Moon",
+        "revision": 438622,
+        "url": "https://bg3.wiki/wiki/The_Waning_Moon"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte2",
+      "region": "place.reithwin-town"
+    },
+    "links": [
+      {
+        "target": "place.reithwin-town",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.the-wyrmway",
+    "type": "place",
+    "name": {
+      "fr": "Wyrmway",
+      "en": "Wyrmway",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "The Wyrmway",
+        "revision": 424162,
+        "url": "https://bg3.wiki/wiki/The_Wyrmway"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-rock-fortress"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-rock-fortress",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.tiefling-hideout",
+    "type": "place",
+    "name": {
+      "fr": "Tiefling Hideout",
+      "en": "Tiefling Hideout",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Tiefling Hideout",
+        "revision": 424225,
+        "url": "https://bg3.wiki/wiki/Tiefling_Hideout"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.emerald-grove"
+    },
+    "links": [
+      {
+        "target": "place.emerald-grove",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.undercity",
+    "type": "place",
+    "name": {
+      "fr": "Undercity",
+      "en": "Undercity",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Undercity",
+        "revision": 433944,
+        "url": "https://bg3.wiki/wiki/Undercity"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3"
+    }
+  },
+  {
+    "id": "place.undercity-ruins",
+    "type": "place",
+    "name": {
+      "fr": "Undercity Ruins",
+      "en": "Undercity Ruins",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Undercity Ruins",
+        "revision": 424494,
+        "url": "https://bg3.wiki/wiki/Undercity_Ruins"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.undercity"
+    },
+    "links": [
+      {
+        "target": "place.undercity",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.underdark",
+    "type": "place",
+    "name": {
+      "fr": "Underdark",
+      "en": "Underdark",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Underdark",
+        "revision": 439950,
+        "url": "https://bg3.wiki/wiki/Underdark"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1"
+    }
+  },
+  {
+    "id": "place.underdark-pleasures",
+    "type": "place",
+    "name": {
+      "fr": "Underdark Pleasures",
+      "en": "Underdark Pleasures",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Underdark Pleasures",
+        "revision": 409515,
+        "url": "https://bg3.wiki/wiki/Underdark_Pleasures"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-crossing"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-crossing",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.underground-passage",
+    "type": "place",
+    "name": {
+      "fr": "Underground Passage",
+      "en": "Underground Passage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Underground Passage",
+        "revision": 439140,
+        "url": "https://bg3.wiki/wiki/Underground_Passage"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.emerald-grove"
+    },
+    "links": [
+      {
+        "target": "place.emerald-grove",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.upper-city",
+    "type": "place",
+    "name": {
+      "fr": "Upper City",
+      "en": "Upper City",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Upper City",
+        "revision": 413531,
+        "url": "https://bg3.wiki/wiki/Upper_City"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3"
+    }
+  },
+  {
+    "id": "place.upper-city-gate-checkpoint",
+    "type": "place",
+    "name": {
+      "fr": "Upper City Gate Checkpoint",
+      "en": "Upper City Gate Checkpoint",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Upper City Gate Checkpoint",
+        "revision": 424552,
+        "url": "https://bg3.wiki/wiki/Upper_City_Gate_Checkpoint"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.vonayns-home",
+    "type": "place",
+    "name": {
+      "fr": "Vonayn’s Home",
+      "en": "Vonayn's Home",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Vonayn's Home",
+        "revision": 424721,
+        "url": "https://bg3.wiki/wiki/Vonayn%27s_Home"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.water-queens-house",
+    "type": "place",
+    "name": {
+      "fr": "Water Queen’s House",
+      "en": "Water Queen's House",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Water Queen's House",
+        "revision": 424785,
+        "url": "https://bg3.wiki/wiki/Water_Queen%27s_House"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.lower-city"
+    },
+    "links": [
+      {
+        "target": "place.lower-city",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.waukeens-rest",
+    "type": "place",
+    "name": {
+      "fr": "Waukeen’s Rest",
+      "en": "Waukeen's Rest",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Waukeen's Rest",
+        "revision": 439303,
+        "url": "https://bg3.wiki/wiki/Waukeen%27s_Rest"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.wilderness"
+    },
+    "links": [
+      {
+        "target": "place.wilderness",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.western-beach",
+    "type": "place",
+    "name": {
+      "fr": "Western Beach",
+      "en": "Western Beach",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Western Beach",
+        "revision": 429306,
+        "url": "https://bg3.wiki/wiki/Western_Beach"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.rivington"
+    },
+    "links": [
+      {
+        "target": "place.rivington",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.whispering-depths",
+    "type": "place",
+    "name": {
+      "fr": "Whispering Depths",
+      "en": "Whispering Depths",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Whispering Depths",
+        "revision": 370813,
+        "url": "https://bg3.wiki/wiki/Whispering_Depths"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.blighted-village"
+    },
+    "links": [
+      {
+        "target": "place.blighted-village",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.wilderness",
+    "type": "place",
+    "name": {
+      "fr": "Wilderness",
+      "en": "Wilderness",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Wilderness",
+        "revision": 433981,
+        "url": "https://bg3.wiki/wiki/Wilderness"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1"
+    }
+  },
+  {
+    "id": "place.worg-pens",
+    "type": "place",
+    "name": {
+      "fr": "Worg Pens",
+      "en": "Worg Pens",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Worg Pens",
+        "revision": 438762,
+        "url": "https://bg3.wiki/wiki/Worg_Pens"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.shattered-sanctum"
+    },
+    "links": [
+      {
+        "target": "place.shattered-sanctum",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.wyrms-crossing",
+    "type": "place",
+    "name": {
+      "fr": "Wyrm’s Crossing",
+      "en": "Wyrm's Crossing",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Wyrm's Crossing",
+        "revision": 434248,
+        "url": "https://bg3.wiki/wiki/Wyrm%27s_Crossing"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3"
+    }
+  },
+  {
+    "id": "place.wyrms-rock-fortress",
+    "type": "place",
+    "name": {
+      "fr": "Wyrm’s Rock Fortress",
+      "en": "Wyrm's Rock Fortress",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Wyrm's Rock Fortress",
+        "revision": 434247,
+        "url": "https://bg3.wiki/wiki/Wyrm%27s_Rock_Fortress"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3"
+    }
+  },
+  {
+    "id": "place.wyrms-rock-prison",
+    "type": "place",
+    "name": {
+      "fr": "Wyrm’s Rock Prison",
+      "en": "Wyrm's Rock Prison",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Wyrm's Rock Prison",
+        "revision": 389354,
+        "url": "https://bg3.wiki/wiki/Wyrm%27s_Rock_Prison"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte3",
+      "region": "place.wyrms-rock-fortress"
+    },
+    "links": [
+      {
+        "target": "place.wyrms-rock-fortress",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "place.zhentarim-basement",
+    "type": "place",
+    "name": {
+      "fr": "Zhentarim Basement",
+      "en": "Zhentarim Basement",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Zhentarim Basement",
+        "revision": 439016,
+        "url": "https://bg3.wiki/wiki/Zhentarim_Basement"
+      }
+    ],
+    "facts": {
+      "@type": "place",
+      "act": "acte1",
+      "region": "place.waukeens-rest"
+    },
+    "links": [
+      {
+        "target": "place.waukeens-rest",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  }
+]
