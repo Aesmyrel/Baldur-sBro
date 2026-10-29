@@ -69,7 +69,11 @@ feature.absolutes-bane:
   - les chiffres sont ceux des faits structurés ;
   - termes de règles de la VF de D&D (lexique, SRD) : « jet de sauvegarde de Dextérité », « avantage », « désavantage », « classe d’armure », « dégâts de feu », « action bonus », « réaction », « repos court », « repos long », « tour ».
 - On **décrit la mécanique, sans l'ambiance** : pas d'adjectif décoratif, pas de « vous sentez… ».
-- **Notes** : seulement une précision mécanique utile et sûre (non-cumul, limite). Aucune anecdote, aucun bogue, aucun lieu ni personnage.
+- **Notes** : seulement une précision mécanique utile et sûre (non-cumul, limite), reformulée. Une note peut venir des sections « notes » ou « bugs » de la page si elle décrit une mécanique sûre ; jamais d'anecdote, d'historique des correctifs, de lieu ni de personnage, et le mot « bogue » n'apparaît pas.
+- **Infobulle contredite par la page** : quand la section « bugs » de la page établit que le jeu se comporte autrement que son infobulle (rayon, durée, déclencheur), on écrit **le comportement constaté**, sans parler de bogue. Si la page reste incertaine (« semble », « peut-être »), on omet le point douteux.
+- **Actions** : une action donne toujours ses chiffres (dés et type de dégâts, portée, zone, sauvegarde et effet d'une réussite) : ils sont dans les faits de la fiche ou dans la page. On part des faits, jamais de l'image de l'infobulle (« tir qui peut effrayer… »).
+- **Cadre** : « Tant que l'objet est porté : » ou « le porteur » seulement pour une capacité qui ne vient que d'un objet ; une capacité de race ou de classe se décrit sans porteur.
+- **Même chose, même nom** : un état et la capacité qui l'applique, un objet et son passif, portent le même nom français quand le jeu leur donne le même nom anglais ; on emploie dans les effets le nom français tel qu'il figure dans `data/game`.
 - **États** : ce que l'état fait à la créature qui le subit, et sa fin si les faits la donnent.
 - **Spoilers** : un effet qui nomme un lieu, un personnage ou une quête est déconseillé ; s'il le faut, ajouter `etiquette` (au moins `leger`, à l'acte concerné).
 - **Typographie française** : espace fine insécable (U+202F) avant `; : ! ?` et à l'intérieur des guillemets `« »` ; apostrophe ’ ; nombres en chiffres ; signe moins « − » (U+2212) pour un malus (−1d4).

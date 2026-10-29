@@ -6,6 +6,7 @@ française (espaces fines insécables, apostrophe, signe moins), longueur des li
 anglais recopié du contexte du wiki (suite de 5 mots identiques).
 
 Usage : python3 tools/lots/check_effets.py data/effets/<fichier>.yaml tools/cache/worklists/lots/<lot>.json [début fin]
+        (lot `tout.json` : contrôle de n'importe quel fichier, sans liste des entrées manquantes)
 """
 import json
 import re
@@ -64,7 +65,8 @@ def main():
             w = words(line)
             if any(tuple(w[i:i + 5]) in grams for i in range(len(w) - 4)):
                 problems.append(f"{key} : suite de mots reprise du contexte du wiki : {line}")
-    missing = [i for i in by_id if i not in data]
+    # Avec le lot de référence `tout.json`, on ne contrôle que les entrées du fichier.
+    missing = [] if lot_path.endswith("tout.json") else [i for i in by_id if i not in data]
     for p in problems:
         print("✗", p)
     print(f"{len(data)} entrées, {len(missing)} du lot sans effets, {len(problems)} problème(s)")

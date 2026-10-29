@@ -26,7 +26,7 @@ _Dernière mise à jour : 28/10/2026, phase 1 corrigée après vérification ind
 - Dernière relecture indépendante des corrections de la phase 1 (D-063).
 - **Phase 2 — pipelines de données du jeu et du lore**
   - Fait : modèle de contenu ; pipeline bg3.wiki (récupération, normalisation, assemblage, validation bloquante, rapport) ; 1 776 entrées sans texte du jeu (234 sorts, 638 objets, 245 états, 494 capacités, 165 lieux) ; base embarquée générée à la compilation ; dépôt de contenu filtré par le verrou, avec tests de non-fuite sur toute la base.
-  - Fait aussi : noms français de toutes les entrées (335 officiels D&D, 1 441 proposés et signalés comme tels, D-065).
+  - Fait aussi : noms français des 1 776 premières entrées (335 officiels D&D, 1 441 proposés et signalés comme tels, D-065).
   - Fait aussi : les 12 classes (progression complète, maîtrises, multiclasse ; D-066).
   - À faire : effets rédigés en français (lots d'écriture) ; sous-classes, races, historiques, dons ; compagnons, quêtes, trophées ; pipeline du lore (format, références, fiches pilotes) ; vérification indépendante d'un échantillon.
 

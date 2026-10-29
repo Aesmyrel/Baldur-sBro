@@ -2,15 +2,21 @@
 """Prépare les lots d'écriture (noms français, effets rédigés) à partir des données normalisées.
 
 Entrées : data/game/*.json (versionné), tools/cache/bg3wiki/*.json et tools/cache/lexiques/ (non versionnés).
-Sorties : tools/cache/worklists/lots/<lot>.json (non versionné : contient, pour contexte seulement,
+Sorties : tools/cache/worklists/lots/<lot>.json, dont `tout.json` (toutes les entrées, pour contrôler n'importe quel
+fichier d'effets) (non versionné : contient, pour contexte seulement,
 le texte du wiki, qui ne doit jamais être recopié). Un rédacteur produit ensuite data/i18n/noms/<lot>.yaml
 ou data/effets/<lot>.yaml (versionnés), relus par le pipeline.
 
-Usage : python3 tools/lots/export_lots.py
+Usage : python3 tools/lots/export_lots.py [--manquants]
+  --manquants : lots de noms réduits aux entrées sans nom rédigé (seconde vague), plus un lot `noms-capacite-niveau`
+                des noms portés par les classes et sous-classes sans fiche propre (choix, capacités décrites seules).
 """
 import json
 import pathlib
 import re
+import sys
+
+import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 CACHE = ROOT / "tools" / "cache"
@@ -65,8 +71,42 @@ def template_params(text):
 CONTEXT_KEYS = ["description", "summary", "effects", "special", "condition", "condition duration", "condition save", "condition dc", "type", "rarity", "region", "act"]
 
 
+def written_names():
+    names = set()
+    for f in sorted((ROOT / "data" / "i18n" / "noms").glob("*.yaml")):
+        names |= set((yaml.safe_load(f.read_text(encoding="utf-8")) or {}).keys())
+    return names
+
+
+def level_names(entries, named):
+    """Noms des classes et sous-classes sans fiche propre : options de choix, capacités sans page."""
+    found = {}
+
+    def walk(node, owner):
+        if isinstance(node, dict):
+            name = node.get("name")
+            if isinstance(name, dict) and "id" not in node and name.get("status") == "UNOFFICIAL":
+                key = "feature." + re.sub(r"[^a-z0-9]+", "-", name["en"].lower().replace("’", "").replace("'", "")).strip("-")
+                if key not in named:
+                    found.setdefault(key, {"id": key, "type": "feature", "en": name["en"], "fr_actuel": name["fr"], "statut": "UNOFFICIAL", "vu_dans": []})
+                    if owner not in found[key]["vu_dans"]:
+                        found[key]["vu_dans"].append(owner)
+            for v in node.values():
+                walk(v, owner)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v, owner)
+
+    for e in entries:
+        if e["type"] in ("class", "subclass"):
+            walk(e["facts"], e["id"])
+    return sorted(found.values(), key=lambda x: x["id"])
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    missing_only = "--manquants" in sys.argv
+    named = written_names() if missing_only else set()
     entries = load_entries()
     pages = load_pages()
     lots = {}
@@ -79,10 +119,14 @@ def main():
             "page": title, "revision": e["attribution"][0]["revision"],
             "etiquette": e["tag"], "faits": e["facts"], "contexte_wiki_ne_pas_recopier": context,
         }
-        if e["name"]["status"] == "UNOFFICIAL":
+        lots.setdefault("tout", []).append(item)  # référence de contrôle : toutes les entrées
+        if e["name"]["status"] == "UNOFFICIAL" and e["id"] not in named:
             lots.setdefault(f"noms-{e['type']}", []).append(item)
         if "effect_text" in e.get("unknown", []) or "effects" in e.get("unknown", []):
             lots.setdefault(f"effets-{e['type']}", []).append(item)
+    if missing_only:
+        entry_ids = {e["id"] for e in entries}
+        lots["noms-capacite-niveau"] = [x for x in level_names(entries, named) if x["id"] not in entry_ids]
     for name, items in sorted(lots.items()):
         (OUT / f"{name}.json").write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"{name} : {len(items)}")
