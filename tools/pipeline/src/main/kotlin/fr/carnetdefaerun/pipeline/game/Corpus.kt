@@ -18,11 +18,13 @@ enum class Collection(val key: String, val template: String?) {
     CONDITIONS("condition", "Condition page"),
     LOCATIONS("location", "Location page"),
     MODULES("module", null),
+    CLASSES("class", null),
 }
 
 /** Pages nommées, hors modèle d'inclusion. */
 val NAMED_PAGES = mapOf(
     Collection.MODULES to listOf("Module:Resource/data"),
+    Collection.CLASSES to CLASS_PAGES + CLASSES_OVERVIEW_PAGE,
 )
 
 /** Une page et son modèle principal. */

@@ -1,0 +1,44 @@
+# Capacités de classe sans fiche propre (choix ou règle générale) : noms du SRD 5.2.1 FR quand le terme y figure.
+feature.pact-magic:
+  fr: Magie de pacte
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.eldritch-invocations:
+  fr: Manifestations occultes
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.mystic-arcanum:
+  fr: Arcanum mystique
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.fighting-style:
+  fr: Style de combat
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.favoured-enemy:
+  fr: Ennemi juré
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.metamagic:
+  fr: Métamagie
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.magical-secrets:
+  fr: Secrets magiques
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.natural-explorer:
+  fr: Explorateur-né
+  statut: NON_OFFICIELLE
+feature.pact-boon:
+  fr: Faveur de pacte
+  statut: NON_OFFICIELLE
+feature.channel-oath:
+  fr: Conduit de serment
+  statut: NON_OFFICIELLE
+feature.wild-shape-improvement:
+  fr: Forme sauvage améliorée
+  statut: NON_OFFICIELLE
+feature.transcribing-scrolls:
+  fr: Copie de parchemins
+  statut: NON_OFFICIELLE

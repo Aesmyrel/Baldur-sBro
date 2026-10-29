@@ -1,0 +1,49 @@
+# Noms des classes : termes du SRD 5.2.1 en français (tableau des classes, chapitre « Création de personnage »).
+class.barbarian:
+  fr: Barbare
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.bard:
+  fr: Barde
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.cleric:
+  fr: Clerc
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.druid:
+  fr: Druide
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.fighter:
+  fr: Guerrier
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.monk:
+  fr: Moine
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.paladin:
+  fr: Paladin
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.ranger:
+  fr: Rôdeur
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.rogue:
+  fr: Roublard
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.sorcerer:
+  fr: Ensorceleur
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.warlock:
+  fr: Occultiste
+  statut: VF_DND
+  source: srd-5.2.1-fr
+class.wizard:
+  fr: Magicien
+  statut: VF_DND
+  source: srd-5.2.1-fr

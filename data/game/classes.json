@@ -1,0 +1,4481 @@
+[
+  {
+    "id": "class.barbarian",
+    "type": "class",
+    "name": {
+      "fr": "Barbare",
+      "en": "Barbarian",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Barbarian",
+        "revision": 439532,
+        "url": "https://bg3.wiki/wiki/Barbarian"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 12,
+      "hitPointsPerLevel": 7,
+      "savingThrows": [
+        "str",
+        "con"
+      ],
+      "spellcastingAbility": "cha",
+      "proficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "simpleWeapons": true,
+        "martialWeapons": true,
+        "skillChoices": 2,
+        "skills": [
+          "animal_handling",
+          "athletics",
+          "intimidation",
+          "nature",
+          "survival",
+          "perception"
+        ]
+      },
+      "multiclassProficiencies": {
+        "armour": [
+          "shield"
+        ],
+        "simpleWeapons": true,
+        "martialWeapons": true
+      },
+      "subclassLevel": 3,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Rage",
+                "en": "Rage",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.rage"
+            },
+            {
+              "name": {
+                "fr": "Unarmoured Defence",
+                "en": "Unarmoured Defence",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.unarmoured-defence-barbarian"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 2
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+2"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Reckless Attack",
+                "en": "Reckless Attack",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.reckless-attack"
+            },
+            {
+              "name": {
+                "fr": "Danger Sense",
+                "en": "Danger Sense",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.danger-sense"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 2
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+2"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "subclassChoice": true,
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 3
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+2"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "feat": true,
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 3
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+2"
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Extra Attack",
+                "en": "Extra Attack",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.extra-attack"
+            },
+            {
+              "name": {
+                "fr": "Fast Movement",
+                "en": "Fast Movement",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.fast-movement"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 3
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+2"
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 4
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+2"
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Feral Instinct",
+                "en": "Feral Instinct",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.feral-instinct"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 4
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+2"
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "feat": true,
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 4
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+2"
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Brutal Critical",
+                "en": "Brutal Critical",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.brutal-critical"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 4
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+3"
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 4
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+3"
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Relentless Rage",
+                "en": "Relentless Rage",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.relentless-rage"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 4
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+3"
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "feat": true,
+          "resources": [
+            {
+              "resource": "rage",
+              "amount": 5
+            }
+          ],
+          "values": [
+            {
+              "key": "rage_damage",
+              "value": "+3"
+            }
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.brutal-critical",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.danger-sense",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.extra-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.fast-movement",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.feral-instinct",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.rage",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.reckless-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.relentless-rage",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.unarmoured-defence-barbarian",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.bard",
+    "type": "class",
+    "name": {
+      "fr": "Barde",
+      "en": "Bard",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bard",
+        "revision": 439619,
+        "url": "https://bg3.wiki/wiki/Bard"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 8,
+      "hitPointsPerLevel": 5,
+      "savingThrows": [
+        "dex",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "proficiencies": {
+        "armour": [
+          "light"
+        ],
+        "simpleWeapons": true,
+        "weapons": [
+          "hand_crossbow",
+          "rapier",
+          "longsword",
+          "shortsword"
+        ],
+        "skillChoices": 3,
+        "skills": [
+          "history",
+          "insight",
+          "medicine",
+          "persuasion",
+          "religion",
+          "deception",
+          "intimidation",
+          "performance",
+          "acrobatics",
+          "sleight_of_hand",
+          "stealth",
+          "animal_handling",
+          "arcana",
+          "investigation",
+          "athletics",
+          "nature",
+          "perception",
+          "survival"
+        ]
+      },
+      "multiclassProficiencies": {
+        "armour": [
+          "light"
+        ],
+        "skillChoices": 1,
+        "instruments": 1
+      },
+      "subclassLevel": 3,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Bardic Inspiration",
+                "en": "Bardic Inspiration",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.bardic-inspiration-class-action"
+            }
+          ],
+          "cantripsKnown": 2,
+          "spellsKnown": 4,
+          "spellSlots": [
+            2
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Song of Rest",
+                "en": "Song of Rest",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.song-of-rest"
+            },
+            {
+              "name": {
+                "fr": "Jack of All Trades",
+                "en": "Jack of All Trades",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.jack-of-all-trades"
+            }
+          ],
+          "cantripsKnown": 2,
+          "spellsKnown": 5,
+          "spellSlots": [
+            3
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Expertise",
+                "en": "Expertise",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.expertise-passive-feature"
+            }
+          ],
+          "subclassChoice": true,
+          "cantripsKnown": 2,
+          "spellsKnown": 6,
+          "spellSlots": [
+            4,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "feat": true,
+          "cantripsKnown": 3,
+          "spellsKnown": 7,
+          "spellSlots": [
+            4,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Improved Bardic Inspiration (passive feature)",
+                "en": "Improved Bardic Inspiration (passive feature)",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.improved-bardic-inspiration-passive-feature"
+            },
+            {
+              "name": {
+                "fr": "Font of Inspiration",
+                "en": "Font of Inspiration",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.font-of-inspiration"
+            }
+          ],
+          "cantripsKnown": 3,
+          "spellsKnown": 8,
+          "spellSlots": [
+            4,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Countercharm",
+                "en": "Countercharm",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.countercharm"
+            }
+          ],
+          "cantripsKnown": 3,
+          "spellsKnown": 9,
+          "spellSlots": [
+            4,
+            3,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 3,
+          "spellsKnown": 10,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "feat": true,
+          "cantripsKnown": 3,
+          "spellsKnown": 11,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 3,
+          "spellsKnown": 12,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Improved Bardic Inspiration (passive feature)",
+                "en": "Improved Bardic Inspiration (passive feature)",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.improved-bardic-inspiration-passive-feature"
+            },
+            {
+              "name": {
+                "fr": "Expertise",
+                "en": "Expertise",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.expertise-passive-feature"
+            },
+            {
+              "name": {
+                "fr": "Secrets magiques",
+                "en": "Magical Secrets",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "cantripsKnown": 4,
+          "spellsKnown": 13,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 4,
+          "spellsKnown": 14,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "feat": true,
+          "cantripsKnown": 4,
+          "spellsKnown": 15,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "bardic_inspiration",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.bardic-inspiration-class-action",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.countercharm",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.expertise-passive-feature",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.font-of-inspiration",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.improved-bardic-inspiration-passive-feature",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.jack-of-all-trades",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.song-of-rest",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.cleric",
+    "type": "class",
+    "name": {
+      "fr": "Clerc",
+      "en": "Cleric",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Cleric",
+        "revision": 439581,
+        "url": "https://bg3.wiki/wiki/Cleric"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 8,
+      "hitPointsPerLevel": 5,
+      "savingThrows": [
+        "wis",
+        "cha"
+      ],
+      "spellcastingAbility": "wis",
+      "proficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "simpleWeapons": true,
+        "weapons": [
+          "flail",
+          "morningstar"
+        ],
+        "skillChoices": 2,
+        "skills": [
+          "history",
+          "insight",
+          "medicine",
+          "persuasion",
+          "religion"
+        ]
+      },
+      "multiclassProficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "weapons": [
+          "flail",
+          "morningstar"
+        ],
+        "skillChoices": 2
+      },
+      "subclassLevel": 1,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "subclassChoice": true,
+          "cantripsKnown": 3,
+          "spellSlots": [
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Renvoi des morts-vivants",
+                "en": "Turn Undead",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              },
+              "id": "feature.turn-undead"
+            }
+          ],
+          "cantripsKnown": 3,
+          "spellSlots": [
+            3
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "cantripsKnown": 3,
+          "spellSlots": [
+            4,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "feat": true,
+          "cantripsKnown": 4,
+          "spellSlots": [
+            4,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Destroy Undead",
+                "en": "Destroy Undead",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.destroy-undead"
+            }
+          ],
+          "cantripsKnown": 4,
+          "spellSlots": [
+            4,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 4,
+          "spellSlots": [
+            4,
+            3,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 4,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "feat": true,
+          "cantripsKnown": 4,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 4,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Divine Intervention",
+                "en": "Divine Intervention",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.divine-intervention"
+            }
+          ],
+          "cantripsKnown": 5,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 5,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "feat": true,
+          "cantripsKnown": 5,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "channel_divinity",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.destroy-undead",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.divine-intervention",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.turn-undead",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.druid",
+    "type": "class",
+    "name": {
+      "fr": "Druide",
+      "en": "Druid",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Druid",
+        "revision": 417979,
+        "url": "https://bg3.wiki/wiki/Druid"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 8,
+      "hitPointsPerLevel": 5,
+      "savingThrows": [
+        "int",
+        "wis"
+      ],
+      "spellcastingAbility": "wis",
+      "proficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "weapons": [
+          "club",
+          "dagger",
+          "javelin",
+          "mace",
+          "quarterstaff",
+          "scimitar",
+          "sickle",
+          "spear"
+        ],
+        "skillChoices": 2,
+        "skills": [
+          "arcana",
+          "animal_handling",
+          "insight",
+          "medicine",
+          "nature",
+          "perception",
+          "religion",
+          "survival"
+        ]
+      },
+      "multiclassProficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "shield"
+        ]
+      },
+      "subclassLevel": 2,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "cantripsKnown": 2,
+          "spellSlots": [
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Wild Shape",
+                "en": "Wild Shape",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.wild-shape"
+            }
+          ],
+          "subclassChoice": true,
+          "cantripsKnown": 2,
+          "spellSlots": [
+            3
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "cantripsKnown": 2,
+          "spellSlots": [
+            4,
+            2
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Forme sauvage améliorée",
+                "en": "Wild Shape Improvement",
+                "status": "UNOFFICIAL"
+              }
+            }
+          ],
+          "feat": true,
+          "cantripsKnown": 3,
+          "spellSlots": [
+            4,
+            3
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Wild Strike",
+                "en": "Wild Strike",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.wild-strike"
+            }
+          ],
+          "cantripsKnown": 3,
+          "spellSlots": [
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 3,
+          "spellSlots": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 3,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            1
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Forme sauvage améliorée",
+                "en": "Wild Shape Improvement",
+                "status": "UNOFFICIAL"
+              }
+            }
+          ],
+          "feat": true,
+          "cantripsKnown": 3,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            2
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 3,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Improved Wild Strike",
+                "en": "Improved Wild Strike",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.improved-wild-strike"
+            }
+          ],
+          "cantripsKnown": 4,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 4,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Forme sauvage améliorée",
+                "en": "Wild Shape Improvement",
+                "status": "UNOFFICIAL"
+              }
+            }
+          ],
+          "feat": true,
+          "cantripsKnown": 4,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.improved-wild-strike",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.wild-shape",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.wild-strike",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.fighter",
+    "type": "class",
+    "name": {
+      "fr": "Guerrier",
+      "en": "Fighter",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Fighter",
+        "revision": 418474,
+        "url": "https://bg3.wiki/wiki/Fighter"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 10,
+      "hitPointsPerLevel": 6,
+      "savingThrows": [
+        "str",
+        "con"
+      ],
+      "spellcastingAbility": "int",
+      "proficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "heavy",
+          "shield"
+        ],
+        "simpleWeapons": true,
+        "martialWeapons": true,
+        "skillChoices": 2,
+        "skills": [
+          "acrobatics",
+          "animal_handling",
+          "athletics",
+          "history",
+          "insight",
+          "intimidation",
+          "perception",
+          "survival"
+        ]
+      },
+      "multiclassProficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "simpleWeapons": true,
+        "martialWeapons": true
+      },
+      "subclassLevel": 3,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Second Wind",
+                "en": "Second Wind",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.second-wind"
+            },
+            {
+              "name": {
+                "fr": "Style de combat",
+                "en": "Fighting Style",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Action Surge",
+                "en": "Action Surge",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.action-surge"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "subclassChoice": true
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "feat": true
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Extra Attack",
+                "en": "Extra Attack",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.extra-attack"
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "feat": true
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "feat": true
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Indomitable",
+                "en": "Indomitable",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.indomitable"
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Improved Extra Attack",
+                "en": "Improved Extra Attack",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.improved-extra-attack"
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "feat": true
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.action-surge",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.extra-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.improved-extra-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.indomitable",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.second-wind",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.monk",
+    "type": "class",
+    "name": {
+      "fr": "Moine",
+      "en": "Monk",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Monk",
+        "revision": 440138,
+        "url": "https://bg3.wiki/wiki/Monk"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 8,
+      "hitPointsPerLevel": 5,
+      "savingThrows": [
+        "str",
+        "dex"
+      ],
+      "spellcastingAbility": "wis",
+      "proficiencies": {
+        "simpleWeapons": true,
+        "weapons": [
+          "shortsword"
+        ],
+        "skillChoices": 2,
+        "skills": [
+          "history",
+          "insight",
+          "religion",
+          "acrobatics",
+          "stealth",
+          "athletics"
+        ]
+      },
+      "multiclassProficiencies": {
+        "simpleWeapons": true,
+        "weapons": [
+          "shortsword"
+        ]
+      },
+      "subclassLevel": 3,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Unarmoured Defence",
+                "en": "Unarmoured Defence",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.unarmoured-defence-monk"
+            },
+            {
+              "name": {
+                "fr": "Martial Arts: Dextrous Attacks",
+                "en": "Martial Arts: Dextrous Attacks",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.martial-arts-dextrous-attacks"
+            },
+            {
+              "name": {
+                "fr": "Martial Arts: Deft Strikes",
+                "en": "Martial Arts: Deft Strikes",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.martial-arts-deft-strikes"
+            },
+            {
+              "name": {
+                "fr": "Martial Arts: Bonus Unarmed Strike",
+                "en": "Martial Arts: Bonus Unarmed Strike",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.martial-arts-bonus-unarmed-strike"
+            },
+            {
+              "name": {
+                "fr": "Flurry of Blows",
+                "en": "Flurry of Blows",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.flurry-of-blows"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 2
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d4"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Unarmoured Movement",
+                "en": "Unarmoured Movement",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.unarmoured-movement"
+            },
+            {
+              "name": {
+                "fr": "Patient Defence",
+                "en": "Patient Defence",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.patient-defence"
+            },
+            {
+              "name": {
+                "fr": "Step of the Wind: Dash",
+                "en": "Step of the Wind: Dash",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.step-of-the-wind-dash"
+            },
+            {
+              "name": {
+                "fr": "Step of the Wind: Disengage",
+                "en": "Step of the Wind: Disengage",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.step-of-the-wind-disengage"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 3
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d4"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 3 m / 10 ft"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Deflect Missiles",
+                "en": "Deflect Missiles",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.deflect-missiles"
+            }
+          ],
+          "subclassChoice": true,
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 4
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d6"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 3 m / 10 ft"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Slow Fall",
+                "en": "Slow Fall",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.slow-fall"
+            }
+          ],
+          "feat": true,
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 5
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d6"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 3 m / 10 ft"
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Extra Attack",
+                "en": "Extra Attack",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.extra-attack"
+            },
+            {
+              "name": {
+                "fr": "Stunning Strike (Melee)",
+                "en": "Stunning Strike (Melee)",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.stunning-strike-melee"
+            },
+            {
+              "name": {
+                "fr": "Stunning Strike (Unarmed)",
+                "en": "Stunning Strike (Unarmed)",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.stunning-strike-unarmed"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 6
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d6"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 3 m / 10 ft"
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Ki-Empowered Strikes",
+                "en": "Ki-Empowered Strikes",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.ki-empowered-strikes"
+            },
+            {
+              "name": {
+                "fr": "Improved Unarmoured Movement",
+                "en": "Improved Unarmoured Movement",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.unarmoured-movement"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 7
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d6"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 4.5 m / 15 ft"
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Evasion",
+                "en": "Evasion",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.evasion"
+            },
+            {
+              "name": {
+                "fr": "Stillness of Mind",
+                "en": "Stillness of Mind",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.stillness-of-mind-passive-feature"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 8
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d6"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 4.5 m / 15 ft"
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "feat": true,
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 9
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d6"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 4.5 m / 15 ft"
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Advanced Unarmoured Movement",
+                "en": "Advanced Unarmoured Movement",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.advanced-unarmoured-movement"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 10
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d8"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 4.5 m / 15 ft"
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Purity of Body",
+                "en": "Purity of Body",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.purity-of-body"
+            },
+            {
+              "name": {
+                "fr": "Improved Unarmoured Movement",
+                "en": "Improved Unarmoured Movement",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.unarmoured-movement"
+            }
+          ],
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 11
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d8"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 6 m / 20 ft"
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 12
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d8"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 6 m / 20 ft"
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "feat": true,
+          "resources": [
+            {
+              "resource": "ki",
+              "amount": 13
+            }
+          ],
+          "values": [
+            {
+              "key": "martial_arts",
+              "value": "1d8"
+            },
+            {
+              "key": "unarmoured_movement",
+              "value": "+ 6 m / 20 ft"
+            }
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.advanced-unarmoured-movement",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.deflect-missiles",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.evasion",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.extra-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.flurry-of-blows",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.ki-empowered-strikes",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.martial-arts-bonus-unarmed-strike",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.martial-arts-deft-strikes",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.martial-arts-dextrous-attacks",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.patient-defence",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.purity-of-body",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.slow-fall",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.step-of-the-wind-dash",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.step-of-the-wind-disengage",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.stillness-of-mind-passive-feature",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.stunning-strike-melee",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.stunning-strike-unarmed",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.unarmoured-defence-monk",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.unarmoured-movement",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.paladin",
+    "type": "class",
+    "name": {
+      "fr": "Paladin",
+      "en": "Paladin",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Paladin",
+        "revision": 403233,
+        "url": "https://bg3.wiki/wiki/Paladin"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 10,
+      "hitPointsPerLevel": 6,
+      "savingThrows": [
+        "wis",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "proficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "heavy",
+          "shield"
+        ],
+        "simpleWeapons": true,
+        "martialWeapons": true,
+        "skillChoices": 2,
+        "skills": [
+          "athletics",
+          "insight",
+          "intimidation",
+          "medicine",
+          "persuasion",
+          "religion"
+        ]
+      },
+      "multiclassProficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "simpleWeapons": true,
+        "martialWeapons": true
+      },
+      "subclassLevel": 1,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Divine Sense",
+                "en": "Divine Sense",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.divine-sense"
+            },
+            {
+              "name": {
+                "fr": "Lay on Hands",
+                "en": "Lay on Hands",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.lay-on-hands"
+            },
+            {
+              "name": {
+                "fr": "Conduit de serment",
+                "en": "Channel Oath",
+                "status": "UNOFFICIAL"
+              }
+            }
+          ],
+          "subclassChoice": true,
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Style de combat",
+                "en": "Fighting Style",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            },
+            {
+              "name": {
+                "fr": "Divine Smite",
+                "en": "Divine Smite",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.divine-smite"
+            }
+          ],
+          "spellSlots": [
+            2
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Divine Health",
+                "en": "Divine Health",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.divine-health"
+            }
+          ],
+          "spellSlots": [
+            3
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "feat": true,
+          "spellSlots": [
+            3
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Extra Attack",
+                "en": "Extra Attack",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.extra-attack"
+            }
+          ],
+          "spellSlots": [
+            4,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Aura of Protection",
+                "en": "Aura of Protection",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.aura-of-protection"
+            }
+          ],
+          "spellSlots": [
+            4,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "spellSlots": [
+            4,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "feat": true,
+          "spellSlots": [
+            4,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "spellSlots": [
+            4,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Aura of Courage",
+                "en": "Aura of Courage",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.aura-of-courage"
+            }
+          ],
+          "spellSlots": [
+            4,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Improved Divine Smite",
+                "en": "Improved Divine Smite",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.improved-divine-smite"
+            }
+          ],
+          "spellSlots": [
+            4,
+            3,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "feat": true,
+          "spellSlots": [
+            4,
+            3,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "lay_on_hands",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.aura-of-courage",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.aura-of-protection",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.divine-health",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.divine-sense",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.divine-smite",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.extra-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.improved-divine-smite",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.lay-on-hands",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.ranger",
+    "type": "class",
+    "name": {
+      "fr": "Rôdeur",
+      "en": "Ranger",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ranger",
+        "revision": 422145,
+        "url": "https://bg3.wiki/wiki/Ranger"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 10,
+      "hitPointsPerLevel": 6,
+      "savingThrows": [
+        "str",
+        "dex"
+      ],
+      "spellcastingAbility": "wis",
+      "proficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "simpleWeapons": true,
+        "martialWeapons": true,
+        "skillChoices": 3,
+        "skills": [
+          "animal_handling",
+          "athletics",
+          "insight",
+          "investigation",
+          "nature",
+          "perception",
+          "stealth",
+          "survival"
+        ]
+      },
+      "multiclassProficiencies": {
+        "armour": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "simpleWeapons": true,
+        "martialWeapons": true,
+        "skillChoices": 1
+      },
+      "subclassLevel": 3,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Ennemi juré",
+                "en": "Favoured Enemy",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            },
+            {
+              "name": {
+                "fr": "Explorateur-né",
+                "en": "Natural Explorer",
+                "status": "UNOFFICIAL"
+              }
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Style de combat",
+                "en": "Fighting Style",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "spellsKnown": 2,
+          "spellSlots": [
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "subclassChoice": true,
+          "spellsKnown": 3,
+          "spellSlots": [
+            3
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "feat": true,
+          "spellsKnown": 3,
+          "spellSlots": [
+            3
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Extra Attack",
+                "en": "Extra Attack",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.extra-attack"
+            }
+          ],
+          "spellsKnown": 4,
+          "spellSlots": [
+            4,
+            2
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Ennemi juré",
+                "en": "Favoured Enemy",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            },
+            {
+              "name": {
+                "fr": "Explorateur-né",
+                "en": "Natural Explorer",
+                "status": "UNOFFICIAL"
+              }
+            }
+          ],
+          "spellsKnown": 4,
+          "spellSlots": [
+            4,
+            2
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "spellsKnown": 5,
+          "spellSlots": [
+            4,
+            3
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Land’s Stride: Difficult Terrain",
+                "en": "Land's Stride: Difficult Terrain",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.lands-stride-difficult-terrain"
+            }
+          ],
+          "feat": true,
+          "spellsKnown": 5,
+          "spellSlots": [
+            4,
+            3
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "spellsKnown": 6,
+          "spellSlots": [
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Ennemi juré",
+                "en": "Favoured Enemy",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            },
+            {
+              "name": {
+                "fr": "Explorateur-né",
+                "en": "Natural Explorer",
+                "status": "UNOFFICIAL"
+              }
+            },
+            {
+              "name": {
+                "fr": "Hide in Plain Sight",
+                "en": "Hide in Plain Sight",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.hide-in-plain-sight"
+            }
+          ],
+          "spellsKnown": 6,
+          "spellSlots": [
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "spellsKnown": 7,
+          "spellSlots": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "feat": true,
+          "spellsKnown": 7,
+          "spellSlots": [
+            4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.extra-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.hide-in-plain-sight",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.lands-stride-difficult-terrain",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.rogue",
+    "type": "class",
+    "name": {
+      "fr": "Roublard",
+      "en": "Rogue",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Rogue",
+        "revision": 433995,
+        "url": "https://bg3.wiki/wiki/Rogue"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 8,
+      "hitPointsPerLevel": 5,
+      "savingThrows": [
+        "dex",
+        "int"
+      ],
+      "spellcastingAbility": "int",
+      "proficiencies": {
+        "armour": [
+          "light"
+        ],
+        "simpleWeapons": true,
+        "weapons": [
+          "hand_crossbow",
+          "longsword",
+          "rapier",
+          "shortsword"
+        ],
+        "skillChoices": 4,
+        "skills": [
+          "acrobatics",
+          "athletics",
+          "deception",
+          "insight",
+          "intimidation",
+          "investigation",
+          "perception",
+          "performance",
+          "persuasion",
+          "sleight_of_hand",
+          "stealth"
+        ]
+      },
+      "multiclassProficiencies": {
+        "armour": [
+          "light"
+        ],
+        "skillChoices": 1
+      },
+      "subclassLevel": 3,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Expertise",
+                "en": "Expertise",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.expertise-passive-feature"
+            },
+            {
+              "name": {
+                "fr": "Sneak Attack (Melee)",
+                "en": "Sneak Attack (Melee)",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.sneak-attack-melee"
+            },
+            {
+              "name": {
+                "fr": "Sneak Attack (Ranged)",
+                "en": "Sneak Attack (Ranged)",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.sneak-attack-ranged"
+            }
+          ],
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "1d6"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Cunning Action: Dash",
+                "en": "Cunning Action: Dash",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.cunning-action-dash"
+            },
+            {
+              "name": {
+                "fr": "Cunning Action: Disengage",
+                "en": "Cunning Action: Disengage",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.cunning-action-disengage"
+            },
+            {
+              "name": {
+                "fr": "Cunning Action: Hide",
+                "en": "Cunning Action: Hide",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.cunning-action-hide"
+            }
+          ],
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "1d6"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "subclassChoice": true,
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "2d6"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "feat": true,
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "2d6"
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Uncanny Dodge",
+                "en": "Uncanny Dodge",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.uncanny-dodge"
+            }
+          ],
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "3d6"
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Expertise",
+                "en": "Expertise",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.expertise-passive-feature"
+            }
+          ],
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "3d6"
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Evasion",
+                "en": "Evasion",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.evasion"
+            }
+          ],
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "4d6"
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "feat": true,
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "4d6"
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "5d6"
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "feat": true,
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "5d6"
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Reliable Talent",
+                "en": "Reliable Talent",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.reliable-talent"
+            }
+          ],
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "6d6"
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "feat": true,
+          "values": [
+            {
+              "key": "sneak_attack_damage",
+              "value": "6d6"
+            }
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.cunning-action-dash",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.cunning-action-disengage",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.cunning-action-hide",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.evasion",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.expertise-passive-feature",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.reliable-talent",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.sneak-attack-melee",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.sneak-attack-ranged",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.uncanny-dodge",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.sorcerer",
+    "type": "class",
+    "name": {
+      "fr": "Ensorceleur",
+      "en": "Sorcerer",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sorcerer",
+        "revision": 439639,
+        "url": "https://bg3.wiki/wiki/Sorcerer"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 6,
+      "hitPointsPerLevel": 4,
+      "savingThrows": [
+        "con",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "proficiencies": {
+        "weapons": [
+          "dagger",
+          "quarterstaff",
+          "light_crossbow"
+        ],
+        "skillChoices": 2,
+        "skills": [
+          "arcana",
+          "deception",
+          "insight",
+          "intimidation",
+          "persuasion",
+          "religion"
+        ]
+      },
+      "multiclassProficiencies": {},
+      "subclassLevel": 1,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "subclassChoice": true,
+          "cantripsKnown": 4,
+          "spellsKnown": 2,
+          "spellSlots": [
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Métamagie",
+                "en": "Metamagic",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            },
+            {
+              "name": {
+                "fr": "Create Spell Slot",
+                "en": "Create Spell Slot",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.create-spell-slot"
+            },
+            {
+              "name": {
+                "fr": "Create Sorcery Points",
+                "en": "Create Sorcery Points",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.create-sorcery-points"
+            }
+          ],
+          "cantripsKnown": 4,
+          "spellsKnown": 3,
+          "spellSlots": [
+            3
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Métamagie",
+                "en": "Metamagic",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "cantripsKnown": 4,
+          "spellsKnown": 4,
+          "spellSlots": [
+            4,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "feat": true,
+          "cantripsKnown": 5,
+          "spellsKnown": 5,
+          "spellSlots": [
+            4,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 5,
+          "spellsKnown": 6,
+          "spellSlots": [
+            4,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 5,
+          "spellsKnown": 7,
+          "spellSlots": [
+            4,
+            3,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 5,
+          "spellsKnown": 8,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "feat": true,
+          "cantripsKnown": 5,
+          "spellsKnown": 9,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 5,
+          "spellsKnown": 10,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 9
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Métamagie",
+                "en": "Metamagic",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "cantripsKnown": 6,
+          "spellsKnown": 11,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 6,
+          "spellsKnown": 12,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 11
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "feat": true,
+          "cantripsKnown": 6,
+          "spellsKnown": 13,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "sorcery",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.create-sorcery-points",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.create-spell-slot",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.warlock",
+    "type": "class",
+    "name": {
+      "fr": "Occultiste",
+      "en": "Warlock",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Warlock",
+        "revision": 424760,
+        "url": "https://bg3.wiki/wiki/Warlock"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 8,
+      "hitPointsPerLevel": 5,
+      "savingThrows": [
+        "wis",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "proficiencies": {
+        "armour": [
+          "light"
+        ],
+        "simpleWeapons": true,
+        "skillChoices": 2,
+        "skills": [
+          "arcana",
+          "deception",
+          "history",
+          "intimidation",
+          "investigation",
+          "nature",
+          "religion"
+        ]
+      },
+      "multiclassProficiencies": {
+        "armour": [
+          "light"
+        ],
+        "simpleWeapons": true
+      },
+      "subclassLevel": 1,
+      "pactMagic": true,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Magie de pacte",
+                "en": "Pact Magic",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "subclassChoice": true,
+          "cantripsKnown": 2,
+          "spellsKnown": 2,
+          "spellSlots": [
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Manifestations occultes",
+                "en": "Eldritch Invocations",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "cantripsKnown": 2,
+          "spellsKnown": 3,
+          "spellSlots": [
+            2
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Faveur de pacte",
+                "en": "Pact Boon",
+                "status": "UNOFFICIAL"
+              }
+            }
+          ],
+          "cantripsKnown": 2,
+          "spellsKnown": 4,
+          "spellSlots": [
+            0,
+            2
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "feat": true,
+          "cantripsKnown": 3,
+          "spellsKnown": 5,
+          "spellSlots": [
+            0,
+            2
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Deepened Pact",
+                "en": "Deepened Pact",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.deepened-pact"
+            },
+            {
+              "name": {
+                "fr": "Manifestations occultes",
+                "en": "Eldritch Invocations",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "cantripsKnown": 3,
+          "spellsKnown": 6,
+          "spellSlots": [
+            0,
+            0,
+            2
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 3,
+          "spellsKnown": 7,
+          "spellSlots": [
+            0,
+            0,
+            2
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "features": [
+            {
+              "name": {
+                "fr": "Manifestations occultes",
+                "en": "Eldritch Invocations",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "cantripsKnown": 3,
+          "spellsKnown": 8,
+          "spellSlots": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "feat": true,
+          "cantripsKnown": 3,
+          "spellsKnown": 9,
+          "spellSlots": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Manifestations occultes",
+                "en": "Eldritch Invocations",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "cantripsKnown": 3,
+          "spellsKnown": 10,
+          "spellSlots": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 4,
+          "spellsKnown": 11,
+          "spellSlots": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Arcanum mystique",
+                "en": "Mystic Arcanum",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "cantripsKnown": 4,
+          "spellsKnown": 12,
+          "spellSlots": [
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "features": [
+            {
+              "name": {
+                "fr": "Manifestations occultes",
+                "en": "Eldritch Invocations",
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
+              }
+            }
+          ],
+          "feat": true,
+          "cantripsKnown": 4,
+          "spellsKnown": 13,
+          "spellSlots": [
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "values": [
+            {
+              "key": "invocations_known",
+              "value": "6"
+            }
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.deepened-pact",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "class.wizard",
+    "type": "class",
+    "name": {
+      "fr": "Magicien",
+      "en": "Wizard",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Wizard",
+        "revision": 439634,
+        "url": "https://bg3.wiki/wiki/Wizard"
+      }
+    ],
+    "facts": {
+      "@type": "class",
+      "hitPointsAtFirstLevel": 6,
+      "hitPointsPerLevel": 4,
+      "savingThrows": [
+        "int",
+        "wis"
+      ],
+      "spellcastingAbility": "int",
+      "proficiencies": {
+        "weapons": [
+          "dagger",
+          "quarterstaff",
+          "light_crossbow"
+        ],
+        "skillChoices": 2,
+        "skills": [
+          "arcana",
+          "history",
+          "investigation",
+          "insight",
+          "medicine",
+          "religion"
+        ]
+      },
+      "multiclassProficiencies": {},
+      "subclassLevel": 2,
+      "levels": [
+        {
+          "level": 1,
+          "proficiencyBonus": 2,
+          "features": [
+            {
+              "name": {
+                "fr": "Arcane Recovery",
+                "en": "Arcane Recovery",
+                "status": "UNOFFICIAL"
+              },
+              "id": "feature.arcane-recovery"
+            },
+            {
+              "name": {
+                "fr": "Copie de parchemins",
+                "en": "Transcribing scrolls",
+                "status": "UNOFFICIAL"
+              }
+            }
+          ],
+          "cantripsKnown": 3,
+          "spellsKnown": 6,
+          "spellSlots": [
+            2
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "proficiencyBonus": 2,
+          "subclassChoice": true,
+          "cantripsKnown": 3,
+          "spellsKnown": 8,
+          "spellSlots": [
+            3
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "proficiencyBonus": 2,
+          "cantripsKnown": 3,
+          "spellsKnown": 10,
+          "spellSlots": [
+            4,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "proficiencyBonus": 2,
+          "feat": true,
+          "cantripsKnown": 4,
+          "spellsKnown": 12,
+          "spellSlots": [
+            4,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 4,
+          "spellsKnown": 14,
+          "spellSlots": [
+            4,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 4,
+          "spellsKnown": 16,
+          "spellSlots": [
+            4,
+            3,
+            3
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "proficiencyBonus": 3,
+          "cantripsKnown": 4,
+          "spellsKnown": 18,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "proficiencyBonus": 3,
+          "feat": true,
+          "cantripsKnown": 4,
+          "spellsKnown": 20,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 4,
+          "spellsKnown": 22,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 5,
+          "spellsKnown": 24,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "proficiencyBonus": 4,
+          "cantripsKnown": 5,
+          "spellsKnown": 26,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "proficiencyBonus": 4,
+          "feat": true,
+          "cantripsKnown": 5,
+          "spellsKnown": 28,
+          "spellSlots": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1
+          ],
+          "resources": [
+            {
+              "resource": "arcane_recovery",
+              "amount": 6
+            }
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.arcane-recovery",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  }
+]

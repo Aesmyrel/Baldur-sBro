@@ -35,9 +35,9 @@ const val GAME_VERSION = "Patch 8 + correctifs, mise à jour du 29/09/2026 (4.1.
 /** Données de jeu issues de bg3.wiki : récupération, normalisation, validation. */
 class GamePipeline(private val paths: Paths) {
 
-    fun fetch(): Boolean {
+    fun fetch(only: Set<String>? = null): Boolean {
         val store = PageStore(paths.wikiCache, WikiClient())
-        for (collection in Collection.entries) {
+        for (collection in Collection.entries.filter { only == null || it.key in only }) {
             val refreshed = when (val template = collection.template) {
                 null -> store.refresh(collection.key, NAMED_PAGES[collection].orEmpty())
                 else -> store.refreshTemplate(collection.key, template)
@@ -52,8 +52,10 @@ class GamePipeline(private val paths: Paths) {
         val names = NameResolver(NameResolver.loadCurated(paths.curatedNames), Lexicons(paths).load())
         val places = PlaceNormalizer(corpus, names)
         val items = ItemNormalizer(corpus, names, places.acts)
-        val assembler = Assembler(FeatureNormalizer(corpus, names), ConditionNormalizer(corpus, names)) { raiseTitle(it, names) }
-        val assembled = assembler.assemble(SpellNormalizer(corpus, names).normalize() + items.normalize() + places.normalize())
+        val features = FeatureNormalizer(corpus, names)
+        val classes = ClassNormalizer(corpus, names, features)
+        val assembler = Assembler(features, ConditionNormalizer(corpus, names)) { raiseTitle(it, names) }
+        val assembled = assembler.assemble(SpellNormalizer(corpus, names).normalize() + items.normalize() + places.normalize() + classes.normalize())
         val effects = Effects(paths.writtenEffects)
         val (entries, unknownEffectIds, staleEffects) = effects.apply(assembled, effects.load())
         unknownEffectIds.forEach { System.err.println("  ✗ effets rédigés pour une entrée inconnue : $it") }
@@ -158,6 +160,7 @@ class GamePipeline(private val paths: Paths) {
         EntryType.CONDITION -> "etats.json"
         EntryType.FEATURE -> "capacites.json"
         EntryType.PLACE -> "lieux.json"
+        EntryType.CLASS -> "classes.json"
         else -> "${type.name.lowercase()}.json"
     }
 

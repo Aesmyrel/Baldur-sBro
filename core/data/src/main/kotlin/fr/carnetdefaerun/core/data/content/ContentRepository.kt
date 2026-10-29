@@ -2,6 +2,7 @@ package fr.carnetdefaerun.core.data.content
 
 import fr.carnetdefaerun.core.database.content.ContentStore
 import fr.carnetdefaerun.core.database.content.EntryRow
+import fr.carnetdefaerun.core.model.content.ClassFacts
 import fr.carnetdefaerun.core.model.content.ConditionFacts
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Effect
@@ -71,6 +72,7 @@ class ContentRepository internal constructor(private val store: ContentStore) {
             is PlaceFacts -> f.copy(region = f.region?.takeIf(::linkVisible))
             is SpellFacts -> f
             is ConditionFacts -> f
+            is ClassFacts -> f.copy(levels = f.levels.map { l -> l.copy(features = l.features.filter { it.id == null || linkVisible(it.id!!) }) })
             // Les sections du codex sont filtrées une à une ci-dessous, jamais transmises en bloc.
             is LoreFacts -> f.copy(sections = emptyList())
         }

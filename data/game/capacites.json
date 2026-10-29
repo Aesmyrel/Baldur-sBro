@@ -410,6 +410,66 @@
     ]
   },
   {
+    "id": "feature.action-surge",
+    "type": "feature",
+    "name": {
+      "fr": "Action Surge",
+      "en": "Action Surge",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Action Surge",
+        "revision": 415803,
+        "url": "https://bg3.wiki/wiki/Action_Surge"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "recharge": "short_rest",
+      "applies": [
+        "condition.action-surge"
+      ],
+      "gameUid": "Shout_ActionSurge"
+    },
+    "links": [
+      {
+        "target": "class.fighter",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.action-surge",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.adamantine-backlash",
     "type": "feature",
     "name": {
@@ -739,6 +799,53 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.advanced-unarmoured-movement",
+    "type": "feature",
+    "name": {
+      "fr": "Advanced Unarmoured Movement",
+      "en": "Advanced Unarmoured Movement",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Advanced Unarmoured Movement",
+        "revision": 438401,
+        "url": "https://bg3.wiki/wiki/Advanced_Unarmoured_Movement"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "UnarmoredMovement_DifficultTerrain"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -1559,6 +1666,61 @@
     ]
   },
   {
+    "id": "feature.arcane-recovery",
+    "type": "feature",
+    "name": {
+      "fr": "Arcane Recovery",
+      "en": "Arcane Recovery",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Arcane Recovery",
+        "revision": 428903,
+        "url": "https://bg3.wiki/wiki/Arcane_Recovery"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "action"
+        },
+        {
+          "resource": "arcane_recovery"
+        }
+      ],
+      "gameUid": "Shout_ArcaneRecovery"
+    },
+    "links": [
+      {
+        "target": "class.wizard",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.arcane-vampirism",
     "type": "feature",
     "name": {
@@ -1807,6 +1969,65 @@
     ]
   },
   {
+    "id": "feature.aura-of-courage",
+    "type": "feature",
+    "name": {
+      "fr": "Aura of Courage",
+      "en": "Aura of Courage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Aura of Courage",
+        "revision": 416190,
+        "url": "https://bg3.wiki/wiki/Aura_of_Courage"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "applies": [
+        "condition.aura-of-courage-aura"
+      ],
+      "gameUid": "Shout_AuraOf_Courage"
+    },
+    "links": [
+      {
+        "target": "class.paladin",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.aura-of-courage-aura",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.aura-of-murder-passive-feature",
     "type": "feature",
     "name": {
@@ -1856,6 +2077,65 @@
         "relation": "applies",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.aura-of-protection",
+    "type": "feature",
+    "name": {
+      "fr": "Aura of Protection",
+      "en": "Aura of Protection",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Aura of Protection",
+        "revision": 416200,
+        "url": "https://bg3.wiki/wiki/Aura_of_Protection"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "applies": [
+        "condition.aura-of-protection-aura"
+      ],
+      "gameUid": "Shout_AuraOf_Protection"
+    },
+    "links": [
+      {
+        "target": "class.paladin",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.aura-of-protection-aura",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -2434,6 +2714,73 @@
         "relation": "applies",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.bardic-inspiration-class-action",
+    "type": "feature",
+    "name": {
+      "fr": "Bardic Inspiration",
+      "en": "Bardic Inspiration",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bardic Inspiration (class action)",
+        "revision": 416309,
+        "url": "https://bg3.wiki/wiki/Bardic_Inspiration_(class_action)"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        },
+        {
+          "resource": "bardic_inspiration"
+        }
+      ],
+      "applies": [
+        "condition.bardic-inspiration"
+      ],
+      "gameUid": "Target_BardicInspiration"
+    },
+    "links": [
+      {
+        "target": "class.bard",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.bardic-inspiration",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -4041,6 +4388,53 @@
         "relation": "applies",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.brutal-critical",
+    "type": "feature",
+    "name": {
+      "fr": "Brutal Critical",
+      "en": "Brutal Critical",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Brutal Critical",
+        "revision": 432145,
+        "url": "https://bg3.wiki/wiki/Brutal_Critical"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "BrutalCritical"
+    },
+    "links": [
+      {
+        "target": "class.barbarian",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -6196,6 +6590,70 @@
     ]
   },
   {
+    "id": "feature.countercharm",
+    "type": "feature",
+    "name": {
+      "fr": "Countercharm",
+      "en": "Countercharm",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Countercharm",
+        "revision": 417335,
+        "url": "https://bg3.wiki/wiki/Countercharm"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "action"
+        }
+      ],
+      "applies": [
+        "condition.countercharm-aura"
+      ],
+      "gameUid": "Target_Countercharm"
+    },
+    "links": [
+      {
+        "target": "class.bard",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.countercharm-aura",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.countershock",
     "type": "feature",
     "name": {
@@ -6429,6 +6887,118 @@
     ]
   },
   {
+    "id": "feature.create-sorcery-points",
+    "type": "feature",
+    "name": {
+      "fr": "Create Sorcery Points",
+      "en": "Create Sorcery Points",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Create Sorcery Points",
+        "revision": 428901,
+        "url": "https://bg3.wiki/wiki/Create_Sorcery_Points"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        },
+        {
+          "resource": "spell_slot",
+          "level": 1
+        }
+      ],
+      "gameUid": "Shout_CreateSorceryPoints:Container ability,\nShout_CreateSorceryPoints_1:Convert level 1 spell slot into 1 sorcery point,\nShout_CreateSorceryPoints_2:Convert level 2 spell slot into 2 sorcery points,\nShout_CreateSorceryPoints_3:Convert level 3 spell slot into 3 sorcery points,\nShout_CreateSorceryPoints_4:Convert level 4 spell slot into 4 sorcery points,\nShout_CreateSorceryPoints_5:Convert level 5 spell slot into 5 sorcery points,\nShout_CreateSorceryPoints_6:Convert level 6 spell slot into 6 sorcery points,"
+    },
+    "links": [
+      {
+        "target": "class.sorcerer",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.create-spell-slot",
+    "type": "feature",
+    "name": {
+      "fr": "Create Spell Slot",
+      "en": "Create Spell Slot",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Create Spell Slot",
+        "revision": 428902,
+        "url": "https://bg3.wiki/wiki/Create_Spell_Slot"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        },
+        {
+          "resource": "sorcery",
+          "amount": 2
+        }
+      ],
+      "gameUid": "Shout_CreateSpellSlot:Container ability,\nShout_CreateSpellSlot_1:Convert 2 sorcery points into a level 1 spell slot,\nShout_CreateSpellSlot_2:Convert 3 sorcery points into a level 2 spell slot,\nShout_CreateSpellSlot_3:Convert 5 sorcery points into a level 3 spell slot,\nShout_CreateSpellSlot_4:Convert 6 sorcery points into a level 4 spell slot,\nShout_CreateSpellSlot_5:Convert 7 sorcery points into a level 5 spell slot,"
+    },
+    "links": [
+      {
+        "target": "class.sorcerer",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.crowning-glory",
     "type": "feature",
     "name": {
@@ -6588,6 +7158,198 @@
     ]
   },
   {
+    "id": "feature.cunning-action-dash",
+    "type": "feature",
+    "name": {
+      "fr": "Cunning Action: Dash",
+      "en": "Cunning Action: Dash",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Cunning Action: Dash",
+        "revision": 417432,
+        "url": "https://bg3.wiki/wiki/Cunning_Action:_Dash"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        }
+      ],
+      "applies": [
+        "condition.dash"
+      ],
+      "gameUid": "Shout_Dash_CunningAction, Shout_Dash_CunningAction_NPC_OncePerTurn, Shout_LOW_Dolor_Dash"
+    },
+    "links": [
+      {
+        "target": "class.rogue",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.dash",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.cunning-action-disengage",
+    "type": "feature",
+    "name": {
+      "fr": "Cunning Action: Disengage",
+      "en": "Cunning Action: Disengage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Cunning Action: Disengage",
+        "revision": 417433,
+        "url": "https://bg3.wiki/wiki/Cunning_Action:_Disengage"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        }
+      ],
+      "applies": [
+        "condition.disengage"
+      ],
+      "gameUid": "Shout_Disengage_CunningAction, Shout_LOW_Dolor_Disengage"
+    },
+    "links": [
+      {
+        "target": "class.rogue",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.disengage",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.cunning-action-hide",
+    "type": "feature",
+    "name": {
+      "fr": "Cunning Action: Hide",
+      "en": "Cunning Action: Hide",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Cunning Action: Hide",
+        "revision": 365263,
+        "url": "https://bg3.wiki/wiki/Cunning_Action:_Hide"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        }
+      ],
+      "applies": [
+        "condition.hiding"
+      ],
+      "gameUid": "Shout_Hide_BonusAction"
+    },
+    "links": [
+      {
+        "target": "class.rogue",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.hiding",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.cunning-brume",
     "type": "feature",
     "name": {
@@ -6672,6 +7434,53 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.danger-sense",
+    "type": "feature",
+    "name": {
+      "fr": "Danger Sense",
+      "en": "Danger Sense",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Danger Sense",
+        "revision": 438159,
+        "url": "https://bg3.wiki/wiki/Danger_Sense"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "DangerSense"
+    },
+    "links": [
+      {
+        "target": "class.barbarian",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -7409,6 +8218,53 @@
     ]
   },
   {
+    "id": "feature.deepened-pact",
+    "type": "feature",
+    "name": {
+      "fr": "Deepened Pact",
+      "en": "Deepened Pact",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Deepened Pact",
+        "revision": 439161,
+        "url": "https://bg3.wiki/wiki/Deepened_Pact"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "ThirstingBlade_Check"
+    },
+    "links": [
+      {
+        "target": "class.warlock",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.deepflesh-slice",
     "type": "feature",
     "name": {
@@ -7574,6 +8430,53 @@
     ]
   },
   {
+    "id": "feature.deflect-missiles",
+    "type": "feature",
+    "name": {
+      "fr": "Deflect Missiles",
+      "en": "Deflect Missiles",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Deflect Missiles",
+        "revision": 432259,
+        "url": "https://bg3.wiki/wiki/Deflect_Missiles"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "DeflectMissiles"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.defy-villainy",
     "type": "feature",
     "name": {
@@ -7682,6 +8585,53 @@
         "relation": "applies",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.destroy-undead",
+    "type": "feature",
+    "name": {
+      "fr": "Destroy Undead",
+      "en": "Destroy Undead",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Destroy Undead",
+        "revision": 432263,
+        "url": "https://bg3.wiki/wiki/Destroy_Undead"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "DestroyUndead"
+    },
+    "links": [
+      {
+        "target": "class.cleric",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -7986,6 +8936,217 @@
         "relation": "applies",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.divine-health",
+    "type": "feature",
+    "name": {
+      "fr": "Divine Health",
+      "en": "Divine Health",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Divine Health",
+        "revision": 432274,
+        "url": "https://bg3.wiki/wiki/Divine_Health"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "DivineHealth"
+    },
+    "links": [
+      {
+        "target": "class.paladin",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.divine-intervention",
+    "type": "feature",
+    "name": {
+      "fr": "Divine Intervention",
+      "en": "Divine Intervention",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Divine Intervention",
+        "revision": 382846,
+        "url": "https://bg3.wiki/wiki/Divine_Intervention"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "gameUid": "Shout_DivineIntervention"
+    },
+    "links": [
+      {
+        "target": "class.cleric",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.divine-sense",
+    "type": "feature",
+    "name": {
+      "fr": "Divine Sense",
+      "en": "Divine Sense",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Divine Sense",
+        "revision": 417814,
+        "url": "https://bg3.wiki/wiki/Divine_Sense"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        }
+      ],
+      "recharge": "short_rest",
+      "applies": [
+        "condition.divine-sense"
+      ],
+      "gameUid": "Shout_DivineSense"
+    },
+    "links": [
+      {
+        "target": "class.paladin",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.divine-sense",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.divine-smite",
+    "type": "feature",
+    "name": {
+      "fr": "Divine Smite",
+      "en": "Divine Smite",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Divine Smite",
+        "revision": 426307,
+        "url": "https://bg3.wiki/wiki/Divine_Smite"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "action"
+        }
+      ],
+      "gameUid": "Target_Smite_Divine:Base spell,\nTarget_Smite_Divine_2:Upcasted to level 2 dealing 3d8,\nTarget_Smite_Divine_3:Upcasted to level 3 dealing 4d8,\nTarget_Smite_Divine_4:Upcasted to level 4 dealing 5d8,\nTarget_Smite_Divine_5:Upcasted to level 5 still dealing 5d8,\nTarget_Smite_Divine_6:Upcasted to level 6 still dealing 5d8"
+    },
+    "links": [
+      {
+        "target": "class.paladin",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -9391,6 +10552,62 @@
     ]
   },
   {
+    "id": "feature.evasion",
+    "type": "feature",
+    "name": {
+      "fr": "Evasion",
+      "en": "Evasion",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Evasion",
+        "revision": 432519,
+        "url": "https://bg3.wiki/wiki/Evasion"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "Evasion"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "class.rogue",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.evasive-instinct",
     "type": "feature",
     "name": {
@@ -9819,6 +11036,62 @@
     ]
   },
   {
+    "id": "feature.expertise-passive-feature",
+    "type": "feature",
+    "name": {
+      "fr": "Expertise",
+      "en": "Expertise",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Expertise (passive feature)",
+        "revision": 418324,
+        "url": "https://bg3.wiki/wiki/Expertise_(passive_feature)"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "Expertise"
+    },
+    "links": [
+      {
+        "target": "class.bard",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "class.rogue",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.exquisite-focus",
     "type": "feature",
     "name": {
@@ -9868,6 +11141,89 @@
         "relation": "applies",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.extra-attack",
+    "type": "feature",
+    "name": {
+      "fr": "Extra Attack",
+      "en": "Extra Attack",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Extra Attack",
+        "revision": 432537,
+        "url": "https://bg3.wiki/wiki/Extra_Attack"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "ExtraAttack"
+    },
+    "links": [
+      {
+        "target": "class.barbarian",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "class.fighter",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "class.paladin",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "class.ranger",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -9962,6 +11318,53 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.fast-movement",
+    "type": "feature",
+    "name": {
+      "fr": "Fast Movement",
+      "en": "Fast Movement",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Fast Movement",
+        "revision": 432545,
+        "url": "https://bg3.wiki/wiki/Fast_Movement"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "FastMovement"
+    },
+    "links": [
+      {
+        "target": "class.barbarian",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -10086,6 +11489,53 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.feral-instinct",
+    "type": "feature",
+    "name": {
+      "fr": "Feral Instinct",
+      "en": "Feral Instinct",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feral Instinct",
+        "revision": 432553,
+        "url": "https://bg3.wiki/wiki/Feral_Instinct"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "FeralInstinct"
+    },
+    "links": [
+      {
+        "target": "class.barbarian",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -11003,6 +12453,61 @@
     ]
   },
   {
+    "id": "feature.flurry-of-blows",
+    "type": "feature",
+    "name": {
+      "fr": "Flurry of Blows",
+      "en": "Flurry of Blows",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Flurry of Blows",
+        "revision": 418630,
+        "url": "https://bg3.wiki/wiki/Flurry_of_Blows"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        },
+        {
+          "resource": "ki"
+        }
+      ],
+      "gameUid": "Target_FlurryOfBlows"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.fly-trap",
     "type": "feature",
     "name": {
@@ -11217,6 +12722,53 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.font-of-inspiration",
+    "type": "feature",
+    "name": {
+      "fr": "Font of Inspiration",
+      "en": "Font of Inspiration",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Font of Inspiration",
+        "revision": 432575,
+        "url": "https://bg3.wiki/wiki/Font_of_Inspiration"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "FontOfInspiration"
+    },
+    "links": [
+      {
+        "target": "class.bard",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -13539,6 +15091,70 @@
     ]
   },
   {
+    "id": "feature.hide-in-plain-sight",
+    "type": "feature",
+    "name": {
+      "fr": "Hide in Plain Sight",
+      "en": "Hide in Plain Sight",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hide in Plain Sight",
+        "revision": 419509,
+        "url": "https://bg3.wiki/wiki/Hide_in_Plain_Sight"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "action"
+        }
+      ],
+      "applies": [
+        "condition.hide-in-plain-sight"
+      ],
+      "gameUid": "Shout_HideInPlainSight"
+    },
+    "links": [
+      {
+        "target": "class.ranger",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.hide-in-plain-sight",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.high-spellcasting-1",
     "type": "feature",
     "name": {
@@ -14305,6 +15921,53 @@
     ]
   },
   {
+    "id": "feature.improved-bardic-inspiration-passive-feature",
+    "type": "feature",
+    "name": {
+      "fr": "Improved Bardic Inspiration",
+      "en": "Improved Bardic Inspiration",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Improved Bardic Inspiration (passive feature)",
+        "revision": 432669,
+        "url": "https://bg3.wiki/wiki/Improved_Bardic_Inspiration_(passive_feature)"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "BardicInspiration_d8:d8 version, BardicInspiration_d10:d10 version"
+    },
+    "links": [
+      {
+        "target": "class.bard",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.improved-critical",
     "type": "feature",
     "name": {
@@ -14352,6 +16015,147 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.improved-divine-smite",
+    "type": "feature",
+    "name": {
+      "fr": "Improved Divine Smite",
+      "en": "Improved Divine Smite",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Improved Divine Smite",
+        "revision": 432679,
+        "url": "https://bg3.wiki/wiki/Improved_Divine_Smite"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "ImprovedDivineSmite"
+    },
+    "links": [
+      {
+        "target": "class.paladin",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.improved-extra-attack",
+    "type": "feature",
+    "name": {
+      "fr": "Improved Extra Attack",
+      "en": "Improved Extra Attack",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Improved Extra Attack",
+        "revision": 432681,
+        "url": "https://bg3.wiki/wiki/Improved_Extra_Attack"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "ExtraAttack_2"
+    },
+    "links": [
+      {
+        "target": "class.fighter",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.improved-wild-strike",
+    "type": "feature",
+    "name": {
+      "fr": "Improved Wild Strike",
+      "en": "Improved Wild Strike",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Improved Wild Strike",
+        "revision": 432684,
+        "url": "https://bg3.wiki/wiki/Improved_Wild_Strike"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "WildStrike_2"
+    },
+    "links": [
+      {
+        "target": "class.druid",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -14476,6 +16280,53 @@
         "relation": "applies",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.indomitable",
+    "type": "feature",
+    "name": {
+      "fr": "Indomitable",
+      "en": "Indomitable",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Indomitable",
+        "revision": 432687,
+        "url": "https://bg3.wiki/wiki/Indomitable"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "Indomitable"
+    },
+    "links": [
+      {
+        "target": "class.fighter",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -15193,6 +17044,53 @@
     ]
   },
   {
+    "id": "feature.jack-of-all-trades",
+    "type": "feature",
+    "name": {
+      "fr": "Jack of All Trades",
+      "en": "Jack of All Trades",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Jack of All Trades",
+        "revision": 439329,
+        "url": "https://bg3.wiki/wiki/Jack_of_All_Trades"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "JackOfAllTrades"
+    },
+    "links": [
+      {
+        "target": "class.bard",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.keen-attack",
     "type": "feature",
     "name": {
@@ -15230,6 +17128,53 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.ki-empowered-strikes",
+    "type": "feature",
+    "name": {
+      "fr": "Ki-Empowered Strikes",
+      "en": "Ki-Empowered Strikes",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Ki-Empowered Strikes",
+        "revision": 432724,
+        "url": "https://bg3.wiki/wiki/Ki-Empowered_Strikes"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "KiEmpoweredStrikes"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -16140,6 +18085,53 @@
     ]
   },
   {
+    "id": "feature.lands-stride-difficult-terrain",
+    "type": "feature",
+    "name": {
+      "fr": "Land’s Stride: Difficult Terrain",
+      "en": "Land's Stride: Difficult Terrain",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Land's Stride: Difficult Terrain",
+        "revision": 432730,
+        "url": "https://bg3.wiki/wiki/Land%27s_Stride:_Difficult_Terrain"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "LandsStride_DifficultTerrain"
+    },
+    "links": [
+      {
+        "target": "class.ranger",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.last-stand",
     "type": "feature",
     "name": {
@@ -16248,6 +18240,61 @@
         "relation": "applies",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.lay-on-hands",
+    "type": "feature",
+    "name": {
+      "fr": "Lay on Hands",
+      "en": "Lay on Hands",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Lay on Hands",
+        "revision": 420251,
+        "url": "https://bg3.wiki/wiki/Lay_on_Hands"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "action"
+        },
+        {
+          "resource": "lay_on_hands"
+        }
+      ],
+      "gameUid": "Target_LayOnHands"
+    },
+    "links": [
+      {
+        "target": "class.paladin",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -17692,6 +19739,159 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.martial-arts-bonus-unarmed-strike",
+    "type": "feature",
+    "name": {
+      "fr": "Martial Arts: Bonus Unarmed Strike",
+      "en": "Martial Arts: Bonus Unarmed Strike",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Martial Arts: Bonus Unarmed Strike",
+        "revision": 432833,
+        "url": "https://bg3.wiki/wiki/Martial_Arts:_Bonus_Unarmed_Strike"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "applies": [
+        "condition.martial-arts-unarmed-strike"
+      ],
+      "gameUid": "MartialArts_BonusUnarmedStrike"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.martial-arts-unarmed-strike",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.martial-arts-deft-strikes",
+    "type": "feature",
+    "name": {
+      "fr": "Martial Arts: Deft Strikes",
+      "en": "Martial Arts: Deft Strikes",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Martial Arts: Deft Strikes",
+        "revision": 432834,
+        "url": "https://bg3.wiki/wiki/Martial_Arts:_Deft_Strikes"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "MartialArts_UnarmedDamage"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.martial-arts-dextrous-attacks",
+    "type": "feature",
+    "name": {
+      "fr": "Martial Arts: Dextrous Attacks",
+      "en": "Martial Arts: Dextrous Attacks",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Martial Arts: Dextrous Attacks",
+        "revision": 432835,
+        "url": "https://bg3.wiki/wiki/Martial_Arts:_Dextrous_Attacks"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "MartialArts_DextrousUnarmedAttacks"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -19295,6 +21495,73 @@
         "relation": "applies",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.patient-defence",
+    "type": "feature",
+    "name": {
+      "fr": "Patient Defence",
+      "en": "Patient Defence",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Patient Defence",
+        "revision": 421713,
+        "url": "https://bg3.wiki/wiki/Patient_Defence"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        },
+        {
+          "resource": "ki"
+        }
+      ],
+      "applies": [
+        "condition.patient-defence"
+      ],
+      "gameUid": "Shout_PatientDefense"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.patient-defence",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -21410,6 +23677,53 @@
     ]
   },
   {
+    "id": "feature.purity-of-body",
+    "type": "feature",
+    "name": {
+      "fr": "Purity of Body",
+      "en": "Purity of Body",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Purity of Body",
+        "revision": 432988,
+        "url": "https://bg3.wiki/wiki/Purity_of_Body"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "PurityOfBody"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.pushing-attack-titanstring-bow",
     "type": "feature",
     "name": {
@@ -21676,6 +23990,83 @@
     ]
   },
   {
+    "id": "feature.rage",
+    "type": "feature",
+    "name": {
+      "fr": "Rage",
+      "en": "Rage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Rage",
+        "revision": 422103,
+        "url": "https://bg3.wiki/wiki/Rage"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        },
+        {
+          "resource": "rage"
+        }
+      ],
+      "applies": [
+        "condition.rage",
+        "condition.rage-impeded"
+      ],
+      "gameUid": "Shout_Rage"
+    },
+    "links": [
+      {
+        "target": "class.barbarian",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.rage",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.rage-impeded",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.rapid-caster",
     "type": "feature",
     "name": {
@@ -21929,6 +24320,70 @@
     ]
   },
   {
+    "id": "feature.reckless-attack",
+    "type": "feature",
+    "name": {
+      "fr": "Reckless Attack",
+      "en": "Reckless Attack",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Reckless Attack",
+        "revision": 433722,
+        "url": "https://bg3.wiki/wiki/Reckless_Attack"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "weapon_action",
+      "costs": [
+        {
+          "resource": "action"
+        }
+      ],
+      "applies": [
+        "condition.reckless-attack"
+      ],
+      "gameUid": "Target_RecklessAttack"
+    },
+    "links": [
+      {
+        "target": "class.barbarian",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.reckless-attack",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.refined-vaulting",
     "type": "feature",
     "name": {
@@ -22059,6 +24514,54 @@
     ]
   },
   {
+    "id": "feature.relentless-rage",
+    "type": "feature",
+    "name": {
+      "fr": "Relentless Rage",
+      "en": "Relentless Rage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Relentless Rage",
+        "revision": 433016,
+        "url": "https://bg3.wiki/wiki/Relentless_Rage"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "recharge": "short_rest",
+      "gameUid": "Relentless Rage"
+    },
+    "links": [
+      {
+        "target": "class.barbarian",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.relentless-revenge",
     "type": "feature",
     "name": {
@@ -22096,6 +24599,53 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.reliable-talent",
+    "type": "feature",
+    "name": {
+      "fr": "Reliable Talent",
+      "en": "Reliable Talent",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Reliable Talent",
+        "revision": 433036,
+        "url": "https://bg3.wiki/wiki/Reliable_Talent"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "ReliableTalent"
+    },
+    "links": [
+      {
+        "target": "class.rogue",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -23350,6 +25900,59 @@
         "relation": "applies",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.second-wind",
+    "type": "feature",
+    "name": {
+      "fr": "Second Wind",
+      "en": "Second Wind",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Second Wind",
+        "revision": 380599,
+        "url": "https://bg3.wiki/wiki/Second_Wind"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        }
+      ],
+      "recharge": "short_rest",
+      "gameUid": "Shout_SecondWind"
+    },
+    "links": [
+      {
+        "target": "class.fighter",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -25474,6 +28077,58 @@
     ]
   },
   {
+    "id": "feature.slow-fall",
+    "type": "feature",
+    "name": {
+      "fr": "Slow Fall",
+      "en": "Slow Fall",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Slow Fall",
+        "revision": 433161,
+        "url": "https://bg3.wiki/wiki/Slow_Fall"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "costs": [
+        {
+          "resource": "reaction"
+        }
+      ],
+      "gameUid": "SlowFall"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.smite-the-graceless",
     "type": "feature",
     "name": {
@@ -25580,6 +28235,112 @@
     ]
   },
   {
+    "id": "feature.sneak-attack-melee",
+    "type": "feature",
+    "name": {
+      "fr": "Sneak Attack (Melee)",
+      "en": "Sneak Attack (Melee)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sneak Attack (Melee)",
+        "revision": 426290,
+        "url": "https://bg3.wiki/wiki/Sneak_Attack_(Melee)"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "weapon_action",
+      "costs": [
+        {
+          "resource": "action"
+        }
+      ],
+      "recharge": "per_turn",
+      "gameUid": "Target_SneakAttack"
+    },
+    "links": [
+      {
+        "target": "class.rogue",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.sneak-attack-ranged",
+    "type": "feature",
+    "name": {
+      "fr": "Sneak Attack (Ranged)",
+      "en": "Sneak Attack (Ranged)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sneak Attack (Ranged)",
+        "revision": 427111,
+        "url": "https://bg3.wiki/wiki/Sneak_Attack_(Ranged)"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "weapon_action",
+      "costs": [
+        {
+          "resource": "action"
+        }
+      ],
+      "recharge": "per_turn",
+      "gameUid": "Projectile_SneakAttack"
+    },
+    "links": [
+      {
+        "target": "class.rogue",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.snowburst",
     "type": "feature",
     "name": {
@@ -25664,6 +28425,59 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.song-of-rest",
+    "type": "feature",
+    "name": {
+      "fr": "Song of Rest",
+      "en": "Song of Rest",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Song of Rest",
+        "revision": 393907,
+        "url": "https://bg3.wiki/wiki/Song_of_Rest"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "action"
+        }
+      ],
+      "recharge": "long_rest",
+      "gameUid": "Shout_SongOfRest"
+    },
+    "links": [
+      {
+        "target": "class.bard",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -26858,6 +29672,207 @@
     ]
   },
   {
+    "id": "feature.step-of-the-wind-dash",
+    "type": "feature",
+    "name": {
+      "fr": "Step of the Wind: Dash",
+      "en": "Step of the Wind: Dash",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Step of the Wind: Dash",
+        "revision": 423596,
+        "url": "https://bg3.wiki/wiki/Step_of_the_Wind:_Dash"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        },
+        {
+          "resource": "ki"
+        }
+      ],
+      "applies": [
+        "condition.dash",
+        "condition.step-of-the-wind"
+      ],
+      "gameUid": "Shout_Dash_StepOfTheWind"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.dash",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.step-of-the-wind",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.step-of-the-wind-disengage",
+    "type": "feature",
+    "name": {
+      "fr": "Step of the Wind: Disengage",
+      "en": "Step of the Wind: Disengage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Step of the Wind: Disengage",
+        "revision": 423597,
+        "url": "https://bg3.wiki/wiki/Step_of_the_Wind:_Disengage"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "bonus_action"
+        },
+        {
+          "resource": "ki"
+        }
+      ],
+      "applies": [
+        "condition.disengage",
+        "condition.step-of-the-wind"
+      ],
+      "gameUid": "Shout_Disengage_StepOfTheWind"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.disengage",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.step-of-the-wind",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.stillness-of-mind-passive-feature",
+    "type": "feature",
+    "name": {
+      "fr": "Stillness of Mind",
+      "en": "Stillness of Mind",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Stillness of Mind (passive feature)",
+        "revision": 438393,
+        "url": "https://bg3.wiki/wiki/Stillness_of_Mind_(passive_feature)"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "StillnessOfMind"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.sting-the-helpless",
     "type": "feature",
     "name": {
@@ -27108,6 +30123,134 @@
         "tag": {
           "act": "acte3",
           "level": "leger",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.stunning-strike-melee",
+    "type": "feature",
+    "name": {
+      "fr": "Stunning Strike (Melee)",
+      "en": "Stunning Strike (Melee)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Stunning Strike (Melee)",
+        "revision": 423670,
+        "url": "https://bg3.wiki/wiki/Stunning_Strike_(Melee)"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "action"
+        }
+      ],
+      "applies": [
+        "condition.stunned"
+      ],
+      "gameUid": "Target_StunningStrike"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.stunned",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.stunning-strike-unarmed",
+    "type": "feature",
+    "name": {
+      "fr": "Stunning Strike (Unarmed)",
+      "en": "Stunning Strike (Unarmed)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Stunning Strike (Unarmed)",
+        "revision": 439573,
+        "url": "https://bg3.wiki/wiki/Stunning_Strike_(Unarmed)"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "action"
+        }
+      ],
+      "applies": [
+        "condition.stunned"
+      ],
+      "gameUid": "Target_StunningStrike_Unarmed"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.stunned",
+        "relation": "applies",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
           "otherWorks": "aucun"
         }
       }
@@ -29253,12 +32396,12 @@
       "source": "srd-5.2.1-fr"
     },
     "tag": {
-      "act": "acte3",
+      "act": "prologue",
       "level": "aucun",
       "otherWorks": "aucun"
     },
     "titleTag": {
-      "act": "acte3",
+      "act": "prologue",
       "level": "aucun",
       "otherWorks": "aucun"
     },
@@ -29289,6 +32432,15 @@
     },
     "links": [
       {
+        "target": "class.cleric",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "item.veil-of-the-morning",
         "relation": "granted_by",
         "tag": {
@@ -29301,7 +32453,7 @@
         "target": "condition.turned",
         "relation": "applies",
         "tag": {
-          "act": "acte3",
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -29518,6 +32670,199 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.unarmoured-defence-barbarian",
+    "type": "feature",
+    "name": {
+      "fr": "Unarmoured Defence",
+      "en": "Unarmoured Defence",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Unarmoured Defence (barbarian)",
+        "revision": 439528,
+        "url": "https://bg3.wiki/wiki/Unarmoured_Defence_(barbarian)"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "UnarmouredDefence_Barbarian"
+    },
+    "links": [
+      {
+        "target": "class.barbarian",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.unarmoured-defence-monk",
+    "type": "feature",
+    "name": {
+      "fr": "Unarmoured Defence",
+      "en": "Unarmoured Defence",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Unarmoured Defence (monk)",
+        "revision": 439527,
+        "url": "https://bg3.wiki/wiki/Unarmoured_Defence_(monk)"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "UnarmoredDefense_Monk"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.unarmoured-movement",
+    "type": "feature",
+    "name": {
+      "fr": "Unarmoured Movement",
+      "en": "Unarmoured Movement",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Unarmoured Movement",
+        "revision": 438987,
+        "url": "https://bg3.wiki/wiki/Unarmoured_Movement"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "UnarmoredMovement_1:The version granted at level 2, UnarmoredMovement_2:The version granted at level 6, UnarmoredMovement_3:The veresion granted at level 10"
+    },
+    "links": [
+      {
+        "target": "class.monk",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.uncanny-dodge",
+    "type": "feature",
+    "name": {
+      "fr": "Uncanny Dodge",
+      "en": "Uncanny Dodge",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Uncanny Dodge",
+        "revision": 438158,
+        "url": "https://bg3.wiki/wiki/Uncanny_Dodge"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "costs": [
+        {
+          "resource": "reaction"
+        }
+      ],
+      "gameUid": "UncannyDodge"
+    },
+    "links": [
+      {
+        "target": "class.rogue",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -30826,6 +34171,107 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.wild-shape",
+    "type": "feature",
+    "name": {
+      "fr": "Wild Shape",
+      "en": "Wild Shape",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Wild Shape",
+        "revision": 439088,
+        "url": "https://bg3.wiki/wiki/Wild_Shape"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "action",
+      "costs": [
+        {
+          "resource": "action"
+        },
+        {
+          "resource": "wild_shape"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "class.druid",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.wild-strike",
+    "type": "feature",
+    "name": {
+      "fr": "Wild Strike",
+      "en": "Wild Strike",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Wild Strike",
+        "revision": 432683,
+        "url": "https://bg3.wiki/wiki/Wild_Strike"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "WildStrike"
+    },
+    "links": [
+      {
+        "target": "class.druid",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }

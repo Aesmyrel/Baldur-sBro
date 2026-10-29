@@ -153,3 +153,10 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - Un nom qui laisse deviner une intrigue reçoit une étiquette de titre plus stricte (11 noms) ; l'étiquette de la fiche suit.
 - La validation refuse un nom officiel sans source et une source de nom inconnue.
 - Aucun nom n'est en `VF_BG3` : la VF du jeu reste à relever sur la console, et les corrections du joueur, stockées localement, priment.
+
+**D-066 — Classes : lues dans le wikitexte, recoupées.** bg3.wiki n'a ni table Cargo ni module de données pour les classes : le pipeline lit les 12 pages de classe et la page `Classes` (maîtrises de multiclasse) avec un lecteur générique de tableaux wiki (fusions de cellules dépliées).
+- Faits retenus : points de vie (niveau 1, puis par niveau), jets de sauvegarde, caractéristique d'incantation (à défaut, celle que les « caractéristiques clés » réservent aux sorts), maîtrises de départ et de multiclasse, niveau de la sous-classe, magie de pacte, et pour chaque niveau : bonus de maîtrise, capacités, don, sorts mineurs et sorts connus, emplacements, ressources, colonnes propres (dégâts de rage, attaque sournoise…).
+- Recoupement : les emplacements annoncés dans la section de chaque niveau doivent égaler ceux du tableau, sinon le champ est signalé. Le rôdeur a 4 emplacements de niveau 3 au niveau 12 : la page le confirme comme un écart voulu par BG3.
+- Les capacités renvoient à leur fiche quand elle existe (75) ; les 12 capacités de choix sans fiche (style de combat, manifestations occultes…) portent un nom résolu comme les autres.
+- Noms des classes et de 7 capacités de choix : termes du SRD 5.2.1 FR ; les 5 autres sont proposés et signalés.
+- Un instantané de référence (`ClassDataTest`) fige les valeurs vérifiées à la main sur les pages, avec leur révision.

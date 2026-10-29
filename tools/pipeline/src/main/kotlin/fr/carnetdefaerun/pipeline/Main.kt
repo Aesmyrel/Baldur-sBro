@@ -14,13 +14,16 @@ fun main(args: Array<String>) {
     val root = Path.of("").toAbsolutePath()
     val paths = Paths(root)
     val out = args.indexOf("--out").takeIf { it >= 0 }?.let { Path.of(args[it + 1]) } ?: paths.cache.resolve("content.db")
-    val commands = args.toList().filterIndexed { i, a -> a != "--out" && (i == 0 || args[i - 1] != "--out") }.ifEmpty { listOf("normalize", "validate") }
+    // `--only class,module` : limite `fetch` à ces collections (les autres pages du cache restent telles quelles).
+    val only = args.indexOf("--only").takeIf { it >= 0 }?.let { args[it + 1].split(',').map(String::trim).toSet() }
+    val options = setOf("--out", "--only")
+    val commands = args.toList().filterIndexed { i, a -> a !in options && (i == 0 || args[i - 1] !in options) }.ifEmpty { listOf("normalize", "validate") }
     val steps = commands.flatMap { if (it == "all") listOf("fetch", "lexicon", "normalize", "validate", "build-db") else listOf(it) }
     var ok = true
     for (step in steps) {
         println("— $step")
         ok = when (step) {
-            "fetch" -> GamePipeline(paths).fetch()
+            "fetch" -> GamePipeline(paths).fetch(only)
             "lexicon" -> Lexicons(paths).fetch()
             "normalize" -> GamePipeline(paths).normalize()
             "validate" -> GamePipeline(paths).validate()

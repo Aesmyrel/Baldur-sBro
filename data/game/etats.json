@@ -38,6 +38,40 @@
     ]
   },
   {
+    "id": "condition.action-surge",
+    "type": "condition",
+    "name": {
+      "fr": "Action Surge",
+      "en": "Action Surge",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Action Surge (condition)",
+        "revision": 434377,
+        "url": "https://bg3.wiki/wiki/Action_Surge_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "condition.adroit-caster",
     "type": "condition",
     "name": {
@@ -389,6 +423,43 @@
     ]
   },
   {
+    "id": "condition.aura-of-courage-aura",
+    "type": "condition",
+    "name": {
+      "fr": "Aura of Courage",
+      "en": "Aura of Courage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Aura of Courage (Aura) (condition)",
+        "revision": 434511,
+        "url": "https://bg3.wiki/wiki/Aura_of_Courage_(Aura)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "condition.aura-of-murder-bhaalist-armour",
     "type": "condition",
     "name": {
@@ -417,6 +488,43 @@
     ],
     "facts": {
       "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.aura-of-protection-aura",
+    "type": "condition",
+    "name": {
+      "fr": "Aura of Protection (Aura)",
+      "en": "Aura of Protection (Aura)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Aura of Protection (Aura) (condition)",
+        "revision": 434537,
+        "url": "https://bg3.wiki/wiki/Aura_of_Protection_(Aura)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
     },
     "unknown": [
       "effect_text"
@@ -525,6 +633,40 @@
         "SG_Incapacitated",
         "SG_Condition"
       ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.bardic-inspiration",
+    "type": "condition",
+    "name": {
+      "fr": "Bardic Inspiration",
+      "en": "Bardic Inspiration",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Bardic Inspiration (condition)",
+        "revision": 434575,
+        "url": "https://bg3.wiki/wiki/Bardic_Inspiration_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
     },
     "unknown": [
       "effect_text"
@@ -1711,6 +1853,43 @@
     ]
   },
   {
+    "id": "condition.countercharm-aura",
+    "type": "condition",
+    "name": {
+      "fr": "Countercharm Aura",
+      "en": "Countercharm Aura",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Countercharm Aura (condition)",
+        "revision": 434943,
+        "url": "https://bg3.wiki/wiki/Countercharm_Aura_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "condition.covert-critical",
     "type": "condition",
     "name": {
@@ -1882,6 +2061,41 @@
     ],
     "facts": {
       "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.dash",
+    "type": "condition",
+    "name": {
+      "fr": "Dash",
+      "en": "Dash",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Dash (condition)",
+        "revision": 435037,
+        "url": "https://bg3.wiki/wiki/Dash_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "DASH"
     },
     "unknown": [
       "effect_text"
@@ -2183,12 +2397,12 @@
       "source": "srd-5.2.1-fr"
     },
     "tag": {
-      "act": "acte1",
+      "act": "prologue",
       "level": "aucun",
       "otherWorks": "aucun"
     },
     "titleTag": {
-      "act": "acte1",
+      "act": "prologue",
       "level": "aucun",
       "otherWorks": "aucun"
     },
@@ -2343,6 +2557,43 @@
         "title": "Divine Favour (condition)",
         "revision": 435141,
         "url": "https://bg3.wiki/wiki/Divine_Favour_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.divine-sense",
+    "type": "condition",
+    "name": {
+      "fr": "Divine Sense",
+      "en": "Divine Sense",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Divine Sense (condition)",
+        "revision": 435159,
+        "url": "https://bg3.wiki/wiki/Divine_Sense_(condition)"
       }
     ],
     "facts": {
@@ -4325,6 +4576,44 @@
     ]
   },
   {
+    "id": "condition.hide-in-plain-sight",
+    "type": "condition",
+    "name": {
+      "fr": "Hide in Plain Sight",
+      "en": "Hide in Plain Sight",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Hide in Plain Sight (condition)",
+        "revision": 435748,
+        "url": "https://bg3.wiki/wiki/Hide_in_Plain_Sight_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Invisible",
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "condition.hideous-laughter",
     "type": "condition",
     "name": {
@@ -4372,12 +4661,12 @@
       "status": "UNOFFICIAL"
     },
     "tag": {
-      "act": "acte2",
+      "act": "prologue",
       "level": "aucun",
       "otherWorks": "aucun"
     },
     "titleTag": {
-      "act": "acte2",
+      "act": "prologue",
       "level": "aucun",
       "otherWorks": "aucun"
     },
@@ -5268,6 +5557,40 @@
     ]
   },
   {
+    "id": "condition.martial-arts-unarmed-strike",
+    "type": "condition",
+    "name": {
+      "fr": "Martial Arts: Unarmed Strike",
+      "en": "Martial Arts: Unarmed Strike",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Martial Arts: Unarmed Strike (condition)",
+        "revision": 436160,
+        "url": "https://bg3.wiki/wiki/Martial_Arts:_Unarmed_Strike_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "condition.martial-exertion",
     "type": "condition",
     "name": {
@@ -5763,6 +6086,43 @@
         "title": "Pass Without Trace Aura (condition)",
         "revision": 436420,
         "url": "https://bg3.wiki/wiki/Pass_Without_Trace_Aura_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.patient-defence",
+    "type": "condition",
+    "name": {
+      "fr": "Patient Defence",
+      "en": "Patient Defence",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Patient Defence (condition)",
+        "revision": 436422,
+        "url": "https://bg3.wiki/wiki/Patient_Defence_(condition)"
       }
     ],
     "facts": {
@@ -6300,6 +6660,82 @@
     ]
   },
   {
+    "id": "condition.rage",
+    "type": "condition",
+    "name": {
+      "fr": "Rage",
+      "en": "Rage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Rage (condition)",
+        "revision": 436648,
+        "url": "https://bg3.wiki/wiki/Rage_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Rage",
+        "SG_RemoveOnRespec"
+      ],
+      "gameUid": "RAGE"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.rage-impeded",
+    "type": "condition",
+    "name": {
+      "fr": "Rage Impeded",
+      "en": "Rage Impeded",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Rage Impeded (condition)",
+        "revision": 436650,
+        "url": "https://bg3.wiki/wiki/Rage_Impeded_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "condition.ray-of-frost",
     "type": "condition",
     "name": {
@@ -6427,6 +6863,43 @@
         "title": "Recast Speak with Dead (condition)",
         "revision": 436680,
         "url": "https://bg3.wiki/wiki/Recast_Speak_with_Dead_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.reckless-attack",
+    "type": "condition",
+    "name": {
+      "fr": "Reckless Attack",
+      "en": "Reckless Attack",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Reckless Attack (condition)",
+        "revision": 436684,
+        "url": "https://bg3.wiki/wiki/Reckless_Attack_(condition)"
       }
     ],
     "facts": {
@@ -7519,6 +7992,43 @@
     ]
   },
   {
+    "id": "condition.step-of-the-wind",
+    "type": "condition",
+    "name": {
+      "fr": "Step of the Wind",
+      "en": "Step of the Wind",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Step of the Wind (condition)",
+        "revision": 437076,
+        "url": "https://bg3.wiki/wiki/Step_of_the_Wind_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "condition.stoneskin",
     "type": "condition",
     "name": {
@@ -7566,12 +8076,12 @@
       "source": "srd-5.2.1-fr"
     },
     "tag": {
-      "act": "acte1",
+      "act": "prologue",
       "level": "aucun",
       "otherWorks": "aucun"
     },
     "titleTag": {
-      "act": "acte1",
+      "act": "prologue",
       "level": "aucun",
       "otherWorks": "aucun"
     },
@@ -8270,12 +8780,12 @@
       "status": "UNOFFICIAL"
     },
     "tag": {
-      "act": "acte1",
+      "act": "prologue",
       "level": "aucun",
       "otherWorks": "aucun"
     },
     "titleTag": {
-      "act": "acte1",
+      "act": "prologue",
       "level": "aucun",
       "otherWorks": "aucun"
     },

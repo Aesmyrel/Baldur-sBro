@@ -1,5 +1,6 @@
 package fr.carnetdefaerun.pipeline.db
 
+import fr.carnetdefaerun.core.model.content.ClassFacts
 import fr.carnetdefaerun.core.model.content.ConditionFacts
 import fr.carnetdefaerun.core.model.content.ContentFormat
 import fr.carnetdefaerun.core.model.content.ContentSchema
@@ -153,5 +154,6 @@ class ContentDbBuilder(private val gameVersion: String) {
         is PlaceFacts -> f.act?.name
         is ConditionFacts -> null
         is LoreFacts -> f.theme.name
+        is ClassFacts -> null
     }
 }
