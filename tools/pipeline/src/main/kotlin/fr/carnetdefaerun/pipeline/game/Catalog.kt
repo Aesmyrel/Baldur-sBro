@@ -73,6 +73,8 @@ class FeatureNormalizer(private val corpus: Corpus, private val names: NameResol
         }
         val costs = Parsing.costs(t["cost"], corpus.resourceAliases) ?: emptyList<Nothing>().also { unknown += "costs" }
         val applies = conditionNames(t).map { Corpus.id("condition", Corpus.baseTitle(it, "condition")) }
+        // Une passive n'a pas de mécanique d'action ; une action n'a pas toujours de durée.
+        val m = if (kind == FeatureKind.PASSIVE) null else Mechanics.of(t, unknown, durationRequired = false)
         return Entry(
             id = id,
             type = EntryType.FEATURE,
@@ -82,7 +84,22 @@ class FeatureNormalizer(private val corpus: Corpus, private val names: NameResol
             titleTag = SpoilerTag.LOCKED,
             licence = LICENCE_BG3WIKI,
             attribution = listOf(page.attribution),
-            facts = FeatureFacts(kind, costs, Parsing.recharge(t["recharge"]), applies, t["uid"]),
+            facts = FeatureFacts(
+                kind = kind,
+                costs = costs,
+                recharge = Parsing.recharge(t["recharge"]),
+                applies = applies,
+                range = m?.range,
+                area = m?.area,
+                attackRoll = m?.attackRoll ?: false,
+                save = m?.save,
+                saveEffect = m?.saveEffect,
+                damage = m?.damage.orEmpty(),
+                weaponDamage = m?.weaponDamage ?: false,
+                durationTurns = m?.durationTurns,
+                durationUntil = m?.durationUntil,
+                gameUid = t["uid"],
+            ),
             links = applies.map { Link(it, Relation.APPLIES) },
             unknown = (unknown + "effect_text").distinct(),
         )

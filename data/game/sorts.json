@@ -4228,6 +4228,11 @@
       },
       "save": "dex",
       "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "2d8"
+        }
+      ],
       "weaponDamage": true,
       "upcastable": true,
       "learnedBy": [
@@ -4237,10 +4242,7 @@
         }
       ],
       "gameUid": "Zone_ConjureBarrage"
-    },
-    "unknown": [
-      "damage"
-    ]
+    }
   },
   {
     "id": "spell.conjure-elemental",
@@ -12457,6 +12459,11 @@
       "range": {
         "kind": "ranged"
       },
+      "damage": [
+        {
+          "dice": "1d6"
+        }
+      ],
       "concentration": true,
       "learnedBy": [
         {
@@ -12526,9 +12533,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {

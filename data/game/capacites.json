@@ -97,6 +97,11 @@
         "condition.abjure-enemy-frightened",
         "condition.abjure-enemy-slow"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "save": "wis",
       "gameUid": "Target_AbjureEnemy"
     },
     "links": [
@@ -659,6 +664,10 @@
       "applies": [
         "condition.action-surge"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_ActionSurge"
     },
     "links": [
@@ -1515,6 +1524,10 @@
       "applies": [
         "condition.ancient-grudges"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 3,
       "gameUid": "Shout_CRE_MAG_Githborn_Aberrations_Hunt"
     },
     "blocks": [
@@ -2100,6 +2113,9 @@
           "resource": "arcane_recovery"
         }
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_ArcaneRecovery"
     },
     "links": [
@@ -3291,6 +3307,13 @@
       "applies": [
         "condition.aura-of-courage-aura"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "sphere",
+        "metres": 3.0
+      },
       "gameUid": "Shout_AuraOf_Courage"
     },
     "links": [
@@ -3314,6 +3337,7 @@
       }
     ],
     "unknown": [
+      "duration",
       "effect_text"
     ]
   },
@@ -3350,6 +3374,13 @@
       "applies": [
         "condition.aura-of-devotion-aura"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "sphere",
+        "metres": 3.0
+      },
       "gameUid": "Shout_AuraOf_Devotion"
     },
     "links": [
@@ -3373,6 +3404,7 @@
       }
     ],
     "unknown": [
+      "duration",
       "effect_text"
     ]
   },
@@ -3409,6 +3441,13 @@
       "applies": [
         "condition.aura-of-hate-aura"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "sphere",
+        "metres": 3.0
+      },
       "gameUid": "Shout_AuraOf_Hate"
     },
     "links": [
@@ -3432,6 +3471,7 @@
       }
     ],
     "unknown": [
+      "duration",
       "effect_text"
     ]
   },
@@ -3536,6 +3576,13 @@
       "applies": [
         "condition.aura-of-protection-aura"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "sphere",
+        "metres": 3.0
+      },
       "gameUid": "Shout_AuraOf_Protection"
     },
     "links": [
@@ -3559,6 +3606,7 @@
       }
     ],
     "unknown": [
+      "duration",
       "effect_text"
     ]
   },
@@ -3595,6 +3643,13 @@
       "applies": [
         "condition.aura-of-warding-aura"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "sphere",
+        "metres": 3.0
+      },
       "gameUid": "Shout_AuraOf_Warding"
     },
     "links": [
@@ -3618,6 +3673,7 @@
       }
     ],
     "unknown": [
+      "duration",
       "effect_text"
     ]
   },
@@ -3716,6 +3772,19 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning",
+          "modifier": "finesse"
+        }
+      ],
+      "durationTurns": 2,
       "gameUid": "Target_PostureBreaker"
     },
     "blocks": [
@@ -3911,6 +3980,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -4303,6 +4375,11 @@
       "applies": [
         "condition.bardic-inspiration"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "durationUntil": "long",
       "gameUid": "Target_BardicInspiration"
     },
     "links": [
@@ -4701,6 +4778,11 @@
       "applies": [
         "condition.benign-transposition-spent"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "durationUntil": "long",
       "gameUid": "Target_BenignTransposition_Teleport, Target_LOW_BhaalCultist_BenignTransposition"
     },
     "links": [
@@ -4877,6 +4959,27 @@
           "amount": 2
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 2.0
+      },
+      "attackRoll": true,
+      "save": "dex",
+      "saveEffect": "negates",
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "cold"
+        }
+      ],
       "gameUid": "Projectile_BladeOfTheRime"
     },
     "links": [
@@ -5027,6 +5130,18 @@
       "applies": [
         "condition.blazing-retaliation"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "save": "dex",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ],
+      "durationTurns": 4,
       "gameUid": "Shout_MAG_FlamingFist_BlazingRetaliation"
     },
     "blocks": [
@@ -5215,6 +5330,11 @@
       "applies": [
         "condition.blessing-of-the-trickster"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 1.5
+      },
+      "durationUntil": "long",
       "gameUid": "Target_BlessingOfTheTrickster"
     },
     "links": [
@@ -5448,6 +5568,12 @@
       "applies": [
         "condition.blinded"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Projectile_MAG_WeaponAction_BlindingShot"
     },
     "blocks": [
@@ -5481,6 +5607,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -5585,6 +5714,8 @@
         }
       ],
       "recharge": "short_rest",
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Target_MAG_WeaponAction_Taxblade"
     },
     "blocks": [
@@ -5649,6 +5780,10 @@
       "applies": [
         "condition.the-pain-maidens-blessing"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_GOB_PainPriest_DaggerSpell"
     },
     "blocks": [
@@ -5789,6 +5924,18 @@
       "applies": [
         "condition.bleeding"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "necrotic"
+        }
+      ],
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_MAG_WeaponAction_Leech"
     },
     "blocks": [
@@ -5842,6 +5989,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -5966,6 +6116,10 @@
       "applies": [
         "condition.bolstering-magic-boon"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "durationTurns": 10,
       "gameUid": "Target_BolsteringMagic_Boost"
     },
     "links": [
@@ -6028,6 +6182,9 @@
         }
       ],
       "recharge": "long_rest",
+      "range": {
+        "kind": "melee"
+      },
       "gameUid": "Target_BolsteringMagic_SpellSlot1"
     },
     "links": [
@@ -6081,6 +6238,9 @@
         }
       ],
       "recharge": "long_rest",
+      "range": {
+        "kind": "melee"
+      },
       "gameUid": "Target_BolsteringMagic_SpellSlot2"
     },
     "links": [
@@ -6134,6 +6294,9 @@
         }
       ],
       "recharge": "long_rest",
+      "range": {
+        "kind": "melee"
+      },
       "gameUid": "Target_BolsteringMagic_SpellSlot3"
     },
     "links": [
@@ -6259,6 +6422,19 @@
         "condition.frightened",
         "condition.ever-radiant"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "wis",
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "radiant"
+        }
+      ],
+      "weaponDamage": true,
+      "durationTurns": 10,
       "gameUid": "Projectile_MAG_Victory_Longbow_RoaringShot"
     },
     "blocks": [
@@ -6311,6 +6487,10 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage",
+      "save_effect"
     ]
   },
   {
@@ -6482,6 +6662,9 @@
           "resource": "bonus_action"
         }
       ],
+      "range": {
+        "kind": "melee"
+      },
       "gameUid": "Target_BootOfTheGiants"
     },
     "links": [
@@ -6496,6 +6679,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -6605,6 +6789,7 @@
       "applies": [
         "condition.braced"
       ],
+      "durationTurns": 1,
       "gameUid": "Shout_Steady"
     },
     "blocks": [
@@ -6770,6 +6955,7 @@
       "applies": [
         "condition.braced"
       ],
+      "durationTurns": 1,
       "gameUid": "Shout_SteadyRangedCrossbow"
     },
     "blocks": [
@@ -7213,6 +7399,16 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 3.0
+      },
+      "save": "str",
+      "durationTurns": 2,
       "gameUid": "Projectile_MAG_Barbarian_BrutalLeap:Version available to players through Bonespike Boots,\nProjectile_Jump_Minotaur:NPC-only version"
     },
     "blocks": [
@@ -7287,6 +7483,11 @@
         }
       ],
       "recharge": "per_turn",
+      "area": {
+        "shape": "line",
+        "metres": 9.0
+      },
+      "save": "str",
       "gameUid": "Rush_MAG_Barbarian_Armor_Trample"
     },
     "blocks": [
@@ -7897,6 +8098,17 @@
       "@type": "feature",
       "kind": "action",
       "recharge": "per_turn",
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "damage": [
+        {
+          "dice": "1d8",
+          "healing": true,
+          "modifier": "spellcasting"
+        }
+      ],
       "gameUid": "Target_StarryForm_Chalice_Heal"
     },
     "links": [
@@ -7952,6 +8164,11 @@
       "applies": [
         "condition.compelled-to-duel"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "save": "wis",
       "gameUid": "Target_MAG_Legendary_CompelledDuel"
     },
     "blocks": [
@@ -8028,6 +8245,12 @@
       "applies": [
         "condition.champion-challenge"
       ],
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
+      "save": "wis",
+      "durationTurns": 10,
       "gameUid": "Shout_Champion_Challenge"
     },
     "links": [
@@ -8095,6 +8318,10 @@
       "applies": [
         "condition.channel-divinity-cloak-of-shadows"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 2,
       "gameUid": "Shout_CloakOfShadows"
     },
     "links": [
@@ -8218,6 +8445,15 @@
       "applies": [
         "condition.charmed-charm-animals-and-plants"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
+      "save": "wis",
+      "durationTurns": 10,
       "gameUid": "Shout_CharmAnimalsAndPlants"
     },
     "links": [
@@ -8345,6 +8581,17 @@
       "applies": [
         "condition.ray-of-frost"
       ],
+      "range": {
+        "kind": "ranged"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "cold"
+        }
+      ],
+      "durationTurns": 1,
       "gameUid": "Projectile_RayOfFrost_Monk"
     },
     "links": [
@@ -8593,6 +8840,10 @@
       "applies": [
         "condition.form-of-artifice"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_MAG_CircuitryInterface"
     },
     "blocks": [
@@ -8721,6 +8972,11 @@
         }
       ],
       "recharge": "short_rest",
+      "area": {
+        "shape": "cone",
+        "metres": 2.0
+      },
+      "attackRoll": true,
       "gameUid": "Zone_Cleave"
     },
     "blocks": [
@@ -9024,6 +9280,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -9068,6 +9327,11 @@
       "applies": [
         "condition.hold-person"
       ],
+      "range": {
+        "kind": "ranged"
+      },
+      "save": "wis",
+      "durationTurns": 10,
       "gameUid": "Target_HoldPerson_Monk"
     },
     "links": [
@@ -9132,6 +9396,9 @@
       "applies": [
         "condition.click-heels"
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_BootsOfSpeed"
     },
     "blocks": [
@@ -9205,6 +9472,10 @@
       "applies": [
         "condition.cloak-of-shadows"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_CloakOfShadows_Monk"
     },
     "links": [
@@ -9431,6 +9702,12 @@
         }
       ],
       "recharge": "short_rest",
+      "area": {
+        "shape": "line",
+        "metres": 6.0
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Zone_Mag_WeaponAction_GiantBlade"
     },
     "blocks": [
@@ -9455,6 +9732,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -9546,6 +9826,11 @@
       "applies": [
         "condition.combat-inspiration"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "durationUntil": "long",
       "gameUid": "Target_BardicInspiration_Combat"
     },
     "links": [
@@ -9666,6 +9951,9 @@
           "resource": "wild_shape"
         }
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_WildShape_Combat"
     },
     "links": [
@@ -9727,6 +10015,11 @@
       "applies": [
         "condition.onus-of-battle"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "durationTurns": 3,
       "gameUid": "Target_CommandersStrike:The standard version, Target_MAG_CommanderStrike:The version granted by equipment"
     },
     "blocks": [
@@ -9866,6 +10159,13 @@
       "applies": [
         "condition.dazed"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_ConcussiveSmash"
     },
     "blocks": [
@@ -10380,6 +10680,11 @@
         "condition.controlled",
         "condition.controlling-undead"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 6.0
+      },
+      "save": "wis",
       "gameUid": "Target_ControlUndead"
     },
     "links": [
@@ -10564,6 +10869,11 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Target_MAG_WeaponAction_CorrosiveStrike"
     },
     "blocks": [
@@ -10598,6 +10908,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -10697,6 +11010,15 @@
       "applies": [
         "condition.countercharm-aura"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
+      "durationTurns": 3,
       "gameUid": "Target_Countercharm"
     },
     "links": [
@@ -11041,6 +11363,9 @@
           "level": 1
         }
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_CreateSorceryPoints:Container ability,\nShout_CreateSorceryPoints_1:Convert level 1 spell slot into 1 sorcery point,\nShout_CreateSorceryPoints_2:Convert level 2 spell slot into 2 sorcery points,\nShout_CreateSorceryPoints_3:Convert level 3 spell slot into 3 sorcery points,\nShout_CreateSorceryPoints_4:Convert level 4 spell slot into 4 sorcery points,\nShout_CreateSorceryPoints_5:Convert level 5 spell slot into 5 sorcery points,\nShout_CreateSorceryPoints_6:Convert level 6 spell slot into 6 sorcery points,"
     },
     "links": [
@@ -11097,6 +11422,9 @@
           "amount": 2
         }
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_CreateSpellSlot:Container ability,\nShout_CreateSpellSlot_1:Convert 2 sorcery points into a level 1 spell slot,\nShout_CreateSpellSlot_2:Convert 3 sorcery points into a level 2 spell slot,\nShout_CreateSpellSlot_3:Convert 5 sorcery points into a level 3 spell slot,\nShout_CreateSpellSlot_4:Convert 6 sorcery points into a level 4 spell slot,\nShout_CreateSpellSlot_5:Convert 7 sorcery points into a level 5 spell slot,"
     },
     "links": [
@@ -11256,6 +11584,13 @@
       "applies": [
         "condition.crown-of-madness"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "int",
+      "weaponDamage": true,
+      "durationTurns": 3,
       "gameUid": "Target_MAG_WeaponAction_Mindoverload"
     },
     "blocks": [
@@ -11289,6 +11624,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -11385,6 +11723,10 @@
       "applies": [
         "condition.dash"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_Dash_CunningAction, Shout_Dash_CunningAction_NPC_OncePerTurn, Shout_LOW_Dolor_Dash"
     },
     "links": [
@@ -11449,6 +11791,10 @@
       "applies": [
         "condition.disengage"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_Disengage_CunningAction, Shout_LOW_Dolor_Disengage"
     },
     "links": [
@@ -11513,6 +11859,9 @@
       "applies": [
         "condition.hiding"
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_Hide_BonusAction"
     },
     "links": [
@@ -12058,6 +12407,9 @@
       "applies": [
         "condition.hiding"
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_MAG_Inkblot"
     },
     "blocks": [
@@ -12256,6 +12608,10 @@
       "applies": [
         "condition.dash"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_Dash, Shout_Dash_NPC, Shout_Dash_HookHorror"
     },
     "links": [
@@ -12519,6 +12875,19 @@
         }
       ],
       "recharge": "per_turn",
+      "area": {
+        "shape": "cone",
+        "metres": 5.0
+      },
+      "save": "dex",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "2d6",
+          "type": "radiant",
+          "modifier": "spellcasting"
+        }
+      ],
       "gameUid": "Zone_StarryForm_Dragon_BreathWeapon"
     },
     "links": [
@@ -12576,6 +12945,19 @@
         "condition.blinded",
         "condition.dazzling-ray"
       ],
+      "area": {
+        "shape": "line",
+        "metres": 18.0
+      },
+      "save": "dex",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "2d10",
+          "type": "radiant"
+        }
+      ],
+      "durationTurns": 10,
       "gameUid": "Zone_MAG_Automaton_SunbeamShot"
     },
     "blocks": [
@@ -13780,6 +14162,12 @@
         "condition.weapon-dropped",
         "condition.dirty-advantage"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "dex",
+      "weaponDamage": true,
       "gameUid": "Target_DirtyTrick_Disarm"
     },
     "links": [
@@ -13854,6 +14242,17 @@
         "condition.blinded",
         "condition.dirty-advantage"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "bludgeoning"
+        }
+      ],
       "gameUid": "Target_DirtyTrick_Blind"
     },
     "links": [
@@ -13886,6 +14285,7 @@
       }
     ],
     "unknown": [
+      "save_effect",
       "effect_text"
     ]
   },
@@ -13927,6 +14327,12 @@
       "applies": [
         "condition.weapon-dropped"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "weaponDamage": true,
       "gameUid": "Target_DisarmingAttack"
     },
     "links": [
@@ -13950,6 +14356,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -13991,6 +14398,12 @@
       "applies": [
         "condition.weapon-dropped"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "weaponDamage": true,
       "gameUid": "Projectile_DisarmingAttack"
     },
     "links": [
@@ -14014,6 +14427,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -14055,6 +14469,18 @@
       "recharge": "short_rest",
       "applies": [
         "condition.weapon-dropped"
+      ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "piercing",
+          "modifier": "finesse"
+        }
       ],
       "gameUid": "Target_DisarmingStrike"
     },
@@ -14107,6 +14533,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -14262,6 +14691,12 @@
       "applies": [
         "condition.distracted"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Target_DistractingStrike"
     },
     "links": [
@@ -14285,6 +14720,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -14326,6 +14762,12 @@
       "applies": [
         "condition.distracted"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Projectile_DistractingStrike"
     },
     "links": [
@@ -14349,6 +14791,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -14476,6 +14919,9 @@
     "facts": {
       "@type": "feature",
       "kind": "action",
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_DivineIntervention"
     },
     "links": [
@@ -14532,6 +14978,10 @@
       "applies": [
         "condition.divine-sense"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 2,
       "gameUid": "Shout_DivineSense"
     },
     "links": [
@@ -14593,6 +15043,21 @@
           "resource": "action"
         }
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "radiant"
+        },
+        {
+          "dice": "1d8",
+          "type": "radiant"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_Smite_Divine:Base spell,\nTarget_Smite_Divine_2:Upcasted to level 2 dealing 3d8,\nTarget_Smite_Divine_3:Upcasted to level 3 dealing 4d8,\nTarget_Smite_Divine_4:Upcasted to level 4 dealing 5d8,\nTarget_Smite_Divine_5:Upcasted to level 5 still dealing 5d8,\nTarget_Smite_Divine_6:Upcasted to level 6 still dealing 5d8"
     },
     "links": [
@@ -14646,6 +15111,10 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
       "gameUid": "Target_DivineStrike_Nature_Container"
     },
     "links": [
@@ -14698,7 +15167,18 @@
           "resource": "action"
         }
       ],
-      "recharge": "per_turn"
+      "recharge": "per_turn",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "necrotic"
+        }
+      ],
+      "weaponDamage": true
     },
     "links": [
       {
@@ -14751,6 +15231,17 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "poison"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_DivineStrike_Trickery_Container"
     },
     "links": [
@@ -14804,6 +15295,17 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "radiant"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_DivineStrike_Life_Container"
     },
     "links": [
@@ -14857,6 +15359,17 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "thunder"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_DivineStrike_Tempest_Container"
     },
     "links": [
@@ -14910,6 +15423,16 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d8"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_DivineStrike_War_Container"
     },
     "links": [
@@ -14965,6 +15488,9 @@
       "applies": [
         "condition.prone"
       ],
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Projectile_DivingStrike"
     },
     "links": [
@@ -14988,6 +15514,7 @@
       }
     ],
     "unknown": [
+      "range",
       "effect_text"
     ]
   },
@@ -15792,6 +16319,9 @@
       "applies": [
         "condition.hiding"
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_Hide_DreadAmbusher"
     },
     "links": [
@@ -15849,6 +16379,16 @@
       "@type": "feature",
       "kind": "weapon_action",
       "recharge": "per_combat",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d8"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_DreadAmbusher"
     },
     "links": [
@@ -15897,6 +16437,16 @@
       "@type": "feature",
       "kind": "weapon_action",
       "recharge": "per_combat",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d8"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Projectile_DreadAmbusher"
     },
     "links": [
@@ -16023,6 +16573,15 @@
       "applies": [
         "condition.frightened"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "sphere",
+        "metres": 9.0
+      },
+      "save": "wis",
+      "durationTurns": 2,
       "gameUid": "Shout_Dreadful_Aspect"
     },
     "links": [
@@ -16240,6 +16799,11 @@
       "applies": [
         "condition.drunken-technique"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "durationTurns": 1,
       "gameUid": "Target_DrunkenTechnique"
     },
     "links": [
@@ -16263,6 +16827,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -16302,6 +16867,11 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Target_MAG_TheDueller_BonusAttack"
     },
     "blocks": [
@@ -16580,6 +17150,15 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "weapon"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 3.0
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Target_DEN_Apprentice_DaggerOfShar_Spell"
     },
     "blocks": [
@@ -17248,6 +17827,9 @@
     "facts": {
       "@type": "feature",
       "kind": "action",
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_ElementalCleaver"
     },
     "links": [
@@ -17744,6 +18326,24 @@
           "amount": 3
         }
       ],
+      "range": {
+        "kind": "ranged"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "2d6",
+          "type": "fire"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
       "gameUid": "Projectile_ScorchingRay_Monk"
     },
     "links": [
@@ -17976,6 +18576,13 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Throw_FrenziedThrow"
     },
     "links": [
@@ -18212,6 +18819,9 @@
         }
       ],
       "recharge": "long_rest",
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_MAG_Restore_ChannelDivinity"
     },
     "blocks": [
@@ -18332,6 +18942,10 @@
       "applies": [
         "condition.evasive-footwork"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_EvasiveFootwork"
     },
     "links": [
@@ -19559,6 +20173,18 @@
       "applies": [
         "condition.fangs-of-the-fire-snake"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 6.0
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "fire"
+        }
+      ],
+      "durationTurns": 1,
       "gameUid": "Projectile_FangsOfTheFireSnake"
     },
     "links": [
@@ -19582,6 +20208,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -19791,6 +20418,11 @@
           "resource": "action"
         }
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Target_FeintingAttack"
     },
     "links": [
@@ -19805,6 +20437,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -20072,6 +20705,14 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 3.0
+      },
+      "save": "wis",
       "gameUid": "Shout_FeyPresence_Container"
     },
     "links": [
@@ -20257,6 +20898,9 @@
       "@type": "feature",
       "kind": "action",
       "recharge": "short_rest",
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Target_Fiendish_Resilience_Container"
     },
     "links": [
@@ -20517,6 +21161,18 @@
           "amount": 2
         }
       ],
+      "area": {
+        "shape": "cube",
+        "metres": 5.0
+      },
+      "save": "con",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "thunder"
+        }
+      ],
       "gameUid": "Zone_Thunderwave_Monk"
     },
     "links": [
@@ -20576,6 +21232,19 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "save": "str",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "3d10",
+          "type": "bludgeoning"
+        }
+      ],
+      "durationTurns": 1,
       "gameUid": "Target_FistOfUnbrokenAir"
     },
     "links": [
@@ -20639,6 +21308,21 @@
         {
           "resource": "ki",
           "amount": 4
+        }
+      ],
+      "range": {
+        "kind": "ranged"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 4.0
+      },
+      "save": "dex",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "8d6",
+          "type": "fire"
         }
       ],
       "gameUid": "Projectile_Fireball_Monk"
@@ -20821,6 +21505,18 @@
       "applies": [
         "condition.off-balance"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "dex",
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ],
+      "durationTurns": 2,
       "gameUid": "Target_OpeningAttack"
     },
     "blocks": [
@@ -21187,6 +21883,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -21227,6 +21926,10 @@
           "resource": "ki"
         }
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
       "gameUid": "Target_FlurryOfBlows"
     },
     "links": [
@@ -21250,6 +21953,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -21291,6 +21995,11 @@
           "resource": "ki"
         }
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "str",
       "gameUid": "Target_OpenHandTechnique_Push"
     },
     "links": [
@@ -21305,6 +22014,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -21349,6 +22059,11 @@
       "applies": [
         "condition.open-hand-technique-staggered"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "durationTurns": 1,
       "gameUid": "Target_OpenHandTechnique_NoReactions"
     },
     "links": [
@@ -21372,6 +22087,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -21416,6 +22132,12 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "dex",
+      "durationTurns": 1,
       "gameUid": "Target_OpenHandTechnique_Knock"
     },
     "links": [
@@ -21439,6 +22161,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -21525,6 +22248,10 @@
           "resource": "half_movement"
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
       "gameUid": "Projectile_Fly,\nProjectile_Fly_Spell,\nProjectile_Jump_Harpy,\nProjectile_Jump_Imp,\nProjectile_Jump_Mephit,\nProjectile_Jump_Spectator,\nProjectile_Fly_Dog_Ghost,\nProjectile_Fly_Bat,\nProjectile_Jump_Ghoul_Flying,\nProjectile_Jump_AnimateDead_Ghoul_Flying,\nProjectile_Jump_Cloaker,\nProjectile_Jump_GiantEagle,\nProjectile_Jump_Vampire_Bats,"
     },
     "links": [
@@ -21578,6 +22305,10 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "distance",
+        "metres": 6.0
+      },
       "gameUid": "Projectile_Fly_StarryFromDragon"
     },
     "links": [
@@ -22305,6 +23036,12 @@
       "applies": [
         "condition.frenzied-strain"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Target_FrenziedStrike"
     },
     "links": [
@@ -22373,6 +23110,9 @@
         "condition.frenzied",
         "condition.rage-impeded"
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_Rage_Frenzy"
     },
     "links": [
@@ -22502,6 +23242,10 @@
           "resource": "fungal_infestation"
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 3.0
+      },
       "gameUid": "Target_FungalInfestation"
     },
     "links": [
@@ -22682,6 +23426,18 @@
       "applies": [
         "condition.off-balance-gargantuan-cleave"
       ],
+      "area": {
+        "shape": "cone",
+        "metres": 1.5
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "slashing"
+        }
+      ],
+      "durationTurns": 1,
       "gameUid": "Zone_UNI_SuperheavyWeapon_Spell"
     },
     "blocks": [
@@ -22715,6 +23471,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -22756,6 +23515,17 @@
       "applies": [
         "condition.garrotted"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "save": "str",
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "bludgeoning"
+        }
+      ],
+      "durationTurns": 3,
       "gameUid": "Target_MAG_Bhaalist_Garrote"
     },
     "blocks": [
@@ -22789,6 +23559,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -22886,6 +23659,9 @@
       "applies": [
         "condition.giant-form"
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_MAG_Legendary_GiantSlayer_EnlargeSelf"
     },
     "blocks": [
@@ -23014,7 +23790,10 @@
       "applies": [
         "condition.giants-rage",
         "condition.rage-impeded"
-      ]
+      ],
+      "range": {
+        "kind": "self"
+      }
     },
     "links": [
       {
@@ -23502,6 +24281,13 @@
       "applies": [
         "condition.goaded"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "wis",
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Target_GoadingAttack"
     },
     "links": [
@@ -23525,6 +24311,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -23566,6 +24353,13 @@
       "applies": [
         "condition.goaded"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "wis",
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Projectile_GoadingAttack"
     },
     "links": [
@@ -23589,6 +24383,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -23743,6 +24538,22 @@
           "amount": 3
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 3.0
+      },
+      "save": "con",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "3d8",
+          "type": "thunder"
+        }
+      ],
       "gameUid": "Target_Shatter_Monk"
     },
     "links": [
@@ -23864,6 +24675,13 @@
         }
       ],
       "recharge": "short_rest",
+      "area": {
+        "shape": "circle",
+        "metres": 3.0
+      },
+      "save": "dex",
+      "saveEffect": "half",
+      "weaponDamage": true,
       "gameUid": "Target_MAG_WeaponAction_GrandSlam"
     },
     "blocks": [
@@ -23888,6 +24706,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -24463,6 +25284,10 @@
       "applies": [
         "condition.guided-strike-active"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_GuidedStrike"
     },
     "links": [
@@ -24524,6 +25349,17 @@
           "resource": "reaction"
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 6.0
+      },
+      "save": "con",
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "necrotic"
+        }
+      ],
       "gameUid": "Target_HaloOfSpores"
     },
     "links": [
@@ -24538,6 +25374,7 @@
       }
     ],
     "unknown": [
+      "save_effect",
       "effect_text"
     ]
   },
@@ -24580,6 +25417,13 @@
       "applies": [
         "condition.hamstrung"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Projectile_HamstringShot"
     },
     "blocks": [
@@ -24910,6 +25754,20 @@
       "applies": [
         "condition.healing-incense-aura"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "healing": true
+        }
+      ],
+      "durationTurns": 10,
       "gameUid": "Shout_MAG_DevoteesMace_Healing_Aura"
     },
     "blocks": [
@@ -24986,6 +25844,14 @@
       "applies": [
         "condition.healing-radiance"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 3.0
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_HealingRadiance:Main action,\nShout_HealingRadiance_Heal:Secondary heal action automatically activated on the next turn"
     },
     "links": [
@@ -25009,6 +25875,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -25089,6 +25956,13 @@
     "facts": {
       "@type": "feature",
       "kind": "action",
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 6.0
+      },
       "gameUid": "Projectile_HeartOfTheStorm_Lightning"
     },
     "links": [
@@ -25103,6 +25977,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -25183,6 +26058,13 @@
     "facts": {
       "@type": "feature",
       "kind": "action",
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 6.0
+      },
       "gameUid": "Projectile_HeartOfTheStorm_Thunder"
     },
     "links": [
@@ -25197,6 +26079,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -25239,6 +26122,19 @@
       "applies": [
         "condition.chest-trauma"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "piercing",
+          "modifier": "finesse"
+        }
+      ],
+      "durationTurns": 2,
       "gameUid": "Target_HeartStopper"
     },
     "blocks": [
@@ -25290,6 +26186,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -25582,6 +26481,21 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 3.0
+      },
+      "save": "dex",
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "fire"
+        }
+      ],
       "gameUid": "Target_MAG_Legendary_HellCrawler:Teleport action,\nProjectile_MAG_Infernal_MistyStep_Fireball:Explosion triggered after teleporting"
     },
     "blocks": [
@@ -25606,6 +26520,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -25886,6 +26803,11 @@
       "applies": [
         "condition.hexblades-curse"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "durationTurns": 10,
       "gameUid": "Target_HexbladesCurse"
     },
     "links": [
@@ -25909,6 +26831,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -25950,6 +26873,10 @@
       "applies": [
         "condition.hide-in-plain-sight"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_HideInPlainSight"
     },
     "links": [
@@ -26230,6 +27157,17 @@
       "applies": [
         "condition.holy-rebuke"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "radiant"
+        }
+      ],
+      "durationTurns": 2,
       "gameUid": "Target_HolyRebuke"
     },
     "links": [
@@ -26407,7 +27345,17 @@
       "applies": [
         "condition.horde-breaker",
         "condition.horde-breaker-target"
-      ]
+      ],
+      "range": {
+        "kind": "weapon"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 2.0
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 1
     },
     "links": [
       {
@@ -26481,7 +27429,17 @@
       "applies": [
         "condition.horde-breaker",
         "condition.horde-breaker-target"
-      ]
+      ],
+      "range": {
+        "kind": "weapon"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 2.0
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 1
     },
     "links": [
       {
@@ -26556,6 +27514,10 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
       "gameUid": "Target_HoundOfIllOmen"
     },
     "links": [
@@ -26668,6 +27630,13 @@
       "applies": [
         "condition.silenced"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_MAG_WeaponAction_SilencingBlade"
     },
     "blocks": [
@@ -26701,6 +27670,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -26742,6 +27714,11 @@
       "applies": [
         "condition.hypnotic-gaze"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "save": "wis",
+      "durationTurns": 2,
       "gameUid": "Target_HypnoticGaze"
     },
     "links": [
@@ -26998,6 +27975,17 @@
       "applies": [
         "condition.radiating-orb"
       ],
+      "range": {
+        "kind": "ranged"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "piercing"
+        }
+      ],
+      "durationTurns": 1,
       "gameUid": "Projectile_MAG_Automaton_LightTagging_Shot"
     },
     "blocks": [
@@ -27187,6 +28175,19 @@
       "applies": [
         "condition.fearful"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "save": "int",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "fire"
+        }
+      ],
+      "durationTurns": 3,
       "gameUid": "Target_MAG_Legendary_ImmolatingGaze"
     },
     "blocks": [
@@ -27944,6 +28945,19 @@
       "applies": [
         "condition.slowed"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "dex",
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "necrotic"
+        }
+      ],
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_MAG_WeaponAction_Bonesaw"
     },
     "blocks": [
@@ -27987,6 +29001,10 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage",
+      "save_effect"
     ]
   },
   {
@@ -28027,6 +29045,14 @@
       "applies": [
         "condition.inciting-howl"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_PackHowl_Barbarian"
     },
     "links": [
@@ -28585,6 +29611,10 @@
       "applies": [
         "condition.infiltration-expertise"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_InfiltrationExpertise"
     },
     "links": [
@@ -28650,6 +29680,19 @@
       "applies": [
         "condition.poisoned"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "dex",
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "necrotic"
+        }
+      ],
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_MAG_WeaponAction_Syringe"
     },
     "blocks": [
@@ -28693,6 +29736,10 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage",
+      "save_effect"
     ]
   },
   {
@@ -28792,6 +29839,11 @@
       "applies": [
         "condition.inquisitors-might"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "durationTurns": 2,
       "gameUid": "Target_InquisitorsMight"
     },
     "links": [
@@ -29088,6 +30140,12 @@
       "applies": [
         "condition.fearful"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "save": "wis",
+      "durationTurns": 2,
       "gameUid": "Target_IntimidatingPresence"
     },
     "links": [
@@ -29155,6 +30213,12 @@
       "applies": [
         "condition.drunk"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "durationTurns": 5,
       "gameUid": "Target_IntoxicatingStrike"
     },
     "links": [
@@ -29178,6 +30242,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -29222,6 +30287,12 @@
       "applies": [
         "condition.drunk"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "durationTurns": 5,
       "gameUid": "Target_IntoxicatingStrike"
     },
     "links": [
@@ -29245,6 +30316,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -29411,6 +30483,14 @@
           "resource": "channel_divinity"
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 3.0
+      },
       "gameUid": "Target_InvokeDuplicity"
     },
     "links": [
@@ -29717,6 +30797,22 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 5.0
+      },
+      "save": "dex",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "3d6",
+          "type": "force"
+        }
+      ],
       "gameUid": "Target_KiResonation_Blast:Action to trigger the explosions,\nProjectile_KiResonation_Blast_Target:Explosion created at each Reasonating target"
     },
     "links": [
@@ -29772,6 +30868,11 @@
       "applies": [
         "condition.resonating-ki"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "durationTurns": 10,
       "gameUid": "Target_KiResonation_Punch"
     },
     "links": [
@@ -29795,6 +30896,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -29836,6 +30938,11 @@
       "applies": [
         "condition.resonating-ki"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "durationTurns": 10,
       "gameUid": "Target_KiResonation_Punch_BonusAction"
     },
     "links": [
@@ -29859,6 +30966,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -29898,6 +31006,9 @@
         }
       ],
       "recharge": "long_rest",
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_MAG_Monk_Restore_Ki"
     },
     "links": [
@@ -29951,6 +31062,9 @@
         }
       ],
       "recharge": "long_rest",
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_MAG_Monk_Restore_Ki_Lesser"
     },
     "blocks": [
@@ -30015,6 +31129,7 @@
           "resource": "channel_divinity"
         }
       ],
+      "durationUntil": "long",
       "gameUid": "Shout_KnowledgeOfTheAges"
     },
     "links": [
@@ -30188,6 +31303,13 @@
       "applies": [
         "condition.bleeding"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_Slash_New"
     },
     "blocks": [
@@ -31224,6 +32346,9 @@
           "resource": "lay_on_hands"
         }
       ],
+      "range": {
+        "kind": "melee"
+      },
       "gameUid": "Target_LayOnHands"
     },
     "links": [
@@ -32231,6 +33356,21 @@
       "applies": [
         "condition.lightning-aura"
       ],
+      "area": {
+        "shape": "radius",
+        "metres": 6.0
+      },
+      "save": "dex",
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "lightning"
+        },
+        {
+          "dice": "1d4",
+          "type": "lightning"
+        }
+      ],
       "gameUid": "Shout_MAG_ChargedLightning_LightningAura"
     },
     "blocks": [
@@ -32284,6 +33424,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -32325,6 +33468,10 @@
       "applies": [
         "condition.lightning-blast"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 2,
       "gameUid": "Shout_MAG_ChargedLightning_LightningBlast"
     },
     "blocks": [
@@ -32634,6 +33781,15 @@
           "level": 1
         }
       ],
+      "range": {
+        "kind": "self"
+      },
+      "damage": [
+        {
+          "dice": "1d8",
+          "healing": true
+        }
+      ],
       "gameUid": "Shout_WildShape_Combat_Heal"
     },
     "links": [
@@ -32808,6 +33964,14 @@
       "applies": [
         "condition.magic-awareness"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 3.0
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_MagicAwareness"
     },
     "links": [
@@ -33210,6 +34374,18 @@
       "applies": [
         "condition.maimed"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "damage": [
+        {
+          "dice": "1d4",
+          "modifier": "finesse"
+        }
+      ],
+      "durationTurns": 2,
       "gameUid": "Target_CripplingStrike"
     },
     "blocks": [
@@ -33353,6 +34529,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -33676,6 +34855,12 @@
       "applies": [
         "condition.manoeuvring-attack"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Target_ManeuveringAttack"
     },
     "links": [
@@ -33699,6 +34884,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -33740,6 +34926,12 @@
       "applies": [
         "condition.manoeuvring-attack"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Projectile_ManeuveringAttack"
     },
     "links": [
@@ -33763,6 +34955,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -33808,6 +35001,10 @@
         "condition.mantle-of-inspiration",
         "condition.charmed"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
       "gameUid": "Target_MantleOfInspiration, Target_MantleOfInspiration_2, Target_MantleOfInspiration_3"
     },
     "links": [
@@ -33881,7 +35078,13 @@
       "recharge": "long_rest",
       "applies": [
         "condition.mantle-of-majesty"
-      ]
+      ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "save": "wis",
+      "durationTurns": 10
     },
     "links": [
       {
@@ -34216,6 +35419,16 @@
       "applies": [
         "condition.martial-exertion"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "damage": [
+        {
+          "dice": "6d6",
+          "type": "piercing"
+        }
+      ],
+      "durationTurns": 1,
       "gameUid": "Shout_MAG_Martial_Exertion"
     },
     "blocks": [
@@ -34385,6 +35598,10 @@
       "applies": [
         "condition.harmonised"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_MAG_Harpers_HarmonizingRapier_Perfrom"
     },
     "blocks": [
@@ -34479,6 +35696,13 @@
       "applies": [
         "condition.frightened"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "wis",
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_MAG_MenacingAttack"
     },
     "blocks": [
@@ -34532,6 +35756,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -34572,6 +35799,13 @@
       "applies": [
         "condition.frightened"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "wis",
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_MenacingAttack"
     },
     "links": [
@@ -34595,6 +35829,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -34636,6 +35871,13 @@
       "applies": [
         "condition.frightened"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "wis",
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Projectile_MenacingAttack"
     },
     "links": [
@@ -34659,6 +35901,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -34938,7 +36181,11 @@
         {
           "resource": "bonus_action"
         }
-      ]
+      ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      }
     },
     "links": [
       {
@@ -35136,6 +36383,15 @@
       "applies": [
         "condition.wet"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 4.0
+      },
+      "durationTurns": 3,
       "gameUid": "Target_CreateWater_MinorConjuration"
     },
     "links": [
@@ -35285,6 +36541,10 @@
       "applies": [
         "condition.gaseous-form"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_GaseousForm_Monk"
     },
     "links": [
@@ -35395,6 +36655,11 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "distance",
+        "metres": 15.0
+      },
+      "attackRoll": true,
       "gameUid": "Projectile_MobileShooting"
     },
     "blocks": [
@@ -35446,6 +36711,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -35540,6 +36808,11 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Target_MAG_WeaponAction_MoonlightButterfly"
     },
     "blocks": [
@@ -35584,6 +36857,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -36115,6 +37391,9 @@
           "resource": "natural_recovery"
         }
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_NaturalRecovery:Container ability,\nShout_NaturalRecovery_1:Version to restore level 1 slot,\nShout_NaturalRecovery_2:Version to restore level 2 slot,\nShout_NaturalRecovery_3:Version to restore level 3 slot,\nShout_NaturalRecovery_4:Version to restore level 4 slot,\nShout_NaturalRecovery_5:Version to restore level 5 slot,"
     },
     "links": [
@@ -36364,6 +37643,12 @@
       "applies": [
         "condition.natures-wrath"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 3.0
+      },
+      "save": "str",
+      "durationTurns": 10,
       "gameUid": "Target_NaturesWrath"
     },
     "links": [
@@ -37263,6 +38548,11 @@
         "condition.panache-disadvantage",
         "condition.charmed"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "durationTurns": 10,
       "gameUid": "Target_Panache"
     },
     "links": [
@@ -37406,6 +38696,13 @@
       "applies": [
         "condition.rended-flesh"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "weaponDamage": true,
+      "durationTurns": 3,
       "gameUid": "Target_MAG_WeaponAction_Fleshrend"
     },
     "blocks": [
@@ -37449,6 +38746,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -37492,6 +38792,10 @@
       "applies": [
         "condition.patient-defence"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_PatientDefense"
     },
     "links": [
@@ -37554,6 +38858,9 @@
         }
       ],
       "recharge": "long_rest",
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_MAG_SpellSlotRestoration_PearlOfPower"
     },
     "blocks": [
@@ -37626,6 +38933,11 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Target_MAG_PHB_ScimitarOfSpeed_BonusAttack"
     },
     "blocks": [
@@ -37786,6 +39098,7 @@
         }
       ],
       "recharge": "short_rest",
+      "durationTurns": 5,
       "gameUid": "Shout_MAG_Harpers_SingingSword_Container"
     },
     "blocks": [
@@ -37871,6 +39184,13 @@
       "applies": [
         "condition.gaping-wounds"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Projectile_PiercingShot"
     },
     "blocks": [
@@ -38073,6 +39393,13 @@
       "applies": [
         "condition.gaping-wounds"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_PiercingThrust"
     },
     "blocks": [
@@ -38623,6 +39950,11 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Target_MAG_WeaponAction_PoisonMist"
     },
     "blocks": [
@@ -38667,6 +39999,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -38820,6 +40155,10 @@
       "applies": [
         "condition.polymorphed-dire-raven"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_MAG_RavenAmulet_Polymorph"
     },
     "blocks": [
@@ -38904,6 +40243,18 @@
       "applies": [
         "condition.dazed"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ],
+      "durationTurns": 2,
       "gameUid": "Target_PommelStrike"
     },
     "blocks": [
@@ -39163,6 +40514,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -39419,6 +40773,10 @@
       "applies": [
         "condition.precision-attack"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_PrecisionAttack"
     },
     "links": [
@@ -39485,6 +40843,10 @@
       "applies": [
         "condition.prepared"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_FullSwing"
     },
     "blocks": [
@@ -39631,6 +40993,13 @@
           "resource": "channel_divinity"
         }
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
       "gameUid": "Shout_PreserveLife"
     },
     "links": [
@@ -39645,6 +41014,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -39869,6 +41239,13 @@
       "applies": [
         "condition.prone"
       ],
+      "area": {
+        "shape": "line",
+        "metres": 9.0
+      },
+      "attackRoll": true,
+      "save": "str",
+      "durationTurns": 2,
       "gameUid": "Rush_Primal_Stampede"
     },
     "links": [
@@ -39892,6 +41269,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -40047,6 +41425,19 @@
       "applies": [
         "condition.bane"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "damage": [
+        {
+          "dice": "2d6",
+          "type": "slashing"
+        }
+      ],
+      "weaponDamage": true,
+      "durationTurns": 3,
       "gameUid": "Target_MAG_WeaponAction_UndyingSubjugation"
     },
     "blocks": [
@@ -40100,6 +41491,10 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage",
+      "save_effect"
     ]
   },
   {
@@ -40701,6 +42096,12 @@
           "resource": "action"
         }
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "weaponDamage": true,
       "gameUid": "Target_PushingAttack"
     },
     "links": [
@@ -40715,6 +42116,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -40753,6 +42155,12 @@
           "resource": "action"
         }
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "weaponDamage": true,
       "gameUid": "Projectile_MAG_PushingAttack"
     },
     "links": [
@@ -40767,6 +42175,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -40806,6 +42215,12 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "weaponDamage": true,
       "gameUid": "Projectile_MAG_PushingAttack"
     },
     "blocks": [
@@ -41025,6 +42440,18 @@
           "resource": "channel_divinity"
         }
       ],
+      "area": {
+        "shape": "sphere",
+        "metres": 9.0
+      },
+      "save": "con",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "2d10",
+          "type": "radiant"
+        }
+      ],
       "gameUid": "Shout_RadianceOfTheDawn"
     },
     "links": [
@@ -41039,6 +42466,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -41228,6 +42656,10 @@
         "condition.rage",
         "condition.rage-impeded"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_Rage"
     },
     "links": [
@@ -41305,6 +42737,10 @@
         "condition.rage-bear-heart",
         "condition.rage-impeded"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_Rage_Totem_Bear"
     },
     "links": [
@@ -41429,6 +42865,10 @@
         "condition.rage-eagle-heart",
         "condition.rage-impeded"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_Rage_Totem_Eagle"
     },
     "links": [
@@ -41506,6 +42946,10 @@
         "condition.rage-elk-heart",
         "condition.rage-impeded"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_Rage_Totem_Elk"
     },
     "links": [
@@ -41583,6 +43027,10 @@
         "condition.rage-tiger-heart",
         "condition.rage-impeded"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_Rage_Totem_Tiger"
     },
     "links": [
@@ -41660,6 +43108,10 @@
         "condition.rage",
         "condition.rage-impeded"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_Rage_WildMagic"
     },
     "links": [
@@ -41737,6 +43189,10 @@
         "condition.rage-wolf-heart",
         "condition.rage-impeded"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_Rage_Totem_Wolf"
     },
     "links": [
@@ -41855,6 +43311,16 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "2d6"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_SneakAttack_Rakish"
     },
     "links": [
@@ -41908,6 +43374,16 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "ranged"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "2d6"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Projectile_SneakAttack_Rakish"
     },
     "links": [
@@ -41966,6 +43442,10 @@
       "applies": [
         "condition.rallied"
       ],
+      "range": {
+        "kind": "ranged"
+      },
+      "durationTurns": 5,
       "gameUid": "Target_Rally"
     },
     "links": [
@@ -41989,6 +43469,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -42205,6 +43686,12 @@
         }
       ],
       "recharge": "short_rest",
+      "area": {
+        "shape": "cone",
+        "metres": 4.0
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Zone_Mag_WeaponAction_RazorGale"
     },
     "blocks": [
@@ -42249,6 +43736,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -42292,6 +43782,7 @@
       "applies": [
         "condition.detect-thoughts"
       ],
+      "durationUntil": "long",
       "gameUid": "Shout_ReadThoughts"
     },
     "links": [
@@ -42515,6 +44006,12 @@
       "applies": [
         "condition.reckless-attack"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Target_RecklessAttack"
     },
     "links": [
@@ -42748,6 +44245,10 @@
       "applies": [
         "condition.reflective-shell"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 2,
       "gameUid": "Shout_MAG_TheBulwark_ReflectiveShell"
     },
     "blocks": [
@@ -43220,6 +44721,10 @@
           "resource": "action"
         }
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "save": "dex",
       "gameUid": "Target_MAG_RetrievingShot"
     },
     "blocks": [
@@ -43254,6 +44759,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -43410,6 +44918,17 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d6",
+          "healing": true
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_MAG_WeaponAction_RevitalizingStrike"
     },
     "blocks": [
@@ -43434,6 +44953,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -43478,6 +45000,10 @@
       "applies": [
         "condition.flight"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_Fly_Monk"
     },
     "links": [
@@ -43544,7 +45070,11 @@
       ],
       "applies": [
         "condition.righteous-clarity"
-      ]
+      ],
+      "range": {
+        "kind": "ranged"
+      },
+      "durationTurns": 10
     },
     "links": [
       {
@@ -43664,6 +45194,12 @@
           "resource": "superiority"
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 2.0
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Target_Riposte"
     },
     "links": [
@@ -43678,6 +45214,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -43977,6 +45514,20 @@
       "applies": [
         "condition.off-balance"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "attackRoll": true,
+      "save": "str",
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "piercing",
+          "modifier": "finesse"
+        }
+      ],
+      "durationTurns": 2,
       "gameUid": "Rush_SpringAttack"
     },
     "blocks": [
@@ -44417,6 +45968,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -44461,6 +46015,12 @@
       "applies": [
         "condition.off-balance"
       ],
+      "area": {
+        "shape": "line",
+        "metres": 12.0
+      },
+      "save": "str",
+      "durationTurns": 1,
       "gameUid": "Zone_GustOfWind_Monk"
     },
     "links": [
@@ -44527,6 +46087,10 @@
         "condition.sacred-munitions",
         "condition.turned"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_MAG_WeaponAction_UndeadTurningBolt"
     },
     "blocks": [
@@ -44622,6 +46186,10 @@
       "applies": [
         "condition.sacred-weapon"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_SacredWeapon"
     },
     "links": [
@@ -44903,6 +46471,23 @@
         "condition.bleeding",
         "condition.burning"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "fire"
+        },
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_MAG_WeaponAction_SearingBlood"
     },
     "blocks": [
@@ -44955,6 +46540,10 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage",
+      "save_effect"
     ]
   },
   {
@@ -45040,6 +46629,9 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_SecondWind"
     },
     "links": [
@@ -45054,6 +46646,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -45097,6 +46690,14 @@
         "condition.see-invisibility",
         "condition.revealed"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
+      "save": "dex",
       "gameUid": "Shout_SeeInvisibility_TrainedEye"
     },
     "links": [
@@ -45423,6 +47024,16 @@
       "applies": [
         "condition.heat"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "fire"
+        }
+      ],
+      "durationTurns": 2,
       "gameUid": "Shout_MAG_Fire_SelfImmolation"
     },
     "blocks": [
@@ -45886,6 +47497,10 @@
           "amount": 2
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
       "gameUid": "Target_Darkness_Monk"
     },
     "links": [
@@ -45945,6 +47560,10 @@
       "applies": [
         "condition.darkvision"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "durationUntil": "long",
       "gameUid": "Target_Darkvision_Monk"
     },
     "links": [
@@ -46009,6 +47628,9 @@
       "applies": [
         "condition.hiding"
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_Hide_ShadowArts"
     },
     "links": [
@@ -46077,6 +47699,14 @@
       "applies": [
         "condition.pass-without-trace-aura"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 10.0
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_PassWithoutTrace_Monk"
     },
     "links": [
@@ -46142,6 +47772,15 @@
           "amount": 2
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 6.0
+      },
+      "durationTurns": 100,
       "gameUid": "Target_Silence_Monk"
     },
     "links": [
@@ -46341,6 +47980,10 @@
       "applies": [
         "condition.shadow-step"
       ],
+      "range": {
+        "kind": "ranged"
+      },
+      "durationTurns": 1,
       "gameUid": "Target_ShadowStep:Player-accessible monk action,\nTarget_LOW_HouseOfGrief_ShadowStep:NPC-exclusive version used by Sharrans in the House of Grief,\nTarget_SHA_Justiciar_ShadowStep:NPC-exclusive version used by undead Sharrans in the Shadow-Cursed Lands"
     },
     "links": [
@@ -46406,6 +48049,18 @@
           "amount": 3
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "3d8",
+          "type": "psychic"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_ShadowStrike_Instant"
     },
     "links": [
@@ -46462,6 +48117,17 @@
           "amount": 3
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "3d8",
+          "type": "psychic"
+        }
+      ],
       "gameUid": "Target_ShadowStrike_Instant_Unarmed"
     },
     "links": [
@@ -46476,6 +48142,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -46515,6 +48182,9 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "ranged"
+      },
       "gameUid": "Target_MAG_Shadow_Shadowstep"
     },
     "blocks": [
@@ -46575,7 +48245,11 @@
         {
           "resource": "bonus_action"
         }
-      ]
+      ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      }
     },
     "links": [
       {
@@ -46628,6 +48302,17 @@
         }
       ],
       "recharge": "short_rest",
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "psychic"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_MAG_WeaponAction_ShadowBlade"
     },
     "blocks": [
@@ -46671,6 +48356,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -46767,6 +48455,10 @@
       "applies": [
         "condition.polymorph-self"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "durationTurns": 5,
       "gameUid": "Target_Polymorph_Shapechanger"
     },
     "links": [
@@ -46955,6 +48647,10 @@
           "resource": "ki"
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 18.0
+      },
       "gameUid": "Target_ShapeTheFlowingRiver_IceBlock"
     },
     "links": [
@@ -47636,6 +49332,11 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "save": "str",
+      "durationTurns": 1,
       "gameUid": "Target_ShieldBlow_Riposte"
     },
     "blocks": [
@@ -47988,6 +49689,10 @@
       "applies": [
         "condition.invisible"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 2,
       "gameUid": "Shout_UND_Invisibility_ShadowOfMenzoberranzan"
     },
     "blocks": [
@@ -48589,6 +50294,15 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "weapon"
+      },
+      "damage": [
+        {
+          "dice": "1d6"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Target_SneakAttack"
     },
     "links": [
@@ -48642,6 +50356,15 @@
         }
       ],
       "recharge": "per_turn",
+      "range": {
+        "kind": "weapon"
+      },
+      "damage": [
+        {
+          "dice": "1d6"
+        }
+      ],
+      "weaponDamage": true,
       "gameUid": "Projectile_SneakAttack"
     },
     "links": [
@@ -48829,6 +50552,10 @@
           "resource": "ki"
         }
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
       "gameUid": "Target_SoberingRealisation"
     },
     "links": [
@@ -48843,6 +50570,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -49242,6 +50970,13 @@
       "applies": [
         "condition.stunned"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_MAG_WeaponAction_Mindcrush"
     },
     "blocks": [
@@ -49284,6 +51019,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage"
     ]
   },
   {
@@ -49439,6 +51177,10 @@
       "applies": [
         "condition.speak-with-animals"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_SpeakWithAnimals_KnowledgeCleric"
     },
     "links": [
@@ -49826,6 +51568,10 @@
           "amount": 2
         }
       ],
+      "range": {
+        "kind": "ranged"
+      },
+      "attackRoll": true,
       "gameUid": "Projectile_ChromaticOrb_Monk"
     },
     "links": [
@@ -49940,6 +51686,12 @@
       "applies": [
         "condition.spiteful-suffering"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 3.0
+      },
+      "save": "cha",
+      "durationTurns": 3,
       "gameUid": "Target_SpitefulSuffering"
     },
     "links": [
@@ -49963,6 +51715,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -50240,6 +51993,21 @@
           "resource": "bonus_action"
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 3.0
+      },
+      "save": "con",
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "necrotic"
+        }
+      ],
       "gameUid": "Target_SpreadingSpores"
     },
     "links": [
@@ -50254,6 +52022,7 @@
       }
     ],
     "unknown": [
+      "save_effect",
       "effect_text"
     ]
   },
@@ -50472,6 +52241,10 @@
       "applies": [
         "condition.starry-form-archer"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_Wildshape_Star_Archer"
     },
     "links": [
@@ -50539,6 +52312,10 @@
       "applies": [
         "condition.starry-form-chalice"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_Wildshape_Star_Chalice"
     },
     "links": [
@@ -50606,6 +52383,10 @@
       "applies": [
         "condition.starry-form-dragon"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_Wildshape_Star_Dragon"
     },
     "links": [
@@ -51082,6 +52863,10 @@
         "condition.dash",
         "condition.step-of-the-wind"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_Dash_StepOfTheWind"
     },
     "links": [
@@ -51159,6 +52944,10 @@
         "condition.disengage",
         "condition.step-of-the-wind"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 1,
       "gameUid": "Shout_Disengage_StepOfTheWind"
     },
     "links": [
@@ -51410,6 +53199,7 @@
           "resource": "reaction"
         }
       ],
+      "save": "str",
       "gameUid": "Target_StormsFury"
     },
     "links": [
@@ -51424,6 +53214,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -51703,6 +53494,13 @@
       "applies": [
         "condition.stunned"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Target_StunningStrike"
     },
     "links": [
@@ -51767,6 +53565,12 @@
       "applies": [
         "condition.stunned"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "con",
+      "durationTurns": 1,
       "gameUid": "Target_StunningStrike_Unarmed"
     },
     "links": [
@@ -51790,6 +53594,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -52482,6 +54287,10 @@
       "applies": [
         "condition.invisible"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationTurns": 10,
       "gameUid": "Shout_SupremeSneak"
     },
     "links": [
@@ -52717,6 +54526,11 @@
           "resource": "superiority"
         }
       ],
+      "area": {
+        "shape": "cone",
+        "metres": 2.0
+      },
+      "attackRoll": true,
       "gameUid": "Zone_SweepingAttack"
     },
     "links": [
@@ -52731,6 +54545,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -52771,6 +54586,18 @@
         {
           "resource": "ki",
           "amount": 2
+        }
+      ],
+      "area": {
+        "shape": "cone",
+        "metres": 5.0
+      },
+      "save": "dex",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "3d6",
+          "type": "fire"
         }
       ],
       "gameUid": "Zone_BurningHands_Monk"
@@ -52976,6 +54803,10 @@
       "applies": [
         "condition.symbiotic-entity"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_SymbioticEntity"
     },
     "links": [
@@ -54054,6 +55885,10 @@
       "applies": [
         "condition.darkvision-third-eye"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_Darkvision_ThirdEye"
     },
     "links": [
@@ -54119,6 +55954,10 @@
       "applies": [
         "condition.see-invisibility"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_SeeInvisibility_ThirdEye"
     },
     "links": [
@@ -54698,6 +56537,12 @@
       "applies": [
         "condition.bleeding"
       ],
+      "area": {
+        "shape": "cone",
+        "metres": 2.0
+      },
+      "attackRoll": true,
+      "durationTurns": 2,
       "gameUid": "Zone_TigersBloodlust"
     },
     "links": [
@@ -54721,6 +56566,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -54898,6 +56744,18 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "dex",
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ],
+      "durationTurns": 1,
       "gameUid": "Target_Topple"
     },
     "blocks": [
@@ -55157,6 +57015,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -55198,6 +57059,19 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "damage": [
+        {
+          "dice": "2d6",
+          "type": "slashing"
+        }
+      ],
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_MAG_WeaponAction_GiantSubjugation"
     },
     "blocks": [
@@ -55241,6 +57115,10 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage",
+      "save_effect"
     ]
   },
   {
@@ -55284,6 +57162,17 @@
       "applies": [
         "condition.shocking-grasp"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "attackRoll": true,
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "lightning"
+        }
+      ],
+      "durationTurns": 1,
       "gameUid": "Target_ShockingGrasp_Monk"
     },
     "links": [
@@ -56005,6 +57894,19 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "dex",
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "necrotic"
+        }
+      ],
+      "weaponDamage": true,
+      "durationTurns": 2,
       "gameUid": "Target_MAG_WeaponAction_Trepan"
     },
     "blocks": [
@@ -56048,6 +57950,10 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "damage",
+      "save_effect"
     ]
   },
   {
@@ -56088,6 +57994,13 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "weaponDamage": true,
+      "durationTurns": 1,
       "gameUid": "Target_TripAttack"
     },
     "links": [
@@ -56111,6 +58024,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -56152,6 +58066,13 @@
       "applies": [
         "condition.prone"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "weaponDamage": true,
+      "durationUntil": "long",
       "gameUid": "Projectile_TripAttack"
     },
     "links": [
@@ -56175,6 +58096,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -56354,6 +58276,15 @@
       "applies": [
         "condition.turned"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
+      "save": "wis",
+      "durationTurns": 3,
       "gameUid": "Shout_TurnTheFaithless"
     },
     "links": [
@@ -56418,6 +58349,13 @@
           "resource": "channel_oath"
         }
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
       "gameUid": "Shout_TurnTheTide"
     },
     "links": [
@@ -56432,6 +58370,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -56476,6 +58415,15 @@
       "applies": [
         "condition.turned"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
+      "save": "wis",
+      "durationTurns": 3,
       "gameUid": "Shout_TurnTheUnholy"
     },
     "links": [
@@ -56544,6 +58492,15 @@
       "applies": [
         "condition.turned"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 9.0
+      },
+      "save": "wis",
+      "durationTurns": 3,
       "gameUid": "Shout_TurnUndead:Normal cleric action,\nShout_MAG_TurnUndead:Once-per-rest version granted by Veil of the Morning"
     },
     "blocks": [
@@ -56835,6 +58792,10 @@
       "applies": [
         "condition.tyrant-tongue"
       ],
+      "range": {
+        "kind": "melee"
+      },
+      "durationTurns": 10,
       "gameUid": "Target_UND_MyconidAmulet_Evil"
     },
     "blocks": [
@@ -57672,6 +59633,15 @@
           "resource": "action"
         }
       ],
+      "range": {
+        "kind": "self"
+      },
+      "damage": [
+        {
+          "dice": "1d8",
+          "healing": true
+        }
+      ],
       "gameUid": "Shout_FerociousAppetite"
     },
     "links": [
@@ -57724,6 +59694,10 @@
           "resource": "action"
         }
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
       "gameUid": "Target_MAG_OrphicHammer_ChainBreaker"
     },
     "blocks": [
@@ -58167,6 +60141,12 @@
       "applies": [
         "condition.virulent-venom"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "save": "con",
+      "durationTurns": 10,
       "gameUid": "Target_MAG_Poison_PoisonLethality"
     },
     "blocks": [
@@ -58339,6 +60319,9 @@
       "applies": [
         "condition.voice-of-the-circle"
       ],
+      "range": {
+        "kind": "melee"
+      },
       "gameUid": "Target_UND_MyconidAmulet_Good"
     },
     "blocks": [
@@ -58409,6 +60392,15 @@
           "resource": "action"
         }
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "area": {
+        "shape": "radius",
+        "metres": 3.0
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Target_Volley"
     },
     "links": [
@@ -58467,6 +60459,10 @@
       "applies": [
         "condition.vow-of-enmity"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 3.0
+      },
       "gameUid": "Target_VowOfEnmity"
     },
     "links": [
@@ -58759,6 +60755,18 @@
           "amount": 2
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
+      "save": "dex",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "3d10",
+          "type": "bludgeoning"
+        }
+      ],
       "gameUid": "Target_WaterWhip:The normal version accessible through Way of the Four Elements,\nTarget_WaterWhip_Umberlee:Version used by Allandra Grey that does not used Ki points or grant a bonus unarmed strike"
     },
     "links": [
@@ -59005,6 +61013,18 @@
       "applies": [
         "condition.weak-grip"
       ],
+      "range": {
+        "kind": "weapon"
+      },
+      "attackRoll": true,
+      "save": "str",
+      "damage": [
+        {
+          "dice": "1d4",
+          "modifier": "finesse"
+        }
+      ],
+      "durationTurns": 2,
       "gameUid": "Target_HinderingSmash"
     },
     "blocks": [
@@ -59282,6 +61302,9 @@
           "otherWorks": "aucun"
         }
       }
+    ],
+    "unknown": [
+      "save_effect"
     ]
   },
   {
@@ -59322,6 +61345,10 @@
       "applies": [
         "condition.bound-weapon"
       ],
+      "range": {
+        "kind": "self"
+      },
+      "durationUntil": "long",
       "gameUid": "Shout_WeaponBond"
     },
     "links": [
@@ -59507,6 +61534,12 @@
           "resource": "action"
         }
       ],
+      "area": {
+        "shape": "sphere",
+        "metres": 2.0
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Shout_Whirlwind"
     },
     "links": [
@@ -59560,6 +61593,12 @@
         }
       ],
       "recharge": "short_rest",
+      "area": {
+        "shape": "radius",
+        "metres": 2.0
+      },
+      "attackRoll": true,
+      "weaponDamage": true,
       "gameUid": "Shout_MAG_WhirlwindAttack"
     },
     "blocks": [
@@ -59634,6 +61673,9 @@
       "applies": [
         "condition.wholeness-of-body"
       ],
+      "range": {
+        "kind": "self"
+      },
       "gameUid": "Shout_WholenessOfBody"
     },
     "links": [
@@ -59657,6 +61699,7 @@
       }
     ],
     "unknown": [
+      "damage",
       "effect_text"
     ]
   },
@@ -60663,6 +62706,17 @@
     "facts": {
       "@type": "feature",
       "kind": "action",
+      "range": {
+        "kind": "distance",
+        "metres": 2.0
+      },
+      "save": "dex",
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "lightning"
+        }
+      ],
       "gameUid": "Target_WrathOfTheStorm_Lightning"
     },
     "links": [
@@ -60677,6 +62731,7 @@
       }
     ],
     "unknown": [
+      "save_effect",
       "effect_text"
     ]
   },
@@ -60715,6 +62770,17 @@
           "resource": "reaction"
         }
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 2.0
+      },
+      "save": "dex",
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "thunder"
+        }
+      ],
       "gameUid": "Target_WrathOfTheStorm_Thunder"
     },
     "links": [
@@ -60729,6 +62795,7 @@
       }
     ],
     "unknown": [
+      "save_effect",
       "effect_text"
     ]
   },
@@ -60839,6 +62906,10 @@
       "applies": [
         "condition.writhing-tide"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 9.0
+      },
       "gameUid": "Projectile_Fly_WrithingTide_Bee, Projectile_Fly_WrithingTide_Jellyfish, Projectile_Fly_WrithingTide_Moth"
     },
     "links": [
@@ -61061,6 +63132,19 @@
       "applies": [
         "condition.off-balance"
       ],
+      "range": {
+        "kind": "distance",
+        "metres": 12.0
+      },
+      "save": "str",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "6d6",
+          "type": "thunder"
+        }
+      ],
+      "durationTurns": 2,
       "gameUid": "Zone_MAG_ZephyrBreak"
     },
     "blocks": [
@@ -61221,6 +63305,19 @@
       "applies": [
         "condition.bleeding"
       ],
+      "area": {
+        "shape": "line",
+        "metres": 12.0
+      },
+      "save": "dex",
+      "saveEffect": "half",
+      "damage": [
+        {
+          "dice": "6d8",
+          "type": "thunder"
+        }
+      ],
+      "durationTurns": 3,
       "gameUid": "Rush_MAG_ZephyrFlash"
     },
     "blocks": [

@@ -270,7 +270,7 @@ data class ConditionFacts(
     val gameUid: String? = null,
 ) : Facts
 
-/** Capacité (passive, action, action d'arme). */
+/** Capacité (passive, action, action d'arme) ; pour une action, sa mécanique comme celle d'un sort. */
 @Serializable
 @SerialName("feature")
 data class FeatureFacts(
@@ -278,6 +278,16 @@ data class FeatureFacts(
     val costs: List<Cost> = emptyList(),
     val recharge: Recharge? = null,
     val applies: List<ContentId> = emptyList(),
+    val range: Range? = null,
+    val area: Area? = null,
+    val attackRoll: Boolean = false,
+    val save: Ability? = null,
+    val saveEffect: SaveEffect? = null,
+    val damage: List<Damage> = emptyList(),
+    /** L'action inflige les dégâts de l'arme tenue. */
+    val weaponDamage: Boolean = false,
+    val durationTurns: Int? = null,
+    val durationUntil: Rest? = null,
     val gameUid: String? = null,
 ) : Facts
 
