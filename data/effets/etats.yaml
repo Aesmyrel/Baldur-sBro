@@ -1,0 +1,1188 @@
+# Effets rédigés des états, lot effets-condition. Voir docs/LOTS_ECRITURE.md §4.
+condition.acid:
+  effets:
+    - "Classe d’armure : −2."
+  revision: 434367
+condition.adroit-caster:
+  effets:
+    - "Sorts mineurs qui ciblent des alliés ou des ennemis : 1 cible de plus."
+    - "Une même créature peut être choisie pour les deux ciblages."
+  revision: 434385
+condition.aid:
+  effets:
+    - "Maximum de points de vie : +5."
+    - "Emplacement de sort de niveau 3 ou plus : +5 de plus par niveau au-delà du 2e."
+  revision: 434393
+condition.ancient-grudges:
+  effets:
+    - "Jets d’attaque contre les aberrations : avantage."
+  revision: 434413
+condition.arcane-acuity:
+  effets:
+    - "Jets d’attaque de sort et DD de sauvegarde des sorts : +1 par tour restant."
+    - "Chaque fois qu’elle subit des dégâts : durée réduite de 2 tours."
+  revision: 434423
+condition.arcane-battery:
+  effets:
+    - "Prochain sort : lancé sans dépenser d’emplacement de sort."
+  revision: 434427
+condition.arcane-charge:
+  effets:
+    - "Sorts infligeant des dégâts à une créature sous l’état Menacé (Threatened) : +2 dégâts."
+  revision: 434429
+condition.arcane-lock:
+  effets:
+    - "S’applique à un objet verrouillé par magie : crochetage impossible."
+    - "Le sort Déblocage ne l’ouvre pas."
+  revision: 434437
+condition.arcane-synergy:
+  effets:
+    - "Attaques avec une arme : dégâts supplémentaires égaux à son modificateur de caractéristique d’incantation."
+  revision: 434439
+condition.armour-of-agathys:
+  effets:
+    - "Points de vie temporaires : 5 × niveau du sort."
+    - "Touchée par une attaque au corps à corps : l’attaquant subit 5 × niveau du sort en dégâts de froid."
+    - "Fin : quand ces points de vie temporaires sont épuisés."
+  revision: 439395
+condition.arms-of-hadar:
+  effets:
+    - "Réactions : impossibles."
+  revision: 434451
+condition.aura-of-murder-bhaalist-armour:
+  effets:
+    - "Ennemis dans un rayon de 3 m : vulnérabilité aux dégâts perforants, sauf s’ils y sont immunisés."
+  revision: 434523
+condition.bane:
+  effets:
+    - "Jets d’attaque et jets de sauvegarde : −1d4."
+  revision: 434569
+condition.baneful-strike:
+  effets:
+    - "Jets de sauvegarde contre le prochain sort de la créature qui l’a frappée : −1d4."
+  revision: 439124
+condition.banished:
+  effets:
+    - "Renvoyée hors du plan d’existence actuel."
+    - "Ne peut pas être ciblée."
+    - "Déplacement, actions, actions bonus et réactions : impossibles."
+  revision: 434573
+condition.barkskin:
+  effets:
+    - "Classe d’armure : portée à 16."
+  revision: 434577
+condition.beacon-of-hope:
+  effets:
+    - "Jets de sauvegarde de Sagesse et jets de sauvegarde contre la mort : avantage."
+    - "Soins reçus : rendent toujours le maximum de points de vie possible."
+  revision: 434581
+condition.blade-ward:
+  effets:
+    - "Dégâts contondants, perforants et tranchants : résistance."
+  revision: 434633
+condition.blazing-retaliation:
+  effets:
+    - "Classe d’armure : +1."
+    - "Attaque au corps à corps ratée contre elle : l’attaquant subit 1d6 dégâts de feu."
+  revision: 434645
+condition.bleeding:
+  effets:
+    - "Début de chaque tour : 2 dégâts tranchants."
+    - "Jets de sauvegarde de Constitution : désavantage."
+    - "Fin : quand elle reçoit des soins."
+  revision: 434647
+condition.bless:
+  effets:
+    - "Jets d’attaque et jets de sauvegarde : +1d4."
+  revision: 434649
+condition.blinded:
+  effets:
+    - "Jets d’attaque : désavantage."
+    - "Portée de ses attaques et de ses sorts : 3 m au plus."
+    - "Jets d’attaque contre elle : avantage."
+  revision: 437979
+condition.blinded-blinding-smite:
+  effets:
+    - "Jets d’attaque : désavantage."
+    - "Portée de ses attaques à distance et de ses sorts : 3 m au plus."
+    - "Jets d’attaque contre elle : avantage."
+    - "Fin de chacun de ses tours : jet de sauvegarde de Constitution ; réussite : l’état prend fin."
+  revision: 438830
+condition.blindness:
+  effets:
+    - "Jets d’attaque : désavantage."
+    - "Portée de ses attaques et de ses sorts : 3 m au plus."
+    - "Jets d’attaque contre elle : avantage."
+    - "Fin de chacun de ses tours : jet de sauvegarde de Constitution contre le DD de sauvegarde des sorts du lanceur ; réussite : l’état prend fin."
+  revision: 438829
+condition.blink:
+  effets:
+    - "Fin de chacun de ses tours : chance de recevoir l’état Passé dans le Plan Éthéré, pour 1 tour."
+    - "Sur le Plan Éthéré : hors de vue, hors d’atteinte des dégâts comme des effets."
+    - "Sur le Plan Éthéré : ni déplacement ni interaction ; seule une téléportation jusqu’à 6 m reste possible."
+    - "Fin : à la fin du combat."
+  revision: 434663
+condition.blinked-to-the-ethereal-plane:
+  effets:
+    - "Se trouve sur le Plan Éthéré : hors de vue, hors d’atteinte des dégâts comme des effets."
+    - "Déplacement et interactions : impossibles ; téléportation jusqu’à 6 m possible."
+    - "Fin de chacun de ses tours : chance de revenir sur le Plan Matériel."
+    - "Saignement : immunité."
+    - "Fin : à la fin du combat."
+  revision: 434665
+condition.blurred:
+  effets:
+    - "Jets d’attaque contre elle : désavantage."
+    - "Sans effet sur un attaquant qui ne dépend pas de la vue ou qui voit à travers les illusions."
+  revision: 434697
+condition.bone-chilled:
+  effets:
+    - "Ne peut pas récupérer de points de vie."
+    - "Ne peut pas porter secours à un personnage tombé à 0 point de vie."
+    - "Mort-vivant : désavantage aux jets d’attaque."
+  revision: 434703
+condition.booming-blade:
+  effets:
+    - "Quand elle se déplace : 1d8 dégâts de tonnerre."
+  revision: 434705
+condition.bound-weapon:
+  effets:
+    - "S’applique à une arme liée par rituel à son porteur."
+    - "Impossible de la faire lâcher à son porteur."
+    - "Lancée : revient automatiquement à son porteur."
+  revision: 434713
+condition.braced:
+  effets:
+    - "Jets de dégâts : lancés deux fois, le meilleur résultat compte."
+  revision: 434715
+condition.branding-smite:
+  effets:
+    - "Ne peut pas devenir Invisible."
+  revision: 434721
+condition.browbeaten:
+  effets:
+    - "Tant qu’un ennemi proche la menace (état Menacé, Threatened) : DD de sauvegarde des sorts +1."
+  revision: 434733
+condition.burning:
+  effets:
+    - "Chaque tour : 1d4 dégâts de feu."
+    - "Fin : action Soutien d’un allié, potion de guérison, ou état Mouillé."
+    - "Créature Mouillée : immunisée contre cet état."
+    - "Une créature ou un objet en flammes peut servir à tremper une arme."
+  revision: 438428
+condition.burning-orthonic:
+  effets:
+    - "Chaque tour : 1d4 dégâts de feu."
+    - "Ne prend fin ni par l’action Soutien, ni par une potion de guérison, ni par l’état Mouillé."
+  revision: 438409
+condition.burst-of-accuracy:
+  effets:
+    - "Après usage de Fougue : +1d4 aux jets d’attaque."
+  revision: 434759
+condition.call-lightning:
+  effets:
+    - "Peut redéclencher Appel de la foudre sans dépenser d’emplacement de sort."
+  revision: 434763
+condition.calmed:
+  effets:
+    - "Ne peut être ni charmée ni effrayée."
+    - "Rage : impossible."
+  revision: 434769
+condition.charmed:
+  effets:
+    - "Ne peut pas attaquer le lanceur du sort."
+    - "Lanceur du sort : avantage aux tests de Charisme lors des dialogues."
+  revision: 434803
+condition.chest-trauma:
+  effets:
+    - "Jets de sauvegarde de Constitution : désavantage."
+    - "Actions : 1 de moins."
+    - "Fin : quand elle reçoit des soins."
+  revision: 434807
+condition.click-heels:
+  effets:
+    - "Vitesse de déplacement : doublée."
+    - "Attaques d’opportunité des ennemis contre elle : désavantage."
+  revision: 434821
+condition.clinging-shadows:
+  effets:
+    - "Tant qu’elle reste dans une zone obscurcie : avantage aux jets de sauvegarde."
+  revision: 434823
+condition.colour-spray:
+  effets:
+    - "Jets d’attaque : désavantage."
+    - "Portée de ses attaques et de ses sorts : 3 m au plus."
+    - "Jets d’attaque contre elle : avantage."
+  revision: 434891
+condition.compelled-duel:
+  effets:
+    - "Jets d’attaque contre toute autre créature que le lanceur : désavantage."
+  revision: 434903
+condition.compelled-to-duel:
+  effets:
+    - "Jets d’attaque contre toute autre créature que le lanceur : désavantage."
+    - "Touchée par le duelliste : peut subir l’état Saignement."
+  revision: 434905
+condition.confused:
+  effets:
+    - "Hostile envers toutes les créatures."
+    - "Se déplace au hasard et perd parfois son tour."
+  revision: 434911
+condition.contagion-poisoned:
+  effets:
+    - "Jets d’attaque et tests de caractéristique : désavantage."
+    - "Chaque tour : jet de sauvegarde ; un échec fait progresser le poison d’un stade."
+    - "3 réussites : guérison."
+    - "3 échecs : contracte la maladie de la variante de Contagion qui a été lancée."
+  revision: 434921
+condition.covert-critical:
+  effets:
+    - "Tant qu’elle reste dans une zone obscurcie : seuil de coup critique de ses attaques abaissé de 1."
+    - "Cumulable."
+  revision: 434945
+condition.crown-of-madness:
+  effets:
+    - "Attaque la créature la plus proche, hormis le lanceur du sort."
+  revision: 434957
+condition.crusaders-mantle-aura:
+  effets:
+    - "Elle et ses alliés proches : +1d4 dégâts radiants aux attaques avec une arme."
+  revision: 434961
+condition.daredevil-proximity:
+  effets:
+    - "Adjacente à une créature hostile : ses attaques de sort à distance deviennent des attaques de sort au corps à corps."
+  revision: 435015
+condition.darkveil-precision:
+  effets:
+    - "Tant qu’elle reste dans une zone obscurcie : +1d4 aux jets d’attaque à distance."
+  revision: 435031
+condition.daylight:
+  effets:
+    - "Émet de la lumière."
+    - "Dissipe les Ténèbres dans un rayon de 15 m."
+  notes:
+    - "Variante lancée sur un objet : la créature ciblée doit tenir une arme en main principale."
+  revision: 435039
+condition.dazed:
+  effets:
+    - "Jets de sauvegarde de Sagesse : désavantage."
+    - "Réactions : impossibles."
+    - "Classe d’armure : perd le bonus de Dextérité."
+    - "Fin : un allié lui porte assistance (action Soutien)."
+  revision: 435041
+condition.dazzling-ray:
+  effets:
+    - "Peut tirer un nouveau Rayon éblouissant."
+  revision: 435045
+condition.death-ward:
+  effets:
+    - "La prochaine fois que des dégâts devraient la faire tomber à 0 point de vie : elle reste consciente, à 1 point de vie."
+  revision: 435051
+condition.defensive-stance:
+  effets:
+    - "Classe d’armure et jets de sauvegarde : +1."
+  revision: 435061
+condition.demonspirit-aura:
+  effets:
+    - "Sa créature invoquée : résistance à tous les dégâts, sauf psychiques."
+    - "Début du tour de cette créature : jet de sauvegarde de Sagesse ; échec : elle est prise de folie (Demonspirit Madness)."
+  revision: 437874
+condition.detect-thoughts:
+  effets:
+    - "Peut lire les pensées de certaines créatures pendant un dialogue."
+  revision: 435079
+condition.dirty-advantage:
+  effets:
+    - "Prochaine attaque : avantage."
+  revision: 435115
+condition.disengage:
+  effets:
+    - "Déplacement : ne provoque pas d’attaque d’opportunité."
+  revision: 435119
+condition.disguise-self:
+  effets:
+    - "Apparence : entièrement changée."
+  revision: 435121
+condition.dispel-evil-and-good:
+  effets:
+    - "Aberrations, Célestes, Élémentaires, Fées, Fiélons et Morts-vivants : désavantage aux jets d’attaque contre elle."
+    - "Peut aussi briser un enchantement venu d’un autre plan qui charme, effraie ou possède un allié."
+  revision: 435127
+condition.displaced:
+  effets:
+    - "Jets d’attaque des ennemis contre elle : désavantage, jusqu’à ce qu’elle subisse des dégâts."
+  revision: 435131
+condition.divine-favour:
+  effets:
+    - "Attaques avec une arme : +1d4 dégâts radiants."
+  revision: 435141
+condition.dominated:
+  effets:
+    - "Suit le lanceur du sort et combat à ses côtés."
+    - "Chaque fois qu’elle subit des dégâts : jet de sauvegarde de Sagesse ; réussite : le contrôle du lanceur est rompu."
+  revision: 435161
+condition.dominated-dominate-beast:
+  effets:
+    - "Suit le lanceur du sort et combat à ses côtés."
+    - "Chaque fois qu’elle subit des dégâts : jet de sauvegarde de Sagesse ; réussite : le contrôle du lanceur est rompu."
+  revision: 435163
+condition.elemental-weapon-acid:
+  effets:
+    - "Jets d’attaque : +1."
+    - "Dégâts supplémentaires : 1d4 dégâts d’acide."
+  revision: 435244
+condition.elemental-weapon-cold:
+  effets:
+    - "Jets d’attaque : +1."
+    - "Dégâts supplémentaires : 1d4 dégâts de froid."
+  revision: 435246
+condition.elemental-weapon-fire:
+  effets:
+    - "Jets d’attaque : +1."
+    - "Dégâts supplémentaires : 1d4 dégâts de feu."
+  revision: 435248
+condition.elemental-weapon-lightning:
+  effets:
+    - "Jets d’attaque : +1."
+    - "Dégâts supplémentaires : 1d4 dégâts de foudre."
+  revision: 435250
+condition.elemental-weapon-thunder:
+  effets:
+    - "Jets d’attaque : +1."
+    - "Dégâts supplémentaires : 1d4 dégâts de tonnerre."
+  revision: 435252
+condition.encrusted-with-frost:
+  effets:
+    - "Jets de sauvegarde de Dextérité : désavantage."
+    - "Dès qu’il reste 7 tours ou plus : jet de sauvegarde de Constitution (DD 12) ; échec : 1d4 dégâts de froid et état Gelé (Frozen) pendant 2 tours ; réussite : moitié des dégâts."
+    - "Après ce jet de sauvegarde, l’état prend fin."
+    - "Retiré par l’état En flammes."
+  revision: 435286
+condition.enhanced-armour-class:
+  effets:
+    - "Classe d’armure : +1."
+  revision: 435308
+condition.enlarged-duergar:
+  effets:
+    - "Catégorie de taille : augmentée."
+    - "Attaques avec une arme : +1d4 dégâts."
+    - "Tests de Force et jets de sauvegarde de Force : avantage."
+  revision: 435312
+condition.ensnared-ensnaring-strike:
+  effets:
+    - "Déplacement : impossible."
+    - "Chaque tour : 1d6 dégâts perforants."
+    - "Jets d’attaque contre elle : avantage."
+    - "Ses jets d’attaque et jets de sauvegarde de Dextérité : désavantage."
+    - "Fin : action Soutien d’un allié."
+  revision: 438446
+condition.enthralled:
+  effets:
+    - "Vision périphérique réduite."
+    - "Garde le regard tourné vers le lanceur du sort."
+  revision: 435324
+condition.ever-radiant:
+  effets:
+    - "Inflige 1d4 dégâts radiants supplémentaires."
+  revision: 435342
+condition.executioner:
+  effets:
+    - "Prochain jet d’attaque : coup critique assuré."
+  revision: 435344
+condition.expeditious-retreat:
+  effets:
+    - "Action Pointe : disponible par une action bonus."
+  revision: 435348
+condition.extra-bonus-action:
+  effets:
+    - "Ce tour : 1 action bonus supplémentaire."
+  revision: 435360
+condition.eyes-of-the-dark:
+  effets:
+    - "Voit normalement dans les ténèbres, magiques ou non, jusqu’à 25 m."
+  revision: 435366
+condition.faerie-fire:
+  effets:
+    - "Émet une lumière faible."
+    - "Jets d’attaque contre elle : avantage."
+    - "Ne peut pas devenir Invisible."
+  revision: 435368
+condition.false-life:
+  effets:
+    - "Points de vie temporaires : 7, +5 par niveau d’emplacement au-delà du 1er."
+  revision: 435372
+condition.favoured-weapon:
+  effets:
+    - "S’applique à une arme : +1 aux jets d’attaque et de dégâts."
+  revision: 435378
+condition.fearful:
+  effets:
+    - "Tests de caractéristique et jets d’attaque : désavantage."
+    - "Doit fuir la source de sa peur ; aucune autre action possible."
+    - "Fin de son tour hors de vue de cette source : jet de sauvegarde pour mettre fin à l’effet."
+  revision: 438304
+condition.feather-fall:
+  effets:
+    - "Chute ralentie : immunité aux dégâts de chute."
+  revision: 435386
+condition.feeble:
+  effets:
+    - "Attaques avec une arme fondées sur la Force : dégâts réduits de moitié."
+    - "Fin de chacun de ses tours : jet de sauvegarde de Constitution ; réussite : l’état prend fin."
+  revision: 435388
+condition.feigning-death:
+  effets:
+    - "Paraît morte (coma magique)."
+    - "Résistance à tous les dégâts, sauf psychiques."
+    - "Maladies et poisons : sans effet."
+    - "Fin : action Soutien d’un allié."
+  revision: 435390
+condition.festering-spores:
+  effets:
+    - "Tant que l’aptitude Symbiotic Entity est active : peut répandre trois sortes de spores (Bibberbang Spores, Timmask Spores, Haste Spores)."
+  revision: 435394
+condition.feywild-sparks:
+  effets:
+    - "Tant que Tides of Chaos est actif : chaque sort lancé déclenche à coup sûr un Wild Magic Surge (sursaut de magie sauvage)."
+  revision: 435404
+condition.flesh-to-stone-restrained-stage-1:
+  effets:
+    - "Déplacement : impossible ; le corps se pétrifie peu à peu sur 3 tours."
+    - "Jets d’attaque contre elle : avantage."
+    - "Ses jets d’attaque et jets de sauvegarde de Dextérité : désavantage."
+  revision: 435466
+condition.flight:
+  effets:
+    - "Peut voler jusqu’à un point choisi, 18 m au plus par tour, sur sa vitesse de déplacement."
+  revision: 435472
+condition.flying-strike:
+  effets:
+    - "A volé pendant ce tour : sa prochaine attaque au corps à corps avec une arme inflige 1d4 dégâts psychiques supplémentaires."
+  revision: 435474
+condition.force-conduit:
+  effets:
+    - "Dégâts contondants, perforants et tranchants subis : réduits de 1 par tour restant."
+    - "Dégâts subis avec 5 tours restants ou plus : 1d4 dégâts de force dans un rayon de 6 m."
+    - "Durée maximale : 7 tours."
+  revision: 435480
+condition.form-of-artifice:
+  effets:
+    - "Jets d’attaque : avantage."
+    - "Dégâts de foudre : résistance."
+  revision: 435488
+condition.formless-slaughter:
+  effets:
+    - "Déguisée ou métamorphosée : +1 aux jets d’attaque et de dégâts."
+  revision: 435492
+condition.freedom-of-movement:
+  effets:
+    - "Vitesse de déplacement : ne peut être réduite ni par un terrain difficile, ni par un sort ou un effet magique."
+    - "Ne peut être ni paralysée ni entravée."
+  revision: 435502
+condition.friends:
+  effets:
+    - "Tests de Charisme dirigés vers la créature ciblée : avantage."
+  revision: 435512
+condition.frightened:
+  effets:
+    - "Déplacement : impossible."
+    - "Tests de caractéristique et jets d’attaque : désavantage."
+  revision: 437882
+condition.galvanic-currents:
+  effets:
+    - "Arme concernée : inflige 1d6 dégâts de foudre supplémentaires."
+  revision: 435534
+condition.gaping-wounds:
+  effets:
+    - "Attaques réussies contre elle : +2 dégâts perforants."
+    - "Fin : quand elle reçoit des soins."
+  revision: 435536
+condition.garrotted:
+  effets:
+    - "Subit l’état Réduit au silence."
+    - "Chaque tour : 3d6 dégâts contondants."
+    - "Elle et l’agresseur : déplacement impossible tant que l’état dure."
+    - "Fin : si un déplacement forcé les écarte de plus de 5 m."
+  revision: 438250
+condition.gaseous-form:
+  effets:
+    - "Résistance à tous les dégâts non magiques."
+    - "Jets de sauvegarde de Force, de Dextérité et de Constitution : avantage."
+    - "Catégorie de taille : Très petite."
+    - "Ne peut ni attaquer, ni lancer de sort, ni parler."
+    - "Force et Dextérité : valeurs fixées à 10."
+    - "Saignement : immunité."
+  revision: 435544
+condition.giant-form:
+  effets:
+    - "Catégorie de taille : augmentée."
+    - "Attaques avec une arme : +1d6 dégâts."
+    - "Points de vie temporaires : 27."
+    - "Tests de Force et jets de sauvegarde de Force : avantage."
+  revision: 435554
+condition.grasp-essence:
+  effets:
+    - "Attaque à mains nues réussie : au choix, récupère 10 points de vie, ou obtient l’avantage aux jets d’attaque ou aux jets de sauvegarde jusqu’à la fin de son prochain tour."
+  revision: 435588
+condition.greater-invisibility:
+  effets:
+    - "Jets d’attaque : avantage."
+    - "Jets d’attaque contre elle : désavantage."
+    - "Attaque, sort lancé ou interaction avec un objet : test de Discrétion pour rester invisible ; chaque réussite rend le suivant plus difficile."
+  revision: 435600
+condition.green-bed-regeneration:
+  effets:
+    - "Début de son tour sur une surface de Croissance végétale ou de lianes : récupère 1d4 points de vie."
+  revision: 435604
+condition.guidance:
+  effets:
+    - "Tests de caractéristique : +1d4."
+  revision: 435618
+condition.guiding-bolt:
+  effets:
+    - "Prochain jet d’attaque contre elle : avantage."
+  revision: 435622
+condition.hamstrung:
+  effets:
+    - "Vitesse de déplacement : réduite de moitié."
+    - "Fin : quand elle reçoit des soins."
+  revision: 435638
+condition.harm:
+  effets:
+    - "Maximum de points de vie : réduit du montant des dégâts infligés par le sort Contamination."
+  revision: 435650
+condition.harmonised:
+  effets:
+    - "Attaques au corps à corps avec une arme : dégâts supplémentaires égaux à son modificateur de Charisme (1 au minimum)."
+  revision: 435652
+condition.hastened:
+  effets:
+    - "Classe d’armure : +2."
+    - "Jets de sauvegarde de Dextérité : avantage."
+    - "Vitesse de déplacement : +9 m."
+    - "Chaque tour : 1 action supplémentaire."
+    - "Fin de l’état : devient Léthargique pendant 1 tour."
+  revision: 435658
+condition.healing-incense-aura:
+  effets:
+    - "Elle et ses alliés dans un rayon de 10 m : récupèrent 1d4 points de vie par tour."
+  revision: 435668
+condition.heat:
+  effets:
+    - "Chaque tour : 1d4 dégâts de feu."
+    - "Action Heat Convergence : consomme tous les tours restants de Chaleur ; son prochain sort ou sa prochaine attaque de feu inflige des dégâts de feu supplémentaires."
+    - "Durée maximale : 7 tours."
+  revision: 435686
+condition.heat-metal:
+  effets:
+    - "Une arme ou une armure en métal portée par la créature est chauffée, sans jet de sauvegarde ; l’arme est choisie en priorité."
+    - "Jet de sauvegarde initial raté : lâche l’arme en métal."
+    - "Tant qu’elle touche l’objet chauffé : désavantage aux jets d’attaque et aux tests de caractéristique."
+    - "Tours suivants, si elle touche encore le métal : le lanceur peut réactiver le sort pour 2d8 dégâts de feu, avec un nouveau jet de sauvegarde pour ne pas lâcher l’arme."
+  revision: 435694
+condition.heat-metal-disadvantage:
+  effets:
+    - "Jets d’attaque et tests de caractéristique : désavantage jusqu’au début du prochain tour du lanceur."
+  revision: 435690
+condition.heroism:
+  effets:
+    - "Ne peut pas être effrayée."
+    - "Chaque tour : 5 points de vie temporaires."
+  revision: 435716
+condition.hideous-laughter:
+  effets:
+    - "Déplacement, actions, actions bonus et réactions : impossibles."
+    - "Jets de sauvegarde de Force et de Dextérité : désavantage."
+    - "À terre : attaques contre elle avec avantage si l’attaquant est à 3 m ou moins."
+    - "Fin de son tour ou dégâts subis : nouvelle tentative pour se libérer de l’effet."
+  revision: 435750
+condition.hiding:
+  effets:
+    - "Invisible pour les ennemis tant qu’elle ne traverse pas leur champ de vision."
+    - "Jets d’attaque : avantage."
+  revision: 435752
+condition.hold-monster:
+  effets:
+    - "Déplacement, actions, actions bonus et réactions : impossibles."
+    - "Jets d’attaque contre elle : avantage."
+    - "Attaquant à 3 m ou moins : ses attaques sont toujours des coups critiques."
+    - "Jets de sauvegarde de Force et de Dextérité : échec automatique."
+    - "Fin de chacun de ses tours : jet de sauvegarde de Sagesse ; réussite : l’état prend fin."
+  revision: 435762
+condition.hold-person:
+  effets:
+    - "Déplacement, actions, actions bonus et réactions : impossibles."
+    - "Jets d’attaque contre elle : réussite automatique."
+    - "Attaquant à 3 m ou moins : ses attaques sont toujours des coups critiques."
+    - "Jets de sauvegarde de Force et de Dextérité : échec automatique."
+    - "Fin de chacun de ses tours : jet de sauvegarde de Sagesse ; réussite : l’état prend fin."
+  revision: 435764
+condition.hunt-completed:
+  effets:
+    - "Par une action bonus : peut reporter Marque du chasseur sur une autre cible."
+  revision: 435806
+condition.hunters-mark-quarry:
+  effets:
+    - "Touchée par une attaque avec une arme du lanceur : +1d6 dégâts, du type de l’arme."
+  revision: 435810
+condition.hypnotised:
+  effets:
+    - "Déplacement, actions, actions bonus et réactions : impossibles."
+    - "Fin : dégâts subis, bousculade, ou action Soutien d’un allié."
+  revision: 435814
+condition.invisible:
+  effets:
+    - "Jets d’attaque : avantage."
+    - "Jets d’attaque des ennemis contre elle : désavantage."
+    - "Fin anticipée : dégâts subis, attaque, autre sort lancé, action ou action bonus utilisée, interaction avec un objet, ou état Mouillé."
+  revision: 435902
+condition.invisible-weapon:
+  effets:
+    - "Ne peut pas être désarmée."
+    - "Jets d’attaque : avantage."
+    - "Coup critique : dès un 19 au dé."
+  revision: 435906
+condition.jump:
+  effets:
+    - "Distance de saut : triplée."
+  revision: 435924
+condition.lethal-concealment:
+  effets:
+    - "Tant qu’elle est sous l’état Caché : inflige 1d6 dégâts nécrotiques supplémentaires."
+  revision: 436038
+condition.lethargic:
+  effets:
+    - "Déplacement, actions, actions bonus et réactions : impossibles."
+  revision: 436040
+condition.lieges-of-the-underdark-blessing:
+  effets:
+    - "Jets d’attaque et jets de sauvegarde : +1d4."
+  revision: 436046
+condition.life-essence:
+  effets:
+    - "Peut consommer l’essence absorbée pour lancer un sort de nécromancie sans dépenser d’emplacement de sort."
+  revision: 436050
+condition.light:
+  effets:
+    - "Objet : émet de la lumière dans un rayon de 7,5 m."
+  revision: 436056
+condition.lightning-aura:
+  effets:
+    - "Ennemis proches : reçoivent l’état Électrisé (Jolted)."
+  revision: 436060
+condition.lightning-blast:
+  effets:
+    - "Prochain sort ou sort mineur de foudre : dégâts de foudre supplémentaires égaux au nombre de Charges de foudre restantes."
+    - "Coup réussi : toutes les Charges de foudre sont consommées."
+  revision: 436062
+condition.lightning-charges:
+  effets:
+    - "Jets d’attaque : +1."
+    - "Dégâts infligés : +1 dégât de foudre."
+    - "À 5 charges : elles sont consommées aux prochains dégâts infligés, qui gagnent 1d8 dégâts de foudre."
+    - "Perd 1 charge par tour."
+  revision: 436064
+condition.longstrider:
+  effets:
+    - "Vitesse de déplacement : +3 m."
+  revision: 436078
+condition.lunar-protection:
+  effets:
+    - "Classe d’armure : +2."
+    - "Jets de sauvegarde contre les sorts : avantage."
+    - "Effets conservés en Forme sauvage."
+  revision: 436094
+condition.lunar-vitality:
+  effets:
+    - "Points de vie temporaires : 22."
+    - "Tant qu’il lui en reste : tous les dégâts subis sont réduits de 1."
+  revision: 436098
+condition.mage-armour:
+  effets:
+    - "Classe d’armure de base : 13."
+  revision: 436112
+condition.magic-weapon:
+  effets:
+    - "Arme rendue magique : +1 aux jets d’attaque et de dégâts."
+  revision: 436126
+condition.maimed:
+  effets:
+    - "Vitesse de déplacement : 0."
+    - "Jets de sauvegarde de Dextérité : désavantage."
+    - "Fin : quand elle reçoit des soins."
+  revision: 436134
+condition.mark-of-the-shifter:
+  effets:
+    - "Métamorphosée ou déguisée : +1d4 à tous les tests de caractéristique."
+  revision: 436152
+condition.martial-exertion:
+  effets:
+    - "Chaque tour : 6d6 dégâts perforants."
+    - "En contrepartie : 1 attaque supplémentaire par tour et vitesse de déplacement doublée."
+  revision: 436162
+condition.melfs-acid-arrow:
+  effets:
+    - "Fin de son tour : 2d4 dégâts d’acide."
+  revision: 436174
+condition.mental-fatigue:
+  effets:
+    - "Jets de sauvegarde de Sagesse, d’Intelligence et de Charisme : −1 par tour restant."
+    - "Échec à l’un de ces jets avec 5 tours restants ou plus : 1d4 dégâts psychiques, puis l’état prend fin."
+    - "Durée maximale : 7 tours."
+  revision: 436182
+condition.mirror-image:
+  effets:
+    - "Classe d’armure : +3 par image."
+    - "Chaque attaque qui la manque : une image disparaît."
+  revision: 436210
+condition.momentum:
+  effets:
+    - "Vitesse de déplacement : +1,5 m par tour restant."
+    - "Fin : si elle est entravée, neutralisée, à terre ou ralentie."
+    - "Durée maximale : 5 tours."
+  revision: 438985
+condition.mystras-blessing-staff-of-arcane-blessing:
+  effets:
+    - "Jets d’attaque de sort : +1d4."
+  revision: 438111
+condition.noxious-fumes:
+  effets:
+    - "Créatures hostiles dans un rayon de 3 m : 1d4 dégâts d’acide."
+  revision: 436316
+condition.off-balance:
+  effets:
+    - "Tests de Force et de Dextérité : désavantage."
+    - "Jets d’attaque contre elle : avantage."
+    - "Fin : dégâts subis, ou action Soutien d’un allié."
+  revision: 438127
+condition.off-balance-gargantuan-cleave:
+  effets:
+    - "Touchée : jet de sauvegarde de Force (DD 8) ; échec : état À terre pendant 1 tour."
+  revision: 438117
+condition.onus-of-battle:
+  effets:
+    - "Peut aussitôt utiliser sa réaction pour une attaque avec une arme."
+  revision: 436354
+condition.otilukes-resilient-sphere:
+  effets:
+    - "Enfermée dans une sphère : rien ne la blesse depuis l’extérieur, et elle ne peut rien blesser au-dehors."
+    - "Vitesse de déplacement : réduite de moitié."
+  revision: 436374
+condition.ottos-irresistible-dance:
+  effets:
+    - "Actions et déplacement : impossibles."
+    - "Jets d’attaque contre elle : avantage."
+    - "Ses jets d’attaque et jets de sauvegarde de Dextérité : désavantage."
+  revision: 436376
+condition.paralysed:
+  effets:
+    - "Déplacement, actions, actions bonus et réactions : impossibles."
+    - "Jets d’attaque contre elle : avantage."
+    - "Attaquant à 3 m ou moins : ses attaques sont toujours des coups critiques."
+    - "Jets de sauvegarde de Force et de Dextérité : échec automatique."
+  revision: 436408
+condition.pass-without-trace-aura:
+  effets:
+    - "Elle et ses alliés proches : +10 aux tests de Discrétion."
+  revision: 436420
+condition.petrified:
+  effets:
+    - "Changée en pierre."
+    - "Déplacement, actions, actions bonus et réactions : impossibles."
+  revision: 436440
+condition.phantasmal-force:
+  effets:
+    - "Chaque tour : 1d6 dégâts psychiques."
+    - "Dégâts reçus d’une autre source : les dégâts de l’effet prennent ce nouveau type."
+    - "Fin de chacun de ses tours : jet de sauvegarde d’Intelligence ; réussite : l’état prend fin."
+  revision: 436442
+condition.phantasmal-killer:
+  effets:
+    - "Chaque tour : 4d10 dégâts psychiques."
+    - "Déplacement : impossible."
+    - "Tests de caractéristique et jets d’attaque : désavantage."
+  revision: 436444
+condition.poisoned:
+  effets:
+    - "Jets d’attaque et tests de caractéristique : désavantage."
+  revision: 439705
+condition.polymorphed:
+  effets:
+    - "Transformée en mouton inoffensif à 3 points de vie, pendant 5 tours."
+    - "Mouton réduit à 0 point de vie : reprend sa forme d’origine et ses points de vie d’avant."
+  revision: 436484
+condition.polymorphed-dire-raven:
+  effets:
+    - "Transformée en corbeau sanguinaire."
+  revision: 436482
+condition.prepared:
+  effets:
+    - "Attaques au corps à corps : dégâts tranchants supplémentaires égaux à son modificateur de Force."
+  revision: 436508
+condition.produce-flame:
+  effets:
+    - "Une flamme éclaire un rayon de 9 m autour d’elle."
+  revision: 436514
+condition.prone:
+  effets:
+    - "Déplacement, actions, actions bonus et réactions : impossibles."
+    - "Jets de sauvegarde de Force et de Dextérité : désavantage."
+    - "Attaques contre elle à 3 m ou moins : avantage."
+    - "Se relever coûte la moitié de sa vitesse de déplacement."
+    - "Tomber à terre rompt aussitôt la concentration."
+    - "Chute à terre pendant son propre tour : ce tour s’achève immédiatement."
+  revision: 436524
+condition.protection-from-evil-and-good:
+  effets:
+    - "Aberrations, Célestes, Élémentaires, Fées, Fiélons et Morts-vivants : désavantage aux jets d’attaque contre elle."
+    - "Ne peut être ni effrayée ni possédée."
+  revision: 436584
+condition.protection-from-poison:
+  effets:
+    - "Neutralise les effets de poison qu’elle subissait déjà."
+    - "Jets de sauvegarde contre l’état Empoisonné : avantage."
+    - "Dégâts de poison : résistance."
+  revision: 436588
+condition.quickening-incantation:
+  effets:
+    - "Sorts d’illusion et d’enchantement : peuvent être lancés par une action bonus."
+  revision: 436622
+condition.quickspell-flinger:
+  effets:
+    - "Sorts mineurs qui coûtent une action : coûtent une action bonus à la place."
+  revision: 436626
+condition.radiating-orb:
+  effets:
+    - "Jets d’attaque : −1 par tour restant."
+    - "Émet une lumière vive autour d’elle."
+    - "Chaque attaque effectuée : durée réduite de 2 tours."
+  revision: 439797
+condition.ray-of-frost:
+  effets:
+    - "Vitesse de déplacement : −3 m."
+  revision: 436666
+condition.reactive-restoration:
+  effets:
+    - "Si elle subit l’état Aveuglé, Paralysé ou Empoisonné : Restauration partielle s’applique automatiquement."
+  revision: 436668
+condition.reapply-hex:
+  effets:
+    - "Peut lancer Maléfice sans dépenser de nouvel emplacement de sort."
+  revision: 436678
+condition.recast-speak-with-dead:
+  effets:
+    - "Peut relancer Communication avec les morts sans dépenser d’emplacement de sort."
+  revision: 436680
+condition.reeling:
+  effets:
+    - "Jets d’attaque : −1 par tour restant."
+    - "Durée maximale : 10 tours."
+  revision: 436700
+condition.reflective-shell:
+  effets:
+    - "Projectiles qui la visent : renvoyés vers leur point d’origine."
+  revision: 436704
+condition.rended-flesh:
+  effets:
+    - "Ne peut pas être soignée."
+  revision: 436720
+condition.resistance:
+  effets:
+    - "Jets de sauvegarde : +1d4."
+  revision: 436724
+condition.resistant-to-acid-damage-creations-echo:
+  effets:
+    - "Dégâts d’acide subis : réduits de moitié."
+  revision: 438471
+condition.revealed:
+  effets:
+    - "A perdu l’état Invisible sous l’effet de Voir l’invisible."
+  revision: 436758
+condition.reverberation:
+  effets:
+    - "Jets de sauvegarde de Force, de Dextérité et de Constitution : −1 par tour restant."
+    - "À 5 tours ou plus : 1d4 dégâts de tonnerre et jet de sauvegarde de Constitution (DD 10) ; échec : état À terre pendant 2 tours. L’état prend ensuite fin."
+    - "Créatures immunisées contre les dégâts de tonnerre : ne peuvent pas subir cet état."
+  revision: 436760
+condition.ruptured:
+  effets:
+    - "Par mètre parcouru : 1d4 dégâts perforants."
+    - "Chaque fois que ces dégâts s’appliquent : durée réduite de 1 tour."
+  revision: 436788
+condition.sacred-munitions:
+  effets:
+    - "Attaques à distance avec une arme : peuvent infliger Renvoi des morts-vivants à la cible."
+  revision: 436796
+condition.sanctuary:
+  effets:
+    - "Ne peut être ciblée ni par les attaques ni par les sorts des ennemis."
+    - "Les sorts à zone d’effet peuvent toujours lui infliger des dégâts."
+    - "Fin : si elle attaque ou blesse une autre créature ; elle reçoit alors l’état Sanctuaire bloqué (Sanctuary Blocked) pendant 1 tour."
+  revision: 436804
+condition.searing-smite:
+  effets:
+    - "Chaque tour : 1d6 dégâts de feu."
+    - "Fin : jet de sauvegarde de Constitution réussi."
+  revision: 436836
+condition.see-invisibility:
+  effets:
+    - "Voit les créatures Invisibles dans un rayon de 9 m."
+    - "Ces créatures : jet de sauvegarde de Dextérité ; échec : elles perdent leur invisibilité."
+  revision: 438103
+condition.seeming:
+  effets:
+    - "Apparence : entièrement changée."
+  revision: 436840
+condition.seized-by-planar-binding:
+  effets:
+    - "Suit la créature qui l’a liée et combat pour elle."
+    - "Chaque fois qu’elle subit des dégâts : jet de sauvegarde de Sagesse ; réussite : le contrôle du lanceur est rompu."
+  revision: 436844
+condition.shadespell:
+  effets:
+    - "Tant qu’elle reste dans une zone obscurcie : DD de sauvegarde des sorts +1."
+  revision: 436870
+condition.shadow-possession:
+  effets:
+    - "Attaque la créature la plus proche."
+    - "Attaques avec une arme : +1d4 dégâts nécrotiques."
+  revision: 436884
+condition.shars-blessing-barrier-of-darkness:
+  effets:
+    - "Dans les ténèbres ou une lumière faible : avantage aux jets de sauvegarde."
+  revision: 436894
+condition.shattered:
+  effets:
+    - "Touchée par le pic de guerre Fouisseur des profondeurs : +1d4 dégâts perforants."
+  revision: 436902
+condition.shield:
+  effets:
+    - "Projectile magique : immunité."
+    - "Classe d’armure : +5."
+  revision: 436910
+condition.shield-of-faith:
+  effets:
+    - "Classe d’armure : +2."
+  revision: 436914
+condition.shillelagh:
+  effets:
+    - "Arme rendue magique : inflige 1d8 dégâts contondants."
+    - "Jets d’attaque : fondés sur le modificateur de caractéristique d’incantation du porteur."
+  revision: 436920
+condition.shocked:
+  effets:
+    - "Réactions : impossibles."
+    - "Tests de Dextérité et jets de sauvegarde de Dextérité : désavantage."
+  revision: 436924
+condition.shocking-grasp:
+  effets:
+    - "Réactions : impossibles."
+  revision: 436928
+condition.silenced:
+  effets:
+    - "Ne peut ni parler ni lancer de sort à composante verbale."
+    - "Dégâts de tonnerre : immunité."
+  revision: 436942
+condition.skilled-skullduggery:
+  effets:
+    - "Tant qu’elle est cachée : seuil de coup critique de ses attaques abaissé de 1."
+    - "Cumulable."
+  revision: 436966
+condition.sleeping:
+  effets:
+    - "Ne peut ni se déplacer ni agir."
+    - "Jets de sauvegarde de Force et de Dextérité : échec automatique."
+    - "Jets d’attaque contre elle : avantage."
+    - "Attaque réussie à 1,5 m ou moins : coup critique."
+    - "Fin : dégâts subis, état Mouillé, action Soutien d’un allié ou bousculade."
+  revision: 436974
+condition.slowed:
+  effets:
+    - "Vitesse de déplacement : réduite de moitié."
+    - "Classe d’armure et jets de sauvegarde de Dextérité : −2."
+    - "Réactions : impossibles."
+    - "Attaques : 1 au plus par tour."
+    - "Par tour : une action ou une action bonus, pas les deux."
+    - "Sorts lancés : peuvent être retardés de 1 tour."
+  revision: 436980
+condition.speak-with-animals:
+  effets:
+    - "Peut comprendre les bêtes et communiquer avec elles."
+  revision: 437010
+condition.staggering-smite:
+  effets:
+    - "Jets d’attaque et tests de caractéristique : désavantage."
+    - "Réactions : impossibles."
+  revision: 437052
+condition.stealthier:
+  effets:
+    - "Tant qu’elle reste dans une zone obscurcie : +3 aux tests de Discrétion."
+  revision: 437068
+condition.stoneskin:
+  effets:
+    - "Dégâts contondants, perforants et tranchants non magiques : résistance."
+  revision: 437092
+condition.stunned:
+  effets:
+    - "Déplacement, actions, actions bonus et réactions : impossibles."
+    - "Jets de sauvegarde de Force et de Dextérité : échec automatique."
+    - "Jets d’attaque contre elle : avantage."
+    - "Rompt la concentration de la créature dès son application."
+    - "Retiré notamment par Liberté de mouvement et Restauration supérieure."
+  revision: 437120
+condition.sunbeam:
+  effets:
+    - "Peut relancer Rayon de soleil."
+  revision: 437128
+condition.supreme-defences:
+  effets:
+    - "Pendant sa concentration : ajoute son modificateur de caractéristique d’incantation à ses jets de sauvegarde."
+    - "Pendant sa concentration : classe d’armure +1."
+  revision: 437136
+condition.swift-as-wind:
+  effets:
+    - "Prochaine attaque avec une arme : avantage et 1d8 dégâts de force supplémentaires."
+  revision: 437154
+condition.telekinesis:
+  effets:
+    - "Une fois par tour : peut de nouveau projeter une créature ou un objet par télékinésie, sans dépenser d’emplacement de sort."
+  revision: 437160
+condition.temporary-hit-points-10:
+  effets:
+    - "Points de vie temporaires : 10."
+  revision: 437168
+condition.temporary-hit-points-15:
+  effets:
+    - "Points de vie temporaires : 15."
+  revision: 437170
+condition.temporary-hit-points-3:
+  effets:
+    - "Points de vie temporaires : 3."
+  revision: 437174
+condition.temporary-hit-points-8:
+  effets:
+    - "Points de vie temporaires : 8."
+  revision: 437178
+condition.temporary-hit-points-bolstering-smite:
+  effets:
+    - "Points de vie temporaires : égaux à son modificateur de Charisme."
+  revision: 437180
+condition.temporary-hit-points-ever-vigilant:
+  effets:
+    - "Points de vie temporaires : 15."
+  revision: 437190
+condition.temporary-hit-points-remedial-rhymes:
+  effets:
+    - "Points de vie temporaires : 4."
+  revision: 437194
+condition.temporary-hit-points-stirring-execution:
+  effets:
+    - "Points de vie temporaires : égaux à son modificateur de Charisme."
+  revision: 437196
+condition.temporary-hit-points-well-liked-and-well-fortified:
+  effets:
+    - "Au lieu de mourir : obtient des points de vie temporaires égaux à son modificateur de Charisme."
+  revision: 437198
+condition.thaumaturgy:
+  effets:
+    - "Tests d’Intimidation et de Représentation : avantage."
+  revision: 437206
+condition.the-pain-maidens-blessing:
+  effets:
+    - "Jets d’attaque et jets de sauvegarde : +1d4."
+  revision: 437210
+condition.thoroughly-stuffed:
+  effets:
+    - "Ne peut être ni malade, ni empoisonnée, ni effrayée."
+    - "Jets de sauvegarde de Sagesse : avantage."
+    - "Maximum de points de vie : +12."
+  revision: 437220
+condition.those-laid-bare:
+  effets:
+    - "DD de sauvegarde des sorts : +1."
+  revision: 437222
+condition.treading-twilight:
+  effets:
+    - "Tant qu’elle reste dans une zone obscurcie : classe d’armure +1."
+  revision: 437276
+condition.true-strike:
+  effets:
+    - "Jets d’attaque du lanceur contre elle : avantage."
+  revision: 437280
+condition.turned:
+  effets:
+    - "Doit passer ses tours à s’éloigner le plus possible de la créature qui l’a renvoyée."
+    - "Ne peut pas s’approcher volontairement à 9 m ou moins de cette créature."
+    - "Réactions : impossibles."
+    - "Actions : seulement Pointe, ou tentative d’échapper à un effet qui l’empêche de bouger."
+    - "Fin : dès qu’elle subit des dégâts."
+  revision: 437284
+condition.tyrant-tongue:
+  effets:
+    - "Tests d’Intimidation : +2."
+  revision: 437292
+condition.undead-ward-aura:
+  effets:
+    - "Morts-vivants alliés dans un rayon de 9 m : résistance aux dégâts contondants, perforants et tranchants."
+  revision: 437314
+condition.vampiric-touch:
+  effets:
+    - "À chaque tour, par une action : peut relancer Toucher du vampire sans dépenser d’emplacement de sort."
+  revision: 437346
+condition.vicious-mockery:
+  effets:
+    - "Prochain jet d’attaque : désavantage."
+  revision: 437356
+condition.virulent-venom:
+  effets:
+    - "Dégâts de poison : vulnérabilité."
+  revision: 437360
+condition.voice-of-the-circle:
+  effets:
+    - "Tests de Persuasion : +2."
+  revision: 437368
+condition.warden-of-vitality-aura:
+  effets:
+    - "Peut utiliser l’action Restore Vitality pour se soigner ou soigner un allié proche."
+  revision: 437390
+condition.warding-bond-caster:
+  effets:
+    - "Liée à un allié : chaque fois que cet allié subit des dégâts, elle subit le même montant."
+  revision: 437394
+condition.warding-bond-target:
+  effets:
+    - "Classe d’armure et jets de sauvegarde : +1."
+    - "Résistance à tous les dégâts."
+    - "Chaque fois qu’elle subit des dégâts : le lanceur en subit autant."
+  revision: 437398
+condition.weak-grip:
+  effets:
+    - "Jets d’attaque et jets de sauvegarde de Force : désavantage."
+    - "Fin : un allié lui porte assistance (action Soutien)."
+  revision: 437410
+condition.weapon-dropped:
+  effets:
+    - "Désarmée par un ennemi : son arme est au sol."
+  revision: 439067
+condition.wet:
+  effets:
+    - "Immunité à l’état En flammes, y compris sa variante de magie sauvage."
+    - "Dégâts de feu : résistance."
+    - "Dégâts de foudre et de froid : vulnérabilité."
+  revision: 437422
+condition.witch-bolt:
+  effets:
+    - "Chaque tour, par une action : le lanceur peut réactiver l’arc qui le relie à elle pour lui infliger automatiquement 1d12 dégâts de foudre."
+  revision: 437508
+condition.wound-closure:
+  effets:
+    - "Inconsciente : se stabilise au début de son tour."
+  revision: 437522
+condition.wrath:
+  effets:
+    - "Dégâts avec les armes de corps à corps : +1 par tour restant."
+  revision: 437524
+condition.yeenoghus-blessing:
+  effets:
+    - "Don de Yeenoghu : ne la rend plus folle."
+  revision: 437536

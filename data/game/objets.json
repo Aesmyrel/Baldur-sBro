@@ -1606,6 +1606,28 @@
       ],
       "gameUid": "MAG_ofGreaterHealth_Amulet"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : valeur de Constitution fixée à 23.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Sans effet si la valeur de Constitution du porteur est déjà supérieure à 23.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.house-of-hope",
@@ -1616,9 +1638,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -2182,6 +2201,18 @@
       ],
       "gameUid": "MAG_Harpers_HarpersAmulet"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : avantage aux jets de sauvegarde de Sagesse.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "spell.shield",
@@ -2201,9 +2232,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -2259,6 +2287,18 @@
       ],
       "gameUid": "UNI_UND_Minotaur_BeltAmulet"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : vulnérabilité aux dégâts contondants.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.underdark",
@@ -2269,9 +2309,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -4300,6 +4337,18 @@
       ],
       "gameUid": "MAG_Bhaalist_Gloves"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : +1 aux jets d’attaque.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.garrotte",
@@ -4319,9 +4368,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -4639,6 +4685,28 @@
       ],
       "gameUid": "MAG_Deathknight_Gloves"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : +1 aux jets d’attaque.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Sort Blessure accordé par l’objet : lancé au niveau 4.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "spell.inflict-wounds",
@@ -4658,9 +4726,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -5590,6 +5655,28 @@
       ],
       "gameUid": "MAG_WYR_Orin_Bhaalist_Dagger"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tenue en main secondaire : +1 à la classe d’armure.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Sort Coup au but accordé par l’arme : lancé par une action bonus.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.exploit-weakness",
@@ -5654,9 +5741,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -9838,6 +9922,28 @@
       ],
       "gameUid": "MAG_Bonded_Shocking_Warhammer"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Arme de prédilection et Courants galvaniques : actifs seulement si l’arme est liée à un chevalier occulte, ou si elle sert d’arme de pacte ou d’arme maléficiée à un occultiste.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Une fois l’arme liée, le bonus d’Arme de prédilection s’ajoute à son enchantement +1.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.backbreaker",
@@ -9893,9 +9999,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -11497,6 +11600,18 @@
       ],
       "gameUid": "MAG_Frost_Offhand_Dagger"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tenue en main secondaire : +1 à la classe d’armure.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.chilling-counter",
@@ -11516,9 +11631,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -12698,6 +12810,18 @@
       ],
       "gameUid": "Quest_GOB_DrunkGoblin_Ring"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : Vitesse augmentée de 3 m.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.goblin-camp",
@@ -12708,9 +12832,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -14123,6 +14244,28 @@
       ],
       "gameUid": "ARM_Vanity_Prison_EternalDebtors"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que la tenue est portée : les débiteurs éternels restent neutres envers le groupe.",
+        "tag": {
+          "act": "acte3",
+          "level": "leger",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Membre du groupe aperçu sans la tenue sur leur territoire : les débiteurs éternels deviennent hostiles à tout le groupe.",
+        "tag": {
+          "act": "acte3",
+          "level": "leger",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.house-of-hope",
@@ -14133,9 +14276,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -14768,6 +14908,18 @@
       ],
       "gameUid": "MAG_Cleric_Devotees_Mace"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Aura d’encens guérisseur : utilisable seulement avec la masse en main principale.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.backbreaker",
@@ -14798,7 +14950,6 @@
       }
     ],
     "unknown": [
-      "effects",
       "act"
     ]
   },
@@ -15979,6 +16130,18 @@
       ],
       "gameUid": "MAG_WYRM_Commander_Longsword"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’arme est équipée : +2 en Charisme.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.commanders-strike",
@@ -16036,7 +16199,6 @@
       }
     ],
     "unknown": [
-      "effects",
       "place"
     ]
   },
@@ -17404,6 +17566,18 @@
       ],
       "gameUid": "MAG_Generic_01_Ring_1"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : +2 aux jets de sauvegarde contre la mort.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.ruined-battlefield",
@@ -17414,9 +17588,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -19409,6 +19580,28 @@
       ],
       "gameUid": "UNI_ARM_OfGiantHillStrength_Gloves"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : valeur de Force fixée à 23.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Sans effet si la valeur de Force du porteur est déjà supérieure à 23.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.house-of-hope",
@@ -19419,9 +19612,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -19564,6 +19754,18 @@
       ],
       "gameUid": "MAG_OfWarMaster_Gloves"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : +1 aux jets d’attaque.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.heightened-manoeuvre",
@@ -19583,9 +19785,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -21293,6 +21492,38 @@
       ],
       "gameUid": "MAG_BG_OfDexterity_Gloves"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : valeur de Dextérité fixée à 18.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : +1 aux jets d’attaque.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Sans effet sur la Dextérité si sa valeur est déjà supérieure à 18.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.creche-yllek",
@@ -21303,9 +21534,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -24101,6 +24329,28 @@
       ],
       "gameUid": "MAG_Viconia_Mace"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’arme est équipée : valeur de Force fixée à 18.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Sans effet si la valeur de Force du porteur est déjà supérieure à 18.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.concussive-smash",
@@ -24120,9 +24370,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -26411,6 +26658,18 @@
       ],
       "gameUid": "UND_FairyRings_AntiCharmHelmet"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : maîtrise des jets de sauvegarde de Sagesse.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.underdark",
@@ -26421,9 +26680,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -27945,6 +28201,18 @@
       ],
       "gameUid": "MAG_FlamingFist_StaffOfFire"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’arme est équipée : +1 aux jets d’attaque de sort à distance.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.topple",
@@ -27982,9 +28250,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -29027,6 +29292,18 @@
       ],
       "gameUid": "S_LOW_CountingHouse_Vault2_JannathHat"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : avantage aux tests de Charisme (Persuasion ou Tromperie).",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.the-counting-house",
@@ -29037,9 +29314,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -29444,6 +29718,18 @@
       ],
       "gameUid": "MAG_Justiciar_Shield"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que le bouclier est équipé : avantage aux tests de Sagesse (Perception).",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.darkness-cloak",
@@ -29472,9 +29758,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -29861,6 +30144,18 @@
       ],
       "gameUid": "MAG_Ketheric_Shield"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que le bouclier est équipé : avantage aux jets de sauvegarde de Dextérité.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.arcane-enchantment-1",
@@ -29889,9 +30184,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -36853,8 +37145,19 @@
       ],
       "gameUid": "TWN_AasimarSurvivor_HazmatSuit"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’armure est portée : aucun désavantage aux tests de Dextérité (Discrétion).",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "unknown": [
-      "effects",
       "place",
       "act"
     ]
@@ -39173,6 +39476,18 @@
       ],
       "gameUid": "MAG_OfFeywildSparks_Ring"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : +1 au DD de sauvegarde des sorts.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.feywild-sparks",
@@ -39192,9 +39507,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -41304,6 +41616,18 @@
       ],
       "gameUid": "MAG_Safeguard_Shield"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que le bouclier est équipé : +1 à tous les jets de sauvegarde.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.the-hollow",
@@ -41314,9 +41638,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -44804,6 +45125,18 @@
       ],
       "gameUid": "MAG_Radiant_Radiating_Hammer"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’arme est équipée : émet de la lumière dans un rayon de 7,5 m autour du porteur (état Lumière).",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.concussive-smash",
@@ -44816,7 +45149,6 @@
       }
     ],
     "unknown": [
-      "effects",
       "act"
     ]
   },
@@ -45748,6 +46080,18 @@
       ],
       "gameUid": "UNI_PLA_SmugglersRing"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : −1 en Charisme.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.the-risen-road",
@@ -45758,9 +46102,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -46757,6 +47098,18 @@
       ],
       "gameUid": "MAG_Restoration_SpellSlotRestoration_Amulet"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Une fois par repos long, par une action bonus : récupère un emplacement de sort dépensé, quel que soit son niveau.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.moonrise-towers-prison",
@@ -46767,9 +47120,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -47712,6 +48062,18 @@
       ],
       "gameUid": "UNI_WYR_Circus_MumblingStaff"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "À volonté : lance une variante du sort mineur Trait de feu, avec 1 chance sur 20 de déclencher à la place une explosion de Boule de feu.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.topple",
@@ -47731,9 +48093,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -48668,6 +49027,18 @@
       ],
       "gameUid": "MAG_Helmet_Watcher_A"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : avantage aux jets de sauvegarde de Constitution.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.artificial-sight",
@@ -48687,9 +49058,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -49463,6 +49831,18 @@
       ],
       "gameUid": "QUEST_FOR_SussurDagger"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Coup d’arme réussi : la cible fait un jet de sauvegarde de Constitution (DD 12) ou subit l’état Réduit au silence pendant 2 tours.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.piercing-strike",
@@ -49482,9 +49862,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -49556,6 +49933,18 @@
       ],
       "gameUid": "QUEST_FOR_SussurGreatsword"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Coup d’arme réussi : la cible fait un jet de sauvegarde de Constitution (DD 12) ou subit l’état Réduit au silence pendant 2 tours.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.cleave",
@@ -49593,9 +49982,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -49665,6 +50051,18 @@
       ],
       "gameUid": "QUEST_FOR_SussurSickle"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Coup d’arme réussi : la cible fait un jet de sauvegarde de Constitution (DD 12) ou subit l’état Réduit au silence pendant 2 tours.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.lacerate",
@@ -49684,9 +50082,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -55764,6 +56159,28 @@
       ],
       "gameUid": "WYR_Circus_ThiefGloves"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Chaque objet volé : un morceau de charbon de bois s’ajoute à l’inventaire du porteur.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Après 20 vols : le vol suivant ajoute à la place un seau de charbon, qui inflige l’état En flammes au porteur pendant 1 tour.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.circus-of-the-last-days",
@@ -55774,9 +56191,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -55960,6 +56374,18 @@
       ],
       "gameUid": "MAG_DevilsBlackmith_Gloves"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : +1 aux jets d’attaque.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.forge-of-the-nine",
@@ -55970,9 +56396,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -56025,6 +56448,18 @@
       ],
       "gameUid": "UNI_ARM_Boots_Metal_DevilsBlacksmith"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : +1 aux tests de Force (Athlétisme).",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.forge-of-the-nine",
@@ -56035,9 +56470,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -57817,6 +58249,28 @@
       ],
       "gameUid": "UNI_FOR_OgresForHire_HeadbandOfIntellect"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : valeur d’Intelligence fixée à 17.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Sans effet si la valeur d’Intelligence du porteur est déjà supérieure à 17.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.blighted-village",
@@ -57827,9 +58281,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -58243,6 +58694,18 @@
       ],
       "gameUid": "MAG_LC_Tinkerer_Gloves"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tant que l’objet est porté : +1 aux jets d’attaque.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "place.steel-watch-foundry",
@@ -58253,9 +58716,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {
@@ -58948,6 +59408,18 @@
       ],
       "gameUid": "S_MOO_JailbreakHammer"
     },
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Coup réussi contre un objet ou un élément du décor : 2d4 dégâts de force supplémentaires.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "links": [
       {
         "target": "feature.concussive-smash",
@@ -58967,9 +59439,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "effects"
     ]
   },
   {

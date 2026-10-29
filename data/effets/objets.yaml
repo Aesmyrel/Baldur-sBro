@@ -1,0 +1,176 @@
+# Effets rédigés des objets (lot effets-item). Données dérivées de bg3.wiki : CC BY-NC-SA 4.0.
+
+item.amulet-of-greater-health:
+  effets:
+    - "Tant que l’objet est porté : valeur de Constitution fixée à 23."
+  notes:
+    - "Sans effet si la valeur de Constitution du porteur est déjà supérieure à 23."
+  revision: 415915
+item.amulet-of-the-harpers:
+  effets:
+    - "Tant que l’objet est porté : avantage aux jets de sauvegarde de Sagesse."
+  revision: 415924
+item.amulet-of-the-unworthy:
+  effets:
+    - "Tant que l’objet est porté : vulnérabilité aux dégâts contondants."
+  revision: 415925
+item.bhaalist-gloves:
+  effets:
+    - "Tant que l’objet est porté : +1 aux jets d’attaque."
+  revision: 416439
+item.blackguards-gauntlets:
+  effets:
+    - "Tant que l’objet est porté : +1 aux jets d’attaque."
+    - "Sort Blessure accordé par l’objet : lancé au niveau 4."
+  revision: 416513
+item.bloodthirst:
+  effets:
+    - "Tenue en main secondaire : +1 à la classe d’armure."
+    - "Sort Coup au but accordé par l’arme : lancé par une action bonus."
+  revision: 437751
+item.charge-bound-warhammer:
+  effets:
+    - "Arme de prédilection et Courants galvaniques : actifs seulement si l’arme est liée à un chevalier occulte, ou si elle sert d’arme de pacte ou d’arme maléficiée à un occultiste."
+  notes:
+    - "Une fois l’arme liée, le bonus d’Arme de prédilection s’ajoute à son enchantement +1."
+  revision: 416997
+item.cold-snap:
+  effets:
+    - "Tenue en main secondaire : +1 à la classe d’armure."
+  revision: 438206
+item.crushers-ring:
+  effets:
+    - "Tant que l’objet est porté : Vitesse augmentée de 3 m."
+  revision: 417417
+item.debtors-attire:
+  effets:
+    - "Tant que la tenue est portée : les débiteurs éternels restent neutres envers le groupe."
+    - "Membre du groupe aperçu sans la tenue sur leur territoire : les débiteurs éternels deviennent hostiles à tout le groupe."
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
+  revision: 417610
+item.devotees-mace:
+  effets:
+    - "Aura d’encens guérisseur : utilisable seulement avec la masse en main principale."
+  revision: 417675
+item.duke-ravengards-longsword:
+  effets:
+    - "Tant que l’arme est équipée : +2 en Charisme."
+  revision: 418019
+item.family-ring:
+  effets:
+    - "Tant que l’objet est porté : +2 aux jets de sauvegarde contre la mort."
+  revision: 418391
+item.gauntlets-of-hill-giant-strength:
+  effets:
+    - "Tant que l’objet est porté : valeur de Force fixée à 23."
+  notes:
+    - "Sans effet si la valeur de Force du porteur est déjà supérieure à 23."
+  revision: 418818
+item.gauntlets-of-the-warmaster:
+  effets:
+    - "Tant que l’objet est porté : +1 aux jets d’attaque."
+  revision: 418820
+item.gloves-of-dexterity:
+  effets:
+    - "Tant que l’objet est porté : valeur de Dextérité fixée à 18."
+    - "Tant que l’objet est porté : +1 aux jets d’attaque."
+  notes:
+    - "Sans effet sur la Dextérité si sa valeur est déjà supérieure à 18."
+  revision: 418968
+item.handmaidens-mace:
+  effets:
+    - "Tant que l’arme est équipée : valeur de Force fixée à 18."
+  notes:
+    - "Sans effet si la valeur de Force du porteur est déjà supérieure à 18."
+  revision: 419304
+item.helmet-of-autonomy:
+  effets:
+    - "Tant que l’objet est porté : maîtrise des jets de sauvegarde de Sagesse."
+  revision: 419473
+item.incandescent-staff:
+  effets:
+    - "Tant que l’arme est équipée : +1 aux jets d’attaque de sort à distance."
+  revision: 419719
+item.jannaths-hat:
+  effets:
+    - "Tant que l’objet est porté : avantage aux tests de Charisme (Persuasion ou Tromperie)."
+  revision: 419923
+item.justiciars-greatshield:
+  effets:
+    - "Tant que le bouclier est équipé : avantage aux tests de Sagesse (Perception)."
+  revision: 419993
+item.ketherics-shield:
+  effets:
+    - "Tant que le bouclier est équipé : avantage aux jets de sauvegarde de Dextérité."
+  revision: 437960
+item.protective-plate:
+  effets:
+    - "Tant que l’armure est portée : aucun désavantage aux tests de Dextérité (Discrétion)."
+  revision: 422021
+item.ring-of-feywild-sparks:
+  effets:
+    - "Tant que l’objet est porté : +1 au DD de sauvegarde des sorts."
+  revision: 422378
+item.safeguard-shield:
+  effets:
+    - "Tant que le bouclier est équipé : +1 à tous les jets de sauvegarde."
+  revision: 422588
+item.shining-staver-of-skulls:
+  effets:
+    - "Tant que l’arme est équipée : émet de la lumière dans un rayon de 7,5 m autour du porteur (état Lumière)."
+  revision: 437933
+item.smugglers-ring:
+  effets:
+    - "Tant que l’objet est porté : −1 en Charisme."
+  revision: 423333
+item.spellcrux-amulet:
+  effets:
+    - "Une fois par repos long, par une action bonus : récupère un emplacement de sort dépensé, quel que soit son niveau."
+  revision: 423438
+item.staff-of-a-mumbling-wizard:
+  effets:
+    - "À volonté : lance une variante du sort mineur Trait de feu, avec 1 chance sur 20 de déclencher à la place une explosion de Boule de feu."
+  revision: 423538
+item.steelwatcher-helmet:
+  effets:
+    - "Tant que l’objet est porté : avantage aux jets de sauvegarde de Constitution."
+  revision: 438132
+item.sussur-dagger:
+  effets:
+    - "Coup d’arme réussi : la cible fait un jet de sauvegarde de Constitution (DD 12) ou subit l’état Réduit au silence pendant 2 tours."
+  revision: 438507
+item.sussur-greatsword:
+  effets:
+    - "Coup d’arme réussi : la cible fait un jet de sauvegarde de Constitution (DD 12) ou subit l’état Réduit au silence pendant 2 tours."
+  revision: 439123
+item.sussur-sickle:
+  effets:
+    - "Coup d’arme réussi : la cible fait un jet de sauvegarde de Constitution (DD 12) ou subit l’état Réduit au silence pendant 2 tours."
+  revision: 438505
+item.unlucky-thiefs-gloves:
+  effets:
+    - "Chaque objet volé : un morceau de charbon de bois s’ajoute à l’inventaire du porteur."
+    - "Après 20 vols : le vol suivant ajoute à la place un seau de charbon, qui inflige l’état En flammes au porteur pendant 1 tour."
+  revision: 424526
+item.unwanted-masterwork-gauntlets:
+  effets:
+    - "Tant que l’objet est porté : +1 aux jets d’attaque."
+  revision: 424545
+item.unwanted-masterwork-greaves:
+  effets:
+    - "Tant que l’objet est porté : +1 aux tests de Force (Athlétisme)."
+  revision: 424546
+item.warped-headband-of-intellect:
+  effets:
+    - "Tant que l’objet est porté : valeur d’Intelligence fixée à 17."
+  notes:
+    - "Sans effet si la valeur d’Intelligence du porteur est déjà supérieure à 17."
+  revision: 424764
+item.winkling-gloves:
+  effets:
+    - "Tant que l’objet est porté : +1 aux jets d’attaque."
+  revision: 424934
+item.wulbrens-hammer:
+  effets:
+    - "Coup réussi contre un objet ou un élément du décor : 2d4 dégâts de force supplémentaires."
+  revision: 425017

@@ -1,0 +1,1020 @@
+# Effets rédigés des capacités, lot effets-feature, lignes 0 à 246. Voir docs/LOTS_ECRITURE.md §4.
+feature.aberration-hunter:
+  effets:
+    - "Porteur githyanki : avantage aux jets de sauvegarde d’Intelligence ; les aberrations ont un désavantage aux jets d’attaque contre lui."
+  revision: 432016
+feature.absolute-night:
+  effets:
+    - "Cible touchée : jet de sauvegarde de Dextérité (DD 11) ; en cas d’échec, elle subit l’état Aveuglé pendant 2 tours."
+    - "Contre certaines créatures pourvues de plusieurs paires d’yeux : 2d6 dégâts perforants supplémentaires."
+  revision: 432021
+feature.absolutes-aegis:
+  effets:
+    - "Si le porteur porte la marque de l’Absolue : tous les dégâts qu’il subit de la part de sorts sont réduits de 1."
+  etiquette: { act: acte2, level: leger, otherWorks: aucun }
+  revision: 432022
+feature.absolutes-bane:
+  effets:
+    - "Attaque d’arme réussie, au corps à corps ou à distance : la cible fait un jet de sauvegarde de Charisme (DD 11) ; en cas d’échec, elle subit l’état Fléau pendant 2 tours (−1d4 à ses jets d’attaque et de sauvegarde)."
+  revision: 439185
+feature.absolutes-mercy:
+  effets:
+    - "Si le porteur porte la marque de l’Absolue : avantage à ses jets de sauvegarde contre la mort."
+  etiquette: { act: acte1, level: leger, otherWorks: aucun }
+  revision: 432030
+feature.absolutes-tempest:
+  effets:
+    - "Si le porteur porte la marque de l’Absolue : ses sorts et attaques qui infligent des dégâts de tonnerre en infligent 1 de plus."
+  etiquette: { act: acte1, level: leger, otherWorks: aucun }
+  revision: 432026
+feature.absolutes-ward:
+  effets:
+    - "Si le porteur porte la marque de l’Absolue : +1 à ses jets de sauvegarde."
+  etiquette: { act: acte1, level: leger, otherWorks: aucun }
+  revision: 432027
+feature.absorb-elements:
+  effets:
+    - "Une fois par repos court, par une réaction, quand une attaque élémentaire cible le porteur : il n’en subit que la moitié des dégâts."
+    - "Attaque suivante du porteur : 1d6 dégâts supplémentaires de l’élément absorbé."
+  revision: 432033
+feature.adamantine-backlash:
+  effets:
+    - "Attaque au corps à corps qui touche le porteur : l’attaquant subit l’état Chancelant pendant 2 tours."
+  revision: 432039
+feature.adamantine-shield-passive-feature:
+  effets:
+    - "Attaque au corps à corps qui rate le porteur : l’attaquant subit l’état Chancelant pendant 2 tours."
+  revision: 432040
+feature.additional-spell-slot:
+  effets:
+    - "Tant que l’objet est porté : le porteur dispose d’un emplacement de sort de niveau 1 supplémentaire."
+  revision: 371312
+feature.adrenaline-rush:
+  effets:
+    - "En combat, quand le porteur entreprend l’action Pointe : il obtient l’état Courroux pendant 3 tours."
+  revision: 438439
+feature.adroit-caster:
+  effets:
+    - "Passif activable : un sort mineur qui vise un ennemi ou un allié peut viser une créature de plus ; la même créature peut être choisie deux fois."
+  revision: 433510
+feature.adroit-reflexes:
+  effets:
+    - "Jet d’attaque effectué par une réaction : le porteur le fait avec avantage."
+  revision: 432046
+feature.aegis-palms:
+  effets:
+    - "Quand le porteur soigne une créature : elle obtient l’effet de Protection contre les armes pendant 2 tours."
+    - "Quand le porteur ranime une créature : elle obtient l’effet de Protection contre la mort."
+  revision: 432048
+feature.after-death-do-us-part-passive-feature:
+  effets:
+    - "Quand le porteur tombe à 0 point de vie : il se relève avec la moitié de ses points de vie, mais subit l’état Possession par les ombres."
+  revision: 432049
+feature.ambusher-1:
+  effets:
+    - "Tant que l’objet est porté : +1 aux jets d’initiative."
+  revision: 432053
+feature.ambusher-2:
+  effets:
+    - "Tant que l’objet est porté : +2 aux jets d’initiative."
+  revision: 432054
+feature.ambushers-streak:
+  effets:
+    - "En combat, contre une créature qui n’a pas encore joué son tour : 1d6 dégâts nécrotiques supplémentaires."
+  revision: 432055
+feature.ancient-grudges:
+  effets:
+    - "À l’activation : le porteur obtient l’état Rancunes ancestrales pendant 3 tours, soit l’avantage à ses jets d’attaque contre les aberrations."
+  revision: 282647
+feature.angelclocker-knuckles:
+  effets:
+    - "Attaque à mains nues : 1d4 dégâts radiants supplémentaires."
+  revision: 432056
+feature.arcane-ashes:
+  effets:
+    - "Chaque fois que le porteur inflige des dégâts de feu : il obtient l’état Chaleur pendant 2 tours."
+  revision: 432059
+feature.arcane-battery:
+  effets:
+    - "Passif activable : le prochain sort lancé par le porteur ne consomme aucun emplacement de sort."
+  revision: 432062
+feature.arcane-echomalefaction:
+  effets:
+    - "Quand le porteur inflige un état à une créature hostile : elle subit en plus l’état Réverbération pendant 2 tours."
+  revision: 433512
+feature.arcane-enchantment-1:
+  effets:
+    - "Tant que l’objet est porté : +1 au DD de sauvegarde des sorts et aux jets d’attaque de sort."
+  revision: 432064
+feature.arcane-enchantment-2:
+  effets:
+    - "Tant que l’objet est porté : +2 au DD de sauvegarde des sorts et aux jets d’attaque de sort."
+  revision: 432065
+feature.arcane-radiance:
+  effets:
+    - "Dégâts de sort infligés pendant que le porteur est éclairé par une source de lumière : la cible subit l’état Orbe rayonnant pendant 2 tours."
+  revision: 433690
+feature.arcane-vampirism:
+  effets:
+    - "Quand une créature affectée par un sort du porteur rate le jet de sauvegarde associé : le porteur récupère 1d4 points de vie."
+  revision: 432068
+feature.arcane-vehemence:
+  effets:
+    - "Une fois par repos court, coup critique porté avec cette arme : le porteur récupère un emplacement de sort de niveau 1."
+  revision: 434131
+feature.arcane-vivaciousness:
+  effets:
+    - "Sort lancé par le porteur alors qu’il est au corps à corps : il obtient 8 points de vie temporaires."
+  revision: 432072
+feature.arming-enhancement:
+  effets:
+    - "Tant que l’objet est porté : +2 aux jets d’attaque et de dégâts avec les armes."
+  revision: 432076
+feature.artificial-sight:
+  effets:
+    - "Tant que l’objet est porté : le porteur voit dans le noir jusqu’à 12 m et ne peut pas subir l’état Aveuglé."
+  revision: 432082
+feature.aura-of-murder-passive-feature:
+  effets:
+    - "Passif activable : les ennemis situés à 3 m ou moins du porteur deviennent vulnérables aux dégâts perforants, sauf s’ils y sont immunisés."
+  revision: 432098
+feature.authority:
+  effets:
+    - "Tant que l’objet est porté : avantage aux tests d’Intimidation et d’Intuition."
+  revision: 403593
+feature.backbreaker:
+  effets:
+    - "Attaque d’arme qui peut renverser l’ennemi : jet de sauvegarde de Force (DD d’action d’arme) ; en cas d’échec, il subit l’état À terre pendant 2 tours."
+  revision: 373567
+feature.balance:
+  effets:
+    - "Tant que l’objet est porté : +1 aux jets de sauvegarde et aux tests de Dextérité."
+  revision: 432101
+feature.baldurans-favour:
+  effets:
+    - "Tant que l’objet est porté : +1 à la classe d’armure et aux jets de sauvegarde."
+  revision: 432102
+feature.baldurans-vitality:
+  effets:
+    - "Début de chaque tour du porteur : il récupère 2 points de vie."
+  revision: 432103
+feature.baneful-bond:
+  effets:
+    - "Cible touchée : jet de sauvegarde de Charisme (DD 14) ; en cas d’échec, elle subit l’état Fléau pendant 2 tours."
+  revision: 432104
+feature.baneful-strike:
+  effets:
+    - "Dégâts infligés par une attaque d’arme : la cible subit l’état Frappe funeste pendant 2 tours, soit −1d4 à son jet de sauvegarde contre le prochain sort du porteur."
+  revision: 439122
+feature.battle-acuity:
+  effets:
+    - "Dégâts infligés par une attaque d’arme : le porteur obtient l’état Acuité arcanique pendant 2 tours."
+  revision: 432108
+feature.battlemages-power:
+  effets:
+    - "Cible touchée par un sort ou un sort mineur qui passe par une arme : le porteur obtient l’état Acuité arcanique pendant 2 tours."
+  revision: 432109
+feature.become-the-bulwark:
+  effets:
+    - "Sans armure ni bouclier : +2 à la classe d’armure du porteur."
+  revision: 432113
+feature.blazing-retaliation:
+  effets:
+    - "À l’activation : le porteur obtient l’état Riposte ardente pendant 4 tours, soit +1 à sa classe d’armure ; une créature dont l’attaque le rate subit des dégâts de feu."
+  revision: 286450
+feature.blessed-mercy:
+  effets:
+    - "Quand le porteur soigne une créature : elle obtient l’état Bénédiction pendant 2 tours, soit +1d4 à ses jets d’attaque et de sauvegarde."
+  revision: 432121
+feature.blightbringer-passive-feature:
+  effets:
+    - "Attaque avec cette arme contre un gnome ou un nain : +1d4 aux jets d’attaque et de dégâts."
+  revision: 432122
+feature.blind-immunity:
+  effets:
+    - "Tant que l’objet est porté : le porteur ne peut pas subir l’état Aveuglé."
+  revision: 432123
+feature.blinding-shot:
+  effets:
+    - "Tir qui peut aveugler la cible : jet de sauvegarde de Constitution (DD d’action d’arme + 2) ; en cas d’échec, elle subit l’état Aveuglé pendant 2 tours."
+  revision: 416565
+feature.blood-curdling-emission:
+  effets:
+    - "Cible touchée : jet de sauvegarde de Sagesse (DD 12) ; en cas d’échec, elle subit l’état Effrayé."
+    - "Contre une créature effrayée : +1d4 aux jets d’attaque et de dégâts."
+  revision: 432126
+feature.blood-money:
+  effets:
+    - "Attaque d’arme : dégâts perforants supplémentaires égaux au bonus de maîtrise, par tranche de 300 pièces d’or que possède la cible ; cet or est consommé."
+  revision: 373586
+feature.blood-sacrifice:
+  effets:
+    - "À l’activation : le porteur subit 1d4 dégâts tranchants et obtient l’état Bénédiction de la Demoiselle de douleur pendant 1 tour, soit +1d4 à ses jets d’attaque et de sauvegarde."
+  revision: 407693
+feature.blood-thirst:
+  effets:
+    - "Tant que le porteur n’est pas à son maximum de points de vie : ses attaques à mains nues et au corps à corps infligent 2 dégâts nécrotiques supplémentaires."
+    - "Fin du tour du porteur sans qu’il ait infligé de dégâts pendant ce tour : il subit 1d4 dégâts nécrotiques."
+  revision: 432125
+feature.bloodletting:
+  effets:
+    - "Attaque d’arme qui inflige des dégâts nécrotiques supplémentaires et peut faire saigner la cible : état Saignement pendant 2 tours."
+  notes:
+    - "Certains morts-vivants et artificiels ne peuvent pas subir Saignement."
+    - "Inutilisable par les personnages joueurs, même avec l’arme équipée."
+  revision: 437741
+feature.body-aid:
+  effets:
+    - "Tant que l’objet est porté : +1 aux jets de sauvegarde et aux tests de Force."
+  revision: 432127
+feature.bolstering-smite:
+  effets:
+    - "Quand l’un des sorts de châtiment du porteur inflige un état : il obtient des points de vie temporaires égaux à son modificateur de Charisme."
+  revision: 432129
+feature.bolt-of-celestial-light:
+  effets:
+    - "Tir qui peut effrayer la cible : état Effrayé."
+    - "Après cette attaque : les attaques d’arme à distance faites avec cet arc infligent 1d4 dégâts radiants supplémentaires (état Éternellement radieux)."
+  revision: 397259
+feature.booming-blows:
+  effets:
+    - "Attaque à mains nues : 1d4 dégâts de tonnerre supplémentaires."
+  revision: 432131
+feature.boon-of-the-raven-queen:
+  effets:
+    - "Tant que l’objet est porté : +1,5 m à la distance de saut et à la vitesse de vol ; le porteur bénéficie en permanence de l’état Feuille morte."
+    - "L’état Feuille morte est conservé sous l’état Métamorphosé ou en Forme sauvage."
+  revision: 432132
+feature.booze-remedy:
+  effets:
+    - "Tant que le porteur est ivre : il récupère 2d4 points de vie à chaque tour."
+    - "Toute ivresse du porteur dure 5 rounds de plus."
+  revision: 432134
+feature.brace-melee:
+  effets:
+    - "Pour le reste du tour : les dégâts de corps à corps sont lancés deux fois et le meilleur résultat est retenu (état Arc-bouté)."
+  revision: 416719
+feature.brace-ranged:
+  effets:
+    - "Pour le reste du tour : les dégâts à distance sont lancés deux fois et le meilleur résultat est retenu (état Arc-bouté)."
+  revision: 439120
+feature.break-the-unbroken:
+  effets:
+    - "Contre une cible qui a encore tous ses points de vie : 1d8 dégâts perforants supplémentaires."
+  revision: 432140
+feature.breezeswift-speed:
+  effets:
+    - "Quand le porteur utilise Porté par le vent : son jet d’attaque suivant se fait avec avantage et inflige 1d8 dégâts de force supplémentaires (état Rapide comme le vent, 1 tour)."
+  revision: 432142
+feature.browbeaten:
+  effets:
+    - "Tant que le porteur est menacé par un ennemi au contact : +1 au DD de sauvegarde de ses sorts (état Rudoyé)."
+  revision: 432143
+feature.brutal-leap:
+  effets:
+    - "Bond sur une cible : jet de sauvegarde de Force (DD de sauvegarde des sorts du porteur) ; en cas d’échec, elle subit l’état À terre pendant 2 tours."
+  revision: 433648
+feature.bull-rush:
+  effets:
+    - "Charge en avant : les ennemis sur la trajectoire peuvent être repoussés de 3 m."
+  revision: 408293
+feature.bulls-strength-passive-feature:
+  effets:
+    - "Tant que l’objet est porté : le porteur bénéficie de Force du taureau et sa Force augmente de 2, sans dépasser 20."
+  revision: 432147
+feature.burned-alive:
+  effets:
+    - "Contre une cible en flammes (état En flammes) : 1d4 dégâts supplémentaires, du type de l’arme."
+  revision: 432149
+feature.caitiffs-restoration:
+  effets:
+    - "À l’activation : le porteur récupère 1 emplacement de sort d’occultiste dépensé."
+  revision: 286534
+feature.callous-glow:
+  effets:
+    - "Contre une créature éclairée : 2 dégâts radiants supplémentaires."
+  revision: 432152
+feature.caretakers-care:
+  effets:
+    - "Tant que l’objet est porté : les surfaces d’acide n’affectent pas le porteur, qui a la résistance aux dégâts d’acide."
+  revision: 432154
+feature.cats-grace-passive-feature:
+  effets:
+    - "Tant que l’objet est porté : le porteur bénéficie de Grâce féline et sa Dextérité augmente de 2, sans dépasser 20."
+  revision: 432155
+feature.caustic-reprisal:
+  effets:
+    - "Quand une créature inflige des dégâts au corps à corps au porteur : elle subit 1d4 dégâts d’acide."
+  revision: 432156
+feature.cauteriser:
+  effets:
+    - "Attaque avec cette arme : 1d4 dégâts de feu supplémentaires."
+    - "Cible touchée : jet de sauvegarde de Constitution (DD 13) ; en cas d’échec, elle subit l’état En flammes pendant 2 tours."
+  revision: 432158
+feature.cautious-healer:
+  effets:
+    - "Quand le porteur soigne une créature : elle obtient l’état Désengagement pendant 1 tour et ne provoque pas d’attaques d’opportunité."
+  revision: 432159
+feature.challenge-to-duel:
+  effets:
+    - "Défi lancé à un ennemi : il ne peut plus attaquer que le porteur (état Contraint au duel) et subit l’état Saignement."
+  revision: 416976
+feature.chaos:
+  effets:
+    - "Dégâts infligés avec cette arme : le porteur récupère 1d6 points de vie."
+  revision: 432164
+feature.chilling-strike:
+  effets:
+    - "Attaque à mains nues : 1d4 dégâts de froid supplémentaires."
+  revision: 432174
+feature.cinders:
+  effets:
+    - "Quand le porteur met un ennemi en flammes (état En flammes) : il obtient l’état Chaleur pendant 2 tours."
+  revision: 432176
+feature.circuitry-interface:
+  effets:
+    - "À l’activation : état Forme d’artifice pendant 10 tours ; le porteur compte comme un artificiel, a l’avantage à ses jets d’attaque d’arme et la résistance aux dégâts de foudre."
+  revision: 348848
+feature.cleansing-touch:
+  effets:
+    - "Quand le porteur soigne une créature empoisonnée : elle perd l’état Empoisonné."
+  revision: 432178
+feature.cleave:
+  effets:
+    - "Attaque en large arc de cercle contre 3 ennemis au plus : chacun subit la moitié des dégâts normaux de l’arme."
+  revision: 373605
+feature.click-heels:
+  effets:
+    - "À l’activation : le porteur entreprend l’action Pointe par une action bonus au lieu d’une action (état Claquement de talons)."
+  revision: 368838
+feature.coldbrim-chill:
+  effets:
+    - "Une fois par tour, quand le porteur inflige un état à une cible : elle subit aussi l’état Couvert de givre pendant 2 tours."
+  revision: 432183
+feature.colossal-onslaught:
+  effets:
+    - "Frappe qui touche toutes les créatures alignées : dégâts tranchants supplémentaires égaux au bonus de maîtrise."
+  revision: 373607
+feature.combat-regeneration:
+  effets:
+    - "Début du tour du porteur : il récupère 1d4 points de vie."
+  revision: 432185
+feature.commanders-strike:
+  effets:
+    - "Le porteur désigne un allié et un ennemi : à son tour suivant, l’allié joue sa réaction pour porter une attaque d’arme à cet ennemi."
+  revision: 439195
+feature.concussive-smash:
+  effets:
+    - "Attaque d’arme puissante qui peut hébéter l’ennemi : jet de sauvegarde de Constitution ; en cas d’échec, il subit l’état Hébété pendant 2 tours."
+  revision: 373613
+feature.conductive-strikes:
+  effets:
+    - "Attaque à mains nues réussie : le porteur obtient 2 Charges de foudre."
+  revision: 432187
+feature.corellons-guiding-hand:
+  effets:
+    - "Tant que l’objet est porté : maîtrise des arcs longs et des arcs courts."
+    - "Attaque d’arme à distance : 2 dégâts supplémentaires."
+  revision: 432192
+feature.corrosive-strike:
+  effets:
+    - "Attaque d’arme : dégâts d’acide supplémentaires égaux au bonus de maîtrise."
+    - "Cible touchée : une flaque d’acide se forme autour d’elle et réduit la classe d’armure de 2."
+  revision: 393064
+feature.countershock:
+  effets:
+    - "Dégâts subis pendant que le porteur a des Charges de foudre : l’attaquant fait un jet de sauvegarde de Dextérité (DD 14) ; en cas d’échec, il subit l’état Électrocuté pendant 1 tour."
+  revision: 432194
+feature.covert-critical:
+  effets:
+    - "Tant que le porteur est dans une zone obscurcie : le résultat nécessaire pour un coup critique baisse de 1 (état Critique furtif)."
+  notes:
+    - "Se cumule avec les autres réductions du seuil de coup critique."
+  revision: 432195
+feature.crackling-resonance:
+  effets:
+    - "Dégâts infligés par une attaque de sort à distance : chaque cible touchée subit l’état Réverbération pendant 2 tours."
+  revision: 432196
+feature.craterous-wounds:
+  effets:
+    - "Coup critique : 1d6 dégâts de force supplémentaires."
+  revision: 432197
+feature.crowning-glory:
+  effets:
+    - "Quand le porteur soigne une autre créature : il récupère 1d6 points de vie."
+  revision: 432204
+feature.crowning-strike:
+  effets:
+    - "Attaque d’arme qui peut affoler la cible : jet de sauvegarde d’Intelligence (DD d’action d’arme + 2) ; en cas d’échec, elle subit l’état Couronne du dément pendant 3 tours."
+  revision: 379445
+feature.crushing-blows:
+  effets:
+    - "Attaque à mains nues : +1 au jet d’attaque et 2 dégâts contondants supplémentaires."
+  revision: 432207
+feature.cunning-brume:
+  effets:
+    - "Quand le porteur se désengage : un nuage de brouillard de 2 m de rayon apparaît pour 1 tour."
+  revision: 439148
+feature.damp-aegis:
+  effets:
+    - "En combat, une fois par tour : le porteur obtient une protection d’eau, version renforcée de l’état Mouillé, qui dure jusqu’à ce qu’il subisse des dégâts."
+  revision: 432224
+feature.daredevil-proximity:
+  effets:
+    - "Passif activable : au contact d’une créature hostile, les attaques de sort à distance du porteur deviennent des attaques de sort au corps à corps, donc sans désavantage."
+  revision: 433204
+feature.darkness-cloak:
+  effets:
+    - "À l’activation : un nuage de ténèbres magiques apparaît et le porteur tente aussitôt de se cacher (état Caché)."
+  revision: 287194
+feature.darkveil-precision:
+  effets:
+    - "Tant que le porteur est dans l’ombre, en zone obscurcie : +1d4 à ses jets d’attaque d’arme à distance."
+  revision: 432237
+feature.darkvision:
+  effets:
+    - "Tant que l’objet est porté : vision dans le noir jusqu’à 12 m."
+  revision: 432238
+feature.dauntless:
+  effets:
+    - "Tant que l’objet est porté : le porteur ne peut subir ni l’état Effrayé ni les autres états qui altèrent les émotions."
+  revision: 437823
+feature.dazing-echo:
+  effets:
+    - "Quand une créature sous l’état Réverbération inflige des dégâts au porteur : jet de sauvegarde de Constitution (DD 13) ; en cas d’échec, elle subit l’état Hébété pendant 2 tours."
+  revision: 432239
+feature.dazing-smite:
+  effets:
+    - "Coup porté avec l’un des châtiments du porteur : la cible fait un jet de sauvegarde de Constitution (DD 13) ; en cas d’échec, elle subit l’état Hébété pendant 2 tours."
+  revision: 432240
+feature.dazzling-ray:
+  effets:
+    - "Rayon de lumière vive en ligne : les créatures sur son passage subissent l’état Aveuglé."
+  revision: 373626
+feature.deadly-derivation:
+  effets:
+    - "Quand le porteur empoisonne un ennemi (état Empoisonné) : il récupère 1d4 points de vie."
+  revision: 432242
+feature.deathbringers-sight:
+  effets:
+    - "Tant que l’objet est porté : vision dans le noir jusqu’à 3 m."
+    - "Le résultat nécessaire pour un coup critique baisse de 1."
+  notes:
+    - "Se cumule avec les autres réductions du seuil de coup critique."
+  revision: 432249
+feature.deathly-slumber:
+  effets:
+    - "Contre une créature assommée ou endormie (état Endormi) : 1d4 dégâts nécrotiques supplémentaires."
+  revision: 432250
+feature.deaths-promise:
+  effets:
+    - "Attaque ratée avec cette lance : le jet d’attaque suivant du porteur contre la même cible bénéficie de Coup au but (2 tours)."
+  revision: 432248
+feature.deepen-the-wound:
+  effets:
+    - "Attaque avec cette arme contre une créature déjà blessée : +1d4 au jet d’attaque."
+  revision: 432251
+feature.deepflesh-slice:
+  effets:
+    - "Attaque faite avec avantage : la cible subit l’état Saignement pendant 2 tours."
+  revision: 432253
+feature.defensive-attack:
+  effets:
+    - "Première attaque du round avec cette arme : le porteur peut retirer 1 point d’enchantement à l’arme pour obtenir +1 à sa classe d’armure et à ses jets de sauvegarde (état Posture défensive, 1 tour)."
+  revision: 432255
+feature.defiers-rejuvenation:
+  effets:
+    - "Jet de sauvegarde réussi contre un sort : le porteur récupère 1d4 points de vie."
+  revision: 432258
+feature.defy-villainy:
+  effets:
+    - "Quand le porteur subit l’état Aveuglé, Paralysé ou Empoisonné : il lance automatiquement Restauration partielle sur lui-même (état Restauration réactive)."
+  revision: 432260
+feature.demonspirit-aura:
+  effets:
+    - "Passif activable : les créatures invoquées par le porteur ont la résistance à tous les dégâts, sauf psychiques."
+    - "Début du tour de chaque créature invoquée : jet de sauvegarde de Sagesse ; en cas d’échec, elle est prise de folie démoniaque."
+  revision: 432261
+feature.dextrous-evasion:
+  effets:
+    - "Jet de sauvegarde de Dextérité raté : le porteur peut jouer sa réaction pour le transformer en réussite."
+  revision: 425380
+feature.diamondsbane:
+  effets:
+    - "Coup porté à un objet avec une arme en adamantium : c’est toujours un coup critique."
+  revision: 432266
+feature.dig-deep:
+  effets:
+    - "Cible touchée : elle subit l’état Brisé pendant 3 tours ; les coups suivants de cette arme contre elle infligent 1d4 dégâts perforants supplémentaires."
+  revision: 432267
+feature.disarming-strike:
+  effets:
+    - "Attaque d’arme visant les mains : jet de sauvegarde de Force (DD d’action d’arme + 2) ; en cas d’échec, la cible lâche les armes qu’elle tient (état Arme lâchée !)."
+  revision: 417737
+feature.displacement:
+  effets:
+    - "Début du tour du porteur : les ennemis ont un désavantage aux jets d’attaque contre lui (état Déplacé), jusqu’à ce qu’il subisse des dégâts."
+  revision: 432272
+feature.dolor-amarus-passive-feature:
+  effets:
+    - "Coup critique avec une arme ou à mains nues : 7 dégâts supplémentaires."
+  revision: 432275
+feature.doom-lobber:
+  effets:
+    - "Tant que l’objet est porté : +1 aux jets d’attaque de sort."
+  revision: 432277
+feature.dragonfire-fists:
+  effets:
+    - "Attaque à mains nues : 1d4 dégâts de feu supplémentaires."
+  revision: 432294
+feature.dread-iron-ambush:
+  effets:
+    - "Tant que le porteur est caché : cette arme inflige 1d6 dégâts nécrotiques supplémentaires (état Dissimulation mortelle)."
+  revision: 432296
+feature.dreadful-hewer:
+  effets:
+    - "Jet de sauvegarde d’un ennemi contre un sort ou une action du porteur qui inflige l’état Effrayé : il le fait avec désavantage."
+  revision: 432297
+feature.duellers-enthusiasm:
+  effets:
+    - "Si le porteur ne combat pas à deux armes et que sa main secondaire est vide : une attaque au corps à corps supplémentaire avec cette arme."
+  revision: 377244
+feature.duelling-gloves:
+  effets:
+    - "Une seule arme, tenue en main principale, et l’autre main vide : +2 aux jets d’attaque d’arme au corps à corps."
+  revision: 433206
+feature.dwarven-thrower-passive-feature:
+  effets:
+    - "Marteau lancé par un nain : 1d8 dégâts contondants supplémentaires, ou 2d8 contre une créature de taille G ou supérieure."
+  revision: 432318
+feature.edge-of-darkness:
+  effets:
+    - "Attaque d’arme qui crée en même temps un nuage de ténèbres."
+  revision: 428706
+feature.edge-of-terror:
+  effets:
+    - "Cible touchée : elle subit l’état Glacé jusqu’aux os pendant 2 tours et ne peut pas récupérer de points de vie."
+    - "Un mort-vivant sous cet état a en plus un désavantage à ses jets d’attaque."
+  revision: 432469
+feature.effective-transmitter:
+  effets:
+    - "Tant que le porteur a des Charges de foudre : avantage aux attaques contre les artificiels en métal et contre les ennemis en armure métallique."
+  revision: 432470
+feature.electric-blood:
+  effets:
+    - "Dégâts infligés avec cette arme : le porteur obtient 2 Charges de foudre."
+  revision: 432477
+feature.electric-veins:
+  effets:
+    - "Dégâts infligés avec un sort ou un sort mineur : le porteur obtient 2 Charges de foudre."
+  revision: 432478
+feature.electrify-water:
+  effets:
+    - "En combat, quand le porteur se tient dans une surface d’eau : elle devient de l’eau électrifiée."
+  revision: 432481
+feature.elegant-duellist:
+  effets:
+    - "Main secondaire vide : coup critique sur un 19 ; une réaction supplémentaire par tour."
+  revision: 432485
+feature.elemental-augmentation:
+  effets:
+    - "Quand un sort mineur du porteur inflige des dégâts d’acide, de froid, de feu, de foudre ou de tonnerre : il ajoute son modificateur de caractéristique d’incantation aux dégâts."
+  revision: 432496
+feature.elemental-infusion:
+  effets:
+    - "Dégâts d’acide, de froid, de feu, de foudre ou de tonnerre infligés par un sort ou un sort mineur : cet élément imprègne l’arme du porteur."
+    - "Jusqu’à la fin de son tour suivant : sa première attaque d’arme réussie inflige 1d4 dégâts supplémentaires de cet élément."
+  revision: 432497
+feature.elemental-momentum:
+  effets:
+    - "Dégâts d’acide, de froid, de feu, de foudre ou de tonnerre infligés par un sort ou un sort mineur : le porteur obtient l’état Élan pendant 2 tours."
+  revision: 432498
+feature.elemental-resonance:
+  effets:
+    - "Dégâts d’acide, de feu, de foudre, radiants ou nécrotiques infligés par le porteur : il obtient la résistance à ce type de dégâts pendant 2 tours."
+  revision: 432499
+feature.elements-of-an-epoch:
+  effets:
+    - "Selon le type de dégâts infligés par l’arme, la cible subit aussi l’état Acide, un état de froid ou l’état En flammes."
+    - "État Acide : jet de sauvegarde de Constitution (DD 13) pour l’éviter ; dure 2 tours."
+  revision: 432502
+feature.elven-agility:
+  effets:
+    - "Tant que l’objet est porté : +2 aux jets d’initiative et avantage aux jets de sauvegarde de Dextérité."
+  revision: 432504
+feature.elven-chain-passive-feature:
+  effets:
+    - "Tant que l’armure est portée : le porteur est considéré comme la maîtrisant."
+  revision: 432505
+feature.endurance-by-fire:
+  effets:
+    - "Tant que l’objet est porté : résistance aux dégâts de feu et +2 aux jets de sauvegarde."
+  revision: 432508
+feature.enervating-suffusion:
+  effets:
+    - "Attaque à mains nues : 1d4 dégâts de force supplémentaires."
+  revision: 432509
+feature.envenom:
+  effets:
+    - "Dégâts de poison infligés par le porteur : la cible fait un jet de sauvegarde de Constitution (DD 13) ; en cas d’échec, elle subit l’état Empoisonné pendant 3 tours."
+  revision: 434188
+feature.eternal-devotion:
+  effets:
+    - "À l’activation : le porteur récupère 1 charge de Conduit de serment."
+  revision: 322994
+feature.evasive-instinct:
+  effets:
+    - "Sans armure ni bouclier : +1 à la classe d’armure et aux jets de sauvegarde du porteur."
+  revision: 432520
+feature.ever-vigilant:
+  effets:
+    - "Quand le porteur choisit de mettre fin à sa Rage : il obtient 15 points de vie temporaires."
+  revision: 432521
+feature.exceptional-plate:
+  effets:
+    - "Tant que l’armure est portée : les dégâts tranchants, perforants et contondants subis sont réduits de 2."
+  revision: 432522
+feature.executioner:
+  effets:
+    - "Quand le porteur tue une créature : son jet d’attaque suivant est un coup critique (état Bourreau)."
+  revision: 432524
+feature.exoskeletal-endurance:
+  effets:
+    - "Tant que l’objet est porté : tous les dégâts subis sont réduits de 2."
+    - "Attaque au corps à corps qui touche le porteur : l’attaquant subit des dégâts perforants égaux au modificateur de Constitution du porteur."
+  revision: 432525
+feature.exoskeletal-reinforcement:
+  effets:
+    - "Attaques du porteur : elles ignorent la résistance aux dégâts tranchants, perforants et contondants."
+  revision: 439011
+feature.exotic-material:
+  effets:
+    - "Tant que l’armure est portée : le porteur ajoute la totalité de son modificateur de Dextérité à sa classe d’armure."
+    - "Cette armure n’impose pas de désavantage aux tests de Discrétion."
+  revision: 432528
+feature.experienced-and-deadly:
+  effets:
+    - "Frappe à mains nues : dégâts supplémentaires égaux au modificateur de Sagesse du porteur."
+  revision: 432529
+feature.exquisite-focus:
+  effets:
+    - "Tant que le porteur se concentre sur un sort : il ajoute son modificateur de caractéristique d’incantation à ses jets de sauvegarde et obtient +1 à sa classe d’armure (état Défenses suprêmes)."
+  revision: 432534
+feature.faceless-masquerade:
+  effets:
+    - "Tant que l’objet est porté : avantage aux tests de Tromperie et de Persuasion."
+  revision: 432539
+feature.faithwardens-stride:
+  effets:
+    - "Les lianes druidiques n’entravent pas le porteur et ne comptent pas comme terrain difficile pour lui."
+  revision: 432542
+feature.favoured-weapon:
+  effets:
+    - "Cette arme : +1 aux jets d’attaque et de dégâts."
+  revision: 432548
+feature.feller-of-monsters:
+  effets:
+    - "Contre une monstruosité : avantage aux jets d’attaque."
+  revision: 432551
+feature.fervent-flames:
+  effets:
+    - "Dégâts de feu infligés au porteur par une autre créature : il obtient l’état Chaleur pendant 2 tours."
+  revision: 432554
+feature.feywild-sparks:
+  effets:
+    - "Tant que l’aptitude Marées du chaos du porteur est active : chaque sort qu’il lance déclenche une manifestation de magie sauvage."
+  revision: 432557
+feature.fiendish-fire:
+  effets:
+    - "Une fois par tour, créature touchée par cette arme : jet de sauvegarde de Dextérité (DD 13) ; en cas d’échec, elle subit l’état Lueurs féeriques pendant 1 tour."
+  revision: 432559
+feature.fiery-return:
+  effets:
+    - "Dégâts de feu infligés avec un sort de niveau 1 ou plus : le porteur se met lui-même en flammes (état En flammes) et obtient une action bonus supplémentaire pour ce round."
+  revision: 432561
+feature.fire-acuity:
+  effets:
+    - "Chaque fois que le porteur inflige des dégâts de feu : il obtient l’état Acuité arcanique pendant 2 tours."
+  revision: 432562
+feature.first-blood:
+  effets:
+    - "Cible touchée qui avait encore tous ses points de vie : elle subit l’état Saignement pendant 2 tours."
+  revision: 432563
+feature.flaming-revenge:
+  effets:
+    - "Jet de sauvegarde réussi contre le sort d’un ennemi : cet ennemi subit 1d4 dégâts de feu plus le bonus de maîtrise du porteur."
+  revision: 432567
+feature.flaming-shroud:
+  effets:
+    - "Créature qui inflige des dégâts au porteur à 2 m ou moins de lui : jet de sauvegarde de Dextérité (DD 12) ; en cas d’échec, elle subit l’état En flammes pendant 2 tours."
+  revision: 432568
+feature.flourish:
+  effets:
+    - "Feinte qui peut déséquilibrer l’adversaire : jet de sauvegarde de Dextérité (DD d’action d’arme + 2) ; en cas d’échec, il subit l’état Déséquilibré pendant 2 tours."
+  revision: 373786
+feature.fly-trap:
+  effets:
+    - "Cible touchée qui n’est ni une plante ni une bête : jet de sauvegarde de Force (DD 12) ; en cas d’échec, elle subit l’état Piégé (frappe piégeuse) pendant 2 tours."
+  revision: 432570
+feature.flying-strike:
+  effets:
+    - "Quand un porteur githyanki lance le sort Vol : sa prochaine attaque d’arme au corps à corps inflige 1d4 dégâts psychiques supplémentaires (état Frappe aérienne, 1 tour)."
+  revision: 438767
+feature.focused-stride:
+  effets:
+    - "Sort à concentration lancé : le porteur obtient l’état Élan pendant 1 tour."
+    - "Tant que le porteur se concentre : il ne peut être ni mis à terre (état À terre) ni déplacé contre son gré."
+  revision: 432573
+feature.fond-caress:
+  effets:
+    - "Le porteur peut recevoir le sort Lien de protection d’une créature qui porte l’anneau jumeau."
+  revision: 432574
+feature.force-absorption:
+  effets:
+    - "Dégâts tranchants, perforants ou contondants subis : le porteur obtient l’état Conduit de force pendant 2 tours."
+  revision: 432577
+feature.forest-aegis:
+  effets:
+    - "Tant que l’armure est portée : le porteur bénéficie de l’effet de Peau d’écorce ; sa classe d’armure passe à 16."
+  revision: 432579
+feature.formless-slaughter:
+  effets:
+    - "Tant que le porteur est métamorphosé ou déguisé : +1 aux jets d’attaque et de dégâts."
+  revision: 432581
+feature.frantic-urgency:
+  effets:
+    - "En combat, début de tour à 50 % de ses points de vie ou moins : le porteur obtient l’état Élan pendant 1 tour."
+  revision: 432582
+feature.frightened-immunity:
+  effets:
+    - "Tant que l’objet est porté : le porteur ne peut pas subir l’état Effrayé."
+  revision: 432584
+feature.fury-in-the-marrow:
+  effets:
+    - "Quand le porteur entre en Rage : chaque créature hostile dans un rayon de 3 m fait un jet de sauvegarde de Sagesse (DD d’action d’arme) ; elle subit 2d4 dégâts psychiques en cas d’échec, la moitié en cas de réussite."
+  revision: 432585
+feature.galvanic-currents:
+  effets:
+    - "Attaque avec cette arme : 1d6 dégâts de foudre supplémentaires."
+  revision: 432587
+feature.gargantuan-cleave:
+  effets:
+    - "Attaque d’arme contre plusieurs cibles : 1d6 dégâts tranchants supplémentaires, puis le porteur subit l’état Déséquilibré (enchaînement gigantesque) pendant 1 tour."
+  revision: 373797
+feature.garrotte:
+  effets:
+    - "Cible humanoïde : jet de sauvegarde de Force (DD 14) ; en cas d’échec, elle subit l’état Garrotté pendant 3 tours, qui inflige des dégâts et l’empêche de parler."
+  revision: 418804
+feature.genial-strider:
+  effets:
+    - "Tant que l’objet est porté : le terrain difficile ne ralentit pas le déplacement du porteur."
+  revision: 432588
+feature.giant-form:
+  effets:
+    - "À l’activation : le porteur grandit (état Forme de géant) ; ses armes infligent 1d6 dégâts supplémentaires, il obtient 27 points de vie temporaires et l’avantage aux tests et jets de sauvegarde de Force."
+  revision: 418874
+feature.giantslayer:
+  effets:
+    - "Cible touchée : la part des dégâts due au modificateur de Force est doublée."
+    - "Contre une créature de taille G ou supérieure : avantage aux jets d’attaque avec cette arme."
+  revision: 432590
+feature.githborn-psionic-resistance:
+  effets:
+    - "Arme tenue par un githyanki : avantage aux jets de sauvegarde d’Intelligence, de Sagesse et de Charisme, résistance aux dégâts psychiques, et le porteur ne peut pas subir l’état Charmé."
+  revision: 432591
+feature.githborn-psionic-weapon:
+  effets:
+    - "Arme maniée par un githyanki : 1d4 dégâts psychiques supplémentaires."
+  revision: 432592
+feature.githborn-psionic-weapon-1d6:
+  effets:
+    - "Arme maniée par un githyanki : 1d6 dégâts psychiques supplémentaires."
+  revision: 432593
+feature.gleamdance-dagger-glowing:
+  effets:
+    - "Passif activable : l’arme diffuse de la lumière dans un rayon de 6 m (état Lumière)."
+  revision: 432596
+feature.glorious-pointy-hat:
+  effets:
+    - "Test de Persuasion : bonus égal au modificateur d’Intelligence du porteur."
+  revision: 432599
+feature.goblins-undoing:
+  effets:
+    - "Tant que l’arme est équipée : les gobelins ont un désavantage aux jets d’attaque contre le porteur."
+  revision: 432601
+feature.godswill:
+  effets:
+    - "Tant que l’objet est porté : 1 utilisation supplémentaire de Conduit divin, rendue après un repos long."
+  revision: 432602
+feature.gontr-mael-glowing:
+  effets:
+    - "Passif activable : l’arc diffuse de la lumière dans un rayon de 6 m (état Lumière) ; on peut l’éteindre et la rallumer."
+  revision: 432604
+feature.grand-slam:
+  effets:
+    - "Coup porté au sol : dégâts de tonnerre supplémentaires égaux au bonus de maîtrise ; les ennemis proches sont touchés et peuvent être repoussés."
+  revision: 414020
+feature.greater-kushigo-counter:
+  effets:
+    - "Quand un attaquant rate le porteur : celui-ci peut jouer sa réaction pour lui porter une frappe à mains nues."
+  revision: 432000
+feature.green-bed-regeneration:
+  effets:
+    - "Début du tour sur une surface de végétation (Croissance végétale) ou de lianes : le porteur récupère 1d4 points de vie."
+  revision: 432613
+feature.gregarious-caster:
+  effets:
+    - "Sorts mineurs du porteur : dégâts supplémentaires égaux à son modificateur de Charisme."
+  revision: 432614
+feature.grievous-retribution:
+  effets:
+    - "Quand un ennemi inflige des dégâts au porteur : celui-ci obtient l’état Courroux pendant 2 tours."
+  revision: 432615
+feature.grim-irony:
+  effets:
+    - "Coup critique avec cette arme : la cible et l’attaquant font chacun un jet de sauvegarde de Sagesse (DD 17) ; qui échoue subit l’état Fou rire pendant 2 tours."
+  revision: 432617
+feature.grit:
+  effets:
+    - "Tant que le porteur est à 50 % de ses points de vie ou moins : il dispose d’une action bonus supplémentaire."
+  revision: 432619
+feature.hamstring-shot:
+  effets:
+    - "Tir à la cuisse : jet de sauvegarde de Constitution (DD d’action d’arme + 2) ; en cas d’échec, la cible subit l’état Jarret tranché pendant 2 tours, soit une vitesse de déplacement réduite de 50 %."
+  revision: 373853
+feature.haroldish-doom:
+  effets:
+    - "Dégâts infligés avec une arme à distance : la cible fait un jet de sauvegarde de Charisme (DD 13) ; en cas d’échec, elle subit l’état Fléau pendant 2 tours."
+  revision: 432622
+feature.healing-incense-aura:
+  effets:
+    - "Pendant 10 tours, au début du tour du porteur : lui et les alliés proches récupèrent 1d4 points de vie."
+  revision: 426386
+feature.heartstopper:
+  effets:
+    - "Coup à la poitrine : jet de sauvegarde de Constitution (DD d’action d’arme + 2) ; en cas d’échec, la cible subit l’état Traumatisme thoracique pendant 2 tours."
+  revision: 385459
+feature.heavy-hitter:
+  effets:
+    - "Cible touchée : elle subit l’état Chancelant pendant 2 tours."
+  revision: 432632
+feature.heightened-awareness:
+  effets:
+    - "Tant que l’objet est porté : +3 aux jets d’initiative et avantage aux tests de Perception."
+  revision: 432633
+feature.heightened-manoeuvre:
+  effets:
+    - "Jet de sauvegarde d’une cible contre une manœuvre ou une action d’arme du porteur : il se fait avec désavantage."
+  revision: 432634
+feature.heightened-necromancy:
+  effets:
+    - "Jet de sauvegarde d’une créature contre un sort de nécromancie du porteur : il se fait avec désavantage."
+  revision: 432635
+feature.hellcrawler:
+  effets:
+    - "Téléportation vers une zone : à l’arrivée, 2d8 dégâts de feu dans un rayon de 3 m."
+  revision: 330558
+feature.helldusk-armour-passive-feature:
+  effets:
+    - "Tant que l’armure est portée : le porteur est considéré comme la maîtrisant."
+  revision: 432636
+feature.hellstalker:
+  effets:
+    - "Créature touchée avec cette arme pendant que le porteur est caché ou invisible : jet de sauvegarde de Constitution (DD 15) ; en cas d’échec, elle subit l’état En flammes pendant 2 tours."
+  revision: 432640
+feature.helms-protection:
+  effets:
+    - "Quand le porteur soigne une autre créature : elle obtient pendant 2 tours la résistance aux dégâts contondants, perforants et tranchants des attaques d’arme (état Protection contre les armes)."
+  revision: 432641
+feature.high-spellcasting-1:
+  effets:
+    - "Tant que l’objet est porté : +1 au DD de sauvegarde des sorts."
+  revision: 432643
+feature.high-spellcasting-2:
+  effets:
+    - "Tant que l’objet est porté : +2 au DD de sauvegarde des sorts."
+  revision: 432644
+feature.hoarfrost-balance:
+  effets:
+    - "Sur une surface de glace : le porteur ne peut pas tomber à terre (état À terre)."
+  revision: 432645
+feature.homing-weapon:
+  effets:
+    - "Arme lancée : elle revient à son propriétaire."
+  revision: 432648
+feature.hunters-eye:
+  effets:
+    - "Contre une créature marquée par Marque du chasseur, Coup au but, Lueurs féeriques ou Éclair traçant : +1d4 aux jets d’attaque."
+  revision: 432653
+feature.hush-you:
+  effets:
+    - "Attaque d’arme tranchante : jet de sauvegarde de Constitution (DD d’action d’arme + 2) ; en cas d’échec, la cible subit l’état Réduit au silence pendant 2 tours."
+  revision: 373862
+feature.ichorous-corrosion:
+  effets:
+    - "Dégâts d’acide infligés par le porteur : chaque cible fait un jet de sauvegarde de Dextérité (DD 13) ; en cas d’échec, elle subit l’état Émanations nocives pendant 3 tours."
+  revision: 432656
+feature.illithid-euphoria:
+  effets:
+    - "Quand le porteur charme ou effraie une créature (état Charmé ou Effrayé) : il obtient pendant 3 tours +1d4 à ses jets d’attaque et de sauvegarde."
+  revision: 432657
+feature.illithid-protection:
+  effets:
+    - "Si le porteur abrite un têtard de flagelleur mental : +1 à ses jets de sauvegarde d’Intelligence, de Sagesse et de Charisme."
+  revision: 432660
+feature.illuminating-shot:
+  effets:
+    - "Tir : la cible subit l’état Orbe rayonnant pendant 1 tour."
+  revision: 373864
+feature.illusion-quickening:
+  effets:
+    - "Après avoir touché une créature avec une attaque d’arme : le porteur peut lancer un sort d’illusion ou d’enchantement par une action bonus (état Incantation accélérée, 1 tour)."
+  revision: 432661
+feature.immolating-gaze:
+  effets:
+    - "Regard porté sur une cible : dégâts de feu, puis jet de sauvegarde d’Intelligence (DD de sauvegarde des sorts du porteur) ; en cas d’échec, elle subit l’état Apeuré pendant 3 tours."
+  revision: 361243
+feature.imperial-retaliation:
+  effets:
+    - "Jet de sauvegarde réussi par le porteur : l’ennemi qui l’a provoqué fait un jet de sauvegarde d’Intelligence (DD 15) ; en cas d’échec, il subit l’état Étourdi pendant 1 tour."
+  revision: 438299
+feature.improved-critical:
+  effets:
+    - "Tant que l’arme est équipée : le résultat nécessaire pour un coup critique baisse de 1."
+  notes:
+    - "Se cumule avec les autres réductions du seuil de coup critique."
+  revision: 432677
+feature.impulse-blast:
+  effets:
+    - "Quand le porteur tue une cible ou porte un coup critique : chaque créature proche fait un jet de sauvegarde de Dextérité (DD 14) ; en cas d’échec, elle subit l’état À terre pendant 2 tours."
+  revision: 432685
+feature.incise-ligaments:
+  effets:
+    - "Attaque d’arme qui inflige des dégâts nécrotiques supplémentaires : jet de sauvegarde de Dextérité (DD d’action d’arme + 2) ; en cas d’échec, la cible subit l’état Ralenti pendant 2 tours."
+  notes:
+    - "Inutilisable par les personnages joueurs, même avec l’arme équipée."
+  revision: 438226
+feature.infernal-acuity:
+  effets:
+    - "Tant que l’objet est porté : +1 aux jets d’attaque de sort et au DD de sauvegarde des sorts."
+  revision: 433207
+feature.infernal-evasion:
+  effets:
+    - "Jet de sauvegarde raté : le porteur peut jouer sa réaction pour le transformer en réussite."
+  revision: 407080
+feature.infernal-retribution:
+  effets:
+    - "Jet de sauvegarde réussi par le porteur : le lanceur à l’origine du jet subit l’état En flammes (orthonique) pendant 3 tours."
+  revision: 437849
+feature.infernal-sight:
+  effets:
+    - "Tant que l’objet est porté : le porteur voit dans les ténèbres ordinaires et magiques jusqu’à 12 m et ne peut pas subir l’état Aveuglé."
+  revision: 432697
+feature.infernal-touch:
+  effets:
+    - "Attaque d’arme : 1d6 dégâts de feu supplémentaires."
+    - "Attaque à mains nues : 1d6 dégâts nécrotiques supplémentaires, et la cible fait un jet de sauvegarde de Constitution (DD 15) ; en cas d’échec, elle subit l’état Saignement pendant 2 tours."
+  revision: 432700
+feature.infernal-weapon:
+  effets:
+    - "Cible touchée : 3 dégâts de poison supplémentaires, puis jet de sauvegarde de Constitution (DD 12) ; en cas d’échec, elle subit l’état Empoisonné pendant 2 tours."
+  revision: 432703
+feature.inject-nostrum:
+  effets:
+    - "Attaque d’arme qui inflige des dégâts nécrotiques supplémentaires : jet de sauvegarde de Dextérité (DD d’action d’arme + 2) ; en cas d’échec, la cible subit l’état Empoisonné pendant 2 tours."
+  notes:
+    - "Inutilisable par les personnages joueurs, même avec l’arme équipée."
+  revision: 437885
+feature.innate-fortitude:
+  effets:
+    - "Une fois par repos long : le porteur peut jouer sa réaction pour faire un jet d’attaque ou un jet de sauvegarde avec avantage."
+  revision: 407086
+feature.intense-adamantine-backlash:
+  effets:
+    - "Attaque au corps à corps qui touche le porteur : l’attaquant subit l’état Chancelant pendant 3 tours."
+  revision: 438449
+feature.interplanar-slayer:
+  effets:
+    - "Contre les githyanki, les aberrations, les fiélons et les élémentaires : +1d4 aux jets d’attaque et de dégâts avec cette arme."
+  revision: 432713
+feature.intimate-embrace:
+  effets:
+    - "Une fois par repos long : le porteur peut lancer Lien de protection sur une créature qui porte l’anneau jumeau."
+  revision: 432714
+feature.invisible-weapon:
+  effets:
+    - "Tant qu’elle est équipée, l’arme est invisible (état Arme invisible) : avantage aux jets d’attaque et coup critique sur un 19."
+    - "Jet d’attaque raté : l’arme perd ces propriétés pendant 2 rounds."
+  revision: 432716
+feature.ironvine:
+  effets:
+    - "Attaque au corps à corps qui touche le porteur pendant qu’il tient une arme sous Gourdin magique : l’attaquant subit des dégâts perforants égaux au modificateur de Sagesse du porteur."
+  revision: 432718
+feature.keen-attack:
+  effets:
+    - "Attaque à distance avec cette arme, sans désavantage : le bonus de maîtrise du porteur est doublé."
+  revision: 432722
+feature.ki-restoration-lesser:
+  effets:
+    - "À l’activation : le porteur récupère 2 points de ki."
+  revision: 439845
