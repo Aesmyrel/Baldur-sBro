@@ -21,12 +21,15 @@ enum class Collection(val key: String, val template: String?) {
     CLASSES("class", null),
     /** Sous-classes : pages listées par la galerie de la page `Classes` (récupérée juste avant). */
     SUBCLASSES("subclass", null),
+    /** Races, historiques et dons : pages de synthèse. */
+    ORIGINS("origin", null),
 }
 
 /** Pages nommées, hors modèle d'inclusion. */
 val NAMED_PAGES = mapOf(
     Collection.MODULES to listOf("Module:Resource/data"),
     Collection.CLASSES to CLASS_PAGES + CLASSES_OVERVIEW_PAGE,
+    Collection.ORIGINS to listOf(RACES_PAGE, BACKGROUNDS_PAGE, FEATS_PAGE),
 )
 
 /** Une page et son modèle principal. */

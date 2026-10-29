@@ -1,0 +1,184 @@
+# Noms français des sous-classes (guide : docs/LOTS_ECRITURE.md §3).
+# VF_DND : nom anglais de BG3 identique à celui d’une sous-classe du SRD 5.2.1 ; le nom français est celui du SRD 5.2.1 FR.
+# Les autres (noms de 2014 ou d’autres livres) sont NON_OFFICIELLE, traduits comme la VF de D&D (majuscule du nom distinctif, à la façon du SRD).
+subclass.abjuration-school:
+  fr: "École d’Abjuration"
+  statut: NON_OFFICIELLE
+subclass.arcane-archer:
+  fr: "Archer arcanique"
+  statut: NON_OFFICIELLE
+subclass.arcane-trickster:
+  fr: "Escroc arcanique"
+  statut: NON_OFFICIELLE
+subclass.assassin:
+  fr: "Assassin"
+  statut: NON_OFFICIELLE
+subclass.battle-master:
+  fr: "Maître de guerre"
+  statut: NON_OFFICIELLE
+subclass.beast-master:
+  fr: "Maître des bêtes"
+  statut: NON_OFFICIELLE
+subclass.berserker:
+  fr: "Berserker"
+  statut: NON_OFFICIELLE
+subclass.bladesinging:
+  fr: "Chant de la lame"
+  statut: NON_OFFICIELLE
+subclass.champion:
+  fr: "Champion"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subclass.circle-of-the-land:
+  fr: "Cercle de la Terre"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subclass.circle-of-the-moon:
+  fr: "Cercle de la Lune"
+  statut: NON_OFFICIELLE
+subclass.circle-of-the-spores:
+  fr: "Cercle des Spores"
+  statut: NON_OFFICIELLE
+subclass.circle-of-the-stars:
+  fr: "Cercle des Étoiles"
+  statut: NON_OFFICIELLE
+subclass.college-of-glamour:
+  fr: "Collège de la Séduction"
+  statut: NON_OFFICIELLE
+subclass.college-of-lore:
+  fr: "Collège du Savoir"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subclass.college-of-swords:
+  fr: "Collège des Épées"
+  statut: NON_OFFICIELLE
+subclass.college-of-valour:
+  fr: "Collège de la Vaillance"
+  statut: NON_OFFICIELLE
+subclass.conjuration-school:
+  fr: "École d’Invocation"
+  statut: NON_OFFICIELLE
+subclass.death-domain:
+  fr: "Domaine de la Mort"
+  statut: NON_OFFICIELLE
+subclass.divination-school:
+  fr: "École de Divination"
+  statut: NON_OFFICIELLE
+subclass.draconic-bloodline:
+  fr: "Lignée draconique"
+  statut: NON_OFFICIELLE
+subclass.eldritch-knight:
+  fr: "Chevalier occulte"
+  statut: NON_OFFICIELLE
+subclass.enchantment-school:
+  fr: "École d’Enchantement"
+  statut: NON_OFFICIELLE
+subclass.evocation-school:
+  fr: "École d’Évocation"
+  statut: NON_OFFICIELLE
+subclass.giant:
+  fr: "Géant"
+  statut: NON_OFFICIELLE
+subclass.gloom-stalker:
+  fr: "Traqueur des ténèbres"
+  statut: NON_OFFICIELLE
+subclass.hunter:
+  fr: "Chasseur"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subclass.illusion-school:
+  fr: "École d’Illusion"
+  statut: NON_OFFICIELLE
+subclass.knowledge-domain:
+  fr: "Domaine du Savoir"
+  statut: NON_OFFICIELLE
+subclass.life-domain:
+  fr: "Domaine de la Vie"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subclass.light-domain:
+  fr: "Domaine de la Lumière"
+  statut: NON_OFFICIELLE
+subclass.nature-domain:
+  fr: "Domaine de la Nature"
+  statut: NON_OFFICIELLE
+subclass.necromancy-school:
+  fr: "École de Nécromancie"
+  statut: NON_OFFICIELLE
+subclass.oath-of-devotion:
+  fr: "Serment de Dévotion"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subclass.oath-of-the-ancients:
+  fr: "Serment des Anciens"
+  statut: NON_OFFICIELLE
+subclass.oath-of-the-crown:
+  fr: "Serment de la Couronne"
+  statut: NON_OFFICIELLE
+subclass.oath-of-vengeance:
+  fr: "Serment de Vengeance"
+  statut: NON_OFFICIELLE
+subclass.oathbreaker:
+  fr: "Parjure"
+  statut: NON_OFFICIELLE
+subclass.shadow-magic:
+  fr: "Magie de l’ombre"
+  statut: NON_OFFICIELLE
+subclass.storm-sorcery:
+  fr: "Sorcellerie des tempêtes"
+  statut: NON_OFFICIELLE
+subclass.swarmkeeper:
+  fr: "Gardien de l’essaim"
+  statut: NON_OFFICIELLE
+subclass.swashbuckler:
+  fr: "Bretteur"
+  statut: NON_OFFICIELLE
+subclass.tempest-domain:
+  fr: "Domaine de la Tempête"
+  statut: NON_OFFICIELLE
+subclass.the-archfey:
+  fr: "L’Archifée"
+  statut: NON_OFFICIELLE
+subclass.the-fiend:
+  fr: "Le Fiélon"
+  statut: NON_OFFICIELLE
+subclass.the-great-old-one:
+  fr: "Le Grand Ancien"
+  statut: NON_OFFICIELLE
+subclass.the-hexblade:
+  fr: "La Lame maléfique"
+  statut: NON_OFFICIELLE
+subclass.thief:
+  fr: "Voleur"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subclass.transmutation-school:
+  fr: "École de Transmutation"
+  statut: NON_OFFICIELLE
+subclass.trickery-domain:
+  fr: "Domaine de la Duperie"
+  statut: NON_OFFICIELLE
+subclass.war-domain:
+  fr: "Domaine de la Guerre"
+  statut: NON_OFFICIELLE
+subclass.way-of-shadow:
+  fr: "Voie de l’Ombre"
+  statut: NON_OFFICIELLE
+subclass.way-of-the-drunken-master:
+  fr: "Voie du Maître ivre"
+  statut: NON_OFFICIELLE
+subclass.way-of-the-four-elements:
+  fr: "Voie des Quatre Éléments"
+  statut: NON_OFFICIELLE
+subclass.way-of-the-open-hand:
+  fr: "Voie de la Paume"
+  statut: NON_OFFICIELLE
+subclass.wild-magic-barbarian:
+  fr: "Magie sauvage"
+  statut: NON_OFFICIELLE
+subclass.wild-magic-sorcerer:
+  fr: "Magie sauvage"
+  statut: NON_OFFICIELLE
+subclass.wildheart:
+  fr: "Cœur sauvage"
+  statut: NON_OFFICIELLE

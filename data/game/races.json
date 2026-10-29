@@ -1,0 +1,805 @@
+[
+  {
+    "id": "race.dragonborn",
+    "type": "race",
+    "name": {
+      "fr": "Dragonborn",
+      "en": "Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "speedMetres": 9.0
+    }
+  },
+  {
+    "id": "race.drow",
+    "type": "race",
+    "name": {
+      "fr": "Drow",
+      "en": "Drow",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "speedMetres": 9.0,
+      "proficiencies": {
+        "weapons": [
+          "rapier",
+          "shortsword",
+          "hand_crossbow"
+        ],
+        "skills": [
+          "perception"
+        ]
+      },
+      "features": [
+        {
+          "name": {
+            "fr": "Fey Ancestry",
+            "en": "Fey Ancestry",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.fey-ancestry"
+        },
+        {
+          "name": {
+            "fr": "Vision dans le noir supérieure",
+            "en": "Superior Darkvision",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.superior-darkvision"
+        },
+        {
+          "name": {
+            "fr": "Drow Magic",
+            "en": "Drow Magic",
+            "status": "UNOFFICIAL"
+          }
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.fey-ancestry",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.superior-darkvision",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "race.dwarf",
+    "type": "race",
+    "name": {
+      "fr": "Dwarf",
+      "en": "Dwarf",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "speedMetres": 7.5,
+      "proficiencies": {
+        "weapons": [
+          "battleaxe",
+          "handaxe",
+          "light_hammer",
+          "warhammer"
+        ]
+      },
+      "features": [
+        {
+          "name": {
+            "fr": "Dwarven Resilience",
+            "en": "Dwarven Resilience",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.dwarven-resilience"
+        },
+        {
+          "name": {
+            "fr": "Vision dans le noir",
+            "en": "Darkvision",
+            "status": "VF_DND",
+            "source": "aidedd"
+          },
+          "id": "feature.darkvision"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.darkvision",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.dwarven-resilience",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "race.elf",
+    "type": "race",
+    "name": {
+      "fr": "Elf",
+      "en": "Elf",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "proficiencies": {
+        "weapons": [
+          "shortsword",
+          "longsword",
+          "shortbow",
+          "longbow"
+        ],
+        "skills": [
+          "perception"
+        ]
+      },
+      "features": [
+        {
+          "name": {
+            "fr": "Fey Ancestry",
+            "en": "Fey Ancestry",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.fey-ancestry"
+        },
+        {
+          "name": {
+            "fr": "Vision dans le noir",
+            "en": "Darkvision",
+            "status": "VF_DND",
+            "source": "aidedd"
+          },
+          "id": "feature.darkvision"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.darkvision",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.fey-ancestry",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "race.githyanki",
+    "type": "race",
+    "name": {
+      "fr": "Githyanki",
+      "en": "Githyanki",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "speedMetres": 9.0,
+      "proficiencies": {
+        "armour": [
+          "light",
+          "medium"
+        ],
+        "weapons": [
+          "shortsword",
+          "longsword",
+          "greatsword"
+        ]
+      },
+      "features": [
+        {
+          "name": {
+            "fr": "Astral Knowledge",
+            "en": "Astral Knowledge",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.astral-knowledge"
+        },
+        {
+          "name": {
+            "fr": "Githyanki Psionics",
+            "en": "Githyanki Psionics",
+            "status": "UNOFFICIAL"
+          }
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.astral-knowledge",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "race.gnome",
+    "type": "race",
+    "name": {
+      "fr": "Gnome",
+      "en": "Gnome",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "speedMetres": 7.5,
+      "features": [
+        {
+          "name": {
+            "fr": "Gnome Cunning",
+            "en": "Gnome Cunning",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.gnome-cunning"
+        },
+        {
+          "name": {
+            "fr": "Vision dans le noir",
+            "en": "Darkvision",
+            "status": "VF_DND",
+            "source": "aidedd"
+          },
+          "id": "feature.darkvision"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.darkvision",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.gnome-cunning",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "race.half-elf",
+    "type": "race",
+    "name": {
+      "fr": "Half-Elf",
+      "en": "Half-Elf",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "proficiencies": {
+        "armour": [
+          "light",
+          "shield"
+        ],
+        "weapons": [
+          "spear",
+          "pike",
+          "halberd",
+          "glaive"
+        ]
+      },
+      "features": [
+        {
+          "name": {
+            "fr": "Fey Ancestry",
+            "en": "Fey Ancestry",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.fey-ancestry"
+        },
+        {
+          "name": {
+            "fr": "Vision dans le noir",
+            "en": "Darkvision",
+            "status": "VF_DND",
+            "source": "aidedd"
+          },
+          "id": "feature.darkvision"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.darkvision",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.fey-ancestry",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "race.half-orc",
+    "type": "race",
+    "name": {
+      "fr": "Half-Orc",
+      "en": "Half-Orc",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "speedMetres": 9.0,
+      "proficiencies": {
+        "skills": [
+          "intimidation"
+        ]
+      },
+      "features": [
+        {
+          "name": {
+            "fr": "Vision dans le noir",
+            "en": "Darkvision",
+            "status": "VF_DND",
+            "source": "aidedd"
+          },
+          "id": "feature.darkvision"
+        },
+        {
+          "name": {
+            "fr": "Savage Attacks",
+            "en": "Savage Attacks",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.savage-attacks"
+        },
+        {
+          "name": {
+            "fr": "Relentless Endurance",
+            "en": "Relentless Endurance",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.relentless-endurance"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.darkvision",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.relentless-endurance",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.savage-attacks",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "race.halfling",
+    "type": "race",
+    "name": {
+      "fr": "Halfling",
+      "en": "Halfling",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "speedMetres": 7.5,
+      "features": [
+        {
+          "name": {
+            "fr": "Halfling Luck",
+            "en": "Halfling Luck",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.halfling-luck"
+        },
+        {
+          "name": {
+            "fr": "Brave",
+            "en": "Brave",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.brave"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.brave",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.halfling-luck",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "race.human",
+    "type": "race",
+    "name": {
+      "fr": "Human",
+      "en": "Human",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "speedMetres": 9.0,
+      "proficiencies": {
+        "armour": [
+          "light",
+          "shield"
+        ],
+        "weapons": [
+          "spear",
+          "pike",
+          "halberd",
+          "glaive"
+        ],
+        "skillChoices": 1
+      },
+      "features": [
+        {
+          "name": {
+            "fr": "Human Versatility",
+            "en": "Human Versatility",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.human-versatility"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.human-versatility",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "race.tiefling",
+    "type": "race",
+    "name": {
+      "fr": "Tiefling",
+      "en": "Tiefling",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "race",
+      "speedMetres": 9.0,
+      "features": [
+        {
+          "name": {
+            "fr": "Hellish Resistance",
+            "en": "Hellish Resistance",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.hellish-resistance"
+        },
+        {
+          "name": {
+            "fr": "Vision dans le noir",
+            "en": "Darkvision",
+            "status": "VF_DND",
+            "source": "aidedd"
+          },
+          "id": "feature.darkvision"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.darkvision",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.hellish-resistance",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  }
+]

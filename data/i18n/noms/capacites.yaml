@@ -46,7 +46,7 @@ feature.aegis-palms:
   fr: Paumes d’égide
   statut: NON_OFFICIELLE
 feature.after-death-do-us-part-passive-feature:
-  fr: Par-delà la mort
+  fr: Après que la mort nous a séparés
   statut: NON_OFFICIELLE
 feature.ambusher-1:
   fr: Embusqué
@@ -67,7 +67,7 @@ feature.arcane-ashes:
   fr: Cendres arcaniques
   statut: NON_OFFICIELLE
 feature.arcane-battery:
-  fr: Réserve arcanique
+  fr: Batterie arcanique
   statut: NON_OFFICIELLE
 feature.arcane-echomalefaction:
   fr: Écho-maléfice arcanique
@@ -130,7 +130,7 @@ feature.become-the-bulwark:
   fr: Devenir rempart
   statut: NON_OFFICIELLE
 feature.blazing-retaliation:
-  fr: Riposte flamboyante
+  fr: Riposte ardente
   statut: NON_OFFICIELLE
 feature.blessed-mercy:
   fr: Miséricorde bénie
@@ -190,7 +190,7 @@ feature.breezeswift-speed:
   fr: Vitesse vive-brise
   statut: NON_OFFICIELLE
 feature.browbeaten:
-  fr: Sous la menace
+  fr: Rudoyé
   statut: NON_OFFICIELLE
 feature.brutal-leap:
   fr: Bond brutal
@@ -248,7 +248,7 @@ feature.cleave:
   statut: VF_DND
   source: srd-5.2.1-fr
 feature.click-heels:
-  fr: Claquer des talons
+  fr: Claquement de talons
   statut: NON_OFFICIELLE
 feature.coldbrim-chill:
   fr: Frisson du bord glacé
@@ -278,7 +278,7 @@ feature.countershock:
   fr: Contre-choc
   statut: NON_OFFICIELLE
 feature.covert-critical:
-  fr: Critique dissimulé
+  fr: Critique furtif
   statut: NON_OFFICIELLE
 feature.crackling-resonance:
   fr: Résonance crépitante
@@ -308,7 +308,7 @@ feature.darkness-cloak:
   fr: Cape de ténèbres
   statut: NON_OFFICIELLE
 feature.darkveil-precision:
-  fr: Précision du voile obscur
+  fr: Précision du voile sombre
   statut: NON_OFFICIELLE
 feature.darkvision:
   fr: Vision dans le noir
@@ -524,7 +524,7 @@ feature.fly-trap:
   fr: Attrape-mouche
   statut: NON_OFFICIELLE
 feature.flying-strike:
-  fr: Frappe volante
+  fr: Frappe aérienne
   statut: NON_OFFICIELLE
 feature.focused-stride:
   fr: Foulée concentrée
@@ -567,8 +567,7 @@ feature.giant-form:
   statut: NON_OFFICIELLE
 feature.giantslayer:
   fr: Tueuse de géants
-  statut: VF_DND
-  source: aidedd
+  statut: NON_OFFICIELLE
 feature.githborn-psionic-resistance:
   fr: Résistance psionique gith
   statut: NON_OFFICIELLE
@@ -799,7 +798,7 @@ feature.lightning-aura:
   fr: Aura de foudre
   statut: NON_OFFICIELLE
 feature.lightning-blast:
-  fr: Déflagration de foudre
+  fr: Décharge de foudre
   statut: NON_OFFICIELLE
 feature.loving-protection:
   fr: Protection aimante
@@ -1338,7 +1337,7 @@ feature.the-comeback:
   fr: Le retour
   statut: NON_OFFICIELLE
 feature.the-pain-maidens-blessing:
-  fr: Bénédiction de la Vierge de la douleur
+  fr: Bénédiction de la Demoiselle de douleur
   statut: NON_OFFICIELLE
 feature.the-scourge-mistress-bane:
   fr: Fléau de la Maîtresse du fouet
@@ -1464,10 +1463,10 @@ feature.whirlwind-attack-weapon-action:
   fr: Attaque tourbillonnante
   statut: NON_OFFICIELLE
 feature.winters-clutches-passive-feature:
-  fr: Étreinte de l’hiver
+  fr: Serres de l’hiver
   statut: NON_OFFICIELLE
 feature.witchbreaker-passive-feature:
-  fr: Brise-sorcière
+  fr: Brise-sorcières
   statut: NON_OFFICIELLE
 feature.withering-cut:
   fr: Entaille flétrissante

@@ -300,7 +300,7 @@ condition.festering-spores:
   fr: "Spores putrides"
   statut: NON_OFFICIELLE
 condition.feywild-sparks:
-  fr: "Étincelles de Féerie"
+  fr: "Étincelles de la Féerie"
   statut: NON_OFFICIELLE
 condition.flesh-to-stone-restrained-stage-1:
   fr: "Pétrification : entravé (stade 1)"
@@ -318,7 +318,7 @@ condition.form-of-artifice:
   fr: "Forme d’artifice"
   statut: NON_OFFICIELLE
 condition.formless-slaughter:
-  fr: "Massacre informe"
+  fr: "Carnage informe"
   statut: NON_OFFICIELLE
 condition.freedom-of-movement:
   fr: "Liberté de mouvement"
@@ -640,7 +640,7 @@ condition.seized-by-planar-binding:
   fr: "Lié par contrat"
   statut: NON_OFFICIELLE
 condition.shadespell:
-  fr: "Sort ombreux"
+  fr: "Sort d’ombre"
   statut: NON_OFFICIELLE
 condition.shadow-possession:
   fr: "Possession par les ombres"
@@ -691,7 +691,7 @@ condition.staggering-smite:
   statut: VF_DND
   source: aidedd
 condition.stealthier:
-  fr: "Plus furtif"
+  fr: "Furtivité accrue"
   statut: NON_OFFICIELLE
 condition.stoneskin:
   fr: "Peau de pierre"

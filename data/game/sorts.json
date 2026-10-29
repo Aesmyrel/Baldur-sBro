@@ -70,12 +70,12 @@
           "level": 3
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -358,10 +358,9 @@
           "via": "magical_secrets"
         },
         {
-          "source": "subclass.necromancer",
+          "source": "subclass.necromancy-school",
           "level": 6,
-          "via": "other",
-          "variant": "via Necromancy School"
+          "via": "other"
         },
         {
           "source": "subclass.oathbreaker",
@@ -1457,12 +1456,12 @@
           "level": 3
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -1793,8 +1792,7 @@
     "name": {
       "fr": "Cécité",
       "en": "Blindness",
-      "status": "VF_DND",
-      "source": "aidedd"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -2237,12 +2235,12 @@
           "via": "magical_secrets"
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -2343,12 +2341,12 @@
           "level": 3
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -2458,8 +2456,7 @@
     "name": {
       "fr": "Châtiment révélateur (corps à corps)",
       "en": "Branding Smite (Melee)",
-      "status": "VF_DND",
-      "source": "aidedd"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -2505,7 +2502,7 @@
       "durationTurns": 10,
       "learnedBy": [
         {
-          "source": "race.zariel-tiefling",
+          "source": "subrace.zariel-tiefling",
           "level": 5,
           "via": "racial"
         }
@@ -2530,8 +2527,7 @@
     "name": {
       "fr": "Châtiment révélateur (à distance)",
       "en": "Branding Smite (Ranged)",
-      "status": "VF_DND",
-      "source": "aidedd"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -2577,7 +2573,7 @@
       "durationTurns": 10,
       "learnedBy": [
         {
-          "source": "race.zariel-tiefling",
+          "source": "subrace.zariel-tiefling",
           "level": 5,
           "via": "racial"
         }
@@ -2686,7 +2682,7 @@
           "level": 3
         },
         {
-          "source": "race.mephistopheles-tiefling",
+          "source": "subrace.mephistopheles-tiefling",
           "level": 3,
           "via": "racial"
         }
@@ -2794,12 +2790,12 @@
           "via": "subclass_spell"
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         },
@@ -5211,12 +5207,12 @@
           "variant": "via Wild Shape: Deep Rothé"
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         },
@@ -5226,7 +5222,7 @@
           "via": "racial"
         },
         {
-          "source": "race.drow-half-elf",
+          "source": "subrace.drow-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -5343,12 +5339,12 @@
           "via": "racial"
         },
         {
-          "source": "race.drow-half-elf",
+          "source": "subrace.drow-half-elf",
           "level": 5,
           "via": "racial"
         },
         {
-          "source": "race.asmodeus-tiefling",
+          "source": "subrace.asmodeus-tiefling",
           "level": 5,
           "via": "racial"
         }
@@ -6789,7 +6785,7 @@
           "via": "racial"
         },
         {
-          "source": "race.drow-half-elf",
+          "source": "subrace.drow-half-elf",
           "level": 3,
           "via": "racial"
         }
@@ -6952,8 +6948,7 @@
     "name": {
       "fr": "Arme élémentaire : acide",
       "en": "Elemental Weapon: Acid",
-      "status": "VF_DND",
-      "source": "aidedd"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -7023,8 +7018,7 @@
     "name": {
       "fr": "Arme élémentaire : froid",
       "en": "Elemental Weapon: Cold",
-      "status": "VF_DND",
-      "source": "aidedd"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -7094,8 +7088,7 @@
     "name": {
       "fr": "Arme élémentaire : feu",
       "en": "Elemental Weapon: Fire",
-      "status": "VF_DND",
-      "source": "aidedd"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -7165,8 +7158,7 @@
     "name": {
       "fr": "Arme élémentaire : foudre",
       "en": "Elemental Weapon: Lightning",
-      "status": "VF_DND",
-      "source": "aidedd"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -7236,8 +7228,7 @@
     "name": {
       "fr": "Arme élémentaire : tonnerre",
       "en": "Elemental Weapon: Thunder",
-      "status": "VF_DND",
-      "source": "aidedd"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -7469,8 +7460,7 @@
     "name": {
       "fr": "Agrandissement",
       "en": "Enlarge",
-      "status": "VF_DND",
-      "source": "aidedd"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -7506,7 +7496,7 @@
       "recharge": "long_rest",
       "learnedBy": [
         {
-          "source": "race.duergar",
+          "source": "subrace.duergar",
           "level": 3,
           "via": "racial"
         }
@@ -7592,7 +7582,7 @@
           "level": 8
         },
         {
-          "source": "race.duergar",
+          "source": "subrace.duergar",
           "level": 3,
           "via": "racial"
         }
@@ -8787,8 +8777,7 @@
     "name": {
       "fr": "Appel de familier : diablotin",
       "en": "Find Familiar: Imp",
-      "status": "VF_DND",
-      "source": "srd-5.2.1-fr"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -8845,8 +8834,7 @@
     "name": {
       "fr": "Appel de familier : quasit",
       "en": "Find Familiar: Quasit",
-      "status": "VF_DND",
-      "source": "srd-5.2.1-fr"
+      "status": "UNOFFICIAL"
     },
     "tag": {
       "act": "prologue",
@@ -8970,12 +8958,12 @@
           "via": "magical_secrets"
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -9881,12 +9869,12 @@
           "level": 3
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -12977,7 +12965,7 @@
       "recharge": "long_rest",
       "learnedBy": [
         {
-          "source": "race.asmodeus-tiefling",
+          "source": "subrace.asmodeus-tiefling",
           "level": 3,
           "via": "racial"
         }
@@ -13362,7 +13350,7 @@
       "recharge": "per_combat",
       "learnedBy": [
         {
-          "source": "race.duergar",
+          "source": "subrace.duergar",
           "level": 5,
           "via": "racial"
         }
@@ -13517,7 +13505,7 @@
       "recharge": "long_rest",
       "learnedBy": [
         {
-          "source": "race.zariel-tiefling",
+          "source": "subrace.zariel-tiefling",
           "level": 5,
           "via": "racial"
         }
@@ -13592,7 +13580,7 @@
       "recharge": "long_rest",
       "learnedBy": [
         {
-          "source": "race.zariel-tiefling",
+          "source": "subrace.zariel-tiefling",
           "level": 3,
           "via": "racial"
         }
@@ -13669,7 +13657,7 @@
       "recharge": "long_rest",
       "learnedBy": [
         {
-          "source": "race.mephistopheles-tiefling",
+          "source": "subrace.mephistopheles-tiefling",
           "level": 3,
           "via": "racial"
         }
@@ -13720,7 +13708,7 @@
       "recharge": "long_rest",
       "learnedBy": [
         {
-          "source": "race.mephistopheles-tiefling",
+          "source": "subrace.mephistopheles-tiefling",
           "level": 5,
           "via": "racial"
         }
@@ -13913,12 +13901,12 @@
           "level": 3
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -14490,17 +14478,17 @@
           "level": 3
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.mephistopheles-tiefling",
+          "source": "subrace.mephistopheles-tiefling",
           "level": 1,
           "via": "racial"
         }
@@ -15123,12 +15111,12 @@
           "level": 3
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -16410,12 +16398,12 @@
           "level": 3
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -16675,7 +16663,7 @@
           "level": 1
         },
         {
-          "source": "race.asmodeus-tiefling",
+          "source": "subrace.asmodeus-tiefling",
           "level": 1,
           "via": "racial"
         }
@@ -17197,12 +17185,12 @@
           "via": "magical_secrets"
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -18012,7 +18000,7 @@
           "level": 2
         },
         {
-          "source": "race.zariel-tiefling",
+          "source": "subrace.zariel-tiefling",
           "level": 3,
           "via": "racial"
         }
@@ -18809,12 +18797,12 @@
           "level": 3
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }
@@ -19366,7 +19354,7 @@
           "level": 6
         },
         {
-          "source": "race.forest-gnome",
+          "source": "subrace.forest-gnome",
           "level": 1,
           "via": "racial"
         }
@@ -20608,7 +20596,7 @@
           "level": 3
         },
         {
-          "source": "race.zariel-tiefling",
+          "source": "subrace.zariel-tiefling",
           "level": 1,
           "via": "racial"
         }
@@ -21010,12 +20998,12 @@
           "via": "subclass_spell"
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         },
@@ -21115,12 +21103,12 @@
           "level": 3
         },
         {
-          "source": "race.high-elf",
+          "source": "subrace.high-elf",
           "level": 1,
           "via": "racial"
         },
         {
-          "source": "race.high-half-elf",
+          "source": "subrace.high-half-elf",
           "level": 1,
           "via": "racial"
         }

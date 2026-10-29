@@ -3,7 +3,7 @@
     "id": "condition.abjure-enemy-frightened",
     "type": "condition",
     "name": {
-      "fr": "Abjure Enemy: Frightened",
+      "fr": "Abjuration d’ennemi : effrayé",
       "en": "Abjure Enemy: Frightened",
       "status": "UNOFFICIAL"
     },
@@ -42,7 +42,7 @@
     "id": "condition.abjure-enemy-slow",
     "type": "condition",
     "name": {
-      "fr": "Abjure Enemy: Slow",
+      "fr": "Abjuration d’ennemi : ralenti",
       "en": "Abjure Enemy: Slow",
       "status": "UNOFFICIAL"
     },
@@ -124,9 +124,10 @@
     "id": "condition.action-surge",
     "type": "condition",
     "name": {
-      "fr": "Action Surge",
+      "fr": "Fougue",
       "en": "Action Surge",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -438,7 +439,17 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Sorts infligeant des dégâts à une créature sous l’état Menacé (Threatened) : +2 dégâts.",
+        "text": "Sorts : +2 dégâts contre toute créature sous l’état Menacé.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Le bonus s’ajoute à chaque instance de dégâts distincte d’un même sort.",
         "tag": {
           "act": "acte2",
           "level": "aucun",
@@ -548,7 +559,7 @@
     "id": "condition.arcane-ward",
     "type": "condition",
     "name": {
-      "fr": "Arcane Ward",
+      "fr": "Protection arcanique",
       "en": "Arcane Ward",
       "status": "UNOFFICIAL"
     },
@@ -696,7 +707,7 @@
     "id": "condition.aspect-of-the-stallion",
     "type": "condition",
     "name": {
-      "fr": "Aspect of the Stallion",
+      "fr": "Aspect de l’étalon",
       "en": "Aspect of the Stallion",
       "status": "UNOFFICIAL"
     },
@@ -730,12 +741,47 @@
     ]
   },
   {
+    "id": "condition.astral-knowledge",
+    "type": "condition",
+    "name": {
+      "fr": "Astral Knowledge",
+      "en": "Astral Knowledge",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Astral Knowledge (condition)",
+        "revision": 434487,
+        "url": "https://bg3.wiki/wiki/Astral_Knowledge_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "condition.aura-of-courage-aura",
     "type": "condition",
     "name": {
-      "fr": "Aura of Courage",
+      "fr": "Aura de courage",
       "en": "Aura of Courage",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -770,7 +816,7 @@
     "id": "condition.aura-of-devotion-aura",
     "type": "condition",
     "name": {
-      "fr": "Aura of Devotion (Aura)",
+      "fr": "Aura de dévotion (aura)",
       "en": "Aura of Devotion (Aura)",
       "status": "UNOFFICIAL"
     },
@@ -807,7 +853,7 @@
     "id": "condition.aura-of-hate-aura",
     "type": "condition",
     "name": {
-      "fr": "Aura of Hate",
+      "fr": "Aura de haine",
       "en": "Aura of Hate",
       "status": "UNOFFICIAL"
     },
@@ -887,7 +933,7 @@
     "id": "condition.aura-of-murder-debuff",
     "type": "condition",
     "name": {
-      "fr": "Aura of Murder (debuff)",
+      "fr": "Aura de meurtre (malus)",
       "en": "Aura of Murder (debuff)",
       "status": "UNOFFICIAL"
     },
@@ -921,7 +967,7 @@
     "id": "condition.aura-of-protection-aura",
     "type": "condition",
     "name": {
-      "fr": "Aura of Protection (Aura)",
+      "fr": "Aura de protection (aura)",
       "en": "Aura of Protection (Aura)",
       "status": "UNOFFICIAL"
     },
@@ -958,7 +1004,7 @@
     "id": "condition.aura-of-warding-aura",
     "type": "condition",
     "name": {
-      "fr": "Aura of Warding (Aura)",
+      "fr": "Aura de garde (aura)",
       "en": "Aura of Warding (Aura)",
       "status": "UNOFFICIAL"
     },
@@ -1070,7 +1116,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Jets de sauvegarde contre le prochain sort de la créature qui l’a frappée : −1d4.",
+        "text": "Tous ses jets de sauvegarde : −1d4 tant que dure l’état.",
         "tag": {
           "act": "acte1",
           "level": "aucun",
@@ -1150,9 +1196,10 @@
     "id": "condition.bardic-inspiration",
     "type": "condition",
     "name": {
-      "fr": "Bardic Inspiration",
+      "fr": "Inspiration bardique",
       "en": "Bardic Inspiration",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -1288,7 +1335,7 @@
     "id": "condition.benign-transposition-spent",
     "type": "condition",
     "name": {
-      "fr": "Benign Transposition: Spent",
+      "fr": "Transposition bénigne : utilisée",
       "en": "Benign Transposition: Spent",
       "status": "UNOFFICIAL"
     },
@@ -1359,6 +1406,16 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "La résistance l’emporte sur une vulnérabilité aux mêmes dégâts au lieu de l’annuler.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -1366,7 +1423,7 @@
     "id": "condition.bladesinging",
     "type": "condition",
     "name": {
-      "fr": "Bladesinging",
+      "fr": "Chant de la lame",
       "en": "Bladesinging",
       "status": "UNOFFICIAL"
     },
@@ -1401,7 +1458,7 @@
     "id": "condition.bladesong-damage-charge",
     "type": "condition",
     "name": {
-      "fr": "Bladesong Damage Charge",
+      "fr": "Charge de dégâts du chant de la lame",
       "en": "Bladesong Damage Charge",
       "status": "UNOFFICIAL"
     },
@@ -1436,7 +1493,7 @@
     "id": "condition.bladesong-healing-charge",
     "type": "condition",
     "name": {
-      "fr": "Bladesong Healing Charge",
+      "fr": "Charge de soins du chant de la lame",
       "en": "Bladesong Healing Charge",
       "status": "UNOFFICIAL"
     },
@@ -1471,7 +1528,7 @@
     "id": "condition.bladesong-impeded",
     "type": "condition",
     "name": {
-      "fr": "Bladesong Impeded",
+      "fr": "Chant de la lame bridé",
       "en": "Bladesong Impeded",
       "status": "UNOFFICIAL"
     },
@@ -1673,7 +1730,7 @@
     "id": "condition.blessing-of-the-trickster",
     "type": "condition",
     "name": {
-      "fr": "Blessing of the Trickster",
+      "fr": "Bénédiction du filou",
       "en": "Blessing of the Trickster",
       "status": "UNOFFICIAL"
     },
@@ -2155,7 +2212,7 @@
     "id": "condition.bolstering-magic-boon",
     "type": "condition",
     "name": {
-      "fr": "Bolstering Magic: Boon",
+      "fr": "Magie fortifiante : faveur",
       "en": "Bolstering Magic: Boon",
       "status": "UNOFFICIAL"
     },
@@ -2288,6 +2345,16 @@
         "id": "effet-1",
         "kind": "effect",
         "text": "Quand elle se déplace : 1d8 dégâts de tonnerre.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Les bonus de dégâts appliqués sont ceux de la créature affectée, et non ceux du lanceur.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -2483,7 +2550,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Tant qu’un ennemi proche la menace (état Menacé, Threatened) : DD de sauvegarde des sorts +1.",
+        "text": "Tant qu’un ennemi proche la menace (état Menacé) : DD de sauvegarde des sorts +1.",
         "tag": {
           "act": "acte2",
           "level": "aucun",
@@ -2773,7 +2840,7 @@
     "id": "condition.champion-challenge",
     "type": "condition",
     "name": {
-      "fr": "Champion Challenge",
+      "fr": "Défi du champion",
       "en": "Champion Challenge",
       "status": "UNOFFICIAL"
     },
@@ -2810,7 +2877,7 @@
     "id": "condition.channel-divinity-cloak-of-shadows",
     "type": "condition",
     "name": {
-      "fr": "Channel Divinity: Cloak of Shadows",
+      "fr": "Conduit divin : cape d’ombres",
       "en": "Channel Divinity: Cloak of Shadows",
       "status": "UNOFFICIAL"
     },
@@ -2907,7 +2974,7 @@
     "id": "condition.charmed-charm-animals-and-plants",
     "type": "condition",
     "name": {
-      "fr": "Charmed (Charm Animals and Plants)",
+      "fr": "Charmé (charme des animaux et des plantes)",
       "en": "Charmed (Charm Animals and Plants)",
       "status": "UNOFFICIAL"
     },
@@ -3012,7 +3079,7 @@
     "id": "condition.chilled",
     "type": "condition",
     "name": {
-      "fr": "Chilled",
+      "fr": "Transi",
       "en": "Chilled",
       "status": "UNOFFICIAL"
     },
@@ -3090,7 +3157,7 @@
       {
         "id": "effet-2",
         "kind": "effect",
-        "text": "Attaques d’opportunité des ennemis contre elle : désavantage.",
+        "text": "Ses propres attaques d’opportunité : désavantage.",
         "tag": {
           "act": "acte1",
           "level": "aucun",
@@ -3146,7 +3213,7 @@
     "id": "condition.cloak-of-shadows",
     "type": "condition",
     "name": {
-      "fr": "Cloak of Shadows",
+      "fr": "Cape d’ombres",
       "en": "Cloak of Shadows",
       "status": "UNOFFICIAL"
     },
@@ -3252,7 +3319,7 @@
     "id": "condition.combat-inspiration",
     "type": "condition",
     "name": {
-      "fr": "Combat Inspiration",
+      "fr": "Inspiration martiale",
       "en": "Combat Inspiration",
       "status": "UNOFFICIAL"
     },
@@ -3366,7 +3433,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Jets d’attaque contre toute autre créature que le lanceur : désavantage.",
+        "text": "Jets d’attaque : désavantage contre toute cible, lanceur compris.",
         "tag": {
           "act": "acte3",
           "level": "aucun",
@@ -3376,7 +3443,7 @@
       {
         "id": "effet-2",
         "kind": "effect",
-        "text": "Touchée par le duelliste : peut subir l’état Saignement.",
+        "text": "Touchée par la Prérogative du duelliste : peut subir l’état Saignement.",
         "tag": {
           "act": "acte3",
           "level": "aucun",
@@ -3489,7 +3556,7 @@
       {
         "id": "effet-2",
         "kind": "effect",
-        "text": "Chaque tour : jet de sauvegarde ; un échec fait progresser le poison d’un stade.",
+        "text": "Fin de chaque tour : jet de sauvegarde ; échec : le poison passe au stade suivant, sur 3 stades ; échec au stade 3 : la maladie de la variante de Contagion lancée remplace l’état.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -3499,17 +3566,7 @@
       {
         "id": "effet-3",
         "kind": "effect",
-        "text": "3 réussites : guérison.",
-        "tag": {
-          "act": "prologue",
-          "level": "aucun",
-          "otherWorks": "aucun"
-        }
-      },
-      {
-        "id": "effet-4",
-        "kind": "effect",
-        "text": "3 échecs : contracte la maladie de la variante de Contagion qui a été lancée.",
+        "text": "3 réussites, consécutives ou non : guérison.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -3522,7 +3579,7 @@
     "id": "condition.controlled",
     "type": "condition",
     "name": {
-      "fr": "Controlled",
+      "fr": "Contrôlé",
       "en": "Controlled",
       "status": "UNOFFICIAL"
     },
@@ -3559,7 +3616,7 @@
     "id": "condition.controlling-undead",
     "type": "condition",
     "name": {
-      "fr": "Controlling Undead",
+      "fr": "Contrôle d’un mort-vivant",
       "en": "Controlling Undead",
       "status": "UNOFFICIAL"
     },
@@ -3594,7 +3651,7 @@
     "id": "condition.cosmic-omen-of-weal",
     "type": "condition",
     "name": {
-      "fr": "Cosmic Omen of Weal",
+      "fr": "Augure cosmique faste",
       "en": "Cosmic Omen of Weal",
       "status": "UNOFFICIAL"
     },
@@ -3628,7 +3685,7 @@
     "id": "condition.countercharm-aura",
     "type": "condition",
     "name": {
-      "fr": "Countercharm Aura",
+      "fr": "Aura de contre-charme",
       "en": "Countercharm Aura",
       "status": "UNOFFICIAL"
     },
@@ -3854,9 +3911,10 @@
     "id": "condition.dark-ones-blessing",
     "type": "condition",
     "name": {
-      "fr": "Dark One’s Blessing",
+      "fr": "Bénédiction du ténébreux",
       "en": "Dark One's Blessing",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -3935,9 +3993,10 @@
     "id": "condition.darkvision",
     "type": "condition",
     "name": {
-      "fr": "Darkvision",
+      "fr": "Vision dans le noir",
       "en": "Darkvision",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -3972,9 +4031,10 @@
     "id": "condition.darkvision-third-eye",
     "type": "condition",
     "name": {
-      "fr": "Darkvision",
+      "fr": "Vision dans le noir",
       "en": "Darkvision",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -4009,9 +4069,10 @@
     "id": "condition.dash",
     "type": "condition",
     "name": {
-      "fr": "Dash",
+      "fr": "Pointe",
       "en": "Dash",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -4358,7 +4419,7 @@
       {
         "id": "effet-2",
         "kind": "effect",
-        "text": "Début du tour de cette créature : jet de sauvegarde de Sagesse ; échec : elle est prise de folie (Demonspirit Madness).",
+        "text": "Début du tour de cette créature : jet de sauvegarde de Sagesse ; échec : elle est prise de folie démoniaque.",
         "tag": {
           "act": "acte1",
           "level": "aucun",
@@ -4450,6 +4511,16 @@
         "id": "effet-1",
         "kind": "effect",
         "text": "Prochaine attaque : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : dès qu’elle entreprend une action qui ne rate pas, attaque ou non.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -4652,7 +4723,7 @@
     "id": "condition.distracted",
     "type": "condition",
     "name": {
-      "fr": "Distracted",
+      "fr": "Distrait",
       "en": "Distracted",
       "status": "UNOFFICIAL"
     },
@@ -4733,9 +4804,10 @@
     "id": "condition.divine-sense",
     "type": "condition",
     "name": {
-      "fr": "Divine Sense",
+      "fr": "Perception divine",
       "en": "Divine Sense",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -4884,7 +4956,7 @@
     "id": "condition.dread-ambusher",
     "type": "condition",
     "name": {
-      "fr": "Dread Ambusher",
+      "fr": "Embusqué redoutable",
       "en": "Dread Ambusher",
       "status": "UNOFFICIAL"
     },
@@ -4918,7 +4990,7 @@
     "id": "condition.drunk",
     "type": "condition",
     "name": {
-      "fr": "Drunk",
+      "fr": "Ivre",
       "en": "Drunk",
       "status": "UNOFFICIAL"
     },
@@ -4955,7 +5027,7 @@
     "id": "condition.drunk-drunken-master",
     "type": "condition",
     "name": {
-      "fr": "Drunk (Drunken Master)",
+      "fr": "Ivre (maître ivre)",
       "en": "Drunk (Drunken Master)",
       "status": "UNOFFICIAL"
     },
@@ -4989,7 +5061,7 @@
     "id": "condition.drunken-technique",
     "type": "condition",
     "name": {
-      "fr": "Drunken Technique",
+      "fr": "Technique de l’ivrogne",
       "en": "Drunken Technique",
       "status": "UNOFFICIAL"
     },
@@ -5343,7 +5415,7 @@
       {
         "id": "effet-2",
         "kind": "effect",
-        "text": "Dès qu’il reste 7 tours ou plus : jet de sauvegarde de Constitution (DD 12) ; échec : 1d4 dégâts de froid et état Gelé (Frozen) pendant 2 tours ; réussite : moitié des dégâts.",
+        "text": "Dès qu’il reste 7 tours ou plus : jet de sauvegarde de Constitution (DD 12) ; échec : état Gelé pendant 2 tours ; réussite : 1d4 dégâts de froid (non réduits).",
         "tag": {
           "act": "acte1",
           "level": "aucun",
@@ -5627,7 +5699,7 @@
     "id": "condition.entropic-ward",
     "type": "condition",
     "name": {
-      "fr": "Entropic Ward",
+      "fr": "Protection entropique",
       "en": "Entropic Ward",
       "status": "UNOFFICIAL"
     },
@@ -5664,7 +5736,7 @@
     "id": "condition.evasive-footwork",
     "type": "condition",
     "name": {
-      "fr": "Evasive Footwork",
+      "fr": "Jeu de jambes évasif",
       "en": "Evasive Footwork",
       "status": "UNOFFICIAL"
     },
@@ -6034,7 +6106,7 @@
     "id": "condition.fangs-of-the-fire-snake",
     "type": "condition",
     "name": {
-      "fr": "Fangs of the Fire Snake",
+      "fr": "Crocs du serpent de feu",
       "en": "Fangs of the Fire Snake",
       "status": "UNOFFICIAL"
     },
@@ -6387,7 +6459,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Tant que l’aptitude Symbiotic Entity est active : peut répandre trois sortes de spores (Bibberbang Spores, Timmask Spores, Haste Spores).",
+        "text": "Tant qu’Entité symbiotique est active : peut répandre trois sortes de spores supplémentaires (spores de bibberbang, de timmask et de hâte).",
         "tag": {
           "act": "acte3",
           "level": "aucun",
@@ -6400,7 +6472,7 @@
     "id": "condition.feywild-sparks",
     "type": "condition",
     "name": {
-      "fr": "Étincelles de Féerie",
+      "fr": "Étincelles de la Féerie",
       "en": "Feywild Sparks",
       "status": "UNOFFICIAL"
     },
@@ -6430,7 +6502,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Tant que Tides of Chaos est actif : chaque sort lancé déclenche à coup sûr un Wild Magic Surge (sursaut de magie sauvage).",
+        "text": "Tant que Marées du chaos est actif : chaque sort lancé déclenche à coup sûr une manifestation de magie sauvage.",
         "tag": {
           "act": "acte3",
           "level": "aucun",
@@ -6714,7 +6786,7 @@
     "id": "condition.formless-slaughter",
     "type": "condition",
     "name": {
-      "fr": "Massacre informe",
+      "fr": "Carnage informe",
       "en": "Formless Slaughter",
       "status": "UNOFFICIAL"
     },
@@ -6814,7 +6886,7 @@
     "id": "condition.frenzied",
     "type": "condition",
     "name": {
-      "fr": "Frenzied",
+      "fr": "Frénétique",
       "en": "Frenzied",
       "status": "UNOFFICIAL"
     },
@@ -6852,7 +6924,7 @@
     "id": "condition.frenzied-strain",
     "type": "condition",
     "name": {
-      "fr": "Frenzied Strain",
+      "fr": "Surmenage frénétique",
       "en": "Frenzied Strain",
       "status": "UNOFFICIAL"
     },
@@ -6994,7 +7066,7 @@
     "id": "condition.frightened-mortal-reminder",
     "type": "condition",
     "name": {
-      "fr": "Frightened (Mortal Reminder)",
+      "fr": "Effrayé (rappel de la mortalité)",
       "en": "Frightened (Mortal Reminder)",
       "status": "UNOFFICIAL"
     },
@@ -7122,6 +7194,16 @@
         "id": "effet-2",
         "kind": "effect",
         "text": "Fin : quand elle reçoit des soins.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "En mode Honneur : +2 dégâts du type de l’attaque, quelle que soit la source des dégâts.",
         "tag": {
           "act": "acte1",
           "level": "aucun",
@@ -7385,7 +7467,7 @@
     "id": "condition.giants-rage",
     "type": "condition",
     "name": {
-      "fr": "Giant’s Rage",
+      "fr": "Rage du géant",
       "en": "Giant's Rage",
       "status": "UNOFFICIAL"
     },
@@ -7424,7 +7506,7 @@
     "id": "condition.goaded",
     "type": "condition",
     "name": {
-      "fr": "Goaded",
+      "fr": "Provoqué",
       "en": "Goaded",
       "status": "UNOFFICIAL"
     },
@@ -7491,13 +7573,70 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Attaque à mains nues réussie : au choix, récupère 10 points de vie, ou obtient l’avantage aux jets d’attaque ou aux jets de sauvegarde jusqu’à la fin de son prochain tour.",
+        "text": "Attaque à mains nues réussie : au choix, une action gratuite lui rend 10 points de vie, ou une réaction gratuite ajoute +5 à un seul jet d’attaque ou de sauvegarde, jusqu’à la fin de son prochain tour.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : dès que l’un de ces choix est utilisé, ou dès qu’elle subit des dégâts sans avoir de points de vie temporaires.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Ne peut être obtenu qu’une fois par tour.",
         "tag": {
           "act": "acte3",
           "level": "aucun",
           "otherWorks": "aucun"
         }
       }
+    ]
+  },
+  {
+    "id": "condition.great-weapon-master-bonus-attack",
+    "type": "condition",
+    "name": {
+      "fr": "Great Weapon Master: Bonus Attack",
+      "en": "Great Weapon Master: Bonus Attack",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Great Weapon Master: Bonus Attack (condition)",
+        "revision": 435594,
+        "url": "https://bg3.wiki/wiki/Great_Weapon_Master:_Bonus_Attack_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
     ]
   },
   {
@@ -7666,7 +7805,7 @@
     "id": "condition.guided-strike-active",
     "type": "condition",
     "name": {
-      "fr": "Guided Strike: Active",
+      "fr": "Frappe guidée : active",
       "en": "Guided Strike: Active",
       "status": "UNOFFICIAL"
     },
@@ -8028,7 +8167,7 @@
     "id": "condition.healing-radiance",
     "type": "condition",
     "name": {
-      "fr": "Healing Radiance",
+      "fr": "Rayonnement guérisseur",
       "en": "Healing Radiance",
       "status": "UNOFFICIAL"
     },
@@ -8106,7 +8245,7 @@
       {
         "id": "effet-2",
         "kind": "effect",
-        "text": "Action Heat Convergence : consomme tous les tours restants de Chaleur ; son prochain sort ou sa prochaine attaque de feu inflige des dégâts de feu supplémentaires.",
+        "text": "Convergence de chaleur : consomme tous les tours restants de Chaleur ; son prochain sort ou sa prochaine attaque de feu inflige des dégâts de feu supplémentaires.",
         "tag": {
           "act": "acte1",
           "level": "aucun",
@@ -8303,7 +8442,7 @@
     "id": "condition.hexblades-curse",
     "type": "condition",
     "name": {
-      "fr": "Hexblade’s Curse",
+      "fr": "Malédiction de la lame maléfique",
       "en": "Hexblade's Curse",
       "status": "UNOFFICIAL"
     },
@@ -8340,7 +8479,7 @@
     "id": "condition.hexed-weapon",
     "type": "condition",
     "name": {
-      "fr": "Hexed Weapon",
+      "fr": "Arme maléfique",
       "en": "Hexed Weapon",
       "status": "UNOFFICIAL"
     },
@@ -8378,7 +8517,7 @@
     "id": "condition.hide-in-plain-sight",
     "type": "condition",
     "name": {
-      "fr": "Hide in Plain Sight",
+      "fr": "Camouflage",
       "en": "Hide in Plain Sight",
       "status": "UNOFFICIAL"
     },
@@ -8760,7 +8899,7 @@
     "id": "condition.holy-rebuke",
     "type": "condition",
     "name": {
-      "fr": "Holy Rebuke",
+      "fr": "Représailles sacrées",
       "en": "Holy Rebuke",
       "status": "UNOFFICIAL"
     },
@@ -8794,9 +8933,10 @@
     "id": "condition.horde-breaker",
     "type": "condition",
     "name": {
-      "fr": "Horde Breaker",
+      "fr": "Briseur de hordes",
       "en": "Horde Breaker",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -8831,7 +8971,7 @@
     "id": "condition.horde-breaker-target",
     "type": "condition",
     "name": {
-      "fr": "Horde Breaker (Target)",
+      "fr": "Briseur de hordes (cible)",
       "en": "Horde Breaker (Target)",
       "status": "UNOFFICIAL"
     },
@@ -8951,7 +9091,7 @@
     "id": "condition.hypnotic-gaze",
     "type": "condition",
     "name": {
-      "fr": "Hypnotic Gaze",
+      "fr": "Regard hypnotique",
       "en": "Hypnotic Gaze",
       "status": "UNOFFICIAL"
     },
@@ -9048,7 +9188,7 @@
     "id": "condition.inciting-howl",
     "type": "condition",
     "name": {
-      "fr": "Inciting Howl",
+      "fr": "Hurlement galvanisant",
       "en": "Inciting Howl",
       "status": "UNOFFICIAL"
     },
@@ -9082,7 +9222,7 @@
     "id": "condition.infiltration-expertise",
     "type": "condition",
     "name": {
-      "fr": "Infiltration Expertise",
+      "fr": "Expertise en infiltration",
       "en": "Infiltration Expertise",
       "status": "UNOFFICIAL"
     },
@@ -9121,7 +9261,7 @@
     "id": "condition.inquisitors-might",
     "type": "condition",
     "name": {
-      "fr": "Inquisitor’s Might",
+      "fr": "Puissance de l’inquisiteur",
       "en": "Inquisitor's Might",
       "status": "UNOFFICIAL"
     },
@@ -9514,7 +9654,7 @@
     "id": "condition.life-of-the-party",
     "type": "condition",
     "name": {
-      "fr": "Life of the Party",
+      "fr": "Boute-en-train",
       "en": "Life of the Party",
       "status": "UNOFFICIAL"
     },
@@ -9626,7 +9766,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Ennemis proches : reçoivent l’état Électrisé (Jolted).",
+        "text": "Ennemis dans un rayon de 6 m : reçoivent l’état Électrisé.",
         "tag": {
           "act": "acte1",
           "level": "aucun",
@@ -9975,7 +10115,7 @@
     "id": "condition.magic-arrow",
     "type": "condition",
     "name": {
-      "fr": "Magic Arrow",
+      "fr": "Flèche magique",
       "en": "Magic Arrow",
       "status": "UNOFFICIAL"
     },
@@ -10009,7 +10149,7 @@
     "id": "condition.magic-awareness",
     "type": "condition",
     "name": {
-      "fr": "Magic Awareness",
+      "fr": "Perception de la magie",
       "en": "Magic Awareness",
       "status": "UNOFFICIAL"
     },
@@ -10090,7 +10230,7 @@
     "id": "condition.magical-ambush",
     "type": "condition",
     "name": {
-      "fr": "Magical Ambush",
+      "fr": "Embuscade magique",
       "en": "Magical Ambush",
       "status": "UNOFFICIAL"
     },
@@ -10187,6 +10327,16 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "S’applique même à une créature sous Liberté de mouvement.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -10194,7 +10344,7 @@
     "id": "condition.manoeuvring-attack",
     "type": "condition",
     "name": {
-      "fr": "Manoeuvring Attack",
+      "fr": "Attaque de manœuvre",
       "en": "Manoeuvring Attack",
       "status": "UNOFFICIAL"
     },
@@ -10231,7 +10381,7 @@
     "id": "condition.mantle-of-inspiration",
     "type": "condition",
     "name": {
-      "fr": "Mantle of Inspiration",
+      "fr": "Manteau d’inspiration",
       "en": "Mantle of Inspiration",
       "status": "UNOFFICIAL"
     },
@@ -10269,7 +10419,7 @@
     "id": "condition.mantle-of-majesty",
     "type": "condition",
     "name": {
-      "fr": "Mantle of Majesty",
+      "fr": "Manteau de majesté",
       "en": "Mantle of Majesty",
       "status": "UNOFFICIAL"
     },
@@ -10346,7 +10496,7 @@
     "id": "condition.martial-arts-unarmed-strike",
     "type": "condition",
     "name": {
-      "fr": "Martial Arts: Unarmed Strike",
+      "fr": "Arts martiaux : attaque à mains nues",
       "en": "Martial Arts: Unarmed Strike",
       "status": "UNOFFICIAL"
     },
@@ -10523,16 +10673,6 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
-      },
-      {
-        "id": "effet-3",
-        "kind": "effect",
-        "text": "Durée maximale : 7 tours.",
-        "tag": {
-          "act": "acte2",
-          "level": "aucun",
-          "otherWorks": "aucun"
-        }
       }
     ]
   },
@@ -10637,7 +10777,7 @@
       {
         "id": "effet-2",
         "kind": "effect",
-        "text": "Fin : si elle est entravée, neutralisée, à terre ou ralentie.",
+        "text": "Fin : si elle est ralentie.",
         "tag": {
           "act": "acte1",
           "level": "aucun",
@@ -10660,9 +10800,10 @@
     "id": "condition.multiattack-defence",
     "type": "condition",
     "name": {
-      "fr": "Multiattack Defence",
+      "fr": "Défense contre les attaques multiples",
       "en": "Multiattack Defence",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -10740,7 +10881,7 @@
     "id": "condition.natures-wrath",
     "type": "condition",
     "name": {
-      "fr": "Nature’s Wrath",
+      "fr": "Courroux de la nature",
       "en": "Nature's Wrath",
       "status": "UNOFFICIAL"
     },
@@ -10809,6 +10950,16 @@
         "id": "effet-1",
         "kind": "effect",
         "text": "Créatures hostiles dans un rayon de 3 m : 1d4 dégâts d’acide.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "La créature qui porte l’état subit aussi 1d4 dégâts d’acide à chaque tour.",
         "tag": {
           "act": "acte2",
           "level": "aucun",
@@ -10977,7 +11128,7 @@
     "id": "condition.open-hand-technique-staggered",
     "type": "condition",
     "name": {
-      "fr": "Open Hand Technique: Staggered",
+      "fr": "Technique de la Paume : ébranlé",
       "en": "Open Hand Technique: Staggered",
       "status": "UNOFFICIAL"
     },
@@ -11136,7 +11287,7 @@
     "id": "condition.panache-disadvantage",
     "type": "condition",
     "name": {
-      "fr": "Panache: Disadvantage",
+      "fr": "Panache : désavantage",
       "en": "Panache: Disadvantage",
       "status": "UNOFFICIAL"
     },
@@ -11296,9 +11447,10 @@
     "id": "condition.patient-defence",
     "type": "condition",
     "name": {
-      "fr": "Patient Defence",
+      "fr": "Patience défensive",
       "en": "Patient Defence",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -11492,7 +11644,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Chaque tour : 4d10 dégâts psychiques.",
+        "text": "Chaque tour : 4d10 dégâts psychiques ; davantage si le sort est lancé à un niveau supérieur.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -11574,7 +11726,7 @@
     "id": "condition.polymorph-self",
     "type": "condition",
     "name": {
-      "fr": "Polymorph Self",
+      "fr": "Métamorphose de soi",
       "en": "Polymorph Self",
       "status": "UNOFFICIAL"
     },
@@ -11716,7 +11868,7 @@
     "id": "condition.precision-attack",
     "type": "condition",
     "name": {
-      "fr": "Precision Attack",
+      "fr": "Attaque de précision",
       "en": "Precision Attack",
       "status": "UNOFFICIAL"
     },
@@ -12219,7 +12371,8 @@
     "name": {
       "fr": "Rage",
       "en": "Rage",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -12256,7 +12409,7 @@
     "id": "condition.rage-bear-heart",
     "type": "condition",
     "name": {
-      "fr": "Rage: Bear Heart",
+      "fr": "Rage : cœur d’ours",
       "en": "Rage: Bear Heart",
       "status": "UNOFFICIAL"
     },
@@ -12294,7 +12447,7 @@
     "id": "condition.rage-eagle-heart",
     "type": "condition",
     "name": {
-      "fr": "Rage: Eagle Heart",
+      "fr": "Rage : cœur d’aigle",
       "en": "Rage: Eagle Heart",
       "status": "UNOFFICIAL"
     },
@@ -12332,7 +12485,7 @@
     "id": "condition.rage-elk-heart",
     "type": "condition",
     "name": {
-      "fr": "Rage: Elk Heart",
+      "fr": "Rage : cœur d’élan",
       "en": "Rage: Elk Heart",
       "status": "UNOFFICIAL"
     },
@@ -12370,7 +12523,7 @@
     "id": "condition.rage-impeded",
     "type": "condition",
     "name": {
-      "fr": "Rage Impeded",
+      "fr": "Rage bridée",
       "en": "Rage Impeded",
       "status": "UNOFFICIAL"
     },
@@ -12407,7 +12560,7 @@
     "id": "condition.rage-tiger-heart",
     "type": "condition",
     "name": {
-      "fr": "Rage: Tiger Heart",
+      "fr": "Rage : cœur de tigre",
       "en": "Rage: Tiger Heart",
       "status": "UNOFFICIAL"
     },
@@ -12445,7 +12598,7 @@
     "id": "condition.rage-wolf-heart",
     "type": "condition",
     "name": {
-      "fr": "Rage: Wolf Heart",
+      "fr": "Rage : cœur de loup",
       "en": "Rage: Wolf Heart",
       "status": "UNOFFICIAL"
     },
@@ -12483,7 +12636,7 @@
     "id": "condition.rallied",
     "type": "condition",
     "name": {
-      "fr": "Rallied",
+      "fr": "Ragaillardi",
       "en": "Rallied",
       "status": "UNOFFICIAL"
     },
@@ -12684,7 +12837,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Peut relancer Communication avec les morts sans dépenser d’emplacement de sort.",
+        "text": "Communication avec les morts : nouvelle utilisation possible sans emplacement de sort.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -12697,9 +12850,10 @@
     "id": "condition.reckless-attack",
     "type": "condition",
     "name": {
-      "fr": "Reckless Attack",
+      "fr": "Témérité",
       "en": "Reckless Attack",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -12830,7 +12984,7 @@
     "id": "condition.relentless-avenger",
     "type": "condition",
     "name": {
-      "fr": "Relentless Avenger",
+      "fr": "Vengeur implacable",
       "en": "Relentless Avenger",
       "status": "UNOFFICIAL"
     },
@@ -13001,7 +13155,7 @@
     "id": "condition.resonating-ki",
     "type": "condition",
     "name": {
-      "fr": "Resonating Ki",
+      "fr": "Ki en résonance",
       "en": "Resonating Ki",
       "status": "UNOFFICIAL"
     },
@@ -13132,7 +13286,27 @@
       {
         "id": "effet-3",
         "kind": "effect",
-        "text": "Créatures immunisées contre les dégâts de tonnerre : ne peuvent pas subir cet état.",
+        "text": "Durée maximale : 5 tours.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Le malus de l’état s’applique aussi à ce jet de sauvegarde : le DD effectif est de 15.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-2",
+        "kind": "note",
+        "text": "Hors du combat au tour par tour, les effets à 5 tours ou plus ne se produisent pas.",
         "tag": {
           "act": "acte1",
           "level": "aucun",
@@ -13145,7 +13319,7 @@
     "id": "condition.righteous-clarity",
     "type": "condition",
     "name": {
-      "fr": "Righteous Clarity",
+      "fr": "Clarté vertueuse",
       "en": "Righteous Clarity",
       "status": "UNOFFICIAL"
     },
@@ -13275,9 +13449,10 @@
     "id": "condition.sacred-weapon",
     "type": "condition",
     "name": {
-      "fr": "Sacred Weapon",
+      "fr": "Arme sacrée",
       "en": "Sacred Weapon",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -13366,7 +13541,17 @@
       {
         "id": "effet-3",
         "kind": "effect",
-        "text": "Fin : si elle attaque ou blesse une autre créature ; elle reçoit alors l’état Sanctuaire bloqué (Sanctuary Blocked) pendant 1 tour.",
+        "text": "Fin : si elle attaque ou blesse une autre créature ; elle reçoit alors l’état Sanctuaire bloqué pendant 1 tour.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Flétrissement, Chaîne d’éclairs, Fouet épineux et de nombreuses actions de créatures peuvent tout de même la cibler.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -13596,10 +13781,47 @@
     ]
   },
   {
+    "id": "condition.sentinel-foe",
+    "type": "condition",
+    "name": {
+      "fr": "Sentinel Foe",
+      "en": "Sentinel Foe",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sentinel Foe (condition)",
+        "revision": 436858,
+        "url": "https://bg3.wiki/wiki/Sentinel_Foe_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_RemoveOnRespec"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "condition.shadespell",
     "type": "condition",
     "name": {
-      "fr": "Sort ombreux",
+      "fr": "Sort d’ombre",
       "en": "Shadespell",
       "status": "UNOFFICIAL"
     },
@@ -13679,17 +13901,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Attaque la créature la plus proche.",
-        "tag": {
-          "act": "acte3",
-          "level": "aucun",
-          "otherWorks": "aucun"
-        }
-      },
-      {
-        "id": "effet-2",
-        "kind": "effect",
-        "text": "Attaques avec une arme : +1d4 dégâts nécrotiques.",
+        "text": "Disparaît dès que la créature se relève : en pratique, l’état reste sans effet.",
         "tag": {
           "act": "acte3",
           "level": "aucun",
@@ -13702,7 +13914,7 @@
     "id": "condition.shadow-step",
     "type": "condition",
     "name": {
-      "fr": "Shadow Step",
+      "fr": "Pas de l’ombre",
       "en": "Shadow Step",
       "status": "UNOFFICIAL"
     },
@@ -14340,33 +14552,48 @@
       {
         "id": "effet-4",
         "kind": "effect",
-        "text": "Attaques : 1 au plus par tour.",
-        "tag": {
-          "act": "prologue",
-          "level": "aucun",
-          "otherWorks": "aucun"
-        }
-      },
-      {
-        "id": "effet-5",
-        "kind": "effect",
         "text": "Par tour : une action ou une action bonus, pas les deux.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
-      },
-      {
-        "id": "effet-6",
-        "kind": "effect",
-        "text": "Sorts lancés : peuvent être retardés de 1 tour.",
-        "tag": {
-          "act": "prologue",
-          "level": "aucun",
-          "otherWorks": "aucun"
-        }
       }
+    ]
+  },
+  {
+    "id": "condition.sluggardly",
+    "type": "condition",
+    "name": {
+      "fr": "Sluggardly",
+      "en": "Sluggardly",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Sluggardly (condition)",
+        "revision": 439298,
+        "url": "https://bg3.wiki/wiki/Sluggardly_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "gameUid": "MOBILE_NO_AOO"
+    },
+    "unknown": [
+      "effect_text"
     ]
   },
   {
@@ -14418,7 +14645,7 @@
     "id": "condition.spiteful-suffering",
     "type": "condition",
     "name": {
-      "fr": "Spiteful Suffering",
+      "fr": "Souffrance rancunière",
       "en": "Spiteful Suffering",
       "status": "UNOFFICIAL"
     },
@@ -14506,7 +14733,7 @@
     "id": "condition.starry-form-archer",
     "type": "condition",
     "name": {
-      "fr": "Starry Form: Archer",
+      "fr": "Forme étoilée : archer",
       "en": "Starry Form: Archer",
       "status": "UNOFFICIAL"
     },
@@ -14545,7 +14772,7 @@
     "id": "condition.starry-form-chalice",
     "type": "condition",
     "name": {
-      "fr": "Starry Form: Chalice",
+      "fr": "Forme étoilée : calice",
       "en": "Starry Form: Chalice",
       "status": "UNOFFICIAL"
     },
@@ -14584,7 +14811,7 @@
     "id": "condition.starry-form-dragon",
     "type": "condition",
     "name": {
-      "fr": "Starry Form: Dragon",
+      "fr": "Forme étoilée : dragon",
       "en": "Starry Form: Dragon",
       "status": "UNOFFICIAL"
     },
@@ -14623,7 +14850,7 @@
     "id": "condition.stealthier",
     "type": "condition",
     "name": {
-      "fr": "Plus furtif",
+      "fr": "Furtivité accrue",
       "en": "Stealthier",
       "status": "UNOFFICIAL"
     },
@@ -14666,9 +14893,10 @@
     "id": "condition.step-of-the-wind",
     "type": "condition",
     "name": {
-      "fr": "Step of the Wind",
+      "fr": "Porté par le vent",
       "en": "Step of the Wind",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -14750,7 +14978,7 @@
     "id": "condition.stricken-with-eldritch-inertia",
     "type": "condition",
     "name": {
-      "fr": "Stricken with Eldritch Inertia",
+      "fr": "Frappé d’inertie occulte",
       "en": "Stricken with Eldritch Inertia",
       "status": "UNOFFICIAL"
     },
@@ -15009,6 +15237,16 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : à la première attaque d’arme qui touche.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -15016,7 +15254,7 @@
     "id": "condition.symbiotic-entity",
     "type": "condition",
     "name": {
-      "fr": "Symbiotic Entity",
+      "fr": "Entité symbiotique",
       "en": "Symbiotic Entity",
       "status": "UNOFFICIAL"
     },
@@ -15098,7 +15336,7 @@
     "id": "condition.tempestuous-magic-flight",
     "type": "condition",
     "name": {
-      "fr": "Tempestuous Magic: Flight",
+      "fr": "Magie tempétueuse : vol",
       "en": "Tempestuous Magic: Flight",
       "status": "UNOFFICIAL"
     },
@@ -15381,6 +15619,16 @@
         "id": "effet-1",
         "kind": "effect",
         "text": "Points de vie temporaires : 15.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Disparaissent à la fin du combat.",
         "tag": {
           "act": "acte1",
           "level": "aucun",
@@ -15726,7 +15974,7 @@
     "id": "condition.tides-of-chaos",
     "type": "condition",
     "name": {
-      "fr": "Tides of Chaos",
+      "fr": "Marées du chaos",
       "en": "Tides of Chaos",
       "status": "UNOFFICIAL"
     },
@@ -15763,7 +16011,7 @@
     "id": "condition.transmuters-stone-depleted-magic",
     "type": "condition",
     "name": {
-      "fr": "Transmuter’s Stone: Depleted Magic",
+      "fr": "Pierre du transmutateur : magie tarie",
       "en": "Transmuter's Stone: Depleted Magic",
       "status": "UNOFFICIAL"
     },
@@ -16014,7 +16262,7 @@
     "id": "condition.umbral-shroud",
     "type": "condition",
     "name": {
-      "fr": "Umbral Shroud",
+      "fr": "Linceul ombral",
       "en": "Umbral Shroud",
       "status": "UNOFFICIAL"
     },
@@ -16083,6 +16331,16 @@
         "id": "effet-1",
         "kind": "effect",
         "text": "Morts-vivants alliés dans un rayon de 9 m : résistance aux dégâts contondants, perforants et tranchants.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Vaut aussi pour les créatures invoquées de type fiélon.",
         "tag": {
           "act": "acte2",
           "level": "aucun",
@@ -16269,7 +16527,7 @@
     "id": "condition.vow-of-enmity",
     "type": "condition",
     "name": {
-      "fr": "Vow of Enmity",
+      "fr": "Vœu d’inimitié",
       "en": "Vow of Enmity",
       "status": "UNOFFICIAL"
     },
@@ -16336,7 +16594,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Peut utiliser l’action Restore Vitality pour se soigner ou soigner un allié proche.",
+        "text": "Peut utiliser l’action Restauration de vitalité pour se soigner ou soigner un allié proche.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -16623,9 +16881,10 @@
     "id": "condition.wholeness-of-body",
     "type": "condition",
     "name": {
-      "fr": "Wholeness of Body",
+      "fr": "Plénitude physique",
       "en": "Wholeness of Body",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -16660,7 +16919,7 @@
     "id": "condition.wild-shape-air-myrmidon",
     "type": "condition",
     "name": {
-      "fr": "Wild Shape: Air Myrmidon",
+      "fr": "Forme sauvage : myrmidon d’air",
       "en": "Wild Shape: Air Myrmidon",
       "status": "UNOFFICIAL"
     },
@@ -16700,7 +16959,7 @@
     "id": "condition.wild-shape-dire-raven",
     "type": "condition",
     "name": {
-      "fr": "Wild Shape: Dire Raven",
+      "fr": "Forme sauvage : corbeau sanguinaire",
       "en": "Wild Shape: Dire Raven",
       "status": "UNOFFICIAL"
     },
@@ -16740,7 +16999,7 @@
     "id": "condition.wild-shape-earth-myrmidon",
     "type": "condition",
     "name": {
-      "fr": "Wild Shape: Earth Myrmidon",
+      "fr": "Forme sauvage : myrmidon de terre",
       "en": "Wild Shape: Earth Myrmidon",
       "status": "UNOFFICIAL"
     },
@@ -16780,7 +17039,7 @@
     "id": "condition.wild-shape-fire-myrmidon",
     "type": "condition",
     "name": {
-      "fr": "Wild Shape: Fire Myrmidon",
+      "fr": "Forme sauvage : myrmidon de feu",
       "en": "Wild Shape: Fire Myrmidon",
       "status": "UNOFFICIAL"
     },
@@ -16820,7 +17079,7 @@
     "id": "condition.wild-shape-polar-bear",
     "type": "condition",
     "name": {
-      "fr": "Wild Shape: Polar Bear",
+      "fr": "Forme sauvage : ours polaire",
       "en": "Wild Shape: Polar Bear",
       "status": "UNOFFICIAL"
     },
@@ -16860,7 +17119,7 @@
     "id": "condition.wild-shape-sabre-toothed-tiger",
     "type": "condition",
     "name": {
-      "fr": "Wild Shape: Sabre-Toothed Tiger",
+      "fr": "Forme sauvage : tigre à dents de sabre",
       "en": "Wild Shape: Sabre-Toothed Tiger",
       "status": "UNOFFICIAL"
     },
@@ -16900,7 +17159,7 @@
     "id": "condition.wild-shape-water-myrmidon",
     "type": "condition",
     "name": {
-      "fr": "Wild Shape: Water Myrmidon",
+      "fr": "Forme sauvage : myrmidon d’eau",
       "en": "Wild Shape: Water Myrmidon",
       "status": "UNOFFICIAL"
     },
@@ -17070,7 +17329,7 @@
     "id": "condition.writhing-tide",
     "type": "condition",
     "name": {
-      "fr": "Writhing Tide",
+      "fr": "Marée grouillante",
       "en": "Writhing Tide",
       "status": "UNOFFICIAL"
     },

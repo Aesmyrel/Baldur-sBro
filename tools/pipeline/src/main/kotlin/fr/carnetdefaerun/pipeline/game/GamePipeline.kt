@@ -1,6 +1,7 @@
 package fr.carnetdefaerun.pipeline.game
 
 import fr.carnetdefaerun.core.model.content.ContentFormat
+import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.NameStatus
@@ -67,9 +68,28 @@ class GamePipeline(private val paths: Paths) {
         val features = FeatureNormalizer(corpus, names)
         val classes = ClassNormalizer(corpus, names, features)
         val spells = SpellNormalizer(corpus, names).normalize()
-        val subclasses = SubclassNormalizer(corpus, names, features, spells.map { it.id }.toSet())
+        val spellIds = spells.map { it.id }.toSet()
+        val subclasses = SubclassNormalizer(corpus, names, features, spellIds)
+        val origins = OriginNormalizer(corpus, names, features, spellIds).normalize()
+        val subclassEntries = subclasses.normalize()
+        val subclassIds = subclassEntries.map { it.id }.toSet()
+        // Sorts raciaux : une sous-race (« High Elf ») est citée comme une race par les pages de sorts.
+        val subraceIds = origins.filter { it.type == EntryType.SUBRACE }.map { it.id.value.substringAfter('.') }.toSet()
+        val spellsLinked = spells.map { e ->
+            val f = e.facts as fr.carnetdefaerun.core.model.content.SpellFacts
+            e.copy(facts = f.copy(learnedBy = f.learnedBy.map { l ->
+                val slug = l.source.value.substringAfter('.')
+                // « Necromancer: via [[Necromancy School]] » : la précision nomme la sous-classe quand la source est inconnue.
+                val via = l.variant?.removePrefix("via ")?.let { Corpus.id("subclass", Corpus.baseTitle(it, "barbarian subclass", "sorcerer subclass")) }
+                when {
+                    l.source.kind == "race" && slug in subraceIds -> l.copy(source = ContentId("subrace.$slug"))
+                    l.source.kind == "subclass" && l.source !in subclassIds && via in subclassIds -> l.copy(source = via!!, variant = null)
+                    else -> l
+                }
+            }))
+        }
         val assembler = Assembler(features, ConditionNormalizer(corpus, names)) { raiseTitle(it, names) }
-        val assembled = assembler.assemble(spells + items.normalize() + places.normalize() + classes.normalize() + subclasses.normalize())
+        val assembled = assembler.assemble(spellsLinked + items.normalize() + places.normalize() + classes.normalize() + subclassEntries + origins)
         val effects = Effects(paths.writtenEffects)
         val (entries, unknownEffectIds, staleEffects) = effects.apply(assembled, effects.load())
         unknownEffectIds.forEach { System.err.println("  ✗ effets rédigés pour une entrée inconnue : $it") }
@@ -176,6 +196,10 @@ class GamePipeline(private val paths: Paths) {
         EntryType.PLACE -> "lieux.json"
         EntryType.CLASS -> "classes.json"
         EntryType.SUBCLASS -> "sous-classes.json"
+        EntryType.RACE -> "races.json"
+        EntryType.SUBRACE -> "sous-races.json"
+        EntryType.BACKGROUND -> "historiques.json"
+        EntryType.FEAT -> "dons.json"
         else -> "${type.name.lowercase()}.json"
     }
 

@@ -32,6 +32,12 @@ class Validator {
         byId.filterValues { it.size > 1 }.keys.forEach { problems += "$it : identifiant en double" }
         val index = entries.associateBy { it.id }
 
+        // Même nom anglais, même nom français (docs/LOTS_ECRITURE.md §4) : un état et la capacité qui l'applique,
+        // un objet et son passif. Seuls comptent les noms déjà traduits.
+        entries.filter { it.name.fr != it.name.en.replace('\'', '’') }.groupBy { it.name.en.trim().lowercase() }.values
+            .filter { same -> same.map { it.name.fr }.distinct().size > 1 }
+            .forEach { same -> problems += "« ${same.first().name.en} » traduit de plusieurs façons : " + same.joinToString { "${it.id} → ${it.name.fr}" } }
+
         for (e in entries) {
             val where = e.id.value
             if (e.name.fr.isBlank() || e.name.en.isBlank()) problems += "$where : nom manquant"
@@ -68,6 +74,7 @@ class Validator {
                 is SpellFacts -> {
                     if (f.level !in 0..9) problems += "$where : niveau de sort hors bornes (${f.level})"
                     if (f.learnedBy.isEmpty()) problems += "$where : sort retenu sans classe ni race qui l'apprenne"
+                    f.learnedBy.filter { it.source !in index }.forEach { problems += "$where : appris par ${it.source}, absent de la base" }
                 }
                 is ItemFacts -> f.sources.forEach { s ->
                     // L'acte d'un objet est celui de sa source la plus précoce : aucune source ne le précède.

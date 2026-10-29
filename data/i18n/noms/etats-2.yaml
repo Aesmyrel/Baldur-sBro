@@ -1,0 +1,346 @@
+# Noms français rédigés, lot noms-condition, seconde vague (guide : docs/LOTS_ECRITURE.md §3).
+# VF_DND : nom anglais exactement égal à un terme du SRD 5.2.1 (srd-5.2.1-fr), même sens ; sinon NON_OFFICIELLE.
+# Même nom anglais qu’une capacité ou qu’un état déjà nommé : même nom français.
+condition.abjure-enemy-frightened:
+  fr: "Abjuration d’ennemi : effrayé"
+  statut: NON_OFFICIELLE
+condition.abjure-enemy-slow:
+  fr: "Abjuration d’ennemi : ralenti"
+  statut: NON_OFFICIELLE
+condition.action-surge:
+  fr: "Fougue"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.arcane-ward:
+  fr: "Protection arcanique"
+  statut: NON_OFFICIELLE
+condition.aspect-of-the-stallion:
+  fr: "Aspect de l’étalon"
+  statut: NON_OFFICIELLE
+condition.aura-of-courage-aura:
+  fr: "Aura de courage"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.aura-of-devotion-aura:
+  fr: "Aura de dévotion (aura)"
+  statut: NON_OFFICIELLE
+condition.aura-of-hate-aura:
+  fr: "Aura de haine"
+  statut: NON_OFFICIELLE
+condition.aura-of-murder-debuff:
+  fr: "Aura de meurtre (malus)"
+  statut: NON_OFFICIELLE
+condition.aura-of-protection-aura:
+  fr: "Aura de protection (aura)"
+  statut: NON_OFFICIELLE
+condition.aura-of-warding-aura:
+  fr: "Aura de garde (aura)"
+  statut: NON_OFFICIELLE
+condition.bardic-inspiration:
+  fr: "Inspiration bardique"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.benign-transposition-spent:
+  fr: "Transposition bénigne : utilisée"
+  statut: NON_OFFICIELLE
+condition.bladesinging:
+  fr: "Chant de la lame"
+  statut: NON_OFFICIELLE
+condition.bladesong-damage-charge:
+  fr: "Charge de dégâts du chant de la lame"
+  statut: NON_OFFICIELLE
+condition.bladesong-healing-charge:
+  fr: "Charge de soins du chant de la lame"
+  statut: NON_OFFICIELLE
+condition.bladesong-impeded:
+  fr: "Chant de la lame bridé"
+  statut: NON_OFFICIELLE
+condition.blessing-of-the-trickster:
+  fr: "Bénédiction du filou"
+  statut: NON_OFFICIELLE
+condition.bolstering-magic-boon:
+  fr: "Magie fortifiante : faveur"
+  statut: NON_OFFICIELLE
+condition.champion-challenge:
+  fr: "Défi du champion"
+  statut: NON_OFFICIELLE
+condition.channel-divinity-cloak-of-shadows:
+  fr: "Conduit divin : cape d’ombres"
+  statut: NON_OFFICIELLE
+condition.charmed-charm-animals-and-plants:
+  fr: "Charmé (charme des animaux et des plantes)"
+  statut: NON_OFFICIELLE
+condition.chilled:
+  fr: "Transi"
+  statut: NON_OFFICIELLE
+condition.cloak-of-shadows:
+  fr: "Cape d’ombres"
+  statut: NON_OFFICIELLE
+condition.combat-inspiration:
+  fr: "Inspiration martiale"
+  statut: NON_OFFICIELLE
+condition.controlled:
+  fr: "Contrôlé"
+  statut: NON_OFFICIELLE
+condition.controlling-undead:
+  fr: "Contrôle d’un mort-vivant"
+  statut: NON_OFFICIELLE
+condition.cosmic-omen-of-weal:
+  fr: "Augure cosmique faste"
+  statut: NON_OFFICIELLE
+condition.countercharm-aura:
+  fr: "Aura de contre-charme"
+  statut: NON_OFFICIELLE
+condition.dark-ones-blessing:
+  fr: "Bénédiction du ténébreux"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.darkvision:
+  fr: "Vision dans le noir"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.darkvision-third-eye:
+  fr: "Vision dans le noir"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.dash:
+  fr: "Pointe"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.distracted:
+  fr: "Distrait"
+  statut: NON_OFFICIELLE
+condition.divine-sense:
+  fr: "Perception divine"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.dread-ambusher:
+  fr: "Embusqué redoutable"
+  statut: NON_OFFICIELLE
+condition.drunk:
+  fr: "Ivre"
+  statut: NON_OFFICIELLE
+condition.drunk-drunken-master:
+  fr: "Ivre (maître ivre)"
+  statut: NON_OFFICIELLE
+condition.drunken-technique:
+  fr: "Technique de l’ivrogne"
+  statut: NON_OFFICIELLE
+condition.entropic-ward:
+  fr: "Protection entropique"
+  statut: NON_OFFICIELLE
+condition.evasive-footwork:
+  fr: "Jeu de jambes évasif"
+  statut: NON_OFFICIELLE
+condition.fangs-of-the-fire-snake:
+  fr: "Crocs du serpent de feu"
+  statut: NON_OFFICIELLE
+condition.frenzied:
+  fr: "Frénétique"
+  statut: NON_OFFICIELLE
+condition.frenzied-strain:
+  fr: "Surmenage frénétique"
+  statut: NON_OFFICIELLE
+condition.frightened-mortal-reminder:
+  fr: "Effrayé (rappel de la mortalité)"
+  statut: NON_OFFICIELLE
+condition.giants-rage:
+  fr: "Rage du géant"
+  statut: NON_OFFICIELLE
+condition.goaded:
+  fr: "Provoqué"
+  statut: NON_OFFICIELLE
+condition.guided-strike-active:
+  fr: "Frappe guidée : active"
+  statut: NON_OFFICIELLE
+condition.healing-radiance:
+  fr: "Rayonnement guérisseur"
+  statut: NON_OFFICIELLE
+condition.hexblades-curse:
+  fr: "Malédiction de la lame maléfique"
+  statut: NON_OFFICIELLE
+condition.hexed-weapon:
+  fr: "Arme maléfique"
+  statut: NON_OFFICIELLE
+condition.hide-in-plain-sight:
+  fr: "Camouflage"
+  statut: NON_OFFICIELLE
+condition.holy-rebuke:
+  fr: "Représailles sacrées"
+  statut: NON_OFFICIELLE
+condition.horde-breaker:
+  fr: "Briseur de hordes"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.horde-breaker-target:
+  fr: "Briseur de hordes (cible)"
+  statut: NON_OFFICIELLE
+condition.hypnotic-gaze:
+  fr: "Regard hypnotique"
+  statut: NON_OFFICIELLE
+condition.inciting-howl:
+  fr: "Hurlement galvanisant"
+  statut: NON_OFFICIELLE
+condition.infiltration-expertise:
+  fr: "Expertise en infiltration"
+  statut: NON_OFFICIELLE
+condition.inquisitors-might:
+  fr: "Puissance de l’inquisiteur"
+  statut: NON_OFFICIELLE
+condition.life-of-the-party:
+  fr: "Boute-en-train"
+  statut: NON_OFFICIELLE
+condition.magic-arrow:
+  fr: "Flèche magique"
+  statut: NON_OFFICIELLE
+condition.magic-awareness:
+  fr: "Perception de la magie"
+  statut: NON_OFFICIELLE
+condition.magical-ambush:
+  fr: "Embuscade magique"
+  statut: NON_OFFICIELLE
+condition.manoeuvring-attack:
+  fr: "Attaque de manœuvre"
+  statut: NON_OFFICIELLE
+condition.mantle-of-inspiration:
+  fr: "Manteau d’inspiration"
+  statut: NON_OFFICIELLE
+condition.mantle-of-majesty:
+  fr: "Manteau de majesté"
+  statut: NON_OFFICIELLE
+condition.martial-arts-unarmed-strike:
+  fr: "Arts martiaux : attaque à mains nues"
+  statut: NON_OFFICIELLE
+condition.multiattack-defence:
+  fr: "Défense contre les attaques multiples"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.natures-wrath:
+  fr: "Courroux de la nature"
+  statut: NON_OFFICIELLE
+condition.open-hand-technique-staggered:
+  fr: "Technique de la Paume : ébranlé"
+  statut: NON_OFFICIELLE
+condition.panache-disadvantage:
+  fr: "Panache : désavantage"
+  statut: NON_OFFICIELLE
+condition.patient-defence:
+  fr: "Patience défensive"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.polymorph-self:
+  fr: "Métamorphose de soi"
+  statut: NON_OFFICIELLE
+condition.precision-attack:
+  fr: "Attaque de précision"
+  statut: NON_OFFICIELLE
+condition.rage:
+  fr: "Rage"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.rage-bear-heart:
+  fr: "Rage : cœur d’ours"
+  statut: NON_OFFICIELLE
+condition.rage-eagle-heart:
+  fr: "Rage : cœur d’aigle"
+  statut: NON_OFFICIELLE
+condition.rage-elk-heart:
+  fr: "Rage : cœur d’élan"
+  statut: NON_OFFICIELLE
+condition.rage-impeded:
+  fr: "Rage bridée"
+  statut: NON_OFFICIELLE
+condition.rage-tiger-heart:
+  fr: "Rage : cœur de tigre"
+  statut: NON_OFFICIELLE
+condition.rage-wolf-heart:
+  fr: "Rage : cœur de loup"
+  statut: NON_OFFICIELLE
+condition.rallied:
+  fr: "Ragaillardi"
+  statut: NON_OFFICIELLE
+condition.reckless-attack:
+  fr: "Témérité"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.relentless-avenger:
+  fr: "Vengeur implacable"
+  statut: NON_OFFICIELLE
+condition.resonating-ki:
+  fr: "Ki en résonance"
+  statut: NON_OFFICIELLE
+condition.righteous-clarity:
+  fr: "Clarté vertueuse"
+  statut: NON_OFFICIELLE
+condition.sacred-weapon:
+  fr: "Arme sacrée"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.shadow-step:
+  fr: "Pas de l’ombre"
+  statut: NON_OFFICIELLE
+condition.spiteful-suffering:
+  fr: "Souffrance rancunière"
+  statut: NON_OFFICIELLE
+condition.starry-form-archer:
+  fr: "Forme étoilée : archer"
+  statut: NON_OFFICIELLE
+condition.starry-form-chalice:
+  fr: "Forme étoilée : calice"
+  statut: NON_OFFICIELLE
+condition.starry-form-dragon:
+  fr: "Forme étoilée : dragon"
+  statut: NON_OFFICIELLE
+condition.step-of-the-wind:
+  fr: "Porté par le vent"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.stricken-with-eldritch-inertia:
+  fr: "Frappé d’inertie occulte"
+  statut: NON_OFFICIELLE
+condition.symbiotic-entity:
+  fr: "Entité symbiotique"
+  statut: NON_OFFICIELLE
+condition.tempestuous-magic-flight:
+  fr: "Magie tempétueuse : vol"
+  statut: NON_OFFICIELLE
+condition.tides-of-chaos:
+  fr: "Marées du chaos"
+  statut: NON_OFFICIELLE
+condition.transmuters-stone-depleted-magic:
+  fr: "Pierre du transmutateur : magie tarie"
+  statut: NON_OFFICIELLE
+condition.umbral-shroud:
+  fr: "Linceul ombral"
+  statut: NON_OFFICIELLE
+condition.vow-of-enmity:
+  fr: "Vœu d’inimitié"
+  statut: NON_OFFICIELLE
+condition.wholeness-of-body:
+  fr: "Plénitude physique"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+condition.wild-shape-air-myrmidon:
+  fr: "Forme sauvage : myrmidon d’air"
+  statut: NON_OFFICIELLE
+condition.wild-shape-dire-raven:
+  fr: "Forme sauvage : corbeau sanguinaire"
+  statut: NON_OFFICIELLE
+condition.wild-shape-earth-myrmidon:
+  fr: "Forme sauvage : myrmidon de terre"
+  statut: NON_OFFICIELLE
+condition.wild-shape-fire-myrmidon:
+  fr: "Forme sauvage : myrmidon de feu"
+  statut: NON_OFFICIELLE
+condition.wild-shape-polar-bear:
+  fr: "Forme sauvage : ours polaire"
+  statut: NON_OFFICIELLE
+condition.wild-shape-sabre-toothed-tiger:
+  fr: "Forme sauvage : tigre à dents de sabre"
+  statut: NON_OFFICIELLE
+condition.wild-shape-water-myrmidon:
+  fr: "Forme sauvage : myrmidon d’eau"
+  statut: NON_OFFICIELLE
+condition.writhing-tide:
+  fr: "Marée grouillante"
+  statut: NON_OFFICIELLE

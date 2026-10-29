@@ -1,0 +1,1329 @@
+# Noms français des capacités (lot noms-feature, seconde vague). Voir docs/LOTS_ECRITURE.md §3.
+feature.abjure-enemy:
+  fr: Abjuration d’ennemi
+  statut: NON_OFFICIELLE
+feature.acolyte-of-nature:
+  fr: Acolyte de la nature
+  statut: NON_OFFICIELLE
+feature.action-surge:
+  fr: Fougue
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.advanced-unarmoured-movement:
+  fr: Déplacement sans armure avancé
+  statut: NON_OFFICIELLE
+feature.arcane-recovery:
+  fr: Restauration magique
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.arcane-ward:
+  fr: Protection arcanique
+  statut: NON_OFFICIELLE
+feature.archery:
+  fr: Archerie
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.arctic:
+  fr: Arctique
+  statut: NON_OFFICIELLE
+feature.armour-of-hexes:
+  fr: Armure de maléfices
+  statut: NON_OFFICIELLE
+feature.aspect-of-the-beast-bear:
+  fr: "Aspect de la bête : ours"
+  statut: NON_OFFICIELLE
+feature.aspect-of-the-beast-chimpanzee:
+  fr: "Aspect de la bête : chimpanzé"
+  statut: NON_OFFICIELLE
+feature.aspect-of-the-beast-crocodile:
+  fr: "Aspect de la bête : crocodile"
+  statut: NON_OFFICIELLE
+feature.aspect-of-the-beast-eagle:
+  fr: "Aspect de la bête : aigle"
+  statut: NON_OFFICIELLE
+feature.aspect-of-the-beast-elk:
+  fr: "Aspect de la bête : élan"
+  statut: NON_OFFICIELLE
+feature.aspect-of-the-beast-honey-badger:
+  fr: "Aspect de la bête : ratel"
+  statut: NON_OFFICIELLE
+feature.aspect-of-the-beast-stallion:
+  fr: "Aspect de la bête : étalon"
+  statut: NON_OFFICIELLE
+feature.aspect-of-the-beast-tiger:
+  fr: "Aspect de la bête : tigre"
+  statut: NON_OFFICIELLE
+feature.aspect-of-the-beast-wolf:
+  fr: "Aspect de la bête : loup"
+  statut: NON_OFFICIELLE
+feature.aspect-of-the-beast-wolverine:
+  fr: "Aspect de la bête : glouton"
+  statut: NON_OFFICIELLE
+feature.assassinate-ambush:
+  fr: "Assassinat : embuscade"
+  statut: NON_OFFICIELLE
+feature.assassinate-initiative:
+  fr: "Assassinat : initiative"
+  statut: NON_OFFICIELLE
+feature.assassins-alacrity:
+  fr: Célérité de l’assassin
+  statut: NON_OFFICIELLE
+feature.aura-of-courage:
+  fr: Aura de courage
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.aura-of-devotion:
+  fr: Aura de dévotion
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.aura-of-hate:
+  fr: Aura de haine
+  statut: NON_OFFICIELLE
+feature.aura-of-protection:
+  fr: Aura de protection
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.aura-of-warding:
+  fr: Aura de garde
+  statut: NON_OFFICIELLE
+feature.bardic-inspiration-class-action:
+  fr: Inspiration bardique
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.bear-heart:
+  fr: Cœur d’ours
+  statut: NON_OFFICIELLE
+feature.beguiling-defences:
+  fr: Défenses envoûtantes
+  statut: NON_OFFICIELLE
+feature.bend-luck-passive-feature:
+  fr: Infléchir la chance
+  statut: NON_OFFICIELLE
+feature.benign-transposition-teleport:
+  fr: "Transposition bénigne : téléportation"
+  statut: NON_OFFICIELLE
+feature.bestial-fury:
+  fr: Furie bestiale
+  statut: NON_OFFICIELLE
+feature.bind-hexed-weapon:
+  fr: Lier une arme maléfique
+  statut: NON_OFFICIELLE
+feature.blade-of-rime:
+  fr: Lame de givre
+  statut: NON_OFFICIELLE
+feature.bladesong:
+  fr: Chant de la lame
+  statut: NON_OFFICIELLE
+feature.blessed-healer:
+  fr: Guérisseur béni
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.blessing-of-the-trickster:
+  fr: Bénédiction du filou
+  statut: NON_OFFICIELLE
+feature.blessings-of-knowledge:
+  fr: Bénédictions du savoir
+  statut: NON_OFFICIELLE
+feature.bolstering-magic-boon:
+  fr: "Magie fortifiante : faveur"
+  statut: NON_OFFICIELLE
+feature.bolstering-magic-level-1-spell-slot:
+  fr: "Magie fortifiante : emplacement de sort de niveau 1"
+  statut: NON_OFFICIELLE
+feature.bolstering-magic-level-2-spell-slot:
+  fr: "Magie fortifiante : emplacement de sort de niveau 2"
+  statut: NON_OFFICIELLE
+feature.bolstering-magic-level-3-spell-slot:
+  fr: "Magie fortifiante : emplacement de sort de niveau 3"
+  statut: NON_OFFICIELLE
+feature.boot-of-the-giants:
+  fr: Coup de botte des géants
+  statut: NON_OFFICIELLE
+feature.brutal-critical:
+  fr: Critique brutal
+  statut: NON_OFFICIELLE
+feature.chalice-healing:
+  fr: Soins du calice
+  statut: NON_OFFICIELLE
+feature.champion-challenge:
+  fr: Défi du champion
+  statut: NON_OFFICIELLE
+feature.channel-divinity-cloak-of-shadows:
+  fr: "Conduit divin : cape d’ombres"
+  statut: NON_OFFICIELLE
+feature.charm-animals-and-plants:
+  fr: Charme des animaux et des plantes
+  statut: NON_OFFICIELLE
+feature.cheeky-tipple:
+  fr: Petit remontant
+  statut: NON_OFFICIELLE
+feature.chill-of-the-mountain:
+  fr: Froid de la montagne
+  statut: NON_OFFICIELLE
+feature.chilling-counter:
+  fr: Contre glaçant
+  statut: NON_OFFICIELLE
+feature.clench-of-the-north-wind:
+  fr: Poigne du vent du nord
+  statut: NON_OFFICIELLE
+feature.cloak-of-shadows:
+  fr: Cape d’ombres
+  statut: NON_OFFICIELLE
+feature.cloud-of-jellyfish:
+  fr: Nuage de méduses
+  statut: NON_OFFICIELLE
+feature.coast:
+  fr: Côte
+  statut: NON_OFFICIELLE
+feature.colossus-slayer:
+  fr: Goût du sang
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.combat-inspiration:
+  fr: Inspiration martiale
+  statut: NON_OFFICIELLE
+feature.combat-wild-shape:
+  fr: Forme sauvage de combat
+  statut: NON_OFFICIELLE
+feature.companions-bond:
+  fr: Lien du compagnon
+  statut: NON_OFFICIELLE
+feature.control-undead:
+  fr: Contrôle des morts-vivants
+  statut: NON_OFFICIELLE
+feature.controlled-chaos:
+  fr: Chaos maîtrisé
+  statut: NON_OFFICIELLE
+feature.cosmic-omen:
+  fr: Augure cosmique
+  statut: NON_OFFICIELLE
+feature.countercharm:
+  fr: Contre-charme
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.create-sorcery-points:
+  fr: Créer des points de sorcellerie
+  statut: NON_OFFICIELLE
+feature.create-spell-slot:
+  fr: Créer un emplacement de sort
+  statut: NON_OFFICIELLE
+feature.crimson-weapon:
+  fr: Arme cramoisie
+  statut: NON_OFFICIELLE
+feature.cunning-action-dash:
+  fr: "Ruse : pointe"
+  statut: NON_OFFICIELLE
+feature.cunning-action-disengage:
+  fr: "Ruse : désengagement"
+  statut: NON_OFFICIELLE
+feature.cunning-action-hide:
+  fr: "Ruse : furtivité"
+  statut: NON_OFFICIELLE
+feature.curving-shot:
+  fr: Tir incurvé
+  statut: NON_OFFICIELLE
+feature.cutting-words:
+  fr: Mots cinglants
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.dampen-elements:
+  fr: Atténuation des éléments
+  statut: NON_OFFICIELLE
+feature.danger-sense:
+  fr: Sens du danger
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.dark-ones-blessing:
+  fr: Bénédiction du ténébreux
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.dark-ones-own-luck:
+  fr: Chance du ténébreux
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.dash:
+  fr: Pointe
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.dazzling-breath:
+  fr: Souffle éblouissant
+  statut: NON_OFFICIELLE
+feature.deepened-pact:
+  fr: Pacte approfondi
+  statut: NON_OFFICIELLE
+feature.defence:
+  fr: Défense
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.deflect-missiles:
+  fr: Parade de projectiles
+  statut: NON_OFFICIELLE
+feature.desert:
+  fr: Désert
+  statut: NON_OFFICIELLE
+feature.destroy-undead:
+  fr: Destruction des morts-vivants
+  statut: NON_OFFICIELLE
+feature.destructive-wrath:
+  fr: Courroux destructeur
+  statut: NON_OFFICIELLE
+feature.dirty-trick-flick-o-the-wrist:
+  fr: "Coup bas : tour de poignet"
+  statut: NON_OFFICIELLE
+feature.dirty-trick-sand-toss:
+  fr: "Coup bas : jet de sable"
+  statut: NON_OFFICIELLE
+feature.disarming-attack-melee:
+  fr: Attaque désarmante (corps à corps)
+  statut: NON_OFFICIELLE
+feature.disarming-attack-ranged:
+  fr: Attaque désarmante (à distance)
+  statut: NON_OFFICIELLE
+feature.disciple-of-life:
+  fr: Disciple de la Vie
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.distracting-strike-melee:
+  fr: Frappe de diversion (corps à corps)
+  statut: NON_OFFICIELLE
+feature.distracting-strike-ranged:
+  fr: Frappe de diversion (à distance)
+  statut: NON_OFFICIELLE
+feature.divine-allegiance:
+  fr: Allégeance divine
+  statut: NON_OFFICIELLE
+feature.divine-health:
+  fr: Santé divine
+  statut: NON_OFFICIELLE
+feature.divine-intervention:
+  fr: Intervention divine
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.divine-sense:
+  fr: Perception divine
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.divine-smite:
+  fr: Châtiment divin
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.divine-strike-elemental-fury:
+  fr: "Frappe divine : fureur élémentaire"
+  statut: NON_OFFICIELLE
+feature.divine-strike-necrotic:
+  fr: "Frappe divine : nécrotique"
+  statut: NON_OFFICIELLE
+feature.divine-strike-poison:
+  fr: "Frappe divine : poison"
+  statut: NON_OFFICIELLE
+feature.divine-strike-radiant:
+  fr: "Frappe divine : radiant"
+  statut: NON_OFFICIELLE
+feature.divine-strike-thunder:
+  fr: "Frappe divine : tonnerre"
+  statut: NON_OFFICIELLE
+feature.divine-strike-weapon:
+  fr: "Frappe divine : arme"
+  statut: NON_OFFICIELLE
+feature.diving-strike:
+  fr: Frappe en piqué
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry-black-acid:
+  fr: "Ascendance draconique : noir (acide)"
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry-blue-lightning:
+  fr: "Ascendance draconique : bleu (foudre)"
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry-brass-fire:
+  fr: "Ascendance draconique : airain (feu)"
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry-bronze-lightning:
+  fr: "Ascendance draconique : bronze (foudre)"
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry-copper-acid:
+  fr: "Ascendance draconique : cuivre (acide)"
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry-gold-fire:
+  fr: "Ascendance draconique : or (feu)"
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry-green-poison:
+  fr: "Ascendance draconique : vert (poison)"
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry-red-fire:
+  fr: "Ascendance draconique : rouge (feu)"
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry-silver-cold:
+  fr: "Ascendance draconique : argent (froid)"
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry-white-cold:
+  fr: "Ascendance draconique : blanc (froid)"
+  statut: NON_OFFICIELLE
+feature.draconic-resilience:
+  fr: Résistance draconique
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.dread-ambusher:
+  fr: Embusqué redoutable
+  statut: NON_OFFICIELLE
+feature.dread-ambusher-hide:
+  fr: "Embusqué redoutable : furtivité"
+  statut: NON_OFFICIELLE
+feature.dread-ambusher-melee:
+  fr: Embusqué redoutable (corps à corps)
+  statut: NON_OFFICIELLE
+feature.dread-ambusher-ranged:
+  fr: Embusqué redoutable (à distance)
+  statut: NON_OFFICIELLE
+feature.dreadful-aspect:
+  fr: Aspect effroyable
+  statut: NON_OFFICIELLE
+feature.drunkards-luck:
+  fr: Chance de l’ivrogne
+  statut: NON_OFFICIELLE
+feature.drunken-performance:
+  fr: Représentation éméchée
+  statut: NON_OFFICIELLE
+feature.drunken-technique:
+  fr: Technique de l’ivrogne
+  statut: NON_OFFICIELLE
+feature.duelling:
+  fr: Duel
+  statut: NON_OFFICIELLE
+feature.eagle-heart:
+  fr: Cœur d’aigle
+  statut: NON_OFFICIELLE
+feature.eldritch-strike:
+  fr: Frappe occulte
+  statut: NON_OFFICIELLE
+feature.elemental-affinity-damage:
+  fr: "Affinité élémentaire : dégâts"
+  statut: NON_OFFICIELLE
+feature.elemental-affinity-resistance:
+  fr: "Affinité élémentaire : résistance"
+  statut: NON_OFFICIELLE
+feature.elemental-cleaver:
+  fr: Fendoir élémentaire
+  statut: NON_OFFICIELLE
+feature.elk-heart:
+  fr: Cœur d’élan
+  statut: NON_OFFICIELLE
+feature.embrace-of-the-inferno:
+  fr: Étreinte du brasier
+  statut: NON_OFFICIELLE
+feature.empowered-evocation:
+  fr: Évocation améliorée
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.enraged-throw:
+  fr: Lancer enragé
+  statut: NON_OFFICIELLE
+feature.entropic-ward:
+  fr: Protection entropique
+  statut: NON_OFFICIELLE
+feature.escape-the-horde:
+  fr: Cauchemar de la horde
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.evasion:
+  fr: Esquive totale
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.evasive-footwork:
+  fr: Jeu de jambes évasif
+  statut: NON_OFFICIELLE
+feature.exceptional-training:
+  fr: Entraînement exceptionnel
+  statut: NON_OFFICIELLE
+feature.experimental-alchemy:
+  fr: Alchimie expérimentale
+  statut: NON_OFFICIELLE
+feature.expert-divination:
+  fr: Divination experte
+  statut: NON_OFFICIELLE
+feature.expertise-passive-feature:
+  fr: Expertise
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.exploit-weakness:
+  fr: Exploiter la faiblesse
+  statut: NON_OFFICIELLE
+feature.extra-attack:
+  fr: Attaque supplémentaire
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.eyes-of-the-dark:
+  fr: Yeux des ténèbres
+  statut: NON_OFFICIELLE
+feature.fancy-footwork:
+  fr: Jeu de jambes raffiné
+  statut: NON_OFFICIELLE
+feature.fangs-of-the-fire-snake:
+  fr: Crocs du serpent de feu
+  statut: NON_OFFICIELLE
+feature.fast-hands:
+  fr: Mains lestes
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.fast-movement:
+  fr: Déplacement rapide
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.feinting-attack:
+  fr: Attaque feinte
+  statut: NON_OFFICIELLE
+feature.feral-instinct:
+  fr: Instinct sauvage
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.fey-presence:
+  fr: Présence féerique
+  statut: NON_OFFICIELLE
+feature.fiendish-resilience:
+  fr: Résistance fiélonne
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.fist-of-four-thunders:
+  fr: Poing des quatre tonnerres
+  statut: NON_OFFICIELLE
+feature.fist-of-unbroken-air:
+  fr: Poing de l’air ininterrompu
+  statut: NON_OFFICIELLE
+feature.flames-of-the-phoenix:
+  fr: Flammes du phénix
+  statut: NON_OFFICIELLE
+feature.flurry-of-blows:
+  fr: Déluge de coups
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.flurry-of-blows-push:
+  fr: "Déluge de coups : poussée"
+  statut: NON_OFFICIELLE
+feature.flurry-of-blows-stagger:
+  fr: "Déluge de coups : ébranlement"
+  statut: NON_OFFICIELLE
+feature.flurry-of-blows-topple:
+  fr: "Déluge de coups : renversement"
+  statut: NON_OFFICIELLE
+feature.flurry-of-moths:
+  fr: Tourbillon de phalènes
+  statut: NON_OFFICIELLE
+feature.fly-class-action:
+  fr: Vol
+  statut: NON_OFFICIELLE
+feature.fly-starry-form:
+  fr: Vol
+  statut: NON_OFFICIELLE
+feature.focused-conjuration:
+  fr: Invocation concentrée
+  statut: NON_OFFICIELLE
+feature.font-of-inspiration:
+  fr: Source d’inspiration
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.forest-passive-feature:
+  fr: Forêt
+  statut: NON_OFFICIELLE
+feature.frenzied-strike:
+  fr: Frappe frénétique
+  statut: NON_OFFICIELLE
+feature.frenzy:
+  fr: Frénésie
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.fungal-infestation:
+  fr: Infestation fongique
+  statut: NON_OFFICIELLE
+feature.giant-killer:
+  fr: Tueur de géants
+  statut: NON_OFFICIELLE
+feature.giants-rage:
+  fr: Rage du géant
+  statut: NON_OFFICIELLE
+feature.gleamdancer:
+  fr: Danseur scintillant
+  statut: NON_OFFICIELLE
+feature.goading-attack-melee:
+  fr: Attaque provocatrice (corps à corps)
+  statut: NON_OFFICIELLE
+feature.goading-attack-ranged:
+  fr: Attaque provocatrice (à distance)
+  statut: NON_OFFICIELLE
+feature.gong-of-the-summit:
+  fr: Gong du sommet
+  statut: NON_OFFICIELLE
+feature.grassland:
+  fr: Prairie
+  statut: NON_OFFICIELLE
+feature.great-weapon-fighting:
+  fr: Armes à deux mains
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.grim-harvest:
+  fr: Sinistre moisson
+  statut: NON_OFFICIELLE
+feature.guided-strike:
+  fr: Frappe guidée
+  statut: NON_OFFICIELLE
+feature.halo-of-spores:
+  fr: Halo de spores
+  statut: NON_OFFICIELLE
+feature.harmony-of-fire-and-water:
+  fr: Harmonie du feu et de l’eau
+  statut: NON_OFFICIELLE
+feature.healing-radiance:
+  fr: Rayonnement guérisseur
+  statut: NON_OFFICIELLE
+feature.heart-of-the-storm:
+  fr: Cœur de la tempête
+  statut: NON_OFFICIELLE
+feature.heart-of-the-storm-lightning:
+  fr: "Cœur de la tempête : foudre"
+  statut: NON_OFFICIELLE
+feature.heart-of-the-storm-resistance:
+  fr: "Cœur de la tempête : résistance"
+  statut: NON_OFFICIELLE
+feature.heart-of-the-storm-thunder:
+  fr: "Cœur de la tempête : tonnerre"
+  statut: NON_OFFICIELLE
+feature.hex-warrior:
+  fr: Guerrier du maléfice
+  statut: NON_OFFICIELLE
+feature.hexblades-curse:
+  fr: Malédiction de la lame maléfique
+  statut: NON_OFFICIELLE
+feature.hide-in-plain-sight:
+  fr: Camouflage
+  statut: NON_OFFICIELLE
+feature.holy-rebuke:
+  fr: Représailles sacrées
+  statut: NON_OFFICIELLE
+feature.horde-breaker:
+  fr: Briseur de hordes
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.horde-breaker-melee:
+  fr: Briseur de hordes (corps à corps)
+  statut: NON_OFFICIELLE
+feature.horde-breaker-ranged:
+  fr: Briseur de hordes (à distance)
+  statut: NON_OFFICIELLE
+feature.hound-of-ill-omen:
+  fr: Molosse de mauvais augure
+  statut: NON_OFFICIELLE
+feature.hypnotic-gaze:
+  fr: Regard hypnotique
+  statut: NON_OFFICIELLE
+feature.illusory-self:
+  fr: Double illusoire
+  statut: NON_OFFICIELLE
+feature.improved-abjuration:
+  fr: Abjuration améliorée
+  statut: NON_OFFICIELLE
+feature.improved-bardic-inspiration-passive-feature:
+  fr: Inspiration bardique améliorée
+  statut: NON_OFFICIELLE
+feature.improved-combat-superiority:
+  fr: Supériorité martiale améliorée
+  statut: NON_OFFICIELLE
+feature.improved-critical-hit:
+  fr: Critique amélioré
+  statut: NON_OFFICIELLE
+feature.improved-divine-smite:
+  fr: Châtiment divin amélioré
+  statut: NON_OFFICIELLE
+feature.improved-elemental-casting:
+  fr: Incantation élémentaire améliorée
+  statut: NON_OFFICIELLE
+feature.improved-extra-attack:
+  fr: Attaque supplémentaire améliorée
+  statut: NON_OFFICIELLE
+feature.improved-minor-illusion-passive-feature:
+  fr: Illusion mineure améliorée
+  statut: NON_OFFICIELLE
+feature.improved-warding-flare:
+  fr: Éclat protecteur amélioré
+  statut: NON_OFFICIELLE
+feature.improved-wild-strike:
+  fr: Frappe sauvage améliorée
+  statut: NON_OFFICIELLE
+feature.inciting-howl:
+  fr: Hurlement galvanisant
+  statut: NON_OFFICIELLE
+feature.indomitable:
+  fr: Inflexible
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.inescapable-destruction:
+  fr: Destruction inéluctable
+  statut: NON_OFFICIELLE
+feature.infiltration-expertise:
+  fr: Expertise en infiltration
+  statut: NON_OFFICIELLE
+feature.inquisitors-might:
+  fr: Puissance de l’inquisiteur
+  statut: NON_OFFICIELLE
+feature.instinctive-charm:
+  fr: Charme instinctif
+  statut: NON_OFFICIELLE
+feature.intimidating-presence:
+  fr: Présence intimidante
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.intoxicating-strike:
+  fr: Frappe enivrante
+  statut: NON_OFFICIELLE
+feature.intoxicating-strike-bonus-action:
+  fr: Frappe enivrante (action bonus)
+  statut: NON_OFFICIELLE
+feature.inured-to-undeath:
+  fr: Endurci à la non-mort
+  statut: NON_OFFICIELLE
+feature.invoke-duplicity:
+  fr: Invoquer la duplicité
+  statut: NON_OFFICIELLE
+feature.iron-mind:
+  fr: Esprit de fer
+  statut: NON_OFFICIELLE
+feature.jack-of-all-trades:
+  fr: Touche-à-tout
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.ki-empowered-strikes:
+  fr: Frappes de ki
+  statut: NON_OFFICIELLE
+feature.ki-resonation-blast:
+  fr: "Résonance du ki : déflagration"
+  statut: NON_OFFICIELLE
+feature.ki-resonation-punch:
+  fr: "Résonance du ki : coup de poing"
+  statut: NON_OFFICIELLE
+feature.ki-resonation-punch-bonus-action:
+  fr: "Résonance du ki : coup de poing (action bonus)"
+  statut: NON_OFFICIELLE
+feature.knowledge-of-the-ages:
+  fr: Savoir des âges
+  statut: NON_OFFICIELLE
+feature.lands-stride-advantage:
+  fr: "Foulée de la terre : avantage"
+  statut: NON_OFFICIELLE
+feature.lands-stride-difficult-terrain:
+  fr: "Foulée de la terre : terrain difficile"
+  statut: NON_OFFICIELLE
+feature.lands-stride-plants:
+  fr: "Foulée de la terre : plantes"
+  statut: NON_OFFICIELLE
+feature.lay-on-hands:
+  fr: Imposition des mains
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.leap-to-your-feet:
+  fr: Debout d’un bond
+  statut: NON_OFFICIELLE
+feature.legion-of-bees:
+  fr: Légion d’abeilles
+  statut: NON_OFFICIELLE
+feature.life-of-the-party:
+  fr: Boute-en-train
+  statut: NON_OFFICIELLE
+feature.lunar-mend:
+  fr: Guérison lunaire
+  statut: NON_OFFICIELLE
+feature.mage-hand-legerdemain:
+  fr: Escamotage à la main de mage
+  statut: NON_OFFICIELLE
+feature.magic-arrow:
+  fr: Flèche magique
+  statut: NON_OFFICIELLE
+feature.magic-awareness:
+  fr: Perception de la magie
+  statut: NON_OFFICIELLE
+feature.magical-ambush:
+  fr: Embuscade magique
+  statut: NON_OFFICIELLE
+feature.manifestation-of-body:
+  fr: Manifestation du corps
+  statut: NON_OFFICIELLE
+feature.manifestation-of-mind:
+  fr: Manifestation de l’esprit
+  statut: NON_OFFICIELLE
+feature.manifestation-of-soul:
+  fr: Manifestation de l’âme
+  statut: NON_OFFICIELLE
+feature.manoeuvring-attack-melee:
+  fr: Attaque de manœuvre (corps à corps)
+  statut: NON_OFFICIELLE
+feature.manoeuvring-attack-ranged:
+  fr: Attaque de manœuvre (à distance)
+  statut: NON_OFFICIELLE
+feature.mantle-of-inspiration:
+  fr: Manteau d’inspiration
+  statut: NON_OFFICIELLE
+feature.mantle-of-majesty-command:
+  fr: "Manteau de majesté : injonction"
+  statut: NON_OFFICIELLE
+feature.martial-arts-bonus-unarmed-strike:
+  fr: "Arts martiaux : attaque à mains nues supplémentaire"
+  statut: NON_OFFICIELLE
+feature.martial-arts-deft-strikes:
+  fr: "Arts martiaux : frappes habiles"
+  statut: NON_OFFICIELLE
+feature.martial-arts-dextrous-attacks:
+  fr: "Arts martiaux : attaques lestes"
+  statut: NON_OFFICIELLE
+feature.menacing-attack-melee:
+  fr: Attaque menaçante (corps à corps)
+  statut: NON_OFFICIELLE
+feature.menacing-attack-ranged:
+  fr: Attaque menaçante (à distance)
+  statut: NON_OFFICIELLE
+feature.mighty-cloud-of-jellyfish:
+  fr: Nuage de méduses puissant
+  statut: NON_OFFICIELLE
+feature.mighty-flurry-of-moths:
+  fr: Tourbillon de phalènes puissant
+  statut: NON_OFFICIELLE
+feature.mighty-impel:
+  fr: Projection puissante
+  statut: NON_OFFICIELLE
+feature.mighty-legion-of-bees:
+  fr: Légion d’abeilles puissante
+  statut: NON_OFFICIELLE
+feature.mighty-swarm:
+  fr: Essaim puissant
+  statut: NON_OFFICIELLE
+feature.mindless-rage:
+  fr: Rage aveugle
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.minor-conjuration-create-water:
+  fr: "Invocation mineure : création d’eau"
+  statut: NON_OFFICIELLE
+feature.mist-stance:
+  fr: Posture de brume
+  statut: NON_OFFICIELLE
+feature.misty-escape:
+  fr: Fuite brumeuse
+  statut: NON_OFFICIELLE
+feature.mortal-reminder:
+  fr: Rappel de la mortalité
+  statut: NON_OFFICIELLE
+feature.mountain:
+  fr: Montagne
+  statut: NON_OFFICIELLE
+feature.multiattack-defence:
+  fr: Défense contre les attaques multiples
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.natural-recovery:
+  fr: Ressourcement
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.natures-ward:
+  fr: Protégé de dame Nature
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.natures-wrath:
+  fr: Courroux de la nature
+  statut: NON_OFFICIELLE
+feature.oath-of-devotion-tenets:
+  fr: Préceptes du serment de dévotion
+  statut: NON_OFFICIELLE
+feature.oath-of-the-ancients-tenets:
+  fr: Préceptes du serment des anciens
+  statut: NON_OFFICIELLE
+feature.oath-of-the-crown-tenets:
+  fr: Préceptes du serment de la couronne
+  statut: NON_OFFICIELLE
+feature.oath-of-vengeance-tenets:
+  fr: Préceptes du serment de vengeance
+  statut: NON_OFFICIELLE
+feature.opportunity-attack:
+  fr: Attaque d’opportunité
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.panache:
+  fr: Panache
+  statut: NON_OFFICIELLE
+feature.patient-defence:
+  fr: Patience défensive
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.portent:
+  fr: Présage
+  statut: NON_OFFICIELLE
+feature.potent-cantrip:
+  fr: Sort mineur appuyé
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.potent-spellcasting:
+  fr: Incantation puissante
+  statut: NON_OFFICIELLE
+feature.precision-attack:
+  fr: Attaque de précision
+  statut: NON_OFFICIELLE
+feature.preserve-life:
+  fr: Survivance
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.preys-scent-swarmkeeper:
+  fr: Odeur de la proie
+  statut: NON_OFFICIELLE
+feature.primal-stampede:
+  fr: Ruée primitive
+  statut: NON_OFFICIELLE
+feature.primal-strike:
+  fr: Frappe primitive
+  statut: NON_OFFICIELLE
+feature.projected-ward:
+  fr: Protection projetée
+  statut: NON_OFFICIELLE
+feature.protection:
+  fr: Protection
+  statut: NON_OFFICIELLE
+feature.purity-of-body:
+  fr: Pureté du corps
+  statut: NON_OFFICIELLE
+feature.pushing-attack-melee:
+  fr: Attaque repoussante (corps à corps)
+  statut: NON_OFFICIELLE
+feature.pushing-attack-ranged:
+  fr: Attaque repoussante (à distance)
+  statut: NON_OFFICIELLE
+feature.radiance-of-the-dawn:
+  fr: Rayonnement de l’aube
+  statut: NON_OFFICIELLE
+feature.rage:
+  fr: Rage
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.rage-bear-heart:
+  fr: "Rage : cœur d’ours"
+  statut: NON_OFFICIELLE
+feature.rage-becomes-frenzy:
+  fr: La rage devient frénésie
+  statut: NON_OFFICIELLE
+feature.rage-eagle-heart:
+  fr: "Rage : cœur d’aigle"
+  statut: NON_OFFICIELLE
+feature.rage-elk-heart:
+  fr: "Rage : cœur d’élan"
+  statut: NON_OFFICIELLE
+feature.rage-tiger-heart:
+  fr: "Rage : cœur de tigre"
+  statut: NON_OFFICIELLE
+feature.rage-wild-magic:
+  fr: "Rage : magie sauvage"
+  statut: NON_OFFICIELLE
+feature.rage-wolf-heart:
+  fr: "Rage : cœur de loup"
+  statut: NON_OFFICIELLE
+feature.rakish-audacity:
+  fr: Audace effrontée
+  statut: NON_OFFICIELLE
+feature.rakish-sneak-attack-melee:
+  fr: Attaque sournoise effrontée (corps à corps)
+  statut: NON_OFFICIELLE
+feature.rakish-sneak-attack-ranged:
+  fr: Attaque sournoise effrontée (à distance)
+  statut: NON_OFFICIELLE
+feature.rally:
+  fr: Ralliement
+  statut: NON_OFFICIELLE
+feature.rangers-companion:
+  fr: Compagnon du rôdeur
+  statut: NON_OFFICIELLE
+feature.read-thoughts:
+  fr: Lecture des pensées
+  statut: NON_OFFICIELLE
+feature.reaper:
+  fr: Faucheur
+  statut: NON_OFFICIELLE
+feature.reckless-attack:
+  fr: Témérité
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.redirect-attack:
+  fr: Détourner l’attaque
+  statut: NON_OFFICIELLE
+feature.redvein-savagery:
+  fr: Sauvagerie des veines rouges
+  statut: NON_OFFICIELLE
+feature.relentless-avenger:
+  fr: Vengeur implacable
+  statut: NON_OFFICIELLE
+feature.relentless-rage:
+  fr: Rage implacable
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.reliable-talent:
+  fr: Savoir-faire
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.remarkable-athlete-jump:
+  fr: "Athlète accompli : saut"
+  statut: NON_OFFICIELLE
+feature.remarkable-athlete-proficiency:
+  fr: "Athlète accompli : maîtrise"
+  statut: NON_OFFICIELLE
+feature.ride-the-wind:
+  fr: Chevaucher le vent
+  statut: NON_OFFICIELLE
+feature.righteous-clarity:
+  fr: Clarté vertueuse
+  statut: NON_OFFICIELLE
+feature.riposte:
+  fr: Riposte
+  statut: NON_OFFICIELLE
+feature.rush-of-the-gale-spirits:
+  fr: Ruée des esprits de la bourrasque
+  statut: NON_OFFICIELLE
+feature.sacred-weapon:
+  fr: Arme sacrée
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.sculpt-spells:
+  fr: Façonneur de sorts
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.second-story-work-falling:
+  fr: "Monte-en-l’air : chute"
+  statut: NON_OFFICIELLE
+feature.second-wind:
+  fr: Second souffle
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.see-invisibility-class-action:
+  fr: Voir l’invisible
+  statut: VF_DND
+  source: aidedd
+feature.shadow-arts-darkness:
+  fr: "Arts de l’ombre : ténèbres"
+  statut: NON_OFFICIELLE
+feature.shadow-arts-darkvision:
+  fr: "Arts de l’ombre : vision dans le noir"
+  statut: NON_OFFICIELLE
+feature.shadow-arts-hide:
+  fr: "Arts de l’ombre : furtivité"
+  statut: NON_OFFICIELLE
+feature.shadow-arts-pass-without-trace:
+  fr: "Arts de l’ombre : passage sans trace"
+  statut: NON_OFFICIELLE
+feature.shadow-arts-silence:
+  fr: "Arts de l’ombre : silence"
+  statut: NON_OFFICIELLE
+feature.shadow-step:
+  fr: Pas de l’ombre
+  statut: NON_OFFICIELLE
+feature.shadow-strike:
+  fr: Frappe de l’ombre
+  statut: NON_OFFICIELLE
+feature.shadow-strike-unarmed:
+  fr: "Frappe de l’ombre : à mains nues"
+  statut: NON_OFFICIELLE
+feature.shadow-walk:
+  fr: Marche de l’ombre
+  statut: NON_OFFICIELLE
+feature.shapechanger:
+  fr: Métamorphe
+  statut: NON_OFFICIELLE
+feature.shaping-of-the-ice:
+  fr: Façonnage de la glace
+  statut: NON_OFFICIELLE
+feature.slow-fall:
+  fr: Chute ralentie
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.sneak-attack-melee:
+  fr: Attaque sournoise (corps à corps)
+  statut: NON_OFFICIELLE
+feature.sneak-attack-ranged:
+  fr: Attaque sournoise (à distance)
+  statut: NON_OFFICIELLE
+feature.sobering-realisation:
+  fr: Dégrisement
+  statut: NON_OFFICIELLE
+feature.song-of-defence:
+  fr: Chant de défense
+  statut: NON_OFFICIELLE
+feature.song-of-rest:
+  fr: Chant reposant
+  statut: NON_OFFICIELLE
+feature.speak-with-animals-cleric:
+  fr: Communication avec les animaux
+  statut: VF_DND
+  source: aidedd
+feature.sphere-of-elemental-balance:
+  fr: Sphère d’équilibre élémentaire
+  statut: NON_OFFICIELLE
+feature.spiteful-suffering:
+  fr: Souffrance rancunière
+  statut: NON_OFFICIELLE
+feature.split-enchantment:
+  fr: Enchantement partagé
+  statut: NON_OFFICIELLE
+feature.spreading-spores:
+  fr: Propagation des spores
+  statut: NON_OFFICIELLE
+feature.stalkers-flurry:
+  fr: Rafale du traqueur
+  statut: NON_OFFICIELLE
+feature.starry-form:
+  fr: Forme étoilée
+  statut: NON_OFFICIELLE
+feature.starry-form-archer:
+  fr: "Forme étoilée : archer"
+  statut: NON_OFFICIELLE
+feature.starry-form-chalice:
+  fr: "Forme étoilée : calice"
+  statut: NON_OFFICIELLE
+feature.starry-form-dragon:
+  fr: "Forme étoilée : dragon"
+  statut: NON_OFFICIELLE
+feature.steel-will:
+  fr: Volonté d’acier
+  statut: NON_OFFICIELLE
+feature.step-of-the-wind-dash:
+  fr: "Porté par le vent : pointe"
+  statut: NON_OFFICIELLE
+feature.step-of-the-wind-disengage:
+  fr: "Porté par le vent : désengagement"
+  statut: NON_OFFICIELLE
+feature.stillness-of-mind-passive-feature:
+  fr: Tranquillité d’esprit
+  statut: NON_OFFICIELLE
+feature.storms-fury:
+  fr: Fureur de la tempête
+  statut: NON_OFFICIELLE
+feature.strength-of-the-grave:
+  fr: Force de la tombe
+  statut: NON_OFFICIELLE
+feature.stunning-strike-melee:
+  fr: Frappe étourdissante (corps à corps)
+  statut: NON_OFFICIELLE
+feature.stunning-strike-unarmed:
+  fr: Frappe étourdissante (à mains nues)
+  statut: NON_OFFICIELLE
+feature.superior-darkvision:
+  fr: Vision dans le noir supérieure
+  statut: NON_OFFICIELLE
+feature.supreme-sneak:
+  fr: Furtivité suprême
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.swamp:
+  fr: Marais
+  statut: NON_OFFICIELLE
+feature.sweeping-attack:
+  fr: Attaque balayante
+  statut: NON_OFFICIELLE
+feature.sweeping-cinder-strike:
+  fr: Frappe de braises balayante
+  statut: NON_OFFICIELLE
+feature.symbiotic-entity:
+  fr: Entité symbiotique
+  statut: NON_OFFICIELLE
+feature.tempestuous-magic:
+  fr: Magie tempétueuse
+  statut: NON_OFFICIELLE
+feature.tenacity:
+  fr: Ténacité
+  statut: NON_OFFICIELLE
+feature.third-eye-darkvision:
+  fr: "Troisième œil : vision dans le noir"
+  statut: NON_OFFICIELLE
+feature.third-eye-see-invisibility:
+  fr: "Troisième œil : voir l’invisible"
+  statut: NON_OFFICIELLE
+feature.thought-shield-psychic-reflection:
+  fr: "Bouclier de pensées : renvoi psychique"
+  statut: NON_OFFICIELLE
+feature.thought-shield-psychic-resistance:
+  fr: "Bouclier de pensées : résistance psychique"
+  statut: NON_OFFICIELLE
+feature.thunderbolt-strike:
+  fr: Frappe foudroyante
+  statut: NON_OFFICIELLE
+feature.tides-of-chaos:
+  fr: Marées du chaos
+  statut: NON_OFFICIELLE
+feature.tiger-heart:
+  fr: Cœur de tigre
+  statut: NON_OFFICIELLE
+feature.tigers-bloodlust:
+  fr: Soif de sang du tigre
+  statut: NON_OFFICIELLE
+feature.touch-of-the-storm:
+  fr: Toucher de la tempête
+  statut: NON_OFFICIELLE
+feature.training-in-war-and-song:
+  fr: Formation à la guerre et au chant
+  statut: NON_OFFICIELLE
+feature.tranquillity:
+  fr: Tranquillité
+  statut: NON_OFFICIELLE
+feature.transmuters-stone:
+  fr: Pierre du transmutateur
+  statut: NON_OFFICIELLE
+feature.transmuters-stone-acid-resistance:
+  fr: "Pierre du transmutateur : résistance à l’acide"
+  statut: NON_OFFICIELLE
+feature.transmuters-stone-cold-resistance:
+  fr: "Pierre du transmutateur : résistance au froid"
+  statut: NON_OFFICIELLE
+feature.transmuters-stone-constitution:
+  fr: "Pierre du transmutateur : Constitution"
+  statut: NON_OFFICIELLE
+feature.transmuters-stone-darkvision:
+  fr: "Pierre du transmutateur : vision dans le noir"
+  statut: NON_OFFICIELLE
+feature.transmuters-stone-fire-resistance:
+  fr: "Pierre du transmutateur : résistance au feu"
+  statut: NON_OFFICIELLE
+feature.transmuters-stone-lightning-resistance:
+  fr: "Pierre du transmutateur : résistance à la foudre"
+  statut: NON_OFFICIELLE
+feature.transmuters-stone-passive-feature:
+  fr: Pierre du transmutateur
+  statut: NON_OFFICIELLE
+feature.transmuters-stone-speed:
+  fr: "Pierre du transmutateur : vitesse"
+  statut: NON_OFFICIELLE
+feature.transmuters-stone-thunder-resistance:
+  fr: "Pierre du transmutateur : résistance au tonnerre"
+  statut: NON_OFFICIELLE
+feature.trip-attack-melee:
+  fr: Attaque renversante (corps à corps)
+  statut: NON_OFFICIELLE
+feature.trip-attack-ranged:
+  fr: Attaque renversante (à distance)
+  statut: NON_OFFICIELLE
+feature.true-strike-riposte:
+  fr: Riposte du coup au but
+  statut: NON_OFFICIELLE
+feature.turn-the-faithless:
+  fr: Renvoi des infidèles
+  statut: NON_OFFICIELLE
+feature.turn-the-tide:
+  fr: Retourner la situation
+  statut: NON_OFFICIELLE
+feature.turn-the-unholy:
+  fr: Renvoi des impies
+  statut: NON_OFFICIELLE
+feature.twinkling-constellations:
+  fr: Constellations scintillantes
+  statut: NON_OFFICIELLE
+feature.umbral-shroud:
+  fr: Linceul ombral
+  statut: NON_OFFICIELLE
+feature.unarmoured-defence-barbarian:
+  fr: Défense sans armure
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.unarmoured-defence-monk:
+  fr: Défense sans armure
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.unarmoured-movement:
+  fr: Déplacement sans armure
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.uncanny-dodge:
+  fr: Esquive instinctive
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.undead-thralls-additional-undead:
+  fr: "Serviteurs morts-vivants : mort-vivant supplémentaire"
+  statut: NON_OFFICIELLE
+feature.undead-thralls-animate-dead:
+  fr: "Serviteurs morts-vivants : animation des morts"
+  statut: NON_OFFICIELLE
+feature.undead-thralls-better-summons:
+  fr: "Serviteurs morts-vivants : invocations améliorées"
+  statut: NON_OFFICIELLE
+feature.underdark-passive-feature:
+  fr: Outreterre
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.unrelenting-ferocity:
+  fr: Férocité acharnée
+  statut: NON_OFFICIELLE
+feature.unstable-backlash:
+  fr: Contrecoup instable
+  statut: NON_OFFICIELLE
+feature.vapraks-greed:
+  fr: Avidité de Vaprak
+  statut: NON_OFFICIELLE
+feature.volley:
+  fr: Volée
+  statut: NON_OFFICIELLE
+feature.vow-of-enmity:
+  fr: Vœu d’inimitié
+  statut: NON_OFFICIELLE
+feature.war-magic:
+  fr: Magie de guerre
+  statut: NON_OFFICIELLE
+feature.war-priest:
+  fr: Prêtre de guerre
+  statut: NON_OFFICIELLE
+feature.warding-flare:
+  fr: Éclat protecteur
+  statut: NON_OFFICIELLE
+feature.water-whip:
+  fr: Fouet d’eau
+  statut: NON_OFFICIELLE
+feature.weapon-bond:
+  fr: Lien avec l’arme
+  statut: NON_OFFICIELLE
+feature.whirlwind-attack:
+  fr: Attaque tourbillonnante
+  statut: NON_OFFICIELLE
+feature.wholeness-of-body:
+  fr: Plénitude physique
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.wild-magic-passive-feature:
+  fr: Magie sauvage
+  statut: NON_OFFICIELLE
+feature.wild-shape:
+  fr: Forme sauvage
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.wild-shape-air-myrmidon:
+  fr: "Forme sauvage : myrmidon d’air"
+  statut: NON_OFFICIELLE
+feature.wild-shape-bear:
+  fr: "Forme sauvage : ours"
+  statut: NON_OFFICIELLE
+feature.wild-shape-dire-raven:
+  fr: "Forme sauvage : corbeau sanguinaire"
+  statut: NON_OFFICIELLE
+feature.wild-shape-earth-myrmidon:
+  fr: "Forme sauvage : myrmidon de terre"
+  statut: NON_OFFICIELLE
+feature.wild-shape-fire-myrmidon:
+  fr: "Forme sauvage : myrmidon de feu"
+  statut: NON_OFFICIELLE
+feature.wild-shape-sabre-toothed-tiger:
+  fr: "Forme sauvage : tigre à dents de sabre"
+  statut: NON_OFFICIELLE
+feature.wild-shape-water-myrmidon:
+  fr: "Forme sauvage : myrmidon d’eau"
+  statut: NON_OFFICIELLE
+feature.wild-strike:
+  fr: Frappe sauvage
+  statut: NON_OFFICIELLE
+feature.wolf-heart:
+  fr: Cœur de loup
+  statut: NON_OFFICIELLE
+feature.wrath-of-the-storm:
+  fr: Courroux de la tempête
+  statut: NON_OFFICIELLE
+feature.wrath-of-the-storm-lightning:
+  fr: "Courroux de la tempête : foudre"
+  statut: NON_OFFICIELLE
+feature.wrath-of-the-storm-thunder:
+  fr: "Courroux de la tempête : tonnerre"
+  statut: NON_OFFICIELLE
+feature.writhing-tide:
+  fr: Marée grouillante
+  statut: NON_OFFICIELLE

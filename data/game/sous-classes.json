@@ -3,7 +3,7 @@
     "id": "subclass.abjuration-school",
     "type": "subclass",
     "name": {
-      "fr": "Abjuration School",
+      "fr": "École d’Abjuration",
       "en": "Abjuration School",
       "status": "UNOFFICIAL"
     },
@@ -35,14 +35,14 @@
           "features": [
             {
               "name": {
-                "fr": "Abjuration Savant",
+                "fr": "Abjurateur érudit",
                 "en": "Abjuration Savant",
                 "status": "UNOFFICIAL"
               }
             },
             {
               "name": {
-                "fr": "Arcane Ward",
+                "fr": "Protection arcanique",
                 "en": "Arcane Ward",
                 "status": "UNOFFICIAL"
               },
@@ -55,7 +55,7 @@
           "features": [
             {
               "name": {
-                "fr": "Projected Ward",
+                "fr": "Protection projetée",
                 "en": "Projected Ward",
                 "status": "UNOFFICIAL"
               },
@@ -68,7 +68,7 @@
           "features": [
             {
               "name": {
-                "fr": "Improved Abjuration",
+                "fr": "Abjuration améliorée",
                 "en": "Improved Abjuration",
                 "status": "UNOFFICIAL"
               },
@@ -121,7 +121,7 @@
     "id": "subclass.arcane-archer",
     "type": "subclass",
     "name": {
-      "fr": "Arcane Archer",
+      "fr": "Archer arcanique",
       "en": "Arcane Archer",
       "status": "UNOFFICIAL"
     },
@@ -153,7 +153,7 @@
           "features": [
             {
               "name": {
-                "fr": "Arcane Archer Lore",
+                "fr": "Savoir de l’archer arcanique",
                 "en": "Arcane Archer Lore",
                 "status": "UNOFFICIAL"
               }
@@ -162,7 +162,7 @@
           "choices": [
             {
               "name": {
-                "fr": "Gain a Cantrip",
+                "fr": "Apprendre un sort mineur",
                 "en": "Gain a Cantrip",
                 "status": "UNOFFICIAL"
               },
@@ -209,7 +209,7 @@
           "features": [
             {
               "name": {
-                "fr": "Curving Shot",
+                "fr": "Tir incurvé",
                 "en": "Curving Shot",
                 "status": "UNOFFICIAL"
               },
@@ -217,7 +217,7 @@
             },
             {
               "name": {
-                "fr": "Magic Arrow",
+                "fr": "Flèche magique",
                 "en": "Magic Arrow",
                 "status": "UNOFFICIAL"
               },
@@ -303,7 +303,7 @@
     "id": "subclass.arcane-trickster",
     "type": "subclass",
     "name": {
-      "fr": "Arcane Trickster",
+      "fr": "Escroc arcanique",
       "en": "Arcane Trickster",
       "status": "UNOFFICIAL"
     },
@@ -335,7 +335,7 @@
           "features": [
             {
               "name": {
-                "fr": "Mage Hand Legerdemain",
+                "fr": "Escamotage à la main de mage",
                 "en": "Mage Hand Legerdemain",
                 "status": "UNOFFICIAL"
               },
@@ -373,7 +373,7 @@
           "features": [
             {
               "name": {
-                "fr": "Magical Ambush",
+                "fr": "Embuscade magique",
                 "en": "Magical Ambush",
                 "status": "UNOFFICIAL"
               },
@@ -461,7 +461,7 @@
           "features": [
             {
               "name": {
-                "fr": "Assassin’s Alacrity",
+                "fr": "Célérité de l’assassin",
                 "en": "Assassin's Alacrity",
                 "status": "UNOFFICIAL"
               },
@@ -469,7 +469,7 @@
             },
             {
               "name": {
-                "fr": "Assassinate: Ambush",
+                "fr": "Assassinat : embuscade",
                 "en": "Assassinate: Ambush",
                 "status": "UNOFFICIAL"
               },
@@ -477,7 +477,7 @@
             },
             {
               "name": {
-                "fr": "Assassinate: Initiative",
+                "fr": "Assassinat : initiative",
                 "en": "Assassinate: Initiative",
                 "status": "UNOFFICIAL"
               },
@@ -490,7 +490,7 @@
           "features": [
             {
               "name": {
-                "fr": "Infiltration Expertise",
+                "fr": "Expertise en infiltration",
                 "en": "Infiltration Expertise",
                 "status": "UNOFFICIAL"
               },
@@ -552,7 +552,7 @@
     "id": "subclass.battle-master",
     "type": "subclass",
     "name": {
-      "fr": "Battle Master",
+      "fr": "Maître de guerre",
       "en": "Battle Master",
       "status": "UNOFFICIAL"
     },
@@ -584,7 +584,7 @@
           "choices": [
             {
               "name": {
-                "fr": "Manoeuvres",
+                "fr": "Manœuvres",
                 "en": "Manoeuvres",
                 "status": "UNOFFICIAL"
               },
@@ -602,7 +602,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Disarming Attack",
+                    "fr": "Attaque désarmante",
                     "en": "Disarming Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -613,7 +613,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Distracting Strike",
+                    "fr": "Frappe de diversion",
                     "en": "Distracting Strike",
                     "status": "UNOFFICIAL"
                   },
@@ -624,7 +624,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Evasive Footwork",
+                    "fr": "Jeu de jambes évasif",
                     "en": "Evasive Footwork",
                     "status": "UNOFFICIAL"
                   },
@@ -635,7 +635,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Feinting Attack",
+                    "fr": "Attaque feinte",
                     "en": "Feinting Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -646,7 +646,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Goading Attack",
+                    "fr": "Attaque provocatrice",
                     "en": "Goading Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -657,7 +657,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Manoeuvring Attack",
+                    "fr": "Attaque de manœuvre",
                     "en": "Manoeuvring Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -668,7 +668,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Menacing Attack",
+                    "fr": "Attaque menaçante",
                     "en": "Menacing Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -679,7 +679,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Precision Attack",
+                    "fr": "Attaque de précision",
                     "en": "Precision Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -690,7 +690,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Pushing Attack",
+                    "fr": "Attaque repoussante",
                     "en": "Pushing Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -701,7 +701,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Rally",
+                    "fr": "Ralliement",
                     "en": "Rally",
                     "status": "UNOFFICIAL"
                   },
@@ -723,7 +723,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Sweeping Attack",
+                    "fr": "Attaque balayante",
                     "en": "Sweeping Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -734,7 +734,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Trip Attack",
+                    "fr": "Attaque renversante",
                     "en": "Trip Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -759,7 +759,7 @@
           "choices": [
             {
               "name": {
-                "fr": "Manoeuvres",
+                "fr": "Manœuvres",
                 "en": "Manoeuvres",
                 "status": "UNOFFICIAL"
               },
@@ -777,7 +777,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Disarming Attack",
+                    "fr": "Attaque désarmante",
                     "en": "Disarming Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -788,7 +788,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Distracting Strike",
+                    "fr": "Frappe de diversion",
                     "en": "Distracting Strike",
                     "status": "UNOFFICIAL"
                   },
@@ -799,7 +799,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Evasive Footwork",
+                    "fr": "Jeu de jambes évasif",
                     "en": "Evasive Footwork",
                     "status": "UNOFFICIAL"
                   },
@@ -810,7 +810,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Feinting Attack",
+                    "fr": "Attaque feinte",
                     "en": "Feinting Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -821,7 +821,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Goading Attack",
+                    "fr": "Attaque provocatrice",
                     "en": "Goading Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -832,7 +832,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Manoeuvring Attack",
+                    "fr": "Attaque de manœuvre",
                     "en": "Manoeuvring Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -843,7 +843,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Menacing Attack",
+                    "fr": "Attaque menaçante",
                     "en": "Menacing Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -854,7 +854,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Precision Attack",
+                    "fr": "Attaque de précision",
                     "en": "Precision Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -865,7 +865,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Pushing Attack",
+                    "fr": "Attaque repoussante",
                     "en": "Pushing Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -876,7 +876,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Rally",
+                    "fr": "Ralliement",
                     "en": "Rally",
                     "status": "UNOFFICIAL"
                   },
@@ -898,7 +898,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Sweeping Attack",
+                    "fr": "Attaque balayante",
                     "en": "Sweeping Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -909,7 +909,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Trip Attack",
+                    "fr": "Attaque renversante",
                     "en": "Trip Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -934,7 +934,7 @@
           "features": [
             {
               "name": {
-                "fr": "Improved Combat Superiority",
+                "fr": "Supériorité martiale améliorée",
                 "en": "Improved Combat Superiority",
                 "status": "UNOFFICIAL"
               },
@@ -944,7 +944,7 @@
           "choices": [
             {
               "name": {
-                "fr": "Manoeuvres",
+                "fr": "Manœuvres",
                 "en": "Manoeuvres",
                 "status": "UNOFFICIAL"
               },
@@ -962,7 +962,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Disarming Attack",
+                    "fr": "Attaque désarmante",
                     "en": "Disarming Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -973,7 +973,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Distracting Strike",
+                    "fr": "Frappe de diversion",
                     "en": "Distracting Strike",
                     "status": "UNOFFICIAL"
                   },
@@ -984,7 +984,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Evasive Footwork",
+                    "fr": "Jeu de jambes évasif",
                     "en": "Evasive Footwork",
                     "status": "UNOFFICIAL"
                   },
@@ -995,7 +995,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Feinting Attack",
+                    "fr": "Attaque feinte",
                     "en": "Feinting Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -1006,7 +1006,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Goading Attack",
+                    "fr": "Attaque provocatrice",
                     "en": "Goading Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -1017,7 +1017,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Manoeuvring Attack",
+                    "fr": "Attaque de manœuvre",
                     "en": "Manoeuvring Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -1028,7 +1028,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Menacing Attack",
+                    "fr": "Attaque menaçante",
                     "en": "Menacing Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -1039,7 +1039,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Precision Attack",
+                    "fr": "Attaque de précision",
                     "en": "Precision Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -1050,7 +1050,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Pushing Attack",
+                    "fr": "Attaque repoussante",
                     "en": "Pushing Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -1061,7 +1061,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Rally",
+                    "fr": "Ralliement",
                     "en": "Rally",
                     "status": "UNOFFICIAL"
                   },
@@ -1083,7 +1083,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Sweeping Attack",
+                    "fr": "Attaque balayante",
                     "en": "Sweeping Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -1094,7 +1094,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Trip Attack",
+                    "fr": "Attaque renversante",
                     "en": "Trip Attack",
                     "status": "UNOFFICIAL"
                   },
@@ -1324,7 +1324,7 @@
     "id": "subclass.beast-master",
     "type": "subclass",
     "name": {
-      "fr": "Beast Master",
+      "fr": "Maître des bêtes",
       "en": "Beast Master",
       "status": "UNOFFICIAL"
     },
@@ -1356,7 +1356,7 @@
           "features": [
             {
               "name": {
-                "fr": "Ranger’s Companion",
+                "fr": "Compagnon du rôdeur",
                 "en": "Ranger's Companion",
                 "status": "UNOFFICIAL"
               },
@@ -1369,7 +1369,7 @@
           "features": [
             {
               "name": {
-                "fr": "Companion’s Bond",
+                "fr": "Lien du compagnon",
                 "en": "Companion's Bond",
                 "status": "UNOFFICIAL"
               },
@@ -1382,7 +1382,7 @@
           "features": [
             {
               "name": {
-                "fr": "Exceptional Training",
+                "fr": "Entraînement exceptionnel",
                 "en": "Exceptional Training",
                 "status": "UNOFFICIAL"
               },
@@ -1398,7 +1398,7 @@
           "features": [
             {
               "name": {
-                "fr": "Bestial Fury",
+                "fr": "Furie bestiale",
                 "en": "Bestial Fury",
                 "status": "UNOFFICIAL"
               },
@@ -1492,7 +1492,7 @@
           "features": [
             {
               "name": {
-                "fr": "Rage Becomes Frenzy",
+                "fr": "La rage devient frénésie",
                 "en": "Rage Becomes Frenzy",
                 "status": "UNOFFICIAL"
               },
@@ -1500,15 +1500,16 @@
             },
             {
               "name": {
-                "fr": "Frenzy",
+                "fr": "Frénésie",
                 "en": "Frenzy",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.frenzy"
             },
             {
               "name": {
-                "fr": "Frenzied Strike",
+                "fr": "Frappe frénétique",
                 "en": "Frenzied Strike",
                 "status": "UNOFFICIAL"
               },
@@ -1516,7 +1517,7 @@
             },
             {
               "name": {
-                "fr": "Enraged Throw",
+                "fr": "Lancer enragé",
                 "en": "Enraged Throw",
                 "status": "UNOFFICIAL"
               },
@@ -1529,9 +1530,10 @@
           "features": [
             {
               "name": {
-                "fr": "Mindless Rage",
+                "fr": "Rage aveugle",
                 "en": "Mindless Rage",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.mindless-rage"
             }
@@ -1542,9 +1544,10 @@
           "features": [
             {
               "name": {
-                "fr": "Intimidating Presence",
+                "fr": "Présence intimidante",
                 "en": "Intimidating Presence",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.intimidating-presence"
             }
@@ -1622,7 +1625,7 @@
     "id": "subclass.bladesinging",
     "type": "subclass",
     "name": {
-      "fr": "Bladesinging",
+      "fr": "Chant de la lame",
       "en": "Bladesinging",
       "status": "UNOFFICIAL"
     },
@@ -1654,7 +1657,7 @@
           "features": [
             {
               "name": {
-                "fr": "Bladesong",
+                "fr": "Chant de la lame",
                 "en": "Bladesong",
                 "status": "UNOFFICIAL"
               },
@@ -1662,7 +1665,7 @@
             },
             {
               "name": {
-                "fr": "Training in War and Song",
+                "fr": "Formation à la guerre et au chant",
                 "en": "Training in War and Song",
                 "status": "UNOFFICIAL"
               },
@@ -1681,7 +1684,7 @@
           "features": [
             {
               "name": {
-                "fr": "Bladesong",
+                "fr": "Chant de la lame",
                 "en": "Bladesong",
                 "status": "UNOFFICIAL"
               },
@@ -1700,9 +1703,10 @@
           "features": [
             {
               "name": {
-                "fr": "Extra Attack",
+                "fr": "Attaque supplémentaire",
                 "en": "Extra Attack",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.extra-attack"
             }
@@ -1713,7 +1717,7 @@
           "features": [
             {
               "name": {
-                "fr": "Bladesong",
+                "fr": "Chant de la lame",
                 "en": "Bladesong",
                 "status": "UNOFFICIAL"
               },
@@ -1732,7 +1736,7 @@
           "features": [
             {
               "name": {
-                "fr": "Song of Defence",
+                "fr": "Chant de défense",
                 "en": "Song of Defence",
                 "status": "UNOFFICIAL"
               },
@@ -1796,7 +1800,8 @@
     "name": {
       "fr": "Champion",
       "en": "Champion",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -1826,7 +1831,7 @@
           "features": [
             {
               "name": {
-                "fr": "Improved Critical Hit",
+                "fr": "Critique amélioré",
                 "en": "Improved Critical Hit",
                 "status": "UNOFFICIAL"
               },
@@ -1839,7 +1844,7 @@
           "features": [
             {
               "name": {
-                "fr": "Remarkable Athlete: Jump",
+                "fr": "Athlète accompli : saut",
                 "en": "Remarkable Athlete: Jump",
                 "status": "UNOFFICIAL"
               },
@@ -1847,7 +1852,7 @@
             },
             {
               "name": {
-                "fr": "Remarkable Athlete: Proficiency",
+                "fr": "Athlète accompli : maîtrise",
                 "en": "Remarkable Athlete: Proficiency",
                 "status": "UNOFFICIAL"
               },
@@ -1868,23 +1873,25 @@
               "options": [
                 {
                   "name": {
-                    "fr": "Archery",
+                    "fr": "Archerie",
                     "en": "Archery",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.archery"
                 },
                 {
                   "name": {
-                    "fr": "Defence",
+                    "fr": "Défense",
                     "en": "Defence",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.defence"
                 },
                 {
                   "name": {
-                    "fr": "Duelling",
+                    "fr": "Duel",
                     "en": "Duelling",
                     "status": "UNOFFICIAL"
                   },
@@ -1892,9 +1899,10 @@
                 },
                 {
                   "name": {
-                    "fr": "Great Weapon Fighting",
+                    "fr": "Armes à deux mains",
                     "en": "Great Weapon Fighting",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.great-weapon-fighting"
                 },
@@ -2018,9 +2026,10 @@
     "id": "subclass.circle-of-the-land",
     "type": "subclass",
     "name": {
-      "fr": "Circle of the Land",
+      "fr": "Cercle de la Terre",
       "en": "Circle of the Land",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -2050,9 +2059,10 @@
           "features": [
             {
               "name": {
-                "fr": "Natural Recovery",
+                "fr": "Ressourcement",
                 "en": "Natural Recovery",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.natural-recovery"
             }
@@ -2060,7 +2070,7 @@
           "choices": [
             {
               "name": {
-                "fr": "Bonus Cantrip",
+                "fr": "Sort mineur supplémentaire",
                 "en": "Bonus Cantrip",
                 "status": "UNOFFICIAL"
               },
@@ -2134,14 +2144,14 @@
           "choices": [
             {
               "name": {
-                "fr": "2nd Level Circle of the Land Spells",
+                "fr": "Sorts de niveau 2 du Cercle de la Terre",
                 "en": "2nd Level Circle of the Land Spells",
                 "status": "UNOFFICIAL"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Arctic",
+                    "fr": "Arctique",
                     "en": "Arctic",
                     "status": "UNOFFICIAL"
                   },
@@ -2153,7 +2163,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Coast",
+                    "fr": "Côte",
                     "en": "Coast",
                     "status": "UNOFFICIAL"
                   },
@@ -2165,7 +2175,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Desert",
+                    "fr": "Désert",
                     "en": "Desert",
                     "status": "UNOFFICIAL"
                   },
@@ -2177,7 +2187,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Forest (passive feature)",
+                    "fr": "Forêt",
                     "en": "Forest (passive feature)",
                     "status": "UNOFFICIAL"
                   },
@@ -2189,7 +2199,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Grassland",
+                    "fr": "Prairie",
                     "en": "Grassland",
                     "status": "UNOFFICIAL"
                   },
@@ -2201,7 +2211,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Mountain",
+                    "fr": "Montagne",
                     "en": "Mountain",
                     "status": "UNOFFICIAL"
                   },
@@ -2213,7 +2223,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Swamp",
+                    "fr": "Marais",
                     "en": "Swamp",
                     "status": "UNOFFICIAL"
                   },
@@ -2225,9 +2235,10 @@
                 },
                 {
                   "name": {
-                    "fr": "Underdark (passive feature)",
+                    "fr": "Outreterre",
                     "en": "Underdark (passive feature)",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.underdark-passive-feature",
                   "grants": [
@@ -2250,14 +2261,14 @@
           "choices": [
             {
               "name": {
-                "fr": "3rd Level Circle of the Land Spells",
+                "fr": "Sorts de niveau 3 du Cercle de la Terre",
                 "en": "3rd Level Circle of the Land Spells",
                 "status": "UNOFFICIAL"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Arctic",
+                    "fr": "Arctique",
                     "en": "Arctic",
                     "status": "UNOFFICIAL"
                   },
@@ -2269,7 +2280,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Coast",
+                    "fr": "Côte",
                     "en": "Coast",
                     "status": "UNOFFICIAL"
                   },
@@ -2281,7 +2292,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Desert",
+                    "fr": "Désert",
                     "en": "Desert",
                     "status": "UNOFFICIAL"
                   },
@@ -2293,7 +2304,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Forest",
+                    "fr": "Forêt",
                     "en": "Forest",
                     "status": "UNOFFICIAL"
                   },
@@ -2305,7 +2316,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Grassland",
+                    "fr": "Prairie",
                     "en": "Grassland",
                     "status": "UNOFFICIAL"
                   },
@@ -2317,7 +2328,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Mountain",
+                    "fr": "Montagne",
                     "en": "Mountain",
                     "status": "UNOFFICIAL"
                   },
@@ -2329,7 +2340,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Swamp",
+                    "fr": "Marais",
                     "en": "Swamp",
                     "status": "UNOFFICIAL"
                   },
@@ -2341,9 +2352,10 @@
                 },
                 {
                   "name": {
-                    "fr": "Underdark",
+                    "fr": "Outreterre",
                     "en": "Underdark",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.underdark-passive-feature",
                   "grants": [
@@ -2366,7 +2378,7 @@
           "features": [
             {
               "name": {
-                "fr": "Land’s Stride: Difficult Terrain",
+                "fr": "Foulée de la terre : terrain difficile",
                 "en": "Land's Stride: Difficult Terrain",
                 "status": "UNOFFICIAL"
               },
@@ -2374,7 +2386,7 @@
             },
             {
               "name": {
-                "fr": "Land’s Stride: Advantage",
+                "fr": "Foulée de la terre : avantage",
                 "en": "Land's Stride: Advantage",
                 "status": "UNOFFICIAL"
               },
@@ -2382,7 +2394,7 @@
             },
             {
               "name": {
-                "fr": "Land’s Stride: Plants",
+                "fr": "Foulée de la terre : plantes",
                 "en": "Land's Stride: Plants",
                 "status": "UNOFFICIAL"
               },
@@ -2395,14 +2407,14 @@
           "choices": [
             {
               "name": {
-                "fr": "4th Level Circle of the Land Spells",
+                "fr": "Sorts de niveau 4 du Cercle de la Terre",
                 "en": "4th Level Circle of the Land Spells",
                 "status": "UNOFFICIAL"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Arctic",
+                    "fr": "Arctique",
                     "en": "Arctic",
                     "status": "UNOFFICIAL"
                   },
@@ -2414,7 +2426,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Coast",
+                    "fr": "Côte",
                     "en": "Coast",
                     "status": "UNOFFICIAL"
                   },
@@ -2426,7 +2438,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Desert",
+                    "fr": "Désert",
                     "en": "Desert",
                     "status": "UNOFFICIAL"
                   },
@@ -2438,7 +2450,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Forest",
+                    "fr": "Forêt",
                     "en": "Forest",
                     "status": "UNOFFICIAL"
                   },
@@ -2450,7 +2462,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Grassland",
+                    "fr": "Prairie",
                     "en": "Grassland",
                     "status": "UNOFFICIAL"
                   },
@@ -2462,7 +2474,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Mountain",
+                    "fr": "Montagne",
                     "en": "Mountain",
                     "status": "UNOFFICIAL"
                   },
@@ -2474,7 +2486,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Swamp",
+                    "fr": "Marais",
                     "en": "Swamp",
                     "status": "UNOFFICIAL"
                   },
@@ -2486,9 +2498,10 @@
                 },
                 {
                   "name": {
-                    "fr": "Underdark",
+                    "fr": "Outreterre",
                     "en": "Underdark",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.underdark-passive-feature",
                   "grants": [
@@ -2511,14 +2524,14 @@
           "choices": [
             {
               "name": {
-                "fr": "5th Level Circle of the Land Spells",
+                "fr": "Sorts de niveau 5 du Cercle de la Terre",
                 "en": "5th Level Circle of the Land Spells",
                 "status": "UNOFFICIAL"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Arctic",
+                    "fr": "Arctique",
                     "en": "Arctic",
                     "status": "UNOFFICIAL"
                   },
@@ -2530,7 +2543,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Coast",
+                    "fr": "Côte",
                     "en": "Coast",
                     "status": "UNOFFICIAL"
                   },
@@ -2542,7 +2555,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Desert",
+                    "fr": "Désert",
                     "en": "Desert",
                     "status": "UNOFFICIAL"
                   },
@@ -2554,7 +2567,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Forest",
+                    "fr": "Forêt",
                     "en": "Forest",
                     "status": "UNOFFICIAL"
                   },
@@ -2566,7 +2579,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Grassland",
+                    "fr": "Prairie",
                     "en": "Grassland",
                     "status": "UNOFFICIAL"
                   },
@@ -2578,7 +2591,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Mountain",
+                    "fr": "Montagne",
                     "en": "Mountain",
                     "status": "UNOFFICIAL"
                   },
@@ -2590,7 +2603,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Swamp",
+                    "fr": "Marais",
                     "en": "Swamp",
                     "status": "UNOFFICIAL"
                   },
@@ -2602,9 +2615,10 @@
                 },
                 {
                   "name": {
-                    "fr": "Underdark",
+                    "fr": "Outreterre",
                     "en": "Underdark",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.underdark-passive-feature",
                   "grants": [
@@ -2627,9 +2641,10 @@
           "features": [
             {
               "name": {
-                "fr": "Nature’s Ward",
+                "fr": "Protégé de dame Nature",
                 "en": "Nature's Ward",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.natures-ward"
             }
@@ -3220,7 +3235,7 @@
     "id": "subclass.circle-of-the-moon",
     "type": "subclass",
     "name": {
-      "fr": "Circle of the Moon",
+      "fr": "Cercle de la Lune",
       "en": "Circle of the Moon",
       "status": "UNOFFICIAL"
     },
@@ -3252,7 +3267,7 @@
           "features": [
             {
               "name": {
-                "fr": "Lunar Mend",
+                "fr": "Guérison lunaire",
                 "en": "Lunar Mend",
                 "status": "UNOFFICIAL"
               },
@@ -3260,7 +3275,7 @@
             },
             {
               "name": {
-                "fr": "Combat Wild Shape",
+                "fr": "Forme sauvage de combat",
                 "en": "Combat Wild Shape",
                 "status": "UNOFFICIAL"
               },
@@ -3268,7 +3283,7 @@
             },
             {
               "name": {
-                "fr": "Wild Shape: Bear",
+                "fr": "Forme sauvage : ours",
                 "en": "Wild Shape: Bear",
                 "status": "UNOFFICIAL"
               },
@@ -3281,7 +3296,7 @@
           "features": [
             {
               "name": {
-                "fr": "Wild Shape: Dire Raven",
+                "fr": "Forme sauvage : corbeau sanguinaire",
                 "en": "Wild Shape: Dire Raven",
                 "status": "UNOFFICIAL"
               },
@@ -3294,7 +3309,7 @@
           "features": [
             {
               "name": {
-                "fr": "Primal Strike",
+                "fr": "Frappe primitive",
                 "en": "Primal Strike",
                 "status": "UNOFFICIAL"
               },
@@ -3307,7 +3322,7 @@
           "features": [
             {
               "name": {
-                "fr": "Wild Shape: Sabre-Toothed Tiger",
+                "fr": "Forme sauvage : tigre à dents de sabre",
                 "en": "Wild Shape: Sabre-Toothed Tiger",
                 "status": "UNOFFICIAL"
               },
@@ -3320,7 +3335,7 @@
           "features": [
             {
               "name": {
-                "fr": "Wild Shape: Air Myrmidon",
+                "fr": "Forme sauvage : myrmidon d’air",
                 "en": "Wild Shape: Air Myrmidon",
                 "status": "UNOFFICIAL"
               },
@@ -3328,7 +3343,7 @@
             },
             {
               "name": {
-                "fr": "Wild Shape: Earth Myrmidon",
+                "fr": "Forme sauvage : myrmidon de terre",
                 "en": "Wild Shape: Earth Myrmidon",
                 "status": "UNOFFICIAL"
               },
@@ -3336,7 +3351,7 @@
             },
             {
               "name": {
-                "fr": "Wild Shape: Fire Myrmidon",
+                "fr": "Forme sauvage : myrmidon de feu",
                 "en": "Wild Shape: Fire Myrmidon",
                 "status": "UNOFFICIAL"
               },
@@ -3344,7 +3359,7 @@
             },
             {
               "name": {
-                "fr": "Wild Shape: Water Myrmidon",
+                "fr": "Forme sauvage : myrmidon d’eau",
                 "en": "Wild Shape: Water Myrmidon",
                 "status": "UNOFFICIAL"
               },
@@ -3460,7 +3475,7 @@
     "id": "subclass.circle-of-the-spores",
     "type": "subclass",
     "name": {
-      "fr": "Circle of the Spores",
+      "fr": "Cercle des Spores",
       "en": "Circle of the Spores",
       "status": "UNOFFICIAL"
     },
@@ -3492,7 +3507,7 @@
           "features": [
             {
               "name": {
-                "fr": "Halo of Spores",
+                "fr": "Halo de spores",
                 "en": "Halo of Spores",
                 "status": "UNOFFICIAL"
               },
@@ -3500,7 +3515,7 @@
             },
             {
               "name": {
-                "fr": "Symbiotic Entity",
+                "fr": "Entité symbiotique",
                 "en": "Symbiotic Entity",
                 "status": "UNOFFICIAL"
               },
@@ -3519,7 +3534,7 @@
           "features": [
             {
               "name": {
-                "fr": "Halo of Spores",
+                "fr": "Halo de spores",
                 "en": "Halo of Spores",
                 "status": "UNOFFICIAL"
               },
@@ -3527,7 +3542,7 @@
             },
             {
               "name": {
-                "fr": "Fungal Infestation",
+                "fr": "Infestation fongique",
                 "en": "Fungal Infestation",
                 "status": "UNOFFICIAL"
               },
@@ -3546,7 +3561,7 @@
           "features": [
             {
               "name": {
-                "fr": "Halo of Spores",
+                "fr": "Halo de spores",
                 "en": "Halo of Spores",
                 "status": "UNOFFICIAL"
               },
@@ -3554,7 +3569,7 @@
             },
             {
               "name": {
-                "fr": "Spreading Spores",
+                "fr": "Propagation des spores",
                 "en": "Spreading Spores",
                 "status": "UNOFFICIAL"
               },
@@ -3616,7 +3631,7 @@
     "id": "subclass.circle-of-the-stars",
     "type": "subclass",
     "name": {
-      "fr": "Circle of the Stars",
+      "fr": "Cercle des Étoiles",
       "en": "Circle of the Stars",
       "status": "UNOFFICIAL"
     },
@@ -3648,7 +3663,7 @@
           "features": [
             {
               "name": {
-                "fr": "Starry Form",
+                "fr": "Forme étoilée",
                 "en": "Starry Form",
                 "status": "UNOFFICIAL"
               },
@@ -3656,7 +3671,7 @@
             },
             {
               "name": {
-                "fr": "Starry Form: Archer",
+                "fr": "Forme étoilée : archer",
                 "en": "Starry Form: Archer",
                 "status": "UNOFFICIAL"
               },
@@ -3664,7 +3679,7 @@
             },
             {
               "name": {
-                "fr": "Starry Form: Chalice",
+                "fr": "Forme étoilée : calice",
                 "en": "Starry Form: Chalice",
                 "status": "UNOFFICIAL"
               },
@@ -3672,7 +3687,7 @@
             },
             {
               "name": {
-                "fr": "Chalice Healing",
+                "fr": "Soins du calice",
                 "en": "Chalice Healing",
                 "status": "UNOFFICIAL"
               },
@@ -3680,7 +3695,7 @@
             },
             {
               "name": {
-                "fr": "Starry Form: Dragon",
+                "fr": "Forme étoilée : dragon",
                 "en": "Starry Form: Dragon",
                 "status": "UNOFFICIAL"
               },
@@ -3688,7 +3703,7 @@
             },
             {
               "name": {
-                "fr": "Dazzling Breath",
+                "fr": "Souffle éblouissant",
                 "en": "Dazzling Breath",
                 "status": "UNOFFICIAL"
               },
@@ -3707,7 +3722,7 @@
           "features": [
             {
               "name": {
-                "fr": "Dazzling Breath",
+                "fr": "Souffle éblouissant",
                 "en": "Dazzling Breath",
                 "status": "UNOFFICIAL"
               },
@@ -3726,7 +3741,7 @@
           "features": [
             {
               "name": {
-                "fr": "Cosmic Omen",
+                "fr": "Augure cosmique",
                 "en": "Cosmic Omen",
                 "status": "UNOFFICIAL"
               },
@@ -3734,28 +3749,28 @@
             },
             {
               "name": {
-                "fr": "Cosmic Omen of Weal: Attack Roll",
+                "fr": "Augure cosmique faste : jet d’attaque",
                 "en": "Cosmic Omen of Weal: Attack Roll",
                 "status": "UNOFFICIAL"
               }
             },
             {
               "name": {
-                "fr": "Cosmic Omen of Woe: Attack Roll",
+                "fr": "Augure cosmique néfaste : jet d’attaque",
                 "en": "Cosmic Omen of Woe: Attack Roll",
                 "status": "UNOFFICIAL"
               }
             },
             {
               "name": {
-                "fr": "Cosmic Omen of Weal: Saving Throw",
+                "fr": "Augure cosmique faste : jet de sauvegarde",
                 "en": "Cosmic Omen of Weal: Saving Throw",
                 "status": "UNOFFICIAL"
               }
             },
             {
               "name": {
-                "fr": "Cosmic Omen of Woe: Saving Throw",
+                "fr": "Augure cosmique néfaste : jet de sauvegarde",
                 "en": "Cosmic Omen of Woe: Saving Throw",
                 "status": "UNOFFICIAL"
               }
@@ -3786,7 +3801,7 @@
           "features": [
             {
               "name": {
-                "fr": "Twinkling Constellations",
+                "fr": "Constellations scintillantes",
                 "en": "Twinkling Constellations",
                 "status": "UNOFFICIAL"
               },
@@ -3794,7 +3809,7 @@
             },
             {
               "name": {
-                "fr": "Starry Form: Archer",
+                "fr": "Forme étoilée : archer",
                 "en": "Starry Form: Archer",
                 "status": "UNOFFICIAL"
               },
@@ -3802,7 +3817,7 @@
             },
             {
               "name": {
-                "fr": "Starry Form: Chalice",
+                "fr": "Forme étoilée : calice",
                 "en": "Starry Form: Chalice",
                 "status": "UNOFFICIAL"
               },
@@ -3810,7 +3825,7 @@
             },
             {
               "name": {
-                "fr": "Chalice Healing",
+                "fr": "Soins du calice",
                 "en": "Chalice Healing",
                 "status": "UNOFFICIAL"
               },
@@ -3818,7 +3833,7 @@
             },
             {
               "name": {
-                "fr": "Starry Form: Dragon",
+                "fr": "Forme étoilée : dragon",
                 "en": "Starry Form: Dragon",
                 "status": "UNOFFICIAL"
               },
@@ -3826,7 +3841,7 @@
             },
             {
               "name": {
-                "fr": "Dazzling Breath",
+                "fr": "Souffle éblouissant",
                 "en": "Dazzling Breath",
                 "status": "UNOFFICIAL"
               },
@@ -3834,7 +3849,7 @@
             },
             {
               "name": {
-                "fr": "Fly",
+                "fr": "Vol",
                 "en": "Fly",
                 "status": "UNOFFICIAL"
               },
@@ -3941,7 +3956,7 @@
     "id": "subclass.college-of-glamour",
     "type": "subclass",
     "name": {
-      "fr": "College of Glamour",
+      "fr": "Collège de la Séduction",
       "en": "College of Glamour",
       "status": "UNOFFICIAL"
     },
@@ -3973,7 +3988,7 @@
           "features": [
             {
               "name": {
-                "fr": "Mantle of Inspiration",
+                "fr": "Manteau d’inspiration",
                 "en": "Mantle of Inspiration",
                 "status": "UNOFFICIAL"
               },
@@ -3986,7 +4001,7 @@
           "features": [
             {
               "name": {
-                "fr": "Mantle of Majesty: Command",
+                "fr": "Manteau de majesté : injonction",
                 "en": "Mantle of Majesty: Command",
                 "status": "UNOFFICIAL"
               },
@@ -3994,7 +4009,7 @@
             },
             {
               "name": {
-                "fr": "Mantle of Inspiration",
+                "fr": "Manteau d’inspiration",
                 "en": "Mantle of Inspiration",
                 "status": "UNOFFICIAL"
               }
@@ -4006,7 +4021,7 @@
           "features": [
             {
               "name": {
-                "fr": "Mantle of Inspiration",
+                "fr": "Manteau d’inspiration",
                 "en": "Mantle of Inspiration",
                 "status": "UNOFFICIAL"
               }
@@ -4049,9 +4064,10 @@
     "id": "subclass.college-of-lore",
     "type": "subclass",
     "name": {
-      "fr": "College of Lore",
+      "fr": "Collège du Savoir",
       "en": "College of Lore",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -4081,9 +4097,10 @@
           "features": [
             {
               "name": {
-                "fr": "Cutting Words",
+                "fr": "Mots cinglants",
                 "en": "Cutting Words",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.cutting-words"
             }
@@ -4129,7 +4146,7 @@
     "id": "subclass.college-of-swords",
     "type": "subclass",
     "name": {
-      "fr": "College of Swords",
+      "fr": "Collège des Épées",
       "en": "College of Swords",
       "status": "UNOFFICIAL"
     },
@@ -4169,7 +4186,7 @@
           "features": [
             {
               "name": {
-                "fr": "Duelling",
+                "fr": "Duel",
                 "en": "Duelling",
                 "status": "UNOFFICIAL"
               },
@@ -4191,9 +4208,10 @@
           "features": [
             {
               "name": {
-                "fr": "Extra Attack",
+                "fr": "Attaque supplémentaire",
                 "en": "Extra Attack",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.extra-attack"
             }
@@ -4244,7 +4262,7 @@
     "id": "subclass.college-of-valour",
     "type": "subclass",
     "name": {
-      "fr": "College of Valour",
+      "fr": "Collège de la Vaillance",
       "en": "College of Valour",
       "status": "UNOFFICIAL"
     },
@@ -4276,7 +4294,7 @@
           "features": [
             {
               "name": {
-                "fr": "Combat Inspiration",
+                "fr": "Inspiration martiale",
                 "en": "Combat Inspiration",
                 "status": "UNOFFICIAL"
               },
@@ -4289,9 +4307,10 @@
           "features": [
             {
               "name": {
-                "fr": "Extra Attack",
+                "fr": "Attaque supplémentaire",
                 "en": "Extra Attack",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.extra-attack"
             }
@@ -4333,7 +4352,7 @@
     "id": "subclass.conjuration-school",
     "type": "subclass",
     "name": {
-      "fr": "Conjuration School",
+      "fr": "École d’Invocation",
       "en": "Conjuration School",
       "status": "UNOFFICIAL"
     },
@@ -4365,14 +4384,14 @@
           "features": [
             {
               "name": {
-                "fr": "Conjuration Savant",
+                "fr": "Invocateur érudit",
                 "en": "Conjuration Savant",
                 "status": "UNOFFICIAL"
               }
             },
             {
               "name": {
-                "fr": "Minor Conjuration: Create Water",
+                "fr": "Invocation mineure : création d’eau",
                 "en": "Minor Conjuration: Create Water",
                 "status": "UNOFFICIAL"
               },
@@ -4385,7 +4404,7 @@
           "features": [
             {
               "name": {
-                "fr": "Benign Transposition: Teleport",
+                "fr": "Transposition bénigne : téléportation",
                 "en": "Benign Transposition: Teleport",
                 "status": "UNOFFICIAL"
               },
@@ -4398,7 +4417,7 @@
           "features": [
             {
               "name": {
-                "fr": "Focused Conjuration",
+                "fr": "Invocation concentrée",
                 "en": "Focused Conjuration",
                 "status": "UNOFFICIAL"
               },
@@ -4451,7 +4470,7 @@
     "id": "subclass.death-domain",
     "type": "subclass",
     "name": {
-      "fr": "Death Domain",
+      "fr": "Domaine de la Mort",
       "en": "Death Domain",
       "status": "UNOFFICIAL"
     },
@@ -4486,7 +4505,7 @@
           "features": [
             {
               "name": {
-                "fr": "Reaper",
+                "fr": "Faucheur",
                 "en": "Reaper",
                 "status": "UNOFFICIAL"
               },
@@ -4521,7 +4540,7 @@
           "features": [
             {
               "name": {
-                "fr": "Touch of Death",
+                "fr": "Toucher de la mort",
                 "en": "Touch of Death",
                 "status": "UNOFFICIAL"
               }
@@ -4559,7 +4578,7 @@
           "features": [
             {
               "name": {
-                "fr": "Inescapable Destruction",
+                "fr": "Destruction inéluctable",
                 "en": "Inescapable Destruction",
                 "status": "UNOFFICIAL"
               },
@@ -4585,7 +4604,7 @@
           "features": [
             {
               "name": {
-                "fr": "Divine Strike: Necrotic",
+                "fr": "Frappe divine : nécrotique",
                 "en": "Divine Strike: Necrotic",
                 "status": "UNOFFICIAL"
               },
@@ -4768,7 +4787,7 @@
     "id": "subclass.divination-school",
     "type": "subclass",
     "name": {
-      "fr": "Divination School",
+      "fr": "École de Divination",
       "en": "Divination School",
       "status": "UNOFFICIAL"
     },
@@ -4800,14 +4819,14 @@
           "features": [
             {
               "name": {
-                "fr": "Divination Savant",
+                "fr": "Devin érudit",
                 "en": "Divination Savant",
                 "status": "UNOFFICIAL"
               }
             },
             {
               "name": {
-                "fr": "Portent",
+                "fr": "Présage",
                 "en": "Portent",
                 "status": "UNOFFICIAL"
               },
@@ -4820,7 +4839,7 @@
           "features": [
             {
               "name": {
-                "fr": "Expert Divination",
+                "fr": "Divination experte",
                 "en": "Expert Divination",
                 "status": "UNOFFICIAL"
               },
@@ -4833,7 +4852,7 @@
           "features": [
             {
               "name": {
-                "fr": "Third Eye: Darkvision",
+                "fr": "Troisième œil : vision dans le noir",
                 "en": "Third Eye: Darkvision",
                 "status": "UNOFFICIAL"
               },
@@ -4841,7 +4860,7 @@
             },
             {
               "name": {
-                "fr": "Third Eye: See Invisibility",
+                "fr": "Troisième œil : voir l’invisible",
                 "en": "Third Eye: See Invisibility",
                 "status": "UNOFFICIAL"
               },
@@ -4903,7 +4922,7 @@
     "id": "subclass.draconic-bloodline",
     "type": "subclass",
     "name": {
-      "fr": "Draconic Bloodline",
+      "fr": "Lignée draconique",
       "en": "Draconic Bloodline",
       "status": "UNOFFICIAL"
     },
@@ -4935,15 +4954,16 @@
           "features": [
             {
               "name": {
-                "fr": "Draconic Resilience",
+                "fr": "Résistance draconique",
                 "en": "Draconic Resilience",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.draconic-resilience"
             },
             {
               "name": {
-                "fr": "Draconic Resilience: Hit Points",
+                "fr": "Résistance draconique : points de vie",
                 "en": "Draconic Resilience: Hit Points",
                 "status": "UNOFFICIAL"
               }
@@ -4952,14 +4972,15 @@
           "choices": [
             {
               "name": {
-                "fr": "Draconic Ancestry",
+                "fr": "Ascendance draconique",
                 "en": "Draconic Ancestry",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Black",
+                    "fr": "Ascendance draconique : noir (acide)",
                     "en": "Black",
                     "status": "UNOFFICIAL"
                   },
@@ -4970,7 +4991,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Blue",
+                    "fr": "Ascendance draconique : bleu (foudre)",
                     "en": "Blue",
                     "status": "UNOFFICIAL"
                   },
@@ -4981,7 +5002,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Brass",
+                    "fr": "Ascendance draconique : airain (feu)",
                     "en": "Brass",
                     "status": "UNOFFICIAL"
                   },
@@ -4992,7 +5013,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Bronze",
+                    "fr": "Ascendance draconique : bronze (foudre)",
                     "en": "Bronze",
                     "status": "UNOFFICIAL"
                   },
@@ -5003,7 +5024,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Copper",
+                    "fr": "Ascendance draconique : cuivre (acide)",
                     "en": "Copper",
                     "status": "UNOFFICIAL"
                   },
@@ -5014,7 +5035,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Gold",
+                    "fr": "Ascendance draconique : or (feu)",
                     "en": "Gold",
                     "status": "UNOFFICIAL"
                   },
@@ -5025,7 +5046,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Green",
+                    "fr": "Ascendance draconique : vert (poison)",
                     "en": "Green",
                     "status": "UNOFFICIAL"
                   },
@@ -5036,7 +5057,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Red",
+                    "fr": "Ascendance draconique : rouge (feu)",
                     "en": "Red",
                     "status": "UNOFFICIAL"
                   },
@@ -5047,7 +5068,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Silver",
+                    "fr": "Ascendance draconique : argent (froid)",
                     "en": "Silver",
                     "status": "UNOFFICIAL"
                   },
@@ -5058,7 +5079,7 @@
                 },
                 {
                   "name": {
-                    "fr": "White",
+                    "fr": "Ascendance draconique : blanc (froid)",
                     "en": "White",
                     "status": "UNOFFICIAL"
                   },
@@ -5076,7 +5097,7 @@
           "features": [
             {
               "name": {
-                "fr": "Elemental Affinity: Damage",
+                "fr": "Affinité élémentaire : dégâts",
                 "en": "Elemental Affinity: Damage",
                 "status": "UNOFFICIAL"
               },
@@ -5084,7 +5105,7 @@
             },
             {
               "name": {
-                "fr": "Elemental Affinity: Resistance",
+                "fr": "Affinité élémentaire : résistance",
                 "en": "Elemental Affinity: Resistance",
                 "status": "UNOFFICIAL"
               },
@@ -5097,7 +5118,7 @@
           "features": [
             {
               "name": {
-                "fr": "Fly (class action)",
+                "fr": "Vol",
                 "en": "Fly (class action)",
                 "status": "UNOFFICIAL"
               },
@@ -5339,7 +5360,7 @@
     "id": "subclass.eldritch-knight",
     "type": "subclass",
     "name": {
-      "fr": "Eldritch Knight",
+      "fr": "Chevalier occulte",
       "en": "Eldritch Knight",
       "status": "UNOFFICIAL"
     },
@@ -5371,7 +5392,7 @@
           "features": [
             {
               "name": {
-                "fr": "Weapon Bond",
+                "fr": "Lien avec l’arme",
                 "en": "Weapon Bond",
                 "status": "UNOFFICIAL"
               },
@@ -5399,7 +5420,7 @@
           "features": [
             {
               "name": {
-                "fr": "War Magic",
+                "fr": "Magie de guerre",
                 "en": "War Magic",
                 "status": "UNOFFICIAL"
               },
@@ -5422,7 +5443,7 @@
           "features": [
             {
               "name": {
-                "fr": "Eldritch Strike",
+                "fr": "Frappe occulte",
                 "en": "Eldritch Strike",
                 "status": "UNOFFICIAL"
               },
@@ -5484,7 +5505,7 @@
     "id": "subclass.enchantment-school",
     "type": "subclass",
     "name": {
-      "fr": "Enchantment School",
+      "fr": "École d’Enchantement",
       "en": "Enchantment School",
       "status": "UNOFFICIAL"
     },
@@ -5516,14 +5537,14 @@
           "features": [
             {
               "name": {
-                "fr": "Enchantment Savant",
+                "fr": "Enchanteur érudit",
                 "en": "Enchantment Savant",
                 "status": "UNOFFICIAL"
               }
             },
             {
               "name": {
-                "fr": "Hypnotic Gaze",
+                "fr": "Regard hypnotique",
                 "en": "Hypnotic Gaze",
                 "status": "UNOFFICIAL"
               },
@@ -5536,7 +5557,7 @@
           "features": [
             {
               "name": {
-                "fr": "Instinctive Charm",
+                "fr": "Charme instinctif",
                 "en": "Instinctive Charm",
                 "status": "UNOFFICIAL"
               },
@@ -5549,7 +5570,7 @@
           "features": [
             {
               "name": {
-                "fr": "Split Enchantment",
+                "fr": "Enchantement partagé",
                 "en": "Split Enchantment",
                 "status": "UNOFFICIAL"
               },
@@ -5602,7 +5623,7 @@
     "id": "subclass.evocation-school",
     "type": "subclass",
     "name": {
-      "fr": "Evocation School",
+      "fr": "École d’Évocation",
       "en": "Evocation School",
       "status": "UNOFFICIAL"
     },
@@ -5634,16 +5655,18 @@
           "features": [
             {
               "name": {
-                "fr": "Evocation Savant",
+                "fr": "Évocateur érudit",
                 "en": "Evocation Savant",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               }
             },
             {
               "name": {
-                "fr": "Sculpt Spells",
+                "fr": "Façonneur de sorts",
                 "en": "Sculpt Spells",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.sculpt-spells"
             }
@@ -5654,9 +5677,10 @@
           "features": [
             {
               "name": {
-                "fr": "Potent Cantrip",
+                "fr": "Sort mineur appuyé",
                 "en": "Potent Cantrip",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.potent-cantrip"
             }
@@ -5667,9 +5691,10 @@
           "features": [
             {
               "name": {
-                "fr": "Empowered Evocation",
+                "fr": "Évocation améliorée",
                 "en": "Empowered Evocation",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.empowered-evocation"
             }
@@ -5720,7 +5745,7 @@
     "id": "subclass.giant",
     "type": "subclass",
     "name": {
-      "fr": "Giant",
+      "fr": "Géant",
       "en": "Giant",
       "status": "UNOFFICIAL"
     },
@@ -5752,7 +5777,7 @@
           "features": [
             {
               "name": {
-                "fr": "Giant’s Rage",
+                "fr": "Rage du géant",
                 "en": "Giant's Rage",
                 "status": "UNOFFICIAL"
               },
@@ -5760,7 +5785,7 @@
             },
             {
               "name": {
-                "fr": "Vaprak’s Greed",
+                "fr": "Avidité de Vaprak",
                 "en": "Vaprak's Greed",
                 "status": "UNOFFICIAL"
               },
@@ -5779,7 +5804,7 @@
           "features": [
             {
               "name": {
-                "fr": "Boot of the Giants",
+                "fr": "Coup de botte des géants",
                 "en": "Boot of the Giants",
                 "status": "UNOFFICIAL"
               },
@@ -5792,7 +5817,7 @@
           "features": [
             {
               "name": {
-                "fr": "Elemental Cleaver",
+                "fr": "Fendoir élémentaire",
                 "en": "Elemental Cleaver",
                 "status": "UNOFFICIAL"
               },
@@ -5805,7 +5830,7 @@
           "features": [
             {
               "name": {
-                "fr": "Mighty Impel",
+                "fr": "Projection puissante",
                 "en": "Mighty Impel",
                 "status": "UNOFFICIAL"
               },
@@ -5885,7 +5910,7 @@
     "id": "subclass.gloom-stalker",
     "type": "subclass",
     "name": {
-      "fr": "Gloom Stalker",
+      "fr": "Traqueur des ténèbres",
       "en": "Gloom Stalker",
       "status": "UNOFFICIAL"
     },
@@ -5917,7 +5942,7 @@
           "features": [
             {
               "name": {
-                "fr": "Umbral Shroud",
+                "fr": "Linceul ombral",
                 "en": "Umbral Shroud",
                 "status": "UNOFFICIAL"
               },
@@ -5925,7 +5950,7 @@
             },
             {
               "name": {
-                "fr": "Superior Darkvision",
+                "fr": "Vision dans le noir supérieure",
                 "en": "Superior Darkvision",
                 "status": "UNOFFICIAL"
               },
@@ -5933,7 +5958,7 @@
             },
             {
               "name": {
-                "fr": "Dread Ambusher",
+                "fr": "Embusqué redoutable",
                 "en": "Dread Ambusher",
                 "status": "UNOFFICIAL"
               },
@@ -5941,7 +5966,7 @@
             },
             {
               "name": {
-                "fr": "Dread Ambusher (Melee)",
+                "fr": "Embusqué redoutable (corps à corps)",
                 "en": "Dread Ambusher (Melee)",
                 "status": "UNOFFICIAL"
               },
@@ -5949,7 +5974,7 @@
             },
             {
               "name": {
-                "fr": "Dread Ambusher (Ranged)",
+                "fr": "Embusqué redoutable (à distance)",
                 "en": "Dread Ambusher (Ranged)",
                 "status": "UNOFFICIAL"
               },
@@ -5957,7 +5982,7 @@
             },
             {
               "name": {
-                "fr": "Dread Ambusher: Hide",
+                "fr": "Embusqué redoutable : furtivité",
                 "en": "Dread Ambusher: Hide",
                 "status": "UNOFFICIAL"
               },
@@ -5973,7 +5998,7 @@
           "features": [
             {
               "name": {
-                "fr": "Iron Mind",
+                "fr": "Esprit de fer",
                 "en": "Iron Mind",
                 "status": "UNOFFICIAL"
               },
@@ -5989,7 +6014,7 @@
           "features": [
             {
               "name": {
-                "fr": "Stalker’s Flurry",
+                "fr": "Rafale du traqueur",
                 "en": "Stalker's Flurry",
                 "status": "UNOFFICIAL"
               },
@@ -6087,9 +6112,10 @@
     "id": "subclass.hunter",
     "type": "subclass",
     "name": {
-      "fr": "Hunter",
+      "fr": "Chasseur",
       "en": "Hunter",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -6119,22 +6145,24 @@
           "choices": [
             {
               "name": {
-                "fr": "Hunter’s Prey",
+                "fr": "Proie du chasseur",
                 "en": "Hunter's Prey",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Colossus Slayer",
+                    "fr": "Goût du sang",
                     "en": "Colossus Slayer",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.colossus-slayer"
                 },
                 {
                   "name": {
-                    "fr": "Giant Killer",
+                    "fr": "Tueur de géants",
                     "en": "Giant Killer",
                     "status": "UNOFFICIAL"
                   },
@@ -6142,9 +6170,10 @@
                 },
                 {
                   "name": {
-                    "fr": "Horde Breaker",
+                    "fr": "Briseur de hordes",
                     "en": "Horde Breaker",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.horde-breaker",
                   "grants": [
@@ -6161,16 +6190,18 @@
           "choices": [
             {
               "name": {
-                "fr": "Defensive Tactics",
+                "fr": "Tactiques défensives",
                 "en": "Defensive Tactics",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Escape the Horde",
+                    "fr": "Cauchemar de la horde",
                     "en": "Escape the Horde",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.escape-the-horde",
                   "grants": [
@@ -6179,7 +6210,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Steel Will",
+                    "fr": "Volonté d’acier",
                     "en": "Steel Will",
                     "status": "UNOFFICIAL"
                   },
@@ -6187,9 +6218,10 @@
                 },
                 {
                   "name": {
-                    "fr": "Multiattack Defence",
+                    "fr": "Défense contre les attaques multiples",
                     "en": "Multiattack Defence",
-                    "status": "UNOFFICIAL"
+                    "status": "VF_DND",
+                    "source": "srd-5.2.1-fr"
                   },
                   "id": "feature.multiattack-defence"
                 }
@@ -6202,7 +6234,7 @@
           "features": [
             {
               "name": {
-                "fr": "Volley",
+                "fr": "Volée",
                 "en": "Volley",
                 "status": "UNOFFICIAL"
               },
@@ -6210,7 +6242,7 @@
             },
             {
               "name": {
-                "fr": "Whirlwind Attack",
+                "fr": "Attaque tourbillonnante",
                 "en": "Whirlwind Attack",
                 "status": "UNOFFICIAL"
               },
@@ -6335,7 +6367,7 @@
     "id": "subclass.illusion-school",
     "type": "subclass",
     "name": {
-      "fr": "Illusion School",
+      "fr": "École d’Illusion",
       "en": "Illusion School",
       "status": "UNOFFICIAL"
     },
@@ -6367,14 +6399,14 @@
           "features": [
             {
               "name": {
-                "fr": "Illusion Savant",
+                "fr": "Illusionniste érudit",
                 "en": "Illusion Savant",
                 "status": "UNOFFICIAL"
               }
             },
             {
               "name": {
-                "fr": "Improved Minor Illusion (passive feature)",
+                "fr": "Illusion mineure améliorée",
                 "en": "Improved Minor Illusion (passive feature)",
                 "status": "UNOFFICIAL"
               },
@@ -6387,9 +6419,10 @@
           "features": [
             {
               "name": {
-                "fr": "See Invisibility (class action)",
+                "fr": "Voir l’invisible",
                 "en": "See Invisibility (class action)",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "aidedd"
               },
               "id": "feature.see-invisibility-class-action"
             }
@@ -6400,7 +6433,7 @@
           "features": [
             {
               "name": {
-                "fr": "Illusory Self",
+                "fr": "Double illusoire",
                 "en": "Illusory Self",
                 "status": "UNOFFICIAL"
               },
@@ -6453,7 +6486,7 @@
     "id": "subclass.knowledge-domain",
     "type": "subclass",
     "name": {
-      "fr": "Knowledge Domain",
+      "fr": "Domaine du Savoir",
       "en": "Knowledge Domain",
       "status": "UNOFFICIAL"
     },
@@ -6485,7 +6518,7 @@
           "features": [
             {
               "name": {
-                "fr": "Blessings of Knowledge",
+                "fr": "Bénédictions du savoir",
                 "en": "Blessings of Knowledge",
                 "status": "UNOFFICIAL"
               },
@@ -6508,7 +6541,7 @@
           "features": [
             {
               "name": {
-                "fr": "Knowledge of the Ages",
+                "fr": "Savoir des âges",
                 "en": "Knowledge of the Ages",
                 "status": "UNOFFICIAL"
               },
@@ -6547,7 +6580,7 @@
           "features": [
             {
               "name": {
-                "fr": "Read Thoughts",
+                "fr": "Lecture des pensées",
                 "en": "Read Thoughts",
                 "status": "UNOFFICIAL"
               },
@@ -6555,9 +6588,10 @@
             },
             {
               "name": {
-                "fr": "Speak With Animals (cleric)",
+                "fr": "Communication avec les animaux",
                 "en": "Speak With Animals (cleric)",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "aidedd"
               },
               "id": "feature.speak-with-animals-cleric"
             }
@@ -6581,7 +6615,7 @@
           "features": [
             {
               "name": {
-                "fr": "Potent Spellcasting",
+                "fr": "Incantation puissante",
                 "en": "Potent Spellcasting",
                 "status": "UNOFFICIAL"
               },
@@ -6755,9 +6789,10 @@
     "id": "subclass.life-domain",
     "type": "subclass",
     "name": {
-      "fr": "Life Domain",
+      "fr": "Domaine de la Vie",
       "en": "Life Domain",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -6792,9 +6827,10 @@
           "features": [
             {
               "name": {
-                "fr": "Disciple of Life",
+                "fr": "Disciple de la Vie",
                 "en": "Disciple of Life",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.disciple-of-life"
             }
@@ -6815,9 +6851,10 @@
           "features": [
             {
               "name": {
-                "fr": "Preserve Life",
+                "fr": "Survivance",
                 "en": "Preserve Life",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.preserve-life"
             }
@@ -6854,9 +6891,10 @@
           "features": [
             {
               "name": {
-                "fr": "Blessed Healer",
+                "fr": "Guérisseur béni",
                 "en": "Blessed Healer",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.blessed-healer"
             }
@@ -6880,7 +6918,7 @@
           "features": [
             {
               "name": {
-                "fr": "Divine Strike: Radiant",
+                "fr": "Frappe divine : radiant",
                 "en": "Divine Strike: Radiant",
                 "status": "UNOFFICIAL"
               },
@@ -7045,7 +7083,7 @@
     "id": "subclass.light-domain",
     "type": "subclass",
     "name": {
-      "fr": "Light Domain",
+      "fr": "Domaine de la Lumière",
       "en": "Light Domain",
       "status": "UNOFFICIAL"
     },
@@ -7077,7 +7115,7 @@
           "features": [
             {
               "name": {
-                "fr": "Warding Flare",
+                "fr": "Éclat protecteur",
                 "en": "Warding Flare",
                 "status": "UNOFFICIAL"
               },
@@ -7104,7 +7142,7 @@
           "features": [
             {
               "name": {
-                "fr": "Radiance of the Dawn",
+                "fr": "Rayonnement de l’aube",
                 "en": "Radiance of the Dawn",
                 "status": "UNOFFICIAL"
               },
@@ -7143,7 +7181,7 @@
           "features": [
             {
               "name": {
-                "fr": "Improved Warding Flare",
+                "fr": "Éclat protecteur amélioré",
                 "en": "Improved Warding Flare",
                 "status": "UNOFFICIAL"
               },
@@ -7169,7 +7207,7 @@
           "features": [
             {
               "name": {
-                "fr": "Potent Spellcasting",
+                "fr": "Incantation puissante",
                 "en": "Potent Spellcasting",
                 "status": "UNOFFICIAL"
               },
@@ -7343,7 +7381,7 @@
     "id": "subclass.nature-domain",
     "type": "subclass",
     "name": {
-      "fr": "Nature Domain",
+      "fr": "Domaine de la Nature",
       "en": "Nature Domain",
       "status": "UNOFFICIAL"
     },
@@ -7380,7 +7418,7 @@
           "features": [
             {
               "name": {
-                "fr": "Acolyte of Nature",
+                "fr": "Acolyte de la nature",
                 "en": "Acolyte of Nature",
                 "status": "UNOFFICIAL"
               },
@@ -7403,7 +7441,7 @@
           "features": [
             {
               "name": {
-                "fr": "Charm Animals and Plants",
+                "fr": "Charme des animaux et des plantes",
                 "en": "Charm Animals and Plants",
                 "status": "UNOFFICIAL"
               },
@@ -7442,7 +7480,7 @@
           "features": [
             {
               "name": {
-                "fr": "Dampen Elements",
+                "fr": "Atténuation des éléments",
                 "en": "Dampen Elements",
                 "status": "UNOFFICIAL"
               },
@@ -7468,7 +7506,7 @@
           "features": [
             {
               "name": {
-                "fr": "Divine Strike: Elemental Fury",
+                "fr": "Frappe divine : fureur élémentaire",
                 "en": "Divine Strike: Elemental Fury",
                 "status": "UNOFFICIAL"
               },
@@ -7633,7 +7671,7 @@
     "id": "subclass.necromancy-school",
     "type": "subclass",
     "name": {
-      "fr": "Necromancy School",
+      "fr": "École de Nécromancie",
       "en": "Necromancy School",
       "status": "UNOFFICIAL"
     },
@@ -7665,14 +7703,14 @@
           "features": [
             {
               "name": {
-                "fr": "Necromancy Savant",
+                "fr": "Nécromancien érudit",
                 "en": "Necromancy Savant",
                 "status": "UNOFFICIAL"
               }
             },
             {
               "name": {
-                "fr": "Grim Harvest",
+                "fr": "Sinistre moisson",
                 "en": "Grim Harvest",
                 "status": "UNOFFICIAL"
               },
@@ -7685,7 +7723,7 @@
           "features": [
             {
               "name": {
-                "fr": "Undead Thralls: Animate Dead",
+                "fr": "Serviteurs morts-vivants : animation des morts",
                 "en": "Undead Thralls: Animate Dead",
                 "status": "UNOFFICIAL"
               },
@@ -7693,7 +7731,7 @@
             },
             {
               "name": {
-                "fr": "Undead Thralls: Additional Undead",
+                "fr": "Serviteurs morts-vivants : mort-vivant supplémentaire",
                 "en": "Undead Thralls: Additional Undead",
                 "status": "UNOFFICIAL"
               },
@@ -7701,7 +7739,7 @@
             },
             {
               "name": {
-                "fr": "Undead Thralls: Better Summons",
+                "fr": "Serviteurs morts-vivants : invocations améliorées",
                 "en": "Undead Thralls: Better Summons",
                 "status": "UNOFFICIAL"
               },
@@ -7714,7 +7752,7 @@
           "features": [
             {
               "name": {
-                "fr": "Inured to Undeath",
+                "fr": "Endurci à la non-mort",
                 "en": "Inured to Undeath",
                 "status": "UNOFFICIAL"
               },
@@ -7785,9 +7823,10 @@
     "id": "subclass.oath-of-devotion",
     "type": "subclass",
     "name": {
-      "fr": "Oath of Devotion",
+      "fr": "Serment de Dévotion",
       "en": "Oath of Devotion",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -7817,7 +7856,7 @@
           "features": [
             {
               "name": {
-                "fr": "Oath of Devotion Tenets",
+                "fr": "Préceptes du serment de dévotion",
                 "en": "Oath of Devotion Tenets",
                 "status": "UNOFFICIAL"
               },
@@ -7825,7 +7864,7 @@
             },
             {
               "name": {
-                "fr": "Holy Rebuke",
+                "fr": "Représailles sacrées",
                 "en": "Holy Rebuke",
                 "status": "UNOFFICIAL"
               },
@@ -7838,15 +7877,16 @@
           "features": [
             {
               "name": {
-                "fr": "Sacred Weapon",
+                "fr": "Arme sacrée",
                 "en": "Sacred Weapon",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.sacred-weapon"
             },
             {
               "name": {
-                "fr": "Turn the Unholy",
+                "fr": "Renvoi des impies",
                 "en": "Turn the Unholy",
                 "status": "UNOFFICIAL"
               },
@@ -7882,9 +7922,10 @@
           "features": [
             {
               "name": {
-                "fr": "Aura of Devotion",
+                "fr": "Aura de dévotion",
                 "en": "Aura of Devotion",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.aura-of-devotion"
             }
@@ -8020,7 +8061,7 @@
     "id": "subclass.oath-of-the-ancients",
     "type": "subclass",
     "name": {
-      "fr": "Oath of the Ancients",
+      "fr": "Serment des Anciens",
       "en": "Oath of the Ancients",
       "status": "UNOFFICIAL"
     },
@@ -8052,7 +8093,7 @@
           "features": [
             {
               "name": {
-                "fr": "Oath of the Ancients Tenets",
+                "fr": "Préceptes du serment des anciens",
                 "en": "Oath of the Ancients Tenets",
                 "status": "UNOFFICIAL"
               },
@@ -8060,7 +8101,7 @@
             },
             {
               "name": {
-                "fr": "Healing Radiance",
+                "fr": "Rayonnement guérisseur",
                 "en": "Healing Radiance",
                 "status": "UNOFFICIAL"
               },
@@ -8073,7 +8114,7 @@
           "features": [
             {
               "name": {
-                "fr": "Nature’s Wrath",
+                "fr": "Courroux de la nature",
                 "en": "Nature's Wrath",
                 "status": "UNOFFICIAL"
               },
@@ -8081,7 +8122,7 @@
             },
             {
               "name": {
-                "fr": "Turn the Faithless",
+                "fr": "Renvoi des infidèles",
                 "en": "Turn the Faithless",
                 "status": "UNOFFICIAL"
               },
@@ -8117,7 +8158,7 @@
           "features": [
             {
               "name": {
-                "fr": "Aura of Warding",
+                "fr": "Aura de garde",
                 "en": "Aura of Warding",
                 "status": "UNOFFICIAL"
               },
@@ -8255,7 +8296,7 @@
     "id": "subclass.oath-of-the-crown",
     "type": "subclass",
     "name": {
-      "fr": "Oath of the Crown",
+      "fr": "Serment de la Couronne",
       "en": "Oath of the Crown",
       "status": "UNOFFICIAL"
     },
@@ -8287,7 +8328,7 @@
           "features": [
             {
               "name": {
-                "fr": "Oath of the Crown Tenets",
+                "fr": "Préceptes du serment de la couronne",
                 "en": "Oath of the Crown Tenets",
                 "status": "UNOFFICIAL"
               },
@@ -8295,7 +8336,7 @@
             },
             {
               "name": {
-                "fr": "Righteous Clarity",
+                "fr": "Clarté vertueuse",
                 "en": "Righteous Clarity",
                 "status": "UNOFFICIAL"
               },
@@ -8308,7 +8349,7 @@
           "features": [
             {
               "name": {
-                "fr": "Champion Challenge",
+                "fr": "Défi du champion",
                 "en": "Champion Challenge",
                 "status": "UNOFFICIAL"
               },
@@ -8316,7 +8357,7 @@
             },
             {
               "name": {
-                "fr": "Turn the Tide",
+                "fr": "Retourner la situation",
                 "en": "Turn the Tide",
                 "status": "UNOFFICIAL"
               },
@@ -8352,7 +8393,7 @@
           "features": [
             {
               "name": {
-                "fr": "Divine Allegiance",
+                "fr": "Allégeance divine",
                 "en": "Divine Allegiance",
                 "status": "UNOFFICIAL"
               },
@@ -8490,7 +8531,7 @@
     "id": "subclass.oath-of-vengeance",
     "type": "subclass",
     "name": {
-      "fr": "Oath of Vengeance",
+      "fr": "Serment de Vengeance",
       "en": "Oath of Vengeance",
       "status": "UNOFFICIAL"
     },
@@ -8522,7 +8563,7 @@
           "features": [
             {
               "name": {
-                "fr": "Oath of Vengeance Tenets",
+                "fr": "Préceptes du serment de vengeance",
                 "en": "Oath of Vengeance Tenets",
                 "status": "UNOFFICIAL"
               },
@@ -8530,7 +8571,7 @@
             },
             {
               "name": {
-                "fr": "Inquisitor’s Might",
+                "fr": "Puissance de l’inquisiteur",
                 "en": "Inquisitor's Might",
                 "status": "UNOFFICIAL"
               },
@@ -8543,7 +8584,7 @@
           "features": [
             {
               "name": {
-                "fr": "Abjure Enemy",
+                "fr": "Abjuration d’ennemi",
                 "en": "Abjure Enemy",
                 "status": "UNOFFICIAL"
               },
@@ -8551,7 +8592,7 @@
             },
             {
               "name": {
-                "fr": "Vow of Enmity",
+                "fr": "Vœu d’inimitié",
                 "en": "Vow of Enmity",
                 "status": "UNOFFICIAL"
               },
@@ -8587,7 +8628,7 @@
           "features": [
             {
               "name": {
-                "fr": "Relentless Avenger",
+                "fr": "Vengeur implacable",
                 "en": "Relentless Avenger",
                 "status": "UNOFFICIAL"
               },
@@ -8725,7 +8766,7 @@
     "id": "subclass.oathbreaker",
     "type": "subclass",
     "name": {
-      "fr": "Oathbreaker",
+      "fr": "Parjure",
       "en": "Oathbreaker",
       "status": "UNOFFICIAL"
     },
@@ -8757,7 +8798,7 @@
           "features": [
             {
               "name": {
-                "fr": "Spiteful Suffering",
+                "fr": "Souffrance rancunière",
                 "en": "Spiteful Suffering",
                 "status": "UNOFFICIAL"
               },
@@ -8770,7 +8811,7 @@
           "features": [
             {
               "name": {
-                "fr": "Control Undead",
+                "fr": "Contrôle des morts-vivants",
                 "en": "Control Undead",
                 "status": "UNOFFICIAL"
               },
@@ -8778,7 +8819,7 @@
             },
             {
               "name": {
-                "fr": "Dreadful Aspect",
+                "fr": "Aspect effroyable",
                 "en": "Dreadful Aspect",
                 "status": "UNOFFICIAL"
               },
@@ -8814,7 +8855,7 @@
           "features": [
             {
               "name": {
-                "fr": "Aura of Hate",
+                "fr": "Aura de haine",
                 "en": "Aura of Hate",
                 "status": "UNOFFICIAL"
               },
@@ -8943,7 +8984,7 @@
     "id": "subclass.shadow-magic",
     "type": "subclass",
     "name": {
-      "fr": "Shadow Magic",
+      "fr": "Magie de l’ombre",
       "en": "Shadow Magic",
       "status": "UNOFFICIAL"
     },
@@ -8975,7 +9016,7 @@
           "features": [
             {
               "name": {
-                "fr": "Eyes of the Dark",
+                "fr": "Yeux des ténèbres",
                 "en": "Eyes of the Dark",
                 "status": "UNOFFICIAL"
               },
@@ -8983,7 +9024,7 @@
             },
             {
               "name": {
-                "fr": "Strength of the Grave",
+                "fr": "Force de la tombe",
                 "en": "Strength of the Grave",
                 "status": "UNOFFICIAL"
               },
@@ -9009,7 +9050,7 @@
           "features": [
             {
               "name": {
-                "fr": "Hound of Ill Omen",
+                "fr": "Molosse de mauvais augure",
                 "en": "Hound of Ill Omen",
                 "status": "UNOFFICIAL"
               },
@@ -9022,7 +9063,7 @@
           "features": [
             {
               "name": {
-                "fr": "Shadow Walk",
+                "fr": "Marche de l’ombre",
                 "en": "Shadow Walk",
                 "status": "UNOFFICIAL"
               },
@@ -9102,7 +9143,7 @@
     "id": "subclass.storm-sorcery",
     "type": "subclass",
     "name": {
-      "fr": "Storm Sorcery",
+      "fr": "Sorcellerie des tempêtes",
       "en": "Storm Sorcery",
       "status": "UNOFFICIAL"
     },
@@ -9134,7 +9175,7 @@
           "features": [
             {
               "name": {
-                "fr": "Tempestuous Magic",
+                "fr": "Magie tempétueuse",
                 "en": "Tempestuous Magic",
                 "status": "UNOFFICIAL"
               },
@@ -9147,7 +9188,7 @@
           "features": [
             {
               "name": {
-                "fr": "Heart of the Storm",
+                "fr": "Cœur de la tempête",
                 "en": "Heart of the Storm",
                 "status": "UNOFFICIAL"
               },
@@ -9155,7 +9196,7 @@
             },
             {
               "name": {
-                "fr": "Heart of the Storm: Lightning",
+                "fr": "Cœur de la tempête : foudre",
                 "en": "Heart of the Storm: Lightning",
                 "status": "UNOFFICIAL"
               },
@@ -9163,7 +9204,7 @@
             },
             {
               "name": {
-                "fr": "Heart of the Storm: Thunder",
+                "fr": "Cœur de la tempête : tonnerre",
                 "en": "Heart of the Storm: Thunder",
                 "status": "UNOFFICIAL"
               },
@@ -9171,7 +9212,7 @@
             },
             {
               "name": {
-                "fr": "Heart of the Storm: Resistance",
+                "fr": "Cœur de la tempête : résistance",
                 "en": "Heart of the Storm: Resistance",
                 "status": "UNOFFICIAL"
               },
@@ -9184,7 +9225,7 @@
           "features": [
             {
               "name": {
-                "fr": "Storm’s Fury",
+                "fr": "Fureur de la tempête",
                 "en": "Storm's Fury",
                 "status": "UNOFFICIAL"
               },
@@ -9264,7 +9305,7 @@
     "id": "subclass.swarmkeeper",
     "type": "subclass",
     "name": {
-      "fr": "Swarmkeeper",
+      "fr": "Gardien de l’essaim",
       "en": "Swarmkeeper",
       "status": "UNOFFICIAL"
     },
@@ -9296,7 +9337,7 @@
           "features": [
             {
               "name": {
-                "fr": "Prey’s Scent (Swarmkeeper)",
+                "fr": "Odeur de la proie",
                 "en": "Prey's Scent (Swarmkeeper)",
                 "status": "UNOFFICIAL"
               },
@@ -9306,14 +9347,14 @@
           "choices": [
             {
               "name": {
-                "fr": "Gathered Swarm",
+                "fr": "Essaim rassemblé",
                 "en": "Gathered Swarm",
                 "status": "UNOFFICIAL"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Cloud of Jellyfish",
+                    "fr": "Nuage de méduses",
                     "en": "Cloud of Jellyfish",
                     "status": "UNOFFICIAL"
                   },
@@ -9321,7 +9362,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Flurry of Moths",
+                    "fr": "Tourbillon de phalènes",
                     "en": "Flurry of Moths",
                     "status": "UNOFFICIAL"
                   },
@@ -9329,7 +9370,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Legion of Bees",
+                    "fr": "Légion d’abeilles",
                     "en": "Legion of Bees",
                     "status": "UNOFFICIAL"
                   },
@@ -9363,7 +9404,7 @@
           "features": [
             {
               "name": {
-                "fr": "Writhing Tide",
+                "fr": "Marée grouillante",
                 "en": "Writhing Tide",
                 "status": "UNOFFICIAL"
               },
@@ -9385,7 +9426,7 @@
           "features": [
             {
               "name": {
-                "fr": "Mighty Swarm",
+                "fr": "Essaim puissant",
                 "en": "Mighty Swarm",
                 "status": "UNOFFICIAL"
               },
@@ -9395,14 +9436,14 @@
           "choices": [
             {
               "name": {
-                "fr": "Upgraded swarm options",
+                "fr": "Options d’essaim améliorées",
                 "en": "Upgraded swarm options",
                 "status": "UNOFFICIAL"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Mighty Cloud of Jellyfish",
+                    "fr": "Nuage de méduses puissant",
                     "en": "Mighty Cloud of Jellyfish",
                     "status": "UNOFFICIAL"
                   },
@@ -9410,7 +9451,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Mighty Flurry of Moths",
+                    "fr": "Tourbillon de phalènes puissant",
                     "en": "Mighty Flurry of Moths",
                     "status": "UNOFFICIAL"
                   },
@@ -9418,7 +9459,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Mighty Legion of Bees",
+                    "fr": "Légion d’abeilles puissante",
                     "en": "Mighty Legion of Bees",
                     "status": "UNOFFICIAL"
                   },
@@ -9563,7 +9604,7 @@
     "id": "subclass.swashbuckler",
     "type": "subclass",
     "name": {
-      "fr": "Swashbuckler",
+      "fr": "Bretteur",
       "en": "Swashbuckler",
       "status": "UNOFFICIAL"
     },
@@ -9595,7 +9636,7 @@
           "features": [
             {
               "name": {
-                "fr": "Fancy Footwork",
+                "fr": "Jeu de jambes raffiné",
                 "en": "Fancy Footwork",
                 "status": "UNOFFICIAL"
               },
@@ -9603,7 +9644,7 @@
             },
             {
               "name": {
-                "fr": "Rakish Audacity",
+                "fr": "Audace effrontée",
                 "en": "Rakish Audacity",
                 "status": "UNOFFICIAL"
               },
@@ -9611,7 +9652,7 @@
             },
             {
               "name": {
-                "fr": "Rakish Sneak Attack (Melee)",
+                "fr": "Attaque sournoise effrontée (corps à corps)",
                 "en": "Rakish Sneak Attack (Melee)",
                 "status": "UNOFFICIAL"
               },
@@ -9619,7 +9660,7 @@
             },
             {
               "name": {
-                "fr": "Rakish Sneak Attack (Ranged)",
+                "fr": "Attaque sournoise effrontée (à distance)",
                 "en": "Rakish Sneak Attack (Ranged)",
                 "status": "UNOFFICIAL"
               },
@@ -9627,7 +9668,7 @@
             },
             {
               "name": {
-                "fr": "Dirty Trick: Flick o’ the Wrist",
+                "fr": "Coup bas : tour de poignet",
                 "en": "Dirty Trick: Flick o' the Wrist",
                 "status": "UNOFFICIAL"
               },
@@ -9635,7 +9676,7 @@
             },
             {
               "name": {
-                "fr": "Dirty Trick: Sand Toss",
+                "fr": "Coup bas : jet de sable",
                 "en": "Dirty Trick: Sand Toss",
                 "status": "UNOFFICIAL"
               },
@@ -9752,7 +9793,7 @@
     "id": "subclass.tempest-domain",
     "type": "subclass",
     "name": {
-      "fr": "Tempest Domain",
+      "fr": "Domaine de la Tempête",
       "en": "Tempest Domain",
       "status": "UNOFFICIAL"
     },
@@ -9790,7 +9831,7 @@
           "features": [
             {
               "name": {
-                "fr": "Wrath of the Storm",
+                "fr": "Courroux de la tempête",
                 "en": "Wrath of the Storm",
                 "status": "UNOFFICIAL"
               },
@@ -9798,7 +9839,7 @@
             },
             {
               "name": {
-                "fr": "Wrath of the Storm: Lightning",
+                "fr": "Courroux de la tempête : foudre",
                 "en": "Wrath of the Storm: Lightning",
                 "status": "UNOFFICIAL"
               },
@@ -9806,7 +9847,7 @@
             },
             {
               "name": {
-                "fr": "Wrath of the Storm: Thunder",
+                "fr": "Courroux de la tempête : tonnerre",
                 "en": "Wrath of the Storm: Thunder",
                 "status": "UNOFFICIAL"
               },
@@ -9829,7 +9870,7 @@
           "features": [
             {
               "name": {
-                "fr": "Destructive Wrath",
+                "fr": "Courroux destructeur",
                 "en": "Destructive Wrath",
                 "status": "UNOFFICIAL"
               },
@@ -9868,7 +9909,7 @@
           "features": [
             {
               "name": {
-                "fr": "Thunderbolt Strike",
+                "fr": "Frappe foudroyante",
                 "en": "Thunderbolt Strike",
                 "status": "UNOFFICIAL"
               },
@@ -9894,7 +9935,7 @@
           "features": [
             {
               "name": {
-                "fr": "Divine Strike: Thunder",
+                "fr": "Frappe divine : tonnerre",
                 "en": "Divine Strike: Thunder",
                 "status": "UNOFFICIAL"
               },
@@ -10077,7 +10118,7 @@
     "id": "subclass.the-archfey",
     "type": "subclass",
     "name": {
-      "fr": "The Archfey",
+      "fr": "L’Archifée",
       "en": "The Archfey",
       "status": "UNOFFICIAL"
     },
@@ -10109,7 +10150,7 @@
           "features": [
             {
               "name": {
-                "fr": "Fey Presence",
+                "fr": "Présence féerique",
                 "en": "Fey Presence",
                 "status": "UNOFFICIAL"
               },
@@ -10158,7 +10199,7 @@
           "features": [
             {
               "name": {
-                "fr": "Misty Escape",
+                "fr": "Fuite brumeuse",
                 "en": "Misty Escape",
                 "status": "UNOFFICIAL"
               },
@@ -10197,7 +10238,7 @@
           "features": [
             {
               "name": {
-                "fr": "Beguiling Defences",
+                "fr": "Défenses envoûtantes",
                 "en": "Beguiling Defences",
                 "status": "UNOFFICIAL"
               },
@@ -10340,7 +10381,7 @@
     "id": "subclass.the-fiend",
     "type": "subclass",
     "name": {
-      "fr": "The Fiend",
+      "fr": "Le Fiélon",
       "en": "The Fiend",
       "status": "UNOFFICIAL"
     },
@@ -10372,9 +10413,10 @@
           "features": [
             {
               "name": {
-                "fr": "Dark One’s Blessing",
+                "fr": "Bénédiction du ténébreux",
                 "en": "Dark One's Blessing",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.dark-ones-blessing"
             }
@@ -10421,9 +10463,10 @@
           "features": [
             {
               "name": {
-                "fr": "Dark One’s Own Luck",
+                "fr": "Chance du ténébreux",
                 "en": "Dark One's Own Luck",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.dark-ones-own-luck"
             }
@@ -10460,9 +10503,10 @@
           "features": [
             {
               "name": {
-                "fr": "Fiendish Resilience",
+                "fr": "Résistance fiélonne",
                 "en": "Fiendish Resilience",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.fiendish-resilience"
             }
@@ -10603,7 +10647,7 @@
     "id": "subclass.the-great-old-one",
     "type": "subclass",
     "name": {
-      "fr": "The Great Old One",
+      "fr": "Le Grand Ancien",
       "en": "The Great Old One",
       "status": "UNOFFICIAL"
     },
@@ -10635,7 +10679,7 @@
           "features": [
             {
               "name": {
-                "fr": "Mortal Reminder",
+                "fr": "Rappel de la mortalité",
                 "en": "Mortal Reminder",
                 "status": "UNOFFICIAL"
               },
@@ -10684,7 +10728,7 @@
           "features": [
             {
               "name": {
-                "fr": "Entropic Ward",
+                "fr": "Protection entropique",
                 "en": "Entropic Ward",
                 "status": "UNOFFICIAL"
               },
@@ -10723,7 +10767,7 @@
           "features": [
             {
               "name": {
-                "fr": "Thought Shield: Psychic Resistance",
+                "fr": "Bouclier de pensées : résistance psychique",
                 "en": "Thought Shield: Psychic Resistance",
                 "status": "UNOFFICIAL"
               },
@@ -10731,7 +10775,7 @@
             },
             {
               "name": {
-                "fr": "Thought Shield: Psychic Reflection",
+                "fr": "Bouclier de pensées : renvoi psychique",
                 "en": "Thought Shield: Psychic Reflection",
                 "status": "UNOFFICIAL"
               },
@@ -10883,7 +10927,7 @@
     "id": "subclass.the-hexblade",
     "type": "subclass",
     "name": {
-      "fr": "The Hexblade",
+      "fr": "La Lame maléfique",
       "en": "The Hexblade",
       "status": "UNOFFICIAL"
     },
@@ -10915,7 +10959,7 @@
           "features": [
             {
               "name": {
-                "fr": "Hex Warrior",
+                "fr": "Guerrier du maléfice",
                 "en": "Hex Warrior",
                 "status": "UNOFFICIAL"
               },
@@ -10923,7 +10967,7 @@
             },
             {
               "name": {
-                "fr": "Bind Hexed Weapon",
+                "fr": "Lier une arme maléfique",
                 "en": "Bind Hexed Weapon",
                 "status": "UNOFFICIAL"
               },
@@ -10931,7 +10975,7 @@
             },
             {
               "name": {
-                "fr": "Hexblade’s Curse",
+                "fr": "Malédiction de la lame maléfique",
                 "en": "Hexblade's Curse",
                 "status": "UNOFFICIAL"
               },
@@ -10980,7 +11024,7 @@
           "features": [
             {
               "name": {
-                "fr": "Accursed Spectre",
+                "fr": "Spectre maudit",
                 "en": "Accursed Spectre",
                 "status": "UNOFFICIAL"
               }
@@ -11026,7 +11070,7 @@
           "features": [
             {
               "name": {
-                "fr": "Armour of Hexes",
+                "fr": "Armure de maléfices",
                 "en": "Armour of Hexes",
                 "status": "UNOFFICIAL"
               },
@@ -11196,9 +11240,10 @@
     "id": "subclass.thief",
     "type": "subclass",
     "name": {
-      "fr": "Thief",
+      "fr": "Voleur",
       "en": "Thief",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -11228,15 +11273,16 @@
           "features": [
             {
               "name": {
-                "fr": "Fast Hands",
+                "fr": "Mains lestes",
                 "en": "Fast Hands",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.fast-hands"
             },
             {
               "name": {
-                "fr": "Second-Story Work: Falling",
+                "fr": "Monte-en-l’air : chute",
                 "en": "Second-Story Work: Falling",
                 "status": "UNOFFICIAL"
               },
@@ -11249,9 +11295,10 @@
           "features": [
             {
               "name": {
-                "fr": "Supreme Sneak",
+                "fr": "Furtivité suprême",
                 "en": "Supreme Sneak",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.supreme-sneak"
             }
@@ -11302,7 +11349,7 @@
     "id": "subclass.transmutation-school",
     "type": "subclass",
     "name": {
-      "fr": "Transmutation School",
+      "fr": "École de Transmutation",
       "en": "Transmutation School",
       "status": "UNOFFICIAL"
     },
@@ -11334,14 +11381,14 @@
           "features": [
             {
               "name": {
-                "fr": "Transmutation Savant",
+                "fr": "Transmutateur érudit",
                 "en": "Transmutation Savant",
                 "status": "UNOFFICIAL"
               }
             },
             {
               "name": {
-                "fr": "Experimental Alchemy",
+                "fr": "Alchimie expérimentale",
                 "en": "Experimental Alchemy",
                 "status": "UNOFFICIAL"
               },
@@ -11354,7 +11401,7 @@
           "features": [
             {
               "name": {
-                "fr": "Transmuter’s Stone (passive feature)",
+                "fr": "Pierre du transmutateur",
                 "en": "Transmuter's Stone (passive feature)",
                 "status": "UNOFFICIAL"
               },
@@ -11362,7 +11409,7 @@
             },
             {
               "name": {
-                "fr": "Transmuter’s Stone",
+                "fr": "Pierre du transmutateur",
                 "en": "Transmuter's Stone",
                 "status": "UNOFFICIAL"
               },
@@ -11370,7 +11417,7 @@
             },
             {
               "name": {
-                "fr": "Transmuter’s Stone: Constitution",
+                "fr": "Pierre du transmutateur : Constitution",
                 "en": "Transmuter's Stone: Constitution",
                 "status": "UNOFFICIAL"
               },
@@ -11378,7 +11425,7 @@
             },
             {
               "name": {
-                "fr": "Transmuter’s Stone: Darkvision",
+                "fr": "Pierre du transmutateur : vision dans le noir",
                 "en": "Transmuter's Stone: Darkvision",
                 "status": "UNOFFICIAL"
               },
@@ -11386,7 +11433,7 @@
             },
             {
               "name": {
-                "fr": "Transmuter’s Stone: Speed",
+                "fr": "Pierre du transmutateur : vitesse",
                 "en": "Transmuter's Stone: Speed",
                 "status": "UNOFFICIAL"
               },
@@ -11394,7 +11441,7 @@
             },
             {
               "name": {
-                "fr": "Transmuter’s Stone: Acid Resistance",
+                "fr": "Pierre du transmutateur : résistance à l’acide",
                 "en": "Transmuter's Stone: Acid Resistance",
                 "status": "UNOFFICIAL"
               },
@@ -11402,7 +11449,7 @@
             },
             {
               "name": {
-                "fr": "Transmuter’s Stone: Cold Resistance",
+                "fr": "Pierre du transmutateur : résistance au froid",
                 "en": "Transmuter's Stone: Cold Resistance",
                 "status": "UNOFFICIAL"
               },
@@ -11410,7 +11457,7 @@
             },
             {
               "name": {
-                "fr": "Transmuter’s Stone: Fire Resistance",
+                "fr": "Pierre du transmutateur : résistance au feu",
                 "en": "Transmuter's Stone: Fire Resistance",
                 "status": "UNOFFICIAL"
               },
@@ -11418,7 +11465,7 @@
             },
             {
               "name": {
-                "fr": "Transmuter’s Stone: Lightning Resistance",
+                "fr": "Pierre du transmutateur : résistance à la foudre",
                 "en": "Transmuter's Stone: Lightning Resistance",
                 "status": "UNOFFICIAL"
               },
@@ -11426,7 +11473,7 @@
             },
             {
               "name": {
-                "fr": "Transmuter’s Stone: Thunder Resistance",
+                "fr": "Pierre du transmutateur : résistance au tonnerre",
                 "en": "Transmuter's Stone: Thunder Resistance",
                 "status": "UNOFFICIAL"
               },
@@ -11439,7 +11486,7 @@
           "features": [
             {
               "name": {
-                "fr": "Shapechanger",
+                "fr": "Métamorphe",
                 "en": "Shapechanger",
                 "status": "UNOFFICIAL"
               },
@@ -11573,7 +11620,7 @@
     "id": "subclass.trickery-domain",
     "type": "subclass",
     "name": {
-      "fr": "Trickery Domain",
+      "fr": "Domaine de la Duperie",
       "en": "Trickery Domain",
       "status": "UNOFFICIAL"
     },
@@ -11605,7 +11652,7 @@
           "features": [
             {
               "name": {
-                "fr": "Blessing of the Trickster",
+                "fr": "Bénédiction du filou",
                 "en": "Blessing of the Trickster",
                 "status": "UNOFFICIAL"
               },
@@ -11628,7 +11675,7 @@
           "features": [
             {
               "name": {
-                "fr": "Invoke Duplicity",
+                "fr": "Invoquer la duplicité",
                 "en": "Invoke Duplicity",
                 "status": "UNOFFICIAL"
               },
@@ -11667,7 +11714,7 @@
           "features": [
             {
               "name": {
-                "fr": "Channel Divinity: Cloak of Shadows",
+                "fr": "Conduit divin : cape d’ombres",
                 "en": "Channel Divinity: Cloak of Shadows",
                 "status": "UNOFFICIAL"
               },
@@ -11693,7 +11740,7 @@
           "features": [
             {
               "name": {
-                "fr": "Divine Strike: Poison",
+                "fr": "Frappe divine : poison",
                 "en": "Divine Strike: Poison",
                 "status": "UNOFFICIAL"
               },
@@ -11858,7 +11905,7 @@
     "id": "subclass.war-domain",
     "type": "subclass",
     "name": {
-      "fr": "War Domain",
+      "fr": "Domaine de la Guerre",
       "en": "War Domain",
       "status": "UNOFFICIAL"
     },
@@ -11896,7 +11943,7 @@
           "features": [
             {
               "name": {
-                "fr": "War Priest",
+                "fr": "Prêtre de guerre",
                 "en": "War Priest",
                 "status": "UNOFFICIAL"
               },
@@ -11925,7 +11972,7 @@
           "features": [
             {
               "name": {
-                "fr": "Guided Strike",
+                "fr": "Frappe guidée",
                 "en": "Guided Strike",
                 "status": "UNOFFICIAL"
               },
@@ -11970,7 +12017,7 @@
           "features": [
             {
               "name": {
-                "fr": "War God’s Blessing",
+                "fr": "Bénédiction du dieu de la guerre",
                 "en": "War God's Blessing",
                 "status": "UNOFFICIAL"
               }
@@ -11995,7 +12042,7 @@
           "features": [
             {
               "name": {
-                "fr": "Divine Strike: Weapon",
+                "fr": "Frappe divine : arme",
                 "en": "Divine Strike: Weapon",
                 "status": "UNOFFICIAL"
               },
@@ -12166,7 +12213,7 @@
     "id": "subclass.way-of-shadow",
     "type": "subclass",
     "name": {
-      "fr": "Way of Shadow",
+      "fr": "Voie de l’Ombre",
       "en": "Way of Shadow",
       "status": "UNOFFICIAL"
     },
@@ -12198,7 +12245,7 @@
           "features": [
             {
               "name": {
-                "fr": "Shadow Arts: Hide",
+                "fr": "Arts de l’ombre : furtivité",
                 "en": "Shadow Arts: Hide",
                 "status": "UNOFFICIAL"
               },
@@ -12206,7 +12253,7 @@
             },
             {
               "name": {
-                "fr": "Shadow Arts: Pass Without Trace",
+                "fr": "Arts de l’ombre : passage sans trace",
                 "en": "Shadow Arts: Pass Without Trace",
                 "status": "UNOFFICIAL"
               },
@@ -12214,7 +12261,7 @@
             },
             {
               "name": {
-                "fr": "Shadow Arts: Darkness",
+                "fr": "Arts de l’ombre : ténèbres",
                 "en": "Shadow Arts: Darkness",
                 "status": "UNOFFICIAL"
               },
@@ -12222,7 +12269,7 @@
             },
             {
               "name": {
-                "fr": "Shadow Arts: Darkvision",
+                "fr": "Arts de l’ombre : vision dans le noir",
                 "en": "Shadow Arts: Darkvision",
                 "status": "UNOFFICIAL"
               },
@@ -12230,7 +12277,7 @@
             },
             {
               "name": {
-                "fr": "Shadow Arts: Silence",
+                "fr": "Arts de l’ombre : silence",
                 "en": "Shadow Arts: Silence",
                 "status": "UNOFFICIAL"
               },
@@ -12249,7 +12296,7 @@
           "features": [
             {
               "name": {
-                "fr": "Cloak of Shadows",
+                "fr": "Cape d’ombres",
                 "en": "Cloak of Shadows",
                 "status": "UNOFFICIAL"
               },
@@ -12262,7 +12309,7 @@
           "features": [
             {
               "name": {
-                "fr": "Shadow Step",
+                "fr": "Pas de l’ombre",
                 "en": "Shadow Step",
                 "status": "UNOFFICIAL"
               },
@@ -12275,7 +12322,7 @@
           "features": [
             {
               "name": {
-                "fr": "Shadow Strike",
+                "fr": "Frappe de l’ombre",
                 "en": "Shadow Strike",
                 "status": "UNOFFICIAL"
               },
@@ -12283,7 +12330,7 @@
             },
             {
               "name": {
-                "fr": "Shadow Strike: Unarmed",
+                "fr": "Frappe de l’ombre : à mains nues",
                 "en": "Shadow Strike: Unarmed",
                 "status": "UNOFFICIAL"
               },
@@ -12399,7 +12446,7 @@
     "id": "subclass.way-of-the-drunken-master",
     "type": "subclass",
     "name": {
-      "fr": "Way of the Drunken Master",
+      "fr": "Voie du Maître ivre",
       "en": "Way of the Drunken Master",
       "status": "UNOFFICIAL"
     },
@@ -12431,7 +12478,7 @@
           "features": [
             {
               "name": {
-                "fr": "Cheeky Tipple",
+                "fr": "Petit remontant",
                 "en": "Cheeky Tipple",
                 "status": "UNOFFICIAL"
               },
@@ -12439,7 +12486,7 @@
             },
             {
               "name": {
-                "fr": "Drunken Performance",
+                "fr": "Représentation éméchée",
                 "en": "Drunken Performance",
                 "status": "UNOFFICIAL"
               },
@@ -12447,7 +12494,7 @@
             },
             {
               "name": {
-                "fr": "Drunken Technique",
+                "fr": "Technique de l’ivrogne",
                 "en": "Drunken Technique",
                 "status": "UNOFFICIAL"
               },
@@ -12460,7 +12507,7 @@
           "features": [
             {
               "name": {
-                "fr": "Intoxicating Strike",
+                "fr": "Frappe enivrante",
                 "en": "Intoxicating Strike",
                 "status": "UNOFFICIAL"
               },
@@ -12468,7 +12515,7 @@
             },
             {
               "name": {
-                "fr": "Intoxicating Strike (Bonus Action)",
+                "fr": "Frappe enivrante (action bonus)",
                 "en": "Intoxicating Strike (Bonus Action)",
                 "status": "UNOFFICIAL"
               },
@@ -12476,7 +12523,7 @@
             },
             {
               "name": {
-                "fr": "Life of the Party",
+                "fr": "Boute-en-train",
                 "en": "Life of the Party",
                 "status": "UNOFFICIAL"
               },
@@ -12489,7 +12536,7 @@
           "features": [
             {
               "name": {
-                "fr": "Leap to Your Feet",
+                "fr": "Debout d’un bond",
                 "en": "Leap to Your Feet",
                 "status": "UNOFFICIAL"
               },
@@ -12497,7 +12544,7 @@
             },
             {
               "name": {
-                "fr": "Redirect Attack",
+                "fr": "Détourner l’attaque",
                 "en": "Redirect Attack",
                 "status": "UNOFFICIAL"
               },
@@ -12510,7 +12557,7 @@
           "features": [
             {
               "name": {
-                "fr": "Sobering Realisation",
+                "fr": "Dégrisement",
                 "en": "Sobering Realisation",
                 "status": "UNOFFICIAL"
               },
@@ -12523,7 +12570,7 @@
           "features": [
             {
               "name": {
-                "fr": "Drunkard’s Luck",
+                "fr": "Chance de l’ivrogne",
                 "en": "Drunkard's Luck",
                 "status": "UNOFFICIAL"
               },
@@ -12639,7 +12686,7 @@
     "id": "subclass.way-of-the-four-elements",
     "type": "subclass",
     "name": {
-      "fr": "Way of the Four Elements",
+      "fr": "Voie des Quatre Éléments",
       "en": "Way of the Four Elements",
       "status": "UNOFFICIAL"
     },
@@ -12671,7 +12718,7 @@
           "features": [
             {
               "name": {
-                "fr": "Harmony of Fire and Water",
+                "fr": "Harmonie du feu et de l’eau",
                 "en": "Harmony of Fire and Water",
                 "status": "UNOFFICIAL"
               },
@@ -12681,14 +12728,14 @@
           "choices": [
             {
               "name": {
-                "fr": "Elemental Disciplines",
+                "fr": "Disciplines élémentaires",
                 "en": "Elemental Disciplines",
                 "status": "UNOFFICIAL"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Blade of Rime",
+                    "fr": "Lame de givre",
                     "en": "Blade of Rime",
                     "status": "UNOFFICIAL"
                   },
@@ -12696,7 +12743,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Chill of the Mountain",
+                    "fr": "Froid de la montagne",
                     "en": "Chill of the Mountain",
                     "status": "UNOFFICIAL"
                   },
@@ -12704,7 +12751,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Fangs of the Fire Snake",
+                    "fr": "Crocs du serpent de feu",
                     "en": "Fangs of the Fire Snake",
                     "status": "UNOFFICIAL"
                   },
@@ -12712,7 +12759,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Fist of Four Thunders",
+                    "fr": "Poing des quatre tonnerres",
                     "en": "Fist of Four Thunders",
                     "status": "UNOFFICIAL"
                   },
@@ -12720,7 +12767,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Fist of Unbroken Air",
+                    "fr": "Poing de l’air ininterrompu",
                     "en": "Fist of Unbroken Air",
                     "status": "UNOFFICIAL"
                   },
@@ -12728,7 +12775,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Rush of the Gale Spirits",
+                    "fr": "Ruée des esprits de la bourrasque",
                     "en": "Rush of the Gale Spirits",
                     "status": "UNOFFICIAL"
                   },
@@ -12736,7 +12783,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Shaping of the Ice",
+                    "fr": "Façonnage de la glace",
                     "en": "Shaping of the Ice",
                     "status": "UNOFFICIAL"
                   },
@@ -12744,7 +12791,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Sphere of Elemental Balance",
+                    "fr": "Sphère d’équilibre élémentaire",
                     "en": "Sphere of Elemental Balance",
                     "status": "UNOFFICIAL"
                   },
@@ -12752,7 +12799,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Sweeping Cinder Strike",
+                    "fr": "Frappe de braises balayante",
                     "en": "Sweeping Cinder Strike",
                     "status": "UNOFFICIAL"
                   },
@@ -12760,7 +12807,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Touch of the Storm",
+                    "fr": "Toucher de la tempête",
                     "en": "Touch of the Storm",
                     "status": "UNOFFICIAL"
                   },
@@ -12768,7 +12815,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Water Whip",
+                    "fr": "Fouet d’eau",
                     "en": "Water Whip",
                     "status": "UNOFFICIAL"
                   },
@@ -12784,7 +12831,7 @@
           "features": [
             {
               "name": {
-                "fr": "Clench of the North Wind",
+                "fr": "Poigne du vent du nord",
                 "en": "Clench of the North Wind",
                 "status": "UNOFFICIAL"
               },
@@ -12792,7 +12839,7 @@
             },
             {
               "name": {
-                "fr": "Embrace of the Inferno",
+                "fr": "Étreinte du brasier",
                 "en": "Embrace of the Inferno",
                 "status": "UNOFFICIAL"
               },
@@ -12800,7 +12847,7 @@
             },
             {
               "name": {
-                "fr": "Gong of the Summit",
+                "fr": "Gong du sommet",
                 "en": "Gong of the Summit",
                 "status": "UNOFFICIAL"
               },
@@ -12813,7 +12860,7 @@
           "features": [
             {
               "name": {
-                "fr": "Improved Elemental Casting",
+                "fr": "Incantation élémentaire améliorée",
                 "en": "Improved Elemental Casting",
                 "status": "UNOFFICIAL"
               },
@@ -12826,7 +12873,7 @@
           "features": [
             {
               "name": {
-                "fr": "Flames of the Phoenix",
+                "fr": "Flammes du phénix",
                 "en": "Flames of the Phoenix",
                 "status": "UNOFFICIAL"
               },
@@ -12834,7 +12881,7 @@
             },
             {
               "name": {
-                "fr": "Mist Stance",
+                "fr": "Posture de brume",
                 "en": "Mist Stance",
                 "status": "UNOFFICIAL"
               },
@@ -12842,7 +12889,7 @@
             },
             {
               "name": {
-                "fr": "Ride the Wind",
+                "fr": "Chevaucher le vent",
                 "en": "Ride the Wind",
                 "status": "UNOFFICIAL"
               },
@@ -13039,7 +13086,7 @@
     "id": "subclass.way-of-the-open-hand",
     "type": "subclass",
     "name": {
-      "fr": "Way of the Open Hand",
+      "fr": "Voie de la Paume",
       "en": "Way of the Open Hand",
       "status": "UNOFFICIAL"
     },
@@ -13071,15 +13118,16 @@
           "features": [
             {
               "name": {
-                "fr": "Flurry of Blows",
+                "fr": "Déluge de coups",
                 "en": "Flurry of Blows",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.flurry-of-blows"
             },
             {
               "name": {
-                "fr": "Flurry of Blows: Topple",
+                "fr": "Déluge de coups : renversement",
                 "en": "Flurry of Blows: Topple",
                 "status": "UNOFFICIAL"
               },
@@ -13087,7 +13135,7 @@
             },
             {
               "name": {
-                "fr": "Flurry of Blows: Stagger",
+                "fr": "Déluge de coups : ébranlement",
                 "en": "Flurry of Blows: Stagger",
                 "status": "UNOFFICIAL"
               },
@@ -13095,7 +13143,7 @@
             },
             {
               "name": {
-                "fr": "Flurry of Blows: Push",
+                "fr": "Déluge de coups : poussée",
                 "en": "Flurry of Blows: Push",
                 "status": "UNOFFICIAL"
               },
@@ -13108,7 +13156,7 @@
           "features": [
             {
               "name": {
-                "fr": "Manifestation of Body",
+                "fr": "Manifestation du corps",
                 "en": "Manifestation of Body",
                 "status": "UNOFFICIAL"
               },
@@ -13116,7 +13164,7 @@
             },
             {
               "name": {
-                "fr": "Manifestation of Mind",
+                "fr": "Manifestation de l’esprit",
                 "en": "Manifestation of Mind",
                 "status": "UNOFFICIAL"
               },
@@ -13124,7 +13172,7 @@
             },
             {
               "name": {
-                "fr": "Manifestation of Soul",
+                "fr": "Manifestation de l’âme",
                 "en": "Manifestation of Soul",
                 "status": "UNOFFICIAL"
               },
@@ -13132,9 +13180,10 @@
             },
             {
               "name": {
-                "fr": "Wholeness of Body",
+                "fr": "Plénitude physique",
                 "en": "Wholeness of Body",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.wholeness-of-body"
             }
@@ -13145,7 +13194,7 @@
           "features": [
             {
               "name": {
-                "fr": "Ki Resonation: Punch",
+                "fr": "Résonance du ki : coup de poing",
                 "en": "Ki Resonation: Punch",
                 "status": "UNOFFICIAL"
               },
@@ -13153,7 +13202,7 @@
             },
             {
               "name": {
-                "fr": "Ki Resonation: Punch (Bonus Action)",
+                "fr": "Résonance du ki : coup de poing (action bonus)",
                 "en": "Ki Resonation: Punch (Bonus Action)",
                 "status": "UNOFFICIAL"
               },
@@ -13161,7 +13210,7 @@
             },
             {
               "name": {
-                "fr": "Ki Resonation: Blast",
+                "fr": "Résonance du ki : déflagration",
                 "en": "Ki Resonation: Blast",
                 "status": "UNOFFICIAL"
               },
@@ -13174,7 +13223,7 @@
           "features": [
             {
               "name": {
-                "fr": "Tranquillity",
+                "fr": "Tranquillité",
                 "en": "Tranquillity",
                 "status": "UNOFFICIAL"
               },
@@ -13308,7 +13357,7 @@
     "id": "subclass.wild-magic-barbarian",
     "type": "subclass",
     "name": {
-      "fr": "Wild Magic",
+      "fr": "Magie sauvage",
       "en": "Wild Magic",
       "status": "UNOFFICIAL"
     },
@@ -13340,7 +13389,7 @@
           "features": [
             {
               "name": {
-                "fr": "Rage: Wild Magic",
+                "fr": "Rage : magie sauvage",
                 "en": "Rage: Wild Magic",
                 "status": "UNOFFICIAL"
               },
@@ -13348,7 +13397,7 @@
             },
             {
               "name": {
-                "fr": "Magic Awareness",
+                "fr": "Perception de la magie",
                 "en": "Magic Awareness",
                 "status": "UNOFFICIAL"
               },
@@ -13361,7 +13410,7 @@
           "features": [
             {
               "name": {
-                "fr": "Bolstering Magic: Boon",
+                "fr": "Magie fortifiante : faveur",
                 "en": "Bolstering Magic: Boon",
                 "status": "UNOFFICIAL"
               },
@@ -13369,7 +13418,7 @@
             },
             {
               "name": {
-                "fr": "Bolstering Magic: Level 1 Spell Slot",
+                "fr": "Magie fortifiante : emplacement de sort de niveau 1",
                 "en": "Bolstering Magic: Level 1 Spell Slot",
                 "status": "UNOFFICIAL"
               },
@@ -13377,7 +13426,7 @@
             },
             {
               "name": {
-                "fr": "Bolstering Magic: Level 2 Spell Slot",
+                "fr": "Magie fortifiante : emplacement de sort de niveau 2",
                 "en": "Bolstering Magic: Level 2 Spell Slot",
                 "status": "UNOFFICIAL"
               },
@@ -13390,7 +13439,7 @@
           "features": [
             {
               "name": {
-                "fr": "Bolstering Magic: Level 3 Spell Slot",
+                "fr": "Magie fortifiante : emplacement de sort de niveau 3",
                 "en": "Bolstering Magic: Level 3 Spell Slot",
                 "status": "UNOFFICIAL"
               },
@@ -13403,7 +13452,7 @@
           "features": [
             {
               "name": {
-                "fr": "Unstable Backlash",
+                "fr": "Contrecoup instable",
                 "en": "Unstable Backlash",
                 "status": "UNOFFICIAL"
               },
@@ -13492,7 +13541,7 @@
     "id": "subclass.wild-magic-sorcerer",
     "type": "subclass",
     "name": {
-      "fr": "Wild Magic",
+      "fr": "Magie sauvage",
       "en": "Wild Magic",
       "status": "UNOFFICIAL"
     },
@@ -13524,7 +13573,7 @@
           "features": [
             {
               "name": {
-                "fr": "Wild Magic (passive feature)",
+                "fr": "Magie sauvage",
                 "en": "Wild Magic (passive feature)",
                 "status": "UNOFFICIAL"
               },
@@ -13532,7 +13581,7 @@
             },
             {
               "name": {
-                "fr": "Tides of Chaos",
+                "fr": "Marées du chaos",
                 "en": "Tides of Chaos",
                 "status": "UNOFFICIAL"
               },
@@ -13545,7 +13594,7 @@
           "features": [
             {
               "name": {
-                "fr": "Bend Luck (passive feature)",
+                "fr": "Infléchir la chance",
                 "en": "Bend Luck (passive feature)",
                 "status": "UNOFFICIAL"
               },
@@ -13558,7 +13607,7 @@
           "features": [
             {
               "name": {
-                "fr": "Controlled Chaos",
+                "fr": "Chaos maîtrisé",
                 "en": "Controlled Chaos",
                 "status": "UNOFFICIAL"
               },
@@ -13620,7 +13669,7 @@
     "id": "subclass.wildheart",
     "type": "subclass",
     "name": {
-      "fr": "Wildheart",
+      "fr": "Cœur sauvage",
       "en": "Wildheart",
       "status": "UNOFFICIAL"
     },
@@ -13652,14 +13701,14 @@
           "choices": [
             {
               "name": {
-                "fr": "Bestial Heart",
+                "fr": "Cœur bestial",
                 "en": "Bestial Heart",
                 "status": "UNOFFICIAL"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Bear Heart",
+                    "fr": "Cœur d’ours",
                     "en": "Bear Heart",
                     "status": "UNOFFICIAL"
                   },
@@ -13671,7 +13720,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Eagle Heart",
+                    "fr": "Cœur d’aigle",
                     "en": "Eagle Heart",
                     "status": "UNOFFICIAL"
                   },
@@ -13684,7 +13733,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Elk Heart",
+                    "fr": "Cœur d’élan",
                     "en": "Elk Heart",
                     "status": "UNOFFICIAL"
                   },
@@ -13696,7 +13745,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Tiger Heart",
+                    "fr": "Cœur de tigre",
                     "en": "Tiger Heart",
                     "status": "UNOFFICIAL"
                   },
@@ -13708,7 +13757,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Wolf Heart",
+                    "fr": "Cœur de loup",
                     "en": "Wolf Heart",
                     "status": "UNOFFICIAL"
                   },
@@ -13733,14 +13782,14 @@
           "choices": [
             {
               "name": {
-                "fr": "Animal Aspect",
+                "fr": "Aspect animal",
                 "en": "Animal Aspect",
                 "status": "UNOFFICIAL"
               },
               "options": [
                 {
                   "name": {
-                    "fr": "Bear",
+                    "fr": "Aspect de la bête : ours",
                     "en": "Bear",
                     "status": "UNOFFICIAL"
                   },
@@ -13748,7 +13797,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Chimpanzee",
+                    "fr": "Aspect de la bête : chimpanzé",
                     "en": "Chimpanzee",
                     "status": "UNOFFICIAL"
                   },
@@ -13756,7 +13805,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Crocodile",
+                    "fr": "Aspect de la bête : crocodile",
                     "en": "Crocodile",
                     "status": "UNOFFICIAL"
                   },
@@ -13764,7 +13813,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Eagle",
+                    "fr": "Aspect de la bête : aigle",
                     "en": "Eagle",
                     "status": "UNOFFICIAL"
                   },
@@ -13772,7 +13821,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Elk",
+                    "fr": "Aspect de la bête : élan",
                     "en": "Elk",
                     "status": "UNOFFICIAL"
                   },
@@ -13780,7 +13829,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Honey Badger",
+                    "fr": "Aspect de la bête : ratel",
                     "en": "Honey Badger",
                     "status": "UNOFFICIAL"
                   },
@@ -13788,7 +13837,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Stallion",
+                    "fr": "Aspect de la bête : étalon",
                     "en": "Stallion",
                     "status": "UNOFFICIAL"
                   },
@@ -13799,7 +13848,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Tiger",
+                    "fr": "Aspect de la bête : tigre",
                     "en": "Tiger",
                     "status": "UNOFFICIAL"
                   },
@@ -13807,7 +13856,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Wolf",
+                    "fr": "Aspect de la bête : loup",
                     "en": "Wolf",
                     "status": "UNOFFICIAL"
                   },
@@ -13815,7 +13864,7 @@
                 },
                 {
                   "name": {
-                    "fr": "Wolverine",
+                    "fr": "Aspect de la bête : glouton",
                     "en": "Wolverine",
                     "status": "UNOFFICIAL"
                   },
@@ -13830,7 +13879,7 @@
           "features": [
             {
               "name": {
-                "fr": "Land’s Stride: Difficult Terrain",
+                "fr": "Foulée de la terre : terrain difficile",
                 "en": "Land's Stride: Difficult Terrain",
                 "status": "UNOFFICIAL"
               },
@@ -13838,7 +13887,7 @@
             },
             {
               "name": {
-                "fr": "Land’s Stride: Advantage",
+                "fr": "Foulée de la terre : avantage",
                 "en": "Land's Stride: Advantage",
                 "status": "UNOFFICIAL"
               },
@@ -13846,7 +13895,7 @@
             },
             {
               "name": {
-                "fr": "Land’s Stride: Plants",
+                "fr": "Foulée de la terre : plantes",
                 "en": "Land's Stride: Plants",
                 "status": "UNOFFICIAL"
               },

@@ -11,13 +11,13 @@ item.absolute-confidence-amulet:
   fr: Amulette de confiance absolue
   statut: NON_OFFICIELLE
 item.absolutes-protector:
-  fr: Protecteur de l’Absolu
+  fr: Protecteur de l’Absolue
   statut: NON_OFFICIELLE
 item.absolutes-talisman:
-  fr: Talisman de l’Absolu
+  fr: Talisman de l’Absolue
   statut: NON_OFFICIELLE
 item.absolutes-warboard:
-  fr: Pavois de l’Absolu
+  fr: Pavois de l’Absolue
   statut: NON_OFFICIELLE
 item.abyss-beckoners:
   fr: Héleurs des Abysses
@@ -1488,7 +1488,7 @@ item.spellmight-gloves:
   fr: Gants de puissance magique
   statut: NON_OFFICIELLE
 item.spellseeking-gloves:
-  fr: Gants à sorts chercheurs
+  fr: Gants de sort chercheur
   statut: NON_OFFICIELLE
 item.spellthief:
   fr: Voleur de sorts
@@ -1570,7 +1570,7 @@ item.studded-shield-1:
   fr: Bouclier clouté +1
   statut: NON_OFFICIELLE
 item.sunwalkers-gift:
-  fr: Présent de l’arpenteur du soleil
+  fr: Don de l’arpenteur solaire
   statut: NON_OFFICIELLE
 item.surgeons-subjugation-amulet:
   fr: Amulette de subjugation du chirurgien
@@ -1697,7 +1697,7 @@ item.the-spectator-eyes:
   fr: Les yeux de spectateur
   statut: NON_OFFICIELLE
 item.the-speedy-lightfeet:
-  fr: Les pieds-légers rapides
+  fr: Pieds-légers véloces
   statut: NON_OFFICIELLE
 item.the-spellsparkler:
   fr: L’étinceleur de sorts
@@ -1754,7 +1754,7 @@ item.true-loves-embrace:
   fr: Étreinte du véritable amour
   statut: NON_OFFICIELLE
 item.twist-of-fortune:
-  fr: Revers de fortune
+  fr: Coup du sort
   statut: NON_OFFICIELLE
 item.tyrannical-jackboots:
   fr: Bottes cavalières tyranniques
@@ -1807,7 +1807,7 @@ item.viconias-walking-fortress:
   statut: NON_OFFICIELLE
   etiquette: { act: acte3, level: leger, otherWorks: aucun }
 item.vision-of-the-absolute:
-  fr: Vision de l’Absolu
+  fr: Vision de l’Absolue
   statut: NON_OFFICIELLE
 item.vital-conduit-boots:
   fr: Bottes de conduit vital

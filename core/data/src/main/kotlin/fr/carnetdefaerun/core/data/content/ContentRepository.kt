@@ -15,6 +15,10 @@ import fr.carnetdefaerun.core.model.content.LoreSection
 import fr.carnetdefaerun.core.model.content.PlaceFacts
 import fr.carnetdefaerun.core.model.content.SpellFacts
 import fr.carnetdefaerun.core.model.content.SubclassFacts
+import fr.carnetdefaerun.core.model.content.SubraceFacts
+import fr.carnetdefaerun.core.model.content.RaceFacts
+import fr.carnetdefaerun.core.model.content.BackgroundFacts
+import fr.carnetdefaerun.core.model.content.FeatFacts
 import fr.carnetdefaerun.core.model.content.WearerCondition
 import fr.carnetdefaerun.core.model.spoiler.Gated
 import fr.carnetdefaerun.core.model.spoiler.RevealKey
@@ -74,6 +78,10 @@ class ContentRepository internal constructor(private val store: ContentStore) {
             is SpellFacts -> f
             is ConditionFacts -> f
             is ClassFacts -> f.copy(levels = f.levels.map { l -> l.copy(features = l.features.filter { it.id == null || linkVisible(it.id!!) }) })
+            is RaceFacts -> f.copy(features = f.features.filter { it.id == null || linkVisible(it.id!!) })
+            is SubraceFacts -> f.copy(features = f.features.filter { it.id == null || linkVisible(it.id!!) })
+            is FeatFacts -> f.copy(features = f.features.filter { it.id == null || linkVisible(it.id!!) })
+            is BackgroundFacts -> f
             is SubclassFacts -> f.copy(
                 levels = f.levels.map { l ->
                     l.copy(

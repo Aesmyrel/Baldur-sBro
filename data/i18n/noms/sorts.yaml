@@ -1,19 +1,16 @@
 # Noms français des sorts sans nom officiel trouvé automatiquement (lot noms-spell). Voir docs/LOTS_ECRITURE.md §3.
 spell.blindness:
   fr: Cécité
-  statut: VF_DND
-  source: aidedd
+  statut: NON_OFFICIELLE
 spell.bone-chill:
   fr: Frisson des os
   statut: NON_OFFICIELLE
 spell.branding-smite-melee:
   fr: Châtiment révélateur (corps à corps)
-  statut: VF_DND
-  source: aidedd
+  statut: NON_OFFICIELLE
 spell.branding-smite-ranged:
   fr: Châtiment révélateur (à distance)
-  statut: VF_DND
-  source: aidedd
+  statut: NON_OFFICIELLE
 spell.bursting-sinew:
   fr: Éclatement des chairs
   statut: NON_OFFICIELLE
@@ -33,42 +30,34 @@ spell.drow-magic-faerie-fire:
   statut: NON_OFFICIELLE
 spell.elemental-weapon-acid:
   fr: "Arme élémentaire : acide"
-  statut: VF_DND
-  source: aidedd
+  statut: NON_OFFICIELLE
 spell.elemental-weapon-cold:
   fr: "Arme élémentaire : froid"
-  statut: VF_DND
-  source: aidedd
+  statut: NON_OFFICIELLE
 spell.elemental-weapon-fire:
   fr: "Arme élémentaire : feu"
-  statut: VF_DND
-  source: aidedd
+  statut: NON_OFFICIELLE
 spell.elemental-weapon-lightning:
   fr: "Arme élémentaire : foudre"
-  statut: VF_DND
-  source: aidedd
+  statut: NON_OFFICIELLE
 spell.elemental-weapon-thunder:
   fr: "Arme élémentaire : tonnerre"
-  statut: VF_DND
-  source: aidedd
+  statut: NON_OFFICIELLE
 spell.enhance-leap:
   fr: Amélioration de saut
   statut: NON_OFFICIELLE
 spell.enlarge-duergar:
   fr: Agrandissement
-  statut: VF_DND
-  source: aidedd
+  statut: NON_OFFICIELLE
 spell.eyes-of-the-dark-darkness:
   fr: "Yeux de l’obscurité : ténèbres"
   statut: NON_OFFICIELLE
 spell.find-familiar-imp:
   fr: "Appel de familier : diablotin"
-  statut: VF_DND
-  source: srd-5.2.1-fr
+  statut: NON_OFFICIELLE
 spell.find-familiar-quasit:
   fr: "Appel de familier : quasit"
-  statut: VF_DND
-  source: srd-5.2.1-fr
+  statut: NON_OFFICIELLE
 spell.githyanki-psionics-jump:
   fr: "Psionique githyanki : saut"
   statut: NON_OFFICIELLE

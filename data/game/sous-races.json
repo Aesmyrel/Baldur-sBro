@@ -1,0 +1,1768 @@
+[
+  {
+    "id": "subrace.asmodeus-tiefling",
+    "type": "subrace",
+    "name": {
+      "fr": "Asmodeus Tiefling",
+      "en": "Asmodeus Tiefling",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.tiefling"
+    },
+    "links": [
+      {
+        "target": "race.tiefling",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.black-dragonborn",
+    "type": "subrace",
+    "name": {
+      "fr": "Black Dragonborn",
+      "en": "Black Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dragonborn",
+      "features": [
+        {
+          "name": {
+            "fr": "Draconic Ancestry (Acid)",
+            "en": "Draconic Ancestry (Acid)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.draconic-ancestry-acid"
+        },
+        {
+          "name": {
+            "fr": "Acid Breath",
+            "en": "Acid Breath",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.acid-breath"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.acid-breath",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.draconic-ancestry-acid",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dragonborn",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.blue-dragonborn",
+    "type": "subrace",
+    "name": {
+      "fr": "Blue Dragonborn",
+      "en": "Blue Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dragonborn",
+      "features": [
+        {
+          "name": {
+            "fr": "Draconic Ancestry (Lightning)",
+            "en": "Draconic Ancestry (Lightning)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.draconic-ancestry-lightning"
+        },
+        {
+          "name": {
+            "fr": "Lightning Breath",
+            "en": "Lightning Breath",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.lightning-breath"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.draconic-ancestry-lightning",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.lightning-breath",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dragonborn",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.brass-dragonborn",
+    "type": "subrace",
+    "name": {
+      "fr": "Brass Dragonborn",
+      "en": "Brass Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dragonborn",
+      "features": [
+        {
+          "name": {
+            "fr": "Draconic Ancestry (Fire)",
+            "en": "Draconic Ancestry (Fire)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.draconic-ancestry-fire"
+        },
+        {
+          "name": {
+            "fr": "Fire Breath (Line)",
+            "en": "Fire Breath (Line)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.fire-breath-line"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.draconic-ancestry-fire",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.fire-breath-line",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dragonborn",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.bronze-dragonborn",
+    "type": "subrace",
+    "name": {
+      "fr": "Bronze Dragonborn",
+      "en": "Bronze Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dragonborn",
+      "features": [
+        {
+          "name": {
+            "fr": "Draconic Ancestry (Lightning)",
+            "en": "Draconic Ancestry (Lightning)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.draconic-ancestry-lightning"
+        },
+        {
+          "name": {
+            "fr": "Lightning Breath",
+            "en": "Lightning Breath",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.lightning-breath"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.draconic-ancestry-lightning",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.lightning-breath",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dragonborn",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.copper-dragonborn",
+    "type": "subrace",
+    "name": {
+      "fr": "Copper Dragonborn",
+      "en": "Copper Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dragonborn",
+      "features": [
+        {
+          "name": {
+            "fr": "Draconic Ancestry",
+            "en": "Draconic Ancestry",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.draconic-ancestry-acid"
+        },
+        {
+          "name": {
+            "fr": "Acid Breath",
+            "en": "Acid Breath",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.acid-breath"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.acid-breath",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.draconic-ancestry-acid",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dragonborn",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.deep-gnome",
+    "type": "subrace",
+    "name": {
+      "fr": "Deep Gnome",
+      "en": "Deep Gnome",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.gnome",
+      "features": [
+        {
+          "name": {
+            "fr": "Vision dans le noir supérieure",
+            "en": "Superior Darkvision",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.superior-darkvision"
+        },
+        {
+          "name": {
+            "fr": "Stone Camouflage",
+            "en": "Stone Camouflage",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.stone-camouflage"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.stone-camouflage",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.superior-darkvision",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.gnome",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.drow-half-elf",
+    "type": "subrace",
+    "name": {
+      "fr": "Drow Half-Elf",
+      "en": "Drow Half-Elf",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.half-elf",
+      "speedMetres": 9.0,
+      "features": [
+        {
+          "name": {
+            "fr": "Drow Magic",
+            "en": "Drow Magic",
+            "status": "UNOFFICIAL"
+          }
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "race.half-elf",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.duergar",
+    "type": "subrace",
+    "name": {
+      "fr": "Duergar",
+      "en": "Duergar",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dwarf",
+      "features": [
+        {
+          "name": {
+            "fr": "Duergar Resilience",
+            "en": "Duergar Resilience",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.duergar-resilience"
+        },
+        {
+          "name": {
+            "fr": "Vision dans le noir supérieure",
+            "en": "Superior Darkvision",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.superior-darkvision"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.duergar-resilience",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.superior-darkvision",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dwarf",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.forest-gnome",
+    "type": "subrace",
+    "name": {
+      "fr": "Forest Gnome",
+      "en": "Forest Gnome",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.gnome"
+    },
+    "links": [
+      {
+        "target": "race.gnome",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.gold-dragonborn",
+    "type": "subrace",
+    "name": {
+      "fr": "Gold Dragonborn",
+      "en": "Gold Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dragonborn",
+      "features": [
+        {
+          "name": {
+            "fr": "Draconic Ancestry",
+            "en": "Draconic Ancestry",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.draconic-ancestry-fire"
+        },
+        {
+          "name": {
+            "fr": "Fire Breath (Cone)",
+            "en": "Fire Breath (Cone)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.fire-breath-cone"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.draconic-ancestry-fire",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.fire-breath-cone",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dragonborn",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.gold-dwarf",
+    "type": "subrace",
+    "name": {
+      "fr": "Gold Dwarf",
+      "en": "Gold Dwarf",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dwarf",
+      "features": [
+        {
+          "name": {
+            "fr": "Dwarven Toughness",
+            "en": "Dwarven Toughness",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.dwarven-toughness"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.dwarven-toughness",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dwarf",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.green-dragonborn",
+    "type": "subrace",
+    "name": {
+      "fr": "Green Dragonborn",
+      "en": "Green Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dragonborn",
+      "features": [
+        {
+          "name": {
+            "fr": "Draconic Ancestry (Poison)",
+            "en": "Draconic Ancestry (Poison)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.draconic-ancestry-poison"
+        },
+        {
+          "name": {
+            "fr": "Poison Breath",
+            "en": "Poison Breath",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.poison-breath"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.draconic-ancestry-poison",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.poison-breath",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dragonborn",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.high-elf",
+    "type": "subrace",
+    "name": {
+      "fr": "High Elf",
+      "en": "High Elf",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.elf",
+      "speedMetres": 9.0
+    },
+    "links": [
+      {
+        "target": "race.elf",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.high-half-elf",
+    "type": "subrace",
+    "name": {
+      "fr": "High Half-Elf",
+      "en": "High Half-Elf",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.half-elf",
+      "speedMetres": 9.0
+    },
+    "links": [
+      {
+        "target": "race.half-elf",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.lightfoot-halfling",
+    "type": "subrace",
+    "name": {
+      "fr": "Lightfoot Halfling",
+      "en": "Lightfoot Halfling",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.halfling",
+      "features": [
+        {
+          "name": {
+            "fr": "Naturally Stealthy",
+            "en": "Naturally Stealthy",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.naturally-stealthy"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.naturally-stealthy",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.halfling",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.lolth-sworn-drow",
+    "type": "subrace",
+    "name": {
+      "fr": "Lolth-Sworn Drow",
+      "en": "Lolth-Sworn Drow",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.drow"
+    },
+    "links": [
+      {
+        "target": "race.drow",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.mephistopheles-tiefling",
+    "type": "subrace",
+    "name": {
+      "fr": "Mephistopheles Tiefling",
+      "en": "Mephistopheles Tiefling",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.tiefling"
+    },
+    "links": [
+      {
+        "target": "race.tiefling",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.red-dragonborn",
+    "type": "subrace",
+    "name": {
+      "fr": "Red Dragonborn",
+      "en": "Red Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dragonborn",
+      "features": [
+        {
+          "name": {
+            "fr": "Draconic Ancestry (Fire)",
+            "en": "Draconic Ancestry (Fire)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.draconic-ancestry-fire"
+        },
+        {
+          "name": {
+            "fr": "Fire Breath (Cone)",
+            "en": "Fire Breath (Cone)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.fire-breath-cone"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.draconic-ancestry-fire",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.fire-breath-cone",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dragonborn",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.rock-gnome",
+    "type": "subrace",
+    "name": {
+      "fr": "Rock Gnome",
+      "en": "Rock Gnome",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.gnome",
+      "proficiencies": {
+        "skills": [
+          "history"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "race.gnome",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.seldarine-drow",
+    "type": "subrace",
+    "name": {
+      "fr": "Seldarine Drow",
+      "en": "Seldarine Drow",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.drow"
+    },
+    "links": [
+      {
+        "target": "race.drow",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.shield-dwarf",
+    "type": "subrace",
+    "name": {
+      "fr": "Shield Dwarf",
+      "en": "Shield Dwarf",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dwarf",
+      "proficiencies": {
+        "armour": [
+          "light",
+          "medium"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "race.dwarf",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.silver-dragonborn",
+    "type": "subrace",
+    "name": {
+      "fr": "Silver Dragonborn",
+      "en": "Silver Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dragonborn",
+      "features": [
+        {
+          "name": {
+            "fr": "Draconic Ancestry (Cold)",
+            "en": "Draconic Ancestry (Cold)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.draconic-ancestry-cold"
+        },
+        {
+          "name": {
+            "fr": "Frost Breath",
+            "en": "Frost Breath",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.frost-breath"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.draconic-ancestry-cold",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.frost-breath",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dragonborn",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.strongheart-halfling",
+    "type": "subrace",
+    "name": {
+      "fr": "Strongheart Halfling",
+      "en": "Strongheart Halfling",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.halfling",
+      "features": [
+        {
+          "name": {
+            "fr": "Strongheart Resilience",
+            "en": "Strongheart Resilience",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.strongheart-resilience"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.strongheart-resilience",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.halfling",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.white-dragonborn",
+    "type": "subrace",
+    "name": {
+      "fr": "White Dragonborn",
+      "en": "White Dragonborn",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.dragonborn",
+      "features": [
+        {
+          "name": {
+            "fr": "Draconic Ancestry (Cold)",
+            "en": "Draconic Ancestry (Cold)",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.draconic-ancestry-cold"
+        },
+        {
+          "name": {
+            "fr": "Frost Breath",
+            "en": "Frost Breath",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.frost-breath"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.draconic-ancestry-cold",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.frost-breath",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.dragonborn",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.wood-elf",
+    "type": "subrace",
+    "name": {
+      "fr": "Wood Elf",
+      "en": "Wood Elf",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.elf",
+      "speedMetres": 10.5,
+      "proficiencies": {
+        "skills": [
+          "stealth"
+        ]
+      },
+      "features": [
+        {
+          "name": {
+            "fr": "Fleet of Foot",
+            "en": "Fleet of Foot",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.fleet-of-foot"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.fleet-of-foot",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.elf",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.wood-half-elf",
+    "type": "subrace",
+    "name": {
+      "fr": "Wood Half-Elf",
+      "en": "Wood Half-Elf",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.half-elf",
+      "speedMetres": 10.5,
+      "proficiencies": {
+        "skills": [
+          "stealth"
+        ]
+      },
+      "features": [
+        {
+          "name": {
+            "fr": "Fleet of Foot",
+            "en": "Fleet of Foot",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.fleet-of-foot"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.fleet-of-foot",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "race.half-elf",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "subrace.zariel-tiefling",
+    "type": "subrace",
+    "name": {
+      "fr": "Zariel Tiefling",
+      "en": "Zariel Tiefling",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Races",
+        "revision": 389127,
+        "url": "https://bg3.wiki/wiki/Races"
+      }
+    ],
+    "facts": {
+      "@type": "subrace",
+      "parentRace": "race.tiefling"
+    },
+    "links": [
+      {
+        "target": "race.tiefling",
+        "relation": "variant_of",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  }
+]

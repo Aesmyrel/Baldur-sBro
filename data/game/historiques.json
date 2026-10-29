@@ -1,0 +1,422 @@
+[
+  {
+    "id": "background.acolyte",
+    "type": "background",
+    "name": {
+      "fr": "Acolyte",
+      "en": "Acolyte",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "insight",
+        "religion"
+      ]
+    }
+  },
+  {
+    "id": "background.charlatan",
+    "type": "background",
+    "name": {
+      "fr": "Charlatan",
+      "en": "Charlatan",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "deception",
+        "sleight_of_hand"
+      ]
+    }
+  },
+  {
+    "id": "background.criminal",
+    "type": "background",
+    "name": {
+      "fr": "Criminal",
+      "en": "Criminal",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "deception",
+        "stealth"
+      ]
+    }
+  },
+  {
+    "id": "background.entertainer",
+    "type": "background",
+    "name": {
+      "fr": "Entertainer",
+      "en": "Entertainer",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "acrobatics",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "background.folk-hero",
+    "type": "background",
+    "name": {
+      "fr": "Folk Hero",
+      "en": "Folk Hero",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "animal_handling",
+        "survival"
+      ]
+    }
+  },
+  {
+    "id": "background.guild-artisan",
+    "type": "background",
+    "name": {
+      "fr": "Guild Artisan",
+      "en": "Guild Artisan",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "insight",
+        "persuasion"
+      ]
+    }
+  },
+  {
+    "id": "background.haunted-one",
+    "type": "background",
+    "name": {
+      "fr": "Haunted One",
+      "en": "Haunted One",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "medicine",
+        "intimidation"
+      ]
+    }
+  },
+  {
+    "id": "background.noble",
+    "type": "background",
+    "name": {
+      "fr": "Noble",
+      "en": "Noble",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "history",
+        "persuasion"
+      ]
+    }
+  },
+  {
+    "id": "background.outlander",
+    "type": "background",
+    "name": {
+      "fr": "Outlander",
+      "en": "Outlander",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "athletics",
+        "survival"
+      ]
+    }
+  },
+  {
+    "id": "background.sage",
+    "type": "background",
+    "name": {
+      "fr": "Sage",
+      "en": "Sage",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "arcana",
+        "history"
+      ]
+    }
+  },
+  {
+    "id": "background.soldier",
+    "type": "background",
+    "name": {
+      "fr": "Soldier",
+      "en": "Soldier",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "athletics",
+        "intimidation"
+      ]
+    }
+  },
+  {
+    "id": "background.urchin",
+    "type": "background",
+    "name": {
+      "fr": "Urchin",
+      "en": "Urchin",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Backgrounds",
+        "revision": 416238,
+        "url": "https://bg3.wiki/wiki/Backgrounds"
+      }
+    ],
+    "facts": {
+      "@type": "background",
+      "skills": [
+        "sleight_of_hand",
+        "stealth"
+      ]
+    }
+  }
+]

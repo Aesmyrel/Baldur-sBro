@@ -12,6 +12,10 @@ import fr.carnetdefaerun.core.model.content.PlaceFacts
 import fr.carnetdefaerun.core.model.content.Reference
 import fr.carnetdefaerun.core.model.content.SpellFacts
 import fr.carnetdefaerun.core.model.content.SubclassFacts
+import fr.carnetdefaerun.core.model.content.SubraceFacts
+import fr.carnetdefaerun.core.model.content.RaceFacts
+import fr.carnetdefaerun.core.model.content.BackgroundFacts
+import fr.carnetdefaerun.core.model.content.FeatFacts
 import fr.carnetdefaerun.core.model.search.Folding
 import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
 import java.nio.file.Files
@@ -157,5 +161,7 @@ class ContentDbBuilder(private val gameVersion: String) {
         is LoreFacts -> f.theme.name
         is ClassFacts -> null
         is SubclassFacts -> f.parentClass.value
+        is SubraceFacts -> f.parentRace.value
+        is RaceFacts, is BackgroundFacts, is FeatFacts -> null
     }
 }

@@ -71,15 +71,17 @@
               "name": {
                 "fr": "Rage",
                 "en": "Rage",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.rage"
             },
             {
               "name": {
-                "fr": "Unarmoured Defence",
+                "fr": "Défense sans armure",
                 "en": "Unarmoured Defence",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.unarmoured-defence-barbarian"
             }
@@ -103,17 +105,19 @@
           "features": [
             {
               "name": {
-                "fr": "Reckless Attack",
+                "fr": "Témérité",
                 "en": "Reckless Attack",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.reckless-attack"
             },
             {
               "name": {
-                "fr": "Danger Sense",
+                "fr": "Sens du danger",
                 "en": "Danger Sense",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.danger-sense"
             }
@@ -171,17 +175,19 @@
           "features": [
             {
               "name": {
-                "fr": "Extra Attack",
+                "fr": "Attaque supplémentaire",
                 "en": "Extra Attack",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.extra-attack"
             },
             {
               "name": {
-                "fr": "Fast Movement",
+                "fr": "Déplacement rapide",
                 "en": "Fast Movement",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.fast-movement"
             }
@@ -221,9 +227,10 @@
           "features": [
             {
               "name": {
-                "fr": "Feral Instinct",
+                "fr": "Instinct sauvage",
                 "en": "Feral Instinct",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.feral-instinct"
             }
@@ -264,7 +271,7 @@
           "features": [
             {
               "name": {
-                "fr": "Brutal Critical",
+                "fr": "Critique brutal",
                 "en": "Brutal Critical",
                 "status": "UNOFFICIAL"
               },
@@ -306,9 +313,10 @@
           "features": [
             {
               "name": {
-                "fr": "Relentless Rage",
+                "fr": "Rage implacable",
                 "en": "Relentless Rage",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.relentless-rage"
             }
@@ -514,9 +522,10 @@
           "features": [
             {
               "name": {
-                "fr": "Bardic Inspiration",
+                "fr": "Inspiration bardique",
                 "en": "Bardic Inspiration",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.bardic-inspiration-class-action"
             }
@@ -539,7 +548,7 @@
           "features": [
             {
               "name": {
-                "fr": "Song of Rest",
+                "fr": "Chant reposant",
                 "en": "Song of Rest",
                 "status": "UNOFFICIAL"
               },
@@ -547,9 +556,10 @@
             },
             {
               "name": {
-                "fr": "Jack of All Trades",
+                "fr": "Touche-à-tout",
                 "en": "Jack of All Trades",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.jack-of-all-trades"
             }
@@ -574,7 +584,8 @@
               "name": {
                 "fr": "Expertise",
                 "en": "Expertise",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.expertise-passive-feature"
             }
@@ -616,7 +627,7 @@
           "features": [
             {
               "name": {
-                "fr": "Improved Bardic Inspiration (passive feature)",
+                "fr": "Inspiration bardique améliorée",
                 "en": "Improved Bardic Inspiration (passive feature)",
                 "status": "UNOFFICIAL"
               },
@@ -624,9 +635,10 @@
             },
             {
               "name": {
-                "fr": "Font of Inspiration",
+                "fr": "Source d’inspiration",
                 "en": "Font of Inspiration",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.font-of-inspiration"
             }
@@ -651,9 +663,10 @@
           "features": [
             {
               "name": {
-                "fr": "Countercharm",
+                "fr": "Contre-charme",
                 "en": "Countercharm",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.countercharm"
             }
@@ -734,7 +747,7 @@
           "features": [
             {
               "name": {
-                "fr": "Improved Bardic Inspiration (passive feature)",
+                "fr": "Inspiration bardique améliorée",
                 "en": "Improved Bardic Inspiration (passive feature)",
                 "status": "UNOFFICIAL"
               },
@@ -744,7 +757,8 @@
               "name": {
                 "fr": "Expertise",
                 "en": "Expertise",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.expertise-passive-feature"
             },
@@ -1024,7 +1038,7 @@
           "features": [
             {
               "name": {
-                "fr": "Destroy Undead",
+                "fr": "Destruction des morts-vivants",
                 "en": "Destroy Undead",
                 "status": "UNOFFICIAL"
               },
@@ -1119,9 +1133,10 @@
           "features": [
             {
               "name": {
-                "fr": "Divine Intervention",
+                "fr": "Intervention divine",
                 "en": "Divine Intervention",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.divine-intervention"
             }
@@ -1300,9 +1315,10 @@
           "features": [
             {
               "name": {
-                "fr": "Wild Shape",
+                "fr": "Forme sauvage",
                 "en": "Wild Shape",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.wild-shape"
             }
@@ -1347,7 +1363,7 @@
           "features": [
             {
               "name": {
-                "fr": "Wild Strike",
+                "fr": "Frappe sauvage",
                 "en": "Wild Strike",
                 "status": "UNOFFICIAL"
               },
@@ -1421,7 +1437,7 @@
           "features": [
             {
               "name": {
-                "fr": "Improved Wild Strike",
+                "fr": "Frappe sauvage améliorée",
                 "en": "Improved Wild Strike",
                 "status": "UNOFFICIAL"
               },
@@ -1580,9 +1596,10 @@
           "features": [
             {
               "name": {
-                "fr": "Second Wind",
+                "fr": "Second souffle",
                 "en": "Second Wind",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.second-wind"
             },
@@ -1602,9 +1619,10 @@
           "features": [
             {
               "name": {
-                "fr": "Action Surge",
+                "fr": "Fougue",
                 "en": "Action Surge",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.action-surge"
             }
@@ -1626,9 +1644,10 @@
           "features": [
             {
               "name": {
-                "fr": "Extra Attack",
+                "fr": "Attaque supplémentaire",
                 "en": "Extra Attack",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.extra-attack"
             }
@@ -1654,9 +1673,10 @@
           "features": [
             {
               "name": {
-                "fr": "Indomitable",
+                "fr": "Inflexible",
                 "en": "Indomitable",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.indomitable"
             }
@@ -1672,7 +1692,7 @@
           "features": [
             {
               "name": {
-                "fr": "Improved Extra Attack",
+                "fr": "Attaque supplémentaire améliorée",
                 "en": "Improved Extra Attack",
                 "status": "UNOFFICIAL"
               },
@@ -1801,15 +1821,16 @@
           "features": [
             {
               "name": {
-                "fr": "Unarmoured Defence",
+                "fr": "Défense sans armure",
                 "en": "Unarmoured Defence",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.unarmoured-defence-monk"
             },
             {
               "name": {
-                "fr": "Martial Arts: Dextrous Attacks",
+                "fr": "Arts martiaux : attaques lestes",
                 "en": "Martial Arts: Dextrous Attacks",
                 "status": "UNOFFICIAL"
               },
@@ -1817,7 +1838,7 @@
             },
             {
               "name": {
-                "fr": "Martial Arts: Deft Strikes",
+                "fr": "Arts martiaux : frappes habiles",
                 "en": "Martial Arts: Deft Strikes",
                 "status": "UNOFFICIAL"
               },
@@ -1825,7 +1846,7 @@
             },
             {
               "name": {
-                "fr": "Martial Arts: Bonus Unarmed Strike",
+                "fr": "Arts martiaux : attaque à mains nues supplémentaire",
                 "en": "Martial Arts: Bonus Unarmed Strike",
                 "status": "UNOFFICIAL"
               },
@@ -1833,9 +1854,10 @@
             },
             {
               "name": {
-                "fr": "Flurry of Blows",
+                "fr": "Déluge de coups",
                 "en": "Flurry of Blows",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.flurry-of-blows"
             }
@@ -1859,23 +1881,25 @@
           "features": [
             {
               "name": {
-                "fr": "Unarmoured Movement",
+                "fr": "Déplacement sans armure",
                 "en": "Unarmoured Movement",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.unarmoured-movement"
             },
             {
               "name": {
-                "fr": "Patient Defence",
+                "fr": "Patience défensive",
                 "en": "Patient Defence",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.patient-defence"
             },
             {
               "name": {
-                "fr": "Step of the Wind: Dash",
+                "fr": "Porté par le vent : pointe",
                 "en": "Step of the Wind: Dash",
                 "status": "UNOFFICIAL"
               },
@@ -1883,7 +1907,7 @@
             },
             {
               "name": {
-                "fr": "Step of the Wind: Disengage",
+                "fr": "Porté par le vent : désengagement",
                 "en": "Step of the Wind: Disengage",
                 "status": "UNOFFICIAL"
               },
@@ -1913,7 +1937,7 @@
           "features": [
             {
               "name": {
-                "fr": "Deflect Missiles",
+                "fr": "Parade de projectiles",
                 "en": "Deflect Missiles",
                 "status": "UNOFFICIAL"
               },
@@ -1944,9 +1968,10 @@
           "features": [
             {
               "name": {
-                "fr": "Slow Fall",
+                "fr": "Chute ralentie",
                 "en": "Slow Fall",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.slow-fall"
             }
@@ -1975,15 +2000,16 @@
           "features": [
             {
               "name": {
-                "fr": "Extra Attack",
+                "fr": "Attaque supplémentaire",
                 "en": "Extra Attack",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.extra-attack"
             },
             {
               "name": {
-                "fr": "Stunning Strike (Melee)",
+                "fr": "Frappe étourdissante (corps à corps)",
                 "en": "Stunning Strike (Melee)",
                 "status": "UNOFFICIAL"
               },
@@ -1991,7 +2017,7 @@
             },
             {
               "name": {
-                "fr": "Stunning Strike (Unarmed)",
+                "fr": "Frappe étourdissante (à mains nues)",
                 "en": "Stunning Strike (Unarmed)",
                 "status": "UNOFFICIAL"
               },
@@ -2021,7 +2047,7 @@
           "features": [
             {
               "name": {
-                "fr": "Ki-Empowered Strikes",
+                "fr": "Frappes de ki",
                 "en": "Ki-Empowered Strikes",
                 "status": "UNOFFICIAL"
               },
@@ -2029,9 +2055,10 @@
             },
             {
               "name": {
-                "fr": "Improved Unarmoured Movement",
+                "fr": "Déplacement sans armure",
                 "en": "Improved Unarmoured Movement",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.unarmoured-movement"
             }
@@ -2059,15 +2086,16 @@
           "features": [
             {
               "name": {
-                "fr": "Evasion",
+                "fr": "Esquive totale",
                 "en": "Evasion",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.evasion"
             },
             {
               "name": {
-                "fr": "Stillness of Mind",
+                "fr": "Tranquillité d’esprit",
                 "en": "Stillness of Mind",
                 "status": "UNOFFICIAL"
               },
@@ -2118,7 +2146,7 @@
           "features": [
             {
               "name": {
-                "fr": "Advanced Unarmoured Movement",
+                "fr": "Déplacement sans armure avancé",
                 "en": "Advanced Unarmoured Movement",
                 "status": "UNOFFICIAL"
               },
@@ -2148,7 +2176,7 @@
           "features": [
             {
               "name": {
-                "fr": "Purity of Body",
+                "fr": "Pureté du corps",
                 "en": "Purity of Body",
                 "status": "UNOFFICIAL"
               },
@@ -2156,9 +2184,10 @@
             },
             {
               "name": {
-                "fr": "Improved Unarmoured Movement",
+                "fr": "Déplacement sans armure",
                 "en": "Improved Unarmoured Movement",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.unarmoured-movement"
             }
@@ -2470,17 +2499,19 @@
           "features": [
             {
               "name": {
-                "fr": "Divine Sense",
+                "fr": "Perception divine",
                 "en": "Divine Sense",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.divine-sense"
             },
             {
               "name": {
-                "fr": "Lay on Hands",
+                "fr": "Imposition des mains",
                 "en": "Lay on Hands",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.lay-on-hands"
             },
@@ -2514,9 +2545,10 @@
             },
             {
               "name": {
-                "fr": "Divine Smite",
+                "fr": "Châtiment divin",
                 "en": "Divine Smite",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.divine-smite"
             }
@@ -2537,7 +2569,7 @@
           "features": [
             {
               "name": {
-                "fr": "Divine Health",
+                "fr": "Santé divine",
                 "en": "Divine Health",
                 "status": "UNOFFICIAL"
               },
@@ -2574,9 +2606,10 @@
           "features": [
             {
               "name": {
-                "fr": "Extra Attack",
+                "fr": "Attaque supplémentaire",
                 "en": "Extra Attack",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.extra-attack"
             }
@@ -2598,9 +2631,10 @@
           "features": [
             {
               "name": {
-                "fr": "Aura of Protection",
+                "fr": "Aura de protection",
                 "en": "Aura of Protection",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.aura-of-protection"
             }
@@ -2666,9 +2700,10 @@
           "features": [
             {
               "name": {
-                "fr": "Aura of Courage",
+                "fr": "Aura de courage",
                 "en": "Aura of Courage",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.aura-of-courage"
             }
@@ -2691,7 +2726,7 @@
           "features": [
             {
               "name": {
-                "fr": "Improved Divine Smite",
+                "fr": "Châtiment divin amélioré",
                 "en": "Improved Divine Smite",
                 "status": "UNOFFICIAL"
               },
@@ -2935,9 +2970,10 @@
           "features": [
             {
               "name": {
-                "fr": "Extra Attack",
+                "fr": "Attaque supplémentaire",
                 "en": "Extra Attack",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.extra-attack"
             }
@@ -2989,7 +3025,7 @@
           "features": [
             {
               "name": {
-                "fr": "Land’s Stride: Difficult Terrain",
+                "fr": "Foulée de la terre : terrain difficile",
                 "en": "Land's Stride: Difficult Terrain",
                 "status": "UNOFFICIAL"
               },
@@ -3034,7 +3070,7 @@
             },
             {
               "name": {
-                "fr": "Hide in Plain Sight",
+                "fr": "Camouflage",
                 "en": "Hide in Plain Sight",
                 "status": "UNOFFICIAL"
               },
@@ -3180,13 +3216,14 @@
               "name": {
                 "fr": "Expertise",
                 "en": "Expertise",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.expertise-passive-feature"
             },
             {
               "name": {
-                "fr": "Sneak Attack (Melee)",
+                "fr": "Attaque sournoise (corps à corps)",
                 "en": "Sneak Attack (Melee)",
                 "status": "UNOFFICIAL"
               },
@@ -3194,7 +3231,7 @@
             },
             {
               "name": {
-                "fr": "Sneak Attack (Ranged)",
+                "fr": "Attaque sournoise (à distance)",
                 "en": "Sneak Attack (Ranged)",
                 "status": "UNOFFICIAL"
               },
@@ -3214,7 +3251,7 @@
           "features": [
             {
               "name": {
-                "fr": "Cunning Action: Dash",
+                "fr": "Ruse : pointe",
                 "en": "Cunning Action: Dash",
                 "status": "UNOFFICIAL"
               },
@@ -3222,7 +3259,7 @@
             },
             {
               "name": {
-                "fr": "Cunning Action: Disengage",
+                "fr": "Ruse : désengagement",
                 "en": "Cunning Action: Disengage",
                 "status": "UNOFFICIAL"
               },
@@ -3230,7 +3267,7 @@
             },
             {
               "name": {
-                "fr": "Cunning Action: Hide",
+                "fr": "Ruse : furtivité",
                 "en": "Cunning Action: Hide",
                 "status": "UNOFFICIAL"
               },
@@ -3272,9 +3309,10 @@
           "features": [
             {
               "name": {
-                "fr": "Uncanny Dodge",
+                "fr": "Esquive instinctive",
                 "en": "Uncanny Dodge",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.uncanny-dodge"
             }
@@ -3294,7 +3332,8 @@
               "name": {
                 "fr": "Expertise",
                 "en": "Expertise",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.expertise-passive-feature"
             }
@@ -3312,9 +3351,10 @@
           "features": [
             {
               "name": {
-                "fr": "Evasion",
+                "fr": "Esquive totale",
                 "en": "Evasion",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.evasion"
             }
@@ -3364,9 +3404,10 @@
           "features": [
             {
               "name": {
-                "fr": "Reliable Talent",
+                "fr": "Savoir-faire",
                 "en": "Reliable Talent",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.reliable-talent"
             }
@@ -3555,7 +3596,7 @@
             },
             {
               "name": {
-                "fr": "Create Spell Slot",
+                "fr": "Créer un emplacement de sort",
                 "en": "Create Spell Slot",
                 "status": "UNOFFICIAL"
               },
@@ -3563,7 +3604,7 @@
             },
             {
               "name": {
-                "fr": "Create Sorcery Points",
+                "fr": "Créer des points de sorcellerie",
                 "en": "Create Sorcery Points",
                 "status": "UNOFFICIAL"
               },
@@ -3963,7 +4004,7 @@
           "features": [
             {
               "name": {
-                "fr": "Deepened Pact",
+                "fr": "Pacte approfondi",
                 "en": "Deepened Pact",
                 "status": "UNOFFICIAL"
               },
@@ -4239,9 +4280,10 @@
           "features": [
             {
               "name": {
-                "fr": "Arcane Recovery",
+                "fr": "Restauration magique",
                 "en": "Arcane Recovery",
-                "status": "UNOFFICIAL"
+                "status": "VF_DND",
+                "source": "srd-5.2.1-fr"
               },
               "id": "feature.arcane-recovery"
             },

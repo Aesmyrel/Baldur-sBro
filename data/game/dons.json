@@ -1,0 +1,2394 @@
+[
+  {
+    "id": "feat.ability-improvement",
+    "type": "feat",
+    "name": {
+      "fr": "Ability Improvement",
+      "en": "Ability Improvement",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "abilityIncrease": {
+        "amount": 2,
+        "splittable": true
+      }
+    }
+  },
+  {
+    "id": "feat.actor",
+    "type": "feat",
+    "name": {
+      "fr": "Actor",
+      "en": "Actor",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Actor",
+            "en": "Actor",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.actor"
+        }
+      ],
+      "abilityIncrease": {
+        "amount": 1,
+        "choices": [
+          "cha"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "feature.actor",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.alert",
+    "type": "feat",
+    "name": {
+      "fr": "Alert",
+      "en": "Alert",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Alert",
+            "en": "Alert",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.alert"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.alert",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.athlete",
+    "type": "feat",
+    "name": {
+      "fr": "Athlete",
+      "en": "Athlete",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Athlete: Standing Up",
+            "en": "Athlete: Standing Up",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.athlete-standing-up"
+        }
+      ],
+      "abilityIncrease": {
+        "amount": 1,
+        "choices": [
+          "str",
+          "dex"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "feature.athlete-standing-up",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.charger",
+    "type": "feat",
+    "name": {
+      "fr": "Charger",
+      "en": "Charger",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Charger: Weapon Attack",
+            "en": "Charger: Weapon Attack",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.charger-weapon-attack"
+        },
+        {
+          "name": {
+            "fr": "Charger: Shove",
+            "en": "Charger: Shove",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.charger-shove"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.charger-shove",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.charger-weapon-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.crossbow-expert",
+    "type": "feat",
+    "name": {
+      "fr": "Crossbow Expert",
+      "en": "Crossbow Expert",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Crossbow Expert: Point-Blank",
+            "en": "Crossbow Expert: Point-Blank",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.crossbow-expert-point-blank"
+        },
+        {
+          "name": {
+            "fr": "Crossbow Expert: Wounding",
+            "en": "Crossbow Expert: Wounding",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.crossbow-expert-wounding"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.crossbow-expert-point-blank",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.crossbow-expert-wounding",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.defensive-duellist",
+    "type": "feat",
+    "name": {
+      "fr": "Defensive Duellist",
+      "en": "Defensive Duellist",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Defensive Duellist",
+            "en": "Defensive Duellist",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.defensive-duellist"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.defensive-duellist",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.dual-wielder",
+    "type": "feat",
+    "name": {
+      "fr": "Dual Wielder",
+      "en": "Dual Wielder",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Dual Wielder",
+            "en": "Dual Wielder",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.dual-wielder"
+        },
+        {
+          "name": {
+            "fr": "Dual Wielder: Bonus Armour Class",
+            "en": "Dual Wielder: Bonus Armour Class",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.dual-wielder-bonus-armour-class"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.dual-wielder",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.dual-wielder-bonus-armour-class",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.dungeon-delver",
+    "type": "feat",
+    "name": {
+      "fr": "Dungeon Delver",
+      "en": "Dungeon Delver",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Dungeon Delver: Perception",
+            "en": "Dungeon Delver: Perception",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.dungeon-delver-perception"
+        },
+        {
+          "name": {
+            "fr": "Dungeon Delver: Resist Traps",
+            "en": "Dungeon Delver: Resist Traps",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.dungeon-delver-resist-traps"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.dungeon-delver-perception",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.dungeon-delver-resist-traps",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.durable",
+    "type": "feat",
+    "name": {
+      "fr": "Durable",
+      "en": "Durable",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Durable",
+            "en": "Durable",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.durable"
+        }
+      ],
+      "abilityIncrease": {
+        "amount": 1,
+        "choices": [
+          "con"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "feature.durable",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.elemental-adept",
+    "type": "feat",
+    "name": {
+      "fr": "Elemental Adept",
+      "en": "Elemental Adept",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat"
+    }
+  },
+  {
+    "id": "feat.great-weapon-master",
+    "type": "feat",
+    "name": {
+      "fr": "Great Weapon Master",
+      "en": "Great Weapon Master",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Great Weapon Master: Bonus Attack",
+            "en": "Great Weapon Master: Bonus Attack",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.great-weapon-master-bonus-attack"
+        },
+        {
+          "name": {
+            "fr": "Great Weapon Master: All In",
+            "en": "Great Weapon Master: All In",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.great-weapon-master-all-in"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.great-weapon-master-all-in",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.great-weapon-master-bonus-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.heavily-armoured",
+    "type": "feat",
+    "name": {
+      "fr": "Heavily Armoured",
+      "en": "Heavily Armoured",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Heavily Armoured",
+            "en": "Heavily Armoured",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.heavily-armoured"
+        }
+      ],
+      "abilityIncrease": {
+        "amount": 1,
+        "choices": [
+          "str"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "feature.heavily-armoured",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.heavy-armour-master",
+    "type": "feat",
+    "name": {
+      "fr": "Heavy Armour Master",
+      "en": "Heavy Armour Master",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Heavy Armour Master",
+            "en": "Heavy Armour Master",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.heavy-armour-master"
+        }
+      ],
+      "abilityIncrease": {
+        "amount": 1,
+        "choices": [
+          "str"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "feature.heavy-armour-master",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.lightly-armoured",
+    "type": "feat",
+    "name": {
+      "fr": "Lightly Armoured",
+      "en": "Lightly Armoured",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Lightly Armoured",
+            "en": "Lightly Armoured",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.lightly-armoured"
+        }
+      ],
+      "abilityIncrease": {
+        "amount": 1,
+        "choices": [
+          "str",
+          "dex"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "feature.lightly-armoured",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.lucky",
+    "type": "feat",
+    "name": {
+      "fr": "Lucky",
+      "en": "Lucky",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Lucky",
+            "en": "Lucky",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.lucky-ability-check"
+        },
+        {
+          "name": {
+            "fr": "Lucky",
+            "en": "Lucky",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.lucky-reactions"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.lucky-ability-check",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.lucky-reactions",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.mage-slayer",
+    "type": "feat",
+    "name": {
+      "fr": "Mage Slayer",
+      "en": "Mage Slayer",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Mage Slayer: Saving Throw Advantage",
+            "en": "Mage Slayer: Saving Throw Advantage",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.mage-slayer-saving-throw-advantage"
+        },
+        {
+          "name": {
+            "fr": "Mage Slayer: Attack Caster",
+            "en": "Mage Slayer: Attack Caster",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.mage-slayer-attack-caster"
+        },
+        {
+          "name": {
+            "fr": "Mage Slayer: Break Concentration",
+            "en": "Mage Slayer: Break Concentration",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.mage-slayer-break-concentration"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.mage-slayer-attack-caster",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.mage-slayer-break-concentration",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.mage-slayer-saving-throw-advantage",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.magic-initiate-bard",
+    "type": "feat",
+    "name": {
+      "fr": "Magic Initiate: Bard",
+      "en": "Magic Initiate: Bard",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Magic Initiate: Bard",
+            "en": "Magic Initiate: Bard",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.magic-initiate-bard"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.magic-initiate-bard",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.magic-initiate-cleric",
+    "type": "feat",
+    "name": {
+      "fr": "Magic Initiate: Cleric",
+      "en": "Magic Initiate: Cleric",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Magic Initiate: Cleric",
+            "en": "Magic Initiate: Cleric",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.magic-initiate-cleric"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.magic-initiate-cleric",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.magic-initiate-druid",
+    "type": "feat",
+    "name": {
+      "fr": "Magic Initiate: Druid",
+      "en": "Magic Initiate: Druid",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Magic Initiate: Druid",
+            "en": "Magic Initiate: Druid",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.magic-initiate-druid"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.magic-initiate-druid",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.magic-initiate-sorcerer",
+    "type": "feat",
+    "name": {
+      "fr": "Magic Initiate: Sorcerer",
+      "en": "Magic Initiate: Sorcerer",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Magic Initiate: Sorcerer",
+            "en": "Magic Initiate: Sorcerer",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.magic-initiate-sorcerer"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.magic-initiate-sorcerer",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.magic-initiate-warlock",
+    "type": "feat",
+    "name": {
+      "fr": "Magic Initiate: Warlock",
+      "en": "Magic Initiate: Warlock",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Magic Initiate: Warlock",
+            "en": "Magic Initiate: Warlock",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.magic-initiate-warlock"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.magic-initiate-warlock",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.magic-initiate-wizard",
+    "type": "feat",
+    "name": {
+      "fr": "Magic Initiate: Wizard",
+      "en": "Magic Initiate: Wizard",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Magic Initiate: Wizard",
+            "en": "Magic Initiate: Wizard",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.magic-initiate-wizard"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.magic-initiate-wizard",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.martial-adept",
+    "type": "feat",
+    "name": {
+      "fr": "Martial Adept",
+      "en": "Martial Adept",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Martial Adept",
+            "en": "Martial Adept",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.martial-adept"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.martial-adept",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.medium-armour-master",
+    "type": "feat",
+    "name": {
+      "fr": "Medium Armour Master",
+      "en": "Medium Armour Master",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Medium Armour Master",
+            "en": "Medium Armour Master",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.medium-armour-master"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.medium-armour-master",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.mobile",
+    "type": "feat",
+    "name": {
+      "fr": "Mobile",
+      "en": "Mobile",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Mobile",
+            "en": "Mobile",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.mobile"
+        },
+        {
+          "name": {
+            "fr": "Mobile: Evade Difficult Terrain",
+            "en": "Mobile: Evade Difficult Terrain",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.mobile-evade-difficult-terrain"
+        },
+        {
+          "name": {
+            "fr": "Mobile: Evade Opportunity Attack",
+            "en": "Mobile: Evade Opportunity Attack",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.mobile-evade-opportunity-attack"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.mobile",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.mobile-evade-difficult-terrain",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.mobile-evade-opportunity-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.moderately-armoured",
+    "type": "feat",
+    "name": {
+      "fr": "Moderately Armoured",
+      "en": "Moderately Armoured",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Moderately Armoured",
+            "en": "Moderately Armoured",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.moderately-armoured"
+        }
+      ],
+      "abilityIncrease": {
+        "amount": 1,
+        "choices": [
+          "str",
+          "dex"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "feature.moderately-armoured",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.performer",
+    "type": "feat",
+    "name": {
+      "fr": "Performer",
+      "en": "Performer",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "abilityIncrease": {
+        "amount": 1,
+        "choices": [
+          "cha"
+        ]
+      }
+    }
+  },
+  {
+    "id": "feat.polearm-master",
+    "type": "feat",
+    "name": {
+      "fr": "Polearm Master",
+      "en": "Polearm Master",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Polearm Master: Bonus Attack",
+            "en": "Polearm Master: Bonus Attack",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.polearm-master-bonus-attack"
+        },
+        {
+          "name": {
+            "fr": "Polearm Master: Opportunity Attack",
+            "en": "Polearm Master: Opportunity Attack",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.polearm-master-opportunity-attack"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.polearm-master-bonus-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.polearm-master-opportunity-attack",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.resilient",
+    "type": "feat",
+    "name": {
+      "fr": "Resilient",
+      "en": "Resilient",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "abilityIncrease": {
+        "amount": 1
+      }
+    }
+  },
+  {
+    "id": "feat.ritual-caster",
+    "type": "feat",
+    "name": {
+      "fr": "Ritual Caster",
+      "en": "Ritual Caster",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Ritual Caster: Free Spells",
+            "en": "Ritual Caster: Free Spells",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.ritual-caster-free-spells"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.ritual-caster-free-spells",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.savage-attacker",
+    "type": "feat",
+    "name": {
+      "fr": "Savage Attacker",
+      "en": "Savage Attacker",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Savage Attacker",
+            "en": "Savage Attacker",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.savage-attacker"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.savage-attacker",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.sentinel",
+    "type": "feat",
+    "name": {
+      "fr": "Sentinel",
+      "en": "Sentinel",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Sentinel: Vengeance",
+            "en": "Sentinel: Vengeance",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.sentinel-vengeance"
+        },
+        {
+          "name": {
+            "fr": "Sentinel: Snare",
+            "en": "Sentinel: Snare",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.sentinel-snare"
+        },
+        {
+          "name": {
+            "fr": "Sentinel: Opportunity Advantage",
+            "en": "Sentinel: Opportunity Advantage",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.sentinel-opportunity-advantage"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.sentinel-opportunity-advantage",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.sentinel-snare",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.sentinel-vengeance",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.sharpshooter",
+    "type": "feat",
+    "name": {
+      "fr": "Sharpshooter",
+      "en": "Sharpshooter",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Sharpshooter: Low Ground",
+            "en": "Sharpshooter: Low Ground",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.sharpshooter-low-ground"
+        },
+        {
+          "name": {
+            "fr": "Sharpshooter: All In",
+            "en": "Sharpshooter: All In",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.sharpshooter-all-in"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.sharpshooter-all-in",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.sharpshooter-low-ground",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.shield-master",
+    "type": "feat",
+    "name": {
+      "fr": "Shield Master",
+      "en": "Shield Master",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Shield Master",
+            "en": "Shield Master",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.shield-master"
+        },
+        {
+          "name": {
+            "fr": "Shield Master: Block",
+            "en": "Shield Master: Block",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.shield-master-block"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.shield-master",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.shield-master-block",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.skilled",
+    "type": "feat",
+    "name": {
+      "fr": "Skilled",
+      "en": "Skilled",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Skilled",
+            "en": "Skilled",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.skilled"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.skilled",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.spell-sniper",
+    "type": "feat",
+    "name": {
+      "fr": "Spell Sniper",
+      "en": "Spell Sniper",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Spell Sniper",
+            "en": "Spell Sniper",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.spell-sniper"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.spell-sniper",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.tavern-brawler",
+    "type": "feat",
+    "name": {
+      "fr": "Tavern Brawler",
+      "en": "Tavern Brawler",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Tavern Brawler",
+            "en": "Tavern Brawler",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.tavern-brawler"
+        }
+      ],
+      "abilityIncrease": {
+        "amount": 1,
+        "choices": [
+          "str",
+          "con"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "feature.tavern-brawler",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.tough",
+    "type": "feat",
+    "name": {
+      "fr": "Tough",
+      "en": "Tough",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Tough",
+            "en": "Tough",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.tough"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.tough",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.war-caster",
+    "type": "feat",
+    "name": {
+      "fr": "War Caster",
+      "en": "War Caster",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "War Caster: Concentration",
+            "en": "War Caster: Concentration",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.war-caster-concentration"
+        },
+        {
+          "name": {
+            "fr": "War Caster: Opportunity Spell",
+            "en": "War Caster: Opportunity Spell",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.war-caster-opportunity-spell"
+        }
+      ]
+    },
+    "links": [
+      {
+        "target": "feature.war-caster-concentration",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.war-caster-opportunity-spell",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "feat.weapon-master",
+    "type": "feat",
+    "name": {
+      "fr": "Weapon Master",
+      "en": "Weapon Master",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Feats",
+        "revision": 439281,
+        "url": "https://bg3.wiki/wiki/Feats"
+      }
+    ],
+    "facts": {
+      "@type": "feat",
+      "features": [
+        {
+          "name": {
+            "fr": "Weapon Master",
+            "en": "Weapon Master",
+            "status": "UNOFFICIAL"
+          },
+          "id": "feature.weapon-master"
+        }
+      ],
+      "abilityIncrease": {
+        "amount": 1,
+        "choices": [
+          "str",
+          "dex"
+        ]
+      }
+    },
+    "links": [
+      {
+        "target": "feature.weapon-master",
+        "relation": "grants",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  }
+]

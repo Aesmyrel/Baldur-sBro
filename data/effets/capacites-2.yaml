@@ -33,7 +33,7 @@ feature.legendary-persistence:
   revision: 432776
 feature.lesser-infernal-retribution:
   effets:
-    - "Porteur touché au corps à corps par un ennemi à 2 m ou moins : l’attaquant fait un jet de sauvegarde de Dextérité (DD 13) ; en cas d’échec, il subit 1d4 dégâts de feu."
+    - "Porteur touché par une attaque au corps à corps : l’attaquant fait un jet de sauvegarde de Dextérité (DD 13) ; en cas d’échec, il subit 1d4 dégâts de feu."
   notes:
     - "Une seule fois par attaque subie."
   revision: 432778
@@ -41,6 +41,8 @@ feature.lesser-infernal-touch:
   effets:
     - "Attaque avec une arme : 1d4 dégâts de feu supplémentaires."
     - "Attaque à mains nues : 1d4 dégâts nécrotiques supplémentaires ; la cible fait un jet de sauvegarde de Constitution (DD 13) ou subit l’état Saignement pendant 2 tours."
+  notes:
+    - "Une arme lancée déclenche les deux effets : dégâts de feu et risque de Saignement."
   revision: 433641
 feature.let-the-undead-blanch-with-fear:
   effets:
@@ -72,6 +74,7 @@ feature.life-essence-harvest:
     - "Essence vitale : permet de lancer un sort de nécromancie sans dépenser d’emplacement de sort."
   notes:
     - "Sans limite d’utilisation ; un sort lancé grâce à Essence vitale ne rapporte pas de nouvelle charge."
+    - "Un sort mineur de nécromancie consomme aussi Essence vitale."
   revision: 432786
 feature.life-stealing-critical:
   effets:
@@ -103,6 +106,8 @@ feature.lunar-bestial-fortitude:
   effets:
     - "Tant que l’objet est porté : état Protection lunaire, soit +2 à la classe d’armure et avantage aux jets de sauvegarde contre les sorts."
     - "L’effet persiste sous Forme sauvage."
+  notes:
+    - "Sous Forme étoilée, le bonus de classe d’armure s’applique deux fois (+4)."
   revision: 432800
 feature.lunar-bestial-vitality:
   effets:
@@ -150,10 +155,11 @@ feature.marksmanship:
     - "Jet d’attaque à distance ou de lancer : +1."
   notes:
     - "Le bonus vaut aussi pour les jets d’attaque de sort."
+    - "Seulement avec une arme à distance en main principale : une arbalète de poing en main secondaire n’en profite pas."
   revision: 432830
 feature.martial-bravery:
   effets:
-    - "Attaque avec une arme, à mains nues ou de lancer, alors que 2 ennemis ou plus sont proches : 2 dégâts supplémentaires."
+    - "Attaque avec une arme, à mains nues ou de lancer, quand 2 ennemis ou plus se trouvent à 3 m ou moins de la cible : 2 dégâts supplémentaires."
   revision: 432836
 feature.martial-exertion:
   effets:
@@ -184,7 +190,7 @@ feature.menacing-attack-bonespike-helmet:
   revision: 420904
 feature.mental-inhibition:
   effets:
-    - "Ennemi qui rate un jet de sauvegarde contre un sort ou une action du porteur : il subit l’état Fatigue mentale pendant 2 tours."
+    - "Créature, alliée comprise, qui rate un jet de sauvegarde contre un sort ou une action du porteur : elle subit l’état Fatigue mentale pendant 2 tours."
   notes:
     - "Ne joue pas sur les jets de sauvegarde répétés pour mettre fin à un effet déjà subi."
   revision: 432842
@@ -202,10 +208,12 @@ feature.missile-snaring:
 feature.mobile-shot:
   effets:
     - "Après l’action Pointe ou Désengagement ce tour-ci : attaque avec l’arme à distance (portée 15 m) pour 1d6 + modificateur de Dextérité dégâts perforants."
+  notes:
+    - "Inutilisable après plusieurs actions Pointe dans le même round."
   revision: 373990
 feature.monsterslayer:
   effets:
-    - "Attaque avec l’arme contre une monstruosité : 1d4 dégâts supplémentaires."
+    - "Tant que l’arme est équipée, contre une monstruosité : +1d4 à tous les jets d’attaque, sorts compris, et 1d4 dégâts supplémentaires avec toutes les armes."
   revision: 432868
 feature.moonlight-butterflies:
   effets:
@@ -228,13 +236,14 @@ feature.multitasking:
   revision: 432903
 feature.murderous-sight:
   effets:
-    - "Tant que l’objet est porté : vision dans le noir jusqu’à 3 m et +2 à l’initiative."
+    - "Tant que l’objet est porté : vision dans le noir jusqu’à 5 m et +2 à l’initiative."
   revision: 432905
 feature.mystras-blessing:
   effets:
     - "Créature ciblée par le sort Bénédiction du porteur : elle obtient aussi l’état Bénédiction de Mystra pendant 10 tours, soit +1d4 aux jets d’attaque de sort."
   notes:
     - "Bénédiction de Mystra est un état distinct : il reste en place si Bénédiction prend fin (perte de concentration)."
+    - "Seulement quand Bénédiction est lancé avec un emplacement de niveau 1 ou 2, ou par le bâton lui-même."
   revision: 438462
 feature.natures-embrace:
   effets:
@@ -265,6 +274,8 @@ feature.nimble-as-a-cat:
 feature.nimble-attack:
   effets:
     - "Ennemi touché avec l’arme : le porteur obtient l’état Élan pendant 2 tours."
+  notes:
+    - "Se déclenche à chaque instance de dégâts des sorts d’attaque d’arme qui en comptent plusieurs, comme Lame retentissante ou les châtiments."
   revision: 432922
 feature.nimblefinger:
   effets:
@@ -275,12 +286,12 @@ feature.nyrulna-glowing:
     - "Aptitude à activer ou désactiver, active par défaut : l’arme émet de la lumière dans un rayon de 6 m (état Lumière)."
   revision: 432924
 feature.odd-gift:
-  etiquette: { act: acte3, level: leger, otherWorks: aucun }
   effets:
     - "Porté par le compagnon à qui l’objet est destiné : immunité à tous les états de malédiction."
     - "Enfilé par ce compagnon alors qu’il est maudit : toutes ses malédictions sont levées."
   notes:
     - "Aucun autre personnage n’en bénéficie."
+  etiquette: { act: acte3, level: leger, otherWorks: aucun }
   revision: 372115
 feature.order-of-nature:
   effets:
@@ -512,7 +523,7 @@ feature.reposition-malefactor:
   effets:
     - "Créature à portée de l’arme : moitié des dégâts de l’arme et attraction de 9 m vers le porteur (jet de sauvegarde de Dextérité, DD 15)."
   notes:
-    - "Pas de jet d’attaque : l’action ne déclenche pas Attaque supplémentaire."
+    - "Pas de jet d’attaque : l’action ne déclenche pas Attaque supplémentaire, et les bonus de dégâts liés à un jet d’attaque (Marque du chasseur, par exemple) ne s’y ajoutent pas."
   revision: 422299
 feature.restore-bardic-inspiration:
   effets:
@@ -621,7 +632,7 @@ feature.shadeclinger:
   revision: 433105
 feature.shadespell:
   effets:
-    - "Porteur dissimulé par l’ombre (visibilité réduite ou nulle) : +1 au DD de sauvegarde de ses sorts (état Sort ombreux)."
+    - "Porteur dissimulé par l’ombre (visibilité réduite ou nulle) : +1 au DD de sauvegarde de ses sorts (état Sort d’ombre)."
   revision: 433107
 feature.shadow-blade-passive-feature:
   effets:
@@ -632,6 +643,8 @@ feature.shadow-blade-passive-feature:
 feature.shadow-blinding:
   effets:
     - "Attaque avec l’arme effectuée avec avantage et qui inflige des dégâts : la cible fait un jet de sauvegarde de Constitution (DD 14) ou subit l’état Aveuglé pendant 2 tours."
+  notes:
+    - "Sans effet en mode Honneur."
   revision: 433114
 feature.shadow-teleportation:
   effets:
@@ -645,10 +658,12 @@ feature.shadowsoaked-blow:
 feature.shadowthief:
   effets:
     - "Attaque avec une arme, à mains nues ou de lancer contre une créature en visibilité réduite ou nulle, ou faite d’ombre : 1d4 dégâts supplémentaires."
+  notes:
+    - "Un lancer d’arme de lancer la déclenche une fois de plus."
   revision: 433116
 feature.shapeshifter-slayer:
   effets:
-    - "Attaque avec l’arme contre un métamorphe ou une créature métamorphosée : 1d4 dégâts supplémentaires."
+    - "Tant que l’arme est équipée, contre un métamorphe ou une créature métamorphosée : +1d4 aux jets d’attaque, sorts compris, et 1d4 dégâts supplémentaires avec les armes."
   revision: 433508
 feature.shapeshifters-boon:
   effets:
@@ -656,7 +671,7 @@ feature.shapeshifters-boon:
   revision: 433119
 feature.sharp-caster:
   effets:
-    - "Dégâts d’une attaque de sort : chaque dé de dégâts qui donne 1 ou 2 est relancé une fois."
+    - "Dégâts d’un sort, avec ou sans jet d’attaque : chaque dé de dégâts qui donne 1 ou 2 est relancé une fois."
   revision: 433125
 feature.sharpened-snare:
   effets:
@@ -670,8 +685,8 @@ feature.sharran-veil:
   revision: 433129
 feature.shars-blessing:
   effets:
-    - "Porteur en visibilité réduite ou nulle : avantage aux jets de sauvegarde (état Bénédiction de Shar : barrière de ténèbres)."
-    - "Attaque avec l’arme contre une créature en visibilité réduite ou nulle : 1d6 dégâts supplémentaires."
+    - "Porteur en visibilité réduite ou nulle : avantage aux jets de sauvegarde de Dextérité (état Bénédiction de Shar : barrière de ténèbres)."
+    - "Attaque d’arme contre une créature en visibilité réduite ou nulle : 1d6 dégâts supplémentaires, avec toute arme du porteur."
   revision: 433120
 feature.shars-protection:
   effets:
@@ -679,7 +694,7 @@ feature.shars-protection:
   revision: 433122
 feature.shars-umbrae:
   effets:
-    - "Porteur en visibilité réduite ou nulle : avantage aux tests de Dextérité (Discrétion)."
+    - "Tant que l’objet est porté : avantage aux tests de Dextérité (Discrétion), quelle que soit la visibilité."
   revision: 403494
 feature.shelter:
   effets:
@@ -712,6 +727,7 @@ feature.shoe-slinger:
     - "Attaque de lancer avec la chaussure : 2d4 dégâts psychiques supplémentaires."
   notes:
     - "À son retour, elle se rééquipe d’elle-même et remplace les chaussures portées."
+    - "Les 2d4 dégâts psychiques ne s’appliquent pas avec Lancer enragé."
   revision: 433137
 feature.shrouded-in-shadow:
   effets:
@@ -732,18 +748,22 @@ feature.skullduggery-attack:
 feature.slabjaw-determination:
   effets:
     - "Chaque entrée en Rage : le porteur gagne 15 points de vie temporaires."
+  notes:
+    - "Ces points de vie temporaires sont remplacés par ceux de toute autre source."
   revision: 433146
 feature.slay-the-wicked-bludgeoning:
   effets:
     - "Attaque au corps à corps contre un fiélon ou un mort-vivant : 1d6 dégâts contondants supplémentaires."
   notes:
     - "Vaut pour toutes les armes de corps à corps tant que l’arme qui le confère est équipée."
+    - "Ces dégâts supplémentaires ne sont jamais doublés par un coup critique."
   revision: 433155
 feature.slay-the-wicked-slashing:
   effets:
     - "Attaque au corps à corps contre un fiélon ou un mort-vivant : 1d6 dégâts tranchants supplémentaires."
   notes:
     - "Vaut pour toutes les armes de corps à corps tant que l’arme qui le confère est équipée."
+    - "Ces dégâts supplémentaires ne sont jamais doublés par un coup critique."
   revision: 433154
 feature.smite-the-graceless:
   effets:
@@ -774,8 +794,10 @@ feature.soothing-songs:
   revision: 433170
 feature.soul-catching:
   effets:
-    - "Attaque à mains nues qui touche : le porteur obtient l’état Saisie d’essence pendant 2 tours."
-    - "Saisie d’essence : au choix, le porteur récupère 10 points de vie, ou ajoute +5 à un seul jet d’attaque ou de sauvegarde ; une seule option par tour."
+    - "Attaque à mains nues qui inflige des dégâts, même à un objet : le porteur obtient l’état Saisie d’essence pendant 2 tours."
+    - "Saisie d’essence : au choix, une action gratuite rend 10 points de vie, ou une réaction gratuite ajoute +5 à un seul jet d’attaque ou de sauvegarde ; l’état prend fin dès que l’un de ces choix est utilisé."
+  notes:
+    - "L’état prend aussi fin si le porteur subit des dégâts sans avoir de points de vie temporaires."
   revision: 433171
 feature.soul-fist:
   effets:
@@ -819,6 +841,7 @@ feature.spellmight:
     - "Aptitude à activer ou désactiver, active par défaut : un sort à jet d’attaque subit −5 à ce jet et inflige 1d8 dégâts supplémentaires s’il touche."
   notes:
     - "Vaut pour chaque rayon d’un sort à rayons multiples, comme Rayon ardent ou Décharge occulte."
+    - "Les châtiments, sauf Châtiment divin, reçoivent le bonus de dégâts sans le malus de −5."
   revision: 433184
 feature.spider-step:
   effets:
@@ -844,14 +867,14 @@ feature.staff-of-the-ram-passive-feature:
   revision: 433277
 feature.steadfast:
   effets:
-    - "Les sorts et actions ennemis ne peuvent pas déplacer le porteur de force."
-    - "Le porteur ignore les effets du terrain difficile."
+    - "Les sorts et actions, ennemis comme alliés, ne peuvent pas déplacer le porteur de force."
+    - "Le porteur ignore les effets du terrain difficile, sauf celui de l’eau profonde."
   notes:
     - "Bloque aussi les états du groupe À terre, les terrains difficiles de lave, de boue, de lianes et de toile, et l’effet du sort Croissance végétale."
   revision: 433283
 feature.stealthier:
   effets:
-    - "Porteur en visibilité réduite ou nulle : +3 aux tests de Dextérité (Discrétion) (état Plus furtif)."
+    - "Porteur en visibilité réduite ou nulle : +3 aux tests de Dextérité (Discrétion) (état Furtivité accrue)."
   revision: 433284
 feature.stealthy:
   effets:
@@ -876,6 +899,8 @@ feature.sting-the-helpless:
 feature.stirring-execution:
   effets:
     - "Ennemi tué par le porteur : les alliés à 9 m ou moins gagnent des points de vie temporaires égaux à leur modificateur de Charisme (minimum 1)."
+  notes:
+    - "Ces points de vie temporaires sont remplacés par ceux de toute autre source."
   revision: 433292
 feature.strange-conduit:
   effets:
@@ -890,6 +915,8 @@ feature.strider-movement:
 feature.stun-immunity:
   effets:
     - "Le porteur ne peut pas subir l’état Étourdi."
+  notes:
+    - "Ne protège pas contre Regard étourdissant."
   revision: 433304
 feature.subtle-swap:
   effets:
@@ -932,7 +959,7 @@ feature.surge-accuracy:
   revision: 433320
 feature.swathed-in-shadow:
   effets:
-    - "Porteur dissimulé par l’ombre et attaqué : +1 aux jets de sauvegarde."
+    - "Tant que l’objet est porté : +1 aux jets de sauvegarde, en permanence."
   revision: 433322
 feature.swift-strides:
   effets:
@@ -943,7 +970,7 @@ feature.swift-strides:
 feature.sword-mastery:
   effets:
     - "Tant que l’objet est porté : maîtrise des épées courtes, des épées longues et des épées à deux mains."
-    - "Jets d’attaque au corps à corps : +1."
+    - "Attaques au corps à corps avec une arme en main principale : +1 au jet d’attaque."
   revision: 433325
 feature.synergetic-cantrips:
   effets:
@@ -960,9 +987,9 @@ feature.synergetic-moments:
     - "Une fois par attaque."
   revision: 433329
 feature.talk-to-the-sentient-amulet:
-  etiquette: { act: acte1, level: leger, otherWorks: aucun }
   effets:
     - "Ouvre une conversation avec la conscience qui habite l’amulette."
+  etiquette: { act: acte1, level: leger, otherWorks: aucun }
   revision: 317034
 feature.temperature-adjustment:
   effets:
@@ -986,6 +1013,7 @@ feature.the-scourge-mistress-bane:
   notes:
     - "Une fois par attaque ; ne se cumule pas avec le sort Fléau."
     - "Les réductions de dégâts perforants s’appliquent à ces dégâts ; un coup critique les double."
+    - "Si le porteur assomme un ennemi par des dégâts non létaux alors qu’il a 50 % de ses points de vie ou plus, il tombe lui aussi inconscient."
   revision: 433339
 feature.the-shadow-itself:
   effets:
@@ -1021,7 +1049,7 @@ feature.thunderous-conversion:
   effets:
     - "Dégâts de tonnerre, de foudre ou radiants infligés : la cible subit 2 tours de l’état Réverbération."
   notes:
-    - "Une fois par attaque ; sans effet avec le sort Rayon de lune."
+    - "Une fois par attaque : un sort de zone ne l’applique qu’à une seule cible ; sans effet avec le sort Rayon de lune."
   revision: 438463
 feature.time-thoroughly-bided:
   effets:
@@ -1088,23 +1116,27 @@ feature.umbral-attack:
   revision: 433377
 feature.undead-bane:
   effets:
-    - "Jet d’attaque avec l’arme contre un mort-vivant : avantage."
+    - "Tant que l’arme est équipée : avantage à tous les jets d’attaque contre un mort-vivant."
   revision: 433385
 feature.undead-ward:
   effets:
-    - "Les morts-vivants alliés à 6 m ou moins du porteur ont la résistance aux dégâts contondants, perforants et tranchants (état Aura de protection des morts-vivants)."
+    - "Les morts-vivants alliés à 9 m ou moins du porteur ont la résistance aux dégâts contondants, perforants et tranchants (état Aura de protection des morts-vivants)."
+  notes:
+    - "Vaut aussi pour les créatures invoquées de type fiélon."
   revision: 433390
 feature.underdogs-bravery:
   effets:
-    - "Attaque au corps à corps avec une arme, quand au moins 2 ennemis se trouvent à 3 m ou moins : avantage."
+    - "Attaque au corps à corps avec une arme, quand au moins 2 ennemis se trouvent à 3 m ou moins de la cible : avantage."
   notes:
     - "Ne vaut ni pour les attaques à mains nues ni pour les attaques de sort au corps à corps."
+    - "Le porteur n’a pas besoin d’être lui-même entouré ; un ennemi neutralisé compte, pourvu qu’un autre ne le soit pas."
   revision: 433392
 feature.unflinching-protection:
   effets:
     - "Réaction, une fois par repos long, quand un allié proche est visé par une attaque : cette attaque rate automatiquement."
   notes:
     - "Ne protège pas le porteur lui-même."
+    - "Se déclenche aussi sur une attaque déjà ratée, ce qui gaspille l’utilisation."
   revision: 425435
 feature.unshackling-strike:
   effets:
@@ -1117,7 +1149,7 @@ feature.unwavering:
     - "Le porteur ignore les effets du terrain difficile."
     - "Il ne peut subir ni l’état Paralysé ni l’état Entravé."
   notes:
-    - "Immunise aussi contre Estropié et Jarret tranché ; n’empêche pas de glisser sur la glace ou la graisse."
+    - "Immunise aussi contre Estropié et Jarret tranché ; n’empêche ni de glisser sur la glace ou la graisse, ni le ralentissement de l’eau profonde."
   revision: 433402
 feature.unwavering-bull:
   effets:
@@ -1165,7 +1197,7 @@ feature.watersparks:
   revision: 433436
 feature.watery-guidance:
   effets:
-    - "Attaque avec l’arme contre une créature sous l’état Mouillé : avantage."
+    - "Tant que l’arme est équipée : avantage à tous les jets d’attaque contre une créature sous l’état Mouillé."
   revision: 433438
 feature.watery-rejuvenation:
   effets:
@@ -1186,6 +1218,8 @@ feature.weave-eater:
 feature.well-liked-and-well-fortified:
   effets:
     - "Début du tour du porteur : il gagne des points de vie temporaires égaux à son modificateur de Charisme."
+  notes:
+    - "Ces points de vie temporaires sont remplacés par ceux de toute autre source."
   revision: 433448
 feature.whirlwind-attack-weapon-action:
   effets:
@@ -1204,6 +1238,8 @@ feature.witchbreaker-passive-feature:
 feature.withering-cut:
   effets:
     - "Réaction, coup réussi avec une arme de corps à corps : dégâts nécrotiques supplémentaires égaux au bonus de maîtrise."
+  notes:
+    - "Se déclenche aussi sur un coup déjà mortel, ce qui gaspille la réaction."
   revision: 425439
 feature.wound-closure:
   effets:
@@ -1221,15 +1257,15 @@ feature.xyanydes-fire:
   revision: 433464
 feature.yeenoghus-gift:
   effets:
-    - "Dégâts infligés à un ennemi par une attaque au corps à corps avec l’arme : le porteur récupère 1d6 points de vie et obtient l’état Don de Yeenoghu pendant 6 tours."
-    - "Sous Don de Yeenoghu, fin d’un tour sans avoir blessé d’ennemi ainsi : jet de sauvegarde de Sagesse (DD 10) ou folie ; le porteur attaque alors toute créature proche, alliés compris."
+    - "Dégâts infligés à un ennemi par une attaque au corps à corps avec l’arme : le porteur récupère 1d6 points de vie et obtient l’état Bénédiction de Yeenoghu pendant 1 tour, ainsi que l’état Don de Yeenoghu pendant 6 tours."
+    - "Sous Don de Yeenoghu, fin d’un tour sans Bénédiction de Yeenoghu : jet de sauvegarde de Sagesse (DD 10) ou folie pendant 1 tour ; le porteur attaque alors toute créature proche, alliés compris."
   notes:
     - "Ce soin ne déclenche pas les autres effets liés aux soins ; lancer l’arme ne déclenche rien ; frapper de nouveau ne prolonge pas les 6 tours."
   revision: 438853
 feature.zephyr-break:
   effets:
     - "Effet semblable au sort Bourrasque, portée 12 m : 6d6 dégâts de tonnerre ; jet de sauvegarde de Force contre le DD de sauvegarde des sorts du porteur."
-    - "En cas d’échec : la cible est repoussée et subit l’état Déséquilibré pendant 2 tours ; en cas de réussite : moitié des dégâts."
+    - "En cas d’échec : la cible est repoussée et subit l’état Déséquilibré pendant 2 tours ; en cas de réussite : 3d6 dégâts de tonnerre."
   notes:
     - "Utilisable même en Rage."
   revision: 430865
@@ -1241,7 +1277,7 @@ feature.zephyr-connection:
 feature.zephyr-flash:
   effets:
     - "Ruée en ligne sur 12 m : les créatures sur le trajet font un jet de sauvegarde de Dextérité (DD 15)."
-    - "En cas d’échec : 6d8 dégâts de tonnerre et état Saignement pendant 3 tours ; en cas de réussite : moitié des dégâts."
+    - "En cas d’échec : 6d8 dégâts de tonnerre et état Saignement pendant 3 tours ; en cas de réussite : 3d8 dégâts de tonnerre."
   notes:
     - "La ruée ne provoque pas d’attaque d’opportunité ; une cible touchée est repoussée de 2 m."
   revision: 430867

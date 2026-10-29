@@ -1,0 +1,123 @@
+# Noms français des options et intitulés de choix des classes et sous-classes, sans fiche propre (guide : docs/LOTS_ECRITURE.md §3).
+# VF_DND : nom anglais exactement égal à un terme du SRD 5.2.1 (srd-5.2.1-fr), même sens ; sinon NON_OFFICIELLE.
+feature.2nd-level-circle-of-the-land-spells:
+  fr: "Sorts de niveau 2 du Cercle de la Terre"
+  statut: NON_OFFICIELLE
+feature.3rd-level-circle-of-the-land-spells:
+  fr: "Sorts de niveau 3 du Cercle de la Terre"
+  statut: NON_OFFICIELLE
+feature.4th-level-circle-of-the-land-spells:
+  fr: "Sorts de niveau 4 du Cercle de la Terre"
+  statut: NON_OFFICIELLE
+feature.5th-level-circle-of-the-land-spells:
+  fr: "Sorts de niveau 5 du Cercle de la Terre"
+  statut: NON_OFFICIELLE
+feature.abjuration-savant:
+  fr: "Abjurateur érudit"
+  statut: NON_OFFICIELLE
+feature.accursed-spectre:
+  fr: "Spectre maudit"
+  statut: NON_OFFICIELLE
+feature.animal-aspect:
+  fr: "Aspect animal"
+  statut: NON_OFFICIELLE
+feature.arcane-archer-lore:
+  fr: "Savoir de l’archer arcanique"
+  statut: NON_OFFICIELLE
+feature.bestial-heart:
+  fr: "Cœur bestial"
+  statut: NON_OFFICIELLE
+feature.bonus-cantrip:
+  fr: "Sort mineur supplémentaire"
+  statut: NON_OFFICIELLE
+feature.conjuration-savant:
+  fr: "Invocateur érudit"
+  statut: NON_OFFICIELLE
+feature.cosmic-omen-of-weal-attack-roll:
+  fr: "Augure cosmique faste : jet d’attaque"
+  statut: NON_OFFICIELLE
+feature.cosmic-omen-of-weal-saving-throw:
+  fr: "Augure cosmique faste : jet de sauvegarde"
+  statut: NON_OFFICIELLE
+feature.cosmic-omen-of-woe-attack-roll:
+  fr: "Augure cosmique néfaste : jet d’attaque"
+  statut: NON_OFFICIELLE
+feature.cosmic-omen-of-woe-saving-throw:
+  fr: "Augure cosmique néfaste : jet de sauvegarde"
+  statut: NON_OFFICIELLE
+feature.defensive-tactics:
+  fr: "Tactiques défensives"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.disarming-attack:
+  fr: "Attaque désarmante"
+  statut: NON_OFFICIELLE
+feature.distracting-strike:
+  fr: "Frappe de diversion"
+  statut: NON_OFFICIELLE
+feature.divination-savant:
+  fr: "Devin érudit"
+  statut: NON_OFFICIELLE
+feature.draconic-ancestry:
+  fr: "Ascendance draconique"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.draconic-resilience-hit-points:
+  fr: "Résistance draconique : points de vie"
+  statut: NON_OFFICIELLE
+feature.elemental-disciplines:
+  fr: "Disciplines élémentaires"
+  statut: NON_OFFICIELLE
+feature.enchantment-savant:
+  fr: "Enchanteur érudit"
+  statut: NON_OFFICIELLE
+feature.evocation-savant:
+  fr: "Évocateur érudit"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.gain-a-cantrip:
+  fr: "Apprendre un sort mineur"
+  statut: NON_OFFICIELLE
+feature.gathered-swarm:
+  fr: "Essaim rassemblé"
+  statut: NON_OFFICIELLE
+feature.goading-attack:
+  fr: "Attaque provocatrice"
+  statut: NON_OFFICIELLE
+feature.hunters-prey:
+  fr: "Proie du chasseur"
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feature.illusion-savant:
+  fr: "Illusionniste érudit"
+  statut: NON_OFFICIELLE
+feature.manoeuvres:
+  fr: "Manœuvres"
+  statut: NON_OFFICIELLE
+feature.manoeuvring-attack:
+  fr: "Attaque de manœuvre"
+  statut: NON_OFFICIELLE
+feature.menacing-attack:
+  fr: "Attaque menaçante"
+  statut: NON_OFFICIELLE
+feature.necromancy-savant:
+  fr: "Nécromancien érudit"
+  statut: NON_OFFICIELLE
+feature.pushing-attack:
+  fr: "Attaque repoussante"
+  statut: NON_OFFICIELLE
+feature.touch-of-death:
+  fr: "Toucher de la mort"
+  statut: NON_OFFICIELLE
+feature.transmutation-savant:
+  fr: "Transmutateur érudit"
+  statut: NON_OFFICIELLE
+feature.trip-attack:
+  fr: "Attaque renversante"
+  statut: NON_OFFICIELLE
+feature.upgraded-swarm-options:
+  fr: "Options d’essaim améliorées"
+  statut: NON_OFFICIELLE
+feature.war-gods-blessing:
+  fr: "Bénédiction du dieu de la guerre"
+  statut: NON_OFFICIELLE

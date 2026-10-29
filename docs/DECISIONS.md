@@ -184,3 +184,10 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - notice de Carnet Titres SC reprise telle quelle dans les crédits ;
   - « Grimo… » dans la barre de navigation à 320 dp et 200 %, cas limite ;
   - espace fine d'Alegreya Sans à 0,55 de l'espace-mot.
+
+**D-071 — Races, historiques et dons ; seconde vague de noms.**
+- **Origines** : lues dans les pages de synthèse `Races` (grand tableau : vitesse, maîtrises et capacités par race et sous-race), `Backgrounds` (deux compétences par historique, la liste des personnages n'est pas lue) et `Feats` (modèles `table feat` : capacités, et augmentation de caractéristique lue dans la phrase qui la décrit). Résultat : 11 races, 28 sous-races, 12 historiques et 41 dons, figés par un instantané (`OriginDataTest`).
+- **Sorts raciaux** : les pages de sorts citent une sous-race comme une race (« High Elf ») ; la source est rattachée à la sous-race. Une source inconnue dont la précision nomme une sous-classe (« via Necromancy School ») est rattachée à celle-ci. La validation refuse désormais toute source d'apprentissage absente de la base.
+- **Noms, seconde vague** : 627 noms (capacités, états, sous-classes, noms des choix).
+- **« Même nom anglais, même nom français »** : la règle est désormais un contrôle bloquant de la validation, sans aucune exception à ce jour.
+- **Éditions de la VF de D&D** : à défaut de la VF de BG3, les termes officiels viennent du SRD 5.2.1 (règles de 2024) ou du lexique AideDD. Certains diffèrent de la VF de 2014, que le jeu a pu suivre (« Témérité » ou « Attaque téméraire »). Ils gardent le statut `VF_DND`, affiché « VF à confirmer » pour un terme du jeu, et la correction du joueur prime.

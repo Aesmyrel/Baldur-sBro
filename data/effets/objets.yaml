@@ -33,6 +33,7 @@ item.charge-bound-warhammer:
     - "Arme de prédilection et Courants galvaniques : actifs seulement si l’arme est liée à un chevalier occulte, ou si elle sert d’arme de pacte ou d’arme maléficiée à un occultiste."
   notes:
     - "Une fois l’arme liée, le bonus d’Arme de prédilection s’ajoute à son enchantement +1."
+    - "Une fois liée, l’arme garde pour de bon le bonus de Courants galvaniques, même après la liaison d’une autre arme ou entre les mains d’un autre personnage."
   revision: 416997
 item.cold-snap:
   effets:
@@ -44,8 +45,9 @@ item.crushers-ring:
   revision: 417417
 item.debtors-attire:
   effets:
-    - "Tant que la tenue est portée : les débiteurs éternels restent neutres envers le groupe."
-    - "Membre du groupe aperçu sans la tenue sur leur territoire : les débiteurs éternels deviennent hostiles à tout le groupe."
+    - "Débiteurs éternels : neutres tant que les membres du groupe qu’ils voient sur leur territoire portent la tenue ; hostiles à tout le groupe dès qu’un membre y est vu sans elle."
+  notes:
+    - "Sans effet sur un personnage sous Forme sauvage."
   etiquette: { act: acte3, level: leger, otherWorks: aucun }
   revision: 417610
 item.devotees-mace:
@@ -80,6 +82,7 @@ item.gloves-of-dexterity:
 item.handmaidens-mace:
   effets:
     - "Tant que l’arme est équipée : valeur de Force fixée à 18."
+    - "Coup réussi : jet de sauvegarde de Constitution (DD 12) ou état Empoisonné pendant 2 tours."
   notes:
     - "Sans effet si la valeur de Force du porteur est déjà supérieure à 18."
   revision: 419304
@@ -118,6 +121,8 @@ item.safeguard-shield:
 item.shining-staver-of-skulls:
   effets:
     - "Tant que l’arme est équipée : émet de la lumière dans un rayon de 7,5 m autour du porteur (état Lumière)."
+  notes:
+    - "Le sort Lumière lancé sur l’arme, ou un repos long, met fin à cette lumière."
   revision: 437933
 item.smugglers-ring:
   effets:
@@ -129,7 +134,7 @@ item.spellcrux-amulet:
   revision: 423438
 item.staff-of-a-mumbling-wizard:
   effets:
-    - "À volonté : lance une variante du sort mineur Trait de feu, avec 1 chance sur 20 de déclencher à la place une explosion de Boule de feu."
+    - "À volonté : lance une variante du sort mineur Trait de feu (1d10 dégâts de feu, sans progression avec le niveau), avec 1 chance sur 20 de déclencher à la place une explosion de Boule de feu."
   revision: 423538
 item.steelwatcher-helmet:
   effets:

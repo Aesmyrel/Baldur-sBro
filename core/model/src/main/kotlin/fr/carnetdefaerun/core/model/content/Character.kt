@@ -109,3 +109,42 @@ enum class GrantKind {
     /** Ajouté à la liste où l'on choisit (liste étendue de l'occultiste). */
     @SerialName("expanded_list") EXPANDED_LIST,
 }
+
+/** Race jouable : vitesse, maîtrises et capacités communes à ses sous-races (page `Races` de bg3.wiki). */
+@Serializable
+@SerialName("race")
+data class RaceFacts(
+    val speedMetres: Double? = null,
+    val proficiencies: Proficiencies = Proficiencies(),
+    val features: List<LevelFeature> = emptyList(),
+) : Facts
+
+/** Sous-race : ce qu'elle ajoute à sa race (ou remplace, pour la vitesse). */
+@Serializable
+@SerialName("subrace")
+data class SubraceFacts(
+    val parentRace: ContentId,
+    val speedMetres: Double? = null,
+    val proficiencies: Proficiencies = Proficiencies(),
+    val features: List<LevelFeature> = emptyList(),
+) : Facts
+
+/** Historique : les deux compétences qu'il rend maîtrisées. */
+@Serializable
+@SerialName("background")
+data class BackgroundFacts(val skills: List<Skill>) : Facts
+
+/** Don : capacités qu'il accorde et augmentation de caractéristique éventuelle. */
+@Serializable
+@SerialName("feat")
+data class FeatFacts(
+    val features: List<LevelFeature> = emptyList(),
+    val abilityIncrease: AbilityIncrease? = null,
+) : Facts
+
+/**
+ * Augmentation de caractéristique d'un don : [amount] à l'une des [choices] (toutes si la liste est vide),
+ * sans dépasser [cap] ; [splittable] : peut se répartir en +1 sur deux caractéristiques (« Amélioration de caractéristique »).
+ */
+@Serializable
+data class AbilityIncrease(val amount: Int, val choices: List<Ability> = emptyList(), val cap: Int = 20, val splittable: Boolean = false)

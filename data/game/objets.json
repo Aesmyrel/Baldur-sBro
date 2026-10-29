@@ -243,7 +243,7 @@
     "id": "item.absolutes-protector",
     "type": "item",
     "name": {
-      "fr": "Protecteur de l’Absolu",
+      "fr": "Protecteur de l’Absolue",
       "en": "Absolute's Protector",
       "status": "UNOFFICIAL"
     },
@@ -338,7 +338,7 @@
     "id": "item.absolutes-talisman",
     "type": "item",
     "name": {
-      "fr": "Talisman de l’Absolu",
+      "fr": "Talisman de l’Absolue",
       "en": "Absolute's Talisman",
       "status": "UNOFFICIAL"
     },
@@ -417,7 +417,7 @@
     "id": "item.absolutes-warboard",
     "type": "item",
     "name": {
-      "fr": "Pavois de l’Absolu",
+      "fr": "Pavois de l’Absolue",
       "en": "Absolute's Warboard",
       "status": "UNOFFICIAL"
     },
@@ -9942,6 +9942,16 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "id": "note-2",
+        "kind": "note",
+        "text": "Une fois liée, l’arme garde pour de bon le bonus de Courants galvaniques, même après la liaison d’une autre arme ou entre les mains d’un autre personnage.",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ],
     "links": [
@@ -14248,7 +14258,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Tant que la tenue est portée : les débiteurs éternels restent neutres envers le groupe.",
+        "text": "Débiteurs éternels : neutres tant que les membres du groupe qu’ils voient sur leur territoire portent la tenue ; hostiles à tout le groupe dès qu’un membre y est vu sans elle.",
         "tag": {
           "act": "acte3",
           "level": "leger",
@@ -14256,9 +14266,9 @@
         }
       },
       {
-        "id": "effet-2",
-        "kind": "effect",
-        "text": "Membre du groupe aperçu sans la tenue sur leur territoire : les débiteurs éternels deviennent hostiles à tout le groupe.",
+        "id": "note-1",
+        "kind": "note",
+        "text": "Sans effet sur un personnage sous Forme sauvage.",
         "tag": {
           "act": "acte3",
           "level": "leger",
@@ -24334,6 +24344,16 @@
         "id": "effet-1",
         "kind": "effect",
         "text": "Tant que l’arme est équipée : valeur de Force fixée à 18.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Coup réussi : jet de sauvegarde de Constitution (DD 12) ou état Empoisonné pendant 2 tours.",
         "tag": {
           "act": "acte3",
           "level": "aucun",
@@ -45135,6 +45155,16 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Le sort Lumière lancé sur l’arme, ou un repos long, met fin à cette lumière.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ],
     "links": [
@@ -47200,7 +47230,7 @@
     "id": "item.spellseeking-gloves",
     "type": "item",
     "name": {
-      "fr": "Gants à sorts chercheurs",
+      "fr": "Gants de sort chercheur",
       "en": "Spellseeking Gloves",
       "status": "UNOFFICIAL"
     },
@@ -48066,7 +48096,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "À volonté : lance une variante du sort mineur Trait de feu, avec 1 chance sur 20 de déclencher à la place une explosion de Boule de feu.",
+        "text": "À volonté : lance une variante du sort mineur Trait de feu (1d10 dégâts de feu, sans progression avec le niveau), avec 1 chance sur 20 de déclencher à la place une explosion de Boule de feu.",
         "tag": {
           "act": "acte3",
           "level": "aucun",
@@ -49617,7 +49647,7 @@
     "id": "item.sunwalkers-gift",
     "type": "item",
     "name": {
-      "fr": "Présent de l’arpenteur du soleil",
+      "fr": "Don de l’arpenteur solaire",
       "en": "Sunwalker's Gift",
       "status": "UNOFFICIAL"
     },
@@ -53783,7 +53813,7 @@
     "id": "item.the-speedy-lightfeet",
     "type": "item",
     "name": {
-      "fr": "Les pieds-légers rapides",
+      "fr": "Pieds-légers véloces",
       "en": "The Speedy Lightfeet",
       "status": "UNOFFICIAL"
     },
@@ -55758,7 +55788,7 @@
     "id": "item.twist-of-fortune",
     "type": "item",
     "name": {
-      "fr": "Revers de fortune",
+      "fr": "Coup du sort",
       "en": "Twist of Fortune",
       "status": "UNOFFICIAL"
     },
@@ -57377,7 +57407,7 @@
     "id": "item.vision-of-the-absolute",
     "type": "item",
     "name": {
-      "fr": "Vision de l’Absolu",
+      "fr": "Vision de l’Absolue",
       "en": "Vision of the Absolute",
       "status": "UNOFFICIAL"
     },
