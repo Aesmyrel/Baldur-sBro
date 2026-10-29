@@ -30,8 +30,12 @@ import fr.carnetdefaerun.pipeline.wiki.Wikitext
 /** Les douze classes jouables (pages de bg3.wiki du même nom). */
 val CLASS_PAGES = listOf("Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard")
 
-/** Page qui porte le tableau des maîtrises de multiclasse. */
+/** Page qui porte le tableau des maîtrises de multiclasse et la galerie des sous-classes. */
 const val CLASSES_OVERVIEW_PAGE = "Classes"
+
+/** Sous-classes de la galerie de la page `Classes` (`File:…|[[Page|Libellé]]|link=Page`), dans l'ordre des classes. */
+fun subclassPages(text: String): List<String> =
+    Regex("^File:[^|\\n]*\\|\\[\\[([^\\]|]+)(?:\\|[^\\]]*)?]]\\|link=", RegexOption.MULTILINE).findAll(text).map { it.groupValues[1].trim() }.distinct().toList()
 
 /**
  * Classes : tableau de progression (niveaux 1 à 12), points de vie, maîtrises, caractéristique d'incantation,

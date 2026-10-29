@@ -39,12 +39,24 @@ class GamePipeline(private val paths: Paths) {
         val store = PageStore(paths.wikiCache, WikiClient())
         for (collection in Collection.entries.filter { only == null || it.key in only }) {
             val refreshed = when (val template = collection.template) {
-                null -> store.refresh(collection.key, NAMED_PAGES[collection].orEmpty())
+                null -> store.refresh(collection.key, namedPages(collection, store))
                 else -> store.refreshTemplate(collection.key, template)
             }
             println("  ${collection.key} : ${store.load(collection.key).size} pages, $refreshed mises à jour")
         }
         return true
+    }
+
+    /** Pages d'une collection sans modèle d'inclusion : liste fixe, ou lue dans une page déjà en cache. */
+    private fun namedPages(collection: Collection, store: PageStore): List<String> = when (collection) {
+        // Sous-classes de la page Classes, plus les pages qu'elles incluent (`{{:DraconicAncestryTable}}`) :
+        // ces dernières sont connues dès que les sous-classes sont en cache (un second `fetch` les récupère).
+        Collection.SUBCLASSES -> {
+            val listed = store.load(Collection.CLASSES.key)[CLASSES_OVERVIEW_PAGE]?.let { subclassPages(it.text) }.orEmpty()
+            val included = store.load(Collection.SUBCLASSES.key).values.flatMap { p -> Regex("\\{\\{:([^{}|]+)}}").findAll(p.text).map { it.groupValues[1].trim() } }
+            (listed + included).distinct()
+        }
+        else -> NAMED_PAGES[collection].orEmpty()
     }
 
     fun normalize(): Boolean {
@@ -54,8 +66,10 @@ class GamePipeline(private val paths: Paths) {
         val items = ItemNormalizer(corpus, names, places.acts)
         val features = FeatureNormalizer(corpus, names)
         val classes = ClassNormalizer(corpus, names, features)
+        val spells = SpellNormalizer(corpus, names).normalize()
+        val subclasses = SubclassNormalizer(corpus, names, features, spells.map { it.id }.toSet())
         val assembler = Assembler(features, ConditionNormalizer(corpus, names)) { raiseTitle(it, names) }
-        val assembled = assembler.assemble(SpellNormalizer(corpus, names).normalize() + items.normalize() + places.normalize() + classes.normalize())
+        val assembled = assembler.assemble(spells + items.normalize() + places.normalize() + classes.normalize() + subclasses.normalize())
         val effects = Effects(paths.writtenEffects)
         val (entries, unknownEffectIds, staleEffects) = effects.apply(assembled, effects.load())
         unknownEffectIds.forEach { System.err.println("  ✗ effets rédigés pour une entrée inconnue : $it") }
@@ -161,6 +175,7 @@ class GamePipeline(private val paths: Paths) {
         EntryType.FEATURE -> "capacites.json"
         EntryType.PLACE -> "lieux.json"
         EntryType.CLASS -> "classes.json"
+        EntryType.SUBCLASS -> "sous-classes.json"
         else -> "${type.name.lowercase()}.json"
     }
 

@@ -163,6 +163,15 @@
     },
     "links": [
       {
+        "target": "subclass.life-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.aid",
         "relation": "applies",
         "tag": {
@@ -248,6 +257,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.nature-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -365,6 +383,24 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oathbreaker",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -606,6 +642,15 @@
         }
       },
       {
+        "target": "subclass.draconic-bloodline",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.armour-of-agathys",
         "relation": "applies",
         "tag": {
@@ -772,6 +817,15 @@
     },
     "links": [
       {
+        "target": "subclass.oath-of-vengeance",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.bane",
         "relation": "applies",
         "tag": {
@@ -846,6 +900,15 @@
       "gameUid": "Projectile_Smite_Banishing_Container"
     },
     "links": [
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.banished",
         "relation": "applies",
@@ -1015,6 +1078,24 @@
     },
     "links": [
       {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.nature-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.barkskin",
         "relation": "applies",
         "tag": {
@@ -1099,6 +1180,24 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.life-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-devotion",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -1191,7 +1290,36 @@
       ],
       "scribable": true,
       "gameUid": "Target_BestowCurse"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.oathbreaker",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-great-old-one",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.trickery-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.blade-barrier",
@@ -1441,6 +1569,15 @@
         }
       },
       {
+        "target": "subclass.life-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.bless",
         "relation": "applies",
         "tag": {
@@ -1553,6 +1690,24 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -1724,6 +1879,24 @@
     },
     "links": [
       {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-fiend",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.blindness",
         "relation": "applies",
         "tag": {
@@ -1805,6 +1978,24 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-archfey",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -1927,6 +2118,24 @@
         }
       },
       {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.blurred",
         "relation": "applies",
         "tag": {
@@ -2042,6 +2251,15 @@
       "gameUid": "Target_ChillTouch"
     },
     "links": [
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.bone-chilled",
         "relation": "applies",
@@ -2214,6 +2432,15 @@
       "gameUid": "Target_Smite_Branding_Container"
     },
     "links": [
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.branding-smite",
         "relation": "applies",
@@ -2466,7 +2693,36 @@
       ],
       "scribable": true,
       "gameUid": "Zone_BurningHands"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.draconic-bloodline",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-fiend",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.bursting-sinew",
@@ -2559,6 +2815,17 @@
       "scribable": true,
       "gameUid": "Target_BurstingSinew"
     },
+    "links": [
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
     "unknown": [
       "save_effect"
     ]
@@ -2669,6 +2936,24 @@
     },
     "links": [
       {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.tempest-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.call-lightning",
         "relation": "applies",
         "tag": {
@@ -2746,6 +3031,24 @@
       "gameUid": "Target_CalmEmotions"
     },
     "links": [
+      {
+        "target": "subclass.knowledge-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-archfey",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.calmed",
         "relation": "applies",
@@ -2926,6 +3229,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.trickery-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -3279,6 +3591,24 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -3474,6 +3804,33 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.knowledge-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-the-crown",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-fiend",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -3539,6 +3896,15 @@
       "gameUid": "Target_CompelledDuel"
     },
     "links": [
+      {
+        "target": "subclass.oath-of-the-crown",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.compelled-duel",
         "relation": "applies",
@@ -3654,6 +4020,33 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-fiend",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -3753,6 +4146,24 @@
         "tag": {
           "act": "acte3",
           "level": "leger",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.knowledge-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
           "otherWorks": "aucun"
         }
       },
@@ -3899,7 +4310,18 @@
       ],
       "scribable": true,
       "gameUid": "Target_ConjureElemental_Container"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.conjure-minor-elemental",
@@ -3964,7 +4386,18 @@
       ],
       "scribable": true,
       "gameUid": "Target_ConjureElementals_Minor_Container"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.conjure-woodland-being",
@@ -4098,6 +4531,24 @@
       "gameUid": "Target_Contagion"
     },
     "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.contagion-poisoned",
         "relation": "applies",
@@ -4442,6 +4893,15 @@
     },
     "links": [
       {
+        "target": "subclass.oathbreaker",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.crown-of-madness",
         "relation": "applies",
         "tag": {
@@ -4547,6 +5007,24 @@
         }
       },
       {
+        "target": "subclass.oath-of-the-crown",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.war-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.crusaders-mantle-aura",
         "relation": "applies",
         "tag": {
@@ -4644,7 +5122,18 @@
       ],
       "scribable": false,
       "gameUid": "Target_CureWounds"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.life-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.dancing-lights",
@@ -4864,7 +5353,36 @@
       ],
       "scribable": true,
       "gameUid": "Target_Darkness"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oathbreaker",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.shadow-magic",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.daylight",
@@ -4958,6 +5476,24 @@
     },
     "links": [
       {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.daylight",
         "relation": "applies",
         "tag": {
@@ -5037,6 +5573,24 @@
       "gameUid": "Target_DeathWard"
     },
     "links": [
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.life-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.death-ward",
         "relation": "applies",
@@ -5121,6 +5675,24 @@
       "gameUid": "Shout_DestructiveWave"
     },
     "links": [
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.tempest-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.prone",
         "relation": "applies",
@@ -5242,6 +5814,15 @@
         }
       },
       {
+        "target": "subclass.the-great-old-one",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.detect-thoughts",
         "relation": "applies",
         "tag": {
@@ -5332,6 +5913,15 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.trickery-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -5391,6 +5981,15 @@
       "gameUid": "Target_DirtyTrick_Vicious"
     },
     "links": [
+      {
+        "target": "subclass.swashbuckler",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.dirty-advantage",
         "relation": "applies",
@@ -5506,6 +6105,24 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.draconic-bloodline",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.trickery-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -5722,6 +6339,15 @@
     },
     "links": [
       {
+        "target": "subclass.the-great-old-one",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.frightened",
         "relation": "applies",
         "tag": {
@@ -5792,6 +6418,15 @@
       "gameUid": "Shout_DivineFavor"
     },
     "links": [
+      {
+        "target": "subclass.war-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.divine-favour",
         "relation": "applies",
@@ -5902,6 +6537,51 @@
         }
       },
       {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.nature-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-archfey",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-great-old-one",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.dominated-dominate-beast",
         "relation": "applies",
         "tag": {
@@ -6001,6 +6681,42 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.knowledge-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-archfey",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-great-old-one",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.trickery-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -6215,7 +6931,18 @@
         }
       ],
       "gameUid": "Target_ElementalWeapon"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.elemental-weapon-acid",
@@ -6947,6 +7674,15 @@
     },
     "links": [
       {
+        "target": "subclass.oath-of-the-ancients",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.ensnared-ensnaring-strike",
         "relation": "applies",
         "tag": {
@@ -7179,6 +7915,15 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.the-great-old-one",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ],
     "unknown": [
@@ -7392,6 +8137,15 @@
     },
     "links": [
       {
+        "target": "subclass.shadow-magic",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.eyes-of-the-dark",
         "relation": "applies",
         "tag": {
@@ -7480,6 +8234,33 @@
       "gameUid": "Target_FaerieFire"
     },
     "links": [
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.swarmkeeper",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-archfey",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.faerie-fire",
         "relation": "applies",
@@ -7574,6 +8355,15 @@
       "gameUid": "Shout_FalseLife"
     },
     "links": [
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.false-life",
         "relation": "applies",
@@ -7671,6 +8461,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.trickery-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -7791,6 +8590,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.draconic-bloodline",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -8265,6 +9073,15 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.the-fiend",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -8379,6 +9196,24 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-fiend",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -8523,7 +9358,36 @@
         }
       ],
       "gameUid": "Target_FlameStrike"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-fiend",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.war-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.flaming-sphere",
@@ -8615,7 +9479,18 @@
       ],
       "scribable": true,
       "gameUid": "Target_FlamingSphere"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.flesh-to-stone",
@@ -8798,6 +9673,24 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.draconic-bloodline",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.tempest-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -8879,6 +9772,33 @@
       "gameUid": "Target_FreedomOfMovement"
     },
     "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.tempest-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.war-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.freedom-of-movement",
         "relation": "applies",
@@ -9073,6 +9993,24 @@
       "gameUid": "Target_GaseousForm"
     },
     "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.swarmkeeper",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.gaseous-form",
         "relation": "applies",
@@ -9473,6 +10411,15 @@
     },
     "links": [
       {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.flight",
         "relation": "applies",
         "tag": {
@@ -9546,7 +10493,27 @@
         }
       ],
       "gameUid": "Target_GraspingVine"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.nature-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.grease",
@@ -9616,7 +10583,18 @@
       ],
       "scribable": true,
       "gameUid": "Target_Grease"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.draconic-bloodline",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.greater-invisibility",
@@ -9698,6 +10676,33 @@
     },
     "links": [
       {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-archfey",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.greater-invisibility",
         "relation": "applies",
         "tag": {
@@ -9778,7 +10783,27 @@
         }
       ],
       "gameUid": "Target_GreaterRestoration"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.life-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.guardian-of-faith",
@@ -9847,7 +10872,27 @@
         }
       ],
       "gameUid": "Target_GuardianOfFaith"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.life-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.guidance",
@@ -9924,6 +10969,24 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.arcane-archer",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -10128,6 +11191,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.tempest-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -10395,6 +11467,24 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-vengeance",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -10744,7 +11834,18 @@
         }
       ],
       "gameUid": "Target_HellishRebuke"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.oathbreaker",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.heroes-feast",
@@ -11056,6 +12157,15 @@
     },
     "links": [
       {
+        "target": "subclass.war-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.hold-monster",
         "relation": "applies",
         "tag": {
@@ -11167,6 +12277,33 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.knowledge-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-vengeance",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -11363,6 +12500,15 @@
         }
       },
       {
+        "target": "subclass.oath-of-vengeance",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.hunt-completed",
         "relation": "applies",
         "tag": {
@@ -11464,6 +12610,15 @@
       "gameUid": "Target_HypnoticPattern"
     },
     "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.hypnotised",
         "relation": "applies",
@@ -11703,6 +12858,24 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.tempest-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -11883,6 +13056,15 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.oathbreaker",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -11981,7 +13163,36 @@
         }
       ],
       "gameUid": "Target_InsectPlague"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.nature-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.tempest-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.invisibility",
@@ -12080,6 +13291,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -12592,6 +13812,24 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.life-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-devotion",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -12691,6 +13929,24 @@
         "tag": {
           "act": "acte1",
           "level": "leger",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.arcane-archer",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
           "otherWorks": "aucun"
         }
       },
@@ -12891,6 +14147,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -13248,6 +14513,15 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.swarmkeeper",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -13438,6 +14712,15 @@
     },
     "links": [
       {
+        "target": "subclass.war-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.magic-weapon",
         "relation": "applies",
         "tag": {
@@ -13532,7 +14815,27 @@
         }
       ],
       "gameUid": "Target_CureWounds_Mass"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.life-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.mass-healing-word",
@@ -13726,6 +15029,15 @@
         }
       },
       {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.melfs-acid-arrow",
         "relation": "applies",
         "tag": {
@@ -13819,7 +15131,18 @@
       ],
       "scribable": true,
       "gameUid": "Target_MinorIllusion"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.way-of-shadow",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.mirror-image",
@@ -13908,6 +15231,24 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.trickery-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -14046,6 +15387,33 @@
           "level": "leger",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-the-ancients",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-vengeance",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -14134,6 +15502,15 @@
         "tag": {
           "act": "acte3",
           "level": "leger",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-the-ancients",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
           "otherWorks": "aucun"
         }
       }
@@ -14266,6 +15643,15 @@
       "gameUid": "Target_ResilientSphere"
     },
     "links": [
+      {
+        "target": "subclass.knowledge-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.otilukes-resilient-sphere",
         "relation": "applies",
@@ -14445,6 +15831,24 @@
         }
       },
       {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.trickery-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.pass-without-trace-aura",
         "relation": "applies",
         "tag": {
@@ -14537,6 +15941,24 @@
     },
     "links": [
       {
+        "target": "subclass.the-archfey",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-great-old-one",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.phantasmal-force",
         "relation": "applies",
         "tag": {
@@ -14615,6 +16037,15 @@
       "gameUid": "Target_PhantasmalKiller"
     },
     "links": [
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.phantasmal-killer",
         "relation": "applies",
@@ -14851,6 +16282,42 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.nature-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-the-ancients",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-archfey",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -14951,7 +16418,18 @@
       ],
       "scribable": true,
       "gameUid": "Projectile_PoisonSpray"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.polymorph",
@@ -15034,6 +16512,24 @@
       "gameUid": "Target_Polymorph"
     },
     "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.trickery-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.polymorphed",
         "relation": "applies",
@@ -15194,6 +16690,15 @@
         }
       },
       {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.produce-flame",
         "relation": "applies",
         "tag": {
@@ -15287,7 +16792,36 @@
       ],
       "scribable": true,
       "gameUid": "Target_ProtectionFromEnergy"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-the-ancients",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-vengeance",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.protection-from-evil-and-good",
@@ -15375,6 +16909,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-devotion",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -15552,6 +17095,15 @@
       "gameUid": "Projectile_RayOfEnfeeblement"
     },
     "links": [
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.feeble",
         "relation": "applies",
@@ -15778,6 +17330,24 @@
         }
       },
       {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.draconic-bloodline",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.poisoned",
         "relation": "applies",
         "tag": {
@@ -15870,7 +17440,18 @@
       ],
       "scribable": true,
       "gameUid": "Target_RemoveCurse"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.oath-of-devotion",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.resistance",
@@ -15932,6 +17513,15 @@
       "gameUid": "Target_Resistance"
     },
     "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.resistance",
         "relation": "applies",
@@ -16026,6 +17616,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.life-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -16175,6 +17774,15 @@
     },
     "links": [
       {
+        "target": "subclass.oath-of-devotion",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.sanctuary",
         "relation": "applies",
         "tag": {
@@ -16309,6 +17917,24 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-fiend",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -16578,6 +18204,24 @@
     },
     "links": [
       {
+        "target": "subclass.the-archfey",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.trickery-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.seeming",
         "relation": "applies",
         "tag": {
@@ -16803,6 +18447,15 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.tempest-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -16905,6 +18558,15 @@
         }
       },
       {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.shield",
         "relation": "applies",
         "tag": {
@@ -16981,6 +18643,15 @@
     },
     "links": [
       {
+        "target": "subclass.war-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.shield-of-faith",
         "relation": "applies",
         "tag": {
@@ -17047,6 +18718,15 @@
       "gameUid": "Shout_Shillelagh"
     },
     "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.shillelagh",
         "relation": "applies",
@@ -17224,7 +18904,27 @@
       ],
       "scribable": false,
       "gameUid": "Target_Silence"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-devotion",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.sleep",
@@ -17313,6 +19013,33 @@
       "gameUid": "Target_Sleep"
     },
     "links": [
+      {
+        "target": "subclass.draconic-bloodline",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.knowledge-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-archfey",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.sleeping",
         "relation": "applies",
@@ -17417,7 +19144,36 @@
       ],
       "scribable": true,
       "gameUid": "Target_SleetStorm"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.nature-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.tempest-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.slow",
@@ -17499,6 +19255,24 @@
       "gameUid": "Target_Slow"
     },
     "links": [
+      {
+        "target": "subclass.knowledge-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-great-old-one",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.slowed",
         "relation": "applies",
@@ -17597,6 +19371,33 @@
     },
     "links": [
       {
+        "target": "subclass.nature-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-the-ancients",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.wildheart",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.speak-with-animals",
         "relation": "applies",
         "tag": {
@@ -17673,6 +19474,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.knowledge-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -17820,7 +19630,27 @@
       ],
       "scribable": false,
       "gameUid": "Target_SpikeGrowth"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.nature-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.spirit-guardians",
@@ -17911,7 +19741,27 @@
         }
       ],
       "gameUid": "Shout_SpiritGuardians"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.oath-of-the-crown",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.war-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.spiritual-weapon",
@@ -18012,6 +19862,24 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.oath-of-the-crown",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.war-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -18075,6 +19943,15 @@
       "gameUid": "Target_StaggeringSmite"
     },
     "links": [
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.staggering-smite",
         "relation": "applies",
@@ -18232,7 +20109,27 @@
       ],
       "scribable": true,
       "gameUid": "Target_StinkingCloud"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-fiend",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.stoneskin",
@@ -18309,6 +20206,24 @@
       "gameUid": "Target_Stoneskin"
     },
     "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.war-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.stoneskin",
         "relation": "applies",
@@ -18493,6 +20408,24 @@
     },
     "links": [
       {
+        "target": "subclass.draconic-bloodline",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-great-old-one",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.hideous-laughter",
         "relation": "applies",
         "tag": {
@@ -18592,6 +20525,24 @@
         }
       },
       {
+        "target": "subclass.knowledge-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-great-old-one",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.telekinesis",
         "relation": "applies",
         "tag": {
@@ -18662,6 +20613,15 @@
       "gameUid": "Shout_Thaumaturgy"
     },
     "links": [
+      {
+        "target": "subclass.giant",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.thaumaturgy",
         "relation": "applies",
@@ -18741,7 +20701,18 @@
       ],
       "scribable": false,
       "gameUid": "Target_ThornWhip"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.thunderous-smite",
@@ -18955,6 +20926,15 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.tempest-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -19046,7 +21026,18 @@
       ],
       "scribable": true,
       "gameUid": "Target_TollTheDead"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.true-strike",
@@ -19139,6 +21130,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.arcane-archer",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -19249,6 +21249,24 @@
       "gameUid": "Target_VampiricTouch"
     },
     "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.death-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "condition.vampiric-touch",
         "relation": "applies",
@@ -19445,6 +21463,33 @@
           "level": "aucun",
           "otherWorks": "aucun"
         }
+      },
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.light-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-fiend",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
       }
     ]
   },
@@ -19595,7 +21640,27 @@
       ],
       "scribable": true,
       "gameUid": "Wall_WallOfStone"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.nature-domain",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.wall-of-thorns",
@@ -19801,6 +21866,15 @@
         }
       },
       {
+        "target": "subclass.oath-of-the-crown",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.warding-bond-caster",
         "relation": "applies",
         "tag": {
@@ -19910,7 +21984,27 @@
       ],
       "scribable": true,
       "gameUid": "Target_Web"
-    }
+    },
+    "links": [
+      {
+        "target": "subclass.circle-of-the-land",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.swarmkeeper",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
   },
   {
     "id": "spell.wind-walk",
@@ -20065,6 +22159,15 @@
     },
     "links": [
       {
+        "target": "subclass.draconic-bloodline",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "condition.witch-bolt",
         "relation": "applies",
         "tag": {
@@ -20144,6 +22247,15 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.the-hexblade",
+        "relation": "granted_by",
+        "tag": {
+          "act": "prologue",
           "level": "aucun",
           "otherWorks": "aucun"
         }

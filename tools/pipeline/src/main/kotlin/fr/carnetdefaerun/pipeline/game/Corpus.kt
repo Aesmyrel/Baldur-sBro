@@ -19,6 +19,8 @@ enum class Collection(val key: String, val template: String?) {
     LOCATIONS("location", "Location page"),
     MODULES("module", null),
     CLASSES("class", null),
+    /** Sous-classes : pages listées par la galerie de la page `Classes` (récupérée juste avant). */
+    SUBCLASSES("subclass", null),
 }
 
 /** Pages nommées, hors modèle d'inclusion. */

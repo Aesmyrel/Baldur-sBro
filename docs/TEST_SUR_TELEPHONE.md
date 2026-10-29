@@ -30,3 +30,6 @@
 - [ ] Changer d'onglet puis revenir retrouve l'écran et sa position.
 - [ ] Un lien `carnetdefaerun://` ouvre la bonne fiche ; relancer l'appli depuis les tâches récentes ne rejoue pas le lien.
 - [ ] Geste de retour prédictif : aperçu de la page précédente, retour vers « Ma partie » depuis la racine d'un autre onglet.
+
+## Données de jeu
+- [ ] Escroc arcanique et chevalier occulte au niveau 10 : nombre d'emplacements de sorts de niveau 1 et 2 (les pages de bg3.wiki divergent, D-067).

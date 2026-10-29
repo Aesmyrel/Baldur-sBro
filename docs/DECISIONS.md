@@ -160,3 +160,10 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - Les capacités renvoient à leur fiche quand elle existe (75) ; les 12 capacités de choix sans fiche (style de combat, manifestations occultes…) portent un nom résolu comme les autres.
 - Noms des classes et de 7 capacités de choix : termes du SRD 5.2.1 FR ; les 5 autres sont proposés et signalés.
 - Un instantané de référence (`ClassDataTest`) fige les valeurs vérifiées à la main sur les pages, avec leur révision.
+
+**D-067 — Sous-classes : lues dans le wikitexte, choix compris.** Les 58 sous-classes (galerie de la page `Classes`) sont lues section par section (« Level N »), par blocs : définition, liste, tableau ou boîte d'options.
+- Faits retenus : classe parente, maîtrises ajoutées, capacités par niveau, sorts accordés (toujours préparés : domaine, serment, cercle ; ou ajoutés à la liste : liste étendue de l'occultiste), ressources, emplacements des tiers de lanceur, et **choix** (nombre à prendre, options, et ce que chaque option accorde : sorts d'un terrain, actions d'un cœur bestial).
+- Les pages incluses (`{{:Manoeuvres}}`, ascendance draconique) sont récupérées et lues ; une table de tirage (magie sauvage) n'est pas un choix.
+- Les deux tiers de lanceur divergent au niveau 10 (l'escroc annonce 6 emplacements de niveau 1, le chevalier 3 de niveau 2) : faute de pouvoir trancher, les emplacements de ce niveau restent vides et signalés pour les deux, et sont à vérifier en jeu.
+- Deux sous-classes de même nom (« Wild Magic ») ont un identifiant suffixé par la classe ; les autres gardent le nom de leur page sans qualificatif.
+- Les noms français des sous-classes et des nouvelles capacités viendront de la seconde vague d'écriture ; un instantané de référence (`SubclassDataTest`) fige les valeurs vérifiées sur les pages.

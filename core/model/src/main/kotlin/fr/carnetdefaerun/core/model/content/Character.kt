@@ -59,9 +59,12 @@ data class ClassLevel(
     val values: List<LevelValue> = emptyList(),
 )
 
-/** Capacité obtenue à un niveau, avec son nom ; [id] renvoie à sa fiche quand elle existe (sinon signalée). */
+/**
+ * Capacité (ou option d'un choix) obtenue à un niveau, avec son nom ; [id] renvoie à sa fiche quand elle existe
+ * (capacité ou sort). [grants] : ce que l'option apporte avec elle (sorts d'un terrain, actions d'un compagnon).
+ */
 @Serializable
-data class LevelFeature(val name: Name, val id: ContentId? = null)
+data class LevelFeature(val name: Name, val id: ContentId? = null, val grants: List<ContentId> = emptyList())
 
 @Serializable
 data class ResourceCount(val resource: Resource, val amount: Int)
@@ -69,3 +72,40 @@ data class ResourceCount(val resource: Resource, val amount: Int)
 /** Valeur d'une colonne propre à la classe ; [key] est stable (ex. `sneak_attack_damage`), [value] tel quel (`1d6`, `+2`). */
 @Serializable
 data class LevelValue(val key: String, val value: String)
+
+/** Sous-classe : capacités par niveau (niveaux de la classe parente), maîtrises et sorts qu'elle ajoute. */
+@Serializable
+@SerialName("subclass")
+data class SubclassFacts(
+    val parentClass: ContentId,
+    /** Maîtrises accordées par la sous-classe, y compris en multiclasse. */
+    val proficiencies: Proficiencies = Proficiencies(),
+    val levels: List<SubclassLevel>,
+) : Facts
+
+@Serializable
+data class SubclassLevel(
+    val level: Int,
+    val features: List<LevelFeature> = emptyList(),
+    /** Choix à faire à ce niveau (un cœur bestial, un terrain…), avec ses options. */
+    val choices: List<LevelChoice> = emptyList(),
+    val spells: List<GrantedSpell> = emptyList(),
+    val resources: List<ResourceCount> = emptyList(),
+    /** Tiers de lanceur (chevalier occulte, escroc arcanique) : emplacements atteints à ce niveau. */
+    val spellSlots: List<Int> = emptyList(),
+)
+
+/** Choix d'un niveau : [count] options à prendre parmi [options]. */
+@Serializable
+data class LevelChoice(val name: Name, val options: List<LevelFeature>, val count: Int = 1)
+
+@Serializable
+data class GrantedSpell(val spell: ContentId, val kind: GrantKind)
+
+@Serializable
+enum class GrantKind {
+    /** Toujours préparé (sorts de domaine, de serment, de cercle, sort mineur offert). */
+    @SerialName("always_prepared") ALWAYS_PREPARED,
+    /** Ajouté à la liste où l'on choisit (liste étendue de l'occultiste). */
+    @SerialName("expanded_list") EXPANDED_LIST,
+}

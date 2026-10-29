@@ -54,7 +54,8 @@ object WikiTables {
         val tables = mutableListOf<WikiTable>()
         var i = 0
         while (i < lines.size) {
-            if (lines[i].trimStart().startsWith("{|")) {
+            // Un tableau peut être indenté par des deux-points (`:{|`), dans une définition.
+            if (lines[i].trimStart().trimStart(':').startsWith("{|")) {
                 val (table, next) = parseTable(lines, i)
                 tables += table
                 i = next

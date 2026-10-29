@@ -14,6 +14,7 @@ import fr.carnetdefaerun.core.model.content.LoreFacts
 import fr.carnetdefaerun.core.model.content.LoreSection
 import fr.carnetdefaerun.core.model.content.PlaceFacts
 import fr.carnetdefaerun.core.model.content.SpellFacts
+import fr.carnetdefaerun.core.model.content.SubclassFacts
 import fr.carnetdefaerun.core.model.content.WearerCondition
 import fr.carnetdefaerun.core.model.spoiler.Gated
 import fr.carnetdefaerun.core.model.spoiler.RevealKey
@@ -73,6 +74,17 @@ class ContentRepository internal constructor(private val store: ContentStore) {
             is SpellFacts -> f
             is ConditionFacts -> f
             is ClassFacts -> f.copy(levels = f.levels.map { l -> l.copy(features = l.features.filter { it.id == null || linkVisible(it.id!!) }) })
+            is SubclassFacts -> f.copy(
+                levels = f.levels.map { l ->
+                    l.copy(
+                        features = l.features.filter { it.id == null || linkVisible(it.id!!) },
+                        choices = l.choices.map { c ->
+                            c.copy(options = c.options.filter { it.id == null || linkVisible(it.id!!) }.map { o -> o.copy(grants = o.grants.filter(::linkVisible)) })
+                        },
+                        spells = l.spells.filter { linkVisible(it.spell) },
+                    )
+                },
+            )
             // Les sections du codex sont filtrées une à une ci-dessous, jamais transmises en bloc.
             is LoreFacts -> f.copy(sections = emptyList())
         }
