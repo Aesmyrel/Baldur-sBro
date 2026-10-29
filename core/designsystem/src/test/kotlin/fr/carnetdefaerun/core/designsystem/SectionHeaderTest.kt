@@ -31,7 +31,7 @@ import org.robolectric.annotation.Config
 class SectionHeaderTest {
     @get:Rule val compose = createAndroidComposeRule<ComponentActivity>()
 
-    private val labels = listOf("Caractéristiques", "Statistiques dérivées", "Prochains objectifs", "Emblèmes des classes")
+    private val labels = listOf("Caractéristiques", "Statistiques dérivées", "Prochains objectifs", "Emblèmes des classes", "Personnalisation")
 
     private fun lines(node: androidx.compose.ui.semantics.SemanticsNode): List<String> {
         val results = mutableListOf<TextLayoutResult>()

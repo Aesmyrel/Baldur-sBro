@@ -191,3 +191,10 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Noms, seconde vague** : 627 noms (capacités, états, sous-classes, noms des choix).
 - **« Même nom anglais, même nom français »** : la règle est désormais un contrôle bloquant de la validation, sans aucune exception à ce jour.
 - **Éditions de la VF de D&D** : à défaut de la VF de BG3, les termes officiels viennent du SRD 5.2.1 (règles de 2024) ou du lexique AideDD. Certains diffèrent de la VF de 2014, que le jeu a pu suivre (« Témérité » ou « Attaque téméraire »). Ils gardent le statut `VF_DND`, affiché « VF à confirmer » pour un terme du jeu, et la correction du joueur prime.
+
+**D-072 — Phase 1 validée.** La seconde contre-vérification valide la phase 1 sous une condition, levée ici.
+- **I4, couture sous l'en-tête d'acte** : le halo ne peint plus la couleur de fond par-dessus la page. Il **efface la gravure** sous le texte (mode DstOut, dans la couche de la vignette), si bien que c'est la page elle-même qu'on voit sous les lettres. Mesure au bas de l'en-tête : 2 à 3 niveaux d'écart entre l'intérieur du cadre et la page, contre 16 auparavant.
+- La mesure de l'en-tête de section suit aussi la taille de police (« Personnalisation » ajoutée au test, à 320 dp).
+- **Reste consigné** :
+  - « Ma » seul en tête de ligne à 320 dp et 200 % ;
+  - les points ouverts de D-070.

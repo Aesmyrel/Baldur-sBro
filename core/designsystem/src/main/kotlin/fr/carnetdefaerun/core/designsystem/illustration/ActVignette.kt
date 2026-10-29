@@ -14,6 +14,13 @@ import androidx.compose.foundation.text.TextAutoSize
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.draw.drawWithContent
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.layout.LayoutCoordinates
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.draw.drawBehind
@@ -448,9 +455,23 @@ fun VignetteHeader(
     val shadow = Shadow(c.bg, Offset.Zero, blurRadius = with(density) { 6.dp.toPx() })
     val topInset = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
     val large = density.fontScale > 1.3f
+    // Place du texte dans l'en-tête, relevée au placement : le halo y efface la gravure.
+    var container by remember { mutableStateOf<LayoutCoordinates?>(null) }
+    var textBounds by remember { mutableStateOf<Rect?>(null) }
     BoxWithConstraints(modifier.fillMaxWidth()) {
-        Box(Modifier.fillMaxWidth().heightIn(min = vignetteHeight(maxWidth)).clipToBounds()) {
-            ActVignette(vignette, Modifier.matchParentSize(), topInset, withFrame = false)
+        Box(Modifier.fillMaxWidth().heightIn(min = vignetteHeight(maxWidth)).clipToBounds().onGloballyPositioned { container = it }) {
+            // Halo de lisibilité : la gravure s'efface sous le titre (on voit la page elle-même, sans couture),
+            // dans la même couche que la vignette.
+            Box(
+                Modifier.matchParentSize()
+                    .graphicsLayer { compositingStrategy = androidx.compose.ui.graphics.CompositingStrategy.Offscreen }
+                    .drawWithContent {
+                        drawContent()
+                        textBounds?.let { r -> translate(r.left, r.top) { haloShape(r.size, if (c.isDark) 0.78f else 0.82f) } }
+                    },
+            ) {
+                ActVignette(vignette, Modifier.matchParentSize(), topInset, withFrame = false)
+            }
             // Voile d'encre derrière le titre ; il s'efface lui aussi vers le bas, pour ne laisser aucune couture.
             Box(
                 Modifier.matchParentSize()
@@ -469,7 +490,11 @@ fun VignetteHeader(
             // (grande police, écran étroit, libellé long) : le titre garde toujours la largeur qu'il lui faut.
             Layout(
                 content = {
-                    Column(Modifier.drawBehind { legibilityHalo(c.bg, if (c.isDark) 0.78f else 0.82f) }) {
+                    Column(
+                        Modifier.onGloballyPositioned { text ->
+                            textBounds = container?.takeIf { it.isAttached }?.localBoundingBoxOf(text, clipBounds = false)
+                        },
+                    ) {
                         Text(label, style = CarnetTheme.type.label.copy(shadow = shadow), color = c.gold)
                         Text(
                             title, style = CarnetTheme.type.display.copy(shadow = shadow), color = c.text, maxLines = 1,
@@ -509,30 +534,30 @@ fun VignetteHeader(
 }
 
 /**
- * Halo de page derrière le libellé et le titre : un rectangle de la couleur du fond, plein sur le bloc de texte
- * (plus 4 dp) et fondu sur 20 dp au-delà. Aucun astre ni hachure ne passe sous les lettres sans être voilé,
- * et le reste de la gravure garde son éclat ; le cadre, dessiné ensuite, reste net.
+ * Halo de lisibilité : la gravure s'efface sous le bloc de texte (plus 4 dp), avec un fondu de 20 dp au-delà.
+ * Aucun astre ni hachure ne passe sous les lettres sans être estompé, et c'est la page elle-même qu'on voit
+ * au travers : pas de couture avec ce qui l'entoure. Le cadre, dessiné ensuite, reste net.
  */
-private fun DrawScope.legibilityHalo(ground: Color, alpha: Float) {
+private fun DrawScope.haloShape(size: Size, alpha: Float) {
     val m = 4.dp.toPx()
     val f = 20.dp.toPx()
     val l = -m
     val t = -m
     val r = size.width + m
     val b = size.height + m
-    val solid = ground.copy(alpha = alpha)
-    val clear = ground.copy(alpha = 0f)
-    drawRect(solid, Offset(l, t), Size(r - l, b - t))
+    val solid = Color.Black.copy(alpha = alpha)
+    val clear = Color.Black.copy(alpha = 0f)
+    val mode = BlendMode.DstOut
+    drawRect(solid, Offset(l, t), Size(r - l, b - t), blendMode = mode)
     // Bords fondus : quatre bandes en dégradé linéaire, quatre coins en dégradé radial.
-    drawRect(Brush.horizontalGradient(listOf(clear, solid), startX = l - f, endX = l), Offset(l - f, t), Size(f, b - t))
-    drawRect(Brush.horizontalGradient(listOf(solid, clear), startX = r, endX = r + f), Offset(r, t), Size(f, b - t))
-    drawRect(Brush.verticalGradient(listOf(clear, solid), startY = t - f, endY = t), Offset(l, t - f), Size(r - l, f))
-    drawRect(Brush.verticalGradient(listOf(solid, clear), startY = b, endY = b + f), Offset(l, b), Size(r - l, f))
+    drawRect(Brush.horizontalGradient(listOf(clear, solid), startX = l - f, endX = l), Offset(l - f, t), Size(f, b - t), blendMode = mode)
+    drawRect(Brush.horizontalGradient(listOf(solid, clear), startX = r, endX = r + f), Offset(r, t), Size(f, b - t), blendMode = mode)
+    drawRect(Brush.verticalGradient(listOf(clear, solid), startY = t - f, endY = t), Offset(l, t - f), Size(r - l, f), blendMode = mode)
+    drawRect(Brush.verticalGradient(listOf(solid, clear), startY = b, endY = b + f), Offset(l, b), Size(r - l, f), blendMode = mode)
     for ((cx, cy) in listOf(l to t, r to t, l to b, r to b)) {
-        val corner = Offset(cx, cy)
         drawRect(
-            Brush.radialGradient(listOf(solid, clear), center = corner, radius = f),
-            Offset(if (cx == l) l - f else r, if (cy == t) t - f else b), Size(f, f),
+            Brush.radialGradient(listOf(solid, clear), center = Offset(cx, cy), radius = f),
+            Offset(if (cx == l) l - f else r, if (cy == t) t - f else b), Size(f, f), blendMode = mode,
         )
     }
 }

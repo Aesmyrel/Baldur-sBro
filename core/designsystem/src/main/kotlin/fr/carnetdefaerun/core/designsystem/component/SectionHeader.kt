@@ -39,7 +39,8 @@ fun SectionHeader(
         val measurer = rememberTextMeasurer()
         // Place du libellé à côté du fleuron (22 dp) et de son écart (10 dp).
         val room = constraints.maxWidth - with(LocalDensity.current) { 32.dp.roundToPx() }
-        val style = remember(label, base, room) {
+        val density = LocalDensity.current
+        val style = remember(label, base, room, density) {
             val longest = label.split(' ').maxOfOrNull { measurer.measure(it, base).size.width } ?: 0
             if (constraints.hasBoundedWidth && longest > room) base.copy(letterSpacing = 0.04.em) else base
         }
