@@ -120,7 +120,7 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 
 **D-063 — Contre-vérification de la phase 1 : corrections.**
 - Polices : les notices d'origine (copyright, licence et son adresse) ne sont plus touchées par le renommage ; espace fine insécable dédiée de 55 % de l'espace-mot (l'espace fine des graisses grasses était plus large qu'une espace-mot) ; points de suspension ajoutés là où ils manquaient. Un test le vérifie.
-- En-tête de section : l'action ne se coupe jamais ; elle passe sous le filet quand le libellé perdrait plus de la moitié de la largeur.
+- En-tête de section : l'action ne se coupe jamais ; elle passe sous le filet quand le libellé perdrait plus de la moitié de la largeur (revu par D-070).
 - Contrastes : lavis d'or d'une option choisie à 8 % en parchemin (18 % en sombre) ; or profond du parchemin à `#96732C` (3,5:1 pour les contours). Tous les jetons sont désormais mesurés par un test (texte ≥ 4,5:1 sur les quatre fonds de chaque thème, contours ≥ 3:1).
 - En-tête d'acte : halo de page serré autour du libellé et du titre (aucun astre ni hachure sous les lettres, à toutes les tailles) ; la pastille passe au-dessus du titre dès qu'elle prendrait près de la moitié de la largeur ; la gravure est rognée sur son cadre.
 - Divers : fin de l'animation du voile même si la révélation reste sans effet ; plus de fabrique d'étiquette à valeurs ouvertes ; lecture des préférences relancée après une erreur ; accueil sans état provisoire ; hauteurs minimales pour la barre du haut et le rail ; libellés de la barre plafonnés à 125 % ; tuiles de statistiques de même hauteur ; valeur du curseur affichée ; relance depuis les tâches récentes sans rejouer le lien profond ; test de conservation de l'état par onglet.
@@ -173,3 +173,14 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 **D-069 — Relecture indépendante des effets et des noms : corrections avant intégration.** Échantillon de 80 effets et 60 noms comparé aux pages : 87,5 % d'effets exacts et 90 % de noms corrects, aucun faux ; typographie, révisions et étiquettes sans défaut sur les 773 effets.
 - À corriger : 10 effets approximatifs, les actions sans leurs chiffres, des termes anglais dans 10 états, 18 couples de noms divergents pour une même chose, 12 statuts officiels contraires à D-065.
 - Deux règles ajoutées à `docs/LOTS_ECRITURE.md` §4 : comportement constaté plutôt qu'infobulle contredite ; notes mécaniques admises depuis les sections « notes » et « bugs », reformulées. La mécanique des actions est désormais portée par les fiches (D-068).
+
+**D-070 — Seconde contre-vérification de la phase 1 : derniers correctifs.** Aucun point bloquant ; trois points importants corrigés.
+- **Test des polices** : les espaces insécables du test de couverture sont écrites en échappements (`\u202F`, `\u00A0`), qu'aucun éditeur ne normalise.
+- **Halo de l'en-tête** : rectangle fondu qui épouse le bloc de texte (et non plus une ellipse), cadre gravé redessiné au-dessus du halo. Opacité 0,78 en sombre et en OLED : c'est le minimum qui garde 4,5:1 pour l'or du libellé sur la feuille d'or la plus claire, au pire cas. Elle reste 0,82 en parchemin, d'après la mesure sur les pixels. La pastille active dit « Session active » et reste à droite du titre à 412 dp.
+- **En-tête de section** : largeur naturelle du libellé mesurée ; action sur la ligne seulement si tout y tient ; filet seulement si le libellé tient sur une ligne avec lui ; interlettrage resserré plutôt qu'un mot coupé. Un test vérifie qu'aucun mot n'est coupé à 320 et 360 dp, de 100 à 200 %.
+- **Mineurs corrigés** : avertissements Kotlin, règle de test dépréciée, largeur non bornée, action trop longue terminée par « … ». Le contrôle typographique couvre « % » et le point médian (insécable avant « · »).
+- **Consignés, pour plus tard** :
+  - tests du réabonnement des préférences et du lien non rejoué depuis l'historique ;
+  - notice de Carnet Titres SC reprise telle quelle dans les crédits ;
+  - « Grimo… » dans la barre de navigation à 320 dp et 200 %, cas limite ;
+  - espace fine d'Alegreya Sans à 0,55 de l'espace-mot.

@@ -26,7 +26,7 @@ class FontCoverageTest {
         assertWithMessage("polices trouvées").that(fonts).isNotEmpty()
         for (file in fonts) {
             val font = Font.createFont(Font.TRUETYPE_FONT, file)
-            for (ch in listOf(' ', ' ', '’', '«', '»', 'œ', 'É', '…')) {
+            for (ch in listOf('\u202F', '\u00A0', '’', '«', '»', 'œ', 'É', '…')) {
                 assertWithMessage("%s : U+%s", file.name, "%04X".format(ch.code)).that(font.canDisplay(ch)).isTrue()
             }
         }
@@ -38,8 +38,8 @@ class FontCoverageTest {
         for (file in fonts) {
             val font = Font.createFont(Font.TRUETYPE_FONT, file).deriveFont(1000f)
             fun advance(text: String) = font.createGlyphVector(frc, text).getGlyphMetrics(0).advance
-            assertWithMessage(file.name).that(advance(" ")).isLessThan(advance(" ") * 0.7f)
-            assertWithMessage(file.name).that(advance(" ")).isGreaterThan(0f)
+            assertWithMessage(file.name).that(advance("\u202F")).isLessThan(advance(" ") * 0.7f)
+            assertWithMessage(file.name).that(advance("\u202F")).isGreaterThan(0f)
         }
     }
 

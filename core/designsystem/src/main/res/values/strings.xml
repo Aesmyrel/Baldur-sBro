@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="ds_veil_title">Section masquée</string>
-    <string name="ds_veil_title_act">Section masquée · %1$s</string>
+    <string name="ds_veil_title_act">Section masquée · %1$s</string>
     <string name="ds_veil_hint">Au-delà de votre progression. Touchez pour dissiper la brume.</string>
     <string name="ds_veil_a11y">Section masquée, au-delà de votre progression</string>
     <string name="ds_veil_a11y_act">Section masquée, au-delà de votre progression, %1$s</string>

@@ -21,6 +21,7 @@ import androidx.compose.ui.draw.drawWithCache
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
+import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -72,20 +73,20 @@ fun vignetteHeight(width: Dp): Dp = (width * (H / W)).coerceIn(200.dp, 300.dp)
  * [topInset] laisse la barre d'état libre au-dessus du cadre.
  */
 @Composable
-fun ActVignette(vignette: Vignette, modifier: Modifier = Modifier, topInset: Dp = 0.dp) {
+fun ActVignette(vignette: Vignette, modifier: Modifier = Modifier, topInset: Dp = 0.dp, withFrame: Boolean = true) {
     val colors = CarnetTheme.colors
     Canvas(
         modifier
             .fillMaxWidth()
             .drawWithCache {
                 val layer = obtainGraphicsLayer().apply { compositingStrategy = CompositingStrategy.Offscreen }
-                layer.record { drawVignette(vignette, colors, topInset.toPx()) }
+                layer.record { drawVignette(vignette, colors, topInset.toPx(), withFrame) }
                 onDrawWithContent { drawLayer(layer) }
             },
     ) {}
 }
 
-fun DrawScope.drawVignette(vignette: Vignette, c: CarnetColors, topInset: Float = 0f) {
+fun DrawScope.drawVignette(vignette: Vignette, c: CarnetColors, topInset: Float = 0f, withFrame: Boolean = true) {
     // Mise à l'échelle « couvrante » : la scène garde ses proportions et l'excédent est rogné.
     val k = max(size.width / W, size.height / H)
     val dx = (size.width - W * k) / 2f
@@ -110,8 +111,15 @@ fun DrawScope.drawVignette(vignette: Vignette, c: CarnetColors, topInset: Float 
         }
         // La gravure s'efface vers la page : en dessous, le fond (halo, grain) est celui de l'écran.
         drawRect(Brush.verticalGradient(0.5f to Color.Black, 1f to Color.Transparent), blendMode = BlendMode.DstIn)
-        frame(c, topInset)
+        if (withFrame) frame(c, topInset)
     }
+}
+
+/** Cadre gravé seul, pour le poser au-dessus de ce qui couvre la vignette (halo du titre). */
+@Composable
+fun VignetteFrame(modifier: Modifier = Modifier, topInset: Dp = 0.dp) {
+    val colors = CarnetTheme.colors
+    Canvas(modifier) { frame(colors, topInset.toPx()) }
 }
 
 // ---------- Éléments communs ----------
@@ -442,7 +450,7 @@ fun VignetteHeader(
     val large = density.fontScale > 1.3f
     BoxWithConstraints(modifier.fillMaxWidth()) {
         Box(Modifier.fillMaxWidth().heightIn(min = vignetteHeight(maxWidth)).clipToBounds()) {
-            ActVignette(vignette, Modifier.matchParentSize(), topInset)
+            ActVignette(vignette, Modifier.matchParentSize(), topInset, withFrame = false)
             // Voile d'encre derrière le titre ; il s'efface lui aussi vers le bas, pour ne laisser aucune couture.
             Box(
                 Modifier.matchParentSize()
@@ -461,7 +469,7 @@ fun VignetteHeader(
             // (grande police, écran étroit, libellé long) : le titre garde toujours la largeur qu'il lui faut.
             Layout(
                 content = {
-                    Column(Modifier.drawBehind { legibilityHalo(c.bg) }) {
+                    Column(Modifier.drawBehind { legibilityHalo(c.bg, if (c.isDark) 0.78f else 0.82f) }) {
                         Text(label, style = CarnetTheme.type.label.copy(shadow = shadow), color = c.gold)
                         Text(
                             title, style = CarnetTheme.type.display.copy(shadow = shadow), color = c.text, maxLines = 1,
@@ -494,26 +502,37 @@ fun VignetteHeader(
                     }
                 }
             }
+            // Le cadre passe au-dessus du halo : il reste net autour du titre.
+            VignetteFrame(Modifier.matchParentSize(), topInset)
         }
     }
 }
 
 /**
- * Halo de page derrière le libellé et le titre : une ellipse de la couleur du fond, pleine jusqu'aux coins
- * du texte et fondue sur 32 dp au-delà. Où que tombent les lignes (grande police, écran étroit), aucun astre
- * ni hachure ne passe sous les lettres sans être voilé, et le reste de la gravure garde son éclat.
+ * Halo de page derrière le libellé et le titre : un rectangle de la couleur du fond, plein sur le bloc de texte
+ * (plus 4 dp) et fondu sur 20 dp au-delà. Aucun astre ni hachure ne passe sous les lettres sans être voilé,
+ * et le reste de la gravure garde son éclat ; le cadre, dessiné ensuite, reste net.
  */
-private fun DrawScope.legibilityHalo(ground: Color) {
-    val center = Offset(size.width / 2f, size.height / 2f)
-    val feather = 32.dp.toPx()
-    // Ellipse passant par les coins du texte (facteur √2), avec une petite marge.
-    val rx = size.width / 2f * 1.42f + 6.dp.toPx() + feather
-    val ry = size.height / 2f * 1.42f + 6.dp.toPx() + feather
-    val solid = 1f - feather / ry
-    scale(rx / ry, 1f, pivot = center) {
-        drawCircle(
-            Brush.radialGradient(0f to ground.copy(alpha = 0.82f), solid to ground.copy(alpha = 0.82f), 1f to ground.copy(alpha = 0f), center = center, radius = ry),
-            radius = ry, center = center,
+private fun DrawScope.legibilityHalo(ground: Color, alpha: Float) {
+    val m = 4.dp.toPx()
+    val f = 20.dp.toPx()
+    val l = -m
+    val t = -m
+    val r = size.width + m
+    val b = size.height + m
+    val solid = ground.copy(alpha = alpha)
+    val clear = ground.copy(alpha = 0f)
+    drawRect(solid, Offset(l, t), Size(r - l, b - t))
+    // Bords fondus : quatre bandes en dégradé linéaire, quatre coins en dégradé radial.
+    drawRect(Brush.horizontalGradient(listOf(clear, solid), startX = l - f, endX = l), Offset(l - f, t), Size(f, b - t))
+    drawRect(Brush.horizontalGradient(listOf(solid, clear), startX = r, endX = r + f), Offset(r, t), Size(f, b - t))
+    drawRect(Brush.verticalGradient(listOf(clear, solid), startY = t - f, endY = t), Offset(l, t - f), Size(r - l, f))
+    drawRect(Brush.verticalGradient(listOf(solid, clear), startY = b, endY = b + f), Offset(l, b), Size(r - l, f))
+    for ((cx, cy) in listOf(l to t, r to t, l to b, r to b)) {
+        val corner = Offset(cx, cy)
+        drawRect(
+            Brush.radialGradient(listOf(solid, clear), center = corner, radius = f),
+            Offset(if (cx == l) l - f else r, if (cy == t) t - f else b), Size(f, f),
         )
     }
 }

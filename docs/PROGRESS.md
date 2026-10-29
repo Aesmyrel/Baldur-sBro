@@ -20,10 +20,10 @@ _Dernière mise à jour : 28/10/2026, phase 1 corrigée après vérification ind
   - Coquille : navigation par onglet persistée, liens profonds, barre ou rail selon la largeur, écran de démarrage, thèmes, mode session (écran allumé), réglages complets, crédits et mentions légales, icône adaptative et monochrome.
   - Qualité : `./gradlew check` vert (lint sans avertissement, tests, captures, contrôle des permissions), release R8 de 2,8 Mo sans permission réseau.
   - Vérification indépendante (technique ; art et accessibilité) : 9 points bloquants et 25 importants relevés, corrigés (D-038 à D-052) ou planifiés (D-053) : voile sur toucher confirmé et lisible, étiquettes fermées par défaut, poignée opaque, navigation par onglet sans perte d'état, DataStore résistant, `check` qui compare vraiment les captures, EmojiCompat retiré, polices complétées et renommées, 200 % et largeurs, contrastes réels, OLED en noir pur. 25 captures, dont 200 %, 360 dp et pliable.
-  - Contre-vérification : 5 points bloquants et 19 mineurs, corrigés (D-063) sauf la capture du shader en mouvement, renvoyée au téléphone (`docs/TEST_SUR_TELEPHONE.md`).
+  - Contre-vérification : 5 points bloquants et 19 mineurs, corrigés (D-063) ou renvoyés au téléphone (`docs/TEST_SUR_TELEPHONE.md`) ; seconde contre-vérification sans bloquant, ses 3 points importants corrigés (D-070).
 
 ## En cours
-- Dernière relecture indépendante des corrections de la phase 1 (D-063).
+- Relecture des captures après les derniers correctifs de la phase 1 (D-070).
 - **Phase 2 — pipelines de données du jeu et du lore**
   - Fait : modèle de contenu ; pipeline bg3.wiki (récupération, normalisation, assemblage, validation bloquante, rapport) ; 1 776 entrées sans texte du jeu (234 sorts, 638 objets, 245 états, 494 capacités, 165 lieux) ; base embarquée générée à la compilation ; dépôt de contenu filtré par le verrou, avec tests de non-fuite sur toute la base.
   - Fait aussi : noms français des 1 776 premières entrées (335 officiels D&D, 1 441 proposés et signalés comme tels, D-065).

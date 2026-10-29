@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 
@@ -63,7 +64,7 @@ fun TextAction(text: String, onClick: () -> Unit, modifier: Modifier = Modifier)
         modifier.defaultMinSize(minHeight = 48.dp).clickable(role = Role.Button, onClick = onClick).padding(horizontal = 4.dp),
         contentAlignment = Alignment.Center,
     ) {
-        Text(text, style = CarnetTheme.type.data, color = CarnetTheme.colors.text2, maxLines = 1, softWrap = false)
+        Text(text, style = CarnetTheme.type.data, color = CarnetTheme.colors.text2, maxLines = 1, softWrap = false, overflow = TextOverflow.Ellipsis)
     }
 }
 
