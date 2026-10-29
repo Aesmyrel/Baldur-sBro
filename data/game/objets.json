@@ -2408,6 +2408,13 @@
           "feature.poison-mist"
         ]
       },
+      "effects": [
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        }
+      ],
       "sources": [
         {
           "act": "acte2",
@@ -2443,6 +2450,15 @@
       },
       {
         "target": "feature.poison-mist",
+        "relation": "grants",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte2",
@@ -4864,6 +4880,10 @@
           {
             "dice": "1d8+2",
             "type": "slashing"
+          },
+          {
+            "dice": "1d4",
+            "type": "necrotic"
           }
         ],
         "versatileDamage": {
@@ -4942,9 +4962,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -4990,6 +5007,10 @@
           {
             "dice": "1d8+1",
             "type": "slashing"
+          },
+          {
+            "dice": "1d4",
+            "type": "psychic"
           }
         ],
         "versatileDamage": {
@@ -5085,9 +5106,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -5540,6 +5558,16 @@
         },
         {
           "@type": "grants",
+          "target": "feature.exploit-weakness",
+          "wielded": "main_hand"
+        },
+        {
+          "@type": "grants",
+          "target": "feature.true-strike-riposte",
+          "wielded": "off_hand"
+        },
+        {
+          "@type": "grants",
           "target": "spell.true-strike",
           "recharge": "short_rest"
         },
@@ -5564,6 +5592,15 @@
     },
     "links": [
       {
+        "target": "feature.exploit-weakness",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "feature.improved-critical",
         "relation": "grants",
         "tag": {
@@ -5574,6 +5611,15 @@
       },
       {
         "target": "feature.piercing-strike",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.true-strike-riposte",
         "relation": "grants",
         "tag": {
           "act": "acte3",
@@ -7670,6 +7716,10 @@
           {
             "dice": "1d10+2",
             "type": "piercing"
+          },
+          {
+            "dice": "1d4",
+            "type": "force"
           }
         ],
         "properties": [
@@ -7732,9 +7782,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -8186,6 +8233,10 @@
           {
             "dice": "1d6+1",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d4",
+            "type": "thunder"
           }
         ],
         "versatileDamage": {
@@ -8249,9 +8300,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -11415,6 +11463,10 @@
           {
             "dice": "1d4",
             "type": "piercing"
+          },
+          {
+            "dice": "1d4",
+            "type": "cold"
           }
         ],
         "properties": [
@@ -11423,6 +11475,13 @@
           "thrown"
         ]
       },
+      "effects": [
+        {
+          "@type": "grants",
+          "target": "feature.chilling-counter",
+          "wielded": "off_hand"
+        }
+      ],
       "sources": [
         {
           "act": "acte3",
@@ -11440,6 +11499,15 @@
     },
     "links": [
       {
+        "target": "feature.chilling-counter",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "place.rivington",
         "relation": "located_in",
         "tag": {
@@ -11450,7 +11518,6 @@
       }
     ],
     "unknown": [
-      "damage",
       "effects"
     ]
   },
@@ -11678,6 +11745,10 @@
           {
             "dice": "2d6+2",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d4",
+            "type": "thunder"
           }
         ],
         "properties": [
@@ -11690,6 +11761,13 @@
           "feature.grand-slam"
         ]
       },
+      "effects": [
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        }
+      ],
       "sources": [
         {
           "act": "acte3",
@@ -11733,6 +11811,15 @@
         }
       },
       {
+        "target": "feature.tenacity",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "place.western-beach",
         "relation": "located_in",
         "tag": {
@@ -11741,9 +11828,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -11800,6 +11884,13 @@
           "feature.corrosive-strike"
         ]
       },
+      "effects": [
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        }
+      ],
       "sources": [
         {
           "act": "acte1",
@@ -11827,6 +11918,15 @@
       },
       {
         "target": "feature.corrosive-strike",
+        "relation": "grants",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte1",
@@ -12322,6 +12422,10 @@
           {
             "dice": "1d6+2",
             "type": "piercing"
+          },
+          {
+            "dice": "1d4",
+            "type": "necrotic"
           }
         ],
         "properties": [
@@ -12337,6 +12441,16 @@
         {
           "@type": "grants",
           "target": "feature.prey-upon-the-weak"
+        },
+        {
+          "@type": "grants",
+          "target": "feature.redvein-savagery",
+          "wielded": "main_hand"
+        },
+        {
+          "@type": "grants",
+          "target": "feature.crimson-weapon",
+          "wielded": "off_hand"
         }
       ],
       "sources": [
@@ -12354,6 +12468,15 @@
       "gameUid": "MAG_TheCrimson_Shortsword"
     },
     "links": [
+      {
+        "target": "feature.crimson-weapon",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
       {
         "target": "feature.flourish",
         "relation": "grants",
@@ -12382,6 +12505,15 @@
         }
       },
       {
+        "target": "feature.redvein-savagery",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "place.bhaal-temple",
         "relation": "located_in",
         "tag": {
@@ -12390,9 +12522,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -14189,6 +14318,11 @@
           "target": "feature.steel-physiology"
         },
         {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        },
+        {
           "@type": "armour_class",
           "delta": 1
         }
@@ -14220,6 +14354,15 @@
       },
       {
         "target": "feature.steel-physiology",
+        "relation": "grants",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte1",
@@ -14594,6 +14737,10 @@
           {
             "dice": "1d6+3",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d8",
+            "type": "radiant"
           }
         ],
         "properties": [
@@ -14651,7 +14798,6 @@
       }
     ],
     "unknown": [
-      "damage",
       "effects",
       "act"
     ]
@@ -15094,6 +15240,11 @@
         {
           "@type": "grants",
           "target": "feature.edge-of-terror"
+        },
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
         }
       ],
       "sources": [
@@ -15132,6 +15283,15 @@
       },
       {
         "target": "feature.edge-of-terror",
+        "relation": "grants",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte1",
@@ -15611,6 +15771,10 @@
           {
             "dice": "1d8+3",
             "type": "piercing"
+          },
+          {
+            "dice": "1d4",
+            "type": "necrotic"
           }
         ],
         "properties": [
@@ -15725,9 +15889,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -16693,6 +16854,10 @@
           {
             "dice": "2d6",
             "type": "slashing"
+          },
+          {
+            "dice": "1d4",
+            "type": "fire"
           }
         ],
         "properties": [
@@ -16755,9 +16920,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -17791,6 +17953,13 @@
           "feature.weakening-strike"
         ]
       },
+      "effects": [
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        }
+      ],
       "sources": [
         {
           "method": "vendor",
@@ -17807,6 +17976,15 @@
     "links": [
       {
         "target": "feature.concussive-smash",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte3",
@@ -17881,6 +18059,13 @@
           "feature.weakening-strike"
         ]
       },
+      "effects": [
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        }
+      ],
       "sources": [
         {
           "method": "carried",
@@ -17896,6 +18081,15 @@
     "links": [
       {
         "target": "feature.concussive-smash",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte3",
@@ -17974,6 +18168,11 @@
         },
         {
           "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        },
+        {
+          "@type": "grants",
           "target": "spell.elemental-age",
           "recharge": "long_rest"
         }
@@ -18005,6 +18204,15 @@
       },
       {
         "target": "feature.elements-of-an-epoch",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte3",
@@ -18687,6 +18895,11 @@
         {
           "@type": "grants",
           "target": "feature.lethal-weapon-bludgeoning"
+        },
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
         }
       ],
       "sources": [
@@ -18724,6 +18937,15 @@
       },
       {
         "target": "feature.lethal-weapon-bludgeoning",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte3",
@@ -20366,6 +20588,11 @@
         {
           "@type": "grants",
           "target": "feature.gleamdance-dagger-glowing"
+        },
+        {
+          "@type": "grants",
+          "target": "feature.gleamdancer",
+          "wielded": "off_hand"
         }
       ],
       "sources": [
@@ -20385,6 +20612,15 @@
     "links": [
       {
         "target": "feature.gleamdance-dagger-glowing",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.gleamdancer",
         "relation": "grants",
         "tag": {
           "act": "acte3",
@@ -22065,6 +22301,10 @@
           {
             "dice": "1d6+1",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d4",
+            "type": "fire"
           }
         ],
         "versatileDamage": {
@@ -22146,9 +22386,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -22542,6 +22779,13 @@
           "feature.concussive-smash"
         ]
       },
+      "effects": [
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        }
+      ],
       "sources": [
         {
           "method": "vendor",
@@ -22558,6 +22802,15 @@
     "links": [
       {
         "target": "feature.concussive-smash",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte3",
@@ -23015,6 +23268,10 @@
           {
             "dice": "1d10+2",
             "type": "slashing"
+          },
+          {
+            "dice": "1d4",
+            "type": "force"
           }
         ],
         "properties": [
@@ -23108,9 +23365,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -23305,6 +23559,11 @@
         {
           "@type": "grants",
           "target": "feature.shockwave"
+        },
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
         }
       ],
       "sources": [
@@ -23342,6 +23601,15 @@
       },
       {
         "target": "feature.shockwave",
+        "relation": "grants",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte1",
@@ -23403,6 +23671,10 @@
           {
             "dice": "1d8+2",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d4",
+            "type": "radiant"
           }
         ],
         "versatileDamage": {
@@ -23498,9 +23770,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -23808,6 +24077,10 @@
           {
             "dice": "1d6+2",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d6",
+            "type": "poison"
           }
         ],
         "weaponActions": [
@@ -23849,7 +24122,6 @@
       }
     ],
     "unknown": [
-      "damage",
       "effects"
     ]
   },
@@ -24978,6 +25250,10 @@
           {
             "dice": "1d10+2",
             "type": "slashing"
+          },
+          {
+            "dice": "6",
+            "type": "poison"
           }
         ],
         "properties": [
@@ -25043,9 +25319,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -26666,6 +26939,10 @@
           {
             "dice": "1d6+1",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d4",
+            "type": "necrotic"
           }
         ],
         "versatileDamage": {
@@ -26738,9 +27015,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -27756,6 +28030,10 @@
           {
             "dice": "1d6+2",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "3",
+            "type": "poison"
           }
         ],
         "weaponActions": [
@@ -27810,9 +28088,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -27858,6 +28133,10 @@
           {
             "dice": "1d6+1",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "3",
+            "type": "poison"
           }
         ],
         "weaponActions": [
@@ -27931,9 +28210,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -28238,6 +28514,10 @@
           {
             "dice": "1d6+1",
             "type": "piercing"
+          },
+          {
+            "dice": "3",
+            "type": "poison"
           }
         ],
         "versatileDamage": {
@@ -28309,9 +28589,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -29660,6 +29937,10 @@
           {
             "dice": "1d8+1",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d4",
+            "type": "psychic"
           }
         ],
         "versatileDamage": {
@@ -29726,9 +30007,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -30266,6 +30544,10 @@
           {
             "dice": "1d6+1",
             "type": "slashing"
+          },
+          {
+            "dice": "1d4",
+            "type": "fire"
           }
         ],
         "properties": [
@@ -30334,9 +30616,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -30966,6 +31245,10 @@
           {
             "dice": "1d10+1",
             "type": "slashing"
+          },
+          {
+            "dice": "1d6",
+            "type": "lightning"
           }
         ],
         "properties": [
@@ -31045,9 +31328,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -31093,6 +31373,10 @@
           {
             "dice": "1d6+1",
             "type": "piercing"
+          },
+          {
+            "dice": "1d4",
+            "type": "lightning"
           }
         ],
         "versatileDamage": {
@@ -31168,9 +31452,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -32662,6 +32943,13 @@
           "feature.concussive-smash"
         ]
       },
+      "effects": [
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        }
+      ],
       "sources": [
         {
           "method": "vendor",
@@ -32687,6 +32975,15 @@
       },
       {
         "target": "feature.concussive-smash",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte3",
@@ -33547,6 +33844,10 @@
           {
             "dice": "1d10+2",
             "type": "slashing"
+          },
+          {
+            "dice": "1d4",
+            "type": "radiant"
           }
         ],
         "properties": [
@@ -33636,9 +33937,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -33694,6 +33992,13 @@
           "feature.concussive-smash"
         ]
       },
+      "effects": [
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        }
+      ],
       "sources": [
         {
           "method": "vendor",
@@ -33719,6 +34024,15 @@
       },
       {
         "target": "feature.heartstopper",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte3",
@@ -33985,6 +34299,10 @@
           {
             "dice": "1d8+1",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d6",
+            "type": "necrotic"
           }
         ],
         "properties": [
@@ -33995,6 +34313,13 @@
           "feature.weakening-strike"
         ]
       },
+      "effects": [
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        }
+      ],
       "sources": [
         {
           "act": "acte2",
@@ -34070,6 +34395,15 @@
         }
       },
       {
+        "target": "feature.tenacity",
+        "relation": "grants",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
         "target": "feature.weakening-strike",
         "relation": "grants",
         "tag": {
@@ -34114,9 +34448,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -34718,6 +35049,10 @@
           {
             "dice": "1d6+3",
             "type": "piercing"
+          },
+          {
+            "dice": "1d6",
+            "type": "thunder"
           }
         ],
         "versatileDamage": {
@@ -34836,9 +35171,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -35504,6 +35836,10 @@
           {
             "dice": "1d8+1",
             "type": "piercing"
+          },
+          {
+            "dice": "1d4",
+            "type": "radiant"
           }
         ],
         "properties": [
@@ -35581,9 +35917,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -37369,6 +37702,10 @@
           {
             "dice": "1d8+1",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d6",
+            "type": "piercing"
           }
         ],
         "properties": [
@@ -37425,9 +37762,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -37548,6 +37882,11 @@
       "effects": [
         {
           "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
+        },
+        {
+          "@type": "grants",
           "target": "feature.commanders-strike",
           "recharge": "short_rest"
         }
@@ -37587,6 +37926,15 @@
       },
       {
         "target": "feature.heartstopper",
+        "relation": "grants",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte3",
@@ -40405,6 +40753,10 @@
           {
             "dice": "1d4+1",
             "type": "piercing"
+          },
+          {
+            "dice": "1d4",
+            "type": "necrotic"
           }
         ],
         "properties": [
@@ -40450,9 +40802,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -44420,6 +44769,10 @@
           {
             "dice": "1d4+1",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d4",
+            "type": "radiant"
           }
         ],
         "properties": [
@@ -44463,7 +44816,6 @@
       }
     ],
     "unknown": [
-      "damage",
       "effects",
       "act"
     ]
@@ -47545,6 +47897,10 @@
           {
             "dice": "1d6+2",
             "type": "bludgeoning"
+          },
+          {
+            "dice": "1d4",
+            "type": "necrotic"
           }
         ],
         "versatileDamage": {
@@ -47619,9 +47975,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -49692,6 +50045,10 @@
           {
             "dice": "2d6+2",
             "type": "slashing"
+          },
+          {
+            "dice": "1d4",
+            "type": "necrotic"
           }
         ],
         "properties": [
@@ -49780,9 +50137,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -50160,6 +50514,10 @@
           {
             "dice": "1d8",
             "type": "piercing"
+          },
+          {
+            "dice": "1d4",
+            "type": "psychic"
           }
         ],
         "properties": [
@@ -50223,9 +50581,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {
@@ -55062,6 +55417,11 @@
         {
           "@type": "grants",
           "target": "feature.twist-of-fortune-passive-feature"
+        },
+        {
+          "@type": "grants",
+          "target": "feature.tenacity",
+          "wielded": "main_hand"
         }
       ],
       "sources": [
@@ -55099,6 +55459,15 @@
       },
       {
         "target": "feature.heartstopper",
+        "relation": "grants",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.tenacity",
         "relation": "grants",
         "tag": {
           "act": "acte2",
@@ -56877,6 +57246,10 @@
           {
             "dice": "1d8+2",
             "type": "slashing"
+          },
+          {
+            "dice": "1d4",
+            "type": "psychic"
           }
         ],
         "versatileDamage": {
@@ -57020,7 +57393,6 @@
       }
     ],
     "unknown": [
-      "damage",
       "place"
     ]
   },
@@ -57754,6 +58126,10 @@
           {
             "dice": "1d4+2",
             "type": "slashing"
+          },
+          {
+            "dice": "1d4",
+            "type": "cold"
           }
         ],
         "properties": [
@@ -57811,9 +58187,6 @@
           "otherWorks": "aucun"
         }
       }
-    ],
-    "unknown": [
-      "damage"
     ]
   },
   {

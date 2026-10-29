@@ -52,6 +52,10 @@ class ParsingTest {
         assertThat(Parsing.damage("1d4 + Spellcasting mod", "Healing")).isEqualTo(Damage("1d4", healing = true, modifier = DamageModifier.SPELLCASTING))
         assertThat(Parsing.damage("beaucoup", "Fire")).isNull()
         assertThat(Parsing.damage("1d6", "Inconnu")).isNull()
+        // Dégâts supplémentaires d'arme : type dans le même champ.
+        assertThat(Parsing.damageWithType("1d4 Cold")).isEqualTo(Damage("1d4", DamageType.COLD))
+        assertThat(Parsing.damageWithType("3 Poison")).isEqualTo(Damage("3", DamageType.POISON))
+        assertThat(Parsing.damageWithType("1d4 Glacial")).isNull()
     }
 
     @Test

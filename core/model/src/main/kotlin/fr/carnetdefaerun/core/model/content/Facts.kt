@@ -246,9 +246,16 @@ data class DamageResistance(val type: DamageType) : Effect
 @SerialName("critical_immunity")
 data object CriticalHitImmunity : Effect
 
+/** L'objet accorde une capacité ou un sort ; [wielded] : seulement tenu dans cette main (arme). */
 @Serializable
 @SerialName("grants")
-data class Grants(val target: ContentId, val recharge: Recharge? = null) : Effect
+data class Grants(val target: ContentId, val recharge: Recharge? = null, val wielded: WieldHand? = null) : Effect
+
+@Serializable
+enum class WieldHand {
+    @SerialName("main_hand") MAIN_HAND,
+    @SerialName("off_hand") OFF_HAND,
+}
 
 /** Le porteur est sous l'effet d'un état tant qu'il porte l'objet. */
 @Serializable

@@ -494,6 +494,40 @@
     ]
   },
   {
+    "id": "condition.aura-of-murder-debuff",
+    "type": "condition",
+    "name": {
+      "fr": "Aura of Murder (debuff)",
+      "en": "Aura of Murder (debuff)",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Aura of Murder (debuff) (condition)",
+        "revision": 434531,
+        "url": "https://bg3.wiki/wiki/Aura_of_Murder_(debuff)_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition"
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "condition.aura-of-protection-aura",
     "type": "condition",
     "name": {
@@ -1588,6 +1622,43 @@
       "@type": "condition",
       "groups": [
         "SG_Condition"
+      ]
+    },
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "condition.chilled",
+    "type": "condition",
+    "name": {
+      "fr": "Chilled",
+      "en": "Chilled",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Chilled (condition)",
+        "revision": 434813,
+        "url": "https://bg3.wiki/wiki/Chilled_(condition)"
+      }
+    ],
+    "facts": {
+      "@type": "condition",
+      "groups": [
+        "SG_Surface"
       ]
     },
     "unknown": [

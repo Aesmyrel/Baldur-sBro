@@ -27,6 +27,7 @@ import fr.carnetdefaerun.core.model.content.SourceMethod
 import fr.carnetdefaerun.core.model.content.WeaponFacts
 import fr.carnetdefaerun.core.model.content.WeaponProperty
 import fr.carnetdefaerun.core.model.content.WeaponType
+import fr.carnetdefaerun.core.model.content.WieldHand
 import fr.carnetdefaerun.core.model.content.WearerCondition
 import fr.carnetdefaerun.core.model.spoiler.Act
 import fr.carnetdefaerun.core.model.spoiler.SpoilerLevel
@@ -132,8 +133,9 @@ class ItemNormalizer(
         }
         val damage = listOfNotNull(
             Parsing.damage(t["damage"], t["damage type"]) ?: run { unknown += "damage"; null },
-            t["extra damage"]?.let { Parsing.damage(it, t["extra damage type"]) ?: run { unknown += "damage"; null } },
-            t["extra damage 2"]?.let { Parsing.damage(it, t["extra damage 2 type"]) ?: run { unknown += "damage"; null } },
+            // Le type suit les dés dans le même champ (« 1d4 Cold ») ; un champ de type séparé reste lu s'il existe.
+            t["extra damage"]?.let { Parsing.damage(it, t["extra damage type"]) ?: Parsing.damageWithType(it) ?: run { unknown += "damage"; null } },
+            t["extra damage 2"]?.let { Parsing.damage(it, t["extra damage 2 type"]) ?: Parsing.damageWithType(it) ?: run { unknown += "damage"; null } },
         )
         val properties = buildSet {
             if (t.flag("finesse")) add(WeaponProperty.FINESSE)
@@ -182,6 +184,11 @@ class ItemNormalizer(
         val effects = mutableListOf<Effect>()
         t["passives"]?.split(',')?.map { Wikitext.plain(it) }?.filter { it.isNotBlank() }
             ?.forEach { effects += Grants(Corpus.id("feature", it)) }
+        // Passifs d'arme qui ne valent que dans une main donnée.
+        for ((key, hand) in listOf("passives main hand" to WieldHand.MAIN_HAND, "passives off hand" to WieldHand.OFF_HAND)) {
+            t[key]?.split(',')?.map { Wikitext.plain(it) }?.filter { it.isNotBlank() }
+                ?.forEach { effects += Grants(Corpus.id("feature", it), wielded = hand) }
+        }
         val special = Wikitext.stripComments(t["special"].orEmpty())
         for (raw in special.lines()) {
             val line = raw.trim().trimStart('*', ';', ':', ' ').trim()

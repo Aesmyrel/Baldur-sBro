@@ -85,6 +85,14 @@ object Parsing {
     private val DICE_PART = Regex("^\\s*(\\d+d\\d+|\\d+)((?:\\s*[+-]\\s*\\d+(?:d\\d+)?)*)\\s*(?:\\+\\s*(spellcasting mod(?:ifier)?|spell mod|finesse mod))?\\s*$", RegexOption.IGNORE_CASE)
 
     /** `8d6`, `1d8 + 1`, `1d4 + Spellcasting mod`. */
+    /** Dégâts écrits en un seul champ, type en dernier mot : `1d4 Cold`, `3 Poison` (dégâts supplémentaires des armes). */
+    fun damageWithType(value: String?): Damage? {
+        val raw = value?.let(Wikitext::plain)?.trim().orEmpty()
+        val m = Regex("^(.*\\S)\\s+([A-Za-z]+)$").matchEntire(raw) ?: return null
+        val type = damageType(m.groupValues[2]) ?: return null
+        return damage(m.groupValues[1], type.name)
+    }
+
     fun damage(dice: String?, type: String?): Damage? {
         val raw = dice?.let(Wikitext::plain)?.takeIf { it.isNotBlank() } ?: return null
         val m = DICE_PART.matchEntire(raw) ?: return null

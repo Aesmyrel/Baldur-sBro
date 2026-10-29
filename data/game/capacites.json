@@ -5143,6 +5143,65 @@
     ]
   },
   {
+    "id": "feature.chilling-counter",
+    "type": "feature",
+    "name": {
+      "fr": "Chilling Counter",
+      "en": "Chilling Counter",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Chilling Counter",
+        "revision": 432169,
+        "url": "https://bg3.wiki/wiki/Chilling_Counter"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "applies": [
+        "condition.chilled"
+      ],
+      "gameUid": "MAG_FrostTalon_ChillingCounter_Passive"
+    },
+    "links": [
+      {
+        "target": "item.cold-snap",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.chilled",
+        "relation": "applies",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.chilling-strike",
     "type": "feature",
     "name": {
@@ -6989,6 +7048,53 @@
         "relation": "granted_by",
         "tag": {
           "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.crimson-weapon",
+    "type": "feature",
+    "name": {
+      "fr": "Crimson Weapon",
+      "en": "Crimson Weapon",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Crimson Weapon",
+        "revision": 432198,
+        "url": "https://bg3.wiki/wiki/Crimson_Weapon"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "MAG_TheCrimson_TwoWeapon_Passive"
+    },
+    "links": [
+      {
+        "target": "item.crimson-mischief",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
           "level": "aucun",
           "otherWorks": "aucun"
         }
@@ -11092,6 +11198,65 @@
     ]
   },
   {
+    "id": "feature.exploit-weakness",
+    "type": "feature",
+    "name": {
+      "fr": "Exploit Weakness",
+      "en": "Exploit Weakness",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Exploit Weakness",
+        "revision": 432533,
+        "url": "https://bg3.wiki/wiki/Exploit_Weakness"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "applies": [
+        "condition.aura-of-murder-debuff"
+      ],
+      "gameUid": "MAG_TheClover_Mainhand_Passive"
+    },
+    "links": [
+      {
+        "target": "item.bloodthirst",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.aura-of-murder-debuff",
+        "relation": "applies",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.exquisite-focus",
     "type": "feature",
     "name": {
@@ -13643,6 +13808,53 @@
       {
         "target": "condition.light",
         "relation": "applies",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.gleamdancer",
+    "type": "feature",
+    "name": {
+      "fr": "Gleamdancer",
+      "en": "Gleamdancer",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Gleamdancer",
+        "revision": 432597,
+        "url": "https://bg3.wiki/wiki/Gleamdancer"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "MAG_WYRM_Farlin_Dagger_Passive"
+    },
+    "links": [
+      {
+        "target": "item.gleamdance-dagger",
+        "relation": "granted_by",
         "tag": {
           "act": "acte3",
           "level": "aucun",
@@ -24384,6 +24596,53 @@
     ]
   },
   {
+    "id": "feature.redvein-savagery",
+    "type": "feature",
+    "name": {
+      "fr": "Redvein Savagery",
+      "en": "Redvein Savagery",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Redvein Savagery",
+        "revision": 433009,
+        "url": "https://bg3.wiki/wiki/Redvein_Savagery"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "gameUid": "MAG_TheCrimson_Vicious_Passive"
+    },
+    "links": [
+      {
+        "target": "item.crimson-mischief",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.refined-vaulting",
     "type": "feature",
     "name": {
@@ -31196,6 +31455,193 @@
     ]
   },
   {
+    "id": "feature.tenacity",
+    "type": "feature",
+    "name": {
+      "fr": "Tenacity",
+      "en": "Tenacity",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "Tenacity",
+        "revision": 425432,
+        "url": "https://bg3.wiki/wiki/Tenacity"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "costs": [
+        {
+          "resource": "reaction"
+        }
+      ],
+      "gameUid": "Overwhelm"
+    },
+    "links": [
+      {
+        "target": "item.argument-solver",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.corpsegrinder",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.corrosive-flail",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.defender-flail",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.doom-hammer",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.flail-1",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.flail-2",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.flail-of-ages",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.foebreaker",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.greatclub-1",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.hamarhraft",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.maul-1",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.morningstar-1",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.myrkulite-scourge",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.ravengards-scourger",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "item.twist-of-fortune",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte2",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
     "id": "feature.the-comeback",
     "type": "feature",
     "name": {
@@ -32377,6 +32823,65 @@
         "relation": "granted_by",
         "tag": {
           "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ],
+    "unknown": [
+      "effect_text"
+    ]
+  },
+  {
+    "id": "feature.true-strike-riposte",
+    "type": "feature",
+    "name": {
+      "fr": "True Strike Riposte",
+      "en": "True Strike Riposte",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte3",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "cc-by-nc-sa-4.0",
+    "attribution": [
+      {
+        "source": "bg3wiki",
+        "title": "True Strike Riposte",
+        "revision": 429159,
+        "url": "https://bg3.wiki/wiki/True_Strike_Riposte"
+      }
+    ],
+    "facts": {
+      "@type": "feature",
+      "kind": "passive",
+      "applies": [
+        "condition.true-strike"
+      ],
+      "gameUid": "MAG_TheClover_OffHand_Passive"
+    },
+    "links": [
+      {
+        "target": "item.bloodthirst",
+        "relation": "granted_by",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "condition.true-strike",
+        "relation": "applies",
+        "tag": {
+          "act": "acte3",
           "level": "aucun",
           "otherWorks": "aucun"
         }
