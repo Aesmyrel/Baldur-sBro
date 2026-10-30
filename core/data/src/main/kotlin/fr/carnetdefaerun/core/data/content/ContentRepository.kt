@@ -28,8 +28,9 @@ import fr.carnetdefaerun.core.model.spoiler.gated
 
 /**
  * Seule porte d'accès des écrans au contenu : chaque fiche, nom, source, bloc et lien passe par
- * [SpoilerGate] (docs/PLAN.md §2). [revealed] contient les clés de [RevealIds] que le joueur a
- * choisi de dévoiler ; [showActOfHidden] est son réglage « indiquer l'acte des contenus masqués ».
+ * [SpoilerGate] (docs/PLAN.md §2). [revealed] contient les jetons ([RevealKey.token]) de ce que le joueur
+ * a choisi de dévoiler : l'écran ne connaît que ces jetons, la base du joueur ne stocke qu'eux.
+ * [showActOfHidden] est son réglage « indiquer l'acte des contenus masqués ».
  */
 class ContentRepository internal constructor(private val store: ContentStore) {
 
@@ -41,7 +42,7 @@ class ContentRepository internal constructor(private val store: ContentStore) {
 
     fun entry(id: ContentId, profile: SpoilerProfile, revealed: Set<String> = emptySet(), showActOfHidden: Boolean = false): Gated<EntryView>? {
         val row = store.entry(id) ?: return null
-        if (!SpoilerGate.isVisible(row.tag, profile, RevealIds.entry(id) in revealed)) {
+        if (!SpoilerGate.isVisible(row.tag, profile, revealed.has(RevealIds.entry(id)))) {
             return Gated.Hidden(RevealKey.of(RevealIds.entry(id)), if (showActOfHidden) row.tag.act else null)
         }
         val entry = row.entry()
@@ -62,7 +63,7 @@ class ContentRepository internal constructor(private val store: ContentStore) {
         var hiddenSources: RevealKey? = null
         val facts = when (val f = entry.facts) {
             is ItemFacts -> {
-                val sourcesRevealed = RevealIds.sources(id) in revealed
+                val sourcesRevealed = revealed.has(RevealIds.sources(id))
                 val sources = f.sources.filter { SpoilerGate.isVisible(it.tag, profile, sourcesRevealed) && (it.place == null || linkVisible(it.place!!)) }
                 if (sources.size < f.sources.size) hiddenSources = RevealKey.of(RevealIds.sources(id))
                 val effects = f.effects.filter { effect -> effectTargets(effect).all(::linkVisible) }
@@ -99,11 +100,11 @@ class ContentRepository internal constructor(private val store: ContentStore) {
         val sources = (facts as? ItemFacts)?.sources.orEmpty()
 
         val blocks = entry.blocks.map { block ->
-            block.gated(RevealIds.block(id, block.id), block.tag, profile, RevealIds.block(id, block.id) in revealed, showActOfHidden)
+            block.gated(RevealIds.block(id, block.id), block.tag, profile, revealed.has(RevealIds.block(id, block.id)), showActOfHidden)
         }
         val sections = (entry.facts as? LoreFacts)?.sections.orEmpty().map { section ->
             val key = RevealIds.block(id, section.id)
-            section.gated(key, section.tag, profile, key in revealed, showActOfHidden)
+            section.gated(key, section.tag, profile, revealed.has(key), showActOfHidden)
         }
         // Références : seulement celles que citent les sections visibles.
         val cited = sections.filterIsInstance<Gated.Visible<LoreSection>>().flatMap { s -> s.value.paragraphs.flatMap { p -> p.refs.map { it.ref } } }.toSet()
@@ -119,7 +120,7 @@ class ContentRepository internal constructor(private val store: ContentStore) {
     }
 
     private fun titleVisible(row: EntryRow, profile: SpoilerProfile, revealed: Set<String>) =
-        SpoilerGate.isVisible(row.titleTag, profile, RevealIds.title(row.id) in revealed || RevealIds.entry(row.id) in revealed)
+        SpoilerGate.isVisible(row.titleTag, profile, revealed.has(RevealIds.title(row.id)) || revealed.has(RevealIds.entry(row.id)))
 
     private fun effectTargets(effect: Effect): List<ContentId> = when (effect) {
         is Grants -> listOf(effect.target)
@@ -129,3 +130,6 @@ class ContentRepository internal constructor(private val store: ContentStore) {
 
     private fun EntryRow.summary() = EntrySummary(id, type, subtype, entry().name)
 }
+
+/** Le joueur a-t-il dévoilé ce contenu ? [raw] est une clé de [RevealIds], comparée par son jeton. */
+private fun Set<String>.has(raw: String): Boolean = RevealKey.of(raw).token in this

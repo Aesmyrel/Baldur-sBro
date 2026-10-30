@@ -198,3 +198,10 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Reste consigné** :
   - « Ma » seul en tête de ligne à 320 dp et 200 % ;
   - les points ouverts de D-070.
+
+**D-073 — Base du joueur et porte du contenu (phase 3a).**
+- **Base `user.db`** (Room, schéma exporté) : trois tables, `revealed` (ce que le joueur a dévoilé), `name_correction` (ses noms corrigés) et `favorite`. Elle est séparée de la base de contenu, régénérée à chaque version : rien de ce que le joueur a saisi ne se perd à une mise à jour.
+- **Révélations stockées par jeton** : la base ne garde que le jeton de la clé de révélation (12 premiers octets du SHA-256), jamais l'identifiant du bloc ni son titre. Le dépôt compare par jeton. La base ne contient ainsi aucun titre ni identifiant en clair, et l'écran ne manipule que des jetons.
+- **Porte du contenu** (`ContentGateway`) : les écrans ne lisent le contenu que par elle. Elle combine en continu le profil de spoilers, le réglage « indiquer l'acte », les révélations et les corrections. Un changement de réglage se propage aussitôt à toutes les listes et fiches ouvertes. Les listes sont triées sur le nom replié (accents et casse ignorés).
+- **Nom corrigé** : il prime partout (fiche, liste, liens) avec le statut « corrigé par vous », sans source. Une correction vide la supprime et rend le nom d'origine.
+- Tests : dévoiler un bloc ne montre que ce bloc et ne stocke que son jeton ; une correction prime partout ; la liste suit l'acte ; les favoris s'ajoutent et se retirent.

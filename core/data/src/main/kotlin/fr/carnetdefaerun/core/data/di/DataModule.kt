@@ -15,6 +15,10 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import fr.carnetdefaerun.core.database.content.ContentStore
 import fr.carnetdefaerun.core.database.content.SqliteContentStore
+import fr.carnetdefaerun.core.database.user.UserDatabase
+import fr.carnetdefaerun.core.data.user.PlayerRepository
+import fr.carnetdefaerun.core.data.user.RoomPlayerRepository
+import androidx.room.Room
 import fr.carnetdefaerun.core.data.content.ContentRepository
 import fr.carnetdefaerun.core.data.navigation.DataStoreNavigationStateStore
 import fr.carnetdefaerun.core.data.navigation.NavigationStateStore
@@ -32,6 +36,7 @@ import kotlinx.coroutines.SupervisorJob
 abstract class DataBindings {
     @Binds abstract fun preferences(impl: DataStoreUserPreferencesRepository): UserPreferencesRepository
     @Binds abstract fun navigation(impl: DataStoreNavigationStateStore): NavigationStateStore
+    @Binds abstract fun player(impl: RoomPlayerRepository): PlayerRepository
 }
 
 @Module
@@ -48,6 +53,11 @@ object DataStoreModule {
 
     @Provides @Singleton
     internal fun contentRepository(store: ContentStore): ContentRepository = ContentRepository(store)
+
+    /** Base du joueur : incluse dans la sauvegarde Android (règles d'extraction de l'appli). */
+    @Provides @Singleton
+    fun userDatabase(@ApplicationContext context: Context): UserDatabase =
+        Room.databaseBuilder(context, UserDatabase::class.java, UserDatabase.FILE_NAME).build()
 
     @Provides @Singleton @Named("navigation")
     fun navigationStore(@ApplicationContext context: Context): DataStore<Preferences> =
