@@ -100,12 +100,12 @@ class SqliteContentStore(private val context: Context) : ContentStore {
         id = ContentId(getString(0)),
         type = EntryType.valueOf(getString(1)),
         subtype = getString(2),
-        name = Name(getString(3), getString(4), NameStatus.valueOf(getString(5)), getString(6)),
-        tag = tag(7),
-        titleTag = tag(10),
+        name = Name(getString(3), getString(4), NameStatus.valueOf(getString(5)), getString(6), getString(7)),
+        tag = tag(8),
+        titleTag = tag(11),
     )
 
-    private fun Cursor.entryRow() = EntryRow(header(), payload = getString(13))
+    private fun Cursor.entryRow() = EntryRow(header(), payload = getString(14))
 
     private fun Cursor.tag(first: Int) = SpoilerTag(Act.entries[getInt(first)], SpoilerLevel.entries[getInt(first + 1)], SpoilerLevel.entries[getInt(first + 2)])
 
@@ -114,7 +114,7 @@ class SqliteContentStore(private val context: Context) : ContentStore {
         val L = ContentSchema.Link
         val N = ContentSchema.SearchName
         val HEADER_COLUMNS = arrayOf(
-            E.ID, E.TYPE, E.SUBTYPE, E.NAME_FR, E.NAME_EN, E.NAME_STATUS, E.NAME_SOURCE,
+            E.ID, E.TYPE, E.SUBTYPE, E.NAME_FR, E.NAME_EN, E.NAME_STATUS, E.NAME_SOURCE, E.NAME_PRECISION,
             E.ACT, E.LEVEL, E.OTHER_WORKS, E.TITLE_ACT, E.TITLE_LEVEL, E.TITLE_OTHER_WORKS,
         )
         val ENTRY_COLUMNS = HEADER_COLUMNS + E.PAYLOAD

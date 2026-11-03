@@ -191,10 +191,7 @@ fun CategoryScreen(
 private fun subtitleOf(type: EntryType, entry: EntrySummary): String? {
     val vo = if (entry.name.en != entry.name.fr) stringResource(R.string.entry_vo, entry.name.en) else null
     val subtype = entry.subtype?.takeIf { type == EntryType.SPELL || type == EntryType.ITEM }?.let { subtypeLabel(type, it) }
-    return when {
-        subtype != null && vo != null -> stringResource(R.string.subtitle_join, subtype, vo)
-        else -> subtype ?: vo
-    }
+    return joinedSubtitle(listOfNotNull(entry.name.precision, subtype, vo))
 }
 
 @Composable
@@ -205,3 +202,8 @@ internal fun subtypeLabel(type: EntryType, subtype: String): String = when (type
     EntryType.PLACE -> Act.entries.firstOrNull { it.name == subtype }?.let { stringResource(it.labelRes) }
     else -> null
 } ?: subtype
+
+/** Précisions d'une ligne, séparées par un point médian ; null s'il n'y en a aucune. */
+@Composable
+internal fun joinedSubtitle(parts: List<String>): String? =
+    parts.reduceOrNull { acc, part -> stringResource(R.string.subtitle_join, acc, part) }

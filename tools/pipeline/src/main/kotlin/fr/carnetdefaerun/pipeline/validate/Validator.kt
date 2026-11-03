@@ -38,6 +38,10 @@ class Validator {
         entries.filter { it.name.fr != it.name.en.replace('\'', '’') }.groupBy { it.name.en.trim().lowercase() }.values
             .filter { same -> same.map { it.name.fr }.distinct().size > 1 }
             .forEach { same -> problems += "« ${same.first().name.en} » traduit de plusieurs façons : " + same.joinToString { "${it.id} → ${it.name.fr}" } }
+        // Deux entrées d'un même type au même nom français se distinguent par leur précision (D-077).
+        entries.groupBy { it.type to it.name.fr }.values.filter { it.size > 1 }
+            .filter { same -> same.map { it.name.precision }.distinct().size < same.size }
+            .forEach { same -> problems += "« ${same.first().name.fr} » : variantes sans précision distincte : " + same.joinToString { "${it.id} (${it.name.precision ?: "—"})" } }
 
         for (e in entries) {
             val where = e.id.value

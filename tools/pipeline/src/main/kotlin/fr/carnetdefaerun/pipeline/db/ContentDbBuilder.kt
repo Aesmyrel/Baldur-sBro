@@ -43,8 +43,8 @@ class ContentDbBuilder(private val gameVersion: String) {
 
     private fun insertEntries(c: Connection, entries: List<Entry>) {
         val e = ContentSchema.Entry
-        val sql = "INSERT INTO ${e.TABLE} (${e.ID}, ${e.TYPE}, ${e.SUBTYPE}, ${e.NAME_FR}, ${e.NAME_EN}, ${e.NAME_STATUS}, ${e.NAME_SOURCE}, ${e.SORT_KEY}, " +
-            "${e.ACT}, ${e.LEVEL}, ${e.OTHER_WORKS}, ${e.TITLE_ACT}, ${e.TITLE_LEVEL}, ${e.TITLE_OTHER_WORKS}, ${e.PAYLOAD}) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        val sql = "INSERT INTO ${e.TABLE} (${e.ID}, ${e.TYPE}, ${e.SUBTYPE}, ${e.NAME_FR}, ${e.NAME_EN}, ${e.NAME_STATUS}, ${e.NAME_SOURCE}, ${e.NAME_PRECISION}, ${e.SORT_KEY}, " +
+            "${e.ACT}, ${e.LEVEL}, ${e.OTHER_WORKS}, ${e.TITLE_ACT}, ${e.TITLE_LEVEL}, ${e.TITLE_OTHER_WORKS}, ${e.PAYLOAD}) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
         c.prepareStatement(sql).use { ps ->
             for (entry in entries) {
                 ps.setString(1, entry.id.value)
@@ -54,14 +54,15 @@ class ContentDbBuilder(private val gameVersion: String) {
                 ps.setString(5, entry.name.en)
                 ps.setString(6, entry.name.status.name)
                 ps.setString(7, entry.name.source)
-                ps.setString(8, Folding.fold(entry.name.fr))
-                ps.setInt(9, entry.tag.act.ordinal)
-                ps.setInt(10, entry.tag.level.ordinal)
-                ps.setInt(11, entry.tag.otherWorks.ordinal)
-                ps.setInt(12, entry.titleTag.act.ordinal)
-                ps.setInt(13, entry.titleTag.level.ordinal)
-                ps.setInt(14, entry.titleTag.otherWorks.ordinal)
-                ps.setString(15, ContentFormat.strict.encodeToString(Entry.serializer(), entry))
+                ps.setString(8, entry.name.precision)
+                ps.setString(9, Folding.fold(entry.name.fr))
+                ps.setInt(10, entry.tag.act.ordinal)
+                ps.setInt(11, entry.tag.level.ordinal)
+                ps.setInt(12, entry.tag.otherWorks.ordinal)
+                ps.setInt(13, entry.titleTag.act.ordinal)
+                ps.setInt(14, entry.titleTag.level.ordinal)
+                ps.setInt(15, entry.titleTag.otherWorks.ordinal)
+                ps.setString(16, ContentFormat.strict.encodeToString(Entry.serializer(), entry))
                 ps.addBatch()
             }
             ps.executeBatch()

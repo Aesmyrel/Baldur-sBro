@@ -103,6 +103,7 @@ condition.darkvision-third-eye:
   fr: "Vision dans le noir"
   statut: VF_DND
   source: srd-5.2.1-fr
+  precision: "Troisième œil"
 condition.dash:
   fr: "Pointe"
   statut: VF_DND

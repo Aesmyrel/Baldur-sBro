@@ -155,10 +155,11 @@ fun SearchScreen(
 @Composable
 private fun HitRow(hit: SearchHit, onOpen: (ContentId, EntryType) -> Unit) {
     val entry = hit.entry
-    val subtitle = when {
+    val detail = when {
         hit.excerpt != null -> hit.excerpt
         hit.matchedKind != NameKind.FR && entry.name.en != entry.name.fr -> stringResource(R.string.search_vo, entry.name.en)
         else -> null
     }
+    val subtitle = listOfNotNull(entry.name.precision, detail).reduceOrNull { a, b -> stringResource(R.string.search_join, a, b) }
     ListRow(entry.name.fr, { onOpen(entry.id, entry.type) }, subtitle = subtitle)
 }

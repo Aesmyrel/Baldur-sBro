@@ -3851,7 +3851,8 @@
               "name": {
                 "fr": "Vol",
                 "en": "Fly",
-                "status": "UNOFFICIAL"
+                "status": "UNOFFICIAL",
+                "precision": "Forme étoilée"
               },
               "id": "feature.fly-starry-form"
             }
@@ -5120,7 +5121,8 @@
               "name": {
                 "fr": "Vol",
                 "en": "Fly (class action)",
-                "status": "UNOFFICIAL"
+                "status": "UNOFFICIAL",
+                "precision": "action de classe"
               },
               "id": "feature.fly-class-action"
             }
@@ -11403,7 +11405,8 @@
               "name": {
                 "fr": "Pierre du transmutateur",
                 "en": "Transmuter's Stone (passive feature)",
-                "status": "UNOFFICIAL"
+                "status": "UNOFFICIAL",
+                "precision": "passive"
               },
               "id": "feature.transmuters-stone-passive-feature"
             },
@@ -13359,7 +13362,8 @@
     "name": {
       "fr": "Magie sauvage",
       "en": "Wild Magic",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "barbare"
     },
     "tag": {
       "act": "prologue",
@@ -13543,7 +13547,8 @@
     "name": {
       "fr": "Magie sauvage",
       "en": "Wild Magic",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "ensorceleur"
     },
     "tag": {
       "act": "prologue",

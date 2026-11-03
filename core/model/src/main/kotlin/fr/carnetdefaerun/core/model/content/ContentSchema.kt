@@ -9,7 +9,7 @@ package fr.carnetdefaerun.core.model.content
  * les écrans ne lisent jamais ces tables directement, le dépôt filtre par `SpoilerGate`.
  */
 object ContentSchema {
-    const val VERSION = 3
+    const val VERSION = 4
     const val FILE_NAME = "content.db"
 
     object Entry {
@@ -21,6 +21,7 @@ object ContentSchema {
         const val NAME_EN = "name_en"
         const val NAME_STATUS = "name_status"
         const val NAME_SOURCE = "name_source"
+        const val NAME_PRECISION = "name_precision"
         const val SORT_KEY = "sort_key"
         const val ACT = "act"
         const val LEVEL = "level"
@@ -77,6 +78,7 @@ object ContentSchema {
             ${Entry.NAME_EN} TEXT NOT NULL,
             ${Entry.NAME_STATUS} TEXT NOT NULL,
             ${Entry.NAME_SOURCE} TEXT,
+            ${Entry.NAME_PRECISION} TEXT,
             ${Entry.SORT_KEY} TEXT NOT NULL,
             ${Entry.ACT} INTEGER NOT NULL,
             ${Entry.LEVEL} INTEGER NOT NULL,

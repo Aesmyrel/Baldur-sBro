@@ -176,9 +176,11 @@ subclass.way-of-the-open-hand:
 subclass.wild-magic-barbarian:
   fr: "Magie sauvage"
   statut: NON_OFFICIELLE
+  precision: "barbare"
 subclass.wild-magic-sorcerer:
   fr: "Magie sauvage"
   statut: NON_OFFICIELLE
+  precision: "ensorceleur"
 subclass.wildheart:
   fr: "Cœur sauvage"
   statut: NON_OFFICIELLE

@@ -13376,7 +13376,8 @@
     "name": {
       "fr": "Gantelets de justicier sombre",
       "en": "Dark Justiciar Gauntlets",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "rare"
     },
     "tag": {
       "act": "acte2",
@@ -13459,7 +13460,8 @@
     "name": {
       "fr": "Gantelets de justicier sombre",
       "en": "Dark Justiciar Gauntlets",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "peu courante"
     },
     "tag": {
       "act": "acte2",
@@ -13538,7 +13540,8 @@
     "name": {
       "fr": "Demi-plate de justicier sombre",
       "en": "Dark Justiciar Half-Plate",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "rare"
     },
     "tag": {
       "act": "acte2",
@@ -13624,7 +13627,8 @@
     "name": {
       "fr": "Demi-plate de justicier sombre",
       "en": "Dark Justiciar Half-Plate",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "très rare"
     },
     "tag": {
       "act": "acte2",
@@ -20219,7 +20223,8 @@
     "name": {
       "fr": "Épée à deux mains githyanki",
       "en": "Githyanki Greatsword",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "psionique"
     },
     "tag": {
       "act": "acte1",
@@ -28278,7 +28283,8 @@
     "name": {
       "fr": "Masse d’armes infernale",
       "en": "Infernal Mace",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "rare"
     },
     "tag": {
       "act": "acte3",
@@ -28381,7 +28387,8 @@
     "name": {
       "fr": "Masse d’armes infernale",
       "en": "Infernal Mace",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "peu courante"
     },
     "tag": {
       "act": "acte3",
@@ -42595,7 +42602,8 @@
     "name": {
       "fr": "Amulette consciente",
       "en": "Sentient Amulet",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "rare"
     },
     "tag": {
       "act": "acte1",
@@ -42712,7 +42720,8 @@
     "name": {
       "fr": "Amulette consciente",
       "en": "Sentient Amulet",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "très rare"
     },
     "tag": {
       "act": "acte3",

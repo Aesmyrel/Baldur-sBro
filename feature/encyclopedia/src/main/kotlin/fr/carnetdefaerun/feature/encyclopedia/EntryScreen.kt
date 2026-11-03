@@ -173,8 +173,9 @@ private fun VisibleEntry(view: EntryView, actions: EntryActions) {
                 view.name.fr, style = CarnetTheme.type.display, color = c.text,
                 modifier = Modifier.padding(horizontal = gutter, vertical = 4.dp).semantics { heading() },
             )
-            if (view.name.en != view.name.fr) {
-                Text(stringResource(R.string.entry_vo, view.name.en), style = CarnetTheme.type.readingItalic, color = c.text2, modifier = Modifier.padding(horizontal = gutter))
+            val vo = if (view.name.en != view.name.fr) stringResource(R.string.entry_vo, view.name.en) else null
+            joinedSubtitle(listOfNotNull(view.name.precision, vo))?.let {
+                Text(it, style = CarnetTheme.type.readingItalic, color = c.text2, modifier = Modifier.padding(horizontal = gutter))
             }
             TagRow(Modifier.padding(horizontal = gutter, vertical = 12.dp)) {
                 Tag(stringResource(view.type.singularRes), color = CarnetTheme.accent)
@@ -263,7 +264,7 @@ private fun BlockSection(title: String, blocks: List<Gated<Block>>, kind: BlockK
 
 @Composable
 private fun LinkRow(link: LinkedEntry, actions: EntryActions) {
-    ListRow(link.name.fr, { actions.onOpen(link.id, link.type) }, subtitle = stringResource(link.type.singularRes))
+    ListRow(link.name.fr, { actions.onOpen(link.id, link.type) }, subtitle = joinedSubtitle(listOfNotNull(stringResource(link.type.singularRes), link.name.precision)))
 }
 
 @Composable

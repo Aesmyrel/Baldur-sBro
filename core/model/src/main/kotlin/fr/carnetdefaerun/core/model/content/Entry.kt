@@ -32,6 +32,11 @@ data class Name(
     val status: NameStatus,
     /** Identifiant de la source du nom français (`aidedd`, `srd-5.2.1-fr` : docs/SOURCES.md), absent pour une proposition du projet. */
     val source: String? = null,
+    /**
+     * Précision qui distingue des variantes que le jeu nomme pareil (« cône », « ligne », « +1 ») ; affichée à côté
+     * du nom, jamais dedans : le nom reste celui du jeu.
+     */
+    val precision: String? = null,
 )
 
 /** Attribution d'une donnée dérivée : page source et révision exacte. */

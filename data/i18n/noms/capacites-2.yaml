@@ -510,9 +510,11 @@ feature.flurry-of-moths:
 feature.fly-class-action:
   fr: Vol
   statut: NON_OFFICIELLE
+  precision: "action de classe"
 feature.fly-starry-form:
   fr: Vol
   statut: NON_OFFICIELLE
+  precision: "Forme étoilée"
 feature.focused-conjuration:
   fr: Invocation concentrée
   statut: NON_OFFICIELLE
@@ -1185,6 +1187,7 @@ feature.transmuters-stone-lightning-resistance:
 feature.transmuters-stone-passive-feature:
   fr: Pierre du transmutateur
   statut: NON_OFFICIELLE
+  precision: "passive"
 feature.transmuters-stone-speed:
   fr: "Pierre du transmutateur : vitesse"
   statut: NON_OFFICIELLE
@@ -1219,10 +1222,12 @@ feature.unarmoured-defence-barbarian:
   fr: Défense sans armure
   statut: VF_DND
   source: srd-5.2.1-fr
+  precision: "barbare"
 feature.unarmoured-defence-monk:
   fr: Défense sans armure
   statut: VF_DND
   source: srd-5.2.1-fr
+  precision: "moine"
 feature.unarmoured-movement:
   fr: Déplacement sans armure
   statut: VF_DND

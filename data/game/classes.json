@@ -81,7 +81,8 @@
                 "fr": "Défense sans armure",
                 "en": "Unarmoured Defence",
                 "status": "VF_DND",
-                "source": "srd-5.2.1-fr"
+                "source": "srd-5.2.1-fr",
+                "precision": "barbare"
               },
               "id": "feature.unarmoured-defence-barbarian"
             }
@@ -1824,7 +1825,8 @@
                 "fr": "Défense sans armure",
                 "en": "Unarmoured Defence",
                 "status": "VF_DND",
-                "source": "srd-5.2.1-fr"
+                "source": "srd-5.2.1-fr",
+                "precision": "moine"
               },
               "id": "feature.unarmoured-defence-monk"
             },

@@ -1683,7 +1683,8 @@
     "name": {
       "fr": "Embusqué",
       "en": "Ambusher",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "+1"
     },
     "tag": {
       "act": "acte2",
@@ -1766,7 +1767,8 @@
     "name": {
       "fr": "Embusqué",
       "en": "Ambusher",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "+2"
     },
     "tag": {
       "act": "acte3",
@@ -2235,7 +2237,8 @@
     "name": {
       "fr": "Enchantement arcanique",
       "en": "Arcane Enchantment",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "+1"
     },
     "tag": {
       "act": "acte1",
@@ -2363,7 +2366,8 @@
     "name": {
       "fr": "Enchantement arcanique",
       "en": "Arcane Enchantment",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "+2"
     },
     "tag": {
       "act": "acte3",
@@ -19762,7 +19766,8 @@
       "fr": "Ascendance draconique",
       "en": "Draconic Ancestry",
       "status": "VF_DND",
-      "source": "srd-5.2.1-fr"
+      "source": "srd-5.2.1-fr",
+      "precision": "acide"
     },
     "tag": {
       "act": "prologue",
@@ -20092,7 +20097,8 @@
       "fr": "Ascendance draconique",
       "en": "Draconic Ancestry",
       "status": "VF_DND",
-      "source": "srd-5.2.1-fr"
+      "source": "srd-5.2.1-fr",
+      "precision": "froid"
     },
     "tag": {
       "act": "prologue",
@@ -20224,7 +20230,8 @@
       "fr": "Ascendance draconique",
       "en": "Draconic Ancestry",
       "status": "VF_DND",
-      "source": "srd-5.2.1-fr"
+      "source": "srd-5.2.1-fr",
+      "precision": "feu"
     },
     "tag": {
       "act": "prologue",
@@ -20431,7 +20438,8 @@
       "fr": "Ascendance draconique",
       "en": "Draconic Ancestry",
       "status": "VF_DND",
-      "source": "srd-5.2.1-fr"
+      "source": "srd-5.2.1-fr",
+      "precision": "foudre"
     },
     "tag": {
       "act": "prologue",
@@ -20497,7 +20505,8 @@
       "fr": "Ascendance draconique",
       "en": "Draconic Ancestry",
       "status": "VF_DND",
-      "source": "srd-5.2.1-fr"
+      "source": "srd-5.2.1-fr",
+      "precision": "poison"
     },
     "tag": {
       "act": "prologue",
@@ -27268,7 +27277,8 @@
     "name": {
       "fr": "Souffle enflammé",
       "en": "Fire Breath",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "cône"
     },
     "tag": {
       "act": "prologue",
@@ -27384,7 +27394,8 @@
     "name": {
       "fr": "Souffle enflammé",
       "en": "Fire Breath",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "ligne"
     },
     "tag": {
       "act": "prologue",
@@ -29025,7 +29036,8 @@
     "name": {
       "fr": "Vol",
       "en": "Fly",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "action de classe"
     },
     "tag": {
       "act": "prologue",
@@ -29100,7 +29112,8 @@
     "name": {
       "fr": "Vol",
       "en": "Fly",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "Forme étoilée"
     },
     "tag": {
       "act": "prologue",
@@ -31225,7 +31238,8 @@
     "name": {
       "fr": "Arme psionique gith",
       "en": "Githborn Psionic Weapon",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "1d6"
     },
     "tag": {
       "act": "acte3",
@@ -35183,7 +35197,8 @@
     "name": {
       "fr": "Haute incantation",
       "en": "High Spellcasting",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "+1"
     },
     "tag": {
       "act": "acte1",
@@ -35284,7 +35299,8 @@
     "name": {
       "fr": "Haute incantation",
       "en": "High Spellcasting",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "+2"
     },
     "tag": {
       "act": "acte3",
@@ -40074,7 +40090,8 @@
     "name": {
       "fr": "Restauration du ki",
       "en": "Ki Restoration",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "majeure"
     },
     "tag": {
       "act": "acte3",
@@ -40149,7 +40166,8 @@
     "name": {
       "fr": "Restauration du ki",
       "en": "Ki Restoration",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "mineure"
     },
     "tag": {
       "act": "acte1",
@@ -42122,7 +42140,8 @@
     "name": {
       "fr": "Arme létale",
       "en": "Lethal Weapon",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "contondant"
     },
     "tag": {
       "act": "acte1",
@@ -42197,7 +42216,8 @@
     "name": {
       "fr": "Arme létale",
       "en": "Lethal Weapon",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "tranchant"
     },
     "tag": {
       "act": "acte1",
@@ -44516,7 +44536,8 @@
     "name": {
       "fr": "Résilience magique",
       "en": "Magical Durability",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "+1"
     },
     "tag": {
       "act": "acte2",
@@ -44572,7 +44593,8 @@
     "name": {
       "fr": "Résilience magique",
       "en": "Magical Durability",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "+2"
     },
     "tag": {
       "act": "acte2",
@@ -44646,7 +44668,8 @@
     "name": {
       "fr": "Harnois magique",
       "en": "Magical Plate",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "−1"
     },
     "tag": {
       "act": "acte1",
@@ -44711,7 +44734,8 @@
     "name": {
       "fr": "Harnois magique",
       "en": "Magical Plate",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "−2"
     },
     "tag": {
       "act": "acte1",
@@ -46592,7 +46616,8 @@
     "name": {
       "fr": "Attaque menaçante (corps à corps)",
       "en": "Menacing Attack (Melee)",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "Casque à pointes d’os"
     },
     "tag": {
       "act": "acte3",
@@ -54860,7 +54885,8 @@
     "name": {
       "fr": "Attaque repoussante (à distance)",
       "en": "Pushing Attack (Ranged)",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "Arc à corde de titan"
     },
     "tag": {
       "act": "acte1",
@@ -60846,7 +60872,8 @@
     "name": {
       "fr": "Rarement pris au dépourvu",
       "en": "Seldom Caught Unawares",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "+1"
     },
     "tag": {
       "act": "acte1",
@@ -60920,7 +60947,8 @@
     "name": {
       "fr": "Rarement pris au dépourvu",
       "en": "Seldom Caught Unawares",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "+2"
     },
     "tag": {
       "act": "acte1",
@@ -63587,7 +63615,8 @@
     "name": {
       "fr": "Bénédiction de Shar",
       "en": "Shar's Blessing",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "Lance de la nuit"
     },
     "tag": {
       "act": "acte2",
@@ -64821,7 +64850,8 @@
     "name": {
       "fr": "Pourfendre les malfaisants",
       "en": "Slay the Wicked",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "contondant"
     },
     "tag": {
       "act": "acte3",
@@ -64897,7 +64927,8 @@
     "name": {
       "fr": "Pourfendre les malfaisants",
       "en": "Slay the Wicked",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "tranchant"
     },
     "tag": {
       "act": "acte3",
@@ -69640,7 +69671,8 @@
     "name": {
       "fr": "Matériau supérieur",
       "en": "Superior Material",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "−1"
     },
     "tag": {
       "act": "acte1",
@@ -69750,7 +69782,8 @@
     "name": {
       "fr": "Matériau supérieur",
       "en": "Superior Material",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "−2"
     },
     "tag": {
       "act": "acte3",
@@ -69806,7 +69839,8 @@
     "name": {
       "fr": "Rembourrage supérieur",
       "en": "Superior Padding",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "−1"
     },
     "tag": {
       "act": "acte3",
@@ -69880,7 +69914,8 @@
     "name": {
       "fr": "Rembourrage supérieur",
       "en": "Superior Padding",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "−2"
     },
     "tag": {
       "act": "acte3",
@@ -69936,7 +69971,8 @@
     "name": {
       "fr": "Harnois supérieur",
       "en": "Superior Plate",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "−1"
     },
     "tag": {
       "act": "acte1",
@@ -70055,7 +70091,8 @@
     "name": {
       "fr": "Harnois supérieur",
       "en": "Superior Plate",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "−2"
     },
     "tag": {
       "act": "acte3",
@@ -74251,7 +74288,8 @@
     "name": {
       "fr": "Pierre du transmutateur",
       "en": "Transmuter's Stone",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "passive"
     },
     "tag": {
       "act": "prologue",
@@ -75842,7 +75880,8 @@
       "fr": "Défense sans armure",
       "en": "Unarmoured Defence",
       "status": "VF_DND",
-      "source": "srd-5.2.1-fr"
+      "source": "srd-5.2.1-fr",
+      "precision": "barbare"
     },
     "tag": {
       "act": "prologue",
@@ -75939,7 +75978,8 @@
       "fr": "Défense sans armure",
       "en": "Unarmoured Defence",
       "status": "VF_DND",
-      "source": "srd-5.2.1-fr"
+      "source": "srd-5.2.1-fr",
+      "precision": "moine"
     },
     "tag": {
       "act": "prologue",
@@ -79221,7 +79261,8 @@
     "name": {
       "fr": "Attaque tourbillonnante",
       "en": "Whirlwind Attack",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "action d’arme"
     },
     "tag": {
       "act": "acte3",

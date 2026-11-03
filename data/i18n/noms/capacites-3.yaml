@@ -43,22 +43,27 @@ feature.draconic-ancestry-acid:
   fr: Ascendance draconique
   statut: VF_DND
   source: srd-5.2.1-fr
+  precision: "acide"
 feature.draconic-ancestry-cold:
   fr: Ascendance draconique
   statut: VF_DND
   source: srd-5.2.1-fr
+  precision: "froid"
 feature.draconic-ancestry-fire:
   fr: Ascendance draconique
   statut: VF_DND
   source: srd-5.2.1-fr
+  precision: "feu"
 feature.draconic-ancestry-lightning:
   fr: Ascendance draconique
   statut: VF_DND
   source: srd-5.2.1-fr
+  precision: "foudre"
 feature.draconic-ancestry-poison:
   fr: Ascendance draconique
   statut: VF_DND
   source: srd-5.2.1-fr
+  precision: "poison"
 feature.dual-wielder:
   fr: Combattant à deux armes
   statut: NON_OFFICIELLE
@@ -92,9 +97,11 @@ feature.fey-ancestry:
 feature.fire-breath-cone:
   fr: Souffle enflammé
   statut: NON_OFFICIELLE
+  precision: "cône"
 feature.fire-breath-line:
   fr: Souffle enflammé
   statut: NON_OFFICIELLE
+  precision: "ligne"
 feature.fleet-of-foot:
   fr: Foulée rapide
   statut: NON_OFFICIELLE

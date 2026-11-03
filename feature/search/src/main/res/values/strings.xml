@@ -7,4 +7,5 @@
     <string name="search_include_hidden">Chercher aussi dans le contenu masqué</string>
     <string name="search_include_hidden_meta">Les résultats masqués restent voilés : rien n’en est montré avant que vous les révéliez.</string>
     <string name="search_vo">VO %1$s</string>
+    <string name="search_join">%1$s\u00A0·\u00A0%2$s</string>
 </resources>

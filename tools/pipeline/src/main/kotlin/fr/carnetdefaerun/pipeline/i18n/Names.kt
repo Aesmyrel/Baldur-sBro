@@ -25,6 +25,8 @@ data class CuratedName(
     val note: String? = null,
     /** Étiquette plus stricte pour le nom lui-même, quand il laisse deviner un rebondissement. */
     val etiquette: SpoilerTag? = null,
+    /** Ce qui distingue cette entrée d'une autre au même nom (variante de forme, de rareté, de bonus). */
+    val precision: String? = null,
 )
 
 @Serializable
@@ -91,7 +93,7 @@ class NameResolver(
     fun titleTag(id: String): SpoilerTag? = curated[id]?.etiquette
 
     fun resolve(id: ContentId, english: String): Name {
-        curated[id.value]?.let { return Name(typography(it.fr), english, it.statut.status, it.source) }
+        curated[id.value]?.let { return Name(typography(it.fr), english, it.statut.status, it.source, it.precision?.let(::typography)) }
         for (lexicon in lexicons[id.kind].orEmpty()) {
             lexicon.lookup(english)?.let { return Name(typography(it), english, NameStatus.VF_DND, lexicon.source) }
         }

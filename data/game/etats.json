@@ -4622,7 +4622,8 @@
       "fr": "Vision dans le noir",
       "en": "Darkvision",
       "status": "VF_DND",
-      "source": "srd-5.2.1-fr"
+      "source": "srd-5.2.1-fr",
+      "precision": "Troisième œil"
     },
     "tag": {
       "act": "prologue",
@@ -5535,7 +5536,8 @@
     "name": {
       "fr": "Dominé",
       "en": "Dominated",
-      "status": "UNOFFICIAL"
+      "status": "UNOFFICIAL",
+      "precision": "Domination de bête"
     },
     "tag": {
       "act": "prologue",
@@ -18875,7 +18877,8 @@
       "fr": "Lien de protection",
       "en": "Warding Bond",
       "status": "VF_DND",
-      "source": "aidedd"
+      "source": "aidedd",
+      "precision": "lanceur"
     },
     "tag": {
       "act": "prologue",
@@ -18919,7 +18922,8 @@
       "fr": "Lien de protection",
       "en": "Warding Bond",
       "status": "VF_DND",
-      "source": "aidedd"
+      "source": "aidedd",
+      "precision": "cible"
     },
     "tag": {
       "act": "prologue",

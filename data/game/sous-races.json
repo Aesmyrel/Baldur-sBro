@@ -78,7 +78,8 @@
             "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Acid)",
             "status": "VF_DND",
-            "source": "srd-5.2.1-fr"
+            "source": "srd-5.2.1-fr",
+            "precision": "acide"
           },
           "id": "feature.draconic-ancestry-acid"
         },
@@ -158,7 +159,8 @@
             "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Lightning)",
             "status": "VF_DND",
-            "source": "srd-5.2.1-fr"
+            "source": "srd-5.2.1-fr",
+            "precision": "foudre"
           },
           "id": "feature.draconic-ancestry-lightning"
         },
@@ -238,7 +240,8 @@
             "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Fire)",
             "status": "VF_DND",
-            "source": "srd-5.2.1-fr"
+            "source": "srd-5.2.1-fr",
+            "precision": "feu"
           },
           "id": "feature.draconic-ancestry-fire"
         },
@@ -246,7 +249,8 @@
           "name": {
             "fr": "Souffle enflammé",
             "en": "Fire Breath (Line)",
-            "status": "UNOFFICIAL"
+            "status": "UNOFFICIAL",
+            "precision": "ligne"
           },
           "id": "feature.fire-breath-line"
         }
@@ -318,7 +322,8 @@
             "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Lightning)",
             "status": "VF_DND",
-            "source": "srd-5.2.1-fr"
+            "source": "srd-5.2.1-fr",
+            "precision": "foudre"
           },
           "id": "feature.draconic-ancestry-lightning"
         },
@@ -398,7 +403,8 @@
             "fr": "Ascendance draconique",
             "en": "Draconic Ancestry",
             "status": "VF_DND",
-            "source": "srd-5.2.1-fr"
+            "source": "srd-5.2.1-fr",
+            "precision": "acide"
           },
           "id": "feature.draconic-ancestry-acid"
         },
@@ -734,7 +740,8 @@
             "fr": "Ascendance draconique",
             "en": "Draconic Ancestry",
             "status": "VF_DND",
-            "source": "srd-5.2.1-fr"
+            "source": "srd-5.2.1-fr",
+            "precision": "feu"
           },
           "id": "feature.draconic-ancestry-fire"
         },
@@ -742,7 +749,8 @@
           "name": {
             "fr": "Souffle enflammé",
             "en": "Fire Breath (Cone)",
-            "status": "UNOFFICIAL"
+            "status": "UNOFFICIAL",
+            "precision": "cône"
           },
           "id": "feature.fire-breath-cone"
         }
@@ -877,7 +885,8 @@
             "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Poison)",
             "status": "VF_DND",
-            "source": "srd-5.2.1-fr"
+            "source": "srd-5.2.1-fr",
+            "precision": "poison"
           },
           "id": "feature.draconic-ancestry-poison"
         },
@@ -1195,7 +1204,8 @@
             "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Fire)",
             "status": "VF_DND",
-            "source": "srd-5.2.1-fr"
+            "source": "srd-5.2.1-fr",
+            "precision": "feu"
           },
           "id": "feature.draconic-ancestry-fire"
         },
@@ -1203,7 +1213,8 @@
           "name": {
             "fr": "Souffle enflammé",
             "en": "Fire Breath (Cone)",
-            "status": "UNOFFICIAL"
+            "status": "UNOFFICIAL",
+            "precision": "cône"
           },
           "id": "feature.fire-breath-cone"
         }
@@ -1416,7 +1427,8 @@
             "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Cold)",
             "status": "VF_DND",
-            "source": "srd-5.2.1-fr"
+            "source": "srd-5.2.1-fr",
+            "precision": "froid"
           },
           "id": "feature.draconic-ancestry-cold"
         },
@@ -1558,7 +1570,8 @@
             "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Cold)",
             "status": "VF_DND",
-            "source": "srd-5.2.1-fr"
+            "source": "srd-5.2.1-fr",
+            "precision": "froid"
           },
           "id": "feature.draconic-ancestry-cold"
         },

@@ -248,3 +248,9 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - 31 groupes de fiches d'un même type au même nom (variantes que le jeu nomme pareil : souffle en cône ou en ligne, objets selon la rareté) : une précision par variante est à ajouter aux fichiers de noms ;
   - les pages secondaires citées par certains effets sont à ajouter à l'attribution des fiches (CC BY-NC-SA) ;
   - les sorts n'ont pas encore d'effets rédigés (leurs faits structurés sont affichés).
+
+**D-077 — Précision des variantes au même nom.**
+- **Le constat** : le jeu donne parfois un même nom à des variantes distinctes, par exemple un souffle en cône et un en ligne, un objet en deux raretés, ou un passif d'objet en « +1 » et « +2 ». Le nom français suit le jeu (même nom anglais, même nom français), mais deux lignes identiques dans une liste ne se distinguent pas.
+- **La règle** : le nom porte désormais une **précision** facultative (`precision` dans les fichiers de noms), affichée à côté du nom et jamais dedans : « Souffle enflammé · cône ». Elle est tirée de la parenthèse du titre de la page source, traduite.
+- **Contrôle bloquant** : deux entrées d'un même type au même nom français doivent avoir des précisions distinctes. Le contrôle a trouvé un groupe oublié lors de sa mise en place. 56 précisions couvrent les 32 groupes.
+- **Base de contenu en version 4** : la précision y est une colonne. Une précision qui nomme un objet ou un sort suit l'étiquette du nom de sa fiche.

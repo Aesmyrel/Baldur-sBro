@@ -226,6 +226,7 @@ condition.dominated:
 condition.dominated-dominate-beast:
   fr: "Dominé"
   statut: NON_OFFICIELLE
+  precision: "Domination de bête"
 condition.elemental-weapon-acid:
   fr: "Arme élémentaire : acide"
   statut: NON_OFFICIELLE
@@ -792,10 +793,12 @@ condition.warding-bond-caster:
   fr: "Lien de protection"
   statut: VF_DND
   source: aidedd
+  precision: "lanceur"
 condition.warding-bond-target:
   fr: "Lien de protection"
   statut: VF_DND
   source: aidedd
+  precision: "cible"
 condition.weak-grip:
   fr: "Poigne affaiblie"
   statut: NON_OFFICIELLE

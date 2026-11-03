@@ -51,9 +51,11 @@ feature.after-death-do-us-part-passive-feature:
 feature.ambusher-1:
   fr: Embusqué
   statut: NON_OFFICIELLE
+  precision: "+1"
 feature.ambusher-2:
   fr: Embusqué
   statut: NON_OFFICIELLE
+  precision: "+2"
 feature.ambushers-streak:
   fr: Fougue de l’embusqué
   statut: NON_OFFICIELLE
@@ -75,9 +77,11 @@ feature.arcane-echomalefaction:
 feature.arcane-enchantment-1:
   fr: Enchantement arcanique
   statut: NON_OFFICIELLE
+  precision: "+1"
 feature.arcane-enchantment-2:
   fr: Enchantement arcanique
   statut: NON_OFFICIELLE
+  precision: "+2"
 feature.arcane-radiance:
   fr: Rayonnement arcanique
   statut: NON_OFFICIELLE
@@ -577,6 +581,7 @@ feature.githborn-psionic-weapon:
 feature.githborn-psionic-weapon-1d6:
   fr: Arme psionique gith
   statut: NON_OFFICIELLE
+  precision: "1d6"
 feature.gleamdance-dagger-glowing:
   fr: "Dague de l’éclat dansant : illumination"
   statut: NON_OFFICIELLE
@@ -652,9 +657,11 @@ feature.helms-protection:
 feature.high-spellcasting-1:
   fr: Haute incantation
   statut: NON_OFFICIELLE
+  precision: "+1"
 feature.high-spellcasting-2:
   fr: Haute incantation
   statut: NON_OFFICIELLE
+  precision: "+2"
 feature.hoarfrost-balance:
   fr: Équilibre du givre
   statut: NON_OFFICIELLE
@@ -743,9 +750,11 @@ feature.keen-attack:
 feature.ki-restoration-greater:
   fr: Restauration du ki
   statut: NON_OFFICIELLE
+  precision: "majeure"
 feature.ki-restoration-lesser:
   fr: Restauration du ki
   statut: NON_OFFICIELLE
+  precision: "mineure"
 feature.kushigo-counter:
   fr: Contre de Kushigo
   statut: NON_OFFICIELLE
@@ -779,9 +788,11 @@ feature.let-the-undead-blanch-with-fear:
 feature.lethal-weapon-bludgeoning:
   fr: Arme létale
   statut: NON_OFFICIELLE
+  precision: "contondant"
 feature.lethal-weapon-slashing:
   fr: Arme létale
   statut: NON_OFFICIELLE
+  precision: "tranchant"
 feature.lickspittles-alertness:
   fr: Vigilance du larbin
   statut: NON_OFFICIELLE
@@ -812,15 +823,19 @@ feature.lunar-bestial-vitality:
 feature.magical-durability-1:
   fr: Résilience magique
   statut: NON_OFFICIELLE
+  precision: "+1"
 feature.magical-durability-2:
   fr: Résilience magique
   statut: NON_OFFICIELLE
+  precision: "+2"
 feature.magical-plate-1:
   fr: Harnois magique
   statut: NON_OFFICIELLE
+  precision: "−1"
 feature.magical-plate-2:
   fr: Harnois magique
   statut: NON_OFFICIELLE
+  precision: "−2"
 feature.maiming-strike:
   fr: Frappe mutilante
   statut: NON_OFFICIELLE
@@ -848,6 +863,7 @@ feature.mellow-harmony:
 feature.menacing-attack-bonespike-helmet:
   fr: Attaque menaçante (corps à corps)
   statut: NON_OFFICIELLE
+  precision: "Casque à pointes d’os"
 feature.mental-inhibition:
   fr: Inhibition mentale
   statut: NON_OFFICIELLE
@@ -992,6 +1008,7 @@ feature.psychic-steel-virtuoso:
 feature.pushing-attack-titanstring-bow:
   fr: Attaque repoussante (à distance)
   statut: NON_OFFICIELLE
+  precision: "Arc à corde de titan"
 feature.quickened-mage-hand:
   fr: Main de mage accélérée
   statut: NON_OFFICIELLE
@@ -1086,9 +1103,11 @@ feature.seeking-spell:
 feature.seldom-caught-unawares-1:
   fr: Rarement pris au dépourvu
   statut: NON_OFFICIELLE
+  precision: "+1"
 feature.seldom-caught-unawares-2:
   fr: Rarement pris au dépourvu
   statut: NON_OFFICIELLE
+  precision: "+2"
 feature.self-immolation:
   fr: Auto-immolation
   statut: NON_OFFICIELLE
@@ -1147,6 +1166,7 @@ feature.shars-blessing:
 feature.shars-blessing-spear-of-night:
   fr: Bénédiction de Shar
   statut: NON_OFFICIELLE
+  precision: "Lance de la nuit"
 feature.shars-protection:
   fr: Protection de Shar
   statut: NON_OFFICIELLE
@@ -1189,9 +1209,11 @@ feature.slabjaw-determination:
 feature.slay-the-wicked-bludgeoning:
   fr: Pourfendre les malfaisants
   statut: NON_OFFICIELLE
+  precision: "contondant"
 feature.slay-the-wicked-slashing:
   fr: Pourfendre les malfaisants
   statut: NON_OFFICIELLE
+  precision: "tranchant"
 feature.smite-the-graceless:
   fr: Châtier les maladroits
   statut: NON_OFFICIELLE
@@ -1294,21 +1316,27 @@ feature.sunwalkers-gift-passive-feature:
 feature.superior-material-1:
   fr: Matériau supérieur
   statut: NON_OFFICIELLE
+  precision: "−1"
 feature.superior-material-2:
   fr: Matériau supérieur
   statut: NON_OFFICIELLE
+  precision: "−2"
 feature.superior-padding-1:
   fr: Rembourrage supérieur
   statut: NON_OFFICIELLE
+  precision: "−1"
 feature.superior-padding-2:
   fr: Rembourrage supérieur
   statut: NON_OFFICIELLE
+  precision: "−2"
 feature.superior-plate-1:
   fr: Harnois supérieur
   statut: NON_OFFICIELLE
+  precision: "−1"
 feature.superior-plate-2:
   fr: Harnois supérieur
   statut: NON_OFFICIELLE
+  precision: "−2"
 feature.surge-accuracy:
   fr: Précision de la fougue
   statut: NON_OFFICIELLE
@@ -1462,6 +1490,7 @@ feature.well-liked-and-well-fortified:
 feature.whirlwind-attack-weapon-action:
   fr: Attaque tourbillonnante
   statut: NON_OFFICIELLE
+  precision: "action d’arme"
 feature.winters-clutches-passive-feature:
   fr: Serres de l’hiver
   statut: NON_OFFICIELLE

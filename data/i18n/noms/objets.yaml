@@ -441,15 +441,19 @@ item.dark-justiciar-boots:
 item.dark-justiciar-gauntlets-rare:
   fr: Gantelets de justicier sombre
   statut: NON_OFFICIELLE
+  precision: "rare"
 item.dark-justiciar-gauntlets-uncommon:
   fr: Gantelets de justicier sombre
   statut: NON_OFFICIELLE
+  precision: "peu courante"
 item.dark-justiciar-half-plate-rare:
   fr: Demi-plate de justicier sombre
   statut: NON_OFFICIELLE
+  precision: "rare"
 item.dark-justiciar-half-plate-very-rare:
   fr: Demi-plate de justicier sombre
   statut: NON_OFFICIELLE
+  precision: "très rare"
 item.dark-justiciar-helm:
   fr: Heaume de justicier sombre
   statut: NON_OFFICIELLE
@@ -648,6 +652,7 @@ item.githyanki-greatsword:
 item.githyanki-greatsword-psionic:
   fr: Épée à deux mains githyanki
   statut: NON_OFFICIELLE
+  precision: "psionique"
 item.githyanki-longsword-1:
   fr: Épée longue githyanki (+1)
   statut: NON_OFFICIELLE
@@ -901,9 +906,11 @@ item.incandescent-staff:
 item.infernal-mace:
   fr: Masse d’armes infernale
   statut: NON_OFFICIELLE
+  precision: "rare"
 item.infernal-mace-uncommon:
   fr: Masse d’armes infernale
   statut: NON_OFFICIELLE
+  precision: "peu courante"
 item.infernal-mask:
   fr: Masque infernal
   statut: NON_OFFICIELLE
@@ -1344,9 +1351,11 @@ item.selunes-spear-of-night:
 item.sentient-amulet-rare:
   fr: Amulette consciente
   statut: NON_OFFICIELLE
+  precision: "rare"
 item.sentient-amulet-very-rare:
   fr: Amulette consciente
   statut: NON_OFFICIELLE
+  precision: "très rare"
 item.seraphic-pugilist-gloves:
   fr: Gants du pugiliste séraphique
   statut: NON_OFFICIELLE
