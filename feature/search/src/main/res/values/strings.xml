@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fr">
     <string name="search_crumb">Recherche</string>
     <string name="search_placeholder">Un sort, un objet, un état…</string>
     <string name="search_hint">Noms français et anglais, fautes de frappe tolérées, puis le texte des fiches.</string>

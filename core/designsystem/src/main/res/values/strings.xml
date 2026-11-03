@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fr">
     <string name="ds_veil_title">Section masquée</string>
     <string name="ds_veil_title_act">Section masquée · %1$s</string>
     <string name="ds_veil_hint">Au-delà de votre progression. Touchez pour dissiper la brume.</string>
