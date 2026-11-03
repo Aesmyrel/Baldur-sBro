@@ -34,8 +34,27 @@
       ],
       "gameUid": "ABJURE_ENEMY_FRIGHT"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Déplacement : impossible.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Tests de caractéristique et jets d’attaque : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -69,8 +88,27 @@
       "@type": "condition",
       "gameUid": "ABJURE_ENEMY_SLOW"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Coût de ses déplacements : multiplié par 1,5.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : dès qu’une action dirigée contre elle ne rate pas.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -151,8 +189,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Ce tour : 1 action supplémentaire.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -588,8 +635,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Dégâts subis : réduits d’autant que le nombre de charges de la protection, qui perd ensuite 1 charge.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Sort d’abjuration lancé : la protection gagne autant de charges que le niveau du sort.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -736,15 +802,24 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Points de vie temporaires : 2 × niveau de barbare.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
     "id": "condition.astral-knowledge",
     "type": "condition",
     "name": {
-      "fr": "Astral Knowledge",
+      "fr": "Savoir astral",
       "en": "Astral Knowledge",
       "status": "UNOFFICIAL"
     },
@@ -770,8 +845,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Maîtrise de toutes les compétences d’une caractéristique choisie.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -808,8 +892,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Elle et ses alliés dans un rayon de 3 m : ne peuvent pas être effrayés.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -845,8 +938,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Elle et ses alliés dans un rayon de 3 m : ne peuvent pas être charmés.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -882,8 +984,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Elle et tous les fiélons et morts-vivants dans un rayon de 3 m : dégâts des attaques au corps à corps avec une arme augmentés de son modificateur de Charisme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Les fiélons et morts-vivants ennemis en profitent aussi.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-2",
+        "kind": "note",
+        "text": "Sans effet sur les attaques à mains nues, griffes comprises.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -959,8 +1090,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Vulnérabilité aux dégâts perforants.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -996,8 +1136,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Elle et ses alliés dans un rayon de 3 m : jets de sauvegarde augmentés de son modificateur de Charisme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -1033,8 +1182,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Elle et ses alliés dans un rayon de 3 m : résistance aux dégâts des sorts.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -1223,8 +1381,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Prochain jet d’attaque, test de caractéristique ou jet de sauvegarde : peut y ajouter un bonus de 1d6.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Le bonus dépend du niveau du barde qui a accordé l’inspiration.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -1361,8 +1538,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Transposition bénigne : téléportation a déjà servi pour la journée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : lancer un sort de conjuration de niveau 1 ou plus rend la capacité de nouveau disponible.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -1450,8 +1646,37 @@
       "@type": "condition",
       "gameUid": "BLADESONG"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Classe d’armure et jets de sauvegarde de Constitution : +2 ; +3 au niveau 5 de magicien, +4 au niveau 9.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Vitesse de déplacement : +3 m.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Tests d’Acrobaties : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -1485,8 +1710,47 @@
       "@type": "condition",
       "gameUid": "BLADESONG_DAMAGE_CHARGE"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Chaque charge : +1d6 dégâts de force infligés aux ennemis par l’action finale du Chant de la lame.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "S’obtient en lançant un sort de niveau 1 ou plus qui n’est pas une attaque avec une arme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Cumulable.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "La relance gratuite d’un sort déjà actif ne rapporte pas toujours de charge.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -1520,8 +1784,37 @@
       "@type": "condition",
       "gameUid": "BLADESONG_HEALING_CHARGE"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Chaque charge : +1d6 points de vie rendus à elle et à ses alliés par l’action finale du Chant de la lame.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "S’obtient en attaquant avec une arme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Cumulable.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -1554,8 +1847,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Armure, bouclier ou arme incompatible : le Chant de la lame n’apporte aucun bonus et ne produit plus de charges.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : dès que l’armure, le bouclier ou l’arme en cause est retiré.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -1759,8 +2071,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tests de Discrétion : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -2241,8 +2562,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Jets d’attaque et tests de caractéristique : +1d4.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -2869,8 +3199,37 @@
         "SG_Taunted"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Contrainte d’attaquer le paladin qui l’a défiée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Jets d’attaque contre toute autre cible que ce paladin : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Fin : si elle s’éloigne à 9 m du paladin.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -2907,8 +3266,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Invisible : avantage à ses jets d’attaque, désavantage aux jets d’attaque des ennemis contre elle.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin anticipée : attaque, autre sort lancé, action accomplie ou dégâts subis.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Contrairement à Cape d’ombres, ne se perd pas en entrant dans une zone dégagée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -3005,8 +3393,47 @@
         "SG_Charmed_Subtle"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Ne peut pas attaquer le personnage qui l’a charmée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Ce personnage : avantage aux tests de Charisme lors des dialogues.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Fin : dégâts infligés par ce personnage ou par l’un de ses alliés.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "La créature charmée ne devient pas pour autant amicale envers ce personnage et ses alliés.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -3108,8 +3535,57 @@
         "SG_Surface"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Vulnérabilité aux dégâts de froid.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Résistance aux dégâts de feu.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Rendue Mouillée ensuite : état Gelé pendant 1 tour.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "L’ordre compte : refroidir une créature déjà Mouillée ne la gèle pas ; la mouiller de nouveau, une fois Transie, la gèle.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-2",
+        "kind": "note",
+        "text": "L’état Gelé ainsi obtenu prend fin au début de son tour suivant, sans lui faire perdre de tour.",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -3243,8 +3719,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Invisible : avantage à ses jets d’attaque, désavantage aux jets d’attaque des ennemis contre elle.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : attaque, sort lancé, ou entrée dans une zone dégagée, en pleine lumière.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -3345,8 +3840,37 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Prochain jet d’attaque, test de caractéristique ou jet de sauvegarde : peut y ajouter un bonus de 1d6.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Au choix, à la place : +1d6 aux dégâts de sa prochaine attaque avec une arme, ou à sa classe d’armure contre une attaque.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Le bonus dépend du niveau du barde qui a accordé l’inspiration.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -3608,8 +4132,17 @@
         "SG_Dominated"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Mort-vivant sous le contrôle d’un paladin : le suit et attaque ses ennemis.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -3643,8 +4176,17 @@
       "@type": "condition",
       "gameUid": "CONTROL_UNDEAD_OWNER"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Contrôle un mort-vivant (état Contrôlé), qui la suit et attaque ses ennemis.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -3677,8 +4219,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Réaction : ajoute 1d6 à un jet d’attaque ou à un jet de sauvegarde.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Peut aussi accorder un bonus de +1d6 aux tests de caractéristique.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -3714,8 +4275,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Elle et ses alliés dans un rayon de 9 m : avantage aux jets de sauvegarde contre les effets qui charment ou effraient.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -3942,8 +4512,17 @@
       ],
       "gameUid": "DARK_ONES_BLESSING"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Points de vie temporaires : modificateur de Charisme + niveau d’occultiste.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -4023,8 +4602,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Voit dans le noir jusqu’à 12 m.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -4061,8 +4649,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Voit dans le noir jusqu’à 24 m.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -4097,8 +4694,27 @@
       "@type": "condition",
       "gameUid": "DASH"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Vitesse de déplacement : doublée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Ne se cumule pas ; une deuxième Pointe dans le même tour triple la vitesse de déplacement de base, une troisième la quadruple, les suivantes n’apportent rien.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -4749,8 +5365,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Alliés de celui qui l’a distraite : avantage à leur prochain jet d’attaque contre elle.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -4834,8 +5459,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Jets d’attaque contre les célestes, les fiélons et les morts-vivants : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -4982,8 +5616,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Vitesse de déplacement : +3 m.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Peut porter une attaque supplémentaire avec une arme, qui inflige 1d8 dégâts de plus.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -5019,8 +5672,27 @@
         "SG_Drunk"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Tests de Dextérité et de Charisme : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Petit remontant immunise contre les effets négatifs de cet état.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -5053,8 +5725,37 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Ivre, mais immunisée contre les effets négatifs de l’alcool.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Petit remontant retire tout autre état d’ivresse et applique celui-ci pendant 5 tours, quelle que soit la durée de l’état remplacé.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-2",
+        "kind": "note",
+        "text": "Compte comme ivresse pour les objets qui en tirent un effet, dont l’Étoffe d’ivresse et l’Amulette de l’ivrogne.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -5087,8 +5788,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Déplacement : +3 m.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Déplacement : ne provoque pas d’attaque d’opportunité.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -5728,8 +6448,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "A raté une attaque contre un occultiste : celui-ci a l’avantage à son prochain jet d’attaque contre elle.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -5765,8 +6494,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Attaques au corps à corps des ennemis contre elle : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -6132,8 +6870,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Attaques au corps à corps : +1d4 dégâts de feu.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -6916,8 +7663,57 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Attaques avec une arme de corps à corps ou improvisée, et objets lancés : +2 dégâts, puis +3 au niveau 9.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Résistance aux dégâts contondants, perforants et tranchants.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Tests de Force et jets de sauvegarde de Force : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-4",
+        "kind": "effect",
+        "text": "Ne peut ni lancer de sort ni maintenir sa concentration sur un sort.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-5",
+        "kind": "effect",
+        "text": "Fin anticipée : si, depuis son tour précédent, elle n’a ni attaqué d’ennemi ni subi de dégâts.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -6950,8 +7746,47 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Chaque usage de Frappe frénétique : 1 cumul de plus.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Jets d’attaque : −1 par cumul.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Fin : tous les cumuls disparaissent quand la Frénésie prend fin.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Le jet d’attaque d’une Frappe frénétique se fait avant l’ajout du cumul qu’elle entraîne.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -7097,8 +7932,37 @@
       ],
       "gameUid": "CLARIFIED_MORTALITY"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Déplacement : impossible.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Tests de caractéristique et jets d’attaque : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Sa durée décompte au tour de la créature effrayée, et non au tour de la source de l’effet.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -7498,8 +8362,97 @@
       ],
       "gameUid": "RAGE_GIANT"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "En rage, et de taille augmentée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Attaques avec une arme de corps à corps ou improvisée : +2 dégâts, puis +3 au niveau 9 de barbare.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Objets lancés : +4 dégâts, puis +6 au niveau 9 de barbare.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-4",
+        "kind": "effect",
+        "text": "Résistance aux dégâts contondants, perforants et tranchants.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-5",
+        "kind": "effect",
+        "text": "Tests de Force et jets de sauvegarde de Force : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-6",
+        "kind": "effect",
+        "text": "Ne peut ni lancer de sort ni maintenir sa concentration sur un sort.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-7",
+        "kind": "effect",
+        "text": "Fin anticipée : si, depuis son tour précédent, elle n’a ni attaqué d’ennemi ni subi de dégâts.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Le bonus de 2 ou 3 dégâts vaut aussi pour les attaques à mains nues.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-2",
+        "kind": "note",
+        "text": "Catégorie de taille : augmentée d’un cran ; remplace les autres états d’agrandissement.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -7535,8 +8488,47 @@
         "SG_Taunted"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Jets d’attaque : désavantage contre toute cible, y compris la créature qui l’a provoquée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Membre du groupe : échappe au contrôle du joueur jusqu’à la fin de l’état.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Ne prend pas fin à la mort de la créature qui l’a provoquée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-2",
+        "kind": "note",
+        "text": "Aucun jet de sauvegarde ne permet d’y mettre fin pendant sa durée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -7606,7 +8598,7 @@
     "id": "condition.great-weapon-master-bonus-attack",
     "type": "condition",
     "name": {
-      "fr": "Great Weapon Master: Bonus Attack",
+      "fr": "Maître des armes lourdes : attaque bonus",
       "en": "Great Weapon Master: Bonus Attack",
       "status": "UNOFFICIAL"
     },
@@ -7635,8 +8627,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Peut porter une attaque au corps à corps par une action bonus.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : dès que cette attaque est portée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -7834,8 +8845,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Prochain jet d’attaque : +10.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -8196,8 +9216,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Début de son prochain tour : ses alliés dans un rayon de 3 m récupèrent des points de vie égaux à bonus de maîtrise + niveau de paladin + modificateur de Charisme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -8471,8 +9500,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Occultiste qui l’a maudite : ajoute son bonus de maîtrise à ses jets de dégâts contre elle.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Attaques de cet occultiste contre elle : seuil de coup critique abaissé de 1.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -8509,8 +9557,57 @@
       ],
       "gameUid": "HEXBLADE_BIND"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "S’applique à une arme liée à un occultiste, qui la maîtrise toujours.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Dégâts de l’arme : magiques ; l’arme utilise le modificateur de Charisme de l’occultiste.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Attaque de l’occultiste avec cette arme : chance d’infliger Malédiction de la lame maléfique à la cible.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Chance fixe de 20 % (17 ou plus sur un d20 sans modificateur), que l’avantage ne change pas.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-2",
+        "kind": "note",
+        "text": "Ne touche qu’une cible qui n’est pas déjà maudite et ne prolonge pas une malédiction en cours.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -8547,8 +9644,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Invisible : avantage à ses jets d’attaque.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Tests de Discrétion : +10.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Fin anticipée : déplacement, attaque, autre sort lancé, action accomplie ou dégâts subis.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -8713,8 +9839,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Usage du pouvoir de l’amulette d’où vient cet état : jet de sauvegarde de Sagesse ; échec : elle se retrouve à terre.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Ne disparaît pas au repos.",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -8925,8 +10070,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Attaque au corps à corps réussie contre elle : l’attaquant subit 1d4 dégâts radiants.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -8963,8 +10117,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Peut attaquer une seconde créature proche de sa première cible.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -8997,8 +10160,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Peut être visée par l’attaque de suivi de Briseur de hordes.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -9122,8 +10294,47 @@
         "SG_Incapacitated"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Déplacement, actions, actions bonus et réactions : impossibles.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Lanceur : avantage aux tests de caractéristique lors des dialogues.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Fin : dès qu’elle subit des dégâts.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-4",
+        "kind": "effect",
+        "text": "Le lanceur peut, par une action au contact, ramener la durée à 2 tours, sans nouveau jet de sauvegarde.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -9214,8 +10425,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Vitesse de déplacement : +3 m.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -9253,8 +10473,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Apparence : entièrement changée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Peut reprendre son apparence d’origine par une action.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -9290,8 +10529,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Attaques avec une arme : dégâts radiants supplémentaires égaux à son modificateur de Charisme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Attaques avec une arme : peuvent infliger l’état Hébété à l’ennemi pendant 1 tour.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -9680,8 +10938,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Classe d’armure : +1.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Jets d’attaque contre les cibles sous l’état Ivre : bonus égal à son modificateur de Sagesse.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -10141,8 +11418,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "S’applique à une arme : ses attaques comptent comme magiques face aux résistances.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Appliqué automatiquement à l’arme dès qu’elle est équipée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -10175,8 +11471,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Elle et toutes les créatures dans un rayon de 3 m : +1d4 à tous les jets de sauvegarde.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -10259,8 +11564,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "S’applique tant qu’elle est cachée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Jets de sauvegarde des créatures contre ses sorts : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -10373,8 +11697,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Par une action gratuite : un allié à 9 m ou moins gagne 4,5 m de déplacement et ne provoque pas d’attaque d’opportunité pendant 1 tour.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -10411,8 +11744,27 @@
       ],
       "gameUid": "MANTLEOFINSPIRATION"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Points de vie temporaires : 5.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Touchée par une attaque au corps à corps : l’attaquant subit l’état Charmé.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -10445,8 +11797,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Se concentre sur Manteau de majesté.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Chaque tour : peut lancer n’importe quelle variante du sort, sur n’importe quelle cible.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -10522,8 +11893,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Ce tour : peut porter une attaque à mains nues par une action bonus.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -10827,8 +12207,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Jets d’attaque contre le rôdeur qu’elle vient d’attaquer : −4.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -10911,8 +12300,37 @@
         "SG_Condition"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Déplacement : impossible.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Jets d’attaque contre elle : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Ses jets d’attaque et jets de sauvegarde de Dextérité : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -11155,8 +12573,27 @@
       "@type": "condition",
       "gameUid": "OPEN_HAND_NO_REACTIONS"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Réactions : impossibles.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Seule la ressource de réaction est bloquée : une réaction qui ne la dépense pas reste possible.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -11314,8 +12751,27 @@
       "@type": "condition",
       "gameUid": "PANACHE"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Jets d’attaque contre tout ennemi autre que l’auteur du Panache : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Attaques d’opportunité : impossibles, sauf contre l’auteur du Panache.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -11477,8 +12933,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Jets d’attaque contre elle : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Jets de sauvegarde de Dextérité : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -11755,8 +13230,27 @@
         "SG_Polymorph"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Transformée en geai bleu ; peut utiliser Vol pendant 5 tours.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Sous cette forme, l’attaque de bec ne s’utilise pas pendant son tour, seulement en attaque d’opportunité.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -11897,8 +13391,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Prochain jet d’attaque avec une arme : bonus égal à son dé de supériorité.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -12401,8 +13904,57 @@
       ],
       "gameUid": "RAGE"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Attaques avec une arme de corps à corps ou improvisée, à mains nues, et objets lancés : +2 dégâts, puis +3 au niveau 9.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Résistance aux dégâts contondants, perforants et tranchants.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Tests de Force et jets de sauvegarde de Force : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-4",
+        "kind": "effect",
+        "text": "Ne peut ni lancer de sort ni maintenir sa concentration sur un sort.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-5",
+        "kind": "effect",
+        "text": "Fin anticipée : si, depuis son tour précédent, elle n’a ni attaqué d’ennemi ni subi de dégâts.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -12439,8 +13991,67 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Attaques avec une arme de corps à corps ou improvisée, et objets lancés : +2 dégâts, puis +3 au niveau 9.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Résistance à tous les dégâts, sauf psychiques.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Tests de Force et jets de sauvegarde de Force : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-4",
+        "kind": "effect",
+        "text": "Ne peut ni lancer de sort ni maintenir sa concentration sur un sort.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-5",
+        "kind": "effect",
+        "text": "Fin anticipée : si, depuis son tour précédent, elle n’a ni attaqué d’ennemi ni subi de dégâts.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "La résistance vaut même en armure lourde.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -12477,8 +14088,77 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Peut utiliser Pointe par une action bonus.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Attaques d’opportunité des ennemis : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Attaques avec une arme de corps à corps ou improvisée, et objets lancés : +2 dégâts, puis +3 au niveau 9.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-4",
+        "kind": "effect",
+        "text": "Résistance aux dégâts contondants, perforants et tranchants.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-5",
+        "kind": "effect",
+        "text": "Tests de Force et jets de sauvegarde de Force : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-6",
+        "kind": "effect",
+        "text": "Ne peut ni lancer de sort ni maintenir sa concentration sur un sort.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-7",
+        "kind": "effect",
+        "text": "Fin anticipée : si, depuis son tour précédent, elle n’a ni attaqué d’ennemi ni subi de dégâts.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -12515,8 +14195,77 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Vitesse de déplacement : +4,5 m.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Peut utiliser Ruée primitive.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Attaques avec une arme de corps à corps ou improvisée, et objets lancés : +2 dégâts, puis +3 au niveau 9.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-4",
+        "kind": "effect",
+        "text": "Résistance aux dégâts contondants, perforants et tranchants.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-5",
+        "kind": "effect",
+        "text": "Tests de Force et jets de sauvegarde de Force : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-6",
+        "kind": "effect",
+        "text": "Ne peut ni lancer de sort ni maintenir sa concentration sur un sort.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-7",
+        "kind": "effect",
+        "text": "Fin anticipée : si, depuis son tour précédent, elle n’a ni attaqué d’ennemi ni subi de dégâts.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -12552,8 +14301,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Armure lourde portée : la Rage ne donne plus ni dégâts supplémentaires, ni résistance aux dégâts contondants, perforants et tranchants, ni avantage aux tests et jets de sauvegarde de Force.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : dès que l’armure lourde est retirée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Rage : cœur d’ours garde sa résistance malgré l’armure lourde.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -12590,8 +14368,77 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Distance de saut : +4,5 m.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Peut utiliser Soif de sang du tigre.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Attaques avec une arme de corps à corps ou improvisée, et objets lancés : +2 dégâts, puis +3 au niveau 9.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-4",
+        "kind": "effect",
+        "text": "Résistance aux dégâts contondants, perforants et tranchants.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-5",
+        "kind": "effect",
+        "text": "Tests de Force et jets de sauvegarde de Force : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-6",
+        "kind": "effect",
+        "text": "Ne peut ni lancer de sort ni maintenir sa concentration sur un sort.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-7",
+        "kind": "effect",
+        "text": "Fin anticipée : si, depuis son tour précédent, elle n’a ni attaqué d’ennemi ni subi de dégâts.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -12628,8 +14475,77 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Peut utiliser Hurlement galvanisant.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Ses alliés : avantage aux jets d’attaque au corps à corps contre les ennemis à 2 m ou moins d’elle.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Attaques avec une arme de corps à corps ou improvisée, et objets lancés : +2 dégâts, puis +3 au niveau 9.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-4",
+        "kind": "effect",
+        "text": "Résistance aux dégâts contondants, perforants et tranchants.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-5",
+        "kind": "effect",
+        "text": "Tests de Force et jets de sauvegarde de Force : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-6",
+        "kind": "effect",
+        "text": "Ne peut ni lancer de sort ni maintenir sa concentration sur un sort.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-7",
+        "kind": "effect",
+        "text": "Fin anticipée : si, depuis son tour précédent, elle n’a ni attaqué d’ennemi ni subi de dégâts.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -12666,8 +14582,17 @@
       ],
       "gameUid": "RALLY"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Points de vie temporaires : 8, accordés par le Ralliement d’un allié.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -12880,8 +14805,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Jets d’attaque au corps à corps et de lancer : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Jets d’attaque des ennemis contre elle : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -13013,8 +14957,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Vitesse de déplacement : +4,5 m.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -13184,8 +15137,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Son ki entre en résonance avec celui d’un moine, qui peut le faire exploser avec Résonance du ki : déflagration.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -13345,8 +15307,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Jets d’attaque : ajoute son bonus de maîtrise.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -13479,8 +15450,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "S’applique à une arme : jets d’attaque avec celle-ci augmentés du modificateur de Charisme de la créature qui la manie.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "L’arme devient magique et émet de la lumière.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -13784,7 +15774,7 @@
     "id": "condition.sentinel-foe",
     "type": "condition",
     "name": {
-      "fr": "Sentinel Foe",
+      "fr": "Ennemi de la sentinelle",
       "en": "Sentinel Foe",
       "status": "UNOFFICIAL"
     },
@@ -13813,8 +15803,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Déplacement : impossible, après avoir été arrêtée par une attaque d’opportunité.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -13943,8 +15942,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Prochain jet d’attaque au corps à corps : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -14565,7 +16573,7 @@
     "id": "condition.sluggardly",
     "type": "condition",
     "name": {
-      "fr": "Sluggardly",
+      "fr": "Lambin",
       "en": "Sluggardly",
       "status": "UNOFFICIAL"
     },
@@ -14592,8 +16600,17 @@
       "@type": "condition",
       "gameUid": "MOBILE_NO_AOO"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Ne peut pas porter d’attaque d’opportunité contre la dernière créature qui l’a attaquée.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -14671,8 +16688,37 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Chaque tour : 1d4 + modificateur de Charisme du paladin en dégâts nécrotiques.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Jets d’attaque contre elle : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Début de chacun de ses tours : jet de sauvegarde de Charisme ; réussite : l’état prend fin.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -14764,8 +16810,27 @@
         "SG_Light"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "En Forme étoilée : peut lancer Flèche lumineuse par une action bonus.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Peut quitter cette forme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -14803,8 +16868,27 @@
         "SG_Light"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "En Forme étoilée : chaque sort de soins lancé avec un emplacement de sort permet de lancer Soins du calice.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Peut quitter cette forme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -14842,8 +16926,37 @@
       ],
       "gameUid": "WILDSHAPE_STARRY_DRAGON_PLAYER"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "En Forme étoilée : jets de sauvegarde pour maintenir sa concentration sur un sort, un résultat de 9 ou moins compte comme 10.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Peut lancer Souffle éblouissant par une action bonus.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Peut quitter cette forme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -14923,8 +17036,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Saut : ne coûte plus d’action bonus.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -15004,8 +17126,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Prochain jet de sauvegarde contre un sort lancé par la source de l’état : désavantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -15283,8 +17414,57 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Points de vie temporaires : 4 par niveau de druide.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Attaques avec une arme, au corps à corps comme à distance, et attaques à mains nues : +1d6 dégâts nécrotiques.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Halo de spores : dégâts doublés.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-4",
+        "kind": "effect",
+        "text": "Peut utiliser Propagation des spores.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-5",
+        "kind": "effect",
+        "text": "Fin anticipée : si elle utilise Forme sauvage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -15365,8 +17545,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Peut voler par une action bonus.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -16003,8 +18192,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Chance de manifestation de magie sauvage : portée à 50 %.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : dès qu’elle lance un sort de niveau 1 ou plus et que le test de Magie sauvage est joué.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "note-1",
+        "kind": "note",
+        "text": "Obtenu par la capacité passive, l’état persiste après un repos long ; obtenu par la réaction, il disparaît au repos long.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -16037,8 +18255,27 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "A récemment créé une Pierre du transmutateur ; ne peut pas encore en créer une autre.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin : lancer un sort de transmutation de niveau 1 ou plus, ou prendre un repos long.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -16292,8 +18529,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Invisible : avantage à ses jets d’attaque, désavantage aux jets d’attaque des ennemis contre elle.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Fin anticipée : attaque, autre sort lancé, action accomplie ou dégâts subis.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -16553,8 +18809,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Jets d’attaque de l’auteur du vœu contre elle : avantage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -16911,8 +19176,17 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Chaque tour : 1 action bonus supplémentaire, et récupère 1 point de ki.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -16951,8 +19225,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Transformée en myrmidon d’air par Forme sauvage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Points de vie de la forme : de 90 à 108.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Actions propres à la forme, dont Vol et Guérison lunaire ; peut quitter la forme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -16991,8 +19294,27 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Transformée en corbeau sanguinaire par Forme sauvage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Actions propres à la forme, dont Vol et Guérison lunaire ; peut quitter la forme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -17031,8 +19353,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Transformée en myrmidon de terre par Forme sauvage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Points de vie de la forme : de 103 à 124.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Actions propres à la forme, dont Guérison lunaire ; peut quitter la forme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -17071,8 +19422,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Transformée en myrmidon de feu par Forme sauvage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Points de vie de la forme : de 90 à 108.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Actions propres à la forme, dont Vol et Guérison lunaire ; peut quitter la forme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -17111,8 +19491,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Transformée en ours polaire par Forme sauvage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Points de vie de la forme : de 30 à 111.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Actions propres à la forme, dont Guérison lunaire ; peut quitter la forme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -17151,8 +19560,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Transformée en tigre à dents de sabre par Forme sauvage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Points de vie de la forme : de 62 à 89.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Actions propres à la forme, dont Guérison lunaire ; peut quitter la forme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -17191,8 +19629,37 @@
         "SG_RemoveOnRespec"
       ]
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Transformée en myrmidon d’eau par Forme sauvage.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-2",
+        "kind": "effect",
+        "text": "Points de vie de la forme : de 90 à 108.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "id": "effet-3",
+        "kind": "effect",
+        "text": "Actions propres à la forme, dont Vol et Guérison lunaire ; peut quitter la forme.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {
@@ -17355,8 +19822,17 @@
     "facts": {
       "@type": "condition"
     },
-    "unknown": [
-      "effect_text"
+    "blocks": [
+      {
+        "id": "effet-1",
+        "kind": "effect",
+        "text": "Protégée des effets de surface par son essaim.",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
     ]
   },
   {

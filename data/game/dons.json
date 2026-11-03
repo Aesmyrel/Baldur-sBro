@@ -3,7 +3,7 @@
     "id": "feat.ability-improvement",
     "type": "feat",
     "name": {
-      "fr": "Ability Improvement",
+      "fr": "Amélioration de caractéristique",
       "en": "Ability Improvement",
       "status": "UNOFFICIAL"
     },
@@ -38,7 +38,7 @@
     "id": "feat.actor",
     "type": "feat",
     "name": {
-      "fr": "Actor",
+      "fr": "Acteur",
       "en": "Actor",
       "status": "UNOFFICIAL"
     },
@@ -66,7 +66,7 @@
       "features": [
         {
           "name": {
-            "fr": "Actor",
+            "fr": "Acteur",
             "en": "Actor",
             "status": "UNOFFICIAL"
           },
@@ -96,9 +96,10 @@
     "id": "feat.alert",
     "type": "feat",
     "name": {
-      "fr": "Alert",
+      "fr": "Vigilant",
       "en": "Alert",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -124,9 +125,10 @@
       "features": [
         {
           "name": {
-            "fr": "Alert",
+            "fr": "Vigilant",
             "en": "Alert",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.alert"
         }
@@ -148,7 +150,7 @@
     "id": "feat.athlete",
     "type": "feat",
     "name": {
-      "fr": "Athlete",
+      "fr": "Athlète",
       "en": "Athlete",
       "status": "UNOFFICIAL"
     },
@@ -176,7 +178,7 @@
       "features": [
         {
           "name": {
-            "fr": "Athlete: Standing Up",
+            "fr": "Athlète : se relever",
             "en": "Athlete: Standing Up",
             "status": "UNOFFICIAL"
           },
@@ -207,7 +209,7 @@
     "id": "feat.charger",
     "type": "feat",
     "name": {
-      "fr": "Charger",
+      "fr": "Charge",
       "en": "Charger",
       "status": "UNOFFICIAL"
     },
@@ -235,7 +237,7 @@
       "features": [
         {
           "name": {
-            "fr": "Charger: Weapon Attack",
+            "fr": "Charge : attaque à l’arme",
             "en": "Charger: Weapon Attack",
             "status": "UNOFFICIAL"
           },
@@ -243,7 +245,7 @@
         },
         {
           "name": {
-            "fr": "Charger: Shove",
+            "fr": "Charge : bousculade",
             "en": "Charger: Shove",
             "status": "UNOFFICIAL"
           },
@@ -276,7 +278,7 @@
     "id": "feat.crossbow-expert",
     "type": "feat",
     "name": {
-      "fr": "Crossbow Expert",
+      "fr": "Expert en arbalète",
       "en": "Crossbow Expert",
       "status": "UNOFFICIAL"
     },
@@ -304,7 +306,7 @@
       "features": [
         {
           "name": {
-            "fr": "Crossbow Expert: Point-Blank",
+            "fr": "Expert en arbalète : à bout portant",
             "en": "Crossbow Expert: Point-Blank",
             "status": "UNOFFICIAL"
           },
@@ -312,7 +314,7 @@
         },
         {
           "name": {
-            "fr": "Crossbow Expert: Wounding",
+            "fr": "Expert en arbalète : plaies",
             "en": "Crossbow Expert: Wounding",
             "status": "UNOFFICIAL"
           },
@@ -345,7 +347,7 @@
     "id": "feat.defensive-duellist",
     "type": "feat",
     "name": {
-      "fr": "Defensive Duellist",
+      "fr": "Duelliste défensif",
       "en": "Defensive Duellist",
       "status": "UNOFFICIAL"
     },
@@ -373,7 +375,7 @@
       "features": [
         {
           "name": {
-            "fr": "Defensive Duellist",
+            "fr": "Duelliste défensif",
             "en": "Defensive Duellist",
             "status": "UNOFFICIAL"
           },
@@ -397,7 +399,7 @@
     "id": "feat.dual-wielder",
     "type": "feat",
     "name": {
-      "fr": "Dual Wielder",
+      "fr": "Combattant à deux armes",
       "en": "Dual Wielder",
       "status": "UNOFFICIAL"
     },
@@ -425,7 +427,7 @@
       "features": [
         {
           "name": {
-            "fr": "Dual Wielder",
+            "fr": "Combattant à deux armes",
             "en": "Dual Wielder",
             "status": "UNOFFICIAL"
           },
@@ -433,7 +435,7 @@
         },
         {
           "name": {
-            "fr": "Dual Wielder: Bonus Armour Class",
+            "fr": "Combattant à deux armes : bonus de classe d’armure",
             "en": "Dual Wielder: Bonus Armour Class",
             "status": "UNOFFICIAL"
           },
@@ -466,7 +468,7 @@
     "id": "feat.dungeon-delver",
     "type": "feat",
     "name": {
-      "fr": "Dungeon Delver",
+      "fr": "Explorateur de donjons",
       "en": "Dungeon Delver",
       "status": "UNOFFICIAL"
     },
@@ -494,7 +496,7 @@
       "features": [
         {
           "name": {
-            "fr": "Dungeon Delver: Perception",
+            "fr": "Explorateur de donjons : perception",
             "en": "Dungeon Delver: Perception",
             "status": "UNOFFICIAL"
           },
@@ -502,7 +504,7 @@
         },
         {
           "name": {
-            "fr": "Dungeon Delver: Resist Traps",
+            "fr": "Explorateur de donjons : résistance aux pièges",
             "en": "Dungeon Delver: Resist Traps",
             "status": "UNOFFICIAL"
           },
@@ -535,7 +537,7 @@
     "id": "feat.durable",
     "type": "feat",
     "name": {
-      "fr": "Durable",
+      "fr": "Endurant",
       "en": "Durable",
       "status": "UNOFFICIAL"
     },
@@ -563,7 +565,7 @@
       "features": [
         {
           "name": {
-            "fr": "Durable",
+            "fr": "Endurant",
             "en": "Durable",
             "status": "UNOFFICIAL"
           },
@@ -593,7 +595,7 @@
     "id": "feat.elemental-adept",
     "type": "feat",
     "name": {
-      "fr": "Elemental Adept",
+      "fr": "Adepte élémentaire",
       "en": "Elemental Adept",
       "status": "UNOFFICIAL"
     },
@@ -624,7 +626,7 @@
     "id": "feat.great-weapon-master",
     "type": "feat",
     "name": {
-      "fr": "Great Weapon Master",
+      "fr": "Maître des armes lourdes",
       "en": "Great Weapon Master",
       "status": "UNOFFICIAL"
     },
@@ -652,7 +654,7 @@
       "features": [
         {
           "name": {
-            "fr": "Great Weapon Master: Bonus Attack",
+            "fr": "Maître des armes lourdes : attaque bonus",
             "en": "Great Weapon Master: Bonus Attack",
             "status": "UNOFFICIAL"
           },
@@ -660,7 +662,7 @@
         },
         {
           "name": {
-            "fr": "Great Weapon Master: All In",
+            "fr": "Maître des armes lourdes : va-tout",
             "en": "Great Weapon Master: All In",
             "status": "UNOFFICIAL"
           },
@@ -693,7 +695,7 @@
     "id": "feat.heavily-armoured",
     "type": "feat",
     "name": {
-      "fr": "Heavily Armoured",
+      "fr": "Formation aux armures lourdes",
       "en": "Heavily Armoured",
       "status": "UNOFFICIAL"
     },
@@ -721,7 +723,7 @@
       "features": [
         {
           "name": {
-            "fr": "Heavily Armoured",
+            "fr": "Formation aux armures lourdes",
             "en": "Heavily Armoured",
             "status": "UNOFFICIAL"
           },
@@ -751,7 +753,7 @@
     "id": "feat.heavy-armour-master",
     "type": "feat",
     "name": {
-      "fr": "Heavy Armour Master",
+      "fr": "Maître des armures lourdes",
       "en": "Heavy Armour Master",
       "status": "UNOFFICIAL"
     },
@@ -779,7 +781,7 @@
       "features": [
         {
           "name": {
-            "fr": "Heavy Armour Master",
+            "fr": "Maître des armures lourdes",
             "en": "Heavy Armour Master",
             "status": "UNOFFICIAL"
           },
@@ -809,7 +811,7 @@
     "id": "feat.lightly-armoured",
     "type": "feat",
     "name": {
-      "fr": "Lightly Armoured",
+      "fr": "Formation aux armures légères",
       "en": "Lightly Armoured",
       "status": "UNOFFICIAL"
     },
@@ -837,7 +839,7 @@
       "features": [
         {
           "name": {
-            "fr": "Lightly Armoured",
+            "fr": "Formation aux armures légères",
             "en": "Lightly Armoured",
             "status": "UNOFFICIAL"
           },
@@ -868,7 +870,7 @@
     "id": "feat.lucky",
     "type": "feat",
     "name": {
-      "fr": "Lucky",
+      "fr": "Chanceux",
       "en": "Lucky",
       "status": "UNOFFICIAL"
     },
@@ -896,7 +898,7 @@
       "features": [
         {
           "name": {
-            "fr": "Lucky",
+            "fr": "Chanceux (test de caractéristique)",
             "en": "Lucky",
             "status": "UNOFFICIAL"
           },
@@ -904,7 +906,7 @@
         },
         {
           "name": {
-            "fr": "Lucky",
+            "fr": "Chanceux (réactions)",
             "en": "Lucky",
             "status": "UNOFFICIAL"
           },
@@ -937,7 +939,7 @@
     "id": "feat.mage-slayer",
     "type": "feat",
     "name": {
-      "fr": "Mage Slayer",
+      "fr": "Tueur de mages",
       "en": "Mage Slayer",
       "status": "UNOFFICIAL"
     },
@@ -965,7 +967,7 @@
       "features": [
         {
           "name": {
-            "fr": "Mage Slayer: Saving Throw Advantage",
+            "fr": "Tueur de mages : avantage aux jets de sauvegarde",
             "en": "Mage Slayer: Saving Throw Advantage",
             "status": "UNOFFICIAL"
           },
@@ -973,7 +975,7 @@
         },
         {
           "name": {
-            "fr": "Mage Slayer: Attack Caster",
+            "fr": "Tueur de mages : attaque du lanceur de sorts",
             "en": "Mage Slayer: Attack Caster",
             "status": "UNOFFICIAL"
           },
@@ -981,7 +983,7 @@
         },
         {
           "name": {
-            "fr": "Mage Slayer: Break Concentration",
+            "fr": "Tueur de mages : briser la concentration",
             "en": "Mage Slayer: Break Concentration",
             "status": "UNOFFICIAL"
           },
@@ -1023,7 +1025,7 @@
     "id": "feat.magic-initiate-bard",
     "type": "feat",
     "name": {
-      "fr": "Magic Initiate: Bard",
+      "fr": "Initié à la magie : barde",
       "en": "Magic Initiate: Bard",
       "status": "UNOFFICIAL"
     },
@@ -1051,7 +1053,7 @@
       "features": [
         {
           "name": {
-            "fr": "Magic Initiate: Bard",
+            "fr": "Initié à la magie : barde",
             "en": "Magic Initiate: Bard",
             "status": "UNOFFICIAL"
           },
@@ -1075,7 +1077,7 @@
     "id": "feat.magic-initiate-cleric",
     "type": "feat",
     "name": {
-      "fr": "Magic Initiate: Cleric",
+      "fr": "Initié à la magie : clerc",
       "en": "Magic Initiate: Cleric",
       "status": "UNOFFICIAL"
     },
@@ -1103,7 +1105,7 @@
       "features": [
         {
           "name": {
-            "fr": "Magic Initiate: Cleric",
+            "fr": "Initié à la magie : clerc",
             "en": "Magic Initiate: Cleric",
             "status": "UNOFFICIAL"
           },
@@ -1127,7 +1129,7 @@
     "id": "feat.magic-initiate-druid",
     "type": "feat",
     "name": {
-      "fr": "Magic Initiate: Druid",
+      "fr": "Initié à la magie : druide",
       "en": "Magic Initiate: Druid",
       "status": "UNOFFICIAL"
     },
@@ -1155,7 +1157,7 @@
       "features": [
         {
           "name": {
-            "fr": "Magic Initiate: Druid",
+            "fr": "Initié à la magie : druide",
             "en": "Magic Initiate: Druid",
             "status": "UNOFFICIAL"
           },
@@ -1179,7 +1181,7 @@
     "id": "feat.magic-initiate-sorcerer",
     "type": "feat",
     "name": {
-      "fr": "Magic Initiate: Sorcerer",
+      "fr": "Initié à la magie : ensorceleur",
       "en": "Magic Initiate: Sorcerer",
       "status": "UNOFFICIAL"
     },
@@ -1207,7 +1209,7 @@
       "features": [
         {
           "name": {
-            "fr": "Magic Initiate: Sorcerer",
+            "fr": "Initié à la magie : ensorceleur",
             "en": "Magic Initiate: Sorcerer",
             "status": "UNOFFICIAL"
           },
@@ -1231,7 +1233,7 @@
     "id": "feat.magic-initiate-warlock",
     "type": "feat",
     "name": {
-      "fr": "Magic Initiate: Warlock",
+      "fr": "Initié à la magie : occultiste",
       "en": "Magic Initiate: Warlock",
       "status": "UNOFFICIAL"
     },
@@ -1259,7 +1261,7 @@
       "features": [
         {
           "name": {
-            "fr": "Magic Initiate: Warlock",
+            "fr": "Initié à la magie : occultiste",
             "en": "Magic Initiate: Warlock",
             "status": "UNOFFICIAL"
           },
@@ -1283,7 +1285,7 @@
     "id": "feat.magic-initiate-wizard",
     "type": "feat",
     "name": {
-      "fr": "Magic Initiate: Wizard",
+      "fr": "Initié à la magie : magicien",
       "en": "Magic Initiate: Wizard",
       "status": "UNOFFICIAL"
     },
@@ -1311,7 +1313,7 @@
       "features": [
         {
           "name": {
-            "fr": "Magic Initiate: Wizard",
+            "fr": "Initié à la magie : magicien",
             "en": "Magic Initiate: Wizard",
             "status": "UNOFFICIAL"
           },
@@ -1335,7 +1337,7 @@
     "id": "feat.martial-adept",
     "type": "feat",
     "name": {
-      "fr": "Martial Adept",
+      "fr": "Adepte martial",
       "en": "Martial Adept",
       "status": "UNOFFICIAL"
     },
@@ -1363,7 +1365,7 @@
       "features": [
         {
           "name": {
-            "fr": "Martial Adept",
+            "fr": "Adepte martial",
             "en": "Martial Adept",
             "status": "UNOFFICIAL"
           },
@@ -1387,7 +1389,7 @@
     "id": "feat.medium-armour-master",
     "type": "feat",
     "name": {
-      "fr": "Medium Armour Master",
+      "fr": "Maître des armures intermédiaires",
       "en": "Medium Armour Master",
       "status": "UNOFFICIAL"
     },
@@ -1415,7 +1417,7 @@
       "features": [
         {
           "name": {
-            "fr": "Medium Armour Master",
+            "fr": "Maître des armures intermédiaires",
             "en": "Medium Armour Master",
             "status": "UNOFFICIAL"
           },
@@ -1475,7 +1477,7 @@
         },
         {
           "name": {
-            "fr": "Mobile: Evade Difficult Terrain",
+            "fr": "Mobile : éviter le terrain difficile",
             "en": "Mobile: Evade Difficult Terrain",
             "status": "UNOFFICIAL"
           },
@@ -1483,7 +1485,7 @@
         },
         {
           "name": {
-            "fr": "Mobile: Evade Opportunity Attack",
+            "fr": "Mobile : éviter l’attaque d’opportunité",
             "en": "Mobile: Evade Opportunity Attack",
             "status": "UNOFFICIAL"
           },
@@ -1525,7 +1527,7 @@
     "id": "feat.moderately-armoured",
     "type": "feat",
     "name": {
-      "fr": "Moderately Armoured",
+      "fr": "Formation aux armures intermédiaires",
       "en": "Moderately Armoured",
       "status": "UNOFFICIAL"
     },
@@ -1553,7 +1555,7 @@
       "features": [
         {
           "name": {
-            "fr": "Moderately Armoured",
+            "fr": "Formation aux armures intermédiaires",
             "en": "Moderately Armoured",
             "status": "UNOFFICIAL"
           },
@@ -1584,7 +1586,7 @@
     "id": "feat.performer",
     "type": "feat",
     "name": {
-      "fr": "Performer",
+      "fr": "Interprète",
       "en": "Performer",
       "status": "UNOFFICIAL"
     },
@@ -1621,7 +1623,7 @@
     "id": "feat.polearm-master",
     "type": "feat",
     "name": {
-      "fr": "Polearm Master",
+      "fr": "Maître des armes d’hast",
       "en": "Polearm Master",
       "status": "UNOFFICIAL"
     },
@@ -1649,7 +1651,7 @@
       "features": [
         {
           "name": {
-            "fr": "Polearm Master: Bonus Attack",
+            "fr": "Maître des armes d’hast : attaque bonus",
             "en": "Polearm Master: Bonus Attack",
             "status": "UNOFFICIAL"
           },
@@ -1657,7 +1659,7 @@
         },
         {
           "name": {
-            "fr": "Polearm Master: Opportunity Attack",
+            "fr": "Maître des armes d’hast : attaque d’opportunité",
             "en": "Polearm Master: Opportunity Attack",
             "status": "UNOFFICIAL"
           },
@@ -1690,7 +1692,7 @@
     "id": "feat.resilient",
     "type": "feat",
     "name": {
-      "fr": "Resilient",
+      "fr": "Résilient",
       "en": "Resilient",
       "status": "UNOFFICIAL"
     },
@@ -1724,7 +1726,7 @@
     "id": "feat.ritual-caster",
     "type": "feat",
     "name": {
-      "fr": "Ritual Caster",
+      "fr": "Ritualiste",
       "en": "Ritual Caster",
       "status": "UNOFFICIAL"
     },
@@ -1752,7 +1754,7 @@
       "features": [
         {
           "name": {
-            "fr": "Ritual Caster: Free Spells",
+            "fr": "Ritualiste : sorts gratuits",
             "en": "Ritual Caster: Free Spells",
             "status": "UNOFFICIAL"
           },
@@ -1776,9 +1778,10 @@
     "id": "feat.savage-attacker",
     "type": "feat",
     "name": {
-      "fr": "Savage Attacker",
+      "fr": "Sauvagerie martiale",
       "en": "Savage Attacker",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -1804,9 +1807,10 @@
       "features": [
         {
           "name": {
-            "fr": "Savage Attacker",
+            "fr": "Sauvagerie martiale",
             "en": "Savage Attacker",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.savage-attacker"
         }
@@ -1828,7 +1832,7 @@
     "id": "feat.sentinel",
     "type": "feat",
     "name": {
-      "fr": "Sentinel",
+      "fr": "Sentinelle",
       "en": "Sentinel",
       "status": "UNOFFICIAL"
     },
@@ -1856,7 +1860,7 @@
       "features": [
         {
           "name": {
-            "fr": "Sentinel: Vengeance",
+            "fr": "Sentinelle : vengeance",
             "en": "Sentinel: Vengeance",
             "status": "UNOFFICIAL"
           },
@@ -1864,7 +1868,7 @@
         },
         {
           "name": {
-            "fr": "Sentinel: Snare",
+            "fr": "Sentinelle : entrave",
             "en": "Sentinel: Snare",
             "status": "UNOFFICIAL"
           },
@@ -1872,7 +1876,7 @@
         },
         {
           "name": {
-            "fr": "Sentinel: Opportunity Advantage",
+            "fr": "Sentinelle : avantage aux attaques d’opportunité",
             "en": "Sentinel: Opportunity Advantage",
             "status": "UNOFFICIAL"
           },
@@ -1914,7 +1918,7 @@
     "id": "feat.sharpshooter",
     "type": "feat",
     "name": {
-      "fr": "Sharpshooter",
+      "fr": "Tireur d’élite",
       "en": "Sharpshooter",
       "status": "UNOFFICIAL"
     },
@@ -1942,7 +1946,7 @@
       "features": [
         {
           "name": {
-            "fr": "Sharpshooter: Low Ground",
+            "fr": "Tireur d’élite : position basse",
             "en": "Sharpshooter: Low Ground",
             "status": "UNOFFICIAL"
           },
@@ -1950,7 +1954,7 @@
         },
         {
           "name": {
-            "fr": "Sharpshooter: All In",
+            "fr": "Tireur d’élite : va-tout",
             "en": "Sharpshooter: All In",
             "status": "UNOFFICIAL"
           },
@@ -1983,7 +1987,7 @@
     "id": "feat.shield-master",
     "type": "feat",
     "name": {
-      "fr": "Shield Master",
+      "fr": "Maître des boucliers",
       "en": "Shield Master",
       "status": "UNOFFICIAL"
     },
@@ -2011,7 +2015,7 @@
       "features": [
         {
           "name": {
-            "fr": "Shield Master",
+            "fr": "Maître des boucliers",
             "en": "Shield Master",
             "status": "UNOFFICIAL"
           },
@@ -2019,7 +2023,7 @@
         },
         {
           "name": {
-            "fr": "Shield Master: Block",
+            "fr": "Maître des boucliers : blocage",
             "en": "Shield Master: Block",
             "status": "UNOFFICIAL"
           },
@@ -2052,9 +2056,10 @@
     "id": "feat.skilled",
     "type": "feat",
     "name": {
-      "fr": "Skilled",
+      "fr": "Doué",
       "en": "Skilled",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -2080,9 +2085,10 @@
       "features": [
         {
           "name": {
-            "fr": "Skilled",
+            "fr": "Doué",
             "en": "Skilled",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.skilled"
         }
@@ -2104,7 +2110,7 @@
     "id": "feat.spell-sniper",
     "type": "feat",
     "name": {
-      "fr": "Spell Sniper",
+      "fr": "Tireur d’élite magique",
       "en": "Spell Sniper",
       "status": "UNOFFICIAL"
     },
@@ -2132,7 +2138,7 @@
       "features": [
         {
           "name": {
-            "fr": "Spell Sniper",
+            "fr": "Tireur d’élite magique",
             "en": "Spell Sniper",
             "status": "UNOFFICIAL"
           },
@@ -2156,7 +2162,7 @@
     "id": "feat.tavern-brawler",
     "type": "feat",
     "name": {
-      "fr": "Tavern Brawler",
+      "fr": "Bagarreur de taverne",
       "en": "Tavern Brawler",
       "status": "UNOFFICIAL"
     },
@@ -2184,7 +2190,7 @@
       "features": [
         {
           "name": {
-            "fr": "Tavern Brawler",
+            "fr": "Bagarreur de taverne",
             "en": "Tavern Brawler",
             "status": "UNOFFICIAL"
           },
@@ -2215,7 +2221,7 @@
     "id": "feat.tough",
     "type": "feat",
     "name": {
-      "fr": "Tough",
+      "fr": "Robuste",
       "en": "Tough",
       "status": "UNOFFICIAL"
     },
@@ -2243,7 +2249,7 @@
       "features": [
         {
           "name": {
-            "fr": "Tough",
+            "fr": "Robuste",
             "en": "Tough",
             "status": "UNOFFICIAL"
           },
@@ -2267,7 +2273,7 @@
     "id": "feat.war-caster",
     "type": "feat",
     "name": {
-      "fr": "War Caster",
+      "fr": "Mage de guerre",
       "en": "War Caster",
       "status": "UNOFFICIAL"
     },
@@ -2295,7 +2301,7 @@
       "features": [
         {
           "name": {
-            "fr": "War Caster: Concentration",
+            "fr": "Mage de guerre : concentration",
             "en": "War Caster: Concentration",
             "status": "UNOFFICIAL"
           },
@@ -2303,7 +2309,7 @@
         },
         {
           "name": {
-            "fr": "War Caster: Opportunity Spell",
+            "fr": "Mage de guerre : sort d’opportunité",
             "en": "War Caster: Opportunity Spell",
             "status": "UNOFFICIAL"
           },
@@ -2336,7 +2342,7 @@
     "id": "feat.weapon-master",
     "type": "feat",
     "name": {
-      "fr": "Weapon Master",
+      "fr": "Maître d’armes",
       "en": "Weapon Master",
       "status": "UNOFFICIAL"
     },
@@ -2364,7 +2370,7 @@
       "features": [
         {
           "name": {
-            "fr": "Weapon Master",
+            "fr": "Maître d’armes",
             "en": "Weapon Master",
             "status": "UNOFFICIAL"
           },

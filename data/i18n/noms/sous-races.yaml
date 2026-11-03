@@ -1,0 +1,94 @@
+# Noms français des sous-races (lot noms-subrace). Voir docs/LOTS_ECRITURE.md §3.
+# VF_DND : lignage du SRD 5.2.1 (srd-5.2.1-fr) de même nom anglais (High Elf, Wood Elf, Forest Gnome, Rock Gnome)
+# ou peuple nommé tel quel dans le SRD (duergar) ; sinon NON_OFFICIELLE.
+# Composition : nom de la race, puis le qualificatif. Drakéides : couleurs et métaux des dragons du SRD
+# (« Dragon d’airain », « Dragon de bronze »…). Demi-elfes : qualificatif du lignage elfique (drow, haut-elfe, sylvestre).
+subrace.asmodeus-tiefling:
+  fr: Tieffelin d’Asmodée
+  statut: NON_OFFICIELLE
+subrace.black-dragonborn:
+  fr: Drakéide noir
+  statut: NON_OFFICIELLE
+subrace.blue-dragonborn:
+  fr: Drakéide bleu
+  statut: NON_OFFICIELLE
+subrace.brass-dragonborn:
+  fr: Drakéide d’airain
+  statut: NON_OFFICIELLE
+subrace.bronze-dragonborn:
+  fr: Drakéide de bronze
+  statut: NON_OFFICIELLE
+subrace.copper-dragonborn:
+  fr: Drakéide de cuivre
+  statut: NON_OFFICIELLE
+subrace.deep-gnome:
+  fr: Gnome des profondeurs
+  statut: NON_OFFICIELLE
+subrace.drow-half-elf:
+  fr: Demi-elfe drow
+  statut: NON_OFFICIELLE
+subrace.duergar:
+  fr: Duergar
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subrace.forest-gnome:
+  fr: Gnome des forêts
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subrace.gold-dragonborn:
+  fr: Drakéide d’or
+  statut: NON_OFFICIELLE
+subrace.gold-dwarf:
+  fr: Nain d’or
+  statut: NON_OFFICIELLE
+subrace.green-dragonborn:
+  fr: Drakéide vert
+  statut: NON_OFFICIELLE
+subrace.high-elf:
+  fr: Haut-elfe
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subrace.high-half-elf:
+  fr: Demi-elfe haut-elfe
+  statut: NON_OFFICIELLE
+subrace.lightfoot-halfling:
+  fr: Halfelin pied-léger
+  statut: NON_OFFICIELLE
+subrace.lolth-sworn-drow:
+  fr: Drow voué à Lolth
+  statut: NON_OFFICIELLE
+subrace.mephistopheles-tiefling:
+  fr: Tieffelin de Méphistophélès
+  statut: NON_OFFICIELLE
+subrace.red-dragonborn:
+  fr: Drakéide rouge
+  statut: NON_OFFICIELLE
+subrace.rock-gnome:
+  fr: Gnome des roches
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subrace.seldarine-drow:
+  fr: Drow de la Seldarine
+  statut: NON_OFFICIELLE
+subrace.shield-dwarf:
+  fr: Nain d’écu
+  statut: NON_OFFICIELLE
+subrace.silver-dragonborn:
+  fr: Drakéide d’argent
+  statut: NON_OFFICIELLE
+subrace.strongheart-halfling:
+  fr: Halfelin cœur-vaillant
+  statut: NON_OFFICIELLE
+subrace.white-dragonborn:
+  fr: Drakéide blanc
+  statut: NON_OFFICIELLE
+subrace.wood-elf:
+  fr: Elfe sylvestre
+  statut: VF_DND
+  source: srd-5.2.1-fr
+subrace.wood-half-elf:
+  fr: Demi-elfe sylvestre
+  statut: NON_OFFICIELLE
+subrace.zariel-tiefling:
+  fr: Tieffelin de Zariel
+  statut: NON_OFFICIELLE

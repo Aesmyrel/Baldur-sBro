@@ -33,3 +33,9 @@
 
 ## Données de jeu
 - [ ] Escroc arcanique et chevalier occulte au niveau 10 : nombre d'emplacements de sorts de niveau 1 et 2 (les pages de bg3.wiki divergent, D-067).
+
+## Noms des origines à confirmer dans la VF (D-075)
+- [ ] Sous-races : « Demi-elfe haut-elfe », « Nain d'or », « Nain d'écu », « Halfelin pied-léger », « Halfelin cœur-vaillant ».
+- [ ] Historiques : « Hanté », « Sauvageon ».
+- [ ] Dons : Charge, Endurant, Interprète, Ritualiste, Tireur d'élite magique, Maître des armes lourdes, Mage de guerre.
+- [ ] Termes de règles de 2024 qui pourraient différer de la VF de 2014 suivie par le jeu : Vigilant, Doué, Sauvagerie martiale, Acharnement, Elfe sylvestre.

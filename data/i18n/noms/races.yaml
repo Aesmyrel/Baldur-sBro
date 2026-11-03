@@ -1,0 +1,44 @@
+# Noms français des races (lot noms-race). Voir docs/LOTS_ECRITURE.md §3.
+# VF_DND : nom anglais exactement égal à une espèce ou à un lignage du SRD 5.2.1 (srd-5.2.1-fr), même sens ; sinon NON_OFFICIELLE.
+# Le SRD 5.2.1 n'a ni demi-elfe, ni demi-orc (seulement « Orc »), ni githyanki.
+race.dragonborn:
+  fr: Drakéide
+  statut: VF_DND
+  source: srd-5.2.1-fr
+race.drow:
+  fr: Drow
+  statut: VF_DND
+  source: srd-5.2.1-fr
+race.dwarf:
+  fr: Nain
+  statut: VF_DND
+  source: srd-5.2.1-fr
+race.elf:
+  fr: Elfe
+  statut: VF_DND
+  source: srd-5.2.1-fr
+race.githyanki:
+  fr: Githyanki
+  statut: NON_OFFICIELLE
+race.gnome:
+  fr: Gnome
+  statut: VF_DND
+  source: srd-5.2.1-fr
+race.half-elf:
+  fr: Demi-elfe
+  statut: NON_OFFICIELLE
+race.half-orc:
+  fr: Demi-orc
+  statut: NON_OFFICIELLE
+race.halfling:
+  fr: Halfelin
+  statut: VF_DND
+  source: srd-5.2.1-fr
+race.human:
+  fr: Humain
+  statut: VF_DND
+  source: srd-5.2.1-fr
+race.tiefling:
+  fr: Tieffelin
+  statut: VF_DND
+  source: srd-5.2.1-fr

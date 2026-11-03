@@ -218,3 +218,16 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - chaque résultat de 36 recherches, pour les 18 profils ;
   - le plein texte sur la vraie base SQLite.
 - **Un nom pour deux entrées** : « Amélioration de caractéristique » nomme le don et le sort. Le SRD 5.2.1 et le lexique AideDD l'emploient chacun ; la recherche les distingue par leur type.
+
+**D-075 — Seconde vague d'effets et noms des origines.**
+- **Effets rédigés** : 505 capacités et 114 états apportés par les classes, sous-classes et origines. Au total, 1 392 entrées portent désormais des effets rédigés. Aucune n'a été laissée de côté : quand une page se contredit ou ne chiffre pas un point, ce point est omis plutôt que deviné (formes sauvages, dés à haut niveau, portées sans mètres), et la section « bugs » fait foi quand elle décrit le comportement constaté (§4).
+- **Une seule étiquette** : un bloc lié à l'intrigue de l'Acte II est étiqueté `LEGER` et reste vague.
+- **Noms, troisième vague** : 176 noms (races, sous-races, historiques, dons, 80 capacités, 4 états), dont 34 `VF_DND` relevés dans le SRD 5.2.1 FR. Les 2 552 entrées ont désormais un nom français. Les noms anglais qui diffèrent du SRD restent `NON_OFFICIELLE` : « Half-Elf », « Half-Orc », « Gnomish Cunning », « Ability Improvement », « Magic Initiate: … ».
+- **Formes à confirmer en jeu** (consignées dans `docs/TEST_SUR_TELEPHONE.md`) :
+  - « Demi-elfe haut-elfe » ;
+  - « Nain d'or » et « Nain d'écu » ;
+  - « Halfelin pied-léger » et « Halfelin cœur-vaillant » ;
+  - « Hanté », « Sauvageon » ;
+  - les dons sans source (Charge, Endurant, Interprète, Ritualiste, Tireur d'élite magique, Maître des armes lourdes).
+- **Statut `VF_DND` mince** : « Drow » (un lignage elfique dans le SRD) et « Duergar » (cité dans une description d'objet) gardent ce statut, car le terme anglais et son sens sont les mêmes.
+- **Noms anglais retirés des textes** : les effets qui citaient un don par son nom anglais emploient désormais son nom français.

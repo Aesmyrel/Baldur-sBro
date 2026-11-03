@@ -1,0 +1,1531 @@
+# Effets rédigés des capacités, lot effets-feature, lignes 0 à 252. Voir docs/LOTS_ECRITURE.md §4.
+feature.abjure-enemy:
+  effets:
+    - "Action, 1 charge de Conduit de serment : un ennemi à 18 m ou moins fait un jet de sauvegarde de Sagesse (DD de sauvegarde des sorts)."
+    - "Échec : état Abjuration d’ennemi : effrayé pendant 3 tours ; désavantage aux tests de caractéristique et aux jets d’attaque, aucun déplacement possible."
+    - "Réussite : état Abjuration d’ennemi : ralenti pendant 3 tours."
+    - "Fiélons et morts-vivants : désavantage à ce jet de sauvegarde."
+  revision: 437903
+feature.acid-breath:
+  effets:
+    - "Action, une fois par repos court : ligne de 5 m depuis soi ; chaque créature prise dedans fait un jet de sauvegarde de Dextérité et subit 2d6 dégâts d’acide, la moitié en cas de réussite."
+    - "DD : 8 + modificateur de Constitution + bonus de maîtrise."
+    - "Niveau 6 du personnage : 3d6 dégâts d’acide ; niveau 11 : 4d6."
+  notes:
+    - "Ce DD compte comme un DD de sauvegarde des sorts : tout ce qui augmente ce dernier l’augmente aussi."
+  revision: 391128
+feature.acolyte-of-nature:
+  effets:
+    - "Un sort mineur au choix, pris dans la liste des sorts de druide."
+    - "Maîtrise d’une compétence au choix : Dressage, Nature ou Survie."
+  revision: 415768
+feature.action-surge:
+  effets:
+    - "En combat, une fois par repos court, sans coût d’action : une action supplémentaire pour le tour en cours (état Fougue, 1 tour)."
+  notes:
+    - "Met fin aux états Invisible et Caché."
+  revision: 415803
+feature.actor:
+  effets:
+    - "Charisme +1 ; cette augmentation n’est pas plafonnée à 20."
+    - "Tests de Charisme (Tromperie) et de Charisme (Représentation) : bonus de maîtrise doublé, même sans maîtrise de la compétence."
+  notes:
+    - "Ne s’ajoute pas à une expertise déjà acquise dans ces compétences."
+  revision: 439273
+feature.advanced-unarmoured-movement:
+  effets:
+    - "Le terrain difficile ne ralentit pas : aucun état de type Terrain difficile ne s’applique."
+    - "Sans armure ni bouclier : +6 m à la distance de saut."
+  revision: 438401
+feature.alert:
+  effets:
+    - "Initiative : +5."
+    - "Immunité à l’état Surpris."
+  revision: 438858
+feature.arcane-recovery:
+  effets:
+    - "Action, hors combat : rend un emplacement de sort dépensé, contre autant de charges de Restauration magique que son niveau."
+    - "Emplacements accessibles : niveau 1 d’emblée, niveau 2 au niveau 3, niveau 3 au niveau 5, niveau 4 au niveau 7, niveau 5 au niveau 9."
+    - "Charges : la moitié du niveau de magicien, arrondie au supérieur ; rendues par un repos long."
+  notes:
+    - "Aucun emplacement au-delà du niveau 5 ; ne crée pas d’emplacement, ne rend que ceux déjà dépensés."
+  revision: 428903
+feature.arcane-ward:
+  effets:
+    - "Sort d’abjuration lancé : l’intensité de Protection arcanique augmente du niveau du sort, jusqu’à 2 fois le niveau de magicien."
+    - "Dégâts subis : la protection en bloque autant que son intensité, qui baisse ensuite de 1."
+    - "Après un repos long : intensité égale au niveau de magicien."
+  notes:
+    - "La réduction ne dépasse jamais 20 dégâts, même au-delà de 20 points d’intensité."
+    - "Tout sort d’abjuration compte, même lancé depuis un parchemin ou un objet, même s’il échoue ; sauf Bouclier, qui n’apporte rien, et Contresort, qui apporte toujours 3 points, quel que soit son niveau."
+  revision: 432073
+feature.archery:
+  effets:
+    - "Jet d’attaque avec une arme à distance : +2."
+  revision: 432074
+feature.arctic:
+  effets:
+    - "Sorts toujours préparés, hors du nombre de sorts préparés : Immobilisation de personne et Croissance d’épines."
+    - "Niveau 5 : Tempête de neige et Hâte ; niveau 7 : Invocation d’élémentaires mineurs et Tempête de grêle ; niveau 9 : Cône de froid et Contagion."
+  revision: 432075
+feature.armour-of-hexes:
+  effets:
+    - "Réaction, attaque d’une créature qu’on a frappée de Malédiction de la lame maléfique : 50 % de chances d’annuler l’attaque."
+  revision: 432078
+feature.aspect-of-the-beast-bear:
+  effets:
+    - "Capacité de charge doublée."
+    - "Tests de Force : avantage."
+  notes:
+    - "Équivaut à Force du taureau et ne se cumule pas avec."
+  revision: 432083
+feature.aspect-of-the-beast-chimpanzee:
+  effets:
+    - "Résistance aux dégâts de chute."
+    - "Provisions de camp lancées sur une créature : jet de sauvegarde de Dextérité (DD 8 + bonus de maîtrise + modificateur de Dextérité) ; en cas d’échec, état Aveuglé pendant 2 tours."
+  revision: 432093
+feature.aspect-of-the-beast-crocodile:
+  effets:
+    - "Debout dans une surface d’eau, d’alcool, d’huile, de graisse ou de glace : +3 m de vitesse de déplacement."
+    - "Sur la glace : avantage aux jets de sauvegarde pour ne pas glisser."
+  notes:
+    - "L’avantage ne vaut que contre la glissade, pas contre les autres façons d’être mis À terre."
+    - "L’eau électrifiée et les autres surfaces ne comptent pas."
+  revision: 432085
+feature.aspect-of-the-beast-eagle:
+  effets:
+    - "Vision dans le noir jusqu’à 12 m."
+    - "Tests de Sagesse (Perception) : avantage."
+  revision: 432086
+feature.aspect-of-the-beast-elk:
+  effets:
+    - "Donne l’action Aspect de l’élan, sans coût d’action : le personnage et ses alliés dans un rayon de 18 m gagnent 1,5 m de vitesse de déplacement, sans limite de durée."
+  revision: 432087
+feature.aspect-of-the-beast-honey-badger:
+  effets:
+    - "Passif activable. Début de tour sous l’état Empoisonné, Effrayé ou Charmé : 55 % de chances d’entrer en Rage sans dépenser de charge de Rage."
+  notes:
+    - "Seuls ces trois états comptent, pas les autres états de la même famille (Apeuré, Hypnotisé…)."
+    - "Un seul jet par tour, quel que soit le nombre d’états subis."
+  revision: 432088
+feature.aspect-of-the-beast-stallion:
+  effets:
+    - "Pointe : points de vie temporaires égaux à 2 fois le niveau de barbare (état Aspect de l’étalon)."
+  notes:
+    - "Tant qu’il en reste, une nouvelle Pointe ne les renouvelle pas : il faut les avoir tous perdus."
+    - "La Pointe des Bottes de rapidité ne les accorde pas."
+    - "Ils peuvent coexister avec des points de vie temporaires d’une autre source : la plus forte s’applique, les autres rechargent ce qu’elle a perdu."
+  revision: 432089
+feature.aspect-of-the-beast-tiger:
+  effets:
+    - "Jet d’attaque contre une cible sous Saignement ou Empoisonné : le modificateur de Force s’ajoute une seconde fois."
+    - "Maîtrise de la compétence Survie."
+  notes:
+    - "Cible à la fois sous Saignement et Empoisonné : le bonus s’applique deux fois."
+  revision: 433031
+feature.aspect-of-the-beast-wolf:
+  effets:
+    - "Maîtrise de la compétence Discrétion."
+    - "Donne l’action Aspect du loup, sans coût d’action : le personnage et ses alliés dans un rayon de 18 m ajoutent son modificateur de Dextérité à leurs tests de Dextérité (Discrétion), sans limite de durée."
+  revision: 433032
+feature.aspect-of-the-beast-wolverine:
+  effets:
+    - "Action ou effet qui cible une créature sous Saignement ou Empoisonné, attaque ou non, réussie ou non : elle subit l’état Estropié pendant 1 tour."
+  notes:
+    - "Vaut aussi pour le barbare lui-même : s’il saigne ou est empoisonné, une action qu’il dirige sur lui, comme Pointe, l’estropie."
+  revision: 432092
+feature.assassinate-ambush:
+  effets:
+    - "Jet d’attaque réussi contre une créature sous l’état Surpris : coup critique."
+  revision: 432095
+feature.assassinate-initiative:
+  effets:
+    - "En combat : avantage aux jets d’attaque contre les créatures qui n’ont pas encore joué leur tour."
+  revision: 432096
+feature.assassins-alacrity:
+  effets:
+    - "Début du combat, une fois par combat : l’action et l’action bonus sont rendues."
+  notes:
+    - "Une attaque qui ouvre le combat ne coûte donc rien au premier tour ; la cible n’a pas besoin d’être sous l’état Surpris."
+  revision: 432094
+feature.astral-knowledge:
+  effets:
+    - "Action : maîtrise de toutes les compétences d’une caractéristique au choix (Force, Dextérité, Intelligence, Sagesse ou Charisme), jusqu’au prochain repos long."
+  revision: 286183
+feature.athlete-standing-up:
+  effets:
+    - "Se relever de l’état À terre ne coûte que 1,5 m de déplacement."
+    - "Saut : distance augmentée de 50 %."
+  notes:
+    - "Avec moins de 3 m de vitesse en début de tour, se relever coûte davantage qu’à un personnage sans cette aptitude."
+  revision: 434107
+feature.aura-of-courage:
+  effets:
+    - "Aura à activer, sans limite de durée : le personnage et ses alliés dans un rayon de 3 m ne peuvent subir aucun état de type Effrayé."
+    - "L’aura disparaît si le personnage tombe inconscient."
+  revision: 416190
+feature.aura-of-devotion:
+  effets:
+    - "Aura à activer, sans limite de durée : le personnage et ses alliés dans un rayon de 3 m ne peuvent subir aucun état de type Charmé."
+    - "L’aura disparaît si le personnage tombe inconscient."
+  revision: 416191
+feature.aura-of-hate:
+  effets:
+    - "Aura à activer, sans limite de durée : le personnage et les fiélons et morts-vivants dans un rayon de 3 m ajoutent son modificateur de Charisme aux dégâts de leurs attaques avec une arme de corps à corps."
+  notes:
+    - "Profite à tous les fiélons et morts-vivants proches, ennemis compris."
+    - "Chacun inflige ce supplément dans le type de dégâts de sa propre arme."
+  revision: 439913
+feature.aura-of-protection:
+  effets:
+    - "Aura à activer, sans limite de durée : le personnage et ses alliés dans un rayon de 3 m ajoutent son modificateur de Charisme à leurs jets de sauvegarde."
+    - "L’aura disparaît si le personnage tombe inconscient."
+  notes:
+    - "Accordée d’office, elle doit être activée une fois ; elle dure ensuite tant que l’aptitude reste disponible."
+  revision: 416200
+feature.aura-of-warding:
+  effets:
+    - "Aura à activer, sans limite de durée : le personnage et ses alliés dans un rayon de 3 m ne subissent que la moitié des dégâts des sorts."
+  notes:
+    - "Ne se cumule pas avec une autre résistance : des dégâts de froid d’un sort, subis par une créature déjà résistante au froid, ne sont divisés que par 2."
+  revision: 416201
+feature.bardic-inspiration-class-action:
+  effets:
+    - "Action bonus, 1 charge d’Inspiration bardique : un allié à 18 m ou moins, qui n’a pas déjà l’état Inspiration bardique, ajoute 1d6 à son prochain jet d’attaque, test de caractéristique ou jet de sauvegarde."
+    - "L’état dure jusqu’au prochain repos long ; le dé passe à 1d8 au niveau 5 de barde, à 1d10 au niveau 10."
+  notes:
+    - "Avec le dé de 1d10, un jet d’attaque ne consomme pas l’état : il reste disponible."
+    - "Un allié qui a déjà la version à 1d10 peut être visé : l’effet est alors perdu, les deux ne se cumulant pas."
+  revision: 416309
+feature.bear-heart:
+  effets:
+    - "Sous l’état Rage : résistance à tous les dégâts sauf psychiques, et accès à Férocité acharnée."
+  revision: 432110
+feature.beguiling-defences:
+  effets:
+    - "Immunité à tous les états de type Charmé."
+  notes:
+    - "Le charme n’est pas renvoyé à son auteur."
+  revision: 432114
+feature.bend-luck-passive-feature:
+  effets:
+    - "Réaction, 2 points de sorcellerie, jet d’attaque ou jet de sauvegarde d’un allié : +1d4 au résultat."
+    - "Réaction, 2 points de sorcellerie, jet d’attaque ou jet de sauvegarde d’un ennemi : −1d4 au résultat."
+  revision: 439262
+feature.benign-transposition-teleport:
+  effets:
+    - "Action, une fois par repos long : téléportation vers un emplacement libre à 9 m ou moins, ou échange de place avec un allié à 9 m ou moins ; cibles de taille Moyenne ou Petite seulement."
+    - "Sort d’invocation lancé, hors sort mineur : l’utilisation est rendue."
+  notes:
+    - "Pas besoin de dépenser un emplacement : un rituel, une relance gratuite ou un sort d’objet suffit."
+  revision: 428519
+feature.bestial-fury:
+  effets:
+    - "Tous les compagnons du personnage obtiennent une attaque supplémentaire, comme avec Attaque supplémentaire."
+  revision: 432118
+feature.bind-hexed-weapon:
+  effets:
+    - "Action : lie l’arme tenue en main principale ; ses dégâts deviennent magiques, elle ne peut être ni lâchée ni lancée, et le personnage la maîtrise."
+    - "Attaque avec cette arme contre une cible non maudite : 20 % de chances (17 ou plus sur 1d20) de lui appliquer Malédiction de la lame maléfique."
+    - "Une seule arme de pacte à la fois."
+  notes:
+    - "Ce jet ne reçoit aucun modificateur, pas même l’avantage ; une attaque ne prolonge pas une malédiction en cours."
+    - "L’arme reste liée même quand le personnage s’en éloigne."
+  revision: 416456
+feature.blade-of-rime:
+  effets:
+    - "Action, 2 points de ki : attaque de sort à distance contre une cible à 18 m ou moins ; 1d10 dégâts perforants."
+    - "Touchée ou non, l’éclat explose : chaque créature dans un rayon de 2 m fait un jet de sauvegarde de Dextérité (DD de sauvegarde des sorts) ou subit 2d6 dégâts de froid ; aucun en cas de réussite."
+    - "Laisse une surface de glace de 2 m de rayon pendant 2 tours. Utilisable sous l’état Réduit au silence."
+  revision: 416525
+feature.bladesong:
+  effets:
+    - "1 charge de Chant de la lame, sans coût d’action : état Chant de la lame pendant 10 tours ; +2 à la classe d’armure, +3 m de vitesse de déplacement, avantage aux tests de Dextérité (Acrobaties), +2 aux jets de sauvegarde de Constitution."
+    - "Niveau 5 de magicien : +3 à la classe d’armure et aux jets de sauvegarde de Constitution ; niveau 9 : +4."
+    - "Débloque aussi l’action d’apogée du chant et, en combat, l’accumulation de charges de dégâts et de soins."
+    - "Conditions : ni armure intermédiaire ou lourde ni bouclier ; dague, épée longue, rapière, cimeterre, épée courte ou serpe en main principale."
+  notes:
+    - "Seule la main principale est vérifiée ; avec une arme incompatible en main secondaire, l’état Chant de la lame bridé s’affiche mais le Chant reste actif ; les charges ne s’accumulent pas et l’apogée est impossible."
+    - "Activable hors combat, mais les charges ne s’accumulent qu’en combat."
+  revision: 416528
+feature.blessed-healer:
+  effets:
+    - "Sort de soins de niveau 1 ou plus lancé sur une autre créature : le personnage récupère 2 + le niveau du sort en points de vie."
+  notes:
+    - "Vaut aussi pour un sort qui soigne à la fois le lanceur et d’autres créatures ; un sort à plusieurs cibles le soigne une fois par cible soignée."
+  revision: 432120
+feature.blessing-of-the-trickster:
+  effets:
+    - "Action, concentration : une autre créature à 1,5 m ou moins obtient l’avantage aux tests de Dextérité (Discrétion) jusqu’au prochain repos long (état Bénédiction du filou)."
+    - "Une seule cible à la fois."
+  revision: 416544
+feature.blessings-of-knowledge:
+  effets:
+    - "Expertise dans deux compétences au choix parmi Arcanes, Histoire, Nature et Religion : bonus de maîtrise doublé pour les tests qui les utilisent."
+  notes:
+    - "Fonctionne même sans maîtrise préalable de la compétence."
+  revision: 416546
+feature.bolstering-magic-boon:
+  effets:
+    - "Action, une fois par repos long : le personnage ou un allié à portée de corps à corps gagne +1d4 aux jets d’attaque et aux tests de caractéristique pendant 10 tours (état Magie fortifiante : faveur)."
+  revision: 439214
+feature.bolstering-magic-level-1-spell-slot:
+  effets:
+    - "Action, une fois par repos long : le personnage ou un allié à portée de corps à corps récupère un emplacement de sort de niveau 1."
+  notes:
+    - "Une cible qui a des emplacements de niveau 1 ordinaires et de Magie de pacte récupère d’abord un emplacement ordinaire, jamais les deux."
+    - "Ne rend aucun emplacement de niveau 1 à un druide."
+  revision: 439215
+feature.bolstering-magic-level-2-spell-slot:
+  effets:
+    - "Action, une fois par repos long : le personnage ou un allié à portée de corps à corps récupère un emplacement de sort de niveau 2."
+  notes:
+    - "Une cible qui a des emplacements de niveau 2 ordinaires et de Magie de pacte récupère d’abord un emplacement ordinaire, jamais les deux."
+  revision: 439216
+feature.bolstering-magic-level-3-spell-slot:
+  effets:
+    - "Action, une fois par repos long : le personnage ou un allié à portée de corps à corps récupère un emplacement de sort de niveau 3."
+  notes:
+    - "Une cible qui a des emplacements de niveau 3 ordinaires et de Magie de pacte récupère d’abord un emplacement ordinaire, jamais les deux."
+  revision: 439217
+feature.boot-of-the-giants:
+  effets:
+    - "Action bonus : coup de pied contre une cible au contact, qui inflige les dégâts contondants à mains nues et tente de la repousser par un test opposé de Force (Athlétisme), comme une bousculade."
+    - "Chances accrues si le personnage est caché ou invisible."
+    - "Poids maximal de la cible : Force × 24, le double d’une bousculade ordinaire (Force × 12)."
+  notes:
+    - "Tout ce qui augmente les dégâts à mains nues augmente ceux du coup de pied."
+    - "Impossible contre une cible trop lourde ou insensible à la bousculade, comme une créature éthérée : pas même de dégâts."
+  revision: 416674
+feature.brave:
+  effets:
+    - "Jets de sauvegarde contre l’état Effrayé : avantage."
+  revision: 432138
+feature.brutal-critical:
+  effets:
+    - "Coup critique : un dé de dégâts de l’arme supplémentaire, en plus du dé de critique habituel."
+  notes:
+    - "Seulement pour les attaques au corps à corps avec l’arme en main principale ou à mains nues."
+    - "Un seul dé ajouté, même pour une arme à plusieurs dés : 1d6 pour une épée à deux mains (2d6), 1d12 pour une hache à deux mains (1d12)."
+  revision: 432145
+feature.chalice-healing:
+  effets:
+    - "Sous Forme étoilée : calice, après un sort de soins, sans coût d’action, une fois par tour : le personnage ou une créature à 9 m ou moins récupère 1d8 + modificateur de caractéristique d’incantation points de vie."
+    - "Niveau 10, avec Constellations scintillantes : 2d8 + modificateur."
+  notes:
+    - "Une utilisation par sort de soins : Mot de guérison, Mot de guérison de groupe, Soins, Soins de groupe, Toucher du vampire (relances comprises), Prière de guérison, Guérison."
+    - "Sans effet après Baies nourricières, Gardien de vitalité, Aide, un sort d’objet, un sort qui donne des points de vie temporaires ou un soin qui n’est pas un sort, comme Imposition des mains."
+    - "Le modificateur est celui de la dernière classe de lanceur de sorts acquise, pas forcément la Sagesse."
+  revision: 434117
+feature.champion-challenge:
+  effets:
+    - "Action bonus, 1 charge de Conduit de serment : chaque ennemi dans un rayon de 9 m fait un jet de sauvegarde de Sagesse (DD de sauvegarde des sorts) ; en cas d’échec, il subit l’état Défi du champion pendant 10 tours."
+    - "Défi du champion : désavantage aux jets d’attaque contre toute autre cible que le paladin."
+  revision: 416980
+feature.channel-divinity-cloak-of-shadows:
+  effets:
+    - "Action, 1 charge de Conduit divin : état Conduit divin : cape d’ombres pendant 2 tours ; le personnage devient invisible, même en pleine lumière et à la vue de tous."
+    - "L’invisibilité cesse plus tôt si le personnage attaque, lance un sort, accomplit une action ou subit des dégâts."
+  revision: 416984
+feature.charger-shove:
+  effets:
+    - "Action et action bonus : charge en ligne droite jusqu’à 9 m, puis bousculade du premier ennemi rencontré, par un test opposé de Force (Athlétisme) contre la meilleure valeur passive d’Acrobaties ou d’Athlétisme de la cible."
+    - "Distance de poussée selon la Force du personnage et le poids de la cible ; chances accrues s’il est caché ou invisible."
+    - "Ne provoque pas d’attaque d’opportunité ; impossible quand le personnage ne peut pas se déplacer."
+  revision: 431451
+feature.charger-weapon-attack:
+  effets:
+    - "Action et action bonus : charge en ligne droite jusqu’à 9 m, puis attaque avec une arme de corps à corps contre la première créature rencontrée : dégâts de l’arme + 5 dégâts du type de l’arme."
+    - "Ne provoque pas d’attaque d’opportunité."
+  notes:
+    - "La charge ne s’arrête pas sur la cible et peut la traverser, mais ne blesse qu’une créature ; un allié ou un objet sur la trajectoire peut être touché à sa place."
+    - "Compte comme une seule attaque d’arme et profite d’Attaque supplémentaire."
+    - "Règles de hauteur : +2 au jet d’attaque en chargeant depuis 2,5 m au-dessus de la cible, −2 depuis 2,5 m en dessous."
+  revision: 438928
+feature.charm-animals-and-plants:
+  effets:
+    - "Action, 1 charge de Conduit divin : chaque bête et chaque plante dans un rayon de 9 m fait un jet de sauvegarde de Sagesse (DD de sauvegarde des sorts) ; en cas d’échec, elle subit l’état Charmé (charme des animaux et des plantes) pendant 10 tours."
+    - "L’état prend fin plus tôt si le personnage ou un allié blesse la cible."
+  notes:
+    - "Une créature qui réussit son jet de sauvegarde tient l’action pour hostile."
+    - "Certaines plantes sont insensibles au charme."
+  revision: 366939
+feature.cheeky-tipple:
+  effets:
+    - "Immunité aux effets négatifs de l’ivresse : tout état d’ivresse est remplacé par Ivre (maître ivre) pendant 5 tours."
+    - "Une fois par repos long, en buvant de l’alcool : récupère la moitié de ses points de ki, arrondie à l’inférieur."
+  notes:
+    - "La récupération est consommée même si aucun point de ki n’avait été dépensé."
+  revision: 432167
+feature.chill-of-the-mountain:
+  effets:
+    - "Action, 1 point de ki : attaque de sort à distance ; 1d10 dégâts de froid, et la cible perd 3 m de vitesse de déplacement pendant 1 tour (état Rayon de givre)."
+    - "Niveau 9, avec Incantation élémentaire améliorée : 2d10 dégâts de froid."
+  revision: 417036
+feature.chilling-counter:
+  effets:
+    - "Créature qui rate une attaque contre le porteur : elle subit l’état Transi pendant 2 tours, sans jet de sauvegarde."
+  revision: 432169
+feature.clench-of-the-north-wind:
+  effets:
+    - "Action, 3 points de ki, concentration : un humanoïde ennemi à distance fait un jet de sauvegarde de Sagesse (DD de sauvegarde des sorts) ; en cas d’échec, il subit l’état Immobilisation de personne pendant 10 tours."
+    - "Immobilisation de personne : ni déplacement, ni action, ni réaction ; une attaque qui le touche depuis 3 m ou moins est un coup critique."
+    - "Niveau 9 : jusqu’à 2 humanoïdes."
+  notes:
+    - "Au niveau 9, la même cible peut être choisie deux fois : elle fait deux jets initiaux, mais un seul jet réussi suffit ensuite à s’en libérer."
+    - "Inutilisable sous l’état Réduit au silence, contrairement aux autres actions élémentaires du moine."
+  revision: 374434
+feature.cloak-of-shadows:
+  effets:
+    - "Action, en zone à visibilité réduite ou nulle : état Cape d’ombres pendant 10 tours ; le personnage devient invisible."
+    - "L’invisibilité cesse plus tôt si le personnage attaque, lance un sort, accomplit une action, subit des dégâts ou entre dans une zone dégagée."
+  notes:
+    - "L’effet se perd aussi en passant d’une visibilité réduite à une visibilité nulle, ou l’inverse."
+  revision: 417142
+feature.cloud-of-jellyfish:
+  effets:
+    - "Une nuée de méduses combat aux côtés du personnage."
+    - "Une fois par round, après une attaque réussie contre un ennemi, au choix : 1d6 dégâts de foudre supplémentaires ; ou l’ennemi peut subir l’état Électrocuté ; ou le personnage se téléporte jusqu’à 5 m."
+    - "Niveau 11, avec Essaim puissant : devient Nuage de méduses puissant (1d8 dégâts de foudre, piqûre qui désarme aussi, téléportation avec +2 à la classe d’armure pendant 1 tour)."
+  notes:
+    - "Les trois options partagent le même délai : une seule par round."
+  revision: 432179
+feature.coast:
+  effets:
+    - "Sorts toujours préparés, hors du nombre de sorts préparés : Image miroir et Foulée brumeuse."
+    - "Niveau 5 : Tempête de neige et Appel de la foudre ; niveau 7 : Liberté de mouvement et Confusion ; niveau 9 : Invocation d’élémentaire et Restauration supérieure."
+  revision: 432180
+feature.colossus-slayer:
+  effets:
+    - "Une fois par tour, attaque avec une arme contre une cible qui n’a plus tous ses points de vie : 1d8 dégâts supplémentaires du type de l’arme."
+  revision: 432184
+feature.combat-inspiration:
+  effets:
+    - "Action bonus, 1 charge d’Inspiration bardique : un allié à 18 m ou moins ajoute 1d6 à son prochain jet d’attaque, test de caractéristique, jet de sauvegarde, jet de dégâts d’arme ou à sa classe d’armure (état Inspiration martiale)."
+    - "L’état dure jusqu’au prochain repos long ; le dé passe à 1d8 au niveau 5 de barde, à 1d10 au niveau 10."
+  revision: 417198
+feature.combat-wild-shape:
+  effets:
+    - "Action bonus, 1 charge de Forme sauvage : prend la forme d’une bête, comme avec Forme sauvage ; 2 transformations par repos court."
+    - "Formes exclusives : Forme sauvage : ours au niveau 2, Forme sauvage : corbeau sanguinaire au niveau 4, Forme sauvage : tigre à dents de sabre au niveau 8, les quatre myrmidons (air, terre, feu, eau) au niveau 10."
+  notes:
+    - "Une forme de myrmidon coûte 2 charges de Forme sauvage."
+    - "Beaucoup d’objets, de dons et d’aptitudes de classe ne fonctionnent pas sous Forme sauvage."
+  revision: 439089
+feature.companions-bond:
+  effets:
+    - "Compagnons du rôdeur : bonus à la classe d’armure et aux dégâts égal au bonus de maîtrise du compagnon."
+    - "Ils gagnent aussi des points de vie, des aptitudes et une nouvelle apparence."
+  notes:
+    - "C’est le bonus de maîtrise du compagnon qui compte, pas celui du rôdeur : il ne passe à +4 qu’avec la dernière amélioration du compagnon, au niveau 11."
+    - "Un compagnon déjà présent au passage du niveau 5 est amélioré aussitôt, sans nouvelle invocation."
+  revision: 432186
+feature.control-undead:
+  effets:
+    - "Action, 1 charge de Conduit de serment : un mort-vivant à 6 m ou moins, de niveau inférieur au paladin, fait un jet de sauvegarde de Sagesse (DD de sauvegarde des sorts) ; en cas d’échec, il subit l’état Contrôlé jusqu’au prochain repos long."
+    - "Le mort-vivant devient un allié qui attaque l’ennemi le plus proche du paladin, ou le suit s’il n’y en a pas ; il ne se dirige pas directement."
+  notes:
+    - "Le contrôle est perdu si le paladin tombe à 0 point de vie, et ne revient pas quand il se relève."
+  revision: 438263
+feature.controlled-chaos:
+  effets:
+    - "Réaction, quand un ennemi lance un sort : déclenche chez lui une manifestation de magie sauvage, tirée d’une liste surtout néfaste."
+  notes:
+    - "Aucune limite de portée."
+  revision: 439504
+feature.cosmic-omen:
+  effets:
+    - "Après chaque repos long, à 50 % de chances chacun : état Augure cosmique faste ou Augure cosmique néfaste, jusqu’au repos long suivant."
+    - "Faste : réaction pour ajouter 1d6 à un jet d’attaque ou de sauvegarde, et sort mineur qui donne +1d6 aux tests de caractéristique d’un allié au contact (concentration, 10 tours)."
+    - "Néfaste : réaction pour retrancher 1d6 d’un jet d’attaque ou de sauvegarde."
+  revision: 432193
+feature.countercharm:
+  effets:
+    - "Action : pendant 3 tours, le personnage et ses alliés dans un rayon de 9 m ont l’avantage aux jets de sauvegarde contre les états Charmé et Effrayé (état Aura de contre-charme)."
+  notes:
+    - "La zone est portée par une entité insensible aux dégâts et aux états, que les ennemis prennent parfois pour cible."
+  revision: 417335
+feature.create-sorcery-points:
+  effets:
+    - "Action bonus : un emplacement de sort dépensé se change en points de sorcellerie, autant que son niveau (emplacements de niveau 1 à 6)."
+  revision: 428901
+feature.create-spell-slot:
+  effets:
+    - "Action bonus : des points de sorcellerie dépensés se changent en un emplacement de sort."
+    - "Coût : 2 points pour un emplacement de niveau 1, 3 pour le niveau 2, 5 pour le niveau 3, 6 pour le niveau 4, 7 pour le niveau 5."
+  notes:
+    - "Aucun emplacement au-delà du niveau 5."
+  revision: 428902
+feature.crimson-weapon:
+  effets:
+    - "Attaque avec l’arme tenue en main secondaire : le porteur ajoute son modificateur de caractéristique aux dégâts."
+  notes:
+    - "Vaut aussi pour une arbalète de poing en main secondaire."
+    - "Ne se cumule pas avec une autre source de Combat à deux armes."
+  revision: 432198
+feature.crossbow-expert-point-blank:
+  effets:
+    - "Attaque à l’arbalète contre une cible au contact : pas de désavantage au jet d’attaque."
+  notes:
+    - "Ne sert qu’avec un seul ennemi au contact, celui qu’on vise : dès que deux ennemis ou plus sont au contact, le désavantage revient."
+  revision: 434106
+feature.crossbow-expert-wounding:
+  effets:
+    - "Tir perforant : l’état Plaies béantes infligé dure deux fois plus longtemps, soit 4 tours."
+  revision: 438303
+feature.cunning-action-dash:
+  effets:
+    - "Action bonus : vitesse de déplacement doublée pour le tour en cours (état Pointe, 1 tour)."
+  notes:
+    - "Mêmes règles de cumul que l’action Pointe."
+  revision: 417432
+feature.cunning-action-disengage:
+  effets:
+    - "Action bonus : pendant le tour en cours, se déplacer ne provoque pas d’attaque d’opportunité (état Désengagement, 1 tour)."
+  revision: 417433
+feature.cunning-action-hide:
+  effets:
+    - "Action bonus : le personnage tente de se cacher (état Caché), sur des tests de Dextérité (Discrétion)."
+    - "Caché : invisible pour les ennemis tant qu’il n’entre pas dans leur champ de vision ; avantage aux jets d’attaque."
+    - "Attaquer ou lancer un sort fait sortir de l’état Caché."
+  revision: 365263
+feature.curving-shot:
+  effets:
+    - "Une fois par tour, attaque à distance ratée : action bonus pour relancer la même attaque contre l’ennemi le plus proche de la première cible."
+    - "Attaques admises : attaque à distance ordinaire, tirs arcaniques, la plupart des flèches magiques, Tir au jarret, Tir perforant, Tir mobile et quelques attaques à distance de classe."
+  notes:
+    - "La nouvelle cible ne se choisit pas ; un obstacle entre les deux cibles peut arrêter le projectile."
+    - "Exclus : attaques en main secondaire, actions spéciales des autres armes, manœuvres de combat."
+    - "Sans effet quand tous les ennemis proches sont neutralisés."
+  revision: 432219
+feature.cutting-words:
+  effets:
+    - "Réaction, 1 charge d’Inspiration bardique : une créature subit −1d6 à son jet d’attaque, test de caractéristique ou jet de sauvegarde."
+    - "Niveau 5 de barde : −1d8 ; niveau 10 : −1d10."
+  notes:
+    - "Ne s’applique pas aux jets de dégâts."
+    - "Sauf quand l’auteur de l’attaque est lui-même barde, la réaction n’est proposée que si 6 points au plus suffisent à faire échouer le jet, même avec 1d8 ou 1d10."
+    - "Utilisable sous l’état Réduit au silence."
+  revision: 432220
+feature.dampen-elements:
+  effets:
+    - "Réaction, quand le personnage ou un allié est touché par des dégâts d’acide, de froid, de feu, de foudre ou de tonnerre : résistance à ce type de dégâts, qui divise par 2 les dégâts de l’attaque."
+  notes:
+    - "Sans effet pour une cible déjà résistante à ce type : les résistances ne se cumulent pas."
+  revision: 425373
+feature.danger-sense:
+  effets:
+    - "Jets de sauvegarde de Dextérité, contre les pièges, les sorts, les surfaces ou autre : avantage."
+    - "Perdu sous l’état Aveuglé ou quand le personnage est assommé."
+  notes:
+    - "Les autres états d’aveuglement ou de neutralisation ne l’empêchent pas."
+  revision: 438159
+feature.dark-ones-blessing:
+  effets:
+    - "Créature hostile réduite à 0 point de vie : points de vie temporaires égaux au modificateur de Charisme + niveau d’occultiste (état Bénédiction du ténébreux)."
+  notes:
+    - "Une hausse du niveau ou du Charisme ne compte qu’à la créature suivante."
+    - "Remplacés par les points de vie temporaires de toute autre source, même plus faibles."
+  revision: 432231
+feature.dark-ones-own-luck:
+  effets:
+    - "Passif activable, une fois par repos court : +1d10 au prochain test de caractéristique."
+  revision: 432232
+feature.dash:
+  effets:
+    - "Action : vitesse de déplacement doublée pour le tour en cours (état Pointe, 1 tour)."
+  notes:
+    - "Plusieurs pointes dans un même tour s’additionnent, chacune ajoutant la vitesse de base : ×3 pour deux, ×4 pour trois ; une quatrième n’apporte plus rien."
+  revision: 417553
+feature.dazzling-breath:
+  effets:
+    - "Sous Forme étoilée : dragon, action bonus, une fois par tour : cône de 5 m ; chaque créature prise dedans fait un jet de sauvegarde de Dextérité et subit 2d6 + modificateur de caractéristique d’incantation dégâts radiants, la moitié en cas de réussite."
+    - "DD : 8 + modificateur de Constitution + bonus de maîtrise."
+    - "Niveau 5 de druide : 3d6 + modificateur ; niveau 10 : 4d6 + modificateur."
+  notes:
+    - "Ce DD compte comme un DD de sauvegarde des sorts : tout ce qui augmente ce dernier l’augmente aussi."
+    - "Le modificateur de dégâts est celui de la dernière classe de lanceur de sorts acquise, pas forcément la Sagesse."
+  revision: 417567
+feature.deepened-pact:
+  effets:
+    - "Pacte de la lame : Attaque supplémentaire avec l’arme de pacte."
+    - "Pacte de la chaîne : le familier d’Appel de familier gagne lui aussi une attaque supplémentaire."
+    - "Pacte du grimoire : Animation des morts, Hâte et Appel de la foudre, chacun une fois par repos long."
+  notes:
+    - "Avec le Pacte de la lame, l’arme liée par Lier une arme maléfique compte aussi."
+    - "Hors du mode Honneur, cette attaque supplémentaire se cumule avec celle d’une autre classe ; en mode Honneur, non."
+  revision: 439161
+feature.defence:
+  effets:
+    - "Classe d’armure : +1 tant qu’une armure légère, intermédiaire ou lourde est portée."
+  revision: 432254
+feature.defensive-duellist:
+  effets:
+    - "Réaction, attaque au corps à corps reçue avec une arme de finesse maîtrisée en main principale : le bonus de maîtrise est retranché du jet d’attaque de l’adversaire."
+  notes:
+    - "Proposée seulement quand cela change un coup réussi en échec ; la classe d’armure elle-même ne change pas."
+  revision: 438968
+feature.deflect-missiles:
+  effets:
+    - "Réaction, attaque avec une arme à distance subie : dégâts réduits de 1d10 + modificateur de Dextérité + niveau de moine."
+    - "Puis 1 point de ki : le projectile est renvoyé à l’attaquant, avec un jet d’attaque à mains nues et les dégâts contondants d’une attaque à mains nues."
+  notes:
+    - "Seuls les dégâts sont réduits : un état infligé par l’attaque s’applique quand même."
+    - "Le renvoi est possible même si les dégâts ne tombent pas à 0."
+    - "Contre une attaque à plusieurs projectiles, seul le dernier peut être paré, et aucun ne peut être renvoyé."
+  revision: 432259
+feature.desert:
+  effets:
+    - "Sorts toujours préparés, hors du nombre de sorts préparés : Flou et Silence."
+    - "Niveau 5 : Protection contre une énergie et Motif hypnotique ; niveau 7 : Flétrissement et Mur de feu ; niveau 9 : Mur de pierre et Fléau d’insectes."
+  revision: 432262
+feature.destroy-undead:
+  effets:
+    - "Mort-vivant qui subit l’état Renvoyé par Renvoi des morts-vivants : il subit aussi 4d6 dégâts radiants."
+  revision: 432263
+feature.destructive-wrath:
+  effets:
+    - "Réaction, 1 charge de Conduit divin, au lancement d’un sort ou d’une action qui inflige des dégâts de foudre ou de tonnerre : ces dégâts sont maximaux."
+  notes:
+    - "Proposée avant le jet d’attaque : elle peut être perdue sur une attaque ratée."
+    - "Seules certaines actions la déclenchent, dont Appel de la foudre, Éclair, Chaîne d’éclairs, Fracassement, Poigne électrique, Vague tonnante et Châtiment tonitruant ; pas Lame retentissante, Vague destructrice ni une attaque d’arme ordinaire."
+    - "Quelques sorts sans dégâts la déclenchent aussi et la gaspillent."
+  revision: 432264
+feature.dirty-trick-flick-o-the-wrist:
+  effets:
+    - "Action bonus, arme de finesse en main principale : attaque d’arme au corps à corps contre une créature armée ; dégâts de l’arme."
+    - "Si elle touche : jet de sauvegarde de Dextérité de la cible (DD de sauvegarde des sorts, calculé avec le Charisme) ; en cas d’échec, elle lâche son arme (état Arme lâchée !)."
+    - "Si elle touche, même quand la cible réussit son jet : état Avantage déloyal pendant 2 tours, soit l’avantage à la prochaine attaque."
+  notes:
+    - "Ne déclenche pas les effets propres à l’arme quand elle touche."
+  revision: 417730
+feature.dirty-trick-sand-toss:
+  effets:
+    - "Action bonus : attaque d’arme au corps à corps ; 1d6 dégâts contondants."
+    - "Si elle touche : jet de sauvegarde de Constitution de la cible (DD de sauvegarde des sorts, calculé avec la Dextérité) ; en cas d’échec, état Aveuglé pendant 2 tours."
+    - "Donne aussi l’état Avantage déloyal pendant 2 tours, soit l’avantage à la prochaine attaque."
+  notes:
+    - "Pas besoin d’arme de finesse : le jet d’attaque utilise la caractéristique de l’arme en main principale ; avec une arme à distance en main, la Force."
+    - "Ce DD compte comme un DD de sauvegarde des sorts : tout ce qui augmente ce dernier l’augmente aussi."
+    - "Déclenche de nombreux effets passifs au contact, mais pas les effets propres à l’arme."
+  revision: 417731
+feature.disarming-attack-melee:
+  effets:
+    - "Action : attaque avec l’arme de corps à corps contre une créature armée ; si elle touche, dégâts de l’arme + 1 dé de supériorité (1d8, 1d10 avec Supériorité martiale améliorée)."
+    - "Puis jet de sauvegarde de Force de la cible (DD d’action d’arme) ; en cas d’échec, elle lâche son arme (état Arme lâchée !)."
+  notes:
+    - "Une attaque ratée ne dépense pas de dé de supériorité."
+  revision: 417735
+feature.disarming-attack-ranged:
+  effets:
+    - "Action : attaque avec l’arme à distance contre une créature armée ; si elle touche, dégâts de l’arme + 1 dé de supériorité (1d8, 1d10 avec Supériorité martiale améliorée)."
+    - "Puis jet de sauvegarde de Force de la cible (DD d’action d’arme) ; en cas d’échec, elle lâche son arme (état Arme lâchée !)."
+  notes:
+    - "Une attaque ratée ne dépense pas de dé de supériorité."
+  revision: 417736
+feature.disciple-of-life:
+  effets:
+    - "Sort de soins lancé : la cible récupère en plus 2 + le niveau du sort en points de vie."
+  revision: 432268
+feature.distracting-strike-melee:
+  effets:
+    - "Action : attaque avec l’arme de corps à corps ; si elle touche, dégâts de l’arme + 1 dé de supériorité (1d8, 1d10 avec Supériorité martiale améliorée)."
+    - "La cible subit l’état Distrait pendant 1 tour : les alliés du personnage ont l’avantage à leur prochain jet d’attaque contre elle."
+  notes:
+    - "Une attaque ratée ne dépense pas de dé de supériorité."
+    - "Une attaque suivante à plusieurs jets simultanés, comme les rayons d’un même sort, a l’avantage sur chacun."
+  revision: 417795
+feature.distracting-strike-ranged:
+  effets:
+    - "Action : attaque avec l’arme à distance ; si elle touche, dégâts de l’arme + 1 dé de supériorité (1d8, 1d10 avec Supériorité martiale améliorée)."
+    - "La cible subit l’état Distrait pendant 1 tour : les alliés du personnage ont l’avantage à leur prochain jet d’attaque contre elle."
+  notes:
+    - "Une attaque ratée ne dépense pas de dé de supériorité."
+    - "Une attaque suivante à plusieurs jets simultanés, comme les rayons d’un même sort, a l’avantage sur chacun."
+  revision: 417796
+feature.divine-allegiance:
+  effets:
+    - "Réaction, quand un allié à 1,5 m ou moins subit des dégâts : il récupère 2 × niveau de paladin points de vie, et le paladin subit 2 × niveau de paladin dégâts radiants."
+  notes:
+    - "Ces dégâts radiants peuvent être réduits par une résistance ou une réduction des dégâts."
+    - "Certains bonus de dégâts du paladin, comme les Charges de foudre, s’ajoutent aux dégâts qu’il s’inflige."
+  revision: 432273
+feature.divine-health:
+  effets:
+    - "Immunité aux maladies."
+  revision: 432274
+feature.divine-intervention:
+  effets:
+    - "Une seule fois par personnage dans toute la partie : l’une des quatre interventions ci-dessous, au choix, chacune pour une action."
+    - "Arme légendaire : crée la Masse d’armes du fidèle, arme légendaire, dans l’inventaire et l’équipe aussitôt."
+    - "Ravitaillement : fait apparaître un coffre de provisions de camp, de potions de soins supérieures ou suprêmes et de six ou sept élixirs."
+    - "Résurrection : dans un rayon de 18 m, les compagnons morts reviennent à la vie avec la moitié de leurs points de vie, et tous les alliés sont rétablis comme après un repos long."
+    - "Cataclysme radiant : chaque ennemi dans un rayon de 15 m fait un jet de sauvegarde de Sagesse et subit 8d10 dégâts radiants, la moitié en cas de réussite."
+  notes:
+    - "Changer de classe ne permet pas de l’utiliser une seconde fois avec le même personnage."
+    - "La résurrection rend des points de vie calculés sur le maximum du clerc, et ne recharge pas toutes les ressources d’un repos long (Inflexible ou Présage, par exemple)."
+  revision: 382846
+feature.divine-sense:
+  effets:
+    - "Action bonus, une fois par repos court : avantage aux jets d’attaque contre les célestes, les fiélons et les morts-vivants pendant 2 tours (état Perception divine)."
+  revision: 417814
+feature.divine-smite:
+  effets:
+    - "Action : attaque avec une arme de corps à corps ; si elle touche, dépense 1 emplacement de sort de niveau 1 : dégâts de l’arme + 2d8 dégâts radiants, + 1d8 dégâts radiants contre un fiélon ou un mort-vivant."
+    - "Emplacement de niveau supérieur : + 1d8 dégâts radiants par niveau au-delà du 1er, jusqu’à 5d8 avec un emplacement de niveau 4 ; au-delà, rien de plus."
+  notes:
+    - "L’emplacement n’est dépensé qu’en cas de coup réussi."
+  revision: 426307
+feature.divine-strike-elemental-fury:
+  effets:
+    - "Action, une fois par tour : attaque avec l’arme, au corps à corps ou à distance ; dégâts de l’arme + 1d8 dégâts de froid, de feu ou de foudre, au choix."
+    - "Se déclenche aussi après une attaque d’arme réussie, sans dépenser de réaction."
+  revision: 417823
+feature.divine-strike-necrotic:
+  effets:
+    - "Action, une fois par tour : attaque avec l’arme, au corps à corps ou à distance ; dégâts de l’arme + 1d8 dégâts nécrotiques."
+    - "Se déclenche aussi après une attaque d’arme réussie, sans dépenser de réaction."
+  revision: 425382
+feature.divine-strike-poison:
+  effets:
+    - "Action, une fois par tour : attaque avec l’arme, au corps à corps ou à distance ; dégâts de l’arme + 1d8 dégâts de poison."
+    - "Se déclenche aussi après une attaque d’arme réussie, sans dépenser de réaction."
+  revision: 425384
+feature.divine-strike-radiant:
+  effets:
+    - "Action, une fois par tour : attaque avec l’arme, au corps à corps ou à distance ; dégâts de l’arme + 1d8 dégâts radiants."
+    - "Se déclenche aussi après une attaque d’arme réussie, sans dépenser de réaction."
+  revision: 425385
+feature.divine-strike-thunder:
+  effets:
+    - "Action, une fois par tour : attaque avec l’arme, au corps à corps ou à distance ; dégâts de l’arme + 1d8 dégâts de tonnerre."
+    - "Se déclenche aussi après une attaque d’arme réussie, sans dépenser de réaction."
+  revision: 425386
+feature.divine-strike-weapon:
+  effets:
+    - "Action, une fois par tour : attaque avec l’arme, au corps à corps ou à distance ; dégâts de l’arme + 1d8 dégâts du type de l’arme."
+    - "Se déclenche aussi après une attaque d’arme réussie, sans dépenser de réaction."
+  notes:
+    - "Le type des dégâts supplémentaires est toujours celui de l’arme en main principale, même quand l’attaque part de la main secondaire."
+  revision: 439186
+feature.diving-strike:
+  effets:
+    - "Sous Rage : cœur d’aigle, action : saut sur une créature située au moins 1,5 m plus bas, avec une attaque d’arme au corps à corps ; si elle touche, dégâts de l’arme et état À terre pendant 2 tours."
+    - "Le barbare ne subit pas de dégâts de chute."
+  notes:
+    - "Tout ce qui allonge les sauts allonge sa portée ; compte comme un saut pour les aptitudes qui en dépendent."
+    - "Règles de hauteur : +2 au jet d’attaque à partir de 2,5 m au-dessus de la cible."
+  revision: 432442
+feature.draconic-ancestry-acid:
+  effets:
+    - "Résistance aux dégâts d’acide."
+  revision: 432278
+feature.draconic-ancestry-black-acid:
+  effets:
+    - "Accorde le sort Graisse."
+    - "Niveau 6 : les sorts qui infligent des dégâts d’acide en infligent en plus autant que le modificateur de Charisme (Affinité élémentaire : dégâts), et Affinité élémentaire : résistance permet de devenir résistant à l’acide."
+  revision: 432283
+feature.draconic-ancestry-blue-lightning:
+  effets:
+    - "Accorde le sort Trait ensorcelé."
+    - "Niveau 6 : les sorts qui infligent des dégâts de foudre en infligent en plus autant que le modificateur de Charisme (Affinité élémentaire : dégâts), et Affinité élémentaire : résistance permet de devenir résistant à la foudre."
+  revision: 432284
+feature.draconic-ancestry-brass-fire:
+  effets:
+    - "Accorde le sort Sommeil."
+    - "Niveau 6 : les sorts qui infligent des dégâts de feu en infligent en plus autant que le modificateur de Charisme (Affinité élémentaire : dégâts), et Affinité élémentaire : résistance permet de devenir résistant au feu."
+  revision: 432285
+feature.draconic-ancestry-bronze-lightning:
+  effets:
+    - "Accorde le sort Nappe de brouillard."
+    - "Niveau 6 : les sorts qui infligent des dégâts de foudre en infligent en plus autant que le modificateur de Charisme (Affinité élémentaire : dégâts), et Affinité élémentaire : résistance permet de devenir résistant à la foudre."
+  revision: 432286
+feature.draconic-ancestry-cold:
+  effets:
+    - "Résistance aux dégâts de froid."
+  revision: 432279
+feature.draconic-ancestry-copper-acid:
+  effets:
+    - "Accorde le sort Fou rire de Tasha."
+    - "Niveau 6 : les sorts qui infligent des dégâts d’acide en infligent en plus autant que le modificateur de Charisme (Affinité élémentaire : dégâts), et Affinité élémentaire : résistance permet de devenir résistant à l’acide."
+  revision: 432287
+feature.draconic-ancestry-fire:
+  effets:
+    - "Résistance aux dégâts de feu."
+  revision: 432280
+feature.draconic-ancestry-gold-fire:
+  effets:
+    - "Accorde le sort Déguisement."
+    - "Niveau 6 : les sorts qui infligent des dégâts de feu en infligent en plus autant que le modificateur de Charisme (Affinité élémentaire : dégâts), et Affinité élémentaire : résistance permet de devenir résistant au feu."
+  revision: 432288
+feature.draconic-ancestry-green-poison:
+  effets:
+    - "Accorde le sort Rayon empoisonné."
+    - "Niveau 6 : les sorts qui infligent des dégâts de poison en infligent en plus autant que le modificateur de Charisme (Affinité élémentaire : dégâts), et Affinité élémentaire : résistance permet de devenir résistant au poison."
+  revision: 432289
+feature.draconic-ancestry-lightning:
+  effets:
+    - "Résistance aux dégâts de foudre."
+  revision: 432281
+feature.draconic-ancestry-poison:
+  effets:
+    - "Résistance aux dégâts de poison."
+  revision: 432282
+feature.draconic-ancestry-red-fire:
+  effets:
+    - "Accorde le sort Mains brûlantes."
+    - "Niveau 6 : les sorts qui infligent des dégâts de feu en infligent en plus autant que le modificateur de Charisme (Affinité élémentaire : dégâts), et Affinité élémentaire : résistance permet de devenir résistant au feu."
+  revision: 432290
+feature.draconic-ancestry-silver-cold:
+  effets:
+    - "Accorde le sort Feuille morte."
+    - "Niveau 6 : les sorts qui infligent des dégâts de froid en infligent en plus autant que le modificateur de Charisme (Affinité élémentaire : dégâts), et Affinité élémentaire : résistance permet de devenir résistant au froid."
+  revision: 432291
+feature.draconic-ancestry-white-cold:
+  effets:
+    - "Accorde le sort Armure d’Agathys."
+    - "Niveau 6 : les sorts qui infligent des dégâts de froid en infligent en plus autant que le modificateur de Charisme (Affinité élémentaire : dégâts), et Affinité élémentaire : résistance permet de devenir résistant au froid."
+  revision: 432292
+feature.draconic-resilience:
+  effets:
+    - "Sans armure : classe d’armure de base 13 + modificateur de Dextérité, au lieu de 10 + modificateur de Dextérité."
+  notes:
+    - "Un bouclier ne l’empêche pas ; un casque, des gants ou des bottes classés comme armure légère, intermédiaire ou lourde l’empêchent."
+    - "Ne se cumule pas avec Armure de mage, Défense sans armure ou Peau d’écorce : seule la meilleure classe d’armure de base compte ; les autres bonus de classe d’armure s’ajoutent normalement."
+    - "Fonctionne sous Forme sauvage si aucune armure n’était portée avant la transformation, pour une forme dont la classe d’armure de base est inférieure à 13."
+  revision: 432293
+feature.dread-ambusher:
+  effets:
+    - "Initiative : +3."
+    - "Premier tour de chaque combat : +3 m de vitesse de déplacement et une attaque d’arme supplémentaire, qui inflige 1d8 dégâts supplémentaires du type de l’arme (état Embusqué redoutable, 1 tour)."
+  notes:
+    - "Le déplacement supplémentaire disparaît dès que l’attaque supplémentaire est faite."
+  revision: 432295
+feature.dread-ambusher-hide:
+  effets:
+    - "Action bonus : le personnage tente de se cacher (état Caché), sur des tests de Dextérité (Discrétion)."
+    - "Caché : invisible pour les ennemis tant qu’il n’entre pas dans leur champ de vision ; avantage aux jets d’attaque."
+    - "Attaquer ou lancer un sort fait sortir de l’état Caché."
+  revision: 365266
+feature.dread-ambusher-melee:
+  effets:
+    - "Premier tour du combat, sans coût d’action, une fois par combat : attaque avec l’arme de corps à corps ; dégâts de l’arme + 1d8 dégâts du type de l’arme."
+  notes:
+    - "Met fin à l’état Embusqué redoutable, et donc aux 3 m de déplacement supplémentaires."
+  revision: 417933
+feature.dread-ambusher-ranged:
+  effets:
+    - "Premier tour du combat, sans coût d’action, une fois par combat : attaque avec l’arme à distance ; dégâts de l’arme + 1d8 dégâts du type de l’arme."
+  notes:
+    - "Met fin à l’état Embusqué redoutable, et donc aux 3 m de déplacement supplémentaires."
+  revision: 417934
+feature.dreadful-aspect:
+  effets:
+    - "Action, 1 charge de Conduit de serment : chaque ennemi dans un rayon de 9 m fait un jet de sauvegarde de Sagesse (DD de sauvegarde des sorts) ; en cas d’échec, il subit l’état Effrayé pendant 2 tours."
+  revision: 417937
+feature.drunkards-luck:
+  effets:
+    - "Une fois par tour, 2 points de ki : annule le désavantage d’un test de caractéristique, d’un jet d’attaque ou d’un jet de sauvegarde que le moine vient de lancer."
+  revision: 432305
+feature.drunken-performance:
+  effets:
+    - "Maîtrise de la compétence Représentation."
+  notes:
+    - "Vaut avec ou sans l’état Ivre (maître ivre) ; ne donne pas la maîtrise des instruments de musique."
+  revision: 432306
+feature.drunken-technique:
+  effets:
+    - "Action bonus, 1 point de ki : deux attaques à mains nues au corps à corps ; chacune inflige les dégâts contondants à mains nues."
+    - "Le moine obtient l’état Technique de l’ivrogne pendant 1 tour : +3 m de déplacement et les effets de Désengagement."
+  notes:
+    - "Chaque coup profite de tout ce qui améliore les attaques à mains nues."
+  revision: 417994
+feature.dual-wielder:
+  effets:
+    - "Combat à deux armes possible avec toute arme qui n’est pas à deux mains, même si elle n’est pas légère."
+  notes:
+    - "Ne donne pas le style Combat à deux armes : sans lui, le modificateur de caractéristique ne s’ajoute toujours pas aux dégâts de la main secondaire."
+  revision: 438929
+feature.dual-wielder-bonus-armour-class:
+  effets:
+    - "Une arme de corps à corps dans chaque main : +1 à la classe d’armure."
+  revision: 438866
+feature.duelling:
+  effets:
+    - "Arme de corps à corps qui n’est pas à deux mains, tenue d’une main, sans arme dans l’autre : +2 dégâts avec cette arme."
+    - "Un bouclier dans l’autre main n’empêche pas le bonus."
+  revision: 432309
+feature.duergar-resilience:
+  effets:
+    - "Jets de sauvegarde contre les illusions et contre les états Charmé et Paralysé : avantage."
+  notes:
+    - "Contre la paralysie, l’avantage ne joue en pratique que contre deux actions de tout le jeu."
+  revision: 438333
+feature.dungeon-delver-perception:
+  effets:
+    - "Tests de Sagesse (Perception) qui portent sur des objets, y compris pour repérer les objets cachés : avantage."
+  revision: 438969
+feature.dungeon-delver-resist-traps:
+  effets:
+    - "Jets de sauvegarde contre les pièges : avantage."
+    - "Résistance aux dégâts des pièges."
+  revision: 438970
+feature.durable:
+  effets:
+    - "Repos court : tous les points de vie sont rendus."
+    - "Constitution +1, jusqu’à 20 au maximum."
+  notes:
+    - "L’augmentation est perdue si des bonus non plafonnés portent déjà la Constitution à 20 ou plus ; elle s’applique aussi sous Forme sauvage."
+  revision: 438922
+feature.dwarven-resilience:
+  effets:
+    - "Jets de sauvegarde contre l’état Empoisonné : avantage."
+    - "Résistance aux dégâts de poison."
+  revision: 438182
+feature.dwarven-toughness:
+  effets:
+    - "Points de vie maximum : +1 par niveau."
+  revision: 425962
+feature.eagle-heart:
+  effets:
+    - "Donne Rage : cœur d’aigle, une rage propre à cette voie, et Frappe en piqué."
+    - "Sous cette rage : désavantage aux attaques d’opportunité contre le barbare, Pointe possible par une action bonus, et Frappe en piqué utilisable."
+  revision: 438243
+feature.eldritch-strike:
+  effets:
+    - "Attaque d’arme réussie contre une créature : état Frappé d’inertie occulte pendant 2 tours ; désavantage à ses jets de sauvegarde contre le personnage."
+  notes:
+    - "Joue sur tous les jets de sauvegarde que le personnage impose pendant la durée, pas seulement contre le prochain sort ; les actions d’arme et les autres effets qui ne sont pas des sorts comptent aussi."
+  revision: 432475
+feature.elemental-affinity-damage:
+  effets:
+    - "Sort qui inflige des dégâts du type de l’ascendance draconique : le modificateur de Charisme s’ajoute à ces dégâts."
+  revision: 432493
+feature.elemental-affinity-resistance:
+  effets:
+    - "Au lancement d’un sort qui inflige des dégâts du type de l’ascendance draconique, 1 point de sorcellerie : résistance à ce type de dégâts jusqu’au prochain repos long."
+  notes:
+    - "Proposée aussi pour des actions de ce type qui n’infligent pas de dégâts, et même quand la résistance est déjà acquise : le point peut être gaspillé."
+  revision: 432495
+feature.elemental-cleaver:
+  effets:
+    - "Sous l’état Rage, sans coût d’action : jusqu’à la fin de la rage, l’arme inflige 1d6 dégâts supplémentaires d’acide, de froid, de feu, de foudre ou de tonnerre, au choix."
+    - "L’arme gagne aussi la propriété Lancer et revient aussitôt en main après un lancer."
+  notes:
+    - "Utilisable plusieurs fois par tour, sur autant d’armes qu’on veut, y compris une arme à distance, qu’il faut alors déséquiper pour la lancer."
+    - "Se cumule avec Arme élémentaire ; les dégâts élémentaires d’une arme lancée ne sont pas magiques."
+  revision: 418107
+feature.elk-heart:
+  effets:
+    - "Donne Rage : cœur d’élan, une rage propre à cette voie, et Ruée primitive."
+    - "Sous cette rage : +4,5 m de vitesse de déplacement, et Ruée primitive utilisable."
+  revision: 432503
+feature.embrace-of-the-inferno:
+  effets:
+    - "Action, 3 points de ki : 3 rayons de feu à distance ; chacun fait une attaque de sort à distance et inflige 2d6 dégâts de feu."
+    - "Niveau 9, avec Incantation élémentaire améliorée : un 4e rayon."
+    - "Utiliser l’aptitude ouvre droit à Arts martiaux : attaque à mains nues supplémentaire."
+  revision: 335588
+feature.empowered-evocation:
+  effets:
+    - "Sort d’évocation : le modificateur d’Intelligence s’ajoute aux jets de dégâts."
+  notes:
+    - "S’ajoute à chaque source de dégâts du sort : chaque projectile de Projectile magique, chaque rayon de Rayon ardent ou de Décharge occulte."
+    - "Vaut pour tous les sorts d’évocation, sorts mineurs compris (Trait de feu, Poigne électrique…), même appris par une autre classe."
+  revision: 432507
+feature.enraged-throw:
+  effets:
+    - "Sous l’état Frénétique, action bonus : un objet ou une créature à 1,5 m ou moins est lancé sur une cible à 18 m ou moins ; jet d’attaque à distance à mains nues."
+    - "Dégâts contondants selon le poids de ce qui est lancé, plus des dégâts supplémentaires selon la Force ; une arme de lancer inflige ses dégâts de corps à corps."
+    - "La cible touchée tombe À terre pendant 1 tour, sans jet de sauvegarde."
+  notes:
+    - "La Force détermine aussi le poids qu’on peut soulever ; les objets plus lourds font plus mal."
+  revision: 391871
+feature.entropic-ward:
+  effets:
+    - "Réaction, une fois par repos court, jet d’attaque contre le personnage : désavantage à ce jet."
+    - "Si l’attaque échoue : avantage au prochain jet d’attaque contre l’attaquant, pendant 1 tour (état Protection entropique)."
+  notes:
+    - "Inutilisable sous Forme étoilée ou sous l’effet de Déguisement."
+  revision: 432511
+feature.escape-the-horde:
+  effets:
+    - "Attaques d’opportunité contre le personnage : désavantage."
+  revision: 432513
+feature.evasion:
+  effets:
+    - "Effet de zone qui permet un jet de sauvegarde de Dextérité pour subir la moitié des dégâts : aucun dégât en cas de réussite, la moitié en cas d’échec."
+  notes:
+    - "En pratique, surtout les explosions de zone (Boule de feu, oui ; Flamme sacrée, à cible unique, non) ; quelques effets sans jet de Dextérité comptent aussi."
+    - "Les autres effets de l’attaque, comme un état, s’appliquent quand même."
+  revision: 432519
+feature.evasive-footwork:
+  effets:
+    - "Sans coût d’action, 1 dé de supériorité : désavantage aux attaques au corps à corps contre le personnage (état Jeu de jambes évasif, 1 tour)."
+  notes:
+    - "L’état prend fin à la fin du tour du personnage : il ne protège que des attaques subies pendant ce tour, comme une attaque d’opportunité ou une riposte."
+  revision: 418303
+feature.exceptional-training:
+  effets:
+    - "Les compagnons invoqués du rôdeur peuvent foncer (Pointe), se désengager (Désengagement) et aider un allié par une action bonus."
+  notes:
+    - "Un compagnon qui fonce d’abord par l’action bonus ne peut plus utiliser l’action Pointe ordinaire dans le même tour ; dans l’autre ordre, si."
+  revision: 432523
+feature.experimental-alchemy:
+  effets:
+    - "Combinaison d’extraits : test de Sagesse (Médecine) DD 15 ; en cas de réussite, deux solutions alchimiques au lieu d’une."
+  revision: 432530
+feature.expert-divination:
+  effets:
+    - "Un dé de Présage supplémentaire, soit 3 au total."
+    - "Après un repos court : une prophétie tirée au hasard par dé de Présage dépensé ; chaque prophétie accomplie rend un dé, de valeur tirée au hasard."
+    - "Prophéties possibles : infliger un type de dégâts donné, lancer un sort d’une école donnée, apprendre ou lancer un sort depuis un parchemin, tuer un ennemi, aider un allié."
+  notes:
+    - "La prophétie qui demande d’aider un allié ne peut jamais être accomplie."
+    - "Les dés de Présage ont des valeurs distinctes : un dé rendu dont la valeur est déjà détenue n’est pas gagné."
+  revision: 432532
+feature.expertise-passive-feature:
+  effets:
+    - "Deux compétences maîtrisées, au choix : bonus de maîtrise doublé pour les tests de caractéristique qui les utilisent."
+  revision: 418324
+feature.exploit-weakness:
+  effets:
+    - "Créature blessée par l’arme au corps à corps : vulnérabilité aux dégâts perforants pendant 1 tour (état Aura de meurtre (malus))."
+  notes:
+    - "Lancer l’arme n’applique pas l’effet."
+  revision: 432533
+feature.extra-attack:
+  effets:
+    - "Après une attaque qui coûte une action (arme, mains nues ou lancer) : une attaque supplémentaire, sans coût d’action."
+  notes:
+    - "Une attaque par action bonus ou par réaction ne la déclenche pas."
+    - "Ne se cumule pas avec une autre Attaque supplémentaire, sauf celle du Pacte de la lame hors du mode Honneur."
+    - "L’action de Fougue la déclenche ; hors du mode Honneur, les actions supplémentaires d’autres sources, comme l’état Accéléré, aussi."
+    - "Une attaque qui ouvre le combat, ou qui fait rejoindre le premier round d’un combat en cours, ne la déclenche pas."
+  revision: 432537
+feature.eyes-of-the-dark:
+  effets:
+    - "Vision dans le noir jusqu’à 24 m : pas de désavantage pour attaquer une créature dans l’obscurité à cette distance."
+  notes:
+    - "Ne permet pas de voir dans les ténèbres magiques."
+  revision: 437803
+feature.fancy-footwork:
+  effets:
+    - "Attaque au corps à corps, réussie ou non, contre une cible : celle-ci ne peut plus porter d’attaque d’opportunité contre le roublard jusqu’à la fin de son tour."
+  notes:
+    - "Les ennemis dotés des dons Mage de guerre ou Maître des armes d’hast gardent leurs attaques d’opportunité."
+  revision: 432543
+feature.fangs-of-the-fire-snake:
+  effets:
+    - "Action, 1 point de ki : attaque à mains nues contre une cible à 6 m ou moins ; dégâts contondants à mains nues + 1d10 dégâts de feu."
+    - "Puis état Crocs du serpent de feu pendant 1 tour : les attaques au corps à corps suivantes infligent 1d4 dégâts de feu supplémentaires."
+  notes:
+    - "Compte comme une attaque à mains nues : profite de tout ce qui les améliore, dont Attaque supplémentaire."
+    - "Le bonus de 1d4 s’applique aussi aux attaques d’arme à distance, mais pas aux sorts qui sont des attaques au corps à corps."
+  revision: 418395
+feature.fast-hands:
+  effets:
+    - "Une action bonus supplémentaire par tour, utilisable pour n’importe quelle action bonus."
+  revision: 432544
+feature.fast-movement:
+  effets:
+    - "Sans armure lourde : +3 m de vitesse de déplacement."
+  revision: 432545
+feature.feinting-attack:
+  effets:
+    - "Action : attaque avec l’arme de corps à corps, avec l’avantage ; si elle touche, dégâts de l’arme + 1 dé de supériorité (1d8, 1d10 avec Supériorité martiale améliorée)."
+    - "L’action bonus et le dé de supériorité ne sont dépensés que si l’attaque touche."
+  notes:
+    - "N’existe qu’au corps à corps, sans version à distance."
+  revision: 418419
+feature.feral-instinct:
+  effets:
+    - "Initiative : +3."
+    - "Immunité à l’état Surpris."
+  revision: 432553
+feature.fey-ancestry:
+  effets:
+    - "Jets de sauvegarde contre l’état Charmé : avantage."
+    - "La magie ne peut pas plonger le personnage dans le sommeil (état Endormi)."
+  revision: 438170
+feature.fey-life:
+  effets:
+    - "Jets de sauvegarde contre la mort du porteur : DD 5 au lieu de 10."
+  revision: 432556
+feature.fey-presence:
+  effets:
+    - "Action, une fois par repos court, au choix : chaque ennemi dans un rayon de 3 m fait un jet de sauvegarde de Sagesse (DD de sauvegarde des sorts) ; en cas d’échec, il subit l’état Charmé, ou l’état Effrayé, pendant 2 tours."
+  notes:
+    - "Pour la version qui charme, le jet est influencé par ce qui joue sur les sauvegardes contre l’état Effrayé, et non contre l’état Charmé."
+  revision: 418437
+feature.fiendish-resilience:
+  effets:
+    - "Sans coût d’action, une fois par repos court : résistance à un type de dégâts au choix, parmi les 13 du jeu."
+    - "Une seule résistance de cette source à la fois ; elle persiste après les repos, jusqu’à ce qu’un autre type soit choisi."
+  revision: 418448
+feature.fire-breath-cone:
+  effets:
+    - "Action, une fois par repos court : cône de 5 m ; chaque créature prise dedans fait un jet de sauvegarde de Dextérité et subit 2d6 dégâts de feu, la moitié en cas de réussite."
+    - "DD : 8 + modificateur de Constitution + bonus de maîtrise."
+    - "Niveau 6 du personnage : 3d6 dégâts de feu ; niveau 11 : 4d6."
+  notes:
+    - "Ce DD compte comme un DD de sauvegarde des sorts : tout ce qui augmente ce dernier l’augmente aussi."
+  revision: 418509
+feature.fire-breath-line:
+  effets:
+    - "Action, une fois par repos court : ligne de 5 m depuis soi ; chaque créature prise dedans fait un jet de sauvegarde de Dextérité et subit 2d6 dégâts de feu, la moitié en cas de réussite."
+    - "DD : 8 + modificateur de Constitution + bonus de maîtrise."
+    - "Niveau 6 du personnage : 3d6 dégâts de feu ; niveau 11 : 4d6."
+  notes:
+    - "Ce DD compte comme un DD de sauvegarde des sorts : tout ce qui augmente ce dernier l’augmente aussi."
+  revision: 418511
+feature.fist-of-four-thunders:
+  effets:
+    - "Action, 2 points de ki : cube de 5 m ; chaque créature prise dedans fait un jet de sauvegarde de Constitution (DD de sauvegarde des sorts) ; en cas d’échec, 2d8 dégâts de tonnerre et poussée de 8 m."
+    - "Réussite : moitié des dégâts, sans poussée. Les objets de la zone sont repoussés aussi."
+    - "Niveau 9, avec Incantation élémentaire améliorée : 3d8 dégâts de tonnerre."
+  notes:
+    - "N’ouvre pas droit à Arts martiaux : attaque à mains nues supplémentaire."
+  revision: 418552
+feature.fist-of-unbroken-air:
+  effets:
+    - "Action, 2 points de ki : une créature à 9 m ou moins fait un jet de sauvegarde de Force (DD de sauvegarde des sorts) ; en cas d’échec, elle subit 3d10 dégâts contondants, est repoussée de 6 m et tombe À terre pendant 1 tour."
+    - "Réussite : moitié des dégâts, sans autre effet."
+    - "Niveau 9, avec Incantation élémentaire améliorée : 4d10 dégâts contondants."
+    - "Utiliser l’aptitude ouvre droit à Arts martiaux : attaque à mains nues supplémentaire."
+  revision: 418553
+feature.flames-of-the-phoenix:
+  effets:
+    - "Action, 4 points de ki : boule de feu lancée à distance, qui explose dans un rayon de 4 m ; chaque créature prise dedans fait un jet de sauvegarde de Dextérité (DD de sauvegarde des sorts) et subit 8d6 dégâts de feu, la moitié en cas de réussite."
+    - "Utiliser l’aptitude ouvre droit à Arts martiaux : attaque à mains nues supplémentaire."
+  revision: 335590
+feature.fleet-of-foot:
+  effets:
+    - "Vitesse de déplacement : +1,5 m."
+  revision: 414062
+feature.flurry-of-blows:
+  effets:
+    - "Action bonus, 1 point de ki : deux attaques à mains nues au corps à corps contre une cible ; chacune inflige les dégâts contondants à mains nues."
+    - "Pas besoin d’avoir attaqué auparavant dans le tour."
+  notes:
+    - "Chaque coup profite de tout ce qui améliore les attaques à mains nues ; ne déclenche pas Attaque supplémentaire, faute de coûter une action."
+  revision: 418630
+feature.flurry-of-blows-push:
+  effets:
+    - "Action bonus, 1 point de ki : deux attaques à mains nues au corps à corps ; chacune inflige les dégâts contondants à mains nues."
+    - "Second coup réussi : jet de sauvegarde de Force de la cible (DD d’action d’arme) ; en cas d’échec, elle est repoussée de 5 m."
+  notes:
+    - "Si le second coup rate, la cible n’est pas repoussée, même quand le premier a touché."
+    - "Chaque coup profite de tout ce qui améliore les attaques à mains nues ; ne déclenche pas Attaque supplémentaire."
+  revision: 418631
+feature.flurry-of-blows-stagger:
+  effets:
+    - "Action bonus, 1 point de ki : deux attaques à mains nues au corps à corps ; chacune inflige les dégâts contondants à mains nues."
+    - "La cible subit l’état Technique de la Paume : ébranlé pendant 1 tour, sans jet de sauvegarde : elle ne peut plus dépenser de réaction, donc ni attaque d’opportunité ni autre réaction ordinaire."
+  notes:
+    - "Les réactions qui ne dépensent pas la ressource de réaction restent possibles."
+    - "Chaque coup profite de tout ce qui améliore les attaques à mains nues ; ne déclenche pas Attaque supplémentaire."
+  revision: 418632
+feature.flurry-of-blows-topple:
+  effets:
+    - "Action bonus, 1 point de ki : deux attaques à mains nues au corps à corps ; chacune inflige les dégâts contondants à mains nues."
+    - "Second coup réussi : jet de sauvegarde de Dextérité de la cible (DD d’action d’arme) ; en cas d’échec, elle tombe À terre pendant 1 tour."
+  notes:
+    - "Si le second coup rate, la cible ne tombe pas, même quand le premier a touché."
+    - "Chaque coup profite de tout ce qui améliore les attaques à mains nues ; ne déclenche pas Attaque supplémentaire."
+  revision: 439304
+feature.flurry-of-moths:
+  effets:
+    - "Une nuée de phalènes combat aux côtés du personnage."
+    - "Une fois par round, après une attaque réussie contre un ennemi, au choix : 1d6 dégâts psychiques supplémentaires ; ou l’ennemi peut subir l’état Aveuglé ; ou le personnage se téléporte jusqu’à 5 m."
+    - "Niveau 11, avec Essaim puissant : devient Tourbillon de phalènes puissant (1d8 dégâts psychiques, nuée qui ralentit aussi, téléportation avec +2 à la classe d’armure pendant 1 tour)."
+  notes:
+    - "Les trois options partagent le même délai : une seule par round."
+  revision: 432569
+feature.fly-class-action:
+  effets:
+    - "Vol jusqu’à un point à 18 m ou moins ; la distance volée ne consomme que la moitié autant de déplacement."
+  notes:
+    - "C’est l’action que donne l’état Vol."
+  revision: 418642
+feature.fly-starry-form:
+  effets:
+    - "Sous Forme étoilée : dragon, avec Constellations scintillantes, une fois par tour : vol jusqu’à un point à 6 m ou moins ; la distance volée ne consomme que la moitié autant de déplacement."
+  revision: 418640
+feature.focused-conjuration:
+  effets:
+    - "Concentration sur un sort d’invocation : les dégâts subis ne la rompent pas."
+  notes:
+    - "Concerne par exemple Nuée de dagues, Nuage nauséabond, Toile d’araignée ou Nappe de brouillard."
+  revision: 432572
+feature.font-of-inspiration:
+  effets:
+    - "Repos court ou long : toutes les charges d’Inspiration bardique sont rendues."
+  revision: 432575
+feature.forest-passive-feature:
+  effets:
+    - "Sorts toujours préparés, hors du nombre de sorts préparés : Peau d’écorce et Immobilisation de personne."
+    - "Niveau 5 : Appel de la foudre et Croissance végétale ; niveau 7 : Invocation d’élémentaires mineurs et Liane avide ; niveau 9 : Soins de groupe et Contagion."
+  revision: 432578
+feature.frenzied-strike:
+  effets:
+    - "Sous l’état Frénétique, action bonus, une fois par tour : attaque avec l’arme de corps à corps équipée ; dégâts de l’arme."
+    - "Chaque utilisation ajoute une charge de Surmenage frénétique : −1 aux jets d’attaque par charge, jusqu’à la fin de la Frénésie."
+  notes:
+    - "À partir du niveau 9 de barbare, l’attaque n’ajoute plus de Surmenage frénétique."
+  revision: 418707
+feature.frenzy:
+  effets:
+    - "En combat, action bonus, 1 charge de Rage : état Frénétique pendant 10 tours."
+    - "Frénétique : +2 dégâts avec les armes de corps à corps, les armes improvisées et les objets lancés (+3 au niveau 9) ; résistance aux dégâts contondants, perforants et tranchants ; avantage aux tests et jets de sauvegarde de Force."
+    - "Donne Frappe frénétique, Lancer enragé et une attaque avec une arme improvisée par une action bonus."
+    - "Pendant la Frénésie : aucun sort, aucune concentration ; elle prend fin si le barbare n’a ni attaqué un ennemi ni subi de dégâts depuis son tour précédent."
+  notes:
+    - "Avec une armure lourde, l’état Rage bridée supprime le bonus de dégâts, la résistance et l’avantage."
+  revision: 418709
+feature.frost-breath:
+  effets:
+    - "Action, une fois par repos court : cône de 5 m ; chaque créature prise dedans fait un jet de sauvegarde de Constitution et subit 2d6 dégâts de froid, la moitié en cas de réussite."
+    - "DD : 8 + modificateur de Constitution + bonus de maîtrise."
+    - "Niveau 6 du personnage : 3d6 dégâts de froid ; niveau 11 : 4d6."
+  notes:
+    - "Ce DD compte comme un DD de sauvegarde des sorts : tout ce qui augmente ce dernier l’augmente aussi."
+  revision: 391124
+feature.fungal-infestation:
+  effets:
+    - "Réaction, 1 charge d’Infestation fongique : le cadavre d’une bête ou d’un humanoïde à 3 m ou moins se relève en zombi fongique allié, jusqu’au prochain repos long."
+    - "4 charges au niveau 6 de druide, rendues par un repos long."
+  notes:
+    - "Un même cadavre peut resservir."
+  revision: 415263
+feature.giant-killer:
+  effets:
+    - "Réaction, quand une créature de taille Grande ou plus, visible et à 1,5 m ou moins, attaque le personnage : attaque au corps à corps contre elle."
+  notes:
+    - "Beaucoup de grandes créatures attaquent de plus de 2 m : la réaction ne se déclenche alors pas, et une arme à allonge n’y change rien."
+  revision: 433035
+feature.giants-rage:
+  effets:
+    - "En combat, action bonus, 1 charge de Rage : état Rage du géant pendant 10 tours ; le barbare grandit d’une catégorie de taille."
+    - "Rage du géant : +2 dégâts avec les armes de corps à corps, les armes improvisées et à mains nues, +4 avec les objets lancés (niveau 9 : +3 et +6) ; résistance aux dégâts contondants, perforants et tranchants ; avantage aux tests et jets de sauvegarde de Force."
+    - "Pendant la rage : aucun sort, aucune concentration ; elle prend fin si le barbare n’a ni attaqué un ennemi ni subi de dégâts depuis son tour précédent."
+  notes:
+    - "Avec une armure lourde, l’état Rage bridée supprime le bonus de dégâts, la résistance et l’avantage."
+    - "Remplace les autres effets de taille, comme celui d’Agrandissement/Rapetissement."
+  revision: 418870
+feature.gleamdancer:
+  effets:
+    - "Dague tenue en main secondaire : +1 à la classe d’armure du porteur."
+  revision: 432597
+feature.gnome-cunning:
+  effets:
+    - "Jets de sauvegarde d’Intelligence, de Sagesse et de Charisme : avantage."
+  revision: 432600
+feature.goading-attack-melee:
+  effets:
+    - "Action : attaque avec l’arme de corps à corps ; si elle touche, dégâts de l’arme + 1 dé de supériorité (1d8, 1d10 avec Supériorité martiale améliorée)."
+    - "Puis jet de sauvegarde de Sagesse de la cible (DD d’action d’arme) ; en cas d’échec, état Provoqué pendant 1 tour : désavantage à tous ses jets d’attaque, y compris contre le personnage."
+  notes:
+    - "Une attaque ratée ne dépense pas de dé de supériorité."
+    - "La cible n’est pas réellement forcée d’attaquer le personnage."
+  revision: 418995
+feature.goading-attack-ranged:
+  effets:
+    - "Action : attaque avec l’arme à distance ; si elle touche, dégâts de l’arme + 1 dé de supériorité (1d8, 1d10 avec Supériorité martiale améliorée)."
+    - "Puis jet de sauvegarde de Sagesse de la cible (DD d’action d’arme) ; en cas d’échec, état Provoqué pendant 1 tour : désavantage à tous ses jets d’attaque, y compris contre le personnage."
+  notes:
+    - "Une attaque ratée ne dépense pas de dé de supériorité."
+    - "La cible n’est pas réellement forcée d’attaquer le personnage."
+  revision: 418996
+feature.gong-of-the-summit:
+  effets:
+    - "Action, 3 points de ki : point à 18 m ou moins, rayon de 3 m ; chaque créature prise dedans fait un jet de sauvegarde de Constitution (DD de sauvegarde des sorts) et subit 3d8 dégâts de tonnerre, la moitié en cas de réussite."
+    - "Les créatures faites de matière inorganique, comme la pierre, ont le désavantage à ce jet ; les objets de la zone subissent aussi les dégâts."
+    - "Niveau 9, avec Incantation élémentaire améliorée : 4d8 dégâts de tonnerre."
+    - "Utiliser l’aptitude ouvre droit à Arts martiaux : attaque à mains nues supplémentaire."
+  notes:
+    - "Inutilisable sous l’état Réduit au silence, contrairement aux autres actions élémentaires du moine."
+  revision: 371824
+feature.grassland:
+  effets:
+    - "Sorts toujours préparés, hors du nombre de sorts préparés : Invisibilité et Passage sans trace."
+    - "Niveau 5 : Lumière du jour et Hâte ; niveau 7 : Liberté de mouvement et Métamorphose ; niveau 9 : Restauration supérieure et Fléau d’insectes."
+  revision: 432606
+feature.great-weapon-fighting:
+  effets:
+    - "Attaque avec une arme de corps à corps à deux mains : chaque dé de dégâts qui donne 1 ou 2 est relancé une fois."
+  notes:
+    - "Vaut aussi pour une arme polyvalente tenue à deux mains, la main secondaire libre."
+    - "Les dés de dégâts ajoutés à l’attaque sont relancés aussi : dé de supériorité, Châtiment divin, arme trempée dans une surface."
+  revision: 432608
+feature.great-weapon-master-all-in:
+  effets:
+    - "Passif activable. Attaque avec une arme de corps à corps maîtrisée, tenue à deux mains : −5 au jet d’attaque, +10 aux dégâts."
+  notes:
+    - "S’applique aussi aux actions d’arme à 1d4 dégâts fixes, sans que leur infobulle l’affiche."
+  revision: 438972
+feature.great-weapon-master-bonus-attack:
+  effets:
+    - "Coup critique ou créature tuée avec une attaque d’arme de corps à corps : pendant ce tour, une nouvelle attaque d’arme de corps à corps est possible par une action bonus (état du même nom, 1 tour)."
+  notes:
+    - "Toute arme de corps à corps convient, et l’autre passif du même don, celui qui échange −5 au jet d’attaque contre +10 aux dégâts, n’a pas besoin d’être actif."
+    - "Une créature mise hors de combat par des dégâts non létaux, ou réduite à 0 point de vie sans mourir grâce à Protection contre la mort, compte aussi."
+    - "Peut se déclencher plusieurs fois par tour, mais pas par l’attaque supplémentaire elle-même ; l’attaque qui ouvre le combat ne la donne pas."
+  revision: 438971
+feature.grim-harvest:
+  effets:
+    - "Une fois par tour, créature tuée par un sort : le magicien récupère 2 fois le niveau de l’emplacement de sort utilisé en points de vie, 3 fois pour un sort de nécromancie."
+  notes:
+    - "Les emplacements de Magie de pacte comptent aussi ; les morts-vivants et les artificiels tués déclenchent aussi l’effet."
+  revision: 432616
+feature.guided-strike:
+  effets:
+    - "1 charge de Conduit divin, après un jet d’attaque : +10 à ce jet, qui peut ainsi toucher."
+    - "Ou, comme action, 1 charge de Conduit divin : +10 au prochain jet d’attaque (état Frappe guidée : active, jusqu’au prochain repos long)."
+  revision: 425397
+feature.halfling-luck:
+  effets:
+    - "Résultat de 1 au dé d’un jet d’attaque, d’un test de caractéristique ou d’un jet de sauvegarde : le dé est relancé une fois, et le nouveau résultat s’impose."
+  notes:
+    - "Le nouveau résultat peut être un autre 1."
+    - "Avec l’avantage, chaque dé qui donne 1 est relancé ; le meilleur résultat est gardé."
+  revision: 437818
+feature.halo-of-spores:
+  effets:
+    - "En dépensant sa réaction : une créature à 6 m ou moins fait un jet de sauvegarde de Constitution (DD de sauvegarde des sorts) ; en cas d’échec, elle subit 1d4 dégâts nécrotiques."
+    - "Niveau 6 de druide : 1d6 dégâts nécrotiques ; niveau 10 : 1d8."
+  notes:
+    - "La réaction dépensée n’est plus disponible pour autre chose jusqu’au tour suivant."
+  revision: 419275
+feature.harmony-of-fire-and-water:
+  effets:
+    - "Action, hors combat, une fois par repos long : récupère la moitié de son maximum de points de ki, arrondie à l’inférieur."
+  revision: 419328
+feature.healing-radiance:
+  effets:
+    - "Action bonus, 1 charge de Conduit de serment : le paladin et ses alliés dans un rayon de 3 m récupèrent bonus de maîtrise + niveau de paladin + modificateur de Charisme points de vie."
+    - "Au tour suivant, ils récupèrent de nouveau la même quantité (état Rayonnement guérisseur, 1 tour)."
+    - "Sans effet sur les morts-vivants et les artificiels."
+  revision: 419396
+feature.heart-of-the-storm:
+  effets:
+    - "Sort de niveau 1 ou plus qui inflige des dégâts de foudre ou de tonnerre : chaque ennemi dans un rayon de 6 m subit autant de dégâts du même type que la moitié du niveau d’ensorceleur, arrondie à l’inférieur."
+  notes:
+    - "Se déclenche aussi avec un sort mineur de ce type et avec quelques sorts du bon type qui n’infligent pas de dégâts ; pas avec des dégâts de foudre ou de tonnerre venus d’un autre effet, comme les Charges de foudre."
+  revision: 432627
+feature.heart-of-the-storm-lightning:
+  effets:
+    - "Déclenché sans coût par un sort de foudre : chaque ennemi dans un rayon de 6 m subit des dégâts de foudre égaux à la moitié du niveau d’ensorceleur, arrondie à l’inférieur."
+  notes:
+    - "Sorts qui le déclenchent : Appel de la foudre, Chaîne d’éclairs, Orbe chromatique (foudre), Éclair, Poigne électrique, Trait ensorcelé, quelques autres ; pas les dégâts de foudre venus d’un effet comme les Charges de foudre."
+  revision: 419409
+feature.heart-of-the-storm-resistance:
+  effets:
+    - "Résistance aux dégâts de foudre et de tonnerre."
+  revision: 432628
+feature.heart-of-the-storm-thunder:
+  effets:
+    - "Déclenché sans coût par un sort de tonnerre : chaque ennemi dans un rayon de 6 m subit des dégâts de tonnerre égaux à la moitié du niveau d’ensorceleur, arrondie à l’inférieur."
+  notes:
+    - "Sorts qui le déclenchent : Orbe chromatique (tonnerre), Fracassement, Châtiment tonitruant, Vague tonnante, quelques autres ; pas Vague destructrice ni les dégâts de tonnerre venus d’un autre effet."
+  revision: 419411
+feature.heavily-armoured:
+  effets:
+    - "Maîtrise des armures lourdes."
+    - "Force +1, jusqu’à 20 au maximum."
+  notes:
+    - "L’augmentation est perdue si des bonus non plafonnés portent déjà la Force à 20 ou plus ; elle s’applique aussi sous Forme sauvage."
+  revision: 438997
+feature.heavy-armour-master:
+  effets:
+    - "Force +1, jusqu’à 20 au maximum."
+    - "Armure lourde portée sur le corps : les dégâts contondants, perforants et tranchants subis sont réduits de 3, qu’ils soient magiques ou non."
+  notes:
+    - "Un casque ou une autre pièce classée armure lourde ne suffit pas : il faut une armure de corps lourde."
+    - "L’augmentation de Force est perdue si des bonus non plafonnés la portent déjà à 20 ou plus ; elle s’applique aussi sous Forme sauvage."
+  revision: 438871
+feature.hellish-resistance:
+  effets:
+    - "Résistance aux dégâts de feu."
+  revision: 432638
+feature.hex-warrior:
+  effets:
+    - "Maîtrise des armures intermédiaires, des boucliers et des armes de guerre."
+    - "Donne Lier une arme maléfique : pour attaquer avec l’arme liée, le modificateur de Charisme remplace celui de Force ou de Dextérité."
+  notes:
+    - "Le Charisme s’applique même s’il est plus faible que la Force ou la Dextérité."
+  revision: 432642
+feature.hexblades-curse:
+  effets:
+    - "Action bonus, une fois par repos court : une créature à 18 m ou moins subit l’état Malédiction de la lame maléfique pendant 10 tours."
+    - "Contre elle : bonus de maîtrise ajouté aux jets de dégâts, et coup critique sur un résultat de 19 ou 20."
+    - "Si elle meurt : l’occultiste récupère niveau d’occultiste + modificateur de Charisme points de vie."
+  revision: 429840
+feature.hide-in-plain-sight:
+  effets:
+    - "Action, hors combat : état Camouflage jusqu’au prochain repos long ; invisible et +10 aux tests de Dextérité (Discrétion), tant que le rôdeur reste immobile."
+    - "L’invisibilité cesse si le rôdeur se déplace, attaque, lance un sort, accomplit une action ou subit des dégâts."
+  notes:
+    - "Sauter ou voler ne la rompt pas, ni les autres actions discrètes de ce genre : on peut ainsi se déplacer sans la perdre."
+  revision: 419509
+feature.holy-rebuke:
+  effets:
+    - "Action, 1 charge de Conduit de serment : une créature à 18 m ou moins obtient l’état Représailles sacrées pendant 2 tours ; toute créature qui la touche au corps à corps subit 1d4 dégâts radiants."
+  revision: 419558
+feature.horde-breaker:
+  effets:
+    - "Donne les actions Briseur de hordes (corps à corps) et Briseur de hordes (à distance)."
+  revision: 432649
+feature.horde-breaker-melee:
+  effets:
+    - "Action, une fois par tour : attaque avec l’arme de corps à corps ; dégâts de l’arme."
+    - "Touchée ou non, chaque créature à 2 m ou moins de la cible subit l’état Briseur de hordes (1 tour) ; une attaque de suivi gratuite, au corps à corps ou à distance, est alors possible contre l’une d’elles."
+  notes:
+    - "Déclenche Attaque supplémentaire."
+    - "Certains effets prévus pour la première cible peuvent s’appliquer à une autre créature de la zone, et certains effets sans dégâts se déclenchent sur toutes les créatures de la zone."
+  revision: 426888
+feature.horde-breaker-ranged:
+  effets:
+    - "Action, une fois par tour : attaque avec l’arme à distance ; dégâts de l’arme."
+    - "Touchée ou non, chaque créature à 2 m ou moins de la cible subit l’état Briseur de hordes (1 tour) ; une attaque de suivi gratuite, au corps à corps ou à distance, est alors possible contre l’une d’elles."
+  notes:
+    - "Déclenche Attaque supplémentaire."
+  revision: 426844
+feature.hound-of-ill-omen:
+  effets:
+    - "Action bonus, 3 points de sorcellerie, une fois par repos court : invoque un molosse des ombres à 18 m ou moins, qui reste sans limite de durée."
+  notes:
+    - "Le molosse voit dans les ténèbres magiques : il attaque avec l’avantage dans les nuages de Ténèbres du personnage."
+  revision: 419601
+feature.human-versatility:
+  effets:
+    - "Maîtrise d’une compétence supplémentaire, au choix."
+    - "Capacité de charge augmentée d’un quart."
+  revision: 432651
+feature.hypnotic-gaze:
+  effets:
+    - "Action, une fois par repos long : une créature au contact fait un jet de sauvegarde de Sagesse (DD de sauvegarde des sorts) ; en cas d’échec, état Regard hypnotique pendant 2 tours : charmée et neutralisée, elle ne peut ni agir ni attaquer le magicien."
+    - "Chaque tour, une action de maintien prolonge l’état, sans nouveau jet de sauvegarde."
+    - "L’état prend fin si la créature subit des dégâts."
+  notes:
+    - "Ce n’est pas un sort : Enchantement partagé ne s’y applique pas."
+  revision: 419638
+feature.illusory-self:
+  effets:
+    - "Réaction, une fois par repos court, quand une attaque vise le magicien : l’attaque échoue."
+  notes:
+    - "Inutilisable sous Forme étoilée ou sous l’effet de Déguisement."
+  revision: 432662
+feature.improved-abjuration:
+  effets:
+    - "Chaque repos court : l’intensité de Protection arcanique augmente du niveau de magicien."
+  revision: 432668
+feature.improved-bardic-inspiration-passive-feature:
+  effets:
+    - "Inspiration bardique : le dé passe à 1d8 au niveau 5 de barde, à 1d10 au niveau 10."
+  revision: 432669
+feature.improved-combat-superiority:
+  effets:
+    - "Les dés de supériorité passent à 1d10."
+  revision: 432674
+feature.improved-critical-hit:
+  effets:
+    - "Jets d’attaque : coup critique sur un résultat de 19 ou 20 ; se cumule avec les autres réductions du seuil de critique."
+  revision: 432678
+feature.improved-divine-smite:
+  effets:
+    - "Attaque avec une arme de corps à corps : 1d8 dégâts radiants supplémentaires."
+  notes:
+    - "Se cumule avec toutes les autres sources de dégâts, dont Châtiment divin."
+  revision: 432679
+feature.improved-elemental-casting:
+  effets:
+    - "Un dé de dégâts de plus : Froid de la montagne 2d10, Poing des quatre tonnerres 3d8, Poing de l’air ininterrompu 4d10, Gong du sommet 4d8, Frappe de braises balayante 4d6, Toucher de la tempête 2d10, Fouet d’eau 4d10."
+    - "Poigne du vent du nord retient une créature de plus ; Étreinte du brasier tire un rayon de plus."
+  revision: 432680
+feature.improved-extra-attack:
+  effets:
+    - "Après une attaque qui coûte une action : deux attaques supplémentaires au lieu d’une, sans coût d’action."
+  notes:
+    - "Pas besoin d’arme : une attaque à mains nues ou de lancer la déclenche aussi, comme Attaque supplémentaire."
+  revision: 432681
+feature.improved-minor-illusion-passive-feature:
+  effets:
+    - "Illusion mineure se lance par une action bonus (Illusion mineure améliorée)."
+  revision: 432682
+feature.improved-warding-flare:
+  effets:
+    - "Réaction, quand un ennemi attaque un allié : désavantage à ce jet d’attaque."
+  notes:
+    - "Sans effet sur les créatures qui ne peuvent pas être aveuglées."
+  revision: 425401
+feature.improved-wild-strike:
+  effets:
+    - "Sous une Forme sauvage animale, après une attaque : deux attaques supplémentaires au lieu d’une."
+  notes:
+    - "Vaut pour toute action d’attaque avec jet d’attaque des formes sauvages, sauf sous Forme étoilée."
+  revision: 432684
+feature.inciting-howl:
+  effets:
+    - "Sous Rage : cœur de loup, action : chaque allié dans un rayon de 9 m peut se déplacer de 3 m de plus pendant son prochain tour (état Hurlement galvanisant, 1 tour)."
+  revision: 419725
+feature.indomitable:
+  effets:
+    - "Une fois par repos long, jet de sauvegarde raté : le jet est relancé et le nouveau résultat s’impose ; ne consomme pas la réaction."
+  notes:
+    - "Inutilisable sous Forme étoilée ou sous l’effet de Déguisement."
+  revision: 432687
+feature.inescapable-destruction:
+  effets:
+    - "Les dégâts nécrotiques infligés par le clerc ignorent la résistance aux dégâts nécrotiques, quelle qu’en soit la source, sorts ou non."
+  revision: 432688
+feature.infiltration-expertise:
+  effets:
+    - "Action : le roublard prend l’apparence d’un humanoïde de la race et du sexe choisis, au visage tiré au hasard, jusqu’au prochain repos long (état Expertise en infiltration)."
+  notes:
+    - "Effet proche du sort Déguisement."
+  revision: 419764
+feature.inquisitors-might:
+  effets:
+    - "Action bonus, 1 charge de Conduit de serment : le paladin ou un allié à 9 m ou moins obtient l’état Puissance de l’inquisiteur pendant 2 tours."
+    - "Puissance de l’inquisiteur : ses attaques d’arme infligent des dégâts radiants supplémentaires égaux au modificateur de Charisme du paladin (minimum 1), et la cible touchée subit l’état Hébété pendant 1 tour, sans jet de sauvegarde."
+  revision: 419782
+feature.instinctive-charm:
+  effets:
+    - "Réaction, quand un ennemi vise le magicien d’un jet d’attaque (arme, sort ou mains nues) : l’ennemi fait un jet de sauvegarde de Sagesse (DD de sauvegarde des sorts)."
+    - "Échec : l’attaque est annulée, ressources dépensées comprises ; l’ennemi subit l’état Charmé pendant 1 tour et reçoit une attaque gratuite, qu’il ne peut pas diriger contre le magicien."
+    - "Réussite : l’attaque a lieu, et l’ennemi devient insensible à ce charme."
+  notes:
+    - "En combat, l’ennemi a toujours l’avantage à ce jet de sauvegarde."
+    - "L’insensibilité ne disparaît pas après un repos long : elle reste acquise pour toute la partie."
+  revision: 432711
+feature.intimidating-presence:
+  effets:
+    - "Action : un ennemi à 9 m ou moins fait un jet de sauvegarde de Sagesse (DD de sauvegarde des sorts) ; en cas d’échec, état Apeuré pendant 2 tours : désavantage aux tests de caractéristique et aux jets d’attaque, il doit fuir et ne peut pas agir autrement."
+    - "Chaque tour, une action de maintien prolonge l’état, sans nouveau jet de sauvegarde."
+    - "Une cible qui réussit son jet ne peut plus être visée avant son prochain repos long."
+  notes:
+    - "Les effets qui donnent l’avantage ou le désavantage aux sauvegardes contre la peur ne jouent pas sur ce jet."
+  revision: 439321
+feature.intoxicating-strike:
+  effets:
+    - "Action, 1 point de ki : attaque à mains nues au corps à corps ; dégâts contondants à mains nues."
+    - "Si elle touche : jet de sauvegarde de Constitution de la cible (DD de sauvegarde des sorts) ; en cas d’échec, état Ivre pendant 5 tours : désavantage aux tests de Dextérité et de Charisme."
+  revision: 419825
+feature.intoxicating-strike-bonus-action:
+  effets:
+    - "Action bonus, 1 point de ki : attaque à mains nues au corps à corps ; dégâts contondants à mains nues."
+    - "Si elle touche : jet de sauvegarde de Constitution de la cible (DD de sauvegarde des sorts) ; en cas d’échec, état Ivre pendant 5 tours : désavantage aux tests de Dextérité et de Charisme."
+  revision: 432023
+feature.inured-to-undeath:
+  effets:
+    - "Résistance aux dégâts nécrotiques."
+    - "Le maximum de points de vie ne peut pas être réduit : les états qui le réduisent, comme Contamination, sont sans effet."
+  revision: 434056
+feature.invoke-duplicity:
+  effets:
+    - "Action, 1 charge de Conduit divin, concentration, 10 tours : crée une illusion du clerc à 9 m ou moins."
+    - "Le clerc et ses alliés ont l’avantage aux jets d’attaque quand l’attaquant et sa cible se trouvent tous deux à 3 m ou moins de l’illusion."
+  notes:
+    - "Les ennemis peuvent viser l’illusion et gaspiller leurs actions ; tout effet qui la vise, même amical, la dissipe."
+  revision: 401921

@@ -3,9 +3,10 @@
     "id": "race.dragonborn",
     "type": "race",
     "name": {
-      "fr": "Dragonborn",
+      "fr": "Drakéide",
       "en": "Dragonborn",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -37,7 +38,8 @@
     "name": {
       "fr": "Drow",
       "en": "Drow",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -74,9 +76,10 @@
       "features": [
         {
           "name": {
-            "fr": "Fey Ancestry",
+            "fr": "Ascendance féerique",
             "en": "Fey Ancestry",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.fey-ancestry"
         },
@@ -122,9 +125,10 @@
     "id": "race.dwarf",
     "type": "race",
     "name": {
-      "fr": "Dwarf",
+      "fr": "Nain",
       "en": "Dwarf",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -159,9 +163,10 @@
       "features": [
         {
           "name": {
-            "fr": "Dwarven Resilience",
+            "fr": "Résistance naine",
             "en": "Dwarven Resilience",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.dwarven-resilience"
         },
@@ -201,9 +206,10 @@
     "id": "race.elf",
     "type": "race",
     "name": {
-      "fr": "Elf",
+      "fr": "Elfe",
       "en": "Elf",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -240,9 +246,10 @@
       "features": [
         {
           "name": {
-            "fr": "Fey Ancestry",
+            "fr": "Ascendance féerique",
             "en": "Fey Ancestry",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.fey-ancestry"
         },
@@ -322,7 +329,7 @@
       "features": [
         {
           "name": {
-            "fr": "Astral Knowledge",
+            "fr": "Savoir astral",
             "en": "Astral Knowledge",
             "status": "UNOFFICIAL"
           },
@@ -355,7 +362,8 @@
     "name": {
       "fr": "Gnome",
       "en": "Gnome",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -382,7 +390,7 @@
       "features": [
         {
           "name": {
-            "fr": "Gnome Cunning",
+            "fr": "Ruse gnome",
             "en": "Gnome Cunning",
             "status": "UNOFFICIAL"
           },
@@ -424,7 +432,7 @@
     "id": "race.half-elf",
     "type": "race",
     "name": {
-      "fr": "Half-Elf",
+      "fr": "Demi-elfe",
       "en": "Half-Elf",
       "status": "UNOFFICIAL"
     },
@@ -464,9 +472,10 @@
       "features": [
         {
           "name": {
-            "fr": "Fey Ancestry",
+            "fr": "Ascendance féerique",
             "en": "Fey Ancestry",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.fey-ancestry"
         },
@@ -506,7 +515,7 @@
     "id": "race.half-orc",
     "type": "race",
     "name": {
-      "fr": "Half-Orc",
+      "fr": "Demi-orc",
       "en": "Half-Orc",
       "status": "UNOFFICIAL"
     },
@@ -549,7 +558,7 @@
         },
         {
           "name": {
-            "fr": "Savage Attacks",
+            "fr": "Attaques sauvages",
             "en": "Savage Attacks",
             "status": "UNOFFICIAL"
           },
@@ -557,9 +566,10 @@
         },
         {
           "name": {
-            "fr": "Relentless Endurance",
+            "fr": "Acharnement",
             "en": "Relentless Endurance",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.relentless-endurance"
         }
@@ -599,9 +609,10 @@
     "id": "race.halfling",
     "type": "race",
     "name": {
-      "fr": "Halfling",
+      "fr": "Halfelin",
       "en": "Halfling",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -628,7 +639,7 @@
       "features": [
         {
           "name": {
-            "fr": "Halfling Luck",
+            "fr": "Chance halfeline",
             "en": "Halfling Luck",
             "status": "UNOFFICIAL"
           },
@@ -638,7 +649,8 @@
           "name": {
             "fr": "Brave",
             "en": "Brave",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.brave"
         }
@@ -669,9 +681,10 @@
     "id": "race.human",
     "type": "race",
     "name": {
-      "fr": "Human",
+      "fr": "Humain",
       "en": "Human",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -711,7 +724,7 @@
       "features": [
         {
           "name": {
-            "fr": "Human Versatility",
+            "fr": "Polyvalence humaine",
             "en": "Human Versatility",
             "status": "UNOFFICIAL"
           },
@@ -735,9 +748,10 @@
     "id": "race.tiefling",
     "type": "race",
     "name": {
-      "fr": "Tiefling",
+      "fr": "Tieffelin",
       "en": "Tiefling",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -764,7 +778,7 @@
       "features": [
         {
           "name": {
-            "fr": "Hellish Resistance",
+            "fr": "Résistance infernale",
             "en": "Hellish Resistance",
             "status": "UNOFFICIAL"
           },

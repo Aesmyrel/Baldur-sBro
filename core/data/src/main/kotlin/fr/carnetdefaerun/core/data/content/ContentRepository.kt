@@ -1,6 +1,7 @@
 package fr.carnetdefaerun.core.data.content
 
 import fr.carnetdefaerun.core.database.content.ContentStore
+import fr.carnetdefaerun.core.database.content.EntryHeader
 import fr.carnetdefaerun.core.database.content.EntryRow
 import fr.carnetdefaerun.core.model.content.ClassFacts
 import fr.carnetdefaerun.core.model.content.ConditionFacts
@@ -24,6 +25,7 @@ import fr.carnetdefaerun.core.model.spoiler.Gated
 import fr.carnetdefaerun.core.model.spoiler.RevealKey
 import fr.carnetdefaerun.core.model.spoiler.SpoilerGate
 import fr.carnetdefaerun.core.model.spoiler.SpoilerProfile
+import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
 import fr.carnetdefaerun.core.model.spoiler.gated
 
 /**
@@ -34,10 +36,13 @@ import fr.carnetdefaerun.core.model.spoiler.gated
  */
 class ContentRepository internal constructor(private val store: ContentStore) {
 
+    /** En-têtes par type, lus une fois : la base de contenu ne change pas pendant la vie de l'appli. */
+    private val headers: Map<EntryType, List<EntryHeader>> by lazy { store.headers().groupBy { it.type } }
+
     fun list(type: EntryType, profile: SpoilerProfile, revealed: Set<String> = emptySet()): EntryList {
-        val rows = store.entries(type)
-        val visible = rows.filter { titleVisible(it, profile, revealed) }
-        return EntryList(visible.map { it.summary() }, someHidden = visible.size < rows.size)
+        val rows = headers[type].orEmpty()
+        val visible = rows.filter { titleVisible(it.id, it.titleTag, profile, revealed) }
+        return EntryList(visible.map { EntrySummary(it.id, it.type, it.subtype, it.name) }, someHidden = visible.size < rows.size)
     }
 
     fun entry(id: ContentId, profile: SpoilerProfile, revealed: Set<String> = emptySet(), showActOfHidden: Boolean = false): Gated<EntryView>? {
@@ -119,16 +124,16 @@ class ContentRepository internal constructor(private val store: ContentStore) {
         )
     }
 
-    private fun titleVisible(row: EntryRow, profile: SpoilerProfile, revealed: Set<String>) =
-        SpoilerGate.isVisible(row.titleTag, profile, revealed.has(RevealIds.title(row.id)) || revealed.has(RevealIds.entry(row.id)))
+    private fun titleVisible(row: EntryRow, profile: SpoilerProfile, revealed: Set<String>) = titleVisible(row.id, row.titleTag, profile, revealed)
+
+    private fun titleVisible(id: ContentId, titleTag: SpoilerTag, profile: SpoilerProfile, revealed: Set<String>) =
+        SpoilerGate.isVisible(titleTag, profile) || SpoilerGate.isVisible(titleTag, profile, revealed.has(RevealIds.title(id)) || revealed.has(RevealIds.entry(id)))
 
     private fun effectTargets(effect: Effect): List<ContentId> = when (effect) {
         is Grants -> listOf(effect.target)
         is WearerCondition -> listOf(effect.condition)
         else -> emptyList()
     }
-
-    private fun EntryRow.summary() = EntrySummary(id, type, subtype, name)
 }
 
 /** Le joueur a-t-il dévoilé ce contenu ? [raw] est une clé de [RevealIds], comparée par son jeton. */

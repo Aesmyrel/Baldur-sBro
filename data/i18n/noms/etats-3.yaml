@@ -1,0 +1,14 @@
+# Noms français des états (lot noms-condition, troisième vague). Voir docs/LOTS_ECRITURE.md §3.
+# Même nom anglais que la capacité qui applique l'état : même nom français (voir capacites-3.yaml).
+condition.astral-knowledge:
+  fr: Savoir astral
+  statut: NON_OFFICIELLE
+condition.great-weapon-master-bonus-attack:
+  fr: "Maître des armes lourdes : attaque bonus"
+  statut: NON_OFFICIELLE
+condition.sentinel-foe:
+  fr: Ennemi de la sentinelle
+  statut: NON_OFFICIELLE
+condition.sluggardly:
+  fr: Lambin
+  statut: NON_OFFICIELLE

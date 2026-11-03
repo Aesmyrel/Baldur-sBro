@@ -5,7 +5,8 @@
     "name": {
       "fr": "Acolyte",
       "en": "Acolyte",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -73,9 +74,10 @@
     "id": "background.criminal",
     "type": "background",
     "name": {
-      "fr": "Criminal",
+      "fr": "Criminel",
       "en": "Criminal",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -108,7 +110,7 @@
     "id": "background.entertainer",
     "type": "background",
     "name": {
-      "fr": "Entertainer",
+      "fr": "Artiste",
       "en": "Entertainer",
       "status": "UNOFFICIAL"
     },
@@ -143,7 +145,7 @@
     "id": "background.folk-hero",
     "type": "background",
     "name": {
-      "fr": "Folk Hero",
+      "fr": "Héros du peuple",
       "en": "Folk Hero",
       "status": "UNOFFICIAL"
     },
@@ -178,7 +180,7 @@
     "id": "background.guild-artisan",
     "type": "background",
     "name": {
-      "fr": "Guild Artisan",
+      "fr": "Artisan de guilde",
       "en": "Guild Artisan",
       "status": "UNOFFICIAL"
     },
@@ -213,7 +215,7 @@
     "id": "background.haunted-one",
     "type": "background",
     "name": {
-      "fr": "Haunted One",
+      "fr": "Hanté",
       "en": "Haunted One",
       "status": "UNOFFICIAL"
     },
@@ -283,7 +285,7 @@
     "id": "background.outlander",
     "type": "background",
     "name": {
-      "fr": "Outlander",
+      "fr": "Sauvageon",
       "en": "Outlander",
       "status": "UNOFFICIAL"
     },
@@ -320,7 +322,8 @@
     "name": {
       "fr": "Sage",
       "en": "Sage",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -353,9 +356,10 @@
     "id": "background.soldier",
     "type": "background",
     "name": {
-      "fr": "Soldier",
+      "fr": "Soldat",
       "en": "Soldier",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -388,7 +392,7 @@
     "id": "background.urchin",
     "type": "background",
     "name": {
-      "fr": "Urchin",
+      "fr": "Enfant des rues",
       "en": "Urchin",
       "status": "UNOFFICIAL"
     },

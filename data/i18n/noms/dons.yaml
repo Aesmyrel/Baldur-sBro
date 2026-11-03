@@ -1,0 +1,132 @@
+# Noms français des dons (lot noms-feat). Voir docs/LOTS_ECRITURE.md §3.
+# VF_DND : don du SRD 5.2.1 (srd-5.2.1-fr) de même nom anglais (Alert, Savage Attacker, Skilled) ; sinon NON_OFFICIELLE.
+# « Ability Improvement » et « Magic Initiate: … » diffèrent des noms anglais du SRD (« Ability Score Improvement »,
+# « Magic Initiate (Cleric) ») : termes du SRD repris, statut NON_OFFICIELLE.
+# Armures : vocabulaire du SRD (« formation aux armures légères », armures intermédiaires, armures lourdes).
+# Chaque don porte le même nom français que la capacité de même nom anglais (capacites-3.yaml).
+feat.ability-improvement:
+  fr: Amélioration de caractéristique
+  statut: NON_OFFICIELLE
+feat.actor:
+  fr: Acteur
+  statut: NON_OFFICIELLE
+feat.alert:
+  fr: Vigilant
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feat.athlete:
+  fr: Athlète
+  statut: NON_OFFICIELLE
+feat.charger:
+  fr: Charge
+  statut: NON_OFFICIELLE
+feat.crossbow-expert:
+  fr: Expert en arbalète
+  statut: NON_OFFICIELLE
+feat.defensive-duellist:
+  fr: Duelliste défensif
+  statut: NON_OFFICIELLE
+feat.dual-wielder:
+  fr: Combattant à deux armes
+  statut: NON_OFFICIELLE
+feat.dungeon-delver:
+  fr: Explorateur de donjons
+  statut: NON_OFFICIELLE
+feat.durable:
+  fr: Endurant
+  statut: NON_OFFICIELLE
+feat.elemental-adept:
+  fr: Adepte élémentaire
+  statut: NON_OFFICIELLE
+feat.great-weapon-master:
+  fr: Maître des armes lourdes
+  statut: NON_OFFICIELLE
+feat.heavily-armoured:
+  fr: Formation aux armures lourdes
+  statut: NON_OFFICIELLE
+feat.heavy-armour-master:
+  fr: Maître des armures lourdes
+  statut: NON_OFFICIELLE
+feat.lightly-armoured:
+  fr: Formation aux armures légères
+  statut: NON_OFFICIELLE
+feat.lucky:
+  fr: Chanceux
+  statut: NON_OFFICIELLE
+feat.mage-slayer:
+  fr: Tueur de mages
+  statut: NON_OFFICIELLE
+feat.magic-initiate-bard:
+  fr: "Initié à la magie : barde"
+  statut: NON_OFFICIELLE
+feat.magic-initiate-cleric:
+  fr: "Initié à la magie : clerc"
+  statut: NON_OFFICIELLE
+feat.magic-initiate-druid:
+  fr: "Initié à la magie : druide"
+  statut: NON_OFFICIELLE
+feat.magic-initiate-sorcerer:
+  fr: "Initié à la magie : ensorceleur"
+  statut: NON_OFFICIELLE
+feat.magic-initiate-warlock:
+  fr: "Initié à la magie : occultiste"
+  statut: NON_OFFICIELLE
+feat.magic-initiate-wizard:
+  fr: "Initié à la magie : magicien"
+  statut: NON_OFFICIELLE
+feat.martial-adept:
+  fr: Adepte martial
+  statut: NON_OFFICIELLE
+feat.medium-armour-master:
+  fr: Maître des armures intermédiaires
+  statut: NON_OFFICIELLE
+feat.mobile:
+  fr: Mobile
+  statut: NON_OFFICIELLE
+feat.moderately-armoured:
+  fr: Formation aux armures intermédiaires
+  statut: NON_OFFICIELLE
+feat.performer:
+  fr: Interprète
+  statut: NON_OFFICIELLE
+feat.polearm-master:
+  fr: Maître des armes d’hast
+  statut: NON_OFFICIELLE
+feat.resilient:
+  fr: Résilient
+  statut: NON_OFFICIELLE
+feat.ritual-caster:
+  fr: Ritualiste
+  statut: NON_OFFICIELLE
+feat.savage-attacker:
+  fr: Sauvagerie martiale
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feat.sentinel:
+  fr: Sentinelle
+  statut: NON_OFFICIELLE
+feat.sharpshooter:
+  fr: Tireur d’élite
+  statut: NON_OFFICIELLE
+feat.shield-master:
+  fr: Maître des boucliers
+  statut: NON_OFFICIELLE
+feat.skilled:
+  fr: Doué
+  statut: VF_DND
+  source: srd-5.2.1-fr
+feat.spell-sniper:
+  fr: Tireur d’élite magique
+  statut: NON_OFFICIELLE
+feat.tavern-brawler:
+  fr: Bagarreur de taverne
+  statut: NON_OFFICIELLE
+feat.tough:
+  fr: Robuste
+  statut: NON_OFFICIELLE
+feat.war-caster:
+  fr: Mage de guerre
+  statut: NON_OFFICIELLE
+feat.weapon-master:
+  fr: Maître d’armes
+  statut: NON_OFFICIELLE

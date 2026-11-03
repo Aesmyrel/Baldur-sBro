@@ -3,7 +3,7 @@
     "id": "subrace.asmodeus-tiefling",
     "type": "subrace",
     "name": {
-      "fr": "Asmodeus Tiefling",
+      "fr": "Tieffelin d’Asmodée",
       "en": "Asmodeus Tiefling",
       "status": "UNOFFICIAL"
     },
@@ -46,7 +46,7 @@
     "id": "subrace.black-dragonborn",
     "type": "subrace",
     "name": {
-      "fr": "Black Dragonborn",
+      "fr": "Drakéide noir",
       "en": "Black Dragonborn",
       "status": "UNOFFICIAL"
     },
@@ -75,15 +75,16 @@
       "features": [
         {
           "name": {
-            "fr": "Draconic Ancestry (Acid)",
+            "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Acid)",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.draconic-ancestry-acid"
         },
         {
           "name": {
-            "fr": "Acid Breath",
+            "fr": "Souffle acide",
             "en": "Acid Breath",
             "status": "UNOFFICIAL"
           },
@@ -125,7 +126,7 @@
     "id": "subrace.blue-dragonborn",
     "type": "subrace",
     "name": {
-      "fr": "Blue Dragonborn",
+      "fr": "Drakéide bleu",
       "en": "Blue Dragonborn",
       "status": "UNOFFICIAL"
     },
@@ -154,15 +155,16 @@
       "features": [
         {
           "name": {
-            "fr": "Draconic Ancestry (Lightning)",
+            "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Lightning)",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.draconic-ancestry-lightning"
         },
         {
           "name": {
-            "fr": "Lightning Breath",
+            "fr": "Souffle foudroyant",
             "en": "Lightning Breath",
             "status": "UNOFFICIAL"
           },
@@ -204,7 +206,7 @@
     "id": "subrace.brass-dragonborn",
     "type": "subrace",
     "name": {
-      "fr": "Brass Dragonborn",
+      "fr": "Drakéide d’airain",
       "en": "Brass Dragonborn",
       "status": "UNOFFICIAL"
     },
@@ -233,15 +235,16 @@
       "features": [
         {
           "name": {
-            "fr": "Draconic Ancestry (Fire)",
+            "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Fire)",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.draconic-ancestry-fire"
         },
         {
           "name": {
-            "fr": "Fire Breath (Line)",
+            "fr": "Souffle enflammé",
             "en": "Fire Breath (Line)",
             "status": "UNOFFICIAL"
           },
@@ -283,7 +286,7 @@
     "id": "subrace.bronze-dragonborn",
     "type": "subrace",
     "name": {
-      "fr": "Bronze Dragonborn",
+      "fr": "Drakéide de bronze",
       "en": "Bronze Dragonborn",
       "status": "UNOFFICIAL"
     },
@@ -312,15 +315,16 @@
       "features": [
         {
           "name": {
-            "fr": "Draconic Ancestry (Lightning)",
+            "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Lightning)",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.draconic-ancestry-lightning"
         },
         {
           "name": {
-            "fr": "Lightning Breath",
+            "fr": "Souffle foudroyant",
             "en": "Lightning Breath",
             "status": "UNOFFICIAL"
           },
@@ -362,7 +366,7 @@
     "id": "subrace.copper-dragonborn",
     "type": "subrace",
     "name": {
-      "fr": "Copper Dragonborn",
+      "fr": "Drakéide de cuivre",
       "en": "Copper Dragonborn",
       "status": "UNOFFICIAL"
     },
@@ -391,15 +395,16 @@
       "features": [
         {
           "name": {
-            "fr": "Draconic Ancestry",
+            "fr": "Ascendance draconique",
             "en": "Draconic Ancestry",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.draconic-ancestry-acid"
         },
         {
           "name": {
-            "fr": "Acid Breath",
+            "fr": "Souffle acide",
             "en": "Acid Breath",
             "status": "UNOFFICIAL"
           },
@@ -441,7 +446,7 @@
     "id": "subrace.deep-gnome",
     "type": "subrace",
     "name": {
-      "fr": "Deep Gnome",
+      "fr": "Gnome des profondeurs",
       "en": "Deep Gnome",
       "status": "UNOFFICIAL"
     },
@@ -478,7 +483,7 @@
         },
         {
           "name": {
-            "fr": "Stone Camouflage",
+            "fr": "Camouflage de pierre",
             "en": "Stone Camouflage",
             "status": "UNOFFICIAL"
           },
@@ -520,7 +525,7 @@
     "id": "subrace.drow-half-elf",
     "type": "subrace",
     "name": {
-      "fr": "Drow Half-Elf",
+      "fr": "Demi-elfe drow",
       "en": "Drow Half-Elf",
       "status": "UNOFFICIAL"
     },
@@ -575,7 +580,8 @@
     "name": {
       "fr": "Duergar",
       "en": "Duergar",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -602,7 +608,7 @@
       "features": [
         {
           "name": {
-            "fr": "Duergar Resilience",
+            "fr": "Résistance duergar",
             "en": "Duergar Resilience",
             "status": "UNOFFICIAL"
           },
@@ -652,9 +658,10 @@
     "id": "subrace.forest-gnome",
     "type": "subrace",
     "name": {
-      "fr": "Forest Gnome",
+      "fr": "Gnome des forêts",
       "en": "Forest Gnome",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -695,7 +702,7 @@
     "id": "subrace.gold-dragonborn",
     "type": "subrace",
     "name": {
-      "fr": "Gold Dragonborn",
+      "fr": "Drakéide d’or",
       "en": "Gold Dragonborn",
       "status": "UNOFFICIAL"
     },
@@ -724,15 +731,16 @@
       "features": [
         {
           "name": {
-            "fr": "Draconic Ancestry",
+            "fr": "Ascendance draconique",
             "en": "Draconic Ancestry",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.draconic-ancestry-fire"
         },
         {
           "name": {
-            "fr": "Fire Breath (Cone)",
+            "fr": "Souffle enflammé",
             "en": "Fire Breath (Cone)",
             "status": "UNOFFICIAL"
           },
@@ -774,7 +782,7 @@
     "id": "subrace.gold-dwarf",
     "type": "subrace",
     "name": {
-      "fr": "Gold Dwarf",
+      "fr": "Nain d’or",
       "en": "Gold Dwarf",
       "status": "UNOFFICIAL"
     },
@@ -803,9 +811,10 @@
       "features": [
         {
           "name": {
-            "fr": "Dwarven Toughness",
+            "fr": "Ténacité naine",
             "en": "Dwarven Toughness",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.dwarven-toughness"
         }
@@ -836,7 +845,7 @@
     "id": "subrace.green-dragonborn",
     "type": "subrace",
     "name": {
-      "fr": "Green Dragonborn",
+      "fr": "Drakéide vert",
       "en": "Green Dragonborn",
       "status": "UNOFFICIAL"
     },
@@ -865,15 +874,16 @@
       "features": [
         {
           "name": {
-            "fr": "Draconic Ancestry (Poison)",
+            "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Poison)",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.draconic-ancestry-poison"
         },
         {
           "name": {
-            "fr": "Poison Breath",
+            "fr": "Souffle empoisonné",
             "en": "Poison Breath",
             "status": "UNOFFICIAL"
           },
@@ -915,9 +925,10 @@
     "id": "subrace.high-elf",
     "type": "subrace",
     "name": {
-      "fr": "High Elf",
+      "fr": "Haut-elfe",
       "en": "High Elf",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -959,7 +970,7 @@
     "id": "subrace.high-half-elf",
     "type": "subrace",
     "name": {
-      "fr": "High Half-Elf",
+      "fr": "Demi-elfe haut-elfe",
       "en": "High Half-Elf",
       "status": "UNOFFICIAL"
     },
@@ -1003,7 +1014,7 @@
     "id": "subrace.lightfoot-halfling",
     "type": "subrace",
     "name": {
-      "fr": "Lightfoot Halfling",
+      "fr": "Halfelin pied-léger",
       "en": "Lightfoot Halfling",
       "status": "UNOFFICIAL"
     },
@@ -1032,9 +1043,10 @@
       "features": [
         {
           "name": {
-            "fr": "Naturally Stealthy",
+            "fr": "Discrétion naturelle",
             "en": "Naturally Stealthy",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.naturally-stealthy"
         }
@@ -1065,7 +1077,7 @@
     "id": "subrace.lolth-sworn-drow",
     "type": "subrace",
     "name": {
-      "fr": "Lolth-Sworn Drow",
+      "fr": "Drow voué à Lolth",
       "en": "Lolth-Sworn Drow",
       "status": "UNOFFICIAL"
     },
@@ -1108,7 +1120,7 @@
     "id": "subrace.mephistopheles-tiefling",
     "type": "subrace",
     "name": {
-      "fr": "Mephistopheles Tiefling",
+      "fr": "Tieffelin de Méphistophélès",
       "en": "Mephistopheles Tiefling",
       "status": "UNOFFICIAL"
     },
@@ -1151,7 +1163,7 @@
     "id": "subrace.red-dragonborn",
     "type": "subrace",
     "name": {
-      "fr": "Red Dragonborn",
+      "fr": "Drakéide rouge",
       "en": "Red Dragonborn",
       "status": "UNOFFICIAL"
     },
@@ -1180,15 +1192,16 @@
       "features": [
         {
           "name": {
-            "fr": "Draconic Ancestry (Fire)",
+            "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Fire)",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.draconic-ancestry-fire"
         },
         {
           "name": {
-            "fr": "Fire Breath (Cone)",
+            "fr": "Souffle enflammé",
             "en": "Fire Breath (Cone)",
             "status": "UNOFFICIAL"
           },
@@ -1230,9 +1243,10 @@
     "id": "subrace.rock-gnome",
     "type": "subrace",
     "name": {
-      "fr": "Rock Gnome",
+      "fr": "Gnome des roches",
       "en": "Rock Gnome",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -1278,7 +1292,7 @@
     "id": "subrace.seldarine-drow",
     "type": "subrace",
     "name": {
-      "fr": "Seldarine Drow",
+      "fr": "Drow de la Seldarine",
       "en": "Seldarine Drow",
       "status": "UNOFFICIAL"
     },
@@ -1321,7 +1335,7 @@
     "id": "subrace.shield-dwarf",
     "type": "subrace",
     "name": {
-      "fr": "Shield Dwarf",
+      "fr": "Nain d’écu",
       "en": "Shield Dwarf",
       "status": "UNOFFICIAL"
     },
@@ -1370,7 +1384,7 @@
     "id": "subrace.silver-dragonborn",
     "type": "subrace",
     "name": {
-      "fr": "Silver Dragonborn",
+      "fr": "Drakéide d’argent",
       "en": "Silver Dragonborn",
       "status": "UNOFFICIAL"
     },
@@ -1399,15 +1413,16 @@
       "features": [
         {
           "name": {
-            "fr": "Draconic Ancestry (Cold)",
+            "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Cold)",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.draconic-ancestry-cold"
         },
         {
           "name": {
-            "fr": "Frost Breath",
+            "fr": "Souffle glacial",
             "en": "Frost Breath",
             "status": "UNOFFICIAL"
           },
@@ -1449,7 +1464,7 @@
     "id": "subrace.strongheart-halfling",
     "type": "subrace",
     "name": {
-      "fr": "Strongheart Halfling",
+      "fr": "Halfelin cœur-vaillant",
       "en": "Strongheart Halfling",
       "status": "UNOFFICIAL"
     },
@@ -1478,7 +1493,7 @@
       "features": [
         {
           "name": {
-            "fr": "Strongheart Resilience",
+            "fr": "Résistance cœur-vaillant",
             "en": "Strongheart Resilience",
             "status": "UNOFFICIAL"
           },
@@ -1511,7 +1526,7 @@
     "id": "subrace.white-dragonborn",
     "type": "subrace",
     "name": {
-      "fr": "White Dragonborn",
+      "fr": "Drakéide blanc",
       "en": "White Dragonborn",
       "status": "UNOFFICIAL"
     },
@@ -1540,15 +1555,16 @@
       "features": [
         {
           "name": {
-            "fr": "Draconic Ancestry (Cold)",
+            "fr": "Ascendance draconique",
             "en": "Draconic Ancestry (Cold)",
-            "status": "UNOFFICIAL"
+            "status": "VF_DND",
+            "source": "srd-5.2.1-fr"
           },
           "id": "feature.draconic-ancestry-cold"
         },
         {
           "name": {
-            "fr": "Frost Breath",
+            "fr": "Souffle glacial",
             "en": "Frost Breath",
             "status": "UNOFFICIAL"
           },
@@ -1590,9 +1606,10 @@
     "id": "subrace.wood-elf",
     "type": "subrace",
     "name": {
-      "fr": "Wood Elf",
+      "fr": "Elfe sylvestre",
       "en": "Wood Elf",
-      "status": "UNOFFICIAL"
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
     },
     "tag": {
       "act": "prologue",
@@ -1625,7 +1642,7 @@
       "features": [
         {
           "name": {
-            "fr": "Fleet of Foot",
+            "fr": "Foulée rapide",
             "en": "Fleet of Foot",
             "status": "UNOFFICIAL"
           },
@@ -1658,7 +1675,7 @@
     "id": "subrace.wood-half-elf",
     "type": "subrace",
     "name": {
-      "fr": "Wood Half-Elf",
+      "fr": "Demi-elfe sylvestre",
       "en": "Wood Half-Elf",
       "status": "UNOFFICIAL"
     },
@@ -1693,7 +1710,7 @@
       "features": [
         {
           "name": {
-            "fr": "Fleet of Foot",
+            "fr": "Foulée rapide",
             "en": "Fleet of Foot",
             "status": "UNOFFICIAL"
           },
@@ -1726,7 +1743,7 @@
     "id": "subrace.zariel-tiefling",
     "type": "subrace",
     "name": {
-      "fr": "Zariel Tiefling",
+      "fr": "Tieffelin de Zariel",
       "en": "Zariel Tiefling",
       "status": "UNOFFICIAL"
     },

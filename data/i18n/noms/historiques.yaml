@@ -1,0 +1,42 @@
+# Noms français des historiques (lot noms-background). Voir docs/LOTS_ECRITURE.md §3.
+# VF_DND : historique du SRD 5.2.1 (srd-5.2.1-fr) de même nom anglais (Acolyte, Criminal, Sage, Soldier) ; sinon NON_OFFICIELLE.
+background.acolyte:
+  fr: Acolyte
+  statut: VF_DND
+  source: srd-5.2.1-fr
+background.charlatan:
+  fr: Charlatan
+  statut: NON_OFFICIELLE
+background.criminal:
+  fr: Criminel
+  statut: VF_DND
+  source: srd-5.2.1-fr
+background.entertainer:
+  fr: Artiste
+  statut: NON_OFFICIELLE
+background.folk-hero:
+  fr: Héros du peuple
+  statut: NON_OFFICIELLE
+background.guild-artisan:
+  fr: Artisan de guilde
+  statut: NON_OFFICIELLE
+background.haunted-one:
+  fr: Hanté
+  statut: NON_OFFICIELLE
+background.noble:
+  fr: Noble
+  statut: NON_OFFICIELLE
+background.outlander:
+  fr: Sauvageon
+  statut: NON_OFFICIELLE
+background.sage:
+  fr: Sage
+  statut: VF_DND
+  source: srd-5.2.1-fr
+background.soldier:
+  fr: Soldat
+  statut: VF_DND
+  source: srd-5.2.1-fr
+background.urchin:
+  fr: Enfant des rues
+  statut: NON_OFFICIELLE
