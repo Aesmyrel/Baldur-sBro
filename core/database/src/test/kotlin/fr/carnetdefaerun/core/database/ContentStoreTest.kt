@@ -47,7 +47,33 @@ class ContentStoreTest {
     @Test
     fun `listes triées par nom français et index des noms`() {
         val spells = store.entries(EntryType.SPELL)
-        assertThat(spells.map { it.nameFr.lowercase() }).isNotEmpty()
+        assertThat(spells.map { it.name.fr }).isNotEmpty()
         assertThat(store.names().any { it.form == "boule de feu" && it.entryId.value == "spell.fireball" }).isTrue()
+    }
+
+    @Test
+    fun `en-têtes lus sans la fiche, nom et source compris`() {
+        val headers = store.headers()
+        assertThat(headers).hasSize(source.size)
+        val bySource = source.associateBy { it.id }
+        headers.forEach { h ->
+            val e = bySource.getValue(h.id)
+            assertThat(h.name).isEqualTo(e.name)
+            assertThat(h.titleTag).isEqualTo(e.titleTag)
+        }
+    }
+
+    @Test
+    fun `texte intégral, accents ignorés, chaque passage avec l'étiquette de son bloc`() {
+        val hits = store.searchText(listOf("degats", "feu"), 50)
+        assertThat(hits).isNotEmpty()
+        val bySource = source.associateBy { it.id }
+        hits.forEach { hit ->
+            val block = bySource.getValue(hit.entryId).blocks.single { it.id == hit.blockId }
+            assertThat(hit.tag).isEqualTo(block.tag)
+            assertThat(fr.carnetdefaerun.core.model.search.Folding.fold(block.text)).contains("feu")
+            assertThat(hit.excerpt).isNotEmpty()
+        }
+        assertThat(store.searchText(listOf("zzqxw"), 10)).isEmpty()
     }
 }

@@ -1,6 +1,8 @@
 package fr.carnetdefaerun.core.data.content
 
 import fr.carnetdefaerun.core.data.preferences.UserPreferencesRepository
+import fr.carnetdefaerun.core.data.search.SearchRepository
+import fr.carnetdefaerun.core.data.search.SearchResults
 import fr.carnetdefaerun.core.data.user.PlayerRepository
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.EntryType
@@ -18,6 +20,7 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.withContext
 
 /**
  * Porte du contenu pour les écrans : le dépôt filtré par le verrou, nourri en continu par le profil de spoilers,
@@ -26,6 +29,7 @@ import kotlinx.coroutines.flow.map
 @Singleton
 class ContentGateway @Inject internal constructor(
     private val repository: ContentRepository,
+    private val search: SearchRepository,
     private val preferences: UserPreferencesRepository,
     private val player: PlayerRepository,
 ) {
@@ -46,6 +50,18 @@ class ContentGateway @Inject internal constructor(
             else -> gated
         }
     }.flowOn(Dispatchers.IO)
+
+    /**
+     * Recherche globale filtrée par le verrou, relancée à chaque changement de réglage, de révélation, de nom
+     * corrigé ou de favori. [includeHidden] : le joueur a demandé à chercher aussi dans le contenu masqué.
+     */
+    fun search(query: String, includeHidden: Boolean = false): Flow<SearchResults> = combine(context, player.favorites) { c, favorites ->
+        val results = search.search(query, c.profile, c.revealed, c.names, favorites, includeHidden)
+        results.copy(hits = results.hits.map { it.copy(entry = it.entry.copy(name = c.correct(it.entry.id, it.entry.name))) })
+    }.flowOn(Dispatchers.Default)
+
+    /** Charge l'index de recherche en avance (à l'ouverture de la recherche). */
+    suspend fun warmUpSearch() = withContext(Dispatchers.IO) { search.warmUp() }
 
     val favorites: Flow<Set<ContentId>> = player.favorites
 

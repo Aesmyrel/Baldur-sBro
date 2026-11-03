@@ -7,6 +7,8 @@ import fr.carnetdefaerun.core.model.content.ContentFormat
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.ContentSchema
 import fr.carnetdefaerun.core.model.content.EntryType
+import fr.carnetdefaerun.core.model.content.Name
+import fr.carnetdefaerun.core.model.content.NameStatus
 import fr.carnetdefaerun.core.model.content.Reference
 import fr.carnetdefaerun.core.model.content.Relation
 import fr.carnetdefaerun.core.model.spoiler.Act
@@ -47,6 +49,11 @@ class SqliteContentStore(private val context: Context) : ContentStore {
             buildList { while (c.moveToNext()) add(c.entryRow()) }
         }
 
+    override fun headers(): List<EntryHeader> =
+        db.query(E.TABLE, HEADER_COLUMNS, null, null, null, null, E.SORT_KEY).use { c ->
+            buildList { while (c.moveToNext()) add(c.header()) }
+        }
+
     override fun linksFrom(id: ContentId): List<LinkRow> = links("${L.SOURCE} = ?", id)
 
     override fun linksTo(id: ContentId): List<LinkRow> = links("${L.TARGET} = ?", id)
@@ -55,6 +62,16 @@ class SqliteContentStore(private val context: Context) : ContentStore {
         db.query(N.TABLE, arrayOf(N.ENTRY_ID, N.FORM, N.KIND), null, null, null, null, null).use { c ->
             buildList { while (c.moveToNext()) add(NameRow(ContentId(c.getString(0)), c.getString(1), c.getString(2))) }
         }
+
+    override fun searchText(words: List<String>, limit: Int): List<TextHitRow> {
+        require(words.all { w -> w.isNotEmpty() && w.all { it in 'a'..'z' || it in '0'..'9' } }) { "Mots non repliés" }
+        if (words.isEmpty()) return emptyList()
+        val t = ContentSchema.SearchText.TABLE
+        val sql = "SELECT entry_id, block_id, act, level, other_works, snippet($t, '', '', '…', 5, 12) FROM $t WHERE text MATCH ? LIMIT ?"
+        return db.rawQuery(sql, arrayOf(words.joinToString(" ") { "$it*" }, limit.toString())).use { c ->
+            buildList { while (c.moveToNext()) add(TextHitRow(ContentId(c.getString(0)), c.getString(1), c.tag(2), c.getString(5))) }
+        }
+    }
 
     private val referenceCache: Map<String, Reference> by lazy {
         val r = ContentSchema.Reference
@@ -79,16 +96,16 @@ class SqliteContentStore(private val context: Context) : ContentStore {
             }
         }
 
-    private fun Cursor.entryRow() = EntryRow(
+    private fun Cursor.header() = EntryHeader(
         id = ContentId(getString(0)),
         type = EntryType.valueOf(getString(1)),
         subtype = getString(2),
-        nameFr = getString(3),
-        nameEn = getString(4),
-        tag = tag(5),
-        titleTag = tag(8),
-        payload = getString(11),
+        name = Name(getString(3), getString(4), NameStatus.valueOf(getString(5)), getString(6)),
+        tag = tag(7),
+        titleTag = tag(10),
     )
+
+    private fun Cursor.entryRow() = EntryRow(header(), payload = getString(13))
 
     private fun Cursor.tag(first: Int) = SpoilerTag(Act.entries[getInt(first)], SpoilerLevel.entries[getInt(first + 1)], SpoilerLevel.entries[getInt(first + 2)])
 
@@ -96,9 +113,10 @@ class SqliteContentStore(private val context: Context) : ContentStore {
         val E = ContentSchema.Entry
         val L = ContentSchema.Link
         val N = ContentSchema.SearchName
-        val ENTRY_COLUMNS = arrayOf(
-            E.ID, E.TYPE, E.SUBTYPE, E.NAME_FR, E.NAME_EN,
-            E.ACT, E.LEVEL, E.OTHER_WORKS, E.TITLE_ACT, E.TITLE_LEVEL, E.TITLE_OTHER_WORKS, E.PAYLOAD,
+        val HEADER_COLUMNS = arrayOf(
+            E.ID, E.TYPE, E.SUBTYPE, E.NAME_FR, E.NAME_EN, E.NAME_STATUS, E.NAME_SOURCE,
+            E.ACT, E.LEVEL, E.OTHER_WORKS, E.TITLE_ACT, E.TITLE_LEVEL, E.TITLE_OTHER_WORKS,
         )
+        val ENTRY_COLUMNS = HEADER_COLUMNS + E.PAYLOAD
     }
 }

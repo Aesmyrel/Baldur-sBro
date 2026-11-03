@@ -24,6 +24,7 @@ import fr.carnetdefaerun.core.data.navigation.DataStoreNavigationStateStore
 import fr.carnetdefaerun.core.data.navigation.NavigationStateStore
 import fr.carnetdefaerun.core.data.preferences.DataStoreUserPreferencesRepository
 import fr.carnetdefaerun.core.data.preferences.UserPreferencesRepository
+import fr.carnetdefaerun.core.data.search.SearchRepository
 import java.io.File
 import javax.inject.Named
 import javax.inject.Singleton
@@ -53,6 +54,9 @@ object DataStoreModule {
 
     @Provides @Singleton
     internal fun contentRepository(store: ContentStore): ContentRepository = ContentRepository(store)
+
+    @Provides @Singleton
+    internal fun searchRepository(store: ContentStore): SearchRepository = SearchRepository(store)
 
     /** Base du joueur : incluse dans la sauvegarde Android (règles d'extraction de l'appli). */
     @Provides @Singleton

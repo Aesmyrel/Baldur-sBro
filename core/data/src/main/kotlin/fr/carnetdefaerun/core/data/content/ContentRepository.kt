@@ -128,8 +128,8 @@ class ContentRepository internal constructor(private val store: ContentStore) {
         else -> emptyList()
     }
 
-    private fun EntryRow.summary() = EntrySummary(id, type, subtype, entry().name)
+    private fun EntryRow.summary() = EntrySummary(id, type, subtype, name)
 }
 
 /** Le joueur a-t-il dévoilé ce contenu ? [raw] est une clé de [RevealIds], comparée par son jeton. */
-private fun Set<String>.has(raw: String): Boolean = RevealKey.of(raw).token in this
+private fun Set<String>.has(raw: String): Boolean = isNotEmpty() && RevealKey.of(raw).token in this

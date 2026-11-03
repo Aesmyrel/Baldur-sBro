@@ -205,3 +205,16 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Porte du contenu** (`ContentGateway`) : les écrans ne lisent le contenu que par elle. Elle combine en continu le profil de spoilers, le réglage « indiquer l'acte », les révélations et les corrections. Un changement de réglage se propage aussitôt à toutes les listes et fiches ouvertes. Les listes sont triées sur le nom replié (accents et casse ignorés).
 - **Nom corrigé** : il prime partout (fiche, liste, liens) avec le statut « corrigé par vous », sans source. Une correction vide la supprime et rend le nom d'origine.
 - Tests : dévoiler un bloc ne montre que ce bloc et ne stocke que son jeton ; une correction prime partout ; la liste suit l'acte ; les favoris s'ajoutent et se retirent.
+
+**D-074 — Recherche globale (phase 3b, socle).**
+- **Index des noms** (`core:model`, Kotlin pur) : un dictionnaire des mots des noms français, anglais et alias, chaque mot relié aux noms qui le contiennent. Chaque mot cherché est comparé par préfixe, puis par une distance de Damerau-Levenshtein bornée mesurée sur le début du mot : 1 faute jusqu'à 5 lettres, 2 au-delà, aucune sous 3 lettres (sinon une seule lettre trouverait tout). Les trigrammes prévus par le plan sont écartés : une transposition dans un mot court ne laisse aucun trigramme commun (« bolue » et « boule »).
+- **Classement** : nom exact, début du nom, mots du nom dans n'importe quel ordre, puis fautes de frappe, puis texte intégral. À égalité : favoris, entrées de l'acte courant, nom français avant anglais, nom le plus court.
+- **Texte intégral** : table FTS4 de la base, accents ignorés, à partir de 3 lettres, un passage par entrée et après les noms.
+- **Verrou** : chaque passage est filtré sur le titre, la fiche et son bloc. Les résultats masqués ne sont ni donnés ni comptés. Sur demande (« chercher aussi dans le contenu masqué »), ils deviennent des voiles opaques, sans titre ni acte, que la révélation lève. Un nom corrigé par le joueur se cherche comme un nom français et reste soumis au verrou de sa fiche.
+- **Base de contenu en version 3** : la source du nom français y est une colonne. Les listes et la recherche lisent des en-têtes sans décoder les fiches.
+- **Mesures** : la recherche prend 2 à 8 ms (médiane, JVM, base complète de 2 552 entrées), pour un seuil de test de 50 ms. L'empreinte d'une clé de révélation n'est calculée que pour un contenu verrouillé.
+- **Tests de fuite** :
+  - chaque nom verrouillé, français et anglais, tapé tel quel, pour les trois profils de référence ;
+  - chaque résultat de 36 recherches, pour les 18 profils ;
+  - le plein texte sur la vraie base SQLite.
+- **Un nom pour deux entrées** : « Amélioration de caractéristique » nomme le don et le sort. Le SRD 5.2.1 et le lexique AideDD l'emploient chacun ; la recherche les distingue par leur type.

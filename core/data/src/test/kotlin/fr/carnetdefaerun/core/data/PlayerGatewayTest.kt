@@ -6,6 +6,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.google.common.truth.Truth.assertThat
 import fr.carnetdefaerun.core.data.content.ContentGateway
 import fr.carnetdefaerun.core.data.content.ContentRepository
+import fr.carnetdefaerun.core.data.search.SearchRepository
 import fr.carnetdefaerun.core.data.user.RoomPlayerRepository
 import fr.carnetdefaerun.core.database.user.UserDatabase
 import fr.carnetdefaerun.core.model.content.Block
@@ -45,7 +46,7 @@ class PlayerGatewayTest {
         entry("condition.visible", "Visible", early, listOf(Block("effet-1", BlockKind.EFFECT, "Texte de l’acte III", late))),
         entry("condition.cachee", "Cachée", late),
     )
-    private val gateway = ContentGateway(ContentRepository(FakeStore(entries)), prefs, player)
+    private val gateway = FakeStore(entries).let { ContentGateway(ContentRepository(it), SearchRepository(it), prefs, player) }
 
     @After fun close() = db.close()
 
