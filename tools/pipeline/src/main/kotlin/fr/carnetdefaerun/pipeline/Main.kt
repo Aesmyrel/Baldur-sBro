@@ -45,6 +45,9 @@ class Paths(val root: Path) {
     val lexiconCache: Path = cache.resolve("lexiques")
     val worklists: Path = cache.resolve("worklists")
     val gameData: Path = root.resolve("data/game")
+
+    /** Codex assemblé (relations étiquetées), dérivé de [content] : relu par les tests et la base. */
+    val loreData: Path = root.resolve("data/lore")
     val curatedNames: Path = root.resolve("data/i18n/noms.fr.yaml")
     val writtenEffects: Path = root.resolve("data/effets")
     /** Codex : registre des références et fiches de lore rédigées. */

@@ -120,8 +120,16 @@ class GamePipeline(private val paths: Paths) {
         paths.worklists.resolve("a-faire.json").writeText(ContentFormat.pretty.encodeToString(ListSerializer(WorkItem.serializer()), work))
         paths.gameData.resolve("RAPPORT.md").writeText(report(entries, assembler.dangling.size, work))
         println("  ${entries.size} entrées écrites dans ${paths.root.relativize(paths.gameData)}, ${work.size} éléments à rédiger ou traduire")
+
+        // Codex assemblé à partir de content/ : les tests de fuite le relisent comme les données de jeu.
+        val lore = all().first.filter { it.type == EntryType.LORE }
+        Files.createDirectories(paths.loreData)
+        paths.loreData.resolve(LORE_FILE).writeText(loreJson(lore))
+        println("  ${lore.size} fiches du codex écrites dans ${paths.root.relativize(paths.loreData)}")
         return true
     }
+
+    private fun loreJson(lore: List<Entry>) = ContentFormat.pretty.encodeToString(ListSerializer(Entry.serializer()), lore.sortedBy { it.id.value }) + "\n"
 
     /** Un nom jugé révélateur par sa fiche de traduction rend le nom et la fiche plus stricts. */
     private fun raiseTitle(entry: Entry, names: NameResolver): Entry {
@@ -132,7 +140,7 @@ class GamePipeline(private val paths: Paths) {
 
     fun validate(): Boolean {
         val (entries, loreProblems) = all()
-        val problems = loreProblems + Validator().validate(entries)
+        val problems = loreProblems + Validator().validate(entries) + staleLore(entries)
         problems.forEach { println("  ✗ $it") }
         println("  ${entries.size} entrées (dont ${entries.count { it.type == EntryType.LORE }} fiches de lore), ${problems.size} problème(s)")
         return problems.isEmpty()
@@ -166,10 +174,18 @@ class GamePipeline(private val paths: Paths) {
         return (game + lore) to problems
     }
 
+    /** Le codex exporté doit être celui que donnent les fichiers de content/ (sinon : relancer normalize). */
+    private fun staleLore(entries: List<Entry>): List<String> {
+        val file = paths.loreData.resolve(LORE_FILE)
+        val expected = loreJson(entries.filter { it.type == EntryType.LORE })
+        return if (file.exists() && file.readText() == expected) emptyList()
+        else listOf("${paths.root.relativize(file)} ne correspond pas aux fiches de content/ : relancer « normalize »")
+    }
+
     /** Base embarquée : uniquement à partir de données valides. */
     fun buildDb(out: java.nio.file.Path): Boolean {
         val (entries, loreProblems) = all()
-        val problems = loreProblems + Validator().validate(entries)
+        val problems = loreProblems + Validator().validate(entries) + staleLore(entries)
         if (problems.isNotEmpty()) {
             problems.take(20).forEach { System.err.println("  ✗ $it") }
             System.err.println("  ${problems.size} problème(s) de validation : base non construite")
@@ -223,3 +239,6 @@ class GamePipeline(private val paths: Paths) {
         appendLine("Liens écartés faute de cible dans la base : $dangling. Éléments à rédiger ou traduire : ${work.size} (liste de travail locale, non versionnée).")
     }
 }
+
+/** Fichier du codex assemblé, dans data/lore. */
+private const val LORE_FILE = "codex.json"

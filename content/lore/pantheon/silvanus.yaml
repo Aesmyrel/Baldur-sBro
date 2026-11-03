@@ -1,0 +1,100 @@
+id: lore.pantheon.silvanus
+theme: pantheon
+nom: { fr: Silvanus, en: Silvanus, statut: NON_OFFICIELLE }
+etiquette_titre: { act: acte1, level: aucun, otherWorks: aucun }
+etiquette: { act: acte1, level: aucun, otherWorks: aucun }
+resume: >-
+  Dieu de la nature sauvage, Silvanus veille sur l’équilibre du monde vivant ; les druides sont ses fidèles les plus nombreux.
+sections:
+  - type: general
+    titre: Le dieu de la nature sauvage
+    etiquette: { act: acte1, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Silvanus est, dans le panthéon de Faerûn, la puissance de la nature sauvage, celle des forêts profondes et des terres que nul ne cultive. Il s’oppose en cela à la nature ordonnée des champs, qui relève de la déesse Chauntéa. Son culte n’est pas né sur Toril : à l’époque de l’essor de Nétheril, des migrants venus d’un autre monde y apportent la foi en plusieurs dieux celtes, dont Silvanus, qui finit par rejoindre l’un des panthéons locaux. Son symbole est une feuille de chêne, et ses titres anglais les plus courants, Oak Father, Old Oak ou Forest Father, le présentent tour à tour en vieil arbre et en père des forêts.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-silvanus }
+          - { ref: frwiki-silvanus/fr-campaign-set, page: "14" }
+          - { ref: frwiki-silvanus/running-the-realms, page: "48" }
+          - { ref: frwiki-silvanus/faiths-avatars, page: "105" }
+          - { ref: frwiki-silvanus/frcs-3e, page: "235" }
+          - { ref: frwiki-silvanus/scag, page: "21, 37" }
+      - texte: >-
+          Son dogme tient en un mot : l’équilibre. Croissance et pourriture, crue et sécheresse, feu et glace doivent se répondre pour que le cycle de la vie se poursuive, et le dieu veille sur ce cycle avec un détachement qui le fait parfois passer pour impitoyable, alors qu’il tient à toute vie. Il se soucie peu de ménager les villes et les champs, s’emporte contre qui menace les lieux sauvages et réserve une haine particulière à ceux qui usent du feu par négligence ou pour détruire. Il compte pour alliées les autres divinités non mauvaises de la nature et des bêtes, comme Eldath, et pour adversaires Malar, Talos et Talona, dont le goût de la destruction rompt l’équilibre.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-silvanus }
+          - { ref: frwiki-silvanus/frcs-3e, page: "251" }
+          - { ref: frwiki-silvanus/dragon-412, page: "23–24" }
+          - { ref: frwiki-silvanus/on-hallowed-ground, page: "75" }
+          - { ref: frwiki-silvanus/faiths-avatars, page: "146" }
+      - texte: >-
+          Ses fidèles les plus nombreux sont des druides, mais il a aussi des clercs, et des rôdeurs, des barbares ou des ermites l’invoquent. Son clergé protège les forêts, plante des arbres et combat les maladies. Ses rites se tiennent volontiers au sommet d’une colline couronnée de vieux chênes ; on n’y verse jamais le sang : l’offrande est un objet de bois que l’on brise puis que l’on enterre, sans jamais le brûler. Le dieu lui-même apparaît sous deux formes principales : un vieux visage barbu à la peau fendillée comme une écorce, qui semble sortir d’un tronc, ou un jeune homme aux longues jambes, vêtu d’une armure de feuilles et armé d’un maillet de bois, qui surgit quand un bosquet sacré est menacé.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-silvanus }
+          - { ref: frwiki-church-of-silvanus }
+          - { ref: frwiki-silvanus/frcs-3e, page: "251" }
+          - { ref: frwiki-silvanus/faiths-avatars, page: "145–146" }
+          - { ref: frwiki-church-of-silvanus/faiths-pantheons, page: "63" }
+  - type: ecarts
+    titre: Un domaine qui change avec la cosmologie
+    etiquette: { act: acte1, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Dans la cosmologie de la Grande Roue (Great Wheel), le domaine de Silvanus se trouve dans Tir na Og, le royaume que partagent les dieux celtes au sein des Outlands. Il en occupe les confins les plus reculés, que les ouvrages de la 2e édition nomment Summeroak ou Deep Forest. Ces mêmes ouvrages en font une divinité majeure et neutre, honorée avant tout par ceux qui vivent dans les bois, et lui prêtent pour symboles une feuille de chêne vivante, un chêne en plein été ou un bâton de bois qui bourgeonne.
+        nature: canon_dnd
+        edition: add2
+        variantes: domaine
+        refs:
+          - { ref: frwiki-silvanus }
+          - { ref: frwiki-silvanus/on-hallowed-ground, page: "75" }
+          - { ref: frwiki-silvanus/faiths-avatars, page: "145" }
+      - texte: >-
+          Les ouvrages des Royaumes de la 3e édition adoptent la cosmologie de l’Arbre-Monde (World Tree) et placent son domaine dans un plan appelé House of Nature. Silvanus y reste une divinité majeure, désormais neutre strict, dont les attributions englobent, outre la nature sauvage, les druides eux-mêmes. Ses clercs puisent dans des domaines liés aux animaux, aux plantes, à la protection, au renouveau et à l’eau, et son arme de prédilection est un grand maillet.
+        nature: canon_dnd
+        edition: 3e
+        variantes: domaine
+        refs:
+          - { ref: frwiki-silvanus }
+          - { ref: frwiki-silvanus/frcs-3e, page: "235" }
+          - { ref: frwiki-silvanus/faiths-pantheons, page: "63–64" }
+      - texte: >-
+          La 4e édition et sa cosmologie de l’Axe du Monde (World Axis) installent son domaine dans les Deep Wilds. Silvanus n’y a plus d’alignement (unaligned) ; sa sphère est la nature, et ses prêtres disposent des domaines de la vie, de la tempête et des terres sauvages. Changement notable, Malar, son vieil ennemi, n’est plus alors qu’un exarque à son service. Le magazine Dragon cite même parmi ses fidèles des paysans, des jardiniers, des chasseurs, des trappeurs et de riches propriétaires terriens.
+        nature: canon_dnd
+        edition: 4e
+        variantes: domaine
+        refs:
+          - { ref: frwiki-silvanus }
+          - { ref: frwiki-silvanus/fr-campaign-guide, page: "63, 76" }
+          - { ref: frwiki-silvanus/dragon-412, page: "22" }
+      - texte: >-
+          Le supplément Forgotten Realms: Heroes of Faerûn (2025), écrit pour les règles de 2024, situe de nouveau son domaine dans les Outlands. Il garde la feuille de chêne pour symbole et la nature sauvage pour attribution, lui donne les titres d’Oak Father, d’Old Oak et d’Old Father Tree, et cite comme ses fidèles typiques les barbares, les druides, les rôdeurs et les elfes sylvestres.
+        nature: canon_dnd
+        edition: 5e-2024
+        variantes: domaine
+        refs:
+          - { ref: frwiki-silvanus }
+          - { ref: frwiki-silvanus/heroes-of-faerun, page: "99, 121" }
+  - type: bg3
+    titre: Dans Baldur’s Gate 3
+    etiquette: { act: acte1, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Au nord de l’épave du nautiloïde, dès le début de l’acte I, s’étend le bosquet d’émeraude, un refuge de druides voué à Silvanus. Les druides y invoquent le dieu : au bassin sacré, des plaques fixées près de totems animaliers l’appellent par plusieurs de ses titres, et une idole de Silvanus, posée sur la pierre centrale d’un cercle de pierres dressées, sert de foyer à leurs rites. Le jeu propose bien un domaine de la Nature aux clercs, mais Silvanus ne figure pas parmi les divinités qu’un clerc peut choisir à la création du personnage.
+        nature: canon_bg3
+        refs:
+          - { ref: bg3wiki-emerald-grove }
+          - { ref: bg3wiki-wilderness }
+          - { ref: bg3wiki-sacred-pool }
+          - { ref: bg3wiki-cleric }
+relations:
+  - { cible: place.emerald-grove, type: see_also }
+  - { cible: place.sacred-pool, type: see_also }
+  - { cible: class.druid, type: see_also }
+  - { cible: subclass.nature-domain, type: see_also }
+  - { cible: lore.factions.harpers, type: see_also }

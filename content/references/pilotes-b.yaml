@@ -1,0 +1,556 @@
+# Registre des références des fiches pilotes, lot b (personnages, objets, chronologie, saga, livres, plus-loin).
+# Identifiants préfixés « b- » pour éviter toute collision avec le lot parallèle.
+# Pages de wiki : identifiant de révision de la page consultée. Livres non lus : « secondaire », avec « via ».
+
+# --- bg3.wiki (CC BY-NC-SA 4.0) ---
+b-bg3wiki-shanties-for-the-bitch-queen:
+  type: wiki
+  titre_vo: "Shanties for the Bitch Queen (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Shanties_for_the_Bitch_Queen
+  revision: 423083
+  licence: cc-by-nc-sa-4.0
+  consultation: directe
+b-bg3wiki-stormshore-tabernacle:
+  type: wiki
+  titre_vo: "Stormshore Tabernacle (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Stormshore_Tabernacle
+  revision: 431024
+  licence: cc-by-nc-sa-4.0
+  consultation: directe
+b-bg3wiki-water-queens-house:
+  type: wiki
+  titre_vo: "Water Queen's House (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Water_Queen%27s_House
+  revision: 424785
+  licence: cc-by-nc-sa-4.0
+  consultation: directe
+
+# --- Forgotten Realms Wiki (CC BY-SA) ---
+b-frwiki-umberlee:
+  type: wiki
+  titre_vo: "Umberlee (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Umberlee
+  revision: 1107383
+  licence: cc-by-sa
+  consultation: directe
+
+# --- Le Monde des Royaumes Oubliés (wiki francophone, CC BY-SA) : contrôle croisé des noms ---
+b-mroi-umberlie:
+  type: wiki
+  titre_vo: "Umberlie (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Umberlie
+  revision: 30724
+  licence: cc-by-sa
+  consultation: directe
+
+# --- Livres et aventures, connus par une source secondaire ---
+b-faiths-and-avatars:
+  type: livre
+  titre_vo: "Faiths & Avatars"
+  editeur: TSR
+  annee: 1996
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-umberlee
+b-faiths-and-pantheons:
+  type: livre
+  titre_vo: "Faiths and Pantheons"
+  editeur: Wizards of the Coast
+  annee: 2002
+  edition: 3e
+  consultation: secondaire
+  via: b-frwiki-umberlee
+b-phb-5e-2014:
+  type: livre
+  titre_vo: "Player's Handbook (5e édition)"
+  editeur: Wizards of the Coast
+  annee: 2014
+  edition: 5e-2014
+  consultation: secondaire
+  via: b-frwiki-umberlee
+b-heroes-of-faerun:
+  type: livre
+  titre_vo: "Forgotten Realms: Heroes of Faerûn"
+  editeur: Wizards of the Coast
+  annee: 2025
+  edition: 5e-2024
+  consultation: secondaire
+  via: b-frwiki-umberlee
+b-forgotten-realms-adventures:
+  type: livre
+  titre_vo: "Forgotten Realms Adventures"
+  editeur: TSR
+  annee: 1990
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-umberlee
+b-descent-into-avernus:
+  type: aventure
+  titre_vo: "Baldur's Gate: Descent into Avernus"
+  editeur: Wizards of the Coast
+  annee: 2019
+  edition: 5e-2014
+  consultation: secondaire
+  via: b-frwiki-umberlee
+b-scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer's Guide"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  isbn: 978-0786965809
+  consultation: secondaire
+  via: b-frwiki-sword-coast-adventurers-guide
+b-frwiki-sword-coast-adventurers-guide:
+  type: wiki
+  titre_vo: "Sword Coast Adventurer's Guide (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Sword_Coast_Adventurer%27s_Guide
+  revision: 1102084
+  licence: cc-by-sa
+  consultation: directe
+
+# --- Personnages : Halaster ---
+b-frwiki-halaster-blackcloak:
+  type: wiki
+  titre_vo: "Halaster Blackcloak (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Halaster_Blackcloak
+  revision: 1090802
+  licence: cc-by-sa
+  consultation: directe
+b-mroi-halaster-sombrecape:
+  type: wiki
+  titre_vo: "Halaster Sombrecape (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Halaster_Sombrecape
+  revision: 45116
+  licence: cc-by-sa
+  consultation: directe
+b-frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3e édition)"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-villains-lorebook:
+  type: livre
+  titre_vo: "Villains' Lorebook"
+  editeur: Wizards of the Coast
+  annee: 1998
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-grand-history-of-the-realms:
+  type: livre
+  titre_vo: "The Grand History of the Realms"
+  editeur: Wizards of the Coast
+  annee: 2007
+  edition: "3.5"
+  isbn: 978-0-7869-4731-7
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-ruins-of-undermountain-ii:
+  type: livre
+  titre_vo: "The Ruins of Undermountain II: The Deep Levels"
+  editeur: TSR
+  annee: 1994
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-ruins-of-undermountain:
+  type: livre
+  titre_vo: "The Ruins of Undermountain"
+  editeur: TSR
+  annee: 1991
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-dragon-409:
+  type: magazine
+  titre_vo: "Dragon n° 409 — Character Themes: Citizens of Splendor"
+  editeur: Wizards of the Coast
+  annee: 2012
+  edition: 4e
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-dungeon-of-the-mad-mage:
+  type: aventure
+  titre_vo: "Waterdeep: Dungeon of the Mad Mage"
+  titre_vf: "Waterdeep : Le Donjon du mage dément"
+  editeur: Wizards of the Coast
+  annee: 2018
+  edition: 5e-2014
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-expedition-to-undermountain:
+  type: aventure
+  titre_vo: "Expedition to Undermountain"
+  editeur: Wizards of the Coast
+  annee: 2007
+  edition: "3.5"
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-undermountain-stardock:
+  type: aventure
+  titre_vo: "Undermountain: Stardock"
+  editeur: TSR
+  annee: 1997
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-escape-from-undermountain:
+  type: roman
+  titre_vo: "Escape from Undermountain"
+  editeur: TSR
+  annee: 1996
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-elminster-in-hell:
+  type: roman
+  titre_vo: "Elminster in Hell"
+  editeur: Wizards of the Coast
+  annee: 2001
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-descent-to-undermountain:
+  type: jeu
+  titre_vo: "Descent to Undermountain"
+  editeur: Interplay
+  annee: 1998
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-nwn-hordes-of-the-underdark:
+  type: jeu
+  titre_vo: "Neverwinter Nights: Hordes of the Underdark"
+  editeur: Infogrames (Atari)
+  annee: 2003
+  consultation: secondaire
+  via: b-frwiki-halaster-blackcloak
+b-wpfr-donjons-et-dragons:
+  type: wiki
+  titre_vo: "Donjons et Dragons (Wikipédia)"
+  url: https://fr.wikipedia.org/wiki/Donjons_et_Dragons
+  revision: 240941944
+  licence: cc-by-sa-4.0
+  consultation: directe
+
+# --- Objets : l'Anneau de l'hiver ---
+b-frwiki-ring-of-winter:
+  type: wiki
+  titre_vo: "Ring of Winter (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Ring_of_Winter
+  revision: 1083925
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-artus-cimber:
+  type: wiki
+  titre_vo: "Artus Cimber (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Artus_Cimber
+  revision: 1083336
+  licence: cc-by-sa
+  consultation: directe
+b-mroi-anneau-de-l-hiver:
+  type: wiki
+  titre_vo: "Anneau de l'hiver (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Anneau_de_l%27hiver
+  revision: 38917
+  licence: cc-by-sa
+  consultation: directe
+b-tomb-of-annihilation:
+  type: aventure
+  titre_vo: "Tomb of Annihilation"
+  editeur: Wizards of the Coast
+  annee: 2017
+  edition: 5e-2014
+  isbn: 978-0786966103
+  consultation: secondaire
+  via: b-frwiki-ring-of-winter
+b-storm-kings-thunder:
+  type: aventure
+  titre_vo: "Storm King's Thunder"
+  editeur: Wizards of the Coast
+  annee: 2016
+  edition: 5e-2014
+  isbn: 978-0786966004
+  consultation: secondaire
+  via: b-frwiki-ring-of-winter
+b-volos-guide-to-all-things-magical:
+  type: livre
+  titre_vo: "Volo's Guide to All Things Magical"
+  editeur: TSR
+  annee: 1996
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-ring-of-winter
+b-cormanthyr-empire-of-the-elves:
+  type: livre
+  titre_vo: "Cormanthyr: Empire of the Elves"
+  editeur: TSR
+  annee: 1998
+  edition: add2
+  isbn: 978-0786907618
+  consultation: secondaire
+  via: b-frwiki-ring-of-winter
+b-the-ring-of-winter-novel:
+  type: roman
+  titre_vo: "The Ring of Winter (James Lowder)"
+  editeur: TSR
+  annee: 1992
+  consultation: secondaire
+  via: b-frwiki-ring-of-winter
+
+# --- Chronologie : le Pacte des Vaux ---
+b-frwiki-dales-compact:
+  type: wiki
+  titre_vo: "Dales Compact (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Dales_Compact
+  revision: 1103846
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-standing-stone:
+  type: wiki
+  titre_vo: "Standing Stone (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Standing_Stone
+  revision: 766568
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-marking-the-years:
+  type: wiki
+  titre_vo: "Marking the years (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Marking_the_years
+  revision: 1103694
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-1-dr:
+  type: wiki
+  titre_vo: "1 DR (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/1_DR
+  revision: 978745
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-26-dr:
+  type: wiki
+  titre_vo: "26 DR (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/26_DR
+  revision: 978768
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-history-of-the-dalelands:
+  type: wiki
+  titre_vo: "History of the Dalelands (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/History_of_the_Dalelands
+  revision: 1065255
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-cormanthor-war:
+  type: wiki
+  titre_vo: "Cormanthor War (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Cormanthor_War
+  revision: 1090807
+  licence: cc-by-sa
+  consultation: directe
+b-mroi-pierre-levee:
+  type: wiki
+  titre_vo: "Pierre levée (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Pierre_lev%C3%A9e
+  revision: 28913
+  licence: cc-by-sa
+  consultation: directe
+b-mroi-pacte-des-vaux:
+  type: wiki
+  titre_vo: "Pacte des Vaux (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Pacte_des_Vaux
+  revision: 28911
+  licence: cc-by-sa
+  consultation: directe
+b-mroi-calendrier-des-vaux:
+  type: wiki
+  titre_vo: "Calendrier des Vaux (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Calendrier_des_Vaux
+  revision: 39967
+  licence: cc-by-sa
+  consultation: directe
+b-the-dalelands:
+  type: livre
+  titre_vo: "The Dalelands"
+  editeur: TSR
+  annee: 1993
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-standing-stone
+b-volos-guide-to-the-dalelands:
+  type: livre
+  titre_vo: "Volo's Guide to the Dalelands"
+  editeur: TSR
+  annee: 1996
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-standing-stone
+b-frcs-2e-revised:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting, 2e édition révisée (A Grand Tour of the Realms)"
+  editeur: TSR
+  annee: 1996
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-marking-the-years
+b-old-empires:
+  type: livre
+  titre_vo: "Old Empires"
+  editeur: TSR
+  annee: 1990
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-1-dr
+b-forgotten-realms-campaign-guide:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Guide"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: b-frwiki-standing-stone
+
+# --- Saga : Baldur's Gate (1998) ---
+b-wpfr-baldurs-gate:
+  type: wiki
+  titre_vo: "Baldur's Gate (jeu vidéo) (Wikipédia)"
+  url: https://fr.wikipedia.org/wiki/Baldur%27s_Gate_(jeu_vid%C3%A9o)
+  revision: 236853172
+  licence: cc-by-sa-4.0
+  consultation: directe
+b-wpen-baldurs-gate:
+  type: wiki
+  titre_vo: "Baldur's Gate (video game) (Wikipedia)"
+  url: https://en.wikipedia.org/wiki/Baldur%27s_Gate_(video_game)
+  revision: 1379973955
+  licence: cc-by-sa-4.0
+  consultation: directe
+b-frwiki-baldurs-gate-game:
+  type: wiki
+  titre_vo: "Baldur's Gate (game) (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate_(game)
+  revision: 1092005
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-tales-of-the-sword-coast:
+  type: wiki
+  titre_vo: "Baldur's Gate: Tales of the Sword Coast (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate:_Tales_of_the_Sword_Coast
+  revision: 1080287
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-bg-enhanced-edition:
+  type: wiki
+  titre_vo: "Baldur's Gate: Enhanced Edition (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate:_Enhanced_Edition
+  revision: 1071480
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-siege-of-dragonspear:
+  type: wiki
+  titre_vo: "Baldur's Gate: Siege of Dragonspear (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate:_Siege_of_Dragonspear
+  revision: 1092278
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-baldurs-gate-novel:
+  type: wiki
+  titre_vo: "Baldur's Gate (novel) (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate_(novel)
+  revision: 1106184
+  licence: cc-by-sa
+  consultation: directe
+
+# --- Pour aller plus loin : Sword Coast Adventurer's Guide ---
+b-wpen-sword-coast-adventurers-guide:
+  type: wiki
+  titre_vo: "Sword Coast Adventurer's Guide (Wikipedia)"
+  url: https://en.wikipedia.org/wiki/Sword_Coast_Adventurer%27s_Guide
+  revision: 1321269988
+  licence: cc-by-sa-4.0
+  consultation: directe
+b-frwiki-bladesinger:
+  type: wiki
+  titre_vo: "Bladesinger (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Bladesinger
+  revision: 1104631
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-swashbuckler:
+  type: wiki
+  titre_vo: "Swashbuckler (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Swashbuckler
+  revision: 1096205
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-storm-sorcery:
+  type: wiki
+  titre_vo: "Storm sorcery (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Storm_sorcery
+  revision: 874664
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-oath-of-the-crown:
+  type: wiki
+  titre_vo: "Oath of the Crown (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Oath_of_the_Crown
+  revision: 1069628
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-booming-blade:
+  type: wiki
+  titre_vo: "Booming blade (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Booming_blade
+  revision: 1007216
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-baldurs-gate-iii:
+  type: wiki
+  titre_vo: "Baldur's Gate III (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate_III
+  revision: 1109223
+  licence: cc-by-sa
+  consultation: directe
+b-frwiki-heroes-of-faerun:
+  type: wiki
+  titre_vo: "Forgotten Realms: Heroes of Faerûn (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Forgotten_Realms:_Heroes_of_Faer%C3%BBn
+  revision: 1111041
+  licence: cc-by-sa
+  consultation: directe
+b-bg3wiki-bladesinging:
+  type: wiki
+  titre_vo: "Bladesinging (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Bladesinging
+  revision: 416527
+  licence: cc-by-nc-sa-4.0
+  consultation: directe
+b-bg3wiki-swashbuckler:
+  type: wiki
+  titre_vo: "Swashbuckler (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Swashbuckler
+  revision: 423780
+  licence: cc-by-nc-sa-4.0
+  consultation: directe
+b-bg3wiki-storm-sorcery:
+  type: wiki
+  titre_vo: "Storm Sorcery (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Storm_Sorcery
+  revision: 423628
+  licence: cc-by-nc-sa-4.0
+  consultation: directe
+b-bg3wiki-oath-of-the-crown:
+  type: wiki
+  titre_vo: "Oath of the Crown (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Oath_of_the_Crown
+  revision: 433737
+  licence: cc-by-nc-sa-4.0
+  consultation: directe
+b-bg3wiki-booming-blade:
+  type: wiki
+  titre_vo: "Booming Blade (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Booming_Blade
+  revision: 433961
+  licence: cc-by-nc-sa-4.0
+  consultation: directe

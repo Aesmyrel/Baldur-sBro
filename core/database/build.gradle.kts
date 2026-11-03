@@ -38,6 +38,7 @@ val buildContentDb = tasks.register<BuildContentDb>("buildContentDb") {
     mainClass.set("fr.carnetdefaerun.pipeline.MainKt")
     workingDir = rootDir
     inputs.dir(rootDir.resolve("data")).withPathSensitivity(PathSensitivity.RELATIVE)
+    inputs.dir(rootDir.resolve("content")).withPathSensitivity(PathSensitivity.RELATIVE)
     outputDir.set(layout.buildDirectory.dir("generated/contentDb"))
     val out = outputDir.file("content.db")
     argumentProviders.add(CommandLineArgumentProvider { listOf("build-db", "--out", out.get().asFile.absolutePath) })

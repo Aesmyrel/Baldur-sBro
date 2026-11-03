@@ -1,0 +1,62 @@
+id: lore.bestiaire.imp
+theme: bestiaire
+nom: { fr: Diablotin, en: Imp, statut: VF_DND, source: srd-5.2.1-fr }
+etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
+etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+resume: >-
+  Le plus petit des diables, flatteur et lâche, aime servir de familier aux mortels pour mieux les pousser vers le mal.
+sections:
+  - type: general
+    titre: Le plus petit des diables
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Les diablotins (imps) sont de minuscules fiélons, parmi les plus faibles de la hiérarchie infernale ; ils figurent déjà dans le premier Monster Manual, en 1977. Hauts d’une soixantaine de centimètres pour moins de quatre kilos, ils ont l’allure de petits humanoïdes, le plus souvent rouge sombre, avec des ailes membraneuses de chauve-souris, de petites cornes torses et une queue préhensile armée d’un dard venimeux. Ils peuvent prendre une ou deux formes animales, comme l’araignée, le rat, le sanglier, le corbeau ou le bouc, se rendre invisibles à volonté, et résistent à bien des formes de dégâts : les armes ordinaires n’ont guère de prise sur eux.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-imp }
+          - { ref: frwiki-imp/monster-manual-1e, page: "54" }
+          - { ref: frwiki-imp/planescape-mc-appendix, page: "56" }
+          - { ref: frwiki-imp/monster-manual-v35, page: "56" }
+          - { ref: frwiki-imp/monster-manual-4e, page: "63" }
+          - { ref: frwiki-imp/monster-manual-5e, page: "76" }
+      - texte: >-
+          Leur vocation est de corrompre. Ils servent volontiers de familiers aux mortels en quête de pouvoir, magiciens, prêtres ou autres, auxquels un contrat les lie : tant que l’accord tient, maître et familier partagent leurs sens par télépathie, et le maître profite de certains dons de la créature. Flatteurs et serviables en apparence, ils poussent leur maître à mal faire et ne servent en vérité que leurs seigneurs infernaux. Au combat, ils se montrent lâches : ils ne se battent qu’en cas de besoin, frappent par surprise après s’être rendus invisibles ou changés en bête, puis fuient dès que l’affrontement tourne mal, sauf pour protéger le mortel dont dépend leur avancement.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-imp }
+          - { ref: frwiki-imp/monster-manual-1e, page: "54" }
+          - { ref: frwiki-imp/planescape-mc-appendix, page: "56" }
+          - { ref: frwiki-imp/monster-manual-4e, page: "63" }
+          - { ref: frwiki-imp/monster-manual-5e, page: "76" }
+      - texte: >-
+          Dans la hiérarchie des Enfers, le rang de diablotin est envié : libre de parcourir le plan matériel, un diablotin se voit directement crédité des âmes qu’il fait tomber, ce qui lui ouvre la voie d’une promotion, pour laquelle il en faut neuf en moyenne selon le Fiendish Codex II. Les diables puissants façonnent des diablotins à partir de larves d’âmes, mais d’autres diables peuvent aussi être réduits à ce rang. Pour la 2e édition, ce sont des diables mineurs qui ne comptent pas parmi les baatezu ; tués hors de leur plan, ils s’y reforment au bout d’un an et un jour, et les quasits sont leurs équivalents chaotiques.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-imp }
+          - { ref: frwiki-imp/fiendish-codex-2, page: "13" }
+          - { ref: frwiki-imp/planescape-mc-appendix, page: "56" }
+  - type: bg3
+    titre: Dans Baldur’s Gate 3
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Les diablotins sont les tout premiers ennemis du jeu : le premier combat scénarisé du prologue, à bord du nautiloïde, oppose le groupe à trois diablotins mineurs. Ces adversaires sont très faibles, avec 6 points de vie et une classe d’armure de 7 en difficulté normale, et n’ont pas les résistances habituelles des fiélons. Ils griffent, lancent une version affaiblie du Trait de feu ou manient une hachette, un cimeterre ou une arbalète légère, des armes amoindries qui n’infligent que 1d4 dégâts. Sur le nautiloïde, une attaque contre eux ne peut pas aboutir à un échec critique, même sur un 1 ; une fois vaincus, ils laissent des versions normales de leurs armes, dont des armes à distance utiles en début de partie.
+        nature: canon_bg3
+        refs:
+          - { ref: bg3wiki-lesser-imp }
+          - { ref: bg3wiki-imp }
+          - { ref: bg3wiki-nautiloid }
+      - texte: >-
+          On en affronte d’autres tout au long de l’aventure, mais un diablotin peut aussi devenir un allié : l’occultiste du Pacte de la chaîne peut en invoquer un comme familier grâce au sort Appel de familier : diablotin. Le jeu présente ces créatures comme de petits diables volants à la queue armée d’un dard venimeux ; elles sont de petite taille, volent à 9 m par tour et voient dans le noir.
+        nature: canon_bg3
+        refs:
+          - { ref: bg3wiki-imp }
+relations:
+  - { cible: lore.cosmologie.avernus, type: see_also }
+  - { cible: place.nautiloid, type: see_also }
+  - { cible: spell.find-familiar-imp, type: see_also }
+  - { cible: class.warlock, type: see_also }

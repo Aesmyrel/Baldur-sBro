@@ -46,6 +46,9 @@ enum class CanonNature {
     @SerialName("canon_bg3") CANON_BG3,
     @SerialName("canon_dnd") CANON_DND,
     @SerialName("interpretation") INTERPRETATION,
+
+    /** Fait du monde réel : parution, éditeur, auteurs, accueil d'une œuvre (jamais du lore). */
+    @SerialName("hors_univers") REAL_WORLD,
 }
 
 /** Édition de D&D d'où vient une affirmation (le lore a varié d'une édition à l'autre). */

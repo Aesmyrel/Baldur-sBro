@@ -1,0 +1,76 @@
+id: lore.livres.shanties-for-the-bitch-queen
+theme: livres
+nom: { fr: Chants de marins pour la Reine Garce, en: Shanties for the Bitch Queen, statut: NON_OFFICIELLE }
+etiquette_titre: { act: acte1, level: aucun, otherWorks: aucun }
+etiquette: { act: acte1, level: aucun, otherWorks: aucun }
+resume: >-
+  Un petit recueil de chants de marins à la gloire d’Umberlie, la déesse des mers, posé sur un ponton de la Plage ravagée dès le début de l’Acte I.
+sections:
+  - type: bg3
+    titre: Sur le ponton de la Plage ravagée
+    etiquette: { act: acte1, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Ce livre se ramasse dès les premiers pas de l’Acte I : il est posé sur le ponton en ruine de la Plage ravagée, un peu au nord de l’endroit où le nautiloïde s’est écrasé. C’est un objet de rareté commune, qui pèse 0,5 kg et vaut 14 pièces d’or. La page du wiki qui le décrit ne nomme aucun auteur et crédite simplement l’Église d’Umberlie (Umberlee), la déesse de la mer : ces chants appartiennent à son culte plutôt qu’à une plume connue.
+        nature: canon_bg3
+        refs: [ { ref: b-bg3wiki-shanties-for-the-bitch-queen } ]
+  - type: bg3
+    titre: Trois chants pour la mer
+    etiquette: { act: acte1, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Le recueil tient en trois chansons brèves, du genre qu’un équipage reprend en chœur pour se donner du cœur à l’ouvrage. La première rythme l’effort des rameurs et compte sur la déesse pour tenir la tempête à distance. La deuxième s’adresse à la « Mère de l’Onde » : les marins lui demandent la permission de prendre la mer, tout en reconnaissant qu’elle reste libre de les engloutir et de les garder pour elle. La troisième est celle d’un navire encalminé : sans l’accord de la « Reine Garce », aucun vent ne se lèvera, et l’équipage se résigne à patienter jusqu’à ce qu’elle renvoie la houle.
+        nature: canon_bg3
+        refs: [ { ref: b-bg3wiki-shanties-for-the-bitch-queen } ]
+  - type: general
+    titre: Umberlie, la Reine Garce
+    etiquette: { act: acte1, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Dans le panthéon de Faerûn, Umberlie (Umberlee) gouverne les océans, les courants, les vagues et les vents du large. Les suppléments de la 2e et de la 3e édition la décrivent cruelle, vaniteuse, avide et lunatique : elle ne tient pas ses promesses et se réjouit des naufrages. On la vénère donc surtout par peur, et la 5e édition range encore les marins et les habitants des côtes parmi ses fidèles, sous le domaine de la Tempête. Elle appartient aux dieux de la fureur que mène Talos, aux côtés d’Aurile et de Malar ; ses titres de Reine des Profondeurs et de Mère de l’Onde se retrouvent jusque dans les suppléments parus en 2025.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: b-frwiki-umberlee }
+          - { ref: b-faiths-and-avatars, page: "173" }
+          - { ref: b-faiths-and-pantheons, page: "82-83" }
+          - { ref: b-phb-5e-2014, page: "62, 294" }
+          - { ref: b-heroes-of-faerun, page: "123, 127" }
+          - { ref: b-mroi-umberlie }
+      - texte: >-
+          Pour s’assurer une traversée sans encombre, on lui paie tribut. Faiths & Avatars (1996) montre des équipages qui jettent par-dessus bord or, gemmes ou cargaisons précieuses quand la mer se déchaîne, parfois au son d’airs joués pour elle, et des voyageurs qui laissent avant le départ de petites offrandes sur ses autels : fleurs, bougies, pièces, friandises. Ses prêtres les ramassent ensuite et lavent l’autel à l’eau de mer, signe que la déesse a prélevé sa part. Son clergé prêche avant tout la crainte : chacun doit trembler devant ses vagues et payer pour être épargné.
+        nature: canon_dnd
+        edition: add2
+        refs:
+          - { ref: b-faiths-and-avatars, page: "173-174" }
+          - { ref: b-frwiki-umberlee }
+      - texte: >-
+          Notre lecture : les trois chants du recueil reflètent fidèlement ce rapport de crainte. Aucun ne vante la bonté de la déesse ; tous reconnaissent son pouvoir sur le vent et sur la houle, et se contentent de demander qu’elle les tolère. Ils tiennent davantage de la prière prudente, celle de gens qui vivent de la mer et savent ce qu’elle peut leur coûter, que de l’hymne de dévotion qu’on adresserait à une divinité bienveillante.
+        nature: interpretation
+        refs:
+          - { ref: b-bg3wiki-shanties-for-the-bitch-queen }
+          - { ref: b-frwiki-umberlee }
+  - type: bg3
+    titre: Plus tard, à la Porte de Baldur
+    etiquette: { act: acte3, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Le recueil n’est pas un exemplaire unique. Un autre se trouve dans le Tabernacle de Stormshore, un sanctuaire de la Ville basse qui n’est voué à aucun dieu en particulier et dont les rayonnages rassemblent des écrits sur les divinités et leurs fidèles. La déesse a aussi son propre temple en ville : la Maison de la Reine des eaux, un vaste édifice dressé sur un cap rocheux, à la pointe sud des Quais du port Gris, où le peuple vient prier et déposer ses offrandes autour d’une fontaine à son effigie.
+        nature: canon_bg3
+        refs:
+          - { ref: b-bg3wiki-shanties-for-the-bitch-queen }
+          - { ref: b-bg3wiki-stormshore-tabernacle }
+          - { ref: b-bg3wiki-water-queens-house }
+      - texte: >-
+          Ce temple ne doit rien au hasard : dans le canon de D&D, la Maison de la Reine des eaux est le plus ancien temple de la Porte de Baldur, et les suppléments la décrivent desservie par des veuves de marins disparus en mer. Le détail figure déjà dans Forgotten Realms Adventures (1990), revient dans le Sword Coast Adventurer’s Guide (2015), et l’aventure Baldur’s Gate : Descent into Avernus (2019) confirme l’ancienneté du lieu.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: b-frwiki-umberlee }
+          - { ref: b-forgotten-realms-adventures, page: "76" }
+          - { ref: b-scag, page: "41" }
+          - { ref: b-descent-into-avernus, page: "193" }
+relations:
+  - { cible: place.ravaged-beach, type: located_in }
+  - { cible: place.stormshore-tabernacle, type: located_in, etiquette: { act: acte3, level: aucun, otherWorks: aucun } }
+  - { cible: place.water-queens-house, type: see_also, etiquette: { act: acte3, level: aucun, otherWorks: aucun } }

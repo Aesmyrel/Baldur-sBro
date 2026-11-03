@@ -3,6 +3,7 @@ package fr.carnetdefaerun.pipeline.validate
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.ItemFacts
 import fr.carnetdefaerun.core.model.content.LoreFacts
+import fr.carnetdefaerun.core.model.content.LoreTheme
 import fr.carnetdefaerun.core.model.content.NameStatus
 import fr.carnetdefaerun.core.model.content.Relation
 import fr.carnetdefaerun.core.model.content.SpellFacts
@@ -17,7 +18,10 @@ private val LICENCES = mapOf(
 )
 
 /** Sources admises pour un nom français, en vocabulaire seulement (docs/SOURCES.md §2.4 et §2.5). */
-private val NAME_SOURCES = setOf("aidedd", "srd-5.2.1-fr")
+private val NAME_SOURCES = setOf("aidedd", "srd-5.2.1-fr", "wikipedia-fr")
+
+/** Wikipédia FR n'atteste que des titres VF d'œuvres publiées : jeux, suppléments, romans (D-079). */
+private val TITLE_THEMES = setOf(LoreTheme.SAGA, LoreTheme.FURTHER_READING)
 
 /**
  * Contrôles bloquants des données de jeu (PLAN §3.4) : identifiants, noms, étiquettes de spoiler
@@ -50,6 +54,9 @@ class Validator {
             if (e.name.status == NameStatus.CORRECTED) problems += "$where : statut « corrigé » réservé aux corrections locales du joueur"
             if (e.name.status == NameStatus.VF_DND && e.name.source == null) problems += "$where : nom officiel sans source"
             e.name.source?.let { if (it !in NAME_SOURCES) problems += "$where : source de nom inconnue « $it »" }
+            if (e.name.source == "wikipedia-fr" && (e.facts as? LoreFacts)?.theme !in TITLE_THEMES) {
+                problems += "$where : Wikipédia FR ne sert de source qu'au titre VF d'une œuvre (saga, pour aller plus loin)"
+            }
 
             // Étiquettes : jamais l'attente du pipeline, et la fiche protège au moins autant que son nom.
             if (e.tag == SpoilerTag.LOCKED || e.titleTag == SpoilerTag.LOCKED) problems += "$where : étiquette non calculée"

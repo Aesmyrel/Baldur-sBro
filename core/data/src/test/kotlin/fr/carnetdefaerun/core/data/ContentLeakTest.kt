@@ -12,14 +12,15 @@ import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.Facts
 import fr.carnetdefaerun.core.model.content.ItemFacts
+import fr.carnetdefaerun.core.model.content.LoreFacts
+import fr.carnetdefaerun.core.model.content.LoreSection
 import fr.carnetdefaerun.core.model.content.Relation
 import fr.carnetdefaerun.core.model.spoiler.Act
 import fr.carnetdefaerun.core.model.spoiler.Gated
 import fr.carnetdefaerun.core.model.spoiler.SpoilerGate
 import fr.carnetdefaerun.core.model.spoiler.SpoilerProfile
 import fr.carnetdefaerun.core.model.spoiler.Tolerance
-import java.io.File
-import kotlinx.serialization.builtins.ListSerializer
+import fr.carnetdefaerun.core.testing.GameData
 import fr.carnetdefaerun.core.testing.InMemoryContentStore
 import org.junit.Test
 
@@ -28,9 +29,7 @@ import org.junit.Test
  * aucune fiche, aucune source, aucun lien ni aucun identifiant ne laisse paraître un contenu verrouillé.
  */
 class ContentLeakTest {
-    private val entries: List<Entry> = File("../../data/game").listFiles { f -> f.extension == "json" }!!.sorted().flatMap {
-        ContentFormat.strict.decodeFromString(ListSerializer(Entry.serializer()), it.readText())
-    }
+    private val entries: List<Entry> = GameData.entries
     private val byId = entries.associateBy { it.id }
     private val repository = ContentRepository(InMemoryContentStore(entries))
 
@@ -74,6 +73,14 @@ class ContentLeakTest {
                     }
                     view.blocks.filterIsInstance<Gated.Visible<fr.carnetdefaerun.core.model.content.Block>>().forEach {
                         assertWithMessage("$where : bloc").that(SpoilerGate.isVisible(it.value.tag, profile)).isTrue()
+                    }
+                    // Codex : chaque section visible l'est pour ce profil ; seules les références des sections visibles.
+                    val visibleSections = view.sections.filterIsInstance<Gated.Visible<LoreSection>>().map { it.value }
+                    visibleSections.forEach { assertWithMessage("$where : section ${it.id}").that(SpoilerGate.isVisible(it.tag, profile)).isTrue() }
+                    val cited = visibleSections.flatMap { sec -> sec.paragraphs.flatMap { p -> p.refs.map { it.ref } } }.toSet()
+                    view.references.forEach { assertWithMessage("$where : référence ${it.id}").that(it.id in cited).isTrue() }
+                    (entry.facts as? LoreFacts)?.sections.orEmpty().filter { !SpoilerGate.isVisible(it.tag, profile) }.forEach { hidden ->
+                        assertWithMessage("$where : section masquée ${hidden.id}").that(visibleSections.none { it.id == hidden.id }).isTrue()
                     }
                     // Aucun identifiant d'entrée masquée dans les faits transmis (un identifiant dérive d'un nom).
                     val facts = ContentFormat.strict.encodeToString(Facts.serializer(), view.facts)

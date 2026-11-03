@@ -1,0 +1,2976 @@
+[
+  {
+    "id": "lore.bestiaire.imp",
+    "type": "lore",
+    "name": {
+      "fr": "Diablotin",
+      "en": "Imp",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "bestiaire",
+      "summary": "Le plus petit des diables, flatteur et lâche, aime servir de familier aux mortels pour mieux les pousser vers le mal.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "Le plus petit des diables",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Les diablotins (imps) sont de minuscules fiélons, parmi les plus faibles de la hiérarchie infernale ; ils figurent déjà dans le premier Monster Manual, en 1977. Hauts d’une soixantaine de centimètres pour moins de quatre kilos, ils ont l’allure de petits humanoïdes, le plus souvent rouge sombre, avec des ailes membraneuses de chauve-souris, de petites cornes torses et une queue préhensile armée d’un dard venimeux. Ils peuvent prendre une ou deux formes animales, comme l’araignée, le rat, le sanglier, le corbeau ou le bouc, se rendre invisibles à volonté, et résistent à bien des formes de dégâts : les armes ordinaires n’ont guère de prise sur eux.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-imp"
+                },
+                {
+                  "ref": "frwiki-imp/monster-manual-1e",
+                  "page": "54"
+                },
+                {
+                  "ref": "frwiki-imp/planescape-mc-appendix",
+                  "page": "56"
+                },
+                {
+                  "ref": "frwiki-imp/monster-manual-v35",
+                  "page": "56"
+                },
+                {
+                  "ref": "frwiki-imp/monster-manual-4e",
+                  "page": "63"
+                },
+                {
+                  "ref": "frwiki-imp/monster-manual-5e",
+                  "page": "76"
+                }
+              ]
+            },
+            {
+              "text": "Leur vocation est de corrompre. Ils servent volontiers de familiers aux mortels en quête de pouvoir, magiciens, prêtres ou autres, auxquels un contrat les lie : tant que l’accord tient, maître et familier partagent leurs sens par télépathie, et le maître profite de certains dons de la créature. Flatteurs et serviables en apparence, ils poussent leur maître à mal faire et ne servent en vérité que leurs seigneurs infernaux. Au combat, ils se montrent lâches : ils ne se battent qu’en cas de besoin, frappent par surprise après s’être rendus invisibles ou changés en bête, puis fuient dès que l’affrontement tourne mal, sauf pour protéger le mortel dont dépend leur avancement.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-imp"
+                },
+                {
+                  "ref": "frwiki-imp/monster-manual-1e",
+                  "page": "54"
+                },
+                {
+                  "ref": "frwiki-imp/planescape-mc-appendix",
+                  "page": "56"
+                },
+                {
+                  "ref": "frwiki-imp/monster-manual-4e",
+                  "page": "63"
+                },
+                {
+                  "ref": "frwiki-imp/monster-manual-5e",
+                  "page": "76"
+                }
+              ]
+            },
+            {
+              "text": "Dans la hiérarchie des Enfers, le rang de diablotin est envié : libre de parcourir le plan matériel, un diablotin se voit directement crédité des âmes qu’il fait tomber, ce qui lui ouvre la voie d’une promotion, pour laquelle il en faut neuf en moyenne selon le Fiendish Codex II. Les diables puissants façonnent des diablotins à partir de larves d’âmes, mais d’autres diables peuvent aussi être réduits à ce rang. Pour la 2e édition, ce sont des diables mineurs qui ne comptent pas parmi les baatezu ; tués hors de leur plan, ils s’y reforment au bout d’un an et un jour, et les quasits sont leurs équivalents chaotiques.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-imp"
+                },
+                {
+                  "ref": "frwiki-imp/fiendish-codex-2",
+                  "page": "13"
+                },
+                {
+                  "ref": "frwiki-imp/planescape-mc-appendix",
+                  "page": "56"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "bg3",
+          "title": "Dans Baldur’s Gate 3",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Les diablotins sont les tout premiers ennemis du jeu : le premier combat scénarisé du prologue, à bord du nautiloïde, oppose le groupe à trois diablotins mineurs. Ces adversaires sont très faibles, avec 6 points de vie et une classe d’armure de 7 en difficulté normale, et n’ont pas les résistances habituelles des fiélons. Ils griffent, lancent une version affaiblie du Trait de feu ou manient une hachette, un cimeterre ou une arbalète légère, des armes amoindries qui n’infligent que 1d4 dégâts. Sur le nautiloïde, une attaque contre eux ne peut pas aboutir à un échec critique, même sur un 1 ; une fois vaincus, ils laissent des versions normales de leurs armes, dont des armes à distance utiles en début de partie.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "bg3wiki-lesser-imp"
+                },
+                {
+                  "ref": "bg3wiki-imp"
+                },
+                {
+                  "ref": "bg3wiki-nautiloid"
+                }
+              ]
+            },
+            {
+              "text": "On en affronte d’autres tout au long de l’aventure, mais un diablotin peut aussi devenir un allié : l’occultiste du Pacte de la chaîne peut en invoquer un comme familier grâce au sort Appel de familier : diablotin. Le jeu présente ces créatures comme de petits diables volants à la queue armée d’un dard venimeux ; elles sont de petite taille, volent à 9 m par tour et voient dans le noir.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "bg3wiki-imp"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 3
+    },
+    "links": [
+      {
+        "target": "lore.cosmologie.avernus",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "place.nautiloid",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "spell.find-familiar-imp",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "class.warlock",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lore.chronologie.dales-compact",
+    "type": "lore",
+    "name": {
+      "fr": "Pacte des Vaux",
+      "en": "Dales Compact",
+      "status": "UNOFFICIAL"
+    },
+    "aliases": [
+      "Pierre levée",
+      "Standing Stone",
+      "1 CV"
+    ],
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "chronologie",
+      "summary": "En 1 CV, elfes et humains scellent dans la pierre une alliance qui donne son point de départ au calendrier des Royaumes, celui-là même qui date l’année 1492 CV.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "Un pacte gravé dans la pierre",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "En 1 CV, les elfes du Cormanthyr et les humains qui deviendront le peuple des Vaux (Dalelands) concluent une alliance. Ses termes sont simples : les humains peuvent s’installer sur les terres sans forêt que les elfes ne revendiquent pas, et renoncent en échange à abattre les arbres plus avant dans la grande forêt. Pour célébrer cet accord, les deux peuples dressent un monument, la Pierre levée (Standing Stone), qui devient le symbole de leur amitié et marque aussi le début d’une nouvelle façon de compter les années.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-frcs-3e",
+                  "page": "118"
+                },
+                {
+                  "ref": "b-the-dalelands",
+                  "page": "4"
+                },
+                {
+                  "ref": "b-frwiki-dales-compact"
+                },
+                {
+                  "ref": "b-frwiki-standing-stone"
+                },
+                {
+                  "ref": "b-mroi-pacte-des-vaux"
+                }
+              ]
+            },
+            {
+              "text": "La Pierre est un monolithe de roche grise, sombre et lustrée, haut d’environ 6 mètres (20 pieds), couvert de runes elfiques qui rappellent les clauses du pacte ; un enchantement répare aussitôt toute tentative de la dégrader. Elle se dresse dans la forêt de Cormanthor, au sud de Myth Drannor, au croisement de la route de Rauthauvyr et de la route de la Mer de lune. Longtemps inaccessible aux humains, elle finit par voir passer une route : quand Rauthauvyr, de Sembie, exige sous menace de guerre une voie à travers la forêt, celle-ci est tracée de manière à passer en vue du monument.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-the-dalelands",
+                  "page": "55"
+                },
+                {
+                  "ref": "b-frcs-3e",
+                  "page": "124"
+                },
+                {
+                  "ref": "b-volos-guide-to-the-dalelands",
+                  "page": "7"
+                },
+                {
+                  "ref": "b-frwiki-standing-stone"
+                },
+                {
+                  "ref": "b-mroi-pierre-levee"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "general",
+          "title": "Le point zéro du calendrier",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Le Calendrier des Vaux (Dalereckoning), abrégé CV, compte les années à partir de cette alliance. Il s’est répandu dans tout Faerûn sans franchir les rivages du continent, et certains textes sans lien avec l’histoire des Vaux l’appellent calendrier de l’Homme libre (Freeman’s Reckoning). Il cohabite avec bien d’autres manières de compter : le Cormyr date ses années de la fondation de sa dynastie, les Obarskyr, et Eauprofonde de l’année où Ahghairon devient son premier seigneur, en 1032 CV. Le CV sert pourtant de référence commune : c’est à lui que l’on compare d’ordinaire tous les autres calendriers.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-frcs-2e-revised",
+                  "page": "22"
+                },
+                {
+                  "ref": "b-grand-history-of-the-realms",
+                  "page": "4"
+                },
+                {
+                  "ref": "b-frwiki-marking-the-years"
+                },
+                {
+                  "ref": "b-mroi-calendrier-des-vaux"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "ecarts",
+          "title": "1 CV ou 26 CV : la naissance du Cormyr",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Nombre de chronologies anciennes placent en 1 CV la fondation du Cormyr, le royaume voisin des Vaux : c’est le cas du supplément Old Empires (1990), que le Forgotten Realms Wiki cite encore à cette date. Dans cette version, le royaume des Obarskyr naît la même année que la Pierre levée et que le Calendrier des Vaux, et la première date de l’histoire du Cormyr se confond avec celle des Vaux.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-old-empires",
+                  "page": "5"
+                },
+                {
+                  "ref": "b-frwiki-1-dr"
+                },
+                {
+                  "ref": "b-frwiki-marking-the-years"
+                }
+              ],
+              "variantGroup": "fondation-cormyr"
+            },
+            {
+              "text": "D’autres ouvrages datent cette fondation de 26 CV. Le cadre de campagne de la 3e édition (2001) et la Grand History of the Realms (2007) l’attribuent à Faerlthann Obarskyr, qui s’installe avec la permission des elfes de la région ; la seconde fait commencer cette année-là le calendrier propre au Cormyr. Le supplément de 2001 ajoute que le premier magicien royal, Baerauble, entre au service de la famille régnante la même année.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-frcs-3e",
+                  "page": "113"
+                },
+                {
+                  "ref": "b-grand-history-of-the-realms",
+                  "page": "60"
+                },
+                {
+                  "ref": "b-frwiki-26-dr"
+                }
+              ],
+              "variantGroup": "fondation-cormyr"
+            },
+            {
+              "text": "Les ouvrages qui retiennent 26 CV expliquent eux-mêmes l’écart. Le calendrier du Cormyr et celui des Vaux sont nés chez deux peuples voisins à vingt-cinq ans d’intervalle, puis ont été diffusés ensemble par les marchands de Sembie. Beaucoup de chronologies datent les événements en CV tout en plaçant la fondation du Cormyr en 1 CV, et cette confusion complique sérieusement la tâche des sages qui étudient les temps anciens.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-frcs-2e-revised",
+                  "page": "22"
+                },
+                {
+                  "ref": "b-grand-history-of-the-realms",
+                  "page": "4"
+                },
+                {
+                  "ref": "b-frwiki-marking-the-years"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "type": "ecarts",
+          "title": "La Pierre brisée",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "leger"
+          },
+          "paragraphs": [
+            {
+              "text": "Pour la Grand History of the Realms (2007), la Pierre tombe en 1374 CV, pendant la guerre qui ravage alors le Cormanthor : les fey’ri de la maison Dlardrageth la détruisent après avoir défait l’armée de Hillsfar, puis concluent une alliance avec une maison drow. Cette guerre sert aussi de toile de fond aux romans Farthest Reach (2005) et Final Gate (2006), de Richard Baker, que le Forgotten Realms Wiki cite pour plusieurs de ses épisodes.",
+              "nature": "canon_dnd",
+              "edition": "3.5",
+              "refs": [
+                {
+                  "ref": "b-grand-history-of-the-realms",
+                  "page": "156"
+                },
+                {
+                  "ref": "b-frwiki-history-of-the-dalelands"
+                },
+                {
+                  "ref": "b-frwiki-cormanthor-war"
+                }
+              ],
+              "variantGroup": "destruction"
+            },
+            {
+              "text": "Le Forgotten Realms Campaign Guide (2008), qui ouvre la 4e édition, en donne une autre version, telle que la rapporte le wiki francophone Le Monde des Royaumes Oubliés : la Pierre levée y est détruite par des drows, les elfes noirs de l’Outreterre, vers la fin du XIVe siècle CV, sans date plus précise. Les deux récits ne s’accordent que sur l’époque de sa chute, à la fin du XIVe siècle.",
+              "nature": "canon_dnd",
+              "edition": "4e",
+              "refs": [
+                {
+                  "ref": "b-forgotten-realms-campaign-guide",
+                  "page": "192 (éd. fr.)"
+                },
+                {
+                  "ref": "b-mroi-pierre-levee"
+                },
+                {
+                  "ref": "b-mroi-pacte-des-vaux"
+                }
+              ],
+              "variantGroup": "destruction"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "type": "general",
+          "title": "Le pacte renouvelé",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "majeur"
+          },
+          "paragraphs": [
+            {
+              "text": "Le monument ne disparaît pas pour autant. Selon le Forgotten Realms Campaign Guide, en 1425 CV, Ashabenford, devenue le siège permanent du Conseil des Vaux, réaffirme le vieux pacte avec la cité de Myth Drannor, et la Pierre levée est restaurée, un peu plus de cinquante ans après sa chute. L’alliance conclue en 1 CV retrouve ainsi le symbole qui marque, depuis plus de quatorze siècles, le point de départ du calendrier.",
+              "nature": "canon_dnd",
+              "edition": "4e",
+              "refs": [
+                {
+                  "ref": "b-forgotten-realms-campaign-guide",
+                  "page": "108"
+                },
+                {
+                  "ref": "b-frwiki-standing-stone"
+                },
+                {
+                  "ref": "b-mroi-pierre-levee"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 4
+    }
+  },
+  {
+    "id": "lore.cosmologie.avernus",
+    "type": "lore",
+    "name": {
+      "fr": "Averne",
+      "en": "Avernus",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "cosmologie",
+      "summary": "Première strate des Neuf Enfers, Averne est la porte d’entrée de l’Enfer et le grand champ de bataille de la Guerre du Sang.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "La première strate des Neuf Enfers",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Averne (Avernus) est la première strate, la plus haute, des Neuf Enfers, que l’on appelle aussi Baator. C’est par elle que l’on entre en Enfer : Asmodée interdit tout portail menant directement aux strates inférieures, si bien que les âmes damnées comme les visiteurs doivent la traverser, et qu’une armée démoniaque devrait la conquérir avant d’aller plus loin. Elle est donc le rempart des Enfers face aux Abysses et le principal champ de bataille de la Guerre du Sang (Blood War) : des légions de diables y attendent en permanence les hordes de démons qui l’envahissent en naviguant sur le Styx.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-avernus"
+                },
+                {
+                  "ref": "frwiki-avernus/manual-of-the-planes-3e",
+                  "page": "116–117"
+                },
+                {
+                  "ref": "frwiki-avernus/guide-to-hell",
+                  "page": "28–30"
+                },
+                {
+                  "ref": "frwiki-avernus/fiendish-codex-2",
+                  "page": "35–39"
+                },
+                {
+                  "ref": "frwiki-avernus/mtof",
+                  "page": "5–8"
+                }
+              ]
+            },
+            {
+              "text": "C’est un enfer au sens le plus littéral : plaines de cendre jonchées de décombres, collines stériles, montagnes basses hérissées d’obsidienne et de cristaux qui tranchent les vêtements comme la chair, fosses de goudron, sables mouvants et lacs de lave. Aucun soleil, aucune étoile : une lumière rouge sang baigne tout, et des boules de feu traversent le ciel pour s’écraser au sol, si bien que le voyageur doit chercher un abri. Le sang est partout, et le fleuve de Sang (River of Blood), qui traverse les Enfers, y recueille celui de batailles sans nombre. Jadis riche de cités et de commerce, la strate n’est plus, après des siècles de guerre, qu’un désert où ne tiennent que des forteresses.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-avernus"
+                },
+                {
+                  "ref": "frwiki-avernus/guide-to-hell",
+                  "page": "28–30"
+                },
+                {
+                  "ref": "frwiki-avernus/manual-of-the-planes-3e",
+                  "page": "116"
+                },
+                {
+                  "ref": "frwiki-avernus/fiendish-codex-2",
+                  "page": "35–39"
+                },
+                {
+                  "ref": "frwiki-avernus/dmg-5e",
+                  "page": "64"
+                },
+                {
+                  "ref": "frwiki-avernus/mtof",
+                  "page": "10–11"
+                }
+              ]
+            },
+            {
+              "text": "Le maître de la strate porte le titre de seigneur de la Première (Lord of the First), et la chronologie des Royaumes lui donne plusieurs titulaires successifs. Tiamat la gouverne d’abord pour le compte d’Asmodée, jusqu’à ce que son peu de réussite lui vaille d’être rétrogradée au rang de gardienne de la porte qui mène à Dis, la deuxième strate. L’archidiable Zariel lui succède, avant d’être trahie par Bel, un général diantrefosse qui règne sur Averne en 1372 CV. Plus tard, Bel perd la faveur d’Asmodée pour n’avoir pas su repousser une invasion démoniaque : Zariel reprend son titre, et Bel, devenu son conseiller, attend qu’une de ses imprudences lui rende le pouvoir.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-avernus"
+                },
+                {
+                  "ref": "frwiki-avernus/on-hallowed-ground",
+                  "page": "137"
+                },
+                {
+                  "ref": "frwiki-avernus/manual-of-the-planes-3e",
+                  "page": "116"
+                },
+                {
+                  "ref": "frwiki-avernus/monster-manual-5e",
+                  "page": "68"
+                },
+                {
+                  "ref": "frwiki-avernus/mtof",
+                  "page": "11, 180–181"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "ecarts",
+          "title": "Averne selon les cosmologies",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Dans la Grande Roue (Great Wheel) telle que la décrit le Manual of the Planes de 1987, les Neuf Enfers forment un plan extérieur situé entre la Géhenne et l’Achéron. Chacune de leurs neuf strates est infinie, et elles s’empilent comme les étages d’un gâteau : les points les plus bas de l’une débouchent très haut au-dessus de la suivante. Le Styx traverse Averne, la première strate, puis Stygia, la cinquième, avant de passer dans la Géhenne.",
+              "nature": "canon_dnd",
+              "edition": "add1",
+              "refs": [
+                {
+                  "ref": "frwiki-nine-hells"
+                },
+                {
+                  "ref": "frwiki-nine-hells/manual-of-the-planes-1e",
+                  "page": "73, 83, 109–110"
+                }
+              ],
+              "variantGroup": "cosmologie"
+            },
+            {
+              "text": "Le Player’s Guide to Faerûn (2004), qui décrit la cosmologie de l’Arbre-Monde (World Tree), donne au Styx le nom de fleuve de Sang. Né dans les Abysses, ce fleuve passe par la Faille de Sang (Blood Rift), un plan singulier qui relie les Abysses aux Neuf Enfers et rapproche les diables de leurs pires ennemis : c’est de ce voisinage que naît la Guerre du Sang. Le plan Astral relie chacun des plans fiélons au plan matériel, mais pas les plans fiélons entre eux.",
+              "nature": "canon_dnd",
+              "edition": "3.5",
+              "refs": [
+                {
+                  "ref": "frwiki-nine-hells"
+                },
+                {
+                  "ref": "frwiki-nine-hells/players-guide-to-faerun",
+                  "page": "139–142"
+                }
+              ],
+              "variantGroup": "cosmologie"
+            },
+            {
+              "text": "Dans l’Axe du Monde (World Axis) de la 4e édition, Asmodée, devenu dieu majeur après la Magepeste (Spellplague) en absorbant l’essence d’Azuth, met fin à la Guerre du Sang en rejetant les Abysses au fond du Chaos élémentaire. Les Neuf Enfers deviennent un domaine astral, d’une taille désormais finie, qui flotte dans la mer Astrale sous l’autorité d’Asmodée et de huit archidiables vassaux. Le Forgotten Realms Campaign Guide n’y voit plus de strates, mais le Manual of the Planes de la même édition décrit toujours Averne comme la première d’entre elles, finie et imprégnée de feu.",
+              "nature": "canon_dnd",
+              "edition": "4e",
+              "refs": [
+                {
+                  "ref": "frwiki-nine-hells"
+                },
+                {
+                  "ref": "frwiki-nine-hells/fr-campaign-guide",
+                  "page": "62, 64, 73"
+                },
+                {
+                  "ref": "frwiki-avernus"
+                },
+                {
+                  "ref": "frwiki-avernus/manual-of-the-planes-4e",
+                  "page": "97, 99"
+                }
+              ],
+              "variantGroup": "cosmologie"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "bg3",
+          "title": "Dans Baldur’s Gate 3",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Baldur’s Gate 3 s’ouvre au-dessus d’Averne : le prologue se déroule à bord d’un nautiloïde, un vaisseau de flagelleurs mentaux assiégé alors qu’il survole la strate. Le premier combat de la partie y oppose le groupe à trois diablotins mineurs. À la barre, un flagelleur mental affronte un commandant ennemi entouré de diablotins et de sangliers infernaux, et deux cambions surgissent au bout de quelques tours. Dès l’entrée dans cette salle, le groupe dispose d’au plus quinze tours pour atteindre le transpondeur avant que le vaisseau ne s’écrase ; l’activer met fin au prologue, quels que soient les ennemis encore debout.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "bg3wiki-nautiloid"
+                },
+                {
+                  "ref": "bg3wiki-imp"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 4
+    },
+    "links": [
+      {
+        "target": "place.nautiloid",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "lore.bestiaire.imp",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "lore.peuples.tiefling",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subrace.zariel-tiefling",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lore.factions.harpers",
+    "type": "lore",
+    "name": {
+      "fr": "Ménestrels",
+      "en": "Harpers",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "factions",
+      "summary": "Réseau secret de bardes, de rôdeurs et d’agents de toutes origines, les Ménestrels combattent la tyrannie dans l’ombre depuis des siècles.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "Une société secrète",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Les Ménestrels (Harpers) forment une organisation à demi secrète, vouée à préserver la mémoire du passé, à maintenir l’équilibre entre la nature et la civilisation et à défendre les innocents contre le mal. L’ordre n’a rien d’une armée : c’est une fédération d’individus venus de tous les horizons, souvent bardes ou rôdeurs, qui agissent seuls ou en petits groupes, sans hiérarchie formelle ; seul un petit conseil de vétérans, élus par leurs pairs, fixe les desseins à long terme. Son emblème, une harpe d’argent et un croissant de lune sur fond noir ou bleu roi, est le seul trait commun de l’ordre d’un bout à l’autre des Royaumes. On les tient tantôt pour des idéalistes, tantôt pour d’insupportables fouineurs.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-harpers"
+                },
+                {
+                  "ref": "frwiki-harpers/code-of-the-harpers",
+                  "page": "3–7"
+                },
+                {
+                  "ref": "frwiki-harpers/frcs-3e",
+                  "page": "274"
+                },
+                {
+                  "ref": "frwiki-harpers/dragon-430",
+                  "page": "33–38"
+                },
+                {
+                  "ref": "frwiki-harpers/scag",
+                  "page": "123–124"
+                }
+              ]
+            },
+            {
+              "text": "Les Ménestrels préfèrent l’influence à la force : ils recueillent rumeurs et renseignements, guident de jeunes aventuriers et orientent les événements en coulisse, car leurs pires bévues datent des fois où ils ont agi à découvert. Leurs bardes glissent des avertissements dans des chansons connues, des runes discrètes signalent un danger ou un refuge à qui sait les lire, et un réseau de caches, de boîtes aux lettres et de maisons sûres permet aux agents de se ravitailler et de communiquer. Leur code, prêté à l’entrée dans l’ordre, commande de combattre la tyrannie, de protéger les faibles, de refuser tout excès de pouvoir et de préserver le passé. Le Zhentarim, le culte du Dragon et les Magiciens rouges de Thay comptent parmi leurs ennemis de toujours.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-harpers"
+                },
+                {
+                  "ref": "frwiki-harpers/code-of-the-harpers",
+                  "page": "8–13, 126"
+                },
+                {
+                  "ref": "frwiki-harpers/warriors-priests-realms",
+                  "page": "9–13"
+                },
+                {
+                  "ref": "frwiki-harpers/fr-adventures",
+                  "page": "123–124"
+                },
+                {
+                  "ref": "frwiki-harpers/frcs-3e",
+                  "page": "274"
+                },
+                {
+                  "ref": "frwiki-harpers/fr-campaign-guide",
+                  "page": "146"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "general",
+          "title": "Chutes et renaissances",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "L’histoire de l’ordre est réputée embrouillée. Son idée naît à Myth Drannor, chez des chefs elfes alliés à quelques rôdeurs et druides humains : en 324 CV, la magicienne Dathlue Mistwinter accepte de mener un premier groupe, dont fait partie un Elminster encore jeune, et lui donne pour emblème les armes de sa famille, une harpe d’argent entre les cornes d’un croissant de lune. Durement décimés lors de la chute de la cité, en 712 CV, les survivants se regroupent en 720 CV, au cours d’une nuit restée célèbre où plusieurs dieux, dont Mystra, Oghma, Séluné, Silvanus et Tymora, parlent par la bouche de leurs prêtres pour bénir l’entreprise.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-harpers"
+                },
+                {
+                  "ref": "frwiki-harpers/code-of-the-harpers",
+                  "page": "20–22"
+                },
+                {
+                  "ref": "frwiki-harpers/frcs-3e",
+                  "page": "269–270"
+                },
+                {
+                  "ref": "frwiki-harpers/grand-history-of-the-realms",
+                  "page": "70, 99"
+                }
+              ]
+            },
+            {
+              "text": "En 1022 CV, Elminster et Khelben Arunsun refondent l’ordre en une armée souterraine d’aventuriers. Le même cycle se répète ensuite : les Ménestrels gagnent en influence, s’exposent, subissent des pertes, se divisent et doivent replonger dans la clandestinité avant de renaître sous une forme nouvelle. Après la Magepeste (Spellplague) de 1385 CV, les survivants, coupés les uns des autres, ne défendent plus que leurs environs, et plusieurs groupes reprennent le nom avec plus ou moins de fidélité à ses idéaux. Dans le sillage de la Seconde Fracture (Second Sundering), qui s’étend sur les années 1480 CV, le réseau reprend des forces et ses missions secrètes à travers Faerûn, sans retrouver de direction centrale.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-harpers"
+                },
+                {
+                  "ref": "frwiki-harpers/code-of-the-harpers",
+                  "page": "24"
+                },
+                {
+                  "ref": "frwiki-harpers/running-the-realms",
+                  "page": "25–26"
+                },
+                {
+                  "ref": "frwiki-harpers/grand-history-of-the-realms",
+                  "page": "115"
+                },
+                {
+                  "ref": "frwiki-harpers/dragon-430",
+                  "page": "33–38"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "bg3",
+          "title": "Dans Baldur’s Gate 3",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Dans Baldur’s Gate 3, la présence des Ménestrels se devine dès la plage où commence l’acte I. Sous la partie haute de la grève, une cache dissimulée sous un rocher déplacé renferme notamment une carte et un carnet de Ménestrel : un test de Nature (DD 10) révèle les traces laissées par la pierre, et il faut assez de Force pour la bouger. La carte signale une réserve dans un petit avant-poste de l’ordre, à l’extrémité ouest des falaises qui s’étendent au nord de l’épave, près du chemin qui mène du bosquet d’émeraude à la forêt. On y trouve un feu de camp, une tour de guet en bois et un squelette portant un pendentif d’argent, sur lequel un test d’Histoire (DD 12) permet de reconnaître le symbole des Ménestrels.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "bg3wiki-ravaged-beach"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 4
+    },
+    "links": [
+      {
+        "target": "place.ravaged-beach",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "lore.pantheon.silvanus",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "lore.lieux.sword-coast",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lore.lieux.sword-coast",
+    "type": "lore",
+    "name": {
+      "fr": "Côte des Épées",
+      "en": "Sword Coast",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "lieux",
+      "summary": "Longue bande de terres sauvages et de cités libres au bord de la mer des Épées, la Côte des Épées est le cadre de la saga Baldur’s Gate.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "Des cités libres et des terres sauvages",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "La Côte des Épées est la région de l’ouest de Faerûn qui borde la mer des Épées (Sea of Swords). C’est une immense étendue sauvage, semée de cités indépendantes et parcourue par des bandes de monstres, que certains ne voient que comme une terre à traverser, d’où son surnom anglais d’Empty Lands ; elle abrite pourtant quelques-unes des villes les plus importantes des Royaumes. Deux explications de son nom circulent : les falaises blanches qui se dressent à pic sur des centaines de kilomètres entre la rivière Dessarin et la Porte de Baldur, ou, selon le voyageur Volo, la dangerosité de ses habitants, humanoïdes comme bêtes.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-sword-coast"
+                },
+                {
+                  "ref": "frwiki-sword-coast/volos-guide-sword-coast",
+                  "page": "5"
+                },
+                {
+                  "ref": "frwiki-sword-coast/frcs-3e",
+                  "page": "225"
+                },
+                {
+                  "ref": "frwiki-sword-coast/scag",
+                  "page": "17"
+                }
+              ]
+            },
+            {
+              "text": "Son paysage va des champs verdoyants qui bordent la Voie côtière (Coast Way) aux dangereuses terres arides du nord de la Chionthar. Cette rivière est l’artère commerciale de l’intérieur : elle relie le grand port de la Porte de Baldur à Elturel, Iriaebor, Berdusk et Scornubel. La région n’a pas de gouvernement commun. La Porte de Baldur et Daggerford appartiennent à l’Alliance des Seigneurs, et un accord entre les localités protège les voyageurs de la Voie côtière, de la Porte de Baldur jusqu’à l’Amn ; mais loin des routes et des villes, brigands, pillards et monstres font la loi. La Porte de Baldur, carrefour du commerce de toute la côte, en est la plus grande ville.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-sword-coast"
+                },
+                {
+                  "ref": "frwiki-sword-coast/volos-guide-sword-coast",
+                  "page": "7–8"
+                },
+                {
+                  "ref": "frwiki-sword-coast/frcs-3e",
+                  "page": "225"
+                },
+                {
+                  "ref": "frwiki-sword-coast/scag",
+                  "page": "7"
+                },
+                {
+                  "ref": "frwiki-sword-coast/rise-of-tiamat",
+                  "page": "13"
+                },
+                {
+                  "ref": "frwiki-sword-coast/fr-campaign-guide",
+                  "page": "84"
+                }
+              ]
+            },
+            {
+              "text": "Le XIVe siècle CV y est un temps de guerres. En 1356 CV, la première guerre de Dragonspear (First Dragonspear War) oppose les armées d’Eauprofonde et de la Porte de Baldur à des hordes de gobelinoïdes et de fiélons sorties d’un portail ouvert sous le château de Dragonspear ; elle fait d’ailleurs croître la population tieffeline de la région. Une seconde guerre éclate en 1363 CV, au lendemain du Temps des Troubles : pendant deux ans, les habitants de la côte doivent repousser des forces des Neuf Enfers sur leurs propres terres, parfois jusqu’aux portes de leurs villes.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-sword-coast"
+                },
+                {
+                  "ref": "frwiki-sword-coast/grand-history-of-the-realms",
+                  "page": "142"
+                },
+                {
+                  "ref": "frwiki-sword-coast/players-guide-to-faerun",
+                  "page": "28"
+                },
+                {
+                  "ref": "frwiki-sword-coast/grand-tour-of-the-realms",
+                  "page": "91"
+                },
+                {
+                  "ref": "frwiki-sword-coast/hordes-of-dragonspear",
+                  "page": "10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "ecarts",
+          "title": "Où commence et où finit la Côte ?",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Pour la plupart des auteurs, dont Volo dans son guide de la Côte des Épées et le décor des Royaumes de la 3e édition, la région s’étend des frontières de l’Amn, au sud, jusqu’à Eauprofonde et à la vallée de la Delimbiyr, au nord. Les terres littorales situées au-delà d’Eauprofonde forment alors une région à part, la Côte des Épées du Nord (Sword Coast North).",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-sword-coast"
+                },
+                {
+                  "ref": "frwiki-sword-coast/volos-guide-sword-coast",
+                  "page": "5"
+                },
+                {
+                  "ref": "frwiki-sword-coast/frcs-3e",
+                  "page": "29, 78, 176, 225"
+                }
+              ],
+              "variantGroup": "limites"
+            },
+            {
+              "text": "D’autres guides, comme A Grand Tour of the Realms (1993) ou le Player’s Guide to Faerûn (2004), la font commencer au sud à Château-Suif et la prolongent vers le nord jusqu’à Luskan, englobant ainsi Eauprofonde et le littoral qui mène à cette cité. Le premier reconnaît d’ailleurs que les érudits ne s’accordent pas sur les limites exactes de la région, et ce découpage reste moins répandu que le précédent.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-sword-coast"
+                },
+                {
+                  "ref": "frwiki-sword-coast/grand-tour-of-the-realms",
+                  "page": "101"
+                },
+                {
+                  "ref": "frwiki-sword-coast/players-guide-to-faerun",
+                  "page": "18"
+                },
+                {
+                  "ref": "frwiki-sword-coast/volos-guide-sword-coast",
+                  "page": "5"
+                }
+              ],
+              "variantGroup": "limites"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "bg3",
+          "title": "Dans Baldur’s Gate 3",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Comme toute la saga Baldur’s Gate, qui se déroule dans la région de la Porte de Baldur, Baldur’s Gate 3 tire son titre de la grande cité portuaire de la Côte. L’acte I s’ouvre pourtant à l’intérieur des terres : le nautiloïde s’écrase sur une plage au bord de la Chionthar, dans une contrée boisée que traversent la rivière et la Route surélevée, quelque part entre Elturel et la Porte de Baldur. Une carte que l’on peut consulter en jeu situe ces terres dans l’Elturgard, à l’est, et rappelle que la ville est encore loin.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "bg3wiki-ravaged-beach"
+                },
+                {
+                  "ref": "bg3wiki-wilderness"
+                },
+                {
+                  "ref": "frwiki-sword-coast"
+                },
+                {
+                  "ref": "wpfr-royaumes-oublies"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 3
+    },
+    "links": [
+      {
+        "target": "lore.factions.harpers",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "lore.peuples.tiefling",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "place.ravaged-beach",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "place.the-risen-road",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lore.livres.shanties-for-the-bitch-queen",
+    "type": "lore",
+    "name": {
+      "fr": "Chants de marins pour la Reine Garce",
+      "en": "Shanties for the Bitch Queen",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "livres",
+      "summary": "Un petit recueil de chants de marins à la gloire d’Umberlie, la déesse des mers, posé sur un ponton de la Plage ravagée dès le début de l’Acte I.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "bg3",
+          "title": "Sur le ponton de la Plage ravagée",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Ce livre se ramasse dès les premiers pas de l’Acte I : il est posé sur le ponton en ruine de la Plage ravagée, un peu au nord de l’endroit où le nautiloïde s’est écrasé. C’est un objet de rareté commune, qui pèse 0,5 kg et vaut 14 pièces d’or. La page du wiki qui le décrit ne nomme aucun auteur et crédite simplement l’Église d’Umberlie (Umberlee), la déesse de la mer : ces chants appartiennent à son culte plutôt qu’à une plume connue.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "b-bg3wiki-shanties-for-the-bitch-queen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "bg3",
+          "title": "Trois chants pour la mer",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Le recueil tient en trois chansons brèves, du genre qu’un équipage reprend en chœur pour se donner du cœur à l’ouvrage. La première rythme l’effort des rameurs et compte sur la déesse pour tenir la tempête à distance. La deuxième s’adresse à la « Mère de l’Onde » : les marins lui demandent la permission de prendre la mer, tout en reconnaissant qu’elle reste libre de les engloutir et de les garder pour elle. La troisième est celle d’un navire encalminé : sans l’accord de la « Reine Garce », aucun vent ne se lèvera, et l’équipage se résigne à patienter jusqu’à ce qu’elle renvoie la houle.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "b-bg3wiki-shanties-for-the-bitch-queen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "general",
+          "title": "Umberlie, la Reine Garce",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Dans le panthéon de Faerûn, Umberlie (Umberlee) gouverne les océans, les courants, les vagues et les vents du large. Les suppléments de la 2e et de la 3e édition la décrivent cruelle, vaniteuse, avide et lunatique : elle ne tient pas ses promesses et se réjouit des naufrages. On la vénère donc surtout par peur, et la 5e édition range encore les marins et les habitants des côtes parmi ses fidèles, sous le domaine de la Tempête. Elle appartient aux dieux de la fureur que mène Talos, aux côtés d’Aurile et de Malar ; ses titres de Reine des Profondeurs et de Mère de l’Onde se retrouvent jusque dans les suppléments parus en 2025.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-frwiki-umberlee"
+                },
+                {
+                  "ref": "b-faiths-and-avatars",
+                  "page": "173"
+                },
+                {
+                  "ref": "b-faiths-and-pantheons",
+                  "page": "82-83"
+                },
+                {
+                  "ref": "b-phb-5e-2014",
+                  "page": "62, 294"
+                },
+                {
+                  "ref": "b-heroes-of-faerun",
+                  "page": "123, 127"
+                },
+                {
+                  "ref": "b-mroi-umberlie"
+                }
+              ]
+            },
+            {
+              "text": "Pour s’assurer une traversée sans encombre, on lui paie tribut. Faiths & Avatars (1996) montre des équipages qui jettent par-dessus bord or, gemmes ou cargaisons précieuses quand la mer se déchaîne, parfois au son d’airs joués pour elle, et des voyageurs qui laissent avant le départ de petites offrandes sur ses autels : fleurs, bougies, pièces, friandises. Ses prêtres les ramassent ensuite et lavent l’autel à l’eau de mer, signe que la déesse a prélevé sa part. Son clergé prêche avant tout la crainte : chacun doit trembler devant ses vagues et payer pour être épargné.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-faiths-and-avatars",
+                  "page": "173-174"
+                },
+                {
+                  "ref": "b-frwiki-umberlee"
+                }
+              ]
+            },
+            {
+              "text": "Notre lecture : les trois chants du recueil reflètent fidèlement ce rapport de crainte. Aucun ne vante la bonté de la déesse ; tous reconnaissent son pouvoir sur le vent et sur la houle, et se contentent de demander qu’elle les tolère. Ils tiennent davantage de la prière prudente, celle de gens qui vivent de la mer et savent ce qu’elle peut leur coûter, que de l’hymne de dévotion qu’on adresserait à une divinité bienveillante.",
+              "nature": "interpretation",
+              "refs": [
+                {
+                  "ref": "b-bg3wiki-shanties-for-the-bitch-queen"
+                },
+                {
+                  "ref": "b-frwiki-umberlee"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "type": "bg3",
+          "title": "Plus tard, à la Porte de Baldur",
+          "tag": {
+            "act": "acte3",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Le recueil n’est pas un exemplaire unique. Un autre se trouve dans le Tabernacle de Stormshore, un sanctuaire de la Ville basse qui n’est voué à aucun dieu en particulier et dont les rayonnages rassemblent des écrits sur les divinités et leurs fidèles. La déesse a aussi son propre temple en ville : la Maison de la Reine des eaux, un vaste édifice dressé sur un cap rocheux, à la pointe sud des Quais du port Gris, où le peuple vient prier et déposer ses offrandes autour d’une fontaine à son effigie.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "b-bg3wiki-shanties-for-the-bitch-queen"
+                },
+                {
+                  "ref": "b-bg3wiki-stormshore-tabernacle"
+                },
+                {
+                  "ref": "b-bg3wiki-water-queens-house"
+                }
+              ]
+            },
+            {
+              "text": "Ce temple ne doit rien au hasard : dans le canon de D&D, la Maison de la Reine des eaux est le plus ancien temple de la Porte de Baldur, et les suppléments la décrivent desservie par des veuves de marins disparus en mer. Le détail figure déjà dans Forgotten Realms Adventures (1990), revient dans le Sword Coast Adventurer’s Guide (2015), et l’aventure Baldur’s Gate : Descent into Avernus (2019) confirme l’ancienneté du lieu.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-frwiki-umberlee"
+                },
+                {
+                  "ref": "b-forgotten-realms-adventures",
+                  "page": "76"
+                },
+                {
+                  "ref": "b-scag",
+                  "page": "41"
+                },
+                {
+                  "ref": "b-descent-into-avernus",
+                  "page": "193"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 4
+    },
+    "links": [
+      {
+        "target": "place.ravaged-beach",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "place.stormshore-tabernacle",
+        "relation": "located_in",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "place.water-queens-house",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte3",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lore.objets.ring-of-winter",
+    "type": "lore",
+    "name": {
+      "fr": "Anneau de l’hiver",
+      "en": "Ring of Winter",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "objets",
+      "summary": "Un anneau d’or couvert d’un givre éternel, capable d’enfermer toute une contrée dans l’hiver, et animé d’une volonté qui pousse son porteur au pire.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "Un hiver tenu dans la main",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "L’Anneau de l’hiver (Ring of Winter) est un artefact des Royaumes Oubliés : un simple anneau d’or, sans ornement, recouvert d’une fine couche de givre que rien ne fait fondre. Glacé au toucher, il engourdit d’abord la main de qui le passe au doigt, puis cesse de paraître froid une fois que son porteur s’est harmonisé avec lui. D’après Tomb of Annihilation (2017), il le protège du froid, le dérobe à la magie de divination et arrête son vieillissement, sans le préserver pour autant d’un vieillissement d’origine magique.",
+              "nature": "canon_dnd",
+              "edition": "5e-2014",
+              "refs": [
+                {
+                  "ref": "b-tomb-of-annihilation",
+                  "page": "207-208"
+                },
+                {
+                  "ref": "b-frwiki-ring-of-winter"
+                },
+                {
+                  "ref": "b-mroi-anneau-de-l-hiver"
+                }
+              ]
+            },
+            {
+              "text": "Ses pouvoirs actifs sont à la mesure de son nom. Il peut abaisser la température jusqu’à environ −34 °C (−30 °F) dans une sphère de 36 mètres (120 pieds) de rayon, un froid qui persiste tant que son porteur ne choisit pas d’y mettre fin, et façonner dans la glace des objets inanimés ou des créatures animées. Il lance aussi toute une série de sorts : cône de froid, tempête de grêle, tempête de neige, mur de glace, sphère glaciale d’Otiluke, croissance d’épines, main de Bigby et une variante glacée de pétrification. L’énergie qu’il dépense revient chaque jour à l’aube.",
+              "nature": "canon_dnd",
+              "edition": "5e-2014",
+              "refs": [
+                {
+                  "ref": "b-tomb-of-annihilation",
+                  "page": "207-208"
+                },
+                {
+                  "ref": "b-frwiki-ring-of-winter"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "general",
+          "title": "Une volonté glacée",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "L’anneau n’est pas un simple outil : c’est un objet intelligent, chaotique mauvais, qui communique avec son porteur par des émotions. Il cherche sans relâche à prendre le dessus et, quand il y parvient, le pousse à faire du mal sans raison ni pitié et à semer la destruction autour de lui. Les rumeurs que rapporte la 5e édition lui prêtent d’autres pouvoirs, réservés à un maître mauvais qui saurait lui résister, comme appeler des dragons blancs ou l’être primordial Cryonax. On le dit presque indestructible : il ne se briserait qu’au doigt de Titania, la Reine de l’Été. Les géants du givre, eux, l’appellent « la Glace qui ne fond jamais » (The Ice that Never Melts).",
+              "nature": "canon_dnd",
+              "edition": "5e-2014",
+              "refs": [
+                {
+                  "ref": "b-tomb-of-annihilation",
+                  "page": "207-208"
+                },
+                {
+                  "ref": "b-storm-kings-thunder",
+                  "page": "155"
+                },
+                {
+                  "ref": "b-frwiki-ring-of-winter"
+                },
+                {
+                  "ref": "b-mroi-anneau-de-l-hiver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "general",
+          "title": "Une très vieille légende",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Ses origines restent obscures. Volo’s Guide to All Things Magical (1996), un supplément de la 2e édition, le fait remonter à une époque où les futurs royaumes n’étaient encore que des villages épars : un mage puissant l’aurait forgé, peut-être Azuth avant qu’il ne devienne dieu, et Aurile, la déesse de l’hiver, y aurait déposé son baiser. Le même ouvrage lui prête un pouvoir singulier : les objets magiques gardés plus de dix jours à moins de 6 mètres (20 pieds) de lui gagnent en efficacité, et d’autant plus que l’exposition se prolonge.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-volos-guide-to-all-things-magical",
+                  "page": "112"
+                },
+                {
+                  "ref": "b-frwiki-ring-of-winter"
+                }
+              ]
+            },
+            {
+              "text": "Cormanthyr : Empire of the Elves (1998) le situe au Cormyr en 163 CV. Sa magie y déchaîne alors, en plein été, une tempête de glace d’une telle violence qu’elle rase un village entier et la demeure d’un noble. Les elfes du Cormanthyr reconnaissent l’artefact pour ce qu’il est, et regrettent de ne pas avoir mis son porteur en garde avant qu’il ne tue. Près de cinq siècles plus tard, en 650 CV, ce drame reste la dernière apparition connue de l’anneau sur le continent de Faerûn.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-cormanthyr-empire-of-the-elves",
+                  "page": "28, 36"
+                },
+                {
+                  "ref": "b-frwiki-ring-of-winter"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "type": "autres_oeuvres",
+          "title": "Du roman aux aventures",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "majeur"
+          },
+          "paragraphs": [
+            {
+              "text": "Le roman The Ring of Winter (1992), de James Lowder, fait de l’anneau l’objet d’une longue quête. Dhalmass Rayburton, venu du Cormyr, l’a caché dans le temple d’Ubtao de la cité perdue de Mezro, au Chult, après avoir tué par accident plusieurs personnes en s’en servant. Artus Cimber, un ancien Ménestrel, le cherche pendant des années ; dans ce récit situé en 1362 CV, il finit par le retrouver et s’en sert aussitôt pour repousser l’invasion de Mezro par une horde de gobelins.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-the-ring-of-winter-novel",
+                  "page": "307"
+                },
+                {
+                  "ref": "b-frwiki-ring-of-winter"
+                },
+                {
+                  "ref": "b-frwiki-artus-cimber"
+                }
+              ]
+            },
+            {
+              "text": "La 5e édition reprend le fil plus d’un siècle après. Dans Storm King’s Thunder (2016), après 1485 CV, le jarl géant du givre Storvald convoite l’anneau, qu’il croit capable d’élever les siens dans l’ordning, la hiérarchie des géants, et apprend qu’Artus Cimber le détient toujours ; ses géants attaquent alors Bryn Shander sur une fausse piste. Dans Tomb of Annihilation (2017), Artus, que l’anneau garde de la vieillesse, parcourt encore le Chult avec l’artefact au doigt.",
+              "nature": "canon_dnd",
+              "edition": "5e-2014",
+              "refs": [
+                {
+                  "ref": "b-storm-kings-thunder"
+                },
+                {
+                  "ref": "b-tomb-of-annihilation"
+                },
+                {
+                  "ref": "b-frwiki-ring-of-winter"
+                },
+                {
+                  "ref": "b-mroi-anneau-de-l-hiver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "type": "ecarts",
+          "title": "Un anneau maléfique ?",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "majeur"
+          },
+          "paragraphs": [
+            {
+              "text": "Les règles de la 5e édition donnent une réponse nette. Tomb of Annihilation (2017) fait de l’anneau un objet intelligent d’alignement chaotique mauvais, qui se complaît dans la destruction et le mal fait à autrui. S’il prend le contrôle de son porteur, il le pousse à blesser sans raison ni pitié ceux qui l’entourent, à s’attirer la colère d’ennemis et à courir à sa propre perte. Il communique ses désirs par des émotions et ne cesse de chercher à reprendre la main.",
+              "nature": "canon_dnd",
+              "edition": "5e-2014",
+              "refs": [
+                {
+                  "ref": "b-tomb-of-annihilation",
+                  "page": "207-208"
+                },
+                {
+                  "ref": "b-frwiki-ring-of-winter"
+                }
+              ],
+              "variantGroup": "nature-anneau"
+            },
+            {
+              "text": "Le roman de 1992 fait entendre une autre lecture, celle de son héros. Une fois l’anneau en main, Artus Cimber voit dans ses assauts une épreuve continue plutôt qu’une méchanceté pure : il se persuade que l’artefact poursuit au fond un but bénéfique, et qu’il refuse précisément de se laisser porter par les êtres corruptibles. C’est la conviction d’un personnage du récit, et non une règle du jeu.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-the-ring-of-winter-novel",
+                  "page": "307"
+                },
+                {
+                  "ref": "b-frwiki-ring-of-winter"
+                }
+              ],
+              "variantGroup": "nature-anneau"
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 5
+    },
+    "links": [
+      {
+        "target": "spell.cone-of-cold",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "spell.ice-storm",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "spell.sleet-storm",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "spell.wall-of-ice",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "spell.otilukes-freezing-sphere",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "spell.spike-growth",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "spell.flesh-to-stone",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lore.pantheon.silvanus",
+    "type": "lore",
+    "name": {
+      "fr": "Silvanus",
+      "en": "Silvanus",
+      "status": "UNOFFICIAL"
+    },
+    "tag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "acte1",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "pantheon",
+      "summary": "Dieu de la nature sauvage, Silvanus veille sur l’équilibre du monde vivant ; les druides sont ses fidèles les plus nombreux.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "Le dieu de la nature sauvage",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Silvanus est, dans le panthéon de Faerûn, la puissance de la nature sauvage, celle des forêts profondes et des terres que nul ne cultive. Il s’oppose en cela à la nature ordonnée des champs, qui relève de la déesse Chauntéa. Son culte n’est pas né sur Toril : à l’époque de l’essor de Nétheril, des migrants venus d’un autre monde y apportent la foi en plusieurs dieux celtes, dont Silvanus, qui finit par rejoindre l’un des panthéons locaux. Son symbole est une feuille de chêne, et ses titres anglais les plus courants, Oak Father, Old Oak ou Forest Father, le présentent tour à tour en vieil arbre et en père des forêts.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-silvanus"
+                },
+                {
+                  "ref": "frwiki-silvanus/fr-campaign-set",
+                  "page": "14"
+                },
+                {
+                  "ref": "frwiki-silvanus/running-the-realms",
+                  "page": "48"
+                },
+                {
+                  "ref": "frwiki-silvanus/faiths-avatars",
+                  "page": "105"
+                },
+                {
+                  "ref": "frwiki-silvanus/frcs-3e",
+                  "page": "235"
+                },
+                {
+                  "ref": "frwiki-silvanus/scag",
+                  "page": "21, 37"
+                }
+              ]
+            },
+            {
+              "text": "Son dogme tient en un mot : l’équilibre. Croissance et pourriture, crue et sécheresse, feu et glace doivent se répondre pour que le cycle de la vie se poursuive, et le dieu veille sur ce cycle avec un détachement qui le fait parfois passer pour impitoyable, alors qu’il tient à toute vie. Il se soucie peu de ménager les villes et les champs, s’emporte contre qui menace les lieux sauvages et réserve une haine particulière à ceux qui usent du feu par négligence ou pour détruire. Il compte pour alliées les autres divinités non mauvaises de la nature et des bêtes, comme Eldath, et pour adversaires Malar, Talos et Talona, dont le goût de la destruction rompt l’équilibre.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-silvanus"
+                },
+                {
+                  "ref": "frwiki-silvanus/frcs-3e",
+                  "page": "251"
+                },
+                {
+                  "ref": "frwiki-silvanus/dragon-412",
+                  "page": "23–24"
+                },
+                {
+                  "ref": "frwiki-silvanus/on-hallowed-ground",
+                  "page": "75"
+                },
+                {
+                  "ref": "frwiki-silvanus/faiths-avatars",
+                  "page": "146"
+                }
+              ]
+            },
+            {
+              "text": "Ses fidèles les plus nombreux sont des druides, mais il a aussi des clercs, et des rôdeurs, des barbares ou des ermites l’invoquent. Son clergé protège les forêts, plante des arbres et combat les maladies. Ses rites se tiennent volontiers au sommet d’une colline couronnée de vieux chênes ; on n’y verse jamais le sang : l’offrande est un objet de bois que l’on brise puis que l’on enterre, sans jamais le brûler. Le dieu lui-même apparaît sous deux formes principales : un vieux visage barbu à la peau fendillée comme une écorce, qui semble sortir d’un tronc, ou un jeune homme aux longues jambes, vêtu d’une armure de feuilles et armé d’un maillet de bois, qui surgit quand un bosquet sacré est menacé.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-silvanus"
+                },
+                {
+                  "ref": "frwiki-church-of-silvanus"
+                },
+                {
+                  "ref": "frwiki-silvanus/frcs-3e",
+                  "page": "251"
+                },
+                {
+                  "ref": "frwiki-silvanus/faiths-avatars",
+                  "page": "145–146"
+                },
+                {
+                  "ref": "frwiki-church-of-silvanus/faiths-pantheons",
+                  "page": "63"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "ecarts",
+          "title": "Un domaine qui change avec la cosmologie",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Dans la cosmologie de la Grande Roue (Great Wheel), le domaine de Silvanus se trouve dans Tir na Og, le royaume que partagent les dieux celtes au sein des Outlands. Il en occupe les confins les plus reculés, que les ouvrages de la 2e édition nomment Summeroak ou Deep Forest. Ces mêmes ouvrages en font une divinité majeure et neutre, honorée avant tout par ceux qui vivent dans les bois, et lui prêtent pour symboles une feuille de chêne vivante, un chêne en plein été ou un bâton de bois qui bourgeonne.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "frwiki-silvanus"
+                },
+                {
+                  "ref": "frwiki-silvanus/on-hallowed-ground",
+                  "page": "75"
+                },
+                {
+                  "ref": "frwiki-silvanus/faiths-avatars",
+                  "page": "145"
+                }
+              ],
+              "variantGroup": "domaine"
+            },
+            {
+              "text": "Les ouvrages des Royaumes de la 3e édition adoptent la cosmologie de l’Arbre-Monde (World Tree) et placent son domaine dans un plan appelé House of Nature. Silvanus y reste une divinité majeure, désormais neutre strict, dont les attributions englobent, outre la nature sauvage, les druides eux-mêmes. Ses clercs puisent dans des domaines liés aux animaux, aux plantes, à la protection, au renouveau et à l’eau, et son arme de prédilection est un grand maillet.",
+              "nature": "canon_dnd",
+              "edition": "3e",
+              "refs": [
+                {
+                  "ref": "frwiki-silvanus"
+                },
+                {
+                  "ref": "frwiki-silvanus/frcs-3e",
+                  "page": "235"
+                },
+                {
+                  "ref": "frwiki-silvanus/faiths-pantheons",
+                  "page": "63–64"
+                }
+              ],
+              "variantGroup": "domaine"
+            },
+            {
+              "text": "La 4e édition et sa cosmologie de l’Axe du Monde (World Axis) installent son domaine dans les Deep Wilds. Silvanus n’y a plus d’alignement (unaligned) ; sa sphère est la nature, et ses prêtres disposent des domaines de la vie, de la tempête et des terres sauvages. Changement notable, Malar, son vieil ennemi, n’est plus alors qu’un exarque à son service. Le magazine Dragon cite même parmi ses fidèles des paysans, des jardiniers, des chasseurs, des trappeurs et de riches propriétaires terriens.",
+              "nature": "canon_dnd",
+              "edition": "4e",
+              "refs": [
+                {
+                  "ref": "frwiki-silvanus"
+                },
+                {
+                  "ref": "frwiki-silvanus/fr-campaign-guide",
+                  "page": "63, 76"
+                },
+                {
+                  "ref": "frwiki-silvanus/dragon-412",
+                  "page": "22"
+                }
+              ],
+              "variantGroup": "domaine"
+            },
+            {
+              "text": "Le supplément Forgotten Realms: Heroes of Faerûn (2025), écrit pour les règles de 2024, situe de nouveau son domaine dans les Outlands. Il garde la feuille de chêne pour symbole et la nature sauvage pour attribution, lui donne les titres d’Oak Father, d’Old Oak et d’Old Father Tree, et cite comme ses fidèles typiques les barbares, les druides, les rôdeurs et les elfes sylvestres.",
+              "nature": "canon_dnd",
+              "edition": "5e-2024",
+              "refs": [
+                {
+                  "ref": "frwiki-silvanus"
+                },
+                {
+                  "ref": "frwiki-silvanus/heroes-of-faerun",
+                  "page": "99, 121"
+                }
+              ],
+              "variantGroup": "domaine"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "bg3",
+          "title": "Dans Baldur’s Gate 3",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Au nord de l’épave du nautiloïde, dès le début de l’acte I, s’étend le bosquet d’émeraude, un refuge de druides voué à Silvanus. Les druides y invoquent le dieu : au bassin sacré, des plaques fixées près de totems animaliers l’appellent par plusieurs de ses titres, et une idole de Silvanus, posée sur la pierre centrale d’un cercle de pierres dressées, sert de foyer à leurs rites. Le jeu propose bien un domaine de la Nature aux clercs, mais Silvanus ne figure pas parmi les divinités qu’un clerc peut choisir à la création du personnage.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "bg3wiki-emerald-grove"
+                },
+                {
+                  "ref": "bg3wiki-wilderness"
+                },
+                {
+                  "ref": "bg3wiki-sacred-pool"
+                },
+                {
+                  "ref": "bg3wiki-cleric"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 4
+    },
+    "links": [
+      {
+        "target": "place.emerald-grove",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "place.sacred-pool",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "class.druid",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.nature-domain",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "lore.factions.harpers",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lore.personnages.halaster-blackcloak",
+    "type": "lore",
+    "name": {
+      "fr": "Halaster Sombrecape",
+      "en": "Halaster Blackcloak",
+      "status": "UNOFFICIAL"
+    },
+    "aliases": [
+      "Halaster Blackcloak",
+      "le Mage dément",
+      "Hilather"
+    ],
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "personnages",
+      "summary": "Archimage dément vieux de plusieurs millénaires, Halaster a creusé sous Eauprofonde le plus célèbre donjon des Royaumes, Montprofond, dont il reste le maître insaisissable.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "Le maître fou de Montprofond",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Halaster Sombrecape (Halaster Blackcloak) est un archimage humain d’une puissance rare, connu comme le seigneur fou de Montprofond (Undermountain), le dédale sans fin creusé sous Eauprofonde (Waterdeep). Le cadre de campagne de la 3e édition le montre marmonnant et ricanant sans cesse, incapable de suivre longtemps une discussion, mais toujours prompt à sentir un danger et à riposter avec une rapidité effrayante. Hors de son donjon, il retrouve une lucidité glaciale : courtois, digne, méticuleux, il n’en reste pas moins profondément malfaisant, ne pardonne aucune insolence et n’oublie jamais ni une offense ni un service rendu.",
+              "nature": "canon_dnd",
+              "edition": "3e",
+              "refs": [
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
+                },
+                {
+                  "ref": "b-frcs-3e",
+                  "page": "180-181"
+                },
+                {
+                  "ref": "b-mroi-halaster-sombrecape"
+                }
+              ]
+            },
+            {
+              "text": "Sa grande passion est de collectionner des monstres inconnus et des formes de magie nouvelles. Mais après tant de siècles, presque rien ne le surprend plus : il trompe son ennui en se mêlant, selon son caprice, des affaires du monde. Dans Montprofond, il commande des créatures artificielles de toutes sortes, golems compris, joue des innombrables pièges du dédale et dispose de portails mobiles qui déplacent à volonté ses proies ou lui-même. Des clones et des sorts de contingence lui garantissent de survivre à presque n’importe quel duel de magie.",
+              "nature": "canon_dnd",
+              "edition": "3e",
+              "refs": [
+                {
+                  "ref": "b-frcs-3e",
+                  "page": "180-181"
+                },
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "general",
+          "title": "Le bâtisseur du dédale",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "À Eauprofonde, son histoire commence en 168 CV, quand il s’installe au pied de la montagne qui domine le site d’Eauprofonde avec sept apprentis, les « Sept ». Il y élève une tour fortifiée, bâtie par des êtres arrachés à d’autres plans qu’il envoie ensuite creuser toujours plus loin sous la roche, sans jamais les libérer. Il s’empare des Bas-foyers de Melairbode, d’anciennes salles naines, et en chasse drows, duergars et monstres. Vers 309 CV, maître de ces tunnels, il entreprend d’en faire le donjon le plus vaste et le plus meurtrier qui soit, et délaisse sa tour pour vivre sous terre.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
+                },
+                {
+                  "ref": "b-villains-lorebook",
+                  "page": "30"
+                },
+                {
+                  "ref": "b-grand-history-of-the-realms",
+                  "page": "66, 69"
+                },
+                {
+                  "ref": "b-ruins-of-undermountain-ii",
+                  "page": "3-4"
+                },
+                {
+                  "ref": "b-mroi-halaster-sombrecape"
+                }
+              ]
+            },
+            {
+              "text": "Les sages attribuent sa folie à ce long commerce avec des puissances d’autres plans : elle aurait grandi en même temps que son pouvoir. Ses apprentis le quittent en 307 CV pour fonder leurs propres domaines souterrains ; plusieurs reviennent le chercher, et il en tue deux. Une seule, Jhesiyra Kestellharp, réussit à lui échapper, et c’est d’elle que vient le peu qu’on sait du Mage dément. Bien plus tard, la ville d’Eauprofonde s’étend jusqu’aux ruines de sa tour, qu’Ahghairon entoure en 1007 CV de protections magiques pour empêcher leurs dangers de gagner les rues.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-ruins-of-undermountain-ii",
+                  "page": "3-4"
+                },
+                {
+                  "ref": "b-grand-history-of-the-realms",
+                  "page": "69, 115"
+                },
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "ecarts",
+          "title": "D’où vient-il ?",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Dans le Villains’ Lorebook (1998), un supplément de la 2e édition, ses origines restent une énigme : l’histoire ne retient ni sa patrie ni l’époque de sa naissance, et l’on soupçonne seulement qu’il est plus âgé encore qu’Elminster. Le livre raconte en revanche son installation sur le site d’Eauprofonde en 168 CV, entouré de ses apprentis : pour cet ouvrage, l’histoire connue du Mage dément commence là.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-villains-lorebook",
+                  "page": "30"
+                },
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
+                }
+              ],
+              "variantGroup": "origine"
+            },
+            {
+              "text": "La Grand History of the Realms (2007) lui donne au contraire un long passé. Né Hilather dans l’empire d’Imaskar, prodige devenu l’un de ses plus grands mages, il y aurait vaincu un mage rival qui menaçait l’empire et l’aurait emprisonné dans un demi-plan. Lors de la chute d’Imaskar, il se serait réfugié dans une forteresse secrète pour y dormir en stase pendant des millénaires. Réveillé, il aurait travaillé en 128 CV pour l’empire de Shoon, à chercher un moyen plus sûr de soumettre les fiélons à ceux qui les invoquent, avant de disparaître de nouveau.",
+              "nature": "canon_dnd",
+              "edition": "3.5",
+              "refs": [
+                {
+                  "ref": "b-grand-history-of-the-realms",
+                  "page": "18, 31, 63"
+                },
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
+                }
+              ],
+              "variantGroup": "origine"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "type": "ecarts",
+          "title": "Mort ou vivant ?",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "leger"
+          },
+          "paragraphs": [
+            {
+              "text": "Selon la Grand History of the Realms, Halaster meurt en 1375 CV, tué par mégarde par un rituel d’une grande puissance qu’il tentait d’accomplir. Un séisme secoue alors Eauprofonde : beaucoup d’habitants voient en vision le mage hurlant, les yeux en feu, et les lanceurs de sorts aperçoivent des piliers et des galeries qui s’effondrent dans Montprofond. En mourant, il projette à travers tout Faerûn des visions et des appels désespérés.",
+              "nature": "canon_dnd",
+              "edition": "3.5",
+              "refs": [
+                {
+                  "ref": "b-grand-history-of-the-realms",
+                  "page": "158"
+                },
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
+                }
+              ],
+              "variantGroup": "sort"
+            },
+            {
+              "text": "Un article du magazine Dragon (no 409, 2012) revient sur cette mort : le rituel n’aurait pas tué Halaster mais dispersé son essence à travers les plans, et la Magepeste l’aurait empêché de se reformer dans l’un des clones cachés dans Montprofond. Certains de ces clones, d’âge, de sexe ou de peuple différents, auraient pu s’éveiller vers 1479 CV, chacun portant au fond de son esprit une part du mage qui lutte pour prendre le dessus.",
+              "nature": "canon_dnd",
+              "edition": "4e",
+              "refs": [
+                {
+                  "ref": "b-dragon-409",
+                  "page": "3-5"
+                },
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
+                }
+              ],
+              "variantGroup": "sort"
+            },
+            {
+              "text": "La 5e édition le remet au premier plan. Waterdeep : Dungeon of the Mad Mage (2018), aventure située en 1492 CV, fait de lui le maître bien vivant de Montprofond et lui donne un profil de jeu complet : magicien de niveau 20, d’un facteur de puissance de 23, qui parle entre autres l’abyssal, le céleste, le draconique et le commun des profondeurs. Les pages consultées pour cette fiche ne citent aucune explication officielle de ce retour après la mort que lui prêtaient les éditions précédentes.",
+              "nature": "canon_dnd",
+              "edition": "5e-2014",
+              "refs": [
+                {
+                  "ref": "b-dungeon-of-the-mad-mage",
+                  "page": "310"
+                },
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
+                },
+                {
+                  "ref": "b-mroi-halaster-sombrecape"
+                }
+              ],
+              "variantGroup": "sort"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "type": "autres_oeuvres",
+          "title": "Dans les aventures, les romans et les jeux",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "leger"
+          },
+          "paragraphs": [
+            {
+              "text": "Halaster est au cœur des aventures consacrées à Montprofond, de The Ruins of Undermountain (1991) à Expedition to Undermountain (2007) et Waterdeep : Dungeon of the Mad Mage (2018). Dans Undermountain : Stardock (1997), son enlèvement hors du donjon, en 1369 CV, libère la magie du dédale, qui se met à projeter ses créatures à travers les Royaumes. On le croise aussi dans des romans, comme Escape from Undermountain (1996) ou Elminster in Hell (2001), et dans des jeux vidéo, de Descent to Undermountain (1998) à l’extension Hordes of the Underdark (2003) de Neverwinter Nights, où il ne parle qu’en rimes.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
+                },
+                {
+                  "ref": "b-ruins-of-undermountain"
+                },
+                {
+                  "ref": "b-expedition-to-undermountain"
+                },
+                {
+                  "ref": "b-dungeon-of-the-mad-mage"
+                },
+                {
+                  "ref": "b-undermountain-stardock"
+                },
+                {
+                  "ref": "b-escape-from-undermountain"
+                },
+                {
+                  "ref": "b-elminster-in-hell"
+                },
+                {
+                  "ref": "b-descent-to-undermountain"
+                },
+                {
+                  "ref": "b-nwn-hordes-of-the-underdark"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 5
+    }
+  },
+  {
+    "id": "lore.peuples.tiefling",
+    "type": "lore",
+    "name": {
+      "fr": "Tieffelin",
+      "en": "Tiefling",
+      "status": "VF_DND",
+      "source": "srd-5.2.1-fr"
+    },
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "peuples",
+      "summary": "Humains au sang fiélon, les tieffelins portent souvent cornes et queue, et une réputation qui les précède partout où ils vont.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "Un héritage fiélon",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Les tieffelins sont des humains marqués par les plans fiélons, le plus souvent parce qu’un de leurs ancêtres était un fiélon : démon, diable, yugoloth, voire divinité maléfique. Cet héritage peut remonter à de nombreuses générations sans s’effacer, mais il ne les voue pas au mal : leur alignement varie presque autant que celui des humains. Beaucoup ont des cornes, une queue, des dents pointues ou des yeux d’une seule couleur, noirs, rouges, blancs, argentés ou dorés ; d’autres trahissent leur ascendance par une odeur de soufre, des pieds fourchus ou le malaise diffus qu’ils inspirent. Leurs pendants célestes sont les aasimars.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-tiefling"
+                },
+                {
+                  "ref": "frwiki-tiefling/frcs-3e",
+                  "page": "19–20"
+                },
+                {
+                  "ref": "frwiki-tiefling/races-of-faerun",
+                  "page": "126"
+                },
+                {
+                  "ref": "frwiki-tiefling/players-handbook-4e",
+                  "page": "49"
+                }
+              ]
+            },
+            {
+              "text": "Partout, ils suscitent la méfiance. Peu d’entre eux grandissent entourés d’affection, et beaucoup s’attendent à être rejetés : certains cèdent à la noirceur qu’on leur prête, d’autres la refusent jusqu’à devenir de vrais héros, et la plupart se tiennent entre les deux. Lents à accorder leur confiance, ils se montrent d’une loyauté rare une fois l’amitié scellée. Sans patrie propre, ils vivent dans tout Toril ; au XVe siècle CV, ils sont nombreux le long de la Côte des Épées, en particulier dans la cosmopolite Porte de Baldur, et la première guerre de Dragonspear (First Dragonspear War), en 1356 CV, avait déjà fait croître leur nombre dans la région.",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "frwiki-tiefling"
+                },
+                {
+                  "ref": "frwiki-tiefling/races-of-faerun",
+                  "page": "126"
+                },
+                {
+                  "ref": "frwiki-tiefling/players-handbook-4e",
+                  "page": "49"
+                },
+                {
+                  "ref": "frwiki-tiefling/fr-players-guide",
+                  "page": "19"
+                },
+                {
+                  "ref": "frwiki-sword-coast"
+                },
+                {
+                  "ref": "frwiki-sword-coast/players-guide-to-faerun",
+                  "page": "28"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "ecarts",
+          "title": "Une lignée qui change d’une édition à l’autre",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Les tieffelins apparaissent avec le décor Planescape (1994) : ce sont alors des mortels qui portent du sang de fiélon. Le Monstrous Compendium de Planescape les décrit comme des combattants vifs, souvent ambidextres, qui préfèrent les armures légères et les armes à la fois tranchantes et rapides, de la dague au cimeterre en passant par l’arbalète de poing ; il précise même qu’ils sont carnivores et tiennent la moelle crue pour un mets de choix.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "frwiki-tiefling"
+                },
+                {
+                  "ref": "frwiki-tiefling/planescape-campaign-setting"
+                },
+                {
+                  "ref": "frwiki-tiefling/planescape-mc-appendix",
+                  "page": "112"
+                }
+              ],
+              "variantGroup": "lignee"
+            },
+            {
+              "text": "Le décor des Royaumes de la 3e édition en fait des créatures touchées par les plans (planetouched), des Extérieurs natifs, dont l’apparence dépend de l’ancêtre : peau écailleuse, langue fourchue ou odeur de soufre chez les descendants de diables ou de démons, fourrure ou yeux de félin chez ceux de rakshasas, petites cornes et peau bleuie chez ceux de guenaudes nocturnes. Certains descendent même de dieux : bois de cerf et cheveux blancs pour la lignée de Beshaba, absence de reflet pour celle de Mask. En Thay, des magiciens en engendrent à dessein pour servir leurs intrigues.",
+              "nature": "canon_dnd",
+              "edition": "3e",
+              "refs": [
+                {
+                  "ref": "frwiki-tiefling"
+                },
+                {
+                  "ref": "frwiki-tiefling/frcs-3e",
+                  "page": "20"
+                },
+                {
+                  "ref": "frwiki-tiefling/races-of-faerun",
+                  "page": "125–127"
+                }
+              ],
+              "variantGroup": "lignee"
+            },
+            {
+              "text": "Selon le Sword Coast Adventurer’s Guide (2015), la plupart des tieffelins du XVe siècle CV appartiennent à une seule lignée, celle d’Asmodée, et en partagent l’apparence diabolique : le phénomène suit l’accession du seigneur des Neuf Enfers au rang de dieu, après la Magepeste (Spellplague) de 1385 CV. Le guide signale toutefois qu’à la fin du siècle, des tieffelins issus d’autres lignées recommencent à naître, même si celle d’Asmodée reste de loin la plus répandue.",
+              "nature": "canon_dnd",
+              "edition": "5e-2014",
+              "refs": [
+                {
+                  "ref": "frwiki-tiefling"
+                },
+                {
+                  "ref": "frwiki-tiefling/scag",
+                  "page": "118"
+                }
+              ],
+              "variantGroup": "lignee"
+            },
+            {
+              "text": "Les règles de 2024 distinguent trois héritages fiélons, auxquels se rattachent la plupart des tieffelins de la fin des années 1400 CV. L’héritage infernal remonte aux diables ; il donne une résistance au feu et le sort mineur trait de feu. L’héritage abyssal vient des démons, protège du poison et donne bouffée de poison ; l’héritage chtonien, lié aux yugoloths, protège des dégâts nécrotiques et donne contact glacial. Chacun apporte ensuite deux autres sorts à mesure que le personnage progresse.",
+              "nature": "canon_dnd",
+              "edition": "5e-2024",
+              "refs": [
+                {
+                  "ref": "frwiki-tiefling"
+                },
+                {
+                  "ref": "frwiki-tiefling/players-handbook-2024",
+                  "page": "195–196"
+                }
+              ],
+              "variantGroup": "lignee"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "bg3",
+          "title": "Une race jouable",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Dans Baldur’s Gate 3, les tieffelins sont une race jouable, marquée par un sang infernal venu des Neuf Enfers. Tous voient dans le noir et possèdent la Résistance infernale, qui les rend résistants au feu. Le jeu propose trois sous-races, chacune liée à un archidiable et dotée de sorts innés obtenus aux niveaux 1, 3 et 5 : le tieffelin d’Asmodée reçoit Flammes, Représailles infernales et Ténèbres ; celui de Méphistophélès, Main de mage, Mains brûlantes et Lame de feu ; celui de Zariel, Thaumaturgie, Châtiment calcinant et Châtiment révélateur.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "bg3wiki-tiefling"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "type": "bg3",
+          "title": "Les réfugiés d’Elturel",
+          "tag": {
+            "act": "acte1",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Au tout début de l’acte I, le bosquet d’émeraude abrite un groupe de réfugiés tieffelins chassés d’Elturel, qui tentent de gagner la Porte de Baldur. Les druides leur ont offert un refuge provisoire, mais les deux groupes s’entendent mal, et des tieffelins montent la garde sur les remparts quand on arrive. À travers eux comme dans ses livres, le jeu insiste sur la méfiance, les préjugés et la peur que suscitent les tieffelins partout dans Faerûn.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "bg3wiki-tiefling-refugees"
+                },
+                {
+                  "ref": "bg3wiki-emerald-grove"
+                },
+                {
+                  "ref": "bg3wiki-tiefling"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 4
+    },
+    "links": [
+      {
+        "target": "race.tiefling",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subrace.asmodeus-tiefling",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subrace.mephistopheles-tiefling",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subrace.zariel-tiefling",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "feature.hellish-resistance",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "place.emerald-grove",
+        "relation": "see_also",
+        "tag": {
+          "act": "acte1",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "lore.cosmologie.avernus",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "lore.lieux.sword-coast",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lore.plus-loin.sword-coast-adventurers-guide",
+    "type": "lore",
+    "name": {
+      "fr": "Guide des aventuriers de la Côte des Épées",
+      "en": "Sword Coast Adventurer's Guide",
+      "status": "VF_DND",
+      "source": "wikipedia-fr"
+    },
+    "aliases": [
+      "SCAG"
+    ],
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "plus-loin",
+      "summary": "Le supplément de 2015 qui présente la Côte des Épées aux joueurs de la 5e édition, et d’où viennent plusieurs sous-classes que l’on choisit dans Baldur’s Gate 3.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "Le livre",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Le Sword Coast Adventurer’s Guide est un supplément de la 5e édition de Dungeons & Dragons, publié par Wizards of the Coast le 3 novembre 2015 avec le concours de Green Ronin Publishing. Ce volume relié de 159 pages, dont Steve Kenson a dirigé la conception, est consacré à l’ouest et au nord-ouest de Faerûn, et d’abord à la Côte des Épées ; son présent se situe en 1489 CV. Il s’adresse aux meneurs de jeu comme aux joueurs. Sa traduction française, le Guide des aventuriers de la Côte des Épées, paraît en septembre 2019.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-frwiki-sword-coast-adventurers-guide"
+                },
+                {
+                  "ref": "b-wpen-sword-coast-adventurers-guide"
+                },
+                {
+                  "ref": "b-wpfr-donjons-et-dragons"
+                },
+                {
+                  "ref": "b-scag",
+                  "page": "18"
+                }
+              ]
+            },
+            {
+              "text": "Le livre mêle deux registres. D’un côté, un tour d’horizon du décor : selon la critique de The Escapist, une vingtaine de pages sur l’histoire récente et la géographie des Royaumes, puis une quarantaine sur la Côte des Épées, ainsi que des chapitres sur les dieux des Royaumes et sur la place des peuples et des classes dans la région. De l’autre, des options de personnage : historiques, variantes de races et sous-classes. Son concepteur principal explique avoir cherché à les enraciner dans les Royaumes tout en les gardant utiles aux tables qui jouent ailleurs.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-wpen-sword-coast-adventurers-guide"
+                },
+                {
+                  "ref": "b-frwiki-sword-coast-adventurers-guide"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "bg3",
+          "title": "Ce qu’on en retrouve dans BG3",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Pour la 5e édition, le livre propose de nouvelles sous-classes liées à la région. On y trouve notamment le Chant de la lame, la tradition des magiciens elfes qui unissent l’escrime et la magie arcanique, le Bretteur, un roublard élégant taillé pour le duel, la Sorcellerie des tempêtes, une source de pouvoir d’ensorceleur liée à l’élément de l’air, et le Serment de la Couronne du paladin. Il ajoute aussi de nouveaux sorts, dont le sort mineur Lame retentissante, ainsi que Lame aux flammes vertes, Ferrage foudroyant et Éruption de lames.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-frwiki-bladesinger"
+                },
+                {
+                  "ref": "b-frwiki-swashbuckler"
+                },
+                {
+                  "ref": "b-frwiki-storm-sorcery"
+                },
+                {
+                  "ref": "b-frwiki-oath-of-the-crown"
+                },
+                {
+                  "ref": "b-frwiki-booming-blade"
+                },
+                {
+                  "ref": "b-scag",
+                  "page": "133-143"
+                }
+              ]
+            },
+            {
+              "text": "Baldur’s Gate 3 reprend une partie de ces options, avec ses propres règles. On peut y choisir la Sorcellerie des tempêtes pour l’ensorceleur, ainsi que le Chant de la lame du magicien, le Bretteur du roublard et le Serment de la Couronne du paladin, ces trois dernières sous-classes ayant été ajoutées au jeu en 2025 avec le Patch 8. Le sort mineur Lame retentissante y figure aussi. Les fiches du Grimoire détaillent ce que chacune fait dans le jeu.",
+              "nature": "canon_bg3",
+              "refs": [
+                {
+                  "ref": "b-bg3wiki-storm-sorcery"
+                },
+                {
+                  "ref": "b-bg3wiki-bladesinging"
+                },
+                {
+                  "ref": "b-bg3wiki-swashbuckler"
+                },
+                {
+                  "ref": "b-bg3wiki-oath-of-the-crown"
+                },
+                {
+                  "ref": "b-bg3wiki-booming-blade"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "plus_loin",
+          "title": "Accueil et lecture",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "À sa sortie, le livre entre à la 18e place des meilleures ventes de livres reliés hors fiction du Publishers Weekly, pour la semaine finissant le 16 novembre 2015, et reçoit l’année suivante une distinction du jury des ENnie Awards. La critique se partage : The Escapist et DieHard GameFan jugent l’ouvrage trop cher pour ce qu’il contient, le premier regrettant des règles éparpillées, quand Black Gate le recommande chaudement aux meneurs de jeu pour nourrir leurs campagnes.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-wpen-sword-coast-adventurers-guide"
+                }
+              ]
+            },
+            {
+              "text": "Notre lecture : pour qui joue à Baldur’s Gate 3, c’est l’un des ouvrages de la 5e édition les plus utiles pour situer le décor du jeu. Il décrit la Côte des Épées telle qu’elle se présente vers 1489 CV, trois ans seulement avant les événements de 1492 CV, avec les dieux qu’on y prie et les peuples qu’on y croise. Pour les règles de 2024, c’est Forgotten Realms : Heroes of Faerûn, paru en novembre 2025, qui présente à son tour les Royaumes aux joueurs.",
+              "nature": "interpretation",
+              "refs": [
+                {
+                  "ref": "b-frwiki-sword-coast-adventurers-guide"
+                },
+                {
+                  "ref": "b-frwiki-baldurs-gate-iii"
+                },
+                {
+                  "ref": "b-frwiki-heroes-of-faerun"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 3
+    },
+    "links": [
+      {
+        "target": "subclass.bladesinging",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.swashbuckler",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.storm-sorcery",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "subclass.oath-of-the-crown",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      },
+      {
+        "target": "spell.booming-blade",
+        "relation": "see_also",
+        "tag": {
+          "act": "prologue",
+          "level": "aucun",
+          "otherWorks": "aucun"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lore.saga.baldurs-gate",
+    "type": "lore",
+    "name": {
+      "fr": "Baldur’s Gate",
+      "en": "Baldur's Gate",
+      "status": "VF_DND",
+      "source": "wikipedia-fr"
+    },
+    "aliases": [
+      "Baldur’s Gate 1",
+      "BG1"
+    ],
+    "tag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "titleTag": {
+      "act": "prologue",
+      "level": "aucun",
+      "otherWorks": "aucun"
+    },
+    "licence": "carnet",
+    "facts": {
+      "@type": "lore",
+      "theme": "saga",
+      "summary": "Le premier jeu de la série, sorti à la fin de 1998 : un jeu de rôle de BioWare qui entraîne son héros sur la Côte des Épées, jusqu’aux portes de la cité.",
+      "sections": [
+        {
+          "id": "s1",
+          "type": "general",
+          "title": "Le jeu",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Baldur’s Gate est un jeu vidéo de rôle développé par le studio canadien BioWare et publié par Black Isle Studios, une division d’Interplay. Sorti fin 1998 en Amérique du Nord et au tout début de 1999 en Europe, il se déroule dans les Royaumes Oubliés, sur la Côte des Épées, et adapte les règles de la 2e édition d’Advanced Dungeons & Dragons. Le joueur y crée son personnage et mène un groupe de six membres au plus, dans des combats en temps réel que l’on peut suspendre à tout moment pour donner ses ordres.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-wpfr-baldurs-gate"
+                },
+                {
+                  "ref": "b-wpen-baldurs-gate"
+                },
+                {
+                  "ref": "b-frwiki-baldurs-gate-game"
+                }
+              ]
+            },
+            {
+              "text": "C’est le premier jeu bâti sur l’Infinity Engine, un moteur conçu pour lui puis réemployé dans d’autres jeux sous licence D&D, comme Baldur’s Gate II, Icewind Dale ou Planescape : Torment. Commencé en 1995, son développement aboutit à un grand succès critique et commercial : 175 000 exemplaires vendus en deux semaines, la tête des ventes en France, en Allemagne et au Royaume-Uni, puis plus de deux millions d’exemplaires. On lui attribue le renouveau du jeu de rôle sur ordinateur. La version française est intégralement traduite, mais le titre reste en anglais.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-wpfr-baldurs-gate"
+                },
+                {
+                  "ref": "b-wpen-baldurs-gate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "type": "autres_oeuvres",
+          "title": "Le point de départ",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "leger"
+          },
+          "paragraphs": [
+            {
+              "text": "Le héros a grandi à Château-Suif (Candlekeep), la forteresse-bibliothèque de la Côte des Épées, sous la protection du mage Gorion. Quand des tueurs à gages se mettent à le traquer jusque derrière ces murs, son tuteur décide de l’emmener loin de la forteresse, vers une destination qu’il garde secrète. En chemin, une embuscade menée par une mystérieuse silhouette en armure noire coûte la vie à Gorion. Resté seul, le héros se lance dans une aventure qui le mène à travers toute la région, jusqu’à la cité de la Porte de Baldur.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-wpfr-baldurs-gate"
+                },
+                {
+                  "ref": "b-frwiki-baldurs-gate-game"
+                }
+              ]
+            },
+            {
+              "text": "Il découvre une Côte des Épées en pleine crise du fer : le minerai tiré de la mine de Nashkel pourrit sitôt fondu, les armes et les outils se brisent, le fer vaut plus que l’or et les brigands écument les routes. La Porte de Baldur envoie les mercenaires du Poing enflammé patrouiller, ferme ses portes et son port, et les soupçons se tournent vers le royaume voisin d’Amn, au point que la guerre menace. L’enquête se double d’une quête plus intime : le héros cherche à percer le secret de ses origines, qu’on lui a toujours caché.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-frwiki-baldurs-gate-game"
+                },
+                {
+                  "ref": "b-wpen-baldurs-gate"
+                },
+                {
+                  "ref": "b-wpfr-baldurs-gate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "ecarts",
+          "title": "1368 ou 1369 CV ?",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Pour le Forgotten Realms Wiki et la Wikipédia anglophone, l’aventure se déroule en 1368 CV. Les œuvres liées au jeu vont dans le même sens : le journal de l’extension Siege of Dragonspear, qui reprend l’histoire après la fin du jeu, s’ouvre sur une date de 1368 CV, et le roman tiré du jeu en 1999 est lui aussi daté de cette année-là par le même wiki.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-frwiki-baldurs-gate-game"
+                },
+                {
+                  "ref": "b-wpen-baldurs-gate"
+                },
+                {
+                  "ref": "b-frwiki-siege-of-dragonspear"
+                },
+                {
+                  "ref": "b-frwiki-baldurs-gate-novel"
+                }
+              ],
+              "variantGroup": "annee-recit"
+            },
+            {
+              "text": "La Wikipédia francophone situe en revanche toute l’action en 1369 CV, en s’appuyant notamment sur une documentation publiée par Black Isle en 2000. Un an d’écart sépare donc les deux versions, qui coexistent dans les sources consultées : les pages anglophones retiennent 1368 CV, la principale page francophone 1369 CV. Cette fiche les présente côte à côte, sans trancher entre elles.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-wpfr-baldurs-gate"
+                }
+              ],
+              "variantGroup": "annee-recit"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "type": "ecarts",
+          "title": "Novembre ou décembre 1998 ?",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Selon la Wikipédia anglophone, le jeu est expédié aux revendeurs le 21 décembre 1998 en Amérique du Nord, puis sort en Europe en janvier 1999 et au Japon le 30 janvier 1999, édité là-bas par Sega. Le Forgotten Realms Wiki retient la même date de décembre. L’article anglophone note que des sources en ligne plus tardives avancent le 30 novembre 1998, mais que la presse de l’époque parle de décembre.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-wpen-baldurs-gate"
+                },
+                {
+                  "ref": "b-frwiki-baldurs-gate-game"
+                }
+              ],
+              "variantGroup": "date-sortie"
+            },
+            {
+              "text": "La Wikipédia francophone retient au contraire le 30 novembre 1998 pour les États-Unis, et donne pour la France une date précise, le 5 janvier 1999. Les sources consultées situent donc la sortie américaine entre la fin novembre et la fin décembre 1998, tandis que la sortie française tombe au tout début de l’année suivante, quelques semaines après celle d’Amérique du Nord.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-wpfr-baldurs-gate"
+                }
+              ],
+              "variantGroup": "date-sortie"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "type": "plus_loin",
+          "title": "Extensions, rééditions et suite",
+          "tag": {
+            "act": "prologue",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
+            {
+              "text": "Une extension, Tales of the Sword Coast, paraît en 1999 ; en France, on la connaît aussi sous le titre Baldur’s Gate : la légende de l’île perdue. Développée par BioWare, elle ajoute quatre zones à la carte du jeu, dont le village de la Barbe d’Ulgoth, à l’extrême nord de la Côte des Épées, et Durlag’s Tower, et relève le plafond d’expérience. Un roman tiré du jeu, signé Philip Athans, paraît la même année en anglais ; il n’a pas été traduit en français.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-wpfr-baldurs-gate"
+                },
+                {
+                  "ref": "b-frwiki-tales-of-the-sword-coast"
+                },
+                {
+                  "ref": "b-frwiki-baldurs-gate-game"
+                }
+              ]
+            },
+            {
+              "text": "En 2012, Baldur’s Gate : Enhanced Edition, développée par Overhaul Games, une division de Beamdog, modernise le jeu et son extension et ajoute zones, compagnons et quêtes ; elle sort en France le 28 novembre 2012 et arrive sur consoles en 2019. En 2016, Siege of Dragonspear, une extension propre à cette édition, prend la suite du jeu original. La série se poursuit avec Baldur’s Gate II : Shadows of Amn en 2000, puis Baldur’s Gate 3 en 2023.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-wpfr-baldurs-gate"
+                },
+                {
+                  "ref": "b-wpen-baldurs-gate"
+                },
+                {
+                  "ref": "b-frwiki-bg-enhanced-edition"
+                },
+                {
+                  "ref": "b-frwiki-siege-of-dragonspear"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "readingMinutes": 5
+    }
+  }
+]

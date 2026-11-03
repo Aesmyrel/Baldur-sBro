@@ -1,0 +1,102 @@
+id: lore.saga.baldurs-gate
+theme: saga
+nom: { fr: Baldur’s Gate, en: Baldur's Gate, statut: VF_DND, source: wikipedia-fr }
+alias: [Baldur’s Gate 1, BG1]
+etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
+etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+resume: >-
+  Le premier jeu de la série, sorti à la fin de 1998 : un jeu de rôle de BioWare qui entraîne son héros sur la Côte des Épées, jusqu’aux portes de la cité.
+sections:
+  - type: general
+    titre: Le jeu
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Baldur’s Gate est un jeu vidéo de rôle développé par le studio canadien BioWare et publié par Black Isle Studios, une division d’Interplay. Sorti fin 1998 en Amérique du Nord et au tout début de 1999 en Europe, il se déroule dans les Royaumes Oubliés, sur la Côte des Épées, et adapte les règles de la 2e édition d’Advanced Dungeons & Dragons. Le joueur y crée son personnage et mène un groupe de six membres au plus, dans des combats en temps réel que l’on peut suspendre à tout moment pour donner ses ordres.
+        nature: hors_univers
+        refs:
+          - { ref: b-wpfr-baldurs-gate }
+          - { ref: b-wpen-baldurs-gate }
+          - { ref: b-frwiki-baldurs-gate-game }
+      - texte: >-
+          C’est le premier jeu bâti sur l’Infinity Engine, un moteur conçu pour lui puis réemployé dans d’autres jeux sous licence D&D, comme Baldur’s Gate II, Icewind Dale ou Planescape : Torment. Commencé en 1995, son développement aboutit à un grand succès critique et commercial : 175 000 exemplaires vendus en deux semaines, la tête des ventes en France, en Allemagne et au Royaume-Uni, puis plus de deux millions d’exemplaires. On lui attribue le renouveau du jeu de rôle sur ordinateur. La version française est intégralement traduite, mais le titre reste en anglais.
+        nature: hors_univers
+        refs:
+          - { ref: b-wpfr-baldurs-gate }
+          - { ref: b-wpen-baldurs-gate }
+  - type: autres_oeuvres
+    titre: Le point de départ
+    etiquette: { act: prologue, level: aucun, otherWorks: leger }
+    paragraphes:
+      - texte: >-
+          Le héros a grandi à Château-Suif (Candlekeep), la forteresse-bibliothèque de la Côte des Épées, sous la protection du mage Gorion. Quand des tueurs à gages se mettent à le traquer jusque derrière ces murs, son tuteur décide de l’emmener loin de la forteresse, vers une destination qu’il garde secrète. En chemin, une embuscade menée par une mystérieuse silhouette en armure noire coûte la vie à Gorion. Resté seul, le héros se lance dans une aventure qui le mène à travers toute la région, jusqu’à la cité de la Porte de Baldur.
+        nature: canon_dnd
+        edition: add2
+        refs:
+          - { ref: b-wpfr-baldurs-gate }
+          - { ref: b-frwiki-baldurs-gate-game }
+      - texte: >-
+          Il découvre une Côte des Épées en pleine crise du fer : le minerai tiré de la mine de Nashkel pourrit sitôt fondu, les armes et les outils se brisent, le fer vaut plus que l’or et les brigands écument les routes. La Porte de Baldur envoie les mercenaires du Poing enflammé patrouiller, ferme ses portes et son port, et les soupçons se tournent vers le royaume voisin d’Amn, au point que la guerre menace. L’enquête se double d’une quête plus intime : le héros cherche à percer le secret de ses origines, qu’on lui a toujours caché.
+        nature: canon_dnd
+        edition: add2
+        refs:
+          - { ref: b-frwiki-baldurs-gate-game }
+          - { ref: b-wpen-baldurs-gate }
+          - { ref: b-wpfr-baldurs-gate }
+  - type: ecarts
+    titre: 1368 ou 1369 CV ?
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Pour le Forgotten Realms Wiki et la Wikipédia anglophone, l’aventure se déroule en 1368 CV. Les œuvres liées au jeu vont dans le même sens : le journal de l’extension Siege of Dragonspear, qui reprend l’histoire après la fin du jeu, s’ouvre sur une date de 1368 CV, et le roman tiré du jeu en 1999 est lui aussi daté de cette année-là par le même wiki.
+        nature: canon_dnd
+        edition: add2
+        variantes: annee-recit
+        refs:
+          - { ref: b-frwiki-baldurs-gate-game }
+          - { ref: b-wpen-baldurs-gate }
+          - { ref: b-frwiki-siege-of-dragonspear }
+          - { ref: b-frwiki-baldurs-gate-novel }
+      - texte: >-
+          La Wikipédia francophone situe en revanche toute l’action en 1369 CV, en s’appuyant notamment sur une documentation publiée par Black Isle en 2000. Un an d’écart sépare donc les deux versions, qui coexistent dans les sources consultées : les pages anglophones retiennent 1368 CV, la principale page francophone 1369 CV. Cette fiche les présente côte à côte, sans trancher entre elles.
+        nature: canon_dnd
+        edition: add2
+        variantes: annee-recit
+        refs:
+          - { ref: b-wpfr-baldurs-gate }
+  - type: ecarts
+    titre: Novembre ou décembre 1998 ?
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Selon la Wikipédia anglophone, le jeu est expédié aux revendeurs le 21 décembre 1998 en Amérique du Nord, puis sort en Europe en janvier 1999 et au Japon le 30 janvier 1999, édité là-bas par Sega. Le Forgotten Realms Wiki retient la même date de décembre. L’article anglophone note que des sources en ligne plus tardives avancent le 30 novembre 1998, mais que la presse de l’époque parle de décembre.
+        nature: hors_univers
+        variantes: date-sortie
+        refs:
+          - { ref: b-wpen-baldurs-gate }
+          - { ref: b-frwiki-baldurs-gate-game }
+      - texte: >-
+          La Wikipédia francophone retient au contraire le 30 novembre 1998 pour les États-Unis, et donne pour la France une date précise, le 5 janvier 1999. Les sources consultées situent donc la sortie américaine entre la fin novembre et la fin décembre 1998, tandis que la sortie française tombe au tout début de l’année suivante, quelques semaines après celle d’Amérique du Nord.
+        nature: hors_univers
+        variantes: date-sortie
+        refs:
+          - { ref: b-wpfr-baldurs-gate }
+  - type: plus_loin
+    titre: Extensions, rééditions et suite
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Une extension, Tales of the Sword Coast, paraît en 1999 ; en France, on la connaît aussi sous le titre Baldur’s Gate : la légende de l’île perdue. Développée par BioWare, elle ajoute quatre zones à la carte du jeu, dont le village de la Barbe d’Ulgoth, à l’extrême nord de la Côte des Épées, et Durlag’s Tower, et relève le plafond d’expérience. Un roman tiré du jeu, signé Philip Athans, paraît la même année en anglais ; il n’a pas été traduit en français.
+        nature: hors_univers
+        refs:
+          - { ref: b-wpfr-baldurs-gate }
+          - { ref: b-frwiki-tales-of-the-sword-coast }
+          - { ref: b-frwiki-baldurs-gate-game }
+      - texte: >-
+          En 2012, Baldur’s Gate : Enhanced Edition, développée par Overhaul Games, une division de Beamdog, modernise le jeu et son extension et ajoute zones, compagnons et quêtes ; elle sort en France le 28 novembre 2012 et arrive sur consoles en 2019. En 2016, Siege of Dragonspear, une extension propre à cette édition, prend la suite du jeu original. La série se poursuit avec Baldur’s Gate II : Shadows of Amn en 2000, puis Baldur’s Gate 3 en 2023.
+        nature: hors_univers
+        refs:
+          - { ref: b-wpfr-baldurs-gate }
+          - { ref: b-wpen-baldurs-gate }
+          - { ref: b-frwiki-bg-enhanced-edition }
+          - { ref: b-frwiki-siege-of-dragonspear }

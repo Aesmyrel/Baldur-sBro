@@ -1,0 +1,670 @@
+# Registre des références du lot de fiches pilotes A (un par thème : panthéon, cosmologie, peuples,
+# bestiaire, factions, lieux). Pages de wiki consultées directement, avec leur révision ; livres cités par
+# ces pages, non consultés nous-mêmes (consultation secondaire, « via » la page qui les cite).
+# Identifiant d’un livre cité : « <page de wiki>/<livre> », pour que chaque renvoi désigne la page qui le cite.
+
+# --- Forgotten Realms Wiki (CC BY-SA, aucun texte repris) ---
+
+frwiki-silvanus:
+  type: wiki
+  titre_vo: "Silvanus (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Silvanus
+  revision: 1104587
+  licence: cc-by-sa
+  consultation: directe
+
+frwiki-church-of-silvanus:
+  type: wiki
+  titre_vo: "Church of Silvanus (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Church_of_Silvanus
+  revision: 982961
+  licence: cc-by-sa
+  consultation: directe
+
+# --- bg3.wiki (CC BY-NC-SA, aucun texte repris) ---
+
+bg3wiki-emerald-grove:
+  type: wiki
+  titre_vo: "Emerald Grove (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Emerald_Grove
+  revision: 439376
+  licence: cc-by-nc-sa
+  consultation: directe
+
+bg3wiki-sacred-pool:
+  type: wiki
+  titre_vo: "Sacred Pool (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Sacred_Pool
+  revision: 438821
+  licence: cc-by-nc-sa
+  consultation: directe
+
+bg3wiki-wilderness:
+  type: wiki
+  titre_vo: "Wilderness (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Wilderness
+  revision: 433981
+  licence: cc-by-nc-sa
+  consultation: directe
+
+bg3wiki-cleric:
+  type: wiki
+  titre_vo: "Cleric (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Cleric
+  revision: 439581
+  licence: cc-by-nc-sa
+  consultation: directe
+
+# --- Livres cités par « Silvanus » ---
+
+frwiki-silvanus/fr-campaign-set:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Set (Cyclopedia of the Realms)"
+  titre_vf: "Les Royaumes oubliés : décor de campagne (Encyclopédie des Royaumes)"
+  editeur: TSR
+  annee: 1987
+  edition: add1
+  consultation: secondaire
+  via: frwiki-silvanus
+
+frwiki-silvanus/running-the-realms:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting, 2nd edition (revised): Running the Realms"
+  editeur: TSR
+  annee: 1993
+  edition: add2
+  consultation: secondaire
+  via: frwiki-silvanus
+
+frwiki-silvanus/faiths-avatars:
+  type: livre
+  titre_vo: "Faiths & Avatars"
+  editeur: TSR
+  annee: 1996
+  edition: add2
+  consultation: secondaire
+  via: frwiki-silvanus
+
+frwiki-silvanus/on-hallowed-ground:
+  type: livre
+  titre_vo: "On Hallowed Ground"
+  editeur: TSR
+  annee: 1996
+  edition: add2
+  consultation: secondaire
+  via: frwiki-silvanus
+
+frwiki-silvanus/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: frwiki-silvanus
+
+frwiki-silvanus/faiths-pantheons:
+  type: livre
+  titre_vo: "Faiths and Pantheons"
+  editeur: Wizards of the Coast
+  annee: 2002
+  edition: 3e
+  consultation: secondaire
+  via: frwiki-silvanus
+
+frwiki-silvanus/fr-campaign-guide:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Guide"
+  titre_vf: "Encyclopédie des Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-silvanus
+
+frwiki-silvanus/dragon-412:
+  type: magazine
+  titre_vo: "Dragon 412, Channel Divinity: Chauntea and Silvanus"
+  editeur: Wizards of the Coast
+  annee: 2012
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-silvanus
+
+frwiki-silvanus/scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  consultation: secondaire
+  via: frwiki-silvanus
+
+frwiki-silvanus/heroes-of-faerun:
+  type: livre
+  titre_vo: "Forgotten Realms: Heroes of Faerûn"
+  editeur: Wizards of the Coast
+  annee: 2025
+  edition: 5e-2024
+  consultation: secondaire
+  via: frwiki-silvanus
+
+# --- Livres cités par « Church of Silvanus » ---
+
+frwiki-church-of-silvanus/faiths-pantheons:
+  type: livre
+  titre_vo: "Faiths and Pantheons"
+  editeur: Wizards of the Coast
+  annee: 2002
+  edition: 3e
+  consultation: secondaire
+  via: frwiki-church-of-silvanus
+
+# --- Averne ---
+
+frwiki-avernus:
+  type: wiki
+  titre_vo: "Avernus (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Avernus
+  revision: 1094317
+  licence: cc-by-sa
+  consultation: directe
+
+frwiki-nine-hells:
+  type: wiki
+  titre_vo: "Nine Hells (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Nine_Hells
+  revision: 1110454
+  licence: cc-by-sa
+  consultation: directe
+
+bg3wiki-nautiloid:
+  type: wiki
+  titre_vo: "Nautiloid (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Nautiloid
+  revision: 439907
+  licence: cc-by-nc-sa
+  consultation: directe
+
+bg3wiki-imp:
+  type: wiki
+  titre_vo: "Imp (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Imp
+  revision: 419688
+  licence: cc-by-nc-sa
+  consultation: directe
+
+frwiki-avernus/guide-to-hell:
+  type: livre
+  titre_vo: "Guide to Hell"
+  editeur: TSR
+  annee: 1999
+  edition: add2
+  consultation: secondaire
+  via: frwiki-avernus
+
+frwiki-avernus/on-hallowed-ground:
+  type: livre
+  titre_vo: "On Hallowed Ground"
+  editeur: TSR
+  annee: 1996
+  edition: add2
+  consultation: secondaire
+  via: frwiki-avernus
+
+frwiki-avernus/manual-of-the-planes-3e:
+  type: livre
+  titre_vo: "Manual of the Planes (3rd edition)"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: frwiki-avernus
+
+frwiki-avernus/fiendish-codex-2:
+  type: livre
+  titre_vo: "Fiendish Codex II: Tyrants of the Nine Hells"
+  editeur: Wizards of the Coast
+  annee: 2006
+  edition: "3.5"
+  consultation: secondaire
+  via: frwiki-avernus
+
+frwiki-avernus/manual-of-the-planes-4e:
+  type: livre
+  titre_vo: "Manual of the Planes (4th edition)"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-avernus
+
+frwiki-avernus/monster-manual-5e:
+  type: livre
+  titre_vo: "Monster Manual (5th edition)"
+  editeur: Wizards of the Coast
+  annee: 2014
+  edition: 5e-2014
+  consultation: secondaire
+  via: frwiki-avernus
+
+frwiki-avernus/dmg-5e:
+  type: livre
+  titre_vo: "Dungeon Master’s Guide (5th edition)"
+  editeur: Wizards of the Coast
+  annee: 2014
+  edition: 5e-2014
+  consultation: secondaire
+  via: frwiki-avernus
+
+frwiki-avernus/mtof:
+  type: livre
+  titre_vo: "Mordenkainen’s Tome of Foes"
+  editeur: Wizards of the Coast
+  annee: 2018
+  edition: 5e-2014
+  consultation: secondaire
+  via: frwiki-avernus
+
+frwiki-nine-hells/manual-of-the-planes-1e:
+  type: livre
+  titre_vo: "Manual of the Planes (1st edition)"
+  editeur: TSR
+  annee: 1987
+  edition: add1
+  consultation: secondaire
+  via: frwiki-nine-hells
+
+frwiki-nine-hells/players-guide-to-faerun:
+  type: livre
+  titre_vo: "Player’s Guide to Faerûn"
+  editeur: Wizards of the Coast
+  annee: 2004
+  edition: "3.5"
+  consultation: secondaire
+  via: frwiki-nine-hells
+
+frwiki-nine-hells/fr-campaign-guide:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Guide"
+  titre_vf: "Encyclopédie des Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-nine-hells
+
+# --- Tieffelin ---
+
+frwiki-tiefling:
+  type: wiki
+  titre_vo: "Tiefling (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Tiefling
+  revision: 1110884
+  licence: cc-by-sa
+  consultation: directe
+
+bg3wiki-tiefling:
+  type: wiki
+  titre_vo: "Tiefling (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Tiefling
+  revision: 424224
+  licence: cc-by-nc-sa
+  consultation: directe
+
+bg3wiki-tiefling-refugees:
+  type: wiki
+  titre_vo: "Tiefling refugees (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Tiefling_refugees
+  revision: 439313
+  licence: cc-by-nc-sa
+  consultation: directe
+
+frwiki-tiefling/planescape-campaign-setting:
+  type: livre
+  titre_vo: "Planescape Campaign Setting"
+  editeur: TSR
+  annee: 1994
+  edition: add2
+  consultation: secondaire
+  via: frwiki-tiefling
+
+frwiki-tiefling/planescape-mc-appendix:
+  type: livre
+  titre_vo: "Planescape Monstrous Compendium Appendix"
+  editeur: TSR
+  annee: 1994
+  edition: add2
+  consultation: secondaire
+  via: frwiki-tiefling
+
+frwiki-tiefling/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: frwiki-tiefling
+
+frwiki-tiefling/races-of-faerun:
+  type: livre
+  titre_vo: "Races of Faerûn"
+  titre_vf: "Races de Faerûn"
+  editeur: Wizards of the Coast
+  annee: 2003
+  edition: 3e
+  consultation: secondaire
+  via: frwiki-tiefling
+
+frwiki-tiefling/players-handbook-4e:
+  type: livre
+  titre_vo: "Player’s Handbook (4th edition)"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-tiefling
+
+frwiki-tiefling/fr-players-guide:
+  type: livre
+  titre_vo: "Forgotten Realms Player’s Guide"
+  titre_vf: "Guide des Joueurs des Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-tiefling
+
+frwiki-tiefling/scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  consultation: secondaire
+  via: frwiki-tiefling
+
+frwiki-tiefling/players-handbook-2024:
+  type: livre
+  titre_vo: "Player’s Handbook (2024)"
+  editeur: Wizards of the Coast
+  annee: 2024
+  edition: 5e-2024
+  consultation: secondaire
+  via: frwiki-tiefling
+
+frwiki-sword-coast:
+  type: wiki
+  titre_vo: "Sword Coast (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Sword_Coast
+  revision: 1086701
+  licence: cc-by-sa
+  consultation: directe
+
+frwiki-sword-coast/players-guide-to-faerun:
+  type: livre
+  titre_vo: "Player’s Guide to Faerûn"
+  editeur: Wizards of the Coast
+  annee: 2004
+  edition: "3.5"
+  consultation: secondaire
+  via: frwiki-sword-coast
+
+# --- Diablotin ---
+
+frwiki-imp:
+  type: wiki
+  titre_vo: "Imp (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Imp
+  revision: 1094497
+  licence: cc-by-sa
+  consultation: directe
+
+bg3wiki-lesser-imp:
+  type: wiki
+  titre_vo: "Lesser Imp (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Lesser_Imp
+  revision: 429281
+  licence: cc-by-nc-sa
+  consultation: directe
+
+frwiki-imp/monster-manual-1e:
+  type: livre
+  titre_vo: "Monster Manual (1st edition)"
+  editeur: TSR
+  annee: 1977
+  edition: add1
+  consultation: secondaire
+  via: frwiki-imp
+
+frwiki-imp/planescape-mc-appendix:
+  type: livre
+  titre_vo: "Planescape Monstrous Compendium Appendix"
+  editeur: TSR
+  annee: 1994
+  edition: add2
+  consultation: secondaire
+  via: frwiki-imp
+
+frwiki-imp/monster-manual-v35:
+  type: livre
+  titre_vo: "Monster Manual v.3.5"
+  editeur: Wizards of the Coast
+  annee: 2003
+  edition: "3.5"
+  consultation: secondaire
+  via: frwiki-imp
+
+frwiki-imp/fiendish-codex-2:
+  type: livre
+  titre_vo: "Fiendish Codex II: Tyrants of the Nine Hells"
+  editeur: Wizards of the Coast
+  annee: 2006
+  edition: "3.5"
+  consultation: secondaire
+  via: frwiki-imp
+
+frwiki-imp/monster-manual-4e:
+  type: livre
+  titre_vo: "Monster Manual (4th edition)"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-imp
+
+frwiki-imp/monster-manual-5e:
+  type: livre
+  titre_vo: "Monster Manual (5th edition)"
+  editeur: Wizards of the Coast
+  annee: 2014
+  edition: 5e-2014
+  consultation: secondaire
+  via: frwiki-imp
+
+# --- Ménestrels ---
+
+frwiki-harpers:
+  type: wiki
+  titre_vo: "Harpers (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Harpers
+  revision: 1104608
+  licence: cc-by-sa
+  consultation: directe
+
+bg3wiki-ravaged-beach:
+  type: wiki
+  titre_vo: "Ravaged Beach (bg3.wiki)"
+  url: https://bg3.wiki/wiki/Ravaged_Beach
+  revision: 439909
+  licence: cc-by-nc-sa
+  consultation: directe
+
+frwiki-harpers/fr-adventures:
+  type: livre
+  titre_vo: "Forgotten Realms Adventures"
+  editeur: TSR
+  annee: 1990
+  edition: add2
+  consultation: secondaire
+  via: frwiki-harpers
+
+frwiki-harpers/code-of-the-harpers:
+  type: livre
+  titre_vo: "The Code of the Harpers"
+  editeur: TSR
+  annee: 1993
+  edition: add2
+  consultation: secondaire
+  via: frwiki-harpers
+
+frwiki-harpers/running-the-realms:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting, 2nd edition (revised): Running the Realms"
+  editeur: TSR
+  annee: 1993
+  edition: add2
+  consultation: secondaire
+  via: frwiki-harpers
+
+frwiki-harpers/warriors-priests-realms:
+  type: livre
+  titre_vo: "Warriors and Priests of the Realms"
+  editeur: TSR
+  annee: 1996
+  edition: add2
+  consultation: secondaire
+  via: frwiki-harpers
+
+frwiki-harpers/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: frwiki-harpers
+
+frwiki-harpers/grand-history-of-the-realms:
+  type: livre
+  titre_vo: "The Grand History of the Realms"
+  editeur: Wizards of the Coast
+  annee: 2007
+  edition: "3.5"
+  consultation: secondaire
+  via: frwiki-harpers
+
+frwiki-harpers/fr-campaign-guide:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Guide"
+  titre_vf: "Encyclopédie des Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-harpers
+
+frwiki-harpers/dragon-430:
+  type: magazine
+  titre_vo: "Dragon 430, The Harpers of Waterdeep"
+  editeur: Wizards of the Coast
+  annee: 2013
+  consultation: secondaire
+  via: frwiki-harpers
+
+frwiki-harpers/scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  consultation: secondaire
+  via: frwiki-harpers
+
+# --- Côte des Épées ---
+
+wpfr-royaumes-oublies:
+  type: wiki
+  titre_vo: "Royaumes oubliés (Wikipédia en français)"
+  url: https://fr.wikipedia.org/wiki/Royaumes_oubli%C3%A9s
+  revision: 240404251
+  licence: cc-by-sa
+  consultation: directe
+
+frwiki-sword-coast/volos-guide-sword-coast:
+  type: livre
+  titre_vo: "Volo’s Guide to the Sword Coast"
+  editeur: TSR
+  annee: 1994
+  edition: add2
+  consultation: secondaire
+  via: frwiki-sword-coast
+
+frwiki-sword-coast/grand-tour-of-the-realms:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting, 2nd edition (revised): A Grand Tour of the Realms"
+  editeur: TSR
+  annee: 1993
+  edition: add2
+  consultation: secondaire
+  via: frwiki-sword-coast
+
+frwiki-sword-coast/hordes-of-dragonspear:
+  type: aventure
+  titre_vo: "Hordes of Dragonspear"
+  editeur: TSR
+  annee: 1992
+  edition: add2
+  consultation: secondaire
+  via: frwiki-sword-coast
+
+frwiki-sword-coast/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: frwiki-sword-coast
+
+frwiki-sword-coast/grand-history-of-the-realms:
+  type: livre
+  titre_vo: "The Grand History of the Realms"
+  editeur: Wizards of the Coast
+  annee: 2007
+  edition: "3.5"
+  consultation: secondaire
+  via: frwiki-sword-coast
+
+frwiki-sword-coast/fr-campaign-guide:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Guide"
+  titre_vf: "Encyclopédie des Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-sword-coast
+
+frwiki-sword-coast/rise-of-tiamat:
+  type: aventure
+  titre_vo: "The Rise of Tiamat"
+  editeur: Wizards of the Coast
+  annee: 2014
+  edition: 5e-2014
+  consultation: secondaire
+  via: frwiki-sword-coast
+
+frwiki-sword-coast/scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  consultation: secondaire
+  via: frwiki-sword-coast

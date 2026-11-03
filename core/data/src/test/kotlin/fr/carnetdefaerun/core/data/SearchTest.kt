@@ -7,7 +7,6 @@ import fr.carnetdefaerun.core.data.search.SearchRepository
 import fr.carnetdefaerun.core.model.content.Block
 import fr.carnetdefaerun.core.model.content.BlockKind
 import fr.carnetdefaerun.core.model.content.ConditionFacts
-import fr.carnetdefaerun.core.model.content.ContentFormat
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.EntryType
@@ -22,8 +21,7 @@ import fr.carnetdefaerun.core.model.spoiler.SpoilerLevel
 import fr.carnetdefaerun.core.model.spoiler.SpoilerProfile
 import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
 import fr.carnetdefaerun.core.model.spoiler.Tolerance
-import java.io.File
-import kotlinx.serialization.builtins.ListSerializer
+import fr.carnetdefaerun.core.testing.GameData
 import fr.carnetdefaerun.core.testing.InMemoryContentStore
 import org.junit.Test
 
@@ -107,11 +105,7 @@ class SearchTest {
 
     // --- Base complète ---
 
-    private val entries: List<Entry> by lazy {
-        File("../../data/game").listFiles { f -> f.extension == "json" }!!.sorted().flatMap {
-            ContentFormat.strict.decodeFromString(ListSerializer(Entry.serializer()), it.readText())
-        }
-    }
+    private val entries: List<Entry> by lazy { GameData.entries }
     private val full by lazy { SearchRepository(InMemoryContentStore(entries)) }
     private val byId by lazy { entries.associateBy { it.id } }
 

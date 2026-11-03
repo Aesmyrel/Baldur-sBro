@@ -1,0 +1,117 @@
+id: lore.personnages.halaster-blackcloak
+theme: personnages
+nom: { fr: Halaster Sombrecape, en: Halaster Blackcloak, statut: NON_OFFICIELLE }
+alias: [Halaster Blackcloak, le Mage dément, Hilather]
+etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
+etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+resume: >-
+  Archimage dément vieux de plusieurs millénaires, Halaster a creusé sous Eauprofonde le plus célèbre donjon des Royaumes, Montprofond, dont il reste le maître insaisissable.
+sections:
+  - type: general
+    titre: Le maître fou de Montprofond
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Halaster Sombrecape (Halaster Blackcloak) est un archimage humain d’une puissance rare, connu comme le seigneur fou de Montprofond (Undermountain), le dédale sans fin creusé sous Eauprofonde (Waterdeep). Le cadre de campagne de la 3e édition le montre marmonnant et ricanant sans cesse, incapable de suivre longtemps une discussion, mais toujours prompt à sentir un danger et à riposter avec une rapidité effrayante. Hors de son donjon, il retrouve une lucidité glaciale : courtois, digne, méticuleux, il n’en reste pas moins profondément malfaisant, ne pardonne aucune insolence et n’oublie jamais ni une offense ni un service rendu.
+        nature: canon_dnd
+        edition: 3e
+        refs:
+          - { ref: b-frwiki-halaster-blackcloak }
+          - { ref: b-frcs-3e, page: "180-181" }
+          - { ref: b-mroi-halaster-sombrecape }
+      - texte: >-
+          Sa grande passion est de collectionner des monstres inconnus et des formes de magie nouvelles. Mais après tant de siècles, presque rien ne le surprend plus : il trompe son ennui en se mêlant, selon son caprice, des affaires du monde. Dans Montprofond, il commande des créatures artificielles de toutes sortes, golems compris, joue des innombrables pièges du dédale et dispose de portails mobiles qui déplacent à volonté ses proies ou lui-même. Des clones et des sorts de contingence lui garantissent de survivre à presque n’importe quel duel de magie.
+        nature: canon_dnd
+        edition: 3e
+        refs:
+          - { ref: b-frcs-3e, page: "180-181" }
+          - { ref: b-frwiki-halaster-blackcloak }
+  - type: general
+    titre: Le bâtisseur du dédale
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          À Eauprofonde, son histoire commence en 168 CV, quand il s’installe au pied de la montagne qui domine le site d’Eauprofonde avec sept apprentis, les « Sept ». Il y élève une tour fortifiée, bâtie par des êtres arrachés à d’autres plans qu’il envoie ensuite creuser toujours plus loin sous la roche, sans jamais les libérer. Il s’empare des Bas-foyers de Melairbode, d’anciennes salles naines, et en chasse drows, duergars et monstres. Vers 309 CV, maître de ces tunnels, il entreprend d’en faire le donjon le plus vaste et le plus meurtrier qui soit, et délaisse sa tour pour vivre sous terre.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: b-frwiki-halaster-blackcloak }
+          - { ref: b-villains-lorebook, page: "30" }
+          - { ref: b-grand-history-of-the-realms, page: "66, 69" }
+          - { ref: b-ruins-of-undermountain-ii, page: "3-4" }
+          - { ref: b-mroi-halaster-sombrecape }
+      - texte: >-
+          Les sages attribuent sa folie à ce long commerce avec des puissances d’autres plans : elle aurait grandi en même temps que son pouvoir. Ses apprentis le quittent en 307 CV pour fonder leurs propres domaines souterrains ; plusieurs reviennent le chercher, et il en tue deux. Une seule, Jhesiyra Kestellharp, réussit à lui échapper, et c’est d’elle que vient le peu qu’on sait du Mage dément. Bien plus tard, la ville d’Eauprofonde s’étend jusqu’aux ruines de sa tour, qu’Ahghairon entoure en 1007 CV de protections magiques pour empêcher leurs dangers de gagner les rues.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: b-ruins-of-undermountain-ii, page: "3-4" }
+          - { ref: b-grand-history-of-the-realms, page: "69, 115" }
+          - { ref: b-frwiki-halaster-blackcloak }
+  - type: ecarts
+    titre: D’où vient-il ?
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Dans le Villains’ Lorebook (1998), un supplément de la 2e édition, ses origines restent une énigme : l’histoire ne retient ni sa patrie ni l’époque de sa naissance, et l’on soupçonne seulement qu’il est plus âgé encore qu’Elminster. Le livre raconte en revanche son installation sur le site d’Eauprofonde en 168 CV, entouré de ses apprentis : pour cet ouvrage, l’histoire connue du Mage dément commence là.
+        nature: canon_dnd
+        edition: add2
+        variantes: origine
+        refs:
+          - { ref: b-villains-lorebook, page: "30" }
+          - { ref: b-frwiki-halaster-blackcloak }
+      - texte: >-
+          La Grand History of the Realms (2007) lui donne au contraire un long passé. Né Hilather dans l’empire d’Imaskar, prodige devenu l’un de ses plus grands mages, il y aurait vaincu un mage rival qui menaçait l’empire et l’aurait emprisonné dans un demi-plan. Lors de la chute d’Imaskar, il se serait réfugié dans une forteresse secrète pour y dormir en stase pendant des millénaires. Réveillé, il aurait travaillé en 128 CV pour l’empire de Shoon, à chercher un moyen plus sûr de soumettre les fiélons à ceux qui les invoquent, avant de disparaître de nouveau.
+        nature: canon_dnd
+        edition: "3.5"
+        variantes: origine
+        refs:
+          - { ref: b-grand-history-of-the-realms, page: "18, 31, 63" }
+          - { ref: b-frwiki-halaster-blackcloak }
+  - type: ecarts
+    titre: Mort ou vivant ?
+    etiquette: { act: prologue, level: aucun, otherWorks: leger }
+    paragraphes:
+      - texte: >-
+          Selon la Grand History of the Realms, Halaster meurt en 1375 CV, tué par mégarde par un rituel d’une grande puissance qu’il tentait d’accomplir. Un séisme secoue alors Eauprofonde : beaucoup d’habitants voient en vision le mage hurlant, les yeux en feu, et les lanceurs de sorts aperçoivent des piliers et des galeries qui s’effondrent dans Montprofond. En mourant, il projette à travers tout Faerûn des visions et des appels désespérés.
+        nature: canon_dnd
+        edition: "3.5"
+        variantes: sort
+        refs:
+          - { ref: b-grand-history-of-the-realms, page: "158" }
+          - { ref: b-frwiki-halaster-blackcloak }
+      - texte: >-
+          Un article du magazine Dragon (no 409, 2012) revient sur cette mort : le rituel n’aurait pas tué Halaster mais dispersé son essence à travers les plans, et la Magepeste l’aurait empêché de se reformer dans l’un des clones cachés dans Montprofond. Certains de ces clones, d’âge, de sexe ou de peuple différents, auraient pu s’éveiller vers 1479 CV, chacun portant au fond de son esprit une part du mage qui lutte pour prendre le dessus.
+        nature: canon_dnd
+        edition: 4e
+        variantes: sort
+        refs:
+          - { ref: b-dragon-409, page: "3-5" }
+          - { ref: b-frwiki-halaster-blackcloak }
+      - texte: >-
+          La 5e édition le remet au premier plan. Waterdeep : Dungeon of the Mad Mage (2018), aventure située en 1492 CV, fait de lui le maître bien vivant de Montprofond et lui donne un profil de jeu complet : magicien de niveau 20, d’un facteur de puissance de 23, qui parle entre autres l’abyssal, le céleste, le draconique et le commun des profondeurs. Les pages consultées pour cette fiche ne citent aucune explication officielle de ce retour après la mort que lui prêtaient les éditions précédentes.
+        nature: canon_dnd
+        edition: 5e-2014
+        variantes: sort
+        refs:
+          - { ref: b-dungeon-of-the-mad-mage, page: "310" }
+          - { ref: b-frwiki-halaster-blackcloak }
+          - { ref: b-mroi-halaster-sombrecape }
+  - type: autres_oeuvres
+    titre: Dans les aventures, les romans et les jeux
+    etiquette: { act: prologue, level: aucun, otherWorks: leger }
+    paragraphes:
+      - texte: >-
+          Halaster est au cœur des aventures consacrées à Montprofond, de The Ruins of Undermountain (1991) à Expedition to Undermountain (2007) et Waterdeep : Dungeon of the Mad Mage (2018). Dans Undermountain : Stardock (1997), son enlèvement hors du donjon, en 1369 CV, libère la magie du dédale, qui se met à projeter ses créatures à travers les Royaumes. On le croise aussi dans des romans, comme Escape from Undermountain (1996) ou Elminster in Hell (2001), et dans des jeux vidéo, de Descent to Undermountain (1998) à l’extension Hordes of the Underdark (2003) de Neverwinter Nights, où il ne parle qu’en rimes.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: b-frwiki-halaster-blackcloak }
+          - { ref: b-ruins-of-undermountain }
+          - { ref: b-expedition-to-undermountain }
+          - { ref: b-dungeon-of-the-mad-mage }
+          - { ref: b-undermountain-stardock }
+          - { ref: b-escape-from-undermountain }
+          - { ref: b-elminster-in-hell }
+          - { ref: b-descent-to-undermountain }
+          - { ref: b-nwn-hordes-of-the-underdark }

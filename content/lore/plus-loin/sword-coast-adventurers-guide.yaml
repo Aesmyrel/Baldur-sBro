@@ -1,0 +1,72 @@
+id: lore.plus-loin.sword-coast-adventurers-guide
+theme: plus-loin
+nom: { fr: Guide des aventuriers de la Côte des Épées, en: Sword Coast Adventurer's Guide, statut: VF_DND, source: wikipedia-fr }
+alias: [SCAG]
+etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
+etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+resume: >-
+  Le supplément de 2015 qui présente la Côte des Épées aux joueurs de la 5e édition, et d’où viennent plusieurs sous-classes que l’on choisit dans Baldur’s Gate 3.
+sections:
+  - type: general
+    titre: Le livre
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Le Sword Coast Adventurer’s Guide est un supplément de la 5e édition de Dungeons & Dragons, publié par Wizards of the Coast le 3 novembre 2015 avec le concours de Green Ronin Publishing. Ce volume relié de 159 pages, dont Steve Kenson a dirigé la conception, est consacré à l’ouest et au nord-ouest de Faerûn, et d’abord à la Côte des Épées ; son présent se situe en 1489 CV. Il s’adresse aux meneurs de jeu comme aux joueurs. Sa traduction française, le Guide des aventuriers de la Côte des Épées, paraît en septembre 2019.
+        nature: hors_univers
+        refs:
+          - { ref: b-frwiki-sword-coast-adventurers-guide }
+          - { ref: b-wpen-sword-coast-adventurers-guide }
+          - { ref: b-wpfr-donjons-et-dragons }
+          - { ref: b-scag, page: "18" }
+      - texte: >-
+          Le livre mêle deux registres. D’un côté, un tour d’horizon du décor : selon la critique de The Escapist, une vingtaine de pages sur l’histoire récente et la géographie des Royaumes, puis une quarantaine sur la Côte des Épées, ainsi que des chapitres sur les dieux des Royaumes et sur la place des peuples et des classes dans la région. De l’autre, des options de personnage : historiques, variantes de races et sous-classes. Son concepteur principal explique avoir cherché à les enraciner dans les Royaumes tout en les gardant utiles aux tables qui jouent ailleurs.
+        nature: hors_univers
+        refs:
+          - { ref: b-wpen-sword-coast-adventurers-guide }
+          - { ref: b-frwiki-sword-coast-adventurers-guide }
+  - type: bg3
+    titre: Ce qu’on en retrouve dans BG3
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          Pour la 5e édition, le livre propose de nouvelles sous-classes liées à la région. On y trouve notamment le Chant de la lame, la tradition des magiciens elfes qui unissent l’escrime et la magie arcanique, le Bretteur, un roublard élégant taillé pour le duel, la Sorcellerie des tempêtes, une source de pouvoir d’ensorceleur liée à l’élément de l’air, et le Serment de la Couronne du paladin. Il ajoute aussi de nouveaux sorts, dont le sort mineur Lame retentissante, ainsi que Lame aux flammes vertes, Ferrage foudroyant et Éruption de lames.
+        nature: hors_univers
+        refs:
+          - { ref: b-frwiki-bladesinger }
+          - { ref: b-frwiki-swashbuckler }
+          - { ref: b-frwiki-storm-sorcery }
+          - { ref: b-frwiki-oath-of-the-crown }
+          - { ref: b-frwiki-booming-blade }
+          - { ref: b-scag, page: "133-143" }
+      - texte: >-
+          Baldur’s Gate 3 reprend une partie de ces options, avec ses propres règles. On peut y choisir la Sorcellerie des tempêtes pour l’ensorceleur, ainsi que le Chant de la lame du magicien, le Bretteur du roublard et le Serment de la Couronne du paladin, ces trois dernières sous-classes ayant été ajoutées au jeu en 2025 avec le Patch 8. Le sort mineur Lame retentissante y figure aussi. Les fiches du Grimoire détaillent ce que chacune fait dans le jeu.
+        nature: canon_bg3
+        refs:
+          - { ref: b-bg3wiki-storm-sorcery }
+          - { ref: b-bg3wiki-bladesinging }
+          - { ref: b-bg3wiki-swashbuckler }
+          - { ref: b-bg3wiki-oath-of-the-crown }
+          - { ref: b-bg3wiki-booming-blade }
+  - type: plus_loin
+    titre: Accueil et lecture
+    etiquette: { act: prologue, level: aucun, otherWorks: aucun }
+    paragraphes:
+      - texte: >-
+          À sa sortie, le livre entre à la 18e place des meilleures ventes de livres reliés hors fiction du Publishers Weekly, pour la semaine finissant le 16 novembre 2015, et reçoit l’année suivante une distinction du jury des ENnie Awards. La critique se partage : The Escapist et DieHard GameFan jugent l’ouvrage trop cher pour ce qu’il contient, le premier regrettant des règles éparpillées, quand Black Gate le recommande chaudement aux meneurs de jeu pour nourrir leurs campagnes.
+        nature: hors_univers
+        refs:
+          - { ref: b-wpen-sword-coast-adventurers-guide }
+      - texte: >-
+          Notre lecture : pour qui joue à Baldur’s Gate 3, c’est l’un des ouvrages de la 5e édition les plus utiles pour situer le décor du jeu. Il décrit la Côte des Épées telle qu’elle se présente vers 1489 CV, trois ans seulement avant les événements de 1492 CV, avec les dieux qu’on y prie et les peuples qu’on y croise. Pour les règles de 2024, c’est Forgotten Realms : Heroes of Faerûn, paru en novembre 2025, qui présente à son tour les Royaumes aux joueurs.
+        nature: interpretation
+        refs:
+          - { ref: b-frwiki-sword-coast-adventurers-guide }
+          - { ref: b-frwiki-baldurs-gate-iii }
+          - { ref: b-frwiki-heroes-of-faerun }
+relations:
+  - { cible: subclass.bladesinging, type: see_also }
+  - { cible: subclass.swashbuckler, type: see_also }
+  - { cible: subclass.storm-sorcery, type: see_also }
+  - { cible: subclass.oath-of-the-crown, type: see_also }
+  - { cible: spell.booming-blade, type: see_also }

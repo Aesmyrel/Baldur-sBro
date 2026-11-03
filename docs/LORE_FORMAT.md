@@ -12,7 +12,8 @@
   - une **nature** :
     - `canon_bg3` : ce que montre le jeu ;
     - `canon_dnd` : ce que disent les publications de D&D, avec l'`edition` d'où vient l'affirmation (`add1`, `add2`, `3e`, `3.5`, `4e`, `5e-2014`, `5e-2024`, `multi`) ;
-    - `interpretation` : notre lecture, clairement signalée, et jamais une théorie de fan.
+    - `interpretation` : notre lecture, clairement signalée, et jamais une théorie de fan ;
+    - `hors_univers` : un fait du monde réel (parution, éditeur, auteurs, accueil d'une œuvre), jamais du lore.
 - **Versions contradictoires** (le lore a varié d'une édition à l'autre) : deux paragraphes ou plus dans la même section, avec la même valeur de `variantes`, présentés côte à côte, sans trancher.
 - **Théories de fans exclues.**
 
@@ -83,7 +84,7 @@ mtof:
 - Un livre ou une aventure qu'on n'a pas lus nous-mêmes : `consultation: secondaire` et `via` vers la page qui le cite (avec sa page ou son chapitre si elle le donne).
 - **Révision d'une page de wiki** : avec l'API MediaWiki, par exemple
   `https://forgottenrealms.fandom.com/api.php?action=query&prop=revisions&rvprop=ids&titles=<Titre>&format=json`.
-- Titres VF des livres et romans : seulement s'ils sont vérifiés (Wikipédia FR, éditeur).
+- Titres VF des livres et romans : seulement s'ils sont vérifiés (Wikipédia FR, éditeur). Le nom d'une fiche `saga` ou `plus-loin` dont le titre VF est vérifié sur Wikipédia FR prend `statut: VF_DND, source: wikipedia-fr`. Pour les autres thèmes, un nom des Royaumes attesté seulement par un wiki reste `NON_OFFICIELLE`.
 - Un identifiant décrit dans deux fichiers doit l'être à l'identique.
 
 ## 5. Typographie et ton
