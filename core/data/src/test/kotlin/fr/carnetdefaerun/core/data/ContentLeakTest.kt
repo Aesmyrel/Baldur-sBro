@@ -64,6 +64,9 @@ class ContentLeakTest {
                         assertWithMessage("$where → ${link.id}").that(SpoilerGate.isVisible(tag, profile) && SpoilerGate.isVisible(target.titleTag, profile)).isTrue()
                     }
                     view.sources.forEach { assertWithMessage("$where : source").that(SpoilerGate.isVisible(it.tag, profile)).isTrue() }
+                    // Chaque page attribuée est celle de la fiche ou d'une fiche liée visible.
+                    val allowed = (entry.attribution + view.links.flatMap { byId.getValue(it.id).attribution }).map { it.url }.toSet()
+                    view.attribution.forEach { assertWithMessage("$where : attribution ${it.title}").that(it.url in allowed).isTrue() }
                     // Un lieu d'obtention lié ne se montre que si une provenance visible y mène.
                     val sourcePlaces = (entry.facts as? ItemFacts)?.sources.orEmpty().mapNotNull { it.place }.toSet()
                     view.links.filter { it.relation == Relation.LOCATED_IN && it.id in sourcePlaces }.forEach { link ->

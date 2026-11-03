@@ -254,3 +254,7 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **La règle** : le nom porte désormais une **précision** facultative (`precision` dans les fichiers de noms), affichée à côté du nom et jamais dedans : « Souffle enflammé · cône ». Elle est tirée de la parenthèse du titre de la page source, traduite.
 - **Contrôle bloquant** : deux entrées d'un même type au même nom français doivent avoir des précisions distinctes. Le contrôle a trouvé un groupe oublié lors de sa mise en place. 56 précisions couvrent les 32 groupes.
 - **Base de contenu en version 4** : la précision y est une colonne. Une précision qui nomme un objet ou un sort suit l'étiquette du nom de sa fiche.
+
+**D-078 — Attribution des pages qui ont servi aux effets.**
+- La vérification de la seconde vague a montré que 7 effets sur 40 tirent un point de la page d'un état appliqué ou d'une capacité accordée, absente de l'attribution de la fiche. Or la licence CC BY-NC-SA demande de citer toute page dont une donnée dérive.
+- La fiche attribue donc aussi la page de chaque état qu'elle applique et de chaque capacité qu'elle accorde. Le dépôt n'ajoute que celles des fiches liées visibles : le titre anglais d'une page ne doit jamais trahir une fiche masquée. Un test de fuite le vérifie sur toute la base.

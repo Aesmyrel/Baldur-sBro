@@ -28,7 +28,7 @@ _Dernière mise à jour : 03/11/2026, phase 1 validée ; phases 2 et 3 en cours.
   - Fait aussi : noms français des 1 776 premières entrées (335 officiels D&D, 1 441 proposés et signalés comme tels, D-065).
   - Fait aussi : les 12 classes (progression complète, maîtrises, multiclasse ; D-066), les 58 sous-classes avec leurs choix (D-067), 11 races, 28 sous-races, 12 historiques et 41 dons (D-071) ; mécanique des actions dans les fiches (D-068) ; 773 effets rédigés, relus et corrigés (D-069) ; seconde vague de 627 noms.
   - Fait aussi : seconde vague de 619 effets et 176 noms des origines (D-075) ; toutes les entrées ont un nom français ; vérification indépendante de l'échantillon : 100 % d'effets exacts et de noms corrects (D-076).
-  - À faire : compagnons, quêtes, trophées ; pipeline du lore (format, références, fiches pilotes) ; précisions des variantes au même nom ; attribution des pages secondaires ; effets rédigés des sorts.
+  - À faire : compagnons, quêtes, trophées ; pipeline du lore (format, références, fiches pilotes) ; effets rédigés des sorts. Faits depuis : précisions des variantes au même nom (D-077), attribution des pages secondaires (D-078).
 - **Phase 3 — Grimoire, Codex et recherche**
   - Fait : base du joueur (révélations par jeton, noms corrigés, favoris) et porte du contenu (D-073) ; recherche globale filtrée par le verrou, 2 à 8 ms sur la base complète (D-074) ; écrans du Grimoire (accueil, listes, fiches) et de la recherche, avec captures (D-076).
   - À faire : Codex et fiches de lore (après le pipeline du lore), carte, schéma des plans, chronologie, mode lecture ; tests de fuite sur l'arbre sémantique des écrans ; vérification indépendante de la phase.

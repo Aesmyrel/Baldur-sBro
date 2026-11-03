@@ -18,6 +18,7 @@ import fr.carnetdefaerun.core.model.content.SpellFacts
 import fr.carnetdefaerun.core.model.content.SubclassFacts
 import fr.carnetdefaerun.core.model.content.SubraceFacts
 import fr.carnetdefaerun.core.model.content.RaceFacts
+import fr.carnetdefaerun.core.model.content.Relation
 import fr.carnetdefaerun.core.model.content.BackgroundFacts
 import fr.carnetdefaerun.core.model.content.FeatFacts
 import fr.carnetdefaerun.core.model.content.WearerCondition
@@ -61,10 +62,13 @@ class ContentRepository(private val store: ContentStore) {
             val targetRow = targets[target] ?: return false
             return SpoilerGate.isVisible(link.tag, profile) && titleVisible(targetRow, profile, revealed)
         }
-        val links = entry.links.filter { linkVisible(it.target) }.map { link ->
-            val t = targets.getValue(link.target)!!
-            LinkedEntry(t.id, t.type, link.relation, t.entry().name)
-        }
+        val linked = entry.links.filter { linkVisible(it.target) }.map { link -> link to targets.getValue(link.target)!!.entry() }
+        val links = linked.map { (link, t) -> LinkedEntry(t.id, t.type, link.relation, t.name) }
+        // Attribution : la page de la fiche, puis celles des états qu'elle applique et des capacités qu'elle accorde,
+        // dont ses effets rédigés s'inspirent (CC BY-NC-SA). Seulement celles des fiches liées visibles : un titre de
+        // page anglais ne doit jamais trahir une fiche masquée.
+        val attribution = (entry.attribution + linked.filter { (link, _) -> link.relation in ATTRIBUTED_RELATIONS }.flatMap { it.second.attribution.take(1) })
+            .distinctBy { it.url }
 
         var someEffectsHidden = false
         var hiddenSources: RevealKey? = null
@@ -119,7 +123,7 @@ class ContentRepository(private val store: ContentStore) {
         return Gated.Visible(
             EntryView(
                 id = entry.id, type = entry.type, name = entry.name, aliases = entry.aliases,
-                licence = entry.licence, attribution = entry.attribution,
+                licence = entry.licence, attribution = attribution,
                 facts = facts, sources = sources, hiddenSources = hiddenSources, someEffectsHidden = someEffectsHidden,
                 blocks = blocks, sections = sections, references = references, links = links, unknown = entry.unknown,
             ),
@@ -137,6 +141,9 @@ class ContentRepository(private val store: ContentStore) {
         else -> emptyList()
     }
 }
+
+/** Relations dont la cible a servi à rédiger les effets de la fiche : sa page entre dans l'attribution. */
+private val ATTRIBUTED_RELATIONS = setOf(Relation.APPLIES, Relation.GRANTS)
 
 /** Le joueur a-t-il dévoilé ce contenu ? [raw] est une clé de [RevealIds], comparée par son jeton. */
 private fun Set<String>.has(raw: String): Boolean = isNotEmpty() && RevealKey.of(raw).token in this
