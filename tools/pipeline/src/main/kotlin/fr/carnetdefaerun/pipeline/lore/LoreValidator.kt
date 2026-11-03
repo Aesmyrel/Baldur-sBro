@@ -17,6 +17,8 @@ class LoreValidator(private val references: Map<String, Reference>) {
         references.values.forEach { r ->
             if (r.consultation == Consultation.SECONDARY && (r.via == null || r.via !in references)) add("référence ${r.id} : source secondaire « via » manquante ou inconnue")
             if (r.url != null && r.revision == null && r.kind.name == "WIKI") add("référence ${r.id} : page de wiki sans révision")
+            if (r.licence != null && r.licence !in LICENCES) add("référence ${r.id} : licence « ${r.licence} » hors de ${LICENCES.joinToString()}")
+            if (r.kind.name == "WIKI" && r.licence == null) add("référence ${r.id} : page de wiki sans licence")
         }
     }
 
@@ -52,3 +54,6 @@ class LoreValidator(private val references: Map<String, Reference>) {
         if (Regex("(?<=\\p{L})'(?=\\p{L})").containsMatchIn(text)) problems += "$where : apostrophe droite (attendue : ’)"
     }
 }
+
+/** Licences des sources consultées, notées d'une seule façon (docs/LORE_FORMAT.md §1 bis, règle 10). */
+private val LICENCES = setOf("cc-by-sa-3.0", "cc-by-sa-4.0", "cc-by-nc-sa-4.0")

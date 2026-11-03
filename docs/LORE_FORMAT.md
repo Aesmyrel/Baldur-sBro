@@ -17,6 +17,20 @@
 - **Versions contradictoires** (le lore a varié d'une édition à l'autre) : deux paragraphes ou plus dans la même section, avec la même valeur de `variantes`, présentés côte à côte, sans trancher.
 - **Théories de fans exclues.**
 
+### 1 bis. Méthode de rédaction (D-080, après la relecture des pilotes)
+
+1. **Notes d'abord, page fermée.** Relever les faits dans une liste, de plusieurs sources ou sections, puis fermer les pages et rédiger depuis la liste, avec un plan propre à la fiche. Chaque paragraphe croise au moins deux sections ou deux pages. On ne suit jamais l'ordre des phrases d'une source, et on ne traduit jamais une expression marquante.
+2. **Une fiche, une licence de travail.** Les sections générales s'appuient sur le Forgotten Realms Wiki et les livres qu'il cite ; la section `bg3` s'écrit à partir des faits structurés de `data/game` et de ce qu'on constate en jeu, jamais à partir de la prose de bg3.wiki (CC BY-NC-SA), qu'on ne cite qu'en référence.
+3. **Section `bg3` sans soluce.** Pas de DD, de points de vie ni de nombre de tours : une relation vers la fiche de jeu suffit. Une même scène n'est racontée que dans une seule fiche.
+4. **Livres du jeu.** Décrire l'objet, où on le trouve et son thème en une ou deux phrases ; jamais son contenu chant par chant ou chapitre par chapitre.
+5. **Pas de commentaire sur les sources dans le texte** (« le wiki », « cette fiche », « les pages consultées ») : une version s'attribue à l'ouvrage primaire qui la porte, et les wikis restent dans les références.
+6. **`ecarts` pour les variations du canon seulement.** Un désaccord entre sources secondaires sur un fait réel se règle en une phrase avec une fourchette. La conviction d'un personnage n'est pas une variante.
+7. **Une liste d'apparitions est `hors_univers`.**
+8. **Une causalité ou une étymologie** n'est écrite que si la source la donne.
+9. **Au moins une relation par fiche** ; les alias sont seulement d'autres noms du même sujet.
+10. **Registre** : une entrée par page qui cite le livre (`<page>/<livre>`) ; éditeur et année repris du modèle de citation de la page ; `edition` toujours renseignée, y compris pour un roman ou un jeu (l'édition de son époque) ; licences notées `cc-by-sa-3.0` (Fandom), `cc-by-sa-4.0` (Wikipédia), `cc-by-nc-sa-4.0` (bg3.wiki) ; `titre_vf` seulement s'il est vérifié sur Wikipédia FR ou chez l'éditeur.
+11. **Typographie** : « Acte I » ; « n° » ; titres anglais avec deux-points sans espace (`Forgotten Realms: Heroes of Faerûn`), comme sur la couverture ; noms des Royaumes en VF attestée, la VO entre parenthèses à la première occurrence.
+
 ## 2. Spoilers : étiquettes
 
 Chaque fiche a une étiquette de **titre** (ce que révèle le nom dans une liste), une étiquette de **fiche** (l'accroche) et une étiquette par **section**. Une section ne protège jamais moins que sa fiche, une fiche jamais moins que son titre.

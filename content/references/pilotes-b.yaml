@@ -31,7 +31,7 @@ b-frwiki-umberlee:
   titre_vo: "Umberlee (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Umberlee
   revision: 1107383
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 # --- Le Monde des Royaumes Oubliés (wiki francophone, CC BY-SA) : contrôle croisé des noms ---
@@ -40,7 +40,7 @@ b-mroi-umberlie:
   titre_vo: "Umberlie (Le Monde des Royaumes Oubliés)"
   url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Umberlie
   revision: 30724
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 # --- Livres et aventures, connus par une source secondaire ---
@@ -106,7 +106,7 @@ b-frwiki-sword-coast-adventurers-guide:
   titre_vo: "Sword Coast Adventurer's Guide (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Sword_Coast_Adventurer%27s_Guide
   revision: 1102084
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 # --- Personnages : Halaster ---
@@ -115,14 +115,14 @@ b-frwiki-halaster-blackcloak:
   titre_vo: "Halaster Blackcloak (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Halaster_Blackcloak
   revision: 1090802
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-mroi-halaster-sombrecape:
   type: wiki
   titre_vo: "Halaster Sombrecape (Le Monde des Royaumes Oubliés)"
   url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Halaster_Sombrecape
   revision: 45116
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frcs-3e:
   type: livre
@@ -240,21 +240,21 @@ b-frwiki-ring-of-winter:
   titre_vo: "Ring of Winter (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Ring_of_Winter
   revision: 1083925
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-artus-cimber:
   type: wiki
   titre_vo: "Artus Cimber (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Artus_Cimber
   revision: 1083336
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-mroi-anneau-de-l-hiver:
   type: wiki
   titre_vo: "Anneau de l'hiver (Le Monde des Royaumes Oubliés)"
   url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Anneau_de_l%27hiver
   revision: 38917
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-tomb-of-annihilation:
   type: aventure
@@ -305,70 +305,70 @@ b-frwiki-dales-compact:
   titre_vo: "Dales Compact (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Dales_Compact
   revision: 1103846
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-standing-stone:
   type: wiki
   titre_vo: "Standing Stone (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Standing_Stone
   revision: 766568
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-marking-the-years:
   type: wiki
   titre_vo: "Marking the years (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Marking_the_years
   revision: 1103694
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-1-dr:
   type: wiki
   titre_vo: "1 DR (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/1_DR
   revision: 978745
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-26-dr:
   type: wiki
   titre_vo: "26 DR (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/26_DR
   revision: 978768
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-history-of-the-dalelands:
   type: wiki
   titre_vo: "History of the Dalelands (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/History_of_the_Dalelands
   revision: 1065255
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-cormanthor-war:
   type: wiki
   titre_vo: "Cormanthor War (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Cormanthor_War
   revision: 1090807
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-mroi-pierre-levee:
   type: wiki
   titre_vo: "Pierre levée (Le Monde des Royaumes Oubliés)"
   url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Pierre_lev%C3%A9e
   revision: 28913
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-mroi-pacte-des-vaux:
   type: wiki
   titre_vo: "Pacte des Vaux (Le Monde des Royaumes Oubliés)"
   url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Pacte_des_Vaux
   revision: 28911
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-mroi-calendrier-des-vaux:
   type: wiki
   titre_vo: "Calendrier des Vaux (Le Monde des Royaumes Oubliés)"
   url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Calendrier_des_Vaux
   revision: 39967
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-the-dalelands:
   type: livre
@@ -431,35 +431,35 @@ b-frwiki-baldurs-gate-game:
   titre_vo: "Baldur's Gate (game) (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate_(game)
   revision: 1092005
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-tales-of-the-sword-coast:
   type: wiki
   titre_vo: "Baldur's Gate: Tales of the Sword Coast (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate:_Tales_of_the_Sword_Coast
   revision: 1080287
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-bg-enhanced-edition:
   type: wiki
   titre_vo: "Baldur's Gate: Enhanced Edition (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate:_Enhanced_Edition
   revision: 1071480
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-siege-of-dragonspear:
   type: wiki
   titre_vo: "Baldur's Gate: Siege of Dragonspear (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate:_Siege_of_Dragonspear
   revision: 1092278
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-baldurs-gate-novel:
   type: wiki
   titre_vo: "Baldur's Gate (novel) (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate_(novel)
   revision: 1106184
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 # --- Pour aller plus loin : Sword Coast Adventurer's Guide ---
@@ -475,49 +475,49 @@ b-frwiki-bladesinger:
   titre_vo: "Bladesinger (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Bladesinger
   revision: 1104631
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-swashbuckler:
   type: wiki
   titre_vo: "Swashbuckler (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Swashbuckler
   revision: 1096205
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-storm-sorcery:
   type: wiki
   titre_vo: "Storm sorcery (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Storm_sorcery
   revision: 874664
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-oath-of-the-crown:
   type: wiki
   titre_vo: "Oath of the Crown (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Oath_of_the_Crown
   revision: 1069628
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-booming-blade:
   type: wiki
   titre_vo: "Booming blade (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Booming_blade
   revision: 1007216
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-baldurs-gate-iii:
   type: wiki
   titre_vo: "Baldur's Gate III (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate_III
   revision: 1109223
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-frwiki-heroes-of-faerun:
   type: wiki
   titre_vo: "Forgotten Realms: Heroes of Faerûn (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Forgotten_Realms:_Heroes_of_Faer%C3%BBn
   revision: 1111041
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 b-bg3wiki-bladesinging:
   type: wiki

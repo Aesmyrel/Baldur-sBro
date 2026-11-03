@@ -10,7 +10,7 @@ frwiki-silvanus:
   titre_vo: "Silvanus (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Silvanus
   revision: 1104587
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 frwiki-church-of-silvanus:
@@ -18,7 +18,7 @@ frwiki-church-of-silvanus:
   titre_vo: "Church of Silvanus (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Church_of_Silvanus
   revision: 982961
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 # --- bg3.wiki (CC BY-NC-SA, aucun texte repris) ---
@@ -28,7 +28,7 @@ bg3wiki-emerald-grove:
   titre_vo: "Emerald Grove (bg3.wiki)"
   url: https://bg3.wiki/wiki/Emerald_Grove
   revision: 439376
-  licence: cc-by-nc-sa
+  licence: cc-by-nc-sa-4.0
   consultation: directe
 
 bg3wiki-sacred-pool:
@@ -36,7 +36,7 @@ bg3wiki-sacred-pool:
   titre_vo: "Sacred Pool (bg3.wiki)"
   url: https://bg3.wiki/wiki/Sacred_Pool
   revision: 438821
-  licence: cc-by-nc-sa
+  licence: cc-by-nc-sa-4.0
   consultation: directe
 
 bg3wiki-wilderness:
@@ -44,7 +44,7 @@ bg3wiki-wilderness:
   titre_vo: "Wilderness (bg3.wiki)"
   url: https://bg3.wiki/wiki/Wilderness
   revision: 433981
-  licence: cc-by-nc-sa
+  licence: cc-by-nc-sa-4.0
   consultation: directe
 
 bg3wiki-cleric:
@@ -52,7 +52,7 @@ bg3wiki-cleric:
   titre_vo: "Cleric (bg3.wiki)"
   url: https://bg3.wiki/wiki/Cleric
   revision: 439581
-  licence: cc-by-nc-sa
+  licence: cc-by-nc-sa-4.0
   consultation: directe
 
 # --- Livres cités par « Silvanus » ---
@@ -168,7 +168,7 @@ frwiki-avernus:
   titre_vo: "Avernus (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Avernus
   revision: 1094317
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 frwiki-nine-hells:
@@ -176,7 +176,7 @@ frwiki-nine-hells:
   titre_vo: "Nine Hells (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Nine_Hells
   revision: 1110454
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 bg3wiki-nautiloid:
@@ -184,7 +184,7 @@ bg3wiki-nautiloid:
   titre_vo: "Nautiloid (bg3.wiki)"
   url: https://bg3.wiki/wiki/Nautiloid
   revision: 439907
-  licence: cc-by-nc-sa
+  licence: cc-by-nc-sa-4.0
   consultation: directe
 
 bg3wiki-imp:
@@ -192,7 +192,7 @@ bg3wiki-imp:
   titre_vo: "Imp (bg3.wiki)"
   url: https://bg3.wiki/wiki/Imp
   revision: 419688
-  licence: cc-by-nc-sa
+  licence: cc-by-nc-sa-4.0
   consultation: directe
 
 frwiki-avernus/guide-to-hell:
@@ -302,7 +302,7 @@ frwiki-tiefling:
   titre_vo: "Tiefling (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Tiefling
   revision: 1110884
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 bg3wiki-tiefling:
@@ -310,7 +310,7 @@ bg3wiki-tiefling:
   titre_vo: "Tiefling (bg3.wiki)"
   url: https://bg3.wiki/wiki/Tiefling
   revision: 424224
-  licence: cc-by-nc-sa
+  licence: cc-by-nc-sa-4.0
   consultation: directe
 
 bg3wiki-tiefling-refugees:
@@ -318,7 +318,7 @@ bg3wiki-tiefling-refugees:
   titre_vo: "Tiefling refugees (bg3.wiki)"
   url: https://bg3.wiki/wiki/Tiefling_refugees
   revision: 439313
-  licence: cc-by-nc-sa
+  licence: cc-by-nc-sa-4.0
   consultation: directe
 
 frwiki-tiefling/planescape-campaign-setting:
@@ -401,7 +401,7 @@ frwiki-sword-coast:
   titre_vo: "Sword Coast (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Sword_Coast
   revision: 1086701
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 frwiki-sword-coast/players-guide-to-faerun:
@@ -420,7 +420,7 @@ frwiki-imp:
   titre_vo: "Imp (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Imp
   revision: 1094497
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 bg3wiki-lesser-imp:
@@ -428,7 +428,7 @@ bg3wiki-lesser-imp:
   titre_vo: "Lesser Imp (bg3.wiki)"
   url: https://bg3.wiki/wiki/Lesser_Imp
   revision: 429281
-  licence: cc-by-nc-sa
+  licence: cc-by-nc-sa-4.0
   consultation: directe
 
 frwiki-imp/monster-manual-1e:
@@ -492,7 +492,7 @@ frwiki-harpers:
   titre_vo: "Harpers (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Harpers
   revision: 1104608
-  licence: cc-by-sa
+  licence: cc-by-sa-3.0
   consultation: directe
 
 bg3wiki-ravaged-beach:
@@ -500,7 +500,7 @@ bg3wiki-ravaged-beach:
   titre_vo: "Ravaged Beach (bg3.wiki)"
   url: https://bg3.wiki/wiki/Ravaged_Beach
   revision: 439909
-  licence: cc-by-nc-sa
+  licence: cc-by-nc-sa-4.0
   consultation: directe
 
 frwiki-harpers/fr-adventures:
@@ -592,7 +592,7 @@ wpfr-royaumes-oublies:
   titre_vo: "Royaumes oubliés (Wikipédia en français)"
   url: https://fr.wikipedia.org/wiki/Royaumes_oubli%C3%A9s
   revision: 240404251
-  licence: cc-by-sa
+  licence: cc-by-sa-4.0
   consultation: directe
 
 frwiki-sword-coast/volos-guide-sword-coast:

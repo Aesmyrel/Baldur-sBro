@@ -266,3 +266,14 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Source `wikipedia-fr`** : elle est admise pour le seul titre VF d'une œuvre publiée (fiches saga et « pour aller plus loin »), comme le prévoit déjà le guide. La validation la refuse ailleurs. Les noms des Royaumes attestés seulement par un wiki (« Côte des Épées », « Averne », « Ménestrels ») restent en traduction non officielle, à confirmer.
 - **Codex exporté** : `normalize` écrit le codex assemblé (relations étiquetées) dans `data/lore/codex.json`. Les tests de fuite et le test de la base le relisent avec les données de jeu, et vérifient les sections et les références. La validation refuse un export qui ne correspond plus aux fichiers de `content/`. La construction de la base suit désormais aussi `content/`.
 - **Relecture indépendante des pilotes** : à faire avant les lots suivants (format, ton, références, étiquettes, exactitude d'un échantillon d'affirmations).
+
+**D-080 — Relecture des pilotes du codex : réécriture avant les lots.**
+- **Ce qui est acquis** : 36 affirmations tirées au hasard, 34 exactes et 2 approximatives, aucune fausse. Aucune phrase recopiée, aucune fuite de spoiler. Noms et typographie de bon niveau.
+- **Ce qui bloque (droits)** : environ la moitié des paragraphes suivent phrase à phrase une seule section d'une page, dans le même ordre. C'est une paraphrase serrée, que la règle 5 interdit. Trois fiches mêlent en plus un dérivé du Forgotten Realms Wiki (CC BY-SA) et un dérivé de la prose de bg3.wiki (CC BY-NC-SA). Un paragraphe résume chant par chant un livre du jeu.
+- **Décision** : les douze pilotes sont réécrits avant tout nouveau lot, puis relus de nouveau. `docs/LORE_FORMAT.md` gagne une méthode de rédaction (§1 bis) :
+  - notes d'abord, page fermée ;
+  - deux sources ou sections croisées par paragraphe ;
+  - section `bg3` écrite d'après les faits structurés, sans soluce ;
+  - pas de commentaire sur les sources ;
+  - registre normalisé.
+- **Contrôle ajouté** : les codes de licence des références sont normalisés (`cc-by-sa-3.0`, `cc-by-sa-4.0`, `cc-by-nc-sa-4.0`) et vérifiés par la validation ; une page de wiki doit avoir sa licence.
