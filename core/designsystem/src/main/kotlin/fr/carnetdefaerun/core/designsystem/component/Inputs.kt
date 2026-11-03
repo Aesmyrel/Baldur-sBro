@@ -5,6 +5,7 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -200,7 +201,6 @@ fun CarnetSlider(
 @Composable
 fun SearchField(query: String, onQueryChange: (String) -> Unit, placeholder: String, modifier: Modifier = Modifier) {
     val c = CarnetTheme.colors
-    val shape = RoundedCornerShape(26.dp)
     BasicTextField(
         value = query,
         onValueChange = onQueryChange,
@@ -209,22 +209,39 @@ fun SearchField(query: String, onQueryChange: (String) -> Unit, placeholder: Str
         cursorBrush = SolidColor(c.gold),
         modifier = modifier.fillMaxWidth().semantics { contentDescription = placeholder },
         decorationBox = { field ->
-            Row(
-                Modifier.fillMaxWidth().heightIn(min = 52.dp).clip(shape).background(c.surface).border(1.dp, c.goldDeep, shape)
-                    .padding(horizontal = 16.dp, vertical = 8.dp),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(10.dp),
-            ) {
-                Canvas(Modifier.size(20.dp)) {
-                    val k = size.width / 24f
-                    drawCircle(c.gold, 6.5f * k, Offset(10.5f * k, 10.5f * k), style = Stroke(1.8f * k))
-                    drawLine(c.gold, Offset(15.5f * k, 15.5f * k), Offset(21f * k, 21f * k), 2f * k, StrokeCap.Round)
-                }
-                Box(Modifier.weight(1f)) {
-                    if (query.isEmpty()) Text(placeholder, style = CarnetTheme.type.readingItalic, color = c.muted)
-                    field()
-                }
+            SearchFrame {
+                if (query.isEmpty()) Text(placeholder, style = CarnetTheme.type.readingItalic, color = c.muted)
+                field()
             }
         },
     )
+}
+
+/** Le même champ, en invitation : un toucher ouvre la recherche (aucun clavier ici). */
+@Composable
+fun SearchPrompt(placeholder: String, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    SearchFrame(modifier, onClick) {
+        Text(placeholder, style = CarnetTheme.type.readingItalic, color = CarnetTheme.colors.muted)
+    }
+}
+
+@Composable
+private fun SearchFrame(modifier: Modifier = Modifier, onClick: (() -> Unit)? = null, content: @Composable () -> Unit) {
+    val c = CarnetTheme.colors
+    val shape = RoundedCornerShape(26.dp)
+    Row(
+        modifier.fillMaxWidth().heightIn(min = 52.dp).clip(shape)
+            .then(if (onClick != null) Modifier.clickable(role = Role.Button, onClick = onClick) else Modifier)
+            .background(c.surface).border(1.dp, c.goldDeep, shape)
+            .padding(horizontal = 16.dp, vertical = 8.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(10.dp),
+    ) {
+        Canvas(Modifier.size(20.dp)) {
+            val k = size.width / 24f
+            drawCircle(c.gold, 6.5f * k, Offset(10.5f * k, 10.5f * k), style = Stroke(1.8f * k))
+            drawLine(c.gold, Offset(15.5f * k, 15.5f * k), Offset(21f * k, 21f * k), 2f * k, StrokeCap.Round)
+        }
+        Box(Modifier.weight(1f)) { content() }
+    }
 }

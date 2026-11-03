@@ -1,4 +1,4 @@
-package fr.carnetdefaerun.core.data
+package fr.carnetdefaerun.core.testing
 
 import fr.carnetdefaerun.core.database.content.ContentStore
 import fr.carnetdefaerun.core.database.content.EntryHeader
@@ -11,15 +11,16 @@ import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.Reference
+import fr.carnetdefaerun.core.model.content.listSubtype
 import fr.carnetdefaerun.core.model.search.Folding
 
 /**
- * Base de contenu en mémoire, pour les tests du dépôt. Noms et texte indexés comme le fait le pipeline
+ * Base de contenu en mémoire, pour les tests des dépôts et les captures d'écran. Noms et texte indexés comme le fait le pipeline
  * (formes repliées ; texte des blocs cherché par début de mot).
  */
-internal class FakeStore(entries: List<Entry>) : ContentStore {
+class InMemoryContentStore(entries: List<Entry>) : ContentStore {
     private val rows = entries.associate { e ->
-        e.id to EntryRow(EntryHeader(e.id, e.type, null, e.name, e.tag, e.titleTag), ContentFormat.strict.encodeToString(Entry.serializer(), e))
+        e.id to EntryRow(EntryHeader(e.id, e.type, e.listSubtype, e.name, e.tag, e.titleTag), ContentFormat.strict.encodeToString(Entry.serializer(), e))
     }
     private val links = entries.flatMap { e -> e.links.map { LinkRow(e.id, it.target, it.relation, it.tag) } }
     private val names = entries.flatMap { e ->

@@ -27,6 +27,9 @@ import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.layout.Layout
+import androidx.compose.ui.unit.Constraints
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import fr.carnetdefaerun.core.designsystem.R
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
@@ -104,11 +107,41 @@ fun FactCard(label: String, text: String, modifier: Modifier = Modifier, onClick
     }
 }
 
-/** Ligne d'info compacte, alignée sur la colonne : libellé + valeur. */
+/**
+ * Ligne d'info compacte, alignée sur la colonne : libellé à gauche, valeur à droite. Si les deux ne tiennent pas
+ * sur une ligne (valeur longue, grande police), la valeur passe sous le libellé, alignée à gauche : aucun des deux
+ * n'est jamais écrasé.
+ */
 @Composable
 fun InfoLine(label: String, value: String, modifier: Modifier = Modifier) {
-    Row(modifier.fillMaxWidth().padding(vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
-        Text(label, style = CarnetTheme.type.data, color = CarnetTheme.colors.text2, modifier = Modifier.weight(1f))
-        Text(value, style = CarnetTheme.type.dataStrong, color = CarnetTheme.colors.text)
+    Layout(
+        content = {
+            Text(label, style = CarnetTheme.type.data, color = CarnetTheme.colors.text2)
+            Text(value, style = CarnetTheme.type.dataStrong, color = CarnetTheme.colors.text)
+        },
+        modifier = modifier.fillMaxWidth().padding(vertical = 6.dp).semantics(mergeDescendants = true) {},
+    ) { measurables, constraints ->
+        val width = constraints.maxWidth
+        val gap = 16.dp.roundToPx()
+        val loose = constraints.copy(minWidth = 0, minHeight = 0)
+        val labelNatural = measurables[0].maxIntrinsicWidth(Constraints.Infinity)
+        val valueNatural = measurables[1].maxIntrinsicWidth(Constraints.Infinity)
+        if (labelNatural + gap + valueNatural <= width) {
+            val l = measurables[0].measure(loose)
+            val v = measurables[1].measure(loose)
+            val h = maxOf(l.height, v.height)
+            layout(width, h) {
+                l.placeRelative(0, (h - l.height) / 2)
+                v.placeRelative(width - v.width, (h - v.height) / 2)
+            }
+        } else {
+            val l = measurables[0].measure(loose)
+            val v = measurables[1].measure(loose)
+            val between = 2.dp.roundToPx()
+            layout(width, l.height + between + v.height) {
+                l.placeRelative(0, 0)
+                v.placeRelative(0, l.height + between)
+            }
+        }
     }
 }

@@ -1552,7 +1552,7 @@
       {
         "id": "effet-2",
         "kind": "effect",
-        "text": "Fin : lancer un sort de conjuration de niveau 1 ou plus rend la capacité de nouveau disponible.",
+        "text": "Fin : lancer un sort d’invocation de niveau 1 ou plus rend la capacité de nouveau disponible.",
         "tag": {
           "act": "prologue",
           "level": "aucun",

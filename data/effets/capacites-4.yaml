@@ -454,12 +454,12 @@ feature.opportunity-attack:
   revision: 425412
 feature.panache:
   effets:
-    - "Action : test de Charisme (Persuasion) contre la Perspicacité passive d’une créature à 18 m ou moins."
+    - "Action : test de Charisme (Persuasion) contre l’Intuition passive d’une créature à 18 m ou moins."
     - "Ennemi qui échoue : état Panache : désavantage pendant 10 tours, soit désavantage aux jets d’attaque contre toute autre cible que le bretteur, et aucune attaque d’opportunité sauf contre lui."
     - "Autre créature qui échoue : état Charmé pendant 10 tours."
     - "Sans effet sur les bêtes, artificiels, élémentaires, monstruosités, plantes, vases et morts-vivants."
   notes:
-    - "Perspicacité passive : 10 + modificateur de Sagesse + bonus de maîtrise si la compétence est maîtrisée ; un avantage en Perspicacité ajoute 5 au DD, un désavantage en retire 5."
+    - "Intuition passive : 10 + modificateur de Sagesse + bonus de maîtrise si la compétence est maîtrisée ; un avantage en Intuition ajoute 5 au DD, un désavantage en retire 5."
     - "L’état prend fin dès qu’une autre créature que le bretteur attaque la cible ou la vise avec une aptitude nuisible."
     - "Les attaques d’opportunité accordées à l’ennemi par certains dons restent possibles."
   revision: 439051
@@ -916,7 +916,7 @@ feature.shaping-of-the-ice:
   effets:
     - "Action, 1 point de ki : crée un bloc de glace escaladable à 18 m ou moins, pendant 10 tours."
   notes:
-    - "Le bloc a la taille d’une caisse ordinaire et s’escalade de la même façon."
+    - "Bloc de la taille d’une caisse, escaladable comme elle."
     - "Une nouvelle utilisation ne fait pas disparaître le bloc précédent : plusieurs blocs peuvent coexister et s’empiler."
   revision: 423088
 feature.sharpshooter-all-in:

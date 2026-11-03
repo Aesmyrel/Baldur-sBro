@@ -4,6 +4,7 @@ import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.FeatureFacts
+import fr.carnetdefaerun.core.model.content.ItemFacts
 import fr.carnetdefaerun.core.model.content.Link
 import fr.carnetdefaerun.core.model.content.Relation
 import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
@@ -74,7 +75,11 @@ class Assembler(
         }
 
         // 4. Liens vers des entrées absentes écartés ; étiquette de chaque lien = la plus stricte des deux bouts.
+        //    Le lieu d'obtention d'un objet ne se montre pas avant la provenance qui y mène : son lien prend au moins
+        //    l'étiquette de la moins stricte des provenances situées dans ce lieu.
         return byId.values.map { entry ->
+            val sourceTags = (entry.facts as? ItemFacts)?.sources.orEmpty().filter { it.place != null }
+                .groupBy { it.place!! }.mapValues { (_, sources) -> sources.map { it.tag }.minWith(TAG_ORDER) }
             val links = (entry.links + reverse[entry.id].orEmpty()).distinctBy { it.target to it.relation }
             val kept = links.mapNotNull { link ->
                 val target = byId[link.target]
@@ -82,7 +87,9 @@ class Assembler(
                     dangling += Dangling(entry.id, link.target, link.relation)
                     null
                 } else {
-                    link.copy(tag = entry.tag.strictest(target.tag))
+                    val ends = entry.tag.strictest(target.tag)
+                    val source = if (link.relation == Relation.LOCATED_IN) sourceTags[link.target] else null
+                    link.copy(tag = source?.let(ends::strictest) ?: ends)
                 }
             }
             val facts = entry.facts

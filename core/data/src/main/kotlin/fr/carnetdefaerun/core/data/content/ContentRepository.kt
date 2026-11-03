@@ -33,8 +33,10 @@ import fr.carnetdefaerun.core.model.spoiler.gated
  * [SpoilerGate] (docs/PLAN.md §2). [revealed] contient les jetons ([RevealKey.token]) de ce que le joueur
  * a choisi de dévoiler : l'écran ne connaît que ces jetons, la base du joueur ne stocke qu'eux.
  * [showActOfHidden] est son réglage « indiquer l'acte des contenus masqués ».
+ * Les écrans ne voient jamais un [ContentStore] (core:database ne leur est pas exposé) : seuls les tests et
+ * l'injection de dépendances construisent ce dépôt.
  */
-class ContentRepository internal constructor(private val store: ContentStore) {
+class ContentRepository(private val store: ContentStore) {
 
     /** En-têtes par type, lus une fois : la base de contenu ne change pas pendant la vie de l'appli. */
     private val headers: Map<EntryType, List<EntryHeader>> by lazy { store.headers().groupBy { it.type } }

@@ -231,3 +231,20 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - les dons sans source (Charge, Endurant, Interprète, Ritualiste, Tireur d'élite magique, Maître des armes lourdes).
 - **Statut `VF_DND` mince** : « Drow » (un lignage elfique dans le SRD) et « Duergar » (cité dans une description d'objet) gardent ce statut, car le terme anglais et son sens sont les mêmes.
 - **Noms anglais retirés des textes** : les effets qui citaient un don par son nom anglais emploient désormais son nom français.
+
+**D-076 — Écrans du Grimoire et de la recherche ; lieux d'obtention verrouillés comme leur provenance.**
+- **Écrans** :
+  - accueil du Grimoire (catégories groupées, nombre de fiches visibles) ;
+  - liste d'une catégorie (filtre par nom français ou anglais, étiquettes d'école, de catégorie d'objet ou de nature, sous-classes et sous-races groupées par parent) ;
+  - fiche (faits en bref, effets rédigés et structurés, voiles, provenances, liens, progression des classes, attribution et licence, favori, correction du nom) ;
+  - recherche globale (résultats groupés par type, ligne fixe « chercher aussi dans le contenu masqué », voiles).
+  Chaque écran ne lit que la porte du contenu ; l'état de liste est une fonction pure testée.
+- **Vocabulaire de règles** (`core:ui`) : caractéristiques, compétences, dégâts, écoles, raretés, ressources, portées et zones. Les termes viennent du SRD 5.2.1 FR quand le terme anglais est le même : « Intuition », « Invocation » (Conjuration), raretés « Courante », « Peu courante ». Sinon, ce sont des propositions alignées sur les noms des fiches : « Point de ki », « Dé de supériorité ». Chaque `when` est exhaustif : une valeur nouvelle du modèle sans libellé ne compile pas.
+- **Fuite corrigée** : la fiche d'un objet montrait le lieu d'une provenance voilée par le lien « Se trouve dans », dans 364 objets. Le lien vers un lieu d'obtention prend désormais au moins l'étiquette de la moins stricte des provenances qui y mènent. Un contrôle bloquant de la validation et un test de fuite le garantissent.
+- **Classe sans sorts** : sa caractéristique d'incantation s'affiche comme « caractéristique des objets et parchemins ».
+- **Ligne de fait** : la valeur passe sous le libellé quand les deux ne tiennent pas sur une ligne (grande police, valeur longue).
+- **Vérification indépendante de la seconde vague** : 40 effets sur 40 exacts, 27 noms sur 27 corrects, aucune fuite. Trois corrections appliquées : « Invocation », « Intuition », une note reformulée. Deux paires de capacités distinctes au même nom français sont renommées : « Coup critique amélioré » (Champion), « Critique discret ».
+- **Reste consigné** :
+  - 31 groupes de fiches d'un même type au même nom (variantes que le jeu nomme pareil : souffle en cône ou en ligne, objets selon la rareté) : une précision par variante est à ajouter aux fichiers de noms ;
+  - les pages secondaires citées par certains effets sont à ajouter à l'attribution des fiches (CC BY-NC-SA) ;
+  - les sorts n'ont pas encore d'effets rédigés (leurs faits structurés sont affichés).

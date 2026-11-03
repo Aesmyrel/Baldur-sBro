@@ -42,7 +42,7 @@ data class SearchResults(val hits: List<SearchHit>, val hidden: List<RevealKey>)
  * des blocs. Chaque résultat passe par [SpoilerGate] avant d'être rendu, comme dans le dépôt de contenu : un nom
  * dont le titre est verrouillé, un passage dont le bloc ou la fiche est verrouillé ne sont jamais renvoyés.
  */
-class SearchRepository internal constructor(private val store: ContentStore) {
+class SearchRepository(private val store: ContentStore) {
     private val headers: Map<ContentId, EntryHeader> by lazy { store.headers().associateBy { it.id } }
     private val index: NameIndex by lazy {
         NameIndex(store.names().map { IndexedName(it.entryId, it.form, KINDS[it.kind] ?: NameKind.ALIAS) })

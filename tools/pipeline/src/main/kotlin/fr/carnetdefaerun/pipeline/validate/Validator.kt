@@ -4,6 +4,7 @@ import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.ItemFacts
 import fr.carnetdefaerun.core.model.content.LoreFacts
 import fr.carnetdefaerun.core.model.content.NameStatus
+import fr.carnetdefaerun.core.model.content.Relation
 import fr.carnetdefaerun.core.model.content.SpellFacts
 import fr.carnetdefaerun.core.model.spoiler.Act
 import fr.carnetdefaerun.core.model.spoiler.SpoilerLevel
@@ -77,6 +78,13 @@ class Validator {
                     f.learnedBy.filter { it.source !in index }.forEach { problems += "$where : appris par ${it.source}, absent de la base" }
                 }
                 is ItemFacts -> f.sources.forEach { s ->
+                    // Le lien vers le lieu d'une source ne doit pas le montrer avant la source elle-même (D-076).
+                    val place = s.place
+                    val link = e.links.firstOrNull { it.relation == Relation.LOCATED_IN && it.target == place }
+                    val placeSources = f.sources.filter { it.place == place }
+                    if (link != null && placeSources.none { link.tag.protectsAtLeast(it.tag) }) {
+                        problems += "$where : lieu ${link.target} moins protégé que les sources qui y mènent"
+                    }
                     // L'acte d'un objet est celui de sa source la plus précoce : aucune source ne le précède.
                     if (s.act?.let { it < e.tag.act } == true) problems += "$where : source d'obtention antérieure à l'acte de l'objet"
                     if (s.tag.act < e.tag.act) problems += "$where : source moins protégée que l'objet"

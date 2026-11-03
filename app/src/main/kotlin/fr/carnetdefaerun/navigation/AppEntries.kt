@@ -1,12 +1,16 @@
 package fr.carnetdefaerun.navigation
 
 import androidx.navigation3.runtime.NavEntry
+import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.navigation.Destination
 import fr.carnetdefaerun.core.model.navigation.TopLevel
+import fr.carnetdefaerun.core.ui.entryTypeOf
 import fr.carnetdefaerun.feature.builds.BuildsRoute
 import fr.carnetdefaerun.feature.codex.CodexRoute
 import fr.carnetdefaerun.feature.companions.CompanionsRoute
+import fr.carnetdefaerun.feature.encyclopedia.CategoryRoute
 import fr.carnetdefaerun.feature.encyclopedia.EncyclopediaRoute
+import fr.carnetdefaerun.feature.encyclopedia.EntryRoute
 import fr.carnetdefaerun.feature.home.HomeRoute
 import fr.carnetdefaerun.feature.notes.NotesRoute
 import fr.carnetdefaerun.feature.progress.ProgressRoute
@@ -24,7 +28,10 @@ fun appEntries(navigator: AppNavigator, tab: TopLevel): (Destination) -> NavEntr
     NavEntry(destination, contentKey = "${tab.name}/$destination") {
         when (destination) {
             Destination.Home -> HomeRoute(onNavigate = navigator::navigate)
-            Destination.Encyclopedia -> EncyclopediaRoute()
+            Destination.Encyclopedia -> EncyclopediaRoute(onNavigate = navigator::navigate)
+            is Destination.EncyclopediaCategory -> entryTypeOf(destination.category)
+                ?.let { CategoryRoute(it, navigator::navigate, back) } ?: EncyclopediaRoute(onNavigate = navigator::navigate)
+            is Destination.GameEntry -> EntryRoute(ContentId(destination.id), navigator::navigate, back)
             Destination.Codex -> CodexRoute()
             Destination.Builds -> BuildsRoute()
             Destination.Tools -> ToolsRoute()
@@ -33,8 +40,8 @@ fun appEntries(navigator: AppNavigator, tab: TopLevel): (Destination) -> NavEntr
             Destination.Companions, is Destination.CompanionDetail -> CompanionsRoute(onBack = back)
             is Destination.Progress -> ProgressRoute(onBack = back)
             Destination.Notes, is Destination.NoteEditor -> NotesRoute(onBack = back)
-            is Destination.Search -> SearchRoute(onBack = back)
-            else -> EncyclopediaRoute(onBack = back)
+            is Destination.Search -> SearchRoute(destination.query, navigator::navigate, back)
+            else -> CodexRoute(onBack = back)
         }
     }
 }

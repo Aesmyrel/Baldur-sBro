@@ -1265,7 +1265,7 @@ feature.stealthy:
   fr: Furtif
   statut: NON_OFFICIELLE
 feature.stealthy-critical:
-  fr: Critique furtif
+  fr: Critique discret
   statut: NON_OFFICIELLE
 feature.steel-physiology:
   fr: Physiologie d’acier

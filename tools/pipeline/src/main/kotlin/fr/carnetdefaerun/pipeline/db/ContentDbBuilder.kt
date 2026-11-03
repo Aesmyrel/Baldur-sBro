@@ -1,21 +1,11 @@
 package fr.carnetdefaerun.pipeline.db
 
-import fr.carnetdefaerun.core.model.content.ClassFacts
-import fr.carnetdefaerun.core.model.content.ConditionFacts
 import fr.carnetdefaerun.core.model.content.ContentFormat
 import fr.carnetdefaerun.core.model.content.ContentSchema
 import fr.carnetdefaerun.core.model.content.Entry
-import fr.carnetdefaerun.core.model.content.FeatureFacts
-import fr.carnetdefaerun.core.model.content.ItemFacts
 import fr.carnetdefaerun.core.model.content.LoreFacts
-import fr.carnetdefaerun.core.model.content.PlaceFacts
 import fr.carnetdefaerun.core.model.content.Reference
-import fr.carnetdefaerun.core.model.content.SpellFacts
-import fr.carnetdefaerun.core.model.content.SubclassFacts
-import fr.carnetdefaerun.core.model.content.SubraceFacts
-import fr.carnetdefaerun.core.model.content.RaceFacts
-import fr.carnetdefaerun.core.model.content.BackgroundFacts
-import fr.carnetdefaerun.core.model.content.FeatFacts
+import fr.carnetdefaerun.core.model.content.listSubtype
 import fr.carnetdefaerun.core.model.search.Folding
 import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
 import java.nio.file.Files
@@ -59,7 +49,7 @@ class ContentDbBuilder(private val gameVersion: String) {
             for (entry in entries) {
                 ps.setString(1, entry.id.value)
                 ps.setString(2, entry.type.name)
-                ps.setString(3, subtype(entry))
+                ps.setString(3, entry.listSubtype)
                 ps.setString(4, entry.name.fr)
                 ps.setString(5, entry.name.en)
                 ps.setString(6, entry.name.status.name)
@@ -150,19 +140,5 @@ class ContentDbBuilder(private val gameVersion: String) {
             rows.forEach { (k, v) -> ps.setString(1, k); ps.setString(2, v); ps.addBatch() }
             ps.executeBatch()
         }
-    }
-
-    /** Sous-type pour les filtres de liste : école de sort, catégorie d'objet, sorte de capacité. */
-    private fun subtype(entry: Entry): String? = when (val f = entry.facts) {
-        is SpellFacts -> f.school?.name
-        is ItemFacts -> f.category.name
-        is FeatureFacts -> f.kind.name
-        is PlaceFacts -> f.act?.name
-        is ConditionFacts -> null
-        is LoreFacts -> f.theme.name
-        is ClassFacts -> null
-        is SubclassFacts -> f.parentClass.value
-        is SubraceFacts -> f.parentRace.value
-        is RaceFacts, is BackgroundFacts, is FeatFacts -> null
     }
 }

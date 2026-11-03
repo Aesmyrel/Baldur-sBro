@@ -11,6 +11,8 @@ import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.Facts
+import fr.carnetdefaerun.core.model.content.ItemFacts
+import fr.carnetdefaerun.core.model.content.Relation
 import fr.carnetdefaerun.core.model.spoiler.Act
 import fr.carnetdefaerun.core.model.spoiler.Gated
 import fr.carnetdefaerun.core.model.spoiler.SpoilerGate
@@ -18,6 +20,7 @@ import fr.carnetdefaerun.core.model.spoiler.SpoilerProfile
 import fr.carnetdefaerun.core.model.spoiler.Tolerance
 import java.io.File
 import kotlinx.serialization.builtins.ListSerializer
+import fr.carnetdefaerun.core.testing.InMemoryContentStore
 import org.junit.Test
 
 /**
@@ -29,7 +32,7 @@ class ContentLeakTest {
         ContentFormat.strict.decodeFromString(ListSerializer(Entry.serializer()), it.readText())
     }
     private val byId = entries.associateBy { it.id }
-    private val repository = ContentRepository(FakeStore(entries))
+    private val repository = ContentRepository(InMemoryContentStore(entries))
 
     private val profiles = Act.entries.flatMap { act -> Tolerance.entries.map { SpoilerProfile(act, it) } } +
         Tolerance.entries.map { SpoilerProfile(Act.ACT_1, Tolerance.LIGHT, it) }
@@ -61,6 +64,11 @@ class ContentLeakTest {
                         assertWithMessage("$where → ${link.id}").that(SpoilerGate.isVisible(tag, profile) && SpoilerGate.isVisible(target.titleTag, profile)).isTrue()
                     }
                     view.sources.forEach { assertWithMessage("$where : source").that(SpoilerGate.isVisible(it.tag, profile)).isTrue() }
+                    // Un lieu d'obtention lié ne se montre que si une provenance visible y mène.
+                    val sourcePlaces = (entry.facts as? ItemFacts)?.sources.orEmpty().mapNotNull { it.place }.toSet()
+                    view.links.filter { it.relation == Relation.LOCATED_IN && it.id in sourcePlaces }.forEach { link ->
+                        assertWithMessage("$where → ${link.id} : lieu sans provenance visible").that(view.sources.any { it.place == link.id }).isTrue()
+                    }
                     view.blocks.filterIsInstance<Gated.Visible<fr.carnetdefaerun.core.model.content.Block>>().forEach {
                         assertWithMessage("$where : bloc").that(SpoilerGate.isVisible(it.value.tag, profile)).isTrue()
                     }

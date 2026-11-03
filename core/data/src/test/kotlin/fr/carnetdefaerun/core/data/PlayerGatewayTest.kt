@@ -25,6 +25,7 @@ import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
 import fr.carnetdefaerun.core.testing.FakeUserPreferencesRepository
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
+import fr.carnetdefaerun.core.testing.InMemoryContentStore
 import org.junit.After
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -46,7 +47,7 @@ class PlayerGatewayTest {
         entry("condition.visible", "Visible", early, listOf(Block("effet-1", BlockKind.EFFECT, "Texte de l’acte III", late))),
         entry("condition.cachee", "Cachée", late),
     )
-    private val gateway = FakeStore(entries).let { ContentGateway(ContentRepository(it), SearchRepository(it), prefs, player) }
+    private val gateway = InMemoryContentStore(entries).let { ContentGateway(ContentRepository(it), SearchRepository(it), prefs, player) }
 
     @After fun close() = db.close()
 

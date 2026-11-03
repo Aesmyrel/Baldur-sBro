@@ -37074,7 +37074,7 @@
     "id": "feature.improved-critical-hit",
     "type": "feature",
     "name": {
-      "fr": "Critique amélioré",
+      "fr": "Coup critique amélioré",
       "en": "Improved Critical Hit",
       "status": "UNOFFICIAL"
     },
@@ -50488,7 +50488,7 @@
       {
         "id": "effet-1",
         "kind": "effect",
-        "text": "Action : test de Charisme (Persuasion) contre la Perspicacité passive d’une créature à 18 m ou moins.",
+        "text": "Action : test de Charisme (Persuasion) contre l’Intuition passive d’une créature à 18 m ou moins.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -50528,7 +50528,7 @@
       {
         "id": "note-1",
         "kind": "note",
-        "text": "Perspicacité passive : 10 + modificateur de Sagesse + bonus de maîtrise si la compétence est maîtrisée ; un avantage en Perspicacité ajoute 5 au DD, un désavantage en retire 5.",
+        "text": "Intuition passive : 10 + modificateur de Sagesse + bonus de maîtrise si la compétence est maîtrisée ; un avantage en Intuition ajoute 5 au DD, un désavantage en retire 5.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -63173,7 +63173,7 @@
       {
         "id": "note-1",
         "kind": "note",
-        "text": "Le bloc a la taille d’une caisse ordinaire et s’escalade de la même façon.",
+        "text": "Bloc de la taille d’une caisse, escaladable comme elle.",
         "tag": {
           "act": "prologue",
           "level": "aucun",
@@ -68167,7 +68167,7 @@
     "id": "feature.stealthy-critical",
     "type": "feature",
     "name": {
-      "fr": "Critique furtif",
+      "fr": "Critique discret",
       "en": "Stealthy Critical",
       "status": "UNOFFICIAL"
     },

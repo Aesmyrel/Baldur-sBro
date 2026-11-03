@@ -24,6 +24,7 @@ import fr.carnetdefaerun.core.model.spoiler.SpoilerTag
 import fr.carnetdefaerun.core.model.spoiler.Tolerance
 import java.io.File
 import kotlinx.serialization.builtins.ListSerializer
+import fr.carnetdefaerun.core.testing.InMemoryContentStore
 import org.junit.Test
 
 /** Recherche globale : verrou anti-spoiler sur chaque résultat (PLAN §2.5, point 4), classement, temps de réponse. */
@@ -38,7 +39,7 @@ class SearchTest {
     )
 
     private val small = SearchRepository(
-        FakeStore(
+        InMemoryContentStore(
             listOf(
                 entry("condition.lumiere", "Lumière vive", "Bright Light", early, blocks = listOf(Block("effet-1", BlockKind.EFFECT, "Révèle les créatures tapies", late))),
                 entry("condition.lune", "Lueur lunaire", "Moon Glow", late),
@@ -111,7 +112,7 @@ class SearchTest {
             ContentFormat.strict.decodeFromString(ListSerializer(Entry.serializer()), it.readText())
         }
     }
-    private val full by lazy { SearchRepository(FakeStore(entries)) }
+    private val full by lazy { SearchRepository(InMemoryContentStore(entries)) }
     private val byId by lazy { entries.associateBy { it.id } }
 
     private val allProfiles = Act.entries.flatMap { act -> Tolerance.entries.map { SpoilerProfile(act, it) } } +
