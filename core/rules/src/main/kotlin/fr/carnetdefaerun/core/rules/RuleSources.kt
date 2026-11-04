@@ -20,6 +20,15 @@ object RuleSources {
     /** « Ranger », section « Level 12 » : un emplacement de niveau 3 de plus, écart voulu par BG3 (D-066). */
     const val RANGER = "https://bg3.wiki/w/index.php?title=Ranger&oldid=422145"
 
+    /** « Armour Class » : formule par défaut, plafonds de Dextérité, formules sans armure. */
+    const val ARMOUR_CLASS = "https://bg3.wiki/w/index.php?title=Armour_Class&oldid=439529"
+
+    /** « Dice rolls » : 1 et 20 naturels selon le jet, avantage et désavantage, coups critiques. */
+    const val DICE_ROLLS = "https://bg3.wiki/w/index.php?title=Dice_rolls&oldid=439285"
+
+    /** « Advantage » : valeur passive d'une compétence, 10 + bonus, ±5 avec avantage ou désavantage. */
+    const val ADVANTAGE = "https://bg3.wiki/w/index.php?title=Advantage&oldid=415831"
+
     /** « Hit points » : points de vie par classe, modificateur de Constitution rétroactif, capacités passives. */
     const val HIT_POINTS = "https://bg3.wiki/w/index.php?title=Hit_points&oldid=425339"
 }

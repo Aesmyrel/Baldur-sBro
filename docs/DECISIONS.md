@@ -327,3 +327,17 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - le recoupement retrouve exactement les tableaux des sept classes d'incantation et des deux tiers de lanceur.
 - **Exception du rôdeur** : au niveau 12, il gagne un emplacement de niveau 3 de plus que la table. La page *Ranger* (révision 422145) le présente comme un écart voulu par BG3. Le moteur l'applique au rôdeur pur ; en multiclasse, la table générale s'applique, faute de source contraire.
 - **Pas encore couvert** : classe d'armure, jets de d20 (avantage, critiques), probabilités, dons par niveau. C'est le lot suivant.
+
+**D-085 — Moteur de règles, second lot : classe d'armure et jets de d20.**
+- **Classe d'armure** (*Armour Class*, révision 439529) :
+  - avec une armure : sa base plus la Dextérité, plafonnée à +2 en armure intermédiaire (+3 avec Maître des armures intermédiaires) et ignorée en armure lourde ;
+  - quatre armures rares (« Exotic Material ») donnent la Dextérité entière ;
+  - sans armure : 10 + Dextérité, ou la meilleure des formules d'Armure du mage (ou Résilience draconique), de Défense sans armure du barbare et de Défense sans armure du moine ; celle du moine cesse avec un bouclier.
+- **Jets de d20** (*Dice rolls*, révision 439285) :
+  - attaque et test de caractéristique : le 1 naturel échoue toujours, le 20 naturel réussit toujours ;
+  - sauvegarde : ni l'un ni l'autre, sauf pour la concentration ou en dialogue ;
+  - avantage et désavantage ne se cumulent pas et s'annulent ;
+  - coup critique au seuil (abaissable, cumulable), qui touche toujours.
+- **Valeur passive** : 10 + bonus, ±5 avec avantage ou désavantage (*Advantage*, révision 415831).
+- **Probabilités exactes** : chaque face est énumérée, rien n'est simulé. Les tests les comparent à une énumération brute écrite à part, pour chaque sorte de jet, chaque mode, chaque modificateur et chaque cible.
+- **Interprétation signalée** : avec avantage, la Chance du halfelin relance chaque dé tombé sur 1, comme dans les règles de D&D. La page ne précise que le cas d'un seul dé.
