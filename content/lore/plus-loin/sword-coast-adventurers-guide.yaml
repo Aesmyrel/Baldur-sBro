@@ -1,6 +1,6 @@
 id: lore.plus-loin.sword-coast-adventurers-guide
 theme: plus-loin
-nom: { fr: Guide des aventuriers de la Côte des Épées, en: Sword Coast Adventurer’s Guide, statut: VF_DND, source: wikipedia-fr }
+nom: { fr: Le Guide des aventuriers de la côte des Épées, en: Sword Coast Adventurer’s Guide, statut: VF_DND, source: wikipedia-fr }
 alias: [SCAG]
 etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
 etiquette: { act: prologue, level: aucun, otherWorks: aucun }
