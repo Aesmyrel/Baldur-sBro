@@ -1,6 +1,6 @@
 # Données de jeu — rapport de génération
 
-_Généré le 2026-11-03 par `./gradlew :tools:pipeline:run --args="normalize"` depuis bg3.wiki (CC BY-NC-SA 4.0)._
+_Généré le 2026-11-04 par `./gradlew :tools:pipeline:run --args="normalize"` depuis bg3.wiki (CC BY-NC-SA 4.0)._
 
 | Type | Entrées | VF BG3 | VF D&D | Non officielle | Avec champs inconnus |
 |---|---:|---:|---:|---:|---:|

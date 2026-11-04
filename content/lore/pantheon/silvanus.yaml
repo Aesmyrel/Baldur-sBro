@@ -11,7 +11,7 @@ sections:
     etiquette: { act: acte1, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Silvanus est, dans le panthéon de Faerûn, la puissance de la nature sauvage, celle des forêts profondes et des terres que nul ne cultive. Il s’oppose en cela à la nature ordonnée des champs, qui relève de la déesse Chauntéa. Son culte n’est pas né sur Toril : à l’époque de l’essor de Nétheril, des migrants venus d’un autre monde y apportent la foi en plusieurs dieux celtes, dont Silvanus, qui finit par rejoindre l’un des panthéons locaux. Son symbole est une feuille de chêne, et ses titres anglais les plus courants, Oak Father, Old Oak ou Forest Father, le présentent tour à tour en vieil arbre et en père des forêts.
+          Silvanus est, dans le panthéon de Faerûn, la puissance de la nature sauvage, celle des forêts profondes et des terres que nul ne cultive. Il s’oppose en cela à la nature ordonnée des champs, qui relève de la déesse Chauntéa. Son culte n’est pas né sur Toril : à l’époque de l’essor de Nétheril, des migrants venus d’un autre monde y apportent la foi en plusieurs dieux celtes, dont Silvanus, qui finit par rejoindre l’un des panthéons locaux. Son symbole est une feuille de chêne, et ses titres anglais les plus courants sont Oak Father, Old Oak et Forest Father.
         nature: canon_dnd
         edition: multi
         refs:
@@ -22,15 +22,17 @@ sections:
           - { ref: frwiki-silvanus/frcs-3e, page: "235" }
           - { ref: frwiki-silvanus/scag, page: "21, 37" }
       - texte: >-
-          Son dogme tient en un mot : l’équilibre. Croissance et pourriture, crue et sécheresse, feu et glace doivent se répondre pour que le cycle de la vie se poursuive, et le dieu veille sur ce cycle avec un détachement qui le fait parfois passer pour impitoyable, alors qu’il tient à toute vie. Il se soucie peu de ménager les villes et les champs, s’emporte contre qui menace les lieux sauvages et réserve une haine particulière à ceux qui usent du feu par négligence ou pour détruire. Il compte pour alliées les autres divinités non mauvaises de la nature et des bêtes, comme Eldath, et pour adversaires Malar, Talos et Talona, dont le goût de la destruction rompt l’équilibre.
+          Ce qui compte pour Silvanus, c’est que le cycle de la vie se poursuive : à la croissance doit répondre la pourriture, à la crue la sécheresse, au feu la glace. Envers ses fidèles, il se montre bienveillant et paternel, et il enseigne que toute vie a du prix ; mais quand l’équilibre l’exige, il tait ses sentiments, au point que certains le jugent sans cœur. L’harmonie avec la civilisation lui importe peu, et ceux qui menacent les lieux sauvages s’exposent à de terribles colères, surtout s’ils usent du feu par négligence ou pour détruire. Les divinités non mauvaises de la nature et des bêtes, comme Eldath ou Mielikki, le servent ou l’épaulent, et Chauntéa compte parmi ses alliées ; Malar, Talos et Talona, artisans de ruine qui menacent cet équilibre, sont ses ennemis déclarés.
         nature: canon_dnd
         edition: multi
         refs:
           - { ref: frwiki-silvanus }
+          - { ref: mroi-silvanus }
           - { ref: frwiki-silvanus/frcs-3e, page: "251" }
           - { ref: frwiki-silvanus/dragon-412, page: "23–24" }
           - { ref: frwiki-silvanus/on-hallowed-ground, page: "75" }
-          - { ref: frwiki-silvanus/faiths-avatars, page: "146" }
+          - { ref: frwiki-silvanus/faiths-avatars, page: "47, 90, 146" }
+          - { ref: frwiki-silvanus/fr-campaign-guide, page: "76–77" }
       - texte: >-
           Ses fidèles les plus nombreux sont des druides, mais il a aussi des clercs, et des rôdeurs, des barbares ou des ermites l’invoquent. Son clergé protège les forêts, plante des arbres et combat les maladies. Ses rites se tiennent volontiers au sommet d’une colline couronnée de vieux chênes ; on n’y verse jamais le sang : l’offrande est un objet de bois que l’on brise puis que l’on enterre, sans jamais le brûler. Le dieu lui-même apparaît sous deux formes principales : un vieux visage barbu à la peau fendillée comme une écorce, qui semble sortir d’un tronc, ou un jeune homme aux longues jambes, vêtu d’une armure de feuilles et armé d’un maillet de bois, qui surgit quand un bosquet sacré est menacé.
         nature: canon_dnd
@@ -85,7 +87,7 @@ sections:
     etiquette: { act: acte1, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Au nord de l’épave du nautiloïde, dès le début de l’acte I, s’étend le bosquet d’émeraude, un refuge de druides voué à Silvanus. Les druides y invoquent le dieu : au bassin sacré, des plaques fixées près de totems animaliers l’appellent par plusieurs de ses titres, et une idole de Silvanus, posée sur la pierre centrale d’un cercle de pierres dressées, sert de foyer à leurs rites. Le jeu propose bien un domaine de la Nature aux clercs, mais Silvanus ne figure pas parmi les divinités qu’un clerc peut choisir à la création du personnage.
+          Au nord de l’épave du nautiloïde, dès le début de l’Acte I, s’étend le Bosquet d’émeraude, un refuge de druides voué à Silvanus. Les druides y invoquent le dieu : au Bassin sacré, des plaques fixées près de totems animaliers l’appellent par plusieurs de ses titres, et une idole de Silvanus, posée sur la pierre centrale d’un cercle de pierres dressées, sert de foyer à leurs rites. Le jeu propose bien un domaine de la Nature aux clercs, mais Silvanus ne figure pas parmi les divinités qu’un clerc peut choisir à la création du personnage. Le bosquet recèle en revanche une Amulette de Silvanus, qui permet de lancer Restauration partielle.
         nature: canon_bg3
         refs:
           - { ref: bg3wiki-emerald-grove }
@@ -95,6 +97,7 @@ sections:
 relations:
   - { cible: place.emerald-grove, type: see_also }
   - { cible: place.sacred-pool, type: see_also }
+  - { cible: item.amulet-of-silvanus, type: see_also }
   - { cible: class.druid, type: see_also }
   - { cible: subclass.nature-domain, type: see_also }
   - { cible: lore.factions.harpers, type: see_also }

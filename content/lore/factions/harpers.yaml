@@ -11,59 +11,65 @@ sections:
     etiquette: { act: acte1, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Les Ménestrels (Harpers) forment une organisation à demi secrète, vouée à préserver la mémoire du passé, à maintenir l’équilibre entre la nature et la civilisation et à défendre les innocents contre le mal. L’ordre n’a rien d’une armée : c’est une fédération d’individus venus de tous les horizons, souvent bardes ou rôdeurs, qui agissent seuls ou en petits groupes, sans hiérarchie formelle ; seul un petit conseil de vétérans, élus par leurs pairs, fixe les desseins à long terme. Son emblème, une harpe d’argent et un croissant de lune sur fond noir ou bleu roi, est le seul trait commun de l’ordre d’un bout à l’autre des Royaumes. On les tient tantôt pour des idéalistes, tantôt pour d’insupportables fouineurs.
+          Les Ménestrels (Harpers) n’ont rien d’une organisation structurée : ni liste de membres, ni règles communes, et une image publique qui change d’une ville à l’autre. Ce sont des individus de toutes origines, beaucoup d’elfes, de bardes et de rôdeurs, qui agissent seuls ou en petits groupes d’amis, unis par trois buts : garder la mémoire du passé, tenir l’équilibre entre nature et civilisation, défendre les innocents contre le mal. Seul un petit conseil, les Grands Ménestrels (High Harpers), arrête les desseins à long terme ; ses membres sont élus à bulletin secret par leurs pairs pour leur ancienneté et leur discrétion. Le seul signe commun reste l’emblème, une harpe d’argent et un croissant de lune sur fond noir ou bleu roi. Leur réputation varie selon les régions : héros dans le Nord, les Vaux ou le Cormyr, cabale inquiétante en Amn, au Téthyr ou au Calimshan.
         nature: canon_dnd
         edition: multi
         refs:
           - { ref: frwiki-harpers }
+          - { ref: mroi-menestrels }
           - { ref: frwiki-harpers/code-of-the-harpers, page: "3–7" }
           - { ref: frwiki-harpers/frcs-3e, page: "274" }
           - { ref: frwiki-harpers/dragon-430, page: "33–38" }
           - { ref: frwiki-harpers/scag, page: "123–124" }
       - texte: >-
-          Les Ménestrels préfèrent l’influence à la force : ils recueillent rumeurs et renseignements, guident de jeunes aventuriers et orientent les événements en coulisse, car leurs pires bévues datent des fois où ils ont agi à découvert. Leurs bardes glissent des avertissements dans des chansons connues, des runes discrètes signalent un danger ou un refuge à qui sait les lire, et un réseau de caches, de boîtes aux lettres et de maisons sûres permet aux agents de se ravitailler et de communiquer. Leur code, prêté à l’entrée dans l’ordre, commande de combattre la tyrannie, de protéger les faibles, de refuser tout excès de pouvoir et de préserver le passé. Le Zhentarim, le culte du Dragon et les Magiciens rouges de Thay comptent parmi leurs ennemis de toujours.
+          On entre dans l’ordre en prononçant un serment, longtemps transmis de bouche à oreille plutôt que par écrit. Il engage à combattre la tyrannie et la méchanceté, à protéger les opprimés, à soutenir les lois justes, à empêcher tout excès de pouvoir ou de richesse, à s’entraider sans rien demander en retour et à préserver le passé ; le Ménestrel qui trahit doit mourir. Pour y parvenir, l’ordre préfère le savoir et l’influence à la force : ses vétérans guident de jeunes aventuriers, ses agents mènent souvent une double vie, un accord changé dans une chanson connue suffit à prévenir un allié, des runes signalent un danger ou un abri, et des caches et maisons sûres jalonnent les routes. Ses plus lourdes erreurs, il les a commises en agissant au grand jour, face à des adversaires tenaces comme le culte du Dragon, le Zhentarim ou l’Église de Baine.
         nature: canon_dnd
         edition: multi
         refs:
           - { ref: frwiki-harpers }
+          - { ref: mroi-menestrels }
           - { ref: frwiki-harpers/code-of-the-harpers, page: "8–13, 126" }
+          - { ref: frwiki-harpers/elminsters-forgotten-realms, page: "189" }
           - { ref: frwiki-harpers/warriors-priests-realms, page: "9–13" }
           - { ref: frwiki-harpers/fr-adventures, page: "123–124" }
           - { ref: frwiki-harpers/frcs-3e, page: "274" }
-          - { ref: frwiki-harpers/fr-campaign-guide, page: "146" }
   - type: general
     titre: Chutes et renaissances
     etiquette: { act: acte1, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          L’histoire de l’ordre est réputée embrouillée. Son idée naît à Myth Drannor, chez des chefs elfes alliés à quelques rôdeurs et druides humains : en 324 CV, la magicienne Dathlue Mistwinter accepte de mener un premier groupe, dont fait partie un Elminster encore jeune, et lui donne pour emblème les armes de sa famille, une harpe d’argent entre les cornes d’un croissant de lune. Durement décimés lors de la chute de la cité, en 712 CV, les survivants se regroupent en 720 CV, au cours d’une nuit restée célèbre où plusieurs dieux, dont Mystra, Oghma, Séluné, Silvanus et Tymora, parlent par la bouche de leurs prêtres pour bénir l’entreprise.
+          L’emblème de l’ordre garde la trace de sa naissance : la harpe d’argent entre les cornes d’un croissant de lune est le blason de la famille de la magicienne Dathlue Brumhiver (Mistwinter). En 324 CV, à Myth Drannor, elle accepte de mener un cercle imaginé par des chefs elfes et quelques rôdeurs et druides humains, où siège un Elminster encore jeune ; parce qu’ils se réunissent au crépuscule, on les appelle les Ménestrels du Crépuscule (Harpers at Twilight). Le cercle s’amenuise pendant quatre siècles et perd plus de la moitié des siens, dont Dathlue, quand la cité tombe en 712 CV. En 720 CV, dans le bosquet druidique de la Cour dansante (Dancing Place), plusieurs dieux, parmi lesquels Mystra, Oghma, Séluné, Silvanus et Tymora, parlent par la bouche de leurs prêtres pour bénir sa renaissance.
         nature: canon_dnd
         edition: multi
         refs:
           - { ref: frwiki-harpers }
+          - { ref: mroi-menestrels }
           - { ref: frwiki-harpers/code-of-the-harpers, page: "20–22" }
           - { ref: frwiki-harpers/frcs-3e, page: "269–270" }
           - { ref: frwiki-harpers/grand-history-of-the-realms, page: "70, 99" }
       - texte: >-
-          En 1022 CV, Elminster et Khelben Arunsun refondent l’ordre en une armée souterraine d’aventuriers. Le même cycle se répète ensuite : les Ménestrels gagnent en influence, s’exposent, subissent des pertes, se divisent et doivent replonger dans la clandestinité avant de renaître sous une forme nouvelle. Après la Magepeste (Spellplague) de 1385 CV, les survivants, coupés les uns des autres, ne défendent plus que leurs environs, et plusieurs groupes reprennent le nom avec plus ou moins de fidélité à ses idéaux. Dans le sillage de la Seconde Fracture (Second Sundering), qui s’étend sur les années 1480 CV, le réseau reprend des forces et ses missions secrètes à travers Faerûn, sans retrouver de direction centrale.
+          Le reste de leur histoire suit une même courbe, plusieurs fois répétée : l’ordre grandit, s’expose, s’attire des ennemis puissants, perd ses membres et retourne à l’ombre. Traqués, ils doivent entrer dans la clandestinité en 1021 CV ; dès l’année suivante, Elminster et Khelben Arunsun les refondent en recrutant une nouvelle génération d’aventuriers. Après la Magepeste (Spellplague) de 1385 CV, l’ordre se disloque : les survivants, coupés les uns des autres, ne défendent plus que leurs environs ; en 1419 CV, à la tour Lunereflet (Moongleam Tower), son dernier bastion, une cellule se reforme pour contrer en secret le retour de Néthéril, et divers groupes reprennent ensuite son nom, parfois sans en partager les idéaux. Dans les années qui suivent la Seconde Fracture (Second Sundering), au cours des années 1480 CV, les Ménestrels retrouvent des forces et reprennent leurs missions secrètes à travers Faerûn, toujours sans direction centrale.
         nature: canon_dnd
         edition: multi
         refs:
           - { ref: frwiki-harpers }
-          - { ref: frwiki-harpers/code-of-the-harpers, page: "24" }
+          - { ref: mroi-menestrels }
+          - { ref: frwiki-harpers/code-of-the-harpers, page: "23–24" }
           - { ref: frwiki-harpers/running-the-realms, page: "25–26" }
           - { ref: frwiki-harpers/grand-history-of-the-realms, page: "115" }
+          - { ref: frwiki-harpers/fr-campaign-guide, page: "146" }
           - { ref: frwiki-harpers/dragon-430, page: "33–38" }
   - type: bg3
     titre: Dans Baldur’s Gate 3
     etiquette: { act: acte1, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Dans Baldur’s Gate 3, la présence des Ménestrels se devine dès la plage où commence l’acte I. Sous la partie haute de la grève, une cache dissimulée sous un rocher déplacé renferme notamment une carte et un carnet de Ménestrel : un test de Nature (DD 10) révèle les traces laissées par la pierre, et il faut assez de Force pour la bouger. La carte signale une réserve dans un petit avant-poste de l’ordre, à l’extrémité ouest des falaises qui s’étendent au nord de l’épave, près du chemin qui mène du bosquet d’émeraude à la forêt. On y trouve un feu de camp, une tour de guet en bois et un squelette portant un pendentif d’argent, sur lequel un test d’Histoire (DD 12) permet de reconnaître le symbole des Ménestrels.
+          Dans Baldur’s Gate 3, l’ordre se signale dès les premières heures de l’Acte I, autour de la Plage ravagée où commence l’aventure. Une cache dissimulée sur le rivage livre une carte et un carnet de Ménestrel, et la carte conduit à un petit avant-poste de l’ordre perché sur les falaises, non loin du Bosquet d’émeraude, où l’on trouve un feu de camp, une tour de guet en bois et, près du feu, un squelette dont le pendentif d’argent porte encore l’emblème de la harpe.
         nature: canon_bg3
         refs:
           - { ref: bg3wiki-ravaged-beach }
 relations:
   - { cible: place.ravaged-beach, type: see_also }
+  - { cible: item.amulet-of-the-harpers, type: see_also }
   - { cible: lore.pantheon.silvanus, type: see_also }
   - { cible: lore.lieux.sword-coast, type: see_also }

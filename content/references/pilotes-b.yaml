@@ -1,6 +1,8 @@
 # Registre des références des fiches pilotes, lot b (personnages, objets, chronologie, saga, livres, plus-loin).
 # Identifiants préfixés « b- » pour éviter toute collision avec le lot parallèle.
 # Pages de wiki : identifiant de révision de la page consultée. Livres non lus : « secondaire », avec « via ».
+# Livres cités : une entrée par page qui les cite (« <page>/<livre> »), éditeur et année repris du modèle de citation
+# de la page. Titres VF vérifiés sur Wikipédia FR (« Royaumes oubliés », « Donjons et Dragons », révision 240941944).
 
 # --- bg3.wiki (CC BY-NC-SA 4.0) ---
 b-bg3wiki-shanties-for-the-bitch-queen:
@@ -43,16 +45,16 @@ b-mroi-umberlie:
   licence: cc-by-sa-3.0
   consultation: directe
 
-# --- Livres et aventures, connus par une source secondaire ---
-b-faiths-and-avatars:
+# --- Livres et aventures, connus par une source secondaire : une entrée par page qui les cite (<page>/<livre>) ---
+b-frwiki-umberlee/faiths-and-avatars:
   type: livre
   titre_vo: "Faiths & Avatars"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1996
   edition: add2
   consultation: secondaire
   via: b-frwiki-umberlee
-b-faiths-and-pantheons:
+b-frwiki-umberlee/faiths-and-pantheons:
   type: livre
   titre_vo: "Faiths and Pantheons"
   editeur: Wizards of the Coast
@@ -60,15 +62,15 @@ b-faiths-and-pantheons:
   edition: 3e
   consultation: secondaire
   via: b-frwiki-umberlee
-b-phb-5e-2014:
+b-frwiki-umberlee/phb-5e-2014:
   type: livre
-  titre_vo: "Player's Handbook (5e édition)"
+  titre_vo: "Player’s Handbook (5th edition)"
   editeur: Wizards of the Coast
   annee: 2014
   edition: 5e-2014
   consultation: secondaire
   via: b-frwiki-umberlee
-b-heroes-of-faerun:
+b-frwiki-umberlee/heroes-of-faerun:
   type: livre
   titre_vo: "Forgotten Realms: Heroes of Faerûn"
   editeur: Wizards of the Coast
@@ -76,38 +78,89 @@ b-heroes-of-faerun:
   edition: 5e-2024
   consultation: secondaire
   via: b-frwiki-umberlee
-b-forgotten-realms-adventures:
+b-frwiki-umberlee/forgotten-realms-adventures:
   type: livre
   titre_vo: "Forgotten Realms Adventures"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1990
   edition: add2
   consultation: secondaire
   via: b-frwiki-umberlee
-b-descent-into-avernus:
+b-frwiki-umberlee/descent-into-avernus:
   type: aventure
-  titre_vo: "Baldur's Gate: Descent into Avernus"
+  titre_vo: "Baldur’s Gate: Descent into Avernus"
+  titre_vf: "La Porte de Baldur : Descente en Averne"
   editeur: Wizards of the Coast
   annee: 2019
   edition: 5e-2014
   consultation: secondaire
   via: b-frwiki-umberlee
-b-scag:
+b-frwiki-umberlee/scag:
   type: livre
-  titre_vo: "Sword Coast Adventurer's Guide"
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  titre_vf: "Le Guide des aventuriers de la côte des Épées"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  consultation: secondaire
+  via: b-frwiki-umberlee
+b-frwiki-sword-coast-adventurers-guide:
+  type: wiki
+  titre_vo: "Sword Coast Adventurer’s Guide (Forgotten Realms Wiki)"
+  url: https://forgottenrealms.fandom.com/wiki/Sword_Coast_Adventurer%27s_Guide
+  revision: 1102084
+  licence: cc-by-sa-3.0
+  consultation: directe
+b-frwiki-sword-coast-adventurers-guide/scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  titre_vf: "Le Guide des aventuriers de la côte des Épées"
   editeur: Wizards of the Coast
   annee: 2015
   edition: 5e-2014
   isbn: 978-0786965809
   consultation: secondaire
   via: b-frwiki-sword-coast-adventurers-guide
-b-frwiki-sword-coast-adventurers-guide:
-  type: wiki
-  titre_vo: "Sword Coast Adventurer's Guide (Forgotten Realms Wiki)"
-  url: https://forgottenrealms.fandom.com/wiki/Sword_Coast_Adventurer%27s_Guide
-  revision: 1102084
-  licence: cc-by-sa-3.0
-  consultation: directe
+b-frwiki-bladesinger/scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  titre_vf: "Le Guide des aventuriers de la côte des Épées"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  isbn: 978-0786965809
+  consultation: secondaire
+  via: b-frwiki-bladesinger
+b-frwiki-swashbuckler/scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  titre_vf: "Le Guide des aventuriers de la côte des Épées"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  isbn: 978-0786965809
+  consultation: secondaire
+  via: b-frwiki-swashbuckler
+b-frwiki-storm-sorcery/scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  titre_vf: "Le Guide des aventuriers de la côte des Épées"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  isbn: 978-0786965809
+  consultation: secondaire
+  via: b-frwiki-storm-sorcery
+b-frwiki-oath-of-the-crown/scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  titre_vf: "Le Guide des aventuriers de la côte des Épées"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  isbn: 978-0786965809
+  consultation: secondaire
+  via: b-frwiki-oath-of-the-crown
 
 # --- Personnages : Halaster ---
 b-frwiki-halaster-blackcloak:
@@ -124,23 +177,24 @@ b-mroi-halaster-sombrecape:
   revision: 45116
   licence: cc-by-sa-3.0
   consultation: directe
-b-frcs-3e:
+b-frwiki-halaster-blackcloak/frcs-3e:
   type: livre
-  titre_vo: "Forgotten Realms Campaign Setting (3e édition)"
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
   editeur: Wizards of the Coast
   annee: 2001
   edition: 3e
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-villains-lorebook:
+b-frwiki-halaster-blackcloak/villains-lorebook:
   type: livre
-  titre_vo: "Villains' Lorebook"
-  editeur: Wizards of the Coast
+  titre_vo: "Villains’ Lorebook"
+  editeur: TSR, Inc.
   annee: 1998
   edition: add2
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-grand-history-of-the-realms:
+b-frwiki-halaster-blackcloak/grand-history-of-the-realms:
   type: livre
   titre_vo: "The Grand History of the Realms"
   editeur: Wizards of the Coast
@@ -149,40 +203,40 @@ b-grand-history-of-the-realms:
   isbn: 978-0-7869-4731-7
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-ruins-of-undermountain-ii:
+b-frwiki-halaster-blackcloak/ruins-of-undermountain-ii:
   type: livre
   titre_vo: "The Ruins of Undermountain II: The Deep Levels"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1994
   edition: add2
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-ruins-of-undermountain:
+b-frwiki-halaster-blackcloak/ruins-of-undermountain:
   type: livre
   titre_vo: "The Ruins of Undermountain"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1991
   edition: add2
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-dragon-409:
+b-frwiki-halaster-blackcloak/dragon-409:
   type: magazine
-  titre_vo: "Dragon n° 409 — Character Themes: Citizens of Splendor"
+  titre_vo: "Dragon n° 409, Character Themes: Citizens of Splendor"
   editeur: Wizards of the Coast
   annee: 2012
   edition: 4e
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-dungeon-of-the-mad-mage:
+b-frwiki-halaster-blackcloak/dungeon-of-the-mad-mage:
   type: aventure
   titre_vo: "Waterdeep: Dungeon of the Mad Mage"
-  titre_vf: "Waterdeep : Le Donjon du mage dément"
+  titre_vf: "Waterdeep : Le Donjon du mage dément"
   editeur: Wizards of the Coast
   annee: 2018
   edition: 5e-2014
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-expedition-to-undermountain:
+b-frwiki-halaster-blackcloak/expedition-to-undermountain:
   type: aventure
   titre_vo: "Expedition to Undermountain"
   editeur: Wizards of the Coast
@@ -190,42 +244,54 @@ b-expedition-to-undermountain:
   edition: "3.5"
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-undermountain-stardock:
+b-frwiki-halaster-blackcloak/undermountain-stardock:
   type: aventure
   titre_vo: "Undermountain: Stardock"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1997
   edition: add2
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-escape-from-undermountain:
+b-frwiki-halaster-blackcloak/escape-from-undermountain:
   type: roman
   titre_vo: "Escape from Undermountain"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1996
+  edition: add2
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-elminster-in-hell:
+b-frwiki-halaster-blackcloak/elminster-in-hell:
   type: roman
   titre_vo: "Elminster in Hell"
   editeur: Wizards of the Coast
   annee: 2001
+  edition: 3e
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-descent-to-undermountain:
+b-frwiki-halaster-blackcloak/descent-to-undermountain:
   type: jeu
   titre_vo: "Descent to Undermountain"
   editeur: Interplay
   annee: 1998
+  edition: add2
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
-b-nwn-hordes-of-the-underdark:
+b-frwiki-halaster-blackcloak/nwn-hordes-of-the-underdark:
   type: jeu
   titre_vo: "Neverwinter Nights: Hordes of the Underdark"
   editeur: Infogrames (Atari)
   annee: 2003
+  edition: 3e
   consultation: secondaire
   via: b-frwiki-halaster-blackcloak
+b-mroi-halaster-sombrecape/city-of-splendors-waterdeep:
+  type: livre
+  titre_vo: "City of Splendors: Waterdeep"
+  editeur: Wizards of the Coast
+  annee: 2005
+  edition: "3.5"
+  consultation: secondaire
+  via: b-mroi-halaster-sombrecape
 b-wpfr-donjons-et-dragons:
   type: wiki
   titre_vo: "Donjons et Dragons (Wikipédia)"
@@ -256,7 +322,7 @@ b-mroi-anneau-de-l-hiver:
   revision: 38917
   licence: cc-by-sa-3.0
   consultation: directe
-b-tomb-of-annihilation:
+b-frwiki-ring-of-winter/tomb-of-annihilation:
   type: aventure
   titre_vo: "Tomb of Annihilation"
   editeur: Wizards of the Coast
@@ -265,39 +331,49 @@ b-tomb-of-annihilation:
   isbn: 978-0786966103
   consultation: secondaire
   via: b-frwiki-ring-of-winter
-b-storm-kings-thunder:
+b-frwiki-ring-of-winter/storm-kings-thunder:
   type: aventure
-  titre_vo: "Storm King's Thunder"
+  titre_vo: "Storm King’s Thunder"
   editeur: Wizards of the Coast
   annee: 2016
   edition: 5e-2014
   isbn: 978-0786966004
   consultation: secondaire
   via: b-frwiki-ring-of-winter
-b-volos-guide-to-all-things-magical:
+b-frwiki-ring-of-winter/volos-guide-to-all-things-magical:
   type: livre
-  titre_vo: "Volo's Guide to All Things Magical"
-  editeur: TSR
+  titre_vo: "Volo’s Guide to All Things Magical"
+  editeur: TSR, Inc.
   annee: 1996
   edition: add2
   consultation: secondaire
   via: b-frwiki-ring-of-winter
-b-cormanthyr-empire-of-the-elves:
+b-frwiki-ring-of-winter/cormanthyr-empire-of-the-elves:
   type: livre
   titre_vo: "Cormanthyr: Empire of the Elves"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1998
   edition: add2
   isbn: 978-0786907618
   consultation: secondaire
   via: b-frwiki-ring-of-winter
-b-the-ring-of-winter-novel:
+b-frwiki-ring-of-winter/the-ring-of-winter-novel:
   type: roman
   titre_vo: "The Ring of Winter (James Lowder)"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1992
+  edition: add2
   consultation: secondaire
   via: b-frwiki-ring-of-winter
+# Pages de l’édition française citées par Le Monde des Royaumes Oubliés (titre resté en anglais en VF, Wikipédia FR).
+b-mroi-anneau-de-l-hiver/tomb-of-annihilation:
+  type: aventure
+  titre_vo: "Tomb of Annihilation"
+  editeur: Wizards of the Coast
+  annee: 2017
+  edition: 5e-2014
+  consultation: secondaire
+  via: b-mroi-anneau-de-l-hiver
 
 # --- Chronologie : le Pacte des Vaux ---
 b-frwiki-dales-compact:
@@ -370,46 +446,144 @@ b-mroi-calendrier-des-vaux:
   revision: 39967
   licence: cc-by-sa-3.0
   consultation: directe
-b-the-dalelands:
+# Livres cités, une entrée par page qui les cite (<page>/<livre>).
+b-frwiki-dales-compact/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: b-frwiki-dales-compact
+b-frwiki-history-of-the-dalelands/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: b-frwiki-history-of-the-dalelands
+b-frwiki-history-of-the-dalelands/grand-history-of-the-realms:
+  type: livre
+  titre_vo: "The Grand History of the Realms"
+  editeur: Wizards of the Coast
+  annee: 2007
+  edition: "3.5"
+  consultation: secondaire
+  via: b-frwiki-history-of-the-dalelands
+b-frwiki-standing-stone/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: b-frwiki-standing-stone
+b-frwiki-standing-stone/the-dalelands:
   type: livre
   titre_vo: "The Dalelands"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1993
   edition: add2
   consultation: secondaire
   via: b-frwiki-standing-stone
-b-volos-guide-to-the-dalelands:
+b-frwiki-standing-stone/volos-guide-to-the-dalelands:
   type: livre
-  titre_vo: "Volo's Guide to the Dalelands"
-  editeur: TSR
+  titre_vo: "Volo’s Guide to the Dalelands"
+  editeur: TSR, Inc.
   annee: 1996
   edition: add2
   consultation: secondaire
   via: b-frwiki-standing-stone
-b-frcs-2e-revised:
+b-frwiki-standing-stone/grand-history-of-the-realms:
   type: livre
-  titre_vo: "Forgotten Realms Campaign Setting, 2e édition révisée (A Grand Tour of the Realms)"
-  editeur: TSR
-  annee: 1996
-  edition: add2
+  titre_vo: "The Grand History of the Realms"
+  editeur: Wizards of the Coast
+  annee: 2007
+  edition: "3.5"
   consultation: secondaire
-  via: b-frwiki-marking-the-years
-b-old-empires:
-  type: livre
-  titre_vo: "Old Empires"
-  editeur: TSR
-  annee: 1990
-  edition: add2
-  consultation: secondaire
-  via: b-frwiki-1-dr
-b-forgotten-realms-campaign-guide:
+  via: b-frwiki-standing-stone
+b-frwiki-standing-stone/forgotten-realms-campaign-guide:
   type: livre
   titre_vo: "Forgotten Realms Campaign Guide"
+  titre_vf: "Encyclopédie des Royaumes oubliés"
   editeur: Wizards of the Coast
   annee: 2008
   edition: 4e
   consultation: secondaire
   via: b-frwiki-standing-stone
+b-frwiki-marking-the-years/grand-tour-of-the-realms:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting, 2nd edition (revised): A Grand Tour of the Realms"
+  editeur: TSR, Inc.
+  annee: 1993
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-marking-the-years
+b-frwiki-marking-the-years/grand-history-of-the-realms:
+  type: livre
+  titre_vo: "The Grand History of the Realms"
+  editeur: Wizards of the Coast
+  annee: 2007
+  edition: "3.5"
+  consultation: secondaire
+  via: b-frwiki-marking-the-years
+b-frwiki-1-dr/old-empires:
+  type: livre
+  titre_vo: "Old Empires"
+  editeur: TSR, Inc.
+  annee: 1990
+  edition: add2
+  consultation: secondaire
+  via: b-frwiki-1-dr
+b-frwiki-26-dr/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: b-frwiki-26-dr
+b-frwiki-26-dr/grand-history-of-the-realms:
+  type: livre
+  titre_vo: "The Grand History of the Realms"
+  editeur: Wizards of the Coast
+  annee: 2007
+  edition: "3.5"
+  consultation: secondaire
+  via: b-frwiki-26-dr
+# Pages de l’édition française citées par Le Monde des Royaumes Oubliés.
+b-mroi-pierre-levee/forgotten-realms-campaign-guide:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Guide"
+  titre_vf: "Encyclopédie des Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: b-mroi-pierre-levee
+b-mroi-pacte-des-vaux/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: b-mroi-pacte-des-vaux
+b-mroi-calendrier-des-vaux/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: b-mroi-calendrier-des-vaux
 
 # --- Saga : Baldur's Gate (1998) ---
 b-wpfr-baldurs-gate:

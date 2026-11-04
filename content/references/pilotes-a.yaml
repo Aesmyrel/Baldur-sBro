@@ -2,6 +2,8 @@
 # bestiaire, factions, lieux). Pages de wiki consultées directement, avec leur révision ; livres cités par
 # ces pages, non consultés nous-mêmes (consultation secondaire, « via » la page qui les cite).
 # Identifiant d’un livre cité : « <page de wiki>/<livre> », pour que chaque renvoi désigne la page qui le cite.
+# Éditeur et année repris du modèle de citation de la page qui cite le livre. Titres VF (« titre_vf ») vérifiés sur
+# Wikipédia FR, articles « Royaumes oubliés » (révision 240404251, entrée wpfr-royaumes-oublies) et « Donjons et Dragons ».
 
 # --- Forgotten Realms Wiki (CC BY-SA, aucun texte repris) ---
 
@@ -18,6 +20,15 @@ frwiki-church-of-silvanus:
   titre_vo: "Church of Silvanus (Forgotten Realms Wiki)"
   url: https://forgottenrealms.fandom.com/wiki/Church_of_Silvanus
   revision: 982961
+  licence: cc-by-sa-3.0
+  consultation: directe
+
+# Le Monde des Royaumes Oubliés (wiki francophone, Fandom) : seconde page croisée pour Silvanus.
+mroi-silvanus:
+  type: wiki
+  titre_vo: "Silvanus (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Silvanus
+  revision: 30635
   licence: cc-by-sa-3.0
   consultation: directe
 
@@ -61,7 +72,7 @@ frwiki-silvanus/fr-campaign-set:
   type: livre
   titre_vo: "Forgotten Realms Campaign Set (Cyclopedia of the Realms)"
   titre_vf: "Les Royaumes oubliés : décor de campagne (Encyclopédie des Royaumes)"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1987
   edition: add1
   consultation: secondaire
@@ -70,7 +81,7 @@ frwiki-silvanus/fr-campaign-set:
 frwiki-silvanus/running-the-realms:
   type: livre
   titre_vo: "Forgotten Realms Campaign Setting, 2nd edition (revised): Running the Realms"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1993
   edition: add2
   consultation: secondaire
@@ -79,7 +90,7 @@ frwiki-silvanus/running-the-realms:
 frwiki-silvanus/faiths-avatars:
   type: livre
   titre_vo: "Faiths & Avatars"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1996
   edition: add2
   consultation: secondaire
@@ -88,7 +99,7 @@ frwiki-silvanus/faiths-avatars:
 frwiki-silvanus/on-hallowed-ground:
   type: livre
   titre_vo: "On Hallowed Ground"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1996
   edition: add2
   consultation: secondaire
@@ -125,7 +136,7 @@ frwiki-silvanus/fr-campaign-guide:
 
 frwiki-silvanus/dragon-412:
   type: magazine
-  titre_vo: "Dragon 412, Channel Divinity: Chauntea and Silvanus"
+  titre_vo: "Dragon n° 412, Channel Divinity: Chauntea and Silvanus"
   editeur: Wizards of the Coast
   annee: 2012
   edition: 4e
@@ -198,7 +209,7 @@ bg3wiki-imp:
 frwiki-avernus/guide-to-hell:
   type: livre
   titre_vo: "Guide to Hell"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1999
   edition: add2
   consultation: secondaire
@@ -207,7 +218,7 @@ frwiki-avernus/guide-to-hell:
 frwiki-avernus/on-hallowed-ground:
   type: livre
   titre_vo: "On Hallowed Ground"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1996
   edition: add2
   consultation: secondaire
@@ -295,6 +306,42 @@ frwiki-nine-hells/fr-campaign-guide:
   consultation: secondaire
   via: frwiki-nine-hells
 
+frwiki-nine-hells/monster-manual-4e:
+  type: livre
+  titre_vo: "Monster Manual (4th edition)"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-nine-hells
+
+# Le Monde des Royaumes Oubliés (wiki francophone, Fandom) : seconde page croisée pour Averne.
+mroi-averne:
+  type: wiki
+  titre_vo: "Averne (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Averne
+  revision: 34302
+  licence: cc-by-sa-3.0
+  consultation: directe
+
+mroi-averne/descent-into-avernus:
+  type: aventure
+  titre_vo: "Baldur’s Gate: Descent into Avernus"
+  editeur: Wizards of the Coast
+  annee: 2019
+  edition: 5e-2014
+  consultation: secondaire
+  via: mroi-averne
+
+mroi-averne/players-guide-to-faerun:
+  type: livre
+  titre_vo: "Player’s Guide to Faerûn"
+  editeur: Wizards of the Coast
+  annee: 2004
+  edition: "3.5"
+  consultation: secondaire
+  via: mroi-averne
+
 # --- Tieffelin ---
 
 frwiki-tiefling:
@@ -321,10 +368,28 @@ bg3wiki-tiefling-refugees:
   licence: cc-by-nc-sa-4.0
   consultation: directe
 
+# Le Monde des Royaumes Oubliés (wiki francophone, Fandom) : seconde page croisée pour les tieffelins.
+mroi-tieffelins:
+  type: wiki
+  titre_vo: "Tieffelins (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Tieffelins
+  revision: 41597
+  licence: cc-by-sa-3.0
+  consultation: directe
+
+mroi-tieffelins/scag:
+  type: livre
+  titre_vo: "Sword Coast Adventurer’s Guide"
+  editeur: Wizards of the Coast
+  annee: 2015
+  edition: 5e-2014
+  consultation: secondaire
+  via: mroi-tieffelins
+
 frwiki-tiefling/planescape-campaign-setting:
   type: livre
   titre_vo: "Planescape Campaign Setting"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1994
   edition: add2
   consultation: secondaire
@@ -333,7 +398,7 @@ frwiki-tiefling/planescape-campaign-setting:
 frwiki-tiefling/planescape-mc-appendix:
   type: livre
   titre_vo: "Planescape Monstrous Compendium Appendix"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1994
   edition: add2
   consultation: secondaire
@@ -434,7 +499,7 @@ bg3wiki-lesser-imp:
 frwiki-imp/monster-manual-1e:
   type: livre
   titre_vo: "Monster Manual (1st edition)"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1977
   edition: add1
   consultation: secondaire
@@ -443,7 +508,7 @@ frwiki-imp/monster-manual-1e:
 frwiki-imp/planescape-mc-appendix:
   type: livre
   titre_vo: "Planescape Monstrous Compendium Appendix"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1994
   edition: add2
   consultation: secondaire
@@ -455,6 +520,15 @@ frwiki-imp/monster-manual-v35:
   editeur: Wizards of the Coast
   annee: 2003
   edition: "3.5"
+  consultation: secondaire
+  via: frwiki-imp
+
+frwiki-imp/faces-of-evil:
+  type: livre
+  titre_vo: "Faces of Evil: The Fiends"
+  editeur: Wizards of the Coast
+  annee: 1997
+  edition: add2
   consultation: secondaire
   via: frwiki-imp
 
@@ -503,10 +577,19 @@ bg3wiki-ravaged-beach:
   licence: cc-by-nc-sa-4.0
   consultation: directe
 
+# Le Monde des Royaumes Oubliés (wiki francophone, Fandom) : seconde page croisée pour les Ménestrels.
+mroi-menestrels:
+  type: wiki
+  titre_vo: "Ménestrels (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/M%C3%A9nestrels
+  revision: 44724
+  licence: cc-by-sa-3.0
+  consultation: directe
+
 frwiki-harpers/fr-adventures:
   type: livre
   titre_vo: "Forgotten Realms Adventures"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1990
   edition: add2
   consultation: secondaire
@@ -515,7 +598,7 @@ frwiki-harpers/fr-adventures:
 frwiki-harpers/code-of-the-harpers:
   type: livre
   titre_vo: "The Code of the Harpers"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1993
   edition: add2
   consultation: secondaire
@@ -524,7 +607,7 @@ frwiki-harpers/code-of-the-harpers:
 frwiki-harpers/running-the-realms:
   type: livre
   titre_vo: "Forgotten Realms Campaign Setting, 2nd edition (revised): Running the Realms"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1993
   edition: add2
   consultation: secondaire
@@ -533,7 +616,7 @@ frwiki-harpers/running-the-realms:
 frwiki-harpers/warriors-priests-realms:
   type: livre
   titre_vo: "Warriors and Priests of the Realms"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1996
   edition: add2
   consultation: secondaire
@@ -570,9 +653,19 @@ frwiki-harpers/fr-campaign-guide:
 
 frwiki-harpers/dragon-430:
   type: magazine
-  titre_vo: "Dragon 430, The Harpers of Waterdeep"
+  titre_vo: "Dragon n° 430, The Harpers of Waterdeep"
   editeur: Wizards of the Coast
   annee: 2013
+  edition: 4e
+  consultation: secondaire
+  via: frwiki-harpers
+
+frwiki-harpers/elminsters-forgotten-realms:
+  type: livre
+  titre_vo: "Ed Greenwood Presents Elminster’s Forgotten Realms"
+  editeur: Wizards of the Coast
+  annee: 2012
+  edition: 4e
   consultation: secondaire
   via: frwiki-harpers
 
@@ -595,10 +688,49 @@ wpfr-royaumes-oublies:
   licence: cc-by-sa-4.0
   consultation: directe
 
+# Le Monde des Royaumes Oubliés (wiki francophone, Fandom) : seconde page croisée pour la Côte des Épées.
+mroi-cote-des-epees:
+  type: wiki
+  titre_vo: "Côte des Épées (Le Monde des Royaumes Oubliés)"
+  url: https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/C%C3%B4te_des_%C3%89p%C3%A9es
+  revision: 33287
+  licence: cc-by-sa-3.0
+  consultation: directe
+
+mroi-cote-des-epees/frcs-3e:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Setting (3rd edition)"
+  titre_vf: "Les Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2001
+  edition: 3e
+  consultation: secondaire
+  via: mroi-cote-des-epees
+
+mroi-cote-des-epees/fr-campaign-guide:
+  type: livre
+  titre_vo: "Forgotten Realms Campaign Guide"
+  titre_vf: "Encyclopédie des Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: mroi-cote-des-epees
+
+mroi-cote-des-epees/fr-players-guide:
+  type: livre
+  titre_vo: "Forgotten Realms Player’s Guide"
+  titre_vf: "Guide des Joueurs des Royaumes oubliés"
+  editeur: Wizards of the Coast
+  annee: 2008
+  edition: 4e
+  consultation: secondaire
+  via: mroi-cote-des-epees
+
 frwiki-sword-coast/volos-guide-sword-coast:
   type: livre
   titre_vo: "Volo’s Guide to the Sword Coast"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1994
   edition: add2
   consultation: secondaire
@@ -607,7 +739,7 @@ frwiki-sword-coast/volos-guide-sword-coast:
 frwiki-sword-coast/grand-tour-of-the-realms:
   type: livre
   titre_vo: "Forgotten Realms Campaign Setting, 2nd edition (revised): A Grand Tour of the Realms"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1993
   edition: add2
   consultation: secondaire
@@ -616,7 +748,7 @@ frwiki-sword-coast/grand-tour-of-the-realms:
 frwiki-sword-coast/hordes-of-dragonspear:
   type: aventure
   titre_vo: "Hordes of Dragonspear"
-  editeur: TSR
+  editeur: TSR, Inc.
   annee: 1992
   edition: add2
   consultation: secondaire

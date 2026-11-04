@@ -1,6 +1,6 @@
 id: lore.plus-loin.sword-coast-adventurers-guide
 theme: plus-loin
-nom: { fr: Guide des aventuriers de la Côte des Épées, en: Sword Coast Adventurer's Guide, statut: VF_DND, source: wikipedia-fr }
+nom: { fr: Guide des aventuriers de la Côte des Épées, en: Sword Coast Adventurer’s Guide, statut: VF_DND, source: wikipedia-fr }
 alias: [SCAG]
 etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
 etiquette: { act: prologue, level: aucun, otherWorks: aucun }
@@ -18,9 +18,9 @@ sections:
           - { ref: b-frwiki-sword-coast-adventurers-guide }
           - { ref: b-wpen-sword-coast-adventurers-guide }
           - { ref: b-wpfr-donjons-et-dragons }
-          - { ref: b-scag, page: "18" }
+          - { ref: b-frwiki-sword-coast-adventurers-guide/scag, page: "18" }
       - texte: >-
-          Le livre mêle deux registres. D’un côté, un tour d’horizon du décor : selon la critique de The Escapist, une vingtaine de pages sur l’histoire récente et la géographie des Royaumes, puis une quarantaine sur la Côte des Épées, ainsi que des chapitres sur les dieux des Royaumes et sur la place des peuples et des classes dans la région. De l’autre, des options de personnage : historiques, variantes de races et sous-classes. Son concepteur principal explique avoir cherché à les enraciner dans les Royaumes tout en les gardant utiles aux tables qui jouent ailleurs.
+          Son contenu se partage entre le décor et les règles. D’après la critique de The Escapist, une vingtaine de pages survolent l’histoire et la géographie récentes des Royaumes, une quarantaine la région de la Côte des Épées, et le reste décrit la place des personnages de D&D dans les Royaumes, avec quelques variantes de races, une moisson d’historiques et des options propres à certaines classes. Steve Kenson, son concepteur principal, dit avoir cherché un équilibre : ancrer fermement ces options dans les Royaumes, et d’abord sur la Côte, sans les rendre inutiles aux tables qui jouent ailleurs.
         nature: hors_univers
         refs:
           - { ref: b-wpen-sword-coast-adventurers-guide }
@@ -38,7 +38,11 @@ sections:
           - { ref: b-frwiki-storm-sorcery }
           - { ref: b-frwiki-oath-of-the-crown }
           - { ref: b-frwiki-booming-blade }
-          - { ref: b-scag, page: "133-143" }
+          - { ref: b-frwiki-bladesinger/scag, page: "140-142" }
+          - { ref: b-frwiki-swashbuckler/scag, page: "135-136" }
+          - { ref: b-frwiki-storm-sorcery/scag, page: "137" }
+          - { ref: b-frwiki-oath-of-the-crown/scag, page: "133" }
+          - { ref: b-frwiki-sword-coast-adventurers-guide/scag, page: "142-143" }
       - texte: >-
           Baldur’s Gate 3 reprend une partie de ces options, avec ses propres règles. On peut y choisir la Sorcellerie des tempêtes pour l’ensorceleur, ainsi que le Chant de la lame du magicien, le Bretteur du roublard et le Serment de la Couronne du paladin, ces trois dernières sous-classes ayant été ajoutées au jeu en 2025 avec le Patch 8. Le sort mineur Lame retentissante y figure aussi. Les fiches du Grimoire détaillent ce que chacune fait dans le jeu.
         nature: canon_bg3
@@ -53,12 +57,13 @@ sections:
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          À sa sortie, le livre entre à la 18e place des meilleures ventes de livres reliés hors fiction du Publishers Weekly, pour la semaine finissant le 16 novembre 2015, et reçoit l’année suivante une distinction du jury des ENnie Awards. La critique se partage : The Escapist et DieHard GameFan jugent l’ouvrage trop cher pour ce qu’il contient, le premier regrettant des règles éparpillées, quand Black Gate le recommande chaudement aux meneurs de jeu pour nourrir leurs campagnes.
+          La critique s’est partagée. Black Gate y voit une excellente source d’inspiration pour les meneurs de jeu qui bâtissent une campagne ; The Escapist et DieHard GameFan jugent au contraire le livre trop cher pour ce qu’il offre, le second lui reprochant de compter sur la mémoire des vétérans et des anciens suppléments pour combler ses lacunes. Le public suit pourtant : moins de deux semaines après sa sortie, le volume entre à la 18e place des ventes de livres reliés hors fiction du Publishers Weekly, pour la semaine close le 16 novembre 2015, et le jury des ENnie Awards le distingue l’année suivante.
         nature: hors_univers
         refs:
           - { ref: b-wpen-sword-coast-adventurers-guide }
+          - { ref: b-frwiki-sword-coast-adventurers-guide }
       - texte: >-
-          Notre lecture : pour qui joue à Baldur’s Gate 3, c’est l’un des ouvrages de la 5e édition les plus utiles pour situer le décor du jeu. Il décrit la Côte des Épées telle qu’elle se présente vers 1489 CV, trois ans seulement avant les événements de 1492 CV, avec les dieux qu’on y prie et les peuples qu’on y croise. Pour les règles de 2024, c’est Forgotten Realms : Heroes of Faerûn, paru en novembre 2025, qui présente à son tour les Royaumes aux joueurs.
+          Notre lecture : pour qui joue à Baldur’s Gate 3, c’est l’un des ouvrages de la 5e édition les plus utiles pour situer le décor du jeu. Il décrit la Côte des Épées telle qu’elle se présente vers 1489 CV, trois ans seulement avant les événements de 1492 CV, avec les dieux qu’on y prie et les peuples qu’on y croise. Pour les règles de 2024, c’est Forgotten Realms: Heroes of Faerûn, paru en novembre 2025, qui présente à son tour les Royaumes aux joueurs.
         nature: interpretation
         refs:
           - { ref: b-frwiki-sword-coast-adventurers-guide }

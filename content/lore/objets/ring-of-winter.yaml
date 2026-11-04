@@ -11,93 +11,77 @@ sections:
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          L’Anneau de l’hiver (Ring of Winter) est un artefact des Royaumes Oubliés : un simple anneau d’or, sans ornement, recouvert d’une fine couche de givre que rien ne fait fondre. Glacé au toucher, il engourdit d’abord la main de qui le passe au doigt, puis cesse de paraître froid une fois que son porteur s’est harmonisé avec lui. D’après Tomb of Annihilation (2017), il le protège du froid, le dérobe à la magie de divination et arrête son vieillissement, sans le préserver pour autant d’un vieillissement d’origine magique.
+          À le voir, l’Anneau de l’hiver (Ring of Winter) n’a rien d’un artefact : c’est un simple anneau d’or, sans le moindre ornement, qui s’ajuste au doigt de son porteur. Seule singularité, une mince pellicule de givre le recouvre, qu’aucune chaleur ordinaire ne fait fondre. Qui le passe au doigt sent d’abord sa main s’engourdir ; une fois harmonisé avec lui, il ne perçoit plus ce froid. Selon Tomb of Annihilation (2017), l’anneau rend alors son porteur insensible au froid et invisible aux divinations, et suspend pour lui le cours des ans, sans le protéger d’un vieillissement d’origine magique.
         nature: canon_dnd
         edition: 5e-2014
         refs:
-          - { ref: b-tomb-of-annihilation, page: "207-208" }
           - { ref: b-frwiki-ring-of-winter }
           - { ref: b-mroi-anneau-de-l-hiver }
+          - { ref: b-frwiki-ring-of-winter/tomb-of-annihilation, page: "207-208" }
+          - { ref: b-mroi-anneau-de-l-hiver/tomb-of-annihilation, page: "76, 206 (éd. fr.)" }
       - texte: >-
-          Ses pouvoirs actifs sont à la mesure de son nom. Il peut abaisser la température jusqu’à environ −34 °C (−30 °F) dans une sphère de 36 mètres (120 pieds) de rayon, un froid qui persiste tant que son porteur ne choisit pas d’y mettre fin, et façonner dans la glace des objets inanimés ou des créatures animées. Il lance aussi toute une série de sorts : cône de froid, tempête de grêle, tempête de neige, mur de glace, sphère glaciale d’Otiluke, croissance d’épines, main de Bigby et une variante glacée de pétrification. L’énergie qu’il dépense revient chaque jour à l’aube.
+          Le même ouvrage lui prête des pouvoirs dignes de son nom. D’un geste, le porteur peut faire chuter la température jusqu’à environ −34 °C (−30 °F) dans une sphère de 36 mètres (120 pieds) de rayon, un froid qui ne cesse que s’il le décide, et façonner dans la glace aussi bien des objets que des créatures animées. L’anneau sert encore à lancer une série de sorts : cône de froid, tempête de grêle, tempête de neige, mur de glace, sphère glaciale d’Otiluke, croissance d’épines, main de Bigby, et une forme glacée de pétrification. Chaque aube lui rend l’énergie qu’il a dépensée.
         nature: canon_dnd
         edition: 5e-2014
         refs:
-          - { ref: b-tomb-of-annihilation, page: "207-208" }
           - { ref: b-frwiki-ring-of-winter }
+          - { ref: b-mroi-anneau-de-l-hiver }
+          - { ref: b-frwiki-ring-of-winter/tomb-of-annihilation, page: "207-208" }
   - type: general
     titre: Une volonté glacée
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          L’anneau n’est pas un simple outil : c’est un objet intelligent, chaotique mauvais, qui communique avec son porteur par des émotions. Il cherche sans relâche à prendre le dessus et, quand il y parvient, le pousse à faire du mal sans raison ni pitié et à semer la destruction autour de lui. Les rumeurs que rapporte la 5e édition lui prêtent d’autres pouvoirs, réservés à un maître mauvais qui saurait lui résister, comme appeler des dragons blancs ou l’être primordial Cryonax. On le dit presque indestructible : il ne se briserait qu’au doigt de Titania, la Reine de l’Été. Les géants du givre, eux, l’appellent « la Glace qui ne fond jamais » (The Ice that Never Melts).
+          L’anneau pense et veut. Pour la 5e édition, c’est un objet intelligent d’alignement chaotique mauvais, qui se plaît à détruire et à faire souffrir. Il parle à son porteur par des émotions, cherche sans relâche à le dominer et, s’il y parvient, le pousse à blesser sans raison ni pitié, à s’attirer de nouveaux ennemis et à courir à sa perte. Les légendes lui prêtent d’autres pouvoirs, réservés à un maître mauvais qui saurait ne pas se laisser dominer : un djinn au service d’un pacha calishite lui attribue le pouvoir de convoquer des dragons blancs, voire l’être primordial Cryonax, et les géants du givre, qui l’appellent « la Glace qui ne fond jamais » (The Ice that Never Melts), le croient capable de figer des mondes entiers dans l’hiver. On ne pourrait le briser qu’au doigt de Titania, la Reine de l’Été.
         nature: canon_dnd
         edition: 5e-2014
         refs:
-          - { ref: b-tomb-of-annihilation, page: "207-208" }
-          - { ref: b-storm-kings-thunder, page: "155" }
           - { ref: b-frwiki-ring-of-winter }
           - { ref: b-mroi-anneau-de-l-hiver }
+          - { ref: b-frwiki-ring-of-winter/tomb-of-annihilation, page: "207-208" }
+          - { ref: b-frwiki-ring-of-winter/storm-kings-thunder, page: "155" }
   - type: general
     titre: Une très vieille légende
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Ses origines restent obscures. Volo’s Guide to All Things Magical (1996), un supplément de la 2e édition, le fait remonter à une époque où les futurs royaumes n’étaient encore que des villages épars : un mage puissant l’aurait forgé, peut-être Azuth avant qu’il ne devienne dieu, et Aurile, la déesse de l’hiver, y aurait déposé son baiser. Le même ouvrage lui prête un pouvoir singulier : les objets magiques gardés plus de dix jours à moins de 6 mètres (20 pieds) de lui gagnent en efficacité, et d’autant plus que l’exposition se prolonge.
+          Volo’s Guide to All Things Magical (1996), un supplément de la 2e édition, lui connaît un don plus discret que ses tempêtes : tout objet magique qui séjourne plus de dix jours à moins de 6 mètres (20 pieds) de lui s’en trouve renforcé, et l’effet croît avec la durée. Sur son origine, le guide ne peut rapporter qu’une très vieille tradition, du temps où les royaumes à venir n’étaient que des hameaux dispersés : l’anneau serait l’œuvre d’un grand mage, en qui certains reconnaissent Azuth avant son ascension divine, et Aurile, déesse de l’hiver, l’aurait marqué d’un baiser.
         nature: canon_dnd
         edition: add2
         refs:
-          - { ref: b-volos-guide-to-all-things-magical, page: "112" }
+          - { ref: b-frwiki-ring-of-winter/volos-guide-to-all-things-magical, page: "112" }
           - { ref: b-frwiki-ring-of-winter }
       - texte: >-
-          Cormanthyr : Empire of the Elves (1998) le situe au Cormyr en 163 CV. Sa magie y déchaîne alors, en plein été, une tempête de glace d’une telle violence qu’elle rase un village entier et la demeure d’un noble. Les elfes du Cormanthyr reconnaissent l’artefact pour ce qu’il est, et regrettent de ne pas avoir mis son porteur en garde avant qu’il ne tue. Près de cinq siècles plus tard, en 650 CV, ce drame reste la dernière apparition connue de l’anneau sur le continent de Faerûn.
+          Cormanthyr: Empire of the Elves (1998) le fait surgir dans l’histoire en 163 CV, au Cormyr : en plein été, sa magie y déchaîne une tempête de glace qui rase un village entier et la demeure d’un noble. Les elfes du Cormanthyr reconnaissent l’artefact, et regrettent de n’avoir pas averti son porteur avant que le drame n’ait lieu. Le même ouvrage n’en signale aucune autre trace sur le continent de Faerûn jusqu’en 650 CV au moins. Le roman de 1992 ajoute qu’un bara originaire du Cormyr, Dhalmass Rayburton, le trouve plus tard dans les Vaux et finit par l’emporter jusqu’au Chult.
         nature: canon_dnd
         edition: add2
         refs:
-          - { ref: b-cormanthyr-empire-of-the-elves, page: "28, 36" }
+          - { ref: b-frwiki-ring-of-winter/cormanthyr-empire-of-the-elves, page: "28, 36" }
+          - { ref: b-frwiki-ring-of-winter/the-ring-of-winter-novel, page: "307" }
           - { ref: b-frwiki-ring-of-winter }
   - type: autres_oeuvres
     titre: Du roman aux aventures
     etiquette: { act: prologue, level: aucun, otherWorks: majeur }
     paragraphes:
       - texte: >-
-          Le roman The Ring of Winter (1992), de James Lowder, fait de l’anneau l’objet d’une longue quête. Dhalmass Rayburton, venu du Cormyr, l’a caché dans le temple d’Ubtao de la cité perdue de Mezro, au Chult, après avoir tué par accident plusieurs personnes en s’en servant. Artus Cimber, un ancien Ménestrel, le cherche pendant des années ; dans ce récit situé en 1362 CV, il finit par le retrouver et s’en sert aussitôt pour repousser l’invasion de Mezro par une horde de gobelins.
+          Le roman The Ring of Winter (1992), de James Lowder, fait de l’anneau l’objet d’une quête de plusieurs années, celle d’Artus Cimber, un ancien Ménestrel. En 1362 CV, il apprend qu’il dort dans le temple d’Ubtao de Mezro, la cité perdue du Chult, où Dhalmass l’a caché après avoir tué par accident plusieurs personnes en s’en servant. Artus le retrouve, en tire des rapières de glace et repousse grâce à lui l’assaut des gobelins batiris contre la cité. Il voit dans les efforts de l’anneau pour le dominer une épreuve continue et se persuade que l’artefact sert au fond le bien et refuse les âmes corruptibles : c’est la conviction d’un personnage, que les règles de la 5e édition ne partagent pas.
         nature: canon_dnd
         edition: add2
         refs:
-          - { ref: b-the-ring-of-winter-novel, page: "307" }
+          - { ref: b-frwiki-ring-of-winter/the-ring-of-winter-novel, page: "297, 307" }
           - { ref: b-frwiki-ring-of-winter }
           - { ref: b-frwiki-artus-cimber }
       - texte: >-
-          La 5e édition reprend le fil plus d’un siècle après. Dans Storm King’s Thunder (2016), après 1485 CV, le jarl géant du givre Storvald convoite l’anneau, qu’il croit capable d’élever les siens dans l’ordning, la hiérarchie des géants, et apprend qu’Artus Cimber le détient toujours ; ses géants attaquent alors Bryn Shander sur une fausse piste. Dans Tomb of Annihilation (2017), Artus, que l’anneau garde de la vieillesse, parcourt encore le Chult avec l’artefact au doigt.
+          La 5e édition reprend le fil plus d’un siècle après. Dans Storm King’s Thunder (2016), après 1485 CV, le jarl des géants du givre Storvald convoite l’anneau, qu’il croit capable d’élever les siens dans l’ordning, la hiérarchie des géants ; apprenant qu’Artus Cimber le détient, il envoie ses géants à sa recherche, et une fausse piste les mène attaquer Bryn Shander. Dans Tomb of Annihilation (2017), l’anneau, qui le garde de la vieillesse, est toujours au doigt d’Artus, qui parcourt encore le Chult.
         nature: canon_dnd
         edition: 5e-2014
         refs:
-          - { ref: b-storm-kings-thunder }
-          - { ref: b-tomb-of-annihilation }
+          - { ref: b-frwiki-ring-of-winter/storm-kings-thunder }
+          - { ref: b-frwiki-ring-of-winter/tomb-of-annihilation }
           - { ref: b-frwiki-ring-of-winter }
           - { ref: b-mroi-anneau-de-l-hiver }
-  - type: ecarts
-    titre: Un anneau maléfique ?
-    etiquette: { act: prologue, level: aucun, otherWorks: majeur }
-    paragraphes:
-      - texte: >-
-          Les règles de la 5e édition donnent une réponse nette. Tomb of Annihilation (2017) fait de l’anneau un objet intelligent d’alignement chaotique mauvais, qui se complaît dans la destruction et le mal fait à autrui. S’il prend le contrôle de son porteur, il le pousse à blesser sans raison ni pitié ceux qui l’entourent, à s’attirer la colère d’ennemis et à courir à sa propre perte. Il communique ses désirs par des émotions et ne cesse de chercher à reprendre la main.
-        nature: canon_dnd
-        edition: 5e-2014
-        variantes: nature-anneau
-        refs:
-          - { ref: b-tomb-of-annihilation, page: "207-208" }
-          - { ref: b-frwiki-ring-of-winter }
-      - texte: >-
-          Le roman de 1992 fait entendre une autre lecture, celle de son héros. Une fois l’anneau en main, Artus Cimber voit dans ses assauts une épreuve continue plutôt qu’une méchanceté pure : il se persuade que l’artefact poursuit au fond un but bénéfique, et qu’il refuse précisément de se laisser porter par les êtres corruptibles. C’est la conviction d’un personnage du récit, et non une règle du jeu.
-        nature: canon_dnd
-        edition: add2
-        variantes: nature-anneau
-        refs:
-          - { ref: b-the-ring-of-winter-novel, page: "307" }
-          - { ref: b-frwiki-ring-of-winter }
 relations:
+  - { cible: lore.factions.harpers, type: see_also }
   - { cible: spell.cone-of-cold, type: see_also }
   - { cible: spell.ice-storm, type: see_also }
   - { cible: spell.sleet-storm, type: see_also }
