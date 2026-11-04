@@ -303,3 +303,12 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - un rédacteur qui n'a vu ni les sources ni l'ancienne fiche écrit à partir de ces seules notes et des données de `data/game`.
   Comme le texte final ne dérive d'aucune expression source, le mélange de licences disparaît aussi.
 - **Pilotes** : onze fiches sont réécrites de cette façon. La fiche du *Guide des aventuriers de la Côte des Épées*, conforme à tous les critères, est gardée. Aucun nouveau lot du codex n'est lancé avant une relecture favorable.
+
+**D-083 — Budget d'usage : Codex réduit pour la V1, agents plus légers, aperçu installable.**
+- **Constat** : les douze fiches pilotes ont coûté environ quatre millions de jetons d'agents (rédaction, réécriture, deux relectures, extraction, salle blanche). À ce rythme, le socle de 220 fiches prévu au plan ne tient pas dans les limites d'usage.
+- **Codex de la V1** : un socle réduit à une quarantaine de fiches essentielles, trois ou quatre par thème, toutes relues. Le glossaire et les anecdotes sont limités à ce que ces fiches nourrissent. Les objectifs du plan (§7) restent la cible des versions suivantes, par petits lots.
+- **Agents** :
+  - un modèle plus léger pour les agents de production (extraction des faits, premiers jets) ;
+  - le modèle complet pour les relectures indépendantes, où l'exigence compte le plus ;
+  - les phases de l'appli (builds, Ma partie, outils, finitions) sont menées sans agent de production, avec une seule vérification indépendante en fin de phase.
+- **Aperçu** : un APK de débogage, installable hors Play Store, est fourni avant la V1 pour juger l'allure sur le téléphone. Il n'est pas signé avec la clé finale ; son contenu est partiel.

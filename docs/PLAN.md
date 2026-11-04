@@ -244,6 +244,8 @@ Objectifs en nombre de fiches. **Socle** = ce que la V1 doit contenir au minimum
 
 Production : une fiche pilote par thème d'abord (revue indépendante du format, du ton, des références et des étiquettes), puis des lots parallèles par thème.
 
+> **V1 (D-083)** : le socle livré est réduit à une quarantaine de fiches relues (trois ou quatre par thème) ; les chiffres ci-dessus restent la cible des versions suivantes. Rédaction en salle blanche (D-082).
+
 ## 8. Données de jeu — objectifs de couverture V1
 
 | Catégorie | Objectif |
