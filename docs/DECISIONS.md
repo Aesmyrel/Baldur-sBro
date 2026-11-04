@@ -341,3 +341,16 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Valeur passive** : 10 + bonus, ±5 avec avantage ou désavantage (*Advantage*, révision 415831).
 - **Probabilités exactes** : chaque face est énumérée, rien n'est simulé. Les tests les comparent à une énumération brute écrite à part, pour chaque sorte de jet, chaque mode, chaque modificateur et chaque cible.
 - **Interprétation signalée** : avec avantage, la Chance du halfelin relance chaque dé tombé sur 1, comme dans les règles de D&D. La page ne précise que le cas d'un seul dé.
+
+**D-086 — Fiche calculée d'un build.**
+- **Modèle** : un build (`core:model`, paquet `builds`) ne stocke que les choix du joueur : origine, achat de points, bonus +2 et +1, puis un niveau par entrée (classe, sous-classe au niveau où elle se choisit, don). Tout le reste est recalculé. Le paquet ne s'appelle pas `build` : le `.gitignore` exclut les dossiers de ce nom.
+- **Profils tirés des données** : points de vie, sauvegardes, caractéristique d'incantation, niveaux de don et de sous-classe viennent des fiches de `data/game`. La catégorie d'incantateur se déduit du tableau de classe : Magie de pacte à part, emplacements dès le niveau 1 pour un lanceur complet, au niveau 2 pour un demi-lanceur, sous-classe à emplacements pour un tiers de lanceur. Les capacités qui changent un calcul sont reconnues par leur identifiant stable (Défense sans armure, Résilience draconique, Robustesse naine, Robuste, Résilient).
+- **Règles ajoutées** :
+  - la multiclasse n'accorde jamais de maîtrise de jet de sauvegarde : seules comptent celles de la classe de départ (*Classes*, révision 417100) ;
+  - Robuste : +2 points de vie par niveau du personnage, rétroactivement (*Tough*, révision 438958) ;
+  - augmentations des dons plafonnées à 20 ; Résilient donne la maîtrise de la sauvegarde de la caractéristique augmentée (*Feats*, révision 439281) ;
+  - un chevalier occulte ou un escroc arcanique lance ses sorts avec la caractéristique d'incantation de sa classe, l'Intelligence d'après les fiches.
+- **Détail du calcul** : points de vie et classe d'armure sont rendus terme à terme (premier niveau, niveaux suivants par classe, bonus par niveau ; base de la formule et modificateurs). L'écran traduit ces termes en français ; les tests vérifient que leur somme égale le résultat des fonctions de règles prises une à une.
+- **Problèmes signalés**, distingués entre invalides (le jeu ne le permettrait pas) et incomplets (un choix reste à faire) : budget ou bornes de l'achat de points, bonus manquants ou sur la même caractéristique, classe inconnue, plus de 12 niveaux, don absent ou mal placé, répartition contraire à la fiche du don, sous-classe manquante, d'une autre classe ou au mauvais niveau.
+- **Hors du calcul pour l'instant** : armure et équipement, bonus de race aux compétences, sorts connus. La fiche montre la classe d'armure sans équipement.
+

@@ -31,4 +31,13 @@ object RuleSources {
 
     /** « Hit points » : points de vie par classe, modificateur de Constitution rétroactif, capacités passives. */
     const val HIT_POINTS = "https://bg3.wiki/w/index.php?title=Hit_points&oldid=425339"
+
+    /** « Classes », section « Multiclassing » : la multiclasse n'accorde jamais de maîtrise de jet de sauvegarde ; niveau 12 au total. */
+    const val CLASSES = "https://bg3.wiki/w/index.php?title=Classes&oldid=417100"
+
+    /** « Feats » : augmentations de caractéristique plafonnées à 20 ; Résilient donne la maîtrise de la sauvegarde choisie. */
+    const val FEATS = "https://bg3.wiki/w/index.php?title=Feats&oldid=439281"
+
+    /** « Tough » : +2 points de vie maximaux par niveau du personnage, rétroactivement, niveau 1 compris. */
+    const val TOUGH = "https://bg3.wiki/w/index.php?title=Tough&oldid=438958"
 }

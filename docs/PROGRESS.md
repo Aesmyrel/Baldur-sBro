@@ -1,6 +1,6 @@
 # Avancement
 
-_Dernière mise à jour : 03/11/2026, phase 1 validée ; phases 2 et 3 en cours._
+_Dernière mise à jour : 04/11/2026, phase 1 validée ; phases 2, 3 et 4 en cours._
 
 ## Fait
 - **Phase 0 — plan et direction artistique**
@@ -33,6 +33,11 @@ _Dernière mise à jour : 03/11/2026, phase 1 validée ; phases 2 et 3 en cours.
   - Fait : base du joueur (révélations par jeton, noms corrigés, favoris) et porte du contenu (D-073) ; recherche globale filtrée par le verrou, 2 à 8 ms sur la base complète (D-074) ; écrans du Grimoire (accueil, listes, fiches) et de la recherche, avec captures (D-076).
   - Fait aussi : écrans du Codex (accueil, thèmes, fiches de lore avec variantes, voiles et références ; D-081) ; 12 fiches pilotes réécrites après relecture (D-080), seconde relecture en cours.
   - À faire : carte, schéma des plans, chronologie, mode lecture ; tests de fuite sur l'arbre sémantique des écrans ; vérification indépendante de la phase.
+
+- **Phase 4 — builds**
+  - Fait : moteur de règles `core:rules`, chaque règle sourcée et testée : caractéristiques et achat de points, maîtrise, points de vie, emplacements de sort et multiclasse (D-084) ; classe d'armure, jets de d20 exacts, valeurs passives (D-085).
+  - Fait aussi : modèle de build (`core:model`) et fiche calculée, avec le détail de chaque calcul et les choix invalides ou incomplets signalés ; profils tirés des données de jeu (D-086).
+  - À faire : enregistrement des builds, écran de l'atelier (piste des niveaux, achat de points, statistiques, détail du calcul), partage, vue du groupe.
 
 ## Reste à faire
 - Phase 2b : pipeline du lore.
