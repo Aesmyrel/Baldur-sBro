@@ -312,3 +312,18 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - le modèle complet pour les relectures indépendantes, où l'exigence compte le plus ;
   - les phases de l'appli (builds, Ma partie, outils, finitions) sont menées sans agent de production, avec une seule vérification indépendante en fin de phase.
 - **Aperçu** : un APK de débogage, installable hors Play Store, est fourni avant la V1 pour juger l'allure sur le téléphone. Il n'est pas signé avec la clé finale ; son contenu est partiel.
+
+**D-084 — Moteur de règles, premier lot (phase 4).** Chaque règle de `core:rules` cite sa page de bg3.wiki et sa révision (`RuleSources`). Toutes ont leurs tests, sur les exemples chiffrés des pages et par recoupement avec les tableaux des classes de `data/game`.
+- **Modificateur de caractéristique** : (valeur − 10) / 2 arrondi vers le bas, plafonné à +10. Source : *Abilities*, révision 439175.
+- **Achat de points** : 27 points, valeurs de 8 à 15, un point par cran jusqu'à 13, deux pour 14 et pour 15, puis un +2 et un +1 (*Character creation*, révision 416995). La page donne 17 comme valeur de départ maximale : les deux bonus vont donc à deux caractéristiques différentes.
+- **Bonus de maîtrise** : +2, puis +3 au niveau 5 et +4 au niveau 9, selon le niveau du personnage. DD des sorts : 8 + modificateur + maîtrise (*Proficiency*, révision 439299). Sorts préparés : modificateur + niveau de classe, au moins 1 (*Spells*, révision 433193).
+- **Points de vie** (*Hit points*, révision 425339) :
+  - valeur de départ de la première classe, puis gain par niveau de chaque classe prise ;
+  - modificateur de Constitution à chaque niveau, rétroactif ;
+  - Robustesse naine +1 par niveau ; Résilience draconique +1 par niveau d'ensorceleur.
+- **Emplacements de sort** (*Spells*, révision 433193) :
+  - niveau d'incantateur effectif : pour une seule classe, son niveau ou sa moitié ou son tiers arrondis au-dessus ; en multiclasse, la somme des parts arrondie au-dessous ; l'occultiste est exclu ;
+  - une classe ne compte qu'à partir du niveau où elle obtient l'Incantation (2 pour le paladin et le rôdeur, 3 pour les tiers de lanceur, d'après leurs tableaux) ;
+  - le recoupement retrouve exactement les tableaux des sept classes d'incantation et des deux tiers de lanceur.
+- **Exception du rôdeur** : au niveau 12, il gagne un emplacement de niveau 3 de plus que la table. La page *Ranger* (révision 422145) le présente comme un écart voulu par BG3. Le moteur l'applique au rôdeur pur ; en multiclasse, la table générale s'applique, faute de source contraire.
+- **Pas encore couvert** : classe d'armure, jets de d20 (avantage, critiques), probabilités, dons par niveau. C'est le lot suivant.
