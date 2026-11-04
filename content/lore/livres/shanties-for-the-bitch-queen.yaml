@@ -4,63 +4,100 @@ nom: { fr: Chants de marins pour la Reine Garce, en: Shanties for the Bitch Quee
 etiquette_titre: { act: acte1, level: aucun, otherWorks: aucun }
 etiquette: { act: acte1, level: aucun, otherWorks: aucun }
 resume: >-
-  Un petit recueil de chants de marins à la gloire d’Umberlie, la déesse des mers, posé sur un ponton de la Plage ravagée dès le début de l’Acte I.
+  Un recueil de chants de marins dédié à Umberlie, la cruelle déesse des mers, que l’on peut ramasser dès l’Acte I.
 sections:
   - type: bg3
-    titre: Sur le ponton de la Plage ravagée
+    titre: Le livre dans le jeu
     etiquette: { act: acte1, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Ce petit livre se ramasse dès les premiers pas de l’Acte I, sur le ponton en ruine de la Plage ravagée, au nord de l’épave du nautiloïde. C’est un recueil de chants de marins composés pour Umberlie (Umberlee), la déesse de la mer, que le jeu attribue à son Église plutôt qu’à un auteur nommé. Tous disent la même chose : la mer, le vent et la vie des équipages restent à la merci d’une déesse qu’il faut se concilier.
+          Ce recueil de chants de marins, dédié à Umberlie et que le jeu attribue à l’Église de la déesse, se trouve dès l’Acte I sur la Plage ravagée (Ravaged Beach), dans les Terres sauvages. Paru au XVe siècle CV, il a la faveur des pêcheurs des Western Heartlands.
         nature: canon_bg3
-        refs: [ { ref: b-bg3wiki-shanties-for-the-bitch-queen }, { ref: bg3wiki-ravaged-beach } ]
+        refs:
+          - { ref: b-bg3wiki-shanties-for-the-bitch-queen }
+          - { ref: bg3wiki-ravaged-beach }
+          - { ref: b-frwiki-umberlee }
   - type: general
     titre: Umberlie, la Reine Garce
     etiquette: { act: acte1, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Dans le panthéon de Faerûn, Umberlie (Umberlee) gouverne les océans, les courants, les vagues et les vents du large. Les suppléments de la 2e et de la 3e édition la décrivent cruelle, vaniteuse, avide et lunatique : elle ne tient pas ses promesses et se réjouit des naufrages. On la vénère donc surtout par peur, et la 5e édition range encore les marins et les habitants des côtes parmi ses fidèles, sous le domaine de la Tempête. Elle appartient aux dieux de la fureur que mène Talos, aux côtés d’Aurile et de Malar ; ses titres de Reine des Profondeurs et de Mère de l’Onde se retrouvent jusque dans les suppléments parus en 2025.
+          Umberlie (Umberlee) est la déesse mauvaise de la mer du panthéon faerûnien, la divinité furieuse des eaux profondes. On la nomme la Reine Garce (The Bitch Queen), la Reine des Profondeurs (Queen of the Depths), la Mère de l’Onde ou Mère des vagues (The Wavemother) et, en anglais, Great Queen of the Sea ou Stormgoddess of the Seas. Malveillante, mesquine, cupide et vaniteuse, friande de flatteries, elle règne sur la rudesse des flots et noie qui lui plaît ; elle ne respecte aucun pacte et se délecte des noyades comme des proies des prédateurs marins, mais se montre parfois généreuse envers qui l’honore. On la prie surtout par peur, et bien des navires portent son nom.
         nature: canon_dnd
         edition: multi
         refs:
-          - { ref: b-frwiki-umberlee }
-          - { ref: b-frwiki-umberlee/faiths-and-avatars, page: "173" }
-          - { ref: b-frwiki-umberlee/faiths-and-pantheons, page: "82-83" }
-          - { ref: b-frwiki-umberlee/phb-5e-2014, page: "62, 294" }
-          - { ref: b-frwiki-umberlee/heroes-of-faerun, page: "123, 127" }
+          - { ref: b-frwiki-umberlee/faiths-and-pantheons, page: "82" }
           - { ref: b-mroi-umberlie }
+          - { ref: b-frwiki-umberlee }
+          - { ref: b-frwiki-umberlee/heroes-of-faerun, page: "127" }
       - texte: >-
-          Ce culte se paie. Le clergé d’Umberlie prêche la peur de ses vagues et de ses vents, ne rend aucun service sans lourde dîme et, contre rémunération, embarque avec les équipages pour leur garantir une traversée paisible. Avant le départ, marins, marchands et gens des côtes laissent sur ses autels fleurs, bougies, pièces ou friandises, que les prêtres emportent quand nul ne les voit, en lavant l’autel à l’eau de mer et au varech pour signifier que la déesse a pris sa part. Quand la tempête se lève, on jette par-dessus bord or, gemmes ou cargaison, parfois au son d’airs qui lui sont dédiés ; et si le navire sombre malgré tout, il arrive que l’équipage se retourne contre les prêtres qui lui avaient promis la sécurité.
+          Son dogme est simple : la mer, cruelle par nature, est le plus dangereux des lieux, et qui la défie doit payer ; sa clémence s’achète. Avant un voyage, on dépose sur ses autels fleurs, bougies, pièces ou friandises, que le clergé retire sans témoin avant de laver l’autel à l’eau de mer et au varech : la déesse a prélevé sa dîme. En mer, on jette gemmes et or par-dessus bord pour calmer les flots et, au plus fort du péril, la cargaison part à l’eau avec des êtres vivants. Ses prêtres ne rendent aucun service gratuit ; si un navire sombre malgré l’un d’eux, l’équipage se retourne contre lui. Le novice subit le rite de la Noyade et n’est confirmé que s’il en réchappe. Quiconque attribue à Talos les tempêtes marines doit périr.
         nature: canon_dnd
-        edition: multi
+        edition: add2
         refs:
-          - { ref: b-frwiki-umberlee }
-          - { ref: b-mroi-umberlie }
           - { ref: b-frwiki-umberlee/faiths-and-avatars, page: "173-174" }
-          - { ref: b-frwiki-umberlee/faiths-and-pantheons, page: "83" }
       - texte: >-
-          Notre lecture : le recueil reflète fidèlement ce rapport de crainte. Aucun de ses chants ne vante la bonté de la déesse ; tous reconnaissent son pouvoir sur le vent et sur la houle, et se contentent de demander qu’elle les tolère. Ils tiennent davantage de la prière prudente, celle de gens qui vivent de la mer et savent ce qu’elle peut leur coûter, que de l’hymne de dévotion qu’on adresserait à une divinité bienveillante.
-        nature: interpretation
+          Parmi les dieux, elle ne compte guère d’amis. Talos empiète sur son domaine, les tempêtes marines ; elle se sait trop faible pour le combattre et a tenté, pour faire diversion, une liaison avec lui. Elle hait Chauntéa, qui règne sur la terre, jalouse Sunie pour sa beauté, et a pour ennemis Séluné, dont la lumière guide les navigateurs, et Valkur, que les marins prient pour rentrer sains et saufs. Ses temples sont rares et son culte, désorganisé, partout détesté, ne vit que de la peur ; on paie pourtant ses clercs pour accompagner les marins. Au dégel du port, la fête de la Première Marée (First Tide) jette à l’eau un animal en cage lesté d’une pierre ; s’il survit, il devient sacré et reçoit le rang de prêtre.
+        nature: canon_dnd
+        edition: 3e
         refs:
-          - { ref: b-bg3wiki-shanties-for-the-bitch-queen }
+          - { ref: b-frwiki-umberlee/faiths-and-pantheons, page: "82-83" }
+          - { ref: b-mroi-umberlie }
+      - texte: >-
+          À la fin du XVe siècle CV, elle appartient au Premier Cercle, les dieux de la nature, aux côtés de Chauntéa, Eldath, Mielikki, Silvanus, Aurile, Malar et Talos ; les druides de ce cercle la vénèrent comme le visage cruel de la nature. Le Player’s Handbook de 2014 la dit chaotique mauvaise, lui attribue la mer et le domaine de clerc de la Tempête, et la figure par une vague qui se recourbe vers la gauche et vers la droite.
+        nature: canon_dnd
+        edition: 5e-2014
+        refs:
+          - { ref: b-frwiki-umberlee/scag, page: "126" }
+          - { ref: b-frwiki-umberlee/phb-5e-2014, page: "62, 294" }
+      - texte: >-
+          Dans Faiths & Avatars (1996), elle est une divinité intermédiaire, chaotique mauvaise, dont le royaume, Blood Tor, se trouve dans la 13e strate des Abysses. Elle compte parmi les dieux de la Fureur, voit en Aurile sa plus proche alliée, qu’elle appelle au besoin, et détruirait volontiers Talos pour lui prendre son domaine de destruction, si l’occasion s’en présentait.
+        nature: canon_dnd
+        edition: add2
+        variantes: royaume
+        refs:
+          - { ref: b-frwiki-umberlee/faiths-and-avatars, page: "173" }
           - { ref: b-frwiki-umberlee }
+      - texte: >-
+          Faiths and Pantheons (2002) en fait toujours une divinité intermédiaire et chaotique mauvaise, établie dans le Cœur de la Fureur, où son royaume est la Mer de Sang. Une vague bleu-vert qui se recourbe à gauche et à droite lui sert de symbole, le trident « Drowning Death » d’arme ; elle a pour attributions les courants, les océans, les vents marins et les vagues, et pour fidèles les gens des côtes, les marins et les créatures marines, krakens et requins-garous compris.
+        nature: canon_dnd
+        edition: 3e
+        variantes: royaume
+        refs:
+          - { ref: b-frwiki-umberlee/faiths-and-pantheons, page: "82-84" }
+          - { ref: b-mroi-umberlie }
+      - texte: >-
+          Dans la cosmologie de la 4e édition, elle réside dans la Nature sauvage (Deep Wilds), un domaine qu’elle partage avec Silvanus, Aurile, Mielikki et Shiallia.
+        nature: canon_dnd
+        edition: 4e
+        variantes: royaume
+        refs:
+          - { ref: b-frwiki-umberlee }
+      - texte: >-
+          Forgotten Realms: Heroes of Faerûn (2025) lui donne pour plan d’origine les Abysses. Elle y compte parmi les dieux de la Fureur que mène Talos, son supérieur et son patron, aux côtés d’Aurile et de Malar, et ses fidèles sont les habitants des côtes et les marins.
+        nature: canon_dnd
+        edition: 5e-2024
+        variantes: royaume
+        refs:
+          - { ref: b-frwiki-umberlee/heroes-of-faerun, page: "99, 123, 127" }
   - type: bg3
-    titre: Plus tard, à la Porte de Baldur
+    titre: Plus loin dans l’aventure
     etiquette: { act: acte3, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Le livre n’est pas unique : un autre exemplaire attend dans le Tabernacle de Stormshore, un temple de la Ville basse de la Porte de Baldur où les fidèles de presque tous les dieux viennent prier. Umberlie possède d’ailleurs son propre sanctuaire dans le même quartier, la Maison de la Reine des eaux, bâtie sur un cap rocheux au bout des Quais du port Gris ; sous son portique, une fontaine à l’image de la déesse reçoit les prières et les offrandes du peuple.
+          Un second exemplaire du recueil se trouve au Tabernacle de Stormshore (Stormshore Tabernacle), dans la Ville basse de l’Acte III.
         nature: canon_bg3
         refs:
-          - { ref: b-bg3wiki-shanties-for-the-bitch-queen }
           - { ref: b-bg3wiki-stormshore-tabernacle }
-          - { ref: b-bg3wiki-water-queens-house }
+  - type: general
+    titre: Le temple de la Porte de Baldur
+    etiquette: { act: acte3, level: aucun, otherWorks: aucun }
+    paragraphes:
       - texte: >-
-          Ce temple ne doit rien au hasard : dans le canon de D&D, la Maison de la Reine des eaux est le plus ancien temple de la Porte de Baldur, et les suppléments la décrivent desservie par des veuves de marins disparus en mer. Le détail figure déjà dans Forgotten Realms Adventures (1990), revient dans le Sword Coast Adventurer’s Guide (2015), et l’aventure Baldur’s Gate: Descent into Avernus (2019) confirme l’ancienneté du lieu.
+          La Maison de la Reine des eaux est le temple d’Umberlie de la Porte de Baldur. Dès Forgotten Realms Adventures (1990), des veuves de marins péris en mer le desservent, et Le Guide des aventuriers de la côte des Épées (2015) les y retrouve ; La Porte de Baldur : Descente en Averne (2019) en fait le plus ancien temple de la ville. À Eauprofonde (Waterdeep), le temple Queenspire, tourné vers le port, est lui aussi tenu surtout par des veuves de marins.
         nature: canon_dnd
         edition: multi
         refs:
-          - { ref: b-frwiki-umberlee }
           - { ref: b-frwiki-umberlee/forgotten-realms-adventures, page: "76" }
           - { ref: b-frwiki-umberlee/scag, page: "41" }
           - { ref: b-frwiki-umberlee/descent-into-avernus, page: "193" }

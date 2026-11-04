@@ -81,7 +81,7 @@ relations:
 ```
 
 - Une relation peut viser une fiche de jeu (`item.…`, `spell.…`, `place.…`) si elle existe dans `data/game`.
-- Sections : 2 à 5 par fiche, paragraphes de 60 à 160 mots ; une fiche « socle » fait 300 à 900 mots.
+- Sections : 2 à 5 par fiche, paragraphes de 60 à 160 mots ; une fiche « socle » fait 300 à 900 mots. Exceptions : un paragraphe de variante qui ne porte qu'un fait, et une section `bg3` réduite à une ou deux phrases, peuvent être plus courts.
 
 ## 4. Références (`content/references/<lot>.yaml`)
 

@@ -1312,12 +1312,12 @@
     "facts": {
       "@type": "lore",
       "theme": "livres",
-      "summary": "Un petit recueil de chants de marins à la gloire d’Umberlie, la déesse des mers, posé sur un ponton de la Plage ravagée dès le début de l’Acte I.",
+      "summary": "Un recueil de chants de marins dédié à Umberlie, la cruelle déesse des mers, que l’on peut ramasser dès l’Acte I.",
       "sections": [
         {
           "id": "s1",
           "type": "bg3",
-          "title": "Sur le ponton de la Plage ravagée",
+          "title": "Le livre dans le jeu",
           "tag": {
             "act": "acte1",
             "level": "aucun",
@@ -1325,7 +1325,7 @@
           },
           "paragraphs": [
             {
-              "text": "Ce petit livre se ramasse dès les premiers pas de l’Acte I, sur le ponton en ruine de la Plage ravagée, au nord de l’épave du nautiloïde. C’est un recueil de chants de marins composés pour Umberlie (Umberlee), la déesse de la mer, que le jeu attribue à son Église plutôt qu’à un auteur nommé. Tous disent la même chose : la mer, le vent et la vie des équipages restent à la merci d’une déesse qu’il faut se concilier.",
+              "text": "Ce recueil de chants de marins, dédié à Umberlie et que le jeu attribue à l’Église de la déesse, se trouve dès l’Acte I sur la Plage ravagée (Ravaged Beach), dans les Terres sauvages. Paru au XVe siècle CV, il a la faveur des pêcheurs des Western Heartlands.",
               "nature": "canon_bg3",
               "refs": [
                 {
@@ -1333,6 +1333,9 @@
                 },
                 {
                   "ref": "bg3wiki-ravaged-beach"
+                },
+                {
+                  "ref": "b-frwiki-umberlee"
                 }
               ]
             }
@@ -1349,73 +1352,125 @@
           },
           "paragraphs": [
             {
-              "text": "Dans le panthéon de Faerûn, Umberlie (Umberlee) gouverne les océans, les courants, les vagues et les vents du large. Les suppléments de la 2e et de la 3e édition la décrivent cruelle, vaniteuse, avide et lunatique : elle ne tient pas ses promesses et se réjouit des naufrages. On la vénère donc surtout par peur, et la 5e édition range encore les marins et les habitants des côtes parmi ses fidèles, sous le domaine de la Tempête. Elle appartient aux dieux de la fureur que mène Talos, aux côtés d’Aurile et de Malar ; ses titres de Reine des Profondeurs et de Mère de l’Onde se retrouvent jusque dans les suppléments parus en 2025.",
+              "text": "Umberlie (Umberlee) est la déesse mauvaise de la mer du panthéon faerûnien, la divinité furieuse des eaux profondes. On la nomme la Reine Garce (The Bitch Queen), la Reine des Profondeurs (Queen of the Depths), la Mère de l’Onde ou Mère des vagues (The Wavemother) et, en anglais, Great Queen of the Sea ou Stormgoddess of the Seas. Malveillante, mesquine, cupide et vaniteuse, friande de flatteries, elle règne sur la rudesse des flots et noie qui lui plaît ; elle ne respecte aucun pacte et se délecte des noyades comme des proies des prédateurs marins, mais se montre parfois généreuse envers qui l’honore. On la prie surtout par peur, et bien des navires portent son nom.",
               "nature": "canon_dnd",
               "edition": "multi",
               "refs": [
                 {
+                  "ref": "b-frwiki-umberlee/faiths-and-pantheons",
+                  "page": "82"
+                },
+                {
+                  "ref": "b-mroi-umberlie"
+                },
+                {
                   "ref": "b-frwiki-umberlee"
                 },
                 {
+                  "ref": "b-frwiki-umberlee/heroes-of-faerun",
+                  "page": "127"
+                }
+              ]
+            },
+            {
+              "text": "Son dogme est simple : la mer, cruelle par nature, est le plus dangereux des lieux, et qui la défie doit payer ; sa clémence s’achète. Avant un voyage, on dépose sur ses autels fleurs, bougies, pièces ou friandises, que le clergé retire sans témoin avant de laver l’autel à l’eau de mer et au varech : la déesse a prélevé sa dîme. En mer, on jette gemmes et or par-dessus bord pour calmer les flots et, au plus fort du péril, la cargaison part à l’eau avec des êtres vivants. Ses prêtres ne rendent aucun service gratuit ; si un navire sombre malgré l’un d’eux, l’équipage se retourne contre lui. Le novice subit le rite de la Noyade et n’est confirmé que s’il en réchappe. Quiconque attribue à Talos les tempêtes marines doit périr.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
                   "ref": "b-frwiki-umberlee/faiths-and-avatars",
-                  "page": "173"
-                },
+                  "page": "173-174"
+                }
+              ]
+            },
+            {
+              "text": "Parmi les dieux, elle ne compte guère d’amis. Talos empiète sur son domaine, les tempêtes marines ; elle se sait trop faible pour le combattre et a tenté, pour faire diversion, une liaison avec lui. Elle hait Chauntéa, qui règne sur la terre, jalouse Sunie pour sa beauté, et a pour ennemis Séluné, dont la lumière guide les navigateurs, et Valkur, que les marins prient pour rentrer sains et saufs. Ses temples sont rares et son culte, désorganisé, partout détesté, ne vit que de la peur ; on paie pourtant ses clercs pour accompagner les marins. Au dégel du port, la fête de la Première Marée (First Tide) jette à l’eau un animal en cage lesté d’une pierre ; s’il survit, il devient sacré et reçoit le rang de prêtre.",
+              "nature": "canon_dnd",
+              "edition": "3e",
+              "refs": [
                 {
                   "ref": "b-frwiki-umberlee/faiths-and-pantheons",
                   "page": "82-83"
                 },
                 {
+                  "ref": "b-mroi-umberlie"
+                }
+              ]
+            },
+            {
+              "text": "À la fin du XVe siècle CV, elle appartient au Premier Cercle, les dieux de la nature, aux côtés de Chauntéa, Eldath, Mielikki, Silvanus, Aurile, Malar et Talos ; les druides de ce cercle la vénèrent comme le visage cruel de la nature. Le Player’s Handbook de 2014 la dit chaotique mauvaise, lui attribue la mer et le domaine de clerc de la Tempête, et la figure par une vague qui se recourbe vers la gauche et vers la droite.",
+              "nature": "canon_dnd",
+              "edition": "5e-2014",
+              "refs": [
+                {
+                  "ref": "b-frwiki-umberlee/scag",
+                  "page": "126"
+                },
+                {
                   "ref": "b-frwiki-umberlee/phb-5e-2014",
                   "page": "62, 294"
-                },
-                {
-                  "ref": "b-frwiki-umberlee/heroes-of-faerun",
-                  "page": "123, 127"
-                },
-                {
-                  "ref": "b-mroi-umberlie"
                 }
               ]
             },
             {
-              "text": "Ce culte se paie. Le clergé d’Umberlie prêche la peur de ses vagues et de ses vents, ne rend aucun service sans lourde dîme et, contre rémunération, embarque avec les équipages pour leur garantir une traversée paisible. Avant le départ, marins, marchands et gens des côtes laissent sur ses autels fleurs, bougies, pièces ou friandises, que les prêtres emportent quand nul ne les voit, en lavant l’autel à l’eau de mer et au varech pour signifier que la déesse a pris sa part. Quand la tempête se lève, on jette par-dessus bord or, gemmes ou cargaison, parfois au son d’airs qui lui sont dédiés ; et si le navire sombre malgré tout, il arrive que l’équipage se retourne contre les prêtres qui lui avaient promis la sécurité.",
+              "text": "Dans Faiths & Avatars (1996), elle est une divinité intermédiaire, chaotique mauvaise, dont le royaume, Blood Tor, se trouve dans la 13e strate des Abysses. Elle compte parmi les dieux de la Fureur, voit en Aurile sa plus proche alliée, qu’elle appelle au besoin, et détruirait volontiers Talos pour lui prendre son domaine de destruction, si l’occasion s’en présentait.",
               "nature": "canon_dnd",
-              "edition": "multi",
+              "edition": "add2",
               "refs": [
-                {
-                  "ref": "b-frwiki-umberlee"
-                },
-                {
-                  "ref": "b-mroi-umberlie"
-                },
                 {
                   "ref": "b-frwiki-umberlee/faiths-and-avatars",
-                  "page": "173-174"
-                },
-                {
-                  "ref": "b-frwiki-umberlee/faiths-and-pantheons",
-                  "page": "83"
-                }
-              ]
-            },
-            {
-              "text": "Notre lecture : le recueil reflète fidèlement ce rapport de crainte. Aucun de ses chants ne vante la bonté de la déesse ; tous reconnaissent son pouvoir sur le vent et sur la houle, et se contentent de demander qu’elle les tolère. Ils tiennent davantage de la prière prudente, celle de gens qui vivent de la mer et savent ce qu’elle peut leur coûter, que de l’hymne de dévotion qu’on adresserait à une divinité bienveillante.",
-              "nature": "interpretation",
-              "refs": [
-                {
-                  "ref": "b-bg3wiki-shanties-for-the-bitch-queen"
+                  "page": "173"
                 },
                 {
                   "ref": "b-frwiki-umberlee"
                 }
-              ]
+              ],
+              "variantGroup": "royaume"
+            },
+            {
+              "text": "Faiths and Pantheons (2002) en fait toujours une divinité intermédiaire et chaotique mauvaise, établie dans le Cœur de la Fureur, où son royaume est la Mer de Sang. Une vague bleu-vert qui se recourbe à gauche et à droite lui sert de symbole, le trident « Drowning Death » d’arme ; elle a pour attributions les courants, les océans, les vents marins et les vagues, et pour fidèles les gens des côtes, les marins et les créatures marines, krakens et requins-garous compris.",
+              "nature": "canon_dnd",
+              "edition": "3e",
+              "refs": [
+                {
+                  "ref": "b-frwiki-umberlee/faiths-and-pantheons",
+                  "page": "82-84"
+                },
+                {
+                  "ref": "b-mroi-umberlie"
+                }
+              ],
+              "variantGroup": "royaume"
+            },
+            {
+              "text": "Dans la cosmologie de la 4e édition, elle réside dans la Nature sauvage (Deep Wilds), un domaine qu’elle partage avec Silvanus, Aurile, Mielikki et Shiallia.",
+              "nature": "canon_dnd",
+              "edition": "4e",
+              "refs": [
+                {
+                  "ref": "b-frwiki-umberlee"
+                }
+              ],
+              "variantGroup": "royaume"
+            },
+            {
+              "text": "Forgotten Realms: Heroes of Faerûn (2025) lui donne pour plan d’origine les Abysses. Elle y compte parmi les dieux de la Fureur que mène Talos, son supérieur et son patron, aux côtés d’Aurile et de Malar, et ses fidèles sont les habitants des côtes et les marins.",
+              "nature": "canon_dnd",
+              "edition": "5e-2024",
+              "refs": [
+                {
+                  "ref": "b-frwiki-umberlee/heroes-of-faerun",
+                  "page": "99, 123, 127"
+                }
+              ],
+              "variantGroup": "royaume"
             }
           ]
         },
         {
           "id": "s3",
           "type": "bg3",
-          "title": "Plus tard, à la Porte de Baldur",
+          "title": "Plus loin dans l’aventure",
           "tag": {
             "act": "acte3",
             "level": "aucun",
@@ -1423,28 +1478,31 @@
           },
           "paragraphs": [
             {
-              "text": "Le livre n’est pas unique : un autre exemplaire attend dans le Tabernacle de Stormshore, un temple de la Ville basse de la Porte de Baldur où les fidèles de presque tous les dieux viennent prier. Umberlie possède d’ailleurs son propre sanctuaire dans le même quartier, la Maison de la Reine des eaux, bâtie sur un cap rocheux au bout des Quais du port Gris ; sous son portique, une fontaine à l’image de la déesse reçoit les prières et les offrandes du peuple.",
+              "text": "Un second exemplaire du recueil se trouve au Tabernacle de Stormshore (Stormshore Tabernacle), dans la Ville basse de l’Acte III.",
               "nature": "canon_bg3",
               "refs": [
                 {
-                  "ref": "b-bg3wiki-shanties-for-the-bitch-queen"
-                },
-                {
                   "ref": "b-bg3wiki-stormshore-tabernacle"
-                },
-                {
-                  "ref": "b-bg3wiki-water-queens-house"
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "type": "general",
+          "title": "Le temple de la Porte de Baldur",
+          "tag": {
+            "act": "acte3",
+            "level": "aucun",
+            "otherWorks": "aucun"
+          },
+          "paragraphs": [
             {
-              "text": "Ce temple ne doit rien au hasard : dans le canon de D&D, la Maison de la Reine des eaux est le plus ancien temple de la Porte de Baldur, et les suppléments la décrivent desservie par des veuves de marins disparus en mer. Le détail figure déjà dans Forgotten Realms Adventures (1990), revient dans le Sword Coast Adventurer’s Guide (2015), et l’aventure Baldur’s Gate: Descent into Avernus (2019) confirme l’ancienneté du lieu.",
+              "text": "La Maison de la Reine des eaux est le temple d’Umberlie de la Porte de Baldur. Dès Forgotten Realms Adventures (1990), des veuves de marins péris en mer le desservent, et Le Guide des aventuriers de la côte des Épées (2015) les y retrouve ; La Porte de Baldur : Descente en Averne (2019) en fait le plus ancien temple de la ville. À Eauprofonde (Waterdeep), le temple Queenspire, tourné vers le port, est lui aussi tenu surtout par des veuves de marins.",
               "nature": "canon_dnd",
               "edition": "multi",
               "refs": [
-                {
-                  "ref": "b-frwiki-umberlee"
-                },
                 {
                   "ref": "b-frwiki-umberlee/forgotten-realms-adventures",
                   "page": "76"
@@ -1462,7 +1520,7 @@
           ]
         }
       ],
-      "readingMinutes": 3
+      "readingMinutes": 5
     },
     "links": [
       {
@@ -1516,12 +1574,12 @@
     "facts": {
       "@type": "lore",
       "theme": "objets",
-      "summary": "Un anneau d’or couvert d’un givre éternel, capable d’enfermer toute une contrée dans l’hiver, et animé d’une volonté qui pousse son porteur au pire.",
+      "summary": "Bague d’or sous un givre éternel, cet artefact voué à l’hiver rend son porteur immortel tout en cherchant à le dominer.",
       "sections": [
         {
           "id": "s1",
           "type": "general",
-          "title": "Un hiver tenu dans la main",
+          "title": "Une bague de givre",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -1529,16 +1587,10 @@
           },
           "paragraphs": [
             {
-              "text": "À le voir, l’Anneau de l’hiver (Ring of Winter) n’a rien d’un artefact : c’est un simple anneau d’or, sans le moindre ornement, qui s’ajuste au doigt de son porteur. Seule singularité, une mince pellicule de givre le recouvre, qu’aucune chaleur ordinaire ne fait fondre. Qui le passe au doigt sent d’abord sa main s’engourdir ; une fois harmonisé avec lui, il ne perçoit plus ce froid. Selon Tomb of Annihilation (2017), l’anneau rend alors son porteur insensible au froid et invisible aux divinations, et suspend pour lui le cours des ans, sans le protéger d’un vieillissement d’origine magique.",
+              "text": "Rien ne distingue d’abord l’Anneau de l’hiver : c’est une bague d’or unie, sans ornement, qui s’ajuste au doigt qui la porte. Mais une couche de givre la couvre en permanence, qu’aucune chaleur ordinaire ne fait fondre, et son contact glacé engourdit la main, jusqu’à ce que le porteur s’harmonise avec elle et cesse d’en sentir le froid. Cet artefact très puissant accorde d’abord des dons permanents : l’immunité au froid, l’arrêt du vieillissement, qui le rend immortel sans le protéger d’un vieillissement d’origine magique, et l’invisibilité aux yeux de la magie de divination.",
               "nature": "canon_dnd",
               "edition": "5e-2014",
               "refs": [
-                {
-                  "ref": "b-frwiki-ring-of-winter"
-                },
-                {
-                  "ref": "b-mroi-anneau-de-l-hiver"
-                },
                 {
                   "ref": "b-frwiki-ring-of-winter/tomb-of-annihilation",
                   "page": "207-208"
@@ -1550,16 +1602,10 @@
               ]
             },
             {
-              "text": "Le même ouvrage lui prête des pouvoirs dignes de son nom. D’un geste, le porteur peut faire chuter la température jusqu’à environ −34 °C (−30 °F) dans une sphère de 36 mètres (120 pieds) de rayon, un froid qui ne cesse que s’il le décide, et façonner dans la glace aussi bien des objets que des créatures animées. L’anneau sert encore à lancer une série de sorts : cône de froid, tempête de grêle, tempête de neige, mur de glace, sphère glaciale d’Otiluke, croissance d’épines, main de Bigby, et une forme glacée de pétrification. Chaque aube lui rend l’énergie qu’il a dépensée.",
+              "text": "Le porteur commande aussi au froid : il peut abaisser vite et durablement la température d’une sphère de 120 pieds (environ 36 m) de rayon, jusqu’à −30 °F (environ −34 °C), répéter cet effet et le maintenir tant qu’il le souhaite ; il façonne dans la glace des objets inanimés comme des créatures animées. L’anneau lui ouvre en outre les sorts Main de Bigby, Cône de froid, Tempête de grêle, Tempête de neige, Mur de glace, Sphère glaciale d’Otiluke, Croissance d’épines et une version glacée de Pétrification ; l’énergie de ces pouvoirs revient chaque jour à l’aube.",
               "nature": "canon_dnd",
               "edition": "5e-2014",
               "refs": [
-                {
-                  "ref": "b-frwiki-ring-of-winter"
-                },
-                {
-                  "ref": "b-mroi-anneau-de-l-hiver"
-                },
                 {
                   "ref": "b-frwiki-ring-of-winter/tomb-of-annihilation",
                   "page": "207-208"
@@ -1571,7 +1617,7 @@
         {
           "id": "s2",
           "type": "general",
-          "title": "Une volonté glacée",
+          "title": "Une volonté mauvaise",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -1579,19 +1625,32 @@
           },
           "paragraphs": [
             {
-              "text": "L’anneau pense et veut. Pour la 5e édition, c’est un objet intelligent d’alignement chaotique mauvais, qui se plaît à détruire et à faire souffrir. Il parle à son porteur par des émotions, cherche sans relâche à le dominer et, s’il y parvient, le pousse à blesser sans raison ni pitié, à s’attirer de nouveaux ennemis et à courir à sa perte. Les légendes lui prêtent d’autres pouvoirs, réservés à un maître mauvais qui saurait ne pas se laisser dominer : un djinn au service d’un pacha calishite lui attribue le pouvoir de convoquer des dragons blancs, voire l’être primordial Cryonax, et les géants du givre, qui l’appellent « la Glace qui ne fond jamais » (The Ice that Never Melts), le croient capable de figer des mondes entiers dans l’hiver. On ne pourrait le briser qu’au doigt de Titania, la Reine de l’Été.",
+              "text": "L’anneau pense, et il est chaotique mauvais. Il communique avec son porteur par des émotions et tente sans relâche de le dominer. Il aime la destruction et le mal fait à autrui : il veut pousser celui qui le porte à des ravages et à des souffrances inutiles, attirer sur lui la colère de ses ennemis, puis le perdre. Le porteur qu’il domine se montre d’une violence gratuite et sans pitié envers son entourage.",
               "nature": "canon_dnd",
               "edition": "5e-2014",
               "refs": [
                 {
-                  "ref": "b-frwiki-ring-of-winter"
+                  "ref": "b-frwiki-ring-of-winter/tomb-of-annihilation",
+                  "page": "207-208"
                 },
                 {
-                  "ref": "b-mroi-anneau-de-l-hiver"
-                },
+                  "ref": "b-mroi-anneau-de-l-hiver/tomb-of-annihilation",
+                  "page": "206 (éd. fr.)"
+                }
+              ]
+            },
+            {
+              "text": "Quasi indestructible, il ne peut être détruit qu’au doigt de Titania, la Reine de l’Été. Selon des rumeurs, dont l’une vient d’un djinn au service d’un pacha calishite, il pourrait geler des mondes entiers, appeler des dragons blancs ou le primordial Cryonax, et réserverait d’autres pouvoirs à un être mauvais capable d’échapper à son emprise. Les géants du givre, qui le surnomment « The Ice that Never Melts », le croient capable de plonger des mondes dans un hiver sans fin ; dans les mers qu’il gèle apparaît l’icebound whelk, un escargot de mer dont la coquille est recherchée pour ses propriétés magiques.",
+              "nature": "canon_dnd",
+              "edition": "5e-2014",
+              "refs": [
                 {
                   "ref": "b-frwiki-ring-of-winter/tomb-of-annihilation",
                   "page": "207-208"
+                },
+                {
+                  "ref": "b-mroi-anneau-de-l-hiver/tomb-of-annihilation",
+                  "page": "207 (éd. fr.)"
                 },
                 {
                   "ref": "b-frwiki-ring-of-winter/storm-kings-thunder",
@@ -1604,7 +1663,7 @@
         {
           "id": "s3",
           "type": "general",
-          "title": "Une très vieille légende",
+          "title": "Aux origines",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -1612,7 +1671,7 @@
           },
           "paragraphs": [
             {
-              "text": "Volo’s Guide to All Things Magical (1996), un supplément de la 2e édition, lui connaît un don plus discret que ses tempêtes : tout objet magique qui séjourne plus de dix jours à moins de 6 mètres (20 pieds) de lui s’en trouve renforcé, et l’effet croît avec la durée. Sur son origine, le guide ne peut rapporter qu’une très vieille tradition, du temps où les royaumes à venir n’étaient que des hameaux dispersés : l’anneau serait l’œuvre d’un grand mage, en qui certains reconnaissent Azuth avant son ascension divine, et Aurile, déesse de l’hiver, l’aurait marqué d’un baiser.",
+              "text": "Son origine véritable reste mal connue. D’après le Volo’s Guide to All Things Magical (1996), un mage puissant, peut-être Azuth avant qu’il ne devienne dieu, le forge quand les pays des Royaumes ne sont encore que des villages épars, et l’anneau porte la marque de la faveur d’Aurile (Auril), déesse de l’hiver ; tout objet magique gardé plus de dix jours à moins de 20 pieds de lui gagne en puissance, d’autant plus que l’exposition dure. Cormanthyr: Empire of the Elves (1998) le situe au Cormyr en 163 CV : en plein été, il y déchaîne une tempête de glace qui détruit un village entier et la demeure d’un noble cormyrien. Les elfes de Cormanthyr l’identifient alors, et regrettent de n’avoir pas guidé son porteur à temps ; en 650 CV, cette tempête reste sa dernière apparition connue en Faerûn.",
               "nature": "canon_dnd",
               "edition": "add2",
               "refs": [
@@ -1621,25 +1680,8 @@
                   "page": "112"
                 },
                 {
-                  "ref": "b-frwiki-ring-of-winter"
-                }
-              ]
-            },
-            {
-              "text": "Cormanthyr: Empire of the Elves (1998) le fait surgir dans l’histoire en 163 CV, au Cormyr : en plein été, sa magie y déchaîne une tempête de glace qui rase un village entier et la demeure d’un noble. Les elfes du Cormanthyr reconnaissent l’artefact, et regrettent de n’avoir pas averti son porteur avant que le drame n’ait lieu. Le même ouvrage n’en signale aucune autre trace sur le continent de Faerûn jusqu’en 650 CV au moins. Le roman de 1992 ajoute qu’un bara originaire du Cormyr, Dhalmass Rayburton, le trouve plus tard dans les Vaux et finit par l’emporter jusqu’au Chult.",
-              "nature": "canon_dnd",
-              "edition": "add2",
-              "refs": [
-                {
                   "ref": "b-frwiki-ring-of-winter/cormanthyr-empire-of-the-elves",
                   "page": "28, 36"
-                },
-                {
-                  "ref": "b-frwiki-ring-of-winter/the-ring-of-winter-novel",
-                  "page": "307"
-                },
-                {
-                  "ref": "b-frwiki-ring-of-winter"
                 }
               ]
             }
@@ -1648,7 +1690,7 @@
         {
           "id": "s4",
           "type": "autres_oeuvres",
-          "title": "Du roman aux aventures",
+          "title": "Porteurs et convoitises",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -1656,32 +1698,60 @@
           },
           "paragraphs": [
             {
-              "text": "Le roman The Ring of Winter (1992), de James Lowder, fait de l’anneau l’objet d’une quête de plusieurs années, celle d’Artus Cimber, un ancien Ménestrel. En 1362 CV, il apprend qu’il dort dans le temple d’Ubtao de Mezro, la cité perdue du Chult, où Dhalmass l’a caché après avoir tué par accident plusieurs personnes en s’en servant. Artus le retrouve, en tire des rapières de glace et repousse grâce à lui l’assaut des gobelins batiris contre la cité. Il voit dans les efforts de l’anneau pour le dominer une épreuve continue et se persuade que l’artefact sert au fond le bien et refuse les âmes corruptibles : c’est la conviction d’un personnage, que les règles de la 5e édition ne partagent pas.",
+              "text": "Vers 1358 CV, Kelemvor, encore mortel, monte une expédition pour trouver l’anneau ; la créature de glace qui le garde la décime, et seuls Kelemvor et Cyric en réchappent. Avant 1362 CV, l’artefact dort dans le temple d’Ubtao de Mezro, cité perdue du Chult. Dhalmass Rayburton, un bara (paladin immortel d’Ubtao) cormyrien, l’avait trouvé dans les Vaux et, en s’en servant, avait tué plusieurs personnes par accident ; Ras T’fima, un bara de Mezro, l’a brièvement détenu, déclenchant sur la jungle trois jours de neige au lieu d’une heure, avant qu’on ne le cache au temple.",
               "nature": "canon_dnd",
               "edition": "add2",
               "refs": [
                 {
+                  "ref": "b-mroi-anneau-de-l-hiver"
+                },
+                {
                   "ref": "b-frwiki-ring-of-winter/the-ring-of-winter-novel",
-                  "page": "297, 307"
-                },
-                {
-                  "ref": "b-frwiki-ring-of-winter"
-                },
-                {
-                  "ref": "b-frwiki-artus-cimber"
+                  "page": "279, 307"
                 }
               ]
             },
             {
-              "text": "La 5e édition reprend le fil plus d’un siècle après. Dans Storm King’s Thunder (2016), après 1485 CV, le jarl des géants du givre Storvald convoite l’anneau, qu’il croit capable d’élever les siens dans l’ordning, la hiérarchie des géants ; apprenant qu’Artus Cimber le détient, il envoie ses géants à sa recherche, et une fausse piste les mène attaquer Bryn Shander. Dans Tomb of Annihilation (2017), l’anneau, qui le garde de la vieillesse, est toujours au doigt d’Artus, qui parcourt encore le Chult.",
+              "text": "Né en 1328 CV, cadet du bandit de grand chemin Shadowhawk, Artus Cimber, passionné d’histoire et d’archéologie, étudie à la maison d’Oghma de Suzail. Ancien Ménestrel (Harper), il quitte l’organisation, déçu qu’elle ne fasse rien contre les Zhentarim. Vers 1350 CV, il part avec Hydel Pontifax en quête de l’anneau, qu’il récupère à Mezro en 1362 CV. Il repousse avec lui une invasion de gobelins batiri, s’en sert pour façonner des rapières de glace et, vainqueur de l’épreuve d’Ubtao, sait le maîtriser malgré sa malveillance. Artus voit dans ses pulsions une épreuve, persuadé que l’anneau refuse les porteurs corruptibles.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-frwiki-artus-cimber"
+                },
+                {
+                  "ref": "b-frwiki-ring-of-winter/the-ring-of-winter-novel",
+                  "page": "297, 307"
+                }
+              ]
+            },
+            {
+              "text": "Au XVe siècle CV, Artus, que l’anneau rend immortel, le porte toujours et explore le Chult, à la recherche de l’oracle d’Orolunga qui l’aiderait à retrouver Alisanda et la cité disparue de Mezro. Après 1485 CV, le jarl géant du givre Storvald le veut pour élever les siens dans l’ordning ; une pierre de sang des géants mène à Sirac, le fils d’Artus, à Bryn Shander, que Drufi et douze géants du givre attaquent sans succès avant de poursuivre leurs recherches au Chult. Les Zhentarim le traquent aussi, et l’ensorceleuse demi-elfe Xandala se fait passer pour la fille perdue d’Artus afin de s’en emparer.",
               "nature": "canon_dnd",
               "edition": "5e-2014",
               "refs": [
                 {
+                  "ref": "b-mroi-anneau-de-l-hiver/tomb-of-annihilation",
+                  "page": "76 (éd. fr.)"
+                },
+                {
+                  "ref": "b-frwiki-artus-cimber"
+                },
+                {
                   "ref": "b-frwiki-ring-of-winter/storm-kings-thunder"
                 },
                 {
-                  "ref": "b-frwiki-ring-of-winter/tomb-of-annihilation"
+                  "ref": "b-frwiki-ring-of-winter/tomb-of-annihilation",
+                  "page": "64, 236"
+                }
+              ]
+            },
+            {
+              "text": "L’anneau donne son titre au roman de James Lowder The Ring of Winter (TSR, 1992) et passe dans Shadowdale (1989), dont le deuxième chapitre raconte l’expédition de Kelemvor, ainsi que dans Tantras, Prince of Lies et Crusade. On le retrouve dans les aventures Storm King’s Thunder (2016) et Tomb of Annihilation (2017), et dans les jeux vidéo Neverwinter, Idle Champions of the Forgotten Realms et Tales from Candlekeep: Tomb of Annihilation.",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-frwiki-ring-of-winter/the-ring-of-winter-novel"
                 },
                 {
                   "ref": "b-frwiki-ring-of-winter"
@@ -1694,7 +1764,7 @@
           ]
         }
       ],
-      "readingMinutes": 4
+      "readingMinutes": 5
     },
     "links": [
       {
