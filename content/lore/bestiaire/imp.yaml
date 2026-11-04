@@ -54,7 +54,7 @@ sections:
           - { ref: frwiki-imp/monster-manual-v35, page: "56" }
           - { ref: frwiki-imp/monster-manual-5e, page: "76" }
       - texte: >-
-          Le diablotin de Dungeons & Dragons s’inspire de l’imp du folklore européen. Il figure dès le Monster Manual de 1977, puis revient dans de nombreux jeux vidéo, d’Icewind Dale à Neverwinter Nights, de Baldur’s Gate II à Baldur’s Gate III, et dans Neverwinter, ainsi que dans plusieurs romans, parmi lesquels The Fallen Fortress, Passage to Dawn et King Pinch.
+          Le diablotin de Dungeons & Dragons s’inspire de l’imp du folklore européen. Il figure dès la première édition, dans le Monster Manual de 1977, puis revient dans de nombreux jeux vidéo, d’Icewind Dale à Neverwinter Nights, de Baldur’s Gate II à Baldur’s Gate III, et dans Neverwinter, ainsi que dans plusieurs romans, parmi lesquels The Fallen Fortress, Passage to Dawn et King Pinch.
         nature: hors_univers
         refs:
           - { ref: frwiki-imp }
@@ -64,7 +64,7 @@ sections:
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Dans Baldur’s Gate 3, le diablotin peut devenir le familier d’un occultiste. L’occultiste de niveau 3 qui choisit le Pacte de la chaîne accède au sort Appel de familier : diablotin, une conjuration de niveau 1 qui se lance à 18 m et peut aussi se lancer en rituel ; le même pacte lui ouvre Appel de familier : quasit. La capacité Pacte approfondi donne ensuite une attaque supplémentaire au familier du Pacte de la chaîne. Ces noms de sorts et de capacités sont des traductions non officielles.
+          Dans Baldur’s Gate 3, le diablotin peut devenir le familier d’un occultiste. L’occultiste de niveau 3 qui choisit le Pacte de la chaîne accède au sort Appel de familier : diablotin, une conjuration de niveau 1 qui se lance à 18 m et peut aussi se lancer en rituel ; le même pacte lui ouvre Appel de familier : quasit. La capacité Pacte approfondi donne une attaque supplémentaire au familier du Pacte de la chaîne. Ces noms de sorts et de capacités sont des traductions non officielles.
         nature: canon_bg3
         refs:
           - { ref: bg3wiki-imp }

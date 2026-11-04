@@ -12,7 +12,7 @@ sections:
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Les Neuf Enfers, ou Baator, forment le plan des diables, l’incarnation du loyal mauvais. La 1re édition y distingue neuf strates : Averne, Dis, Minauros, Phlegethos, Stygia, Malbolge, Maladomini, Cania et Nessus. Averne, la première et la plus vaste, accueille tout visiteur venu d’ailleurs, et les âmes damnées doivent la traverser avant de gagner les strates inférieures. Asmodée y proscrit tout portail qui ouvrirait sur les autres strates : un envahisseur doit conquérir chacune d’elles pour descendre. Zone tampon entre les Neuf Enfers et les Abysses, c’est elle qu’une offensive démoniaque frapperait d’abord.
+          Les Neuf Enfers, ou Baator, forment le plan des diables, l’incarnation du loyal mauvais. La 1re édition y distingue neuf strates : Averne, Dis, Minauros, Phlegethos, Stygia, Malbolge, Maladomini, Cania et Nessus. Averne, la première et la plus vaste, accueille tout visiteur venu d’ailleurs. Asmodée y proscrit tout portail qui ouvrirait sur les autres strates : un envahisseur doit conquérir chacune d’elles pour descendre. Zone tampon entre les Neuf Enfers et les Abysses, elle serait la tête de pont la plus probable d’une offensive démoniaque.
         nature: canon_dnd
         edition: multi
         refs:
@@ -24,7 +24,7 @@ sections:
           - { ref: frwiki-avernus/fiendish-codex-2, page: "35–39" }
           - { ref: frwiki-avernus }
       - texte: >-
-          Ni soleil ni étoiles n’éclairent Averne : une lueur rouge sang, venue de sous l’horizon, y règne en permanence, et le temps devient difficile à mesurer. Des boules de feu traversent le ciel et retombent en cratères fumants ; leur course paraît due au hasard, mais elles visent, et le voyageur qui ne trouve ni bâtiment ni grotte finit tôt ou tard par en recevoir une. Au sol alternent plaines de cendre jonchées de gravats, collines stériles, volcans, rivières de lave, fosses de goudron, sables mouvants et étendues de sel ; les éboulis interdisent la marche rapide, et des cristaux d’obsidienne entaillent vêtements et peau. L’air sent le soufre, des essaims de mouches assoiffées de sang l’emplissent, et l’eau est presque partout empoisonnée.
+          Ni soleil ni étoiles n’éclairent Averne : une lueur rouge sang, venue de sous l’horizon, y règne en permanence, et le temps devient difficile à mesurer. Des boules de feu traversent le ciel et retombent en cratères fumants ; leur course paraît due au hasard, mais elles visent, et frappent tôt ou tard le voyageur resté sans abri. Au sol alternent plaines de cendre jonchées de gravats, collines stériles, volcans, rivières de lave, fosses de goudron, sables mouvants et étendues de sel ; les éboulis interdisent la marche rapide, et des cristaux d’obsidienne entaillent vêtements et peau. L’air sent le soufre, des essaims de mouches assoiffées de sang l’emplissent, et l’eau est presque partout empoisonnée.
         nature: canon_dnd
         edition: multi
         refs:
@@ -35,7 +35,7 @@ sections:
           - { ref: frwiki-avernus/manual-of-the-planes-3e, page: "116–117" }
           - { ref: frwiki-nine-hells/manual-of-the-planes-1e, page: "109" }
       - texte: >-
-          Averne est le principal champ de bataille de la Guerre du Sang (Blood War). Les démons qui l’envahissent arrivent par le Styx, qui traverse la strate avec ses bras et ses chutes, grossi des ruisseaux et des lacs des plaines. Des légions de diables s’y exercent, prêtes à une sortie, et le commerce des pièces d’âme finance le conflit. Il n’en a pas toujours été ainsi : Asmodée avait d’abord fait de la strate un lieu de délices pour séduire les mortels, et des jardins verdoyants la couvraient avant la guerre. Des siècles de combats ont rasé villes et citadelles ; il en reste des vestiges épars de palais et de jardins, et des forteresses sans cesse rebâties.
+          Averne est le principal champ de bataille de la Guerre du Sang (Blood War). Les démons qui l’envahissent arrivent par le Styx, qui traverse la strate avec ses bras et ses chutes. Des légions de diables s’y exercent, prêtes à une sortie, et le commerce des pièces d’âme finance le conflit. Il n’en a pas toujours été ainsi : Asmodée avait d’abord fait de la strate un lieu de délices pour séduire les mortels, et des jardins verdoyants la couvraient avant la guerre. Des siècles de combats ont rasé villes et citadelles ; il en reste des vestiges épars de palais et de jardins, et des forteresses sans cesse rebâties.
         nature: canon_dnd
         edition: multi
         refs:
@@ -43,7 +43,7 @@ sections:
           - { ref: mroi-averne/descent-into-avernus, page: "9, 75, 78" }
           - { ref: frwiki-avernus/mtof, page: "10–11" }
       - texte: >-
-          Le maître de la strate porte le titre de Seigneur du Premier (Lord of the First). Tiamat l’a jadis gouvernée pour Asmodée ; chargée d’y contenir les diables bannis, elle a échoué et s’est vue réduite à garder la grande porte de Dis. En 1372 CV, le titre revient à Bel, général diantrefosse de la Guerre du Sang, qui a trahi Zariel et demeure au cœur de la Citadelle de bronze (Bronze Citadel) ; la rumeur y dit Zariel captive, vidée de sa puissance. À la fin du XVe siècle CV, Zariel règne de nouveau, depuis une haute citadelle de basalte, et Bel, disgracié pour avoir échoué face à une invasion démoniaque, n’est plus que son conseiller, à l’affût d’une faute qui lui rendrait le titre.
+          Le maître de la strate porte le titre de Seigneur du Premier (Lord of the First). Tiamat l’a jadis gouvernée pour Asmodée ; chargée d’y contenir les diables bannis, elle a échoué et s’est vue réduite à garder la grande porte de Dis. En 1372 CV, le titre revient à Bel, général diantrefosse de la Guerre du Sang, qui a trahi Zariel et demeure au cœur de la Citadelle de bronze (Bronze Citadel). À la fin du XVe siècle CV, Zariel règne de nouveau, depuis une haute citadelle de basalte, et Bel, disgracié pour avoir échoué face à une invasion démoniaque, n’est plus que son conseiller, à l’affût d’une faute qui lui rendrait le titre.
         nature: canon_dnd
         edition: multi
         refs:
@@ -52,7 +52,7 @@ sections:
           - { ref: frwiki-avernus/mtof, page: "10–11, 180–181" }
           - { ref: frwiki-avernus/monster-manual-5e, page: "68" }
       - texte: >-
-          Abishaïs, lémures, nupperibos et spinagons forment le gros de la population, mais on y croise aussi des diablotins, des dragons, des gobelins et des kobolds ; diablotins et spinagons y portent volontiers les messages. Des serviteurs d’autres archidiables y passent, comme les diables barbus venus collecter des âmes. Les mortels ne manquent pas : marchands d’armes, mages, prêtres en mission, érudits et aventuriers s’y risquent, aux côtés de contrebandiers et de marchands d’esclaves. Les diables de la strate jouent de leur orgueil et de leur colère, et les trésors les plus ordinaires leur servent d’outils pour les corrompre.
+          Abishaïs, lémures, nupperibos et spinagons forment le gros de la population, mais on y croise aussi des diablotins, des dragons, des gobelins et des kobolds ; diablotins et spinagons y portent volontiers les messages. Les mortels ne manquent pas : marchands d’armes, mages, prêtres en mission, érudits et aventuriers s’y risquent, aux côtés de contrebandiers et de marchands d’esclaves. Les diables de la strate jouent de leur orgueil et de leur colère, et les trésors les plus ordinaires leur servent d’outils pour les corrompre.
         nature: canon_dnd
         edition: multi
         refs:
@@ -64,12 +64,12 @@ sections:
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Dans la Grande Roue de la 1re édition, les Neuf Enfers comptent parmi les Plans Extérieurs, entre la Géhenne et l’Achéron. Leurs strates, chacune infinie, s’empilent les unes sous les autres, séparées par des barrières fixes : Averne est celle du haut, et l’on gagne Dis en franchissant une barrière en profondeur. Les voyageurs du Plan Astral débouchent en Averne par des bassins colorés ; des portails la relient à l’Achéron, à la Géhenne et au plan de Concordant Opposition, et le Styx la traverse, puis Stygia, avant de passer dans la Géhenne.
+          Dans la Grande Roue de la 1re édition, les Neuf Enfers comptent parmi les Plans Extérieurs, entre la Géhenne et l’Achéron. Leurs strates, chacune infinie, s’empilent les unes sous les autres, séparées par des barrières fixes : Averne est celle du haut, et l’on gagne Dis en franchissant une barrière en profondeur. Les voyageurs du Plan Astral débouchent en Averne par des bassins colorés ; des portails la relient à l’Achéron, à la Géhenne et au plan de Concordant Opposition.
         nature: canon_dnd
         edition: add1
         variantes: cosmologie
         refs:
-          - { ref: frwiki-nine-hells/manual-of-the-planes-1e, page: "73, 83, 109–110" }
+          - { ref: frwiki-nine-hells/manual-of-the-planes-1e, page: "73, 109–110" }
           - { ref: frwiki-nine-hells }
       - texte: >-
           L’Arbre-Monde du Player’s Guide to Faerûn (2004) ne relie chaque plan fiélon qu’au Plan Matériel, par le Plan Astral, jamais aux autres. Le Styx y devient le Fleuve de Sang (River of Blood), qui traverse ces plans et pousse ses bras jusqu’à chaque strate ; c’est ce rapprochement entre diables et démons qui nourrit la Guerre du Sang. Averne touche à la Faille de Sang (Blood Rift), un plan singulier qui joint les Abysses aux Neuf Enfers : c’est d’elle que partent les campagnes contre les démons, et des légions de diables y marchent vers la prochaine.

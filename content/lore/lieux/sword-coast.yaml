@@ -22,7 +22,7 @@ sections:
           - { ref: frwiki-sword-coast/frcs-3e, page: "225" }
           - { ref: frwiki-sword-coast/scag, page: "15" }
       - texte: >-
-          Le littoral décourage les marins. Des falaises blanches et tranchantes, les Dents de l’Épée (Sword’s Teeth), dressées par endroits à près de 800 m, séparent la mer de la terre, notamment entre la Dessarin et Baldur’s Gate ; de vastes cavernes les percent, dont certaines descendent jusqu’en Outreterre. Récifs immergés, brisants et hauts-fonds de vase rendent l’approche périlleuse, les mouillages sont presque inexistants et les ports rares. Dans les terres, des champs verdoyants bordent la Voie côtière (Coast Way), et le gibier abonde, mais au nord du Chionthar s’étendent des terres arides et dangereuses. Ce fleuve, vital au commerce des Contrées du Mitan occidentales, relie Baldur’s Gate à Elturel, Iriaebor, Berdusk et Scornubel. Le Bois du Manteau (Cloak Wood), vieille forêt semée de portails, abrite monstres et fées malveillantes, et le Marais des Lézards (Lizard Marsh) des hommes-lézards, des dinosaures et des dragons noirs.
+          Le littoral décourage les marins. Des falaises blanches et tranchantes, les Dents de l’Épée (Sword’s Teeth), dressées par endroits à près de 800 m, séparent la mer de la terre, notamment entre la Dessarin et Baldur’s Gate ; de vastes cavernes les percent, dont certaines descendent jusqu’en Outreterre. Récifs immergés, brisants et hauts-fonds de vase rendent l’approche périlleuse, les mouillages sont presque inexistants et les ports rares. Dans les terres, des champs verdoyants bordent la Voie côtière (Coast Way), mais au nord du Chionthar, fleuve vital au commerce qui relie Baldur’s Gate à Elturel, Iriaebor, Berdusk et Scornubel, s’étendent des terres arides et dangereuses. Le Bois du Manteau (Cloak Wood), vieille forêt semée de portails, abrite monstres et fées malveillantes, et le Marais des Lézards (Lizard Marsh) des hommes-lézards, des dinosaures et des dragons noirs.
         nature: canon_dnd
         edition: multi
         refs:
@@ -32,33 +32,30 @@ sections:
           - { ref: frwiki-sword-coast/frcs-3e, page: "222–225" }
           - { ref: frwiki-sword-coast/volos-guide-sword-coast, page: "7" }
       - texte: >-
-          Aucun gouvernement central ne règne sur la Côte : des cités indépendantes, liées par l’intérêt commun du commerce, y voisinent avec des bandes de monstres errants. Plusieurs, dont Baldur’s Gate et Gué de la dague (Daggerford), adhèrent à l’Alliance des Seigneurs (Lords’ Alliance), qui défend en partie les terres côtières du nord et garantit à ses membres plus d’ordre et de sécurité. Loin des routes et des cités, la loi s’efface : bandits, pillards et monstres guettent les voyageurs, que l’on invite, s’ils en ont les moyens, à engager des gardes ou des aventuriers, et les rôdeurs sont parmi les plus secourables. Faute de pouvoir unique, des organisations rivales s’implantent dans les cités côtières, des Ménestrels aux Zhentarim, de l’Enclave d’émeraude à l’Ordre du Gantelet.
+          Aucun gouvernement central ne règne sur la Côte : des cités indépendantes, liées par l’intérêt commun du commerce, y voisinent avec des bandes de monstres errants. Plusieurs, dont Baldur’s Gate et Gué de la dague (Daggerford), adhèrent à l’Alliance des Seigneurs (Lords’ Alliance), qui défend en partie les terres côtières du nord et garantit à ses membres plus d’ordre et de sécurité. Loin des routes et des cités, la loi s’efface : bandits, pillards et monstres guettent les voyageurs, que l’on invite, s’ils en ont les moyens, à engager des gardes ou des aventuriers. Faute de pouvoir unique, des organisations rivales s’implantent dans les cités côtières, des Ménestrels aux Zhentarim, de l’Enclave d’émeraude à l’Ordre du Gantelet.
         nature: canon_dnd
         edition: multi
         refs:
           - { ref: frwiki-sword-coast/rise-of-tiamat, page: "13" }
-          - { ref: frwiki-sword-coast/scag, page: "17, 43, 133, 147" }
+          - { ref: frwiki-sword-coast/scag, page: "17, 43, 147" }
           - { ref: frwiki-sword-coast/fr-campaign-guide, page: "84" }
           - { ref: frwiki-sword-coast/volos-guide-sword-coast, page: "5, 7" }
       - texte: >-
-          Baldur’s Gate, surnommée « la Porte » (the Gate), est la plus grande cité de la Côte et la plus méridionale, tandis qu’Eauprofonde (Waterdeep) en est la plus septentrionale. Port et centre du commerce régional, elle compte au XVe siècle CV parmi les villes les plus peuplées et les plus influentes de Faerûn ; son Poing enflammé (Flaming Fist), à la fois force de l’ordre et armée permanente, défend aussi ses intérêts hors les murs. Gué de la dague est un petit duché fortifié, entouré de villages agricoles, où un duc ou une duchesse laisse les affaires courantes à un conseil des guildes. Beregost, bourg marchand, sert d’étape entre l’Amn et Baldur’s Gate ; Château-Suif (Candlekeep), citadelle du savoir, ouvre ses bibliothèques contre paiement, et Orlumbor, cité insulaire, est réputée pour ses charpentiers de marine.
+          Baldur’s Gate, surnommée « la Porte » (the Gate), est la plus grande cité de la Côte. Port et centre du commerce régional, elle compte au XVe siècle CV parmi les villes les plus influentes de Faerûn ; son Poing enflammé (Flaming Fist), à la fois force de l’ordre et armée permanente, défend aussi ses intérêts hors les murs. Gué de la dague est un petit duché fortifié, entouré de villages agricoles, où un duc ou une duchesse laisse les affaires courantes à un conseil des guildes. Beregost, bourg marchand, sert d’étape entre l’Amn et Baldur’s Gate ; Château-Suif (Candlekeep), citadelle du savoir, ouvre ses bibliothèques contre paiement.
         nature: canon_dnd
         edition: multi
         refs:
           - { ref: frwiki-sword-coast/frcs-3e, page: "225–226" }
-          - { ref: mroi-cote-des-epees/frcs-3e, page: "111" }
           - { ref: frwiki-sword-coast/volos-guide-sword-coast, page: "8, 27, 34" }
           - { ref: frwiki-sword-coast/fr-campaign-guide, page: "84, 94" }
-          - { ref: frwiki-sword-coast/scag, page: "47, 70" }
+          - { ref: frwiki-sword-coast/scag, page: "47" }
       - texte: >-
-          Des dizaines de millénaires avant l’Ère des bouleversements, le royaume elfique d’Illefarn domine la région ; vers −4974 CV, le royaume nain de Haunghdannar s’y affirme pour plus de 1 500 ans, avant un déclin rapide dont les causes sont oubliées. Au début du VIe siècle CV naît au nord le Delimbiyran, « royaume de l’Homme », dont la fin, en 697 CV, laisse place à des royaumes mineurs et à de nouvelles cités. En 1150 CV, des épidémies frappent toute la côte et le culte de Talona prospère ; en 1235 CV, la Horde noire, venue du Nord, assiège Eauprofonde. En 1356 CV, la première guerre de Dragonspear oppose Eauprofonde et Baldur’s Gate à des gobelinoïdes et à des fiélons sortis d’un portail sous Dragonspear Castle ; la seconde, plus vaste, éclate sept ans plus tard, peu après le Temps des troubles, et dure deux ans contre des armées des Neuf Enfers.
+          Des dizaines de millénaires avant l’Ère des bouleversements, le royaume elfique d’Illefarn domine la région ; vers −4974 CV, le royaume nain de Haunghdannar s’y affirme pour plus de 1 500 ans, avant un déclin rapide dont les causes sont oubliées. Au début du VIe siècle CV naît au nord le Delimbiyran, « royaume de l’Homme », qui s’éteint en 697 CV. En 1356 CV, la première guerre de Dragonspear oppose Eauprofonde (Waterdeep) et Baldur’s Gate à des gobelinoïdes et à des fiélons sortis d’un portail sous Dragonspear Castle ; la seconde, plus vaste, éclate sept ans plus tard, peu après le Temps des troubles, et dure deux ans contre des armées des Neuf Enfers.
         nature: canon_dnd
         edition: multi
         refs:
           - { ref: frwiki-sword-coast/grand-tour-of-the-realms, page: "91, 95" }
           - { ref: frwiki-sword-coast/scag, page: "48, 58" }
-          - { ref: mroi-cote-des-epees/frcs-3e, page: "269–270" }
-          - { ref: frwiki-sword-coast }
           - { ref: frwiki-sword-coast/grand-history-of-the-realms, page: "142" }
           - { ref: frwiki-sword-coast/hordes-of-dragonspear, page: "5–8" }
   - type: ecarts
@@ -74,7 +71,7 @@ sections:
           - { ref: frwiki-sword-coast/volos-guide-sword-coast, page: "5" }
           - { ref: frwiki-sword-coast/grand-tour-of-the-realms, page: "101" }
       - texte: >-
-          La 3e édition reprend la limite nord du guide de Volo, Eauprofonde et le val du Delimbiyr, et fait des terres côtières situées au nord d’Eauprofonde une région distincte, la Sword Coast North, aussi appelée Côte des Épées septentrionale. Une délimitation plus étroite circule également : elle ne garde que le rivage compris entre l’embouchure de la Dessarin et celle du Chionthar. Dans les deux cas, Baldur’s Gate reste la cité la plus au sud, et Eauprofonde la plus au nord.
+          La 3e édition reprend la limite nord du guide de Volo, Eauprofonde et le val du Delimbiyr : Baldur’s Gate y est la cité la plus au sud de la Côte, Eauprofonde la plus au nord, et les terres côtières situées au-delà forment une région distincte, la Sword Coast North, aussi appelée Côte des Épées septentrionale. Une délimitation plus étroite circule également : elle ne garde que le rivage compris entre l’embouchure de la Dessarin et celle du Chionthar.
         nature: canon_dnd
         edition: 3e
         variantes: limites
