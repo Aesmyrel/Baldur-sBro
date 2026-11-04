@@ -74,11 +74,18 @@ fun IconSlot(onClick: () -> Unit, label: String, modifier: Modifier = Modifier, 
 
 /** Filet de progression de lecture. */
 @Composable
-fun ReadingProgress(progress: Float, modifier: Modifier = Modifier) {
+fun ReadingProgress(progress: Float, modifier: Modifier = Modifier) = ReadingProgress({ progress }, modifier)
+
+/**
+ * Même filet, la progression lue au moment du dessin seulement : la suivre pendant le défilement ne recompose
+ * pas l'écran à chaque image.
+ */
+@Composable
+fun ReadingProgress(progress: () -> Float, modifier: Modifier = Modifier) {
     val c = CarnetTheme.colors
     Box(modifier.fillMaxWidth().padding(horizontal = CarnetTheme.dimens.gutter).height(2.dp).background(c.line)) {
         Canvas(Modifier.fillMaxWidth().height(2.dp)) {
-            drawLine(c.gold, Offset(0f, size.height / 2), Offset(size.width * progress.coerceIn(0f, 1f), size.height / 2), size.height)
+            drawLine(c.gold, Offset(0f, size.height / 2), Offset(size.width * progress().coerceIn(0f, 1f), size.height / 2), size.height)
         }
     }
 }

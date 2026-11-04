@@ -159,7 +159,7 @@ private fun LoreBody(view: EntryView, anchor: String?, onReveal: (RevealKey) -> 
     val sectionTops = remember { mutableStateMapOf<String, Int>() }
     LaunchedEffect(anchor, sectionTops[anchor]) { anchor?.let { sectionTops[it] }?.let { scroll.animateScrollTo(it) } }
 
-    ReadingProgress(if (scroll.maxValue > 0) scroll.value / scroll.maxValue.toFloat() else 0f)
+    ReadingProgress({ if (scroll.maxValue > 0) scroll.value / scroll.maxValue.toFloat() else 0f })
     Column(Modifier.fillMaxSize().verticalScroll(scroll)) {
         ReadingColumn {
             Text(view.name.fr, style = CarnetTheme.type.display, color = c.text, modifier = Modifier.padding(start = gutter, end = gutter, top = 12.dp).semantics { heading() })

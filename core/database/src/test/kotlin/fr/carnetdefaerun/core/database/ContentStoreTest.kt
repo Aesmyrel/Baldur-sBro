@@ -21,7 +21,8 @@ class ContentStoreTest {
     private val store = SqliteContentStore(ApplicationProvider.getApplicationContext())
 
     private val source: List<Entry> by lazy {
-        listOf("../../data/game", "../../data/lore").flatMap { dir -> File(dir).listFiles { f -> f.extension == "json" }.orEmpty().toList() }.flatMap {
+        // data/lore/references.json est le registre des références, pas une liste de fiches.
+        listOf("../../data/game", "../../data/lore").flatMap { dir -> File(dir).listFiles { f -> f.extension == "json" && f.name != "references.json" }.orEmpty().toList() }.flatMap {
             ContentFormat.strict.decodeFromString(ListSerializer(Entry.serializer()), it.readText())
         }
     }
