@@ -5,83 +5,92 @@ alias: [Baldur’s Gate 1, BG1]
 etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
 etiquette: { act: prologue, level: aucun, otherWorks: aucun }
 resume: >-
-  Le premier jeu de la série, sorti à la fin de 1998 : un jeu de rôle de BioWare qui entraîne son héros sur la Côte des Épées, jusqu’aux portes de la cité.
+  Le jeu de rôle de BioWare qui ouvre la saga en 1998, sur la Côte des Épées, et auquel on attribue la relance du jeu de rôle sur ordinateur.
 sections:
   - type: general
-    titre: Le jeu
+    titre: Le jeu de 1998
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Baldur’s Gate est un jeu vidéo de rôle développé par le studio canadien BioWare et publié par Black Isle Studios, une division d’Interplay. Sorti en Amérique du Nord entre la fin de novembre et la fin de décembre 1998, puis en Europe en janvier 1999, le 5 en France, il se déroule dans les Royaumes Oubliés, sur la Côte des Épées, et adapte les règles de la 2e édition d’Advanced Dungeons & Dragons. Le joueur y crée son personnage et mène un groupe de six membres au plus, dans des combats en temps réel que l’on peut suspendre à tout moment pour donner ses ordres.
+          Premier titre de la série, Baldur’s Gate est l’œuvre de BioWare, un studio canadien fondé, entre autres, par deux médecins de formation, Ray Muzyka et Greg Zeschuk. Le projet démarre en 1995 sous le nom de Battleground Infinity, un jeu prévu entièrement en ligne ; mais l’éditeur, Interplay, préfère un jeu de rôle solo sous licence Donjons et Dragons, situé dans les Royaumes oubliés, et le chantier s’appelle un temps « Forgotten Realms ». Il dure trois ans et mobilise une soixantaine de personnes dont aucune n’avait encore publié de jeu. James Ohlen en dirige la conception, Michael Hoenig en compose la musique.
         nature: hors_univers
         refs:
-          - { ref: b-wpfr-baldurs-gate }
           - { ref: b-wpen-baldurs-gate }
-          - { ref: b-frwiki-baldurs-gate-game }
+          - { ref: b-wpfr-baldurs-gate }
       - texte: >-
-          C’est le premier jeu bâti sur l’Infinity Engine, un moteur conçu pour lui puis réemployé dans d’autres jeux sous licence D&D, comme Baldur’s Gate II, Icewind Dale ou Planescape: Torment. Commencé en 1995, son développement aboutit à un grand succès critique et commercial : 175 000 exemplaires vendus en deux semaines, la tête des ventes en France, en Allemagne et au Royaume-Uni, puis plus de deux millions d’exemplaires. On lui attribue le renouveau du jeu de rôle sur ordinateur. La version française est intégralement traduite, mais le titre reste en anglais.
+          Le jeu adapte les règles d’AD&D 2e édition. L’action s’affiche en vue isométrique, sur des décors précalculés qui ont été dessinés un par un plutôt qu’assemblés en tuiles, ce qui a allongé le développement. Les combats se déroulent en temps réel, mais le joueur peut figer l’action quand il le veut et régler des pauses automatiques. Il crée son héros en choisissant sexe, race (parmi six), classe (parmi huit), caractéristiques et alignement, puis forme un groupe de six personnages au plus, lui compris, parmi vingt-cinq compagnons possibles ; sa réputation pèse sur les prix, l’accueil qu’on lui fait et la loyauté de ses alliés.
         nature: hors_univers
         refs:
-          - { ref: b-wpfr-baldurs-gate }
           - { ref: b-wpen-baldurs-gate }
+          - { ref: b-wpfr-baldurs-gate }
+      - texte: >-
+          Interplay le publie par sa division Black Isle Studios, pour Windows. En Amérique du Nord, il sort entre le 30 novembre et le 21 décembre 1998 selon les sources ; la France le reçoit le 5 janvier 1999, intégralement traduit mais sous son titre anglais. La critique l’accueille très favorablement (91 sur Metacritic) et les Interactive Achievement Awards en font le jeu de rôle PC de l’année. Vendu à 175 000 exemplaires en deux semaines, il prend la tête des ventes en France, en Allemagne et au Royaume-Uni ; les estimations du total vont de plus de deux millions (2003, 2008) à environ 2,8 millions (2015).
+        nature: hors_univers
+        refs:
+          - { ref: b-wpen-baldurs-gate }
+          - { ref: b-wpfr-baldurs-gate }
+          - { ref: b-frwiki-baldurs-gate-game }
   - type: autres_oeuvres
-    titre: Le point de départ
+    titre: Le point de départ du récit
     etiquette: { act: prologue, level: aucun, otherWorks: leger }
     paragraphes:
       - texte: >-
-          Le héros a grandi à Château-Suif (Candlekeep), la forteresse-bibliothèque de la Côte des Épées, sous la protection du mage Gorion. Quand des tueurs à gages se mettent à le traquer jusque derrière ces murs, son tuteur décide de l’emmener loin de la forteresse, vers une destination qu’il garde secrète. En chemin, une embuscade menée par une mystérieuse silhouette en armure noire coûte la vie à Gorion. Resté seul, le héros se lance dans une aventure qui le mène à travers toute la région, jusqu’à la cité de la Porte de Baldur.
+          L’histoire se déroule sur la Côte des Épées, à l’ouest de Faerûn, peu après le Temps des troubles, entre la Porte de Baldur, la Mer des Épées, les Pics Brumeux et le Bois des Dents Acérées. La région subit une crise du fer : le minerai des mines de Nashkel se corrompt peu après la fonte, armes et outils se brisent, et le métal finit par valoir plus que l’or. On accuse l’Amn, qui s’en défend, et la guerre menace. La Porte de Baldur, la plus grande cité de la région, ferme ses portes et son port sous les patrouilles du Poing enflammé. Au cœur de la crise se tient le Trône de Fer, une organisation marchande ; Zhentarim, Magiciens rouges de Thay et Ménestrels sont aussi de la partie.
         nature: canon_dnd
         edition: add2
         refs:
+          - { ref: b-wpen-baldurs-gate }
           - { ref: b-wpfr-baldurs-gate }
           - { ref: b-frwiki-baldurs-gate-game }
       - texte: >-
-          Il découvre une Côte des Épées en pleine crise du fer : le minerai tiré de la mine de Nashkel pourrit sitôt fondu, les armes et les outils se brisent, le fer vaut plus que l’or et les brigands écument les routes. La Porte de Baldur envoie les mercenaires du Poing enflammé patrouiller, ferme ses portes et son port, et les soupçons se tournent vers le royaume voisin d’Amn, au point que la guerre menace. L’enquête se double d’une quête plus intime : le héros cherche à percer le secret de ses origines, qu’on lui a toujours caché.
+          Le héros, orphelin, a grandi à Château-Suif, forteresse devenue bibliothèque au sud de la Porte de Baldur, sous la garde du mage Gorion, membre des Ménestrels : on le désigne comme le pupille de Gorion (Gorion’s Ward). Des assassins le visent jusque derrière ces murs, et Gorion l’emmène soudain, sans un mot d’explication. Dès la première nuit, un mystérieux guerrier en armure et ses hommes leur tendent une embuscade : Gorion refuse de livrer l’enfant qu’il a élevé et meurt en couvrant sa fuite. Avec Imoen, amie d’enfance et premier membre de son groupe, le héros parcourt Beregost, les mines de Nashkel ou le Bois-Manteau (Cloakwood), tout en cherchant à percer le secret d’une ascendance qu’on lui a tue.
         nature: canon_dnd
         edition: add2
         refs:
-          - { ref: b-frwiki-baldurs-gate-game }
           - { ref: b-wpen-baldurs-gate }
           - { ref: b-wpfr-baldurs-gate }
+          - { ref: b-frwiki-baldurs-gate-game }
   - type: ecarts
-    titre: 1368 ou 1369 CV ?
+    titre: En quelle année ?
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Les œuvres liées au jeu le datent de 1368 CV. Le journal de l’extension Siege of Dragonspear (2016), dont l’histoire commence peu après la fin de l’aventure, s’ouvre sur une date de 1368 CV, et une chronologie des romans des Royaumes, Seven Millennia of Realms Fiction, situe la même année le roman Baldur’s Gate de Philip Athans (1999), qui raconte le jeu.
+          Le jeu place son récit en 1368 CV, et le roman qu’en tire Philip Athans s’y tient aussi, d’après une liste de son éditeur. Siege of Dragonspear (2016), qui en est la suite directe, va dans le même sens : la première entrée de son journal porte la date du 12 Uktar 1368 CV.
         nature: canon_dnd
-        edition: add2
+        edition: multi
         variantes: annee-recit
         refs:
-          - { ref: b-frwiki-siege-of-dragonspear }
-          - { ref: b-frwiki-baldurs-gate-novel }
           - { ref: b-frwiki-baldurs-gate-game }
           - { ref: b-wpen-baldurs-gate }
+          - { ref: b-frwiki-baldurs-gate-novel }
+          - { ref: b-frwiki-siege-of-dragonspear }
       - texte: >-
-          Une autre datation place toute l’action un an plus tard, en 1369 CV, en s’appuyant sur la chronologie des Royaumes que donne le manuel de Baldur’s Gate II: Shadows of Amn, publié par Black Isle en 2000. Dans un cas comme dans l’autre, l’aventure se déroule une dizaine d’années après le Temps des Troubles de 1358 CV, sur la Côte des Épées de la fin du XIVe siècle.
+          Le manuel de Baldur’s Gate II: Shadows of Amn, publié par Black Isle en 2000, donne une autre date : à sa page 35, les aventures du premier jeu se situent en 1369 CV, un an plus tard.
         nature: canon_dnd
         edition: add2
         variantes: annee-recit
         refs:
           - { ref: b-wpfr-baldurs-gate }
   - type: plus_loin
-    titre: Extensions, rééditions et suite
+    titre: Extensions, rééditions et suites
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Une extension, Tales of the Sword Coast, paraît en 1999 ; en France, on la connaît aussi sous le titre Baldur’s Gate : la légende de l’île perdue. Développée par BioWare, elle ajoute quatre zones à la carte du jeu, dont le village de la Barbe d’Ulgoth, à l’extrême nord de la Côte des Épées, et la Tour de Durlag, et relève le plafond d’expérience. Un roman tiré du jeu, signé Philip Athans, paraît la même année en anglais ; il n’a pas été traduit en français.
+          Le 30 avril 1999, BioWare et Black Isle Studios ajoutent l’extension Tales of the Sword Coast, aussi titrée en France « Baldur’s Gate : la légende de l’île perdue » : vingt à trente heures de quêtes annexes, dans quatre zones dont la Tour de Durlag et l’Île de Glace ; elle dépasse les 600 000 exemplaires. En 2012, Overhaul Games, une division de Beamdog, refond le jeu et son extension dans une Enhanced Edition, sortie fin novembre avec trois ou quatre nouveaux compagnons selon le décompte. Son extension Siege of Dragonspear, sortie le 31 mars 2016, raconte entre les deux premiers jeux une croisade venue du nord qui menace la Porte de Baldur.
         nature: hors_univers
         refs:
-          - { ref: b-wpfr-baldurs-gate }
           - { ref: b-frwiki-tales-of-the-sword-coast }
+          - { ref: b-wpfr-baldurs-gate }
+          - { ref: b-frwiki-bg-enhanced-edition }
           - { ref: b-frwiki-baldurs-gate-game }
+          - { ref: b-frwiki-siege-of-dragonspear }
       - texte: >-
-          En 2012, Baldur’s Gate: Enhanced Edition, développée par Overhaul Games, une division de Beamdog, modernise le jeu et son extension et ajoute zones, compagnons et quêtes ; elle sort en France le 28 novembre 2012 et arrive sur consoles en 2019. En 2016, Siege of Dragonspear, une extension propre à cette édition, prend la suite du jeu original. La série se poursuit avec Baldur’s Gate II: Shadows of Amn en 2000, puis Baldur’s Gate 3 en 2023.
+          Philip Athans tire du jeu un roman, publié par Wizards of the Coast en juillet 1999 (une source indique 2009), où le héros se nomme Abdel Adrian ; il s’écarte du jeu sur plusieurs points et n’a pas été traduit en français. La saga se poursuit avec Baldur’s Gate II: Shadows of Amn en 2000, dont l’extension de 2001 clôt l’histoire des deux jeux, tandis que l’Infinity Engine, le moteur conçu pour le premier, sert aussi à Planescape: Torment (1999), Icewind Dale (2000) et Icewind Dale II (2002). Baldur’s Gate 3, de Larian Studios, sort en version complète le 3 août 2023.
         nature: hors_univers
         refs:
+          - { ref: b-frwiki-baldurs-gate-novel }
           - { ref: b-wpfr-baldurs-gate }
           - { ref: b-wpen-baldurs-gate }
-          - { ref: b-frwiki-bg-enhanced-edition }
-          - { ref: b-frwiki-siege-of-dragonspear }
+          - { ref: b-frwiki-baldurs-gate-game }
 relations:
   - { cible: lore.lieux.sword-coast, type: see_also }

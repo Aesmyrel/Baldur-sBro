@@ -210,12 +210,12 @@
     "facts": {
       "@type": "lore",
       "theme": "chronologie",
-      "summary": "En 1 CV, elfes et humains scellent dans la pierre une alliance qui donne son point de départ au calendrier des Royaumes, celui-là même qui date l’année 1492 CV.",
+      "summary": "En 1 CV, elfes et humains scellent au cœur du Cormanthor un accord dont l’année devient le point de départ du calendrier le plus répandu de Faerûn.",
       "sections": [
         {
           "id": "s1",
           "type": "general",
-          "title": "Un pacte gravé dans la pierre",
+          "title": "L’accord de l’an 1",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -223,51 +223,39 @@
           },
           "paragraphs": [
             {
-              "text": "À l’approche de l’an 1 CV, des colons humains affluent de toutes parts vers les forêts du Cormanthyr. Pour prévenir une guerre sanglante avec cette population en pleine croissance, le coronal elfe Eltargrim réunit les siens et les mages de la jeune société humaine autour d’un accord. Les futurs habitants des Vaux (Dalelands) pourront s’établir sur les terres sans forêt que les elfes ne réclament pas ; ils renoncent en échange à couper le bois plus avant dans la grande forêt. L’alliance est gravée dans un monument dressé pour l’occasion, la Pierre levée (Standing Stone), symbole de l’amitié entre les deux peuples et point de départ d’une nouvelle façon de compter les années.",
+              "text": "Vers −200 CV, des hameaux et des fermes humaines s’égrènent déjà autour du Cormanthor. Aux premiers venus, d’ascendance chondathe, se joignent des colons de tout Faerûn qu’attire une région riche ; mais la grande forêt appartient à l’empire elfe de Cormanthyr, qui la défend et freine les coupes humaines. Pour prévenir une guerre avec cette population croissante, le coronal Eltargrim Irithyl négocie avec les magiciens de la jeune société humaine, ancêtres des Valiens (Dalesfolk). Conclu en 1 CV, l’année dite Year of Sunrise, l’accord ouvre aux futurs habitants des Vaux (Dalelands) les terres de lisière où la forêt ne pousse pas et que les elfes ne revendiquent pas ; en retour, ils renoncent à abattre le moindre arbre plus avant. Elfes et Valiens dressent alors au centre des bois la Pierre levée (Standing Stone), symbole d’unité dont des runes elfiques gravent les termes du traité.",
               "nature": "canon_dnd",
-              "edition": "multi",
+              "edition": "3e",
               "refs": [
                 {
-                  "ref": "b-frwiki-dales-compact"
-                },
-                {
-                  "ref": "b-frwiki-history-of-the-dalelands"
-                },
-                {
-                  "ref": "b-mroi-pacte-des-vaux"
+                  "ref": "b-frwiki-history-of-the-dalelands/frcs-3e",
+                  "page": "118"
                 },
                 {
                   "ref": "b-frwiki-dales-compact/frcs-3e",
                   "page": "118"
                 },
                 {
-                  "ref": "b-frwiki-history-of-the-dalelands/frcs-3e",
-                  "page": "118"
+                  "ref": "b-mroi-pacte-des-vaux/frcs-3e",
+                  "page": "197 (éd. fr.)"
                 },
                 {
-                  "ref": "b-frwiki-standing-stone/the-dalelands",
-                  "page": "4"
-                }
-              ]
-            },
-            {
-              "text": "Haut d’environ 6 mètres (20 pieds), le monolithe est d’une roche grise et sombre, polie au point de luire ; des runes elfiques, qui courent à son pied, en rappellent les clauses, et un enchantement efface aussitôt toute dégradation. Il se dresse au cœur de la forêt de Cormanthor, au sud de Myth Drannor, là où la route de Rauthauvyr croise la route de la Mer de lune, à mi-chemin entre Blackfeather Bridge et Hillsfar. Les humains n’y ont d’abord pas accès. Quand Rauthauvyr, de Sembie, exige sous menace de guerre une route à travers la forêt, celle-ci est tracée de façon à passer en vue du monument, un geste censé montrer que les alliés des elfes obtiennent ce qu’ils souhaitent sans avoir besoin de violence.",
-              "nature": "canon_dnd",
-              "edition": "multi",
-              "refs": [
-                {
-                  "ref": "b-frwiki-standing-stone"
-                },
-                {
-                  "ref": "b-mroi-pierre-levee"
-                },
-                {
-                  "ref": "b-frwiki-standing-stone/the-dalelands",
-                  "page": "55"
+                  "ref": "b-frwiki-1-dr"
                 },
                 {
                   "ref": "b-frwiki-standing-stone/frcs-3e",
                   "page": "124"
+                }
+              ]
+            },
+            {
+              "text": "Le monument est un grand obélisque, un monolithe gris sombre et lustré, haut de 6 m (20 pieds), dont la surface enchantée efface vite toute dégradation. Il s’élève dans le Cormanthor, juste au sud de Myth Drannor, à la croisée de la route de Rauthauvyr et de la route de la Mer de Lune (Moonsea Ride), à peu près à mi-chemin entre Blackfeather Bridge et Hillsfar.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
+                {
+                  "ref": "b-frwiki-standing-stone/the-dalelands",
+                  "page": "4, 55"
                 },
                 {
                   "ref": "b-frwiki-standing-stone/volos-guide-to-the-dalelands",
@@ -280,7 +268,7 @@
         {
           "id": "s2",
           "type": "general",
-          "title": "Le point zéro du calendrier",
+          "title": "Le Calendrier des Vaux",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -288,27 +276,33 @@
           },
           "paragraphs": [
             {
-              "text": "Le Calendrier des Vaux (Dalereckoning), abrégé CV, sert de mesure commune à tout Faerûn, où il est le plus employé, sans avoir jamais franchi les rivages du continent. S’il a gagné si vite les contrées où humains et elfes s’entendaient, c’est que la cour elfique l’avait aligné, dès l’origine, sur son propre calendrier ancestral ; on le tient pour le premier calendrier humain. Des textes sans lien avec l’histoire des Vaux l’appellent calendrier de l’Homme libre (Freeman’s Reckoning). Les autres comptes restent nombreux : Eauprofonde part de 1032 CV, quand Ahghairon devient son premier seigneur, et, avec l’aval de Khelben d’Eauprofonde et de Vangerdahast du Cormyr, les Ménestrels diffusent un compte nouveau dont l’an zéro est le Temps des Troubles de 1358 CV.",
+              "text": "Le Calendrier des Vaux (CV ; en anglais Dalereckoning, DR), qu’on appelle encore Calendrier de la Naissance du Val ou de l’Homme Libre, part de la fondation de la Pierre levée et de la conclusion de l’accord. Premier calendrier humain, accordé dès sa création au calendrier elfe par la Cour elfique, il se répand vite partout où les deux peuples vivent en paix ; il devient le plus populaire de Faerûn, l’étalon de tous les autres. Les noms des années viennent du Roll of Years, une liste de plusieurs milliers d’entrées due à Augathra la Folle (Augathra the Mad), que conserve la bibliothèque de Château-Suif (Candlekeep).",
               "nature": "canon_dnd",
-              "edition": "multi",
+              "edition": "3e",
               "refs": [
-                {
-                  "ref": "b-frwiki-marking-the-years"
-                },
                 {
                   "ref": "b-mroi-calendrier-des-vaux"
                 },
+                {
+                  "ref": "b-mroi-calendrier-des-vaux/frcs-3e",
+                  "page": "78, 269 (éd. fr.)"
+                },
+                {
+                  "ref": "b-frwiki-marking-the-years"
+                }
+              ]
+            },
+            {
+              "text": "Si chaque année porte le même nom dans tous les Royaumes, chaque royaume ou cité-État la numérote à sa manière, d’après une dynastie, un règne ou une fondation, et ces décomptes entremêlés déroutent le commun comme les sages. Le Cormyr compte depuis la fondation de la maison Obarskyr, toujours sur le trône ; les marchands sembiens répandent ce calendrier comme celui des Vaux, et les 25 ans qui les séparent sèment la confusion. Celui d’Amn, compté depuis Athkatla en 100 CV, reste peu employé : on lui préfère le Calendrier des Vaux. Le Present Reckoning (PR), dont l’an 0 est 1358 CV, l’année du Temps des troubles, reçoit l’aval de Khelben Arunsun et de Vangerdahast, et les Ménestrels (Harpers) le diffusent.",
+              "nature": "canon_dnd",
+              "edition": "add2",
+              "refs": [
                 {
                   "ref": "b-frwiki-marking-the-years/grand-tour-of-the-realms",
                   "page": "22-23"
                 },
                 {
-                  "ref": "b-frwiki-marking-the-years/grand-history-of-the-realms",
-                  "page": "4"
-                },
-                {
-                  "ref": "b-mroi-calendrier-des-vaux/frcs-3e",
-                  "page": "78, 269 (éd. fr.)"
+                  "ref": "b-frwiki-marking-the-years"
                 }
               ]
             }
@@ -317,7 +311,7 @@
         {
           "id": "s3",
           "type": "ecarts",
-          "title": "1 CV ou 26 CV : la naissance du Cormyr",
+          "title": "Le Cormyr, fondé en 1 ou en 26 CV ?",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -325,69 +319,51 @@
           },
           "paragraphs": [
             {
-              "text": "Nombre de chronologies anciennes placent en 1 CV la fondation du Cormyr, le royaume voisin des Vaux ; c’est le cas du supplément Old Empires (1990). Dans cette version, le royaume des Obarskyr naît la même année que la Pierre levée et que le Calendrier des Vaux, et la première date de l’histoire du Cormyr se confond avec celle des Vaux.",
+              "text": "Dans Old Empires, supplément de 2e édition paru en 1990, le royaume du Cormyr naît en 1 CV : la même année, donc, que le pacte conclu entre les elfes de Cormanthyr et les Valiens, et que l’érection de la Pierre levée.",
               "nature": "canon_dnd",
               "edition": "add2",
               "refs": [
                 {
                   "ref": "b-frwiki-1-dr/old-empires",
                   "page": "5"
-                },
-                {
-                  "ref": "b-frwiki-1-dr"
-                },
-                {
-                  "ref": "b-frwiki-marking-the-years"
                 }
               ],
               "variantGroup": "fondation-cormyr"
             },
             {
-              "text": "D’autres ouvrages datent cette fondation de 26 CV. Le cadre de campagne de la 3e édition (2001) et la Grand History of the Realms (2007) l’attribuent à Faerlthann Obarskyr, qui s’installe avec la permission des elfes de la région ; la seconde fait commencer cette année-là le calendrier propre au Cormyr. Le supplément de 2001 ajoute que le premier magicien royal, Baerauble, entre au service de la famille régnante la même année.",
+              "text": "Le Forgotten Realms Campaign Setting de 2001 place cette fondation en 26 CV : Faerlthann Obarskyr établit alors le royaume, avec l’accord des elfes du pays. La même année meurt Ondeth Obarskyr, et Baerauble Etharr devient le premier magicien royal.",
               "nature": "canon_dnd",
-              "edition": "multi",
+              "edition": "3e",
               "refs": [
                 {
                   "ref": "b-frwiki-26-dr/frcs-3e",
                   "page": "113"
-                },
+                }
+              ],
+              "variantGroup": "fondation-cormyr"
+            },
+            {
+              "text": "The Grand History of the Realms (2007) retient lui aussi 26 CV, l’année où commence le calendrier du Cormyr (Cormyr Reckoning). Il note que des chronologies plus anciennes, datées elles aussi en CV, plaçaient cette fondation en 1 CV.",
+              "nature": "canon_dnd",
+              "edition": "3.5",
+              "refs": [
                 {
                   "ref": "b-frwiki-26-dr/grand-history-of-the-realms",
                   "page": "60"
                 },
                 {
-                  "ref": "b-frwiki-26-dr"
+                  "ref": "b-frwiki-marking-the-years/grand-history-of-the-realms",
+                  "page": "4"
                 }
               ],
               "variantGroup": "fondation-cormyr"
-            },
-            {
-              "text": "A Grand Tour of the Realms (1993) et la Grand History of the Realms (2007) donnent la clé de ces vingt-cinq ans d’écart. Le calendrier du Cormyr part de la fondation de la maison Obarskyr, celui des Vaux de la Pierre levée : nés chez deux voisins, l’un et l’autre ont été diffusés par un troisième peuple, les marchands de Sembie. Bien des chronologies datent donc leurs événements en CV tout en mettant la naissance du Cormyr en 1 CV, et quiconque étudie les premiers siècles du calendrier doit démêler les deux comptes.",
-              "nature": "canon_dnd",
-              "edition": "multi",
-              "refs": [
-                {
-                  "ref": "b-frwiki-marking-the-years/grand-tour-of-the-realms",
-                  "page": "22"
-                },
-                {
-                  "ref": "b-frwiki-marking-the-years/grand-history-of-the-realms",
-                  "page": "4"
-                },
-                {
-                  "ref": "b-frwiki-marking-the-years"
-                },
-                {
-                  "ref": "b-mroi-calendrier-des-vaux"
-                }
-              ]
             }
           ]
         },
         {
           "id": "s4",
           "type": "ecarts",
-          "title": "La Pierre brisée",
+          "title": "Qui a détruit la Pierre levée ?",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -395,7 +371,7 @@
           },
           "paragraphs": [
             {
-              "text": "Pour la Grand History of the Realms (2007), la Pierre tombe en 1374 CV, pendant la guerre qui ravage alors le Cormanthor. Les fey’ri de la maison Dlardrageth attaquent le plus grand camp que les Plumes rouges (Red Plumes) de Hillsfar ont installé au pied du monument et mettent leur armée en déroute ; quelques semaines plus tard, ils détruisent la Pierre, puis s’allient à la maison drow Jaelre.",
+              "text": "Selon The Grand History of the Realms (2007), la Pierre tombe le 21 Flamerule 1374 CV sous les coups des fey’ri de la maison Dlardrageth, dits aussi daemonfey, qui remportent ensuite une victoire décisive sur l’armée de Hillsfar. Dès le 26 Kythorn, ils s’en étaient pris au grand camp que les Plumes rouges de Hillsfar avaient dressé à la Pierre. Après la destruction, la maison Dlardrageth s’allie aux drows de la maison Jaelre.",
               "nature": "canon_dnd",
               "edition": "3.5",
               "refs": [
@@ -405,15 +381,12 @@
                 },
                 {
                   "ref": "b-frwiki-cormanthor-war"
-                },
-                {
-                  "ref": "b-frwiki-history-of-the-dalelands"
                 }
               ],
               "variantGroup": "destruction"
             },
             {
-              "text": "Le Forgotten Realms Campaign Guide (2008), qui ouvre la 4e édition, en donne une autre version : la Pierre levée y est détruite par des drows, les elfes noirs de l’Outreterre, vers la fin du XIVe siècle CV, sans date plus précise, et le même passage la fait restaurer en 1425 CV, cinquante ans après sa destruction. Les deux récits ne s’accordent que sur l’époque de sa chute, à la fin du XIVe siècle.",
+              "text": "L’Encyclopédie des Royaumes oubliés (Forgotten Realms Campaign Guide, 2008) attribue la destruction à des drows, vers la fin du XIVe siècle CV, cinquante ans avant 1425 CV. Les gens d’Ashabenford la rebâtissent un peu plus d’un demi-siècle plus tard : en 1425 CV, l’Année des Sept Sœurs, Ashabenford, siège permanent du conseil des Vaux, réaffirme l’ancien pacte avec Myth Drannor restaurée.",
               "nature": "canon_dnd",
               "edition": "4e",
               "refs": [
@@ -422,10 +395,11 @@
                   "page": "192 (éd. fr.)"
                 },
                 {
-                  "ref": "b-mroi-pierre-levee"
+                  "ref": "b-mroi-pacte-des-vaux"
                 },
                 {
-                  "ref": "b-mroi-pacte-des-vaux"
+                  "ref": "b-frwiki-standing-stone/forgotten-realms-campaign-guide",
+                  "page": "108"
                 }
               ],
               "variantGroup": "destruction"
@@ -435,7 +409,7 @@
         {
           "id": "s5",
           "type": "general",
-          "title": "Le pacte renouvelé",
+          "title": "Treize siècles d’épreuves",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -443,30 +417,31 @@
           },
           "paragraphs": [
             {
-              "text": "Pendant plus de treize siècles, l’alliance résiste aux trahisons, venues surtout des humains, aux catastrophes magiques, venues surtout des elfes, et aux convoitises des Sembiens comme des conquérants de la Mer de lune. Elle n’en sort pas intacte : en 1372 CV, profitant du départ des elfes pour Éternelle-Rencontre (Evermeet), Valarchen (Archendale) rompt le pacte et commence à exploiter le bois du Cormanthor. Deux ans plus tard, le seigneur elfe Seiveril Miritar le ravive avec quatre vaux, au bord du lac Sember. En 1425 CV enfin, Ashabenford, devenue le siège permanent du Conseil des Vaux, le réaffirme avec la cité de Myth Drannor et restaure la Pierre levée, un peu plus de cinquante ans après sa chute.",
+              "text": "Le pacte tient plus de treize siècles. Il résiste aux envahisseurs venus de la Mer de Lune (Moonsea), à l’expansion sembienne, à des catastrophes magiques, le plus souvent elfiques, et à des trahisons, le plus souvent humaines. Après 714 CV, privés de leurs protecteurs elfes, les Vaux humains prennent leur essor par eux-mêmes ; en 1344 CV, la plupart des elfes du Cormanthor quittent le continent. C’est au moment de leur départ pour Éternelle-Rencontre (Evermeet) que Valarchen (Archendale) rompt le pacte, en 1372 CV, puis exploite les arbres de la forêt.",
               "nature": "canon_dnd",
-              "edition": "multi",
+              "edition": "3e",
               "refs": [
-                {
-                  "ref": "b-mroi-pacte-des-vaux"
-                },
-                {
-                  "ref": "b-frwiki-history-of-the-dalelands"
-                },
-                {
-                  "ref": "b-frwiki-standing-stone"
-                },
                 {
                   "ref": "b-mroi-pacte-des-vaux/frcs-3e",
                   "page": "197 (éd. fr.)"
                 },
                 {
+                  "ref": "b-frwiki-history-of-the-dalelands/frcs-3e",
+                  "page": "118, 123"
+                }
+              ]
+            },
+            {
+              "text": "Dès 1044 CV, les Vaux forment des communautés indépendantes, alliées au sein du conseil des Vaux (Dales Council). En 1374 CV, Seiveril Miritar, seigneur elfe d’Evereska à la tête d’une croisade partie d’Éternelle-Rencontre, ravive le pacte le 28 Mirtul, au lac Sember, avec Battledale, Deepingdale, Mistledale et Shadowdale. Il l’invoque pour engager ces Vaux dans la guerre contre la maison Dlardrageth : c’est la guerre de Cormanthor, qui embrase la forêt et les Vaux de 1374 à 1376 CV.",
+              "nature": "canon_dnd",
+              "edition": "3.5",
+              "refs": [
+                {
                   "ref": "b-frwiki-history-of-the-dalelands/grand-history-of-the-realms",
-                  "page": "155"
+                  "page": "155, 156"
                 },
                 {
-                  "ref": "b-frwiki-standing-stone/forgotten-realms-campaign-guide",
-                  "page": "108"
+                  "ref": "b-frwiki-cormanthor-war"
                 }
               ]
             }
@@ -2121,12 +2096,12 @@
     "facts": {
       "@type": "lore",
       "theme": "personnages",
-      "summary": "Archimage dément vieux de plusieurs millénaires, Halaster a creusé sous Eauprofonde le plus célèbre donjon des Royaumes, Montprofond, dont il reste le maître insaisissable.",
+      "summary": "Archimage réputé fou à lier, le créateur de Montprofond, le dédale mortel creusé sous Eauprofonde.",
       "sections": [
         {
           "id": "s1",
           "type": "general",
-          "title": "Le maître fou de Montprofond",
+          "title": "Le Mage dément",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -2134,19 +2109,16 @@
           },
           "paragraphs": [
             {
-              "text": "Après des millénaires d’existence, Halaster Sombrecape (Halaster Blackcloak), le Mage dément de Montprofond (Undermountain), ne trouve presque plus rien de neuf : lui qui collectionne les monstres inconnus et les magies nouvelles trompe son ennui en se mêlant, par caprice, des affaires du monde. Le décor de campagne de 2001 le montre, dans son dédale sous Eauprofonde (Waterdeep), marmonnant et ricanant sans fin, incapable de suivre une discussion, mais toujours prompt à flairer le danger et à riposter. Hors de chez lui, la raison lui revient presque entièrement : c’est alors un homme glacial et courtois, maniaque dans ses habitudes, qui ne supporte aucune insolence, se souvient de chaque tort comme de chaque aide, et reste foncièrement mauvais. Expert en taille des gemmes et en ingénierie, il commande golems et autres créatures artificielles, et des clones le protègent de la mort.",
+              "text": "Halaster Sombrecape est un magicien humain d’un très grand âge, archimage et créateur de Montprofond (Undermountain), le donjon qui s’étend sous Eauprofonde (Waterdeep). On le dit complètement fou : dans ses souterrains, la lucidité lui revient rarement, mais au-dehors il garde le plus souvent la tête claire et se montre alors froid, courtois, méticuleux, ennuyeux même, et toujours mauvais. Il marmonne, ricane, perd vite le fil d’une conversation, sans que sa folie émousse sa vigilance. Il collectionne monstres inédits, venus surtout d’autres plans, et formes de magie inconnues. Dans le donjon, golems, heaumes animés et pièges lui obéissent ; il y circule « dans les murs », sans un bruit, par ses passages secrets. Des souhaits répétés ont accru son intelligence, et des sorts de contingence comme des clones le protègent en duel. Il n’oublie ni une offense ni un service, impose sa volonté sans souci des dégâts et se mêle parfois de politique, par caprice.",
               "nature": "canon_dnd",
               "edition": "3e",
               "refs": [
                 {
-                  "ref": "b-frwiki-halaster-blackcloak"
+                  "ref": "b-frwiki-halaster-blackcloak/frcs-3e",
+                  "page": "180-181"
                 },
                 {
                   "ref": "b-mroi-halaster-sombrecape"
-                },
-                {
-                  "ref": "b-frwiki-halaster-blackcloak/frcs-3e",
-                  "page": "180-181"
                 }
               ]
             }
@@ -2155,7 +2127,7 @@
         {
           "id": "s2",
           "type": "general",
-          "title": "Le bâtisseur du dédale",
+          "title": "Eauprofonde et la naissance de Montprofond",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -2163,27 +2135,13 @@
           },
           "paragraphs": [
             {
-              "text": "Tout commence par une tour. En 168 CV, Halaster s’installe sur le plateau d’Aquafond (Deepwater Plateau), au pied de la montagne qui domine le site d’Eauprofonde, avec sept apprentis, les Sept, et y fait élever une place forte, tour, remparts et tours plus petites pour ses élèves, par des êtres convoqués d’autres plans. L’ouvrage achevé, il ne les libère pas : il les envoie creuser toujours plus loin sous la roche. Il s’approprie les Bas-foyers de Melairbode (Underhalls), anciennes salles des nains du clan Melairkyn, et, à partir de 171 CV, mène de longues chasses pour en déloger drows, duergars et monstres. Vers 309 CV, maître de ces galeries, il se met à les transformer en un donjon sans égal par son étendue comme par ses dangers, et abandonne sa tour pour vivre sous terre.",
+              "text": "En 168 CV, Halaster s’installe au pied du mont Eauprofonde avec ses apprentis, les Sept. Des êtres d’autres plans qu’il invoque lui élèvent, au centre du plateau d’Aquafond, une tour, des remparts et de petites tours pour ses élèves. En secret, il explore les Bas-foyers de Melairbode (Underhalls), domaine du clan nain Melairkyn ; dès 171 CV, ses Chasses en délogent drows, duergars et monstres. Les Sept le quittent en 307 CV pour régner sur leurs propres domaines souterrains, et en 309 CV il est le maître des tunnels. Son fort abandonné, que les gens de Blackcloak Hold croient maudit, est englobé par la ville au début du XIe siècle CV.",
               "nature": "canon_dnd",
-              "edition": "multi",
+              "edition": "3.5",
               "refs": [
                 {
-                  "ref": "b-frwiki-halaster-blackcloak"
-                },
-                {
-                  "ref": "b-mroi-halaster-sombrecape"
-                },
-                {
-                  "ref": "b-frwiki-halaster-blackcloak/villains-lorebook",
-                  "page": "30"
-                },
-                {
                   "ref": "b-frwiki-halaster-blackcloak/grand-history-of-the-realms",
-                  "page": "66, 69"
-                },
-                {
-                  "ref": "b-frwiki-halaster-blackcloak/ruins-of-undermountain-ii",
-                  "page": "3-4"
+                  "page": "66, 69, 115, 149-150"
                 },
                 {
                   "ref": "b-mroi-halaster-sombrecape/city-of-splendors-waterdeep",
@@ -2192,26 +2150,13 @@
               ]
             },
             {
-              "text": "Jeune, il était sociable, organisait des rencontres de mages et formait de nombreux élèves ; les sages imputent sa démence à son long commerce avec les puissances d’autres plans, qui aurait fait grandir sa folie avec son pouvoir. Les Sept le quittent en 307 CV pour se tailler leurs propres domaines souterrains. Quand certains reviennent le chercher, il en tue deux et exige des autres qu’ils fortifient son dédale ; seule Jhesiyra Kestellharp lui échappe, et c’est d’elle que vient le peu qu’on sait de lui. La ville finit par gagner les ruines de sa tour, qu’Ahghairon entoure de protections en 1007 CV. En 1369 CV encore, son enlèvement hors de Montprofond par des membres de la Rune tordue (Twisted Rune) suffit à libérer la magie du dédale, qui projette ses créatures à travers les Royaumes.",
+              "text": "Jeune, Halaster est un mage sociable, qui organise foires et assemblées de magiciens et prend de nombreux apprentis ; c’est, dit-on, à force de côtoyer des êtres d’autres plans qu’il sombre dans la folie. Vers 309 CV, il se met à creuser Montprofond, s’y retire et laisse son fort tomber en ruine ; ses ouvriers, jamais libérés, servent à agrandir les salles. Des apprentis venus le chercher, deux périssent et les autres doivent fortifier le donjon. L’apprentie Jhesiyra Kestellharp, elle, refuse et s’échappe, avant de devenir Magister : c’est d’elle que vient le peu qu’on sait de lui.",
               "nature": "canon_dnd",
-              "edition": "multi",
+              "edition": "add2",
               "refs": [
-                {
-                  "ref": "b-frwiki-halaster-blackcloak"
-                },
-                {
-                  "ref": "b-mroi-halaster-sombrecape"
-                },
                 {
                   "ref": "b-frwiki-halaster-blackcloak/ruins-of-undermountain-ii",
                   "page": "3-4"
-                },
-                {
-                  "ref": "b-frwiki-halaster-blackcloak/grand-history-of-the-realms",
-                  "page": "69, 115, 149-150"
-                },
-                {
-                  "ref": "b-frwiki-halaster-blackcloak/undermountain-stardock"
                 }
               ]
             }
@@ -2220,7 +2165,7 @@
         {
           "id": "s3",
           "type": "ecarts",
-          "title": "D’où vient-il ?",
+          "title": "D’où vient Halaster ?",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -2228,31 +2173,25 @@
           },
           "paragraphs": [
             {
-              "text": "Dans le Villains’ Lorebook (1998), un supplément de la 2e édition, ses origines restent une énigme : l’histoire ne retient ni sa patrie ni l’époque de sa naissance, et l’on soupçonne seulement qu’il est plus âgé encore qu’Elminster. Le livre raconte en revanche son installation sur le site d’Eauprofonde en 168 CV, entouré de ses apprentis : pour cet ouvrage, l’histoire connue du Mage dément commence là.",
+              "text": "Dans le Villains’ Lorebook (1998), son origine reste inconnue, et on le soupçonne d’être plus âgé qu’Elminster : en 168 CV arrive seulement un mage qui se fait appeler Halaster Sombrecape. Il se nommait peut-être Hilather, et aurait pris un nom qu’il jugeait plus digne d’un grand mage.",
               "nature": "canon_dnd",
               "edition": "add2",
               "refs": [
                 {
                   "ref": "b-frwiki-halaster-blackcloak/villains-lorebook",
                   "page": "30"
-                },
-                {
-                  "ref": "b-frwiki-halaster-blackcloak"
                 }
               ],
               "variantGroup": "origine"
             },
             {
-              "text": "La Grand History of the Realms (2007) lui prête au contraire un très long passé. Né Hilather, dans le Raurin, au temps de l’empire d’Imaskar, ce prodige devient l’un des plus grands mages de l’empire, qu’il sauve d’un rival, Madryoch, en l’enfermant dans un demi-plan. À la chute d’Imaskar, il se réfugie dans une forteresse cachée sous les montagnes et y dort en stase des millénaires durant. Réveillé, il entre en 128 CV au service de l’empire de Shoon, qui le charge de trouver un moyen plus sûr d’asservir les fiélons à leurs invocateurs ; quatre ans plus tard, il lui remet treize boucliers démoniaques (Demonshields), puis disparaît.",
+              "text": "The Grand History of the Realms (2007) lui prête un long passé. Né Hilather au Raurin, dans l’Imaskar tardif, ce jeune prodige devient l’un des premiers archimages de l’empire, seigneur et artificier ; il vainc à Metos le mage Madryoch, auteur de la Pierre d’ombre, et l’enferme dans le demi-plan d’emprisonnement. À la chute d’Imaskar, en −2488 CV, il se réfugie en secret sous les monts occidentaux et s’y plonge en stase des millénaires durant, avant d’explorer Faerûn. En 128 CV, la cour de l’empire Shoon l’engage pour mieux lier les fiélons à leurs invocateurs ; en 132 CV, il remet treize Demonshields au qysar Amahl Shoon IV, puis disparaît.",
               "nature": "canon_dnd",
               "edition": "3.5",
               "refs": [
                 {
                   "ref": "b-frwiki-halaster-blackcloak/grand-history-of-the-realms",
                   "page": "18, 31, 63"
-                },
-                {
-                  "ref": "b-frwiki-halaster-blackcloak"
                 }
               ],
               "variantGroup": "origine"
@@ -2262,7 +2201,7 @@
         {
           "id": "s4",
           "type": "ecarts",
-          "title": "Mort ou vivant ?",
+          "title": "Enlèvement, mort et survivances",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -2270,7 +2209,24 @@
           },
           "paragraphs": [
             {
-              "text": "Pour la Grand History of the Realms, Halaster meurt en 1375 CV : il se tue par mégarde en tentant un puissant rituel. Peu après l’aube, un séisme ébranle Eauprofonde sans y faire grand dégât ; beaucoup y voient en vision le mage hurlant, le regard en feu, et les lanceurs de sorts aperçoivent des piliers qui se fendent et des gouffres qui s’ouvrent dans le dédale. En mourant, il projette à travers Faerûn des visions et des appels désespérés.",
+              "text": "À Higharvestide 1369 CV, deux membres de la Twisted Rune l’enlèvent de Montprofond ; dans Undermountain: Stardock (1997), la liche Priamon Frostrune et l’alhoon Ralayan le retiennent à Stardock pour fouiller son esprit. Privé de lui, le donjon se déchaîne et ses portails jettent ses créatures à travers les Royaumes, jusqu’à ce que des aventuriers engagés par les seigneurs d’Eauprofonde le délivrent. En 1372 CV, Mystra lui promet de guérir sa folie s’il tire Elminster des Neuf Enfers ; Halaster s’aventure pour cela en Averne (Avernus).",
+              "nature": "canon_dnd",
+              "edition": "multi",
+              "refs": [
+                {
+                  "ref": "b-frwiki-halaster-blackcloak/grand-history-of-the-realms",
+                  "page": "69, 115, 149-150"
+                },
+                {
+                  "ref": "b-frwiki-halaster-blackcloak/undermountain-stardock"
+                },
+                {
+                  "ref": "b-frwiki-halaster-blackcloak/elminster-in-hell"
+                }
+              ]
+            },
+            {
+              "text": "Selon The Grand History of the Realms, il meurt par accident le 30 Eleint 1375 CV, peu après l’aube, au cours d’un puissant rituel. Une légère secousse ébranle Eauprofonde, beaucoup d’habitants ont la vision d’un Halaster hurlant, et en mourant il projette visions et contraintes sur des gens de tout le continent. Les prêtresses d’Eilistraee, menées par Qilué Veladorn, fêtent sa disparition d’un chant de joie.",
               "nature": "canon_dnd",
               "edition": "3.5",
               "refs": [
@@ -2280,15 +2236,12 @@
                 },
                 {
                   "ref": "b-frwiki-halaster-blackcloak"
-                },
-                {
-                  "ref": "b-mroi-halaster-sombrecape"
                 }
               ],
               "variantGroup": "sort"
             },
             {
-              "text": "Le magazine Dragon (n° 409, 2012) revient sur cette fin : le rituel aurait dispersé l’essence d’Halaster à travers les plans sans le tuer, et la Magepeste l’aurait empêchée de se reformer dans l’un des clones qu’il gardait en stase dans Montprofond et sous Eauprofonde. Un ou plusieurs de ces corps, d’âge, de sexe ou de peuple différents, auraient pu être libérés d’ici 1479 CV ; chacun mène sa propre vie, épargné par le vieillissement, avec au fond de l’esprit une part du mage qui cherche à prendre le dessus.",
+              "text": "Pour Dragon n° 409 (2012), Halaster, laissé pour mort, a survécu au rituel : son essence s’est dispersée à travers les plans, et la Magepeste l’empêche de se reformer dans l’un de ses clones. Ces corps de rechange en stase, cachés sous la ville et son donjon, ont tous les âges, sexes et espèces, ne vieillissent pas et portent son esprit dans leur subconscient ; un ou plusieurs se seraient éveillés vers 1479 CV, sans confirmation.",
               "nature": "canon_dnd",
               "edition": "4e",
               "refs": [
@@ -2297,23 +2250,19 @@
                   "page": "3-5"
                 },
                 {
-                  "ref": "b-frwiki-halaster-blackcloak"
+                  "ref": "b-mroi-halaster-sombrecape"
                 }
               ],
               "variantGroup": "sort"
             },
             {
-              "text": "Waterdeep: Dungeon of the Mad Mage (2018), aventure de la 5e édition située en 1492 CV, le remet au premier plan en maître bien vivant de Montprofond. Chaotique mauvais comme dans les éditions précédentes, il y est un magicien de niveau 20, d’un facteur de puissance de 23, contre 30 dans le décor de 2001, et parle huit langues, de l’abyssal au commun des profondeurs en passant par le céleste, le draconique et l’infernal.",
+              "text": "Waterdeep: Dungeon of the Mad Mage (2018) le fait figurer dans son donjon, avec un profil de jeu complet : magicien de niveau 20, de facteur de puissance 23, il parle huit langues, dont l’infernal et le commun des profondeurs, et joue assidûment aux quilles dans une taverne au fond de Montprofond.",
               "nature": "canon_dnd",
               "edition": "5e-2014",
               "refs": [
                 {
                   "ref": "b-frwiki-halaster-blackcloak/dungeon-of-the-mad-mage",
                   "page": "310"
-                },
-                {
-                  "ref": "b-frwiki-halaster-blackcloak/frcs-3e",
-                  "page": "180-181"
                 },
                 {
                   "ref": "b-frwiki-halaster-blackcloak"
@@ -2326,7 +2275,7 @@
         {
           "id": "s5",
           "type": "autres_oeuvres",
-          "title": "Dans les aventures, les romans et les jeux",
+          "title": "Où le rencontrer",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -2334,14 +2283,14 @@
           },
           "paragraphs": [
             {
-              "text": "Halaster traverse les aventures consacrées à Montprofond, de The Ruins of Undermountain (1991) à Undermountain: Stardock (1997), Expedition to Undermountain (2007) et Waterdeep: Dungeon of the Mad Mage (2018). On le croise aussi dans des romans, comme Escape from Undermountain (1996) ou Elminster in Hell (2001), et dans des jeux vidéo, de Descent to Undermountain (1998) à l’extension Hordes of the Underdark (2003) de Neverwinter Nights, où il ne s’exprime qu’en vers.",
+              "text": "Halaster traverse les aventures The Ruins of Undermountain (TSR, 1991), sa suite The Deep Levels (1994), Undermountain: Stardock (1997), Expedition to Undermountain (2007) et Waterdeep: Dungeon of the Mad Mage (2018), en français « Waterdeep : Le Donjon du mage dément ». On le retrouve dans les romans Escape from Undermountain (1996) et Elminster in Hell (2001), dans les jeux vidéo Descent to Undermountain (1998) et Neverwinter Nights: Hordes of the Underdark (2003), où il ne s’exprime qu’en rimes.",
               "nature": "hors_univers",
               "refs": [
                 {
-                  "ref": "b-frwiki-halaster-blackcloak"
+                  "ref": "b-frwiki-halaster-blackcloak/ruins-of-undermountain"
                 },
                 {
-                  "ref": "b-frwiki-halaster-blackcloak/ruins-of-undermountain"
+                  "ref": "b-frwiki-halaster-blackcloak/ruins-of-undermountain-ii"
                 },
                 {
                   "ref": "b-frwiki-halaster-blackcloak/undermountain-stardock"
@@ -2363,6 +2312,9 @@
                 },
                 {
                   "ref": "b-frwiki-halaster-blackcloak/nwn-hordes-of-the-underdark"
+                },
+                {
+                  "ref": "b-frwiki-halaster-blackcloak"
                 }
               ]
             }
@@ -2960,12 +2912,12 @@
     "facts": {
       "@type": "lore",
       "theme": "saga",
-      "summary": "Le premier jeu de la série, sorti à la fin de 1998 : un jeu de rôle de BioWare qui entraîne son héros sur la Côte des Épées, jusqu’aux portes de la cité.",
+      "summary": "Le jeu de rôle de BioWare qui ouvre la saga en 1998, sur la Côte des Épées, et auquel on attribue la relance du jeu de rôle sur ordinateur.",
       "sections": [
         {
           "id": "s1",
           "type": "general",
-          "title": "Le jeu",
+          "title": "Le jeu de 1998",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -2973,29 +2925,41 @@
           },
           "paragraphs": [
             {
-              "text": "Baldur’s Gate est un jeu vidéo de rôle développé par le studio canadien BioWare et publié par Black Isle Studios, une division d’Interplay. Sorti en Amérique du Nord entre la fin de novembre et la fin de décembre 1998, puis en Europe en janvier 1999, le 5 en France, il se déroule dans les Royaumes Oubliés, sur la Côte des Épées, et adapte les règles de la 2e édition d’Advanced Dungeons & Dragons. Le joueur y crée son personnage et mène un groupe de six membres au plus, dans des combats en temps réel que l’on peut suspendre à tout moment pour donner ses ordres.",
+              "text": "Premier titre de la série, Baldur’s Gate est l’œuvre de BioWare, un studio canadien fondé, entre autres, par deux médecins de formation, Ray Muzyka et Greg Zeschuk. Le projet démarre en 1995 sous le nom de Battleground Infinity, un jeu prévu entièrement en ligne ; mais l’éditeur, Interplay, préfère un jeu de rôle solo sous licence Donjons et Dragons, situé dans les Royaumes oubliés, et le chantier s’appelle un temps « Forgotten Realms ». Il dure trois ans et mobilise une soixantaine de personnes dont aucune n’avait encore publié de jeu. James Ohlen en dirige la conception, Michael Hoenig en compose la musique.",
               "nature": "hors_univers",
               "refs": [
-                {
-                  "ref": "b-wpfr-baldurs-gate"
-                },
                 {
                   "ref": "b-wpen-baldurs-gate"
                 },
                 {
-                  "ref": "b-frwiki-baldurs-gate-game"
+                  "ref": "b-wpfr-baldurs-gate"
                 }
               ]
             },
             {
-              "text": "C’est le premier jeu bâti sur l’Infinity Engine, un moteur conçu pour lui puis réemployé dans d’autres jeux sous licence D&D, comme Baldur’s Gate II, Icewind Dale ou Planescape: Torment. Commencé en 1995, son développement aboutit à un grand succès critique et commercial : 175 000 exemplaires vendus en deux semaines, la tête des ventes en France, en Allemagne et au Royaume-Uni, puis plus de deux millions d’exemplaires. On lui attribue le renouveau du jeu de rôle sur ordinateur. La version française est intégralement traduite, mais le titre reste en anglais.",
+              "text": "Le jeu adapte les règles d’AD&D 2e édition. L’action s’affiche en vue isométrique, sur des décors précalculés qui ont été dessinés un par un plutôt qu’assemblés en tuiles, ce qui a allongé le développement. Les combats se déroulent en temps réel, mais le joueur peut figer l’action quand il le veut et régler des pauses automatiques. Il crée son héros en choisissant sexe, race (parmi six), classe (parmi huit), caractéristiques et alignement, puis forme un groupe de six personnages au plus, lui compris, parmi vingt-cinq compagnons possibles ; sa réputation pèse sur les prix, l’accueil qu’on lui fait et la loyauté de ses alliés.",
               "nature": "hors_univers",
               "refs": [
+                {
+                  "ref": "b-wpen-baldurs-gate"
+                },
+                {
+                  "ref": "b-wpfr-baldurs-gate"
+                }
+              ]
+            },
+            {
+              "text": "Interplay le publie par sa division Black Isle Studios, pour Windows. En Amérique du Nord, il sort entre le 30 novembre et le 21 décembre 1998 selon les sources ; la France le reçoit le 5 janvier 1999, intégralement traduit mais sous son titre anglais. La critique l’accueille très favorablement (91 sur Metacritic) et les Interactive Achievement Awards en font le jeu de rôle PC de l’année. Vendu à 175 000 exemplaires en deux semaines, il prend la tête des ventes en France, en Allemagne et au Royaume-Uni ; les estimations du total vont de plus de deux millions (2003, 2008) à environ 2,8 millions (2015).",
+              "nature": "hors_univers",
+              "refs": [
+                {
+                  "ref": "b-wpen-baldurs-gate"
+                },
                 {
                   "ref": "b-wpfr-baldurs-gate"
                 },
                 {
-                  "ref": "b-wpen-baldurs-gate"
+                  "ref": "b-frwiki-baldurs-gate-game"
                 }
               ]
             }
@@ -3004,7 +2968,7 @@
         {
           "id": "s2",
           "type": "autres_oeuvres",
-          "title": "Le point de départ",
+          "title": "Le point de départ du récit",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -3012,10 +2976,13 @@
           },
           "paragraphs": [
             {
-              "text": "Le héros a grandi à Château-Suif (Candlekeep), la forteresse-bibliothèque de la Côte des Épées, sous la protection du mage Gorion. Quand des tueurs à gages se mettent à le traquer jusque derrière ces murs, son tuteur décide de l’emmener loin de la forteresse, vers une destination qu’il garde secrète. En chemin, une embuscade menée par une mystérieuse silhouette en armure noire coûte la vie à Gorion. Resté seul, le héros se lance dans une aventure qui le mène à travers toute la région, jusqu’à la cité de la Porte de Baldur.",
+              "text": "L’histoire se déroule sur la Côte des Épées, à l’ouest de Faerûn, peu après le Temps des troubles, entre la Porte de Baldur, la Mer des Épées, les Pics Brumeux et le Bois des Dents Acérées. La région subit une crise du fer : le minerai des mines de Nashkel se corrompt peu après la fonte, armes et outils se brisent, et le métal finit par valoir plus que l’or. On accuse l’Amn, qui s’en défend, et la guerre menace. La Porte de Baldur, la plus grande cité de la région, ferme ses portes et son port sous les patrouilles du Poing enflammé. Au cœur de la crise se tient le Trône de Fer, une organisation marchande ; Zhentarim, Magiciens rouges de Thay et Ménestrels sont aussi de la partie.",
               "nature": "canon_dnd",
               "edition": "add2",
               "refs": [
+                {
+                  "ref": "b-wpen-baldurs-gate"
+                },
                 {
                   "ref": "b-wpfr-baldurs-gate"
                 },
@@ -3025,18 +2992,18 @@
               ]
             },
             {
-              "text": "Il découvre une Côte des Épées en pleine crise du fer : le minerai tiré de la mine de Nashkel pourrit sitôt fondu, les armes et les outils se brisent, le fer vaut plus que l’or et les brigands écument les routes. La Porte de Baldur envoie les mercenaires du Poing enflammé patrouiller, ferme ses portes et son port, et les soupçons se tournent vers le royaume voisin d’Amn, au point que la guerre menace. L’enquête se double d’une quête plus intime : le héros cherche à percer le secret de ses origines, qu’on lui a toujours caché.",
+              "text": "Le héros, orphelin, a grandi à Château-Suif, forteresse devenue bibliothèque au sud de la Porte de Baldur, sous la garde du mage Gorion, membre des Ménestrels : on le désigne comme le pupille de Gorion (Gorion’s Ward). Des assassins le visent jusque derrière ces murs, et Gorion l’emmène soudain, sans un mot d’explication. Dès la première nuit, un mystérieux guerrier en armure et ses hommes leur tendent une embuscade : Gorion refuse de livrer l’enfant qu’il a élevé et meurt en couvrant sa fuite. Avec Imoen, amie d’enfance et premier membre de son groupe, le héros parcourt Beregost, les mines de Nashkel ou le Bois-Manteau (Cloakwood), tout en cherchant à percer le secret d’une ascendance qu’on lui a tue.",
               "nature": "canon_dnd",
               "edition": "add2",
               "refs": [
-                {
-                  "ref": "b-frwiki-baldurs-gate-game"
-                },
                 {
                   "ref": "b-wpen-baldurs-gate"
                 },
                 {
                   "ref": "b-wpfr-baldurs-gate"
+                },
+                {
+                  "ref": "b-frwiki-baldurs-gate-game"
                 }
               ]
             }
@@ -3045,7 +3012,7 @@
         {
           "id": "s3",
           "type": "ecarts",
-          "title": "1368 ou 1369 CV ?",
+          "title": "En quelle année ?",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -3053,27 +3020,27 @@
           },
           "paragraphs": [
             {
-              "text": "Les œuvres liées au jeu le datent de 1368 CV. Le journal de l’extension Siege of Dragonspear (2016), dont l’histoire commence peu après la fin de l’aventure, s’ouvre sur une date de 1368 CV, et une chronologie des romans des Royaumes, Seven Millennia of Realms Fiction, situe la même année le roman Baldur’s Gate de Philip Athans (1999), qui raconte le jeu.",
+              "text": "Le jeu place son récit en 1368 CV, et le roman qu’en tire Philip Athans s’y tient aussi, d’après une liste de son éditeur. Siege of Dragonspear (2016), qui en est la suite directe, va dans le même sens : la première entrée de son journal porte la date du 12 Uktar 1368 CV.",
               "nature": "canon_dnd",
-              "edition": "add2",
+              "edition": "multi",
               "refs": [
-                {
-                  "ref": "b-frwiki-siege-of-dragonspear"
-                },
-                {
-                  "ref": "b-frwiki-baldurs-gate-novel"
-                },
                 {
                   "ref": "b-frwiki-baldurs-gate-game"
                 },
                 {
                   "ref": "b-wpen-baldurs-gate"
+                },
+                {
+                  "ref": "b-frwiki-baldurs-gate-novel"
+                },
+                {
+                  "ref": "b-frwiki-siege-of-dragonspear"
                 }
               ],
               "variantGroup": "annee-recit"
             },
             {
-              "text": "Une autre datation place toute l’action un an plus tard, en 1369 CV, en s’appuyant sur la chronologie des Royaumes que donne le manuel de Baldur’s Gate II: Shadows of Amn, publié par Black Isle en 2000. Dans un cas comme dans l’autre, l’aventure se déroule une dizaine d’années après le Temps des Troubles de 1358 CV, sur la Côte des Épées de la fin du XIVe siècle.",
+              "text": "Le manuel de Baldur’s Gate II: Shadows of Amn, publié par Black Isle en 2000, donne une autre date : à sa page 35, les aventures du premier jeu se situent en 1369 CV, un an plus tard.",
               "nature": "canon_dnd",
               "edition": "add2",
               "refs": [
@@ -3088,7 +3055,7 @@
         {
           "id": "s4",
           "type": "plus_loin",
-          "title": "Extensions, rééditions et suite",
+          "title": "Extensions, rééditions et suites",
           "tag": {
             "act": "prologue",
             "level": "aucun",
@@ -3096,24 +3063,33 @@
           },
           "paragraphs": [
             {
-              "text": "Une extension, Tales of the Sword Coast, paraît en 1999 ; en France, on la connaît aussi sous le titre Baldur’s Gate : la légende de l’île perdue. Développée par BioWare, elle ajoute quatre zones à la carte du jeu, dont le village de la Barbe d’Ulgoth, à l’extrême nord de la Côte des Épées, et la Tour de Durlag, et relève le plafond d’expérience. Un roman tiré du jeu, signé Philip Athans, paraît la même année en anglais ; il n’a pas été traduit en français.",
+              "text": "Le 30 avril 1999, BioWare et Black Isle Studios ajoutent l’extension Tales of the Sword Coast, aussi titrée en France « Baldur’s Gate : la légende de l’île perdue » : vingt à trente heures de quêtes annexes, dans quatre zones dont la Tour de Durlag et l’Île de Glace ; elle dépasse les 600 000 exemplaires. En 2012, Overhaul Games, une division de Beamdog, refond le jeu et son extension dans une Enhanced Edition, sortie fin novembre avec trois ou quatre nouveaux compagnons selon le décompte. Son extension Siege of Dragonspear, sortie le 31 mars 2016, raconte entre les deux premiers jeux une croisade venue du nord qui menace la Porte de Baldur.",
               "nature": "hors_univers",
               "refs": [
-                {
-                  "ref": "b-wpfr-baldurs-gate"
-                },
                 {
                   "ref": "b-frwiki-tales-of-the-sword-coast"
                 },
                 {
+                  "ref": "b-wpfr-baldurs-gate"
+                },
+                {
+                  "ref": "b-frwiki-bg-enhanced-edition"
+                },
+                {
                   "ref": "b-frwiki-baldurs-gate-game"
+                },
+                {
+                  "ref": "b-frwiki-siege-of-dragonspear"
                 }
               ]
             },
             {
-              "text": "En 2012, Baldur’s Gate: Enhanced Edition, développée par Overhaul Games, une division de Beamdog, modernise le jeu et son extension et ajoute zones, compagnons et quêtes ; elle sort en France le 28 novembre 2012 et arrive sur consoles en 2019. En 2016, Siege of Dragonspear, une extension propre à cette édition, prend la suite du jeu original. La série se poursuit avec Baldur’s Gate II: Shadows of Amn en 2000, puis Baldur’s Gate 3 en 2023.",
+              "text": "Philip Athans tire du jeu un roman, publié par Wizards of the Coast en juillet 1999 (une source indique 2009), où le héros se nomme Abdel Adrian ; il s’écarte du jeu sur plusieurs points et n’a pas été traduit en français. La saga se poursuit avec Baldur’s Gate II: Shadows of Amn en 2000, dont l’extension de 2001 clôt l’histoire des deux jeux, tandis que l’Infinity Engine, le moteur conçu pour le premier, sert aussi à Planescape: Torment (1999), Icewind Dale (2000) et Icewind Dale II (2002). Baldur’s Gate 3, de Larian Studios, sort en version complète le 3 août 2023.",
               "nature": "hors_univers",
               "refs": [
+                {
+                  "ref": "b-frwiki-baldurs-gate-novel"
+                },
                 {
                   "ref": "b-wpfr-baldurs-gate"
                 },
@@ -3121,17 +3097,14 @@
                   "ref": "b-wpen-baldurs-gate"
                 },
                 {
-                  "ref": "b-frwiki-bg-enhanced-edition"
-                },
-                {
-                  "ref": "b-frwiki-siege-of-dragonspear"
+                  "ref": "b-frwiki-baldurs-gate-game"
                 }
               ]
             }
           ]
         }
       ],
-      "readingMinutes": 4
+      "readingMinutes": 5
     },
     "links": [
       {

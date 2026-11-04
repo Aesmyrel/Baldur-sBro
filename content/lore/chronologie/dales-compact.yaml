@@ -4,114 +4,112 @@ nom: { fr: Pacte des Vaux, en: Dales Compact, statut: NON_OFFICIELLE }
 etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
 etiquette: { act: prologue, level: aucun, otherWorks: aucun }
 resume: >-
-  En 1 CV, elfes et humains scellent dans la pierre une alliance qui donne son point de départ au calendrier des Royaumes, celui-là même qui date l’année 1492 CV.
+  En 1 CV, elfes et humains scellent au cœur du Cormanthor un accord dont l’année devient le point de départ du calendrier le plus répandu de Faerûn.
 sections:
   - type: general
-    titre: Un pacte gravé dans la pierre
+    titre: L’accord de l’an 1
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          À l’approche de l’an 1 CV, des colons humains affluent de toutes parts vers les forêts du Cormanthyr. Pour prévenir une guerre sanglante avec cette population en pleine croissance, le coronal elfe Eltargrim réunit les siens et les mages de la jeune société humaine autour d’un accord. Les futurs habitants des Vaux (Dalelands) pourront s’établir sur les terres sans forêt que les elfes ne réclament pas ; ils renoncent en échange à couper le bois plus avant dans la grande forêt. L’alliance est gravée dans un monument dressé pour l’occasion, la Pierre levée (Standing Stone), symbole de l’amitié entre les deux peuples et point de départ d’une nouvelle façon de compter les années.
+          Vers −200 CV, des hameaux et des fermes humaines s’égrènent déjà autour du Cormanthor. Aux premiers venus, d’ascendance chondathe, se joignent des colons de tout Faerûn qu’attire une région riche ; mais la grande forêt appartient à l’empire elfe de Cormanthyr, qui la défend et freine les coupes humaines. Pour prévenir une guerre avec cette population croissante, le coronal Eltargrim Irithyl négocie avec les magiciens de la jeune société humaine, ancêtres des Valiens (Dalesfolk). Conclu en 1 CV, l’année dite Year of Sunrise, l’accord ouvre aux futurs habitants des Vaux (Dalelands) les terres de lisière où la forêt ne pousse pas et que les elfes ne revendiquent pas ; en retour, ils renoncent à abattre le moindre arbre plus avant. Elfes et Valiens dressent alors au centre des bois la Pierre levée (Standing Stone), symbole d’unité dont des runes elfiques gravent les termes du traité.
         nature: canon_dnd
-        edition: multi
+        edition: 3e
         refs:
-          - { ref: b-frwiki-dales-compact }
-          - { ref: b-frwiki-history-of-the-dalelands }
-          - { ref: b-mroi-pacte-des-vaux }
-          - { ref: b-frwiki-dales-compact/frcs-3e, page: "118" }
           - { ref: b-frwiki-history-of-the-dalelands/frcs-3e, page: "118" }
-          - { ref: b-frwiki-standing-stone/the-dalelands, page: "4" }
-      - texte: >-
-          Haut d’environ 6 mètres (20 pieds), le monolithe est d’une roche grise et sombre, polie au point de luire ; des runes elfiques, qui courent à son pied, en rappellent les clauses, et un enchantement efface aussitôt toute dégradation. Il se dresse au cœur de la forêt de Cormanthor, au sud de Myth Drannor, là où la route de Rauthauvyr croise la route de la Mer de lune, à mi-chemin entre Blackfeather Bridge et Hillsfar. Les humains n’y ont d’abord pas accès. Quand Rauthauvyr, de Sembie, exige sous menace de guerre une route à travers la forêt, celle-ci est tracée de façon à passer en vue du monument, un geste censé montrer que les alliés des elfes obtiennent ce qu’ils souhaitent sans avoir besoin de violence.
-        nature: canon_dnd
-        edition: multi
-        refs:
-          - { ref: b-frwiki-standing-stone }
-          - { ref: b-mroi-pierre-levee }
-          - { ref: b-frwiki-standing-stone/the-dalelands, page: "55" }
+          - { ref: b-frwiki-dales-compact/frcs-3e, page: "118" }
+          - { ref: b-mroi-pacte-des-vaux/frcs-3e, page: "197 (éd. fr.)" }
+          - { ref: b-frwiki-1-dr }
           - { ref: b-frwiki-standing-stone/frcs-3e, page: "124" }
+      - texte: >-
+          Le monument est un grand obélisque, un monolithe gris sombre et lustré, haut de 6 m (20 pieds), dont la surface enchantée efface vite toute dégradation. Il s’élève dans le Cormanthor, juste au sud de Myth Drannor, à la croisée de la route de Rauthauvyr et de la route de la Mer de Lune (Moonsea Ride), à peu près à mi-chemin entre Blackfeather Bridge et Hillsfar.
+        nature: canon_dnd
+        edition: add2
+        refs:
+          - { ref: b-frwiki-standing-stone/the-dalelands, page: "4, 55" }
           - { ref: b-frwiki-standing-stone/volos-guide-to-the-dalelands, page: "7" }
   - type: general
-    titre: Le point zéro du calendrier
+    titre: Le Calendrier des Vaux
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Le Calendrier des Vaux (Dalereckoning), abrégé CV, sert de mesure commune à tout Faerûn, où il est le plus employé, sans avoir jamais franchi les rivages du continent. S’il a gagné si vite les contrées où humains et elfes s’entendaient, c’est que la cour elfique l’avait aligné, dès l’origine, sur son propre calendrier ancestral ; on le tient pour le premier calendrier humain. Des textes sans lien avec l’histoire des Vaux l’appellent calendrier de l’Homme libre (Freeman’s Reckoning). Les autres comptes restent nombreux : Eauprofonde part de 1032 CV, quand Ahghairon devient son premier seigneur, et, avec l’aval de Khelben d’Eauprofonde et de Vangerdahast du Cormyr, les Ménestrels diffusent un compte nouveau dont l’an zéro est le Temps des Troubles de 1358 CV.
+          Le Calendrier des Vaux (CV ; en anglais Dalereckoning, DR), qu’on appelle encore Calendrier de la Naissance du Val ou de l’Homme Libre, part de la fondation de la Pierre levée et de la conclusion de l’accord. Premier calendrier humain, accordé dès sa création au calendrier elfe par la Cour elfique, il se répand vite partout où les deux peuples vivent en paix ; il devient le plus populaire de Faerûn, l’étalon de tous les autres. Les noms des années viennent du Roll of Years, une liste de plusieurs milliers d’entrées due à Augathra la Folle (Augathra the Mad), que conserve la bibliothèque de Château-Suif (Candlekeep).
         nature: canon_dnd
-        edition: multi
+        edition: 3e
         refs:
-          - { ref: b-frwiki-marking-the-years }
           - { ref: b-mroi-calendrier-des-vaux }
-          - { ref: b-frwiki-marking-the-years/grand-tour-of-the-realms, page: "22-23" }
-          - { ref: b-frwiki-marking-the-years/grand-history-of-the-realms, page: "4" }
           - { ref: b-mroi-calendrier-des-vaux/frcs-3e, page: "78, 269 (éd. fr.)" }
+          - { ref: b-frwiki-marking-the-years }
+      - texte: >-
+          Si chaque année porte le même nom dans tous les Royaumes, chaque royaume ou cité-État la numérote à sa manière, d’après une dynastie, un règne ou une fondation, et ces décomptes entremêlés déroutent le commun comme les sages. Le Cormyr compte depuis la fondation de la maison Obarskyr, toujours sur le trône ; les marchands sembiens répandent ce calendrier comme celui des Vaux, et les 25 ans qui les séparent sèment la confusion. Celui d’Amn, compté depuis Athkatla en 100 CV, reste peu employé : on lui préfère le Calendrier des Vaux. Le Present Reckoning (PR), dont l’an 0 est 1358 CV, l’année du Temps des troubles, reçoit l’aval de Khelben Arunsun et de Vangerdahast, et les Ménestrels (Harpers) le diffusent.
+        nature: canon_dnd
+        edition: add2
+        refs:
+          - { ref: b-frwiki-marking-the-years/grand-tour-of-the-realms, page: "22-23" }
+          - { ref: b-frwiki-marking-the-years }
   - type: ecarts
-    titre: "1 CV ou 26 CV : la naissance du Cormyr"
+    titre: Le Cormyr, fondé en 1 ou en 26 CV ?
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Nombre de chronologies anciennes placent en 1 CV la fondation du Cormyr, le royaume voisin des Vaux ; c’est le cas du supplément Old Empires (1990). Dans cette version, le royaume des Obarskyr naît la même année que la Pierre levée et que le Calendrier des Vaux, et la première date de l’histoire du Cormyr se confond avec celle des Vaux.
+          Dans Old Empires, supplément de 2e édition paru en 1990, le royaume du Cormyr naît en 1 CV : la même année, donc, que le pacte conclu entre les elfes de Cormanthyr et les Valiens, et que l’érection de la Pierre levée.
         nature: canon_dnd
         edition: add2
         variantes: fondation-cormyr
         refs:
           - { ref: b-frwiki-1-dr/old-empires, page: "5" }
-          - { ref: b-frwiki-1-dr }
-          - { ref: b-frwiki-marking-the-years }
       - texte: >-
-          D’autres ouvrages datent cette fondation de 26 CV. Le cadre de campagne de la 3e édition (2001) et la Grand History of the Realms (2007) l’attribuent à Faerlthann Obarskyr, qui s’installe avec la permission des elfes de la région ; la seconde fait commencer cette année-là le calendrier propre au Cormyr. Le supplément de 2001 ajoute que le premier magicien royal, Baerauble, entre au service de la famille régnante la même année.
+          Le Forgotten Realms Campaign Setting de 2001 place cette fondation en 26 CV : Faerlthann Obarskyr établit alors le royaume, avec l’accord des elfes du pays. La même année meurt Ondeth Obarskyr, et Baerauble Etharr devient le premier magicien royal.
         nature: canon_dnd
-        edition: multi
+        edition: 3e
         variantes: fondation-cormyr
         refs:
           - { ref: b-frwiki-26-dr/frcs-3e, page: "113" }
-          - { ref: b-frwiki-26-dr/grand-history-of-the-realms, page: "60" }
-          - { ref: b-frwiki-26-dr }
       - texte: >-
-          A Grand Tour of the Realms (1993) et la Grand History of the Realms (2007) donnent la clé de ces vingt-cinq ans d’écart. Le calendrier du Cormyr part de la fondation de la maison Obarskyr, celui des Vaux de la Pierre levée : nés chez deux voisins, l’un et l’autre ont été diffusés par un troisième peuple, les marchands de Sembie. Bien des chronologies datent donc leurs événements en CV tout en mettant la naissance du Cormyr en 1 CV, et quiconque étudie les premiers siècles du calendrier doit démêler les deux comptes.
+          The Grand History of the Realms (2007) retient lui aussi 26 CV, l’année où commence le calendrier du Cormyr (Cormyr Reckoning). Il note que des chronologies plus anciennes, datées elles aussi en CV, plaçaient cette fondation en 1 CV.
         nature: canon_dnd
-        edition: multi
+        edition: "3.5"
+        variantes: fondation-cormyr
         refs:
-          - { ref: b-frwiki-marking-the-years/grand-tour-of-the-realms, page: "22" }
+          - { ref: b-frwiki-26-dr/grand-history-of-the-realms, page: "60" }
           - { ref: b-frwiki-marking-the-years/grand-history-of-the-realms, page: "4" }
-          - { ref: b-frwiki-marking-the-years }
-          - { ref: b-mroi-calendrier-des-vaux }
   - type: ecarts
-    titre: La Pierre brisée
+    titre: Qui a détruit la Pierre levée ?
     etiquette: { act: prologue, level: aucun, otherWorks: leger }
     paragraphes:
       - texte: >-
-          Pour la Grand History of the Realms (2007), la Pierre tombe en 1374 CV, pendant la guerre qui ravage alors le Cormanthor. Les fey’ri de la maison Dlardrageth attaquent le plus grand camp que les Plumes rouges (Red Plumes) de Hillsfar ont installé au pied du monument et mettent leur armée en déroute ; quelques semaines plus tard, ils détruisent la Pierre, puis s’allient à la maison drow Jaelre.
+          Selon The Grand History of the Realms (2007), la Pierre tombe le 21 Flamerule 1374 CV sous les coups des fey’ri de la maison Dlardrageth, dits aussi daemonfey, qui remportent ensuite une victoire décisive sur l’armée de Hillsfar. Dès le 26 Kythorn, ils s’en étaient pris au grand camp que les Plumes rouges de Hillsfar avaient dressé à la Pierre. Après la destruction, la maison Dlardrageth s’allie aux drows de la maison Jaelre.
         nature: canon_dnd
         edition: "3.5"
         variantes: destruction
         refs:
           - { ref: b-frwiki-standing-stone/grand-history-of-the-realms, page: "156" }
           - { ref: b-frwiki-cormanthor-war }
-          - { ref: b-frwiki-history-of-the-dalelands }
       - texte: >-
-          Le Forgotten Realms Campaign Guide (2008), qui ouvre la 4e édition, en donne une autre version : la Pierre levée y est détruite par des drows, les elfes noirs de l’Outreterre, vers la fin du XIVe siècle CV, sans date plus précise, et le même passage la fait restaurer en 1425 CV, cinquante ans après sa destruction. Les deux récits ne s’accordent que sur l’époque de sa chute, à la fin du XIVe siècle.
+          L’Encyclopédie des Royaumes oubliés (Forgotten Realms Campaign Guide, 2008) attribue la destruction à des drows, vers la fin du XIVe siècle CV, cinquante ans avant 1425 CV. Les gens d’Ashabenford la rebâtissent un peu plus d’un demi-siècle plus tard : en 1425 CV, l’Année des Sept Sœurs, Ashabenford, siège permanent du conseil des Vaux, réaffirme l’ancien pacte avec Myth Drannor restaurée.
         nature: canon_dnd
         edition: 4e
         variantes: destruction
         refs:
           - { ref: b-mroi-pierre-levee/forgotten-realms-campaign-guide, page: "192 (éd. fr.)" }
-          - { ref: b-mroi-pierre-levee }
           - { ref: b-mroi-pacte-des-vaux }
+          - { ref: b-frwiki-standing-stone/forgotten-realms-campaign-guide, page: "108" }
   - type: general
-    titre: Le pacte renouvelé
+    titre: Treize siècles d’épreuves
     etiquette: { act: prologue, level: aucun, otherWorks: leger }
     paragraphes:
       - texte: >-
-          Pendant plus de treize siècles, l’alliance résiste aux trahisons, venues surtout des humains, aux catastrophes magiques, venues surtout des elfes, et aux convoitises des Sembiens comme des conquérants de la Mer de lune. Elle n’en sort pas intacte : en 1372 CV, profitant du départ des elfes pour Éternelle-Rencontre (Evermeet), Valarchen (Archendale) rompt le pacte et commence à exploiter le bois du Cormanthor. Deux ans plus tard, le seigneur elfe Seiveril Miritar le ravive avec quatre vaux, au bord du lac Sember. En 1425 CV enfin, Ashabenford, devenue le siège permanent du Conseil des Vaux, le réaffirme avec la cité de Myth Drannor et restaure la Pierre levée, un peu plus de cinquante ans après sa chute.
+          Le pacte tient plus de treize siècles. Il résiste aux envahisseurs venus de la Mer de Lune (Moonsea), à l’expansion sembienne, à des catastrophes magiques, le plus souvent elfiques, et à des trahisons, le plus souvent humaines. Après 714 CV, privés de leurs protecteurs elfes, les Vaux humains prennent leur essor par eux-mêmes ; en 1344 CV, la plupart des elfes du Cormanthor quittent le continent. C’est au moment de leur départ pour Éternelle-Rencontre (Evermeet) que Valarchen (Archendale) rompt le pacte, en 1372 CV, puis exploite les arbres de la forêt.
         nature: canon_dnd
-        edition: multi
+        edition: 3e
         refs:
-          - { ref: b-mroi-pacte-des-vaux }
-          - { ref: b-frwiki-history-of-the-dalelands }
-          - { ref: b-frwiki-standing-stone }
           - { ref: b-mroi-pacte-des-vaux/frcs-3e, page: "197 (éd. fr.)" }
-          - { ref: b-frwiki-history-of-the-dalelands/grand-history-of-the-realms, page: "155" }
-          - { ref: b-frwiki-standing-stone/forgotten-realms-campaign-guide, page: "108" }
+          - { ref: b-frwiki-history-of-the-dalelands/frcs-3e, page: "118, 123" }
+      - texte: >-
+          Dès 1044 CV, les Vaux forment des communautés indépendantes, alliées au sein du conseil des Vaux (Dales Council). En 1374 CV, Seiveril Miritar, seigneur elfe d’Evereska à la tête d’une croisade partie d’Éternelle-Rencontre, ravive le pacte le 28 Mirtul, au lac Sember, avec Battledale, Deepingdale, Mistledale et Shadowdale. Il l’invoque pour engager ces Vaux dans la guerre contre la maison Dlardrageth : c’est la guerre de Cormanthor, qui embrase la forêt et les Vaux de 1374 à 1376 CV.
+        nature: canon_dnd
+        edition: "3.5"
+        refs:
+          - { ref: b-frwiki-history-of-the-dalelands/grand-history-of-the-realms, page: "155, 156" }
+          - { ref: b-frwiki-cormanthor-war }
 relations:
   - { cible: lore.factions.harpers, type: see_also }
