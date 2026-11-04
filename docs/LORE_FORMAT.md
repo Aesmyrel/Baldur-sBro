@@ -31,6 +31,14 @@
 10. **Registre** : une entrée par page qui cite le livre (`<page>/<livre>`) ; éditeur et année repris du modèle de citation de la page ; `edition` toujours renseignée, y compris pour un roman ou un jeu (l'édition de son époque) ; licences notées `cc-by-sa-3.0` (Fandom), `cc-by-sa-4.0` (Wikipédia), `cc-by-nc-sa-4.0` (bg3.wiki) ; `titre_vf` seulement s'il est vérifié sur Wikipédia FR ou chez l'éditeur.
 11. **Typographie** : « Acte I » ; « n° » ; titres anglais avec deux-points sans espace (`Forgotten Realms: Heroes of Faerûn`), comme sur la couverture ; noms des Royaumes en VF attestée, la VO entre parenthèses à la première occurrence.
 
+### 1 ter. Rédaction en salle blanche (D-082)
+
+La méthode du §1 bis ne suffit pas quand un même rédacteur lit la source puis écrit : la seconde relecture a encore trouvé un tiers de paragraphes en paraphrase serrée. Le codex s'écrit donc en deux temps, par deux rédacteurs distincts :
+
+1. **Extraction** (`tools/cache/lore-notes/<fiche>.yaml`, non versionné). Un premier rédacteur lit les sources et relève des **faits atomiques**, en français télégraphique : au plus 20 mots, aucune phrase ni image de la source, aucune expression marquante. Chaque fait porte sa référence, sa page éventuelle, sa nature, son édition et, s'il appartient à une version divergente, son groupe de variantes. Les faits sont rangés par ordre alphabétique, jamais dans l'ordre de la source. Pour la section `bg3`, seuls les faits structurés de `data/game` sont repris, avec l'identifiant de la fiche de jeu. Les métadonnées de la fiche (identifiant, nom, alias, étiquettes, relations) sont recopiées telles quelles.
+2. **Rédaction**. Un second rédacteur écrit la fiche **à partir des seules notes** et de `data/game`. Il n'ouvre ni les sources (`tools/cache/lore/`, `tools/cache/bg3wiki/`, sites), ni l'ancienne version de la fiche. Il choisit son plan, regroupe les faits par idée et les relie avec ses mots.
+3. **Relecture** indépendante, comme avant (§1 bis et droits).
+
 ## 2. Spoilers : étiquettes
 
 Chaque fiche a une étiquette de **titre** (ce que révèle le nom dans une liste), une étiquette de **fiche** (l'accroche) et une étiquette par **section**. Une section ne protège jamais moins que sa fiche, une fiche jamais moins que son titre.

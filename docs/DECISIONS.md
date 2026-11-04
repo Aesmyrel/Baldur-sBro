@@ -291,3 +291,15 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - références en pied de fiche (pages et chapitres cités, source qui cite le livre), puis relations (« Pour tirer le fil ») ;
   - filet de progression de lecture et ancre de section (`#s3`) pour les liens profonds.
 - **Registre exporté** : `normalize` écrit aussi `data/lore/references.json`, que les tests et les captures relisent. Le test de fuite vérifie désormais pour de bon que seules les références des sections visibles sont données.
+
+**D-082 — Codex : rédaction en salle blanche.**
+- **Seconde relecture des pilotes réécrits** :
+  - 30 nouvelles affirmations : 29 exactes, 1 approximative, aucune fausse ; aucune fuite ;
+  - mais 29 paragraphes sur 85 restent en paraphrase serrée, et six fiches mêlent encore des dérivés du Forgotten Realms Wiki (CC BY-SA) et de bg3.wiki (CC BY-NC-SA).
+  La réécriture a changé les mots, rarement le plan.
+- **Cause** : un rédacteur qui lit la source avant d'écrire en suit l'ordre et les images, même avec la consigne de s'en écarter.
+- **Décision** : les fiches s'écrivent désormais en deux temps, par deux rédacteurs distincts (`docs/LORE_FORMAT.md` §1 ter) :
+  - un extracteur relève des faits atomiques, télégraphiques et rangés par ordre alphabétique ;
+  - un rédacteur qui n'a vu ni les sources ni l'ancienne fiche écrit à partir de ces seules notes et des données de `data/game`.
+  Comme le texte final ne dérive d'aucune expression source, le mélange de licences disparaît aussi.
+- **Pilotes** : onze fiches sont réécrites de cette façon. La fiche du *Guide des aventuriers de la Côte des Épées*, conforme à tous les critères, est gardée. Aucun nouveau lot du codex n'est lancé avant une relecture favorable.
