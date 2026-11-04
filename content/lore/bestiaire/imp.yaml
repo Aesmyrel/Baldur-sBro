@@ -1,57 +1,73 @@
 id: lore.bestiaire.imp
 theme: bestiaire
 nom: { fr: Diablotin, en: Imp, statut: VF_DND, source: srd-5.2.1-fr }
+alias: []
 etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
 etiquette: { act: prologue, level: aucun, otherWorks: aucun }
 resume: >-
-  L’un des plus faibles diables, flatteur et lâche, le diablotin aime servir de familier aux mortels pour mieux les pousser vers le mal.
+  Un petit diable ailé, l’un des plus faibles de la hiérarchie infernale, qui se met au service des mortels comme familier pour mieux les corrompre.
 sections:
   - type: general
-    titre: L’un des plus faibles diables
+    titre: Le petit tentateur des Enfers
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Les diablotins (imps) sont des fiélons parmi les plus faibles de la hiérarchie infernale, mais leur emploi est précieux : approcher les mortels et les mener, pas à pas, vers le mal. On les trouve surtout en Baator et dans l’Achéron, où des diables plus puissants s’en servent comme coursiers, espions ou émissaires. Sur le plan matériel, ils se font conseillers, éclaireurs ou confidents, et surtout familiers de magiciens, de prêtres et d’autres chercheurs de pouvoir, qui les croient à tort faibles et dociles. N’ayant pas autorité pour proposer eux-mêmes un pacte, ils séduisent par la flatterie et les services rendus, aident leur maître à gagner sorts et objets magiques pour attiser sa soif de puissance, et ne voient en lui qu’un instrument au profit de leurs seigneurs.
+          Les diablotins sont des diables mineurs, en dehors de la caste des baatezus, et comptent parmi les plus faibles des fiélons de la hiérarchie infernale. Ce sont les pendants loyaux des quasits, ces autres petits corrupteurs. On les trouve dans tous les plans inférieurs, surtout dans l’Achéron et à Baator. Certains sont des diables rétrogradés, d’autres des larves d’âmes (soul larvae) que de puissants diables ont façonnées, même s’ils se prétendent volontiers issus de toutes sortes de fiélons. Ils ne vieillissent pas, se passent de sommeil et dévorent toute viande, vivante ou morte. Tué hors de son plan, un diablotin s’y reforme au bout d’un an et un jour ; il ne reçoit un genre qu’après des siècles de labeur, selon ses œuvres.
         nature: canon_dnd
         edition: multi
         refs:
-          - { ref: frwiki-imp }
           - { ref: frwiki-imp/planescape-mc-appendix, page: "56" }
-          - { ref: frwiki-imp/fiendish-codex-2, page: "13" }
           - { ref: frwiki-imp/monster-manual-4e, page: "63" }
           - { ref: frwiki-imp/monster-manual-5e, page: "76" }
+          - { ref: frwiki-imp/fiendish-codex-2, page: "13" }
+          - { ref: frwiki-imp/faces-of-evil, page: "91–93" }
       - texte: >-
-          Sous leur forme naturelle, ce sont de petits humanoïdes d’une soixantaine de centimètres pour moins de quatre kilos, le plus souvent rouge sombre, aux ailes de cuir pareilles à celles d’une chauve-souris, aux cornes fines et torses et à la queue préhensile terminée par un dard venimeux. Chacun peut aussi revêtir une ou deux formes animales, comme l’araignée, le rat, le sanglier, le corbeau ou le bouc, sans perdre ses pouvoirs : invisibilité à volonté, guérison surnaturelle, résistance au feu, au froid, au poison et à la magie, et seules les armes d’argent ou enchantées le blessent vraiment. Dès le Monster Manual de 1977, le diablotin familier partage ses sens avec son maître par télépathie et lui prête une part de ses dons ; selon la 5e édition, un contrat scelle leur lien, et le rompre met fin à ce service.
+          Sous sa forme naturelle, le diablotin est un humanoïde d’environ 60 cm pour 3,6 kg, aux ailes de cuir de chauve-souris et aux petites cornes torses, blanches comme ses crocs ; sa couleur varie, mais le rouge sombre domine. Sa queue préhensile s’achève sur un dard au venin parfois mortel. Chaque individu sait prendre une ou deux formes animales, araignée, rat, sanglier, corbeau ou chèvre, sans rien perdre de ses pouvoirs, et sa morsure reste venimeuse sauf en corbeau ou en chèvre. Il se rend invisible et détecte la magie ou le bien à volonté, et use de suggestion une fois par jour. Il résiste au feu, au froid, au poison, à l’électricité et à la magie, guérit avec une rapidité surnaturelle, et seules les armes d’argent ou enchantées le blessent.
         nature: canon_dnd
         edition: multi
+        refs:
+          - { ref: frwiki-imp/monster-manual-v35, page: "56" }
+          - { ref: frwiki-imp/monster-manual-5e, page: "76" }
+          - { ref: frwiki-imp/planescape-mc-appendix, page: "56" }
+      - texte: >-
+          Le diablotin est surtout connu comme familier, accordé aux mortels jugés dignes ; ses maîtres habituels sont des lanceurs de sorts loyaux, magiciens ou prêtres, ou de simples chercheurs de pouvoir. Le lien profite au maître : télépathie jusqu’à 1,6 km environ, partage des sens, magie renforcée. La 1re édition lui ajoute la régénération et la résistance à la magie de son familier tant qu’il le garde près de lui, et le droit de poser six questions aux archidiables ; l’éloignement l’affaiblit, et la mort du diablotin lui coûte cher. Mais l’invocateur qui croit tenir un serviteur faible et docile se trompe : le diablotin feint d’obéir, oriente en secret les actes de son maître et attise sa soif de sorts et d’objets magiques. Le mortel n’est qu’un outil ; ses vrais maîtres restent les seigneurs des Enfers.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-imp/planescape-mc-appendix, page: "56" }
+          - { ref: frwiki-imp/monster-manual-4e, page: "63" }
+          - { ref: frwiki-imp/monster-manual-1e, page: "54" }
+      - texte: >-
+          Corrompre est sa mission. Faute de la présence intimidante des autres diables, il procède par la ruse et la tentation : flatterie, persuasion, ressources à portée de main. Il n’a aucune autorité pour conclure un pacte infernal ; quand un diable le confie à un mortel par contrat, c’est ce diable qui reçoit le crédit de la damnation, et le diablotin cherche à perdre en chemin le plus d’âmes possible, dans l’entourage de son maître ou parmi les puissants. Ce rang, si faible soit-il, fait envie, car la tentation mène sûrement à la promotion : il vaut souvent à un diable sa première damnation en propre, et l’avancement vient en moyenne après neuf âmes, certaines valant beaucoup plus que d’autres. Servile mais ambitieux, le diablotin n’obéit que par intérêt, et une fois au pouvoir, il en abuse en tyran.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-imp/fiendish-codex-2, page: "13" }
+          - { ref: frwiki-imp/planescape-mc-appendix, page: "56" }
+          - { ref: frwiki-imp/faces-of-evil, page: "91–93" }
+      - texte: >-
+          Lâche, le diablotin ne combat que contraint. Invisible ou sous forme animale, il attend qu’une diversion lui ouvre une occasion, frappe puis se replie, et s’enfuit dès que l’affrontement tourne mal. Il ne fait exception que pour défendre le mortel dont il a la charge, car le perdre compromettrait sa promotion et son lien avec le monde des mortels. Il commet aussi de menus méfaits, comme voler des objets de valeur, et son savoir profane, nourri d’espionnage, d’expérience et de renseignements glanés auprès d’autres diables, est vaste.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-imp/monster-manual-4e, page: "63" }
+          - { ref: frwiki-imp/monster-manual-v35, page: "56" }
+          - { ref: frwiki-imp/monster-manual-5e, page: "76" }
+      - texte: >-
+          Le diablotin de Dungeons & Dragons s’inspire de l’imp du folklore européen. Il figure dès le Monster Manual de 1977, puis revient dans de nombreux jeux vidéo, d’Icewind Dale à Neverwinter Nights, de Baldur’s Gate II à Baldur’s Gate III, et dans Neverwinter, ainsi que dans plusieurs romans, parmi lesquels The Fallen Fortress, Passage to Dawn et King Pinch.
+        nature: hors_univers
         refs:
           - { ref: frwiki-imp }
           - { ref: frwiki-imp/monster-manual-1e, page: "54" }
-          - { ref: frwiki-imp/planescape-mc-appendix, page: "56" }
-          - { ref: frwiki-imp/monster-manual-v35, page: "56" }
-          - { ref: frwiki-imp/monster-manual-5e, page: "76" }
-      - texte: >-
-          Leur docilité n’est qu’un calcul. Lâches, ils ne combattent que contraints, frappent par surprise une fois invisibles ou métamorphosés, puis s’éclipsent, et fuient dès que l’affaire tourne mal, sauf pour protéger le mortel qui leur sert de marchepied vers une promotion. Car le rang de diablotin est envié : libre d’errer sur le plan matériel, un diablotin se voit crédité en propre des âmes qu’il damne, et le Fiendish Codex II estime à neuf en moyenne celles qu’il faut pour monter en grade. Les grands diables les façonnent à partir de larves d’âmes, ou y rétrogradent d’autres diables. Pour la 2e édition, ce sont des diables mineurs étrangers aux baatezu, pendants loyaux des quasits ; tués hors de leur plan, ils s’y reforment au bout d’un an et un jour.
-        nature: canon_dnd
-        edition: multi
-        refs:
-          - { ref: frwiki-imp }
-          - { ref: frwiki-imp/faces-of-evil, page: "91–93" }
-          - { ref: frwiki-imp/monster-manual-4e, page: "63" }
-          - { ref: frwiki-imp/monster-manual-v35, page: "56" }
-          - { ref: frwiki-imp/monster-manual-5e, page: "76" }
-          - { ref: frwiki-imp/fiendish-codex-2, page: "13" }
-          - { ref: frwiki-imp/planescape-mc-appendix, page: "56" }
   - type: bg3
     titre: Dans Baldur’s Gate 3
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Dans Baldur’s Gate 3, les diablotins sont les tout premiers adversaires : le premier combat du prologue, à bord du nautiloïde, oppose le groupe à des diablotins mineurs (Lesser Imps), une version affaiblie qu’on ne rencontre que là, et d’autres variantes attendent plus loin dans l’aventure. Le jeu leur garde leur aspect classique de petits diables volants à la queue armée d’un dard. Un diablotin peut aussi devenir un allié : l’occultiste qui choisit le Pacte de la chaîne obtient au niveau 3 le sort Appel de familier : diablotin, un rituel de conjuration qui lui donne l’une de ces créatures pour familier.
+          Dans Baldur’s Gate 3, le diablotin peut devenir le familier d’un occultiste. L’occultiste de niveau 3 qui choisit le Pacte de la chaîne accède au sort Appel de familier : diablotin, une conjuration de niveau 1 qui se lance à 18 m et peut aussi se lancer en rituel ; le même pacte lui ouvre Appel de familier : quasit. La capacité Pacte approfondi donne ensuite une attaque supplémentaire au familier du Pacte de la chaîne. Ces noms de sorts et de capacités sont des traductions non officielles.
         nature: canon_bg3
         refs:
           - { ref: bg3wiki-imp }
-          - { ref: bg3wiki-lesser-imp }
 relations:
   - { cible: lore.cosmologie.avernus, type: see_also }
   - { cible: place.nautiloid, type: see_also }

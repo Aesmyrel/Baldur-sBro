@@ -1,97 +1,89 @@
 id: lore.peuples.tiefling
 theme: peuples
 nom: { fr: Tieffelin, en: Tiefling, statut: VF_DND, source: srd-5.2.1-fr }
+alias: []
 etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
 etiquette: { act: prologue, level: aucun, otherWorks: aucun }
 resume: >-
-  Humains au sang fiélon, les tieffelins portent souvent cornes et queue, et une réputation qui les précède partout où ils vont.
+  Des humains dont la lignée porte la marque des plans fiélons, souvent trahis par leurs cornes et leur queue, et que leur entourage tient volontiers à distance.
 sections:
   - type: general
-    titre: Un héritage fiélon
+    titre: Un sang venu d’en bas
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Un tieffelin met souvent mal à l’aise, avant même qu’on sache d’où il vient. Ce malaise tient à son sang : il descend d’humains chez qui un fiélon, démon, diable, yugoloth ou divinité maléfique, a laissé sa marque, parfois bien des générations plus tôt. Le plus souvent, cela se voit : cornes, queue, dents pointues, yeux d’une seule teinte, noirs, rouges, blancs, argentés ou dorés ; plus rarement des pieds fourchus, une odeur de soufre, voire une tache de naissance qui dessine le symbole d’un dieu. Pour le reste, il a la stature d’un humain, et cet héritage ne le voue pas au mal : les tieffelins sont presque aussi divers que les humains, contrairement aux demi-fiélons. Leurs pendants célestes sont les aasimars.
+          Les tieffelins sont des planaires d’ascendance humaine, sur qui pèse l’influence des plans fiélons. L’ancêtre fiélon peut remonter à bien des générations sans que la marque s’efface, et une lignée peut sommeiller longtemps avant de ressurgir. Cornes, queue et dents pointues sont les signes les plus courants ; la peau va des teintes humaines au rouge, la chevelure du noir au bleu sombre ou au violet, et les yeux sont parfois d’une couleur unie, sans pupille ni blanc. D’autres traits sont plus rares : odeur de soufre, sabots ou jambes de chèvre, langue fourchue, peau écailleuse, et même, selon certains récits, absence d’ombre ou de reflet. La plupart n’en portent qu’un ou deux, et quelques-uns ont l’air tout à fait humain.
         nature: canon_dnd
         edition: multi
         refs:
-          - { ref: frwiki-tiefling }
-          - { ref: mroi-tieffelins }
-          - { ref: frwiki-tiefling/frcs-3e, page: "19–20" }
-          - { ref: frwiki-tiefling/races-of-faerun, page: "126" }
+          - { ref: frwiki-tiefling/frcs-3e, page: "20" }
+          - { ref: frwiki-tiefling/races-of-faerun, page: "125–126" }
           - { ref: frwiki-tiefling/players-handbook-4e, page: "49" }
+          - { ref: frwiki-tiefling }
       - texte: >-
-          Leur vie commence souvent mal. Les nouveau-nés trop visiblement fiélons sont fréquemment tués par des parents horrifiés, et ceux qui grandissent connaissent rarement la tendresse d’une famille ordinaire : beaucoup en gardent une amertume tenace et s’attendent à être rejetés. Les uns épousent la noirceur qu’on leur prête, d’autres la refusent jusqu’à devenir de vrais héros ; la plupart restent entre les deux. Méfiants envers tous, y compris envers leurs semblables, dont ils recherchent pourtant la compagnie en secret, ils se sentent plus proches des demi-orques, eux aussi rejetés, et rendent pleinement l’amitié qu’on leur témoigne. Sans patrie, ils vivent dans tout Toril ; au XVe siècle CV, ils abondent sur la Côte des Épées, région où la première guerre de Dragonspear (1356 CV) avait déjà grossi leur nombre, et d’abord dans la cosmopolite Porte de Baldur.
+          Un tieffelin vit de vingt à quarante ans de plus qu’un humain, mais vieillit à son rythme une fois adulte. Il prend tôt conscience de sa différence, et son enfance connaît rarement la tendresse : les nouveau-nés aux traits trop inhumains sont souvent tués à la naissance, et les adultes se recrutent surtout parmi ceux dont les signes sont discrets ou les parents indifférents. En leur présence, les autres éprouvent un malaise, qu’ils connaissent ou non leur ascendance, et leur prêtent une réputation de voleurs et de fourbes. Beaucoup en gardent de l’amertume, s’attendent au rejet et accordent leur confiance avec lenteur, même entre eux ; mais l’amitié qu’on leur offre, ils la rendent vite et la rompent rarement.
         nature: canon_dnd
         edition: multi
         refs:
           - { ref: frwiki-tiefling }
-          - { ref: mroi-tieffelins }
           - { ref: frwiki-tiefling/races-of-faerun, page: "125–127" }
           - { ref: frwiki-tiefling/players-handbook-4e, page: "49" }
+          - { ref: frwiki-tiefling/frcs-3e, page: "20" }
+      - texte: >-
+          Rien ne les voue au mal, contrairement aux demi-fiélons : leurs alignements sont presque aussi variés que ceux des humains, avec un penchant pour la ruse. Devant leur héritage, deux attitudes dominent. La fierté pousse les uns à retourner leur connaissance du mal contre lui, les autres à l’imiter ; la honte conduit à multiplier les bonnes actions ou à se faire oublier. Aucun dieu ne s’impose chez eux : la plupart prient les grands dieux de leur pays, et Beshaba en attire beaucoup, qui partagent un même sentiment d’infortune. Parmi les lanceurs de sorts profanes, les occultistes sont les plus nombreux, et leurs magiciens se tournent souvent vers la divination ou l’invocation.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-tiefling/races-of-faerun, page: "126–127" }
           - { ref: frwiki-tiefling/fr-players-guide, page: "19" }
-          - { ref: frwiki-sword-coast }
+          - { ref: frwiki-tiefling/players-handbook-4e, page: "48" }
+      - texte: >-
+          Sans patrie ni culture propre, les tieffelins vivent dispersés sur tout Toril, en petits groupes, surtout dans les grandes cités cosmopolites. La Côte des Épées en compte beaucoup, à Baldur’s Gate en particulier, et leur nombre y a grandi après la première guerre de Dragonspear, en 1356 CV. Padhiver (Neverwinter) abrite la plus forte population tieffeline du Nord, ainsi que l’Ashmadaï, un culte violent voué à Asmodée. Thay en a longtemps tenu beaucoup en esclavage, certains engendrés à dessein par des mages pour servir d’espions, de voleurs ou d’assassins aux zulkirs ; nombre d’entre eux ont fui quand Szass Tam a pris le pouvoir, et l’Aglarond tolère à contrecœur ces ennemis de Thay.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-tiefling/fr-players-guide, page: "19" }
+          - { ref: mroi-tieffelins/scag, page: "119" }
           - { ref: frwiki-sword-coast/players-guide-to-faerun, page: "28" }
+          - { ref: frwiki-tiefling/races-of-faerun, page: "126" }
   - type: ecarts
-    titre: Une lignée qui change d’une édition à l’autre
+    titre: Une lignée qui change
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Les tieffelins apparaissent avec le décor Planescape (1994) : ce sont alors des mortels qui portent du sang de fiélon. Le Monstrous Compendium de Planescape les décrit comme des combattants vifs, souvent ambidextres, qui préfèrent les armures légères et les armes à la fois tranchantes et rapides, de la dague au cimeterre en passant par l’arbalète de poing ; il précise même qu’ils sont carnivores et tiennent la moelle crue pour un mets de choix.
-        nature: canon_dnd
-        edition: add2
-        variantes: lignee
-        refs:
-          - { ref: frwiki-tiefling }
-          - { ref: frwiki-tiefling/planescape-campaign-setting }
-          - { ref: frwiki-tiefling/planescape-mc-appendix, page: "112" }
-      - texte: >-
-          Pour le décor des Royaumes de la 3e édition, les tieffelins sont des créatures touchées par les plans (planetouched), des Extérieurs natifs, et leur ancêtre se lit souvent sur leur corps, même après des générations de sommeil, la plupart n’en portant qu’un ou deux signes. Un rakshasa laisse une fourrure ou des yeux de félin, une guenaude nocturne de petites cornes et une peau bleuie comme une ecchymose, un diable ou un démon une langue fourchue, des écailles ou une odeur de soufre. Certains naissent même d’un dieu : la lignée de Mask ne projette aucun reflet, celle de Beshaba porte des bois de cerf et des cheveux blancs, et beaucoup de tieffelins vénèrent cette déesse de la malchance, qu’ils tiennent pour responsable de leur sort. En Thay, des Magiciens rouges en élèvent à dessein pour en faire des espions et des assassins.
+          En 3e édition, les tieffelins sont des extérieurs natifs, issus de démons, de yugoloths, de diables ou de dieux maléfiques. L’ancêtre peut être une marilith, une succube, une érinye, un gélugon, un diantrefosse ou un rakshasa, et chacun laisse sa signature : fourrure et yeux de félin pour le rakshasa, petites cornes et peau bleuâtre pour la guenaude nocturne. Certaines lignées sont divines : un rejeton de Beshaba porte des bois de cerf et des cheveux blancs, un rejeton de Mask n’a pas de reflet, et la Mulhorande connaît surtout les lignées de Set et de Sebek.
         nature: canon_dnd
         edition: 3e
         variantes: lignee
         refs:
-          - { ref: frwiki-tiefling }
-          - { ref: mroi-tieffelins }
           - { ref: frwiki-tiefling/frcs-3e, page: "20" }
+          - { ref: mroi-tieffelins }
           - { ref: frwiki-tiefling/races-of-faerun, page: "125–127" }
       - texte: >-
-          Le Sword Coast Adventurer’s Guide (2015) décrit un XVe siècle CV où cette diversité s’est presque effacée. Depuis qu’Asmodée, seigneur des Neuf Enfers, est devenu un dieu à la suite de la Magepeste (Spellplague) de 1385 CV, la plupart des tieffelins naissent de sa seule lignée et arborent des traits bien plus franchement diaboliques qu’autrefois. Le guide note pourtant qu’à la fin du siècle, des enfants d’autres ascendances fiélones recommencent à voir le jour, sans que la lignée d’Asmodée perde sa très large majorité. Il ajoute que certains tieffelins vénèrent les fiélons ou les puissances que servaient leurs ancêtres, et qu’ils sont assez nombreux pour nourrir les soupçons de leurs voisins.
+          En 5e édition, la lignée change de nature. Un rituel accompli en 1358 CV par un convent d’occultistes, les Treize de Toril (Toril Thirteen), remplace les ascendances de démons, de diables, de guenaudes ou de rakshasas par le seul « sang d’Asmodée » ; il prend effet sur tout Toril à la Magepeste, en 1385 CV, quand Asmodée dévore l’étincelle divine d’Azuth et devient dieu. Au XVe siècle CV, la plupart des tieffelins partagent donc un même aspect diabolique, qui aggrave la méfiance des autres peuples, et l’enfant d’un tieffelin naît toujours tieffelin, alors que le sang infernal se diluait autrefois au fil des unions. Asmodée n’a pourtant aucune prise sur ces « enfants », libres de le servir ou non ; vers la fin du siècle, d’autres lignées reparaissent, sans entamer la nette majorité asmodéenne.
         nature: canon_dnd
         edition: 5e-2014
         variantes: lignee
         refs:
           - { ref: frwiki-tiefling }
-          - { ref: mroi-tieffelins }
           - { ref: frwiki-tiefling/scag, page: "118" }
-          - { ref: mroi-tieffelins/scag, page: "118–119" }
+          - { ref: mroi-tieffelins/scag, page: "118" }
       - texte: >-
-          Les règles de 2024 distinguent trois héritages fiélons, auxquels se rattachent la plupart des tieffelins de la fin des années 1400 CV. L’héritage infernal remonte aux diables ; il donne une résistance au feu et le sort mineur trait de feu. L’héritage abyssal vient des démons, protège du poison et donne bouffée de poison ; l’héritage chtonien, lié aux yugoloths, protège des dégâts nécrotiques et donne contact glacial. Chacun apporte ensuite deux autres sorts à mesure que le personnage progresse.
+          Pour la fin des années 1400 CV, les règles de 2024 distinguent trois héritages. L’infernal remonte aux diables des Neuf Enfers, de la Géhenne ou de l’Achéron : langue fourchue, peau lisse et rougeâtre, yeux dorés, odeur de soufre et résistance au feu. L’abyssal, démoniaque, plonge ses racines dans les Abysses, le Pandémonium ou les Carcères ; il donne un aspect plus bestial, cornes rugueuses, défenses ou fourrure, et une résistance au poison. Le chtonien, hérité des yugoloths de l’Hadès, de la Géhenne ou des Carcères, se signale par des cornes épaisses et sinueuses et résiste aux dégâts nécrotiques. Chacun ouvre ensuite sa propre magie, du trait de feu au contact glacial.
         nature: canon_dnd
         edition: 5e-2024
         variantes: lignee
         refs:
-          - { ref: frwiki-tiefling }
           - { ref: frwiki-tiefling/players-handbook-2024, page: "195–196" }
   - type: bg3
-    titre: Une race jouable
+    titre: Le tieffelin dans Baldur’s Gate 3
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Dans Baldur’s Gate 3, le tieffelin est une race jouable. Tous partagent deux traits : la vision dans le noir et la Résistance infernale, qui protège du feu. Les trois sous-races du jeu se rattachent chacune à un archidiable, Asmodée, Méphistophélès ou Zariel, et reçoivent un sort mineur au niveau 1, puis un sort inné aux niveaux 3 et 5 : Flammes, Représailles infernales et Ténèbres pour la lignée d’Asmodée ; Main de mage, Mains brûlantes et Lame de feu pour celle de Méphistophélès ; Thaumaturgie, Châtiment calcinant et Châtiment révélateur pour celle de Zariel.
+          Dans Baldur’s Gate 3, le tieffelin est une race jouable, d’une vitesse de 9 m. Il possède deux traits raciaux : la Résistance infernale, qui le rend résistant aux dégâts de feu, et la Vision dans le noir, qui porte à 12 m. Trois sous-races, aux noms traduits de façon non officielle, lui donnent chacune une magie propre, aux niveaux 1, 3 et 5. Le tieffelin d’Asmodée connaît Flammes, puis Héritage infernal : représailles infernales, puis Ténèbres. Le tieffelin de Méphistophélès commence par Main de mage, avant Héritage de Cania : mains brûlantes et Héritage de Cania : lame de feu. Le tieffelin de Zariel reçoit Thaumaturgie, puis Héritage d’Avernus : châtiment calcinant et Héritage d’Avernus : châtiment révélateur.
         nature: canon_bg3
         refs:
           - { ref: bg3wiki-tiefling }
-  - type: bg3
-    titre: Les réfugiés d’Elturel
-    etiquette: { act: acte1, level: aucun, otherWorks: aucun }
-    paragraphes:
-      - texte: >-
-          Au tout début de l’Acte I, le Bosquet d’émeraude, refuge des druides, abrite un groupe de tieffelins chassés d’Elturel, qui tentent de rejoindre la Porte de Baldur. L’hospitalité est provisoire et la cohabitation tendue : une partie des druides leur reproche la dégradation des environs et voudrait les voir partir, alors même qu’à l’arrivée du groupe, ce sont des tieffelins qui montent la garde sur les remparts du bosquet. Celui-ci compte d’ailleurs un lieu à leur nom, la Cachette des tieffelins.
-        nature: canon_bg3
-        refs:
-          - { ref: bg3wiki-tiefling-refugees }
-          - { ref: bg3wiki-emerald-grove }
 relations:
   - { cible: race.tiefling, type: see_also }
   - { cible: subrace.asmodeus-tiefling, type: see_also }

@@ -1,103 +1,101 @@
 id: lore.cosmologie.avernus
 theme: cosmologie
 nom: { fr: Averne, en: Avernus, statut: NON_OFFICIELLE }
+alias: []
 etiquette_titre: { act: prologue, level: aucun, otherWorks: aucun }
 etiquette: { act: prologue, level: aucun, otherWorks: aucun }
 resume: >-
-  Première strate des Neuf Enfers, Averne est la porte d’entrée de l’Enfer et le grand champ de bataille de la Guerre du Sang.
+  La première strate des Neuf Enfers, un désert de cendre et de feu où se livre l’essentiel de la guerre entre diables et démons, et par où entre tout visiteur du royaume des diables.
 sections:
   - type: general
-    titre: La porte des Enfers
+    titre: La première strate
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Quiconque se rend dans les Neuf Enfers, que l’on nomme aussi Baator, commence par Averne (Avernus), la plus haute de leurs neuf strates. Asmodée l’a voulu ainsi : aucun portail ne doit s’ouvrir directement sur les strates profondes, si bien que vivants et damnés passent tous par celle-ci, la plus fréquentée du plan. On y croise donc les serviteurs des autres archidiables, des diables barbus qui rassemblent les âmes aux diablotins chargés de messages. La règle a une raison militaire : une armée venue des Abysses devrait soumettre Averne avant de descendre plus bas. La strate sert ainsi de rempart face aux démons, qui l’envahissent en remontant le Styx, et de front principal à la Guerre du Sang (Blood War), où des légions de diables se tiennent toujours prêtes.
+          Les Neuf Enfers, ou Baator, forment le plan des diables, l’incarnation du loyal mauvais. La 1re édition y distingue neuf strates : Averne, Dis, Minauros, Phlegethos, Stygia, Malbolge, Maladomini, Cania et Nessus. Averne, la première et la plus vaste, accueille tout visiteur venu d’ailleurs, et les âmes damnées doivent la traverser avant de gagner les strates inférieures. Asmodée y proscrit tout portail qui ouvrirait sur les autres strates : un envahisseur doit conquérir chacune d’elles pour descendre. Placée entre les Neuf Enfers et les Abysses, Averne sert de zone tampon, et c’est elle qu’une offensive démoniaque a le plus de chances de frapper d’abord.
         nature: canon_dnd
         edition: multi
         refs:
-          - { ref: frwiki-avernus }
+          - { ref: frwiki-nine-hells }
+          - { ref: frwiki-nine-hells/manual-of-the-planes-1e, page: "73" }
+          - { ref: frwiki-avernus/mtof, page: "5–8" }
+          - { ref: frwiki-avernus/guide-to-hell, page: "28–30" }
           - { ref: mroi-averne }
+          - { ref: frwiki-avernus/fiendish-codex-2, page: "35–39" }
+          - { ref: frwiki-avernus }
+      - texte: >-
+          Ni soleil ni étoiles n’éclairent Averne : une lueur rouge sang, venue de sous l’horizon, y règne en permanence, et le temps devient difficile à mesurer. Des boules de feu traversent le ciel et retombent en cratères fumants ; leur course paraît due au hasard, mais elles visent, et le voyageur qui ne trouve ni bâtiment ni grotte finit tôt ou tard par en recevoir une. Au sol alternent plaines de cendre jonchées de gravats, collines stériles, volcans, rivières de lave, fosses de goudron, sables mouvants et étendues de sel ; les éboulis interdisent la marche rapide, et des cristaux d’obsidienne entaillent vêtements et peau. L’air sent le soufre, des essaims de mouches assoiffées de sang l’emplissent, et l’eau est presque partout empoisonnée.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-avernus/guide-to-hell, page: "28–30" }
+          - { ref: mroi-averne/descent-into-avernus, page: "9, 75–76" }
+          - { ref: frwiki-avernus/dmg-5e, page: "64" }
+          - { ref: frwiki-avernus/fiendish-codex-2, page: "35–39" }
+          - { ref: frwiki-avernus/manual-of-the-planes-3e, page: "116–117" }
+          - { ref: frwiki-nine-hells/manual-of-the-planes-1e, page: "109" }
+      - texte: >-
+          Averne est le principal champ de bataille de la Guerre du Sang (Blood War). Les démons qui l’envahissent arrivent par le Styx, qui traverse la strate avec ses bras et ses chutes, grossi des ruisseaux et des lacs des plaines. Des légions de diables s’y exercent sans relâche, prêtes à une sortie, et leurs manœuvres sont un danger permanent ; le commerce des pièces d’âme finance le conflit. Il n’en a pas toujours été ainsi : Asmodée avait d’abord fait de la strate un lieu de délices pour séduire les mortels, et des jardins verdoyants la couvraient avant la guerre. Des siècles de combats ont rasé villes et citadelles ; il en reste des vestiges épars de palais et de jardins, et des forteresses sans cesse rebâties.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-avernus/manual-of-the-planes-3e, page: "115–117" }
+          - { ref: mroi-averne/descent-into-avernus, page: "9, 75, 78" }
+          - { ref: frwiki-avernus/mtof, page: "10–11" }
+      - texte: >-
+          Le maître de la strate porte le titre de Seigneur du Premier (Lord of the First). Tiamat l’a jadis gouvernée pour le compte d’Asmodée ; chargée d’y contenir les diables bannis, elle a échoué et s’est vue réduite à garder la grande porte de Dis. En 1372 CV, le titre revient à Bel, un général diantrefosse qui mène la Guerre du Sang après avoir trahi Zariel, et qui demeure au cœur de la Citadelle de bronze (Bronze Citadel), une forteresse de douze enceintes ; la rumeur y dit Zariel captive, vidée de sa puissance. À la fin du XVe siècle CV, Zariel règne de nouveau, depuis une haute citadelle de basalte. Bel, disgracié pour avoir échoué face à une invasion démoniaque, n’est plus que son conseiller, et guette la faute qui lui rendrait le titre.
+        nature: canon_dnd
+        edition: multi
+        refs:
+          - { ref: frwiki-avernus/manual-of-the-planes-3e, page: "116–117" }
+          - { ref: frwiki-avernus/on-hallowed-ground, page: "137" }
+          - { ref: frwiki-avernus/mtof, page: "10–11, 180–181" }
+          - { ref: frwiki-avernus/monster-manual-5e, page: "68" }
+      - texte: >-
+          Abishaïs, lémures, nupperibos et spinagons forment le gros de la population, mais on y croise aussi des diablotins, des dragons, des gobelins et des kobolds ; diablotins et spinagons y portent volontiers les messages. Des serviteurs d’autres archidiables y passent, comme les diables barbus venus collecter des âmes. Les mortels ne manquent pas : marchands d’armes, mages, prêtres en mission, érudits et aventuriers s’y risquent, aux côtés de contrebandiers et de marchands d’esclaves. Les diables de la strate jouent de leur orgueil et de leur colère, et les trésors les plus ordinaires leur servent d’outils pour les corrompre.
+        nature: canon_dnd
+        edition: multi
+        refs:
           - { ref: frwiki-avernus/guide-to-hell, page: "28–30" }
           - { ref: frwiki-avernus/fiendish-codex-2, page: "35–39" }
-          - { ref: frwiki-avernus/dmg-5e, page: "64" }
-          - { ref: frwiki-avernus/mtof, page: "5–8" }
-      - texte: >-
-          Nul astre n’y brille : la clarté, d’un rouge de sang, semble venir de l’horizon même. Des boules de feu zèbrent le ciel et retombent en creusant des cratères fumants ; l’air empeste le soufre, charrie cendres et pierre ponce, grouille de mouches, et des tempêtes de sable assez violentes pour arracher la peau obscurcissent parfois tout un pays. Au sol se succèdent plaines de cendre jonchées de gravats, collines nues, volcans et montagnes basses hérissées d’éclats d’obsidienne et de quartz, entre fosses de goudron, sables mouvants, étendues de sel et fleuves de lave. Le sang, partout, suinte du sol en filets qui finissent dans le Styx, et la plupart des points d’eau sont empoisonnés.
-        nature: canon_dnd
-        edition: multi
-        refs:
-          - { ref: frwiki-avernus }
-          - { ref: frwiki-nine-hells }
-          - { ref: mroi-averne }
-          - { ref: frwiki-avernus/guide-to-hell, page: "28–30" }
-          - { ref: frwiki-avernus/manual-of-the-planes-3e, page: "116" }
-          - { ref: frwiki-avernus/manual-of-the-planes-4e, page: "97, 99" }
-          - { ref: frwiki-avernus/dmg-5e, page: "64" }
-          - { ref: mroi-averne/descent-into-avernus, page: "9, 76" }
-      - texte: >-
-          À la fin du XVe siècle CV, la strate obéit à l’archidiable Zariel, qui porte le titre de seigneur de la Première (Lord of the First) et siège dans une haute citadelle de basalte ; près d’elle, le diantrefosse Bel, réduit au rang de conseiller, attend que l’une de ses imprudences lui rende le pouvoir. Il l’a déjà tenu : après avoir trahi Zariel, il régnait sur Averne en 1372 CV, depuis la Citadelle de bronze, jusqu’à ce qu’un échec face à une invasion démoniaque lui coûte la faveur d’Asmodée. Avant eux, Tiamat avait gouverné pour le maître des Enfers ; incapable de tenir en respect les diables proscrits qui y erraient, elle avait été rétrogradée au rang de gardienne de la porte qui mène à Dis.
-        nature: canon_dnd
-        edition: multi
-        refs:
-          - { ref: frwiki-avernus }
-          - { ref: mroi-averne }
-          - { ref: frwiki-avernus/on-hallowed-ground, page: "137" }
-          - { ref: frwiki-avernus/manual-of-the-planes-3e, page: "116" }
-          - { ref: frwiki-avernus/monster-manual-5e, page: "68" }
-          - { ref: frwiki-avernus/mtof, page: "11, 180–181" }
-      - texte: >-
-          Ce désert n’a pas toujours été un champ de ruines. Mordenkainen’s Tome of Foes (2018) décrit une strate jadis prospère, riche de cités et de commerce ; Descent into Avernus (2019) parle d’un jardin de délices conçu par Asmodée pour attirer les mortels. Des siècles de guerre, ouverts par l’arrivée des démons sur le Styx, l’ont réduite à une étendue dévastée où ne tiennent plus que des places fortes sans cesse rebâties, et des restes de palais et de jardins y affleurent encore.
-        nature: canon_dnd
-        edition: 5e-2014
-        refs:
-          - { ref: frwiki-avernus }
-          - { ref: mroi-averne }
-          - { ref: frwiki-avernus/mtof, page: "10–11" }
-          - { ref: mroi-averne/descent-into-avernus, page: "9, 75" }
+          - { ref: mroi-averne/descent-into-avernus, page: "75–76, 78" }
   - type: ecarts
-    titre: Averne selon les cosmologies
+    titre: Selon les cartes des plans
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Le Manual of the Planes de 1987 range les Neuf Enfers parmi les plans extérieurs de la Grande Roue (Great Wheel), entre l’Achéron et la Géhenne. Chaque strate y est infinie, et l’on passe de l’une à l’autre par des barrières fixes : pour gagner Dis, il faut descendre au plus bas d’Averne, d’où l’on débouche très haut au-dessus de la strate suivante. Averne est aussi celle où émergent les voyageurs de l’Astral, par des bassins colorés, et des portails la relient à l’Achéron, à la Géhenne et à l’Opposition concordante (Concordant Opposition). Le Styx y coule, comme dans Stygia, la cinquième strate, avant de passer dans la Géhenne.
+          Dans la Grande Roue de la 1re édition, les Neuf Enfers comptent parmi les Plans Extérieurs, entre la Géhenne et l’Achéron. Leurs strates, chacune infinie, s’empilent les unes sous les autres, séparées par des barrières fixes : Averne est celle du haut, et l’on gagne Dis en franchissant une barrière en profondeur. Les voyageurs du Plan Astral débouchent en Averne par des bassins colorés ; des portails la relient à l’Achéron, à la Géhenne et au plan de Concordant Opposition, et le Styx la traverse, puis Stygia, avant de passer dans la Géhenne.
         nature: canon_dnd
         edition: add1
         variantes: cosmologie
         refs:
-          - { ref: frwiki-nine-hells }
-          - { ref: frwiki-avernus }
           - { ref: frwiki-nine-hells/manual-of-the-planes-1e, page: "73, 83, 109–110" }
+          - { ref: frwiki-nine-hells }
       - texte: >-
-          Avec la cosmologie de l’Arbre-Monde (World Tree), que décrit le Player’s Guide to Faerûn (2004), le Styx prend le nom de fleuve de Sang (River of Blood). Né dans les Abysses, il traverse presque tous les plans fiélons et passe par la Faille de Sang (Blood Rift), un plan singulier qui relie les Abysses aux Neuf Enfers : ce voisinage forcé des deux ennemis nourrit la Guerre du Sang, et Averne, contiguë à la Faille, devient la base des offensives diaboliques. Des portails la relient aussi à Clangor et aux Landes de la malédiction et du désespoir (Barrens of Doom and Despair). Le plan Astral, lui, rattache chaque plan fiélon au plan matériel, jamais les plans fiélons entre eux.
+          L’Arbre-Monde du Player’s Guide to Faerûn (2004) ne relie chaque plan fiélon qu’au Plan Matériel, par le Plan Astral, jamais aux autres. Le Styx y devient le Fleuve de Sang (River of Blood), qui traverse ces plans et pousse ses bras jusqu’à chaque strate ; c’est ce rapprochement entre diables et démons qui nourrit la Guerre du Sang. Averne touche à la Faille de Sang (Blood Rift), un plan singulier qui joint les Abysses aux Neuf Enfers : c’est d’elle que partent les campagnes contre les démons, et des légions de diables y marchent vers la prochaine. Des portails la relient aussi à Clangor et aux Barrens of Doom and Despair.
         nature: canon_dnd
         edition: "3.5"
         variantes: cosmologie
         refs:
-          - { ref: frwiki-nine-hells }
-          - { ref: mroi-averne }
           - { ref: frwiki-nine-hells/players-guide-to-faerun, page: "139–142, 161" }
           - { ref: mroi-averne/players-guide-to-faerun, page: "159" }
       - texte: >-
-          La 4e édition bouleverse ce paysage. Après la Magepeste (Spellplague), Asmodée absorbe l’essence d’Azuth, devient dieu majeur et met fin à la Guerre du Sang en précipitant les Abysses au fond du Chaos élémentaire. Dans l’Axe du Monde (World Axis), les Neuf Enfers forment un domaine astral de taille finie, isolé dans la mer Astrale et relié aux Abysses par le seul Styx, sous le règne d’Asmodée et de huit archidiables vassaux. Le Forgotten Realms Campaign Guide n’y distingue plus de strates, mais le Manual of the Planes et le Monster Manual de la même édition gardent une Averne finie, vouée au feu : le voyageur astral qui s’écarte du Styx risque de tomber de son ciel pour y trouver une mort ardente.
+          L’Axe du monde de la 4e édition fait des Neuf Enfers un dominion fini, sans strates, qui flotte dans la Mer Astrale ; Asmodée y règne sur huit archidiables vassaux, maîtres de domaines vastes mais bornés. Averne, finie elle aussi et proche du feu, a le sol couvert des débris d’innombrables batailles, et une porte de fer y mène à Dis, cité bâtie dans une caverne. Seul le Styx relie ce dominion isolé aux Abysses, et il déverse sa souillure dans la Mer Astrale : qui s’écarte de son cours risque de tomber en Averne. Après la Magepeste, Asmodée absorbe l’essence d’Azuth et devient un dieu majeur ; rejetées au fond du Chaos élémentaire, les Abysses sortent de la Guerre du Sang, qui prend fin.
         nature: canon_dnd
         edition: 4e
         variantes: cosmologie
         refs:
-          - { ref: frwiki-nine-hells }
-          - { ref: frwiki-avernus }
           - { ref: frwiki-nine-hells/fr-campaign-guide, page: "62, 64, 66, 73" }
-          - { ref: frwiki-avernus/manual-of-the-planes-4e, page: "97, 99" }
           - { ref: frwiki-nine-hells/monster-manual-4e, page: "61" }
+          - { ref: frwiki-avernus/manual-of-the-planes-4e, page: "97, 99" }
   - type: bg3
     titre: Dans Baldur’s Gate 3
     etiquette: { act: prologue, level: aucun, otherWorks: aucun }
     paragraphes:
       - texte: >-
-          Baldur’s Gate 3 s’ouvre dans le ciel d’Averne. Le prologue se joue à bord du nautiloïde, le vaisseau des flagelleurs mentaux où se réveille le personnage, tandis que l’appareil, pris d’assaut, file au-dessus de la strate. Le vaisseau finit par quitter les Enfers et s’écrase sur les rives de la Chionthar, où commence l’Acte I. La strate laisse aussi sa marque dans les règles : les tieffelins de la lignée de Zariel, sa souveraine, reçoivent des sorts innés dont le nom anglais, Legacy of Avernus, rappelle cette origine.
+          Dans Baldur’s Gate 3, la strate garde sa graphie anglaise, « Avernus », dans le nom de deux sorts raciaux, Héritage d’Avernus : châtiment calcinant et Héritage d’Avernus : châtiment révélateur, en traduction non officielle. Ils reviennent au tieffelin de Zariel, l’une des trois sous-races jouables du tieffelin, qui les apprend au niveau 3 puis au niveau 5 ; dès le niveau 1, la même sous-race connaît le sort mineur Thaumaturgie.
         nature: canon_bg3
         refs:
-          - { ref: bg3wiki-nautiloid }
-          - { ref: bg3wiki-ravaged-beach }
           - { ref: bg3wiki-tiefling }
 relations:
   - { cible: place.nautiloid, type: see_also }
