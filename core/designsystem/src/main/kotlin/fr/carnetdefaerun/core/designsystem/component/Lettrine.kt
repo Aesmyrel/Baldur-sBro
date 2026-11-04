@@ -67,14 +67,23 @@ fun DropCapParagraph(
     modifier: Modifier = Modifier,
     style: TextStyle = CarnetTheme.type.reading,
     lines: Int = 3,
+) = DropCapParagraph(AnnotatedString(text), modifier, style, lines)
+
+/** Même paragraphe, avec des styles dans le texte (appels de référence en exposant, par exemple). */
+@Composable
+fun DropCapParagraph(
+    text: AnnotatedString,
+    modifier: Modifier = Modifier,
+    style: TextStyle = CarnetTheme.type.reading,
+    lines: Int = 3,
 ) {
     if (text.isEmpty()) return
     val c = CarnetTheme.colors
     val density = LocalDensity.current
     val measurer = rememberTextMeasurer()
-    val first = text.first()
-    val rest = text.substring(1)
-    BoxWithConstraints(modifier.clearAndSetSemantics { this.text = AnnotatedString(text) }) {
+    val first = text.text.first()
+    val rest = text.subSequence(1, text.length)
+    BoxWithConstraints(modifier.clearAndSetSemantics { this.text = text }) {
         val lineHeight = with(density) { style.lineHeight.toDp() }
         val capSize = lineHeight * lines - 4.dp
         val gap = 12.dp
@@ -86,9 +95,12 @@ fun DropCapParagraph(
         Column {
             Row(horizontalArrangement = Arrangement.spacedBy(gap)) {
                 Lettrine(first, capSize, Modifier.padding(top = 4.dp))
-                Text(rest.substring(0, split), style = style, color = c.text)
+                Text(rest.subSequence(0, split), style = style, color = c.text)
             }
-            if (split < rest.length) Text(rest.substring(split).trimStart(), style = style, color = c.text)
+            if (split < rest.length) {
+                val start = (split until rest.length).firstOrNull { !rest[it].isWhitespace() } ?: rest.length
+                Text(rest.subSequence(start, rest.length), style = style, color = c.text)
+            }
         }
     }
 }

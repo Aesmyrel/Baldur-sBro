@@ -5,8 +5,11 @@ import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.navigation.Destination
 import fr.carnetdefaerun.core.model.navigation.TopLevel
 import fr.carnetdefaerun.core.ui.entryTypeOf
+import fr.carnetdefaerun.core.ui.loreThemeOf
 import fr.carnetdefaerun.feature.builds.BuildsRoute
 import fr.carnetdefaerun.feature.codex.CodexRoute
+import fr.carnetdefaerun.feature.codex.LoreEntryRoute
+import fr.carnetdefaerun.feature.codex.ThemeRoute
 import fr.carnetdefaerun.feature.companions.CompanionsRoute
 import fr.carnetdefaerun.feature.encyclopedia.CategoryRoute
 import fr.carnetdefaerun.feature.encyclopedia.EncyclopediaRoute
@@ -32,7 +35,10 @@ fun appEntries(navigator: AppNavigator, tab: TopLevel): (Destination) -> NavEntr
             is Destination.EncyclopediaCategory -> entryTypeOf(destination.category)
                 ?.let { CategoryRoute(it, navigator::navigate, back) } ?: EncyclopediaRoute(onNavigate = navigator::navigate)
             is Destination.GameEntry -> EntryRoute(ContentId(destination.id), navigator::navigate, back)
-            Destination.Codex -> CodexRoute()
+            Destination.Codex -> CodexRoute(onNavigate = navigator::navigate)
+            is Destination.CodexTheme -> loreThemeOf(destination.theme)
+                ?.let { ThemeRoute(it, navigator::navigate, back) } ?: CodexRoute(onNavigate = navigator::navigate)
+            is Destination.LoreEntry -> LoreEntryRoute(ContentId(destination.id), destination.anchor, navigator::navigate, back)
             Destination.Builds -> BuildsRoute()
             Destination.Tools -> ToolsRoute()
             Destination.Settings -> SettingsRoute(onNavigate = navigator::navigate, onBack = back)
@@ -41,7 +47,7 @@ fun appEntries(navigator: AppNavigator, tab: TopLevel): (Destination) -> NavEntr
             is Destination.Progress -> ProgressRoute(onBack = back)
             Destination.Notes, is Destination.NoteEditor -> NotesRoute(onBack = back)
             is Destination.Search -> SearchRoute(destination.query, navigator::navigate, back)
-            else -> CodexRoute(onBack = back)
+            else -> CodexRoute(onNavigate = navigator::navigate)
         }
     }
 }

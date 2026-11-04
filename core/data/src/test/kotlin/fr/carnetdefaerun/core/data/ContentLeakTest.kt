@@ -31,7 +31,7 @@ import org.junit.Test
 class ContentLeakTest {
     private val entries: List<Entry> = GameData.entries
     private val byId = entries.associateBy { it.id }
-    private val repository = ContentRepository(InMemoryContentStore(entries))
+    private val repository = ContentRepository(InMemoryContentStore(entries, GameData.references))
 
     private val profiles = Act.entries.flatMap { act -> Tolerance.entries.map { SpoilerProfile(act, it) } } +
         Tolerance.entries.map { SpoilerProfile(Act.ACT_1, Tolerance.LIGHT, it) }

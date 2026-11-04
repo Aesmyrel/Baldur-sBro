@@ -2,4 +2,54 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fr">
     <string name="codex_crumb">Codex</string>
     <string name="codex_title">Le codex des Royaumes</string>
+    <string name="codex_intro">Dieux, plans, peuples et figures des Royaumes oubliés, rédigés avec nos mots et référencés, filtrés selon votre progression.</string>
+    <string name="codex_search">Chercher dans tout le carnet</string>
+    <string name="codex_group_world">Le monde</string>
+    <string name="codex_group_history">Histoires et œuvres</string>
+    <string name="codex_meta_pantheon">Divinités et puissances</string>
+    <string name="codex_meta_cosmology">Plans et Toile du multivers</string>
+    <string name="codex_meta_peoples">Origines et cultures</string>
+    <string name="codex_meta_bestiary">Créatures et leur écologie</string>
+    <string name="codex_meta_factions">Ordres, guildes et alliances</string>
+    <string name="codex_meta_places">Régions, cités et lieux</string>
+    <string name="codex_meta_characters">Grandes figures des Royaumes</string>
+    <string name="codex_meta_legendary_items">Artefacts et reliques</string>
+    <string name="codex_meta_timeline">Événements datés en CV</string>
+    <string name="codex_meta_saga">Jeux, extensions et suites</string>
+    <string name="codex_meta_game_books">Livres et notes trouvés en jeu</string>
+    <string name="codex_meta_further_reading">Suppléments, aventures et romans</string>
+    <string name="codex_empty_theme">Aucune fiche de ce thème n’est encore rédigée, ou visible à votre progression.</string>
+    <plurals name="codex_count">
+        <item quantity="one">%1$d fiche</item>
+        <item quantity="many">%1$d fiches</item>
+        <item quantity="other">%1$d fiches</item>
+    </plurals>
+    <string name="codex_some_hidden">D’autres fiches du codex restent masquées par votre progression.</string>
+
+    <string name="lore_crumb">Codex · %1$s</string>
+    <string name="lore_vo">VO %1$s</string>
+    <string name="lore_subtitle">%1$s — %2$s</string>
+    <plurals name="lore_reading">
+        <item quantity="one">%1$d min de lecture</item>
+        <item quantity="many">%1$d min de lecture</item>
+        <item quantity="other">%1$d min de lecture</item>
+    </plurals>
+    <string name="lore_variants">Versions divergentes</string>
+    <string name="lore_variants_hint">Le lore a varié selon les éditions et les œuvres : les versions sont présentées côte à côte, sans trancher.</string>
+    <string name="lore_section_nature">%1$s · %2$s</string>
+    <string name="lore_references">Références</string>
+    <string name="lore_relations">Pour tirer le fil</string>
+    <string name="lore_ref_wiki">%1$s, révision %2$d</string>
+    <string name="lore_ref_vf">%1$s (VF : %2$s)</string>
+    <string name="lore_ref_via">connu par %1$s</string>
+    <string name="lore_ref_locator">%1$s, %2$s</string>
+    <string name="lore_ref_page">p. %1$s</string>
+    <string name="lore_ref_chapter">chap. %1$s</string>
+    <string name="lore_written">Texte rédigé par le carnet, en synthèse des références ci-dessus ; aucune phrase n’est reprise d’une source.</string>
+    <string name="lore_hidden_title">Fiche masquée</string>
+    <string name="lore_hidden_body">Cette fiche se trouve au-delà de votre progression. Vous pouvez la révéler, ou avancer votre acte dans Ma partie.</string>
+    <string name="lore_missing">Cette fiche n’existe pas dans cette version du carnet.</string>
+    <string name="lore_favorite_add">Ajouter aux favoris</string>
+    <string name="lore_favorite_remove">Retirer des favoris</string>
+    <string name="lore_join">%1$s · %2$s</string>
 </resources>

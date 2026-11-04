@@ -3,6 +3,7 @@ package fr.carnetdefaerun.pipeline.game
 import fr.carnetdefaerun.core.model.content.ContentFormat
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Entry
+import fr.carnetdefaerun.core.model.content.Reference
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.NameStatus
 import fr.carnetdefaerun.pipeline.Paths
@@ -125,11 +126,15 @@ class GamePipeline(private val paths: Paths) {
         val lore = all().first.filter { it.type == EntryType.LORE }
         Files.createDirectories(paths.loreData)
         paths.loreData.resolve(LORE_FILE).writeText(loreJson(lore))
+        paths.loreData.resolve(REFERENCES_FILE).writeText(referencesJson())
         println("  ${lore.size} fiches du codex écrites dans ${paths.root.relativize(paths.loreData)}")
         return true
     }
 
     private fun loreJson(lore: List<Entry>) = ContentFormat.pretty.encodeToString(ListSerializer(Entry.serializer()), lore.sortedBy { it.id.value }) + "\n"
+
+    private fun referencesJson() =
+        ContentFormat.pretty.encodeToString(ListSerializer(Reference.serializer()), LoreFiles(paths.content).references().values.sortedBy { it.id }) + "\n"
 
     /** Un nom jugé révélateur par sa fiche de traduction rend le nom et la fiche plus stricts. */
     private fun raiseTitle(entry: Entry, names: NameResolver): Entry {
@@ -175,12 +180,12 @@ class GamePipeline(private val paths: Paths) {
     }
 
     /** Le codex exporté doit être celui que donnent les fichiers de content/ (sinon : relancer normalize). */
-    private fun staleLore(entries: List<Entry>): List<String> {
-        val file = paths.loreData.resolve(LORE_FILE)
-        val expected = loreJson(entries.filter { it.type == EntryType.LORE })
-        return if (file.exists() && file.readText() == expected) emptyList()
-        else listOf("${paths.root.relativize(file)} ne correspond pas aux fiches de content/ : relancer « normalize »")
-    }
+    private fun staleLore(entries: List<Entry>): List<String> =
+        listOf(LORE_FILE to loreJson(entries.filter { it.type == EntryType.LORE }), REFERENCES_FILE to referencesJson()).mapNotNull { (name, expected) ->
+            val file = paths.loreData.resolve(name)
+            if (file.exists() && file.readText() == expected) null
+            else "${paths.root.relativize(file)} ne correspond pas aux fichiers de content/ : relancer « normalize »"
+        }
 
     /** Base embarquée : uniquement à partir de données valides. */
     fun buildDb(out: java.nio.file.Path): Boolean {
@@ -240,5 +245,6 @@ class GamePipeline(private val paths: Paths) {
     }
 }
 
-/** Fichier du codex assemblé, dans data/lore. */
+/** Fichiers du codex assemblé et de son registre de références, dans data/lore. */
 private const val LORE_FILE = "codex.json"
+private const val REFERENCES_FILE = "references.json"

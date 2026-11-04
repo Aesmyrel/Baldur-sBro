@@ -12,7 +12,7 @@ import org.junit.Test
 
 /** Liste d'une catégorie : filtre par nom, par sous-type, groupes par parent. */
 class CategoryStateTest {
-    private val repository = ContentRepository(InMemoryContentStore(GameData.entries))
+    private val repository = ContentRepository(InMemoryContentStore(GameData.entries, GameData.references))
     private val profile = SpoilerProfile(Act.ACT_1)
     private fun list(type: EntryType) = repository.list(type, profile)
 

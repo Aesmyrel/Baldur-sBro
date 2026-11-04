@@ -1,0 +1,1746 @@
+[
+  {
+    "id": "b-bg3wiki-bladesinging",
+    "kind": "wiki",
+    "titleOriginal": "Bladesinging (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Bladesinging",
+    "revision": 416527,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-bg3wiki-booming-blade",
+    "kind": "wiki",
+    "titleOriginal": "Booming Blade (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Booming_Blade",
+    "revision": 433961,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-bg3wiki-oath-of-the-crown",
+    "kind": "wiki",
+    "titleOriginal": "Oath of the Crown (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Oath_of_the_Crown",
+    "revision": 433737,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-bg3wiki-shanties-for-the-bitch-queen",
+    "kind": "wiki",
+    "titleOriginal": "Shanties for the Bitch Queen (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Shanties_for_the_Bitch_Queen",
+    "revision": 423083,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-bg3wiki-storm-sorcery",
+    "kind": "wiki",
+    "titleOriginal": "Storm Sorcery (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Storm_Sorcery",
+    "revision": 423628,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-bg3wiki-stormshore-tabernacle",
+    "kind": "wiki",
+    "titleOriginal": "Stormshore Tabernacle (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Stormshore_Tabernacle",
+    "revision": 431024,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-bg3wiki-swashbuckler",
+    "kind": "wiki",
+    "titleOriginal": "Swashbuckler (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Swashbuckler",
+    "revision": 423780,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-bg3wiki-water-queens-house",
+    "kind": "wiki",
+    "titleOriginal": "Water Queen's House (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Water_Queen%27s_House",
+    "revision": 424785,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-1-dr",
+    "kind": "wiki",
+    "titleOriginal": "1 DR (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/1_DR",
+    "revision": 978745,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-1-dr/old-empires",
+    "kind": "livre",
+    "titleOriginal": "Old Empires",
+    "publisher": "TSR, Inc.",
+    "year": 1990,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-1-dr"
+  },
+  {
+    "id": "b-frwiki-26-dr",
+    "kind": "wiki",
+    "titleOriginal": "26 DR (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/26_DR",
+    "revision": 978768,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-26-dr/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "b-frwiki-26-dr"
+  },
+  {
+    "id": "b-frwiki-26-dr/grand-history-of-the-realms",
+    "kind": "livre",
+    "titleOriginal": "The Grand History of the Realms",
+    "publisher": "Wizards of the Coast",
+    "year": 2007,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "b-frwiki-26-dr"
+  },
+  {
+    "id": "b-frwiki-artus-cimber",
+    "kind": "wiki",
+    "titleOriginal": "Artus Cimber (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Artus_Cimber",
+    "revision": 1083336,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-baldurs-gate-game",
+    "kind": "wiki",
+    "titleOriginal": "Baldur's Gate (game) (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate_(game)",
+    "revision": 1092005,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-baldurs-gate-iii",
+    "kind": "wiki",
+    "titleOriginal": "Baldur's Gate III (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate_III",
+    "revision": 1109223,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-baldurs-gate-novel",
+    "kind": "wiki",
+    "titleOriginal": "Baldur's Gate (novel) (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate_(novel)",
+    "revision": 1106184,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-bg-enhanced-edition",
+    "kind": "wiki",
+    "titleOriginal": "Baldur's Gate: Enhanced Edition (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate:_Enhanced_Edition",
+    "revision": 1071480,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-bladesinger",
+    "kind": "wiki",
+    "titleOriginal": "Bladesinger (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Bladesinger",
+    "revision": 1104631,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-bladesinger/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "titleFrench": "Le Guide des aventuriers de la côte des Épées",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "isbn": "978-0786965809",
+    "consultation": "secondaire",
+    "via": "b-frwiki-bladesinger"
+  },
+  {
+    "id": "b-frwiki-booming-blade",
+    "kind": "wiki",
+    "titleOriginal": "Booming blade (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Booming_blade",
+    "revision": 1007216,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-cormanthor-war",
+    "kind": "wiki",
+    "titleOriginal": "Cormanthor War (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Cormanthor_War",
+    "revision": 1090807,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-dales-compact",
+    "kind": "wiki",
+    "titleOriginal": "Dales Compact (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Dales_Compact",
+    "revision": 1103846,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-dales-compact/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "b-frwiki-dales-compact"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak",
+    "kind": "wiki",
+    "titleOriginal": "Halaster Blackcloak (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Halaster_Blackcloak",
+    "revision": 1090802,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/descent-to-undermountain",
+    "kind": "jeu",
+    "titleOriginal": "Descent to Undermountain",
+    "publisher": "Interplay",
+    "year": 1998,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/dragon-409",
+    "kind": "magazine",
+    "titleOriginal": "Dragon n° 409, Character Themes: Citizens of Splendor",
+    "publisher": "Wizards of the Coast",
+    "year": 2012,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/dungeon-of-the-mad-mage",
+    "kind": "aventure",
+    "titleOriginal": "Waterdeep: Dungeon of the Mad Mage",
+    "titleFrench": "Waterdeep : Le Donjon du mage dément",
+    "publisher": "Wizards of the Coast",
+    "year": 2018,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/elminster-in-hell",
+    "kind": "roman",
+    "titleOriginal": "Elminster in Hell",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/escape-from-undermountain",
+    "kind": "roman",
+    "titleOriginal": "Escape from Undermountain",
+    "publisher": "TSR, Inc.",
+    "year": 1996,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/expedition-to-undermountain",
+    "kind": "aventure",
+    "titleOriginal": "Expedition to Undermountain",
+    "publisher": "Wizards of the Coast",
+    "year": 2007,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/grand-history-of-the-realms",
+    "kind": "livre",
+    "titleOriginal": "The Grand History of the Realms",
+    "publisher": "Wizards of the Coast",
+    "year": 2007,
+    "edition": "3.5",
+    "isbn": "978-0-7869-4731-7",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/nwn-hordes-of-the-underdark",
+    "kind": "jeu",
+    "titleOriginal": "Neverwinter Nights: Hordes of the Underdark",
+    "publisher": "Infogrames (Atari)",
+    "year": 2003,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/ruins-of-undermountain",
+    "kind": "livre",
+    "titleOriginal": "The Ruins of Undermountain",
+    "publisher": "TSR, Inc.",
+    "year": 1991,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/ruins-of-undermountain-ii",
+    "kind": "livre",
+    "titleOriginal": "The Ruins of Undermountain II: The Deep Levels",
+    "publisher": "TSR, Inc.",
+    "year": 1994,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/undermountain-stardock",
+    "kind": "aventure",
+    "titleOriginal": "Undermountain: Stardock",
+    "publisher": "TSR, Inc.",
+    "year": 1997,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-halaster-blackcloak/villains-lorebook",
+    "kind": "livre",
+    "titleOriginal": "Villains’ Lorebook",
+    "publisher": "TSR, Inc.",
+    "year": 1998,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-halaster-blackcloak"
+  },
+  {
+    "id": "b-frwiki-heroes-of-faerun",
+    "kind": "wiki",
+    "titleOriginal": "Forgotten Realms: Heroes of Faerûn (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Forgotten_Realms:_Heroes_of_Faer%C3%BBn",
+    "revision": 1111041,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-history-of-the-dalelands",
+    "kind": "wiki",
+    "titleOriginal": "History of the Dalelands (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/History_of_the_Dalelands",
+    "revision": 1065255,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-history-of-the-dalelands/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "b-frwiki-history-of-the-dalelands"
+  },
+  {
+    "id": "b-frwiki-history-of-the-dalelands/grand-history-of-the-realms",
+    "kind": "livre",
+    "titleOriginal": "The Grand History of the Realms",
+    "publisher": "Wizards of the Coast",
+    "year": 2007,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "b-frwiki-history-of-the-dalelands"
+  },
+  {
+    "id": "b-frwiki-marking-the-years",
+    "kind": "wiki",
+    "titleOriginal": "Marking the years (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Marking_the_years",
+    "revision": 1103694,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-marking-the-years/grand-history-of-the-realms",
+    "kind": "livre",
+    "titleOriginal": "The Grand History of the Realms",
+    "publisher": "Wizards of the Coast",
+    "year": 2007,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "b-frwiki-marking-the-years"
+  },
+  {
+    "id": "b-frwiki-marking-the-years/grand-tour-of-the-realms",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting, 2nd edition (revised): A Grand Tour of the Realms",
+    "publisher": "TSR, Inc.",
+    "year": 1993,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-marking-the-years"
+  },
+  {
+    "id": "b-frwiki-oath-of-the-crown",
+    "kind": "wiki",
+    "titleOriginal": "Oath of the Crown (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Oath_of_the_Crown",
+    "revision": 1069628,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-oath-of-the-crown/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "titleFrench": "Le Guide des aventuriers de la côte des Épées",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "isbn": "978-0786965809",
+    "consultation": "secondaire",
+    "via": "b-frwiki-oath-of-the-crown"
+  },
+  {
+    "id": "b-frwiki-ring-of-winter",
+    "kind": "wiki",
+    "titleOriginal": "Ring of Winter (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Ring_of_Winter",
+    "revision": 1083925,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-ring-of-winter/cormanthyr-empire-of-the-elves",
+    "kind": "livre",
+    "titleOriginal": "Cormanthyr: Empire of the Elves",
+    "publisher": "TSR, Inc.",
+    "year": 1998,
+    "edition": "add2",
+    "isbn": "978-0786907618",
+    "consultation": "secondaire",
+    "via": "b-frwiki-ring-of-winter"
+  },
+  {
+    "id": "b-frwiki-ring-of-winter/storm-kings-thunder",
+    "kind": "aventure",
+    "titleOriginal": "Storm King’s Thunder",
+    "publisher": "Wizards of the Coast",
+    "year": 2016,
+    "edition": "5e-2014",
+    "isbn": "978-0786966004",
+    "consultation": "secondaire",
+    "via": "b-frwiki-ring-of-winter"
+  },
+  {
+    "id": "b-frwiki-ring-of-winter/the-ring-of-winter-novel",
+    "kind": "roman",
+    "titleOriginal": "The Ring of Winter (James Lowder)",
+    "publisher": "TSR, Inc.",
+    "year": 1992,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-ring-of-winter"
+  },
+  {
+    "id": "b-frwiki-ring-of-winter/tomb-of-annihilation",
+    "kind": "aventure",
+    "titleOriginal": "Tomb of Annihilation",
+    "publisher": "Wizards of the Coast",
+    "year": 2017,
+    "edition": "5e-2014",
+    "isbn": "978-0786966103",
+    "consultation": "secondaire",
+    "via": "b-frwiki-ring-of-winter"
+  },
+  {
+    "id": "b-frwiki-ring-of-winter/volos-guide-to-all-things-magical",
+    "kind": "livre",
+    "titleOriginal": "Volo’s Guide to All Things Magical",
+    "publisher": "TSR, Inc.",
+    "year": 1996,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-ring-of-winter"
+  },
+  {
+    "id": "b-frwiki-siege-of-dragonspear",
+    "kind": "wiki",
+    "titleOriginal": "Baldur's Gate: Siege of Dragonspear (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate:_Siege_of_Dragonspear",
+    "revision": 1092278,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-standing-stone",
+    "kind": "wiki",
+    "titleOriginal": "Standing Stone (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Standing_Stone",
+    "revision": 766568,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-standing-stone/forgotten-realms-campaign-guide",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Guide",
+    "titleFrench": "Encyclopédie des Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "b-frwiki-standing-stone"
+  },
+  {
+    "id": "b-frwiki-standing-stone/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "b-frwiki-standing-stone"
+  },
+  {
+    "id": "b-frwiki-standing-stone/grand-history-of-the-realms",
+    "kind": "livre",
+    "titleOriginal": "The Grand History of the Realms",
+    "publisher": "Wizards of the Coast",
+    "year": 2007,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "b-frwiki-standing-stone"
+  },
+  {
+    "id": "b-frwiki-standing-stone/the-dalelands",
+    "kind": "livre",
+    "titleOriginal": "The Dalelands",
+    "publisher": "TSR, Inc.",
+    "year": 1993,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-standing-stone"
+  },
+  {
+    "id": "b-frwiki-standing-stone/volos-guide-to-the-dalelands",
+    "kind": "livre",
+    "titleOriginal": "Volo’s Guide to the Dalelands",
+    "publisher": "TSR, Inc.",
+    "year": 1996,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-standing-stone"
+  },
+  {
+    "id": "b-frwiki-storm-sorcery",
+    "kind": "wiki",
+    "titleOriginal": "Storm sorcery (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Storm_sorcery",
+    "revision": 874664,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-storm-sorcery/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "titleFrench": "Le Guide des aventuriers de la côte des Épées",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "isbn": "978-0786965809",
+    "consultation": "secondaire",
+    "via": "b-frwiki-storm-sorcery"
+  },
+  {
+    "id": "b-frwiki-swashbuckler",
+    "kind": "wiki",
+    "titleOriginal": "Swashbuckler (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Swashbuckler",
+    "revision": 1096205,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-swashbuckler/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "titleFrench": "Le Guide des aventuriers de la côte des Épées",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "isbn": "978-0786965809",
+    "consultation": "secondaire",
+    "via": "b-frwiki-swashbuckler"
+  },
+  {
+    "id": "b-frwiki-sword-coast-adventurers-guide",
+    "kind": "wiki",
+    "titleOriginal": "Sword Coast Adventurer’s Guide (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Sword_Coast_Adventurer%27s_Guide",
+    "revision": 1102084,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-sword-coast-adventurers-guide/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "titleFrench": "Le Guide des aventuriers de la côte des Épées",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "isbn": "978-0786965809",
+    "consultation": "secondaire",
+    "via": "b-frwiki-sword-coast-adventurers-guide"
+  },
+  {
+    "id": "b-frwiki-tales-of-the-sword-coast",
+    "kind": "wiki",
+    "titleOriginal": "Baldur's Gate: Tales of the Sword Coast (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate:_Tales_of_the_Sword_Coast",
+    "revision": 1080287,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-umberlee",
+    "kind": "wiki",
+    "titleOriginal": "Umberlee (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Umberlee",
+    "revision": 1107383,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-frwiki-umberlee/descent-into-avernus",
+    "kind": "aventure",
+    "titleOriginal": "Baldur’s Gate: Descent into Avernus",
+    "titleFrench": "La Porte de Baldur : Descente en Averne",
+    "publisher": "Wizards of the Coast",
+    "year": 2019,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "b-frwiki-umberlee"
+  },
+  {
+    "id": "b-frwiki-umberlee/faiths-and-avatars",
+    "kind": "livre",
+    "titleOriginal": "Faiths & Avatars",
+    "publisher": "TSR, Inc.",
+    "year": 1996,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-umberlee"
+  },
+  {
+    "id": "b-frwiki-umberlee/faiths-and-pantheons",
+    "kind": "livre",
+    "titleOriginal": "Faiths and Pantheons",
+    "publisher": "Wizards of the Coast",
+    "year": 2002,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "b-frwiki-umberlee"
+  },
+  {
+    "id": "b-frwiki-umberlee/forgotten-realms-adventures",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Adventures",
+    "publisher": "TSR, Inc.",
+    "year": 1990,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "b-frwiki-umberlee"
+  },
+  {
+    "id": "b-frwiki-umberlee/heroes-of-faerun",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms: Heroes of Faerûn",
+    "publisher": "Wizards of the Coast",
+    "year": 2025,
+    "edition": "5e-2024",
+    "consultation": "secondaire",
+    "via": "b-frwiki-umberlee"
+  },
+  {
+    "id": "b-frwiki-umberlee/phb-5e-2014",
+    "kind": "livre",
+    "titleOriginal": "Player’s Handbook (5th edition)",
+    "publisher": "Wizards of the Coast",
+    "year": 2014,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "b-frwiki-umberlee"
+  },
+  {
+    "id": "b-frwiki-umberlee/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "titleFrench": "Le Guide des aventuriers de la côte des Épées",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "b-frwiki-umberlee"
+  },
+  {
+    "id": "b-mroi-anneau-de-l-hiver",
+    "kind": "wiki",
+    "titleOriginal": "Anneau de l'hiver (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Anneau_de_l%27hiver",
+    "revision": 38917,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-mroi-anneau-de-l-hiver/tomb-of-annihilation",
+    "kind": "aventure",
+    "titleOriginal": "Tomb of Annihilation",
+    "publisher": "Wizards of the Coast",
+    "year": 2017,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "b-mroi-anneau-de-l-hiver"
+  },
+  {
+    "id": "b-mroi-calendrier-des-vaux",
+    "kind": "wiki",
+    "titleOriginal": "Calendrier des Vaux (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Calendrier_des_Vaux",
+    "revision": 39967,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-mroi-calendrier-des-vaux/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "b-mroi-calendrier-des-vaux"
+  },
+  {
+    "id": "b-mroi-halaster-sombrecape",
+    "kind": "wiki",
+    "titleOriginal": "Halaster Sombrecape (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Halaster_Sombrecape",
+    "revision": 45116,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-mroi-halaster-sombrecape/city-of-splendors-waterdeep",
+    "kind": "livre",
+    "titleOriginal": "City of Splendors: Waterdeep",
+    "publisher": "Wizards of the Coast",
+    "year": 2005,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "b-mroi-halaster-sombrecape"
+  },
+  {
+    "id": "b-mroi-pacte-des-vaux",
+    "kind": "wiki",
+    "titleOriginal": "Pacte des Vaux (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Pacte_des_Vaux",
+    "revision": 28911,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-mroi-pacte-des-vaux/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "b-mroi-pacte-des-vaux"
+  },
+  {
+    "id": "b-mroi-pierre-levee",
+    "kind": "wiki",
+    "titleOriginal": "Pierre levée (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Pierre_lev%C3%A9e",
+    "revision": 28913,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-mroi-pierre-levee/forgotten-realms-campaign-guide",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Guide",
+    "titleFrench": "Encyclopédie des Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "b-mroi-pierre-levee"
+  },
+  {
+    "id": "b-mroi-umberlie",
+    "kind": "wiki",
+    "titleOriginal": "Umberlie (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Umberlie",
+    "revision": 30724,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-wpen-baldurs-gate",
+    "kind": "wiki",
+    "titleOriginal": "Baldur's Gate (video game) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Baldur%27s_Gate_(video_game)",
+    "revision": 1379973955,
+    "licence": "cc-by-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-wpen-sword-coast-adventurers-guide",
+    "kind": "wiki",
+    "titleOriginal": "Sword Coast Adventurer's Guide (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sword_Coast_Adventurer%27s_Guide",
+    "revision": 1321269988,
+    "licence": "cc-by-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-wpfr-baldurs-gate",
+    "kind": "wiki",
+    "titleOriginal": "Baldur's Gate (jeu vidéo) (Wikipédia)",
+    "url": "https://fr.wikipedia.org/wiki/Baldur%27s_Gate_(jeu_vid%C3%A9o)",
+    "revision": 236853172,
+    "licence": "cc-by-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "b-wpfr-donjons-et-dragons",
+    "kind": "wiki",
+    "titleOriginal": "Donjons et Dragons (Wikipédia)",
+    "url": "https://fr.wikipedia.org/wiki/Donjons_et_Dragons",
+    "revision": 240941944,
+    "licence": "cc-by-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "bg3wiki-cleric",
+    "kind": "wiki",
+    "titleOriginal": "Cleric (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Cleric",
+    "revision": 439581,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "bg3wiki-emerald-grove",
+    "kind": "wiki",
+    "titleOriginal": "Emerald Grove (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Emerald_Grove",
+    "revision": 439376,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "bg3wiki-imp",
+    "kind": "wiki",
+    "titleOriginal": "Imp (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Imp",
+    "revision": 419688,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "bg3wiki-lesser-imp",
+    "kind": "wiki",
+    "titleOriginal": "Lesser Imp (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Lesser_Imp",
+    "revision": 429281,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "bg3wiki-nautiloid",
+    "kind": "wiki",
+    "titleOriginal": "Nautiloid (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Nautiloid",
+    "revision": 439907,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "bg3wiki-ravaged-beach",
+    "kind": "wiki",
+    "titleOriginal": "Ravaged Beach (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Ravaged_Beach",
+    "revision": 439909,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "bg3wiki-sacred-pool",
+    "kind": "wiki",
+    "titleOriginal": "Sacred Pool (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Sacred_Pool",
+    "revision": 438821,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "bg3wiki-tiefling",
+    "kind": "wiki",
+    "titleOriginal": "Tiefling (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Tiefling",
+    "revision": 424224,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "bg3wiki-tiefling-refugees",
+    "kind": "wiki",
+    "titleOriginal": "Tiefling refugees (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Tiefling_refugees",
+    "revision": 439313,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "bg3wiki-wilderness",
+    "kind": "wiki",
+    "titleOriginal": "Wilderness (bg3.wiki)",
+    "url": "https://bg3.wiki/wiki/Wilderness",
+    "revision": 433981,
+    "licence": "cc-by-nc-sa-4.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "frwiki-avernus",
+    "kind": "wiki",
+    "titleOriginal": "Avernus (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Avernus",
+    "revision": 1094317,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "frwiki-avernus/dmg-5e",
+    "kind": "livre",
+    "titleOriginal": "Dungeon Master’s Guide (5th edition)",
+    "publisher": "Wizards of the Coast",
+    "year": 2014,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "frwiki-avernus"
+  },
+  {
+    "id": "frwiki-avernus/fiendish-codex-2",
+    "kind": "livre",
+    "titleOriginal": "Fiendish Codex II: Tyrants of the Nine Hells",
+    "publisher": "Wizards of the Coast",
+    "year": 2006,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "frwiki-avernus"
+  },
+  {
+    "id": "frwiki-avernus/guide-to-hell",
+    "kind": "livre",
+    "titleOriginal": "Guide to Hell",
+    "publisher": "TSR, Inc.",
+    "year": 1999,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-avernus"
+  },
+  {
+    "id": "frwiki-avernus/manual-of-the-planes-3e",
+    "kind": "livre",
+    "titleOriginal": "Manual of the Planes (3rd edition)",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "frwiki-avernus"
+  },
+  {
+    "id": "frwiki-avernus/manual-of-the-planes-4e",
+    "kind": "livre",
+    "titleOriginal": "Manual of the Planes (4th edition)",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-avernus"
+  },
+  {
+    "id": "frwiki-avernus/monster-manual-5e",
+    "kind": "livre",
+    "titleOriginal": "Monster Manual (5th edition)",
+    "publisher": "Wizards of the Coast",
+    "year": 2014,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "frwiki-avernus"
+  },
+  {
+    "id": "frwiki-avernus/mtof",
+    "kind": "livre",
+    "titleOriginal": "Mordenkainen’s Tome of Foes",
+    "publisher": "Wizards of the Coast",
+    "year": 2018,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "frwiki-avernus"
+  },
+  {
+    "id": "frwiki-avernus/on-hallowed-ground",
+    "kind": "livre",
+    "titleOriginal": "On Hallowed Ground",
+    "publisher": "TSR, Inc.",
+    "year": 1996,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-avernus"
+  },
+  {
+    "id": "frwiki-church-of-silvanus",
+    "kind": "wiki",
+    "titleOriginal": "Church of Silvanus (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Church_of_Silvanus",
+    "revision": 982961,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "frwiki-church-of-silvanus/faiths-pantheons",
+    "kind": "livre",
+    "titleOriginal": "Faiths and Pantheons",
+    "publisher": "Wizards of the Coast",
+    "year": 2002,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "frwiki-church-of-silvanus"
+  },
+  {
+    "id": "frwiki-harpers",
+    "kind": "wiki",
+    "titleOriginal": "Harpers (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Harpers",
+    "revision": 1104608,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "frwiki-harpers/code-of-the-harpers",
+    "kind": "livre",
+    "titleOriginal": "The Code of the Harpers",
+    "publisher": "TSR, Inc.",
+    "year": 1993,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-harpers"
+  },
+  {
+    "id": "frwiki-harpers/dragon-430",
+    "kind": "magazine",
+    "titleOriginal": "Dragon n° 430, The Harpers of Waterdeep",
+    "publisher": "Wizards of the Coast",
+    "year": 2013,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-harpers"
+  },
+  {
+    "id": "frwiki-harpers/elminsters-forgotten-realms",
+    "kind": "livre",
+    "titleOriginal": "Ed Greenwood Presents Elminster’s Forgotten Realms",
+    "publisher": "Wizards of the Coast",
+    "year": 2012,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-harpers"
+  },
+  {
+    "id": "frwiki-harpers/fr-adventures",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Adventures",
+    "publisher": "TSR, Inc.",
+    "year": 1990,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-harpers"
+  },
+  {
+    "id": "frwiki-harpers/fr-campaign-guide",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Guide",
+    "titleFrench": "Encyclopédie des Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-harpers"
+  },
+  {
+    "id": "frwiki-harpers/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "frwiki-harpers"
+  },
+  {
+    "id": "frwiki-harpers/grand-history-of-the-realms",
+    "kind": "livre",
+    "titleOriginal": "The Grand History of the Realms",
+    "publisher": "Wizards of the Coast",
+    "year": 2007,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "frwiki-harpers"
+  },
+  {
+    "id": "frwiki-harpers/running-the-realms",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting, 2nd edition (revised): Running the Realms",
+    "publisher": "TSR, Inc.",
+    "year": 1993,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-harpers"
+  },
+  {
+    "id": "frwiki-harpers/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "frwiki-harpers"
+  },
+  {
+    "id": "frwiki-harpers/warriors-priests-realms",
+    "kind": "livre",
+    "titleOriginal": "Warriors and Priests of the Realms",
+    "publisher": "TSR, Inc.",
+    "year": 1996,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-harpers"
+  },
+  {
+    "id": "frwiki-imp",
+    "kind": "wiki",
+    "titleOriginal": "Imp (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Imp",
+    "revision": 1094497,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "frwiki-imp/faces-of-evil",
+    "kind": "livre",
+    "titleOriginal": "Faces of Evil: The Fiends",
+    "publisher": "Wizards of the Coast",
+    "year": 1997,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-imp"
+  },
+  {
+    "id": "frwiki-imp/fiendish-codex-2",
+    "kind": "livre",
+    "titleOriginal": "Fiendish Codex II: Tyrants of the Nine Hells",
+    "publisher": "Wizards of the Coast",
+    "year": 2006,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "frwiki-imp"
+  },
+  {
+    "id": "frwiki-imp/monster-manual-1e",
+    "kind": "livre",
+    "titleOriginal": "Monster Manual (1st edition)",
+    "publisher": "TSR, Inc.",
+    "year": 1977,
+    "edition": "add1",
+    "consultation": "secondaire",
+    "via": "frwiki-imp"
+  },
+  {
+    "id": "frwiki-imp/monster-manual-4e",
+    "kind": "livre",
+    "titleOriginal": "Monster Manual (4th edition)",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-imp"
+  },
+  {
+    "id": "frwiki-imp/monster-manual-5e",
+    "kind": "livre",
+    "titleOriginal": "Monster Manual (5th edition)",
+    "publisher": "Wizards of the Coast",
+    "year": 2014,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "frwiki-imp"
+  },
+  {
+    "id": "frwiki-imp/monster-manual-v35",
+    "kind": "livre",
+    "titleOriginal": "Monster Manual v.3.5",
+    "publisher": "Wizards of the Coast",
+    "year": 2003,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "frwiki-imp"
+  },
+  {
+    "id": "frwiki-imp/planescape-mc-appendix",
+    "kind": "livre",
+    "titleOriginal": "Planescape Monstrous Compendium Appendix",
+    "publisher": "TSR, Inc.",
+    "year": 1994,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-imp"
+  },
+  {
+    "id": "frwiki-nine-hells",
+    "kind": "wiki",
+    "titleOriginal": "Nine Hells (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Nine_Hells",
+    "revision": 1110454,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "frwiki-nine-hells/fr-campaign-guide",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Guide",
+    "titleFrench": "Encyclopédie des Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-nine-hells"
+  },
+  {
+    "id": "frwiki-nine-hells/manual-of-the-planes-1e",
+    "kind": "livre",
+    "titleOriginal": "Manual of the Planes (1st edition)",
+    "publisher": "TSR",
+    "year": 1987,
+    "edition": "add1",
+    "consultation": "secondaire",
+    "via": "frwiki-nine-hells"
+  },
+  {
+    "id": "frwiki-nine-hells/monster-manual-4e",
+    "kind": "livre",
+    "titleOriginal": "Monster Manual (4th edition)",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-nine-hells"
+  },
+  {
+    "id": "frwiki-nine-hells/players-guide-to-faerun",
+    "kind": "livre",
+    "titleOriginal": "Player’s Guide to Faerûn",
+    "publisher": "Wizards of the Coast",
+    "year": 2004,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "frwiki-nine-hells"
+  },
+  {
+    "id": "frwiki-silvanus",
+    "kind": "wiki",
+    "titleOriginal": "Silvanus (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Silvanus",
+    "revision": 1104587,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "frwiki-silvanus/dragon-412",
+    "kind": "magazine",
+    "titleOriginal": "Dragon n° 412, Channel Divinity: Chauntea and Silvanus",
+    "publisher": "Wizards of the Coast",
+    "year": 2012,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-silvanus"
+  },
+  {
+    "id": "frwiki-silvanus/faiths-avatars",
+    "kind": "livre",
+    "titleOriginal": "Faiths & Avatars",
+    "publisher": "TSR, Inc.",
+    "year": 1996,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-silvanus"
+  },
+  {
+    "id": "frwiki-silvanus/faiths-pantheons",
+    "kind": "livre",
+    "titleOriginal": "Faiths and Pantheons",
+    "publisher": "Wizards of the Coast",
+    "year": 2002,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "frwiki-silvanus"
+  },
+  {
+    "id": "frwiki-silvanus/fr-campaign-guide",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Guide",
+    "titleFrench": "Encyclopédie des Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-silvanus"
+  },
+  {
+    "id": "frwiki-silvanus/fr-campaign-set",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Set (Cyclopedia of the Realms)",
+    "titleFrench": "Les Royaumes oubliés : décor de campagne (Encyclopédie des Royaumes)",
+    "publisher": "TSR, Inc.",
+    "year": 1987,
+    "edition": "add1",
+    "consultation": "secondaire",
+    "via": "frwiki-silvanus"
+  },
+  {
+    "id": "frwiki-silvanus/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "frwiki-silvanus"
+  },
+  {
+    "id": "frwiki-silvanus/heroes-of-faerun",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms: Heroes of Faerûn",
+    "publisher": "Wizards of the Coast",
+    "year": 2025,
+    "edition": "5e-2024",
+    "consultation": "secondaire",
+    "via": "frwiki-silvanus"
+  },
+  {
+    "id": "frwiki-silvanus/on-hallowed-ground",
+    "kind": "livre",
+    "titleOriginal": "On Hallowed Ground",
+    "publisher": "TSR, Inc.",
+    "year": 1996,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-silvanus"
+  },
+  {
+    "id": "frwiki-silvanus/running-the-realms",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting, 2nd edition (revised): Running the Realms",
+    "publisher": "TSR, Inc.",
+    "year": 1993,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-silvanus"
+  },
+  {
+    "id": "frwiki-silvanus/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "frwiki-silvanus"
+  },
+  {
+    "id": "frwiki-sword-coast",
+    "kind": "wiki",
+    "titleOriginal": "Sword Coast (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Sword_Coast",
+    "revision": 1086701,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "frwiki-sword-coast/fr-campaign-guide",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Guide",
+    "titleFrench": "Encyclopédie des Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-sword-coast"
+  },
+  {
+    "id": "frwiki-sword-coast/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "frwiki-sword-coast"
+  },
+  {
+    "id": "frwiki-sword-coast/grand-history-of-the-realms",
+    "kind": "livre",
+    "titleOriginal": "The Grand History of the Realms",
+    "publisher": "Wizards of the Coast",
+    "year": 2007,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "frwiki-sword-coast"
+  },
+  {
+    "id": "frwiki-sword-coast/grand-tour-of-the-realms",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting, 2nd edition (revised): A Grand Tour of the Realms",
+    "publisher": "TSR, Inc.",
+    "year": 1993,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-sword-coast"
+  },
+  {
+    "id": "frwiki-sword-coast/hordes-of-dragonspear",
+    "kind": "aventure",
+    "titleOriginal": "Hordes of Dragonspear",
+    "publisher": "TSR, Inc.",
+    "year": 1992,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-sword-coast"
+  },
+  {
+    "id": "frwiki-sword-coast/players-guide-to-faerun",
+    "kind": "livre",
+    "titleOriginal": "Player’s Guide to Faerûn",
+    "publisher": "Wizards of the Coast",
+    "year": 2004,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "frwiki-sword-coast"
+  },
+  {
+    "id": "frwiki-sword-coast/rise-of-tiamat",
+    "kind": "aventure",
+    "titleOriginal": "The Rise of Tiamat",
+    "publisher": "Wizards of the Coast",
+    "year": 2014,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "frwiki-sword-coast"
+  },
+  {
+    "id": "frwiki-sword-coast/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "frwiki-sword-coast"
+  },
+  {
+    "id": "frwiki-sword-coast/volos-guide-sword-coast",
+    "kind": "livre",
+    "titleOriginal": "Volo’s Guide to the Sword Coast",
+    "publisher": "TSR, Inc.",
+    "year": 1994,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-sword-coast"
+  },
+  {
+    "id": "frwiki-tiefling",
+    "kind": "wiki",
+    "titleOriginal": "Tiefling (Forgotten Realms Wiki)",
+    "url": "https://forgottenrealms.fandom.com/wiki/Tiefling",
+    "revision": 1110884,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "frwiki-tiefling/fr-players-guide",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Player’s Guide",
+    "titleFrench": "Guide des Joueurs des Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-tiefling"
+  },
+  {
+    "id": "frwiki-tiefling/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "frwiki-tiefling"
+  },
+  {
+    "id": "frwiki-tiefling/planescape-campaign-setting",
+    "kind": "livre",
+    "titleOriginal": "Planescape Campaign Setting",
+    "publisher": "TSR, Inc.",
+    "year": 1994,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-tiefling"
+  },
+  {
+    "id": "frwiki-tiefling/planescape-mc-appendix",
+    "kind": "livre",
+    "titleOriginal": "Planescape Monstrous Compendium Appendix",
+    "publisher": "TSR, Inc.",
+    "year": 1994,
+    "edition": "add2",
+    "consultation": "secondaire",
+    "via": "frwiki-tiefling"
+  },
+  {
+    "id": "frwiki-tiefling/players-handbook-2024",
+    "kind": "livre",
+    "titleOriginal": "Player’s Handbook (2024)",
+    "publisher": "Wizards of the Coast",
+    "year": 2024,
+    "edition": "5e-2024",
+    "consultation": "secondaire",
+    "via": "frwiki-tiefling"
+  },
+  {
+    "id": "frwiki-tiefling/players-handbook-4e",
+    "kind": "livre",
+    "titleOriginal": "Player’s Handbook (4th edition)",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "frwiki-tiefling"
+  },
+  {
+    "id": "frwiki-tiefling/races-of-faerun",
+    "kind": "livre",
+    "titleOriginal": "Races of Faerûn",
+    "titleFrench": "Races de Faerûn",
+    "publisher": "Wizards of the Coast",
+    "year": 2003,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "frwiki-tiefling"
+  },
+  {
+    "id": "frwiki-tiefling/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "frwiki-tiefling"
+  },
+  {
+    "id": "mroi-averne",
+    "kind": "wiki",
+    "titleOriginal": "Averne (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Averne",
+    "revision": 34302,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "mroi-averne/descent-into-avernus",
+    "kind": "aventure",
+    "titleOriginal": "Baldur’s Gate: Descent into Avernus",
+    "publisher": "Wizards of the Coast",
+    "year": 2019,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "mroi-averne"
+  },
+  {
+    "id": "mroi-averne/players-guide-to-faerun",
+    "kind": "livre",
+    "titleOriginal": "Player’s Guide to Faerûn",
+    "publisher": "Wizards of the Coast",
+    "year": 2004,
+    "edition": "3.5",
+    "consultation": "secondaire",
+    "via": "mroi-averne"
+  },
+  {
+    "id": "mroi-cote-des-epees",
+    "kind": "wiki",
+    "titleOriginal": "Côte des Épées (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/C%C3%B4te_des_%C3%89p%C3%A9es",
+    "revision": 33287,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "mroi-cote-des-epees/fr-campaign-guide",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Guide",
+    "titleFrench": "Encyclopédie des Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "mroi-cote-des-epees"
+  },
+  {
+    "id": "mroi-cote-des-epees/fr-players-guide",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Player’s Guide",
+    "titleFrench": "Guide des Joueurs des Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2008,
+    "edition": "4e",
+    "consultation": "secondaire",
+    "via": "mroi-cote-des-epees"
+  },
+  {
+    "id": "mroi-cote-des-epees/frcs-3e",
+    "kind": "livre",
+    "titleOriginal": "Forgotten Realms Campaign Setting (3rd edition)",
+    "titleFrench": "Les Royaumes oubliés",
+    "publisher": "Wizards of the Coast",
+    "year": 2001,
+    "edition": "3e",
+    "consultation": "secondaire",
+    "via": "mroi-cote-des-epees"
+  },
+  {
+    "id": "mroi-menestrels",
+    "kind": "wiki",
+    "titleOriginal": "Ménestrels (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/M%C3%A9nestrels",
+    "revision": 44724,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "mroi-silvanus",
+    "kind": "wiki",
+    "titleOriginal": "Silvanus (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Silvanus",
+    "revision": 30635,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "mroi-tieffelins",
+    "kind": "wiki",
+    "titleOriginal": "Tieffelins (Le Monde des Royaumes Oubliés)",
+    "url": "https://le-monde-des-royaumes-oublies.fandom.com/fr/wiki/Tieffelins",
+    "revision": 41597,
+    "licence": "cc-by-sa-3.0",
+    "consultation": "directe"
+  },
+  {
+    "id": "mroi-tieffelins/scag",
+    "kind": "livre",
+    "titleOriginal": "Sword Coast Adventurer’s Guide",
+    "publisher": "Wizards of the Coast",
+    "year": 2015,
+    "edition": "5e-2014",
+    "consultation": "secondaire",
+    "via": "mroi-tieffelins"
+  },
+  {
+    "id": "wpfr-royaumes-oublies",
+    "kind": "wiki",
+    "titleOriginal": "Royaumes oubliés (Wikipédia en français)",
+    "url": "https://fr.wikipedia.org/wiki/Royaumes_oubli%C3%A9s",
+    "revision": 240404251,
+    "licence": "cc-by-sa-4.0",
+    "consultation": "directe"
+  }
+]

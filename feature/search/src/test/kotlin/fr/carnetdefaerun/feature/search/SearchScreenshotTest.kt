@@ -33,7 +33,7 @@ import org.robolectric.annotation.GraphicsMode
 class SearchScreenshotTest {
     @get:Rule val compose = createAndroidComposeRule<ComponentActivity>()
 
-    private val search by lazy { SearchRepository(InMemoryContentStore(GameData.entries)) }
+    private val search by lazy { SearchRepository(InMemoryContentStore(GameData.entries, GameData.references)) }
 
     private fun state(query: String, includeHidden: Boolean = false): SearchUiState {
         val results = search.search(query, SpoilerProfile(Act.PROLOGUE), includeHidden = includeHidden, limit = 12)

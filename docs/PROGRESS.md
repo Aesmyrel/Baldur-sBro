@@ -31,7 +31,8 @@ _Dernière mise à jour : 03/11/2026, phase 1 validée ; phases 2 et 3 en cours.
   - À faire : compagnons, quêtes, trophées ; pipeline du lore (format, références, fiches pilotes) ; effets rédigés des sorts. Faits depuis : précisions des variantes au même nom (D-077), attribution des pages secondaires (D-078).
 - **Phase 3 — Grimoire, Codex et recherche**
   - Fait : base du joueur (révélations par jeton, noms corrigés, favoris) et porte du contenu (D-073) ; recherche globale filtrée par le verrou, 2 à 8 ms sur la base complète (D-074) ; écrans du Grimoire (accueil, listes, fiches) et de la recherche, avec captures (D-076).
-  - À faire : Codex et fiches de lore (après le pipeline du lore), carte, schéma des plans, chronologie, mode lecture ; tests de fuite sur l'arbre sémantique des écrans ; vérification indépendante de la phase.
+  - Fait aussi : écrans du Codex (accueil, thèmes, fiches de lore avec variantes, voiles et références ; D-081) ; 12 fiches pilotes réécrites après relecture (D-080), seconde relecture en cours.
+  - À faire : carte, schéma des plans, chronologie, mode lecture ; tests de fuite sur l'arbre sémantique des écrans ; vérification indépendante de la phase.
 
 ## Reste à faire
 - Phase 2b : pipeline du lore.

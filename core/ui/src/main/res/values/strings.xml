@@ -189,4 +189,29 @@
     <string name="healing_dice">%1$s points de vie rendus</string>
     <string name="metres">%1$s m</string>
     <string name="spell_slot_level">Emplacement de sort de niveau %1$d</string>
+    <!-- Codex : thèmes, éditions de D&D, natures des affirmations (D-081). -->
+    <string name="theme_pantheon">Panthéon</string>
+    <string name="theme_cosmology">Cosmologie</string>
+    <string name="theme_peoples">Peuples</string>
+    <string name="theme_bestiary">Bestiaire</string>
+    <string name="theme_factions">Factions</string>
+    <string name="theme_places">Lieux</string>
+    <string name="theme_characters">Personnages</string>
+    <string name="theme_legendary_items">Objets légendaires</string>
+    <string name="theme_timeline">Chronologie</string>
+    <string name="theme_saga">Saga Baldur’s Gate</string>
+    <string name="theme_game_books">Livres du jeu</string>
+    <string name="theme_further_reading">Pour aller plus loin</string>
+    <string name="edition_add1">AD&amp;D, 1re édition</string>
+    <string name="edition_add2">AD&amp;D, 2e édition</string>
+    <string name="edition_3e">3e édition</string>
+    <string name="edition_35">Édition 3.5</string>
+    <string name="edition_4e">4e édition</string>
+    <string name="edition_5e_2014">5e édition (2014)</string>
+    <string name="edition_5e_2024">5e édition (2024)</string>
+    <string name="edition_multi">Plusieurs éditions</string>
+    <string name="nature_canon_bg3">Canon BG3</string>
+    <string name="nature_canon_dnd">Canon D&amp;D</string>
+    <string name="nature_interpretation">Notre lecture</string>
+    <string name="nature_real_world">Hors univers</string>
 </resources>

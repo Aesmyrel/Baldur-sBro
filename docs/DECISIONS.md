@@ -277,3 +277,17 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - pas de commentaire sur les sources ;
   - registre normalisé.
 - **Contrôle ajouté** : les codes de licence des références sont normalisés (`cc-by-sa-3.0`, `cc-by-sa-4.0`, `cc-by-nc-sa-4.0`) et vérifiés par la validation ; une page de wiki doit avoir sa licence.
+
+**D-081 — Écrans du Codex.**
+- **Accueil du Codex** : les douze thèmes en deux groupes (« Le monde », « Histoires et œuvres »), avec le nombre de fiches visibles. Puis la **liste d'un thème**.
+- **Fiche de lore**, au plus près de la maquette de la direction A :
+  - titre, nom anglais et accroche ;
+  - badges des natures présentes (Canon BG3, Canon D&D, Notre lecture, Hors univers) et temps de lecture ;
+  - lettrine enluminée au premier paragraphe ;
+  - nature et édition sous le titre d'une section ;
+  - appels de référence en exposant, numérotés dans l'ordre du premier appel ;
+  - **versions divergentes** dans un même cadre, chacune sous son édition ;
+  - section masquée sous le voile ;
+  - références en pied de fiche (pages et chapitres cités, source qui cite le livre), puis relations (« Pour tirer le fil ») ;
+  - filet de progression de lecture et ancre de section (`#s3`) pour les liens profonds.
+- **Registre exporté** : `normalize` écrit aussi `data/lore/references.json`, que les tests et les captures relisent. Le test de fuite vérifie désormais pour de bon que seules les références des sections visibles sont données.

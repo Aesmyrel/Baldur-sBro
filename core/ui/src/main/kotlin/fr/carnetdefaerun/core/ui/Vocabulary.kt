@@ -4,11 +4,14 @@ import androidx.annotation.StringRes
 import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.AreaShape
 import fr.carnetdefaerun.core.model.content.ArmourProficiency
+import fr.carnetdefaerun.core.model.content.CanonNature
 import fr.carnetdefaerun.core.model.content.DamageType
+import fr.carnetdefaerun.core.model.content.Edition
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.model.content.FeatureKind
 import fr.carnetdefaerun.core.model.content.Handedness
 import fr.carnetdefaerun.core.model.content.ItemCategory
+import fr.carnetdefaerun.core.model.content.LoreTheme
 import fr.carnetdefaerun.core.model.content.RangeKind
 import fr.carnetdefaerun.core.model.content.Rarity
 import fr.carnetdefaerun.core.model.content.Recharge
@@ -277,4 +280,43 @@ val FeatureKind.labelRes: Int
         FeatureKind.PASSIVE -> R.string.kind_passive
         FeatureKind.ACTION -> R.string.kind_action
         FeatureKind.WEAPON_ACTION -> R.string.kind_weapon_action
+    }
+
+@get:StringRes
+val LoreTheme.labelRes: Int
+    get() = when (this) {
+        LoreTheme.PANTHEON -> R.string.theme_pantheon
+        LoreTheme.COSMOLOGY -> R.string.theme_cosmology
+        LoreTheme.PEOPLES -> R.string.theme_peoples
+        LoreTheme.BESTIARY -> R.string.theme_bestiary
+        LoreTheme.FACTIONS -> R.string.theme_factions
+        LoreTheme.PLACES -> R.string.theme_places
+        LoreTheme.CHARACTERS -> R.string.theme_characters
+        LoreTheme.LEGENDARY_ITEMS -> R.string.theme_legendary_items
+        LoreTheme.TIMELINE -> R.string.theme_timeline
+        LoreTheme.SAGA -> R.string.theme_saga
+        LoreTheme.GAME_BOOKS -> R.string.theme_game_books
+        LoreTheme.FURTHER_READING -> R.string.theme_further_reading
+    }
+
+@get:StringRes
+val Edition.labelRes: Int
+    get() = when (this) {
+        Edition.ADND_1 -> R.string.edition_add1
+        Edition.ADND_2 -> R.string.edition_add2
+        Edition.THIRD -> R.string.edition_3e
+        Edition.THIRD_POINT_FIVE -> R.string.edition_35
+        Edition.FOURTH -> R.string.edition_4e
+        Edition.FIFTH_2014 -> R.string.edition_5e_2014
+        Edition.FIFTH_2024 -> R.string.edition_5e_2024
+        Edition.MULTI -> R.string.edition_multi
+    }
+
+@get:StringRes
+val CanonNature.labelRes: Int
+    get() = when (this) {
+        CanonNature.CANON_BG3 -> R.string.nature_canon_bg3
+        CanonNature.CANON_DND -> R.string.nature_canon_dnd
+        CanonNature.INTERPRETATION -> R.string.nature_interpretation
+        CanonNature.REAL_WORLD -> R.string.nature_real_world
     }

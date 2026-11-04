@@ -18,7 +18,7 @@ import fr.carnetdefaerun.core.model.search.Folding
  * Base de contenu en mémoire, pour les tests des dépôts et les captures d'écran. Noms et texte indexés comme le fait le pipeline
  * (formes repliées ; texte des blocs cherché par début de mot).
  */
-class InMemoryContentStore(entries: List<Entry>) : ContentStore {
+class InMemoryContentStore(entries: List<Entry>, private val references: Map<String, Reference> = emptyMap()) : ContentStore {
     private val rows = entries.associate { e ->
         e.id to EntryRow(EntryHeader(e.id, e.type, e.listSubtype, e.name, e.tag, e.titleTag), ContentFormat.strict.encodeToString(Entry.serializer(), e))
     }
@@ -38,6 +38,6 @@ class InMemoryContentStore(entries: List<Entry>) : ContentStore {
     override fun names() = names
     override fun searchText(words: List<String>, limit: Int) =
         texts.filter { (_, textWords) -> words.all { w -> textWords.any { it.startsWith(w) } } }.map { it.first }.take(limit)
-    override fun references() = emptyMap<String, Reference>()
+    override fun references() = references
     override fun meta() = emptyMap<String, String>()
 }

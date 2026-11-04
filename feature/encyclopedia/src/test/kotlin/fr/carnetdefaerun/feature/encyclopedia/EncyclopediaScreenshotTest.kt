@@ -46,7 +46,7 @@ class EncyclopediaScreenshotTest {
     @get:Rule val compose = createAndroidComposeRule<ComponentActivity>()
 
     private val prologue = SpoilerProfile(Act.PROLOGUE)
-    private val repository by lazy { ContentRepository(InMemoryContentStore(GameData.entries)) }
+    private val repository by lazy { ContentRepository(InMemoryContentStore(GameData.entries, GameData.references)) }
 
     private fun shot(name: String, mode: ThemeMode = ThemeMode.SOMBRE, fontScale: Float = 1f, content: @Composable () -> Unit) {
         compose.setContent {
