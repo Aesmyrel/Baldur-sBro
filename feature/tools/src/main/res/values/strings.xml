@@ -61,7 +61,7 @@
     <string name="dice_tray_a11y">Plateau de dés : %1$s</string>
     <string name="dice_tray_empty_a11y">Plateau de dés vide</string>
     <string name="dice_stats">De %1$d à %2$d, moyenne %3$s</string>
-    <string name="dice_total_a11y">Lancer %1$d: total %2$d</string>
+    <string name="dice_total_a11y">Lancer %1$d : total %2$d</string>
     <plurals name="dice_count_a11y">
         <item quantity="one">%1$d dé</item>
         <item quantity="many">%1$d dés</item>
@@ -72,6 +72,8 @@
     <string name="dice_term">%1$dd%2$d</string>
     <string name="dice_plus">\u0020+\u0020</string>
     <string name="dice_minus">\u0020−\u0020</string>
+    <string name="dice_no_roll">Pas encore de lancer avec ces dés</string>
+    <string name="stat_dash">—</string>
     <string name="dice_history">Derniers lancers</string>
     <string name="dice_history_line">%1$s · %2$d</string>
 </resources>

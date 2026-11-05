@@ -120,11 +120,28 @@ object D20 {
         autoSaves: Boolean = false,
         bonusDice: List<Int> = emptyList(),
         inspirationRerolls: Int = 0,
+    ): Double = 1 - failureChance(kind, modifier, target, mode, critThreshold, halflingLuck, autoSaves, bonusDice, inspirationRerolls)
+
+    /**
+     * Probabilité d'échouer, calculée directement sur les issues ratées (et non comme 1 − réussite) : elle reste exacte
+     * quand elle est infime, là où la réussite s'arrondit à 1 en virgule flottante. Toutes les relances échouées :
+     * échec d'un jet à la puissance relances + 1.
+     */
+    fun failureChance(
+        kind: RollKind,
+        modifier: Int,
+        target: Int,
+        mode: RollMode = RollMode.NORMAL,
+        critThreshold: Int = 20,
+        halflingLuck: Boolean = false,
+        autoSaves: Boolean = false,
+        bonusDice: List<Int> = emptyList(),
+        inspirationRerolls: Int = 0,
     ): Double {
         val faces = faceProbabilities(mode, halflingLuck)
         val bonus = Dice.sumDistribution(bonusDice)
         val natural = kind != RollKind.SAVING_THROW || autoSaves
-        var p = 0.0
+        var q = 0.0
         for (f in 1..20) {
             for ((b, pb) in bonus) {
                 val success = when {
@@ -133,12 +150,13 @@ object D20 {
                     natural && f == 20 -> true
                     else -> f + modifier + b >= target
                 }
-                if (success) p += faces[f] * pb
+                if (!success) q += faces[f] * pb
             }
         }
         require(inspirationRerolls >= 0)
-        // Chaque relance refait un jet indépendant : échouer à tous a pour probabilité (1 − p)^(n + 1).
-        return 1 - Math.pow(1 - p, (inspirationRerolls + 1).toDouble())
+        // Chaque relance refait un jet indépendant : échouer à tous a pour probabilité q^(n + 1).
+        // Les sommes de probabilités peuvent dépasser 1 de 10⁻¹⁶ : bornées, pour qu'une certitude reste une certitude.
+        return Math.pow(q.coerceIn(0.0, 1.0), (inspirationRerolls + 1).toDouble())
     }
 
     /** Seuil de critique abaissé de 1 par effet de Coup critique amélioré, cumulable ([RuleSources.IMPROVED_CRITICAL_HIT]). */

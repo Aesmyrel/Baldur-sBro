@@ -27,6 +27,7 @@
 ## Lisibilité
 - [ ] Police système à 200 % : aucun mot coupé, aucun libellé tronqué hors barre de navigation (libellés lus en entier par TalkBack).
 - [ ] TalkBack : le voile s'annonce « contenu masqué » et se révèle par l'action « Révéler » ; la valeur du curseur de taille de lecture est lue.
+- [ ] TalkBack, outils : chaque appui sur − ou + d'un compteur annonce la nouvelle valeur ; une tuile de dé dit combien de dés elle contient ; après avoir composé ses dés puis lancé (par le bouton ou en touchant deux fois le plateau), le total est annoncé, et deux totaux identiques de suite le sont tous les deux (D-096).
 - [ ] Mode session : l'écran reste allumé tant qu'il est actif, et s'éteint normalement une fois désactivé.
 
 ## Navigation

@@ -148,7 +148,7 @@ fun ProbabilityScreen(input: ProbabilityInput, onChange: (ProbabilityInput) -> U
 @Composable
 private fun ResultCard(input: ProbabilityInput, result: ProbabilityResult, modifier: Modifier = Modifier) {
     val c = CarnetTheme.colors
-    val value = percentText(percent(result.success))
+    val value = percentText(percent(result.success, result.failure))
     val a11y = stringResource(R.string.proba_result_a11y, value)
     OrnateCard(modifier, borderColor = c.goldDeep) {
         Row(verticalAlignment = Alignment.Bottom, modifier = Modifier.fillMaxWidth()) {

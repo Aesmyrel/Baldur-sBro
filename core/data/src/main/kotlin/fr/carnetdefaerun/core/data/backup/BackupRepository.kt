@@ -136,7 +136,11 @@ class BackupRepository @Inject constructor(
         val builds = keep(file.builds.withIndex().toList(), MAX_BUILDS) { (_, row) ->
             BuildCode.isPlausible(row.build) && BuildFormat.json.encodeToString(Build.serializer(), row.build).length <= MAX_PAYLOAD
         }.map { (i, row) -> i to row.copy(build = row.build.copy(name = BuildCode.cleanName(row.build.name))) }
-        val damaged = keep(file.damagedBuilds, MAX_BUILDS) { it.payload.length <= MAX_PAYLOAD && it.name.length <= MAX_NAME }
+        // Un build « abîmé » devenu lisible doit être vraisemblable comme les autres ; illisible, il est gardé tel quel.
+        val damaged = keep(file.damagedBuilds, MAX_BUILDS) { row ->
+            row.payload.length <= MAX_PAYLOAD && row.name.length <= MAX_NAME &&
+                (runCatching { BuildFormat.json.decodeFromString(Build.serializer(), row.payload) }.getOrNull()?.let(BuildCode::isPlausible) ?: true)
+        }
         val notes = keep(file.notes, MAX_NOTES) { it.text.length <= NoteRepository.MAX_LENGTH }
 
         val ids = db.backup().replaceAll(

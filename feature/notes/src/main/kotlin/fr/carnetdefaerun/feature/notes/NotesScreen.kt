@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -79,6 +80,18 @@ internal fun labelOf(gated: Gated<fr.carnetdefaerun.core.data.content.EntryView>
 
 data class NotesUiState(val notes: List<Note>, val labels: Map<ContentId, EntryLabel>)
 
+private val FilterSaver = androidx.compose.runtime.saveable.Saver<NoteFilter, String>(
+    save = { f -> when (f) { NoteFilter.All -> "all"; NoteFilter.Free -> "free"; NoteFilter.OnEntries -> "entries"; is NoteFilter.OnAct -> "act:${f.act.name}" } },
+    restore = { v ->
+        when {
+            v == "free" -> NoteFilter.Free
+            v == "entries" -> NoteFilter.OnEntries
+            v.startsWith("act:") -> fr.carnetdefaerun.core.model.spoiler.Act.entries.firstOrNull { it.name == v.removePrefix("act:") }?.let(NoteFilter::OnAct) ?: NoteFilter.All
+            else -> NoteFilter.All
+        }
+    },
+)
+
 /** Filtre de la liste : toutes, sans rattachement, un acte, ou les notes rattachées à une fiche. */
 sealed interface NoteFilter {
     data object All : NoteFilter
@@ -112,7 +125,8 @@ fun NotesRoute(onNavigate: (Destination) -> Unit, onBack: () -> Unit) {
 fun NotesScreen(state: NotesUiState?, onOpen: (Long) -> Unit, onNew: () -> Unit, onBack: () -> Unit, initialFilter: NoteFilter = NoteFilter.All) {
     val c = CarnetTheme.colors
     val gutter = CarnetTheme.dimens.gutter
-    var filter by remember { mutableStateOf(initialFilter) }
+    // Filtre gardé au retour d'une note et à la rotation.
+    var filter by rememberSaveable(stateSaver = FilterSaver) { mutableStateOf(initialFilter) }
     CarnetSectionScope(CarnetSection.OUTILS) {
         Column(Modifier.fillMaxSize()) {
             CarnetTopBar(stringResource(R.string.notes_crumb), onBack = onBack)

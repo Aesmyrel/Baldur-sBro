@@ -143,7 +143,9 @@ class NoteEditorViewModel @AssistedInject constructor(
     /** Enregistre si la note a changé et n'est pas vide, puis [onDone] ; une note vide jamais enregistrée est abandonnée. */
     fun save(onDone: () -> Unit) {
         val d = draft.value
-        if (saving || d == null || d.missing) { if (d?.missing == true) onDone(); return }
+        if (saving) return
+        // Note pas encore chargée, ou disparue : on sort sans rien écrire.
+        if (d == null || d.missing) { onDone(); return }
         val changed = original != (d.text to d.target)
         if (!changed || d.text.isBlank()) { onDone(); return }
         saving = true

@@ -37,12 +37,13 @@ sealed interface Needed {
     data object Never : Needed
 }
 
-data class ProbabilityResult(val success: Double, val critical: Double?, val needed: Needed)
+/** [failure] : probabilité d'échec calculée directement, exacte même infime (l'affichage de la certitude en dépend). */
+data class ProbabilityResult(val success: Double, val critical: Double?, val needed: Needed, val failure: Double = 1 - success)
 
 /** Calcul exact du jet décrit, par le moteur de règles (énumération des faces, convolution des dés). */
 fun ProbabilityInput.result(): ProbabilityResult {
     val crit = if (kind == RollKind.ATTACK) D20.critThreshold(improvedCriticals) else 20
-    val success = D20.successChance(
+    val failure = D20.failureChance(
         kind = kind,
         modifier = modifier,
         target = target,
@@ -53,6 +54,7 @@ fun ProbabilityInput.result(): ProbabilityResult {
         bonusDice = appliedDice.map { it.sides(bardLevel) },
         inspirationRerolls = inspirationRerolls,
     )
+    val success = 1 - failure
     val critical = if (kind == RollKind.ATTACK) D20.criticalChance(mode, crit, halflingLuck) else null
     val natural = kind != RollKind.SAVING_THROW || autoSaves
     val face = target - modifier
@@ -64,7 +66,7 @@ fun ProbabilityInput.result(): ProbabilityResult {
         !natural && face > 20 -> Needed.Never
         else -> Needed.Face(face)
     }
-    return ProbabilityResult(success, critical, needed)
+    return ProbabilityResult(success, critical, needed, failure)
 }
 
 /** Pourcentage affiché : sa valeur à la française, et s'il s'agit d'une borne (« moins de », « plus de »). */
@@ -77,8 +79,7 @@ data class Percent(val value: String, val bound: Bound = Bound.EXACT) {
  * s'affichent que si l'échec ou la réussite sont certains, jugés sur la probabilité exacte et non sur l'arrondi ;
  * en deçà d'un millième, une borne (« moins de 0,1 », « plus de 99,9 »).
  */
-fun percent(p: Double): Percent {
-    val failure = 1 - p
+fun percent(p: Double, failure: Double = 1 - p): Percent {
     return when {
         p <= 0.0 -> Percent("0")
         failure <= 0.0 -> Percent("100")

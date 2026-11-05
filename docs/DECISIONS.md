@@ -487,3 +487,10 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - captures de la barre d'une fiche avec la note, de la section Données, des filtres et des notes liées.
 - **Laissé en l'état** : les puces d'acte de l'éditeur restent des puces à bascule. Le cas « réglages ou groupe en échec après la transaction » n'a pas de test automatisé : il faudrait simuler une panne du DataStore.
 
+**D-097 — Contre-vérification et validation de la phase 6.** Le relecteur a vérifié les corrections de D-096 : le bloquant et 14 constats sont corrigés, il ne voit aucune régression (`ContentId.isValid` et le resserrement de `isPlausible` sont sans effet sur les données et les codes réels). Il restait trois retouches, faites :
+- **Probabilité d'échec exacte** : le moteur calcule l'échec directement sur les issues ratées, à la puissance relances + 1, au lieu de 1 − réussite, qui s'arrondissait à 0 (échec réel de l'ordre de 10⁻²¹ avec avantage, Chance du halfelin et 4 relances). L'affichage de la certitude s'appuie sur cette probabilité ; elle est bornée à [0, 1], car une somme flottante peut dépasser 1 de 10⁻¹⁶.
+- **Total des dés** : son nœud reste monté dès que le réservoir a des dés (tiret avant le premier lancer). TalkBack annonce donc un changement, même au premier lancer après avoir composé ses dés. Ajouté à `TEST_SUR_TELEPHONE.md`.
+- **Typographie** : « Lancer %1$d : total %2$d » reçoit son espace fine. Le contrôle `lint_typographie.py` avait un trou : il prenait tout « %1$s: » pour un format technique. Il n'exempte plus que le deux-points collé des deux côtés.
+- **Réserves levées aussi** : un build « abîmé » devenu lisible passe par la même vraisemblance ; le filtre des notes survit à l'ouverture d'une note ; le retour fonctionne avant le chargement d'une note.
+- **Phase 6 validée** : probabilités égales à l'énumération exhaustive sur tout l'espace d'entrée de l'outil ; export, appareil vierge, import sans perte. Les puces d'acte de l'éditeur restent des puces à bascule.
+

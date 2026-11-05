@@ -34,7 +34,8 @@ def fix_text(text: str) -> str:
     for e in entities:
         out = out.replace("\x00", e, 1)
     out = re.sub(NNBSP + r":(//|\d)", r":\1", out)
-    out = re.sub(r"(%\d\$[a-z])" + NNBSP + ":", r"\1:", out)  # « %1$s: » d'un format technique
+    # « %1$s:%2$s » d'un format technique (deux-points collé des deux côtés) ; suivi d'une espace, c'est du français.
+    out = re.sub(r"(%\d\$[a-z])" + NNBSP + r":(?! )", r"\1:", out)
     return out
 
 

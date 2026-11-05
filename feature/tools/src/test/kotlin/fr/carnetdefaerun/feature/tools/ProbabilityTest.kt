@@ -45,8 +45,13 @@ class ProbabilityTest {
         assertThat(percent(0.99999)).isEqualTo(Percent("99,9", Percent.Bound.ABOVE))
         assertThat(percent(0.000001)).isEqualTo(Percent("0,1", Percent.Bound.BELOW))
         // Avantage, Chance du halfelin et une relance : échec de l'ordre de 10⁻¹¹, jamais « 100 % ».
-        val nearly = ProbabilityInput(RollKind.ABILITY_CHECK, modifier = 10, target = 5, mode = RollMode.ADVANTAGE, halflingLuck = true, inspirationRerolls = 1).result()
-        assertThat(nearly.success).isLessThan(1.0)
-        assertThat(percent(nearly.success).bound).isEqualTo(Percent.Bound.ABOVE)
+        for (rerolls in 0..4) {
+            val nearly = ProbabilityInput(RollKind.ABILITY_CHECK, modifier = 10, target = 5, mode = RollMode.ADVANTAGE, halflingLuck = true, inspirationRerolls = rerolls).result()
+            // Échec d'un jet : les deux dés font 1 après relance, (1/400)² ; avec 4 relances, l'échec vaut environ 1,5·10⁻²¹.
+            val expected = Math.pow((1.0 / 400) * (1.0 / 400), rerolls + 1.0)
+            assertThat(nearly.failure).isWithin(expected * 1e-9).of(expected)
+            assertThat(nearly.failure).isGreaterThan(0.0)
+            assertThat(percent(nearly.success, nearly.failure).bound).isEqualTo(Percent.Bound.ABOVE)
+        }
     }
 }

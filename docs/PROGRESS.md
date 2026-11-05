@@ -1,6 +1,6 @@
 # Avancement
 
-_Dernière mise à jour : 05/11/2026, phases 1 et 4 validées ; phases 2, 3 et 6 en cours._
+_Dernière mise à jour : 05/11/2026, phases 1, 4 et 6 validées ; phases 2 et 3 en cours._
 
 ## Fait
 - **Phase 0 — plan et direction artistique**
@@ -43,10 +43,10 @@ _Dernière mise à jour : 05/11/2026, phases 1 et 4 validées ; phases 2, 3 et 6
   - Vérification indépendante et contre-vérification faites, constats corrigés : **phase 4 validée** (D-093, D-094).
   - Plus tard : équipement des builds (armes, armures), Expertise et choix du rôdeur (signalés en attendant).
 
-- **Phase 6 — outils (avancé)**
+- **Phase 6 — outils, notes, sauvegarde**
   - Fait : probabilité d'un jet, exacte, avec dés de bonus, relances et critique (D-091) ; lanceur de dés au geste, haptique (D-092).
   - Fait aussi : notes rattachables à un acte ou une fiche, export et import `.carnet` testés sans perte (D-095).
-  - À faire : vérification indépendante de la phase 6.
+  - Revue indépendante et contre-vérification faites, constats corrigés : **phase 6 validée** (D-096, D-097).
 
 ## Reste à faire
 - Phase 2b : pipeline du lore.

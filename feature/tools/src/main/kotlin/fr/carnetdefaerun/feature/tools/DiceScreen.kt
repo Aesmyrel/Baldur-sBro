@@ -174,7 +174,7 @@ fun DiceScreen(
                     // La progression n'est lue qu'au dessin : l'écran ne se recompose pas à chaque image de la course.
                     Tray(pool, faces, { progress.value }, direction, onFling = ::throwDice, Modifier.padding(horizontal = gutter, vertical = 10.dp))
                     // Le total reste en place pendant la course (atténué) : TalkBack annonce un changement, pas une apparition.
-                    Result(pool, last?.takeIf { it.pool == pool }, rolling = tumbling != null, rollNumber = rollNumber, Modifier.padding(horizontal = gutter))
+                    Result(pool, last, rolling = tumbling != null, rollNumber = rollNumber, Modifier.padding(horizontal = gutter))
 
                     Row(Modifier.padding(horizontal = gutter, vertical = 12.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         GoldButton(stringResource(R.string.dice_roll), { throwDice(Offset.Zero) }, enabled = !pool.isEmpty)
@@ -284,19 +284,22 @@ private fun Tray(pool: DicePool, faces: List<Int>?, progress: () -> Float, direc
 private fun Result(pool: DicePool, roll: DiceRoll?, rolling: Boolean, rollNumber: Int, modifier: Modifier = Modifier) {
     val c = CarnetTheme.colors
     Column(modifier.fillMaxWidth()) {
-        if (roll != null) {
-            val total = stringResource(R.string.dice_total_a11y, rollNumber, roll.total)
-            Row(Modifier.alpha(if (rolling) 0.35f else 1f), verticalAlignment = Alignment.Bottom, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                Text(roll.total.toString(), style = CarnetTheme.type.numericLarge, color = c.gold,
-                    modifier = Modifier.clearAndSetSemantics { contentDescription = total; liveRegion = LiveRegionMode.Polite })
-                val faces = roll.faces.joinToString(stringResource(R.string.dice_plus))
-                Text(
-                    if (pool.modifier != 0) stringResource(R.string.dice_detail_modifier, faces, signedValue(pool.modifier)) else faces,
-                    style = CarnetTheme.type.data, color = c.text2, modifier = Modifier.padding(bottom = 8.dp),
-                )
-            }
-        }
+        // Le nœud du total reste monté dès qu'il y a des dés : TalkBack annonce un changement de son texte (tiret,
+        // puis total), jamais une apparition, qu'il pourrait taire. Le numéro du lancer rend chaque annonce distincte.
         if (!pool.isEmpty) {
+            val current = roll?.takeIf { it.pool == pool }
+            val total = if (current != null) stringResource(R.string.dice_total_a11y, rollNumber, current.total) else stringResource(R.string.dice_no_roll)
+            Row(Modifier.alpha(if (rolling) 0.35f else 1f), verticalAlignment = Alignment.Bottom, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                Text(current?.total?.toString() ?: stringResource(R.string.stat_dash), style = CarnetTheme.type.numericLarge, color = if (current != null) c.gold else c.muted,
+                    modifier = Modifier.clearAndSetSemantics { contentDescription = total; liveRegion = LiveRegionMode.Polite })
+                if (current != null) {
+                    val faces = current.faces.joinToString(stringResource(R.string.dice_plus))
+                    Text(
+                        if (pool.modifier != 0) stringResource(R.string.dice_detail_modifier, faces, signedValue(pool.modifier)) else faces,
+                        style = CarnetTheme.type.data, color = c.text2, modifier = Modifier.padding(bottom = 8.dp),
+                    )
+                }
+            }
             Text(
                 stringResource(R.string.dice_stats, pool.minimum, pool.maximum, String.format(Locale.FRANCE, "%.1f", pool.mean)),
                 style = CarnetTheme.type.bodySmall, color = c.text2,
