@@ -48,6 +48,13 @@ _Dernière mise à jour : 05/11/2026, phases 1, 4 et 6 validées ; phases 2 et 3
   - Fait aussi : notes rattachables à un acte ou une fiche, export et import `.carnet` testés sans perte (D-095).
   - Revue indépendante et contre-vérification faites, constats corrigés : **phase 6 validée** (D-096, D-097).
 
+## Reprise (prochaine session)
+1. **Phase 5 — données** (rien n'existe encore) : définir dans `core:model` le format des compagnons, quêtes, objets manquables et trophées (étiquettes de spoiler par bloc), puis leurs contrôles dans le pipeline. Ensuite, rédaction par lots avec des agents de production sur un modèle plus léger (D-083), en commençant par les trophées PS5, le lot le plus simple ; puis revue indépendante.
+2. **Phase 5 — écrans** : Ma partie complète (groupe actif, objectifs, alerte de point de non-retour), Progression (cases cochables, pourcentages), Compagnons.
+3. **Codex** : passer des 12 fiches pilotes à une quarantaine (salle blanche, D-083) ; troisième relecture des pilotes.
+4. **Phase 3** : carte, schéma des plans, chronologie, mode lecture ; vérification indépendante de la phase.
+5. **Phase 7** : APK signé (voir `docs/INSTALLER.md`), `vitrine.png`, README, rapport final. Le rapport doit mentionner l'adresse électronique envoyée une fois par erreur dans l'agent utilisateur d'une requête à bg3.wiki.
+
 ## Reste à faire
 - Phase 2b : pipeline du lore.
 - Phases 4 à 7 : builds ; Ma partie, progression et compagnons ; outils, notes et sauvegarde ; finitions et livraison (APK signé, `INSTALLER.md`, `vitrine.png`, rapport final).
