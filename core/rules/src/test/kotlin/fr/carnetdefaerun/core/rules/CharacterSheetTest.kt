@@ -385,4 +385,21 @@ class CharacterSheetTest {
         assertThat(sheetOf(Build(name = "x", majorBonus = CHARISMA, minorBonus = WISDOM, levels = listOf(level("class.warlock", "subclass.the-fiend")))).problems).doesNotContain(SheetProblem.SKILLS_PARTIAL)
         assertThat(sheetOf(fighter).problems).isEmpty()
     }
+
+    @Test
+    fun `escroc arcanique, l'ordre des niveaux compte, et Expertises non modélisées signalées`() {
+        val rogue = { sub: String? -> level("class.rogue", sub) }
+        val atFirst = List(2) { rogue(null) } + rogue("subclass.arcane-trickster") + List(7) { rogue(null) } + level("class.wizard")
+        val wizardEarly = List(2) { rogue(null) } + rogue("subclass.arcane-trickster") + level("class.wizard") + List(7) { rogue(null) }
+        fun slots(levels: List<fr.carnetdefaerun.core.model.builds.BuildLevel>) =
+            sheetOf(Build(name = "x", majorBonus = DEXTERITY, minorBonus = INTELLIGENCE, levels = levels)).spellSlots
+        assertThat(slots(atFirst)).containsExactly(6, 2).inOrder()
+        assertThat(slots(wizardEarly)).isEqualTo(SpellSlots.forLevel(4))
+        // Domaine du savoir et don Acteur : Expertise signalée comme non comptée.
+        val knowledge = Build(name = "x", majorBonus = WISDOM, minorBonus = CONSTITUTION, levels = listOf(level("class.cleric", "subclass.knowledge-domain")))
+        assertThat(sheetOf(knowledge).problems).contains(SheetProblem.SKILLS_PARTIAL)
+        val actor = Build(name = "x", majorBonus = STRENGTH, minorBonus = CHARISMA,
+            levels = List(2) { level("class.fighter") } + level("class.fighter", "subclass.champion") + level("class.fighter", feat = FeatChoice(id("feat.actor"), mapOf(CHARISMA to 1))))
+        assertThat(sheetOf(actor).problems).containsExactly(SheetProblem.SKILLS_PARTIAL)
+    }
 }

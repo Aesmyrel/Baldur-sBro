@@ -33,6 +33,7 @@ fun RulesData.Companion.from(entries: Iterable<Entry>): RulesData {
                     spellcastingFrom = firstSlots ?: 1,
                     draconicResilience = facts.levels.any { l -> l.features.any { it.id?.value == DRACONIC_RESILIENCE } },
                     skillChoices = if (id == COLLEGE_OF_LORE) 3 else 0,
+                    unmodelledSkills = facts.levels.any { l -> l.features.any { it.id?.value in UNMODELLED_EXPERTISE } },
                 )
             }
             is FeatFacts -> feats[id] = FeatProfile(
@@ -42,6 +43,7 @@ fun RulesData.Companion.from(entries: Iterable<Entry>): RulesData {
                 resilient = id == RESILIENT,
                 skillChoices = if (facts.features.any { it.id?.value == SKILLED }) 3 else 0,
                 initiativeBonus = if (facts.features.any { it.id?.value == ALERT }) 5 else 0,
+                unmodelledSkills = facts.features.any { it.id?.value in UNMODELLED_EXPERTISE },
             )
             is SubraceFacts -> {
                 if (facts.features.any { it.id?.value == DWARVEN_TOUGHNESS }) dwarven += id
@@ -110,6 +112,12 @@ private const val RESILIENT = "feat.resilient"
 private const val SKILLED = "feature.skilled"
 private const val ALERT = "feature.alert"
 private const val EXPERTISE = "feature.expertise-passive-feature"
+
+/**
+ * Autres sources d'Expertise citées par *Proficiency* (révision 439299), pas encore modélisées : Bénédictions du savoir
+ * (Domaine du savoir, *Blessings of Knowledge* révision 416546) et le don Acteur (*Actor* révision 439273).
+ */
+private val UNMODELLED_EXPERTISE = setOf("feature.blessings-of-knowledge", "feature.actor")
 private const val INVOCATIONS = "invocations_known"
 
 /** Choix du rôdeur qui donnent des maîtrises (*Proficiency*, « Ranger ») : pas encore modélisés. */

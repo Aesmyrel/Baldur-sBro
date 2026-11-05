@@ -107,6 +107,10 @@ class RulesTest {
         // Avec un magicien 2 : niveau effectif 10/3 + 2 = 5, arrondi au-dessous ; avec un guerrier 2 (sans sorts) : 4.
         assertThat(SpellSlots.forClasses(listOf(at(10), CasterLevels(CasterProgression.FULL, 2, 1, "class.wizard")))).containsExactly(6, 2).inOrder()
         assertThat(SpellSlots.forClasses(listOf(at(10), CasterLevels(CasterProgression.NONE, 2, 1, "class.fighter")))).containsExactly(6, 2).inOrder()
+        // Multiclasser avant le niveau 10 de roublard : progression ordinaire (roublard 3, magicien 1, roublard jusqu'à 10 :
+        // niveau effectif 10/3 + 1 = 4, arrondi au-dessous ; 4 et 3).
+        assertThat(SpellSlots.forClasses(listOf(at(10).copy(levelsBeforeMulticlass = 3), CasterLevels(CasterProgression.FULL, 1, 1, "class.wizard", 0))))
+            .isEqualTo(SpellSlots.forLevel(4))
         // Le chevalier occulte suit la table : 4 et 3 au niveau 10.
         assertThat(SpellSlots.forClasses(listOf(CasterLevels(CasterProgression.THIRD, 10, 3, "subclass.eldritch-knight")))).containsExactly(4, 3).inOrder()
     }

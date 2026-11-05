@@ -85,7 +85,7 @@
     <string name="detail_difficulty">Mode Explorateur</string>
     <string name="detail_difficulty_why">+%1$d %% des points de vie</string>
     <string name="problem_multiclass_disabled">En mode Explorateur, aucune nouvelle classe ne peut être prise ; des niveaux déjà acquis dans une autre classe restent.</string>
-    <string name="problem_skills_partial">L’Expertise, les choix du rôdeur (ennemi juré, explorateur-né) et les invocations de l’occultiste ne sont pas encore comptés : certains bonus de compétence peuvent être plus hauts en jeu.</string>
+    <string name="problem_skills_partial">L’Expertise (roublard, barde, Domaine du savoir, don Acteur), les choix du rôdeur (ennemi juré, explorateur-né) et les invocations de l’occultiste ne sont pas encore comptés : certains bonus de compétence peuvent être plus hauts en jeu.</string>
     <string name="detail_difficulty_note">La page dit « 100 % de points de vie en plus » pour le groupe ; le carnet le prend à la lettre et double le maximum.</string>
     <string name="increase_part">%1$s %2$s</string>
     <string name="increase_label">%1$s %2$s</string>

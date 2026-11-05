@@ -44,7 +44,14 @@ enum class CasterProgression(val numerator: Int, val denominator: Int) {
  * la capacité Incantation (le paladin et le rôdeur au niveau 2, l'escroc arcanique et le chevalier occulte au niveau 3,
  * d'après leurs tableaux de progression). Avant ce niveau, elle ne compte pas.
  */
-data class CasterLevels(val progression: CasterProgression, val level: Int, val spellcastingFrom: Int = 1, val classId: String? = null)
+data class CasterLevels(
+    val progression: CasterProgression,
+    val level: Int,
+    val spellcastingFrom: Int = 1,
+    val classId: String? = null,
+    /** Niveaux de cette classe pris avant tout niveau d'une autre classe (par défaut : tous, ordre inconnu). */
+    val levelsBeforeMulticlass: Int = level,
+)
 
 object SpellSlots {
     /**
@@ -93,11 +100,12 @@ object SpellSlots {
         val only = classes.singleOrNull()
         if (only != null && only.classId == "class.ranger" && only.level == MAX_CHARACTER_LEVEL) return listOf(4, 3, 4)
         val esl = effectiveSpellcasterLevel(classes)
-        // Autre exception propre à BG3 : l'escroc arcanique, à partir du niveau 10 de roublard, a 6 emplacements de
-        // niveau 1 et 2 de niveau 2 au lieu de la table, même en multiclasse et même avec une classe qui ne lance pas
-        // de sorts ; la page Spells le formule pour un niveau effectif de 4 ou 5, les seuls possibles alors.
+        // Autre exception propre à BG3 : l'escroc arcanique qui atteint le niveau 10 de roublard avant toute autre
+        // classe a 6 emplacements de niveau 1 et 2 de niveau 2 au lieu de la table, et les garde s'il multiclasse
+        // ensuite, même vers une classe sans sorts ; multiclasser avant le niveau 10 donne la progression ordinaire.
+        // La page Spells le formule pour un niveau effectif de 4 ou 5, les seuls possibles alors.
         // Sources : [RuleSources.ARCANE_TRICKSTER] (niveau 10 et note) et [RuleSources.SPELLS] (« Spellcasting »).
-        if (classes.any { it.classId == ARCANE_TRICKSTER && it.level >= 10 } && esl in 4..5) return listOf(6, 2)
+        if (classes.any { it.classId == ARCANE_TRICKSTER && it.levelsBeforeMulticlass >= 10 } && esl in 4..5) return listOf(6, 2)
         return forLevel(esl)
     }
 

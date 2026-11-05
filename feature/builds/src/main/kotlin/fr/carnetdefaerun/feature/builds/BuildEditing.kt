@@ -52,16 +52,24 @@ object BuildEdits {
 
     /**
      * Pose sur la suite de classes [classes] les choix lus dans [source] : la première sous-classe valide de chaque
-     * classe, et ses dons dans l'ordre où ils avaient été pris. [source] peut être l'ancienne suite (changement de
-     * classe d'un niveau) : un don ou une sous-classe portés par le niveau changé restent ainsi à leur classe.
+     * classe, et chaque don à son rang parmi les niveaux de don de sa classe (1er, 2e…). Un niveau de don laissé vide
+     * reste vide : les dons suivants ne glissent pas. [source] peut être l'ancienne suite (changement de classe d'un
+     * niveau) : un don ou une sous-classe portés par le niveau changé restent ainsi à leur classe et à leur rang.
      */
     private fun place(classes: List<ContentId>, source: List<BuildLevel>, rules: RulesData): List<BuildLevel> {
         val subclass = mutableMapOf<String, ContentId>()
-        val feats = mutableMapOf<String, ArrayDeque<FeatChoice>>()
+        val featsByRank = mutableMapOf<String, MutableMap<Int, FeatChoice>>()
+        val stray = mutableMapOf<String, ArrayDeque<FeatChoice>>()
+        val seen = mutableMapOf<String, Int>()
         for (l in source) {
             val c = l.classId.value
+            val n = (seen[c] ?: 0) + 1
+            seen[c] = n
             l.subclassId?.let { s -> if (c !in subclass && rules.subclasses[s.value]?.parentClass == c) subclass[c] = s }
-            l.feat?.let { f -> feats.getOrPut(c) { ArrayDeque() }.addLast(f) }
+            val feat = l.feat ?: continue
+            val rank = rules.classes[c]?.featLevels?.sorted()?.indexOf(n) ?: -1
+            // Un don hors d'un niveau de don (code importé) prendra le premier rang libre.
+            if (rank >= 0) featsByRank.getOrPut(c) { mutableMapOf() }[rank] = feat else stray.getOrPut(c) { ArrayDeque() }.addLast(feat)
         }
         val count = mutableMapOf<String, Int>()
         return classes.mapIndexed { i, id ->
@@ -69,10 +77,11 @@ object BuildEdits {
             val profile = rules.classes[c] ?: return@mapIndexed source.getOrNull(i)?.takeIf { it.classId == id } ?: BuildLevel(id)
             val n = (count[c] ?: 0) + 1
             count[c] = n
+            val rank = profile.featLevels.sorted().indexOf(n)
             BuildLevel(
                 classId = id,
                 subclassId = if (n == profile.subclassLevel) subclass[c] else null,
-                feat = if (n in profile.featLevels) feats[c]?.removeFirstOrNull() else null,
+                feat = if (rank >= 0) featsByRank[c]?.get(rank) ?: stray[c]?.removeFirstOrNull() else null,
             )
         }
     }

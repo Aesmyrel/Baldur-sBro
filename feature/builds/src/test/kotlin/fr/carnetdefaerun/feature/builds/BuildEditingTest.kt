@@ -138,4 +138,15 @@ class BuildEditingTest {
         val back = BuildEdits.setLevelClass(edited, 3, id("class.fighter"), rules)
         assertThat(back.levels.mapNotNull { it.feat }).containsExactly(a).inOrder()
     }
+
+    @Test
+    fun `retirer un don laisse son niveau vide, sans faire glisser les suivants`() {
+        val a = FeatChoice(id("feat.tough"))
+        val b = FeatChoice(id("feat.alert"))
+        val build = Build(name = "x", levels = List(2) { BuildLevel(id("class.fighter")) } + BuildLevel(id("class.fighter"), id("subclass.champion")) +
+            BuildLevel(id("class.fighter"), feat = a) + BuildLevel(id("class.fighter")) + BuildLevel(id("class.fighter"), feat = b))
+        val edited = BuildEdits.setFeat(build, 3, null, rules)
+        assertThat(edited.levels[3].feat).isNull()
+        assertThat(edited.levels[5].feat).isEqualTo(b)
+    }
 }

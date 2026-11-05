@@ -420,7 +420,7 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - Collège du savoir : 3 compétences au choix ;
   - gnome des roches : maîtrise doublée en Histoire (*Proficiency*, révision 439299) ;
   - Vigilant : +5 à l'initiative (*Alert*, révision 438858).
-  - Pas encore modélisés, désormais **signalés** sur la fiche (problème non bloquant) : Expertise (roublard, barde), choix du rôdeur (ennemi juré, explorateur-né), invocations de l'occultiste. Les sous-classes n'accordent pas d'autres compétences dans les données.
+  - Pas encore modélisés, désormais **signalés** sur la fiche (problème non bloquant) : Expertise (roublard, barde ; Domaine du savoir et don Acteur ajoutés à la contre-vérification, D-094), choix du rôdeur (ennemi juré, explorateur-né), invocations de l'occultiste.
 - **Importants** :
   - groupe : « personne ne la maîtrise » ne s'affiche plus quand un membre la maîtrise sans avoir le meilleur bonus ;
   - Explorateur : la multiclasse est signalée, pas invalide, car des niveaux déjà acquis restent (*Difficulty*) ;
@@ -438,4 +438,10 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Tests ajoutés** : le QR code tel que l'écran le dessine se relit dans les trois thèmes et rend le build identique ; le test de fuite couvre la liste et les feuilles Partage et Compétences.
 - **Conflit de sources noté** : la liste de compétences de l'occultiste contient Nature sur la page *Warlock* (révision 424760), pas sur *Proficiency* (révision 439299). Les données suivent la page de classe.
 - **Laissé en l'état** : la télémétrie de ML Kit reste déclarée, inerte sans INTERNET (D-089) ; son retrait sera essayé sur le téléphone. L'énumération brute des tests d20 vérifie les calculs, et des cas écrits à la main vérifient les règles.
+
+**D-094 — Contre-vérification et validation de la phase 4.** Le même relecteur indépendant a vérifié les corrections de D-093 : 12 constats corrigés, la télémétrie de ML Kit laissée en l'état comme convenu, aucune régression. Il restait deux retouches, faites avec leurs tests :
+- **Escroc arcanique** : l'ordre des niveaux compte. La note de la page (*Arcane Trickster*, révision 439623) donne la progression ordinaire (4 et 3) à qui multiclasse avant le niveau 10 de roublard, et 6 et 2 seulement à qui atteint ce niveau d'abord. Le moteur compte les niveaux de la classe de départ pris avant toute autre classe.
+- **Expertises non modélisées**, désormais signalées elles aussi : Bénédictions du savoir du Domaine du savoir (*Blessings of Knowledge*, révision 416546) et le don Acteur (*Actor*, révision 439273), deux sources que cite *Proficiency* (révision 439299).
+- **Remarque du relecteur, corrigée aussi** : retirer un don laisse son niveau vide ; les dons suivants de la classe ne glissent plus. Chaque don garde son rang parmi les niveaux de don de sa classe.
+- **Phase 4 validée** : toutes les règles du catalogue sont testées et sourcées ; un build exporté, dessiné en QR code et relu revient identique. Reste pour plus tard : l'équipement des builds, l'Expertise et les choix du rôdeur, signalés en attendant.
 

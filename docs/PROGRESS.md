@@ -1,6 +1,6 @@
 # Avancement
 
-_Dernière mise à jour : 05/11/2026, phase 1 validée ; phases 2, 3 et 4 en cours._
+_Dernière mise à jour : 05/11/2026, phases 1 et 4 validées ; phases 2, 3 et 6 en cours._
 
 ## Fait
 - **Phase 0 — plan et direction artistique**
@@ -40,7 +40,8 @@ _Dernière mise à jour : 05/11/2026, phase 1 validée ; phases 2, 3 et 4 en cou
   - Fait aussi : builds enregistrés dans la base du joueur (version 2, migration testée) et code de partage borné (D-087) ; atelier : liste, fiche calculée selon la maquette, feuilles de détail du calcul, d'édition et de partage avec QR code, test de fuite (D-088).
   - Fait aussi : import par lecteur de QR code, par image (ZXing) ou par collage, aller-retour identique testé ; compétences (maîtrises d'office et choix) ; groupe de quatre (D-089).
   - Fait aussi : dés de bonus, relances d'Inspiration, seuil de critique, effets du mode Explorateur, sorts mineurs, appris et préparés, attaques d'arme (D-090).
-  - À faire : vérification indépendante de la phase ; équipement des builds (armes, armures) plus tard.
+  - Vérification indépendante et contre-vérification faites, constats corrigés : **phase 4 validée** (D-093, D-094).
+  - Plus tard : équipement des builds (armes, armures), Expertise et choix du rôdeur (signalés en attendant).
 
 - **Phase 6 — outils (avancé)**
   - Fait : probabilité d'un jet, exacte, avec dés de bonus, relances et critique (D-091) ; lanceur de dés au geste, haptique (D-092).

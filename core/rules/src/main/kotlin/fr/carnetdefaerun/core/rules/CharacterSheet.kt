@@ -63,6 +63,8 @@ data class SubclassProfile(
     val draconicResilience: Boolean = false,
     /** Compétences au choix accordées par la sous-classe (Collège du savoir : 3). */
     val skillChoices: Int = 0,
+    /** Expertise accordée par la sous-classe (Domaine du savoir), pas encore modélisée : signalée. */
+    val unmodelledSkills: Boolean = false,
 )
 
 /** Ce que le moteur doit savoir d'un don. */
@@ -77,6 +79,8 @@ data class FeatProfile(
     val skillChoices: Int = 0,
     /** Vigilant : bonus d'initiative ([RuleSources.ALERT] : +5). */
     val initiativeBonus: Int = 0,
+    /** Expertise accordée par le don (Acteur), pas encore modélisée : signalée. */
+    val unmodelledSkills: Boolean = false,
 )
 
 /** Données de jeu dont dépend le calcul, tirées de data/game par [RulesData.from]. */
@@ -330,10 +334,13 @@ object CharacterSheetCalculator {
 
         // Incantation : chaque classe qui l'a obtenue, par elle-même ou par sa sous-classe.
         val prof = if (level > 0) proficiencyBonus(level) + difficulty.proficiencyDelta else 0
+        // Niveaux de la classe de départ pris avant toute autre classe (l'escroc arcanique en dépend).
+        val openingRun = known.takeWhile { it.classId == known.first().classId }.size
         val casters = classLevels.map { (id, n) ->
             val c = data.classes.getValue(id)
             val sub = subclasses[id]?.takeIf { it.progression != CasterProgression.NONE }
-            if (sub != null) CasterLevels(sub.progression, n, sub.spellcastingFrom, sub.id) else CasterLevels(c.progression, n, c.spellcastingFrom, id)
+            val before = if (id == known.first().classId.value) openingRun else 0
+            if (sub != null) CasterLevels(sub.progression, n, sub.spellcastingFrom, sub.id, before) else CasterLevels(c.progression, n, c.spellcastingFrom, id, before)
         }
         val spellcasting = classLevels.keys.zip(casters).mapNotNull { (id, caster) ->
             val ability = data.classes.getValue(id).spellcastingAbility
@@ -365,7 +372,9 @@ object CharacterSheetCalculator {
         // Compétences : d'office (historique, race, sous-race), puis les choix de chaque source.
         val fixed = fixedSkills(build, data)
         val sources = skillSources(build, data)
-        if (classLevels.any { (id, n) -> data.classes.getValue(id).unmodelledSkillLevels.any { it <= n } }) problems += SheetProblem.SKILLS_PARTIAL
+        if (classLevels.any { (id, n) -> data.classes.getValue(id).unmodelledSkillLevels.any { it <= n } } ||
+            subclasses.values.any { it.unmodelledSkills } || feats.any { it.first.unmodelledSkills }
+        ) problems += SheetProblem.SKILLS_PARTIAL
         val chosen = mutableSetOf<Skill>()
         for (source in sources) {
             val picks = build.skillChoices[source.id].orEmpty()
