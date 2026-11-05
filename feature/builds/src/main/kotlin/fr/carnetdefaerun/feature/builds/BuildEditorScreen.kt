@@ -65,6 +65,7 @@ import fr.carnetdefaerun.core.designsystem.component.QuietButton
 import fr.carnetdefaerun.core.designsystem.component.SectionHeader
 import fr.carnetdefaerun.core.designsystem.component.SpellSlots
 import fr.carnetdefaerun.core.designsystem.component.StatTile
+import fr.carnetdefaerun.core.designsystem.component.StepGlyph
 import fr.carnetdefaerun.core.designsystem.component.TagRow
 import fr.carnetdefaerun.core.designsystem.component.TextAction
 import fr.carnetdefaerun.core.designsystem.component.TextInput
@@ -146,8 +147,17 @@ fun BuildEditorScreen(
                     CarnetTopBar(stringResource(R.string.builds_crumb), onBack = onBack)
                     Text(stringResource(R.string.editor_missing), style = CarnetTheme.type.readingItalic, color = c.text2, modifier = Modifier.padding(CarnetTheme.dimens.gutter))
                 }
+                is EditorUiState.Damaged -> Column(Modifier.fillMaxSize()) {
+                    CarnetTopBar(stringResource(R.string.builds_crumb), onBack = onBack)
+                    Text(state.name, style = CarnetTheme.type.display, color = c.text, modifier = Modifier.padding(horizontal = CarnetTheme.dimens.gutter, vertical = 4.dp))
+                    Text(stringResource(R.string.editor_damaged), style = CarnetTheme.type.reading, color = c.text2, modifier = Modifier.padding(CarnetTheme.dimens.gutter))
+                    Box(Modifier.padding(horizontal = CarnetTheme.dimens.gutter)) { QuietButton(stringResource(R.string.editor_delete_yes), onDelete) }
+                }
                 is EditorUiState.Ready -> {
-                    EditorContent(state, onEdit, onBack, open = { panel = it })
+                    // Feuille ouverte : le contenu dessous sort de l'arbre d'accessibilité, TalkBack reste dans la feuille.
+                    Box(if (panel != null) Modifier.clearAndSetSemantics {} else Modifier) {
+                        EditorContent(state, onEdit, onBack, open = { panel = it })
+                    }
                     val current = panel
                     CarnetSheet(
                         visible = current != null,
@@ -321,6 +331,7 @@ private val SheetProblem.labelRes: Int
         SheetProblem.SKILLS_MISSING -> R.string.problem_skills_missing
         SheetProblem.SKILLS_INVALID -> R.string.problem_skills_invalid
         SheetProblem.MULTICLASS_DISABLED -> R.string.problem_multiclass_disabled
+        SheetProblem.SKILLS_PARTIAL -> R.string.problem_skills_partial
     }
 
 /** Abréviation à trois lettres des tuiles (For, Dex, Con…), tirée du nom de la caractéristique. */
@@ -363,8 +374,8 @@ private fun Stats(sheet: CharacterSheet, open: (Panel) -> Unit) {
         Triple(stringResource(R.string.stat_hp), if (sheet.level > 0) sheet.hitPoints.total.toString() else none, Panel.HitPoints),
         Triple(stringResource(R.string.stat_ac), sheet.armourClass.total.toString(), Panel.ArmourClass),
         Triple(stringResource(R.string.stat_prof), if (sheet.level > 0) signed(sheet.proficiency) else none, null),
-        Triple(stringResource(R.string.stat_dc), if (dc.isEmpty()) none else dc.joinToString(" / "), Panel.SpellDc.takeIf { dc.isNotEmpty() }),
-        Triple(stringResource(R.string.stat_attack), if (attack.isEmpty()) none else attack.joinToString(" / ") { signed(it) }, Panel.SpellAttack.takeIf { attack.isNotEmpty() }),
+        Triple(stringResource(R.string.stat_dc), if (dc.isEmpty()) none else dc.joinToString(stringResource(R.string.summary_classes_separator)), Panel.SpellDc.takeIf { dc.isNotEmpty() }),
+        Triple(stringResource(R.string.stat_attack), if (attack.isEmpty()) none else attack.joinToString(stringResource(R.string.summary_classes_separator)) { signed(it) }, Panel.SpellAttack.takeIf { attack.isNotEmpty() }),
         Triple(stringResource(R.string.stat_init), signed(sheet.initiative), null),
     )
     BoxWithConstraints(Modifier.padding(horizontal = 14.dp, vertical = 8.dp)) {
@@ -374,7 +385,7 @@ private fun Stats(sheet: CharacterSheet, open: (Panel) -> Unit) {
             for (row in tiles.chunked(columns)) {
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     for ((label, value, target) in row) {
-                        StatTile(label, value, selected = target == Panel.HitPoints, onClick = { target?.let(open) }, modifier = Modifier.weight(1f))
+                        StatTile(label, value, selected = target == Panel.HitPoints, onClick = target?.let { t -> { open(t) } }, modifier = Modifier.weight(1f))
                     }
                     repeat(columns - row.size) { Spacer(Modifier.weight(1f)) }
                 }
@@ -437,7 +448,7 @@ private fun LevelListRow(row: LevelRow, state: EditorUiState.Ready, onClick: () 
 private fun featLabel(feat: FeatChoice, catalog: Catalog): String {
     val name = catalog.name(feat.featId) ?: stringResource(R.string.hidden_choice)
     if (feat.abilityIncreases.isEmpty()) return name
-    val parts = Ability.entries.filter { it in feat.abilityIncreases }.map { a -> "${signed(feat.abilityIncreases.getValue(a))} ${abbreviation(a)}" }
+    val parts = Ability.entries.filter { it in feat.abilityIncreases }.map { a -> stringResource(R.string.increase_part, signed(feat.abilityIncreases.getValue(a)), abbreviation(a)) }
     return stringResource(R.string.level_feat_increase, name, parts.joinToString(stringResource(R.string.list_separator)))
 }
 
@@ -527,9 +538,9 @@ private fun AbilityPanel(ability: Ability, state: EditorUiState.Ready, onEdit: (
     }
     SubTitle(stringResource(R.string.sheet_ability_base))
     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-        StepButton("\u2212", stringResource(R.string.sheet_decrease, name), enabled = base > PointBuy.MIN) { onEdit(BuildEdit.Base(ability, base - 1)) }
+        StepGlyph(minus = true, enabled = base > PointBuy.MIN, label = stringResource(R.string.sheet_decrease, name)) { onEdit(BuildEdit.Base(ability, base - 1)) }
         Text(base.toString(), style = CarnetTheme.type.numeric, color = c.text, textAlign = TextAlign.Center, modifier = Modifier.widthIn(min = 40.dp))
-        StepButton("+", stringResource(R.string.sheet_increase, name), enabled = BuildEdits.canIncrease(build, ability)) { onEdit(BuildEdit.Base(ability, base + 1)) }
+        StepGlyph(minus = false, enabled = BuildEdits.canIncrease(build, ability), label = stringResource(R.string.sheet_increase, name)) { onEdit(BuildEdit.Base(ability, base + 1)) }
         Text(stringResource(R.string.sheet_ability_remaining, state.sheet.pointBuyRemaining), style = CarnetTheme.type.bodySmall, color = c.text2)
     }
     Row(Modifier.padding(top = 14.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -537,22 +548,6 @@ private fun AbilityPanel(ability: Ability, state: EditorUiState.Ready, onEdit: (
         ChoiceTag(stringResource(R.string.sheet_minor), build.minorBonus == ability, { onEdit(BuildEdit.Minor(ability)) })
     }
     Text(stringResource(R.string.sheet_bonus_hint), style = CarnetTheme.type.bodySmall, color = c.text2, modifier = Modifier.padding(top = 10.dp))
-}
-
-/** Bouton de pas : cible de 48 dp, signe gravé dans un cercle. */
-@Composable
-private fun StepButton(sign: String, label: String, enabled: Boolean, onClick: () -> Unit) {
-    val c = CarnetTheme.colors
-    Box(
-        Modifier.size(48.dp).clip(RoundedCornerShape(24.dp))
-            .background(if (enabled) c.surface else Color.Transparent)
-            .clickable(enabled = enabled, role = Role.Button, onClick = onClick)
-            .semantics { contentDescription = label },
-        contentAlignment = Alignment.Center,
-    ) {
-        Canvas(Modifier.size(48.dp)) { drawCircle(if (enabled) c.goldDeep else c.line, size.minDimension / 2 - 1.dp.toPx(), style = Stroke(1.dp.toPx())) }
-        Text(sign, style = CarnetTheme.type.title, color = if (enabled) c.gold else c.muted, modifier = Modifier.clearAndSetSemantics {})
-    }
 }
 
 @Composable
@@ -598,6 +593,10 @@ private fun HitPointsDetail(state: EditorUiState.Ready) {
     }
     CalcRow(stringResource(R.string.detail_total), "", sheet.hitPoints.total.toString(), total = true)
     SourceLine(RuleSources.HIT_POINTS)
+    if (sheet.hitPoints.terms.any { it is Term.DifficultyBonus }) {
+        SourceLine(RuleSources.DIFFICULTY)
+        Text(stringResource(R.string.detail_difficulty_note), style = CarnetTheme.type.bodySmall, color = CarnetTheme.colors.text2, modifier = Modifier.padding(top = 4.dp))
+    }
 }
 
 @Composable
@@ -671,13 +670,13 @@ private fun LevelPanel(index: Int, state: EditorUiState.Ready, onEdit: (BuildEdi
         if (chosen != null && increase != null) {
             val left = increase.amount - chosen.abilityIncreases.values.sum()
             Text(
-                if (left > 0) stringResource(R.string.sheet_feat_split, left) else stringResource(R.string.sheet_feat_split_done),
+                if (left > 0) pluralStringResource(R.plurals.sheet_feat_split, left, left) else stringResource(R.string.sheet_feat_split_done),
                 style = CarnetTheme.type.bodySmall, color = if (left > 0) c.vermilion else c.text2, modifier = Modifier.padding(bottom = 6.dp),
             )
             TagRow {
                 for (a in Ability.entries.filter { increase.choices.isEmpty() || it in increase.choices }) {
                     val n = chosen.abilityIncreases[a] ?: 0
-                    val label = if (n > 0) "${stringResource(a.labelRes)} ${signed(n)}" else stringResource(a.labelRes)
+                    val label = if (n > 0) stringResource(R.string.increase_label, stringResource(a.labelRes), signed(n)) else stringResource(a.labelRes)
                     ChoiceTag(label, n > 0, {
                         val next = BuildEdits.toggleIncrease(chosen.abilityIncreases, a, increase.amount, increase.choices, increase.splittable)
                         onEdit(BuildEdit.Feat(index, chosen.copy(abilityIncreases = next)))
@@ -720,7 +719,6 @@ private fun SkillsGrid(sheet: CharacterSheet) {
     BoxWithConstraints(Modifier.padding(horizontal = CarnetTheme.dimens.gutter, vertical = 8.dp)) {
         val scale = LocalDensity.current.fontScale.coerceAtMost(1.6f)
         val columns = if (maxWidth / 2 >= 160.dp * scale) 2 else 1
-        val proficient = stringResource(R.string.skill_proficient)
         val sorted = Skill.entries.map { it to stringResource(it.labelRes) }.sortedBy { Folding.fold(it.second) }
         Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
             for (row in sorted.chunked(columns)) {
@@ -728,9 +726,10 @@ private fun SkillsGrid(sheet: CharacterSheet) {
                     for ((skill, label) in row) {
                         val mastered = skill in sheet.skillProficiencies
                         val bonus = signed(sheet.skillBonuses.getValue(skill))
+                        val description = if (mastered) stringResource(R.string.skill_a11y_proficient, label, bonus) else stringResource(R.string.skill_a11y, label, bonus)
                         Row(
                             Modifier.weight(1f).heightIn(min = 32.dp).clearAndSetSemantics {
-                                contentDescription = if (mastered) "$label $bonus, $proficient" else "$label $bonus"
+                                contentDescription = description
                             },
                             verticalAlignment = Alignment.CenterVertically,
                         ) {

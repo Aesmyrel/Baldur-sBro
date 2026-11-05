@@ -44,9 +44,13 @@ class BuildRepositoryTest {
     }
 
     @Test
-    fun `un enregistrement illisible est ignoré`() = runTest {
-        db.builds().insert(BuildEntity(name = "abîmé", payload = "{pas du json", createdAt = 1, updatedAt = 1))
+    fun `un enregistrement illisible reste visible, marqué abîmé, et se supprime`() = runTest {
+        val broken = db.builds().insert(BuildEntity(name = "abîmé", payload = "{pas du json", createdAt = 1, updatedAt = 1))
         val id = repository.create(Build(name = "Sain"))
+        val list = repository.builds.first()
+        assertThat(list.map { it.id to it.damaged }).containsExactly(id to false, broken to true)
+        assertThat(list.single { it.damaged }.build.name).isEqualTo("abîmé")
+        repository.delete(broken)
         assertThat(repository.builds.first().map { it.id }).containsExactly(id)
     }
 

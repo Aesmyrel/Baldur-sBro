@@ -38,21 +38,30 @@ object BuildCode {
         return runCatching {
             val compressed = Base64.getUrlDecoder().decode(trimmed.removePrefix(PREFIX))
             val inflater = Inflater(true)
-            inflater.setInput(compressed)
             val out = ByteArrayOutputStream()
-            val buffer = ByteArray(1_024)
-            while (!inflater.finished()) {
-                val n = inflater.inflate(buffer)
-                if (n == 0 && (inflater.needsInput() || inflater.needsDictionary())) break
-                out.write(buffer, 0, n)
-                require(out.size() <= MAX_JSON_BYTES)
+            try {
+                inflater.setInput(compressed)
+                val buffer = ByteArray(1_024)
+                while (!inflater.finished()) {
+                    val n = inflater.inflate(buffer)
+                    if (n == 0 && (inflater.needsInput() || inflater.needsDictionary())) break
+                    out.write(buffer, 0, n)
+                    require(out.size() <= MAX_JSON_BYTES)
+                }
+                require(inflater.finished())
+            } finally {
+                inflater.end()
             }
-            val complete = inflater.finished()
-            inflater.end()
-            require(complete)
             json.decodeFromString(Build.serializer(), out.toString(Charsets.UTF_8))
-        }.getOrNull()?.takeIf { it.isPlausible() }
+        }.getOrNull()?.takeIf { it.isPlausible() }?.let { it.copy(name = cleanName(it.name)) }
     }
+
+    /**
+     * Nom d'un build reçu ou saisi : sans caractère de contrôle ni de mise en forme invisible (dont l'inversion
+     * bidirectionnelle U+202E, qui ferait lire un nom à l'envers), espaces resserrés, borné.
+     */
+    fun cleanName(name: String): String =
+        name.replace(Regex("[\\p{Cc}\\p{Cf}]"), "").replace(Regex("\\s+"), " ").trim().take(MAX_NAME_LENGTH)
 
     private fun Build.isPlausible(): Boolean =
         name.length <= MAX_NAME_LENGTH && levels.size <= 12 && baseScores.values.all { it in 1..30 } &&

@@ -48,7 +48,7 @@ class BuildsLeakTest {
         val catalog = BuildFixtures.catalog(entries)
         val state = editorState(1L, BuildFixtures.battleMage, BuildFixtures.rules, catalog, listOf(1L))
         val locked = GameData.entries.filter { it.id.value in lockedIds }.flatMap { listOf(it.name.fr, it.name.en) }
-        val panels = listOf(null, Panel.HitPoints, Panel.Level(3), Panel.Level(5), Panel.Race, Panel.Subrace, Panel.Background)
+        val panels = listOf(null, Panel.HitPoints, Panel.Level(3), Panel.Level(5), Panel.Race, Panel.Subrace, Panel.Background, Panel.Share, Panel.Skills("class.fighter"))
         var panel by mutableStateOf<Panel?>(null)
         var shown: List<String>
         // La feuille ouverte au départ est mémorisée par l'écran : la clé le recrée à chaque feuille.
@@ -82,5 +82,22 @@ class BuildsLeakTest {
             val word = Regex("(?<!\\p{L})" + Regex.escape(name) + "(?!\\p{L})")
             assertWithMessage("« $name » affiché dans le groupe").that(shown.none { word.containsMatchIn(it) }).isTrue()
         }
+    }
+
+    @Test
+    fun `la liste des builds ne nomme pas une option masquée`() {
+        val catalog = BuildFixtures.catalog(entries)
+        val item = BuildItem(1L, BuildFixtures.battleMage, fr.carnetdefaerun.core.rules.CharacterSheetCalculator.compute(BuildFixtures.battleMage, BuildFixtures.rules))
+        val locked = GameData.entries.filter { it.id.value in lockedIds }.flatMap { listOf(it.name.fr, it.name.en) }
+        compose.setContent {
+            CarnetTheme(reducedMotion = true) { BuildsScreen(BuildsUiState(kotlinx.collections.immutable.persistentListOf(item), catalog), {}, {}, { false }) }
+        }
+        compose.waitForIdle()
+        val shown = texts(compose.onRoot(useUnmergedTree = true).fetchSemanticsNode())
+        for (name in locked) {
+            val word = Regex("(?<!\\p{L})" + Regex.escape(name) + "(?!\\p{L})")
+            assertWithMessage("« $name » affiché dans la liste").that(shown.none { word.containsMatchIn(it) }).isTrue()
+        }
+        assertThat(shown.any { it.contains("choix voilé") }).isTrue()
     }
 }

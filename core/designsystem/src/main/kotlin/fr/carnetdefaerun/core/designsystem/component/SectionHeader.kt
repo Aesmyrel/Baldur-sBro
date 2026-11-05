@@ -49,7 +49,9 @@ fun SectionHeader(
                 Fleuron()
                 Text(label, style = style, color = CarnetTheme.accent, modifier = Modifier.semantics { heading() })
                 DoubleRule(Modifier.height(8.dp))
+                // Sans action, le libellé d'action reste une mention (compteur « Achat 27 / 27 ») : visible, pas cliquable.
                 if (actionLabel != null && onAction != null) TextAction(actionLabel, onAction, Modifier.widthIn(min = 48.dp))
+                else if (actionLabel != null) Text(actionLabel, style = CarnetTheme.type.data, color = CarnetTheme.colors.text2, modifier = Modifier.padding(horizontal = 4.dp))
             },
         ) { measurables, constraints ->
             val gap = 10.dp.roundToPx()

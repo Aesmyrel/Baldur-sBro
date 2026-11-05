@@ -19,10 +19,13 @@ import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 
-/** Build enregistré dans la base du joueur. */
-data class SavedBuild(val id: Long, val build: Build, val updatedAt: Long)
+/**
+ * Build enregistré dans la base du joueur. [damaged] : l'enregistrement est illisible (base abîmée) ; seul son nom
+ * est repris, pour qu'il reste visible et qu'on puisse le supprimer.
+ */
+data class SavedBuild(val id: Long, val build: Build, val updatedAt: Long, val damaged: Boolean = false)
 
-/** Builds du joueur. Un enregistrement illisible (base abîmée) est ignoré plutôt que de bloquer la liste. */
+/** Builds du joueur. Un enregistrement illisible est montré comme abîmé plutôt que de bloquer la liste ou de disparaître. */
 interface BuildRepository {
     val builds: Flow<List<SavedBuild>>
     fun build(id: Long): Flow<SavedBuild?>
@@ -35,7 +38,7 @@ interface BuildRepository {
 class RoomBuildRepository @Inject constructor(private val db: UserDatabase) : BuildRepository {
     private fun now() = System.currentTimeMillis()
 
-    override val builds: Flow<List<SavedBuild>> = db.builds().all().map { list -> list.mapNotNull(::decode) }.distinctUntilChanged()
+    override val builds: Flow<List<SavedBuild>> = db.builds().all().map { list -> list.map(::decode) }.distinctUntilChanged()
 
     override fun build(id: Long): Flow<SavedBuild?> = db.builds().byId(id).map { it?.let(::decode) }.distinctUntilChanged()
 
@@ -48,10 +51,11 @@ class RoomBuildRepository @Inject constructor(private val db: UserDatabase) : Bu
 
     override suspend fun delete(id: Long) = db.builds().delete(id)
 
-    private val Build.safeName get() = name.take(BuildCode.MAX_NAME_LENGTH)
+    private val Build.safeName get() = BuildCode.cleanName(name)
     private fun encode(build: Build) = BuildFormat.json.encodeToString(Build.serializer(), build.copy(name = build.safeName))
-    private fun decode(entity: BuildEntity): SavedBuild? =
+    private fun decode(entity: BuildEntity): SavedBuild =
         runCatching { BuildFormat.json.decodeFromString(Build.serializer(), entity.payload) }.getOrNull()?.let { SavedBuild(entity.id, it, entity.updatedAt) }
+            ?: SavedBuild(entity.id, Build(name = BuildCode.cleanName(entity.name)), entity.updatedAt, damaged = true)
 }
 
 /**

@@ -37,10 +37,12 @@
     <string name="editor_delete_confirm">Supprimer définitivement « %1$s » ? Cette action ne peut pas être annulée.</string>
     <string name="editor_delete_yes">Supprimer</string>
     <string name="editor_delete_no">Garder</string>
+    <string name="editor_damaged">Cet enregistrement est illisible : seul son nom a pu être lu. Vous pouvez le supprimer.</string>
+    <string name="builds_damaged">Enregistrement illisible</string>
     <string name="editor_missing">Ce build n’existe plus.</string>
     <string name="legend_subclass">sous-classe</string>
     <string name="legend_feat">don ou amélioration</string>
-    <string name="level_pip">Niveau %1$d: %2$s</string>
+    <string name="level_pip">Niveau %1$d, %2$s</string>
     <string name="level_pip_subclass">%1$s, choix de la sous-classe</string>
     <string name="level_pip_feat">%1$s, don</string>
 
@@ -82,7 +84,13 @@
     <string name="difficulty_custom_note">Mode personnalisé : ses réglages ne sont pas connus du carnet, la fiche est calculée comme en mode Équilibré.</string>
     <string name="detail_difficulty">Mode Explorateur</string>
     <string name="detail_difficulty_why">+%1$d %% des points de vie</string>
-    <string name="problem_multiclass_disabled">Le mode Explorateur ne permet pas la multiclasse.</string>
+    <string name="problem_multiclass_disabled">En mode Explorateur, aucune nouvelle classe ne peut être prise ; des niveaux déjà acquis dans une autre classe restent.</string>
+    <string name="problem_skills_partial">L’Expertise, les choix du rôdeur (ennemi juré, explorateur-né) et les invocations de l’occultiste ne sont pas encore comptés : certains bonus de compétence peuvent être plus hauts en jeu.</string>
+    <string name="detail_difficulty_note">La page dit « 100 % de points de vie en plus » pour le groupe ; le carnet le prend à la lettre et double le maximum.</string>
+    <string name="increase_part">%1$s %2$s</string>
+    <string name="increase_label">%1$s %2$s</string>
+    <string name="skill_a11y">%1$s %2$s</string>
+    <string name="skill_a11y_proficient">%1$s %2$s, maîtrisée</string>
     <string name="unarmoured_note">Classe d’armure sans armure ni bouclier : l’équipement n’est pas encore pris en compte.</string>
 
     <string name="section_problems">À reprendre</string>
@@ -104,7 +112,6 @@
     <string name="skills_none_chosen">Aucune choisie</string>
     <string name="skills_hint">Les compétences maîtrisées d’office ou déjà choisies ailleurs ne sont pas proposées : une même maîtrise reçue deux fois n’ajoute rien.</string>
     <string name="skills_fixed">Maîtrisées d’office (historique, race) : %1$s.</string>
-    <string name="skill_proficient">maîtrisée</string>
     <string name="problem_skills_missing">Des compétences restent à choisir.</string>
     <string name="problem_skills_invalid">Un choix de compétence ne respecte pas sa liste.</string>
     <string name="section_levels">Niveaux</string>
@@ -157,7 +164,11 @@
     <string name="sheet_level_subclass">Sous-classe</string>
     <string name="sheet_level_feat">Don</string>
     <string name="sheet_feat_none">Aucun don</string>
-    <string name="sheet_feat_split">Répartition : %1$d point(s) à placer</string>
+    <plurals name="sheet_feat_split">
+        <item quantity="one">Répartition : %1$d point à placer</item>
+        <item quantity="many">Répartition : %1$d points à placer</item>
+        <item quantity="other">Répartition : %1$d points à placer</item>
+    </plurals>
     <string name="sheet_feat_split_done">Répartition complète</string>
     <string name="sheet_choose">Choisir</string>
     <string name="sheet_none">Aucune</string>

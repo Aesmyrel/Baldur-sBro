@@ -66,8 +66,11 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
-/** Meilleur bonus du groupe pour un jet : qui (place dans le groupe), combien, et s'il est maîtrisé. */
-data class Best(val slot: Int, val bonus: Int, val proficient: Boolean)
+/**
+ * Meilleur bonus du groupe pour un jet : qui (place dans le groupe), combien, s'il le maîtrise lui-même, et si au
+ * moins un membre le maîtrise ([anyProficient]) : un membre non maîtrisé peut avoir le meilleur bonus.
+ */
+data class Best(val slot: Int, val bonus: Int, val proficient: Boolean, val anyProficient: Boolean = proficient)
 
 /** Ce que le groupe couvre : pour chaque sauvegarde et compétence, le meilleur membre ; null sans membre. */
 data class PartyCoverage(val saves: Map<Ability, Best?>, val skills: Map<Skill, Best?>)
@@ -79,9 +82,10 @@ data class PartyCoverage(val saves: Map<Ability, Best?>, val skills: Map<Skill, 
 fun partyCoverage(slots: List<CharacterSheet?>): PartyCoverage {
     fun <K> best(keys: List<K>, bonus: (CharacterSheet, K) -> Int, mastered: (CharacterSheet, K) -> Boolean): Map<K, Best?> =
         keys.associateWith { key ->
-            slots.mapIndexedNotNull { i, sheet -> sheet?.let { Best(i, bonus(it, key), mastered(it, key)) } }
-                .sortedWith(compareByDescending<Best> { it.bonus }.thenByDescending { it.proficient }.thenBy { it.slot })
-                .firstOrNull()
+            val candidates = slots.mapIndexedNotNull { i, sheet -> sheet?.let { Best(i, bonus(it, key), mastered(it, key)) } }
+            val anyone = candidates.any { it.proficient }
+            candidates.sortedWith(compareByDescending<Best> { it.bonus }.thenByDescending { it.proficient }.thenBy { it.slot })
+                .firstOrNull()?.copy(anyProficient = anyone)
         }
     return PartyCoverage(
         saves = best(Ability.entries, { s, a -> s.savingThrowBonuses.getValue(a) }, { s, a -> a in s.savingThrows }),
@@ -104,7 +108,7 @@ class PartyViewModel @Inject constructor(
     val state: StateFlow<PartyUiState?> = combine(
         party.slots, repository.builds, gateway.catalog(), flow { emit(rules.data()) }, preferences.preferences.map { DifficultyRules.of(it.difficulty) },
     ) { slots, builds, catalog, data, difficulty ->
-        val items = builds.map { BuildItem(it.id, it.build, CharacterSheetCalculator.compute(it.build, data, difficulty)) }
+        val items = builds.filterNot { it.damaged }.map { BuildItem(it.id, it.build, CharacterSheetCalculator.compute(it.build, data, difficulty)) }
         val byId = items.associateBy { it.id }
         PartyUiState(slots.map { id -> id?.let(byId::get) }, items, catalog)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
@@ -125,7 +129,8 @@ fun PartyScreen(state: PartyUiState?, onSet: (Int, Long?) -> Unit, onBack: () ->
     var choosing by remember { mutableStateOf(initialSlot) }
     CarnetSectionScope(CarnetSection.BUILDS) {
         Box(Modifier.fillMaxSize()) {
-            Column(Modifier.fillMaxSize()) {
+            // Feuille ouverte : le contenu dessous sort de l'arbre d'accessibilité.
+            Column(Modifier.fillMaxSize().then(if (choosing != null) Modifier.clearAndSetSemantics {} else Modifier)) {
                 CarnetTopBar(stringResource(R.string.builds_crumb), onBack = onBack)
                 if (state != null) LazyColumn(Modifier.capped()) {
                     item(key = "title") {
@@ -200,7 +205,7 @@ private fun CoverageRows(rows: List<Pair<String, Best?>>, slots: List<BuildItem?
             if (best == null) continue
             val who = slots[best.slot]?.build?.name.orEmpty()
             val bonus = signed(best.bonus)
-            val description = if (best.proficient) stringResource(R.string.party_best_a11y, label, bonus, who)
+            val description = if (best.anyProficient) stringResource(R.string.party_best_a11y, label, bonus, who)
             else stringResource(R.string.party_unmastered_a11y, label, bonus, who)
             Row(
                 Modifier.fillMaxWidth().heightIn(min = 36.dp).clearAndSetSemantics { contentDescription = description },
@@ -209,7 +214,7 @@ private fun CoverageRows(rows: List<Pair<String, Best?>>, slots: List<BuildItem?
             ) {
                 Column(Modifier.weight(1f)) {
                     Text(label, style = CarnetTheme.type.bodySmall, color = c.text)
-                    Text(if (best.proficient) who else nobody, style = CarnetTheme.type.dataSmall, color = if (best.proficient) c.text2 else c.vermilion,
+                    Text(if (best.anyProficient) who else nobody, style = CarnetTheme.type.dataSmall, color = if (best.anyProficient) c.text2 else c.vermilion,
                         maxLines = 1, overflow = TextOverflow.Ellipsis)
                 }
                 Text(bonus, style = CarnetTheme.type.dataStrong, color = if (best.proficient) c.gold else c.text2)

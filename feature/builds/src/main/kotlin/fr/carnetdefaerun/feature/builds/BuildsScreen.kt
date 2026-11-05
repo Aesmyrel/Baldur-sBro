@@ -64,8 +64,8 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
-/** Un build de la liste, avec sa fiche calculée pour le résumé. */
-data class BuildItem(val id: Long, val build: Build, val sheet: CharacterSheet)
+/** Un build de la liste, avec sa fiche calculée pour le résumé ; [damaged] : enregistrement illisible. */
+data class BuildItem(val id: Long, val build: Build, val sheet: CharacterSheet, val damaged: Boolean = false)
 
 data class BuildsUiState(val items: ImmutableList<BuildItem>, val catalog: Catalog)
 
@@ -79,7 +79,7 @@ class BuildsViewModel @Inject constructor(
     val state: StateFlow<BuildsUiState?> = combine(
         repository.builds, gateway.catalog(), flow { emit(rules.data()) }, preferences.preferences.map { DifficultyRules.of(it.difficulty) },
     ) { builds, catalog, data, difficulty ->
-        BuildsUiState(builds.map { BuildItem(it.id, it.build, CharacterSheetCalculator.compute(it.build, data, difficulty)) }.toImmutableList(), catalog)
+        BuildsUiState(builds.map { BuildItem(it.id, it.build, CharacterSheetCalculator.compute(it.build, data, difficulty), it.damaged) }.toImmutableList(), catalog)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
     fun create(name: String, onCreated: (Long) -> Unit) = viewModelScope.launch { onCreated(repository.create(Build(name = name))) }
@@ -190,7 +190,8 @@ fun BuildsScreen(
                     item(key = "header") { SectionHeader(stringResource(R.string.builds_saved)) }
                     items(state.items, key = { it.id }) { item ->
                         val main = item.sheet.classLevels.maxByOrNull { it.value }?.key
-                        ListRow(item.build.name, { onOpen(item.id) }, subtitle = summaryLine(item.build, item.sheet, state.catalog)) {
+                        val subtitle = if (item.damaged) stringResource(R.string.builds_damaged) else summaryLine(item.build, item.sheet, state.catalog)
+                        ListRow(item.build.name, { onOpen(item.id) }, subtitle = subtitle) {
                             val emblem = main?.let(::emblemOf)
                             if (emblem != null) {
                                 val pigment = pigmentOf(main, c)

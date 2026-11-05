@@ -202,7 +202,7 @@ class CharacterSheetTest {
                 level("class.sorcerer", "subclass.storm-sorcery") + level("class.sorcerer"),
         )
         val sheet = sheetOf(build)
-        assertThat(sheet.problems).isEmpty()
+        assertThat(sheet.problems).containsExactly(SheetProblem.SKILLS_PARTIAL) // invocations de l'occultiste
         // Occultiste 5 : deux emplacements de niveau 3 (tableau de classe) ; ensorceleur 2 seul compte pour l'Incantation.
         assertThat(sheet.pactSlots).isEqualTo(PactSlots(2, 3))
         assertThat(sheet.spellSlots).isEqualTo(SpellSlots.forLevel(2))
@@ -304,12 +304,13 @@ class CharacterSheetTest {
             .containsExactly("class.rogue" to 4, "class.bard" to 1).inOrder()
         assertThat(CharacterSheetCalculator.fixedSkills(build, data)).containsExactly(Skill.PERCEPTION, Skill.STEALTH, Skill.INSIGHT, Skill.RELIGION)
         val incomplete = CharacterSheetCalculator.compute(build, data)
-        assertThat(incomplete.problems).containsExactly(SheetProblem.SKILLS_MISSING)
+        // L'Expertise du roublard n'est pas encore modélisée : signalée.
+        assertThat(incomplete.problems).containsExactly(SheetProblem.SKILLS_MISSING, SheetProblem.SKILLS_PARTIAL)
 
         val rogue = listOf(Skill.ACROBATICS, Skill.DECEPTION, Skill.PERSUASION, Skill.SLEIGHT_OF_HAND)
         val complete = build.copy(skillChoices = mapOf("class.rogue" to rogue, "class.bard" to listOf(Skill.ARCANA)))
         val sheet = CharacterSheetCalculator.compute(complete, data)
-        assertThat(sheet.problems).isEmpty()
+        assertThat(sheet.problems).containsExactly(SheetProblem.SKILLS_PARTIAL)
         // Dextérité 17 (+3), maîtrise +2 : Acrobaties +5 ; Arcanes, Intelligence 8 (−1) + 2 : +1 ; Athlétisme non maîtrisé : −1.
         assertThat(sheet.skillBonuses[Skill.ACROBATICS]).isEqualTo(5)
         assertThat(sheet.skillBonuses[Skill.ARCANA]).isEqualTo(1)
@@ -357,5 +358,31 @@ class CharacterSheetTest {
         }
         val multi = withSkills(build.copy(levels = build.levels + level("class.wizard")))
         assertThat(CharacterSheetCalculator.compute(multi, data, DifficultyRules.EXPLORER).problems).contains(SheetProblem.MULTICLASS_DISABLED)
+    }
+
+    @Test
+    fun `Doué, Collège du savoir, gnome des roches, Vigilant`() {
+        // Doué au niveau 4 de guerrier : trois compétences de plus, parmi toutes.
+        val fighter = Build(name = "x", majorBonus = STRENGTH, minorBonus = CONSTITUTION,
+            levels = List(2) { level("class.fighter") } + level("class.fighter", "subclass.champion") + level("class.fighter", feat = FeatChoice(id("feat.skilled"))))
+        assertThat(CharacterSheetCalculator.skillSources(fighter, data).map { it.id to it.count }).containsExactly("class.fighter" to 2, "feat.skilled" to 3).inOrder()
+        assertThat(sheetOf(fighter).skillProficiencies).hasSize(5)
+        // Barde du Collège du savoir : trois compétences au choix de plus ; l'Expertise du barde est signalée.
+        val bard = Build(name = "x", majorBonus = CHARISMA, minorBonus = DEXTERITY,
+            levels = listOf(level("class.bard"), level("class.bard"), level("class.bard", "subclass.college-of-lore")))
+        assertThat(CharacterSheetCalculator.skillSources(bard, data).map { it.id to it.count }).containsExactly("class.bard" to 3, "subclass.college-of-lore" to 3).inOrder()
+        assertThat(sheetOf(bard).problems).containsExactly(SheetProblem.SKILLS_PARTIAL)
+        // Gnome des roches : Histoire maîtrisée d'office, maîtrise comptée deux fois. Intelligence 8 (−1) + 2 × 2.
+        val gnome = Build(name = "x", race = id("race.gnome"), subrace = id("subrace.rock-gnome"), majorBonus = STRENGTH, minorBonus = CONSTITUTION,
+            levels = listOf(level("class.fighter")))
+        assertThat(sheetOf(gnome).skillBonuses[Skill.HISTORY]).isEqualTo(-1 + 4)
+        // Vigilant : +5 à l'initiative (Dextérité 8, −1).
+        val alert = fighter.copy(levels = fighter.levels.dropLast(1) + level("class.fighter", feat = FeatChoice(id("feat.alert"))))
+        assertThat(sheetOf(alert).initiative).isEqualTo(-1 + 5)
+        // Roublard (Expertise), rôdeur (Ennemi juré), occultiste dès ses invocations : signalés ; guerrier, non.
+        assertThat(sheetOf(Build(name = "x", majorBonus = DEXTERITY, minorBonus = WISDOM, levels = listOf(level("class.rogue")))).problems).contains(SheetProblem.SKILLS_PARTIAL)
+        assertThat(sheetOf(Build(name = "x", majorBonus = DEXTERITY, minorBonus = WISDOM, levels = listOf(level("class.ranger")))).problems).contains(SheetProblem.SKILLS_PARTIAL)
+        assertThat(sheetOf(Build(name = "x", majorBonus = CHARISMA, minorBonus = WISDOM, levels = listOf(level("class.warlock", "subclass.the-fiend")))).problems).doesNotContain(SheetProblem.SKILLS_PARTIAL)
+        assertThat(sheetOf(fighter).problems).isEmpty()
     }
 }

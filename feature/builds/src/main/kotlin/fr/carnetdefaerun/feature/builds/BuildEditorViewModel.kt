@@ -26,10 +26,15 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 
 sealed interface EditorUiState {
     data object Loading : EditorUiState
     data object Missing : EditorUiState
+
+    /** Enregistrement illisible : seul son nom est connu ; on peut le supprimer. */
+    data class Damaged(val id: Long, val name: String) : EditorUiState
     data class Ready(
         val id: Long,
         val build: Build,
@@ -77,21 +82,32 @@ class BuildEditorViewModel @AssistedInject constructor(
 
     private val local = MutableStateFlow<Build?>(null)
     private val missing = MutableStateFlow(false)
+    private val damaged = MutableStateFlow<String?>(null)
+
+    /** Une écriture à la fois, toujours celle du build le plus récent : deux éditions rapides ne peuvent pas s'inverser. */
+    private val writer = Mutex()
     private val rules = flow { emit(rulesRepository.data()) }.stateIn(viewModelScope, SharingStarted.Eagerly, null)
     private val catalog = gateway.catalog().stateIn(viewModelScope, SharingStarted.Eagerly, null)
 
     init {
         viewModelScope.launch {
             val saved = repository.build(id).first()
-            if (saved == null) missing.value = true else local.value = saved.build
+            when {
+                saved == null -> missing.value = true
+                saved.damaged -> damaged.value = saved.build.name
+                else -> local.value = saved.build
+            }
         }
     }
 
     private val context = combine(repository.builds.map { list -> list.map { it.id } }, preferences.preferences.map { it.difficulty }) { ids, d -> ids to d }
 
-    val state: StateFlow<EditorUiState> = combine(local, missing, rules, catalog, context) { build, gone, data, names, (ids, difficulty) ->
+    private val status = combine(missing, damaged) { gone, broken -> gone to broken }
+
+    val state: StateFlow<EditorUiState> = combine(local, status, rules, catalog, context) { build, (gone, broken), data, names, (ids, difficulty) ->
         when {
             gone -> EditorUiState.Missing
+            broken != null -> EditorUiState.Damaged(id, broken)
             build == null || data == null || names == null -> EditorUiState.Loading
             else -> editorState(id, build, data, names, ids, difficulty)
         }
@@ -104,7 +120,7 @@ class BuildEditorViewModel @AssistedInject constructor(
         val updated = edit.applyTo(build, data, names)
         if (updated == build) return
         local.value = updated
-        viewModelScope.launch { repository.save(id, updated) }
+        viewModelScope.launch { writer.withLock { local.value?.let { repository.save(id, it) } } }
     }
 
     fun delete(onDeleted: () -> Unit) = viewModelScope.launch {

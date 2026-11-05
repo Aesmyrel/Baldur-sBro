@@ -92,8 +92,16 @@ object SpellSlots {
         // niveau 3 de plus que la table. Source : [RuleSources.RANGER], section « Level 12 ».
         val only = classes.singleOrNull()
         if (only != null && only.classId == "class.ranger" && only.level == MAX_CHARACTER_LEVEL) return listOf(4, 3, 4)
-        return forLevel(effectiveSpellcasterLevel(classes))
+        val esl = effectiveSpellcasterLevel(classes)
+        // Autre exception propre à BG3 : l'escroc arcanique, à partir du niveau 10 de roublard, a 6 emplacements de
+        // niveau 1 et 2 de niveau 2 au lieu de la table, même en multiclasse et même avec une classe qui ne lance pas
+        // de sorts ; la page Spells le formule pour un niveau effectif de 4 ou 5, les seuls possibles alors.
+        // Sources : [RuleSources.ARCANE_TRICKSTER] (niveau 10 et note) et [RuleSources.SPELLS] (« Spellcasting »).
+        if (classes.any { it.classId == ARCANE_TRICKSTER && it.level >= 10 } && esl in 4..5) return listOf(6, 2)
+        return forLevel(esl)
     }
 
     private fun ceilDiv(a: Int, b: Int) = (a + b - 1) / b
+
+    private const val ARCANE_TRICKSTER = "subclass.arcane-trickster"
 }

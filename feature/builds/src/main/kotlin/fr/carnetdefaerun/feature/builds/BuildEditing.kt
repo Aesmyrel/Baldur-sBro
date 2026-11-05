@@ -47,28 +47,34 @@ data class Catalog(
  * sur ses niveaux de don, dans l'ordre. Un choix qui n'a plus de place (classe retirée) est abandonné.
  */
 object BuildEdits {
-    fun normalize(build: Build, rules: RulesData): Build {
-        val levels = build.levels.take(MAX_CHARACTER_LEVEL)
+    fun normalize(build: Build, rules: RulesData): Build =
+        cleanSkills(build.copy(levels = place(build.levels.take(MAX_CHARACTER_LEVEL).map { it.classId }, build.levels, rules)), rules)
+
+    /**
+     * Pose sur la suite de classes [classes] les choix lus dans [source] : la première sous-classe valide de chaque
+     * classe, et ses dons dans l'ordre où ils avaient été pris. [source] peut être l'ancienne suite (changement de
+     * classe d'un niveau) : un don ou une sous-classe portés par le niveau changé restent ainsi à leur classe.
+     */
+    private fun place(classes: List<ContentId>, source: List<BuildLevel>, rules: RulesData): List<BuildLevel> {
         val subclass = mutableMapOf<String, ContentId>()
         val feats = mutableMapOf<String, ArrayDeque<FeatChoice>>()
-        for (l in levels) {
+        for (l in source) {
             val c = l.classId.value
             l.subclassId?.let { s -> if (c !in subclass && rules.subclasses[s.value]?.parentClass == c) subclass[c] = s }
             l.feat?.let { f -> feats.getOrPut(c) { ArrayDeque() }.addLast(f) }
         }
         val count = mutableMapOf<String, Int>()
-        val placed = levels.map { l ->
-            val c = l.classId.value
-            val profile = rules.classes[c] ?: return@map l
+        return classes.mapIndexed { i, id ->
+            val c = id.value
+            val profile = rules.classes[c] ?: return@mapIndexed source.getOrNull(i)?.takeIf { it.classId == id } ?: BuildLevel(id)
             val n = (count[c] ?: 0) + 1
             count[c] = n
             BuildLevel(
-                classId = l.classId,
+                classId = id,
                 subclassId = if (n == profile.subclassLevel) subclass[c] else null,
                 feat = if (n in profile.featLevels) feats[c]?.removeFirstOrNull() else null,
             )
         }
-        return cleanSkills(build.copy(levels = placed), rules)
     }
 
     /**
@@ -106,8 +112,8 @@ object BuildEdits {
     fun setLevelClass(build: Build, index: Int, classId: ContentId, rules: RulesData): Build {
         val current = build.levels.getOrNull(index) ?: return build
         if (current.classId == classId) return build
-        val levels = build.levels.toMutableList().also { it[index] = BuildLevel(classId) }
-        return normalize(build.copy(levels = levels), rules)
+        val classes = build.levels.map { it.classId }.toMutableList().also { it[index] = classId }
+        return cleanSkills(build.copy(levels = place(classes.take(MAX_CHARACTER_LEVEL), build.levels, rules)), rules)
     }
 
     /** Sous-classe d'une classe du build : placée au niveau où elle se choisit. */
@@ -147,7 +153,7 @@ object BuildEdits {
         return cleanSkills(build.copy(race = race, subrace = if (keepSubrace) build.subrace else null), rules)
     }
 
-    fun rename(build: Build, name: String): Build = build.copy(name = name.trim().take(BuildCode.MAX_NAME_LENGTH))
+    fun rename(build: Build, name: String): Build = build.copy(name = BuildCode.cleanName(name))
 
     /**
      * Répartition d'un don après un toucher sur [ability] : +1 de plus tant qu'il reste des points à placer et que

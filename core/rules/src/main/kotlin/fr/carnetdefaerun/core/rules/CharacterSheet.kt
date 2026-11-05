@@ -34,6 +34,11 @@ data class ClassProfile(
     val spellsKnown: List<Int?> = emptyList(),
     /** Lanceur qui prépare ses sorts : clerc, druide, paladin, magicien ([RuleSources.SPELLS], « Prepared spells »). */
     val prepares: Boolean = false,
+    /**
+     * Niveaux de classe qui touchent aux compétences d'une façon pas encore modélisée : Expertise (roublard, barde),
+     * Ennemi juré et Explorateur-né (rôdeur), invocations (occultiste). La fiche le signale au lieu de se taire.
+     */
+    val unmodelledSkillLevels: Set<Int> = emptySet(),
 )
 
 /** Race, sous-race ou historique : compétences maîtrisées d'office, et choix laissé (humain : une compétence au choix). */
@@ -43,6 +48,8 @@ data class OriginProfile(
     val skillChoices: Int = 0,
     /** Liste du choix ; vide : toutes les compétences. */
     val skillList: List<Skill> = emptyList(),
+    /** Compétences où la maîtrise compte double (gnome des roches : Histoire). */
+    val expertise: Set<Skill> = emptySet(),
 )
 
 /** Ce que le moteur doit savoir d'une sous-classe. */
@@ -54,6 +61,8 @@ data class SubclassProfile(
     val spellcastingFrom: Int = 1,
     /** Résilience draconique : +1 point de vie par niveau d'ensorceleur, et 13 + Dextérité sans armure. */
     val draconicResilience: Boolean = false,
+    /** Compétences au choix accordées par la sous-classe (Collège du savoir : 3). */
+    val skillChoices: Int = 0,
 )
 
 /** Ce que le moteur doit savoir d'un don. */
@@ -64,6 +73,10 @@ data class FeatProfile(
     val tough: Boolean = false,
     /** Résilient : maîtrise des jets de sauvegarde de la caractéristique augmentée. */
     val resilient: Boolean = false,
+    /** Doué : compétences au choix ([RuleSources.SKILLED] : 3). */
+    val skillChoices: Int = 0,
+    /** Vigilant : bonus d'initiative ([RuleSources.ALERT] : +5). */
+    val initiativeBonus: Int = 0,
 )
 
 /** Données de jeu dont dépend le calcul, tirées de data/game par [RulesData.from]. */
@@ -175,8 +188,13 @@ enum class SheetProblem(val blocking: Boolean) {
     SKILLS_INVALID(true),
     /** Sous-classe inconnue, d'une autre classe, ou choisie à un autre niveau que le sien. */
     SUBCLASS_INVALID(true),
-    /** Plusieurs classes alors que le mode de difficulté interdit la multiclasse (Explorateur). */
-    MULTICLASS_DISABLED(true),
+    /**
+     * Plusieurs classes en mode Explorateur : on ne peut plus y prendre de nouvelle classe, mais des niveaux déjà
+     * acquis restent ([RuleSources.DIFFICULTY]) ; signalé, pas invalide.
+     */
+    MULTICLASS_DISABLED(false),
+    /** Le build a une capacité qui touche aux compétences sans être encore modélisée : les bonus peuvent être sous-estimés. */
+    SKILLS_PARTIAL(false),
 }
 
 /** Fiche calculée d'un build. Toutes les valeurs dérivées viennent des règles sourcées de ce module. */
@@ -347,6 +365,7 @@ object CharacterSheetCalculator {
         // Compétences : d'office (historique, race, sous-race), puis les choix de chaque source.
         val fixed = fixedSkills(build, data)
         val sources = skillSources(build, data)
+        if (classLevels.any { (id, n) -> data.classes.getValue(id).unmodelledSkillLevels.any { it <= n } }) problems += SheetProblem.SKILLS_PARTIAL
         val chosen = mutableSetOf<Skill>()
         for (source in sources) {
             val picks = build.skillChoices[source.id].orEmpty()
@@ -358,6 +377,7 @@ object CharacterSheetCalculator {
         }
         if (build.skillChoices.keys.any { key -> sources.none { it.id == key } }) problems += SheetProblem.SKILLS_INVALID
         val skillProficiencies = fixed + chosen
+        val expertise = listOfNotNull(build.background, build.race, build.subrace).mapNotNull { data.origins[it.value] }.flatMap { it.expertise }.toSet()
         return CharacterSheet(
             level = level,
             classLevels = classLevels,
@@ -368,11 +388,19 @@ object CharacterSheetCalculator {
             proficiency = prof,
             hitPoints = Breakdown(hpTerms),
             armourClass = Breakdown(armourTerms(modifiers, formulas)),
-            initiative = modifiers.getValue(Ability.DEXTERITY),
+            // Initiative : Dextérité ([RuleSources.ABILITIES]), plus Vigilant ([RuleSources.ALERT]).
+            initiative = modifiers.getValue(Ability.DEXTERITY) + feats.map { it.first }.distinctBy { it.id }.sumOf { it.initiativeBonus },
             savingThrows = saves,
             savingThrowBonuses = Ability.entries.associateWith { a -> modifiers.getValue(a) + if (a in saves) prof else 0 },
             skillProficiencies = skillProficiencies,
-            skillBonuses = Skill.entries.associateWith { sk -> modifiers.getValue(sk.ability) + if (sk in skillProficiencies) prof else 0 },
+            skillBonuses = Skill.entries.associateWith { sk ->
+                // L'Expertise double la maîtrise ; maîtrise et Expertise ne se cumulent pas ([RuleSources.PROFICIENCY]).
+                modifiers.getValue(sk.ability) + when {
+                    sk in expertise && sk in skillProficiencies -> 2 * prof
+                    sk in skillProficiencies -> prof
+                    else -> 0
+                }
+            },
             spellcasting = spellcasting,
             spellSlots = if (level > 0) SpellSlots.forClasses(casters) else emptyList(),
             pactSlots = pact,
@@ -396,6 +424,11 @@ object CharacterSheetCalculator {
             if (count > 0) add(SkillSource(id, count, c.skillList))
         }
         build.race?.value?.let { data.origins[it] }?.takeIf { it.skillChoices > 0 }?.let { add(SkillSource(it.id, it.skillChoices, it.skillList)) }
+        // Sous-classe qui laisse choisir (Collège du savoir) et don Doué : des compétences parmi toutes.
+        build.levels.mapNotNull { it.subclassId?.value }.distinct().mapNotNull { data.subclasses[it] }.filter { it.skillChoices > 0 }
+            .forEach { add(SkillSource(it.id, it.skillChoices, emptyList())) }
+        build.levels.mapNotNull { it.feat?.featId?.value }.distinct().mapNotNull { data.feats[it] }.filter { it.skillChoices > 0 }
+            .forEach { add(SkillSource(it.id, it.skillChoices, emptyList())) }
     }
 
     /**

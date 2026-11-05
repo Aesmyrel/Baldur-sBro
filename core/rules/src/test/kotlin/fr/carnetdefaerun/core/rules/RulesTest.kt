@@ -98,6 +98,19 @@ class RulesTest {
         assertThat(SpellSlots.forClasses(rangerWizard)).isEqualTo(SpellSlots.forLevel(6))
     }
 
+    @Test
+    fun `escroc arcanique à partir du niveau 10, 6 et 2 emplacements, même en multiclasse`() {
+        val at = { n: Int -> CasterLevels(CasterProgression.THIRD, n, 3, "subclass.arcane-trickster") }
+        for (n in 10..12) assertThat(SpellSlots.forClasses(listOf(at(n)))).containsExactly(6, 2).inOrder()
+        // Niveau 9 : la table générale (niveau effectif 3).
+        assertThat(SpellSlots.forClasses(listOf(at(9)))).isEqualTo(SpellSlots.forLevel(3))
+        // Avec un magicien 2 : niveau effectif 10/3 + 2 = 5, arrondi au-dessous ; avec un guerrier 2 (sans sorts) : 4.
+        assertThat(SpellSlots.forClasses(listOf(at(10), CasterLevels(CasterProgression.FULL, 2, 1, "class.wizard")))).containsExactly(6, 2).inOrder()
+        assertThat(SpellSlots.forClasses(listOf(at(10), CasterLevels(CasterProgression.NONE, 2, 1, "class.fighter")))).containsExactly(6, 2).inOrder()
+        // Le chevalier occulte suit la table : 4 et 3 au niveau 10.
+        assertThat(SpellSlots.forClasses(listOf(CasterLevels(CasterProgression.THIRD, 10, 3, "subclass.eldritch-knight")))).containsExactly(4, 3).inOrder()
+    }
+
     // --- Recoupement avec les tableaux de progression extraits des pages de classe (data/game) ---
 
     private val entries: List<Entry> by lazy {

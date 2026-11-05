@@ -55,9 +55,9 @@ fun AbilityTile(key: String, value: Int, modifierText: String, highlighted: Bool
     }
 }
 
-/** Statistique dérivée ; un toucher ouvre le détail du calcul. */
+/** Statistique dérivée ; un toucher ouvre le détail du calcul. Sans [onClick], la tuile n'est pas un bouton. */
 @Composable
-fun StatTile(label: String, value: String, selected: Boolean, onClick: () -> Unit, modifier: Modifier = Modifier) {
+fun StatTile(label: String, value: String, selected: Boolean, onClick: (() -> Unit)?, modifier: Modifier = Modifier) {
     val c = CarnetTheme.colors
     val shape = RoundedCornerShape(CarnetTheme.dimens.radius)
     Column(
@@ -65,7 +65,7 @@ fun StatTile(label: String, value: String, selected: Boolean, onClick: () -> Uni
             .clip(shape)
             .background(c.surface)
             .border(if (selected) 1.5.dp else 1.dp, if (selected) c.gold else c.line, shape)
-            .clickable(role = Role.Button, onClick = onClick)
+            .then(if (onClick != null) Modifier.clickable(role = Role.Button, onClick = onClick) else Modifier)
             .padding(horizontal = 12.dp, vertical = 9.dp)
             .semantics(mergeDescendants = true) {},
     ) {

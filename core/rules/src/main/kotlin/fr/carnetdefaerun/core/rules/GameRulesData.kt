@@ -5,6 +5,7 @@ import fr.carnetdefaerun.core.model.content.ClassFacts
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.FeatFacts
 import fr.carnetdefaerun.core.model.content.RaceFacts
+import fr.carnetdefaerun.core.model.content.Skill
 import fr.carnetdefaerun.core.model.content.SubclassFacts
 import fr.carnetdefaerun.core.model.content.SubraceFacts
 
@@ -31,6 +32,7 @@ fun RulesData.Companion.from(entries: Iterable<Entry>): RulesData {
                     progression = if (firstSlots != null) CasterProgression.THIRD else CasterProgression.NONE,
                     spellcastingFrom = firstSlots ?: 1,
                     draconicResilience = facts.levels.any { l -> l.features.any { it.id?.value == DRACONIC_RESILIENCE } },
+                    skillChoices = if (id == COLLEGE_OF_LORE) 3 else 0,
                 )
             }
             is FeatFacts -> feats[id] = FeatProfile(
@@ -38,10 +40,13 @@ fun RulesData.Companion.from(entries: Iterable<Entry>): RulesData {
                 abilityIncrease = facts.abilityIncrease,
                 tough = facts.features.any { it.id?.value == TOUGH },
                 resilient = id == RESILIENT,
+                skillChoices = if (facts.features.any { it.id?.value == SKILLED }) 3 else 0,
+                initiativeBonus = if (facts.features.any { it.id?.value == ALERT }) 5 else 0,
             )
             is SubraceFacts -> {
                 if (facts.features.any { it.id?.value == DWARVEN_TOUGHNESS }) dwarven += id
-                origins[id] = OriginProfile(id, facts.proficiencies.skills.toSet(), facts.proficiencies.skillChoices)
+                val expertise = if (id == ROCK_GNOME) setOf(Skill.HISTORY) else emptySet()
+                origins[id] = OriginProfile(id, facts.proficiencies.skills.toSet(), facts.proficiencies.skillChoices, expertise = expertise)
             }
             is RaceFacts -> origins[id] = OriginProfile(id, emptySet(), facts.proficiencies.skillChoices).let { o ->
                 // Une race qui laisse choisir n'impose rien : sa liste éventuelle est celle du choix.
@@ -86,6 +91,9 @@ private fun classProfile(id: String, facts: ClassFacts): ClassProfile {
         cantripsKnown = facts.levels.sortedBy { it.level }.map { it.cantripsKnown },
         spellsKnown = facts.levels.sortedBy { it.level }.map { it.spellsKnown },
         prepares = id in PREPARED_CASTERS,
+        unmodelledSkillLevels = facts.levels.filter { l ->
+            l.features.any { f -> f.id?.value == EXPERTISE || f.name.en in RANGER_SKILL_FEATURES } || l.values.any { it.key == INVOCATIONS }
+        }.map { it.level }.toSet(),
     )
 }
 
@@ -99,3 +107,16 @@ private const val DRACONIC_RESILIENCE = "feature.draconic-resilience"
 private const val DWARVEN_TOUGHNESS = "feature.dwarven-toughness"
 private const val TOUGH = "feature.tough"
 private const val RESILIENT = "feat.resilient"
+private const val SKILLED = "feature.skilled"
+private const val ALERT = "feature.alert"
+private const val EXPERTISE = "feature.expertise-passive-feature"
+private const val INVOCATIONS = "invocations_known"
+
+/** Choix du rôdeur qui donnent des maîtrises (*Proficiency*, « Ranger ») : pas encore modélisés. */
+private val RANGER_SKILL_FEATURES = setOf("Favoured Enemy", "Natural Explorer")
+
+/** *Proficiency* (révision 439299) : le gnome des roches ajoute deux fois sa maîtrise en Histoire. */
+private const val ROCK_GNOME = "subrace.rock-gnome"
+
+/** *Proficiency* (révision 439299) : le barde du Collège du savoir choisit trois compétences de plus. */
+private const val COLLEGE_OF_LORE = "subclass.college-of-lore"

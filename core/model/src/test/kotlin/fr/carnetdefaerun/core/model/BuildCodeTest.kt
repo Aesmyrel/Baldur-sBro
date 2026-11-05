@@ -62,4 +62,11 @@ class BuildCodeTest {
         while (!deflater.finished()) out.write(buffer, 0, deflater.deflate(buffer))
         return BuildCode.PREFIX + Base64.getUrlEncoder().withoutPadding().encodeToString(out.toByteArray())
     }
+
+    @Test
+    fun `nom nettoyé des caractères invisibles`() {
+        val sneaky = build.copy(name = "Gale\u202E\u0000\u200B  le   sage")
+        assertThat(BuildCode.decode(BuildCode.encode(sneaky))?.name).isEqualTo("Gale le sage")
+        assertThat(BuildCode.cleanName("  L’Évocateur\n en harnois ")).isEqualTo("L’Évocateur en harnois")
+    }
 }

@@ -26,7 +26,8 @@ class BuildEditingTest {
         assertThat(sheet.spellcasting.single().saveDc).isEqualTo(17)
         assertThat(sheet.spellcasting.single().attackBonus).isEqualTo(9)
         assertThat(sheet.pointBuyRemaining).isEqualTo(0)
-        assertThat(CharacterSheetCalculator.compute(BuildFixtures.pact, rules).problems).isEmpty()
+        // L'occultiste a des invocations, pas encore modélisées : signalé, rien d'autre.
+        assertThat(CharacterSheetCalculator.compute(BuildFixtures.pact, rules).problems).containsExactly(fr.carnetdefaerun.core.rules.SheetProblem.SKILLS_PARTIAL)
     }
 
     @Test
@@ -117,5 +118,24 @@ class BuildEditingTest {
         // Changer la classe de départ efface les choix de l'ancienne.
         build = BuildEdits.setLevelClass(build, 0, id("class.wizard"), rules)
         assertThat(build.skillChoices).doesNotContainKey("class.fighter")
+    }
+
+    @Test
+    fun `changer la classe d'un niveau de don garde le don à sa classe`() {
+        // Guerrier 1 à 6 : dons A au niveau 4, B au niveau 6. Le niveau 4 devient magicien : le guerrier n'a plus que
+        // 5 niveaux, un seul niveau de don (son 4e, l'ancien niveau 5) ; il reçoit A, le premier pris.
+        val a = FeatChoice(id("feat.tough"))
+        val b = FeatChoice(id("feat.alert"))
+        val build = Build(name = "x", levels = List(3) { BuildLevel(id("class.fighter")) }.let { it.take(2) + BuildLevel(id("class.fighter"), id("subclass.champion")) } +
+            BuildLevel(id("class.fighter"), feat = a) + BuildLevel(id("class.fighter")) + BuildLevel(id("class.fighter"), feat = b))
+        val edited = BuildEdits.setLevelClass(build, 3, id("class.wizard"), rules)
+        assertThat(edited.levels.map { it.classId.value }).containsExactly(
+            "class.fighter", "class.fighter", "class.fighter", "class.wizard", "class.fighter", "class.fighter",
+        ).inOrder()
+        assertThat(edited.levels[4].feat).isEqualTo(a)
+        assertThat(edited.levels[2].subclassId).isEqualTo(id("subclass.champion"))
+        // Revenir au guerrier garde A ; B, resté sans place, avait été abandonné (comportement documenté, D-088).
+        val back = BuildEdits.setLevelClass(edited, 3, id("class.fighter"), rules)
+        assertThat(back.levels.mapNotNull { it.feat }).containsExactly(a).inOrder()
     }
 }

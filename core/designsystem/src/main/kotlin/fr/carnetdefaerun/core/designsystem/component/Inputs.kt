@@ -247,8 +247,9 @@ fun Stepper(
     }
 }
 
+/** Bouton de pas gravé, − ou + dans un cercle, cible de 48 dp, désactivé à la borne. */
 @Composable
-private fun StepGlyph(minus: Boolean, enabled: Boolean, label: String, onClick: () -> Unit) {
+fun StepGlyph(minus: Boolean, enabled: Boolean, label: String, onClick: () -> Unit) {
     val c = CarnetTheme.colors
     Box(
         Modifier.size(48.dp).clip(CircleShape).clickable(enabled = enabled, role = Role.Button, onClick = onClick).semantics { contentDescription = label },

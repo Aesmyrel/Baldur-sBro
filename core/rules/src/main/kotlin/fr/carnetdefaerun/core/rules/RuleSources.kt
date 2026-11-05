@@ -61,4 +61,13 @@ object RuleSources {
 
     /** « Attacks » (page « Attack roll ») : caractéristique des attaques d'arme (corps à corps, distance, finesse, lancer) et maîtrise. */
     const val ATTACKS = "https://bg3.wiki/w/index.php?title=Attacks&oldid=416178"
+
+    /** « Arcane Trickster », niveau 10 et note : 6 emplacements de niveau 1 et 2 de niveau 2, gardés en multiclasse. */
+    const val ARCANE_TRICKSTER = "https://bg3.wiki/w/index.php?title=Arcane_Trickster&oldid=439623"
+
+    /** « Alert » : +5 à l'initiative. */
+    const val ALERT = "https://bg3.wiki/w/index.php?title=Alert&oldid=438858"
+
+    /** « Skilled » : maîtrise de 3 compétences au choix. */
+    const val SKILLED = "https://bg3.wiki/w/index.php?title=Skilled&oldid=438905"
 }

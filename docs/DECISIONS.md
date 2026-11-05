@@ -413,3 +413,29 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Tirage** : `kotlin.random.Random` ; aucun besoin cryptographique, et un test vérifie que chaque face reste dans son dé et que toutes sortent.
 - **Style** : dés gravés vus de dessus (contour selon le nombre de faces, hachures d'ombre, pigment par dé), plateau à double filet d'or. Le total s'affiche en or et TalkBack l'annonce. Les six derniers lancers sont gardés le temps de l'écran.
 
+**D-093 — Revue indépendante de la phase 4 : constats et corrections.** Un agent qui n'avait pas produit le travail a relu le code, comparé les règles aux pages, lancé les tests et regardé les captures. Résultat : 2 points bloquants, 3 importants, 9 mineurs. Tout est corrigé ou explicitement signalé.
+- **Bloquant 1 — escroc arcanique aux niveaux 10 à 12**. À partir du niveau 10 de roublard, il a 6 emplacements de niveau 1 et 2 de niveau 2, même en multiclasse (*Arcane Trickster*, révision 439623, niveau 10 et note ; *Spells*, révision 433193). Exception ajoutée et testée (seul, avec un magicien, avec un guerrier). **Correction de D-067** : les deux pages ne se contredisent pas, l'escroc a ses propres emplacements ; les données de ces niveaux restent vides, le moteur fait foi.
+- **Bloquant 2 — compétences et initiative incomplètes**. Désormais comptés :
+  - Doué : 3 compétences au choix (*Skilled*, révision 438905) ;
+  - Collège du savoir : 3 compétences au choix ;
+  - gnome des roches : maîtrise doublée en Histoire (*Proficiency*, révision 439299) ;
+  - Vigilant : +5 à l'initiative (*Alert*, révision 438858).
+  - Pas encore modélisés, désormais **signalés** sur la fiche (problème non bloquant) : Expertise (roublard, barde), choix du rôdeur (ennemi juré, explorateur-né), invocations de l'occultiste. Les sous-classes n'accordent pas d'autres compétences dans les données.
+- **Importants** :
+  - groupe : « personne ne la maîtrise » ne s'affiche plus quand un membre la maîtrise sans avoir le meilleur bonus ;
+  - Explorateur : la multiclasse est signalée, pas invalide, car des niveaux déjà acquis restent (*Difficulty*) ;
+  - changer la classe d'un niveau garde son don et sa sous-classe à leur classe, dans l'ordre.
+- **Mineurs** :
+  - compteur « Achat x / 27 » affiché ;
+  - détail Explorateur sourcé, avec l'interprétation dite ;
+  - chaînes en dur remplacées par des ressources, pluriels Android ;
+  - tuiles sans détail qui ne sont plus des boutons ;
+  - contenu sous une feuille ouverte masqué à TalkBack ;
+  - décompression toujours fermée ;
+  - noms débarrassés des caractères de contrôle et d'inversion bidirectionnelle ;
+  - écritures sérialisées ;
+  - enregistrement illisible montré comme abîmé et supprimable.
+- **Tests ajoutés** : le QR code tel que l'écran le dessine se relit dans les trois thèmes et rend le build identique ; le test de fuite couvre la liste et les feuilles Partage et Compétences.
+- **Conflit de sources noté** : la liste de compétences de l'occultiste contient Nature sur la page *Warlock* (révision 424760), pas sur *Proficiency* (révision 439299). Les données suivent la page de classe.
+- **Laissé en l'état** : la télémétrie de ML Kit reste déclarée, inerte sans INTERNET (D-089) ; son retrait sera essayé sur le téléphone. L'énumération brute des tests d20 vérifie les calculs, et des cas écrits à la main vérifient les règles.
+
