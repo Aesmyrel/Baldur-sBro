@@ -45,7 +45,12 @@ val buildContentDb = tasks.register<BuildContentDb>("buildContentDb") {
 }
 
 androidComponents {
-    onVariants { variant -> variant.sources.assets?.addGeneratedSourceDirectory(buildContentDb, BuildContentDb::outputDir) }
+    onVariants { variant ->
+        variant.sources.assets?.addGeneratedSourceDirectory(buildContentDb, BuildContentDb::outputDir)
+        // Schémas exportés de user.db, lus par les tests de migration.
+        (variant as? com.android.build.api.variant.HasHostTests)?.hostTests?.get(com.android.build.api.variant.HostTestBuilder.UNIT_TEST_TYPE)
+            ?.sources?.assets?.addStaticSourceDirectory("$projectDir/schemas")
+    }
 }
 
 dependencies {
@@ -59,6 +64,7 @@ dependencies {
     testImplementation(libs.androidx.test.core)
     testImplementation(libs.androidx.test.ext.junit)
     testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.androidx.room.testing)
 }
 
 tasks.withType<Test>().configureEach {

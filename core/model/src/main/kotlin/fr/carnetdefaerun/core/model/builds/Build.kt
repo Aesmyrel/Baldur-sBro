@@ -3,6 +3,7 @@ package fr.carnetdefaerun.core.model.builds
 import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.ContentId
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.Json
 
 /**
  * Build d'un personnage, tel que le joueur le compose : origine, achat de points, puis un choix par niveau.
@@ -31,3 +32,12 @@ data class BuildLevel(val classId: ContentId, val subclassId: ContentId? = null,
 /** Don choisi ; pour une amélioration de caractéristique, la répartition des points. */
 @Serializable
 data class FeatChoice(val featId: ContentId, val abilityIncreases: Map<Ability, Int> = emptyMap())
+
+/** Format JSON des builds, enregistrés comme partagés : compact, tolérant aux champs ajoutés par une version future. */
+object BuildFormat {
+    val json = Json {
+        encodeDefaults = false
+        explicitNulls = false
+        ignoreUnknownKeys = true
+    }
+}

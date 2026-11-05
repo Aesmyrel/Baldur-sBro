@@ -354,3 +354,9 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Problèmes signalés**, distingués entre invalides (le jeu ne le permettrait pas) et incomplets (un choix reste à faire) : budget ou bornes de l'achat de points, bonus manquants ou sur la même caractéristique, classe inconnue, plus de 12 niveaux, don absent ou mal placé, répartition contraire à la fiche du don, sous-classe manquante, d'une autre classe ou au mauvais niveau.
 - **Hors du calcul pour l'instant** : armure et équipement, bonus de race aux compétences, sorts connus. La fiche montre la classe d'armure sans équipement.
 
+**D-087 — Builds enregistrés et code de partage.**
+- **Base du joueur, version 2** : table `build` (nom, choix du joueur en JSON, dates). Migration automatique de Room, vérifiée par un test qui part d'une base version 1 remplie : révélations, noms corrigés et favoris restent. Les schémas exportés servent d'actifs aux tests.
+- **Ce qui est enregistré** : seulement les choix (le `Build` de `core:model`), jamais les valeurs calculées, qui suivent donc les corrections des règles ou des données. Un enregistrement illisible est ignoré plutôt que de bloquer la liste.
+- **Code de partage** : `CDF1.` suivi du JSON compressé (deflate) en Base64 sûr pour les URL ; un build de 12 niveaux tient en moins de 400 caractères, donc dans un petit QR code. Un code reçu est une donnée non fiable : taille du code et taille décompressée bornées (contre les bombes de décompression), identifiants vérifiés, nom, niveaux et valeurs bornés.
+- **Profils de règles** : lus une fois dans la base de contenu. Ce ne sont que des nombres et des identifiants ; les noms affichés passent toujours par la porte de contenu et son verrou.
+

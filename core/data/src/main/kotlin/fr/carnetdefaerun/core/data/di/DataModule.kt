@@ -16,6 +16,8 @@ import dagger.hilt.components.SingletonComponent
 import fr.carnetdefaerun.core.database.content.ContentStore
 import fr.carnetdefaerun.core.database.content.SqliteContentStore
 import fr.carnetdefaerun.core.database.user.UserDatabase
+import fr.carnetdefaerun.core.data.builds.BuildRepository
+import fr.carnetdefaerun.core.data.builds.RoomBuildRepository
 import fr.carnetdefaerun.core.data.user.PlayerRepository
 import fr.carnetdefaerun.core.data.user.RoomPlayerRepository
 import androidx.room.Room
@@ -38,6 +40,7 @@ abstract class DataBindings {
     @Binds abstract fun preferences(impl: DataStoreUserPreferencesRepository): UserPreferencesRepository
     @Binds abstract fun navigation(impl: DataStoreNavigationStateStore): NavigationStateStore
     @Binds abstract fun player(impl: RoomPlayerRepository): PlayerRepository
+    @Binds abstract fun builds(impl: RoomBuildRepository): BuildRepository
 }
 
 @Module
