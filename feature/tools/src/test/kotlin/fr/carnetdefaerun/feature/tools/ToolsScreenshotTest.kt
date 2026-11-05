@@ -51,5 +51,10 @@ class ToolsScreenshotTest {
     @Test fun proba_sauvegarde_oled() = shot("proba_sauvegarde_oled", ThemeMode.NOIR_OLED) {
         ProbabilityScreen(ProbabilityInput(RollKind.SAVING_THROW, modifier = 2, target = 14, mode = RollMode.DISADVANTAGE), {}, {})
     }
+    private val pool = DicePool(mapOf(6 to 2, 8 to 1), modifier = 3)
+    private val roll = DiceRoll(pool, listOf(4, 6, 2))
+    @Test fun des_sombre() = shot("des_sombre") { DiceScreen(pool, roll, listOf(roll, DiceRoll(DicePool(mapOf(20 to 1)), listOf(17))), {}, {}, {}) }
+    @Test fun des_parchemin() = shot("des_parchemin", ThemeMode.PARCHEMIN) { DiceScreen(DicePool(mapOf(20 to 1, 4 to 2)), null, emptyList(), {}, {}, {}) }
+    @Test fun des_police200() = shot("des_police200", fontScale = 2f) { DiceScreen(pool, roll, emptyList(), {}, {}, {}) }
     @Test fun proba_police200() = shot("proba_police200", fontScale = 2f) { ProbabilityScreen(check, {}, {}) }
 }

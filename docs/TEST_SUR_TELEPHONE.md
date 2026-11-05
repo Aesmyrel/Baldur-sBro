@@ -22,6 +22,7 @@
 - [ ] Mouvement réduit (réglage système ou réglage de l'appli) et économiseur de batterie : rendu statique, fondus courts.
 - [ ] Budget GPU des shaders sous 2 ms par image (profilage GPU des options pour les développeurs).
 - [ ] Vibrations discrètes, et absentes quand le retour haptique est coupé dans les réglages système.
+- [ ] Lanceur de dés : un geste vif dans le plateau lance, la course est fluide à 120 Hz, quatre crans puis une confirmation se sentent ; en mouvement réduit, le résultat est immédiat (D-092).
 
 ## Lisibilité
 - [ ] Police système à 200 % : aucun mot coupé, aucun libellé tronqué hors barre de navigation (libellés lus en entier par TalkBack).

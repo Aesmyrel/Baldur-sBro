@@ -17,7 +17,7 @@ import fr.carnetdefaerun.core.designsystem.theme.CarnetSectionScope
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 import fr.carnetdefaerun.core.model.navigation.Destination
 
-/** Onglet Outils : la liste des outils de table. Le lanceur de dés viendra avec la phase 6. */
+/** Onglet Outils : la liste des outils de table. */
 @Composable
 fun ToolsRoute(onNavigate: (Destination) -> Unit) {
     val c = CarnetTheme.colors
@@ -29,6 +29,7 @@ fun ToolsRoute(onNavigate: (Destination) -> Unit) {
             Text(stringResource(R.string.tools_intro), style = CarnetTheme.type.reading, color = c.text2,
                 modifier = Modifier.padding(horizontal = CarnetTheme.dimens.gutter, vertical = 8.dp))
             ListRow(stringResource(R.string.tools_probability), { onNavigate(Destination.Probability) }, subtitle = stringResource(R.string.tools_probability_sub))
+            ListRow(stringResource(R.string.tools_dice), { onNavigate(Destination.Dice) }, subtitle = stringResource(R.string.tools_dice_sub))
         }
     }
 }

@@ -43,4 +43,27 @@
     <string name="proba_result_a11y">Chance de réussite : %1$s pour cent</string>
     <string name="proba_karmic">Les dés karmiques, un réglage du jeu, ne sont pas pris en compte : leur fonctionnement n’est pas documenté.</string>
     <string name="proba_sources">Sources : bg3.wiki, « Dice rolls », « Guidance », « Bless », « Bardic Inspiration », « Improved Critical Hit », « Inspiration ».</string>
+
+    <string name="tools_dice">Lanceur de dés</string>
+    <string name="tools_dice_sub">Composez vos dés, lancez d’un geste ou d’un bouton</string>
+    <string name="dice_title">Lanceur de dés</string>
+    <string name="dice_choose">Dés à lancer</string>
+    <string name="dice_add">Ajouter un d%1$d</string>
+    <string name="dice_remove">Retirer un d%1$d</string>
+    <string name="dice_count">d%1$d · %2$d</string>
+    <string name="dice_modifier">Modificateur</string>
+    <string name="dice_roll">Lancer</string>
+    <string name="dice_clear">Vider</string>
+    <string name="dice_empty">Touchez un dé pour l’ajouter, puis lancez.</string>
+    <string name="dice_tray_hint">Lancez d’un geste vif dans le plateau.</string>
+    <string name="dice_tray_a11y">Plateau de dés. Double-touchez pour lancer.</string>
+    <string name="dice_stats">De %1$d à %2$d, moyenne %3$s</string>
+    <string name="dice_total_a11y">Total : %1$d</string>
+    <string name="dice_detail_modifier">%1$s, modificateur %2$s</string>
+    <string name="dice_type">d%1$d</string>
+    <string name="dice_term">%1$dd%2$d</string>
+    <string name="dice_plus">\u0020+\u0020</string>
+    <string name="dice_minus">\u0020−\u0020</string>
+    <string name="dice_history">Derniers lancers</string>
+    <string name="dice_history_line">%1$s · %2$d</string>
 </resources>

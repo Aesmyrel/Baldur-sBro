@@ -405,3 +405,11 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Compteur** `Stepper` ajouté au design system : boutons gravés de 48 dp, désactivés aux bornes, valeur annoncée avec son libellé.
 - Le lanceur de dés reste pour la phase 6.
 
+**D-092 — Lanceur de dés (avancé de la phase 6).**
+- **Réservoir** : d4, d6, d8, d10, d12, d20 et d100 (dé de pourcentage, de 1 à 100), douze dés au plus, et un modificateur. L'étendue et la moyenne exactes sont calculées par convolution.
+- **Lancer** : d'un geste vif dans le plateau (relâché à plus de 600 px/s), du bouton « Lancer », ou par l'action de clic de TalkBack sur le plateau ; le geste n'est jamais obligatoire.
+  - Course de 400 ms : les dés glissent dans le sens du geste en tournant, et quatre rebonds changent les faces, chacun avec un cran haptique. Le résultat, tiré avant l'animation, est confirmé par un retour haptique.
+  - Haptique par les constantes du système (réglages respectés). En mouvement réduit, le résultat est immédiat.
+- **Tirage** : `kotlin.random.Random` ; aucun besoin cryptographique, et un test vérifie que chaque face reste dans son dé et que toutes sortent.
+- **Style** : dés gravés vus de dessus (contour selon le nombre de faces, hachures d'ombre, pigment par dé), plateau à double filet d'or. Le total s'affiche en or et TalkBack l'annonce. Les six derniers lancers sont gardés le temps de l'écran.
+
