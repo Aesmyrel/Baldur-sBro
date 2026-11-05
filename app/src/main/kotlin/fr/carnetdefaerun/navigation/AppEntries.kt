@@ -22,6 +22,7 @@ import fr.carnetdefaerun.feature.progress.ProgressRoute
 import fr.carnetdefaerun.feature.search.SearchRoute
 import fr.carnetdefaerun.feature.settings.CreditsScreen
 import fr.carnetdefaerun.feature.settings.SettingsRoute
+import fr.carnetdefaerun.feature.tools.ProbabilityRoute
 import fr.carnetdefaerun.feature.tools.ToolsRoute
 
 /**
@@ -44,7 +45,8 @@ fun appEntries(navigator: AppNavigator, tab: TopLevel): (Destination) -> NavEntr
             Destination.Builds -> BuildsRoute(onNavigate = navigator::navigate)
             is Destination.BuildEditor -> BuildEditorRoute(destination.buildId, back)
             Destination.Party -> PartyRoute(back)
-            Destination.Tools -> ToolsRoute()
+            Destination.Tools -> ToolsRoute(onNavigate = navigator::navigate)
+            Destination.Probability -> ProbabilityRoute(back)
             Destination.Settings -> SettingsRoute(onNavigate = navigator::navigate, onBack = back)
             Destination.Credits -> CreditsScreen(onBack = back)
             Destination.Companions, is Destination.CompanionDetail -> CompanionsRoute(onBack = back)

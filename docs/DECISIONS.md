@@ -398,3 +398,10 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Pas modélisés** : les dés karmiques (réglage du jeu, qui n'est pas documenté), le style de combat Défense et les objets portés (ils viendront avec l'équipement).
 - **Mise en page** : l'atelier, la liste et le groupe sont plafonnés à la largeur de lecture de la charte (640 dp), centrés sur les pliables.
 
+**D-091 — Outil « Probabilité d'un jet » (avancé de la phase 6).** Le moteur de la phase 4 le rendait peu coûteux.
+- **Entrées** : type de jet (attaque, test, sauvegarde), bonus, CA ou DD, avantage ou désavantage, dés de bonus permis pour ce type (Assistance, Bénédiction, Inspiration bardique selon le niveau du barde), Chance du halfelin, sauvegarde de concentration ou de dialogue, coups critiques améliorés, relances d'Inspiration.
+- **Résultat** : chance de réussite exacte, chance de coup critique pour une attaque, et ce qu'il faut au d20 seul. Le résultat est annoncé par TalkBack à chaque changement. Les pourcentages sont à la française, avec une décimale près de 0 et de 100 %, et jamais « 0 % » ni « 100 % » trompeurs. L'entrée survit à la rotation.
+- **Dés karmiques** : réglage du jeu non documenté, donc non modélisé ; l'écran le dit.
+- **Compteur** `Stepper` ajouté au design system : boutons gravés de 48 dp, désactivés aux bornes, valeur annoncée avec son libellé.
+- Le lanceur de dés reste pour la phase 6.
+

@@ -42,6 +42,9 @@ _Dernière mise à jour : 05/11/2026, phase 1 validée ; phases 2, 3 et 4 en cou
   - Fait aussi : dés de bonus, relances d'Inspiration, seuil de critique, effets du mode Explorateur, sorts mineurs, appris et préparés, attaques d'arme (D-090).
   - À faire : vérification indépendante de la phase ; équipement des builds (armes, armures) plus tard.
 
+- **Phase 6 — outils (avancé)**
+  - Fait : probabilité d'un jet, exacte, avec dés de bonus, relances et critique (D-091).
+
 ## Reste à faire
 - Phase 2b : pipeline du lore.
 - Phases 4 à 7 : builds ; Ma partie, progression et compagnons ; outils, notes et sauvegarde ; finitions et livraison (APK signé, `INSTALLER.md`, `vitrine.png`, rapport final).

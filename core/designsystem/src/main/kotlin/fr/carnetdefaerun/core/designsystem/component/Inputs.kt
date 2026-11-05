@@ -21,9 +21,11 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.foundation.selection.toggleable
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -215,6 +217,51 @@ fun SearchField(query: String, onQueryChange: (String) -> Unit, placeholder: Str
             }
         },
     )
+}
+
+/**
+ * Compteur : libellé, puis − valeur +, chaque bouton en cible de 48 dp, désactivé aux bornes de [range].
+ * La valeur est annoncée avec son libellé ; les boutons portent [decreaseLabel] et [increaseLabel].
+ */
+@Composable
+fun Stepper(
+    label: String,
+    value: Int,
+    onValueChange: (Int) -> Unit,
+    range: IntRange,
+    decreaseLabel: String,
+    increaseLabel: String,
+    modifier: Modifier = Modifier,
+    valueText: String = value.toString(),
+) {
+    val c = CarnetTheme.colors
+    val haptics = rememberCarnetHaptics()
+    Row(modifier.fillMaxWidth().heightIn(min = 56.dp), verticalAlignment = Alignment.CenterVertically) {
+        Text(label, style = CarnetTheme.type.reading, color = c.text, modifier = Modifier.weight(1f).padding(end = 8.dp))
+        StepGlyph(minus = true, enabled = value > range.first, label = decreaseLabel) { haptics.tick(); onValueChange(value - 1) }
+        Text(
+            valueText, style = CarnetTheme.type.numeric, color = c.gold, textAlign = TextAlign.Center,
+            modifier = Modifier.widthIn(min = 56.dp).semantics { contentDescription = "$label $valueText" },
+        )
+        StepGlyph(minus = false, enabled = value < range.last, label = increaseLabel) { haptics.tick(); onValueChange(value + 1) }
+    }
+}
+
+@Composable
+private fun StepGlyph(minus: Boolean, enabled: Boolean, label: String, onClick: () -> Unit) {
+    val c = CarnetTheme.colors
+    Box(
+        Modifier.size(48.dp).clip(CircleShape).clickable(enabled = enabled, role = Role.Button, onClick = onClick).semantics { contentDescription = label },
+        contentAlignment = Alignment.Center,
+    ) {
+        Canvas(Modifier.size(40.dp)) {
+            val ink = if (enabled) c.gold else c.muted
+            drawCircle(if (enabled) c.goldDeep else c.line, size.minDimension / 2 - 1.dp.toPx(), style = Stroke(1.dp.toPx()))
+            val r = size.minDimension * 0.22f
+            drawLine(ink, Offset(center.x - r, center.y), Offset(center.x + r, center.y), 1.8.dp.toPx(), StrokeCap.Round)
+            if (!minus) drawLine(ink, Offset(center.x, center.y - r), Offset(center.x, center.y + r), 1.8.dp.toPx(), StrokeCap.Round)
+        }
+    }
 }
 
 /** Champ de texte simple, au cadre du champ de recherche sans la loupe (nom d'un build, code à coller). */

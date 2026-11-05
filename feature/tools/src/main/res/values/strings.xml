@@ -2,4 +2,45 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fr">
     <string name="tools_crumb">Outils</string>
     <string name="tools_title">Outils de table</string>
+    <string name="tools_intro">Des calculs exacts, d’après les règles de BG3, pour décider avant de lancer.</string>
+    <string name="tools_probability">Probabilité d’un jet</string>
+    <string name="tools_probability_sub">Attaque, test ou sauvegarde : avantage, dés de bonus, relances</string>
+
+    <string name="proba_title">Probabilité d’un jet</string>
+    <string name="proba_kind_attack">Attaque</string>
+    <string name="proba_kind_check">Test</string>
+    <string name="proba_kind_save">Sauvegarde</string>
+    <string name="proba_modifier">Bonus au jet</string>
+    <string name="proba_target_ac">Classe d’armure visée</string>
+    <string name="proba_target_dc">DD à atteindre</string>
+    <string name="proba_decrease">Diminuer : %1$s</string>
+    <string name="proba_increase">Augmenter : %1$s</string>
+    <string name="proba_mode_normal">Normal</string>
+    <string name="proba_mode_advantage">Avantage</string>
+    <string name="proba_mode_disadvantage">Désavantage</string>
+    <string name="proba_dice">Dés de bonus</string>
+    <string name="proba_guidance">Assistance +1d4</string>
+    <string name="proba_bless">Bénédiction +1d4</string>
+    <string name="proba_bardic">Inspiration bardique +1d%1$d</string>
+    <string name="proba_bard_level">Niveau du barde</string>
+    <string name="proba_options">Options</string>
+    <string name="proba_halfling">Chance du halfelin</string>
+    <string name="proba_halfling_sub">Un 1 naturel est relancé.</string>
+    <string name="proba_auto_saves">Concentration ou dialogue</string>
+    <string name="proba_auto_saves_sub">Pour ces sauvegardes, un 1 naturel échoue et un 20 naturel réussit.</string>
+    <string name="proba_crit">Coups critiques améliorés</string>
+    <string name="proba_rerolls">Relances d’Inspiration</string>
+    <string name="proba_result_label">Chance de réussite</string>
+    <string name="proba_percent">%1$s %%</string>
+    <string name="proba_critical">Coup critique : %1$s %%</string>
+    <string name="proba_needed_face">Au d20 seul, il faut %1$d ou plus.</string>
+    <string name="proba_needed_all_but_one">Au d20 seul, tout réussit sauf un 1 naturel.</string>
+    <string name="proba_needed_natural">Au d20 seul, il faut un %1$d naturel.</string>
+    <string name="proba_needed_natural_or_more">Au d20 seul, il faut un %1$d naturel ou plus (coup critique).</string>
+    <string name="proba_needed_always">La sauvegarde réussit quel que soit le dé.</string>
+    <string name="proba_needed_never">La sauvegarde échoue quel que soit le dé.</string>
+    <string name="proba_needed_dice_note">Les dés de bonus s’ajoutent ensuite.</string>
+    <string name="proba_result_a11y">Chance de réussite : %1$s pour cent</string>
+    <string name="proba_karmic">Les dés karmiques, un réglage du jeu, ne sont pas pris en compte : leur fonctionnement n’est pas documenté.</string>
+    <string name="proba_sources">Sources : bg3.wiki, « Dice rolls », « Guidance », « Bless », « Bardic Inspiration », « Improved Critical Hit », « Inspiration ».</string>
 </resources>
