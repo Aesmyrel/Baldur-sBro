@@ -445,3 +445,14 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Remarque du relecteur, corrigée aussi** : retirer un don laisse son niveau vide ; les dons suivants de la classe ne glissent plus. Chaque don garde son rang parmi les niveaux de don de sa classe.
 - **Phase 4 validée** : toutes les règles du catalogue sont testées et sourcées ; un build exporté, dessiné en QR code et relu revient identique. Reste pour plus tard : l'équipement des builds, l'Expertise et les choix du rôdeur, signalés en attendant.
 
+**D-095 — Notes rattachables et sauvegarde `.carnet` (phase 6).**
+- **Base du joueur, version 3** : table `note`, avec un texte (10 000 caractères au plus) et un rattachement facultatif à un acte ou à une fiche du jeu ou du codex. Migration automatique 2 → 3, testée de bout en bout depuis une base version 1 remplie. Le rattachement aux quêtes et aux compagnons viendra avec leurs données.
+- **Verrou** : le texte d'une note est celui du joueur, jamais filtré. Le nom de la fiche rattachée passe par la porte de contenu : une fiche masquée devient « Une fiche masquée », une fiche disparue « Une fiche introuvable ». Un test le vérifie avec le vrai dépôt.
+- **Accès** : « Notes » depuis Ma partie ; sur chaque fiche du Grimoire et du Codex, une icône de feuillet ouvre une note déjà rattachée à la fiche.
+- **Sauvegarde `.carnet`** : JSON compressé (gzip), versionné. Il contient les réglages, les jetons de révélation, les noms corrigés, les favoris, les builds, le groupe (par rang de build, recalé à l'import) et les notes ; jamais la base de contenu ni la pile de navigation.
+  - Export et import passent par le sélecteur de documents du système, sans permission.
+  - L'import remplace tout en une transaction Room, donc tout ou rien, après une confirmation qui invite à exporter d'abord.
+  - Le fichier reçu n'est pas fiable : taille du fichier (8 Mo) et taille décompressée (32 Mo) bornées, format et version vérifiés (une version plus récente est refusée), chaque ligne validée (identifiants, jetons, longueurs, noms nettoyés), les lignes invalides écartées et comptées dans le message.
+  - Le mode session n'est pas repris, car il est propre à l'appareil ; une taille de lecture hors liste revient à 100 %.
+- **Critère de fin de phase « export → réinstallation → import sans perte »** : testé sur un appareil vierge simulé, avec une base et des magasins neufs ; toutes les données reviennent, et le groupe désigne les mêmes builds. La sauvegarde Android couvre déjà `user.db` et les fichiers DataStore, dont celui du groupe.
+

@@ -33,6 +33,7 @@ import fr.carnetdefaerun.core.data.content.EntryView
 import fr.carnetdefaerun.core.data.content.LinkedEntry
 import fr.carnetdefaerun.core.designsystem.component.CarnetTopBar
 import fr.carnetdefaerun.core.designsystem.component.BookmarkGlyph
+import fr.carnetdefaerun.core.designsystem.component.NoteGlyph
 import fr.carnetdefaerun.core.designsystem.component.CanonBadge
 import fr.carnetdefaerun.core.designsystem.component.CanonKind
 import fr.carnetdefaerun.core.designsystem.component.GoldButton
@@ -116,6 +117,7 @@ fun EntryRoute(id: ContentId, onNavigate: (Destination) -> Unit, onBack: () -> U
             onResetName = viewModel::resetName,
             onOpen = { target, type -> onNavigate(destinationOf(target, type)) },
             onBack = onBack,
+            onNote = { onNavigate(Destination.NoteEditor(targetId = id.value)) },
         ),
     )
 }
@@ -128,6 +130,8 @@ class EntryActions(
     val onResetName: () -> Unit = {},
     val onOpen: (ContentId, EntryType) -> Unit = { _, _ -> },
     val onBack: () -> Unit = {},
+    /** Ajouter une note rattachée à cette fiche ; null : pas d'action. */
+    val onNote: (() -> Unit)? = null,
 )
 
 @Composable
@@ -140,6 +144,7 @@ fun EntryScreen(state: EntryUiState, actions: EntryActions) {
             CarnetTopBar(crumb, onBack = actions.onBack) {
                 if (state is EntryUiState.Visible) {
                     val label = stringResource(if (state.favorite) R.string.entry_favorite_remove else R.string.entry_favorite_add)
+                    actions.onNote?.let { note -> IconSlot(note, stringResource(R.string.entry_note_add)) { NoteGlyph(CarnetTheme.colors.gold) } }
                     IconSlot({ actions.onFavorite(!state.favorite) }, label) { BookmarkGlyph(state.favorite, CarnetTheme.colors.gold) }
                 }
             }

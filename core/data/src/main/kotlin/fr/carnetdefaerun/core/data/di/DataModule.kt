@@ -19,6 +19,8 @@ import fr.carnetdefaerun.core.database.user.UserDatabase
 import fr.carnetdefaerun.core.data.builds.BuildRepository
 import fr.carnetdefaerun.core.data.builds.DataStorePartyRepository
 import fr.carnetdefaerun.core.data.builds.PartyRepository
+import fr.carnetdefaerun.core.data.notes.NoteRepository
+import fr.carnetdefaerun.core.data.notes.RoomNoteRepository
 import fr.carnetdefaerun.core.data.builds.RoomBuildRepository
 import fr.carnetdefaerun.core.data.user.PlayerRepository
 import fr.carnetdefaerun.core.data.user.RoomPlayerRepository
@@ -44,6 +46,7 @@ abstract class DataBindings {
     @Binds abstract fun player(impl: RoomPlayerRepository): PlayerRepository
     @Binds abstract fun builds(impl: RoomBuildRepository): BuildRepository
     @Binds abstract fun party(impl: DataStorePartyRepository): PartyRepository
+    @Binds abstract fun notes(impl: RoomNoteRepository): NoteRepository
 }
 
 @Module

@@ -89,6 +89,22 @@ fun ListRow(
     }
 }
 
+/** Feuillet gravé, coin plié et deux lignes d'écriture : ajouter une note. */
+@Composable
+fun NoteGlyph(color: Color, modifier: Modifier = Modifier) {
+    Canvas(modifier.size(24.dp)) {
+        val k = size.width / 24f
+        val stroke = androidx.compose.ui.graphics.drawscope.Stroke(1.6f * k, cap = androidx.compose.ui.graphics.StrokeCap.Round, join = androidx.compose.ui.graphics.StrokeJoin.Round)
+        val page = androidx.compose.ui.graphics.Path().apply {
+            moveTo(6f * k, 3.5f * k); lineTo(14.5f * k, 3.5f * k); lineTo(18.5f * k, 7.5f * k); lineTo(18.5f * k, 20.5f * k); lineTo(6f * k, 20.5f * k); close()
+        }
+        drawPath(page, color, style = stroke)
+        drawPath(androidx.compose.ui.graphics.Path().apply { moveTo(14.5f * k, 3.5f * k); lineTo(14.5f * k, 7.5f * k); lineTo(18.5f * k, 7.5f * k) }, color, style = stroke)
+        drawLine(color, androidx.compose.ui.geometry.Offset(9f * k, 12f * k), androidx.compose.ui.geometry.Offset(15.5f * k, 12f * k), 1.4f * k, androidx.compose.ui.graphics.StrokeCap.Round)
+        drawLine(color, androidx.compose.ui.geometry.Offset(9f * k, 15.5f * k), androidx.compose.ui.geometry.Offset(13.5f * k, 15.5f * k), 1.4f * k, androidx.compose.ui.graphics.StrokeCap.Round)
+    }
+}
+
 /** Signet gravé : contour seul, ou rempli d'or quand la fiche est parmi les favoris. */
 @Composable
 fun BookmarkGlyph(filled: Boolean, color: Color, modifier: Modifier = Modifier) {

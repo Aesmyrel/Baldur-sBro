@@ -40,6 +40,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import fr.carnetdefaerun.core.data.content.ContentGateway
 import fr.carnetdefaerun.core.data.content.EntryView
 import fr.carnetdefaerun.core.designsystem.component.BookmarkGlyph
+import fr.carnetdefaerun.core.designsystem.component.NoteGlyph
 import fr.carnetdefaerun.core.designsystem.component.CanonBadge
 import fr.carnetdefaerun.core.designsystem.component.CanonKind
 import fr.carnetdefaerun.core.designsystem.component.CarnetTopBar
@@ -112,7 +113,10 @@ class LoreEntryViewModel @AssistedInject constructor(@Assisted rawId: String, pr
 fun LoreEntryRoute(id: ContentId, anchor: String?, onNavigate: (Destination) -> Unit, onBack: () -> Unit) {
     val viewModel = hiltViewModel<LoreEntryViewModel, LoreEntryViewModel.Factory>(key = id.value, creationCallback = { it.create(id.value) })
     val state by viewModel.state.collectAsStateWithLifecycle()
-    LoreEntryScreen(state, anchor, viewModel::reveal, viewModel::setFavorite, { target, type -> onNavigate(destinationOf(target, type)) }, onBack)
+    LoreEntryScreen(
+        state, anchor, viewModel::reveal, viewModel::setFavorite, { target, type -> onNavigate(destinationOf(target, type)) }, onBack,
+        onNote = { onNavigate(Destination.NoteEditor(targetId = id.value)) },
+    )
 }
 
 @Composable
@@ -123,6 +127,7 @@ fun LoreEntryScreen(
     onFavorite: (Boolean) -> Unit,
     onOpen: (ContentId, EntryType) -> Unit,
     onBack: () -> Unit,
+    onNote: (() -> Unit)? = null,
 ) {
     CarnetSectionScope(CarnetSection.CODEX) {
         Column(Modifier.fillMaxSize()) {
@@ -131,6 +136,7 @@ fun LoreEntryScreen(
             CarnetTopBar(crumb, onBack = onBack) {
                 if (state is LoreUiState.Visible) {
                     val label = stringResource(if (state.favorite) R.string.lore_favorite_remove else R.string.lore_favorite_add)
+                    onNote?.let { note -> IconSlot(note, stringResource(R.string.lore_note_add)) { NoteGlyph(CarnetTheme.colors.gold) } }
                     IconSlot({ onFavorite(!state.favorite) }, label) { BookmarkGlyph(state.favorite, CarnetTheme.colors.gold) }
                 }
             }

@@ -1,5 +1,8 @@
 package fr.carnetdefaerun.feature.settings
 
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -11,9 +14,17 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.LiveRegionMode
+import androidx.compose.ui.semantics.liveRegion
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
@@ -22,11 +33,14 @@ import fr.carnetdefaerun.core.designsystem.component.ActSelector
 import fr.carnetdefaerun.core.designsystem.component.CarnetSlider
 import fr.carnetdefaerun.core.designsystem.component.CarnetSwitchRow
 import fr.carnetdefaerun.core.designsystem.component.CarnetTopBar
+import fr.carnetdefaerun.core.designsystem.component.GoldButton
+import fr.carnetdefaerun.core.designsystem.component.QuietButton
 import fr.carnetdefaerun.core.designsystem.component.OrnateCard
 import fr.carnetdefaerun.core.designsystem.component.ReadingColumn
 import fr.carnetdefaerun.core.designsystem.component.SectionHeader
 import fr.carnetdefaerun.core.designsystem.component.SegmentedChoice
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
+import fr.carnetdefaerun.core.data.backup.BackupRepository
 import fr.carnetdefaerun.core.model.navigation.Destination
 import fr.carnetdefaerun.core.model.settings.AppTheme
 import fr.carnetdefaerun.core.model.settings.Difficulty
@@ -35,13 +49,54 @@ import fr.carnetdefaerun.core.model.spoiler.Act
 import fr.carnetdefaerun.core.model.spoiler.Tolerance
 import fr.carnetdefaerun.core.ui.actChoices
 import fr.carnetdefaerun.core.ui.labelRes
+import java.time.LocalDate
 import kotlin.math.roundToInt
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+
+/** Actions de la section Données : choisir où écrire la sauvegarde, choisir le fichier à relire. */
+class DataActions(
+    val onExport: () -> Unit = {},
+    val onImport: () -> Unit = {},
+    val message: DataMessage? = null,
+    val skipped: Int = 0,
+)
 
 @Composable
 fun SettingsRoute(onNavigate: (Destination) -> Unit, onBack: () -> Unit, viewModel: SettingsViewModel = hiltViewModel()) {
     val prefs by viewModel.preferences.collectAsStateWithLifecycle()
+    val message by viewModel.message.collectAsStateWithLifecycle()
+    val skipped by viewModel.skipped.collectAsStateWithLifecycle()
+    val context = LocalContext.current
+    // Sélecteur de documents du système : aucune permission, le joueur choisit l'emplacement.
+    val exporter = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument(CARNET_MIME)) { uri ->
+        if (uri != null) viewModel.export { bytes -> context.contentResolver.openOutputStream(uri)?.use { it.write(bytes) } ?: error("flux") }
+    }
+    val importer = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri != null) viewModel.import { readBounded(context, uri) }
+    }
+    val fileName = stringResource(R.string.settings_data_file_name, LocalDate.now().toString())
     // Rien n'est affiché avant la lecture des réglages : jamais une image avec de fausses valeurs.
-    SettingsScreen(prefs ?: return, viewModel::update, onNavigate, onBack)
+    SettingsScreen(
+        prefs ?: return, viewModel::update, onNavigate, onBack,
+        DataActions(onExport = { exporter.launch(fileName) }, onImport = { importer.launch(arrayOf("*/*")) }, message = message, skipped = skipped),
+    )
+}
+
+private const val CARNET_MIME = "application/octet-stream"
+
+/** Lit le fichier choisi sans dépasser la taille admise (un fichier plus gros est refusé ensuite). */
+private suspend fun readBounded(context: android.content.Context, uri: android.net.Uri): ByteArray? = withContext(Dispatchers.IO) {
+    context.contentResolver.openInputStream(uri)?.use { input ->
+        val out = java.io.ByteArrayOutputStream()
+        val buffer = ByteArray(8_192)
+        while (true) {
+            val n = input.read(buffer)
+            if (n < 0 || out.size() > BackupRepository.MAX_FILE_BYTES) break
+            out.write(buffer, 0, n)
+        }
+        out.toByteArray()
+    }
 }
 
 @Composable
@@ -50,6 +105,7 @@ fun SettingsScreen(
     onUpdate: ((UserPreferences) -> UserPreferences) -> Unit,
     onNavigate: (Destination) -> Unit,
     onBack: () -> Unit,
+    data: DataActions = DataActions(),
 ) {
     val c = CarnetTheme.colors
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
@@ -106,6 +162,9 @@ fun SettingsScreen(
         SectionHeader(stringResource(R.string.settings_session))
         CarnetSwitchRow(stringResource(R.string.settings_keep_screen_on), stringResource(R.string.settings_keep_screen_on_help), prefs.sessionActive, { v -> onUpdate { it.copy(sessionActive = v) } })
 
+        SectionHeader(stringResource(R.string.settings_data))
+        DataSection(data)
+
         SectionHeader(stringResource(R.string.settings_about))
         Help(R.string.credits_notice)
         OrnateCard(Modifier.padding(horizontal = 18.dp, vertical = 6.dp), onClick = { onNavigate(Destination.Credits) }) {
@@ -114,6 +173,40 @@ fun SettingsScreen(
         }
         Spacer(Modifier.height(32.dp))
         }
+    }
+}
+
+/** Données : export et import d'une sauvegarde `.carnet`, avec confirmation avant de tout remplacer. */
+@Composable
+private fun DataSection(data: DataActions) {
+    val c = CarnetTheme.colors
+    var confirming by rememberSaveable { mutableStateOf(false) }
+    Help(R.string.settings_data_help)
+    Row(Modifier.padding(horizontal = 24.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+        QuietButton(stringResource(R.string.settings_data_export), data.onExport)
+        QuietButton(stringResource(R.string.settings_data_import), { confirming = true })
+    }
+    if (confirming) {
+        Text(stringResource(R.string.settings_data_import_confirm), style = CarnetTheme.type.bodySmall, color = c.text, modifier = Modifier.padding(horizontal = 24.dp, vertical = 4.dp))
+        Row(Modifier.padding(horizontal = 24.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            GoldButton(stringResource(R.string.settings_data_import_choose), { confirming = false; data.onImport() })
+            QuietButton(stringResource(R.string.settings_data_cancel), { confirming = false })
+        }
+    }
+    data.message?.let { m ->
+        val text = when (m) {
+            DataMessage.EXPORTED -> stringResource(R.string.settings_data_exported)
+            DataMessage.EXPORT_FAILED -> stringResource(R.string.settings_data_export_failed)
+            DataMessage.IMPORTED -> if (data.skipped > 0) pluralStringResource(R.plurals.settings_data_imported_skipped, data.skipped, data.skipped)
+            else stringResource(R.string.settings_data_imported)
+            DataMessage.IMPORT_NOT_CARNET -> stringResource(R.string.settings_data_not_carnet)
+            DataMessage.IMPORT_TOO_NEW -> stringResource(R.string.settings_data_too_new)
+            DataMessage.IMPORT_TOO_LARGE -> stringResource(R.string.settings_data_too_large)
+            DataMessage.IMPORT_FAILED -> stringResource(R.string.settings_data_import_failed)
+        }
+        val ok = m == DataMessage.EXPORTED || m == DataMessage.IMPORTED
+        Text(text, style = CarnetTheme.type.bodySmall, color = if (ok) c.text2 else c.vermilion,
+            modifier = Modifier.padding(horizontal = 24.dp, vertical = 4.dp).semantics { liveRegion = LiveRegionMode.Polite })
     }
 }
 

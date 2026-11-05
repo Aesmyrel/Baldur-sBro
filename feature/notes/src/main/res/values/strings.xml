@@ -2,4 +2,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fr">
     <string name="notes_crumb">Carnet · Notes</string>
     <string name="notes_title">Vos notes</string>
+    <string name="notes_intro">Vos notes restent sur cet appareil. Rattachez-les à un acte ou à une fiche pour les retrouver au bon moment.</string>
+    <string name="notes_new">Nouvelle note</string>
+    <string name="notes_empty">Aucune note pour l’instant.</string>
+    <string name="notes_untitled">Note sans texte</string>
+    <string name="notes_free">Sans rattachement</string>
+    <string name="notes_hidden_entry">Une fiche masquée</string>
+    <string name="notes_missing_entry">Une fiche introuvable</string>
+    <string name="notes_filter_all">Toutes</string>
+
+    <string name="note_crumb">Notes</string>
+    <string name="note_title_new">Nouvelle note</string>
+    <string name="note_title_edit">Note</string>
+    <string name="note_hint">Votre note</string>
+    <string name="note_attach">Rattachement</string>
+    <string name="note_attach_none">Aucun</string>
+    <string name="note_entry">Fiche : %1$s</string>
+    <string name="note_entry_detach">Détacher de la fiche</string>
+    <string name="note_save">Enregistrer</string>
+    <string name="note_delete">Supprimer la note</string>
+    <string name="note_delete_confirm">Supprimer définitivement cette note ?</string>
+    <string name="note_delete_yes">Supprimer</string>
+    <string name="note_delete_no">Garder</string>
+    <string name="note_length">%1$s / %2$s</string>
+    <string name="note_missing">Cette note n’existe plus.</string>
 </resources>

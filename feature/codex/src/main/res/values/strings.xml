@@ -52,4 +52,5 @@
     <string name="lore_favorite_add">Ajouter aux favoris</string>
     <string name="lore_favorite_remove">Retirer des favoris</string>
     <string name="lore_join">%1$s · %2$s</string>
+    <string name="lore_note_add">Ajouter une note sur cette fiche</string>
 </resources>

@@ -45,4 +45,24 @@
     <string name="credits_code_title">Code</string>
     <string name="credits_code">Kotlin, Jetpack Compose, Material 3, AndroidX (dont Navigation 3, Lifecycle, DataStore), Hilt (Dagger), kotlinx.coroutines, kotlinx.serialization, kotlinx.collections.immutable, Okio : licence Apache 2.0.</string>
     <string name="credits_fonts_modified">« Carnet Titres » et « Carnet Titres SC » sont des versions modifiées (sous-ensemble de caractères, espaces fines ajoutées) des polices Almendra et Almendra SC, renommées comme l’exige leur licence, qui réserve le nom d’origine.</string>
+    <string name="settings_data">Données</string>
+    <string name="settings_data_help">Sauvegardez dans un fichier .carnet tout ce qui vous appartient : réglages, contenus dévoilés, noms corrigés, favoris, builds, groupe et notes. Vous pourrez le relire sur cet appareil ou sur un autre. Si la sauvegarde Android est activée sur votre compte, ces données y sont aussi incluses.</string>
+    <string name="settings_data_export">Exporter</string>
+    <string name="settings_data_import">Importer</string>
+    <string name="settings_data_file_name">carnet-de-faerun-%1$s.carnet</string>
+    <string name="settings_data_import_confirm">Importer remplace toutes vos données actuelles par celles du fichier. Exportez-les d’abord si vous voulez les garder.</string>
+    <string name="settings_data_import_choose">Choisir le fichier</string>
+    <string name="settings_data_cancel">Annuler</string>
+    <string name="settings_data_exported">Sauvegarde enregistrée.</string>
+    <string name="settings_data_export_failed">La sauvegarde n’a pas pu être écrite.</string>
+    <string name="settings_data_imported">Sauvegarde importée.</string>
+    <plurals name="settings_data_imported_skipped">
+        <item quantity="one">Sauvegarde importée ; %1$d élément illisible a été écarté.</item>
+        <item quantity="many">Sauvegarde importée ; %1$d éléments illisibles ont été écartés.</item>
+        <item quantity="other">Sauvegarde importée ; %1$d éléments illisibles ont été écartés.</item>
+    </plurals>
+    <string name="settings_data_not_carnet">Ce fichier n’est pas une sauvegarde du carnet. Rien n’a été changé.</string>
+    <string name="settings_data_too_new">Cette sauvegarde vient d’une version plus récente du carnet. Rien n’a été changé.</string>
+    <string name="settings_data_too_large">Ce fichier est trop volumineux pour être une sauvegarde du carnet. Rien n’a été changé.</string>
+    <string name="settings_data_import_failed">Le fichier n’a pas pu être lu. Rien n’a été changé.</string>
 </resources>

@@ -158,4 +158,5 @@
     <string name="relation_see_also">Voir aussi</string>
     <string name="relation_subclass_of">Sous-classe de</string>
     <string name="relation_other">Lié à</string>
+    <string name="entry_note_add">Ajouter une note sur cette fiche</string>
 </resources>

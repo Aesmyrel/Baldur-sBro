@@ -45,7 +45,8 @@ _Dernière mise à jour : 05/11/2026, phases 1 et 4 validées ; phases 2, 3 et 6
 
 - **Phase 6 — outils (avancé)**
   - Fait : probabilité d'un jet, exacte, avec dés de bonus, relances et critique (D-091) ; lanceur de dés au geste, haptique (D-092).
-  - À faire : notes rattachables, export et import de la sauvegarde.
+  - Fait aussi : notes rattachables à un acte ou une fiche, export et import `.carnet` testés sans perte (D-095).
+  - À faire : vérification indépendante de la phase 6.
 
 ## Reste à faire
 - Phase 2b : pipeline du lore.

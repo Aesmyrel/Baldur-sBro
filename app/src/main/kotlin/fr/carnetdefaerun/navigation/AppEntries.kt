@@ -17,6 +17,7 @@ import fr.carnetdefaerun.feature.encyclopedia.CategoryRoute
 import fr.carnetdefaerun.feature.encyclopedia.EncyclopediaRoute
 import fr.carnetdefaerun.feature.encyclopedia.EntryRoute
 import fr.carnetdefaerun.feature.home.HomeRoute
+import fr.carnetdefaerun.feature.notes.NoteEditorRoute
 import fr.carnetdefaerun.feature.notes.NotesRoute
 import fr.carnetdefaerun.feature.progress.ProgressRoute
 import fr.carnetdefaerun.feature.search.SearchRoute
@@ -53,7 +54,8 @@ fun appEntries(navigator: AppNavigator, tab: TopLevel): (Destination) -> NavEntr
             Destination.Credits -> CreditsScreen(onBack = back)
             Destination.Companions, is Destination.CompanionDetail -> CompanionsRoute(onBack = back)
             is Destination.Progress -> ProgressRoute(onBack = back)
-            Destination.Notes, is Destination.NoteEditor -> NotesRoute(onBack = back)
+            Destination.Notes -> NotesRoute(onNavigate = navigator::navigate, onBack = back)
+            is Destination.NoteEditor -> NoteEditorRoute(destination.noteId, destination.targetId, back)
             is Destination.Search -> SearchRoute(destination.query, navigator::navigate, back)
             else -> CodexRoute(onNavigate = navigator::navigate)
         }
