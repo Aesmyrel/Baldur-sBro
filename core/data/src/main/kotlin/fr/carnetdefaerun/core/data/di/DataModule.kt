@@ -17,6 +17,8 @@ import fr.carnetdefaerun.core.database.content.ContentStore
 import fr.carnetdefaerun.core.database.content.SqliteContentStore
 import fr.carnetdefaerun.core.database.user.UserDatabase
 import fr.carnetdefaerun.core.data.builds.BuildRepository
+import fr.carnetdefaerun.core.data.builds.DataStorePartyRepository
+import fr.carnetdefaerun.core.data.builds.PartyRepository
 import fr.carnetdefaerun.core.data.builds.RoomBuildRepository
 import fr.carnetdefaerun.core.data.user.PlayerRepository
 import fr.carnetdefaerun.core.data.user.RoomPlayerRepository
@@ -41,6 +43,7 @@ abstract class DataBindings {
     @Binds abstract fun navigation(impl: DataStoreNavigationStateStore): NavigationStateStore
     @Binds abstract fun player(impl: RoomPlayerRepository): PlayerRepository
     @Binds abstract fun builds(impl: RoomBuildRepository): BuildRepository
+    @Binds abstract fun party(impl: DataStorePartyRepository): PartyRepository
 }
 
 @Module
@@ -69,6 +72,11 @@ object DataStoreModule {
     @Provides @Singleton @Named("navigation")
     fun navigationStore(@ApplicationContext context: Context): DataStore<Preferences> =
         resilientStore { context.preferencesDataStoreFile("navigation") }
+
+    /** Groupe de quatre de l'atelier des builds : inclus dans la sauvegarde Android. */
+    @Provides @Singleton @Named("party")
+    fun partyStore(@ApplicationContext context: Context): DataStore<Preferences> =
+        resilientStore { context.preferencesDataStoreFile("party") }
 }
 
 /**

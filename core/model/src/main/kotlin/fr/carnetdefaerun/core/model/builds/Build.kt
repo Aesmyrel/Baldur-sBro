@@ -2,6 +2,7 @@ package fr.carnetdefaerun.core.model.builds
 
 import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.ContentId
+import fr.carnetdefaerun.core.model.content.Skill
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
@@ -23,6 +24,11 @@ data class Build(
     val minorBonus: Ability? = null,
     /** Un niveau par entrée, dans l'ordre où ils sont pris ; le premier est la classe de départ. */
     val levels: List<BuildLevel> = emptyList(),
+    /**
+     * Compétences choisies, par source : la classe de départ ou une classe prise en multiclasse (son identifiant),
+     * ou la race qui en laisse choisir une (humain). Les compétences fixes (historique, race) ne sont pas stockées.
+     */
+    val skillChoices: Map<String, List<Skill>> = emptyMap(),
 )
 
 /** Un niveau du personnage : la classe prise, la sous-classe si ce niveau la choisit, le don s'il en donne un. */

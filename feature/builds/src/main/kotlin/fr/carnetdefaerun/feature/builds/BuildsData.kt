@@ -11,6 +11,7 @@ import fr.carnetdefaerun.core.model.builds.BuildLevel
 import fr.carnetdefaerun.core.model.builds.FeatChoice
 import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.ContentId
+import fr.carnetdefaerun.core.model.content.Skill
 import fr.carnetdefaerun.core.model.content.EntryType
 import fr.carnetdefaerun.core.rules.CharacterSheet
 import fr.carnetdefaerun.core.rules.RulesData
@@ -36,6 +37,7 @@ sealed interface BuildEdit {
     data class Race(val id: ContentId) : BuildEdit
     data class Subrace(val id: ContentId?) : BuildEdit
     data class Background(val id: ContentId?) : BuildEdit
+    data class ToggleSkill(val sourceId: String, val skill: Skill) : BuildEdit
 
     fun applyTo(build: Build, rules: RulesData, catalog: Catalog): Build = when (this) {
         is Rename -> BuildEdits.rename(build, name)
@@ -47,9 +49,10 @@ sealed interface BuildEdit {
         is LevelClass -> BuildEdits.setLevelClass(build, index, classId, rules)
         is Subclass -> BuildEdits.setSubclass(build, classId, subclassId, rules)
         is Feat -> BuildEdits.setFeat(build, index, feat, rules)
-        is Race -> BuildEdits.setRace(build, id, catalog)
-        is Subrace -> build.copy(subrace = id)
-        is Background -> build.copy(background = id)
+        is Race -> BuildEdits.setRace(build, id, catalog, rules)
+        is Subrace -> BuildEdits.cleanSkills(build.copy(subrace = id), rules)
+        is Background -> BuildEdits.cleanSkills(build.copy(background = id), rules)
+        is ToggleSkill -> BuildEdits.toggleSkill(build, sourceId, skill, rules)
     }
 }
 

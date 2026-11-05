@@ -3,6 +3,7 @@ package fr.carnetdefaerun.core.rules
 import fr.carnetdefaerun.core.model.builds.Build
 import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.AbilityIncrease
+import fr.carnetdefaerun.core.model.content.Skill
 
 /** Ce que le moteur doit savoir d'une classe ; tiré de sa fiche (data/game) par [RulesData.from], jamais écrit à la main. */
 data class ClassProfile(
@@ -22,6 +23,20 @@ data class ClassProfile(
     val featLevels: Set<Int> = emptySet(),
     /** Niveau de classe où la sous-classe se choisit. */
     val subclassLevel: Int = 1,
+    /** Compétences parmi lesquelles la classe laisse choisir. */
+    val skillList: List<Skill> = emptyList(),
+    /** Nombre de compétences à choisir comme classe de départ, puis en la prenant en multiclasse. */
+    val skillChoices: Int = 0,
+    val multiclassSkillChoices: Int = 0,
+)
+
+/** Race, sous-race ou historique : compétences maîtrisées d'office, et choix laissé (humain : une compétence au choix). */
+data class OriginProfile(
+    val id: String,
+    val skills: Set<Skill> = emptySet(),
+    val skillChoices: Int = 0,
+    /** Liste du choix ; vide : toutes les compétences. */
+    val skillList: List<Skill> = emptyList(),
 )
 
 /** Ce que le moteur doit savoir d'une sous-classe. */
@@ -52,6 +67,8 @@ data class RulesData(
     val feats: Map<String, FeatProfile> = emptyMap(),
     /** Sous-races à Robustesse naine (+1 point de vie par niveau du personnage). */
     val dwarvenToughnessSubraces: Set<String> = emptySet(),
+    /** Races, sous-races et historiques, pour leurs compétences. */
+    val origins: Map<String, OriginProfile> = emptyMap(),
 ) {
     companion object
 }
@@ -89,6 +106,11 @@ data class Breakdown(val terms: List<Term>) {
 /** Incantation d'une classe du personnage : sa caractéristique, son DD et son bonus d'attaque. */
 data class Spellcasting(val classId: String, val ability: Ability, val modifier: Int, val saveDc: Int, val attackBonus: Int)
 
+/** Un choix de compétences : [count] parmi [list] (vide : toutes), pour la source [id] (classe ou race). */
+data class SkillSource(val id: String, val count: Int, val list: List<Skill>) {
+    operator fun contains(skill: Skill) = list.isEmpty() || skill in list
+}
+
 /** Emplacements de Magie de pacte : [count] emplacements, tous de niveau [level]. */
 data class PactSlots(val count: Int, val level: Int)
 
@@ -109,6 +131,10 @@ enum class SheetProblem(val blocking: Boolean) {
     FEAT_INCREASE_INVALID(true),
     /** Une classe a atteint le niveau de sa sous-classe sans qu'elle soit choisie. */
     SUBCLASS_MISSING(false),
+    /** Des compétences restent à choisir (classe de départ, multiclasse, race). */
+    SKILLS_MISSING(false),
+    /** Compétence hors de la liste de sa source, en trop, ou déjà maîtrisée par ailleurs. */
+    SKILLS_INVALID(true),
     /** Sous-classe inconnue, d'une autre classe, ou choisie à un autre niveau que le sien. */
     SUBCLASS_INVALID(true),
 }
@@ -128,6 +154,12 @@ data class CharacterSheet(
     val armourClass: Breakdown,
     val initiative: Int,
     val savingThrows: Set<Ability>,
+    /** Bonus de chaque jet de sauvegarde : modificateur, plus la maîtrise si elle est acquise. */
+    val savingThrowBonuses: Map<Ability, Int>,
+    /** Compétences maîtrisées (historique, race, sous-race, choix valides). */
+    val skillProficiencies: Set<Skill>,
+    /** Bonus de chaque compétence : modificateur de sa caractéristique, plus la maîtrise si elle est acquise. */
+    val skillBonuses: Map<Skill, Int>,
     val spellcasting: List<Spellcasting>,
     val spellSlots: List<Int>,
     val pactSlots: PactSlots?,
@@ -144,7 +176,11 @@ data class CharacterSheet(
  * - initiative : modificateur de Dextérité ([RuleSources.ABILITIES]) ;
  * - jets de sauvegarde : ceux de la classe de départ, la multiclasse n'en accordant jamais ([RuleSources.CLASSES]),
  *   plus celui du don Résilient ([RuleSources.FEATS]) ;
- * - incantation, emplacements et Magie de pacte : [SpellSlots], [spellSaveDc], [spellAttackBonus].
+ * - incantation, emplacements et Magie de pacte : [SpellSlots], [spellSaveDc], [spellAttackBonus] ;
+ * - compétences et sauvegardes : modificateur, plus le bonus de maîtrise si elles sont maîtrisées ; une même maîtrise
+ *   venue de deux sources n'ajoute rien ([RuleSources.PROFICIENCY]). Choix de compétences : la classe de départ
+ *   donne les siens, chaque classe prise en multiclasse les siens, l'humain une compétence au choix (fiches de classe
+ *   et de race, data/game). L'Expertise n'est pas encore modélisée.
  */
 object CharacterSheetCalculator {
     fun compute(build: Build, data: RulesData): CharacterSheet {
@@ -251,6 +287,22 @@ object CharacterSheetCalculator {
 
         val startingSaves = known.firstOrNull()?.let { data.classes.getValue(it.classId.value).savingThrows }.orEmpty()
         val resilientSaves = feats.filter { it.first.resilient }.flatMap { it.second.keys }
+        val saves = startingSaves + resilientSaves
+
+        // Compétences : d'office (historique, race, sous-race), puis les choix de chaque source.
+        val fixed = fixedSkills(build, data)
+        val sources = skillSources(build, data)
+        val chosen = mutableSetOf<Skill>()
+        for (source in sources) {
+            val picks = build.skillChoices[source.id].orEmpty()
+            if (picks.size < source.count) problems += SheetProblem.SKILLS_MISSING
+            val valid = picks.size <= source.count && picks.distinct().size == picks.size &&
+                picks.all { it in source && it !in fixed && it !in chosen }
+            if (!valid) problems += SheetProblem.SKILLS_INVALID
+            chosen += picks.take(source.count).filter { it in source }
+        }
+        if (build.skillChoices.keys.any { key -> sources.none { it.id == key } }) problems += SheetProblem.SKILLS_INVALID
+        val skillProficiencies = fixed + chosen
         return CharacterSheet(
             level = level,
             classLevels = classLevels,
@@ -262,12 +314,33 @@ object CharacterSheetCalculator {
             hitPoints = Breakdown(hpTerms),
             armourClass = Breakdown(armourTerms(modifiers, formulas)),
             initiative = modifiers.getValue(Ability.DEXTERITY),
-            savingThrows = startingSaves + resilientSaves,
+            savingThrows = saves,
+            savingThrowBonuses = Ability.entries.associateWith { a -> modifiers.getValue(a) + if (a in saves) prof else 0 },
+            skillProficiencies = skillProficiencies,
+            skillBonuses = Skill.entries.associateWith { sk -> modifiers.getValue(sk.ability) + if (sk in skillProficiencies) prof else 0 },
             spellcasting = spellcasting,
             spellSlots = if (level > 0) SpellSlots.forClasses(casters) else emptyList(),
             pactSlots = pact,
             problems = problems,
         )
+    }
+
+    /** Compétences maîtrisées d'office : historique, race, sous-race. */
+    fun fixedSkills(build: Build, data: RulesData): Set<Skill> =
+        listOfNotNull(build.background, build.race, build.subrace).mapNotNull { data.origins[it.value] }.flatMap { it.skills }.toSet()
+
+    /**
+     * Choix de compétences que le build doit faire, dans l'ordre : la classe de départ, chaque classe prise ensuite
+     * (ses choix de multiclasse, s'il y en a), la race qui en laisse choisir.
+     */
+    fun skillSources(build: Build, data: RulesData): List<SkillSource> = buildList {
+        val classes = build.levels.map { it.classId.value }.distinct().filter { it in data.classes }
+        classes.forEachIndexed { i, id ->
+            val c = data.classes.getValue(id)
+            val count = if (i == 0) c.skillChoices else c.multiclassSkillChoices
+            if (count > 0) add(SkillSource(id, count, c.skillList))
+        }
+        build.race?.value?.let { data.origins[it] }?.takeIf { it.skillChoices > 0 }?.let { add(SkillSource(it.id, it.skillChoices, it.skillList)) }
     }
 
     /**

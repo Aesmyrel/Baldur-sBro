@@ -38,7 +38,8 @@ class BuildEditingTest {
         assertThat(edited.levels[subclassAt].subclassId).isEqualTo(id("subclass.evocation-school"))
         // Les deux dons du magicien suivent ses niveaux 4 et 8.
         assertThat(edited.levels.mapIndexedNotNull { i, l -> if (l.feat != null) i else null }).containsExactly(4, 8).inOrder()
-        assertThat(CharacterSheetCalculator.compute(edited, rules).problems).isEmpty()
+        // Le magicien devient la classe de départ : ses deux compétences restent à choisir, rien d'autre.
+        assertThat(CharacterSheetCalculator.compute(edited, rules).problems).containsExactly(fr.carnetdefaerun.core.rules.SheetProblem.SKILLS_MISSING)
     }
 
     @Test
@@ -98,7 +99,23 @@ class BuildEditingTest {
     @Test
     fun `changer de race retire une sous-race qui ne lui appartient pas`() {
         val build = BuildFixtures.battleMage
-        assertThat(BuildEdits.setRace(build, id("race.dwarf"), catalog).subrace).isNull()
-        assertThat(BuildEdits.setRace(build, id("race.elf"), catalog).subrace).isEqualTo(id("subrace.high-elf"))
+        assertThat(BuildEdits.setRace(build, id("race.dwarf"), catalog, rules).subrace).isNull()
+        assertThat(BuildEdits.setRace(build, id("race.elf"), catalog, rules).subrace).isEqualTo(id("subrace.high-elf"))
+    }
+
+    @Test
+    fun `choix de compétences, bornés et nettoyés`() {
+        var build = Build(name = "x", background = id("background.acolyte"), levels = listOf(BuildLevel(id("class.fighter"))))
+        build = BuildEdits.toggleSkill(build, "class.fighter", fr.carnetdefaerun.core.model.content.Skill.ATHLETICS, rules)
+        build = BuildEdits.toggleSkill(build, "class.fighter", fr.carnetdefaerun.core.model.content.Skill.PERCEPTION, rules)
+        build = BuildEdits.toggleSkill(build, "class.fighter", fr.carnetdefaerun.core.model.content.Skill.SURVIVAL, rules) // plus de place
+        assertThat(build.skillChoices["class.fighter"]).containsExactly(fr.carnetdefaerun.core.model.content.Skill.ATHLETICS, fr.carnetdefaerun.core.model.content.Skill.PERCEPTION)
+        // L'étranger donne déjà l'Athlétisme : il quitte le choix de classe, qui redevient à compléter.
+        build = BuildEdit.Background(id("background.outlander")).applyTo(build, rules, catalog)
+        val fixed = fr.carnetdefaerun.core.rules.CharacterSheetCalculator.fixedSkills(build, rules)
+        assertThat(build.skillChoices["class.fighter"].orEmpty().none { it in fixed }).isTrue()
+        // Changer la classe de départ efface les choix de l'ancienne.
+        build = BuildEdits.setLevelClass(build, 0, id("class.wizard"), rules)
+        assertThat(build.skillChoices).doesNotContainKey("class.fighter")
     }
 }

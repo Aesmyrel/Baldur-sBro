@@ -7,7 +7,9 @@
 ## Installation et permissions
 - [ ] L'APK signé s'installe (`docs/INSTALLER.md`, à venir en phase 7) et s'ouvre hors ligne, en mode avion.
 - [ ] Paramètres → Applis → Carnet de Faerûn → Autorisations : seule la vibration est déclarée ; aucune autorisation réseau (D-021).
-- [ ] Le scanner de codes (Google Code Scanner, phase 6) fonctionne sans autorisation réseau (D-021).
+- [ ] Le scanner de codes (Google Code Scanner, atelier des builds → « Importer un code » → « Scanner un QR code ») lit le QR code d'un build affiché sur un autre écran, sans autorisation réseau, en mode avion (D-021, D-089).
+- [ ] Repli : une capture d'écran du QR code choisie par « Choisir une image » est lue ; une photo sans QR code affiche « Aucun code de build lisible » (D-089).
+- [ ] « Envoyer le code » ouvre la feuille de partage d'Android avec le code en texte ; le code collé dans « Importer un code » recrée le même build (D-088).
 
 ## Thèmes et démarrage
 - [ ] Écran de démarrage en vélin en parchemin, en encre en sombre et OLED, sans éclair d'une autre teinte (D-052).

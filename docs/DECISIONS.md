@@ -369,3 +369,15 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
 - **Couleurs des classes** : pigments d'enluminure par famille (martiales vermillon, arcanes lapis, pacte et chant pourpre de Tyr, nature vert-de-gris, foi orpiment, autres or), tous à 4,5:1 au moins dans chaque thème.
 - **Verrou** : les noms viennent de la porte de contenu. Une option masquée (par exemple dans un code importé) devient un « choix voilé » ; un test de fuite le vérifie sur la fiche et ses feuilles, avec des mots entiers (« Sage » n'est pas « Sagesse »).
 
+**D-089 — Import par QR code, compétences, groupe de quatre.**
+- **Import** : trois voies, comme prévu (PLAN §5, D-021). Le lecteur de Google Play services lit le QR code sans permission caméra. Une image choisie dans le sélecteur de photos (aucune permission) est décodée sur l'appareil par ZXing, réduite à 1 600 pixels de côté au plus. Reste le collage du code. Le manifeste fusionné retire INTERNET et ACCESS_NETWORK_STATE apportées par le lecteur ; le contrôle bloquant `verifyReleasePermissions` ne trouve que VIBRATE. Les composants de télémétrie de ML Kit restent déclarés, mais ne peuvent rien envoyer sans INTERNET. Le fonctionnement hors ligne du lecteur est à vérifier sur le téléphone.
+- **Critère de fin de phase « aller-retour export/import identique »** : testé sur toute la chaîne de l'image. Le code de partage est dessiné en QR code comme l'écran le dessine, rendu en pixels, relu par ZXing, puis décodé : le build revient identique.
+- **Écart au plan** : le code est du JSON compressé en Base64 sûr pour les URL (`CDF1.`), pas un binaire en Base45 (`CF1-`). C'est plus simple à faire évoluer ; le QR code passe en mode octet, et un build de 12 niveaux tient sous 500 caractères.
+- **Compétences** (*Proficiency*, révision 439299) : la maîtrise s'ajoute aux tests des compétences maîtrisées et aux sauvegardes maîtrisées ; une même maîtrise reçue deux fois n'ajoute rien.
+  - Maîtrises d'office : historique, race (Perception de l'elfe…), sous-race.
+  - Choix : la classe de départ donne les siens, chaque classe prise ensuite ceux de sa multiclasse, l'humain une compétence parmi toutes. Nombres et listes viennent des fiches de classe et de race (le clerc en multiclasse en donne deux : la page *Cleric* le signale comme un probable bogue du jeu, on suit le jeu).
+  - Les choix sans source sont nettoyés à chaque édition, comme ceux déjà maîtrisés d'office. L'Expertise n'est pas encore modélisée.
+- **Groupe de quatre** : quatre emplacements remplis de builds enregistrés, gardés dans un petit DataStore inclus dans la sauvegarde. Pour chaque sauvegarde et chaque compétence, l'écran montre le meilleur bonus du groupe et qui le porte, et signale ce que personne ne maîtrise ; il montre aussi qui lance des sorts, avec quelle caractéristique et quel DD.
+  - Aucun « rôle » (tank, soigneur…) n'est attribué : BG3 n'en définit pas, et ce serait une interprétation. On montre les faits qui en tiennent lieu.
+  - Les types de dégâts couverts attendent que les builds portent leurs sorts et leur équipement.
+

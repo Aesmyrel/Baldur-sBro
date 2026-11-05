@@ -15,6 +15,7 @@ import fr.carnetdefaerun.core.model.content.Ability.WISDOM
 import fr.carnetdefaerun.core.model.content.ContentFormat
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Entry
+import fr.carnetdefaerun.core.model.content.Skill
 import java.io.File
 import kotlinx.serialization.builtins.ListSerializer
 import org.junit.Test
@@ -26,7 +27,7 @@ import org.junit.Test
 class CharacterSheetTest {
 
     private val data: RulesData by lazy {
-        val entries = listOf("classes.json", "sous-classes.json", "dons.json", "sous-races.json").flatMap {
+        val entries = listOf("classes.json", "sous-classes.json", "dons.json", "races.json", "sous-races.json", "historiques.json").flatMap {
             ContentFormat.strict.decodeFromString(ListSerializer(Entry.serializer()), File("../../data/game/$it").readText())
         }
         RulesData.from(entries)
@@ -37,6 +38,19 @@ class CharacterSheetTest {
         BuildLevel(id(classId), subclass?.let(::id), feat)
     private fun asi(vararg increases: Pair<Ability, Int>) = FeatChoice(id("feat.ability-improvement"), mapOf(*increases))
     private fun scores(vararg values: Pair<Ability, Int>) = Ability.entries.associateWith { 8 } + values
+
+    /** Complète les choix de compétences comme un joueur pressé : les premières permises, pas encore maîtrisées. */
+    private fun withSkills(build: Build): Build {
+        val taken = CharacterSheetCalculator.fixedSkills(build, data).toMutableSet()
+        val choices = CharacterSheetCalculator.skillSources(build, data).associate { source ->
+            val picks = Skill.entries.filter { it in source && it !in taken }.take(source.count)
+            taken += picks
+            source.id to picks
+        }
+        return build.copy(skillChoices = choices)
+    }
+
+    private fun sheetOf(build: Build) = CharacterSheetCalculator.compute(withSkills(build), data)
 
     @Test
     fun `profils tirés des données, conformes aux tableaux`() {
@@ -74,7 +88,7 @@ class CharacterSheetTest {
                 List(3) { level("class.wizard") } + level("class.wizard", feat = asi(INTELLIGENCE to 1, CONSTITUTION to 1)) +
                 List(2) { level("class.wizard") },
         )
-        val sheet = CharacterSheetCalculator.compute(build, data)
+        val sheet = sheetOf(build)
         assertThat(sheet.problems).isEmpty()
         assertThat(sheet.level).isEqualTo(12)
         assertThat(sheet.classLevels).containsExactly("class.fighter", 2, "class.wizard", 10).inOrder()
@@ -114,7 +128,7 @@ class CharacterSheetTest {
                 level("class.fighter", feat = FeatChoice(id("feat.tough"))),
             ),
         )
-        val sheet = CharacterSheetCalculator.compute(build, data)
+        val sheet = sheetOf(build)
         assertThat(sheet.problems).isEmpty()
         // Constitution 16 (+3) : 10 + 3 × 6 + 4 × 3 = 40 ; Robustesse naine +4 ; Robuste +8, rétroactif.
         assertThat(sheet.hitPoints.terms).containsAtLeast(
@@ -138,7 +152,7 @@ class CharacterSheetTest {
             levels = listOf(level("class.sorcerer", "subclass.draconic-bloodline")) + List(2) { level("class.sorcerer") } +
                 level("class.sorcerer", feat = asi(CHARISMA to 2)) + List(2) { level("class.sorcerer") },
         )
-        val sheet = CharacterSheetCalculator.compute(build, data)
+        val sheet = sheetOf(build)
         assertThat(sheet.problems).isEmpty()
         // Constitution 14 (+2) : 6 + 2 + 5 × (4 + 2) = 38, plus 6 pour la Résilience draconique.
         assertThat(sheet.hitPoints.total).isEqualTo(44)
@@ -159,7 +173,7 @@ class CharacterSheetTest {
             minorBonus = STRENGTH,
             levels = listOf(level("class.barbarian"), level("class.monk")),
         )
-        val sheet = CharacterSheetCalculator.compute(build, data)
+        val sheet = sheetOf(build)
         assertThat(sheet.problems).isEmpty()
         // Constitution 17 (+3), Dextérité 14 (+2), Sagesse 8 (−1) : barbare 15, moine 11.
         assertThat(sheet.armourClass.terms).containsExactly(
@@ -185,7 +199,7 @@ class CharacterSheetTest {
                 level("class.warlock", feat = asi(CHARISMA to 2)) + level("class.warlock") +
                 level("class.sorcerer", "subclass.storm-sorcery") + level("class.sorcerer"),
         )
-        val sheet = CharacterSheetCalculator.compute(build, data)
+        val sheet = sheetOf(build)
         assertThat(sheet.problems).isEmpty()
         // Occultiste 5 : deux emplacements de niveau 3 (tableau de classe) ; ensorceleur 2 seul compte pour l'Incantation.
         assertThat(sheet.pactSlots).isEqualTo(PactSlots(2, 3))
@@ -206,7 +220,7 @@ class CharacterSheetTest {
                 level("class.wizard", feat = asi(INTELLIGENCE to 2)) + List(3) { level("class.wizard") } +
                 level("class.wizard", feat = FeatChoice(id("feat.resilient"), mapOf(CONSTITUTION to 1))),
         )
-        val sheet = CharacterSheetCalculator.compute(build, data)
+        val sheet = sheetOf(build)
         assertThat(sheet.problems).isEmpty()
         assertThat(sheet.scores[INTELLIGENCE]).isEqualTo(20) // 17 + 2 + 2, plafonné à 20
         assertThat(sheet.scores[CONSTITUTION]).isEqualTo(17)
@@ -215,7 +229,7 @@ class CharacterSheetTest {
 
     @Test
     fun `choix invalides ou incomplets signalés`() {
-        fun problems(build: Build) = CharacterSheetCalculator.compute(build, data).problems
+        fun problems(build: Build) = CharacterSheetCalculator.compute(withSkills(build), data).problems
         val base = Build(name = "Essai", majorBonus = STRENGTH, minorBonus = DEXTERITY, levels = listOf(level("class.fighter")))
         assertThat(problems(base)).isEmpty()
         assertThat(problems(base.copy(levels = emptyList()))).containsExactly(SheetProblem.NO_LEVEL)
@@ -250,7 +264,7 @@ class CharacterSheetTest {
         for ((classId, profile) in data.classes) {
             for (n in 1..12) {
                 val build = Build(name = classId, majorBonus = CONSTITUTION, minorBonus = DEXTERITY, levels = List(n) { level(classId) })
-                val sheet = CharacterSheetCalculator.compute(build, data)
+                val sheet = sheetOf(build)
                 val con = abilityModifier(8 + 2)
                 assertWithMessage("$classId $n").that(sheet.hitPoints.total).isEqualTo(HitPoints.maximum(List(n) { profile.hitDie }, con))
                 assertWithMessage("$classId $n").that(sheet.proficiency).isEqualTo(proficiencyBonus(n))
@@ -261,5 +275,58 @@ class CharacterSheetTest {
                 }
             }
         }
+    }
+
+    @Test
+    fun `compétences, d'office, au choix et en multiclasse`() {
+        // Elfe (Perception d'office), historique d'acolyte (Intuition, Religion), roublard puis barde.
+        val build = Build(
+            name = "Langue d'argent",
+            race = id("race.elf"),
+            subrace = id("subrace.wood-elf"),
+            background = id("background.acolyte"),
+            baseScores = scores(DEXTERITY to 15, CHARISMA to 15, CONSTITUTION to 14),
+            majorBonus = DEXTERITY,
+            minorBonus = CHARISMA,
+            levels = listOf(level("class.rogue"), level("class.bard")),
+        )
+        // Choix : 4 au roublard (classe de départ), 1 au barde (multiclasse), lus dans les fiches de classe.
+        assertThat(CharacterSheetCalculator.skillSources(build, data).map { it.id to it.count })
+            .containsExactly("class.rogue" to 4, "class.bard" to 1).inOrder()
+        assertThat(CharacterSheetCalculator.fixedSkills(build, data)).containsExactly(Skill.PERCEPTION, Skill.STEALTH, Skill.INSIGHT, Skill.RELIGION)
+        val incomplete = CharacterSheetCalculator.compute(build, data)
+        assertThat(incomplete.problems).containsExactly(SheetProblem.SKILLS_MISSING)
+
+        val rogue = listOf(Skill.ACROBATICS, Skill.DECEPTION, Skill.PERSUASION, Skill.SLEIGHT_OF_HAND)
+        val complete = build.copy(skillChoices = mapOf("class.rogue" to rogue, "class.bard" to listOf(Skill.ARCANA)))
+        val sheet = CharacterSheetCalculator.compute(complete, data)
+        assertThat(sheet.problems).isEmpty()
+        // Dextérité 17 (+3), maîtrise +2 : Acrobaties +5 ; Arcanes, Intelligence 8 (−1) + 2 : +1 ; Athlétisme non maîtrisé : −1.
+        assertThat(sheet.skillBonuses[Skill.ACROBATICS]).isEqualTo(5)
+        assertThat(sheet.skillBonuses[Skill.ARCANA]).isEqualTo(1)
+        assertThat(sheet.skillBonuses[Skill.ATHLETICS]).isEqualTo(-1)
+        assertThat(sheet.skillProficiencies).hasSize(4 + 4 + 1)
+        // Sauvegardes du roublard seul : Dextérité et Intelligence.
+        assertThat(sheet.savingThrowBonuses[DEXTERITY]).isEqualTo(5)
+        assertThat(sheet.savingThrowBonuses[CHARISMA]).isEqualTo(3) // le barde, pris ensuite, n'en donne pas
+
+        // Hors liste, en double avec l'historique, ou trop nombreuses : refusées.
+        fun problemsOf(choices: Map<String, List<Skill>>) = CharacterSheetCalculator.compute(build.copy(skillChoices = choices), data).problems
+        assertThat(problemsOf(mapOf("class.rogue" to rogue.dropLast(1) + Skill.ARCANA, "class.bard" to listOf(Skill.HISTORY)))).contains(SheetProblem.SKILLS_INVALID)
+        assertThat(problemsOf(mapOf("class.rogue" to rogue.dropLast(1) + Skill.INSIGHT, "class.bard" to listOf(Skill.HISTORY)))).contains(SheetProblem.SKILLS_INVALID)
+        assertThat(problemsOf(mapOf("class.rogue" to rogue + Skill.ATHLETICS, "class.bard" to listOf(Skill.HISTORY)))).contains(SheetProblem.SKILLS_INVALID)
+        assertThat(problemsOf(mapOf("class.wizard" to listOf(Skill.ARCANA)))).contains(SheetProblem.SKILLS_INVALID)
+    }
+
+    @Test
+    fun `l'humain choisit une compétence parmi toutes`() {
+        val build = Build(name = "x", race = id("race.human"), majorBonus = STRENGTH, minorBonus = DEXTERITY, levels = listOf(level("class.fighter")))
+        assertThat(CharacterSheetCalculator.skillSources(build, data).map { it.id to it.count }).containsExactly("class.fighter" to 2, "race.human" to 1).inOrder()
+        val sheet = CharacterSheetCalculator.compute(
+            build.copy(skillChoices = mapOf("class.fighter" to listOf(Skill.ATHLETICS, Skill.PERCEPTION), "race.human" to listOf(Skill.ARCANA))),
+            data,
+        )
+        assertThat(sheet.problems).isEmpty()
+        assertThat(sheet.skillProficiencies).containsExactly(Skill.ATHLETICS, Skill.PERCEPTION, Skill.ARCANA)
     }
 }

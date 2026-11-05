@@ -8,6 +8,7 @@ import fr.carnetdefaerun.core.ui.entryTypeOf
 import fr.carnetdefaerun.core.ui.loreThemeOf
 import fr.carnetdefaerun.feature.builds.BuildEditorRoute
 import fr.carnetdefaerun.feature.builds.BuildsRoute
+import fr.carnetdefaerun.feature.builds.PartyRoute
 import fr.carnetdefaerun.feature.codex.CodexRoute
 import fr.carnetdefaerun.feature.codex.LoreEntryRoute
 import fr.carnetdefaerun.feature.codex.ThemeRoute
@@ -42,6 +43,7 @@ fun appEntries(navigator: AppNavigator, tab: TopLevel): (Destination) -> NavEntr
             is Destination.LoreEntry -> LoreEntryRoute(ContentId(destination.id), destination.anchor, navigator::navigate, back)
             Destination.Builds -> BuildsRoute(onNavigate = navigator::navigate)
             is Destination.BuildEditor -> BuildEditorRoute(destination.buildId, back)
+            Destination.Party -> PartyRoute(back)
             Destination.Tools -> ToolsRoute()
             Destination.Settings -> SettingsRoute(onNavigate = navigator::navigate, onBack = back)
             Destination.Credits -> CreditsScreen(onBack = back)

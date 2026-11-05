@@ -1,9 +1,11 @@
 package fr.carnetdefaerun.feature.builds
 
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.PickVisualMediaRequest
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
@@ -14,16 +16,21 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewModelScope
+import com.google.mlkit.vision.barcode.common.Barcode
+import com.google.mlkit.vision.codescanner.GmsBarcodeScannerOptions
+import com.google.mlkit.vision.codescanner.GmsBarcodeScanning
 import dagger.hilt.android.lifecycle.HiltViewModel
 import fr.carnetdefaerun.core.data.builds.BuildRepository
 import fr.carnetdefaerun.core.data.builds.RulesRepository
@@ -33,6 +40,7 @@ import fr.carnetdefaerun.core.designsystem.component.GoldButton
 import fr.carnetdefaerun.core.designsystem.component.ListRow
 import fr.carnetdefaerun.core.designsystem.component.QuietButton
 import fr.carnetdefaerun.core.designsystem.component.SectionHeader
+import fr.carnetdefaerun.core.designsystem.component.TagRow
 import fr.carnetdefaerun.core.designsystem.component.TextInput
 import fr.carnetdefaerun.core.designsystem.illustration.drawClassEmblem
 import fr.carnetdefaerun.core.designsystem.theme.CarnetSection
@@ -83,19 +91,58 @@ fun BuildsRoute(onNavigate: (Destination) -> Unit) {
     val viewModel = hiltViewModel<BuildsViewModel>()
     val state by viewModel.state.collectAsStateWithLifecycle()
     val defaultName = stringResource(R.string.builds_default_name)
+    val context = LocalContext.current
+    val scope = rememberCoroutineScope()
+    var message by rememberSaveable { mutableStateOf<Int?>(null) }
     val open = { id: Long -> onNavigate(Destination.BuildEditor(id)) }
+    val importCode = { code: String -> viewModel.import(code, open) }
+    val pickImage = rememberLauncherForActivityResult(ActivityResultContracts.PickVisualMedia()) { uri ->
+        if (uri != null) scope.launch {
+            val code = QrCodes.decode(context, uri)
+            message = if (code != null && importCode(code)) null else R.string.builds_image_unreadable
+        }
+    }
     BuildsScreen(
         state = state,
         onOpen = open,
         onCreate = { viewModel.create(defaultName, open) },
-        onImport = { code -> viewModel.import(code, open) },
+        onImport = importCode,
+        onScan = {
+            message = null
+            // Lecteur de Google Play services, sans permission caméra ; absent ou en échec, on propose le repli.
+            val options = GmsBarcodeScannerOptions.Builder().setBarcodeFormats(Barcode.FORMAT_QR_CODE).build()
+            runCatching {
+                GmsBarcodeScanning.getClient(context, options).startScan()
+                    .addOnSuccessListener { barcode ->
+                        val code = barcode.rawValue
+                        if (code == null || !importCode(code)) message = R.string.builds_import_invalid
+                    }
+                    .addOnFailureListener { message = R.string.builds_scan_unavailable }
+            }.onFailure { message = R.string.builds_scan_unavailable }
+        },
+        onPickImage = {
+            message = null
+            pickImage.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
+        },
+        onParty = { onNavigate(Destination.Party) },
+        message = message,
     )
 }
 
 @Composable
-fun BuildsScreen(state: BuildsUiState?, onOpen: (Long) -> Unit, onCreate: () -> Unit, onImport: (String) -> Boolean) {
+fun BuildsScreen(
+    state: BuildsUiState?,
+    onOpen: (Long) -> Unit,
+    onCreate: () -> Unit,
+    onImport: (String) -> Boolean,
+    onScan: () -> Unit = {},
+    onPickImage: () -> Unit = {},
+    onParty: () -> Unit = {},
+    message: Int? = null,
+    startImporting: Boolean = false,
+) {
     val c = CarnetTheme.colors
-    var importing by rememberSaveable { mutableStateOf(false) }
+    var importing by rememberSaveable { mutableStateOf(startImporting) }
     var code by rememberSaveable { mutableStateOf("") }
     var invalid by rememberSaveable { mutableStateOf(false) }
     CarnetSectionScope(CarnetSection.BUILDS) {
@@ -110,20 +157,27 @@ fun BuildsScreen(state: BuildsUiState?, onOpen: (Long) -> Unit, onCreate: () -> 
                 }
                 item(key = "actions") {
                     Column(Modifier.padding(horizontal = CarnetTheme.dimens.gutter, vertical = 8.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                        TagRow {
                             GoldButton(stringResource(R.string.builds_new), onCreate)
                             if (!importing) QuietButton(stringResource(R.string.builds_import), { importing = true })
+                            if (state != null && state.items.isNotEmpty()) QuietButton(stringResource(R.string.party_open), onParty)
                         }
                         if (importing) {
+                            TagRow {
+                                QuietButton(stringResource(R.string.builds_scan), onScan)
+                                QuietButton(stringResource(R.string.builds_pick_image), onPickImage)
+                            }
+                            Text(stringResource(R.string.builds_import_or_paste), style = CarnetTheme.type.bodySmall, color = c.text2)
                             TextInput(code, { code = it.take(BUILD_CODE_INPUT_LIMIT); invalid = false }, stringResource(R.string.builds_import_hint))
                             if (invalid) Text(stringResource(R.string.builds_import_invalid), style = CarnetTheme.type.bodySmall, color = c.vermilion)
-                            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                            TagRow {
                                 GoldButton(stringResource(R.string.builds_import_action), {
                                     if (onImport(code)) { importing = false; code = "" } else invalid = true
                                 }, enabled = code.isNotBlank())
                                 QuietButton(stringResource(R.string.builds_cancel), { importing = false; code = ""; invalid = false })
                             }
                         }
+                        if (message != null) Text(stringResource(message), style = CarnetTheme.type.bodySmall, color = c.vermilion)
                     }
                 }
                 if (state != null && state.items.isNotEmpty()) {

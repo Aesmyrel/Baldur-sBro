@@ -12,6 +12,11 @@
     <string name="builds_import_action">Importer</string>
     <string name="builds_import_invalid">Ce texte n’est pas un code de build lisible.</string>
     <string name="builds_cancel">Annuler</string>
+    <string name="builds_scan">Scanner un QR code</string>
+    <string name="builds_pick_image">Choisir une image</string>
+    <string name="builds_scan_unavailable">Le lecteur de QR code de Google Play services n’est pas disponible. Choisissez une image du QR code, ou collez le code.</string>
+    <string name="builds_image_unreadable">Aucun code de build lisible dans cette image.</string>
+    <string name="builds_import_or_paste">Ou collez le code :</string>
     <string name="builds_crumb_position">Builds · %1$d sur %2$d</string>
 
     <!-- Résumé d'un build -->
@@ -74,6 +79,14 @@
     <string name="problem_subclass_missing">Une sous-classe reste à choisir.</string>
     <string name="problem_subclass_invalid">Une sous-classe ne convient pas à sa classe ou à son niveau.</string>
 
+    <string name="section_skills">Compétences</string>
+    <string name="skills_source">%1$s · %2$d sur %3$d</string>
+    <string name="skills_none_chosen">Aucune choisie</string>
+    <string name="skills_hint">Les compétences maîtrisées d’office ou déjà choisies ailleurs ne sont pas proposées : une même maîtrise reçue deux fois n’ajoute rien.</string>
+    <string name="skills_fixed">Maîtrisées d’office (historique, race) : %1$s.</string>
+    <string name="skill_proficient">maîtrisée</string>
+    <string name="problem_skills_missing">Des compétences restent à choisir.</string>
+    <string name="problem_skills_invalid">Un choix de compétence ne respecte pas sa liste.</string>
     <string name="section_levels">Niveaux</string>
     <string name="level_title">Niveau %1$d · %2$s %3$d</string>
     <string name="level_subclass">Sous-classe : %1$s</string>
@@ -90,6 +103,24 @@
     <string name="origin_subrace">Sous-race</string>
     <string name="origin_background">Historique</string>
     <string name="origin_none">À choisir</string>
+
+    <!-- Groupe de quatre -->
+    <string name="party_open">Groupe de quatre</string>
+    <string name="party_title">Groupe de quatre</string>
+    <string name="party_intro">Placez vos builds dans les quatre emplacements : pour chaque jet de sauvegarde et chaque compétence, le carnet montre qui a le meilleur bonus, et signale ce que personne ne maîtrise.</string>
+    <string name="party_slot">Emplacement %1$d</string>
+    <string name="party_slot_free">Emplacement %1$d · libre</string>
+    <string name="party_slot_named">%1$d · %2$s</string>
+    <string name="party_slot_choose">Toucher pour choisir un build</string>
+    <string name="party_no_builds">Aucun build enregistré pour l’instant.</string>
+    <string name="party_free">Libérer l’emplacement</string>
+    <string name="party_saves">Jets de sauvegarde</string>
+    <string name="party_casting">Incantation</string>
+    <string name="party_nobody">personne ne la maîtrise</string>
+    <string name="party_best_a11y">%1$s, meilleur bonus %2$s, %3$s</string>
+    <string name="party_unmastered_a11y">%1$s, personne ne la maîtrise, meilleur bonus %2$s, %3$s</string>
+    <string name="party_casting_line">%1$s — %2$s, %3$s, DD %4$d</string>
+    <string name="party_no_casting">Personne ne lance de sorts.</string>
 
     <!-- Feuilles -->
     <string name="sheet_close">Fermer</string>

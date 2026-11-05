@@ -63,6 +63,21 @@ class BuildsScreenshotTest {
     @Test fun atelier_partage_sombre() = editor(panel = Panel.Share, name = "atelier_partage_sombre")
     @Test fun atelier_pacte_parchemin() = editor(BuildFixtures.pact, panel = Panel.SpellDc, mode = ThemeMode.PARCHEMIN, name = "atelier_pacte_parchemin")
     @Test fun atelier_vide_sombre() = editor(Build(name = "Nouveau build"), name = "atelier_vide_sombre")
+    @Test fun atelier_competences_sombre() = editor(panel = Panel.Skills("class.fighter"), name = "atelier_competences_sombre")
+
+    private fun item(id: Long, build: Build) = BuildItem(id, build, CharacterSheetCalculator.compute(build, rules))
+    private fun party() = PartyUiState(
+        slots = listOf(item(1, BuildFixtures.battleMage), null, item(2, BuildFixtures.pact), null),
+        builds = listOf(item(1, BuildFixtures.battleMage), item(2, BuildFixtures.pact)),
+        catalog = catalog,
+    )
+
+    @Test fun groupe_sombre() = shot("groupe_sombre") { PartyScreen(party(), onSet = { _, _ -> }, onBack = {}) }
+    @Test fun groupe_parchemin_choix() = shot("groupe_parchemin_choix", ThemeMode.PARCHEMIN) { PartyScreen(party(), onSet = { _, _ -> }, onBack = {}, initialSlot = 1) }
+    @Test fun groupe_police200() = shot("groupe_police200", fontScale = 2f) { PartyScreen(party(), onSet = { _, _ -> }, onBack = {}) }
+    @Test fun builds_import_sombre() = shot("builds_import_sombre") {
+        BuildsScreen(BuildsUiState(persistentListOf(), catalog), {}, {}, { false }, startImporting = true, message = R.string.builds_scan_unavailable)
+    }
 
     @Config(qualifiers = "w800dp-h840dp-xhdpi")
     @Test fun atelier_pliable() = editor(name = "atelier_pliable")

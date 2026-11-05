@@ -8,6 +8,8 @@ import fr.carnetdefaerun.core.model.builds.BuildLevel
 import fr.carnetdefaerun.core.model.builds.FeatChoice
 import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.ContentId
+import fr.carnetdefaerun.core.model.content.Skill
+import fr.carnetdefaerun.core.rules.CharacterSheetCalculator
 import fr.carnetdefaerun.core.rules.MAX_CHARACTER_LEVEL
 import fr.carnetdefaerun.core.rules.PointBuy
 import fr.carnetdefaerun.core.rules.RulesData
@@ -66,7 +68,34 @@ object BuildEdits {
                 feat = if (n in profile.featLevels) feats[c]?.removeFirstOrNull() else null,
             )
         }
-        return build.copy(levels = placed)
+        return cleanSkills(build.copy(levels = placed), rules)
+    }
+
+    /**
+     * Choix de compétences gardés seulement pour les sources encore présentes, dans leur liste, sans doublon ni
+     * compétence déjà maîtrisée d'office, et pas au-delà du nombre permis.
+     */
+    fun cleanSkills(build: Build, rules: RulesData): Build {
+        val fixed = CharacterSheetCalculator.fixedSkills(build, rules)
+        val taken = fixed.toMutableSet()
+        val kept = CharacterSheetCalculator.skillSources(build, rules).associate { source ->
+            val picks = build.skillChoices[source.id].orEmpty().filter { it in source && it !in taken }.distinct().take(source.count)
+            taken += picks
+            source.id to picks
+        }.filterValues { it.isNotEmpty() }
+        return build.copy(skillChoices = kept)
+    }
+
+    /** Toucher une compétence d'un choix : elle entre s'il reste de la place, sort si elle y était. */
+    fun toggleSkill(build: Build, sourceId: String, skill: Skill, rules: RulesData): Build {
+        val source = CharacterSheetCalculator.skillSources(build, rules).firstOrNull { it.id == sourceId } ?: return build
+        val current = build.skillChoices[sourceId].orEmpty()
+        val next = when {
+            skill in current -> current - skill
+            current.size < source.count -> current + skill
+            else -> return build
+        }
+        return cleanSkills(build.copy(skillChoices = build.skillChoices + (sourceId to next)), rules)
     }
 
     fun addLevel(build: Build, classId: ContentId, rules: RulesData): Build =
@@ -113,9 +142,9 @@ object BuildEdits {
     fun setMinor(build: Build, ability: Ability): Build =
         build.copy(minorBonus = ability, majorBonus = if (build.majorBonus == ability) build.minorBonus else build.majorBonus)
 
-    fun setRace(build: Build, race: ContentId, catalog: Catalog): Build {
+    fun setRace(build: Build, race: ContentId, catalog: Catalog, rules: RulesData): Build {
         val keepSubrace = build.subrace?.let { s -> catalog.subracesOf(race.value).any { it.id == s } } == true
-        return build.copy(race = race, subrace = if (keepSubrace) build.subrace else null)
+        return cleanSkills(build.copy(race = race, subrace = if (keepSubrace) build.subrace else null), rules)
     }
 
     fun rename(build: Build, name: String): Build = build.copy(name = name.trim().take(BuildCode.MAX_NAME_LENGTH))

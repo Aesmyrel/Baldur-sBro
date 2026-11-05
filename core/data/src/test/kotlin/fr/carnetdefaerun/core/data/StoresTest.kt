@@ -3,6 +3,7 @@ package fr.carnetdefaerun.core.data
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import com.google.common.truth.Truth.assertThat
+import fr.carnetdefaerun.core.data.builds.DataStorePartyRepository
 import fr.carnetdefaerun.core.data.di.resilientStore
 import fr.carnetdefaerun.core.data.navigation.DataStoreNavigationStateStore
 import fr.carnetdefaerun.core.data.preferences.DataStoreUserPreferencesRepository
@@ -52,5 +53,20 @@ class StoresTest {
         val next = NavigationState().push(Destination.Settings)
         nav.save(next)
         assertThat(nav.load()).isEqualTo(next)
+    }
+
+    @Test
+    fun `groupe de quatre, emplacements bornés, un build à une seule place, contenu illisible ignoré`() = runTest(UnconfinedTestDispatcher()) {
+        val ds = store("party")
+        ds.edit { it[stringPreferencesKey("party_slots")] = "x,-3,,99999999999999999999" }
+        val party = DataStorePartyRepository(ds)
+        assertThat(party.slots.first()).containsExactly(null, null, null, null).inOrder()
+        party.set(0, 7)
+        party.set(2, 9)
+        party.set(3, 7) // le build 7 quitte l'emplacement 0
+        party.set(9, 1) // hors bornes : ignoré
+        assertThat(party.slots.first()).containsExactly(null, null, 9L, 7L).inOrder()
+        party.set(2, null)
+        assertThat(party.slots.first()).containsExactly(null, null, null, 7L).inOrder()
     }
 }

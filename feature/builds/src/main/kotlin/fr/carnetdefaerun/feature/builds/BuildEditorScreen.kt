@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.widthIn
@@ -48,10 +49,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.google.zxing.BarcodeFormat
-import com.google.zxing.EncodeHintType
-import com.google.zxing.qrcode.QRCodeWriter
-import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel
 import fr.carnetdefaerun.core.designsystem.component.AbilityTile
 import fr.carnetdefaerun.core.designsystem.component.CalcRow
 import fr.carnetdefaerun.core.designsystem.component.CarnetSheet
@@ -81,7 +78,10 @@ import fr.carnetdefaerun.core.model.builds.BuildCode
 import fr.carnetdefaerun.core.model.builds.FeatChoice
 import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.ContentId
+import fr.carnetdefaerun.core.model.content.Skill
+import fr.carnetdefaerun.core.model.search.Folding
 import fr.carnetdefaerun.core.rules.CharacterSheet
+import fr.carnetdefaerun.core.rules.CharacterSheetCalculator
 import fr.carnetdefaerun.core.rules.MAX_CHARACTER_LEVEL
 import fr.carnetdefaerun.core.rules.PointBuy
 import fr.carnetdefaerun.core.rules.RuleSources
@@ -104,6 +104,7 @@ sealed interface Panel {
     data object Background : Panel
     data object Share : Panel
     data object Delete : Panel
+    data class Skills(val sourceId: String) : Panel
 }
 
 @Composable
@@ -194,6 +195,10 @@ private fun EditorContent(state: EditorUiState.Ready, onEdit: (BuildEdit) -> Uni
                 )
             }
             item(key = "slots") { Slots(sheet) }
+
+            item(key = "skills-header") { SectionHeader(stringResource(R.string.section_skills)) }
+            item(key = "skill-sources") { SkillSources(state, open) }
+            item(key = "skills") { SkillsGrid(sheet) }
 
             item(key = "levels-header") { SectionHeader(stringResource(R.string.section_levels)) }
             items(state.rows, key = { "level-${it.index}" }) { row -> LevelListRow(row, state) { open(Panel.Level(row.index)) } }
@@ -305,6 +310,8 @@ private val SheetProblem.labelRes: Int
         SheetProblem.FEAT_INCREASE_INVALID -> R.string.problem_feat_increase
         SheetProblem.SUBCLASS_MISSING -> R.string.problem_subclass_missing
         SheetProblem.SUBCLASS_INVALID -> R.string.problem_subclass_invalid
+        SheetProblem.SKILLS_MISSING -> R.string.problem_skills_missing
+        SheetProblem.SKILLS_INVALID -> R.string.problem_skills_invalid
     }
 
 /** Abréviation à trois lettres des tuiles (For, Dex, Con…), tirée du nom de la caractéristique. */
@@ -437,6 +444,7 @@ private fun panelTitle(panel: Panel, state: EditorUiState.Ready): String = when 
     Panel.Background -> stringResource(R.string.origin_background)
     Panel.Share -> stringResource(R.string.share_title)
     Panel.Delete -> stringResource(R.string.editor_delete)
+    is Panel.Skills -> stringResource(R.string.section_skills)
 }
 
 @Composable
@@ -475,6 +483,7 @@ private fun PanelContent(panel: Panel, state: EditorUiState.Ready, onEdit: (Buil
         }
         Panel.Share -> SharePanel(state, onSend)
         Panel.Delete -> DeletePanel(state.build.name, onDelete, close)
+        is Panel.Skills -> SkillsPanel(panel.sourceId, state, onEdit)
     }
     Box(Modifier.padding(top = 12.dp)) { TextAction(stringResource(R.string.sheet_close), close) }
 }
@@ -665,6 +674,81 @@ private fun LevelPanel(index: Int, state: EditorUiState.Ready, onEdit: (BuildEdi
     }
 }
 
+/** Choix de compétences de chaque source (classe de départ, multiclasse, race), avec leur avancement. */
+@Composable
+private fun SkillSources(state: EditorUiState.Ready, open: (Panel) -> Unit) {
+    val hidden = stringResource(R.string.hidden_choice)
+    for (source in CharacterSheetCalculator.skillSources(state.build, state.rules)) {
+        val picked = state.build.skillChoices[source.id].orEmpty()
+        ListRow(
+            stringResource(R.string.skills_source, state.catalog.name(source.id) ?: hidden, picked.size, source.count),
+            { open(Panel.Skills(source.id)) },
+            subtitle = skillNames(picked).ifEmpty { stringResource(R.string.skills_none_chosen) },
+        )
+    }
+}
+
+@Composable
+private fun skillNames(skills: List<Skill>): String =
+    Skill.entries.filter { it in skills }.map { stringResource(it.labelRes) }.joinToString(stringResource(R.string.list_separator))
+
+/** Les 18 compétences, avec leur bonus ; un losange d'or marque celles qui sont maîtrisées. */
+@Composable
+private fun SkillsGrid(sheet: CharacterSheet) {
+    val c = CarnetTheme.colors
+    BoxWithConstraints(Modifier.padding(horizontal = CarnetTheme.dimens.gutter, vertical = 8.dp)) {
+        val scale = LocalDensity.current.fontScale.coerceAtMost(1.6f)
+        val columns = if (maxWidth / 2 >= 160.dp * scale) 2 else 1
+        val proficient = stringResource(R.string.skill_proficient)
+        val sorted = Skill.entries.map { it to stringResource(it.labelRes) }.sortedBy { Folding.fold(it.second) }
+        Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+            for (row in sorted.chunked(columns)) {
+                Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+                    for ((skill, label) in row) {
+                        val mastered = skill in sheet.skillProficiencies
+                        val bonus = signed(sheet.skillBonuses.getValue(skill))
+                        Row(
+                            Modifier.weight(1f).heightIn(min = 32.dp).clearAndSetSemantics {
+                                contentDescription = if (mastered) "$label $bonus, $proficient" else "$label $bonus"
+                            },
+                            verticalAlignment = Alignment.CenterVertically,
+                        ) {
+                            Canvas(Modifier.size(12.dp)) {
+                                val path = Path().apply {
+                                    moveTo(size.width / 2, 1f); lineTo(size.width - 1f, size.height / 2)
+                                    lineTo(size.width / 2, size.height - 1f); lineTo(1f, size.height / 2); close()
+                                }
+                                if (mastered) drawPath(path, c.gold) else drawPath(path, c.line, style = Stroke(1.dp.toPx()))
+                            }
+                            Text(label, style = CarnetTheme.type.bodySmall, color = if (mastered) c.text else c.text2, modifier = Modifier.weight(1f).padding(start = 8.dp))
+                            Text(bonus, style = CarnetTheme.type.dataStrong, color = if (mastered) c.gold else c.text2)
+                        }
+                    }
+                    repeat(columns - row.size) { Spacer(Modifier.weight(1f)) }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun SkillsPanel(sourceId: String, state: EditorUiState.Ready, onEdit: (BuildEdit) -> Unit) {
+    val c = CarnetTheme.colors
+    val source = CharacterSheetCalculator.skillSources(state.build, state.rules).firstOrNull { it.id == sourceId } ?: return
+    val picked = state.build.skillChoices[sourceId].orEmpty()
+    val fixed = CharacterSheetCalculator.fixedSkills(state.build, state.rules)
+    val elsewhere = state.build.skillChoices.filterKeys { it != sourceId }.values.flatten().toSet()
+    SheetTitle(stringResource(R.string.skills_source, state.catalog.name(sourceId) ?: stringResource(R.string.hidden_choice), picked.size, source.count))
+    Text(stringResource(R.string.skills_hint), style = CarnetTheme.type.bodySmall, color = c.text2, modifier = Modifier.padding(bottom = 8.dp))
+    TagRow {
+        val options = Skill.entries.filter { it in source && it !in fixed && it !in elsewhere }.map { it to stringResource(it.labelRes) }.sortedBy { Folding.fold(it.second) }
+        for ((skill, label) in options) ChoiceTag(label, skill in picked, { onEdit(BuildEdit.ToggleSkill(sourceId, skill)) })
+    }
+    if (fixed.isNotEmpty()) {
+        Text(stringResource(R.string.skills_fixed, skillNames(fixed.toList())), style = CarnetTheme.type.bodySmall, color = c.text2, modifier = Modifier.padding(top = 10.dp))
+    }
+}
+
 @Composable
 private fun SharePanel(state: EditorUiState.Ready, onSend: (String) -> Unit) {
     val c = CarnetTheme.colors
@@ -684,11 +768,7 @@ private fun SharePanel(state: EditorUiState.Ready, onSend: (String) -> Unit) {
 /** QR code dessiné module par module, encre sombre sur fond clair quel que soit le thème (lisible par un appareil photo). */
 @Composable
 private fun QrCode(text: String, a11y: String) {
-    val matrix = remember(text) {
-        runCatching {
-            QRCodeWriter().encode(text, BarcodeFormat.QR_CODE, 0, 0, mapOf(EncodeHintType.MARGIN to 0, EncodeHintType.ERROR_CORRECTION to ErrorCorrectionLevel.M))
-        }.getOrNull()
-    } ?: return
+    val matrix = remember(text) { QrCodes.encode(text) } ?: return
     Box(
         Modifier.size(232.dp).clip(RoundedCornerShape(CarnetTheme.dimens.radius)).background(QR_PAPER).padding(16.dp)
             .clearAndSetSemantics { contentDescription = a11y },

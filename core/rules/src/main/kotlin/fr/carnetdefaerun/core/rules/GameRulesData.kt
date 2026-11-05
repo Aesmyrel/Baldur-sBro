@@ -1,8 +1,10 @@
 package fr.carnetdefaerun.core.rules
 
+import fr.carnetdefaerun.core.model.content.BackgroundFacts
 import fr.carnetdefaerun.core.model.content.ClassFacts
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.FeatFacts
+import fr.carnetdefaerun.core.model.content.RaceFacts
 import fr.carnetdefaerun.core.model.content.SubclassFacts
 import fr.carnetdefaerun.core.model.content.SubraceFacts
 
@@ -16,6 +18,7 @@ fun RulesData.Companion.from(entries: Iterable<Entry>): RulesData {
     val subclasses = mutableMapOf<String, SubclassProfile>()
     val feats = mutableMapOf<String, FeatProfile>()
     val dwarven = mutableSetOf<String>()
+    val origins = mutableMapOf<String, OriginProfile>()
     for (entry in entries) {
         val id = entry.id.value
         when (val facts = entry.facts) {
@@ -36,11 +39,19 @@ fun RulesData.Companion.from(entries: Iterable<Entry>): RulesData {
                 tough = facts.features.any { it.id?.value == TOUGH },
                 resilient = id == RESILIENT,
             )
-            is SubraceFacts -> if (facts.features.any { it.id?.value == DWARVEN_TOUGHNESS }) dwarven += id
+            is SubraceFacts -> {
+                if (facts.features.any { it.id?.value == DWARVEN_TOUGHNESS }) dwarven += id
+                origins[id] = OriginProfile(id, facts.proficiencies.skills.toSet(), facts.proficiencies.skillChoices)
+            }
+            is RaceFacts -> origins[id] = OriginProfile(id, emptySet(), facts.proficiencies.skillChoices).let { o ->
+                // Une race qui laisse choisir n'impose rien : sa liste éventuelle est celle du choix.
+                if (facts.proficiencies.skillChoices > 0) o.copy(skillList = facts.proficiencies.skills) else o.copy(skills = facts.proficiencies.skills.toSet())
+            }
+            is BackgroundFacts -> origins[id] = OriginProfile(id, facts.skills.toSet())
             else -> Unit
         }
     }
-    return RulesData(classes, subclasses, feats, dwarven)
+    return RulesData(classes, subclasses, feats, dwarven, origins)
 }
 
 private fun classProfile(id: String, facts: ClassFacts): ClassProfile {
@@ -69,6 +80,9 @@ private fun classProfile(id: String, facts: ClassFacts): ClassProfile {
         },
         featLevels = facts.levels.filter { it.feat }.map { it.level }.toSet(),
         subclassLevel = facts.subclassLevel,
+        skillList = facts.proficiencies.skills,
+        skillChoices = facts.proficiencies.skillChoices,
+        multiclassSkillChoices = facts.multiclassProficiencies.skillChoices,
     )
 }
 

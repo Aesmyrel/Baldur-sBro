@@ -8,6 +8,7 @@ import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Entry
 import fr.carnetdefaerun.core.model.content.EntryType
+import fr.carnetdefaerun.core.model.content.Skill
 import fr.carnetdefaerun.core.model.search.Folding
 import fr.carnetdefaerun.core.model.spoiler.Act
 import fr.carnetdefaerun.core.model.spoiler.SpoilerProfile
@@ -44,6 +45,7 @@ object BuildFixtures {
             BuildLevel(id("class.wizard")) + BuildLevel(id("class.wizard"), id("subclass.evocation-school")) + BuildLevel(id("class.wizard")) +
             BuildLevel(id("class.wizard"), feat = asi(Ability.INTELLIGENCE to 2)) + List(3) { BuildLevel(id("class.wizard")) } +
             BuildLevel(id("class.wizard"), feat = asi(Ability.INTELLIGENCE to 1, Ability.CONSTITUTION to 1)) + List(2) { BuildLevel(id("class.wizard")) },
+        skillChoices = mapOf("class.fighter" to listOf(Skill.ATHLETICS, Skill.INSIGHT)),
     )
 
     /** Occultiste et ensorceleur : Magie de pacte et emplacements à la fois. */
@@ -57,5 +59,6 @@ object BuildFixtures {
         levels = listOf(BuildLevel(id("class.warlock"), id("subclass.the-fiend"))) + List(2) { BuildLevel(id("class.warlock")) } +
             BuildLevel(id("class.warlock"), feat = asi(Ability.CHARISMA to 2)) + BuildLevel(id("class.warlock")) +
             BuildLevel(id("class.sorcerer"), id("subclass.storm-sorcery")) + BuildLevel(id("class.sorcerer")),
+        skillChoices = mapOf("class.warlock" to listOf(Skill.ARCANA, Skill.DECEPTION)),
     )
 }

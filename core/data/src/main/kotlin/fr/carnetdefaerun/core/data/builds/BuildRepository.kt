@@ -55,7 +55,7 @@ class RoomBuildRepository @Inject constructor(private val db: UserDatabase) : Bu
 }
 
 /**
- * Profils de règles tirés de la base de contenu (classes, sous-classes, dons, sous-races), lus une fois.
+ * Profils de règles tirés de la base de contenu (classes, sous-classes, dons, races, sous-races, historiques), lus une fois.
  * Ce ne sont que des nombres et des identifiants : aucun texte n'en sort vers un écran, les noms passent par la
  * porte de contenu et son verrou.
  */
@@ -66,7 +66,7 @@ class RulesRepository @Inject internal constructor(private val store: ContentSto
 
     suspend fun data(): RulesData = mutex.withLock {
         cached ?: withContext(Dispatchers.IO) {
-            val types = listOf(EntryType.CLASS, EntryType.SUBCLASS, EntryType.FEAT, EntryType.SUBRACE)
+            val types = listOf(EntryType.CLASS, EntryType.SUBCLASS, EntryType.FEAT, EntryType.RACE, EntryType.SUBRACE, EntryType.BACKGROUND)
             RulesData.from(types.flatMap { type -> store.entries(type).map { it.entry() } })
         }.also { cached = it }
     }
