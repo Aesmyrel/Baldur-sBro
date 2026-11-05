@@ -1,6 +1,6 @@
 # Avancement
 
-_Dernière mise à jour : 04/11/2026, phase 1 validée ; phases 2, 3 et 4 en cours._
+_Dernière mise à jour : 05/11/2026, phase 1 validée ; phases 2, 3 et 4 en cours._
 
 ## Fait
 - **Phase 0 — plan et direction artistique**
@@ -39,7 +39,8 @@ _Dernière mise à jour : 04/11/2026, phase 1 validée ; phases 2, 3 et 4 en cou
   - Fait aussi : modèle de build (`core:model`) et fiche calculée, avec le détail de chaque calcul et les choix invalides ou incomplets signalés ; profils tirés des données de jeu (D-086).
   - Fait aussi : builds enregistrés dans la base du joueur (version 2, migration testée) et code de partage borné (D-087) ; atelier : liste, fiche calculée selon la maquette, feuilles de détail du calcul, d'édition et de partage avec QR code, test de fuite (D-088).
   - Fait aussi : import par lecteur de QR code, par image (ZXing) ou par collage, aller-retour identique testé ; compétences (maîtrises d'office et choix) ; groupe de quatre (D-089).
-  - À faire : dés de bonus, relances et seuil de critique (jets de d20), sorts connus et préparés, attaques d'armes ; vérification indépendante de la phase.
+  - Fait aussi : dés de bonus, relances d'Inspiration, seuil de critique, effets du mode Explorateur, sorts mineurs, appris et préparés, attaques d'arme (D-090).
+  - À faire : vérification indépendante de la phase ; équipement des builds (armes, armures) plus tard.
 
 ## Reste à faire
 - Phase 2b : pipeline du lore.
