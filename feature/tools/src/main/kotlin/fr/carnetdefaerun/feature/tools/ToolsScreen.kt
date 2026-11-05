@@ -3,6 +3,8 @@ package fr.carnetdefaerun.feature.tools
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -22,7 +24,7 @@ import fr.carnetdefaerun.core.model.navigation.Destination
 fun ToolsRoute(onNavigate: (Destination) -> Unit) {
     val c = CarnetTheme.colors
     CarnetSectionScope(CarnetSection.OUTILS) {
-        Column(Modifier.fillMaxSize()) {
+        Column(Modifier.fillMaxSize().wrapContentWidth().widthIn(max = CarnetTheme.dimens.readingMaxWidth)) {
             CarnetTopBar(stringResource(R.string.tools_crumb))
             Text(stringResource(R.string.tools_title), style = CarnetTheme.type.headline, color = c.text,
                 modifier = Modifier.padding(horizontal = CarnetTheme.dimens.gutter, vertical = 4.dp).semantics { heading() })

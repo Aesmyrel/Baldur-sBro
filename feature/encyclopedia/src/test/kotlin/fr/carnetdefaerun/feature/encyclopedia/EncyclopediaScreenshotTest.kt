@@ -83,6 +83,11 @@ class EncyclopediaScreenshotTest {
         CategoryScreen(categoryState(EntryType.SUBCLASS, list(EntryType.SUBCLASS), list(EntryType.CLASS)), {}, {}, { _, _ -> }, {})
     }
 
+    /** Barre d'une fiche avec l'action « Ajouter une note » (feuillet gravé) à côté du signet. */
+    @Test fun fiche_avec_note_sombre() = shot("fiche_avec_note_sombre") {
+        EntryScreen(entryState("feature.dirty-trick-sand-toss"), EntryActions(onNote = {}))
+    }
+
     @Test fun fiche_capacite_sombre() = shot("fiche_capacite_sombre") {
         EntryScreen(entryState("feature.dirty-trick-sand-toss"), EntryActions())
     }

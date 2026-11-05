@@ -60,6 +60,8 @@ class DataActions(
     val onImport: () -> Unit = {},
     val message: DataMessage? = null,
     val skipped: Int = 0,
+    /** Confirmation d'import déjà ouverte (captures). */
+    val confirming: Boolean = false,
 )
 
 @Composable
@@ -70,7 +72,8 @@ fun SettingsRoute(onNavigate: (Destination) -> Unit, onBack: () -> Unit, viewMod
     val context = LocalContext.current
     // Sélecteur de documents du système : aucune permission, le joueur choisit l'emplacement.
     val exporter = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument(CARNET_MIME)) { uri ->
-        if (uri != null) viewModel.export { bytes -> context.contentResolver.openOutputStream(uri)?.use { it.write(bytes) } ?: error("flux") }
+        // Mode « wt » : un fichier existant est tronqué, jamais réécrit en partie.
+        if (uri != null) viewModel.export { bytes -> context.contentResolver.openOutputStream(uri, "wt")?.use { it.write(bytes) } ?: error("flux") }
     }
     val importer = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
         if (uri != null) viewModel.import { readBounded(context, uri) }
@@ -180,7 +183,7 @@ fun SettingsScreen(
 @Composable
 private fun DataSection(data: DataActions) {
     val c = CarnetTheme.colors
-    var confirming by rememberSaveable { mutableStateOf(false) }
+    var confirming by rememberSaveable { mutableStateOf(data.confirming) }
     Help(R.string.settings_data_help)
     Row(Modifier.padding(horizontal = 24.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
         QuietButton(stringResource(R.string.settings_data_export), data.onExport)
@@ -199,6 +202,7 @@ private fun DataSection(data: DataActions) {
             DataMessage.EXPORT_FAILED -> stringResource(R.string.settings_data_export_failed)
             DataMessage.IMPORTED -> if (data.skipped > 0) pluralStringResource(R.plurals.settings_data_imported_skipped, data.skipped, data.skipped)
             else stringResource(R.string.settings_data_imported)
+            DataMessage.IMPORTED_PARTIALLY -> stringResource(R.string.settings_data_imported_partially)
             DataMessage.IMPORT_NOT_CARNET -> stringResource(R.string.settings_data_not_carnet)
             DataMessage.IMPORT_TOO_NEW -> stringResource(R.string.settings_data_too_new)
             DataMessage.IMPORT_TOO_LARGE -> stringResource(R.string.settings_data_too_large)

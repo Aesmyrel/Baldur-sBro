@@ -86,15 +86,53 @@ class BackupTest {
 
     @Test
     fun `fichiers hostiles ou étrangers refusés, rien n'est touché`() = runTest(UnconfinedTestDispatcher()) {
-        val device = Device(this, "seul")
+        val device = Device(this, "seul", UserPreferences(currentAct = Act.ACT_1))
         val kept = device.builds.create(Build(name = "À garder"))
+        device.party.set(1, kept)
         assertThat(device.backup.import("bonjour".toByteArray())).isEqualTo(ImportResult.NotACarnet)
         assertThat(device.backup.import(gzip("""{"format":"autre","version":1,"exportedAt":0,"preferences":{}}"""))).isEqualTo(ImportResult.NotACarnet)
         assertThat(device.backup.import(gzip("""{"format":"${CarnetFile.FORMAT}","version":99,"exportedAt":0,"preferences":{}}"""))).isEqualTo(ImportResult.TooNew)
         // Bombe de décompression : 40 Mo d'espaces tiennent en quelques dizaines de Ko.
         assertThat(device.backup.import(gzip(" ".repeat(40 * 1024 * 1024)))).isEqualTo(ImportResult.TooLarge)
         assertThat(device.backup.import(ByteArray(BackupRepository.MAX_FILE_BYTES + 1))).isEqualTo(ImportResult.TooLarge)
+        // Une version future dont la structure a changé est reconnue comme telle.
+        assertThat(device.backup.import(gzip("""{"format":"${CarnetFile.FORMAT}","version":2,"exportedAt":"hier","builds":"autrement"}"""))).isEqualTo(ImportResult.TooNew)
         assertThat(device.builds.builds.first().map { it.id }).containsExactly(kept)
+        assertThat(device.party.slots.first()).containsExactly(null, kept, null, null).inOrder()
+        assertThat(device.preferences.preferences.first().currentAct).isEqualTo(Act.ACT_1)
+    }
+
+    @Test
+    fun `lignes piégées écartées sans planter, groupe recalé sur les builds gardés`() = runTest(UnconfinedTestDispatcher()) {
+        val device = Device(this, "piege")
+        val longId = "a" + ".b".repeat(10_000)
+        val file = """{"format":"${CarnetFile.FORMAT}","version":1,"exportedAt":0,"preferences":{},
+            "names":[{"id":"$longId","fr":"x","at":1},{"id":"spell.fireball","fr":"Boule\u202E de\u0000   feu","at":1}],
+            "favorites":[{"id":"$longId","at":1}],
+            "builds":[{"build":{"name":"Faux","baseScores":{"str":99}},"createdAt":1,"updatedAt":1},
+                      {"build":{"name":"B"},"createdAt":2,"updatedAt":2},{"build":{"name":"C"},"createdAt":3,"updatedAt":3}],
+            "damagedBuilds":[{"name":"Abîmé","payload":"{illisible","createdAt":4,"updatedAt":4}],
+            "party":[1,2,null,null],
+            "notes":[{"text":"cible piégée","targetKind":"entry","targetId":"$longId","createdAt":1,"updatedAt":1},
+                     {"text":"acte","targetKind":"act","targetId":"ACT_2","createdAt":1,"updatedAt":1}]}"""
+        val result = device.backup.import(gzip(file)) as ImportResult.Done
+        assertThat(result.skipped).isEqualTo(3) // nom et favori à l'identifiant démesuré, build aux valeurs impossibles
+        assertThat(result.partial).isFalse()
+        assertThat(device.player.nameCorrections.first()).containsExactly(ContentId("spell.fireball"), "Boule de feu")
+        val builds = device.builds.builds.first()
+        assertThat(builds.map { it.build.name to it.damaged }).containsExactly("B" to false, "C" to false, "Abîmé" to true)
+        val byName = builds.associate { it.build.name to it.id }
+        assertThat(device.party.slots.first()).containsExactly(byName["B"], byName["C"], null, null).inOrder()
+        assertThat(device.notes.notes.first().map { it.text to it.target }).containsExactly("cible piégée" to null, "acte" to NoteTarget.OnAct(Act.ACT_2))
+    }
+
+    @Test
+    fun `un build abîmé survit à l'aller-retour`() = runTest(UnconfinedTestDispatcher()) {
+        val source = Device(this, "src2")
+        source.db.builds().insert(fr.carnetdefaerun.core.database.user.BuildEntity(name = "Abîmé", payload = "{illisible", createdAt = 1, updatedAt = 1))
+        val target = Device(this, "dst2")
+        target.backup.import(source.backup.export())
+        assertThat(target.builds.builds.first().map { it.build.name to it.damaged }).containsExactly("Abîmé" to true)
     }
 
     @Test

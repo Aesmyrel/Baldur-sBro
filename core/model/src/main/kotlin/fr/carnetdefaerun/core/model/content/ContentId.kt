@@ -10,7 +10,7 @@ import kotlinx.serialization.Serializable
 @JvmInline
 value class ContentId(val value: String) {
     init {
-        require(PATTERN.matches(value)) { "Identifiant invalide : « $value »" }
+        require(isValid(value)) { "Identifiant invalide : « ${value.take(40)} »" }
     }
 
     val kind: String get() = value.substringBefore('.')
@@ -19,6 +19,12 @@ value class ContentId(val value: String) {
 
     companion object {
         val PATTERN = Regex("^[a-z][a-z0-9]*(\\.[a-z0-9]+(-[a-z0-9]+)*)+$")
+
+        /** Longueur maximale : bien au-delà des identifiants réels, et l'expression régulière n'est jamais lancée sur un texte démesuré. */
+        const val MAX_LENGTH = 128
+
+        /** Identifiant bien formé, longueur bornée d'abord (un texte reçu peut être hostile). */
+        fun isValid(value: String): Boolean = value.length <= MAX_LENGTH && PATTERN.matches(value)
     }
 }
 

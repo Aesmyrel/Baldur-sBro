@@ -29,7 +29,11 @@ class UserDatabaseMigrationTest {
             execSQL("INSERT INTO favorite (entryId, addedAt) VALUES ('spell.fireball', 3)")
             close()
         }
-        helper.runMigrationsAndValidate(NAME, 2, true).close()
+        helper.runMigrationsAndValidate(NAME, 2, true).apply {
+            // Un build enregistré en version 2 doit traverser la migration vers la version 3.
+            execSQL("INSERT INTO build (name, payload, createdAt, updatedAt) VALUES ('Ancien', '{\"name\":\"Ancien\"}', 1, 1)")
+            close()
+        }
         helper.runMigrationsAndValidate(NAME, 3, true).close()
 
         val db = Room.databaseBuilder(ApplicationProvider.getApplicationContext(), UserDatabase::class.java, NAME).allowMainThreadQueries().build()
@@ -37,6 +41,7 @@ class UserDatabaseMigrationTest {
             assertThat(db.revealed().tokens().first()).containsExactly("jeton")
             assertThat(db.nameCorrections().all().first().single().fr).isEqualTo("Boule de feu")
             assertThat(db.favorites().ids().first()).containsExactly("spell.fireball")
+            assertThat(db.builds().all().first().map { it.name }).containsExactly("Ancien")
             val id = db.builds().insert(BuildEntity(name = "Essai", payload = "{}", createdAt = 4, updatedAt = 4))
             assertThat(db.builds().byId(id).first()?.name).isEqualTo("Essai")
             val note = db.notes().insert(NoteEntity(text = "Penser au sceau", targetKind = "act", targetId = "ACT_1", createdAt = 5, updatedAt = 5))

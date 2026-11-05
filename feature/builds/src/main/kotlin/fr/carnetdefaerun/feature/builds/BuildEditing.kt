@@ -146,8 +146,10 @@ object BuildEdits {
 
     /** Peut-on monter [ability] d'un cran sans dépasser 15 ni le budget ? */
     fun canIncrease(build: Build, ability: Ability): Boolean {
-        val current = build.baseScores[ability] ?: PointBuy.MIN
-        return current < PointBuy.MAX && PointBuy.spent(build.baseScores + (ability to current + 1)) <= PointBuy.BUDGET
+        // Valeurs ramenées dans les bornes : un build reçu d'ailleurs ne doit jamais faire planter l'atelier.
+        val base = Ability.entries.associateWith { (build.baseScores[it] ?: PointBuy.MIN).coerceIn(PointBuy.MIN, PointBuy.MAX) }
+        val current = base.getValue(ability)
+        return current < PointBuy.MAX && PointBuy.spent(base + (ability to current + 1)) <= PointBuy.BUDGET
     }
 
     /** Bonus +2 : s'il tombe sur la caractéristique du +1, celui-ci passe à l'ancienne du +2. */

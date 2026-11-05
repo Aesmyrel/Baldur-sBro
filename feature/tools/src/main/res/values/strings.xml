@@ -31,6 +31,8 @@
     <string name="proba_crit">Coups critiques améliorés</string>
     <string name="proba_rerolls">Relances d’Inspiration</string>
     <string name="proba_result_label">Chance de réussite</string>
+    <string name="proba_below">moins de %1$s</string>
+    <string name="proba_above">plus de %1$s</string>
     <string name="proba_percent">%1$s %%</string>
     <string name="proba_critical">Coup critique : %1$s %%</string>
     <string name="proba_needed_face">Au d20 seul, il faut %1$d ou plus.</string>
@@ -56,9 +58,15 @@
     <string name="dice_clear">Vider</string>
     <string name="dice_empty">Touchez un dé pour l’ajouter, puis lancez.</string>
     <string name="dice_tray_hint">Lancez d’un geste vif dans le plateau.</string>
-    <string name="dice_tray_a11y">Plateau de dés. Double-touchez pour lancer.</string>
+    <string name="dice_tray_a11y">Plateau de dés : %1$s</string>
+    <string name="dice_tray_empty_a11y">Plateau de dés vide</string>
     <string name="dice_stats">De %1$d à %2$d, moyenne %3$s</string>
-    <string name="dice_total_a11y">Total : %1$d</string>
+    <string name="dice_total_a11y">Lancer %1$d: total %2$d</string>
+    <plurals name="dice_count_a11y">
+        <item quantity="one">%1$d dé</item>
+        <item quantity="many">%1$d dés</item>
+        <item quantity="other">%1$d dés</item>
+    </plurals>
     <string name="dice_detail_modifier">%1$s, modificateur %2$s</string>
     <string name="dice_type">d%1$d</string>
     <string name="dice_term">%1$dd%2$d</string>

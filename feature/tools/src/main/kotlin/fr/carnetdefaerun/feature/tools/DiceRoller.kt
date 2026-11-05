@@ -1,6 +1,5 @@
 package fr.carnetdefaerun.feature.tools
 
-import fr.carnetdefaerun.core.rules.Dice
 import kotlin.random.Random
 
 /** Faces des dés proposés ; le d100 est un dé de pourcentage, tiré de 1 à 100. */
@@ -17,10 +16,13 @@ data class DicePool(val counts: Map<Int, Int> = emptyMap(), val modifier: Int = 
         return copy(counts = if (n <= 0) counts - sides else counts + (sides to n))
     }
 
-    /** Minimum, maximum et moyenne exacte de la somme (convolution des dés, sans simulation). */
+    /** Minimum, maximum et moyenne exacte de la somme. */
     val minimum: Int get() = dice.size + modifier
     val maximum: Int get() = dice.sum() + modifier
-    val mean: Double get() = Dice.sumDistribution(dice).entries.sumOf { (s, p) -> s * p } + modifier
+    /** Moyenne exacte : celle d'un dé à s faces vaut (s + 1) / 2, et les moyennes s'additionnent. */
+    val mean: Double get() = dice.sumOf { (it + 1) / 2.0 } + modifier
+
+    val isFull: Boolean get() = dice.size >= MAX_DICE
 
     companion object {
         const val MAX_DICE = 12

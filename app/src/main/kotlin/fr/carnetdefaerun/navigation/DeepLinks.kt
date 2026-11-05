@@ -19,8 +19,8 @@ object DeepLinks {
         if (uri == null || uri.scheme != SCHEME) return null
         val segments = listOfNotNull(uri.host) + uri.pathSegments
         return when (segments.firstOrNull()) {
-            "fiche" -> segments.getOrNull(1)?.takeIf { ContentId.PATTERN.matches(it) }?.let { Destination.GameEntry(it) }
-            "codex" -> segments.getOrNull(1)?.takeIf { ContentId.PATTERN.matches(it) }
+            "fiche" -> segments.getOrNull(1)?.takeIf { ContentId.isValid(it) }?.let { Destination.GameEntry(it) }
+            "codex" -> segments.getOrNull(1)?.takeIf { ContentId.isValid(it) }
                 ?.let { Destination.LoreEntry(it, uri.fragment?.takeIf { f -> SECTION_ANCHOR.matches(f) }) }
             "recherche" -> Destination.Search(uri.getQueryParameter("q").orEmpty().take(MAX_QUERY_LENGTH))
             "build" -> segments.getOrNull(1)?.toLongOrNull()?.takeIf { it > 0 }?.let { Destination.BuildEditor(it) }

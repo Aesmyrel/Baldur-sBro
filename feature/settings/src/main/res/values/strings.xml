@@ -50,7 +50,7 @@
     <string name="settings_data_export">Exporter</string>
     <string name="settings_data_import">Importer</string>
     <string name="settings_data_file_name">carnet-de-faerun-%1$s.carnet</string>
-    <string name="settings_data_import_confirm">Importer remplace toutes vos données actuelles par celles du fichier. Exportez-les d’abord si vous voulez les garder.</string>
+    <string name="settings_data_import_confirm">Importer remplace toutes vos données actuelles par celles du fichier, y compris l’acte en cours et vos tolérances aux spoilers : une sauvegarde venue d’un autre joueur peut lever le verrou au-delà de votre progression. Exportez d’abord vos données si vous voulez les garder.</string>
     <string name="settings_data_import_choose">Choisir le fichier</string>
     <string name="settings_data_cancel">Annuler</string>
     <string name="settings_data_exported">Sauvegarde enregistrée.</string>
@@ -61,6 +61,7 @@
         <item quantity="many">Sauvegarde importée ; %1$d éléments illisibles ont été écartés.</item>
         <item quantity="other">Sauvegarde importée ; %1$d éléments illisibles ont été écartés.</item>
     </plurals>
+    <string name="settings_data_imported_partially">Vos contenus, builds et notes sont importés, mais les réglages ou le groupe n’ont pas pu l’être : vérifiez-les.</string>
     <string name="settings_data_not_carnet">Ce fichier n’est pas une sauvegarde du carnet. Rien n’a été changé.</string>
     <string name="settings_data_too_new">Cette sauvegarde vient d’une version plus récente du carnet. Rien n’a été changé.</string>
     <string name="settings_data_too_large">Ce fichier est trop volumineux pour être une sauvegarde du carnet. Rien n’a été changé.</string>

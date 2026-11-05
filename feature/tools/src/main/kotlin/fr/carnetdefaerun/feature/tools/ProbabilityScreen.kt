@@ -119,11 +119,12 @@ fun ProbabilityScreen(input: ProbabilityInput, onChange: (ProbabilityInput) -> U
                     }
 
                     SectionHeader(stringResource(R.string.proba_options))
+                    // Les interrupteurs ont leur propre marge : pas de second retrait.
+                    CarnetSwitchRow(stringResource(R.string.proba_halfling), stringResource(R.string.proba_halfling_sub), input.halflingLuck, { onChange(input.copy(halflingLuck = it)) })
+                    if (input.kind == RollKind.SAVING_THROW) {
+                        CarnetSwitchRow(stringResource(R.string.proba_auto_saves), stringResource(R.string.proba_auto_saves_sub), input.autoSaves, { onChange(input.copy(autoSaves = it)) })
+                    }
                     Column(Modifier.padding(horizontal = gutter)) {
-                        CarnetSwitchRow(stringResource(R.string.proba_halfling), stringResource(R.string.proba_halfling_sub), input.halflingLuck, { onChange(input.copy(halflingLuck = it)) })
-                        if (input.kind == RollKind.SAVING_THROW) {
-                            CarnetSwitchRow(stringResource(R.string.proba_auto_saves), stringResource(R.string.proba_auto_saves_sub), input.autoSaves, { onChange(input.copy(autoSaves = it)) })
-                        }
                         if (input.kind == RollKind.ATTACK) {
                             val critLabel = stringResource(R.string.proba_crit)
                             Stepper(critLabel, input.improvedCriticals, { onChange(input.copy(improvedCriticals = it)) }, 0..3,
@@ -147,7 +148,7 @@ fun ProbabilityScreen(input: ProbabilityInput, onChange: (ProbabilityInput) -> U
 @Composable
 private fun ResultCard(input: ProbabilityInput, result: ProbabilityResult, modifier: Modifier = Modifier) {
     val c = CarnetTheme.colors
-    val value = percent(result.success)
+    val value = percentText(percent(result.success))
     val a11y = stringResource(R.string.proba_result_a11y, value)
     OrnateCard(modifier, borderColor = c.goldDeep) {
         Row(verticalAlignment = Alignment.Bottom, modifier = Modifier.fillMaxWidth()) {
@@ -157,7 +158,7 @@ private fun ResultCard(input: ProbabilityInput, result: ProbabilityResult, modif
                 modifier = Modifier.clearAndSetSemantics { contentDescription = a11y; liveRegion = LiveRegionMode.Polite },
             )
         }
-        result.critical?.let { Text(stringResource(R.string.proba_critical, percent(it)), style = CarnetTheme.type.data, color = c.text) }
+        result.critical?.let { Text(stringResource(R.string.proba_critical, percentText(percent(it))), style = CarnetTheme.type.data, color = c.text) }
         val needed = when (val n = result.needed) {
             is Needed.Face -> stringResource(R.string.proba_needed_face, n.face)
             Needed.AllButOne -> stringResource(R.string.proba_needed_all_but_one)
@@ -168,6 +169,14 @@ private fun ResultCard(input: ProbabilityInput, result: ProbabilityResult, modif
         Text(needed, style = CarnetTheme.type.bodySmall, color = c.text2, modifier = Modifier.padding(top = 4.dp))
         if (input.appliedDice.isNotEmpty()) Text(stringResource(R.string.proba_needed_dice_note), style = CarnetTheme.type.bodySmall, color = c.text2)
     }
+}
+
+/** Pourcentage avec sa borne éventuelle (« moins de 0,1 »), sans le signe %. */
+@Composable
+private fun percentText(p: Percent): String = when (p.bound) {
+    Percent.Bound.EXACT -> p.value
+    Percent.Bound.BELOW -> stringResource(R.string.proba_below, p.value)
+    Percent.Bound.ABOVE -> stringResource(R.string.proba_above, p.value)
 }
 
 /** Nombre signé avec le vrai signe moins. */

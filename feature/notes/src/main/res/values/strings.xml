@@ -10,6 +10,9 @@
     <string name="notes_hidden_entry">Une fiche masquée</string>
     <string name="notes_missing_entry">Une fiche introuvable</string>
     <string name="notes_filter_all">Toutes</string>
+    <string name="notes_filter_entries">Sur des fiches</string>
+    <string name="note_related">Autres notes sur cette fiche</string>
+    <string name="note_open_entry">Ouvrir la fiche</string>
 
     <string name="note_crumb">Notes</string>
     <string name="note_title_new">Nouvelle note</string>

@@ -16,6 +16,9 @@ interface PartyRepository {
     val slots: Flow<List<Long?>>
     suspend fun set(slot: Int, buildId: Long?)
 
+    /** Remplace les quatre emplacements en une seule écriture (import d'une sauvegarde). */
+    suspend fun setAll(slots: List<Long?>)
+
     companion object {
         const val SIZE = 4
     }
@@ -35,6 +38,13 @@ class DataStorePartyRepository @Inject constructor(@Named("party") private val s
             slots[slot] = buildId
             prefs[KEY] = slots.joinToString(",") { it?.toString().orEmpty() }
         }
+    }
+
+    override suspend fun setAll(slots: List<Long?>) {
+        val fixed = List(PartyRepository.SIZE) { i -> slots.getOrNull(i)?.takeIf { it > 0 } }
+        // Un même build n'occupe qu'un emplacement : le premier l'emporte.
+        val unique = fixed.mapIndexed { i, id -> id?.takeIf { fixed.indexOf(it) == i } }
+        store.edit { prefs -> prefs[KEY] = unique.joinToString(",") { it?.toString().orEmpty() } }
     }
 
     private fun parse(raw: String?): List<Long?> {

@@ -67,16 +67,29 @@ fun ProbabilityInput.result(): ProbabilityResult {
     return ProbabilityResult(success, critical, needed)
 }
 
-/** Pourcentage à la française : une décimale sous 10 % et au-dessus de 90 %, sinon un entier ; jamais « 0 » ni « 100 » trompeurs. */
-fun percent(p: Double): String {
-    // Arrondi préalable au millionième de point : 0,575 × 100 vaut 57,4999… en virgule flottante, et doit s'afficher 58.
-    val v = Math.round(p * 1e8) / 1e6
+/** Pourcentage affiché : sa valeur à la française, et s'il s'agit d'une borne (« moins de », « plus de »). */
+data class Percent(val value: String, val bound: Bound = Bound.EXACT) {
+    enum class Bound { EXACT, BELOW, ABOVE }
+}
+
+/**
+ * Pourcentage à la française : une décimale sous 10 % et au-dessus de 90 %, sinon un entier. « 0 » et « 100 » ne
+ * s'affichent que si l'échec ou la réussite sont certains, jugés sur la probabilité exacte et non sur l'arrondi ;
+ * en deçà d'un millième, une borne (« moins de 0,1 », « plus de 99,9 »).
+ */
+fun percent(p: Double): Percent {
+    val failure = 1 - p
     return when {
-        v <= 0.0 -> "0"
-        v >= 100.0 -> "100"
-        v < 0.1 -> "< 0,1"
-        v > 99.9 -> "> 99,9"
-        v < 10 || v > 90 -> String.format(Locale.FRANCE, "%.1f", v)
-        else -> String.format(Locale.FRANCE, "%.0f", v)
+        p <= 0.0 -> Percent("0")
+        failure <= 0.0 -> Percent("100")
+        p < 0.0005 -> Percent(fr(0.1, 1), Percent.Bound.BELOW)
+        failure < 0.0005 -> Percent(fr(99.9, 1), Percent.Bound.ABOVE)
+        else -> {
+            // Arrondi préalable au millionième de point : 0,575 × 100 vaut 57,4999… en virgule flottante, et doit s'afficher 58.
+            val v = Math.round(p * 1e8) / 1e6
+            if (v < 10 || v > 90) Percent(fr(v, 1)) else Percent(fr(v, 0))
+        }
     }
 }
+
+private fun fr(v: Double, decimals: Int): String = String.format(Locale.FRANCE, "%.${decimals}f", v)

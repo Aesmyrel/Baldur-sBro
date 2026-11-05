@@ -34,6 +34,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
@@ -43,6 +44,7 @@ import androidx.compose.ui.graphics.drawscope.clipRect
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.input.pointer.util.VelocityTracker
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.LiveRegionMode
 import androidx.compose.ui.semantics.Role
@@ -52,6 +54,7 @@ import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.semantics.onClick
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.drawText
 import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.unit.dp
@@ -85,8 +88,12 @@ class DiceViewModel : ViewModel() {
     var last by mutableStateOf<DiceRoll?>(null)
     var history by mutableStateOf(emptyList<DiceRoll>())
 
+    /** Numéro du lancer : il entre dans l'annonce de TalkBack, pour que deux totaux identiques soient tous deux annoncés. */
+    var rolls by mutableStateOf(0)
+
     fun record(roll: DiceRoll) {
         last = roll
+        rolls++
         history = (listOf(roll) + history).take(HISTORY)
     }
 
@@ -98,7 +105,7 @@ class DiceViewModel : ViewModel() {
 @Composable
 fun DiceRoute(onBack: () -> Unit) {
     val vm: DiceViewModel = viewModel()
-    DiceScreen(vm.pool, vm.last, vm.history, onPool = { vm.pool = it }, onRolled = vm::record, onBack = onBack)
+    DiceScreen(vm.pool, vm.last, vm.history, onPool = { vm.pool = it }, onRolled = vm::record, onBack = onBack, rollNumber = vm.rolls)
 }
 
 @Composable
@@ -110,6 +117,7 @@ fun DiceScreen(
     onRolled: (DiceRoll) -> Unit,
     onBack: () -> Unit,
     random: Random = Random.Default,
+    rollNumber: Int = if (last != null) 1 else 0,
 ) {
     val c = CarnetTheme.colors
     val gutter = CarnetTheme.dimens.gutter
@@ -163,8 +171,10 @@ fun DiceScreen(
                         modifier = Modifier.padding(horizontal = gutter, vertical = 4.dp).semantics { heading() })
 
                     val faces = tumbling ?: last?.faces?.takeIf { last.pool == pool }
-                    Tray(pool, faces, progress.value, direction, onFling = ::throwDice, Modifier.padding(horizontal = gutter, vertical = 10.dp))
-                    Result(pool, last?.takeIf { tumbling == null && it.pool == pool }, Modifier.padding(horizontal = gutter))
+                    // La progression n'est lue qu'au dessin : l'écran ne se recompose pas à chaque image de la course.
+                    Tray(pool, faces, { progress.value }, direction, onFling = ::throwDice, Modifier.padding(horizontal = gutter, vertical = 10.dp))
+                    // Le total reste en place pendant la course (atténué) : TalkBack annonce un changement, pas une apparition.
+                    Result(pool, last?.takeIf { it.pool == pool }, rolling = tumbling != null, rollNumber = rollNumber, Modifier.padding(horizontal = gutter))
 
                     Row(Modifier.padding(horizontal = gutter, vertical = 12.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         GoldButton(stringResource(R.string.dice_roll), { throwDice(Offset.Zero) }, enabled = !pool.isEmpty)
@@ -173,7 +183,7 @@ fun DiceScreen(
 
                     SectionHeader(stringResource(R.string.dice_choose))
                     TagRow(Modifier.padding(horizontal = gutter, vertical = 6.dp)) {
-                        for (sides in DIE_SIDES) DieTile(sides, pool.counts[sides] ?: 0, onAdd = { onPool(pool.add(sides)) }, onRemove = { onPool(pool.remove(sides)) })
+                        for (sides in DIE_SIDES) DieTile(sides, pool.counts[sides] ?: 0, canAdd = !pool.isFull, onAdd = { onPool(pool.add(sides)) }, onRemove = { onPool(pool.remove(sides)) })
                     }
                     val modLabel = stringResource(R.string.dice_modifier)
                     Stepper(modLabel, pool.modifier, { onPool(pool.copy(modifier = it)) }, -10..20,
@@ -212,10 +222,11 @@ private fun notation(pool: DicePool): String {
  * de clic. Pendant la course, les dés glissent dans le sens du geste en tournant, et ralentissent.
  */
 @Composable
-private fun Tray(pool: DicePool, faces: List<Int>?, progress: Float, direction: Offset, onFling: (Offset) -> Unit, modifier: Modifier = Modifier) {
+private fun Tray(pool: DicePool, faces: List<Int>?, progress: () -> Float, direction: Offset, onFling: (Offset) -> Unit, modifier: Modifier = Modifier) {
     val c = CarnetTheme.colors
     val measurer = rememberTextMeasurer()
-    val label = stringResource(R.string.dice_tray_a11y)
+    val label = if (pool.isEmpty) stringResource(R.string.dice_tray_empty_a11y) else stringResource(R.string.dice_tray_a11y, notation(pool))
+    val rollLabel = stringResource(R.string.dice_roll)
     val shape = RoundedCornerShape(CarnetTheme.dimens.radius * 2)
     val numberStyle = CarnetTheme.type.numeric
     Box(
@@ -231,11 +242,12 @@ private fun Tray(pool: DicePool, faces: List<Int>?, progress: Float, direction: 
                     },
                 )
             }
-            .semantics { contentDescription = label; onClick { onFling(Offset.Zero); true } },
+            .semantics { contentDescription = label; onClick(label = rollLabel) { onFling(Offset.Zero); true } },
     ) {
         Canvas(Modifier.fillMaxSize()) {
             val dice = pool.dice
             if (dice.isEmpty()) return@Canvas
+            val progress = progress()
             val perRow = minOf(dice.size, 6)
             val cell = minOf(size.width / (perRow + 0.5f), size.height / ((dice.size + perRow - 1) / perRow + 0.5f))
             val travel = (1 - progress) * size.width * 0.35f
@@ -269,12 +281,12 @@ private fun Tray(pool: DicePool, faces: List<Int>?, progress: Float, direction: 
 
 /** Le total, en grand, annoncé à chaque lancer ; dessous, les faces et le modificateur, puis l'étendue et la moyenne. */
 @Composable
-private fun Result(pool: DicePool, roll: DiceRoll?, modifier: Modifier = Modifier) {
+private fun Result(pool: DicePool, roll: DiceRoll?, rolling: Boolean, rollNumber: Int, modifier: Modifier = Modifier) {
     val c = CarnetTheme.colors
     Column(modifier.fillMaxWidth()) {
         if (roll != null) {
-            val total = stringResource(R.string.dice_total_a11y, roll.total)
-            Row(verticalAlignment = Alignment.Bottom, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            val total = stringResource(R.string.dice_total_a11y, rollNumber, roll.total)
+            Row(Modifier.alpha(if (rolling) 0.35f else 1f), verticalAlignment = Alignment.Bottom, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                 Text(roll.total.toString(), style = CarnetTheme.type.numericLarge, color = c.gold,
                     modifier = Modifier.clearAndSetSemantics { contentDescription = total; liveRegion = LiveRegionMode.Polite })
                 val faces = roll.faces.joinToString(stringResource(R.string.dice_plus))
@@ -295,17 +307,19 @@ private fun Result(pool: DicePool, roll: DiceRoll?, modifier: Modifier = Modifie
 
 /** Tuile d'un type de dé : toucher ajoute, le compteur retire. Chaque bouton fait 48 dp au moins. */
 @Composable
-private fun DieTile(sides: Int, count: Int, onAdd: () -> Unit, onRemove: () -> Unit) {
+private fun DieTile(sides: Int, count: Int, canAdd: Boolean, onAdd: () -> Unit, onRemove: () -> Unit) {
     val c = CarnetTheme.colors
     val shape = RoundedCornerShape(CarnetTheme.dimens.radius * 2)
     val addLabel = stringResource(R.string.dice_add, sides)
     val removeLabel = stringResource(R.string.dice_remove, sides)
+    val countLabel = pluralStringResource(R.plurals.dice_count_a11y, count, count)
     Row(
         Modifier.heightIn(min = 48.dp).clip(shape).background(if (count > 0) c.selectedTint else c.surface).border(1.dp, if (count > 0) c.gold else c.line, shape),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Row(
-            Modifier.heightIn(min = 48.dp).clickable(role = Role.Button, onClick = onAdd).semantics { contentDescription = addLabel }.padding(horizontal = 10.dp),
+            Modifier.heightIn(min = 48.dp).clickable(enabled = canAdd, role = Role.Button, onClick = onAdd)
+                .semantics { contentDescription = addLabel; stateDescription = countLabel }.padding(horizontal = 10.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(6.dp),
         ) {
@@ -326,7 +340,8 @@ private fun pigment(sides: Int, c: CarnetColors): Color = when (sides) {
     4 -> c.vermilion
     6 -> c.orpiment
     8 -> c.verdigris
-    10, 100 -> c.lapis
+    10 -> c.lapis
+    100 -> c.sepia
     12 -> c.tyrian
     else -> c.gold
 }
@@ -361,6 +376,18 @@ private fun androidx.compose.ui.graphics.drawscope.DrawScope.drawDie(sides: Int,
         clipRect(top = center.y) { hatch(shade, ink, Hatch(spacing = 3.2f, angle = 38f, width = 0.5f, alpha = 0.35f), unit = density) }
     }
     drawPath(outline, ink, style = Stroke(1.4.dp.toPx()))
+    // Dé de pourcentage : un second contour intérieur, pour le distinguer du d10 d'un coup d'œil.
+    if (sides == 100) {
+        val inner = Path().apply {
+            for (k in 0 until corners) {
+                val a = start + 2 * PI * k / corners
+                val p = Offset(center.x + radius * 0.72f * cos(a).toFloat(), center.y + radius * 0.72f * sin(a).toFloat())
+                if (k == 0) moveTo(p.x, p.y) else lineTo(p.x, p.y)
+            }
+            close()
+        }
+        drawPath(inner, ink, style = Stroke(0.9.dp.toPx()))
+    }
     if (sides == 20 || sides == 12 || sides == 10 || sides == 100) {
         // Facette centrale : un petit polygone, comme une face vue de face.
         val inner = Path().apply {

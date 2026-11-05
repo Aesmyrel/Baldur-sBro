@@ -101,15 +101,15 @@ private val SLUG = Regex("^[a-z0-9]+(-[a-z0-9]+)*$")
 
 /** Une destination relue (DataStore, lien profond) n'est acceptée que si ses paramètres sont bien formés. */
 fun Destination.isWellFormed(): Boolean = when (this) {
-    is Destination.GameEntry -> ContentId.PATTERN.matches(id)
-    is Destination.CompanionDetail -> ContentId.PATTERN.matches(id)
-    is Destination.LoreEntry -> ContentId.PATTERN.matches(id) && (anchor == null || SECTION_ANCHOR.matches(anchor))
+    is Destination.GameEntry -> ContentId.isValid(id)
+    is Destination.CompanionDetail -> ContentId.isValid(id)
+    is Destination.LoreEntry -> ContentId.isValid(id) && (anchor == null || SECTION_ANCHOR.matches(anchor))
     is Destination.CodexTheme -> theme.length <= 40 && SLUG.matches(theme)
     is Destination.EncyclopediaCategory -> category.length <= 40 && SLUG.matches(category)
     is Destination.Progress -> act == null || (act.length <= 12 && SLUG.matches(act))
     is Destination.Search -> query.length <= MAX_QUERY_LENGTH
     is Destination.BuildEditor -> buildId > 0
-    is Destination.NoteEditor -> (noteId == null || noteId > 0) && (targetId == null || ContentId.PATTERN.matches(targetId))
+    is Destination.NoteEditor -> (noteId == null || noteId > 0) && (targetId == null || ContentId.isValid(targetId))
     else -> true
 }
 

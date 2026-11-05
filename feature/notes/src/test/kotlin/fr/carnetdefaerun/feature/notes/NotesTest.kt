@@ -83,6 +83,32 @@ class NotesTest {
         assertThat(shown).contains("Une fiche masquée")
     }
 
+    @Test
+    fun `l'éditeur d'une note sur une fiche masquée ne la nomme pas et ne l'ouvre pas`() {
+        val state = NoteEditorUiState(1, notes[2].text, notes[2].target, labels)
+        compose.setContent { CarnetTheme(reducedMotion = true) { NoteEditorScreen(state, {}, {}, {}, {}, {}) } }
+        compose.waitForIdle()
+        val shown = texts(compose.onRoot(useUnmergedTree = true).fetchSemanticsNode())
+        val locked = GameData.entries.single { it.id == lockedId }.name
+        assertThat(shown.none { it.contains(locked.fr) || it.contains(locked.en) }).isTrue()
+        assertThat(shown).doesNotContain("Ouvrir la fiche")
+        assertThat(shown.any { it.contains("Une fiche masquée") }).isTrue()
+    }
+
+    @Test
+    fun `filtres de la liste`() {
+        assertThat(notes.filter(NoteFilter.All::accepts)).hasSize(4)
+        assertThat(notes.filter(NoteFilter.Free::accepts).map { it.id }).containsExactly(0L)
+        assertThat(notes.filter(NoteFilter.OnAct(Act.ACT_1)::accepts).map { it.id }).containsExactly(3L)
+        assertThat(notes.filter(NoteFilter.OnEntries::accepts).map { it.id }).containsExactly(2L, 1L).inOrder()
+    }
+
+    @Test fun notes_filtre_fiches() = shot("notes_filtre_fiches") { NotesScreen(NotesUiState(notes, labels), {}, {}, {}, initialFilter = NoteFilter.OnEntries) }
+    @Test fun note_autres_notes_parchemin() = shot("note_autres_notes_parchemin", ThemeMode.PARCHEMIN) {
+        val related = listOf(Note(7, "Fonctionne mal contre les créatures résistantes au feu", NoteTarget.OnEntry(visibleId), 7))
+        NoteEditorScreen(NoteEditorUiState(2, notes[1].text, notes[1].target, labels, related = related), {}, {}, {}, {}, {})
+    }
+
     @Test fun notes_sombre() = shot("notes_sombre") { NotesScreen(NotesUiState(notes, labels), {}, {}, {}) }
     @Test fun notes_vide_parchemin() = shot("notes_vide_parchemin", ThemeMode.PARCHEMIN) { NotesScreen(NotesUiState(emptyList(), emptyMap()), {}, {}, {}) }
     @Test fun note_editeur_sombre() = shot("note_editeur_sombre") {

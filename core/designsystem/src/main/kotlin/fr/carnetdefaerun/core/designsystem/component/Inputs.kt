@@ -44,13 +44,17 @@ import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.LiveRegionMode
 import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import fr.carnetdefaerun.core.designsystem.R
 import fr.carnetdefaerun.core.designsystem.haptics.rememberCarnetHaptics
 import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 
@@ -239,9 +243,11 @@ fun Stepper(
     Row(modifier.fillMaxWidth().heightIn(min = 56.dp), verticalAlignment = Alignment.CenterVertically) {
         Text(label, style = CarnetTheme.type.reading, color = c.text, modifier = Modifier.weight(1f).padding(end = 8.dp))
         StepGlyph(minus = true, enabled = value > range.first, label = decreaseLabel) { haptics.tick(); onValueChange(value - 1) }
+        val description = stringResource(R.string.ds_stepper_value, label, valueText)
         Text(
             valueText, style = CarnetTheme.type.numeric, color = c.gold, textAlign = TextAlign.Center,
-            modifier = Modifier.widthIn(min = 56.dp).semantics { contentDescription = "$label $valueText" },
+            // Région vivante : TalkBack annonce la nouvelle valeur après chaque appui sur − ou +.
+            modifier = Modifier.widthIn(min = 56.dp).semantics { contentDescription = description; liveRegion = LiveRegionMode.Polite },
         )
         StepGlyph(minus = false, enabled = value < range.last, label = increaseLabel) { haptics.tick(); onValueChange(value + 1) }
     }

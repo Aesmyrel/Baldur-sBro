@@ -1,5 +1,6 @@
 package fr.carnetdefaerun.core.model.builds
 
+import fr.carnetdefaerun.core.model.content.ContentId
 import java.io.ByteArrayOutputStream
 import java.util.Base64
 import java.util.zip.Deflater
@@ -53,7 +54,7 @@ object BuildCode {
                 inflater.end()
             }
             json.decodeFromString(Build.serializer(), out.toString(Charsets.UTF_8))
-        }.getOrNull()?.takeIf { it.isPlausible() }?.let { it.copy(name = cleanName(it.name)) }
+        }.getOrNull()?.takeIf { isPlausible(it) }?.let { it.copy(name = cleanName(it.name)) }
     }
 
     /**
@@ -63,7 +64,13 @@ object BuildCode {
     fun cleanName(name: String): String =
         name.replace(Regex("[\\p{Cc}\\p{Cf}]"), "").replace(Regex("\\s+"), " ").trim().take(MAX_NAME_LENGTH)
 
-    private fun Build.isPlausible(): Boolean =
-        name.length <= MAX_NAME_LENGTH && levels.size <= 12 && baseScores.values.all { it in 1..30 } &&
-            levels.all { l -> l.feat?.abilityIncreases?.values?.all { it in 1..2 } ?: true }
+    /**
+     * Build vraisemblable, venu d'un code ou d'une sauvegarde : nom et niveaux bornés, valeurs achetées dans les bornes
+     * de l'achat de points (8 à 15), augmentations de don de 1 ou 2, choix de compétences bornés.
+     */
+    fun isPlausible(build: Build): Boolean = with(build) {
+        name.length <= MAX_NAME_LENGTH && levels.size <= 12 && baseScores.values.all { it in 8..15 } &&
+            levels.all { l -> l.feat?.abilityIncreases?.values?.all { it in 1..2 } ?: true } &&
+            skillChoices.size <= 8 && skillChoices.all { (k, v) -> k.length <= ContentId.MAX_LENGTH && v.size <= 18 }
+    }
 }

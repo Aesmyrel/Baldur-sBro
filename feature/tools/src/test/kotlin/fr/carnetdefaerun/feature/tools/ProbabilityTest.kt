@@ -36,13 +36,17 @@ class ProbabilityTest {
     }
 
     @Test
-    fun `pourcentages à la française`() {
-        assertThat(percent(0.575)).isEqualTo("58")
-        assertThat(percent(0.05)).isEqualTo("5,0")
-        assertThat(percent(0.9975)).isEqualTo("99,8")
-        assertThat(percent(0.0)).isEqualTo("0")
-        assertThat(percent(1.0)).isEqualTo("100")
-        assertThat(percent(0.99999)).isEqualTo("> 99,9")
-        assertThat(percent(0.000001)).isEqualTo("< 0,1")
+    fun `pourcentages à la française, certitude jugée sur la probabilité exacte`() {
+        assertThat(percent(0.575)).isEqualTo(Percent("58"))
+        assertThat(percent(0.05)).isEqualTo(Percent("5,0"))
+        assertThat(percent(0.9975)).isEqualTo(Percent("99,8"))
+        assertThat(percent(0.0)).isEqualTo(Percent("0"))
+        assertThat(percent(1.0)).isEqualTo(Percent("100"))
+        assertThat(percent(0.99999)).isEqualTo(Percent("99,9", Percent.Bound.ABOVE))
+        assertThat(percent(0.000001)).isEqualTo(Percent("0,1", Percent.Bound.BELOW))
+        // Avantage, Chance du halfelin et une relance : échec de l'ordre de 10⁻¹¹, jamais « 100 % ».
+        val nearly = ProbabilityInput(RollKind.ABILITY_CHECK, modifier = 10, target = 5, mode = RollMode.ADVANTAGE, halflingLuck = true, inspirationRerolls = 1).result()
+        assertThat(nearly.success).isLessThan(1.0)
+        assertThat(percent(nearly.success).bound).isEqualTo(Percent.Bound.ABOVE)
     }
 }

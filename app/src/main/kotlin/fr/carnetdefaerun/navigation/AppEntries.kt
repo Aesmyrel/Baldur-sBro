@@ -55,7 +55,7 @@ fun appEntries(navigator: AppNavigator, tab: TopLevel): (Destination) -> NavEntr
             Destination.Companions, is Destination.CompanionDetail -> CompanionsRoute(onBack = back)
             is Destination.Progress -> ProgressRoute(onBack = back)
             Destination.Notes -> NotesRoute(onNavigate = navigator::navigate, onBack = back)
-            is Destination.NoteEditor -> NoteEditorRoute(destination.noteId, destination.targetId, back)
+            is Destination.NoteEditor -> NoteEditorRoute(destination.noteId, destination.targetId, navigator::navigate, back)
             is Destination.Search -> SearchRoute(destination.query, navigator::navigate, back)
             else -> CodexRoute(onNavigate = navigator::navigate)
         }

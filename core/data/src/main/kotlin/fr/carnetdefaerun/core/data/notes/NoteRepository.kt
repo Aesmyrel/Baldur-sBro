@@ -52,16 +52,16 @@ class RoomNoteRepository @Inject constructor(private val db: UserDatabase) : Not
     override suspend fun delete(id: Long) = db.notes().delete(id)
 
     companion object {
-        internal fun encode(target: NoteTarget?): Pair<String?, String?> = when (target) {
+        fun encode(target: NoteTarget?): Pair<String?, String?> = when (target) {
             null -> null to null
             is NoteTarget.OnAct -> "act" to target.act.name
             is NoteTarget.OnEntry -> "entry" to target.id.value
         }
 
         /** Une cible illisible (acte inconnu, identifiant mal formé) est oubliée : la note reste, sans rattachement. */
-        internal fun decode(kind: String?, value: String?): NoteTarget? = when (kind) {
+        fun decode(kind: String?, value: String?): NoteTarget? = when (kind) {
             "act" -> Act.entries.firstOrNull { it.name == value }?.let(NoteTarget::OnAct)
-            "entry" -> value?.takeIf { ContentId.PATTERN.matches(it) }?.let { NoteTarget.OnEntry(ContentId(it)) }
+            "entry" -> value?.takeIf { ContentId.isValid(it) }?.let { NoteTarget.OnEntry(ContentId(it)) }
             else -> null
         }
 

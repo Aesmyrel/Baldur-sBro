@@ -456,3 +456,34 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - Le mode session n'est pas repris, car il est propre à l'appareil ; une taille de lecture hors liste revient à 100 %.
 - **Critère de fin de phase « export → réinstallation → import sans perte »** : testé sur un appareil vierge simulé, avec une base et des magasins neufs ; toutes les données reviennent, et le groupe désigne les mêmes builds. La sauvegarde Android couvre déjà `user.db` et les fichiers DataStore, dont celui du groupe.
 
+**D-096 — Revue indépendante de la phase 6 : constats et corrections.** La revue a relevé 1 point bloquant, 5 importants et 11 mineurs. Elle a aussi revérifié à la main deux pourcentages affichés : ils sont justes.
+- **Bloquant — sauvegarde piégée**. Un identifiant démesuré faisait déborder la pile de l'expression régulière, et rien n'était borné : longueurs, cibles des notes, vraisemblance des builds, exceptions de l'import. Corrigé :
+  - `ContentId.isValid` borne la longueur (128) avant l'expression régulière. Il sert partout où un identifiant vient de l'extérieur : liens profonds, pile de navigation relue, notes, sauvegardes, codes de partage.
+  - Chaque ligne d'une sauvegarde est bornée et validée : noms nettoyés des caractères de contrôle, cibles de note relues, builds vraisemblables (valeurs achetées de 8 à 15, comme pour les codes), payload de 16 Ko au plus, nombre de lignes plafonné.
+  - L'import ne peut plus faire planter l'appli ; l'atelier tolère un build hors bornes.
+- **Importants** :
+  - le groupe est recalé sur les builds gardés, par une table « rang dans le fichier → nouvel identifiant » ;
+  - le groupe s'écrit en une seule fois, et un échec après la transaction est annoncé comme un import partiel, plus jamais comme « rien n'a changé » ;
+  - les notes se retrouvent : filtres de la liste (sans rattachement, par acte, sur des fiches), « Autres notes sur cette fiche » dans l'éditeur ouvert depuis une fiche, « Ouvrir la fiche » (jamais pour une fiche masquée) ;
+  - l'éditeur ne perd plus de texte : le retour enregistre ce qui a changé, le brouillon survit à l'arrêt du processus (`SavedStateHandle`), un second enregistrement en cours est ignoré ;
+  - TalkBack : le compteur annonce sa nouvelle valeur ; chaque tuile de dé dit combien elle en contient ; le plateau décrit les dés à lancer ; le total reste en place pendant la course et l'annonce porte le numéro du lancer, si bien que deux totaux égaux sont tous deux annoncés.
+- **Critère « énumération exhaustive »** : un test parcourt tout l'espace d'entrée de l'outil (plus de 100 000 cas). Il le compare à une énumération écrite sans le moteur, relances en séquences explicites, et confronte chaque « il faut N » aux faces qui réussissent vraiment.
+- **Mineurs** :
+  - « 100 % » et « 0 % » ne s'affichent que si l'issue est certaine, sinon « plus de 99,9 » ou « moins de 0,1 », et ces textes sont des ressources ;
+  - l'export s'écrit hors du fil principal, en mode troncature ;
+  - les builds illisibles survivent à l'aller-retour ;
+  - l'en-tête est lu d'abord : une version future est reconnue même si sa structure a changé ;
+  - les noms corrigés sont nettoyés ;
+  - la confirmation d'import prévient que l'acte en cours et les tolérances aux spoilers seront remplacés ;
+  - la pile de navigation est exclue de la sauvegarde Android ;
+  - interrupteurs alignés ; d100 distinct du d10 ; accueil des Outils plafonné ;
+  - la progression de la course n'est lue qu'au dessin ; moyenne des dés par formule exacte ;
+  - l'ajout de dés est désactivé à 12.
+- **Tests et captures ajoutés** :
+  - import piégé (identifiant de 20 Ko, cible de note démesurée, build impossible) ;
+  - groupe recalé ; réglages et groupe intacts après un refus ;
+  - build version 2 migré en version 3 ;
+  - fuite dans l'éditeur de notes ;
+  - captures de la barre d'une fiche avec la note, de la section Données, des filtres et des notes liées.
+- **Laissé en l'état** : les puces d'acte de l'éditeur restent des puces à bascule. Le cas « réglages ou groupe en échec après la transaction » n'a pas de test automatisé : il faudrait simuler une panne du DataStore.
+

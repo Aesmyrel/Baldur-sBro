@@ -31,13 +31,13 @@ import org.robolectric.annotation.GraphicsMode
 class SettingsScreenshotTest {
     @get:Rule val compose = createAndroidComposeRule<ComponentActivity>()
 
-    private fun shot(name: String, mode: ThemeMode = ThemeMode.SOMBRE, fontScale: Float = 1f, theme: AppTheme = AppTheme.DARK) {
+    private fun shot(name: String, mode: ThemeMode = ThemeMode.SOMBRE, fontScale: Float = 1f, theme: AppTheme = AppTheme.DARK, data: DataActions = DataActions()) {
         compose.setContent {
             val base = LocalDensity.current
             CompositionLocalProvider(LocalDensity provides Density(base.density, fontScale)) {
                 CarnetTheme(mode = mode, reducedMotion = true) {
                     Box(Modifier.fillMaxSize().grimoireBackground(CarnetTheme.colors)) {
-                        SettingsScreen(UserPreferences(currentAct = Act.ACT_1, tolerance = Tolerance.LIGHT, theme = theme), {}, {}, {})
+                        SettingsScreen(UserPreferences(currentAct = Act.ACT_1, tolerance = Tolerance.LIGHT, theme = theme), {}, {}, {}, data)
                     }
                 }
             }
@@ -50,4 +50,8 @@ class SettingsScreenshotTest {
 
     @Config(qualifiers = "w412dp-h2400dp-xxhdpi")
     @Test fun reglages_police200() = shot("reglages_police200", fontScale = 2f)
+
+    /** Section Données : confirmation d'import ouverte et message d'import partiel, en bas de l'écran. */
+    @Config(qualifiers = "w412dp-h2400dp-xxhdpi")
+    @Test fun reglages_donnees_sombre() = shot("reglages_donnees_sombre", data = DataActions(message = DataMessage.IMPORTED_PARTIALLY, confirming = true))
 }

@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Sauvegarde Android : données du joueur (préférences, progression, builds, notes, corrections) incluses ;
+<!-- Sauvegarde Android : données du joueur (préférences, progression, builds, groupe, notes, corrections) incluses,
+     sauf la pile de navigation, propre à l’appareil ;
      la base de contenu, réinstallée avec l’APK, n’est pas incluse. Le journal WAL accompagne user.db
      pour que la copie reste cohérente ; le fichier -shm, reconstruit à l’ouverture, est inutile. -->
 <data-extraction-rules>
     <cloud-backup disableIfNoEncryptionCapabilities="true">
         <include domain="sharedpref" path="." />
         <include domain="file" path="datastore/" />
+        <exclude domain="file" path="datastore/navigation.preferences_pb" />
         <include domain="database" path="user.db" />
         <include domain="database" path="user.db-wal" />
     </cloud-backup>
     <device-transfer>
         <include domain="sharedpref" path="." />
         <include domain="file" path="datastore/" />
+        <exclude domain="file" path="datastore/navigation.preferences_pb" />
         <include domain="database" path="user.db" />
         <include domain="database" path="user.db-wal" />
     </device-transfer>
