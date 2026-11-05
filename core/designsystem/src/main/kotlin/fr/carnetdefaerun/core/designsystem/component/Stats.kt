@@ -7,6 +7,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -77,8 +78,9 @@ fun StatTile(label: String, value: String, selected: Boolean, onClick: () -> Uni
 data class LevelPip(val emblem: ClassEmblem, val color: Color, val marker: LevelMarker? = null, val description: String)
 enum class LevelMarker { SOUS_CLASSE, DON }
 
+/** Frise des niveaux ; [total] places, les niveaux pas encore pris en cercles vides. */
 @Composable
-fun LevelTrack(levels: List<LevelPip>, modifier: Modifier = Modifier) {
+fun LevelTrack(levels: List<LevelPip>, modifier: Modifier = Modifier, total: Int = levels.size) {
     val c = CarnetTheme.colors
     Row(modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(2.dp)) {
         levels.forEachIndexed { i, pip ->
@@ -97,6 +99,13 @@ fun LevelTrack(levels: List<LevelPip>, modifier: Modifier = Modifier) {
                         null -> Unit
                     }
                 }
+            }
+        }
+        for (i in levels.size until total) {
+            Column(Modifier.weight(1f).clearAndSetSemantics {}, horizontalAlignment = Alignment.CenterHorizontally) {
+                Box(Modifier.size(26.dp).clip(CircleShape).border(1.dp, c.line, CircleShape))
+                Text("${i + 1}", style = CarnetTheme.type.dataSmall, color = c.muted, modifier = Modifier.padding(top = 3.dp))
+                Box(Modifier.size(10.dp, 14.dp))
             }
         }
     }
@@ -122,7 +131,12 @@ fun CalcRow(term: String, explanation: String, value: String, modifier: Modifier
 @Composable
 fun SpellSlots(slots: List<Pair<String, Int>>, a11y: String, modifier: Modifier = Modifier) {
     val c = CarnetTheme.colors
-    Row(modifier.clearAndSetSemantics { contentDescription = a11y }, horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
+    FlowRow(
+        modifier.clearAndSetSemantics { contentDescription = a11y },
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        verticalArrangement = Arrangement.spacedBy(6.dp),
+        itemVerticalAlignment = Alignment.CenterVertically,
+    ) {
         slots.forEach { (level, count) ->
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(3.dp)) {
                 Text(level, style = CarnetTheme.type.dataStrong.copy(fontFamily = fr.carnetdefaerun.core.designsystem.theme.CarnetFonts.TitresSC), color = c.text)

@@ -15,4 +15,5 @@ dependencies {
     api(libs.compose.animation)
     api(libs.compose.ui.text)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.activity.compose)
 }

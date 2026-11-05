@@ -37,7 +37,8 @@ _Dernière mise à jour : 04/11/2026, phase 1 validée ; phases 2, 3 et 4 en cou
 - **Phase 4 — builds**
   - Fait : moteur de règles `core:rules`, chaque règle sourcée et testée : caractéristiques et achat de points, maîtrise, points de vie, emplacements de sort et multiclasse (D-084) ; classe d'armure, jets de d20 exacts, valeurs passives (D-085).
   - Fait aussi : modèle de build (`core:model`) et fiche calculée, avec le détail de chaque calcul et les choix invalides ou incomplets signalés ; profils tirés des données de jeu (D-086).
-  - À faire : enregistrement des builds, écran de l'atelier (piste des niveaux, achat de points, statistiques, détail du calcul), partage, vue du groupe.
+  - Fait aussi : builds enregistrés dans la base du joueur (version 2, migration testée) et code de partage borné (D-087) ; atelier : liste, fiche calculée selon la maquette, feuilles de détail du calcul, d'édition et de partage avec QR code, test de fuite (D-088).
+  - À faire : lecture d'un QR code à l'import, vue du groupe de quatre, probabilités (outils), vérification indépendante de la phase.
 
 ## Reste à faire
 - Phase 2b : pipeline du lore.

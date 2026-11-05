@@ -2,4 +2,142 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fr">
     <string name="builds_crumb">Builds</string>
     <string name="builds_title">Vos builds</string>
+    <string name="builds_saved">Builds enregistrés</string>
+    <string name="builds_intro">Composez un personnage niveau par niveau : le carnet calcule points de vie, classe d’armure, sauvegardes et emplacements de sorts d’après les règles de BG3, et montre le détail de chaque calcul.</string>
+    <string name="builds_empty">Aucun build pour l’instant.</string>
+    <string name="builds_new">Nouveau build</string>
+    <string name="builds_default_name">Nouveau build</string>
+    <string name="builds_import">Importer un code</string>
+    <string name="builds_import_hint">Code de build (CDF1…)</string>
+    <string name="builds_import_action">Importer</string>
+    <string name="builds_import_invalid">Ce texte n’est pas un code de build lisible.</string>
+    <string name="builds_cancel">Annuler</string>
+    <string name="builds_crumb_position">Builds · %1$d sur %2$d</string>
+
+    <!-- Résumé d'un build -->
+    <string name="summary_level">niveau %1$d</string>
+    <string name="summary_no_level">aucun niveau</string>
+    <string name="summary_class_level">%1$s %2$d</string>
+    <string name="summary_subclass">%1$s (%2$s)</string>
+    <string name="summary_separator"> ·\u0020</string>
+    <string name="summary_classes_separator">\u0020/\u0020</string>
+    <string name="hidden_choice">choix voilé</string>
+
+    <!-- Fiche -->
+    <string name="editor_rename">Renommer</string>
+    <string name="editor_rename_hint">Nom du build</string>
+    <string name="editor_save">Enregistrer</string>
+    <string name="editor_share">Partager le build</string>
+    <string name="editor_delete">Supprimer ce build</string>
+    <string name="editor_delete_confirm">Supprimer définitivement « %1$s » ? Cette action ne peut pas être annulée.</string>
+    <string name="editor_delete_yes">Supprimer</string>
+    <string name="editor_delete_no">Garder</string>
+    <string name="editor_missing">Ce build n’existe plus.</string>
+    <string name="legend_subclass">sous-classe</string>
+    <string name="legend_feat">don ou amélioration</string>
+    <string name="level_pip">Niveau %1$d: %2$s</string>
+    <string name="level_pip_subclass">%1$s, choix de la sous-classe</string>
+    <string name="level_pip_feat">%1$s, don</string>
+
+    <string name="section_abilities">Caractéristiques</string>
+    <string name="points_spent">Achat %1$d / %2$d</string>
+    <string name="ability_a11y">%1$s %2$d, modificateur %3$s. Toucher pour modifier.</string>
+    <string name="section_stats">Statistiques dérivées</string>
+    <string name="stat_hp">Points de vie</string>
+    <string name="stat_ac">Classe d’armure</string>
+    <string name="stat_prof">Maîtrise</string>
+    <string name="stat_dc">DD des sorts</string>
+    <string name="stat_attack">Attaque des sorts</string>
+    <string name="stat_init">Initiative</string>
+    <string name="stat_none">—</string>
+    <string name="stat_saves">Jets de sauvegarde maîtrisés : %1$s</string>
+    <string name="stat_saves_none">Jets de sauvegarde maîtrisés : aucun</string>
+    <string name="list_separator">,\u0020</string>
+    <string name="slots_title">Emplacements de sorts</string>
+    <string name="slots_a11y_item">%2$d de niveau %1$d</string>
+    <string name="slots_a11y">Emplacements de sorts : %1$s</string>
+    <string name="slots_none">Aucun emplacement de sort.</string>
+    <string name="pact_slots">Magie de pacte : %1$d emplacements de niveau %2$d, rendus au repos court.</string>
+    <string name="unarmoured_note">Classe d’armure sans armure ni bouclier : l’équipement n’est pas encore pris en compte.</string>
+
+    <string name="section_problems">À reprendre</string>
+    <string name="problem_no_level">Ajoutez un premier niveau pour choisir la classe de départ.</string>
+    <string name="problem_too_many_levels">Un personnage ne dépasse pas le niveau 12.</string>
+    <string name="problem_unknown_class">Une classe de ce build n’existe pas dans les données.</string>
+    <string name="problem_point_buy_range">Chaque valeur achetée va de 8 à 15.</string>
+    <string name="problem_point_buy_budget">L’achat de points dépasse 27 points.</string>
+    <string name="problem_bonuses_missing">Choisissez les bonus +2 et +1 de création.</string>
+    <string name="problem_bonuses_same">Les bonus +2 et +1 vont à deux caractéristiques différentes.</string>
+    <string name="problem_feat_missing">Un niveau de don attend son choix.</string>
+    <string name="problem_feat_not_allowed">Un don est placé à un niveau qui n’en donne pas.</string>
+    <string name="problem_feat_increase">La répartition d’un don ne respecte pas sa fiche.</string>
+    <string name="problem_subclass_missing">Une sous-classe reste à choisir.</string>
+    <string name="problem_subclass_invalid">Une sous-classe ne convient pas à sa classe ou à son niveau.</string>
+
+    <string name="section_levels">Niveaux</string>
+    <string name="level_title">Niveau %1$d · %2$s %3$d</string>
+    <string name="level_subclass">Sous-classe : %1$s</string>
+    <string name="level_feat">Don : %1$s</string>
+    <string name="level_feat_increase">%1$s (%2$s)</string>
+    <string name="level_choose_subclass">Sous-classe à choisir</string>
+    <string name="level_choose_feat">Don à choisir</string>
+    <string name="level_add">Ajouter un niveau</string>
+    <string name="level_remove_last">Retirer le dernier niveau</string>
+    <string name="level_max">Niveau 12 atteint.</string>
+
+    <string name="section_origin">Origine</string>
+    <string name="origin_race">Race</string>
+    <string name="origin_subrace">Sous-race</string>
+    <string name="origin_background">Historique</string>
+    <string name="origin_none">À choisir</string>
+
+    <!-- Feuilles -->
+    <string name="sheet_close">Fermer</string>
+    <string name="sheet_ability_base">Valeur achetée</string>
+    <string name="sheet_ability_remaining">Points restants : %1$d</string>
+    <string name="sheet_decrease">Diminuer %1$s</string>
+    <string name="sheet_increase">Augmenter %1$s</string>
+    <string name="sheet_major">Bonus +2</string>
+    <string name="sheet_minor">Bonus +1</string>
+    <string name="sheet_bonus_hint">Le +2 et le +1 vont à deux caractéristiques différentes ; la valeur de départ la plus haute est donc 17.</string>
+    <string name="sheet_add_level">Classe du niveau %1$d</string>
+    <string name="sheet_level">Niveau %1$d</string>
+    <string name="sheet_level_class">Classe</string>
+    <string name="sheet_level_subclass">Sous-classe</string>
+    <string name="sheet_level_feat">Don</string>
+    <string name="sheet_feat_none">Aucun don</string>
+    <string name="sheet_feat_split">Répartition : %1$d point(s) à placer</string>
+    <string name="sheet_feat_split_done">Répartition complète</string>
+    <string name="sheet_choose">Choisir</string>
+    <string name="sheet_none">Aucune</string>
+
+    <string name="detail_title">Détail du calcul</string>
+    <string name="detail_hp_short">PV</string>
+    <string name="detail_ac_short">CA</string>
+    <string name="detail_dc_short">DD</string>
+    <string name="detail_total">Total</string>
+    <string name="detail_first_level">%1$s, niveau 1</string>
+    <string name="detail_first_level_why">valeur de départ %1$d + Constitution %2$s</string>
+    <string name="detail_later_one">%1$s, niveau %2$d</string>
+    <string name="detail_later_one_why">gain fixe %1$d + Constitution %2$s</string>
+    <string name="detail_later_many">%1$s, niveaux %2$d à %3$d</string>
+    <string name="detail_later_many_why">%1$d × (gain fixe %2$d + Constitution %3$s)</string>
+    <string name="detail_per_level_why">%1$s par niveau × %2$d</string>
+    <string name="detail_ac_base">Base</string>
+    <string name="detail_ac_base_none">sans armure</string>
+    <string name="detail_ac_base_mage">Résilience draconique</string>
+    <string name="detail_ac_base_barbarian">Défense sans armure du barbare</string>
+    <string name="detail_ac_base_monk">Défense sans armure du moine</string>
+    <string name="detail_modifier">modificateur</string>
+    <string name="detail_dc_base">Base des DD</string>
+    <string name="detail_proficiency">Bonus de maîtrise</string>
+    <string name="detail_dc_class">%1$s, %2$s</string>
+    <string name="detail_attack_title">Attaque des sorts</string>
+    <string name="detail_source">Source : bg3.wiki, « %1$s », révision %2$s.</string>
+
+    <string name="share_title">Partager le build</string>
+    <string name="share_code_label">Code du build</string>
+    <string name="share_qr_a11y">QR code du build « %1$s »</string>
+    <string name="share_send">Envoyer le code</string>
+    <string name="share_hint">Le code contient seulement les choix du build ; il se lit dans le carnet, sans réseau, depuis « Importer un code ».</string>
 </resources>

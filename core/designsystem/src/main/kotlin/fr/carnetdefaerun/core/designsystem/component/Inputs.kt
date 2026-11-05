@@ -217,6 +217,26 @@ fun SearchField(query: String, onQueryChange: (String) -> Unit, placeholder: Str
     )
 }
 
+/** Champ de texte simple, au cadre du champ de recherche sans la loupe (nom d'un build, code à coller). */
+@Composable
+fun TextInput(value: String, onValueChange: (String) -> Unit, placeholder: String, modifier: Modifier = Modifier, singleLine: Boolean = true) {
+    val c = CarnetTheme.colors
+    BasicTextField(
+        value = value,
+        onValueChange = onValueChange,
+        singleLine = singleLine,
+        textStyle = CarnetTheme.type.reading.copy(color = c.text),
+        cursorBrush = SolidColor(c.gold),
+        modifier = modifier.fillMaxWidth().semantics { contentDescription = placeholder },
+        decorationBox = { field ->
+            SearchFrame(glyph = false) {
+                if (value.isEmpty()) Text(placeholder, style = CarnetTheme.type.readingItalic, color = c.muted)
+                field()
+            }
+        },
+    )
+}
+
 /** Le même champ, en invitation : un toucher ouvre la recherche (aucun clavier ici). */
 @Composable
 fun SearchPrompt(placeholder: String, onClick: () -> Unit, modifier: Modifier = Modifier) {
@@ -226,7 +246,7 @@ fun SearchPrompt(placeholder: String, onClick: () -> Unit, modifier: Modifier = 
 }
 
 @Composable
-private fun SearchFrame(modifier: Modifier = Modifier, onClick: (() -> Unit)? = null, content: @Composable () -> Unit) {
+private fun SearchFrame(modifier: Modifier = Modifier, onClick: (() -> Unit)? = null, glyph: Boolean = true, content: @Composable () -> Unit) {
     val c = CarnetTheme.colors
     val shape = RoundedCornerShape(26.dp)
     Row(
@@ -237,7 +257,7 @@ private fun SearchFrame(modifier: Modifier = Modifier, onClick: (() -> Unit)? = 
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(10.dp),
     ) {
-        Canvas(Modifier.size(20.dp)) {
+        if (glyph) Canvas(Modifier.size(20.dp)) {
             val k = size.width / 24f
             drawCircle(c.gold, 6.5f * k, Offset(10.5f * k, 10.5f * k), style = Stroke(1.8f * k))
             drawLine(c.gold, Offset(15.5f * k, 15.5f * k), Offset(21f * k, 21f * k), 2f * k, StrokeCap.Round)
