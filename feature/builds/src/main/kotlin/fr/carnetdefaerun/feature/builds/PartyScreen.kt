@@ -38,6 +38,7 @@ import fr.carnetdefaerun.core.data.builds.BuildRepository
 import fr.carnetdefaerun.core.data.builds.PartyRepository
 import fr.carnetdefaerun.core.data.builds.RulesRepository
 import fr.carnetdefaerun.core.data.content.ContentGateway
+import fr.carnetdefaerun.core.data.preferences.UserPreferencesRepository
 import fr.carnetdefaerun.core.designsystem.component.CarnetSheet
 import fr.carnetdefaerun.core.designsystem.component.CarnetTopBar
 import fr.carnetdefaerun.core.designsystem.component.ChoiceTag
@@ -54,12 +55,14 @@ import fr.carnetdefaerun.core.model.content.Skill
 import fr.carnetdefaerun.core.model.search.Folding
 import fr.carnetdefaerun.core.rules.CharacterSheet
 import fr.carnetdefaerun.core.rules.CharacterSheetCalculator
+import fr.carnetdefaerun.core.rules.DifficultyRules
 import fr.carnetdefaerun.core.ui.labelRes
 import javax.inject.Inject
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
@@ -96,9 +99,12 @@ class PartyViewModel @Inject constructor(
     repository: BuildRepository,
     rules: RulesRepository,
     gateway: ContentGateway,
+    preferences: UserPreferencesRepository,
 ) : ViewModel() {
-    val state: StateFlow<PartyUiState?> = combine(party.slots, repository.builds, gateway.catalog(), flow { emit(rules.data()) }) { slots, builds, catalog, data ->
-        val items = builds.map { BuildItem(it.id, it.build, CharacterSheetCalculator.compute(it.build, data)) }
+    val state: StateFlow<PartyUiState?> = combine(
+        party.slots, repository.builds, gateway.catalog(), flow { emit(rules.data()) }, preferences.preferences.map { DifficultyRules.of(it.difficulty) },
+    ) { slots, builds, catalog, data, difficulty ->
+        val items = builds.map { BuildItem(it.id, it.build, CharacterSheetCalculator.compute(it.build, data, difficulty)) }
         val byId = items.associateBy { it.id }
         PartyUiState(slots.map { id -> id?.let(byId::get) }, items, catalog)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
@@ -121,7 +127,7 @@ fun PartyScreen(state: PartyUiState?, onSet: (Int, Long?) -> Unit, onBack: () ->
         Box(Modifier.fillMaxSize()) {
             Column(Modifier.fillMaxSize()) {
                 CarnetTopBar(stringResource(R.string.builds_crumb), onBack = onBack)
-                if (state != null) LazyColumn(Modifier.fillMaxSize()) {
+                if (state != null) LazyColumn(Modifier.capped()) {
                     item(key = "title") {
                         Text(stringResource(R.string.party_title), style = CarnetTheme.type.headline, color = c.text,
                             modifier = Modifier.padding(horizontal = CarnetTheme.dimens.gutter, vertical = 4.dp).semantics { heading() })

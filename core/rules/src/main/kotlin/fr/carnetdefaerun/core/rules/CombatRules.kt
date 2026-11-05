@@ -1,5 +1,6 @@
 package fr.carnetdefaerun.core.rules
 
+import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.ArmourProficiency
 
 /** Armure de corps portée : sa classe d'armure de base, son poids et, pour quelques armures, la Dextérité entière. */
@@ -102,7 +103,13 @@ object D20 {
         return kept
     }
 
-    /** Probabilité de réussir un jet de [modifier] contre [target] (DD ou classe d'armure). */
+    /**
+     * Probabilité de réussir un jet de [modifier] contre [target] (DD ou classe d'armure).
+     * [bonusDice] : faces des dés de bonus ajoutés au jet (4 pour Assistance ou Bénédiction, 6 à 10 pour
+     * l'Inspiration bardique) ; leur somme est convoluée exactement avec le d20. Les 1 et 20 naturels et le coup
+     * critique ne regardent que le d20. [inspirationRerolls] : relances d'Inspiration disponibles, chacune refaisant
+     * le jet raté avec tous ses modificateurs ([RuleSources.INSPIRATION]).
+     */
     fun successChance(
         kind: RollKind,
         modifier: Int,
@@ -111,21 +118,31 @@ object D20 {
         critThreshold: Int = 20,
         halflingLuck: Boolean = false,
         autoSaves: Boolean = false,
+        bonusDice: List<Int> = emptyList(),
+        inspirationRerolls: Int = 0,
     ): Double {
         val faces = faceProbabilities(mode, halflingLuck)
+        val bonus = Dice.sumDistribution(bonusDice)
         val natural = kind != RollKind.SAVING_THROW || autoSaves
         var p = 0.0
         for (f in 1..20) {
-            val success = when {
-                natural && f == 1 -> false
-                kind == RollKind.ATTACK && f >= critThreshold -> true
-                natural && f == 20 -> true
-                else -> f + modifier >= target
+            for ((b, pb) in bonus) {
+                val success = when {
+                    natural && f == 1 -> false
+                    kind == RollKind.ATTACK && f >= critThreshold -> true
+                    natural && f == 20 -> true
+                    else -> f + modifier + b >= target
+                }
+                if (success) p += faces[f] * pb
             }
-            if (success) p += faces[f]
         }
-        return p
+        require(inspirationRerolls >= 0)
+        // Chaque relance refait un jet indépendant : échouer à tous a pour probabilité (1 − p)^(n + 1).
+        return 1 - Math.pow(1 - p, (inspirationRerolls + 1).toDouble())
     }
+
+    /** Seuil de critique abaissé de 1 par effet de Coup critique amélioré, cumulable ([RuleSources.IMPROVED_CRITICAL_HIT]). */
+    fun critThreshold(improvedCriticalHits: Int): Int = (20 - improvedCriticalHits).coerceIn(2, 20)
 
     /** Probabilité d'un coup critique (résultat naturel au moins égal au seuil). */
     fun criticalChance(mode: RollMode = RollMode.NORMAL, critThreshold: Int = 20, halflingLuck: Boolean = false): Double {
@@ -139,4 +156,78 @@ object D20 {
         RollMode.ADVANTAGE -> 5
         RollMode.DISADVANTAGE -> -5
     }
+}
+
+/** Dés de bonus de BG3 et jets auxquels ils s'ajoutent, d'après leurs pages. */
+enum class BonusDie(val kinds: Set<RollKind>) {
+    /** Assistance : +1d4 aux tests de caractéristique ([RuleSources.GUIDANCE]). */
+    GUIDANCE(setOf(RollKind.ABILITY_CHECK)),
+
+    /** Bénédiction : +1d4 aux jets d'attaque et de sauvegarde ([RuleSources.BLESS]). */
+    BLESS(setOf(RollKind.ATTACK, RollKind.SAVING_THROW)),
+
+    /** Inspiration bardique : +1d6, 1d8 ou 1d10 selon le niveau du barde, à une attaque, un test ou une sauvegarde ([RuleSources.BARDIC_INSPIRATION]). */
+    BARDIC_INSPIRATION(setOf(RollKind.ATTACK, RollKind.ABILITY_CHECK, RollKind.SAVING_THROW));
+
+    /** Faces du dé ; pour l'Inspiration bardique, selon le niveau de barde de celui qui l'accorde. */
+    fun sides(bardLevel: Int = 1): Int = when (this) {
+        GUIDANCE, BLESS -> 4
+        BARDIC_INSPIRATION -> when {
+            bardLevel >= 10 -> 10
+            bardLevel >= 5 -> 8
+            else -> 6
+        }
+    }
+}
+
+/** Distributions exactes de sommes de dés, par convolution (aucune simulation). */
+object Dice {
+    /** Probabilité de chaque somme de [sides] (un dé par entrée) ; somme nulle avec certitude sans dé. */
+    fun sumDistribution(sides: List<Int>): Map<Int, Double> {
+        var dist = mapOf(0 to 1.0)
+        for (n in sides) {
+            require(n >= 1) { "Dé sans face : $n" }
+            val next = HashMap<Int, Double>()
+            for ((sum, p) in dist) for (face in 1..n) next.merge(sum + face, p / n, Double::plus)
+            dist = next
+        }
+        return dist
+    }
+}
+
+/** Propriétés d'une arme qui décident de sa caractéristique. */
+data class WeaponTraits(val ranged: Boolean = false, val finesse: Boolean = false, val thrown: Boolean = false)
+
+/** Façon d'attaquer avec l'arme : au corps à corps, en tirant (arme à distance), en la lançant. */
+enum class AttackMode { MELEE, RANGED, THROWN }
+
+/**
+ * Attaques d'arme. Source : [RuleSources.ATTACKS], section « Weapons » :
+ * - corps à corps : Force ; tir avec une arme à distance : Dextérité ;
+ * - arme de finesse : la plus haute valeur de Force ou de Dextérité ;
+ * - arme lancée : Force, au corps à corps comme au lancer ; une arme de finesse lancée garde la Force pour le jet
+ *   d'attaque mais prend la plus haute des deux pour les dégâts (écart à D&D signalé par la page, probable oubli) ;
+ * - le bonus de maîtrise s'ajoute si l'attaquant maîtrise l'arme.
+ */
+object WeaponAttack {
+    fun attackAbility(traits: WeaponTraits, mode: AttackMode, strength: Int, dexterity: Int): Ability = when {
+        mode == AttackMode.THROWN -> Ability.STRENGTH
+        mode == AttackMode.RANGED && traits.ranged -> Ability.DEXTERITY
+        traits.finesse -> higher(strength, dexterity)
+        else -> Ability.STRENGTH
+    }
+
+    fun damageAbility(traits: WeaponTraits, mode: AttackMode, strength: Int, dexterity: Int): Ability = when {
+        traits.finesse -> higher(strength, dexterity)
+        else -> attackAbility(traits, mode, strength, dexterity)
+    }
+
+    /** Bonus au jet d'attaque : modificateur de la caractéristique retenue, plus la maîtrise de l'arme, plus [otherBonuses]. */
+    fun attackBonus(traits: WeaponTraits, mode: AttackMode, scores: Map<Ability, Int>, proficient: Boolean, proficiency: Int, otherBonuses: Int = 0): Int {
+        val ability = attackAbility(traits, mode, scores.getValue(Ability.STRENGTH), scores.getValue(Ability.DEXTERITY))
+        return abilityModifier(scores.getValue(ability)) + (if (proficient) proficiency else 0) + otherBonuses
+    }
+
+    /** À égalité de valeur, le modificateur est le même : la Force est retenue. */
+    private fun higher(strength: Int, dexterity: Int) = if (dexterity > strength) Ability.DEXTERITY else Ability.STRENGTH
 }

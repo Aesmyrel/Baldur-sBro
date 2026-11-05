@@ -62,7 +62,27 @@
     <string name="slots_a11y_item">%2$d de niveau %1$d</string>
     <string name="slots_a11y">Emplacements de sorts : %1$s</string>
     <string name="slots_none">Aucun emplacement de sort.</string>
+    <plurals name="spells_cantrips">
+        <item quantity="one">%1$d sort mineur</item>
+        <item quantity="many">%1$d sorts mineurs</item>
+        <item quantity="other">%1$d sorts mineurs</item>
+    </plurals>
+    <plurals name="spells_known">
+        <item quantity="one">%1$d sort appris</item>
+        <item quantity="many">%1$d sorts appris</item>
+        <item quantity="other">%1$d sorts appris</item>
+    </plurals>
+    <plurals name="spells_prepared">
+        <item quantity="one">%1$d sort préparé</item>
+        <item quantity="many">%1$d sorts préparés</item>
+        <item quantity="other">%1$d sorts préparés</item>
+    </plurals>
     <string name="pact_slots">Magie de pacte : %1$d emplacements de niveau %2$d, rendus au repos court.</string>
+    <string name="difficulty_explorer_note">Mode Explorateur (réglages) : maîtrise +2, points de vie doublés, multiclasse impossible.</string>
+    <string name="difficulty_custom_note">Mode personnalisé : ses réglages ne sont pas connus du carnet, la fiche est calculée comme en mode Équilibré.</string>
+    <string name="detail_difficulty">Mode Explorateur</string>
+    <string name="detail_difficulty_why">+%1$d %% des points de vie</string>
+    <string name="problem_multiclass_disabled">Le mode Explorateur ne permet pas la multiclasse.</string>
     <string name="unarmoured_note">Classe d’armure sans armure ni bouclier : l’équipement n’est pas encore pris en compte.</string>
 
     <string name="section_problems">À reprendre</string>

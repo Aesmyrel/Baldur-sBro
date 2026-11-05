@@ -17,6 +17,7 @@ import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 import fr.carnetdefaerun.core.designsystem.theme.ThemeMode
 import fr.carnetdefaerun.core.model.builds.Build
 import fr.carnetdefaerun.core.model.content.Ability
+import fr.carnetdefaerun.core.model.settings.Difficulty
 import fr.carnetdefaerun.core.rules.CharacterSheetCalculator
 import kotlinx.collections.immutable.persistentListOf
 import org.junit.Rule
@@ -48,10 +49,16 @@ class BuildsScreenshotTest {
         compose.onRoot().captureRoboImage("src/test/screenshots/$name.png")
     }
 
-    private fun editor(build: Build = BuildFixtures.battleMage, panel: Panel? = null, mode: ThemeMode = ThemeMode.SOMBRE, fontScale: Float = 1f, name: String) =
-        shot(name, mode, fontScale) {
-            BuildEditorScreen(editorState(3L, build, rules, catalog, ids), onEdit = {}, onBack = {}, initialPanel = panel)
-        }
+    private fun editor(
+        build: Build = BuildFixtures.battleMage,
+        panel: Panel? = null,
+        mode: ThemeMode = ThemeMode.SOMBRE,
+        fontScale: Float = 1f,
+        difficulty: Difficulty = Difficulty.BALANCED,
+        name: String,
+    ) = shot(name, mode, fontScale) {
+        BuildEditorScreen(editorState(3L, build, rules, catalog, ids, difficulty), onEdit = {}, onBack = {}, initialPanel = panel)
+    }
 
     @Test fun atelier_sombre() = editor(name = "atelier_sombre")
     @Test fun atelier_detail_pv_sombre() = editor(panel = Panel.HitPoints, name = "atelier_detail_pv_sombre")
@@ -63,6 +70,7 @@ class BuildsScreenshotTest {
     @Test fun atelier_partage_sombre() = editor(panel = Panel.Share, name = "atelier_partage_sombre")
     @Test fun atelier_pacte_parchemin() = editor(BuildFixtures.pact, panel = Panel.SpellDc, mode = ThemeMode.PARCHEMIN, name = "atelier_pacte_parchemin")
     @Test fun atelier_vide_sombre() = editor(Build(name = "Nouveau build"), name = "atelier_vide_sombre")
+    @Test fun atelier_explorateur_detail_pv() = editor(panel = Panel.HitPoints, difficulty = Difficulty.EXPLORER, name = "atelier_explorateur_detail_pv")
     @Test fun atelier_competences_sombre() = editor(panel = Panel.Skills("class.fighter"), name = "atelier_competences_sombre")
 
     private fun item(id: Long, build: Build) = BuildItem(id, build, CharacterSheetCalculator.compute(build, rules))

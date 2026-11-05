@@ -35,6 +35,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import fr.carnetdefaerun.core.data.builds.BuildRepository
 import fr.carnetdefaerun.core.data.builds.RulesRepository
 import fr.carnetdefaerun.core.data.content.ContentGateway
+import fr.carnetdefaerun.core.data.preferences.UserPreferencesRepository
 import fr.carnetdefaerun.core.designsystem.component.CarnetTopBar
 import fr.carnetdefaerun.core.designsystem.component.GoldButton
 import fr.carnetdefaerun.core.designsystem.component.ListRow
@@ -51,6 +52,7 @@ import fr.carnetdefaerun.core.model.builds.BuildCode
 import fr.carnetdefaerun.core.model.navigation.Destination
 import fr.carnetdefaerun.core.rules.CharacterSheet
 import fr.carnetdefaerun.core.rules.CharacterSheetCalculator
+import fr.carnetdefaerun.core.rules.DifficultyRules
 import javax.inject.Inject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
@@ -58,6 +60,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
@@ -71,9 +74,12 @@ class BuildsViewModel @Inject constructor(
     private val repository: BuildRepository,
     rules: RulesRepository,
     gateway: ContentGateway,
+    preferences: UserPreferencesRepository,
 ) : ViewModel() {
-    val state: StateFlow<BuildsUiState?> = combine(repository.builds, gateway.catalog(), flow { emit(rules.data()) }) { builds, catalog, data ->
-        BuildsUiState(builds.map { BuildItem(it.id, it.build, CharacterSheetCalculator.compute(it.build, data)) }.toImmutableList(), catalog)
+    val state: StateFlow<BuildsUiState?> = combine(
+        repository.builds, gateway.catalog(), flow { emit(rules.data()) }, preferences.preferences.map { DifficultyRules.of(it.difficulty) },
+    ) { builds, catalog, data, difficulty ->
+        BuildsUiState(builds.map { BuildItem(it.id, it.build, CharacterSheetCalculator.compute(it.build, data, difficulty)) }.toImmutableList(), catalog)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
     fun create(name: String, onCreated: (Long) -> Unit) = viewModelScope.launch { onCreated(repository.create(Build(name = name))) }
@@ -148,7 +154,7 @@ fun BuildsScreen(
     CarnetSectionScope(CarnetSection.BUILDS) {
         Column(Modifier.fillMaxSize()) {
             CarnetTopBar(stringResource(R.string.builds_crumb))
-            LazyColumn(Modifier.fillMaxSize()) {
+            LazyColumn(Modifier.capped()) {
                 item(key = "title") {
                     Text(stringResource(R.string.builds_title), style = CarnetTheme.type.headline, color = c.text, modifier = Modifier.padding(horizontal = CarnetTheme.dimens.gutter, vertical = 4.dp))
                 }

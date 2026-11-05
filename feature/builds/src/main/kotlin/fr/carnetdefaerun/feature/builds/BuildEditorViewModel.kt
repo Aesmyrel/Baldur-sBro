@@ -9,10 +9,13 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import fr.carnetdefaerun.core.data.builds.BuildRepository
 import fr.carnetdefaerun.core.data.builds.RulesRepository
 import fr.carnetdefaerun.core.data.content.ContentGateway
+import fr.carnetdefaerun.core.data.preferences.UserPreferencesRepository
 import fr.carnetdefaerun.core.model.builds.Build
 import fr.carnetdefaerun.core.model.builds.BuildCode
+import fr.carnetdefaerun.core.model.settings.Difficulty
 import fr.carnetdefaerun.core.rules.CharacterSheet
 import fr.carnetdefaerun.core.rules.CharacterSheetCalculator
+import fr.carnetdefaerun.core.rules.DifficultyRules
 import fr.carnetdefaerun.core.rules.RulesData
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -37,22 +40,25 @@ sealed interface EditorUiState {
         /** Place du build dans la liste (1 à [total]), pour le fil d'Ariane. */
         val position: Int,
         val total: Int,
+        /** Mode de difficulté réglé par le joueur : Explorateur change la fiche. */
+        val difficulty: Difficulty = Difficulty.BALANCED,
     ) : EditorUiState {
         val shareCode: String by lazy { BuildCode.encode(build) }
     }
 }
 
 /** État de l'éditeur, en fonction pure. */
-fun editorState(id: Long, build: Build, rules: RulesData, catalog: Catalog, ids: List<Long>): EditorUiState.Ready =
+fun editorState(id: Long, build: Build, rules: RulesData, catalog: Catalog, ids: List<Long>, difficulty: Difficulty = Difficulty.BALANCED): EditorUiState.Ready =
     EditorUiState.Ready(
         id = id,
         build = build,
-        sheet = CharacterSheetCalculator.compute(build, rules),
+        sheet = CharacterSheetCalculator.compute(build, rules, DifficultyRules.of(difficulty)),
         rows = levelRows(build, rules),
         catalog = catalog,
         rules = rules,
         position = ids.indexOf(id).let { if (it < 0) 1 else it + 1 },
         total = ids.size.coerceAtLeast(1),
+        difficulty = difficulty,
     )
 
 /**
@@ -65,6 +71,7 @@ class BuildEditorViewModel @AssistedInject constructor(
     private val repository: BuildRepository,
     rulesRepository: RulesRepository,
     gateway: ContentGateway,
+    preferences: UserPreferencesRepository,
 ) : ViewModel() {
     @AssistedFactory interface Factory { fun create(id: Long): BuildEditorViewModel }
 
@@ -80,11 +87,13 @@ class BuildEditorViewModel @AssistedInject constructor(
         }
     }
 
-    val state: StateFlow<EditorUiState> = combine(local, missing, rules, catalog, repository.builds.map { list -> list.map { it.id } }) { build, gone, data, names, ids ->
+    private val context = combine(repository.builds.map { list -> list.map { it.id } }, preferences.preferences.map { it.difficulty }) { ids, d -> ids to d }
+
+    val state: StateFlow<EditorUiState> = combine(local, missing, rules, catalog, context) { build, gone, data, names, (ids, difficulty) ->
         when {
             gone -> EditorUiState.Missing
             build == null || data == null || names == null -> EditorUiState.Loading
-            else -> editorState(id, build, data, names, ids)
+            else -> editorState(id, build, data, names, ids, difficulty)
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), EditorUiState.Loading)
 

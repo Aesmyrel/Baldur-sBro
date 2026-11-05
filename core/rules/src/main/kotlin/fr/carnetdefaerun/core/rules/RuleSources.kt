@@ -40,4 +40,25 @@ object RuleSources {
 
     /** « Tough » : +2 points de vie maximaux par niveau du personnage, rétroactivement, niveau 1 compris. */
     const val TOUGH = "https://bg3.wiki/w/index.php?title=Tough&oldid=438958"
+
+    /** « Guidance » : +1d4 aux tests de caractéristique. */
+    const val GUIDANCE = "https://bg3.wiki/w/index.php?title=Guidance&oldid=413520"
+
+    /** « Bless » : +1d4 aux jets d'attaque et de sauvegarde. */
+    const val BLESS = "https://bg3.wiki/w/index.php?title=Bless&oldid=404078"
+
+    /** « Bardic Inspiration (class action) » : +1d6 à une attaque, un test ou une sauvegarde ; d8 au niveau 5 de barde, d10 au niveau 10. */
+    const val BARDIC_INSPIRATION = "https://bg3.wiki/w/index.php?title=Bardic_Inspiration_(class_action)&oldid=416309"
+
+    /** « Improved Critical Hit » : le résultat nécessaire au coup critique baisse de 1, effet cumulable. */
+    const val IMPROVED_CRITICAL_HIT = "https://bg3.wiki/w/index.php?title=Improved_Critical_Hit&oldid=432678"
+
+    /** « Inspiration » : un jet raté éligible se relance avec tous ses modificateurs, tant qu'il reste des points (4 au plus). */
+    const val INSPIRATION = "https://bg3.wiki/w/index.php?title=Inspiration&oldid=419845"
+
+    /** « Difficulty » : effets des modes sur les personnages du joueur (maîtrise, points de vie, multiclasse). */
+    const val DIFFICULTY = "https://bg3.wiki/w/index.php?title=Difficulty&oldid=417706"
+
+    /** « Attacks » (page « Attack roll ») : caractéristique des attaques d'arme (corps à corps, distance, finesse, lancer) et maîtrise. */
+    const val ATTACKS = "https://bg3.wiki/w/index.php?title=Attacks&oldid=416178"
 }

@@ -78,4 +78,73 @@ class CombatRulesTest {
         assertThat(D20.passive(4, RollMode.ADVANTAGE)).isEqualTo(19)
         assertThat(D20.passive(4, RollMode.DISADVANTAGE)).isEqualTo(9)
     }
+
+    /** Énumération brute avec dés de bonus : chaque face du d20 croisée avec chaque combinaison de faces des dés. */
+    private fun bruteForceWithDice(kind: RollKind, modifier: Int, target: Int, mode: RollMode, dice: List<Int>): Double {
+        var combos = listOf(0 to 1.0)
+        for (n in dice) combos = combos.flatMap { (s, p) -> (1..n).map { s + it to p / n } }
+        return combos.sumOf { (b, pb) -> pb * bruteForce(kind, modifier + b, target, mode, 20, false) }
+    }
+
+    @Test
+    fun `dés de bonus convolués exactement, 1 et 20 naturels gardés`() {
+        for (kind in RollKind.entries) for (mode in RollMode.entries) for (dice in listOf(listOf(4), listOf(4, 6), listOf(10))) for (modifier in -2..8) for (target in 8..24) {
+            assertThat(D20.successChance(kind, modifier, target, mode, bonusDice = dice))
+                .isWithin(1e-12).of(bruteForceWithDice(kind, modifier, target, mode, dice))
+        }
+        // Un dé de bonus ne sauve pas un 1 naturel en attaque : +0 et 1d4 contre 2 réussit 19 fois sur 20.
+        assertThat(D20.successChance(RollKind.ATTACK, 0, 2, bonusDice = listOf(4))).isWithin(1e-12).of(19.0 / 20)
+        // Test à +2 contre DD 15 : 8/20 seul ; avec Assistance, moyenne sur le d4 de (8 + b)/20, soit 10,5/20.
+        assertThat(D20.successChance(RollKind.ABILITY_CHECK, 2, 15)).isWithin(1e-12).of(8.0 / 20)
+        assertThat(D20.successChance(RollKind.ABILITY_CHECK, 2, 15, bonusDice = listOf(BonusDie.GUIDANCE.sides()))).isWithin(1e-12).of(10.5 / 20)
+        assertThat(Dice.sumDistribution(listOf(6, 6))[7]).isWithin(1e-12).of(6.0 / 36)
+        assertThat(Dice.sumDistribution(emptyList())).containsExactly(0, 1.0)
+    }
+
+    @Test
+    fun `dés de bonus de BG3, jets concernés et taille`() {
+        assertThat(BonusDie.GUIDANCE.kinds).containsExactly(RollKind.ABILITY_CHECK)
+        assertThat(BonusDie.BLESS.kinds).containsExactly(RollKind.ATTACK, RollKind.SAVING_THROW)
+        assertThat(BonusDie.BARDIC_INSPIRATION.kinds).containsExactly(RollKind.ATTACK, RollKind.ABILITY_CHECK, RollKind.SAVING_THROW)
+        assertThat((1..12).map { BonusDie.BARDIC_INSPIRATION.sides(it) }).containsExactly(6, 6, 6, 6, 8, 8, 8, 8, 8, 10, 10, 10).inOrder()
+        assertThat(BonusDie.BLESS.sides()).isEqualTo(4)
+    }
+
+    @Test
+    fun `relances d'Inspiration et seuil de critique`() {
+        // 50 % de réussite : une relance donne 75 %, deux 87,5 %.
+        assertThat(D20.successChance(RollKind.ABILITY_CHECK, 0, 11, inspirationRerolls = 1)).isWithin(1e-12).of(0.75)
+        assertThat(D20.successChance(RollKind.ABILITY_CHECK, 0, 11, inspirationRerolls = 2)).isWithin(1e-12).of(0.875)
+        // La relance garde l'avantage : 1 − (1 − p_avantage)².
+        val adv = D20.successChance(RollKind.ABILITY_CHECK, 0, 11, RollMode.ADVANTAGE)
+        assertThat(D20.successChance(RollKind.ABILITY_CHECK, 0, 11, RollMode.ADVANTAGE, inspirationRerolls = 1)).isWithin(1e-12).of(1 - (1 - adv) * (1 - adv))
+        // Coup critique amélioré : 19, puis 18 s'il se cumule ; jamais sous 2.
+        assertThat(D20.critThreshold(0)).isEqualTo(20)
+        assertThat(D20.critThreshold(1)).isEqualTo(19)
+        assertThat(D20.critThreshold(2)).isEqualTo(18)
+        assertThat(D20.critThreshold(30)).isEqualTo(2)
+        assertThat(D20.criticalChance(critThreshold = D20.critThreshold(1))).isWithin(1e-12).of(2.0 / 20)
+    }
+
+    @Test
+    fun `attaques d'arme, exemples de la page`() {
+        val maul = WeaponTraits()
+        val rapier = WeaponTraits(finesse = true)
+        val longbow = WeaponTraits(ranged = true)
+        val handaxe = WeaponTraits(thrown = true)
+        val dagger = WeaponTraits(finesse = true, thrown = true)
+        val (str, dex) = 10 to 16
+        assertThat(WeaponAttack.attackAbility(maul, AttackMode.MELEE, str, dex)).isEqualTo(fr.carnetdefaerun.core.model.content.Ability.STRENGTH)
+        assertThat(WeaponAttack.attackAbility(rapier, AttackMode.MELEE, str, dex)).isEqualTo(fr.carnetdefaerun.core.model.content.Ability.DEXTERITY)
+        assertThat(WeaponAttack.attackAbility(rapier, AttackMode.MELEE, 16, 10)).isEqualTo(fr.carnetdefaerun.core.model.content.Ability.STRENGTH)
+        assertThat(WeaponAttack.attackAbility(longbow, AttackMode.RANGED, str, dex)).isEqualTo(fr.carnetdefaerun.core.model.content.Ability.DEXTERITY)
+        assertThat(WeaponAttack.attackAbility(handaxe, AttackMode.THROWN, str, dex)).isEqualTo(fr.carnetdefaerun.core.model.content.Ability.STRENGTH)
+        // Dague lancée : Force pour l'attaque, la plus haute pour les dégâts.
+        assertThat(WeaponAttack.attackAbility(dagger, AttackMode.THROWN, str, dex)).isEqualTo(fr.carnetdefaerun.core.model.content.Ability.STRENGTH)
+        assertThat(WeaponAttack.damageAbility(dagger, AttackMode.THROWN, str, dex)).isEqualTo(fr.carnetdefaerun.core.model.content.Ability.DEXTERITY)
+        // Rapière, Dextérité 16 (+3), maîtrisée à +2 : +5 ; non maîtrisée : +3.
+        val scores = fr.carnetdefaerun.core.model.content.Ability.entries.associateWith { 10 } + (fr.carnetdefaerun.core.model.content.Ability.DEXTERITY to 16)
+        assertThat(WeaponAttack.attackBonus(rapier, AttackMode.MELEE, scores, proficient = true, proficiency = 2)).isEqualTo(5)
+        assertThat(WeaponAttack.attackBonus(rapier, AttackMode.MELEE, scores, proficient = false, proficiency = 2)).isEqualTo(3)
+    }
 }

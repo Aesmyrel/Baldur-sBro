@@ -83,8 +83,14 @@ private fun classProfile(id: String, facts: ClassFacts): ClassProfile {
         skillList = facts.proficiencies.skills,
         skillChoices = facts.proficiencies.skillChoices,
         multiclassSkillChoices = facts.multiclassProficiencies.skillChoices,
+        cantripsKnown = facts.levels.sortedBy { it.level }.map { it.cantripsKnown },
+        spellsKnown = facts.levels.sortedBy { it.level }.map { it.spellsKnown },
+        prepares = id in PREPARED_CASTERS,
     )
 }
+
+/** Lanceurs qui préparent leurs sorts : liste de la page Spells, section « Prepared spells » ([RuleSources.SPELLS]). */
+private val PREPARED_CASTERS = setOf("class.cleric", "class.druid", "class.paladin", "class.wizard")
 
 /** Capacités et dons qui changent un calcul (identifiants stables des fiches). */
 private const val UNARMOURED_BARBARIAN = "feature.unarmoured-defence-barbarian"

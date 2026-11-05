@@ -381,3 +381,20 @@ Deux vérifications indépendantes (technique ; direction artistique et accessib
   - Aucun « rôle » (tank, soigneur…) n'est attribué : BG3 n'en définit pas, et ce serait une interprétation. On montre les faits qui en tiennent lieu.
   - Les types de dégâts couverts attendent que les builds portent leurs sorts et leur équipement.
 
+**D-090 — Jets de d20 complétés, mode de difficulté, sorts, attaques d'arme.** Pages lues avec l'agent utilisateur générique du projet.
+- **Dés de bonus**, convolués exactement avec le d20 ; les 1 et 20 naturels et le coup critique ne regardent que le d20 :
+  - Assistance : +1d4 aux tests de caractéristique (*Guidance*, révision 413520) ;
+  - Bénédiction : +1d4 aux attaques et aux sauvegardes (*Bless*, révision 404078) ;
+  - Inspiration bardique : +1d6 à une attaque, un test ou une sauvegarde ; 1d8 au niveau 5 du barde, 1d10 au niveau 10 (*Bardic Inspiration (class action)*, révision 416309).
+- **Relances d'Inspiration** (*Inspiration*, révision 419845) : un jet raté éligible (surtout en dialogue) se relance avec tous ses modificateurs, avantage et dés de bonus compris, tant qu'il reste des points (quatre au plus pour le groupe). Réussite = 1 − (1 − p)^(relances + 1).
+- **Seuil de critique** : Coup critique amélioré l'abaisse de 1, de façon cumulable (*Improved Critical Hit*, révision 432678). Les tests comparent chaque probabilité à une énumération brute.
+- **Mode de difficulté** (*Difficulty*, révision 417706) :
+  - Explorateur : maîtrises +2, membres du groupe à +100 % de points de vie (pris à la lettre : le maximum double, montré comme un terme du détail), multiclasse impossible (signalée) ;
+  - Équilibré, Tacticien et Honneur : rien côté joueur (ils renforcent les adversaires) ;
+  - Personnalisé : ses réglages ne sont pas connus du carnet, la fiche est calculée comme en Équilibré, et l'écran le dit.
+  - La fiche suit le réglage « Difficulté » de l'appli.
+- **Sorts par classe** (*Spells*, révision 433193) : sorts mineurs et sorts appris d'après le tableau de chaque classe. Clerc, druide, paladin et magicien préparent : modificateur + niveau de classe, au moins 1. Les sorts du chevalier occulte et de l'escroc arcanique attendent la lecture de leur tableau de sous-classe.
+- **Attaques d'arme** (*Attacks*, révision 416178) : Force au corps à corps, Dextérité au tir, la plus haute des deux pour la finesse, Force pour une arme lancée ; une arme de finesse lancée garde la Force à l'attaque et prend la plus haute aux dégâts (écart signalé par la page) ; maîtrise si l'arme est maîtrisée. Règle du moteur, testée sur les cinq exemples de la page ; elle s'affichera quand les builds porteront leur équipement.
+- **Pas modélisés** : les dés karmiques (réglage du jeu, qui n'est pas documenté), le style de combat Défense et les objets portés (ils viendront avec l'équipement).
+- **Mise en page** : l'atelier, la liste et le groupe sont plafonnés à la largeur de lecture de la charte (640 dp), centrés sur les pliables.
+

@@ -39,6 +39,7 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.clearAndSetSemantics
@@ -79,6 +80,7 @@ import fr.carnetdefaerun.core.model.builds.FeatChoice
 import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.ContentId
 import fr.carnetdefaerun.core.model.content.Skill
+import fr.carnetdefaerun.core.model.settings.Difficulty
 import fr.carnetdefaerun.core.model.search.Folding
 import fr.carnetdefaerun.core.rules.CharacterSheet
 import fr.carnetdefaerun.core.rules.CharacterSheetCalculator
@@ -171,7 +173,7 @@ private fun EditorContent(state: EditorUiState.Ready, onEdit: (BuildEdit) -> Uni
         CarnetTopBar(stringResource(R.string.builds_crumb_position, state.position, state.total), onBack = onBack) {
             IconSlot({ open(Panel.Share) }, stringResource(R.string.editor_share)) { color -> ShareGlyph(color) }
         }
-        LazyColumn(Modifier.fillMaxSize()) {
+        LazyColumn(Modifier.capped()) {
             item(key = "title") { TitleBlock(build, sheet, state.catalog, onEdit) }
             if (build.levels.isNotEmpty()) item(key = "track") { Track(state) }
             val problems = sheet.problems - SheetProblem.NO_LEVEL
@@ -187,6 +189,12 @@ private fun EditorContent(state: EditorUiState.Ready, onEdit: (BuildEdit) -> Uni
 
             item(key = "stats-header") { SectionHeader(stringResource(R.string.section_stats)) }
             item(key = "stats") { Stats(sheet, open) }
+            if (state.difficulty == Difficulty.EXPLORER || state.difficulty == Difficulty.CUSTOM) item(key = "difficulty") {
+                Text(
+                    stringResource(if (state.difficulty == Difficulty.EXPLORER) R.string.difficulty_explorer_note else R.string.difficulty_custom_note),
+                    style = CarnetTheme.type.bodySmall, color = c.text2, modifier = Modifier.padding(horizontal = gutter, vertical = 4.dp),
+                )
+            }
             item(key = "saves") {
                 val names = Ability.entries.filter { it in sheet.savingThrows }.map { stringResource(it.labelRes) }
                 Text(
@@ -194,7 +202,7 @@ private fun EditorContent(state: EditorUiState.Ready, onEdit: (BuildEdit) -> Uni
                     style = CarnetTheme.type.bodySmall, color = c.text2, modifier = Modifier.padding(horizontal = gutter, vertical = 6.dp),
                 )
             }
-            item(key = "slots") { Slots(sheet) }
+            item(key = "slots") { Slots(sheet, state.catalog) }
 
             item(key = "skills-header") { SectionHeader(stringResource(R.string.section_skills)) }
             item(key = "skill-sources") { SkillSources(state, open) }
@@ -312,6 +320,7 @@ private val SheetProblem.labelRes: Int
         SheetProblem.SUBCLASS_INVALID -> R.string.problem_subclass_invalid
         SheetProblem.SKILLS_MISSING -> R.string.problem_skills_missing
         SheetProblem.SKILLS_INVALID -> R.string.problem_skills_invalid
+        SheetProblem.MULTICLASS_DISABLED -> R.string.problem_multiclass_disabled
     }
 
 /** Abréviation à trois lettres des tuiles (For, Dex, Con…), tirée du nom de la caractéristique. */
@@ -375,7 +384,7 @@ private fun Stats(sheet: CharacterSheet, open: (Panel) -> Unit) {
 }
 
 @Composable
-private fun Slots(sheet: CharacterSheet) {
+private fun Slots(sheet: CharacterSheet, catalog: Catalog) {
     val c = CarnetTheme.colors
     Column(Modifier.padding(horizontal = CarnetTheme.dimens.gutter, vertical = 6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
         val slots = sheet.spellSlots.mapIndexed { i, n -> roman(i + 1) to n }.filter { it.second > 0 }
@@ -385,6 +394,17 @@ private fun Slots(sheet: CharacterSheet) {
             SpellSlots(slots, stringResource(R.string.slots_a11y, description))
         }
         sheet.pactSlots?.let { Text(stringResource(R.string.pact_slots, it.count, it.level), style = CarnetTheme.type.bodySmall, color = c.text2) }
+        // Sorts de chaque classe qui lance : mineurs, appris, préparés, selon son tableau et la page Spells.
+        val separator = stringResource(R.string.summary_separator)
+        for (casting in sheet.spellcasting) {
+            val parts = listOfNotNull(
+                catalog.name(casting.classId),
+                casting.cantrips?.let { pluralStringResource(R.plurals.spells_cantrips, it, it) },
+                casting.known?.let { pluralStringResource(R.plurals.spells_known, it, it) },
+                casting.prepared?.let { pluralStringResource(R.plurals.spells_prepared, it, it) },
+            )
+            if (parts.size > 1) Text(parts.joinToString(separator), style = CarnetTheme.type.bodySmall, color = c.text2)
+        }
         if (slots.isEmpty() && sheet.pactSlots == null && sheet.level > 0) {
             Text(stringResource(R.string.slots_none), style = CarnetTheme.type.bodySmall, color = c.muted)
         }
@@ -572,6 +592,7 @@ private fun HitPointsDetail(state: EditorUiState.Ready) {
                 else CalcRow(stringResource(R.string.detail_later_many, name, first, last), stringResource(R.string.detail_later_many_why, term.count, term.perLevel, signed(term.constitution)), term.value.toString())
             }
             is Term.PerLevelBonus -> CalcRow(state.catalog.name(term.sourceId) ?: hidden, stringResource(R.string.detail_per_level_why, signed(term.perLevel), term.levels), term.value.toString())
+            is Term.DifficultyBonus -> CalcRow(stringResource(R.string.detail_difficulty), stringResource(R.string.detail_difficulty_why, term.percent), term.value.toString())
             else -> Unit
         }
     }

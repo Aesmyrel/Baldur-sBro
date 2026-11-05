@@ -1,11 +1,17 @@
 package fr.carnetdefaerun.feature.builds
 
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import fr.carnetdefaerun.core.data.content.ContentGateway
 import fr.carnetdefaerun.core.designsystem.illustration.ClassEmblem
 import fr.carnetdefaerun.core.designsystem.theme.CarnetColors
+import fr.carnetdefaerun.core.designsystem.theme.CarnetTheme
 import fr.carnetdefaerun.core.model.builds.Build
 import fr.carnetdefaerun.core.model.builds.BuildLevel
 import fr.carnetdefaerun.core.model.builds.FeatChoice
@@ -128,3 +134,7 @@ fun summaryLine(build: Build, sheet: CharacterSheet, catalog: Catalog): String {
     }
     return parts.joinToString(stringResource(R.string.summary_separator))
 }
+
+/** Colonne centrée, plafonnée à la largeur de lecture de la charte : la fiche ne s'étire pas sur un pliable. */
+@Composable
+fun Modifier.capped(): Modifier = fillMaxHeight().fillMaxWidth().wrapContentWidth().widthIn(max = CarnetTheme.dimens.readingMaxWidth)

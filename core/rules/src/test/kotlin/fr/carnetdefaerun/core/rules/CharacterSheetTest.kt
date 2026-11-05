@@ -108,7 +108,8 @@ class CharacterSheetTest {
         // Sauvegardes du guerrier seulement ; maîtrise +4 ; magicien : DD 8 + 5 + 4, attaque +9 ; emplacements d'un lanceur 10.
         assertThat(sheet.savingThrows).containsExactly(STRENGTH, CONSTITUTION)
         assertThat(sheet.proficiency).isEqualTo(4)
-        assertThat(sheet.spellcasting).containsExactly(Spellcasting("class.wizard", INTELLIGENCE, 5, 17, 9))
+        // Magicien 10 : 5 sorts mineurs et 24 appris (tableau de classe), 5 + 10 = 15 préparés.
+        assertThat(sheet.spellcasting).containsExactly(Spellcasting("class.wizard", INTELLIGENCE, 5, 17, 9, cantrips = 5, known = 24, prepared = 15))
         assertThat(sheet.spellSlots).isEqualTo(SpellSlots.forLevel(10))
         assertThat(sheet.pactSlots).isNull()
         assertThat(sheet.armourClass.total).isEqualTo(12)
@@ -138,6 +139,7 @@ class CharacterSheetTest {
         assertThat(sheet.hitPoints.total).isEqualTo(52)
         assertThat(sheet.hitPoints.total).isEqualTo(HitPoints.maximum(List(4) { HitDie(10, 6) }, 3, dwarvenToughness = true) + 2 * 4)
         // Le chevalier occulte lance ses sorts avec l'Intelligence de sa classe (14, +2) ; tiers de lanceur au niveau 4.
+        // Les sorts du chevalier occulte suivent le tableau de sa sous-classe, pas encore lu : non renseignés.
         assertThat(sheet.spellcasting).containsExactly(Spellcasting("class.fighter", INTELLIGENCE, 2, 12, 4))
         assertThat(sheet.spellSlots).containsExactly(3)
     }
@@ -206,6 +208,8 @@ class CharacterSheetTest {
         assertThat(sheet.spellSlots).isEqualTo(SpellSlots.forLevel(2))
         assertThat(sheet.spellcasting.map { it.classId }).containsExactly("class.warlock", "class.sorcerer").inOrder()
         assertThat(sheet.spellcasting.map { it.saveDc }.distinct()).containsExactly(8 + 4 + 3)
+        // Occultiste 5 : 3 sorts mineurs, 6 appris ; ensorceleur 2 : 4 et 3 ; aucun ne prépare.
+        assertThat(sheet.spellcasting.map { Triple(it.cantrips, it.known, it.prepared) }).containsExactly(Triple(3, 6, null), Triple(4, 3, null)).inOrder()
     }
 
     @Test
@@ -269,6 +273,11 @@ class CharacterSheetTest {
                 assertWithMessage("$classId $n").that(sheet.hitPoints.total).isEqualTo(HitPoints.maximum(List(n) { profile.hitDie }, con))
                 assertWithMessage("$classId $n").that(sheet.proficiency).isEqualTo(proficiencyBonus(n))
                 assertWithMessage("$classId $n").that(sheet.savingThrows).isEqualTo(profile.savingThrows)
+                // Lanceur qui prépare : modificateur + niveau de classe, au moins 1, une fois l'Incantation acquise.
+                val casting = sheet.spellcasting.singleOrNull()
+                if (profile.prepares && n >= profile.spellcastingFrom) {
+                    assertWithMessage("$classId $n").that(casting?.prepared).isEqualTo(preparedSpells(sheet.modifiers.getValue(casting!!.ability), n))
+                } else assertWithMessage("$classId $n").that(casting?.prepared).isNull()
                 if (profile.progression != CasterProgression.PACT) {
                     val expected = SpellSlots.forClasses(listOf(CasterLevels(profile.progression, n, profile.spellcastingFrom, classId)))
                     assertWithMessage("$classId $n").that(sheet.spellSlots).isEqualTo(expected)
@@ -328,5 +337,25 @@ class CharacterSheetTest {
         )
         assertThat(sheet.problems).isEmpty()
         assertThat(sheet.skillProficiencies).containsExactly(Skill.ATHLETICS, Skill.PERCEPTION, Skill.ARCANA)
+    }
+
+    @Test
+    fun `mode Explorateur, maîtrise +2, points de vie doublés, multiclasse impossible`() {
+        val build = withSkills(Build(name = "x", majorBonus = CONSTITUTION, minorBonus = DEXTERITY, levels = List(5) { level("class.fighter") }.let {
+            it.take(2) + level("class.fighter", "subclass.champion") + level("class.fighter", feat = FeatChoice(id("feat.tough"))) + it.last()
+        }))
+        val balanced = CharacterSheetCalculator.compute(build, data)
+        val explorer = CharacterSheetCalculator.compute(build, data, DifficultyRules.of(fr.carnetdefaerun.core.model.settings.Difficulty.EXPLORER))
+        assertThat(balanced.problems).isEmpty()
+        assertThat(explorer.proficiency).isEqualTo(balanced.proficiency + 2)
+        assertThat(explorer.hitPoints.total).isEqualTo(2 * balanced.hitPoints.total)
+        assertThat(explorer.hitPoints.terms.last()).isEqualTo(Term.DifficultyBonus(balanced.hitPoints.total, 100))
+        assertThat(explorer.skillBonuses.getValue(build.skillChoices.values.flatten().first())).isEqualTo(balanced.skillBonuses.getValue(build.skillChoices.values.flatten().first()) + 2)
+        // Tacticien et Honneur ne changent rien côté joueur.
+        for (d in listOf(fr.carnetdefaerun.core.model.settings.Difficulty.TACTICIAN, fr.carnetdefaerun.core.model.settings.Difficulty.HONOUR)) {
+            assertThat(CharacterSheetCalculator.compute(build, data, DifficultyRules.of(d))).isEqualTo(balanced)
+        }
+        val multi = withSkills(build.copy(levels = build.levels + level("class.wizard")))
+        assertThat(CharacterSheetCalculator.compute(multi, data, DifficultyRules.EXPLORER).problems).contains(SheetProblem.MULTICLASS_DISABLED)
     }
 }

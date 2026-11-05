@@ -4,6 +4,7 @@ import fr.carnetdefaerun.core.model.builds.Build
 import fr.carnetdefaerun.core.model.content.Ability
 import fr.carnetdefaerun.core.model.content.AbilityIncrease
 import fr.carnetdefaerun.core.model.content.Skill
+import fr.carnetdefaerun.core.model.settings.Difficulty
 
 /** Ce que le moteur doit savoir d'une classe ; tiré de sa fiche (data/game) par [RulesData.from], jamais écrit à la main. */
 data class ClassProfile(
@@ -28,6 +29,11 @@ data class ClassProfile(
     /** Nombre de compétences à choisir comme classe de départ, puis en la prenant en multiclasse. */
     val skillChoices: Int = 0,
     val multiclassSkillChoices: Int = 0,
+    /** Sorts mineurs et sorts appris par niveau de classe (indice 0 : niveau 1), d'après le tableau de classe ; null sans colonne. */
+    val cantripsKnown: List<Int?> = emptyList(),
+    val spellsKnown: List<Int?> = emptyList(),
+    /** Lanceur qui prépare ses sorts : clerc, druide, paladin, magicien ([RuleSources.SPELLS], « Prepared spells »). */
+    val prepares: Boolean = false,
 )
 
 /** Race, sous-race ou historique : compétences maîtrisées d'office, et choix laissé (humain : une compétence au choix). */
@@ -73,6 +79,22 @@ data class RulesData(
     companion object
 }
 
+/**
+ * Effets d'un mode de difficulté sur les personnages du joueur ([RuleSources.DIFFICULTY]) : en Explorateur, toutes
+ * les maîtrises augmentent de 2, les membres du groupe reçoivent 100 % de points de vie en plus (pris à la lettre :
+ * le maximum double) et la multiclasse est impossible. Équilibré, Tacticien et Honneur ne changent rien côté joueur
+ * (ils renforcent les adversaires). Le mode personnalisé dépend de réglages que le carnet ne connaît pas : il est
+ * traité comme Équilibré.
+ */
+data class DifficultyRules(val proficiencyDelta: Int = 0, val hitPointMultiplier: Int = 1, val multiclassing: Boolean = true) {
+    companion object {
+        val BALANCED = DifficultyRules()
+        val EXPLORER = DifficultyRules(proficiencyDelta = 2, hitPointMultiplier = 2, multiclassing = false)
+
+        fun of(difficulty: Difficulty): DifficultyRules = if (difficulty == Difficulty.EXPLORER) EXPLORER else BALANCED
+    }
+}
+
 /** Un terme du détail d'un calcul : ce que l'écran affiche ligne à ligne sous « Détail du calcul ». */
 sealed interface Term {
     val value: Int
@@ -97,14 +119,30 @@ sealed interface Term {
 
     /** Modificateur de caractéristique ajouté. */
     data class AbilityModifier(val ability: Ability, override val value: Int) : Term
+
+    /** Bonus du mode de difficulté (Explorateur : +100 % des points de vie). */
+    data class DifficultyBonus(override val value: Int, val percent: Int) : Term
 }
 
 data class Breakdown(val terms: List<Term>) {
     val total: Int get() = terms.sumOf { it.value }
 }
 
-/** Incantation d'une classe du personnage : sa caractéristique, son DD et son bonus d'attaque. */
-data class Spellcasting(val classId: String, val ability: Ability, val modifier: Int, val saveDc: Int, val attackBonus: Int)
+/**
+ * Incantation d'une classe du personnage : sa caractéristique, son DD et son bonus d'attaque, et ses sorts au niveau
+ * de classe atteint : sorts mineurs et sorts appris d'après le tableau de classe, sorts préparés pour les lanceurs
+ * qui préparent (modificateur + niveau de classe, au moins 1). Null quand la classe n'a pas cette colonne.
+ */
+data class Spellcasting(
+    val classId: String,
+    val ability: Ability,
+    val modifier: Int,
+    val saveDc: Int,
+    val attackBonus: Int,
+    val cantrips: Int? = null,
+    val known: Int? = null,
+    val prepared: Int? = null,
+)
 
 /** Un choix de compétences : [count] parmi [list] (vide : toutes), pour la source [id] (classe ou race). */
 data class SkillSource(val id: String, val count: Int, val list: List<Skill>) {
@@ -137,6 +175,8 @@ enum class SheetProblem(val blocking: Boolean) {
     SKILLS_INVALID(true),
     /** Sous-classe inconnue, d'une autre classe, ou choisie à un autre niveau que le sien. */
     SUBCLASS_INVALID(true),
+    /** Plusieurs classes alors que le mode de difficulté interdit la multiclasse (Explorateur). */
+    MULTICLASS_DISABLED(true),
 }
 
 /** Fiche calculée d'un build. Toutes les valeurs dérivées viennent des règles sourcées de ce module. */
@@ -183,7 +223,7 @@ data class CharacterSheet(
  *   et de race, data/game). L'Expertise n'est pas encore modélisée.
  */
 object CharacterSheetCalculator {
-    fun compute(build: Build, data: RulesData): CharacterSheet {
+    fun compute(build: Build, data: RulesData, difficulty: DifficultyRules = DifficultyRules.BALANCED): CharacterSheet {
         val problems = mutableSetOf<SheetProblem>()
         if (build.levels.isEmpty()) problems += SheetProblem.NO_LEVEL
         if (build.levels.size > MAX_CHARACTER_LEVEL) problems += SheetProblem.TOO_MANY_LEVELS
@@ -258,6 +298,11 @@ object CharacterSheetCalculator {
         if (subrace != null && subrace in data.dwarvenToughnessSubraces && level > 0) hpTerms += Term.PerLevelBonus(subrace, 1, level)
         subclasses.forEach { (classId, s) -> if (s.draconicResilience) hpTerms += Term.PerLevelBonus(s.id, 1, classLevels.getValue(classId)) }
         feats.map { it.first }.filter { it.tough }.distinctBy { it.id }.forEach { hpTerms += Term.PerLevelBonus(it.id, 2, level) }
+        if (difficulty.hitPointMultiplier > 1 && hpTerms.isNotEmpty()) {
+            val base = hpTerms.sumOf { it.value }
+            hpTerms += Term.DifficultyBonus(base * (difficulty.hitPointMultiplier - 1), 100 * (difficulty.hitPointMultiplier - 1))
+        }
+        if (!difficulty.multiclassing && classLevels.size > 1) problems += SheetProblem.MULTICLASS_DISABLED
 
         // Classe d'armure sans équipement : la meilleure formule disponible.
         val formulas = buildSet {
@@ -266,7 +311,7 @@ object CharacterSheetCalculator {
         }
 
         // Incantation : chaque classe qui l'a obtenue, par elle-même ou par sa sous-classe.
-        val prof = if (level > 0) proficiencyBonus(level) else 0
+        val prof = if (level > 0) proficiencyBonus(level) + difficulty.proficiencyDelta else 0
         val casters = classLevels.map { (id, n) ->
             val c = data.classes.getValue(id)
             val sub = subclasses[id]?.takeIf { it.progression != CasterProgression.NONE }
@@ -276,7 +321,17 @@ object CharacterSheetCalculator {
             val ability = data.classes.getValue(id).spellcastingAbility
             if (ability == null || caster.progression == CasterProgression.NONE || caster.level < caster.spellcastingFrom) return@mapNotNull null
             val mod = modifiers.getValue(ability)
-            Spellcasting(id, ability, mod, spellSaveDc(mod, prof), spellAttackBonus(mod, prof))
+            val c = data.classes.getValue(id)
+            Spellcasting(
+                classId = id,
+                ability = ability,
+                modifier = mod,
+                saveDc = spellSaveDc(mod, prof),
+                attackBonus = spellAttackBonus(mod, prof),
+                cantrips = c.cantripsKnown.getOrNull(caster.level - 1),
+                known = c.spellsKnown.getOrNull(caster.level - 1),
+                prepared = if (c.prepares) preparedSpells(mod, caster.level) else null,
+            )
         }
         val pact = classLevels.entries.firstNotNullOfOrNull { (id, n) ->
             data.classes.getValue(id).pactSlots.getOrNull(n - 1)?.let { row ->
